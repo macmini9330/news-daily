@@ -79,10 +79,10 @@ def analyze_articles(articles: list) -> dict:
 
     返回: {section_id: [ {title, url, time, source, points[], impact} ]}
     """
-    # 精简文章列表给 LLM（标题+正文前 500 字）
+    # 精简文章列表给 LLM（标题+全文内容，最多1500字）
     slim = []
     for i, a in enumerate(articles):
-        content = (a.get("content") or "")[:500]
+        content = (a.get("content") or "")[:1500]
         slim.append({
             "id": i,
             "title": a["title"],
@@ -108,7 +108,8 @@ def analyze_articles(articles: list) -> dict:
   "politics_domestic": [
     {{
       "id": 0,
-      "points": ["要点1（15-30字，从原文提炼具体事实）", "要点2"],
+      "summary": "内容摘要（100-150字，保留关键数字和事实：金额/百分比/日期/人物/机构）",
+      "points": ["要点1（15-30字，从原文提炼具体事实）", "要点2", "要点3"],
       "impact": "影响分析（50-80字：对哈国政治/经济/外交/矿产格局的影响）"
     }}
   ],
@@ -116,7 +117,7 @@ def analyze_articles(articles: list) -> dict:
   "finance": [...],
   "mining": [...]
 }}
-注意：other 板块的新闻不要输出。每条新闻 points 2-4 条，impact 必须基于事实、避免空话。
+注意：other 板块的新闻不要输出。每条新闻 summary 100-150字、points 3-5 条、impact 必须基于事实、避免空话。
 
 ## 新闻列表
 {json.dumps(slim, ensure_ascii=False, indent=1)}
@@ -178,6 +179,7 @@ def analyze_articles(articles: list) -> dict:
                 "url": orig.get("url", ""),
                 "time": orig.get("time", ""),
                 "source": orig.get("source", ""),
+                "summary": it.get("summary", ""),
                 "points": it.get("points", []),
                 "impact": it.get("impact", ""),
             })

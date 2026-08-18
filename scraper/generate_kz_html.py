@@ -145,6 +145,17 @@ body {
   border-radius: 0 8px 8px 0;
 }
 .article .impact b { color: var(--accent); }
+.article .summary {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+  background: #fafbfd;
+  border: 1px solid var(--border);
+  padding: 10px 14px;
+  border-radius: 8px;
+  line-height: 1.8;
+}
+.article .summary b { color: var(--accent); }
 .empty {
   color: var(--muted);
   font-size: 14px;
@@ -198,6 +209,8 @@ def generate_daily_html(analyzed: dict, date_str: str) -> str:
                 sections_html += f'<div class="article">\n'
                 sections_html += f'<div class="title">{i}. <a href="{url}" target="_blank">{title}</a></div>\n'
                 sections_html += f'<div class="meta">{source} · {time_s}</div>\n'
+                if it.get("summary"):
+                    sections_html += f'<div class="summary"><b>内容摘要：</b>{esc(it["summary"])}</div>\n'
                 if it.get("points"):
                     sections_html += '<ul class="points">\n'
                     for p in it["points"]:
