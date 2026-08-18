@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""哈萨克斯坦每日要闻 - 新闻抓取模块
-从哈通社(Kazinform)中文版 + 补充源抓取当日新闻
-输出: JSON 列表 [{title, url, source, time, category, content}]
+"""哈萨克斯坦每日要闻 - 新闻抓取模块 v2
+
+信息源:
+1. 中文版 cn.inform.kz/lenta + 分板块（已有，约22条/天，精选翻译）
+2. 俄语版 www.inform.kz/ru/lenta 分页（新增，约150条/天，全量）
+
+输出: JSON 列表 [{title, url, source, lang, time, category, content}]
 """
+import gzip
 import json
 import re
 import sys
@@ -15,7 +20,7 @@ UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 
 # ============ 信息源配置 ============
 SOURCES = {
-    "lenta": "https://cn.inform.kz/lenta",  # 所有新闻
+    "lenta": "https://cn.inform.kz/lenta",  # 中文版所有新闻
     "president": "https://cn.inform.kz/category/section_s22796",  # 总统
     "government": "https://cn.inform.kz/category/section_s22798",  # 政府
     "parliament": "https://cn.inform.kz/category/section_s22801",  # 议会
@@ -24,154 +29,225 @@ SOURCES = {
     "events": "https://cn.inform.kz/category/section_s25828",  # 事件
 }
 
+# 俄语月份名 → 数字
+RU_MONTHS = {
+    "Января": 1, "Февраля": 2, "Марта": 3, "Апреля": 4, "Мая": 5, "Июня": 6,
+    "Июля": 7, "Августа": 8, "Сентября": 9, "Октября": 10, "Ноября": 11, "Декабря": 12,
+}
 
-def fetch_html(url: str, timeout: int = 15) -> str:
-    """抓取网页 HTML"""
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
+
+def fetch_html(url: str, timeout: int = 20) -> str:
+    """抓取网页 HTML（处理 gzip + 大页面）"""
+    req = urllib.request.Request(url, headers={
+        "User-Agent": UA,
+        "Accept-Encoding": "gzip",
+        "Connection": "close",
+    })
     with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read().decode("utf-8", errors="ignore")
+        data = r.read(5_000_000)
+        if r.headers.get("Content-Encoding") == "gzip":
+            data = gzip.decompress(data)
+        return data.decode("utf-8", errors="ignore")
 
 
-def parse_article_block(html: str) -> list:
-    """从列表页 HTML 中提取文章 (title, url, time_str)
+def parse_time(time_str: str) -> str:
+    """解析时间字符串 → ISO 格式
+    中文: "08:32, 18 8月 2026"
+    俄语: "21:38, 18 Августа 2026"
+    """
+    time_str = time_str.strip()
+    # 中文格式
+    m = re.match(r'(\d{2}:\d{2}),\s*(\d{1,2})\s*(\d{1,2})月\s*(\d{4})', time_str)
+    if m:
+        hhmm, day, month, year = m.groups()
+        return f"{year}-{int(month):02d}-{int(day):02d} {hhmm}"
+    # 俄语格式
+    m = re.match(r'(\d{2}:\d{2}),\s*(\d{1,2})\s+(\w+)\s+(\d{4})', time_str)
+    if m:
+        hhmm, day, month_name, year = m.groups()
+        month = RU_MONTHS.get(month_name.capitalize())
+        if month:
+            return f"{year}-{month:02d}-{int(day):02d} {hhmm}"
+    return time_str
 
-    真实结构: <div class="news-category__item">
-      <a href="/news/xxx/" class="news-card">
-        <time class="meta-date">08:32, 18 8月 2026</time>
-        <h3 class="card-title">标题</h3>
+
+def parse_article_block(html: str, base_url: str, lang: str) -> list:
+    """从列表页 HTML 提取文章（支持中文版/俄语版）
+
+    结构: <a href="/news/xxx/" class="news-card">
+            <time class="meta-date">08:32, 18 8月 2026</time>
+            <h3 class="card-title">标题</h3>
     """
     articles = []
-    # 按 news-card 块切分
     blocks = re.findall(
-        r'<a href="(/news/[^"]+)"[^>]*class="news-card".*?'
+        r'<a href="(/news/[^"]+|/ru/[^"]+)"[^>]*class="news-card".*?'
         r'<time class="meta-date">([^<]+)</time>.*?'
         r'<h3[^>]*class="card-title[^"]*">\s*([^<]+?)\s*</h3>',
         html, flags=re.S
     )
     for rel_url, time_str, title in blocks:
-        url = f"https://cn.inform.kz{rel_url}"
-        title = re.sub(r'\s+', ' ', title).strip()
-        time_str = time_str.strip()
-        # 解析时间 "08:32, 18 8月 2026" → "2026-08-18 08:32"
-        m = re.match(r'(\d{2}:\d{2}),\s*(\d{1,2})\s*(\d{1,2})月\s*(\d{4})', time_str)
-        if m:
-            hhmm, day, month, year = m.groups()
-            iso_time = f"{year}-{int(month):02d}-{int(day):02d} {hhmm}"
+        # 相对路径 → 绝对路径
+        if rel_url.startswith("/ru/"):
+            url = f"https://www.inform.kz{rel_url}"
         else:
-            iso_time = time_str
+            url = f"https://cn.inform.kz{rel_url}"
+        title = re.sub(r'\s+', ' ', title).strip()
         articles.append({
             "title": title,
             "url": url,
-            "time": iso_time,
-            "source": "哈通社",
+            "time": parse_time(time_str),
+            "lang": lang,
         })
     return articles
 
 
-def fetch_article_content(url: str) -> str:
+def collect_chinese() -> list:
+    """抓取中文版（lenta + 板块，约22条）"""
+    all_articles = []
+    seen = set()
+    today = datetime.now()
+    cutoff = today - timedelta(hours=26)
+    for name, url in SOURCES.items():
+        try:
+            html = fetch_html(url)
+            arts = parse_article_block(html, url, "zh")
+            for a in arts:
+                if a["url"] not in seen:
+                    seen.add(a["url"])
+                    # 时间过滤：只保留 cutoff 内
+                    try:
+                        at = datetime.strptime(a["time"], "%Y-%m-%d %H:%M")
+                        if at < cutoff:
+                            continue
+                    except ValueError:
+                        pass
+                    a["source"] = "哈通社中文版"
+                    all_articles.append(a)
+        except Exception as e:
+            print(f"  ⚠️ 中文源 {name} 失败: {e}", file=sys.stderr)
+    return all_articles
+
+
+def collect_russian(max_pages: int = 10) -> list:
+    """抓取俄语版 lenta 分页（每页24条，翻页直到非当天）
+
+    lenta 首页: https://www.inform.kz/ru/lenta
+    分页:       https://www.inform.kz/ru/lenta/?page=2
+    """
+    all_articles = []
+    seen = set()
+    today = datetime.now()
+
+    for page in range(1, max_pages + 1):
+        url = "https://www.inform.kz/ru/lenta" if page == 1 else f"https://www.inform.kz/ru/lenta/?page={page}"
+        try:
+            html = fetch_html(url)
+            arts = parse_article_block(html, url, "ru")
+            if not arts:
+                print(f"  ✅ 俄语版第{page}页无文章，停止翻页")
+                break
+            # 记录最早时间判断是否还属于当天
+            newest = arts[0]["time"]
+            oldest = arts[-1]["time"]
+            print(f"  📄 俄语版第{page}页: {len(arts)}条 ({newest} ~ {oldest})")
+
+            for a in arts:
+                if a["url"] in seen:
+                    continue
+                seen.add(a["url"])
+                # 时间过滤：只保留当天及前一天 22:00 后（考虑时区+早上运行）
+                try:
+                    at = datetime.strptime(a["time"], "%Y-%m-%d %H:%M")
+                    cutoff = today - timedelta(hours=26)
+                    if at < cutoff:
+                        continue
+                except ValueError:
+                    pass
+                a["source"] = "哈通社俄语版"
+                all_articles.append(a)
+
+            # 判断是否翻完当天：如果本页最早时间早于今天 00:00 且已翻过至少2页
+            try:
+                oldest_dt = datetime.strptime(oldest, "%Y-%m-%d %H:%M")
+                today_midnight = datetime(today.year, today.month, today.day)
+                if oldest_dt < today_midnight and page >= 2:
+                    print(f"  ✅ 第{page}页已含昨日新闻，停止翻页")
+                    break
+            except ValueError:
+                break
+
+            time.sleep(0.5)  # 礼貌间隔
+        except Exception as e:
+            print(f"  ⚠️ 俄语版第{page}页失败: {e}", file=sys.stderr)
+            break
+
+    return all_articles
+
+
+def fetch_article_content(url: str, lang: str = "zh") -> str:
     """抓取文章正文（从 article__content 提取完整段落）"""
     try:
         html = fetch_html(url)
-        # 锚点：<div class="article__content"> ... </div>
         m = re.search(r'<div class="article__content">(.*?)</div>\s*</div>', html, flags=re.S)
         if not m:
-            # 尝试宽松匹配到标签区域前
             m = re.search(r'<div class="article__content">(.*?)(?:<div class="article__tags"|$)', html, flags=re.S)
         if not m:
             return ""
         body_html = m.group(1)
-        # 提取所有 <p> 段落
         paras = re.findall(r'<p[^>]*>(.*?)</p>', body_html, flags=re.S)
         texts = []
         for p in paras:
-            # 去内嵌标签（链接、图片）
             p = re.sub(r'<[^>]+>', '', p)
             p = re.sub(r'\s+', ' ', p).strip()
             if p:
                 texts.append(p)
-        # 补充：如果 meta description 有开头（第一段），加到最前
         if texts:
-            return "\n".join(texts[:10])
+            return "\n".join(texts[:15])
         return ""
     except Exception as e:
         print(f"  ⚠️ 详情页失败 {url}: {e}", file=sys.stderr)
         return ""
 
 
-def collect_articles(max_per_source: int = 30) -> list:
-    """从所有信息源收集当日文章"""
-    all_articles = []
-    seen_urls = set()
-    today = datetime.now()
-    today_str = today.strftime("%Y-%m-%d")
+def collect_articles() -> list:
+    """主收集：中文版 + 俄语版"""
+    print("📡 抓取中文版（精选翻译）...")
+    zh_articles = collect_chinese()
+    print(f"  → 中文版 {len(zh_articles)} 条")
 
-    for name, url in SOURCES.items():
-        try:
-            html = fetch_html(url)
-            arts = parse_article_block(html)
-            # 只保留当天的（或昨天的凌晨的，避免跨日漏抓）
-            kept = 0
-            for a in arts:
-                if a["url"] in seen_urls:
-                    continue
-                # 时间过滤：当天 或 昨天晚 22:00 后（考虑时区）
-                try:
-                    at = datetime.strptime(a["time"], "%Y-%m-%d %H:%M")
-                    cutoff = today - timedelta(hours=20)  # 往前看20小时
-                    if at < cutoff:
-                        continue
-                except ValueError:
-                    pass
-                seen_urls.add(a["url"])
-                all_articles.append(a)
-                kept += 1
-                if kept >= max_per_source:
-                    break
-        except Exception as e:
-            print(f"⚠️ 源 {name} 抓取失败: {e}", file=sys.stderr)
+    print("📡 抓取俄语版（全量分页）...")
+    ru_articles = collect_russian()
+    print(f"  → 俄语版 {len(ru_articles)} 条")
 
-    print(f"📥 从 {len(SOURCES)} 个源收集到 {len(all_articles)} 条文章（去重后）")
+    # 合并（中文版优先，俄语版补充）
+    seen_urls = {a["url"] for a in zh_articles}
+    all_articles = list(zh_articles)
+    for a in ru_articles:
+        if a["url"] not in seen_urls:
+            seen_urls.add(a["url"])
+            all_articles.append(a)
+
+    print(f"\n📥 总计 {len(all_articles)} 条（中文{len(zh_articles)} + 俄语{len(ru_articles)}）")
     return all_articles
-
-
-def enrich_with_content(articles: list, max_articles: int = 40) -> list:
-    """为文章补充正文（最多抓 max_articles 篇详情）"""
-    enriched = []
-    for i, a in enumerate(articles):
-        if i >= max_articles:
-            break
-        a["content"] = fetch_article_content(a["url"])
-        time.sleep(0.3)  # 礼貌间隔，避免被限流
-        enriched.append(a)
-        if i % 5 == 0:
-            print(f"  ...已抓 {i+1}/{min(len(articles), max_articles)} 篇详情")
-    return enriched
 
 
 def main():
     articles = collect_articles()
-    print(f"\n=== 示例文章（前10条）===")
-    for a in articles[:10]:
-        print(f"  [{a['time']}] {a['title'][:50]}")
+
+    print(f"\n=== 前 15 条 ===")
+    for a in articles[:15]:
+        print(f"  [{a['lang']}|{a['time']}] {a['title'][:50]}")
         print(f"    {a['url']}")
 
-    if articles:
-        # 抓取前几篇详情作为内容验证
-        print(f"\n=== 验证详情抓取（前3篇）===")
-        for a in articles[:3]:
-            content = fetch_article_content(a["url"])
-            print(f"  {a['title'][:40]}: {len(content)}字符")
-            print(f"    {content[:120]}...")
-
-    # 保存原始数据
+    # 保存原始数据（不含正文，正文在分析时按需抓取）
     out = {
         "fetched_at": datetime.now().isoformat(),
         "count": len(articles),
-        "articles": articles,
+        "articles": [{k: v for k, v in a.items() if k != "content"} for a in articles],
     }
     with open("/tmp/kz_articles_raw.json", "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
-    print(f"\n✅ 原始数据已保存: /tmp/kz_articles_raw.json")
+    print(f"\n✅ 原始数据已保存: /tmp/kz_articles_raw.json（{len(articles)} 条）")
 
 
 if __name__ == "__main__":

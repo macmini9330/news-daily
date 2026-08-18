@@ -156,6 +156,42 @@ body {
   line-height: 1.8;
 }
 .article .summary b { color: var(--accent); }
+.summary-toggle {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--accent);
+  cursor: pointer;
+  user-select: none;
+  display: inline-block;
+  padding: 2px 0;
+}
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow {
+  display: inline-block;
+  transition: transform 0.2s;
+  margin-right: 4px;
+}
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.9;
+  color: #333;
+  background: #f7f8fa;
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+.source-link {
+  font-size: 12px;
+  color: var(--muted);
+  margin-left: 8px;
+}
+.source-link a { color: var(--accent); text-decoration: none; }
+.source-link a:hover { text-decoration: underline; }
 .empty {
   color: var(--muted);
   font-size: 14px;
@@ -208,9 +244,12 @@ def generate_daily_html(analyzed: dict, date_str: str) -> str:
                 source = esc(it.get("source", ""))
                 sections_html += f'<div class="article">\n'
                 sections_html += f'<div class="title">{i}. <a href="{url}" target="_blank">{title}</a></div>\n'
-                sections_html += f'<div class="meta">{source} · {time_s}</div>\n'
+                sections_html += f'<div class="meta">{source} · {time_s}<span class="source-link"><a href="{url}" target="_blank">来源链接 ↗</a></span></div>\n'
                 if it.get("summary"):
                     sections_html += f'<div class="summary"><b>内容摘要：</b>{esc(it["summary"])}</div>\n'
+                    if it.get("full_content"):
+                        sections_html += f'<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>\n'
+                        sections_html += f'<div class="full-content">{esc(it["full_content"])}</div>\n'
                 if it.get("points"):
                     sections_html += '<ul class="points">\n'
                     for p in it["points"]:
@@ -245,6 +284,19 @@ def generate_daily_html(analyzed: dict, date_str: str) -> str:
   <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · <a href="index.html">查看往期</a></p>
   <p>生成时间：{datetime.now().strftime("%Y-%m-%d %H:%M")}</p>
 </div>
+<script>
+function toggleContent(el) {{
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {{
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}}
+}}
+</script>
 </body>
 </html>
 """
@@ -291,8 +343,19 @@ def main():
     with open("/tmp/kz_articles_analyzed.json", encoding="utf-8") as f:
         analyzed = json.load(f)
 
-    # 用抓取时间或当前日期
-    date_str = datetime.now().strftime("%Y-%m-%d")
+    # 用新闻数据的日期（取所有新闻中出现最多的日期），避免凌晨跨日错位
+    from collections import Counter
+    date_counter = Counter()
+    for sid, items in analyzed["sections"].items():
+        for it in items:
+            t = it.get("time", "")
+            if len(t) >= 10:
+                date_counter[t[:10]] += 1
+    if date_counter:
+        date_str = date_counter.most_common(1)[0][0]
+    else:
+        date_str = datetime.now().strftime("%Y-%m-%d")
+    print(f"📅 使用新闻日期: {date_str}（各日期计数: {dict(date_counter)}）")
     os.makedirs(KZ_DIR, exist_ok=True)
 
     # 生成单日页
