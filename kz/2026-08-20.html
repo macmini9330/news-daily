@@ -5,185 +5,124 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>2026年8月19日 - 哈萨克斯坦每日要闻</title>
 <style>
-:root {
-  --bg: #f5f6fa;
-  --card: #ffffff;
-  --text: #1a1a2e;
-  --muted: #666;
-  --accent: #1e5eff;
-  --border: #e2e5ee;
-}
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.7;
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 24px 16px 60px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
 }
-.header {
-  text-align: center;
-  padding: 32px 20px;
-  background: linear-gradient(135deg, #1e5eff, #6a5cff);
-  border-radius: 16px;
-  color: #fff;
-  margin-bottom: 28px;
-}
-.header h1 { font-size: 24px; margin-bottom: 8px; }
-.header .date { font-size: 15px; opacity: 0.9; }
-.header .meta { font-size: 13px; opacity: 0.75; margin-top: 6px; }
-.stats {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-top: 16px;
-}
-.stat {
-  background: rgba(255,255,255,0.15);
-  padding: 6px 16px;
-  border-radius: 20px;
-  font-size: 13px;
-}
-.section {
-  background: var(--card);
-  border-radius: 14px;
-  padding: 22px 24px;
-  margin-bottom: 22px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  border: 1px solid var(--border);
-}
-.section h2 {
-  font-size: 18px;
-  padding-bottom: 12px;
-  margin-bottom: 16px;
-  border-bottom: 2px solid var(--accent);
-  color: var(--accent);
-}
-.article {
-  padding: 14px 0;
-  border-bottom: 1px dashed var(--border);
-}
-.article:last-child { border-bottom: none; }
-.article .title {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 6px;
-}
-.article .title a {
-  color: var(--text);
-  text-decoration: none;
-}
-.article .title a:hover { color: var(--accent); }
-.article .meta {
-  font-size: 12px;
-  color: var(--muted);
-  margin-bottom: 8px;
-}
-.article .points {
-  list-style: none;
-  padding-left: 0;
-}
-.article .points li {
-  font-size: 14px;
-  padding-left: 18px;
-  position: relative;
-  margin-bottom: 4px;
-}
-.article .points li::before {
-  content: "▸";
-  color: var(--accent);
-  position: absolute;
-  left: 2px;
-}
-.article .impact {
-  margin-top: 8px;
-  font-size: 13px;
-  color: #444;
-  background: #f0f4ff;
-  border-left: 3px solid var(--accent);
-  padding: 8px 12px;
-  border-radius: 0 8px 8px 0;
-}
-.article .impact b { color: var(--accent); }
-.article .summary {
-  margin-top: 8px;
-  font-size: 14px;
-  color: #333;
-  background: #fafbfd;
-  border: 1px solid var(--border);
-  padding: 10px 14px;
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+.header { text-align: center; padding: 30px 0 18px; border-bottom: 1px solid #21262d; margin-bottom: 20px; }
+.header h1 { font-size: 1.8em; font-weight: 700; color: #f0f6fc; margin-bottom: 10px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .nav-links { margin-top: 14px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 18px 0 6px; }
+.stat-chip { padding: 5px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .83rem; color: #8b949e; }
+
+/* 板块标题 */
+.doc-section { margin-top: 30px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.15rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 16px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
   border-radius: 8px;
-  line-height: 1.8;
 }
-.article .summary b { color: var(--accent); }
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; }
+
+/* 单条 */
+.item { padding: 14px 4px 10px; margin-bottom: 6px; border-bottom: 1px solid #161b22; border-left: 3px solid transparent; padding-left: 14px; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.05rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 34px; height: 30px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .9rem; font-weight: 700; margin-top: 2px;
+}
+.item-meta { font-size: .8rem; color: #8b949e; margin: 0 0 8px 44px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 44px; padding: 8px 14px;
+  background: #161b22; border: 1px solid #21262d;
+  border-radius: 0 6px 6px 0;
+  font-size: .92rem; color: #d4d9e0;
+}
+.item-summary b { color: #58a6ff; }
+
+/* 展开全文 */
 .summary-toggle {
-  margin-top: 6px;
-  font-size: 13px;
-  color: var(--accent);
-  cursor: pointer;
-  user-select: none;
-  display: inline-block;
-  padding: 2px 0;
+  margin: 6px 0 2px 44px; font-size: .82rem; color: #58a6ff;
+  cursor: pointer; user-select: none; display: inline-block; padding: 2px 0;
 }
 .summary-toggle:hover { text-decoration: underline; }
-.summary-toggle .arrow {
-  display: inline-block;
-  transition: transform 0.2s;
-  margin-right: 4px;
-}
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
 .summary-toggle.open .arrow { transform: rotate(90deg); }
 .full-content {
   display: none;
-  margin-top: 10px;
-  font-size: 14px;
-  line-height: 1.9;
-  color: #333;
-  background: #f7f8fa;
-  border: 1px dashed var(--border);
-  border-radius: 8px;
-  padding: 12px 16px;
+  margin: 8px 0 4px 44px;
+  font-size: .9rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px;
   white-space: pre-wrap;
 }
 .full-content.show { display: block; }
-.source-link {
-  font-size: 12px;
-  color: var(--muted);
-  margin-left: 8px;
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 44px; padding-left: 18px; }
+.item ul li { margin-bottom: 6px; font-size: .93rem; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 44px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0;
 }
-.source-link a { color: var(--accent); text-decoration: none; }
-.source-link a:hover { text-decoration: underline; }
-.empty {
-  color: var(--muted);
-  font-size: 14px;
-  padding: 12px 0;
-  font-style: italic;
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; font-size: .92rem; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 12px 0 12px 44px; font-style: italic; }
+
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 40px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+@media (max-width: 600px) {
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
 }
-.footer {
-  text-align: center;
-  font-size: 12px;
-  color: var(--muted);
-  margin-top: 32px;
-  padding-top: 16px;
-  border-top: 1px solid var(--border);
-}
-.footer a { color: var(--accent); text-decoration: none; }
 </style>
 </head>
 <body>
-<div class="header">
-  <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
-  <div class="date">2026年8月19日</div>
-  <div class="meta">数据来源：哈通社（Kazinform）等 · 自动生成 · 仅供研究参考</div>
-  <div class="stats"><span class="stat">🏛️ 政治新闻及分析 7 条</span><span class="stat">🌍 政治新闻及分析 7 条</span><span class="stat">💰 金融政策新闻及分析 2 条</span><span class="stat">⛏️ 矿产资源进出口管制政策新闻及分析 3 条</span></div>
-</div>
-<div class="section"><h2>🏛️ 一、政治新闻及分析（内政）</h2>
-<div class="article">
-<div class="title">1. <a href="https://cn.inform.kz/news/jiajiangduizhonghegaominzhujinsheng-c9a3ec9e/" target="_blank">格鲁吉亚专家：库鲁尔泰选举将对中亚和南高加索民主进程产生积极影响</a></div>
-<div class="meta">哈通社中文版 · 08/20 08:32<span class="source-link"><a href="https://cn.inform.kz/news/jiajiangduizhonghegaominzhujinsheng-c9a3ec9e/" target="_blank">来源链接 ↗</a></span></div>
-<div class="summary"><b>内容摘要：</b>格鲁吉亚专家迈萨亚表示，哈萨克斯坦政治体制现代化对本国及中亚、南高加索地区民主进程有积极影响。他提到由145名议员组成的新议会，认为议会体制改革是民主转型的重要里程碑。向一院制议会和政党比例代表制过渡将促进政治多元化，库鲁尔泰选举是改革关键阶段，为区域民主发展创造条件。</div>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年8月19日</div>
+    <div class="nav-links"><a href="index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="stats-bar"><span class="stat-chip">共 19 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+<div class="doc-section">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(7 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/jiajiangduizhonghegaominzhujinsheng-c9a3ec9e/" target="_blank">格鲁吉亚专家：库鲁尔泰选举将对中亚和南高加索民主进程产生积极影响</a></h3>
+<div class="item-meta">哈通社中文版 · 08/20 08:32<span class="source-link"><a href="https://cn.inform.kz/news/jiajiangduizhonghegaominzhujinsheng-c9a3ec9e/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>格鲁吉亚专家迈萨亚表示，哈萨克斯坦政治体制现代化对本国及中亚、南高加索地区民主进程有积极影响。他提到由145名议员组成的新议会，认为议会体制改革是民主转型的重要里程碑。向一院制议会和政党比例代表制过渡将促进政治多元化，库鲁尔泰选举是改革关键阶段，为区域民主发展创造条件。</div>
 <div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
 <div class="full-content">标题: 格鲁吉亚专家：库鲁尔泰选举将对中亚和南高加索民主进程产生积极影响
 正文:
@@ -194,18 +133,18 @@ body {
 在谈及从两院制议会向一院制议会转型以及实行以政党比例代表制为基础的选举制度时，迈萨亚认为，这些改革有望为哈萨克斯坦政治多元化发展创造条件。
 - 哈萨克斯坦向以政党比例代表制为基础的一院制议会过渡，是非常重要的一步。这将为哈萨克斯坦在政党体系框架内进一步发展政治多元化提供良好动力。- 他说。
 迈萨亚认为，库鲁尔泰选举是哈萨克斯坦政治改革进程中的重要阶段，有助于进一步推动国内政治多元化，并为区域民主进程发展创造新的条件。</div>
-<ul class="points">
+<ul>
 <li>政治现代化推动区域民主进程</li>
 <li>145名议员新议会成改革里程碑</li>
 <li>一院制与比例代表制促多元化</li>
 <li>库鲁尔泰选举为改革关键阶段</li>
 </ul>
-<div class="impact"><b>影响：</b>哈萨克斯坦政治改革将增强其区域影响力，推动中亚和南高加索民主进程，同时通过议会改革和比例代表制促进国内政治多元化，对经济稳定和外交合作产生积极影响，并可能影响区域矿产投资环境。</div>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">哈萨克斯坦政治改革将增强其区域影响力，推动中亚和南高加索民主进程，同时通过议会改革和比例代表制促进国内政治多元化，对经济稳定和外交合作产生积极影响，并可能影响区域矿产投资环境。</span></div>
 </div>
-<div class="article">
-<div class="title">2. <a href="https://cn.inform.kz/news/tongqianhouyixiezhu-697e6c02/" target="_blank">七党党首同台交锋：库鲁尔泰选举前最后一场电视辩论释放哪些主张</a></div>
-<div class="meta">哈通社中文版 · 08/20 08:00<span class="source-link"><a href="https://cn.inform.kz/news/tongqianhouyixiezhu-697e6c02/" target="_blank">来源链接 ↗</a></span></div>
-<div class="summary"><b>内容摘要：</b>哈萨克斯坦库鲁尔泰选举前最后一场电视辩论于24KZ电视台举行，七党党首同台交锋。辩论分四轮，包括纲领介绍、相互提问、回应选民问题及总结陈述。主办方收到58,746个问题，筛选14个提问。经济与就业成焦点，共和国党提出提高收入、稳定物价、建设核电站等主张，光明道路党强调中小企业发展。</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/tongqianhouyixiezhu-697e6c02/" target="_blank">七党党首同台交锋：库鲁尔泰选举前最后一场电视辩论释放哪些主张</a></h3>
+<div class="item-meta">哈通社中文版 · 08/20 08:00<span class="source-link"><a href="https://cn.inform.kz/news/tongqianhouyixiezhu-697e6c02/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦库鲁尔泰选举前最后一场电视辩论于24KZ电视台举行，七党党首同台交锋。辩论分四轮，包括纲领介绍、相互提问、回应选民问题及总结陈述。主办方收到58,746个问题，筛选14个提问。经济与就业成焦点，共和国党提出提高收入、稳定物价、建设核电站等主张，光明道路党强调中小企业发展。</div>
 <div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
 <div class="full-content">标题: 七党党首同台交锋：库鲁尔泰选举前最后一场电视辩论释放哪些主张
 正文:
@@ -224,18 +163,18 @@ body {
 在最后陈述中，霍扎纳扎罗夫表示，哈萨克斯坦民众需要更多发展机会，企业需要创业和成长空间，年轻专业人才也希望通过劳动获得更高收入。他强调，该党进入库鲁尔泰后将推动扩大社会财富、提高居民收入，并促进形成更加壮大的中等收入群体。
 “光明道路”民主党主席叶斯帕耶娃则更多强调政党此前的议会工作经验。
 她表示，该党曾参与推动多项法律草案获得通过，今后将继续重点关注中小企业发展、工资水平以及改善劳动者工作条件等问题。</div>
-<ul class="points">
+<ul>
 <li>七党党首同台辩论，选民参与度高</li>
 <li>经济与就业成核心议题</li>
 <li>共和国党主张建设核电站和大型项目</li>
 <li>光明道路党关注中小企业与工资水平</li>
 </ul>
-<div class="impact"><b>影响：</b>此次辩论凸显经济民生议题，各党主张或影响库鲁尔泰选举格局。若共和国党等主张落实，将推动基础设施建设和核能发展，影响哈萨克斯坦经济结构及外交合作，尤其在能源领域可能加强与外国伙伴关系。</div>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次辩论凸显经济民生议题，各党主张或影响库鲁尔泰选举格局。若共和国党等主张落实，将推动基础设施建设和核能发展，影响哈萨克斯坦经济结构及外交合作，尤其在能源领域可能加强与外国伙伴关系。</span></div>
 </div>
-<div class="article">
-<div class="title">3. <a href="https://www.inform.kz/ru/otdohodov-selskih-semey-doitvagrosektore-ochem-govoril-kayrat-aytuganov-nadebata-d248d0b7" target="_blank">从农村家庭收入到农业IT：凯拉特·艾图加诺夫在辩论中谈了什么</a></div>
-<div class="meta">哈通社俄语版 · 08/19 23:44<span class="source-link"><a href="https://www.inform.kz/ru/otdohodov-selskih-semey-doitvagrosektore-ochem-govoril-kayrat-aytuganov-nadebata-d248d0b7" target="_blank">来源链接 ↗</a></span></div>
-<div class="summary"><b>内容摘要：</b>哈萨克斯坦“阿乌尔”党主席凯拉特·艾图加诺夫在辩论中阐述党的纲领，强调人、劳动、故乡土地和强大哈萨克斯坦的原则。他提出提高农村居民收入的三个方向：支持个人副业、发展小型项目和农村合作社，并举例北哈州发放雏鹅项目。他还强调农业应推动科技和IT发展，创建数字平台预测产量，减少进口依赖，目标是提高每公顷土地和每公斤产品的收益。</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/otdohodov-selskih-semey-doitvagrosektore-ochem-govoril-kayrat-aytuganov-nadebata-d248d0b7" target="_blank">从农村家庭收入到农业IT：凯拉特·艾图加诺夫在辩论中谈了什么</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/19 23:44<span class="source-link"><a href="https://www.inform.kz/ru/otdohodov-selskih-semey-doitvagrosektore-ochem-govoril-kayrat-aytuganov-nadebata-d248d0b7" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦“阿乌尔”党主席凯拉特·艾图加诺夫在辩论中阐述党的纲领，强调人、劳动、故乡土地和强大哈萨克斯坦的原则。他提出提高农村居民收入的三个方向：支持个人副业、发展小型项目和农村合作社，并举例北哈州发放雏鹅项目。他还强调农业应推动科技和IT发展，创建数字平台预测产量，减少进口依赖，目标是提高每公顷土地和每公斤产品的收益。</div>
 <div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
 <div class="full-content">标题：从农村家庭收入到农业部门IT：凯拉特·艾图加诺夫在辩论中谈了什么
 
@@ -252,19 +191,19 @@ body {
 ——今天，农业不仅仅是拖拉机和田地。它是IT、人工智能、新技术、现代机械和加工。我们的目标是从每公顷土地和每公斤生产的产品中赚取更多，——凯拉特·艾图加诺夫强调。
 在最后的讲话中，他再次回到了地区发展的主题。
 ——哈萨克斯坦不仅仅是阿斯塔纳和大城市。它是每个地区、每个区、每个村庄和每个家庭。强大的国家不仅仅是强大的经济</div>
-<ul class="points">
+<ul>
 <li>强调人、劳动、故乡土地和强大哈萨克斯坦原则</li>
 <li>提出提高农村收入三方向：副业、小项目、合作社</li>
 <li>北哈州发放雏鹅：去年11.5万只，今年9.8万只</li>
 <li>农业应推动IT、科技和加工，减少进口依赖</li>
 <li>创建数字平台预测产量和风险，发展农业科学</li>
 </ul>
-<div class="impact"><b>影响：</b>该党纲强调农业现代化和地区平衡发展，可能影响哈萨克斯坦农业政策，推动IT和科技在农业中的应用，减少进口依赖，提升农村经济，增强党的选民基础，对政治格局产生一定影响。</div>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该党纲强调农业现代化和地区平衡发展，可能影响哈萨克斯坦农业政策，推动IT和科技在农业中的应用，减少进口依赖，提升农村经济，增强党的选民基础，对政治格局产生一定影响。</span></div>
 </div>
-<div class="article">
-<div class="title">4. <a href="https://www.inform.kz/ru/finalnie-debati-semi-partiy-zavershilis-natelekanale-24kz-2192502b" target="_blank">七党最终辩论在24KZ电视台结束</a></div>
-<div class="meta">哈通社俄语版 · 08/19 22:17<span class="source-link"><a href="https://www.inform.kz/ru/finalnie-debati-semi-partiy-zavershilis-natelekanale-24kz-2192502b" target="_blank">来源链接 ↗</a></span></div>
-<div class="summary"><b>内容摘要：</b>哈萨克斯坦七党最终辩论在24KZ电视台结束，主题为“从经济增长到公民福祉”。辩论分四轮：首轮各党阐述立场，次轮互问互答，第三轮回答观众14个问题，末轮展望未来。各党就乡村发展、税收、社会倡议资金等议题交锋。选举定于8月23日举行，将选出库鲁尔泰代表。</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://www.inform.kz/ru/finalnie-debati-semi-partiy-zavershilis-natelekanale-24kz-2192502b" target="_blank">七党最终辩论在24KZ电视台结束</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/19 22:17<span class="source-link"><a href="https://www.inform.kz/ru/finalnie-debati-semi-partiy-zavershilis-natelekanale-24kz-2192502b" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦七党最终辩论在24KZ电视台结束，主题为“从经济增长到公民福祉”。辩论分四轮：首轮各党阐述立场，次轮互问互答，第三轮回答观众14个问题，末轮展望未来。各党就乡村发展、税收、社会倡议资金等议题交锋。选举定于8月23日举行，将选出库鲁尔泰代表。</div>
 <div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
 <div class="full-content">标题：七党最终辩论在“24KZ”电视台结束
 正文：提醒一下，电视讨论的主题是“从经济增长到公民福祉”。
@@ -281,18 +220,18 @@ body {
 第三轮中，政党领导人需要回答电视观众的问题。观众可以通过扫描屏幕上的二维码或发送视频消息来提问。根据规则，共提出了14个问题——每个政党两个。回答一个问题的时间为2分钟。
 最后一轮中，政党代表向选民发表讲话，并指出了如果未来五年当选进入库鲁尔泰，他们打算重点关注的方向。
 提醒一下，库鲁尔泰选举定于8月23日举行。在投票过程中，哈萨克斯坦公民将选出</div>
-<ul class="points">
+<ul>
 <li>七党辩论聚焦经济与民生，四轮交锋。</li>
 <li>各党互问税收、乡村、社会资金等议题。</li>
 <li>观众通过二维码提问，共14个问题。</li>
 <li>选举定于8月23日，选库鲁尔泰代表。</li>
 </ul>
-<div class="impact"><b>影响：</b>辩论凸显各党政策分歧，影响选民决策。经济与民生主题反映竞选焦点，可能推动未来政策向减税和乡村倾斜。选举结果将重塑议会格局，影响哈萨克斯坦经济改革方向。</div>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">辩论凸显各党政策分歧，影响选民决策。经济与民生主题反映竞选焦点，可能推动未来政策向减税和乡村倾斜。选举结果将重塑议会格局，影响哈萨克斯坦经济改革方向。</span></div>
 </div>
-<div class="article">
-<div class="title">5. <a href="https://www.inform.kz/ru/napravlenie-strani-opredeleno-dadebay-oroli-adlet-vrealizatsii-kursa-prezidenta-ee8b347c" target="_blank">国家方向已定——达德巴伊谈“阿迪莱特”在落实总统方针中的作用</a></div>
-<div class="meta">哈通社俄语版 · 08/19 22:09<span class="source-link"><a href="https://www.inform.kz/ru/napravlenie-strani-opredeleno-dadebay-oroli-adlet-vrealizatsii-kursa-prezidenta-ee8b347c" target="_blank">来源链接 ↗</a></span></div>
-<div class="summary"><b>内容摘要：</b>哈萨克斯坦七大政党举行辩论，“阿迪莱特”党主席达德巴伊表示，该党将成为托卡耶夫总统战略方针的政治支柱，并依据三月公投通过的新宪法确定国家发展方向。他提出“为了公正的未来”纲领，承诺创造一百万个新工作岗位，实现主要食品完全自给，提高一百万农村居民收入，培训五百万公民使用人工智能，同时强调不提高企业税收，主张通过扩大经济来增加收入。</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://www.inform.kz/ru/napravlenie-strani-opredeleno-dadebay-oroli-adlet-vrealizatsii-kursa-prezidenta-ee8b347c" target="_blank">国家方向已定——达德巴伊谈“阿迪莱特”在落实总统方针中的作用</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/19 22:09<span class="source-link"><a href="https://www.inform.kz/ru/napravlenie-strani-opredeleno-dadebay-oroli-adlet-vrealizatsii-kursa-prezidenta-ee8b347c" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦七大政党举行辩论，“阿迪莱特”党主席达德巴伊表示，该党将成为托卡耶夫总统战略方针的政治支柱，并依据三月公投通过的新宪法确定国家发展方向。他提出“为了公正的未来”纲领，承诺创造一百万个新工作岗位，实现主要食品完全自给，提高一百万农村居民收入，培训五百万公民使用人工智能，同时强调不提高企业税收，主张通过扩大经济来增加收入。</div>
 <div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
 <div class="full-content">国家方向已确定——达德巴伊谈“阿迪莱特”党在落实总统方针中的作用
 
@@ -309,19 +248,19 @@ body {
 在辩论中回答问题时，“阿迪莱特”党主席解释说，对他们而言，公正首先是所有人的平等条件。对于陷入困境的人，国家当然应该提供帮助，而对于准备成长和发展的人，应该创造必要的条件。但这里有一个非常重要的原则——不能以牺牲他人为代价来帮助一部分人。
 
 照片：“阿迪莱特”党——我们不打算提高税收，不增加企业负担。我们提出不同的方案，我们说：“让我们扩大经济，不提高企业税收。”因为，我们的企业和新工作岗位越多，人民的收入就越高。企业越多，生产越多……</div>
-<ul class="points">
+<ul>
 <li>“阿迪莱特”党支持托卡耶夫总统战略方针。</li>
 <li>承诺创造一百万个新工作岗位。</li>
 <li>实现主要食品百分之百自给。</li>
 <li>提高一百万农村居民收入，培训五百万人用AI。</li>
 <li>不提高企业税收，主张扩大经济。</li>
 </ul>
-<div class="impact"><b>影响：</b>该表态强化了执政党对总统改革路线的支持，有助于巩固政治稳定。经济承诺聚焦就业和粮食安全，可能影响民生政策。外交上无直接涉及，但国内政策导向或影响外资信心。矿产格局未提及，但扩大经济或间接利好矿业投资。</div>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该表态强化了执政党对总统改革路线的支持，有助于巩固政治稳定。经济承诺聚焦就业和粮食安全，可能影响民生政策。外交上无直接涉及，但国内政策导向或影响外资信心。矿产格局未提及，但扩大经济或间接利好矿业投资。</span></div>
 </div>
-<div class="article">
-<div class="title">6. <a href="https://www.inform.kz/ru/pochti-vse-izbiratelnie-uchastki-kazahstana-gotovi-dlyagolosovaniya-lits-sinvali-d7689c0a" target="_blank">哈萨克斯坦几乎所有投票站已为残疾人投票做好准备</a></div>
-<div class="meta">哈通社俄语版 · 08/19 21:53<span class="source-link"><a href="https://www.inform.kz/ru/pochti-vse-izbiratelnie-uchastki-kazahstana-gotovi-dlyagolosovaniya-lits-sinvali-d7689c0a" target="_blank">来源链接 ↗</a></span></div>
-<div class="summary"><b>内容摘要：</b>哈萨克斯坦为库鲁尔泰议员选举做准备，中央选举委员会指示成立特别监测小组，检查全国投票站对残疾人的无障碍性。监测覆盖97.8%的投票站，发现15.2%存在缺陷，已消除98.6%的缺陷。超过1000人参与，包括残疾人组织代表等。检查内容包括坡道、扶手、按钮、停车位等，旨在确保残疾人自主投票。</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://www.inform.kz/ru/pochti-vse-izbiratelnie-uchastki-kazahstana-gotovi-dlyagolosovaniya-lits-sinvali-d7689c0a" target="_blank">哈萨克斯坦几乎所有投票站已为残疾人投票做好准备</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/19 21:53<span class="source-link"><a href="https://www.inform.kz/ru/pochti-vse-izbiratelnie-uchastki-kazahstana-gotovi-dlyagolosovaniya-lits-sinvali-d7689c0a" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦为库鲁尔泰议员选举做准备，中央选举委员会指示成立特别监测小组，检查全国投票站对残疾人的无障碍性。监测覆盖97.8%的投票站，发现15.2%存在缺陷，已消除98.6%的缺陷。超过1000人参与，包括残疾人组织代表等。检查内容包括坡道、扶手、按钮、停车位等，旨在确保残疾人自主投票。</div>
 <div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
 <div class="full-content">标题：哈萨克斯坦几乎所有投票站已为残疾人投票做好准备
 正文：全国所有地区的特别监测小组对投票站进行了检查，以核实其对残疾人的无障碍性。在为库鲁尔泰议员选举做准备的过程中，这些小组是根据中央选举委员会的指示成立的。
@@ -331,67 +270,68 @@ body {
 超过1000人参与了监测工作。小组包括残疾人权利保护公共协会的代表、各地区就业协调和社会项目部门的工作人员、地区选举委员会成员、地方执行机构代表以及社会保障领域的专家。
 监测的主要参数是投票站的无障碍性。检查了坡道、扶手、呼叫帮助按钮、专用停车位、无障碍导航、触觉和浮雕指示牌、自主移动和投票的条件，以及关于选举的无障碍信息的可用性。在检查过程中，对投票站的建筑物和场所进行了检查，包括检查坡道的存在和状况、轮椅转弯区域是否符合规定要求、升降机制、触觉指示牌、呼叫帮助按钮、扶手、无门槛以及其他妨碍使用轮椅者自主移动的障碍。
 已发现的缺陷包括无障碍环境某些要素的缺失或不符合要求。这涉及专用停车位、呼叫帮助按钮、触觉指示牌、楼梯对比标记、信息和导航工具，以及无障碍卫生设施。</div>
-<ul class="points">
+<ul>
 <li>监测覆盖97.8%投票站，15.2%有缺陷</li>
 <li>已消除98.6%缺陷，其余继续整改</li>
 <li>超1000人参与，多部门协作</li>
 <li>重点检查无障碍设施，如坡道、按钮</li>
 <li>确保残疾人自主投票权利</li>
 </ul>
-<div class="impact"><b>影响：</b>此举提升选举包容性，保障残疾人政治权利，增强社会公平，符合国际无障碍标准，改善哈萨克斯坦国际形象，促进社会和谐稳定。</div>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举提升选举包容性，保障残疾人政治权利，增强社会公平，符合国际无障碍标准，改善哈萨克斯坦国际形象，促进社会和谐稳定。</span></div>
 </div>
-<div class="article">
-<div class="title">7. <a href="https://www.inform.kz/ru/finalnie-debati-semi-partiy-nachalis-natelekanale-24kz-64e7a14a" target="_blank">七党最终辩论在24KZ电视台开始</a></div>
-<div class="meta">哈通社俄语版 · 08/19 20:00<span class="source-link"><a href="https://www.inform.kz/ru/finalnie-debati-semi-partiy-nachalis-natelekanale-24kz-64e7a14a" target="_blank">来源链接 ↗</a></span></div>
-<div class="summary"><b>内容摘要：</b>哈萨克斯坦七个政党在“24KZ”电视台举行最终辩论，主题为“从经济增长到公民福祉”。各党领袖阐述竞选纲领，讨论社会经济议题，并回答公民提问。辩论分四轮，按抽签顺序发言。8月23日将举行库鲁尔泰选举，选出145名议员，任期五年。</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://www.inform.kz/ru/finalnie-debati-semi-partiy-nachalis-natelekanale-24kz-64e7a14a" target="_blank">七党最终辩论在24KZ电视台开始</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/19 20:00<span class="source-link"><a href="https://www.inform.kz/ru/finalnie-debati-semi-partiy-nachalis-natelekanale-24kz-64e7a14a" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦七个政党在“24KZ”电视台举行最终辩论，主题为“从经济增长到公民福祉”。各党领袖阐述竞选纲领，讨论社会经济议题，并回答公民提问。辩论分四轮，按抽签顺序发言。8月23日将举行库鲁尔泰选举，选出145名议员，任期五年。</div>
 <div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
 <div class="full-content">七个政党的最终辩论已在“24KZ”电视频道开始。电视讨论的主要议题是“从经济增长到公民福祉”。在直播过程中，政党领袖将介绍其竞选纲领的主要条款，讨论彼此的立场，并就国家进一步社会经济发展的议题提出解决方案。参加辩论的有：“阿迪莱特”党主席艾别克·达德巴耶夫、哈萨克斯坦全国社会民主党主席阿斯哈特·拉希姆扎诺夫、Baytaq党主席阿扎马特汗·阿米尔塔耶夫、哈萨克斯坦人民党主席努尔苏丹·肖卡诺夫、“阿乌尔”党主席凯拉特·艾图加诺夫、“阿克若尔”民主党主席达尼亚·叶斯帕耶娃、Respublica党主席艾达尔别克·霍贾纳扎罗夫。辩论形式包括四轮。政党主席可以向对手提问，并回答通过联系中心和视频消息形式收到的公民诉求。在最后部分，参与者将向选民发表呼吁。根据抽签结果，第一个发言的是Respublica党，紧随其后的是“拜塔克”，第三个是“阿克若尔”民主党，接下来是“阿迪莱特”党，然后是“阿乌尔”，之后是全国社会民主党，最后是哈萨克斯坦人民党。8月23日，哈萨克斯坦人将选出新库鲁尔泰的议员。在投票过程中，哈萨克斯坦人将选出145名库鲁尔泰议员，其任期将为五年。</div>
-<ul class="points">
+<ul>
 <li>七党最终辩论在24KZ电视台举行</li>
 <li>主题聚焦经济增长与公民福祉</li>
 <li>辩论分四轮，含提问与公民互动</li>
 <li>8月23日选举145名库鲁尔泰议员</li>
 </ul>
-<div class="impact"><b>影响：</b>此次辩论是选举前关键环节，影响选民决策，凸显各党政策差异。选举结果将决定库鲁尔泰构成，影响未来五年哈萨克斯坦社会经济政策走向，对政治格局和改革进程有直接作用。</div>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次辩论是选举前关键环节，影响选民决策，凸显各党政策差异。选举结果将决定库鲁尔泰构成，影响未来五年哈萨克斯坦社会经济政策走向，对政治格局和改革进程有直接作用。</span></div>
 </div>
 </div>
-<div class="section"><h2>🌍 二、政治新闻及分析（外交）</h2>
-<div class="article">
-<div class="title">1. <a href="https://cn.inform.kz/news/heguorenzuowen-06bbdca1/" target="_blank">哈萨克斯坦和联合国志愿人员组织探讨加强合作问题</a></div>
-<div class="meta">哈通社中文版 · 08/19 20:56<span class="source-link"><a href="https://cn.inform.kz/news/heguorenzuowen-06bbdca1/" target="_blank">来源链接 ↗</a></span></div>
-<div class="summary"><b>内容摘要：</b>哈萨克斯坦与联合国志愿人员组织探讨加强合作，重点包括“国际志愿者促进可持续发展年”框架下的合作领域。联合国赞赏哈在推动全球志愿者运动中的领导作用，并提及托卡耶夫总统倡议的联大决议。双方讨论了环境志愿服务成就，如保护里海、恢复咸海及“清洁哈萨克斯坦”运动，并同意扩大哈志愿者参与联合国项目，深化2026年后合作。</div>
+<div class="doc-section">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(7 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/heguorenzuowen-06bbdca1/" target="_blank">哈萨克斯坦和联合国志愿人员组织探讨加强合作问题</a></h3>
+<div class="item-meta">哈通社中文版 · 08/19 20:56<span class="source-link"><a href="https://cn.inform.kz/news/heguorenzuowen-06bbdca1/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与联合国志愿人员组织探讨加强合作，重点包括“国际志愿者促进可持续发展年”框架下的合作领域。联合国赞赏哈在推动全球志愿者运动中的领导作用，并提及托卡耶夫总统倡议的联大决议。双方讨论了环境志愿服务成就，如保护里海、恢复咸海及“清洁哈萨克斯坦”运动，并同意扩大哈志愿者参与联合国项目，深化2026年后合作。</div>
 <div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
 <div class="full-content">会晤期间，双方讨论了在哈萨克斯坦倡议下宣布的“国际志愿者促进可持续发展年”框架内的主要合作领域。
 库巴诺夫先生高度赞赏哈萨克斯坦在全球层面推动志愿者运动方面发挥的领导作用，并指出联合国大会在哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫的倡议下通过了相关决议，这对国际志愿者议程的发展做出了重要贡献。
 双方了解了哈萨克斯坦在环境志愿服务领域取得的成就，特别是保护里海和恢复咸海地区的倡议和项目，以及已成为动员公民社会典范的全国性运动“清洁哈萨克斯坦”。
 Photo source: gov.kz 双方还讨论了加强哈萨克斯坦志愿者参与联合国国际机构活动的问题，包括在联合国志愿人员组织全额资助计划框架内开展的活动。双方还同意扩大哈萨克斯坦通过联合国志愿人员组织专项基金参与促进志愿服务倡议的程度。
 最后，双方确认愿在2026年以后就进一步发展国家、区域和国际层面的志愿服务议程等问题进行讨论，并深化合作。库巴诺夫表示，联合国志愿人员组织有意在国际层面进一步推广哈萨克斯坦在志愿服务领域的经验。</div>
-<ul class="points">
+<ul>
 <li>双方确认加强志愿者领域合作</li>
 <li>联合国赞赏哈推动全球志愿运动</li>
 <li>环境志愿服务成合作亮点</li>
 <li>扩大哈志愿者参与联合国项目</li>
 <li>2026年后继续深化合作</li>
 </ul>
-<div class="impact"><b>影响：</b>此次合作将提升哈萨克斯坦在国际志愿者议程中的影响力，强化其外交软实力，并可能带动国内志愿服务发展，促进公民社会参与，对政治形象和经济环境产生积极影响。</div>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次合作将提升哈萨克斯坦在国际志愿者议程中的影响力，强化其外交软实力，并可能带动国内志愿服务发展，促进公民社会参与，对政治形象和经济环境产生积极影响。</span></div>
 </div>
-<div class="article">
-<div class="title">2. <a href="https://cn.inform.kz/news/guo-9dee7e19/" target="_blank">西班牙国王致信感谢哈萨克斯坦总统</a></div>
-<div class="meta">哈通社中文版 · 08/19 19:40<span class="source-link"><a href="https://cn.inform.kz/news/guo-9dee7e19/" target="_blank">来源链接 ↗</a></span></div>
-<div class="summary"><b>内容摘要：</b>西班牙国王费利佩六世致信哈萨克斯坦总统托卡耶夫，感谢其对西班牙国家队赢得世界杯冠军的祝贺。国王在信中祝愿托卡耶夫总统在为国家利益的重任中取得成功，并向哈萨克斯坦人民致以问候。此事件体现两国友好关系。</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/guo-9dee7e19/" target="_blank">西班牙国王致信感谢哈萨克斯坦总统</a></h3>
+<div class="item-meta">哈通社中文版 · 08/19 19:40<span class="source-link"><a href="https://cn.inform.kz/news/guo-9dee7e19/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>西班牙国王费利佩六世致信哈萨克斯坦总统托卡耶夫，感谢其对西班牙国家队赢得世界杯冠军的祝贺。国王在信中祝愿托卡耶夫总统在为国家利益的重任中取得成功，并向哈萨克斯坦人民致以问候。此事件体现两国友好关系。</div>
 <div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
 <div class="full-content">消息称，费利佩六世国王对哈萨克斯坦总统祝贺西班牙国家队赢得世界杯冠军表示衷心的感谢。西班牙国王在感谢信中祝愿托卡耶夫总统在为国家利益而承担的重任中取得成功，并向哈萨克斯坦人民致以热烈的问候。</div>
-<ul class="points">
+<ul>
 <li>西班牙国王感谢哈总统祝贺世界杯夺冠</li>
 <li>国王祝愿托卡耶夫总统履职成功</li>
 <li>国王向哈萨克斯坦人民致以问候</li>
 </ul>
-<div class="impact"><b>影响：</b>此事件虽为礼节性外交，但有助于巩固哈萨克斯坦与西班牙的双边关系，提升哈国国际形象，对哈国对外交往产生积极影响，尤其在体育文化领域合作方面。</div>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此事件虽为礼节性外交，但有助于巩固哈萨克斯坦与西班牙的双边关系，提升哈国国际形象，对哈国对外交往产生积极影响，尤其在体育文化领域合作方面。</span></div>
 </div>
-<div class="article">
-<div class="title">3. <a href="https://cn.inform.kz/news/guodashiguoben-2abc786d/" target="_blank">哈萨克斯坦新任驻英国大使递交国书副本</a></div>
-<div class="meta">哈通社中文版 · 08/19 18:49<span class="source-link"><a href="https://cn.inform.kz/news/guodashiguoben-2abc786d/" target="_blank">来源链接 ↗</a></span></div>
-<div class="summary"><b>内容摘要：</b>哈萨克斯坦新任驻英国大使巴哈耶夫递交国书副本，与英方讨论双边合作。双方强调6月生效的《战略伙伴关系与合作协定》为合作奠定基础，将重点推进政治对话、贸易投资、关键矿产、能源、交通、教育、AI及人文交流。巴哈耶夫介绍托卡耶夫总统推动的政治经济改革，包括新宪法和库鲁尔泰选举。另驻塞尔维亚大使伊曼巴耶夫向武契奇递交国书。</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/guodashiguoben-2abc786d/" target="_blank">哈萨克斯坦新任驻英国大使递交国书副本</a></h3>
+<div class="item-meta">哈通社中文版 · 08/19 18:49<span class="source-link"><a href="https://cn.inform.kz/news/guodashiguoben-2abc786d/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦新任驻英国大使巴哈耶夫递交国书副本，与英方讨论双边合作。双方强调6月生效的《战略伙伴关系与合作协定》为合作奠定基础，将重点推进政治对话、贸易投资、关键矿产、能源、交通、教育、AI及人文交流。巴哈耶夫介绍托卡耶夫总统推动的政治经济改革，包括新宪法和库鲁尔泰选举。另驻塞尔维亚大使伊曼巴耶夫向武契奇递交国书。</div>
 <div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
 <div class="full-content">会谈期间，双方就哈英关系当前状况及未来发展前景进行了讨论。埃莉诺·麦克尤恩祝贺阿勒别克·巴哈耶夫履新，并指出两国双边合作正保持积极发展势头。
 巴哈耶夫表示，哈萨克斯坦高度重视进一步巩固和深化同英国的合作。今年6月生效的《战略伙伴关系与合作协定》为两国合作进一步发展提供了制度性基础。
@@ -399,18 +339,18 @@ Photo source: gov.kz 双方还讨论了加强哈萨克斯坦志愿者参与联�
 此外，巴哈耶夫还向英方介绍了在哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫倡议下推进的国内政治和社会经济改革，包括新宪法生效以及即将举行的库鲁尔泰选举等情况。
 会谈最后，双方表示愿进一步加强密切合作，推动哈英战略伙伴关系不断深化。
 17日，新任哈萨克斯坦驻塞尔维亚特命全权大使波拉特·伊曼巴耶夫向塞尔维亚共和国总统亚历山大·武契奇递交了国书。</div>
-<ul class="points">
+<ul>
 <li>哈英战略伙伴协定6月生效，奠定合作基础</li>
 <li>重点合作领域含关键矿产、能源、交通、AI</li>
 <li>巴哈耶夫介绍托卡耶夫改革及库鲁尔泰选举</li>
 <li>驻塞尔维亚大使伊曼巴耶夫递交国书</li>
 </ul>
-<div class="impact"><b>影响：</b>此访强化哈英战略伙伴关系，推动关键矿产和能源合作，助力哈国经济多元化及外交平衡。改革介绍提升国际形象，为吸引投资和深化欧洲合作创造有利条件。</div>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈英战略伙伴关系，推动关键矿产和能源合作，助力哈国经济多元化及外交平衡。改革介绍提升国际形象，为吸引投资和深化欧洲合作创造有利条件。</span></div>
 </div>
-<div class="article">
-<div class="title">4. <a href="https://cn.inform.kz/news/guohuizaiguoxiazuo-520391ab/" target="_blank">国际社会支持在联合国框架下加强水领域合作</a></div>
-<div class="meta">哈通社中文版 · 08/19 17:13<span class="source-link"><a href="https://cn.inform.kz/news/guohuizaiguoxiazuo-520391ab/" target="_blank">来源链接 ↗</a></span></div>
-<div class="summary"><b>内容摘要：</b>在《联合国防治荒漠化公约》第十七次缔约方大会期间，哈萨克斯坦提出建立国际水组织的倡议，获国际社会支持。该倡议旨在加强全球水资源治理，应对生态挑战。哈方已与周边国家举行38轮会谈，其中27轮与中亚国家，11轮与中国和俄罗斯。各方同意继续通过联合国平台推动水资源合作。</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/guohuizaiguoxiazuo-520391ab/" target="_blank">国际社会支持在联合国框架下加强水领域合作</a></h3>
+<div class="item-meta">哈通社中文版 · 08/19 17:13<span class="source-link"><a href="https://cn.inform.kz/news/guohuizaiguoxiazuo-520391ab/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>在《联合国防治荒漠化公约》第十七次缔约方大会期间，哈萨克斯坦提出建立国际水组织的倡议，获国际社会支持。该倡议旨在加强全球水资源治理，应对生态挑战。哈方已与周边国家举行38轮会谈，其中27轮与中亚国家，11轮与中国和俄罗斯。各方同意继续通过联合国平台推动水资源合作。</div>
 <div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
 <div class="full-content">据外交部新闻处消息，活动在蒙古国乌兰巴托举行的《联合国防治荒漠化公约》第十七次缔约方大会期间举行。来自联合国、各国代表团、专家界和非政府组织的代表参加了讨论。与会者重点围绕土地退化、干旱、粮食安全和生物多样性保护背景下的水资源管理问题交换意见。
 哈萨克斯坦驻蒙古国大使阿勒玛斯·赛特阿赫诺夫指出，托卡耶夫总统提出的这一倡议，对于加强国际水资源合作，以及应对哈萨克斯坦、蒙古国和中亚地区长期面临的生态问题具有重要意义。与会代表还讨论了进一步完善水领域区域合作机制的前景。
@@ -419,19 +359,19 @@ Photo source: gov.kz 双方还讨论了加强哈萨克斯坦志愿者参与联�
 活动结束时，与会者表达了进一步加强合作的意愿，并表示将继续通过联合国平台共同推动水资源议程，加强水领域多边合作。
 据悉，《联合国防治荒漠化公约》第十七次缔约方大会17日在蒙古国首都乌兰巴托正式开幕。为期两周的大会以“恢复土地，重燃希望”为主题，围绕退化土地修复、可持续土地管理、抗旱韧性建设、草原保护修复等议题开展磋商与交流。
 据水资源和灌溉部新闻处介绍，自今年年初以来，该部已同周边国家先后举行了38轮双多边会谈。其中，27轮会谈同中亚国家举行，另外11轮则分别与中国和俄罗斯进行。</div>
-<ul class="points">
+<ul>
 <li>哈国倡议建立国际水组织获支持</li>
 <li>大会聚焦水资源与土地退化关联</li>
 <li>哈已举行38轮双多边水会谈</li>
 <li>邀请各国参与阿布扎比水会议</li>
 <li>蒙古国称倡议正逢其时</li>
 </ul>
-<div class="impact"><b>影响：</b>该倡议提升哈萨克斯坦在全球水资源治理中的话语权，强化其在中亚地区的水外交地位，有助于缓解跨境水资源争端，并可能吸引国际投资，促进国内水资源基础设施建设，同时平衡中俄影响。</div>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该倡议提升哈萨克斯坦在全球水资源治理中的话语权，强化其在中亚地区的水外交地位，有助于缓解跨境水资源争端，并可能吸引国际投资，促进国内水资源基础设施建设，同时平衡中俄影响。</span></div>
 </div>
-<div class="article">
-<div class="title">5. <a href="https://cn.inform.kz/news/dingisoguo-zhongguoheribenyi-07b167eb/" target="_blank">哈萨克斯坦提议制定马肉制品ISO国际标准 中国和日本已表示支持</a></div>
-<div class="meta">哈通社中文版 · 08/19 13:14<span class="source-link"><a href="https://cn.inform.kz/news/dingisoguo-zhongguoheribenyi-07b167eb/" target="_blank">来源链接 ↗</a></span></div>
-<div class="summary"><b>内容摘要：</b>哈萨克斯坦提议制定马肉制品ISO国际标准，已获中国和日本支持。分技术委员会20名成员中5票赞成即可启动。KazStandard将主导起草，以ГОСТ 34921-2023为基础，涵盖卡兹、香肠等传统产品。全球主要马肉生产国包括哈、中、蒙、墨、俄、阿根廷，主要进口市场有意、中、比、法、日。此举旨在扩大出口潜力。</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/dingisoguo-zhongguoheribenyi-07b167eb/" target="_blank">哈萨克斯坦提议制定马肉制品ISO国际标准 中国和日本已表示支持</a></h3>
+<div class="item-meta">哈通社中文版 · 08/19 13:14<span class="source-link"><a href="https://cn.inform.kz/news/dingisoguo-zhongguoheribenyi-07b167eb/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦提议制定马肉制品ISO国际标准，已获中国和日本支持。分技术委员会20名成员中5票赞成即可启动。KazStandard将主导起草，以ГОСТ 34921-2023为基础，涵盖卡兹、香肠等传统产品。全球主要马肉生产国包括哈、中、蒙、墨、俄、阿根廷，主要进口市场有意、中、比、法、日。此举旨在扩大出口潜力。</div>
 <div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
 <div class="full-content">哈萨克斯坦提议制定马肉制品ISO国际标准 中国和日本已表示支持
 
@@ -452,19 +392,19 @@ Photo source: gov.kz 双方还讨论了加强哈萨克斯坦志愿者参与联�
 绍列拜表示，哈萨克斯坦在生产安全、生态型畜牧产品方面具有较大潜力，未来将进一步推动畜牧产品出口。
 
 KazStandard方面认为，马肉具有较高蛋白质含量和较为均衡的氨基酸组成，同时兼具传统饮食文化属性和独特风味。统一国际标准有望进一步简化马肉制品进入海外市场的程序，并为哈萨克斯坦畜牧产品出口创造更多机会。</div>
-<ul class="points">
+<ul>
 <li>哈萨克斯坦倡议制定马肉ISO标准，中、日支持。</li>
 <li>分技术委员会20成员，5票赞成即可启动。</li>
 <li>标准以ГОСТ 34921-2023为基础，涵盖传统产品。</li>
 <li>主要生产国和进口市场明确，出口潜力大。</li>
 <li>KazStandard主导，获贸易部支持。</li>
 </ul>
-<div class="impact"><b>影响：</b>该倡议将提升哈萨克斯坦马肉制品的国际标准化水平，增强其出口竞争力，促进对欧亚市场的出口，巩固其作为主要马肉生产国的地位，并推动畜牧产业升级，强化经济多元化。</div>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该倡议将提升哈萨克斯坦马肉制品的国际标准化水平，增强其出口竞争力，促进对欧亚市场的出口，巩固其作为主要马肉生产国的地位，并推动畜牧产业升级，强化经济多元化。</span></div>
 </div>
-<div class="article">
-<div class="title">6. <a href="https://cn.inform.kz/news/yuzhongguoyezuoduoli-39387abf/" target="_blank">别克帖诺夫会见中国环保企业负责人 商讨多城垃圾处理项目</a></div>
-<div class="meta">哈通社中文版 · 08/19 12:12<span class="source-link"><a href="https://cn.inform.kz/news/yuzhongguoyezuoduoli-39387abf/" target="_blank">来源链接 ↗</a></span></div>
-<div class="summary"><b>内容摘要：</b>哈萨克斯坦总理别克帖诺夫会见中国环保企业湖南军信负责人，讨论阿拉木图垃圾能源化项目（总投资1450亿坚戈，5月启动）。项目建成后日处理垃圾2000吨，发电60兆瓦，年减碳20万吨，节约填埋空间80万立方米，建设期创造700个岗位，投产后120个长期岗位。双方计划在其他城市推广，政府责成一个月内准备多城协议。</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/yuzhongguoyezuoduoli-39387abf/" target="_blank">别克帖诺夫会见中国环保企业负责人 商讨多城垃圾处理项目</a></h3>
+<div class="item-meta">哈通社中文版 · 08/19 12:12<span class="source-link"><a href="https://cn.inform.kz/news/yuzhongguoyezuoduoli-39387abf/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总理别克帖诺夫会见中国环保企业湖南军信负责人，讨论阿拉木图垃圾能源化项目（总投资1450亿坚戈，5月启动）。项目建成后日处理垃圾2000吨，发电60兆瓦，年减碳20万吨，节约填埋空间80万立方米，建设期创造700个岗位，投产后120个长期岗位。双方计划在其他城市推广，政府责成一个月内准备多城协议。</div>
 <div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
 <div class="full-content">据哈萨克斯坦政府新闻处消息，根据此前哈生态和自然资源部与湖南军信环保股份有限公司签署的投资协议，总投资额达1450亿坚戈的阿拉木图垃圾能源化利用项目已于今年5月启动。
 戴道国介绍，目前项目正在为启动建筑安装工程做准备。
@@ -473,19 +413,19 @@ KazStandard方面认为，马肉具有较高蛋白质含量和较为均衡的氨
 会谈期间，双方还就通过在哈萨克斯坦其他地区实施类似项目，进一步扩大垃圾处理领域合作的前景交换了意见。
 会谈结束后，别克帖诺夫责成生态和自然资源部及其他有关国家机关，尽快与该公司研究各项合作事宜，并在一个月内为签署在哈萨克斯坦多座大城市建设垃圾处理厂的相关协议做好准备。
 此前，哈萨克斯坦政府已就卡拉干达、阿特劳、阿克托别、巴甫洛达等城市建设垃圾处理厂的相关问题展开研究。</div>
-<ul class="points">
+<ul>
 <li>阿拉木图垃圾发电项目启动，投资1450亿坚戈</li>
 <li>项目日处理2000吨，发电60兆瓦，减碳20万吨</li>
 <li>建设期700岗位，投产120长期岗位</li>
 <li>计划推广至卡拉干达等城市，一个月内备协议</li>
 <li>高层共识促进中哈环保合作</li>
 </ul>
-<div class="impact"><b>影响：</b>该项目提升哈萨克斯坦垃圾处理能力，推动绿色经济转型，符合新宪法环保原则。深化中哈经贸合作，吸引中国投资，促进技术转移，增强在区域环保领域的影响力，并创造就业，改善城市环境。</div>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该项目提升哈萨克斯坦垃圾处理能力，推动绿色经济转型，符合新宪法环保原则。深化中哈经贸合作，吸引中国投资，促进技术转移，增强在区域环保领域的影响力，并创造就业，改善城市环境。</span></div>
 </div>
-<div class="article">
-<div class="title">7. <a href="https://www.inform.kz/ru/kazahstan-predlozhil-oon-sozdat-mezhdunarodniy-portal-dlya-volonterov-31ecc418" target="_blank">哈萨克斯坦向联合国提议建立国际志愿者门户</a></div>
-<div class="meta">哈通社俄语版 · 08/19 20:07<span class="source-link"><a href="https://www.inform.kz/ru/kazahstan-predlozhil-oon-sozdat-mezhdunarodniy-portal-dlya-volonterov-31ecc418" target="_blank">来源链接 ↗</a></span></div>
-<div class="summary"><b>内容摘要：</b>哈萨克斯坦副总理阿伊达·巴拉耶娃在会见联合国志愿者计划代表时，提议建立国际志愿者门户网站，以注册志愿者、确定身份和系统化活动。哈方强调国际志愿者年不仅是活动，更是长期机制。双方同意继续合作，并提及8月20日将在阿斯塔纳举行由托卡耶夫总统发起的首届独联体志愿者论坛。</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://www.inform.kz/ru/kazahstan-predlozhil-oon-sozdat-mezhdunarodniy-portal-dlya-volonterov-31ecc418" target="_blank">哈萨克斯坦向联合国提议建立国际志愿者门户</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/19 20:07<span class="source-link"><a href="https://www.inform.kz/ru/kazahstan-predlozhil-oon-sozdat-mezhdunarodniy-portal-dlya-volonterov-31ecc418" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦副总理阿伊达·巴拉耶娃在会见联合国志愿者计划代表时，提议建立国际志愿者门户网站，以注册志愿者、确定身份和系统化活动。哈方强调国际志愿者年不仅是活动，更是长期机制。双方同意继续合作，并提及8月20日将在阿斯塔纳举行由托卡耶夫总统发起的首届独联体志愿者论坛。</div>
 <div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
 <div class="full-content">哈萨克斯坦向联合国提议创建国际志愿者门户网站
 
@@ -502,37 +442,38 @@ KazStandard方面认为，马肉具有较高蛋白质含量和较为均衡的氨
 最后，双方表示愿意继续在国际志愿者年倡议框架内开展联合工作，并进一步发展和支持志愿者运动。
 
 值得注意的是，8月20日，由哈萨克斯坦总统卡瑟姆-若马尔特·托卡耶夫发起的首届独联体志愿者论坛将在阿斯塔纳举行。</div>
-<ul class="points">
+<ul>
 <li>哈提议建国际志愿者门户网站</li>
 <li>强调志愿者年长期机制建设</li>
 <li>联合国代表肯定合作水平</li>
 <li>8月20日阿斯塔纳办独联体论坛</li>
 </ul>
-<div class="impact"><b>影响：</b>该倡议提升哈萨克斯坦在国际志愿者领域的领导地位，增强其软实力和外交影响力，同时促进国内志愿者体系规范化，为矿产等行业发展提供人力支持，并巩固与联合国及独联体国家合作。</div>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该倡议提升哈萨克斯坦在国际志愿者领域的领导地位，增强其软实力和外交影响力，同时促进国内志愿者体系规范化，为矿产等行业发展提供人力支持，并巩固与联合国及独联体国家合作。</span></div>
 </div>
 </div>
-<div class="section"><h2>💰 三、金融政策新闻及分析</h2>
-<div class="article">
-<div class="title">1. <a href="https://cn.inform.kz/news/yijiazhongguoxingjin-db2f953b/" target="_blank">又一家中国银行计划进入哈萨克斯坦市场</a></div>
-<div class="meta">哈通社中文版 · 08/19 21:24<span class="source-link"><a href="https://cn.inform.kz/news/yijiazhongguoxingjin-db2f953b/" target="_blank">来源链接 ↗</a></span></div>
-<div class="summary"><b>内容摘要：</b>哈萨克斯坦与中国建设银行讨论设立子银行事宜。目前哈国已有三家中国参股银行：阿尔金银行、中国银行分行和工商银行分行。建行作为中国四大国有银行之一，在2025年福布斯全球2000强中排名第7。此举将扩大中国金融机构在哈布局，深化两国金融合作。</div>
+<div class="doc-section">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/yijiazhongguoxingjin-db2f953b/" target="_blank">又一家中国银行计划进入哈萨克斯坦市场</a></h3>
+<div class="item-meta">哈通社中文版 · 08/19 21:24<span class="source-link"><a href="https://cn.inform.kz/news/yijiazhongguoxingjin-db2f953b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与中国建设银行讨论设立子银行事宜。目前哈国已有三家中国参股银行：阿尔金银行、中国银行分行和工商银行分行。建行作为中国四大国有银行之一，在2025年福布斯全球2000强中排名第7。此举将扩大中国金融机构在哈布局，深化两国金融合作。</div>
 <div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
 <div class="full-content">会谈中，双方就在哈萨克斯坦设立中国建设银行子银行问题进行了讨论。
 目前，在哈萨克斯坦运营的有三家中国参股的银行：阿尔金银行、中国银行哈萨克斯坦分行和中国工商银行阿拉木图分行。
 中国建设银行（CCB）是中国乃至全球最大的银行之一，也是中国四大国有银行之一。其他三家银行分别是中国工商银行（ICBC）、中国农业银行（ABC）和中国银行。
 在2025年福布斯全球2000强排行榜中，中国建设银行在全球2000家最大的上市公司中排名第7位。</div>
-<ul class="points">
+<ul>
 <li>讨论设立建行子银行</li>
 <li>现有三家中国参股银行</li>
 <li>建行全球排名第7位</li>
 <li>深化中哈金融合作</li>
 </ul>
-<div class="impact"><b>影响：</b>建行进入将增强中资银行在哈影响力，促进双边贸易投资便利化，推动哈萨克斯坦金融市场竞争与多元化，同时巩固中国在哈经济存在，对哈金融稳定和区域经济合作产生积极影响。</div>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">建行进入将增强中资银行在哈影响力，促进双边贸易投资便利化，推动哈萨克斯坦金融市场竞争与多元化，同时巩固中国在哈经济存在，对哈金融稳定和区域经济合作产生积极影响。</span></div>
 </div>
-<div class="article">
-<div class="title">2. <a href="https://cn.inform.kz/news/8yue19ri-herenminqing-bf094d53/" target="_blank">8月19日终盘 美元、卢布和人民币兑坚戈汇率情况</a></div>
-<div class="meta">哈通社中文版 · 08/19 19:23<span class="source-link"><a href="https://cn.inform.kz/news/8yue19ri-herenminqing-bf094d53/" target="_blank">来源链接 ↗</a></span></div>
-<div class="summary"><b>内容摘要：</b>8月19日，哈萨克斯坦证券交易所（KASE）30个成员参与交易。美元兑坚戈平均汇率1:462.05，较前一交易日上涨1.71坚戈，交易额4.3978亿美元；欧元兑坚戈1:536.51，上涨2.69坚戈，交易额238.1万欧元；卢布兑坚戈1:5.4236，上涨0.0192坚戈，交易额23.4524亿卢布；人民币兑坚戈1:68.5818，上涨0.2399坚戈，交易额7.9508亿元。各主要货币对坚戈均升值。</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/8yue19ri-herenminqing-bf094d53/" target="_blank">8月19日终盘 美元、卢布和人民币兑坚戈汇率情况</a></h3>
+<div class="item-meta">哈通社中文版 · 08/19 19:23<span class="source-link"><a href="https://cn.inform.kz/news/8yue19ri-herenminqing-bf094d53/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>8月19日，哈萨克斯坦证券交易所（KASE）30个成员参与交易。美元兑坚戈平均汇率1:462.05，较前一交易日上涨1.71坚戈，交易额4.3978亿美元；欧元兑坚戈1:536.51，上涨2.69坚戈，交易额238.1万欧元；卢布兑坚戈1:5.4236，上涨0.0192坚戈，交易额23.4524亿卢布；人民币兑坚戈1:68.5818，上涨0.2399坚戈，交易额7.9508亿元。各主要货币对坚戈均升值。</div>
 <div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
 <div class="full-content">标题: 8月19日终盘 美元、卢布和人民币兑坚戈汇率情况
 正文:
@@ -541,21 +482,22 @@ KazStandard方面认为，马肉具有较高蛋白质含量和较为均衡的氨
 欧元兑坚戈（交易工具EURKZT_TOM）汇率平均报价为1: 536.51（+2.69坚戈），外汇交易总额为238.1万欧元（+69.6万欧元）。交易过程中，最低报价为1:534.64坚戈，最高报价为1:536.96坚戈。
 卢布兑坚戈（交易工具RUBKZT_TOM）汇率平均报价为1:5.4236（+0.0192坚戈），外汇交易总额23.4524亿卢布（+1.2630亿卢布）。交易过程中，最低报价为1:5.4107坚戈，最高报价为1: 5.4340坚戈。
 人民币兑坚戈（交易工具CNYKZT_TOD）汇率平均报价为1:68.5818（+0.2399坚戈），外汇交易总额7.9508亿元（+7.7568亿元）。交易过程中，最低报价为1:68.4000坚戈，最高报价为1:68.6700坚戈。</div>
-<ul class="points">
+<ul>
 <li>美元兑坚戈升至462.05，交易额4.4亿美元</li>
 <li>欧元兑坚戈升至536.51，交易额238万欧元</li>
 <li>卢布兑坚戈升至5.4236，交易额23.45亿卢布</li>
 <li>人民币兑坚戈升至68.58，交易额7.95亿元</li>
 <li>坚戈对主要货币普遍贬值</li>
 </ul>
-<div class="impact"><b>影响：</b>坚戈贬值可能加剧进口成本，推升通胀压力，影响民众购买力。对出口有利，但增加外债负担。人民币交易额激增，显示中哈经贸联系加强，或促进人民币在哈使用。</div>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈贬值可能加剧进口成本，推升通胀压力，影响民众购买力。对出口有利，但增加外债负担。人民币交易额激增，显示中哈经贸联系加强，或促进人民币在哈使用。</span></div>
 </div>
 </div>
-<div class="section"><h2>⛏️ 四、矿产资源进出口管制政策新闻及分析</h2>
-<div class="article">
-<div class="title">1. <a href="https://www.inform.kz/ru/845-mvt-novih-energomoshnostey-planiruyut-vvesti-v-kazahstane-v-2027-godu-00fc2813" target="_blank">哈萨克斯坦计划2027年新增845兆瓦发电能力</a></div>
-<div class="meta">哈通社俄语版 · 08/20 09:12<span class="source-link"><a href="https://www.inform.kz/ru/845-mvt-novih-energomoshnostey-planiruyut-vvesti-v-kazahstane-v-2027-godu-00fc2813" target="_blank">来源链接 ↗</a></span></div>
-<div class="summary"><b>内容摘要：</b>哈萨克斯坦计划2027年引入845兆瓦新电力产能，包括江布尔州GRES电厂210兆瓦燃气轮机、MAEK 160兆瓦蒸汽燃气装置、巴斯卡特34.7兆瓦燃气活塞装置、哈萨克铜业70兆瓦蒸汽燃气装置，以及570兆瓦可再生能源项目（太阳能和风能）。新产能将使2027年第一季度满足国内需求，年底形成约13亿千瓦时盈余。2026年预计引入2.6吉瓦产能。</div>
+<div class="doc-section">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/845-mvt-novih-energomoshnostey-planiruyut-vvesti-v-kazahstane-v-2027-godu-00fc2813" target="_blank">哈萨克斯坦计划2027年新增845兆瓦发电能力</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/20 09:12<span class="source-link"><a href="https://www.inform.kz/ru/845-mvt-novih-energomoshnostey-planiruyut-vvesti-v-kazahstane-v-2027-godu-00fc2813" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦计划2027年引入845兆瓦新电力产能，包括江布尔州GRES电厂210兆瓦燃气轮机、MAEK 160兆瓦蒸汽燃气装置、巴斯卡特34.7兆瓦燃气活塞装置、哈萨克铜业70兆瓦蒸汽燃气装置，以及570兆瓦可再生能源项目（太阳能和风能）。新产能将使2027年第一季度满足国内需求，年底形成约13亿千瓦时盈余。2026年预计引入2.6吉瓦产能。</div>
 <div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
 <div class="full-content">标题：哈萨克斯坦计划于2027年引入845兆瓦新电力产能
 正文：
@@ -567,18 +509,18 @@ KazStandard方面认为，马肉具有较高蛋白质含量和较为均衡的氨
 据能源部数据，新产能的引入将使得在2027年第一季度就能满足国家电力需求。到年底预计将形成约13亿千瓦时的电力盈余。
 值得注意的是，2026年哈萨克斯坦预计将引入约2.6吉瓦的新电力产能。具体来说，计划启用四座燃气电站，扩建两座现有电站，以及10个新的可再生能源设施。
 此前，Kazinform报道称，哈萨克斯坦计划在2027年第一季度末完全满足国内电力需求。据能源部数据，到2027年底预计电力盈余约为13亿千瓦时。</div>
-<ul class="points">
+<ul>
 <li>2027年新增845兆瓦产能，含燃气和可再生能源。</li>
 <li>可再生能源项目570兆瓦，涵盖太阳能和风能。</li>
 <li>2027年一季度实现电力自给，年底盈余13亿千瓦时。</li>
 <li>2026年计划引入2.6吉瓦产能，包括燃气和可再生能源。</li>
 </ul>
-<div class="impact"><b>影响：</b>此举将增强哈萨克斯坦能源独立性，减少进口依赖，支撑经济发展。可再生能源扩张有助于能源结构多元化，吸引投资，提升区域能源安全，并可能促进电力出口潜力。</div>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举将增强哈萨克斯坦能源独立性，减少进口依赖，支撑经济发展。可再生能源扩张有助于能源结构多元化，吸引投资，提升区域能源安全，并可能促进电力出口潜力。</span></div>
 </div>
-<div class="article">
-<div class="title">2. <a href="https://www.inform.kz/ru/75-trln-tenge-investitsiy-privlekut-v-ugolnuyu-generatsiyu-kazahstana-01be643c" target="_blank">哈萨克斯坦煤炭发电将吸引7.5万亿坚戈投资</a></div>
-<div class="meta">哈通社俄语版 · 08/20 09:00<span class="source-link"><a href="https://www.inform.kz/ru/75-trln-tenge-investitsiy-privlekut-v-ugolnuyu-generatsiyu-kazahstana-01be643c" target="_blank">来源链接 ↗</a></span></div>
-<div class="summary"><b>内容摘要：</b>哈萨克斯坦批准国家项目，五年内吸引7.5万亿坚戈投资煤炭发电，以支撑能源密集型产业和算力需求。计划新建多座热电厂和凝汽式电站，总装机容量超5000兆瓦，并改造现有设施。科克舍套和塞梅项目已开工，将惠及50万居民。埃基巴斯图兹2号电厂将新增两台550兆瓦机组，分别于2028年和2030年投运。</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/75-trln-tenge-investitsiy-privlekut-v-ugolnuyu-generatsiyu-kazahstana-01be643c" target="_blank">哈萨克斯坦煤炭发电将吸引7.5万亿坚戈投资</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/20 09:00<span class="source-link"><a href="https://www.inform.kz/ru/75-trln-tenge-investitsiy-privlekut-v-ugolnuyu-generatsiyu-kazahstana-01be643c" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦批准国家项目，五年内吸引7.5万亿坚戈投资煤炭发电，以支撑能源密集型产业和算力需求。计划新建多座热电厂和凝汽式电站，总装机容量超5000兆瓦，并改造现有设施。科克舍套和塞梅项目已开工，将惠及50万居民。埃基巴斯图兹2号电厂将新增两台550兆瓦机组，分别于2028年和2030年投运。</div>
 <div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
 <div class="full-content">标题：哈萨克斯坦煤炭发电将吸引7.5万亿坚戈投资
 正文：国家项目已获批，以落实国家元首在第五届国家库鲁尔泰会议上给出的指示。该计划为期五年，旨在为高能耗产业和日益增长的计算能力需求建立可持续的能源基础。
@@ -591,19 +533,19 @@ KazStandard方面认为，马肉具有较高蛋白质含量和较为均衡的氨
 同时，计划对现有能源设施进行现代化改造。工作将涉及阿克苏国家发电厂、埃基巴斯图兹2号国家发电厂、沙赫京斯克、托帕尔、卡拉干达的电站以及其他一些设施。
 照片：哈萨克斯坦共和国政府 在埃基巴斯图兹2号国家发电厂，计划建设3号和4号发电机组，每台容量550兆瓦。投资协议规定，发电机组分别不迟于2028年和2030年投运。
 预计现代化改造将降低设备磨损程度。</div>
-<ul class="points">
+<ul>
 <li>吸引7.5万亿坚戈投资煤炭发电</li>
 <li>新建多座电站，总装机超5000兆瓦</li>
 <li>科克舍套、塞梅项目已开工</li>
 <li>埃基巴斯图兹2号新增两台550兆瓦机组</li>
 <li>现代化改造现有能源设施</li>
 </ul>
-<div class="impact"><b>影响：</b>该投资将增强哈萨克斯坦能源自主性，支撑工业与数字经济发展，但煤炭依赖可能加剧碳排放压力，影响国际气候合作与外资偏好，同时提升区域电力供应稳定性。</div>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该投资将增强哈萨克斯坦能源自主性，支撑工业与数字经济发展，但煤炭依赖可能加剧碳排放压力，影响国际气候合作与外资偏好，同时提升区域电力供应稳定性。</span></div>
 </div>
-<div class="article">
-<div class="title">3. <a href="https://www.inform.kz/ru/13-trln-tenge-napravyat-na-modernizatsiyu-energetiki-i-kommunalnih-setey-kazahst-851f7705" target="_blank">哈萨克斯坦将拨款13万亿坚戈用于能源和公用事业现代化</a></div>
-<div class="meta">哈通社俄语版 · 08/20 08:50<span class="source-link"><a href="https://www.inform.kz/ru/13-trln-tenge-napravyat-na-modernizatsiyu-energetiki-i-kommunalnih-setey-kazahst-851f7705" target="_blank">来源链接 ↗</a></span></div>
-<div class="summary"><b>内容摘要：</b>哈萨克斯坦计划拨款13万亿坚戈用于能源和公用事业现代化，其中6.8万亿用于公用事业，6.2万亿用于能源，覆盖200多家企业。目标是将网络损耗降至40%，事故减少20%。2025年已投入5470亿坚戈，修复6600公里网络，8家企业脱离风险区。2026年将投入1.1万亿坚戈，修复1.2万公里网络，并推广Smart Turmys平台。国内生产商需求至2029年达2万亿坚戈。</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/13-trln-tenge-napravyat-na-modernizatsiyu-energetiki-i-kommunalnih-setey-kazahst-851f7705" target="_blank">哈萨克斯坦将拨款13万亿坚戈用于能源和公用事业现代化</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/20 08:50<span class="source-link"><a href="https://www.inform.kz/ru/13-trln-tenge-napravyat-na-modernizatsiyu-energetiki-i-kommunalnih-setey-kazahst-851f7705" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦计划拨款13万亿坚戈用于能源和公用事业现代化，其中6.8万亿用于公用事业，6.2万亿用于能源，覆盖200多家企业。目标是将网络损耗降至40%，事故减少20%。2025年已投入5470亿坚戈，修复6600公里网络，8家企业脱离风险区。2026年将投入1.1万亿坚戈，修复1.2万公里网络，并推广Smart Turmys平台。国内生产商需求至2029年达2万亿坚戈。</div>
 <div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
 <div class="full-content">标题：哈萨克斯坦将拨款13万亿坚戈用于能源和公用事业网络现代化
 正文：其中6.8万亿坚戈计划用于公用事业部门，另外6.2万亿坚戈用于能源领域。该项目涵盖200多家基础设施企业。关键指标之一是将网络损耗率降至40%，预计这将使事故数量减少20%。2025年，该项目已拨款5470亿坚戈。利用这些资金，修复了6600公里的工程网络，8家自然垄断主体已脱离“红色区域”损耗状态。此外，在卡拉干达州、巴甫洛达尔州、北哈萨克斯坦州、突厥斯坦州和奇姆肯特市完成了五个大型项目。为简化程序和筛选投资项目，启动了电子采购平台，并在政府下设立了项目办公室。
@@ -614,20 +556,21 @@ KazStandard方面认为，马肉具有较高蛋白质含量和较为均衡的氨
 特别强调支持国内生产商。到2029年，对其产品的需求估计为2万亿坚戈，E-Ondiris平台上已注册492家国内企业。
 此前有报道称，哈萨克斯坦将更新近400公里的供热网络。哪些地区优先，请阅读相关材料。
 此前，总理奥尔扎斯·别克捷诺夫在回应议员质询时表示，哈萨克斯坦公用事业基础设施损耗率超过40%，2026年其现代化改造需要1.1万亿坚戈。</div>
-<ul class="points">
+<ul>
 <li>13万亿坚戈投向能源和公用事业</li>
 <li>2025年修复6600公里网络</li>
 <li>2026年计划修复1.2万公里</li>
 <li>目标损耗降至40%，事故减20%</li>
 <li>支持国内生产商，需求2万亿坚戈</li>
 </ul>
-<div class="impact"><b>影响：</b>该投资将显著改善哈萨克斯坦老化的基础设施，降低事故率，提升能源供应稳定性，促进国内制造业发展，增强经济韧性，并可能吸引更多外资参与能源项目，巩固其区域能源枢纽地位。</div>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该投资将显著改善哈萨克斯坦老化的基础设施，降低事故率，提升能源供应稳定性，促进国内制造业发展，增强经济韧性，并可能吸引更多外资参与能源项目，巩固其区域能源枢纽地位。</span></div>
 </div>
 </div>
 
-<div class="footer">
-  <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · <a href="index.html">查看往期</a></p>
-  <p>生成时间：2026-08-20 12:44</p>
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-08-20 14:55</p>
+  </div>
 </div>
 <script>
 function toggleContent(el) {
