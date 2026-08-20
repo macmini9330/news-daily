@@ -213,7 +213,7 @@ def generate_daily_html(analyzed: dict, news_date: str) -> str:
   <div class="header">
     <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
     <div class="meta">📅 {date_display}</div>
-    <div class="nav-links"><a href="index.html">← 返回首页</a></div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
   </div>
 
   <div class="stats-bar"><span class="stat-chip">共 {total} 条</span><span class="stat-chip">{len([s for s in SECTIONS if sections.get(s["id"])])} 板块</span><span class="stat-chip">哈通社</span></div>
