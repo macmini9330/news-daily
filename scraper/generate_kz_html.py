@@ -244,12 +244,95 @@ if (content && content.classList.contains('full-content')) {{
 
 
 def generate_index(history: dict) -> str:
-    """生成往期索引页（history: {date_str: count}）"""
+    """生成设计感的往期索引首页（history: {date_str: count}）
+
+    设计元素：哈萨克斯坦国旗配色(天蓝#00AFCA/金#FED700)渐变Hero、
+    统计卡片、最新一期突出卡(含四板块分布)、往期时间线、板块介绍区。
+    """
+    # 解析各期板块分布（从 HTML 文件读）
+    import re as _re
+    kz_dir = os.path.join(BASE_DIR, "kz")
+    per_issue = {}  # date_str -> {total, sections: {name: cnt}}
+    if os.path.exists(kz_dir):
+        for fn in os.listdir(kz_dir):
+            if not fn.endswith(".html"):
+                continue
+            ds = fn[:-5]
+            try:
+                datetime.strptime(ds, "%Y-%m-%d")
+            except ValueError:
+                continue
+            try:
+                with open(os.path.join(kz_dir, fn), encoding="utf-8") as hf:
+                    hc = hf.read()
+                # 板块计数: <span class="count">(7 条)</span> 或 "(7 条)"
+                sec_counts = {}
+                for m in _re.finditer(r'<h2 class="section-title">.*?<span class="sec-seq">(.*?)</span>\s*(.*?)\s*<span class="count">\((\d+)\s*条\)</span>', hc, flags=_re.S):
+                    num, name, cnt = m.group(1), m.group(2).strip(), int(m.group(3))
+                    # name 形如 "政治新闻及分析（内政）"
+                    sec_counts[name] = cnt
+                # 旧版结构 <h2>一、政治...（7条）</h2>
+                if not sec_counts:
+                    for m in _re.finditer(r'<h2>(.)、(.*?)[（(](\d+)\s*条[)）]</h2>', hc):
+                        num, name, cnt = m.group(1), m.group(2).strip(), int(m.group(3))
+                        sec_counts[name] = cnt
+                total = hc.count('展开全文') or sum(sec_counts.values())
+                per_issue[ds] = {"total": total, "sections": sec_counts}
+            except Exception:
+                per_issue[ds] = {"total": int(history.get(ds, 0) or 0), "sections": {}}
+
+    dates_sorted = sorted(per_issue.keys(), reverse=True) if per_issue else sorted(history.keys(), reverse=True)
+    total_issues = len(dates_sorted)
+    total_items = sum(per_issue.get(d, {}).get("total", int(history.get(d, 0) or 0)) for d in dates_sorted)
+    latest = dates_sorted[0] if dates_sorted else ""
+    latest_cnt = per_issue.get(latest, {}).get("total", 0) if latest else 0
+    latest_sections = per_issue.get(latest, {}).get("sections", {}) if latest else {}
+
+    # 板块图标映射
+    icon_map = {"内政": "🏛️", "外交": "🌍", "金融": "💰", "矿产": "⛏️"}
+
+    # ===== 最新一期卡片 =====
+    latest_html = ""
+    if latest:
+        d = datetime.strptime(latest, "%Y-%m-%d")
+        display = f"{d.year}年{d.month}月{d.day}日"
+        sec_html = ""
+        for name, cnt in latest_sections.items():
+            short = name
+            for key, ic in icon_map.items():
+                if key in name:
+                    short = f"{ic} {name}"
+                    break
+            sec_html += f'<span class="sec-chip">{short} <b>{cnt}</b></span>\n'
+        latest_html = f"""
+  <div class="latest-card">
+    <div class="latest-head">
+      <span class="latest-badge">📌 最新一期</span>
+      <span class="latest-date">{display}</span>
+      <span class="latest-total">{latest_cnt} 条</span>
+    </div>
+    <div class="latest-secs">
+{sec_html}    </div>
+    <a class="latest-link" href="kz/{latest}.html">阅读本期日报 →</a>
+  </div>
+"""
+
+    # ===== 往期时间线 =====
     rows = ""
-    for date_str, cnt in sorted(history.items(), reverse=True):
+    for date_str in dates_sorted:
         d = datetime.strptime(date_str, "%Y-%m-%d")
         display = f"{d.year}年{d.month}月{d.day}日"
-        rows += f'<li><a href="kz/{date_str}.html">{display}</a>（{cnt} 条）</li>\n'
+        cnt = per_issue.get(date_str, {}).get("total", int(history.get(date_str, 0) or 0))
+        is_latest = (date_str == latest)
+        badge = '<span class="tag-new">最新</span>' if is_latest else ""
+        rows += f'<li class="issue-item"><a href="kz/{date_str}.html"><span class="issue-date">{display}</span><span class="issue-count">{cnt} 条</span></a>{badge}</li>\n'
+
+    # ===== 板块介绍区 =====
+    sections_grid = ""
+    for sec in SECTIONS:
+        ic = sec.get("icon", "")
+        nm = sec["name"]
+        sections_grid += f'<div class="sec-card"><div class="sec-icon">{ic}</div><div class="sec-name">{esc(nm)}</div></div>\n'
 
     html = f"""<!DOCTYPE html>
 <html lang="zh">
@@ -259,32 +342,146 @@ def generate_index(history: dict) -> str:
 <title>哈萨克斯坦每日要闻</title>
 <style>
 * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh; }}
-.container {{ max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }}
-.header {{ text-align: center; padding: 30px 0 18px; border-bottom: 1px solid #21262d; margin-bottom: 28px; }}
-.header h1 {{ font-size: 1.8em; font-weight: 700; color: #f0f6fc; margin-bottom: 10px; }}
-.header .sub {{ color: #8b949e; font-size: .95em; }}
-.list-section {{ margin-top: 10px; }}
+body {{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}}
+.container {{ max-width: 880px; margin: 0 auto; padding: 0 20px 60px; }}
+
+/* ===== Hero ===== */
+.hero {{
+  text-align: center; padding: 64px 20px 44px; position: relative;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% -20%, rgba(0,175,202,.15), transparent),
+    radial-gradient(ellipse 60% 50% at 85% 10%, rgba(254,215,0,.08), transparent),
+    linear-gradient(180deg, #0d1117, #0d1117);
+  border-bottom: 1px solid #21262d; margin-bottom: 32px;
+}}
+.hero .flag-bar {{
+  display: flex; justify-content: center; gap: 3px; margin-bottom: 20px;
+}}
+.hero .flag-bar span {{ width: 34px; height: 5px; border-radius: 3px; }}
+.hero .flag-bar .c1 {{ background: #00AFCA; }}
+.hero .flag-bar .c2 {{ background: #FED700; }}
+.hero .flag-bar .c3 {{ background: #00AFCA; }}
+.hero h1 {{
+  font-size: 2.4em; font-weight: 800; color: #f0f6fc; margin-bottom: 12px;
+  background: linear-gradient(120deg, #f0f6fc 20%, #7ee7f5 60%, #f0b90b 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}}
+.hero .sub {{ color: #8b949e; font-size: 1.02em; }}
+.hero .sub b {{ color: #7ee7f5; font-weight: 600; }}
+
+/* ===== 统计卡片 ===== */
+.stats-row {{ display: flex; justify-content: center; gap: 16px; margin: -20px 0 32px; flex-wrap: wrap; }}
+.stat-card {{
+  background: #161b22; border: 1px solid #21262d; border-radius: 14px;
+  padding: 16px 28px; text-align: center; min-width: 140px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.3);
+}}
+.stat-card .num {{ font-size: 1.7em; font-weight: 800; color: #f0f6fc; }}
+.stat-card .label {{ font-size: .82rem; color: #8b949e; margin-top: 2px; }}
+
+/* ===== 最新一期 ===== */
+.latest-card {{
+  background: linear-gradient(135deg, #101b2e 0%, #161b22 60%);
+  border: 1px solid #30363d; border-left: 4px solid #00AFCA;
+  border-radius: 16px; padding: 24px 28px; margin-bottom: 36px;
+  box-shadow: 0 8px 32px rgba(0,175,202,.08);
+}}
+.latest-head {{ display: flex; align-items: center; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }}
+.latest-badge {{
+  background: #00AFCA; color: #00121a; font-weight: 700; font-size: .78rem;
+  padding: 3px 12px; border-radius: 20px; letter-spacing: .5px;
+}}
+.latest-date {{ font-size: 1.25em; font-weight: 700; color: #f0f6fc; }}
+.latest-total {{ margin-left: auto; color: #8b949e; font-size: .9rem; }}
+.latest-secs {{ display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }}
+.sec-chip {{
+  background: #0d1117; border: 1px solid #21262d; border-radius: 20px;
+  padding: 5px 14px; font-size: .84rem; color: #c9d1d9;
+}}
+.sec-chip b {{ color: #f0b90b; font-weight: 700; margin-left: 4px; }}
+.latest-link {{
+  display: inline-block; background: #00AFCA; color: #00121a;
+  font-weight: 700; text-decoration: none; padding: 10px 24px;
+  border-radius: 10px; font-size: .95rem; transition: all .2s;
+}}
+.latest-link:hover {{ background: #7ee7f5; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,175,202,.3); }}
+
+/* ===== 往期 ===== */
+.issue-section h2 {{
+  font-size: 1.15rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 16px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}}
 ul {{ list-style: none; padding: 0; }}
-li {{ background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 14px 18px; margin-bottom: 10px; transition: border-color .2s; }}
-li:hover {{ border-color: #58a6ff; }}
-li a {{ color: #e6edf3; text-decoration: none; font-size: 15px; }}
-li a:hover {{ color: #58a6ff; }}
-li .count {{ color: #8b949e; font-size: .85rem; }}
-.footer {{ text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 40px; }}
+.issue-item {{
+  background: #161b22; border: 1px solid #21262d; border-radius: 12px;
+  margin-bottom: 10px; transition: all .2s; position: relative; overflow: hidden;
+}}
+.issue-item:hover {{ border-color: #00AFCA; transform: translateX(4px); }}
+.issue-item a {{ display: flex; align-items: center; padding: 14px 18px; text-decoration: none; }}
+.issue-date {{ color: #e6edf3; font-size: 1rem; font-weight: 600; }}
+.issue-count {{ margin-left: auto; color: #8b949e; font-size: .85rem; }}
+.tag-new {{
+  position: absolute; right: 100px; top: 50%; transform: translateY(-50%);
+  background: #FED700; color: #1a1200; font-size: .7rem; font-weight: 700;
+  padding: 2px 10px; border-radius: 12px;
+}}
+
+/* ===== 板块介绍 ===== */
+.sec-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin-top: 36px; }}
+.sec-card {{
+  background: #161b22; border: 1px solid #21262d; border-radius: 14px;
+  padding: 18px 16px; text-align: center; transition: all .2s;
+}}
+.sec-card:hover {{ border-color: #FED700; transform: translateY(-2px); }}
+.sec-icon {{ font-size: 1.6em; margin-bottom: 8px; }}
+.sec-name {{ font-size: .88rem; color: #c9d1d9; }}
+
+/* ===== Footer ===== */
+.footer {{ text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 48px; }}
+
+@media (max-width: 600px) {{
+  .hero h1 {{ font-size: 1.8em; }}
+  .stats-row {{ gap: 10px; }}
+  .stat-card {{ min-width: 100px; padding: 12px 16px; }}
+  .tag-new {{ display: none; }}
+}}
 </style>
 </head>
 <body>
 <div class="container">
-  <div class="header">
-    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
-    <div class="sub">每日更新 · 自动生成 · 涵盖内政/外交/金融/矿产资源四大板块</div>
+  <div class="hero">
+    <div class="flag-bar"><span class="c1"></span><span class="c2"></span><span class="c3"></span></div>
+    <h1>哈萨克斯坦每日要闻</h1>
+    <div class="sub">每日自动更新 · 四大板块深度解析 · 数据来源 <b>哈通社 Kazinform</b></div>
   </div>
-  <div class="list-section">
+
+  <div class="stats-row">
+    <div class="stat-card"><div class="num">{total_issues}</div><div class="label">已发布期数</div></div>
+    <div class="stat-card"><div class="num">{total_items}</div><div class="label">累计新闻条数</div></div>
+    <div class="stat-card"><div class="num">{len(SECTIONS)}</div><div class="label">覆盖板块</div></div>
+  </div>
+
+  {latest_html}
+  <div class="issue-section">
+    <h2>📅 往期日报</h2>
     <ul>
     {rows}
     </ul>
   </div>
+
+  <div class="issue-section">
+    <h2>📊 四大板块</h2>
+    <div class="sec-grid">
+    {sections_grid}
+    </div>
+  </div>
+
   <div class="footer">
     <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
   </div>
@@ -293,6 +490,8 @@ li .count {{ color: #8b949e; font-size: .85rem; }}
 </html>
 """
     return html
+
+
 
 
 def main():
