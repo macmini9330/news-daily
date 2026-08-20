@@ -19,24 +19,28 @@ SECTIONS = [
         "id": "politics_domestic",
         "num": "一",
         "name": "政治新闻及分析（内政）",
+        "short": "内政",
         "icon": "🏛️",
     },
     {
         "id": "politics_foreign",
         "num": "二",
         "name": "政治新闻及分析（外交）",
+        "short": "外交",
         "icon": "🌍",
     },
     {
         "id": "finance",
         "num": "三",
         "name": "金融政策新闻及分析",
+        "short": "金融",
         "icon": "💰",
     },
     {
         "id": "mining",
         "num": "四",
         "name": "矿产资源进出口管制政策新闻及分析",
+        "short": "矿产",
         "icon": "⛏️",
     },
 ]
@@ -48,56 +52,56 @@ body {
   background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
 }
 .container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
-.header { text-align: center; padding: 30px 0 18px; border-bottom: 1px solid #21262d; margin-bottom: 20px; }
-.header h1 { font-size: 1.8em; font-weight: 700; color: #f0f6fc; margin-bottom: 10px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
 .header .meta { font-size: .95em; color: #8b949e; }
-.header .nav-links { margin-top: 14px; font-size: .85rem; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
 .header .nav-links a { color: #58a6ff; text-decoration: none; }
 .header .nav-links a:hover { text-decoration: underline; }
 
+/* ===== 时间范围说明 ===== */
 .window-bar {
-  text-align: center; margin: 14px 0 18px;
+  text-align: center; margin: 14px 0 16px;
   background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
-  border-radius: 8px; padding: 10px 16px;
-  font-size: .9rem; color: #e6edf3;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
 }
+.window-bar b { color: #f0b90b; font-weight: 600; }
 
-/* 目录导航 */
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
 .toc {
-  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
-  margin: 16px 0 24px; padding: 12px 14px;
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
   background: #161b22; border: 1px solid #21262d; border-radius: 10px;
 }
-.toc-label {
-  font-size: .85rem; font-weight: 700; color: #8b949e;
-  margin-right: 4px; white-space: nowrap;
-}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
 .toc-item {
   display: inline-flex; align-items: center; gap: 6px;
   background: #0d1117; border: 1px solid #30363d;
-  border-radius: 20px; padding: 5px 12px;
-  font-size: .83rem; color: #c9d1d9; text-decoration: none;
-  transition: all .2s;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
 }
 .toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
-.toc-icon { font-size: .9em; }
+.toc-icon { font-size: .95em; }
 .toc-count {
-  background: #00AFCA22; color: #7ee7f5; border-radius: 10px;
-  padding: 0 7px; font-size: .78rem; font-weight: 700;
-}
-@media (max-width: 600px) {
-  .toc-item { font-size: .78rem; padding: 4px 10px; }
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
 }
 
-.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 18px 0 6px; }
-.stat-chip { padding: 5px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .83rem; color: #8b949e; }
-
-/* 板块标题 */
-.doc-section { margin-top: 30px; }
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
 .section-title {
   display: flex; align-items: center; gap: 10px;
-  font-size: 1.15rem; font-weight: 700; color: #e6edf3;
-  padding: 10px 16px; margin-bottom: 16px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
   background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
   border-radius: 8px;
 }
@@ -106,69 +110,75 @@ body {
   min-width: 26px; height: 26px; background: #c0392b; color: #fff;
   border-radius: 6px; font-size: .85rem; font-weight: 700;
 }
-.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; }
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
 
-/* 单条 */
-.item { padding: 14px 4px 10px; margin-bottom: 6px; border-bottom: 1px solid #161b22; border-left: 3px solid transparent; padding-left: 14px; }
-.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.05rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
 .item-title a { color: #e6edf3; text-decoration: none; }
 .item-title a:hover { color: #58a6ff; }
 .item-num {
   display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
-  min-width: 34px; height: 30px; background: #c0392b40; color: #c0392b;
-  border-radius: 6px; font-size: .9rem; font-weight: 700; margin-top: 2px;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
 }
-.item-meta { font-size: .8rem; color: #8b949e; margin: 0 0 8px 44px; }
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
 .item-meta .source-link { margin-left: 8px; }
 .item-meta .source-link a { color: #58a6ff; text-decoration: none; }
 .item-meta .source-link a:hover { text-decoration: underline; }
 
 /* 摘要 */
 .item-summary {
-  margin: 8px 0 8px 44px; padding: 8px 14px;
-  background: #161b22; border: 1px solid #21262d;
-  border-radius: 0 6px 6px 0;
-  font-size: .92rem; color: #d4d9e0;
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
 }
-.item-summary b { color: #58a6ff; }
+.item-summary b { color: #58a6ff; font-weight: 600; }
 
 /* 展开全文 */
-.summary-toggle {
-  margin: 6px 0 2px 44px; font-size: .82rem; color: #58a6ff;
-  cursor: pointer; user-select: none; display: inline-block; padding: 2px 0;
-}
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
 .summary-toggle:hover { text-decoration: underline; }
 .summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
 .summary-toggle.open .arrow { transform: rotate(90deg); }
 .full-content {
-  display: none;
-  margin: 8px 0 4px 44px;
-  font-size: .9rem; line-height: 1.85; color: #c9d1d9;
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
   background: #0d1117; border: 1px dashed #30363d;
-  border-radius: 8px; padding: 12px 16px;
-  white-space: pre-wrap;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
 }
 .full-content.show { display: block; }
 
 /* 要点 */
-.item ul { margin: 6px 0 6px 44px; padding-left: 18px; }
-.item ul li { margin-bottom: 6px; font-size: .93rem; }
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
 
 /* 影响 */
 .item-impact {
-  margin: 10px 0 4px 44px; padding: 8px 14px;
+  margin: 10px 0 4px 40px; padding: 8px 14px;
   background: #f0b90b10; border-left: 3px solid #f0b90b;
-  border-radius: 0 6px 6px 0;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
 }
 .impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
-.impact-text { color: #d4d9e0; font-size: .92rem; }
+.impact-text { color: #d4d9e0; }
 
-.empty { color: #8b949e; font-size: .9rem; padding: 12px 0 12px 44px; font-style: italic; }
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
 
-.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 40px; }
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
 .footer a { color: #58a6ff; text-decoration: none; }
 
+/* ===== 响应式 ===== */
 @media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
   .item ul { margin-left: 8px; }
   .item-impact { margin-left: 8px; }
   .item-summary { margin-left: 8px; }
@@ -195,7 +205,7 @@ def generate_daily_html(analyzed: dict, date_str: str, window_label: str) -> str
     toc_html = ""
     for sec in SECTIONS:
         cnt = len(sections.get(sec["id"], []))
-        toc_html += f'<a class="toc-item" href="#sec-{sec["id"]}"><span class="toc-icon">{sec["icon"]}</span>{esc(sec["name"])}<span class="toc-count">{cnt}</span></a>\n'
+        toc_html += f'<a class="toc-item" href="#sec-{sec["id"]}"><span class="toc-icon">{sec["icon"]}</span>{esc(sec.get("short", sec["name"]))}<span class="toc-count">{cnt}</span></a>\n'
 
     # 各板块统计
     stats_html = ""
@@ -391,8 +401,9 @@ def generate_index(history: dict) -> str:
     sections_grid = ""
     for sec in SECTIONS:
         ic = sec.get("icon", "")
-        nm = sec["name"]
-        sections_grid += f'<div class="sec-card"><div class="sec-icon">{ic}</div><div class="sec-name">{esc(nm)}</div></div>\n'
+        short = sec.get("short", sec["name"])
+        full = sec["name"]
+        sections_grid += f'<div class="sec-card"><div class="sec-icon">{ic}</div><div class="sec-name">{esc(short)}</div><div class="sec-desc">{esc(full)}</div></div>\n'
 
     html = f"""<!DOCTYPE html>
 <html lang="zh">
@@ -499,8 +510,9 @@ ul {{ list-style: none; padding: 0; }}
   padding: 18px 16px; text-align: center; transition: all .2s;
 }}
 .sec-card:hover {{ border-color: #FED700; transform: translateY(-2px); }}
-.sec-icon {{ font-size: 1.6em; margin-bottom: 8px; }}
-.sec-name {{ font-size: .88rem; color: #c9d1d9; }}
+.sec-icon {{ font-size: 1.6em; margin-bottom: 6px; }}
+.sec-name {{ font-size: 1rem; font-weight: 700; color: #e6edf3; margin-bottom: 3px; }}
+.sec-desc {{ font-size: .75rem; color: #8b949e; line-height: 1.5; }}
 
 /* ===== Footer ===== */
 .footer {{ text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 48px; }}
