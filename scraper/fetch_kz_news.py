@@ -18,6 +18,23 @@ from datetime import datetime, timedelta
 
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 
+# ============ 抓取时间窗口 ============
+# 每日 09:00 运行，抓取前一日 09:00 → 当日 09:00 发布的新闻（精确 24 小时窗口）
+CUTOFF_HOUR = 9  # 窗口边界小时
+
+
+def window_start() -> datetime:
+    """窗口起始时间 = 前一日 09:00（若当前已过今日09:00）或前两日09:00（若今日未到09:00）"""
+    now = datetime.now()
+    today_9am = datetime(now.year, now.month, now.day, CUTOFF_HOUR, 0)
+    if now >= today_9am:
+        # 已过今日 09:00 → 窗口起点 = 昨日 09:00
+        return today_9am - timedelta(days=1)
+    else:
+        # 未到今日 09:00（如凌晨测试）→ 窗口起点 = 前日 09:00
+        return today_9am - timedelta(days=2)
+
+
 # ============ 信息源配置 ============
 SOURCES = {
     "lenta": "https://cn.inform.kz/lenta",  # 中文版所有新闻
@@ -105,8 +122,7 @@ def collect_chinese() -> list:
     """抓取中文版（lenta + 板块，约22条）"""
     all_articles = []
     seen = set()
-    today = datetime.now()
-    cutoff = today - timedelta(hours=26)
+    cutoff = window_start()
     for name, url in SOURCES.items():
         try:
             html = fetch_html(url)
@@ -137,6 +153,7 @@ def collect_russian(max_pages: int = 10) -> list:
     all_articles = []
     seen = set()
     today = datetime.now()
+    cutoff = window_start()
 
     for page in range(1, max_pages + 1):
         url = "https://www.inform.kz/ru/lenta" if page == 1 else f"https://www.inform.kz/ru/lenta/?page={page}"
@@ -155,10 +172,9 @@ def collect_russian(max_pages: int = 10) -> list:
                 if a["url"] in seen:
                     continue
                 seen.add(a["url"])
-                # 时间过滤：只保留当天及前一天 22:00 后（考虑时区+早上运行）
+                # 时间过滤：只保留窗口内（前一日 09:00 之后）
                 try:
                     at = datetime.strptime(a["time"], "%Y-%m-%d %H:%M")
-                    cutoff = today - timedelta(hours=26)
                     if at < cutoff:
                         continue
                 except ValueError:
@@ -166,12 +182,11 @@ def collect_russian(max_pages: int = 10) -> list:
                 a["source"] = "哈通社俄语版"
                 all_articles.append(a)
 
-            # 判断是否翻完当天：如果本页最早时间早于今天 00:00 且已翻过至少2页
+            # 判断是否翻完窗口：如果本页最早时间早于窗口起点 且已翻过至少2页
             try:
                 oldest_dt = datetime.strptime(oldest, "%Y-%m-%d %H:%M")
-                today_midnight = datetime(today.year, today.month, today.day)
-                if oldest_dt < today_midnight and page >= 2:
-                    print(f"  ✅ 第{page}页已含昨日新闻，停止翻页")
+                if oldest_dt < cutoff and page >= 2:
+                    print(f"  ✅ 第{page}页已含窗口外新闻，停止翻页")
                     break
             except ValueError:
                 break
