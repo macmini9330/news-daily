@@ -45,18 +45,9 @@ def llm_chat(messages: list, max_tokens: int = 4000, temperature: float = 0.2) -
         return data["choices"][0]["message"]["content"]
 
 
-# ============ 板块定义 ============
-SECTIONS = [
-    {"id": "politics_domestic", "name": "政治新闻及分析（内政）",
-     "desc": "哈总统/政府/议会、选举、法律政策、国内治理、官员任免、国情咨文"},
-    {"id": "politics_foreign", "name": "政治新闻及分析（外交）",
-     "desc": "对外关系、国际会议、中哈关系、与各国合作、地缘政治、大使/外访"},
-    {"id": "finance", "name": "金融政策新闻及分析",
-     "desc": "央行、基准利率、汇率、货币政策、金融监管、银行、通胀、债券、坚戈"},
-    {"id": "mining", "name": "矿产资源进出口管制政策新闻及分析",
-     "desc": "铀/稀土/钨/铬/锌/铜/石油天然气等矿产，进出口管制、矿业政策、资源出口、矿企"},
-]
-OTHER_DESC = "体育/文化/教育/卫生/娱乐/天气/事故等与四板块无关的新闻"
+# ============ 板块定义（唯一来源：sections.py）============
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from sections import SECTIONS, OTHER_DESC, CLASSIFY_RULES
 
 
 def parse_json_response(result: str) -> dict:
@@ -91,6 +82,7 @@ def classify_and_translate(articles: list) -> list:
         })
 
     sections_desc = "\n".join([f"- {s['id']}: {s['name']}（{s['desc']}）" for s in SECTIONS])
+    classify_rules_str = "\n".join(f"- {r}" for r in CLASSIFY_RULES)
 
     prompt = f"""你是哈萨克斯坦政策研究分析师。以下是今日哈萨克斯坦新闻标题列表（部分俄语，部分中文）。
 
@@ -102,6 +94,9 @@ def classify_and_translate(articles: list) -> list:
 ## 板块分类
 {sections_desc}
 - other: {OTHER_DESC}
+
+## 分类优先级规则（多板块冲突时按序裁决）
+{CLASSIFY_RULES_STR}
 
 ## 输出格式（严格 JSON）
 {{

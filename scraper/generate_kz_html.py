@@ -14,36 +14,9 @@ from datetime import datetime
 BASE_DIR = os.path.expanduser("~/Documents/news-daily")
 KZ_DIR = os.path.join(BASE_DIR, "kz")
 
-SECTIONS = [
-    {
-        "id": "politics_domestic",
-        "num": "一",
-        "name": "政治新闻及分析（内政）",
-        "short": "内政",
-        "icon": "🏛️",
-    },
-    {
-        "id": "politics_foreign",
-        "num": "二",
-        "name": "政治新闻及分析（外交）",
-        "short": "外交",
-        "icon": "🌍",
-    },
-    {
-        "id": "finance",
-        "num": "三",
-        "name": "金融政策新闻及分析",
-        "short": "金融",
-        "icon": "💰",
-    },
-    {
-        "id": "mining",
-        "num": "四",
-        "name": "矿产资源进出口管制政策新闻及分析",
-        "short": "矿产",
-        "icon": "⛏️",
-    },
-]
+# SECTIONS 唯一来源（与 analyze 共享，避免两处不同步）
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from sections import SECTIONS
 
 CSS = """
 * { margin: 0; padding: 0; box-sizing: border-box; }
