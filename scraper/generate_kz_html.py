@@ -276,7 +276,10 @@ def generate_index(history: dict) -> str:
                     for m in _re.finditer(r'<h2>(.)、(.*?)[（(](\d+)\s*条[)）]</h2>', hc):
                         num, name, cnt = m.group(1), m.group(2).strip(), int(m.group(3))
                         sec_counts[name] = cnt
-                total = hc.count('展开全文') or sum(sec_counts.values())
+                n_item = hc.count('class="item"')
+                n_article = hc.count('class="article"')
+                n_struct = n_item if n_item > 0 else n_article
+                total = n_struct if n_struct > 0 else (hc.count('展开全文') or sum(sec_counts.values()))
                 per_issue[ds] = {"total": total, "sections": sec_counts}
             except Exception:
                 per_issue[ds] = {"total": int(history.get(ds, 0) or 0), "sections": {}}
@@ -498,10 +501,8 @@ def main():
     with open("/tmp/kz_articles_analyzed.json", encoding="utf-8") as f:
         analyzed = json.load(f)
 
-    # 文件名用「运行日」（发布日），避免跨日覆盖
-    date_str = datetime.now().strftime("%Y-%m-%d")
-
-    # 页面标题用「新闻日期」（取所有新闻中出现最多的日期）
+    # 文件名与页面标题统一用「新闻主日期」（窗口内新闻最多的日期）
+    # 语义：这期日报 = 该日期的新闻，首页/文件名/页面标题保持一致
     from collections import Counter
     date_counter = Counter()
     for sid, items in analyzed["sections"].items():
@@ -512,8 +513,9 @@ def main():
     if date_counter:
         news_date = date_counter.most_common(1)[0][0]
     else:
-        news_date = date_str
-    print(f"📅 文件名日期: {date_str}（发布日）| 页面新闻日期: {news_date}（各日期: {dict(date_counter)}）")
+        news_date = datetime.now().strftime("%Y-%m-%d")
+    date_str = news_date  # 文件名 = 新闻日期
+    print(f"📅 统一日期: {news_date}（各日期计数: {dict(date_counter)}）")
     os.makedirs(KZ_DIR, exist_ok=True)
 
     # 生成单日页
@@ -534,11 +536,13 @@ def main():
                 d = fn[:-5]
                 try:
                     datetime.strptime(d, "%Y-%m-%d")
-                    # 统计该期实际条数（展开全文个数 = 有全文的条数）
+                    # 统计该期实际条数（按条目结构，避免按钮/JS文本干扰）
                     try:
                         with open(os.path.join(KZ_DIR, fn), encoding="utf-8") as hf:
                             hc = hf.read()
-                        cnt = hc.count("展开全文")
+                        n_item = hc.count('class="item"')
+                        n_article = hc.count('class="article"')
+                        cnt = n_item if n_item > 0 else n_article
                         history[d] = str(cnt) if cnt > 0 else "?"
                     except Exception:
                         history[d] = "?"
