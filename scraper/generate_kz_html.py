@@ -217,8 +217,8 @@ def esc(text: str) -> str:
     return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
 
 
-def generate_daily_html(analyzed: dict, date_str: str) -> str:
-    """生成单日日报 HTML"""
+def generate_daily_html(analyzed: dict, news_date: str) -> str:
+    """生成单日日报 HTML（news_date=新闻日期，用于页面显示）"""
     sections = analyzed["sections"]
     total = sum(len(v) for v in sections.values())
 
@@ -260,8 +260,8 @@ def generate_daily_html(analyzed: dict, date_str: str) -> str:
                 sections_html += '</div>\n'
         sections_html += '</div>\n'
 
-    # 日期显示
-    d = datetime.strptime(date_str, "%Y-%m-%d")
+    # 日期显示（用新闻日期）
+    d = datetime.strptime(news_date, "%Y-%m-%d")
     date_display = f"{d.year}年{d.month}月{d.day}日"
 
     html = f"""<!DOCTYPE html>
@@ -343,7 +343,10 @@ def main():
     with open("/tmp/kz_articles_analyzed.json", encoding="utf-8") as f:
         analyzed = json.load(f)
 
-    # 用新闻数据的日期（取所有新闻中出现最多的日期），避免凌晨跨日错位
+    # 文件名用「运行日」（发布日），避免跨日覆盖
+    date_str = datetime.now().strftime("%Y-%m-%d")
+
+    # 页面标题用「新闻日期」（取所有新闻中出现最多的日期）
     from collections import Counter
     date_counter = Counter()
     for sid, items in analyzed["sections"].items():
@@ -352,14 +355,14 @@ def main():
             if len(t) >= 10:
                 date_counter[t[:10]] += 1
     if date_counter:
-        date_str = date_counter.most_common(1)[0][0]
+        news_date = date_counter.most_common(1)[0][0]
     else:
-        date_str = datetime.now().strftime("%Y-%m-%d")
-    print(f"📅 使用新闻日期: {date_str}（各日期计数: {dict(date_counter)}）")
+        news_date = date_str
+    print(f"📅 文件名日期: {date_str}（发布日）| 页面新闻日期: {news_date}（各日期: {dict(date_counter)}）")
     os.makedirs(KZ_DIR, exist_ok=True)
 
     # 生成单日页
-    html = generate_daily_html(analyzed, date_str)
+    html = generate_daily_html(analyzed, news_date)
     daily_path = os.path.join(KZ_DIR, f"{date_str}.html")
     with open(daily_path, "w", encoding="utf-8") as f:
         f.write(html)
