@@ -91,6 +91,12 @@ generate()  → HTML
 git push    → Pages
 ```
 
+### 2.5 固化架构（2026-08-20 用户要求「把能固化的都固化，免得 LLM 跑偏」）
+
+- **sections.py**：SECTIONS 唯一来源（id/num/name/short/icon/desc + OTHER_DESC + CLASSIFY_RULES 分类优先级），analyze 和 generate 都从这里 import——改板块只改这一个文件，避免两处不同步
+- **daily_cron.py**：cron 封装脚本（no_agent 模式），跑完整流水线 + 输出投递摘要（今天日报 / 各板块条数 / 涵盖时间 / 链接）；失败输出错误。cron d5de4f2b93e3 的 script 指向它，LLM 完全不参与，消除跑偏
+- **LLM 参数固化**：temperature=0.2、分类 max_tokens=10000 / 翻译 4000、严格 JSON 输出、板块描述固定注入
+
 ## 3. 关键设计决策记录
 
 | 决策 | 原因 |
