@@ -55,6 +55,13 @@ body {
 .header .nav-links a { color: #58a6ff; text-decoration: none; }
 .header .nav-links a:hover { text-decoration: underline; }
 
+.window-bar {
+  text-align: center; margin: 14px 0 18px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 10px 16px;
+  font-size: .9rem; color: #e6edf3;
+}
+
 .stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 18px 0 6px; }
 .stat-chip { padding: 5px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .83rem; color: #8b949e; }
 
@@ -152,8 +159,8 @@ def esc(text: str) -> str:
     return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
 
 
-def generate_daily_html(analyzed: dict, news_date: str) -> str:
-    """生成单日日报 HTML（news_date=新闻日期，用于页面显示）"""
+def generate_daily_html(analyzed: dict, date_str: str, window_label: str) -> str:
+    """生成单日日报 HTML（date_str=发布日，window_label=时间范围说明）"""
     sections = analyzed["sections"]
     total = sum(len(v) for v in sections.values())
 
@@ -196,8 +203,8 @@ def generate_daily_html(analyzed: dict, news_date: str) -> str:
                 sections_html += '</div>\n'
         sections_html += '</div>\n'
 
-    # 日期显示（用新闻日期）
-    d = datetime.strptime(news_date, "%Y-%m-%d")
+    # 日期显示（用发布日）
+    d = datetime.strptime(date_str, "%Y-%m-%d")
     date_display = f"{d.year}年{d.month}月{d.day}日"
 
     html = f"""<!DOCTYPE html>
@@ -212,9 +219,11 @@ def generate_daily_html(analyzed: dict, news_date: str) -> str:
 <div class="container">
   <div class="header">
     <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
-    <div class="meta">📅 {date_display}</div>
+    <div class="meta">📅 {date_display}日报</div>
     <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
   </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：{window_label}（北京时间）</div>
 
   <div class="stats-bar"><span class="stat-chip">共 {total} 条</span><span class="stat-chip">{len([s for s in SECTIONS if sections.get(s["id"])])} 板块</span><span class="stat-chip">哈通社</span></div>
 
@@ -501,25 +510,20 @@ def main():
     with open("/tmp/kz_articles_analyzed.json", encoding="utf-8") as f:
         analyzed = json.load(f)
 
-    # 文件名与页面标题统一用「新闻主日期」（窗口内新闻最多的日期）
-    # 语义：这期日报 = 该日期的新闻，首页/文件名/页面标题保持一致
-    from collections import Counter
-    date_counter = Counter()
-    for sid, items in analyzed["sections"].items():
-        for it in items:
-            t = it.get("time", "")
-            if len(t) >= 10:
-                date_counter[t[:10]] += 1
-    if date_counter:
-        news_date = date_counter.most_common(1)[0][0]
-    else:
-        news_date = datetime.now().strftime("%Y-%m-%d")
-    date_str = news_date  # 文件名 = 新闻日期
-    print(f"📅 统一日期: {news_date}（各日期计数: {dict(date_counter)}）")
+    # 文件名/标题 = 发布日（运行日）：今天是几号，日报就是几号
+    # 内容范围 = 前一日 09:00 → 当日 09:00（北京时间），复用 fetch.window_bounds 保持一致
+    import sys as _sys
+    _sys.path.insert(0, BASE_DIR)
+    from scraper.fetch_kz_news import window_bounds
+    run_now = datetime.now()
+    date_str = run_now.strftime("%Y-%m-%d")
+    window_start_dt, window_end_dt = window_bounds()
+    window_label = f"{window_start_dt.strftime('%Y年%m月%d日')}早9:00至{window_end_dt.strftime('%Y年%m月%d日')}早9:00"
+    print(f"📅 日报日期: {date_str}（发布日）| 涵盖: {window_label}（北京时间）")
     os.makedirs(KZ_DIR, exist_ok=True)
 
     # 生成单日页
-    html = generate_daily_html(analyzed, news_date)
+    html = generate_daily_html(analyzed, date_str, window_label)
     daily_path = os.path.join(KZ_DIR, f"{date_str}.html")
     with open(daily_path, "w", encoding="utf-8") as f:
         f.write(html)

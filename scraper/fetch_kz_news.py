@@ -23,16 +23,27 @@ UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 CUTOFF_HOUR = 9  # 窗口边界小时
 
 
-def window_start() -> datetime:
-    """窗口起始时间 = 前一日 09:00（若当前已过今日09:00）或前两日09:00（若今日未到09:00）"""
+def window_bounds() -> tuple:
+    """窗口 [起点, 终点]（北京时间）
+
+    规则：日报日期 = 运行日；窗口终点 = 日报日期当日 09:00；起点 = 终点 - 24h。
+    例如 8/20 生成 8/20 日报 → 窗口 = 8/19 09:00 ~ 8/20 09:00（北京时间）。
+    """
     now = datetime.now()
-    today_9am = datetime(now.year, now.month, now.day, CUTOFF_HOUR, 0)
-    if now >= today_9am:
-        # 已过今日 09:00 → 窗口起点 = 昨日 09:00
-        return today_9am - timedelta(days=1)
-    else:
-        # 未到今日 09:00（如凌晨测试）→ 窗口起点 = 前日 09:00
-        return today_9am - timedelta(days=2)
+    # 窗口终点 = 今日 09:00（北京时间）；若未到 9 点（凌晨），仍锚定今日 9 点
+    end = datetime(now.year, now.month, now.day, CUTOFF_HOUR, 0)
+    start = end - timedelta(days=1)
+    return start, end
+
+
+def window_start() -> datetime:
+    """窗口起点（兼容旧调用）"""
+    return window_bounds()[0]
+
+
+def window_end() -> datetime:
+    """窗口终点（北京时间 09:00）"""
+    return window_bounds()[1]
 
 
 # ============ 信息源配置 ============
@@ -68,23 +79,32 @@ def fetch_html(url: str, timeout: int = 20) -> str:
 
 
 def parse_time(time_str: str) -> str:
-    """解析时间字符串 → ISO 格式
-    中文: "08:32, 18 8月 2026"
-    俄语: "21:38, 18 Августа 2026"
+    """解析时间字符串 → ISO 格式（**北京时间**）
+
+    哈通社显示的是阿斯塔纳时间 (UTC+5)，北京时间 = UTC+8。
+    因此解析后统一 +3 小时，保证窗口过滤与展示均为北京时间。
+    中文: "08:32, 18 8月 2026" 俄语: "21:38, 18 Августа 2026"
     """
     time_str = time_str.strip()
+    iso_str = None
     # 中文格式
     m = re.match(r'(\d{2}:\d{2}),\s*(\d{1,2})\s*(\d{1,2})月\s*(\d{4})', time_str)
     if m:
         hhmm, day, month, year = m.groups()
-        return f"{year}-{int(month):02d}-{int(day):02d} {hhmm}"
-    # 俄语格式
-    m = re.match(r'(\d{2}:\d{2}),\s*(\d{1,2})\s+(\w+)\s+(\d{4})', time_str)
-    if m:
-        hhmm, day, month_name, year = m.groups()
-        month = RU_MONTHS.get(month_name.capitalize())
-        if month:
-            return f"{year}-{month:02d}-{int(day):02d} {hhmm}"
+        iso_str = f"{year}-{int(month):02d}-{int(day):02d} {hhmm}"
+    else:
+        # 俄语格式
+        m = re.match(r'(\d{2}:\d{2}),\s*(\d{1,2})\s+(\w+)\s+(\d{4})', time_str)
+        if m:
+            hhmm, day, month_name, year = m.groups()
+            month = RU_MONTHS.get(month_name.capitalize())
+            if month:
+                iso_str = f"{year}-{month:02d}-{int(day):02d} {hhmm}"
+    if iso_str:
+        dt = datetime.strptime(iso_str, "%Y-%m-%d %H:%M")
+        # 阿斯塔纳 UTC+5 → 北京 UTC+8
+        dt = dt + timedelta(hours=3)
+        return dt.strftime("%Y-%m-%d %H:%M")
     return time_str
 
 
@@ -123,6 +143,7 @@ def collect_chinese() -> list:
     all_articles = []
     seen = set()
     cutoff = window_start()
+    cutoff_end = window_end()
     for name, url in SOURCES.items():
         try:
             html = fetch_html(url)
@@ -130,10 +151,10 @@ def collect_chinese() -> list:
             for a in arts:
                 if a["url"] not in seen:
                     seen.add(a["url"])
-                    # 时间过滤：只保留 cutoff 内
+                    # 时间过滤：只保留窗口内 [start, end]
                     try:
                         at = datetime.strptime(a["time"], "%Y-%m-%d %H:%M")
-                        if at < cutoff:
+                        if at < cutoff or at > cutoff_end:
                             continue
                     except ValueError:
                         pass
@@ -154,6 +175,7 @@ def collect_russian(max_pages: int = 10) -> list:
     seen = set()
     today = datetime.now()
     cutoff = window_start()
+    cutoff_end = window_end()
 
     for page in range(1, max_pages + 1):
         url = "https://www.inform.kz/ru/lenta" if page == 1 else f"https://www.inform.kz/ru/lenta/?page={page}"
@@ -172,10 +194,10 @@ def collect_russian(max_pages: int = 10) -> list:
                 if a["url"] in seen:
                     continue
                 seen.add(a["url"])
-                # 时间过滤：只保留窗口内（前一日 09:00 之后）
+                # 时间过滤：只保留窗口内 [start, end]
                 try:
                     at = datetime.strptime(a["time"], "%Y-%m-%d %H:%M")
-                    if at < cutoff:
+                    if at < cutoff or at > cutoff_end:
                         continue
                 except ValueError:
                     pass
