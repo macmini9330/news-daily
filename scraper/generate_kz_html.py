@@ -258,21 +258,37 @@ def generate_index(history: dict) -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>哈萨克斯坦每日要闻</title>
 <style>
-body {{ font-family: -apple-system, "PingFang SC", sans-serif; max-width: 700px; margin: 0 auto; padding: 40px 16px; background: #f5f6fa; color: #1a1a2e; }}
-h1 {{ color: #1e5eff; margin-bottom: 8px; }}
-.sub {{ color: #666; margin-bottom: 24px; }}
+* {{ margin: 0; padding: 0; box-sizing: border-box; }}
+body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh; }}
+.container {{ max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }}
+.header {{ text-align: center; padding: 30px 0 18px; border-bottom: 1px solid #21262d; margin-bottom: 28px; }}
+.header h1 {{ font-size: 1.8em; font-weight: 700; color: #f0f6fc; margin-bottom: 10px; }}
+.header .sub {{ color: #8b949e; font-size: .95em; }}
+.list-section {{ margin-top: 10px; }}
 ul {{ list-style: none; padding: 0; }}
-li {{ background: #fff; border: 1px solid #e2e5ee; border-radius: 10px; padding: 14px 18px; margin-bottom: 10px; }}
-li a {{ color: #1a1a2e; text-decoration: none; font-size: 15px; }}
-li a:hover {{ color: #1e5eff; }}
+li {{ background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 14px 18px; margin-bottom: 10px; transition: border-color .2s; }}
+li:hover {{ border-color: #58a6ff; }}
+li a {{ color: #e6edf3; text-decoration: none; font-size: 15px; }}
+li a:hover {{ color: #58a6ff; }}
+li .count {{ color: #8b949e; font-size: .85rem; }}
+.footer {{ text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 40px; }}
 </style>
 </head>
 <body>
-<h1>🇰🇿 哈萨克斯坦每日要闻</h1>
-<div class="sub">每日更新 · 自动生成 · 涵盖内政/外交/金融/矿产资源四大板块</div>
-<ul>
-{rows}
-</ul>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="sub">每日更新 · 自动生成 · 涵盖内政/外交/金融/矿产资源四大板块</div>
+  </div>
+  <div class="list-section">
+    <ul>
+    {rows}
+    </ul>
+  </div>
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+  </div>
+</div>
 </body>
 </html>
 """
