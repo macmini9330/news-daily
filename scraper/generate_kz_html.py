@@ -62,6 +62,33 @@ body {
   font-size: .9rem; color: #e6edf3;
 }
 
+/* 目录导航 */
+.toc {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  margin: 16px 0 24px; padding: 12px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label {
+  font-size: .85rem; font-weight: 700; color: #8b949e;
+  margin-right: 4px; white-space: nowrap;
+}
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 20px; padding: 5px 12px;
+  font-size: .83rem; color: #c9d1d9; text-decoration: none;
+  transition: all .2s;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .9em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 10px;
+  padding: 0 7px; font-size: .78rem; font-weight: 700;
+}
+@media (max-width: 600px) {
+  .toc-item { font-size: .78rem; padding: 4px 10px; }
+}
+
 .stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 18px 0 6px; }
 .stat-chip { padding: 5px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .83rem; color: #8b949e; }
 
@@ -164,6 +191,12 @@ def generate_daily_html(analyzed: dict, date_str: str, window_label: str) -> str
     sections = analyzed["sections"]
     total = sum(len(v) for v in sections.values())
 
+    # 目录导航（4 板块锚点 + 条数）
+    toc_html = ""
+    for sec in SECTIONS:
+        cnt = len(sections.get(sec["id"], []))
+        toc_html += f'<a class="toc-item" href="#sec-{sec["id"]}"><span class="toc-icon">{sec["icon"]}</span>{esc(sec["name"])}<span class="toc-count">{cnt}</span></a>\n'
+
     # 各板块统计
     stats_html = ""
     for sec in SECTIONS:
@@ -175,7 +208,7 @@ def generate_daily_html(analyzed: dict, date_str: str, window_label: str) -> str
     sections_html = ""
     for sec in SECTIONS:
         items = sections.get(sec["id"], [])
-        sections_html += f'<div class="doc-section">\n'
+        sections_html += f'<div class="doc-section" id="sec-{sec["id"]}">\n'
         sections_html += f'<h2 class="section-title"><span class="sec-seq">{esc(sec["num"])}</span> {esc(sec["name"])} <span class="count">({len(items)} 条)</span></h2>\n'
         if not items:
             sections_html += '<div class="empty">今日暂无此类新闻</div>\n'
@@ -227,6 +260,11 @@ def generate_daily_html(analyzed: dict, date_str: str, window_label: str) -> str
 
   <div class="stats-bar"><span class="stat-chip">共 {total} 条</span><span class="stat-chip">{len([s for s in SECTIONS if sections.get(s["id"])])} 板块</span><span class="stat-chip">哈通社</span></div>
 
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    {toc_html}
+  </div>
+
 {sections_html}
   <div class="footer">
     <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
@@ -245,6 +283,16 @@ if (content && content.classList.contains('full-content')) {{
     : '<span class="arrow">▸</span>展开全文';
 }}
 }}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {{
+  link.addEventListener('click', function(e) {{
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {{
+      e.preventDefault();
+      target.scrollIntoView({{ behavior: 'smooth', block: 'start' }});
+    }}
+  }});
+}});
 </script>
 </body>
 </html>

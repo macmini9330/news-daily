@@ -25,6 +25,33 @@ body {
   font-size: .9rem; color: #e6edf3;
 }
 
+/* 目录导航 */
+.toc {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  margin: 16px 0 24px; padding: 12px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label {
+  font-size: .85rem; font-weight: 700; color: #8b949e;
+  margin-right: 4px; white-space: nowrap;
+}
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 20px; padding: 5px 12px;
+  font-size: .83rem; color: #c9d1d9; text-decoration: none;
+  transition: all .2s;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .9em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 10px;
+  padding: 0 7px; font-size: .78rem; font-weight: 700;
+}
+@media (max-width: 600px) {
+  .toc-item { font-size: .78rem; padding: 4px 10px; }
+}
+
 .stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 18px 0 6px; }
 .stat-chip { padding: 5px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .83rem; color: #8b949e; }
 
@@ -126,7 +153,16 @@ body {
 
   <div class="stats-bar"><span class="stat-chip">共 36 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
 
-<div class="doc-section">
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>政治新闻及分析（内政）<span class="toc-count">13</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>政治新闻及分析（外交）<span class="toc-count">10</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融政策新闻及分析<span class="toc-count">9</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产资源进出口管制政策新闻及分析<span class="toc-count">4</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
 <h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(13 条)</span></h2>
 <div class="item">
 <h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/finalnie-debati-semi-partiy-zavershilis-natelekanale-24kz-2192502b" target="_blank">七党最终辩论在«24KZ»电视台结束</a></h3>
@@ -439,7 +475,7 @@ OSDP主席阿斯哈特·拉希姆扎诺夫询问Respublica关于保护企业、�
 <div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举增强哈萨克斯坦水资源管理能力，改善咸海生态，促进渔业和农业，同时加强与乌兹别克斯坦合作，提升区域水资源外交影响力，对经济可持续发展和生态安全有积极影响。</span></div>
 </div>
 </div>
-<div class="doc-section">
+<div class="doc-section" id="sec-politics_foreign">
 <h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(10 条)</span></h2>
 <div class="item">
 <h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/heguorenzuowen-06bbdca1/" target="_blank">哈萨克斯坦和联合国志愿人员组织探讨加强合作问题</a></h3>
@@ -697,7 +733,7 @@ KazStandard方面认为，马肉具有较高蛋白质含量和较为均衡的氨
 <div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该倡议将提升哈萨克斯坦马肉产品的国际认可度，扩大出口市场，增强其在全球马肉贸易中的话语权，并可能带动国内马肉产业链升级，促进畜牧业和食品加工业发展，同时加强与中、日等国的经贸合作。</span></div>
 </div>
 </div>
-<div class="doc-section">
+<div class="doc-section" id="sec-finance">
 <h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(9 条)</span></h2>
 <div class="item">
 <h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/yijiazhongguoxingjin-db2f953b/" target="_blank">又一家中国银行计划进入哈萨克斯坦市场</a></h3>
@@ -886,7 +922,7 @@ KazStandard方面认为，马肉具有较高蛋白质含量和较为均衡的氨
 <div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">油价上涨利好哈萨克斯坦能源出口收入，但霍尔木兹海峡风险可能推高全球通胀，影响经济稳定。哈国需关注地缘局势，平衡能源收益与外部风险。</span></div>
 </div>
 </div>
-<div class="doc-section">
+<div class="doc-section" id="sec-mining">
 <h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(4 条)</span></h2>
 <div class="item">
 <h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/noviy-kompleks-na-rudnike-zhalpak-v-kazahstane-budet-proizvodit-500-tonn-urana-v-0bb816cb" target="_blank">哈萨克斯坦«扎尔帕克»矿新综合体年产铀500吨</a></h3>
@@ -979,7 +1015,7 @@ KazStandard方面认为，马肉具有较高蛋白质含量和较为均衡的氨
 
   <div class="footer">
     <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
-    <p>生成时间：2026-08-20 16:20</p>
+    <p>生成时间：2026-08-20 16:30</p>
   </div>
 </div>
 <script>
@@ -994,6 +1030,16 @@ if (content && content.classList.contains('full-content')) {
     : '<span class="arrow">▸</span>展开全文';
 }
 }
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
 </script>
 </body>
 </html>
