@@ -14,18 +14,25 @@ import os
 import subprocess
 import sys
 import traceback
-from datetime import datetime
+from datetime import datetime, timedelta
+
+# 板块名从 sections.py 读取（单一来源，勿在此重复定义）
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+try:
+    from sections import SECTIONS
+    SECTION_NAMES = {s["id"]: s["short"] for s in SECTIONS}
+except ImportError:
+    # 兜底（理论上不会发生，sections.py 与 daily_cron.py 同目录）
+    SECTION_NAMES = {
+        "politics_domestic": "内政",
+        "politics_foreign": "外交",
+        "finance": "金融",
+        "mining": "矿产",
+    }
 
 BASE_DIR = os.path.expanduser("~/Documents/news-daily")
 SCRAPER_DIR = os.path.join(BASE_DIR, "scraper")
 PAGES_URL = "https://macmini9330.github.io/news-daily/"
-
-SECTION_NAMES = {
-    "politics_domestic": "内政",
-    "politics_foreign": "外交",
-    "finance": "金融",
-    "mining": "矿产",
-}
 
 
 def run_pipeline() -> bool:
@@ -53,7 +60,7 @@ def build_summary() -> str:
     today = datetime.now()
     today_str = today.strftime("%Y-%m-%d")
     # 窗口：前一日 09:00 → 当日 09:00（北京时间），与 fetch.window_bounds 一致
-    prev_day = (today - __import__("datetime").timedelta(days=1)).strftime("%Y-%m-%d")
+    prev_day = (today - timedelta(days=1)).strftime("%Y-%m-%d")
     try:
         with open("/tmp/kz_articles_analyzed.json", encoding="utf-8") as f:
             data = json.load(f)
@@ -76,7 +83,7 @@ def build_summary() -> str:
 
 
 def main():
-    print(f"🇰🇿 日报流水线启动 {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    # no_agent 模式：stdout 全文投递，只输出最终结果（摘要或错误），不输出过程日志
     ok = run_pipeline()
     if ok:
         print(build_summary())

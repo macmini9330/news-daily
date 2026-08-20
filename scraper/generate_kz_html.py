@@ -8,6 +8,7 @@
 import json
 import os
 import re
+import sys
 from datetime import datetime
 
 # 输出目录
@@ -547,7 +548,7 @@ def main():
     # 内容范围 = 前一日 09:00 → 当日 09:00（北京时间），复用 fetch.window_bounds 保持一致
     import sys as _sys
     _sys.path.insert(0, BASE_DIR)
-    from scraper.fetch_kz_news import window_bounds
+    from fetch_kz_news import window_bounds
     run_now = datetime.now()
     date_str = run_now.strftime("%Y-%m-%d")
     window_start_dt, window_end_dt = window_bounds()

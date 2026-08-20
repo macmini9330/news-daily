@@ -17,12 +17,12 @@ BASE_DIR = os.path.expanduser("~/Documents/news-daily")
 SCRAPER_DIR = os.path.join(BASE_DIR, "scraper")
 
 
-def run_step(name: str, cmd: list) -> bool:
-    """执行子步骤"""
+def run_step(name: str, cmd: list, timeout: int = 600) -> bool:
+    """执行子步骤（analyze 阶段给 900s，LLM 逐条翻译耗时长）"""
     print(f"\n{'='*50}")
     print(f"▶️  {name}")
     print(f"{'='*50}")
-    r = subprocess.run(cmd, cwd=BASE_DIR, capture_output=True, text=True, timeout=600)
+    r = subprocess.run(cmd, cwd=BASE_DIR, capture_output=True, text=True, timeout=timeout)
     if r.stdout:
         print(r.stdout[-2000:])
     if r.returncode != 0:
@@ -44,8 +44,8 @@ def main():
     if not run_step("抓取新闻", [sys.executable, os.path.join(SCRAPER_DIR, "fetch_kz_news.py")]):
         sys.exit(1)
 
-    # 2. 分析
-    if not run_step("LLM 分类分析", [sys.executable, os.path.join(SCRAPER_DIR, "analyze_kz_news.py")]):
+    # 2. 分析（LLM 逐条翻译 50-60 条，900s 上限）
+    if not run_step("LLM 分类分析", [sys.executable, os.path.join(SCRAPER_DIR, "analyze_kz_news.py")], timeout=900):
         sys.exit(1)
 
     # 3. 生成 HTML

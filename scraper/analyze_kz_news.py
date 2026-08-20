@@ -96,7 +96,7 @@ def classify_and_translate(articles: list) -> list:
 - other: {OTHER_DESC}
 
 ## 分类优先级规则（多板块冲突时按序裁决）
-{CLASSIFY_RULES_STR}
+{classify_rules_str}
 
 ## 输出格式（严格 JSON）
 {{
