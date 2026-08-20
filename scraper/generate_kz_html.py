@@ -371,7 +371,7 @@ def main():
     # 统计今日条数
     total = sum(len(v) for v in analyzed["sections"].values())
 
-    # 生成/更新索引页（读取已有历史）
+    # 生成/更新索引页（读取已有历史，从每个 HTML 统计真实条数）
     history = {}
     if os.path.exists(KZ_DIR):
         for fn in sorted(os.listdir(KZ_DIR)):
@@ -379,7 +379,14 @@ def main():
                 d = fn[:-5]
                 try:
                     datetime.strptime(d, "%Y-%m-%d")
-                    history[d] = "当日"
+                    # 统计该期实际条数（展开全文个数 = 有全文的条数）
+                    try:
+                        with open(os.path.join(KZ_DIR, fn), encoding="utf-8") as hf:
+                            hc = hf.read()
+                        cnt = hc.count("展开全文")
+                        history[d] = str(cnt) if cnt > 0 else "?"
+                    except Exception:
+                        history[d] = "?"
                 except ValueError:
                     pass
     history[date_str] = str(total)
