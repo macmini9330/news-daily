@@ -46,19 +46,15 @@ body {
 }
 .stat-card .num { font-size: 1.7em; font-weight: 800; color: #f0f6fc; }
 .stat-card .label { font-size: .82rem; color: #8b949e; margin-top: 2px; }
-/* 汇率表格卡片（第4张）：当日汇率 更新时间+表格 */
+/* 汇率表格卡片（第4张）：标题居中加粗 + 三字段红绿青 + 一行数值 */
 .rates-card { min-width: 240px; border: 1px solid #21262d; border-radius: 14px; background: #161b22; box-shadow: 0 4px 20px rgba(0,0,0,.3); padding: 12px 16px; }
-.rates-card .rates-title { font-size: .88rem; font-weight: 700; color: #f0f6fc; margin-bottom: 8px; }
+.rates-card .rates-title { font-size: .92rem; font-weight: 700; color: #f0f6fc; text-align: center; margin-bottom: 10px; }
 .rates-table { width: 100%; border-collapse: collapse; font-size: .9rem; }
-.rates-table th { text-align: left; color: #8b949e; font-weight: 600; font-size: .75rem; padding: 4px 8px; border-bottom: 1px solid #21262d; }
-.rates-table td { padding: 5px 8px; border-bottom: 1px solid #161b22; color: #c9d1d9; }
-.rates-table tr:last-child td { border-bottom: none; }
-.rates-table td:last-child { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
-.r-sym { margin-right: 2px; }
-.r-code { color: #8b949e; font-size: .75rem; font-weight: 400; }
-.r-cny { color: #FED700; }
-.r-usd { color: #00AFCA; }
-.r-kzt { color: #7ee787; }
+.rates-table th { padding: 6px 8px; font-size: .95rem; font-weight: 700; text-align: center; border-bottom: 1px solid #21262d; }
+.rates-table td { padding: 8px 8px; text-align: center; font-weight: 700; font-size: 1.05rem; font-variant-numeric: tabular-nums; }
+.r-cny { color: #f85149; }  /* 人民币 红 */
+.r-usd { color: #3fb950; }  /* 美元 绿 */
+.r-kzt { color: #00AFCA; }  /* 坚戈 浅青蓝 */
 
 /* ===== 最新一期 ===== */
 .latest-card {
@@ -147,10 +143,16 @@ ul { list-style: none; padding: 0; }
   <div class="rates-card">
     <div class="rates-title">当日汇率（更新时间：2026年08月21日）</div>
     <table class="rates-table">
-      <tr><th>货币</th><th>兑 1 人民币</th></tr>
-      <tr><td><span class="r-sym">¥</span> 人民币 <span class="r-code">CNY</span></td><td class="r-val r-cny">1.0000</td></tr>
-      <tr><td><span class="r-sym">$</span> 美元 <span class="r-code">USD</span></td><td class="r-val r-usd">0.1482</td></tr>
-      <tr><td><span class="r-sym">₸</span> 坚戈 <span class="r-code">KZT</span></td><td class="r-val r-kzt">67.7645</td></tr>
+      <tr class="rates-head">
+        <th class="r-cny">人民币</th>
+        <th class="r-usd">美元</th>
+        <th class="r-kzt">坚戈</th>
+      </tr>
+      <tr class="rates-body">
+        <td class="r-val r-cny">1.0000</td>
+        <td class="r-val r-usd">0.1482</td>
+        <td class="r-val r-kzt">67.7645</td>
+      </tr>
     </table>
   </div>
   </div>
