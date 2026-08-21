@@ -292,7 +292,23 @@ def generate_index(history: dict) -> str:
     """
     # 解析各期板块分布（从 HTML 文件读）
     import re as _re
+    import json as _json
     kz_dir = os.path.join(BASE_DIR, "kz")
+
+    # ===== 今日汇率（用户拍板：人民币为基准，只放首页，4位小数）=====
+    rates_card = ""
+    try:
+        if os.path.exists("/tmp/kz_rates.json"):
+            with open("/tmp/kz_rates.json", encoding="utf-8") as rf:
+                rates = _json.load(rf)
+            if all(k in rates for k in ("cny", "usd", "kzt")):
+                rates_card = f"""
+  <div class="stat-card rates-card">
+    <div class="num rates-num"><span class="r-cny">{rates['cny']:.4f}</span><span class="r-sep">:</span><span class="r-usd">{rates['usd']:.4f}</span><span class="r-sep">:</span><span class="r-kzt">{rates['kzt']:.4f}</span></div>
+    <div class="label">今日汇率 · 人民币 : 美元 : 坚戈</div>
+  </div>"""
+    except Exception:
+        rates_card = ""  # 汇率不可用则不显示，不影响首页
     per_issue = {}  # date_str -> {total, sections: {name: cnt}}
     if os.path.exists(kz_dir):
         for fn in os.listdir(kz_dir):
@@ -427,6 +443,13 @@ body {{
 }}
 .stat-card .num {{ font-size: 1.7em; font-weight: 800; color: #f0f6fc; }}
 .stat-card .label {{ font-size: .82rem; color: #8b949e; margin-top: 2px; }}
+/* 汇率卡片（第4张）：人民币:美元:坚戈 横排 */
+.rates-card {{ min-width: 200px; }}
+.rates-card .num {{ font-size: 1.05em; letter-spacing: .5px; white-space: nowrap; }}
+.rates-card .r-cny {{ color: #FED700; font-weight: 800; }}
+.rates-card .r-usd {{ color: #00AFCA; font-weight: 800; }}
+.rates-card .r-kzt {{ color: #7ee787; font-weight: 800; }}
+.rates-card .r-sep {{ color: #8b949e; margin: 0 3px; font-weight: 400; }}
 
 /* ===== 最新一期 ===== */
 .latest-card {{
@@ -511,6 +534,7 @@ ul {{ list-style: none; padding: 0; }}
     <div class="stat-card"><div class="num">{total_issues}</div><div class="label">已发布期数</div></div>
     <div class="stat-card"><div class="num">{total_items}</div><div class="label">累计新闻条数</div></div>
     <div class="stat-card"><div class="num">{len(SECTIONS)}</div><div class="label">覆盖板块</div></div>
+    {rates_card}
   </div>
 
   {latest_html}
