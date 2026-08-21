@@ -9,7 +9,7 @@ import json
 import os
 import re
 import sys
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 
 # 输出目录
 BASE_DIR = os.path.expanduser("~/Documents/news-daily")
@@ -295,17 +295,29 @@ def generate_index(history: dict) -> str:
     import json as _json
     kz_dir = os.path.join(BASE_DIR, "kz")
 
-    # ===== 今日汇率（用户拍板：人民币为基准，只放首页，4位小数）=====
+    # ===== 今日汇率（用户拍板：表格展示，标题带更新时间，人民币为基准，4位小数）=====
     rates_card = ""
     try:
         if os.path.exists("/tmp/kz_rates.json"):
             with open("/tmp/kz_rates.json", encoding="utf-8") as rf:
                 rates = _json.load(rf)
             if all(k in rates for k in ("cny", "usd", "kzt")):
+                # 更新时间：API 返回 UTC，转北京时间显示
+                try:
+                    api_dt = datetime.strptime(rates.get("api_time", ""), "%a, %d %b %Y %H:%M:%S %z")
+                    bj_dt = api_dt.astimezone(timezone(timedelta(hours=8)))
+                    update_str = f"{bj_dt.year}年{bj_dt.month:02d}月{bj_dt.day:02d}日"
+                except Exception:
+                    update_str = ""
                 rates_card = f"""
-  <div class="stat-card rates-card">
-    <div class="num rates-num"><span class="r-cny">{rates['cny']:.4f}</span><span class="r-sep">:</span><span class="r-usd">{rates['usd']:.4f}</span><span class="r-sep">:</span><span class="r-kzt">{rates['kzt']:.4f}</span></div>
-    <div class="label">今日汇率 · 人民币 : 美元 : 坚戈</div>
+  <div class="rates-card">
+    <div class="rates-title">当日汇率{('（更新时间：' + update_str + '）') if update_str else ''}</div>
+    <table class="rates-table">
+      <tr><th>货币</th><th>兑 1 人民币</th></tr>
+      <tr><td><span class="r-sym">¥</span> 人民币 <span class="r-code">CNY</span></td><td class="r-val r-cny">{rates['cny']:.4f}</td></tr>
+      <tr><td><span class="r-sym">$</span> 美元 <span class="r-code">USD</span></td><td class="r-val r-usd">{rates['usd']:.4f}</td></tr>
+      <tr><td><span class="r-sym">₸</span> 坚戈 <span class="r-code">KZT</span></td><td class="r-val r-kzt">{rates['kzt']:.4f}</td></tr>
+    </table>
   </div>"""
     except Exception:
         rates_card = ""  # 汇率不可用则不显示，不影响首页
@@ -443,13 +455,19 @@ body {{
 }}
 .stat-card .num {{ font-size: 1.7em; font-weight: 800; color: #f0f6fc; }}
 .stat-card .label {{ font-size: .82rem; color: #8b949e; margin-top: 2px; }}
-/* 汇率卡片（第4张）：人民币:美元:坚戈 横排 */
-.rates-card {{ min-width: 200px; }}
-.rates-card .num {{ font-size: 1.05em; letter-spacing: .5px; white-space: nowrap; }}
-.rates-card .r-cny {{ color: #FED700; font-weight: 800; }}
-.rates-card .r-usd {{ color: #00AFCA; font-weight: 800; }}
-.rates-card .r-kzt {{ color: #7ee787; font-weight: 800; }}
-.rates-card .r-sep {{ color: #8b949e; margin: 0 3px; font-weight: 400; }}
+/* 汇率表格卡片（第4张）：当日汇率 更新时间+表格 */
+.rates-card {{ min-width: 240px; border: 1px solid #21262d; border-radius: 14px; background: #161b22; box-shadow: 0 4px 20px rgba(0,0,0,.3); padding: 12px 16px; }}
+.rates-card .rates-title {{ font-size: .88rem; font-weight: 700; color: #f0f6fc; margin-bottom: 8px; }}
+.rates-table {{ width: 100%; border-collapse: collapse; font-size: .9rem; }}
+.rates-table th {{ text-align: left; color: #8b949e; font-weight: 600; font-size: .75rem; padding: 4px 8px; border-bottom: 1px solid #21262d; }}
+.rates-table td {{ padding: 5px 8px; border-bottom: 1px solid #161b22; color: #c9d1d9; }}
+.rates-table tr:last-child td {{ border-bottom: none; }}
+.rates-table td:last-child {{ text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }}
+.r-sym {{ margin-right: 2px; }}
+.r-code {{ color: #8b949e; font-size: .75rem; font-weight: 400; }}
+.r-cny {{ color: #FED700; }}
+.r-usd {{ color: #00AFCA; }}
+.r-kzt {{ color: #7ee787; }}
 
 /* ===== 最新一期 ===== */
 .latest-card {{

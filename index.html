@@ -46,13 +46,19 @@ body {
 }
 .stat-card .num { font-size: 1.7em; font-weight: 800; color: #f0f6fc; }
 .stat-card .label { font-size: .82rem; color: #8b949e; margin-top: 2px; }
-/* 汇率卡片（第4张）：人民币:美元:坚戈 横排 */
-.rates-card { min-width: 200px; }
-.rates-card .num { font-size: 1.05em; letter-spacing: .5px; white-space: nowrap; }
-.rates-card .r-cny { color: #FED700; font-weight: 800; }
-.rates-card .r-usd { color: #00AFCA; font-weight: 800; }
-.rates-card .r-kzt { color: #7ee787; font-weight: 800; }
-.rates-card .r-sep { color: #8b949e; margin: 0 3px; font-weight: 400; }
+/* 汇率表格卡片（第4张）：当日汇率 更新时间+表格 */
+.rates-card { min-width: 240px; border: 1px solid #21262d; border-radius: 14px; background: #161b22; box-shadow: 0 4px 20px rgba(0,0,0,.3); padding: 12px 16px; }
+.rates-card .rates-title { font-size: .88rem; font-weight: 700; color: #f0f6fc; margin-bottom: 8px; }
+.rates-table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.rates-table th { text-align: left; color: #8b949e; font-weight: 600; font-size: .75rem; padding: 4px 8px; border-bottom: 1px solid #21262d; }
+.rates-table td { padding: 5px 8px; border-bottom: 1px solid #161b22; color: #c9d1d9; }
+.rates-table tr:last-child td { border-bottom: none; }
+.rates-table td:last-child { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+.r-sym { margin-right: 2px; }
+.r-code { color: #8b949e; font-size: .75rem; font-weight: 400; }
+.r-cny { color: #FED700; }
+.r-usd { color: #00AFCA; }
+.r-kzt { color: #7ee787; }
 
 /* ===== 最新一期 ===== */
 .latest-card {
@@ -138,9 +144,14 @@ ul { list-style: none; padding: 0; }
     <div class="stat-card"><div class="num">149</div><div class="label">累计新闻条数</div></div>
     <div class="stat-card"><div class="num">4</div><div class="label">覆盖板块</div></div>
     
-  <div class="stat-card rates-card">
-    <div class="num rates-num"><span class="r-cny">1.0000</span><span class="r-sep">:</span><span class="r-usd">0.1482</span><span class="r-sep">:</span><span class="r-kzt">67.7645</span></div>
-    <div class="label">今日汇率 · 人民币 : 美元 : 坚戈</div>
+  <div class="rates-card">
+    <div class="rates-title">当日汇率（更新时间：2026年08月21日）</div>
+    <table class="rates-table">
+      <tr><th>货币</th><th>兑 1 人民币</th></tr>
+      <tr><td><span class="r-sym">¥</span> 人民币 <span class="r-code">CNY</span></td><td class="r-val r-cny">1.0000</td></tr>
+      <tr><td><span class="r-sym">$</span> 美元 <span class="r-code">USD</span></td><td class="r-val r-usd">0.1482</td></tr>
+      <tr><td><span class="r-sym">₸</span> 坚戈 <span class="r-code">KZT</span></td><td class="r-val r-kzt">67.7645</td></tr>
+    </table>
   </div>
   </div>
 
