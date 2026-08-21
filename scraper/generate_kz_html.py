@@ -323,6 +323,11 @@ def generate_index(history: dict) -> str:
         <td class="r-val r-usd">{rates['usd']:.4f}</td>
         <td class="r-val r-kzt">{rates['kzt']:.4f}</td>
       </tr>
+      <tr class="rates-body rates-usd">
+        <td class="r-val r-cny">{rates['usd_cny']:.4f}</td>
+        <td class="r-val r-usd">1.0000</td>
+        <td class="r-val r-kzt">{rates['usd_kzt']:.4f}</td>
+      </tr>
     </table>
   </div>"""
     except Exception:
@@ -467,6 +472,9 @@ body {{
 .rates-table {{ width: 100%; border-collapse: collapse; font-size: .9rem; }}
 .rates-table th {{ padding: 6px 8px; font-size: .95rem; font-weight: 700; text-align: center; border-bottom: 1px solid #21262d; }}
 .rates-table td {{ padding: 8px 8px; text-align: center; font-weight: 700; font-size: 1.05rem; font-variant-numeric: tabular-nums; }}
+.rates-table .rates-usd {{ border-top: 1px dashed #30363d; }}
+.rates-table .rates-usd td {{ font-size: .95rem; }}
+.rates-table .rates-usd td:first-child::before {{ content: "1美元 = "; font-size: .75rem; color: #8b949e; font-weight: 400; display: block; margin-bottom: 1px; }}
 .r-cny {{ color: #f85149; }}  /* 人民币 红 */
 .r-usd {{ color: #3fb950; }}  /* 美元 绿 */
 .r-kzt {{ color: #00AFCA; }}  /* 坚戈 浅青蓝 */

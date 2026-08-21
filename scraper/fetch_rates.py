@@ -40,10 +40,16 @@ def fetch_rates():
         kzt_per_cny = 1.0 / cny_per_kzt      # 1 人民币 = 多少坚戈
         usd_per_cny = usd_per_kzt / cny_per_kzt  # 1 人民币 = 多少美元
 
+        # 以美元为基准: 1 USD = ? CNY = ? KZT（用原始值算，避免二次四舍五入误差）
+        cny_per_usd = cny_per_kzt / usd_per_kzt  # 1 美元 = 多少人民币
+        kzt_per_usd = 1.0 / usd_per_kzt          # 1 美元 = 多少坚戈
+
         return {
             "cny": 1.0,
             "usd": round(usd_per_cny, 4),
             "kzt": round(kzt_per_cny, 4),
+            "usd_cny": round(cny_per_usd, 4),
+            "usd_kzt": round(kzt_per_usd, 4),
             "fetched_at": datetime.now().isoformat(timespec="seconds"),
             "api_time": data.get("time_last_update_utc", ""),
         }
@@ -60,7 +66,8 @@ def main():
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         json.dump(rates, f, ensure_ascii=False, indent=2)
     print(f"✅ 汇率已保存: {OUT_PATH}")
-    print(f"   人民币 : 美元 : 坚戈 = {rates['cny']} : {rates['usd']} : {rates['kzt']}")
+    print(f"   人民币为1: 人民币 : 美元 : 坚戈 = {rates['cny']:.4f} : {rates['usd']:.4f} : {rates['kzt']:.4f}")
+    print(f"   美元为1:   人民币 : 美元 : 坚戈 = {rates['usd_cny']:.4f} : 1.0000 : {rates['usd_kzt']:.4f}")
 
 
 if __name__ == "__main__":
