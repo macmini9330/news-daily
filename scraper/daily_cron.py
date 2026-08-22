@@ -39,7 +39,7 @@ def run_pipeline() -> bool:
     """运行完整流水线，返回是否成功"""
     r = subprocess.run(
         [sys.executable, os.path.join(SCRAPER_DIR, "run_daily.py")],
-        cwd=BASE_DIR, capture_output=True, text=True, timeout=900,  # 15 分钟上限
+        cwd=BASE_DIR, capture_output=True, text=True, timeout=1200,  # 20 分钟上限（analyze 实测 15.5 分钟，900s 会误杀）
     )
     if r.returncode == 0:
         return True
