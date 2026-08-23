@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年8月23日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年8月23日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年08月22日早9:00至2026年08月23日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 33 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">13</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">7</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">8</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">5</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(13 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/guojiachengguojiyingdui-287e330d/" target="_blank">突厥国家组织成员国选举机构探讨应对深度伪造威胁</a></h3>
+<div class="item-meta">哈通社中文版 · 08/22 21:00<span class="source-link"><a href="https://cn.inform.kz/news/guojiachengguojiyingdui-287e330d/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>突厥国家组织成员国选举机构在哈萨克斯坦举行会议，讨论应对深度伪造和虚假信息对选举的威胁。会议推介了《突厥国家组织成员国选举制度》专著，并宣布成立工作组，计划于2026年4月召开首次线上会议。该咨询平台由托卡耶夫总统于2023年倡议成立，旨在加强选举机构合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">突厥国家组织成员国选举机构探讨应对深度伪造威胁
+哈萨克斯坦中央选举委员会主席努尔兰·阿布德罗夫（Нұрлан Әбдіров）、阿塞拜疆中央选举委员会主席马扎希尔·帕纳霍夫（Мазахир Панахов）、吉尔吉斯斯坦中央选举和全民公投委员会主席特内奇特克·沙伊纳扎罗夫（Тынычтык Шайназаров）、土耳其最高选举委员会主席塞尔达尔·穆特塔（Сердар Мутта）、乌兹别克斯坦中央选举委员会主席扎伊尼丁·尼扎姆霍贾耶夫（Зайниддин Низамходжаев）、突厥国家组织副秘书长兼该组织选举观察团团长努鲁·阿列克佩尔奥格雷·古利耶夫（Нуру Алекпер Оглы Гулиев），以及土库曼斯坦中央选举委员会副主席等出席会议。
+突厥国家组织、突厥国家议会大会和突厥学院的代表也参加了会议。
+Фото: Виктор Федюнин/ Kazinform 阿布德罗夫在会议开幕式上表示，应继续推动突厥国家选举机构之间的经验交流。
+会议期间，与会代表举行了《突厥国家组织成员国选举制度》集体专著推介仪式。阿布德罗夫表示，该书是咨询平台所有参与国代表共同努力的成果。
+“我要强调，这不仅仅是哈萨克斯坦的工作或成就，而是我们共同努力的成果。如果大家留意书籍封面，就会看到编辑委员会负责人正是我们尊敬的各位主席。因此，这是我们共同的劳动成果。”他说。
+与会代表认为，该书全面介绍了突厥国家组织成员国的选举制度，汇集了不同的实践方式和观点，并涵盖选举领域的现代发展趋势和创新，可为今后的科学研究、提升选举文化、制定教育项目以及深化选举法领域国际合作提供参考。
+会议重点讨论了选举期间应对深度伪造、虚假信息以及其他形式信息操纵的问题。
+Фото: Виктор Федюнин / Kazinform 与会代表指出，人工智能技术快速发展正在给选举进程带来新的挑战。与过去相比，如今虚假或具有操纵性的内容能够以更快速度生成并传播。
+古利耶夫表示：“深度伪造可能歪曲候选人的形象，将虚假言论强加于候选人，影响社会舆论，并最终削弱公众对选举制度的信任。”
+他还介绍了咨询平台框架下成立的“深度伪造对选举进程影响问题工作组”有关工作。该工作组于2026年4月举行首次线上会议。
+与会代表在交流经验后指出，突厥国家组织各成员国已经形成了一些应对新型信息威胁的实践经验，可相互借鉴。
+与此同时，与会代表强调，在打击虚假信息的同时，应注意保持与言论自由之间的平衡，并保障公民权利和个人数据安全。
+与会代表还对哈萨克斯坦的接待以及会议组织工作表示感谢，并指出，咨询平台已成为突厥国家中央选举机构开展常态化经验交流和加强合作的重要平台。
+Фото: Виктор Федюнин / Kazinform 突厥国家组织成员国中央选举机构咨询平台由哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫（Қасым-Жомарт Тоқаев）于2023年11月3日在阿斯塔纳举行的突厥国家组织第十届峰会上倡议成立。
+这一倡议得到突厥国家领导人的一致支持，并被写入2024年11月6日通过的突厥国家组织第十一届峰会《比什凯克宣言》。</div>
+<ul>
+<li>多国选举机构共商应对深度伪造威胁</li>
+<li>推介《突厥国家组织成员国选举制度》专著</li>
+<li>成立工作组，2026年4月首次线上会议</li>
+<li>强调平衡打击虚假信息与言论自由</li>
+<li>咨询平台由托卡耶夫2023年倡议成立</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次会议强化了哈萨克斯坦在突厥国家组织中的领导角色，推动选举领域合作，提升应对信息战能力，对地区政治稳定和民主进程有积极影响，同时可能促进相关技术法规的制定。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/singapur-indoneziya-i-vetnam-prisoedinilis-k-golosovaniyu-na-viborah-v-kurultay-76cc0d2d" target="_blank">哈萨克斯坦人在新加坡、印度尼西亚和越南参加库鲁尔泰选举投票</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/23 08:32<span class="source-link"><a href="https://www.inform.kz/ru/singapur-indoneziya-i-vetnam-prisoedinilis-k-golosovaniyu-na-viborah-v-kurultay-76cc0d2d" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦在海外多个国家设立投票站，供侨民参与库鲁尔泰选举。新加坡、印尼、越南的投票站已开放，此前韩国、日本、中国（北京、上海、西安、香港）及马来西亚的投票站也已启动。此次选举共设10,423个投票站，其中79个设在61个外国国家的哈萨克斯坦代表机构内，方便海外公民行使投票权。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦人在新加坡、印度尼西亚和越南投票选举库鲁尔泰
+正文：这些国家的投票站已在哈萨克斯坦外交代表机构所在地开放。
+照片：哈萨克斯坦外交部 照片：哈萨克斯坦外交部 此前，韩国和日本的投票站已经开放。投票站已在哈萨克斯坦驻北京大使馆以及哈萨克斯坦驻上海、西安和香港总领事馆启动。第423号投票站已在马来西亚开始工作。提醒一下，库鲁尔泰选举的投票将在10,423个投票站进行，其中包括在61个外国国家中我国代表机构设立的79个投票站。</div>
+<ul>
+<li>海外投票站扩展至新加坡、印尼、越南。</li>
+<li>此前韩国、日本、中国多地及马来西亚已开放。</li>
+<li>选举共设10,423个投票站，海外79个。</li>
+<li>覆盖61个国家，保障海外公民投票权。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举增强海外哈萨克斯坦人的政治参与，提升库鲁尔泰的合法性，展现民主进程，同时加强哈萨克斯坦与相关国家的外交联系，对政治稳定和外交形象有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/kazahstantsi-v-malayzii-nachali-golosovat-na-viborah-v-kurultay-db752af9" target="_blank">哈萨克斯坦人在马来西亚开始参加库鲁尔泰选举投票</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/23 08:16<span class="source-link"><a href="https://www.inform.kz/ru/kazahstantsi-v-malayzii-nachali-golosovat-na-viborah-v-kurultay-db752af9" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦海外公民在马来西亚、韩国、日本、中国（北京、上海、西安、香港）等地开始投票选举库鲁尔泰。选举定于8月23日举行，由总统于7月1日任命。中央选举委员会登记了7个政党的545名候选人，竞争145个议员席位，平均每个席位有4名候选人竞争。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦人在马来西亚开始投票选举库鲁尔泰
+正文：投票站已在哈萨克斯坦外交代表机构所在地按规定时间开放。
+照片：哈萨克斯坦共和国外交部 此前，投票站已在韩国和日本开放。投票站在哈萨克斯坦驻北京大使馆以及哈萨克斯坦共和国驻上海、西安和香港总领事馆启动。
+回顾：7月1日，哈萨克斯坦总统将库鲁尔泰选举定于8月23日举行。
+中央选举委员会已登记了七个政党提交的库鲁尔泰议员候选人政党名单。共登记了545名候选人，而库鲁尔泰将包括145名议员。因此，竞争为每名议员席位4名候选人。</div>
+<ul>
+<li>海外投票在马来西亚、韩国、日本、中国多地启动</li>
+<li>库鲁尔泰选举定于8月23日举行</li>
+<li>7个政党共545名候选人登记</li>
+<li>145个议员席位，竞争比例4:1</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次选举显示哈萨克斯坦政治民主化进程，增强海外公民参与度，提升国家国际形象。高竞争比例反映政治多元化，可能影响国内政治格局，但不会改变矿产经济主导地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://www.inform.kz/ru/izbiratelnie-uchastki-na-viborah-v-kurultay-otkrilis-v-kitae-1c0bdff7" target="_blank">库鲁尔泰选举投票站在中国开放</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/23 07:15<span class="source-link"><a href="https://www.inform.kz/ru/izbiratelnie-uchastki-na-viborah-v-kurultay-otkrilis-v-kitae-1c0bdff7" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦库鲁尔泰选举在中国四个城市设立投票站，于北京时间07:00开放，投票时间为阿斯塔纳时间04:00至17:00（北京时间07:00至20:00）。居住在中国的哈萨克斯坦公民可参与投票，计票于当地时间20:00开始。此前已组建海外选区委员会。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦库鲁尔泰选举投票站在中国开放
+正文：北京时间07:00，选举委员会成员举行了投票站的隆重开放仪式，并奏响了哈萨克斯坦共和国国歌。
+照片：别里克·塔宾巴耶夫 / Kazinform 在中国四个城市的投票将于阿斯塔纳时间04:00至17:00（北京时间07:00至20:00）进行。计票和投票结果记录将在当地时间20:00开始。
+照片：别里克·塔宾巴耶夫 / Kazinform 居住或位于中国境内的哈萨克斯坦共和国公民可以参加投票。中国的投票站地址见此处。
+照片：别里克·塔宾巴耶夫 / Kazinform 此前有报道称，为库鲁尔泰议员选举在海外组建了选区委员会。</div>
+<ul>
+<li>中国四城设投票站，开放时间明确</li>
+<li>投票时间跨阿斯塔纳和北京时间</li>
+<li>居住在中国的哈国公民可投票</li>
+<li>计票于当地时间20:00开始</li>
+<li>海外选区委员会已组建</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举保障海外公民政治权利，增强库鲁尔泰选举的合法性和代表性，促进哈中关系，体现哈萨克斯坦对海外侨民的重视，可能提升国际形象。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://www.inform.kz/ru/kazahstanets-v-obraze-biya-odnim-iz-pervih-progolosoval-v-tokio-64f194c9" target="_blank">哈萨克斯坦人以比伊形象在东京率先投票</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/23 07:04<span class="source-link"><a href="https://www.inform.kz/ru/kazahstanets-v-obraze-biya-odnim-iz-pervih-progolosoval-v-tokio-64f194c9" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦留学生阿利舍尔·阿齐姆巴耶夫在东京以传统比伊形象参加库鲁尔泰代表选举投票，强调历史传统与现代政治结合。东京第425号投票站当地时间早7点开放，在日哈萨克斯坦人成为海外首批投票者。阿齐姆巴耶夫认为新库鲁尔泰将延续历史传统，作为现代机构与人民互动解决国家问题。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦人以比伊形象在东京率先投票
+正文：阿利舍尔·阿齐姆巴耶夫在筑波大学学习“国家政策”专业。他以自己的形象强调了哈萨克民族历史传统与哈萨克斯坦年轻一代现代愿望之间的联系。
+据阿利舍尔称，库鲁尔泰在历史上一直是国家大会，在那里做出决定国家命运的决定。
+——我认为，新成立的库鲁尔泰将继续这一传统，作为现代政治机构，旨在与人民互动解决国家重要问题。——他指出。
+东京第425号投票站于当地时间07:00开放。在日本的哈萨克斯坦人成为海外首批能够投票选举库鲁尔泰代表的人之一。</div>
+<ul>
+<li>留学生以传统形象在东京投票</li>
+<li>强调库鲁尔泰历史与现代结合</li>
+<li>东京投票站早7点开放</li>
+<li>在日哈国人海外首批投票</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举提升库鲁尔泰选举的国际关注度，强化哈萨克斯坦政治改革形象，促进海外侨民政治参与，对国内政治民主化进程有积极象征意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://www.inform.kz/ru/pervoy-na-viborah-v-kurultay-v-seule-progolosovala-studentka-iz-kazahstana-d6b78d59" target="_blank">首尔库鲁尔泰选举首位投票者是哈萨克斯坦女学生</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/23 06:43<span class="source-link"><a href="https://www.inform.kz/ru/pervoy-na-viborah-v-kurultay-v-seule-progolosovala-studentka-iz-kazahstana-d6b78d59" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>在韩国首尔举行的库鲁尔泰选举中，哈萨克斯坦女大学生阿扎尔·卡里姆扎诺娃成为首位投票者。她旅居韩国约三年，就读于高丽大学，强调参与选举是宪法权利和公民责任，并呼吁年轻人积极表达意见。首尔第422号投票站于当地时间07:00开放，在韩哈萨克斯坦人成为海外首批投票者之一。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：首尔库鲁尔泰选举中首位投票的是来自哈萨克斯坦的女大学生
+正文：阿扎尔·卡里姆扎诺娃在韩国生活了约三年，目前就读于高丽大学。她指出，尽管身在国外，她仍持续关注哈萨克斯坦的社会政治生活。
+——作为哈萨克斯坦共和国公民，我努力不置身于关乎国家未来的重要社会政治进程之外，并贡献自己的一份力量，——阿扎尔·卡里姆扎诺娃说。
+据她所言，参与选举不仅是宪法权利，也是公民责任。
+——我们的选择直接影响国家的未来。今天做出的决定决定了哈萨克斯坦明天的发展方向。因此，年轻人表达意见并积极参与国家社会政治生活至关重要，——她强调道。
+首尔第422号投票站于当地时间07:00开放。在韩国的哈萨克斯坦人成为海外首批参与库鲁尔泰议员选举投票的人之一。</div>
+<ul>
+<li>首尔库鲁尔泰选举首位投票者为哈国女学生</li>
+<li>投票站当地时间07:00开放，海外首批</li>
+<li>强调选举是宪法权利和公民责任</li>
+<li>呼吁年轻人积极参与国家政治生活</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该事件展示海外哈萨克斯坦公民的政治参与度，增强选举国际可见度，有助于提升国家民主形象，对哈国政治稳定和外交软实力有积极影响，同时鼓励海外侨民关注国内事务。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://www.inform.kz/ru/uchastki-dlya-golosovaniya-na-viborah-v-kurultay-otkrilis-v-koree-i-yaponii-20e6a7d1" target="_blank">韩国和日本库鲁尔泰选举投票站开放</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/23 06:25<span class="source-link"><a href="https://www.inform.kz/ru/uchastki-dlya-golosovaniya-na-viborah-v-kurultay-otkrilis-v-koree-i-yaponii-20e6a7d1" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦在韩国首尔和日本东京设立境外投票站，于当地时间7点开放，供海外公民参与库鲁尔泰选举。选举定于8月23日举行，中央选举委员会已登记7个政党的545名候选人，竞争145个议员席位，平均每个席位4名候选人竞争。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：韩国和日本库鲁尔泰选举投票站开放
+正文：首尔的第422号投票站和东京的第425号投票站于当地时间07:00开始工作。
+哈萨克斯坦境外的所有投票站均设在哈萨克斯坦共和国外交代表机构内。
+在国外的哈萨克斯坦公民可以在国家外交代表机构设立的投票站行使选举权。
+提醒一下，7月1日，哈萨克斯坦总统将库鲁尔泰选举定于8月23日举行。
+中央选举委员会已登记了七个政党提交的库鲁尔泰议员候选人政党名单。共登记了545名候选人，而库鲁尔泰将包括145名议员。因此，竞争为每个议员席位4名候选人。</div>
+<ul>
+<li>首尔和东京投票站开放，方便海外公民投票。</li>
+<li>库鲁尔泰选举定于8月23日举行。</li>
+<li>7个政党共545名候选人登记参选。</li>
+<li>145个议员席位，竞争比例4:1。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举保障海外哈萨克斯坦公民的选举权，提升选举参与度，增强政治合法性。高竞争比例反映政治多元化，可能影响议会构成，对国内政治格局产生一定影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://www.inform.kz/ru/kurultay-2026-hronika-viborov-8f589008" target="_blank">库鲁尔泰-2026：选举纪事</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/23 06:15<span class="source-link"><a href="https://www.inform.kz/ru/kurultay-2026-hronika-viborov-8f589008" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦库鲁尔泰选举于8月23日举行，海外投票站率先开放，覆盖新加坡、印尼、越南、马来西亚、中国、韩国和日本。首尔和东京的选民表达了对选举的重视。全国共登记545名候选人，竞争145个代表席位，平均每个席位4人竞争。选举由总统于7月1日宣布，中央选举委员会已确认七个政党的候选人名单。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：库鲁尔泰-2026：选举时间表
+正文：
+05.32 — 新加坡、印度尼西亚和越南的库鲁尔泰选举投票站已开放。
+04.00 — 马来西亚的投票站开始运作。
+04.00 — 北京（中国）的投票站开始投票。
+投票站在哈萨克斯坦驻北京大使馆以及哈萨克斯坦共和国驻上海、西安和香港总领事馆开放。
+03.00 — 首尔（韩国）和东京（日本）的投票站开放。
+首尔投票站的第一位选民是韩国大学的学生阿扎尔·卡里姆扎诺娃。据她所说，参与选举不仅是宪法权利，也是公民责任。
+在东京投票站，哈萨克斯坦公民阿利舍尔·阿齐姆巴耶夫是首批投票者之一。他身着“比伊”服饰前来投票——这是哈萨克社会中公正、法治和智慧的象征。
+回顾：7月1日，哈萨克斯坦总统将库鲁尔泰选举定于8月23日。
+中央选举委员会已登记了七个政党的库鲁尔泰代表候选人名单。共登记了545名候选人，而库鲁尔泰将包含145名代表。因此，竞争为每个代表席位4名候选人。</div>
+<ul>
+<li>海外投票站率先开放，覆盖亚洲多国。</li>
+<li>首尔、东京选民积极参与，体现公民责任。</li>
+<li>545名候选人竞争145个席位，竞争激烈。</li>
+<li>七个政党参与，选举由总统宣布。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次选举强化了哈萨克斯坦的政治参与和民主进程，提升海外公民的凝聚力。竞争激烈可能加剧政党间博弈，但有助于政治多元化。选举结果将影响国内政策走向，并展示哈萨克斯坦的开放形象，对区域外交有积极信号。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://www.inform.kz/ru/novogo-nachalnika-departamenta-podelam-oboroni-naznachili-vvko-df297565" target="_blank">东哈萨克斯坦州任命新的国防事务部门负责人</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/23 02:28<span class="source-link"><a href="https://www.inform.kz/ru/novogo-nachalnika-departamenta-podelam-oboroni-naznachili-vvko-df297565" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国防部长任命扎苏兰·奈马诺夫为东哈萨克斯坦州国防事务部门负责人。奈马诺夫自2009年起服役，历任排长、副连长，长期从事动员和征兵工作，曾在巴甫洛达尔、阿克托贝及总参谋部任职，最近担任北哈萨克斯坦州国防事务部门第一副负责人。此次任命体现了对动员工作的重视。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：东哈萨克斯坦州任命新的国防事务部门负责人
+正文：在任命到该地区之前，他在北哈萨克斯坦州工作，此前曾在哈萨克斯坦共和国武装力量总参谋部服役。
+扎苏兰·奈马诺夫被哈萨克斯坦共和国国防部长命令任命到新职位。
+新任部门负责人于2009年开始军事服役，担任排长和副连长职务。此后，他的大部分职业生涯与动员工作、兵员补充和征兵组织相关。
+他曾在巴甫洛达尔州和阿克托贝州服役。2020年至2021年间，在阿克托贝担任副参谋长——动员工作和兵员补充部门负责人。
+随后返回巴甫洛达尔，在2021年至2023年间领导军事单位参谋部的动员部门，后来成为参谋长——动员部门负责人。
+下一阶段是在哈萨克斯坦武装力量总参谋部工作。2023年至2024年间，扎苏兰·奈马诺夫担任组织动员工作部门的高级军官，负责非军事训练和征兵组织。
+在被任命到东哈萨克斯坦州之前的最后两年，他担任北哈萨克斯坦州国防事务部门第一副负责人——动员准备问题管理局局长。
+此前，迪恩穆哈梅德·克雷什帕耶夫被任命为哈萨克斯坦劳动部移民委员会主席。</div>
+<ul>
+<li>任命扎苏兰·奈马诺夫为东哈州国防事务部门负责人</li>
+<li>奈马诺夫自2009年服役，长期从事动员和征兵工作</li>
+<li>曾在巴甫洛达尔、阿克托贝及总参谋部任职</li>
+<li>最近担任北哈州国防事务部门第一副负责人</li>
+<li>任命由国防部长命令下达</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次人事调整强化了东哈州国防动员能力，可能影响地区安全部署和征兵效率。奈马诺夫的动员经验有助于提升该州战备水平，对哈萨克斯坦国防体系有积极影响，但具体政策变化需进一步观察。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">10</span> <a href="https://www.inform.kz/ru/kazahstantsev-predupredili-ovozmozhnih-feykah-vden-viborov-004df937" target="_blank">哈萨克斯坦民众被呼吁不要轻信虚假信息和挑衅</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/22 21:25<span class="source-link"><a href="https://www.inform.kz/ru/kazahstantsev-predupredili-ovozmozhnih-feykah-vden-viborov-004df937" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦反虚假信息中心呼吁民众警惕投票相关虚假信息，指出其常使用旧素材、外国材料、匿名账号及AI伪造技术，旨在歪曲投票程序并引发负面情绪。建议民众依赖官方来源，核实信息，不传播未经证实内容。此前该中心已报道常见虚假信息类型。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦呼吁民众不要轻信虚假信息和挑衅
+正文：虚假信息的目的在于歪曲对投票程序的认知，引发公民对国家重大事件的负面情绪反应。
+——此类帖子中最常使用旧照片和视频片段、来自其他国家的材料、未注明拍摄时间和地点的录音片段，以及匿名账号的发布内容。
+反虚假信息中心警告称：“现代技术还允许通过剪辑和人工智能制作和传播此类内容，包括伪造的图像、音频和视频材料（涉及公众人物、政治家的面孔和配音等）。”
+该中心专家建议哈萨克斯坦民众以官方信息来源为准，同时核实原始来源，不传播未经证实的消息。
+此前我们曾报道过哈萨克斯坦最常传播的虚假信息有哪些。</div>
+<ul>
+<li>虚假信息旨在歪曲投票程序，煽动负面情绪</li>
+<li>常用旧照片、外国材料、匿名账号及AI伪造内容</li>
+<li>建议民众只信官方来源，核实原始信息</li>
+<li>不传播未经证实的消息</li>
+<li>此前已报道过常见虚假信息类型</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举旨在维护选举公信力，防止外部势力干扰国内政治进程，强化信息主权。通过官方引导，减少社会动荡风险，保障政治稳定，同时提升民众媒介素养，对哈萨克斯坦民主进程和国际形象有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">11</span> <a href="https://www.inform.kz/ru/altin-alka-i-kums-alka-vruchili-32-materyam-v-astane-d5b9269f" target="_blank">阿斯塔纳多子女母亲获颁国家奖章</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/22 20:46<span class="source-link"><a href="https://www.inform.kz/ru/altin-alka-i-kums-alka-vruchili-32-materyam-v-astane-d5b9269f" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>阿斯塔纳市努拉区和阿拉木图区共32名多子女母亲获颁国家奖章，其中11人获“阿尔滕·阿尔卡”（生育7个及以上孩子），21人获“库米斯·阿尔卡”（生育6个孩子）。仪式强调多子女母亲在培养后代、巩固家庭价值观和传承代际中的作用。此前政府已公布对ASP受益者的支持措施。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：阿斯塔纳多子女母亲获颁国家奖章
+正文：在努拉区，八位母亲获得了奖章。其中四人被授予“阿尔滕·阿尔卡”挂坠，另外四人被授予“库米斯·阿尔卡”挂坠。
+照片：阿斯塔纳市政府 在阿拉木图区，24位多子女母亲获得表彰。其中七人成为“阿尔滕·阿尔卡”挂坠的获得者，另外17人获得“库米斯·阿尔卡”挂坠。
+在隆重的仪式上，强调了多子女母亲在培养年轻一代、加强家庭价值观和保持代际传承中的作用。
+“库米斯·阿尔卡”挂坠授予生育并抚养六个孩子的母亲。“阿尔滕·阿尔卡”挂坠授予生育并抚养七个及以上孩子的母亲。
+此前有报道称，哈萨克斯坦为领取ASP（针对性社会援助）的受益者提供了哪些支持。</div>
+<ul>
+<li>努拉区8名母亲获奖，4金4银。</li>
+<li>阿拉木图区24名母亲获奖，7金17银。</li>
+<li>金挂坠需生育7孩以上，银挂坠需6孩。</li>
+<li>仪式强调家庭价值观和代际传承。</li>
+<li>政府已有针对多子女家庭的社会援助。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举体现哈萨克斯坦对多子女家庭的重视，通过荣誉表彰强化传统家庭观念，可能推动人口增长政策，并间接影响社会支出和福利分配，巩固政权社会基础。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">12</span> <a href="https://www.inform.kz/ru/dipfeyki-inovie-vizovi-dlyaviborov-obsudili-glavi-tsik-stran-otg-vastane-826a54f1" target="_blank">阿斯塔纳突厥国家组织选举机构负责人讨论深度伪造和新挑战</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/22 17:15<span class="source-link"><a href="https://www.inform.kz/ru/dipfeyki-inovie-vizovi-dlyaviborov-obsudili-glavi-tsik-stran-otg-vastane-826a54f1" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦阿斯塔纳举行突厥国家组织成员国中央选举委员会会议，讨论选举制度、深度伪造和虚假信息挑战。会议推介了集体专著《突厥国家组织成员国的选举制度》，强调共同合作成果。与会者关注AI技术对选举进程的影响，同意加强合作应对信息操纵。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：突厥国家组织各国中央选举委员会主席在阿斯塔纳讨论深度伪造和选举新挑战
+正文：
+参加会议的有哈萨克斯坦中央选举委员会主席努尔兰·阿布迪罗夫、阿塞拜疆中央选举委员会主席马扎伊尔·帕纳霍夫、吉尔吉斯斯坦中央选举和全民公投委员会主席特尼奇蒂克·沙伊纳扎罗夫、土耳其最高选举委员会主席塞尔达尔·穆塔、乌兹别克斯坦中央选举委员会主席扎伊尼丁·尼扎姆霍贾耶夫、突厥国家组织副秘书长兼该组织选举观察团团长努鲁·阿列克佩尔·奥格雷·古利耶夫、土库曼斯坦中央选举委员会副主席，以及突厥国家组织、TÜRKPA和突厥学院的代表。
+会议开幕时，哈萨克斯坦中央选举委员会主席努尔兰·阿布迪罗夫指出了突厥国家选举机构之间进一步交流经验的重要性。
+会议的关键事件之一是集体专著《突厥国家组织成员国的选举制度》的推介。努尔兰·阿布迪罗夫强调，该出版物是平台所有参与国代表共同努力的成果。
+——我想指出，这不仅是哈萨克斯坦的工作或功劳，这是我们共同工作的结果。如果你们看这本书的封面，编辑委员会主席是我们尊敬的各位主席。因此，这是我们共同的劳动。——努尔兰·阿布迪罗夫说。
+照片：维克托·费多宁/Kazinform 据与会者称，该专著使人们能够全面了解突厥国家组织成员国的选举制度，并汇集了不同的方法和观点。他们认为，所讨论问题的现实意义尤为重要，包括选举领域的现代趋势和创新。
+与会者指出，该专著可为进一步的科学研究、提高选举文化、编制教育方案和发展选举法领域的国际合作提供有用的基础。
+会议特别关注在选举期间打击深度伪造、虚假信息和其他形式的信息操纵问题。
+与会者指出，人工智能技术的快速发展给选举进程带来了新的挑战。虚假或操纵性内容如今可以比以往更快地创建和传播。
+——</div>
+<ul>
+<li>会议在阿斯塔纳举行，多国选举机构负责人出席。</li>
+<li>推介专著《突厥国家组织成员国的选举制度》。</li>
+<li>讨论深度伪造和虚假信息对选举的挑战。</li>
+<li>强调AI技术发展对选举进程的影响。</li>
+<li>同意加强经验交流和国际合作。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次会议强化了哈萨克斯坦在突厥国家组织中的领导角色，推动选举制度标准化和互信。应对深度伪造的合作有助于提升选举安全，维护政治稳定，并可能促进区域外交一体化，对哈国国际地位和矿产投资环境产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">13</span> <a href="https://www.inform.kz/ru/bolee-22-tisyach-rabochih-mest-i-podderzhka-biznesa-kak-menyayutsya-sela-kazahst-ae86a4d2" target="_blank">超过2.2万个就业岗位和商业支持：哈萨克斯坦农村如何变化</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/22 11:44<span class="source-link"><a href="https://www.inform.kz/ru/bolee-22-tisyach-rabochih-mest-i-podderzhka-biznesa-kak-menyayutsya-sela-kazahst-ae86a4d2" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦政府落实总统指示，通过“乡村阿马纳特”计划提供2.5%年利率的小额信贷（个人最高1080万坚戈，合作社最高3460万坚戈）和七年设备租赁，促进农村创业和就业。同时实施“带着文凭下乡”计划吸引人才，提供1%住房贷款。2025年拨款119亿坚戈用于21个小城镇的40个基础设施项目，改造42公里道路和40公里管网，以提升农村经济潜力。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：超过2.2万个工作岗位和企业支持：哈萨克斯坦乡村如何变化
+正文：在执行国家元首卡瑟姆-若马尔特·托卡耶夫指示的框架内，政府正在采取措施扩大农村就业和创业机会，提高居民收入，并现代化必要的基础设施。特别关注边境居民点经济潜力的挖掘。
+哈萨克斯坦正在实施“乡村阿马纳特”计划，旨在提高农村居民收入，发展乡村和小城镇的创业精神。关键工具是优惠小额信贷，居民借此可以开办自己的企业、扩大现有生产、组建合作社，并在居住地直接创造新的就业岗位。
+贷款年利率为2.5%：非农业方向期限最长五年，农业和产品加工领域项目最长七年。个人创业最高贷款额为2500个月度计算指数（МРП），即1080万坚戈；农业合作社和加工项目最高可达8000个月度计算指数，即3460万坚戈。
+拼图：哈萨克斯坦共和国政府 此外，企业家还可享受设备和技术优惠租赁，期限最长七年，年利率2.5%。这使农业企业能够在没有重大一次性财务负担的情况下更新生产基地，增加产量和加工量。
+为了吸引合格人才到农村地区，继续实施“带着文凭下乡”计划，年轻专家可获得安家费和生活贷款，年利率1%，期限最长15年，条件是在农村工作至少三年。
+同时，小城镇的发展也在推进。2025年，为21个小城镇的40个基础设施项目拨款119亿坚戈，使42公里公路和40公里工程管网得到现代化改造。
+融资优先事项根据每个地区的经济专业化确定。这种方法有助于支持那些……（原文截断）</div>
+<ul>
+<li>提供2.5%低息贷款支持农村创业，个人最高1080万坚戈。</li>
+<li>合作社贷款上限3460万坚戈，促进农业加工和合作。</li>
+<li>设备租赁年利率2.5%，期限七年，减轻企业负担。</li>
+<li>“带着文凭下乡”计划提供1%住房贷款，吸引人才留乡。</li>
+<li>2025年投入119亿坚戈，改造21个小城镇基础设施。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该政策将促进农村经济多元化，增加就业和收入，缩小城乡差距，增强边境地区经济活力，巩固社会稳定，并可能提升农业产出和加工能力，对哈萨克斯坦经济均衡发展产生积极影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(7 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/jizhiheruyu-e3ce79ab/" target="_blank">机遇之空：新航站楼、航空枢纽和新航线如何连接哈萨克斯坦与世界</a></h3>
+<div class="item-meta">哈通社中文版 · 08/22 20:00<span class="source-link"><a href="https://cn.inform.kz/news/jizhiheruyu-e3ce79ab/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年1-7月，哈萨克斯坦机场货运量达10.25万吨，同比增长10%，阿拉木图机场占64%。阿拉木图机场实施“Horizon”计划，扩建货运设施。Cargolux和国泰货运开通至阿斯塔纳航班。过去三年，三大机场旅客吞吐能力从350万增至2300万人次，增长6.5倍。2025年客运量1540万人次，增长4.8%。多个新机场和跑道改造项目推进。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">机遇之空：新航站楼、航空枢纽和新航线如何连接哈萨克斯坦与世界
+
+2026年1月至7月，哈萨克斯坦各机场共处理货物10.25万吨，同比增长10%。其中，阿拉木图国际机场承担了主要货运量，共处理6.61万吨，占全国总量的64%以上。
+
+目前，阿拉木图机场正在实施2025—2028年“Horizon”计划第一阶段。项目包括将出口区域扩大5000平方米，建设拥有7个停机位的货运停机坪，可保障波音747-8、空客A380等F类大型远程飞机运行，同时计划在500公顷区域内打造物流集群。
+
+其他地区的航空物流基础设施也在同步推进。阿克托别正在建设物流综合体并发展航空燃油加注基础设施；卡拉干达正在扩建接收货运航空公司的相关设施；阿克套则着力推动航空、海运和铁路运输路线相互衔接。
+
+Фото: Kazinform 政府为提升航空过境运输潜力采取的措施已经开始显现成效。自2026年6月起，全球大型航空货运企业之一Cargolux恢复经阿斯塔纳运营航班，并计划将航班频次提高至每周最多14班。目前，其飞机在哈萨克斯坦机场主要进行短暂停留、加油和技术服务，同时有关方面正在研究向全面商业货运业务过渡。
+
+与此同时，各机场正在增加仓储能力，建设用于药品和易腐产品的温控储存区域以及电子商务设施。这些项目将为扩大航空货运规模和吸引新的国际承运商创造条件。
+
+今年8月，Cathay Pacific Cargo开通飞往阿斯塔纳的定期货运航班，计划使用波音747货机执飞，每周最多5班。这将进一步加强哈萨克斯坦与国际航空货运网络的连接。
+
+过去三年，通过吸引私人投资，阿拉木图、克孜勒奥尔达和奇姆肯特机场相继启用新的航站楼综合体。三个机场的总体年旅客吞吐能力由350万人次提高至2300万人次，增长6.5倍。
+
+为促进国内旅游并改善偏远地区交通连接，根据托卡耶夫总统指示，卡通卡拉盖、斋桑和肯德尔利三个旅游区正在建设新机场，计划于2026年底投入使用。
+
+与此同时，全国多个机场正在改造跑道和机场设施。首都机场主跑道已经完成大修；巴尔喀什机场完成航站楼、滑行道和停机坪改造，并安装现代化助航灯光设备，同时开通了前往阿斯塔纳和阿拉木图的航班。
+
+Фото: Үкімет 巴甫洛达尔机场改造期间，跑道宽度从45米拓宽至60米，从而取消大型远程飞机起飞重量方面的限制，并进一步提高飞行安全水平。
+
+机场恢复运营后，已经接收阿斯塔纳—巴甫洛达尔—阿斯塔纳航线首个航班。目前，该航线每周运营4班补贴航班，票价为1.5万坚戈。自9月1日起，还将开通每日飞往阿拉木图的商业航班，并恢复每周7班往返新西伯利亚的国际航线。
+
+2026年8月，阿尔卡雷克机场修复工程全部完成，为恢复该市定期客运航空服务创造了条件。阿斯塔纳—阿尔卡雷克—阿斯塔纳航线首班航班于8月22日执飞。
+
+此外，奇姆肯特机场正在建设第二条跑道，计划于2027年完工；乌尔扎尔机场旅客航站楼改造工作也在继续，预计2027年2月完成。
+
+2025年，哈萨克斯坦航空公司共运送旅客1540万人次，同比增长4.8%，全国机场旅客吞吐量达到3180万人次。
+
+这一增长势头在2026年继续保持。今年上半年，哈萨克斯坦航空公司共运送旅客740万人次，同比增长2.6%。</div>
+<ul>
+<li>货运量增长10%，阿拉木图占64%</li>
+<li>三大机场吞吐能力增6.5倍</li>
+<li>Cargolux和国泰开通货运航班</li>
+<li>新机场建设促进旅游和偏远地区连接</li>
+<li>客运量持续增长，2025年达1540万</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">航空基础设施扩建提升哈萨克斯坦作为欧亚过境枢纽的地位，吸引国际货运投资，促进经济多元化。新航线增强区域连通性，推动旅游业发展，并强化与全球供应链的整合，提升外交影响力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/sud-ssha-otmenil-priostanovku-immigratsionnih-viz-dlya-75-stran-vklyuchaya-kazah-caf6b7de" target="_blank">美国法院取消对包括哈萨克斯坦在内的75国移民签证的暂停</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/23 04:01<span class="source-link"><a href="https://www.inform.kz/ru/sud-ssha-otmenil-priostanovku-immigratsionnih-viz-dlya-75-stran-vklyuchaya-kazah-caf6b7de" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>美国曼哈顿地区法官裁定国务院暂停75国移民签证处理的政策非法，该政策于1月生效，涉及哈萨克斯坦、俄罗斯等国。法官称其违反联邦移民法，国务院无权决定领事程序。此举旨在防止高风险国家移民滥用福利。此前最高法院已拒绝特朗普相关请求。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：美国法院取消对包括哈萨克斯坦在内的75个国家移民签证的暂停
+正文：美国曼哈顿地区法官詹内特·瓦尔加斯表示，国务院于1月宣布的政策“明显非法”，违反了联邦移民法，该法并未授权国务卿确定领事工作人员办理移民签证的程序。国务院于1月生效的暂停处理申请影响了以下国家的申请人：阿富汗、阿尔巴尼亚、阿尔及利亚、安提瓜和巴布达、亚美尼亚、阿塞拜疆、巴哈马、孟加拉国、巴巴多斯、白俄罗斯、伯利兹、不丹、波斯尼亚和黑塞哥维那、巴西、缅甸、柬埔寨、喀麦隆、佛得角、哥伦比亚、科特迪瓦、古巴、刚果民主共和国、多米尼克、埃及、厄立特里亚、埃塞俄比亚、斐济、冈比亚、格鲁吉亚、加纳、格林纳达、危地马拉、几内亚、海地、伊拉克、伊朗、约旦、哈萨克斯坦、科索沃、科威特、吉尔吉斯共和国、老挝、黎巴嫩、利比里亚、利比亚、摩尔多瓦、蒙古、摩洛哥、尼泊尔、尼加拉瓜、尼日利亚、北马其顿、巴基斯坦、刚果共和国、俄罗斯、卢旺达、圣基茨和尼维斯、圣卢西亚、圣文森特和格林纳丁斯、塞内加尔、塞拉利昂、索马里、南苏丹、苏丹、叙利亚、坦桑尼亚、泰国、多哥、突尼斯、乌干达、乌拉圭、乌兹别克斯坦、也门、牙买加和黑山。1月份，国务院表示正在对申请人筛选和审查程序进行全面审查，以防止来自高风险国家的移民非法获得美国社会福利，并避免他们成为社会的负担。此前有报道称，美国最高法院拒绝特朗普取消对作家卡罗尔的赔偿。</div>
+<ul>
+<li>美国法院裁定暂停75国移民签证政策非法。</li>
+<li>哈萨克斯坦、俄罗斯等国受影响。</li>
+<li>国务院1月实施该政策，现被取消。</li>
+<li>法官称政策违反联邦移民法。</li>
+<li>此前最高法院拒绝特朗普相关请求。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该裁决恢复哈萨克斯坦公民赴美移民签证申请，有利于哈美人员往来，可能促进双边经济合作，但美国政策不确定性仍存，哈需关注后续变化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/ssha-ikanada-nedogovorilis-otorgovle-storoni-gotovyat-novie-poshlini-3a7c6faa" target="_blank">美国和加拿大未就贸易达成一致：双方准备征收新关税</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/22 23:44<span class="source-link"><a href="https://www.inform.kz/ru/ssha-ikanada-nedogovorilis-otorgovle-storoni-gotovyat-novie-poshlini-3a7c6faa" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>美国和加拿大未能达成贸易协议，白宫宣布对加拿大部分进口商品征收50%关税，涉及价值200亿美元的商品。加拿大总理卡尼宣布反制，暂停贸易谈判并撤回谈判代表，称美方提议“不公平、不经济”。加拿大将按“对等”原则实施同等关税，以保护本国工人和企业。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：美国和加拿大未能就贸易达成一致：双方准备征收新关税
+正文：美国和加拿大未能达成贸易协议。白宫宣布打算对来自加拿大的某些进口商品征收50%的关税。加拿大总理马克·卡尼宣布了反制措施。据他称，在美方新的关税威胁后，渥太华暂停了与华盛顿的贸易谈判，并撤回了谈判代表。加拿大总理的声明称，这一决定是在美方在最后一刻提出的修改被认定为“不公平、不经济且令人质疑任何交易的可靠性”之后做出的。美国计划对价值200亿美元的加拿大商品征收50%的关税。作为回应，加拿大将按照“对等”原则征收类似关税，马克·卡尼表示。他说，这些措施旨在保护加拿大工人和企业。</div>
+<ul>
+<li>美加贸易谈判破裂，美拟征50%关税。</li>
+<li>涉及200亿美元商品，加方暂停谈判。</li>
+<li>加拿大将按“对等”原则反制。</li>
+<li>卡尼称美方提议不公平不经济。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">美加贸易摩擦升级可能影响全球供应链，对哈萨克斯坦的矿产出口和外交平衡产生间接影响，需关注大宗商品价格波动及大国博弈对哈国经济的外部冲击。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://www.inform.kz/ru/iran-stremitsya-ksoglasheniyu-nonegotov-kpravilnoy-sdelke-tramp-784d2fab" target="_blank">特朗普：伊朗寻求协议，但未准备好“正确交易”</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/22 22:22<span class="source-link"><a href="https://www.inform.kz/ru/iran-stremitsya-ksoglasheniyu-nonegotov-kpravilnoy-sdelke-tramp-784d2fab" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>特朗普称伊朗寻求协议但未准备好“正确交易”，强调美国控制霍尔木兹海峡等关键区域，并指出伊朗经济困境：通胀350%、缺钱缺军备。他宣布对伊实施史上最严厉经济行动，警告支持国。伊朗外长批评此举失败，并威胁“毁灭性”回应。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：伊朗寻求达成协议，但尚未准备好“正确的交易”——特朗普
+正文：在持续紧张的背景下，特朗普强调，美国控制着该地区的关键区域，包括霍尔木兹海峡周边的领土。
+特朗普还指出伊朗严峻的经济状况，包括高通胀率和军事资源短缺。
+美国总统表示，对伊朗的经济措施并不意味着美国的军事能力受到限制。
+——他们没有钱，他们没有海军，他们没有空军，他们不给士兵发工资，他们不给警察发工资，他们的通货膨胀率高达350%，——唐纳德·特朗普说。
+特朗普表示，伊朗有兴趣达成协议，但尚未同意华盛顿提出的条件。
+——他们会很乐意达成交易，但在我看来，他们还没有准备好达成正确的交易，——美国总统说。
+最近，特朗普宣布对伊朗实施“史上最具破坏性的经济行动”，并警告那些向德黑兰提供金融、商业或政府支持的国家，将面临“巨大的经济后果”。
+与此同时，伊朗外交部长阿巴斯·阿拉格齐批评了特朗普最近对德黑兰的经济施压行动，称其已经失败。
+此前有报道称，伊朗威胁要对美国的新威胁作出“毁灭性”回应。</div>
+<ul>
+<li>特朗普称伊朗想谈但未接受美方条件</li>
+<li>美控制霍尔木兹海峡，军事优势明显</li>
+<li>伊朗通胀350%，经济军事资源匮乏</li>
+<li>美实施史上最严厉经济行动并警告支持国</li>
+<li>伊朗外长批评美施压失败，威胁报复</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">美伊紧张升级可能影响霍尔木兹海峡石油运输，推高全球油价，对哈萨克斯坦能源出口有利，但增加地缘政治不确定性，可能影响哈外交平衡策略及与两国关系。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://www.inform.kz/ru/iran-prigrozil-sokrushitelnim-otvetom-nanovie-ugrozi-ssha-01856bbe" target="_blank">伊朗威胁对美国新威胁作出“毁灭性”回应</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/22 18:49<span class="source-link"><a href="https://www.inform.kz/ru/iran-prigrozil-sokrushitelnim-otvetom-nanovie-ugrozi-ssha-01856bbe" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>伊朗总参谋长阿卜杜拉希警告，将对美国新威胁作出“毁灭性”回应，涵盖陆海空、防空和网络空间。此前美国财长贝森特宣布将实施史上最严制裁和海上封锁，旨在“推翻”伊朗政权。伊朗议长加利巴夫认为美国转向经济压力。特朗普警告支持伊朗的国家将面临经济后果。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">伊朗威胁对美国的新的威胁作出“毁灭性”回应
+
+伊朗武装力量总参谋长阿里·阿卜杜拉希少将周五威胁称，在美国宣布准备对伊斯兰共和国实施前所未有的严厉经济措施后，将对美国的新威胁作出“毁灭性和破坏性”的回应。
+
+据IRNA通讯社报道。
+
+阿里·阿卜杜拉希表示，德黑兰的回应将涵盖多个方向。
+
+——伊朗武装力量在陆、海、空、防空和网络空间领域保持战备状态，将对敌人的新威胁作出毁灭性、惩罚性和破坏性的回应。——将军说。
+
+这一声明是在美国财政部长斯科特·贝森特宣布针对伊朗的新一揽子措施之后发表的，具体细节计划在周一公布。美国总统唐纳德·特朗普此前也警告称，对向伊朗提供“任何支持”的国家将面临经济后果。
+
+贝森特表示，华盛顿打算结合海上封锁和“历史上最严厉的制裁”，以加大对伊朗领导层的压力。
+
+——我们将要推翻这个政权。我们的盟友和世界其他国家是时候做出选择了。——美国财政部长在接受CNBC采访时说。
+
+美国财政部长誓言用新制裁“推翻”伊朗——美国财政部长斯科特·贝森特宣布，华盛顿将对伊朗实施历史上最严厉的制裁，并将这一激进的金融攻势描述为结合海上封锁的“组合拳”。
+
+与此同时，贝森特将加强经济压力与试图避免新一轮大规模战斗联系起来。据他称，最大压力政策可能降低恢复激烈军事对抗的可能性。
+
+伊朗议会议长穆罕默德·巴格尔·加利巴夫也对华盛顿的声明作出反应，他正在邻国伊拉克访问。在他看来，美国得出结论，无法通过直接军事对抗实现其目标，现在正押注于经济压力。
+
+伊朗和伊拉克将共同对抗全球傲慢：@mb_ghalibaf
+
+伊朗外交部此前表示，新的美国……</div>
+<ul>
+<li>伊朗威胁毁灭性回应美国新威胁</li>
+<li>美国宣布史上最严制裁和海上封锁</li>
+<li>伊朗称回应涵盖陆海空及网络空间</li>
+<li>美财长称将推翻伊朗政权</li>
+<li>伊朗议长称美国转向经济压力</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">美伊紧张升级可能影响哈萨克斯坦与伊朗的经贸合作及里海地区稳定，增加地缘政治不确定性，促使哈萨克斯坦在外交上平衡与美伊关系，并关注能源市场波动。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://www.inform.kz/ru/kak-rossiya-prokladivaet-put-v-arktike-s-pomoshyu-atomnih-ledokolov-9847ff0c" target="_blank">俄罗斯如何借助核动力破冰船开辟北极航道</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/22 18:35<span class="source-link"><a href="https://www.inform.kz/ru/kak-rossiya-prokladivaet-put-v-arktike-s-pomoshyu-atomnih-ledokolov-9847ff0c" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>俄罗斯正积极将北方海航道发展为全年运营的交通干线，并开展北极科学研究。该航道长约5600公里，连接欧亚西部与亚太，相比传统航线可缩短30-40%航程，如上海至汉堡经此比经苏伊士运河短32%。自2018年起，俄罗斯国家原子能公司作为基础设施运营商，推动北极资源开发和经济建设。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：俄罗斯如何借助核动力破冰船在北极开辟道路
+正文：在摩尔曼斯克，极昼从五月初持续到八月中旬。在此期间，太阳完全不落于地平线之下。我们正是在这个特殊时期抵达了这座北极之都。
+从摩尔曼斯克开始的旅程，立刻让人感受到北极的战略意义。流经这里的北方海航道（СМП）环绕俄罗斯北部海岸，连接欧亚大陆西部与亚太地区。这条长约5600公里的航道穿过喀拉海、拉普捷夫海、东西伯利亚海和楚科奇海。
+尽管在地图上它看起来像一条简单的线，但北方海航道是一个依托复杂基础设施的系统。港口、码头、导航和通信设施、冰情监测服务以及救援服务紧密相连。萨别塔、迪克森、杜金卡、哈坦加、季克西和佩韦克等港口被视为该系统的重要环节。
+因此，北方海航道的发展不仅限于货物运输。它直接关系到北极自然资源的开发、北方领土经济的发展以及新基础设施的建设。自2018年起，俄罗斯国家原子能公司（Росатом）作为基础设施运营商开展工作。
+据国家企业“阿托姆弗洛特”（隶属俄罗斯国家原子能公司）总经理雅科夫·安东诺夫称，北方海航道的未来与全年运营的交通干线和科学研究的并行发展相关。
+——俄罗斯目前正积极致力于将北方海航道转变为全年运营的交通干线，并在北极开展科学研究，——雅科夫·安东诺夫说。
+然而，全年使用北方海航道并非易事。北冰洋冰层的厚度和运动、风、洋流和天气都可能不断改变船舶的航线。
+对北方海航道感兴趣的主要原因之一是它的地理优势。与从亚洲到欧洲的传统海上航线相比，北极航线可将航程缩短30-40%。例如，从上海到汉堡经北方海航道的距离约为7350海里，比经苏伊士运河的10800海里短32%。从釜山到鹿特丹的航线也可节省超过10天的运输时间。
+该航线的另一个优点是安全性。据国际海事组织称，在过去……</div>
+<ul>
+<li>北方海航道全长5600公里，连接欧亚与亚太。</li>
+<li>航道可缩短航程30-40%，上海至汉堡短32%。</li>
+<li>俄罗斯计划实现航道全年运营，并加强科研。</li>
+<li>自2018年，俄罗斯国家原子能公司负责基础设施运营。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">俄罗斯强化北方海航道运营将提升其北极资源开发能力，增强对欧亚航运的影响力，可能改变全球航运格局，对哈萨克斯坦等内陆国而言，或影响其贸易路线选择及与俄合作的地缘经济考量。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://www.inform.kz/ru/kazahstan-rasshiryaet-aviasoobshenie-kakie-novie-aeroporti-imarshruti-poyavyatsy-6fe43657" target="_blank">欧亚航空枢纽：哈萨克斯坦建设三座机场并扩展航线网络</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/22 18:05<span class="source-link"><a href="https://www.inform.kz/ru/kazahstan-rasshiryaet-aviasoobshenie-kakie-novie-aeroporti-imarshruti-poyavyatsy-6fe43657" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦政府为落实总统托卡耶夫指示，大力发展航空运输。2026年1-7月机场货运量达10.25万吨，同比增长10%，其中阿拉木图机场占64%。阿拉木图实施Horizon计划扩建，阿克托贝、卡拉干达、阿克套建设物流设施。Cargolux恢复经阿斯塔纳航班，每周最多14班。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：欧亚航空枢纽：哈萨克斯坦建设三个机场并扩大航线网络
+正文：为落实国家元首卡瑟姆-若马尔特·托卡耶夫关于释放国家运输物流潜力的指示，政府正在采取系统性措施，对民用和货运航空进行现代化改造。如今，哈萨克斯坦交通基础设施的发展旨在加强国家的国际连通性，融入跨里海国际运输路线，并扩大哈萨克斯坦作为欧亚关键过境枢纽之一的作用。与此同时，航空基础设施正在现代化，航线网络正在扩大，航空运输对民众的可及性正在提高。
+关于机场如何更新、多式联运物流枢纽如何形成以及国际航线地理如何扩展——详见Primeminister.kz编辑部的特别综述。
+信息图：哈萨克斯坦共和国政府 2026年1月至7月，哈萨克斯坦机场处理货物10.25万吨，比去年同期增长10%。主要负荷落在阿拉木图国际机场——6.61万吨，占总量的64%以上。
+在阿拉木图机场，正在实施2025-2028年Horizon计划的第一阶段，将出口区扩大5000平方米，建设可停放7架F类最大型远程货运飞机（如波音747-8和空客A380）的货运停机坪，并正在形成500公顷的物流集群。
+在阿克托别，正在建设物流综合体，发展加油基础设施；在卡拉干达，正在扩大接收货运飞机的设施；在阿克套，正在研究整合航空、海运和铁路路线。
+政府为发展过境潜力所采取的措施已初见成效。自2026年6月起，全球最大货运航空公司之一Cargolux恢复了经阿斯塔纳的航班，并计划每周执飞多达14班。目前飞机仅进行技术经停加油和维护，同时正在研究过渡到全面商业货运业务。
+与此同时，机场正在扩大必要的基础设施：仓储能力、用于药品和易腐货物的温控区（原文截断）</div>
+<ul>
+<li>2026年前7月货运量10.25万吨，同比增10%</li>
+<li>阿拉木图机场占货运量64%，扩建出口区和停机坪</li>
+<li>阿克托贝、卡拉干达、阿克套建设物流设施</li>
+<li>Cargolux恢复阿斯塔纳航班，每周14班</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该举措将强化哈萨克斯坦作为欧亚过境枢纽地位，促进跨里海国际运输路线发展，提升物流效率，吸引外资，并推动经济多元化，减少对资源出口依赖。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(8 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/itchunianchang34-6ce899e7/" target="_blank">哈萨克斯坦IT服务出口额五年增长约34倍</a></h3>
+<div class="item-meta">哈通社中文版 · 08/22 17:39<span class="source-link"><a href="https://cn.inform.kz/news/itchunianchang34-6ce899e7/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦IT服务出口额五年增长约34倍，从2021年的6007万美元增至2025年的11.42亿美元，成为净出口国。2025年出口收入比进口支出高2.6倍，本土方案出口至110多国。Astana Hub企业出口6.34亿美元，创造3.2万岗位。计划2030年达50亿美元，重点开拓美欧中东亚洲市场。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦IT服务出口额五年增长约34倍
+正文:
+数据显示，近年来哈萨克斯坦IT服务出口持续保持增长。2021年出口额为6007万美元，2022年增至3.37亿美元，2023年达到5.291亿美元，2024年进一步增至6.907亿美元。2025年，该指标首次突破10亿美元，达到11.42亿美元。
+与此同时，哈萨克斯坦已成为IT服务净出口国。2025年IT服务出口收入较用于进口国外数字解决方案的4.29亿美元高出2.6倍以上。
+随着相关指标快速增长，哈萨克斯坦在地区技术出口市场中的地位也在不断提升。作为对比，2024年格鲁吉亚电信、计算机和信息服务出口额为8.423亿美元，亚美尼亚约为11.8亿美元。
+IT服务出口规模扩大的同时，哈萨克斯坦IT企业进入国际市场的地域范围也在不断拓展。目前，哈萨克斯坦本土数字解决方案已出口至全球110多个国家。
+2025年，Astana Hub入驻企业出口额达到6.34亿美元，共有537家公司向海外市场出口产品和服务，其生态系统已创造超过3.2万个就业岗位。
+下一阶段，哈萨克斯坦将重点推动本土科技企业扩大规模，并帮助其进入主要国际市场。美国、欧洲、中东和亚洲被列为重点市场，同时将进一步拓展本土IT解决方案在国际市场的推广渠道。
+根据既定战略目标，到2030年，哈萨克斯坦计划将IT服务出口额提高至50亿美元。
+哈萨克斯坦IT产业近年来发展的突出特点不仅体现在规模上，也体现在增长速度上。五年前，该国IT服务出口规模还仅以数千万美元计，如今已突破10亿美元。哈萨克斯坦正在从一个新兴IT市场逐步跻身地区技术出口国行列。</div>
+<ul>
+<li>IT出口五年增34倍，2025年破10亿美元</li>
+<li>成净出口国，出口超进口2.6倍</li>
+<li>覆盖110多国，Astana Hub贡献6.34亿</li>
+<li>创造3.2万岗位，537家企业出海</li>
+<li>2030年目标50亿美元，聚焦美欧亚</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">IT出口激增提升哈萨克斯坦经济多元化，减少对资源依赖，增强区域技术地位。外交上扩大国际科技合作，吸引投资。矿产格局影响有限，但技术出口或促进矿业数字化，提升全球竞争力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/nianxia122-jiaweijiang-bf5d8216/" target="_blank">新车价格年内下降12.2% 专家认为降价趋势或将结束</a></h3>
+<div class="item-meta">哈通社中文版 · 08/22 15:23<span class="source-link"><a href="https://cn.inform.kz/news/nianxia122-jiaweijiang-bf5d8216/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2024-2025年哈萨克斯坦汽车价格上涨，但2026年起新车价格持续下降，7月环比降1%，较年初降12.2%，连续10个月下降。专家认为降价空间有限，经销商接近极限。年底将引入新品牌和车型，并重启个人汽车租赁，年利率上限36%-46%。汽车贷款需求放缓。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据AutoReport消息，2024年至2025年期间，哈萨克斯坦汽车价格总体呈上涨趋势，但这一局面在2025年底开始发生变化。进入2026年后，新车市场出现降价趋势，无论是国产汽车还是进口汽车，价格均开始下降。
+不过，汽车市场监测与分析机构负责人阿图尔·米斯卡良（Артур Мискарян）认为，新车价格继续下降的空间已经十分有限。
+“价格进一步下降的可能性已经很低，因为目前大多数经销商的经营已经接近其经济承受极限。”米斯卡良表示。
+数据显示，今年7月，哈萨克斯坦新车价格环比下降1%，较年初下降12.2%，新车价格下降趋势已连续维持10个月。
+米斯卡良同时指出，即使新车价格停止下降，也不会对哈萨克斯坦消费者购买新车造成明显阻碍。
+“今年年底前，国内汽车市场还将迎来新的汽车品牌和车型，同时面向个人消费者的汽车租赁制度也将重新启动。”他说。
+此前公布的汽车租赁项目方案显示，根据车辆价格不同，相关年利率上限预计将在36%至46%之间。
+此外，此前业内专家还注意到，哈萨克斯坦市场对汽车贷款的需求已经出现放缓。</div>
+<ul>
+<li>新车价格年内降12.2%，连续10个月下降</li>
+<li>专家称降价空间有限，经销商接近极限</li>
+<li>年底将迎新品牌和车型，重启汽车租赁</li>
+<li>汽车租赁年利率上限36%-46%</li>
+<li>汽车贷款需求出现放缓</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汽车降价刺激消费，但经销商利润受压，可能影响行业投资。租赁制度重启将促进汽车金融发展，带动内需。新品牌进入增强市场竞争，对经济有积极影响，但高利率或限制普及。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/shinianlaijiangzhuyongshangbbb-266c402f/" target="_blank">标普十年来首次将哈萨克斯坦主权信用评级上调至“BBB”级</a></h3>
+<div class="item-meta">哈通社中文版 · 08/22 12:00<span class="source-link"><a href="https://cn.inform.kz/news/shinianlaijiangzhuyongshangbbb-266c402f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>标普全球评级十年来首次将哈萨克斯坦主权信用评级上调至“BBB”级，自2016年以来首次。评级上调反映经济前景稳定、多元化推进及充足缓冲。标普预测2026年GDP增长5.1%，投资规模有望达GDP的30%。哈萨克斯坦保持净债权国地位，银行业稳定性增强。此前评级为“BBB-”，惠誉6月已确认“BBB”级。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标普全球评级将哈萨克斯坦主权信用评级上调至“BBB”级。这是哈萨克斯坦自2016年以来首次达到这一评级水平。
+评级机构指出，主权信用评级上调反映出哈萨克斯坦经济发展前景保持稳定，经济多元化进程持续推进，同时该国已积累了较为充足的外部和财政缓冲。
+标普全球评级认为，尽管面临外部挑战以及全球大宗商品市场价格波动，哈萨克斯坦经济仍将保持韧性，并有望在中期内继续增长。
+根据该机构预测，2026年哈萨克斯坦实际国内生产总值（GDP）将增长5.1%。未来，哈萨克斯坦经济增速在石油出口国中仍将保持相对较高水平。标普同时指出，目前正在实施的大规模投资计划对推动经济多元化发挥着重要作用。
+通过原材料深加工和基础设施建设等项目，包括通过“巴伊铁列克”国家管理控股公司实施的相关项目，预计未来哈萨克斯坦投资规模有望提高至GDP的30%。标普认为，控制预算支出增速以及扩大税基等措施将有助于缩小财政赤字。
+此外，哈萨克斯坦拥有规模较大的外汇资产，其规模超过相对适中的外债水平，因此仍保持着较强的对外净债权国地位。评级机构同时肯定了哈萨克斯坦银行业抵御宏观经济冲击的能力。
+随着监管和监督政策逐步完善，哈萨克斯坦银行体系稳定性进一步增强，与资产质量相关的系统性风险有所下降。
+此前，哈萨克斯坦主权信用评级为“BBB-”级。
+值得一提的是，今年6月，国际评级机构惠誉（Fitch Ratings）确认哈萨克斯坦主权信用评级为“BBB”级。</div>
+<ul>
+<li>标普上调哈萨克斯坦评级至BBB，十年来首次</li>
+<li>预测2026年GDP增长5.1%，经济韧性较强</li>
+<li>投资规模有望提升至GDP的30%</li>
+<li>外汇资产充足，保持净债权国地位</li>
+<li>惠誉6月已确认BBB评级，双评级一致</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">评级上调将降低哈萨克斯坦融资成本，吸引外资，增强国际投资者信心，利好经济多元化战略。同时提升其地缘政治影响力，为矿产和能源领域合作提供信用背书，但需持续改革以维持评级。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://www.inform.kz/ru/predprinimatelyam-mogut-subsidirovat-krediti-napokupku-magazinov-udoma-9f6eab78" target="_blank">企业家购买“家门口”商店的贷款可能获得补贴</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/22 23:07<span class="source-link"><a href="https://www.inform.kz/ru/predprinimatelyam-mogut-subsidirovat-krediti-napokupku-magazinov-udoma-9f6eab78" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦贸易部公共委员会会议提议修改国家支持规则，允许对购买现有便民商店的贷款进行补贴和担保，并允许投资贷款与流动资金贷款结合。贸易部长指出贸易业雇佣约150万人，占GDP第二位。会议还讨论了国家商品目录问题，建议对先前进口商品设定过渡期至2027年1月1日，简化注册，避免罚款，以降低企业风险。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据贸易部新闻处报道，公共委员会会议在贸易和一体化部长阿尔曼·沙卡利耶夫和委员会主席鲁斯兰·沙耶金的主持下举行。
+目前现行的国家支持私营企业措施规则未规定对购买已运营的便民商店所吸引的贷款进行补贴的可能性。
+为此，公共委员会建议对规则进行相应修改。涉及对购买现有“家门口”商店的贷款进行补贴和担保的可能性。此外，还建议允许企业家在同一个项目内将投资贷款与补充流动资金的贷款结合起来。
+贸易和一体化部长阿尔曼·沙卡利耶夫指出了贸易对国家经济的重要性。
+——“贸易是发展本国生产的最重要刺激因素。我不厌其烦地重复，贸易领域约有150万人就业，该行业在GDP结构中位居第二。因此，国家支持是进一步发展我们领域、提高其效率并为商业创造新机遇的最重要工具，”阿尔曼·沙卡利耶夫指出。
+据与会者称，这一措施将使企业家能够发展已运营的销售点，并提高国家支持工具的可及性。
+会议的另一个问题是国家商品目录的运作。
+贸易促进协会代表努尔兰·努尔马甘别托夫指出了进口商和中小企业在获取先前进口产品的外国生产商信息时遇到的问题。为了降低企业的财务风险，避免非食品商品种类减少和过度的行政负担，公共委员会建议设定过渡期至2027年1月1日。
+建议简化先前进口商品在国家商品目录中的注册，在2027年前不对其库存适用罚款，并暂时保留填写进口商信息的可能性。
+主席</div>
+<ul>
+<li>提议补贴购买现有便民商店贷款</li>
+<li>允许投资贷款与流动资金贷款结合</li>
+<li>贸易业占GDP第二，就业150万人</li>
+<li>国家商品目录设过渡期至2027年</li>
+<li>简化先前进口商品注册，避免罚款</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该政策将提升贸易领域国家支持力度，促进中小企业发展，巩固贸易作为经济支柱的地位。同时，商品目录过渡期安排可减轻进口商和中小企业负担，保障商品供应稳定，对哈萨克斯坦经济多元化和商业环境优化具有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://www.inform.kz/ru/eksport-it-uslug-kazahstana-viros-v34-raza-zapyat-let-e4a45445" target="_blank">哈萨克斯坦IT服务出口五年增长34倍</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/22 18:21<span class="source-link"><a href="https://www.inform.kz/ru/eksport-it-uslug-kazahstana-viros-v34-raza-zapyat-let-e4a45445" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦IT服务出口五年增长34倍，从2020年的3350万美元增至2025年的11.42亿美元，首次突破10亿美元，并成为净出口国。出口覆盖110多个国家，Astana Hub贡献6.34亿美元，创造3.2万个岗位。计划2030年达50亿美元，优先拓展美国、欧洲、中东和亚洲市场。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦IT服务出口五年增长34倍
+正文：五年来，哈萨克斯坦IT服务出口从2020年的3350万美元增长至2025年的11.42亿美元。增长贯穿整个时期。2021年IT服务出口为6007万美元，2022年为3.37亿美元，2023年为5.291亿美元，2024年为6.907亿美元。2025年该指标首次突破10亿美元。同时，哈萨克斯坦成为IT服务净出口国。出口收入是外国数字解决方案进口支出（4.29亿美元）的2.6倍以上。相比之下，格鲁吉亚2024年电信、计算机和信息服务出口为8.423亿美元，亚美尼亚约为11.8亿美元。哈萨克斯坦IT公司的地理分布也在扩大。国内数字解决方案出口至全球110多个国家。Astana Hub参与者2025年出口额达6.34亿美元，537家公司实现海外销售。生态系统创造了超过3.2万个工作岗位。下一阶段应是扩大哈萨克斯坦科技公司规模，并进入更大的国际市场。优先方向包括美国、欧洲、中东和亚洲，以及发展国内IT解决方案的国际推广渠道。到2030年，哈萨克斯坦计划将IT服务出口提升至50亿美元。此前有报道称，2025年哈萨克斯坦IT服务市场规模达到历史最高水平——该行业企业提供服务总额达2.9万亿坚戈。</div>
+<ul>
+<li>IT服务出口五年增34倍，2025年达11.42亿美元</li>
+<li>成为净出口国，出口是进口的2.6倍</li>
+<li>出口覆盖110多国，Astana Hub贡献6.34亿美元</li>
+<li>创造3.2万个岗位，计划2030年出口50亿美元</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">哈萨克斯坦IT服务出口激增，推动经济多元化，减少对资源依赖。净出口地位提升国际竞争力，吸引外资和技术人才。2030年目标将强化其在全球数字市场地位，促进与美欧亚合作，改善外交和经济格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://www.inform.kz/ru/investitsii-v-vodnoe-hozyaystvo-kazahstana-virosli-do-rekordnih-677-mlrd-tenge-de051b8e" target="_blank">哈萨克斯坦水利投资创纪录达6770亿坚戈</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/22 13:49<span class="source-link"><a href="https://www.inform.kz/ru/investitsii-v-vodnoe-hozyaystvo-kazahstana-virosli-do-rekordnih-677-mlrd-tenge-de051b8e" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦2024-2025年水利投资达6770亿坚戈，较2022-2023年增长79%，增加近3000亿坚戈。资金主要用于水库、渠道等基础设施建设，包括与伊斯兰开发银行、亚洲开发银行合作的项目。部长强调国际合作不仅限于资金，还涉及技术引进和数字化。此举旨在提高供水可靠性，减少水损失。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">根据国家元首的指示，水资源和灌溉部继续致力于吸引投资以发展国家水利经济。在2024-2025年间，该部成立后，投资额较前一个两年期增长了79%。2024-2025年总投资额约为6770亿坚戈，比2022-2023年的3779亿坚戈增加了近3000亿坚戈。吸引的投资主要用于建设和现代化改造水利基础设施，包括水库、渠道、水工建筑物及其他设施，这些设施关系到居民和农业的稳定供水。这项工作使得现有基础设施得以逐步更新，并创造新的蓄水和配水能力。最终，投资应提高供水可靠性，减少水损失，并使水资源管理更加高效。在投资实施的项目中，包括与伊斯兰开发银行合作在江布尔州、西哈萨克斯坦州和克孜勒奥尔达州建设三座水库，在亚洲开发银行支持下在阿克莫拉州建设叶西尔调节水库，以及其他大型项目。水资源和灌溉部部长努尔詹·努尔日吉托夫表示：“吸引投资是为了发展水利基础设施——建设、重建和现代化改造水库、渠道及其他设施。同时，国际合作不仅限于财政支持，还包括引进现代技术、行业数字化、加强人才和科学潜力，以及交流先进经验。”此前，Kazinform报道称，在江布尔州，利用与欧洲复兴开发银行项目节省的资金，正在对总长85.5公里的14条渠道进行混凝土衬砌，以提高输水效率并减少灌溉网络中的损失。此外，8月份还获悉……</div>
+<ul>
+<li>水利投资创纪录达6770亿坚戈，增长79%</li>
+<li>资金用于水库、渠道等基础设施建设</li>
+<li>与伊斯兰开发银行、亚行合作建水库</li>
+<li>国际合作涵盖技术、数字化和人才培养</li>
+<li>目标提高供水可靠性，减少水损失</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该投资增长将提升哈萨克斯坦水资源管理效率，保障农业和居民用水，增强应对干旱能力。同时，国际合作深化了与伊斯兰开发银行、亚行等的关系，促进技术引进和数字化，对经济稳定和区域发展具有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://www.inform.kz/ru/kursi-valyut-v-obmennikah-astani-almati-i-shimkenta-na-22-avgusta-7cea6fb6" target="_blank">8月22日阿斯塔纳、阿拉木图和奇姆肯特兑换点汇率</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/22 13:05<span class="source-link"><a href="https://www.inform.kz/ru/kursi-valyut-v-obmennikah-astani-almati-i-shimkenta-na-22-avgusta-7cea6fb6" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>8月22日，哈萨克斯坦三大城市兑换点汇率显示，美元兑坚戈在阿斯塔纳买入456.00、卖出463.00；阿拉木图买入459.33、卖出462.06；奇姆肯特买入459.13、卖出461.27。欧元在阿斯塔纳529.00/539.00，阿拉木图534.11/539.67，奇姆肯特512.22/538.67。卢布在阿斯塔纳5.40/5.70，阿拉木图5.32/5.46，奇姆肯特5.37/5.44。过去一周坚戈兑美元升值，卢布升值。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：8月22日阿斯塔纳、阿拉木图和奇姆肯特兑换点的货币汇率
+正文：据Kurs.kz数据，阿斯塔纳兑换点美元平均买入价为456.00坚戈，卖出价为463.00坚戈。欧元买入价为529.00坚戈，卖出价为539.00坚戈。俄罗斯卢布买入价为5.40坚戈，卖出价为5.70坚戈。
+在阿拉木图，美元平均买入价为459.33坚戈，卖出价为462.06坚戈。欧元分别为534.11和539.67坚戈。俄罗斯卢布买入价为5.32坚戈，卖出价为5.46坚戈。
+在奇姆肯特，美元平均买入价为459.13坚戈，卖出价为461.27坚戈。欧元买入价为512.22坚戈，卖出价为538.67坚戈，俄罗斯卢布买入价为5.37坚戈，卖出价为5.44坚戈。
+回顾过去一周，坚戈兑美元显著升值。欧元走势较弱，而俄罗斯卢布则相反，有所升值。</div>
+<ul>
+<li>美元兑坚戈在三大城市汇率差异小，阿斯塔纳卖出价最高。</li>
+<li>欧元在奇姆肯特买入价最低，卖出价与阿拉木图相近。</li>
+<li>卢布在阿斯塔纳卖出价最高，阿拉木图买入价最低。</li>
+<li>过去一周坚戈兑美元显著升值，卢布升值。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈升值可能降低进口成本，缓解通胀压力，但削弱出口竞争力。卢布升值影响与俄贸易结算。汇率稳定有助于吸引外资，但需关注央行干预。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://www.inform.kz/ru/brent-zavershila-nedelyu-vishe-94-za-barrel-1c145036" target="_blank">布伦特原油本周收于每桶94美元上方</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/22 10:33<span class="source-link"><a href="https://www.inform.kz/ru/brent-zavershila-nedelyu-vishe-94-za-barrel-1c145036" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>本周布伦特原油收于94.39美元/桶，上涨6.39%；WTI收于87.06美元/桶，上涨5.66%，均创7月24日以来新高。上涨主因是美国总统特朗普威胁制裁与伊朗贸易的国家，加剧供应担忧，叠加霍尔木兹海峡航运受限。但美国、阿联酋和委内瑞拉增加供应部分抑制涨幅。油价连续第二周上涨。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：布伦特原油本周收于每桶94美元上方
+正文：布伦特原油期货收于每桶94.39美元。美国WTI原油收于每桶87.06美元。本周布伦特原油上涨6.39%，WTI上涨5.66%。两种基准原油均达到7月24日以来的最高水平。油价上涨受到对伊朗供应可能减少的担忧加剧的支撑，此前美国总统唐纳德·特朗普威胁对继续与德黑兰贸易的国家实施制裁。另一个因素是霍尔木兹海峡航运受限。同时，来自美国、阿联酋和委内瑞拉等替代供应增加部分限制了油价涨幅。此前有报道称，油价连续第二周上涨。从周四到周五，布伦特原油逼近每桶94美元。</div>
+<ul>
+<li>布伦特原油周涨6.39%至94.39美元</li>
+<li>WTI周涨5.66%至87.06美元</li>
+<li>特朗普威胁制裁伊朗贸易推高油价</li>
+<li>霍尔木兹海峡航运受限支撑油价</li>
+<li>美阿联酋委内瑞拉增产抑制涨幅</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">油价上涨利好哈萨克斯坦能源出口收入，增强财政稳定性，但可能加剧通胀压力。同时，地缘政治风险上升或影响里海管道运输，需关注对石油出口多元化的影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(5 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/nengbuwoguokeshengnengfanianchang4-7b0cbc50/" target="_blank">能源部：我国可再生能源发电占比六年增长4倍</a></h3>
+<div class="item-meta">哈通社中文版 · 08/22 13:29<span class="source-link"><a href="https://cn.inform.kz/news/nengbuwoguokeshengnengfanianchang4-7b0cbc50/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦可再生能源发电占比六年增长4倍，得益于政策支持。目前全国有172座可再生能源设施，总装机超3.8吉瓦，2025年发电86亿千瓦时。2026年计划新增10个项目，装机245兆瓦，年底发电量预计达88亿千瓦时。未来还将实施约100个项目，总装机3.6吉瓦，并推进4吉瓦大型项目，吸引国际投资者参与。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据哈萨克斯坦能源部新闻局消息，这一增长得益于国家相关政策措施的持续实施，包括通过拍卖机制遴选可再生能源项目、吸引投资以及投运新的发电设施。
+目前，哈萨克斯坦共有172座可再生能源设施投入运行，总装机容量超过3.8吉瓦。其中包括71座风力发电站、54座太阳能发电站、44座水力发电站和3座沼气发电站。
+2025年，全国可再生能源设施共发电86亿千瓦时。年内共有9个新项目投入运行，新增装机容量超过500兆瓦。
+2026年，可再生能源产业发展工作仍在持续推进。今年计划再投运10个可再生能源项目，总装机容量为245兆瓦，其中包括4座风力发电站、5座太阳能发电站和1座水力发电站。预计到今年年底，可再生能源发电量将达到88亿千瓦时。
+根据规划，近期哈萨克斯坦还将实施约100个可再生能源项目，总装机容量达3.6吉瓦。此外，总装机容量约4吉瓦的大型可再生能源项目也正在推进之中。
+能源部表示，目前该领域已吸引TotalEnergies、中国电力（China Power）、马斯达尔（Masdar）和中国能源（China Energy）等大型国际投资者参与。这些企业的参与将有助于引进现代技术和投资，并进一步扩大新增发电能力。
+能源部指出，相关措施未来将进一步提高全国能源结构中清洁能源的占比，保障能源系统稳定运行，并增强国家能源安全。
+此前有报道称，哈萨克斯坦计划于2027年新增845兆瓦发电能力。</div>
+<ul>
+<li>可再生能源发电占比六年增长4倍</li>
+<li>现有172座设施，总装机超3.8吉瓦</li>
+<li>2026年计划新增10个项目，装机245兆瓦</li>
+<li>未来将实施约100个项目，总装机3.6吉瓦</li>
+<li>吸引TotalEnergies、中国电力等国际投资者</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">哈萨克斯坦可再生能源发展将提升清洁能源占比，增强能源安全，吸引外资和技术，促进经济多元化，减少对传统能源依赖，同时提升其在中亚地区能源转型中的领导地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/iran-razreshil-irakskim-neftyanim-tankeram-proyti-cherez-ormuzskiy-proliv-0ce96a46" target="_blank">伊朗允许伊拉克油轮通过霍尔木兹海峡</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/23 00:28<span class="source-link"><a href="https://www.inform.kz/ru/iran-razreshil-irakskim-neftyanim-tankeram-proyti-cherez-ormuzskiy-proliv-0ce96a46" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>伊朗允许伊拉克油轮通过霍尔木兹海峡，以回应巴格达的多次请求。此前伊拉克石油出口因冲突大幅下降，从每日350万桶减至不足85%，月收入从70亿美元降至15亿美元以下。伊拉克正寻求替代路线，但短期内仍依赖该海峡。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">伊朗已允许数艘伊拉克油轮通过霍尔木兹海峡，此前巴格达多次请求确保其石油通过该海上航线出口。IRNA通讯社报道了这一消息。向伊拉克油轮发放特别许可，是伊朗议会议长穆罕默德·巴格尔·加利巴夫近期访问伊拉克期间，巴格达提出的主要问题之一。伊方请求考虑该国的特殊地位及其对通过霍尔木兹海峡出口石油的依赖。据该通讯社称，伊朗在过去六个月内已向个别伊拉克油轮发放了通行许可。此前，伊朗外交部长阿巴斯·阿拉格齐曾表示，中国、俄罗斯和巴基斯坦的船只也获得了安全通行的机会。伊朗允许部分伊拉克油轮通过霍尔木兹海峡 https://t.co/HpA8sb2gwX https://t.co/HpA8sb2gwX。冲突开始前，伊拉克每日出口约350万桶石油，其中超过330万桶从巴士拉装载并通过霍尔木兹海峡。该国约90%的年度预算依赖石油出口收入。从三月到六月，伊拉克石油出口减少了超过85%，月石油收入从约70亿美元降至不足15亿美元。七月，伊拉克通过南部码头出口了约3550万桶，约为危机前水平的三分之一。巴格达还在努力扩大通过土耳其杰伊汉、叙利亚巴尼亚斯和约旦亚喀巴的替代出口路线。然而，伊拉克大部分出口石油产自南部，现有基础设施尚无法替代通过霍尔木兹海峡的路线。此前我们曾报道，伊拉克计划将南部石油产量恢复至每日300万桶。春季，伊拉克开始通过叙利亚出口石油以绕过霍尔木兹海峡，并恢复了与叙利亚的关键陆路路线，该路线已关闭13年。此前有报道称，伊朗关键石油码头在停运25天后恢复运营。</div>
+<ul>
+<li>伊朗批准伊拉克油轮通过霍尔木兹海峡</li>
+<li>伊拉克石油出口下降超85%，收入锐减</li>
+<li>伊拉克依赖海峡，替代路线尚不成熟</li>
+<li>伊朗此前已允许中俄巴船只通行</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此决定缓解伊拉克石油出口压力，稳定全球油市，增强伊朗地区影响力。对哈萨克斯坦而言，可能影响油价走势，进而影响其石油出口收入和财政预算，需关注地缘局势变化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/kazatomprom-planiruet-zaklyuchit-dve-krupnie-sdelki-poprodazhe-urana-d290a554" target="_blank">“哈萨克斯坦原子工业公司”计划签署两项大型铀销售交易</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/22 21:40<span class="source-link"><a href="https://www.inform.kz/ru/kazatomprom-planiruet-zaklyuchit-dve-krupnie-sdelki-poprodazhe-urana-d290a554" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国家原子能公司计划签署两项大型铀销售交易：一项向中国SNURDC公司出售U3O8天然铀精矿，交付至阿拉山口；另一项向俄罗斯《铀一集团》出售U3O8，交付至西伯利亚化学联合体。交易价格、数量和期限均未披露，属商业机密。此外，临时股东大会将讨论董事会成员变更，因奥特恩希耶夫被任命为哈萨克斯坦铁路公司主席。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：《哈萨克斯坦国家原子能公司》计划签署两项大型铀销售交易
+正文：其中一项交易，哈萨克斯坦国家原子能公司计划与中国公司State Nuclear Uranium Resource Development Company Limited（SNURDC）签署。涉及以U3O8形式的天然铀精矿销售，并物理交付至中国阿拉山口火车站。SNURDC是State Power Investment Corporation Limited（SPIC）的子公司，负责为SPIC供应铀和燃料组件。该公司还拥有中国政府对天然铀精矿进口的许可。正如哈萨克斯坦国家原子能公司消息所述，哈萨克斯坦公司的商业报价已被SNURDC接受，随后双方商定了铀精矿现货买卖合同的草案。同时，供应量、期限和交易价格未披露。哈萨克斯坦国家原子能公司解释称，该信息属于商业机密。据公司称，交易参数符合市场条件和当前市场趋势。第二项大型交易涉及以U3O8形式向俄罗斯的《铀一集团》股份公司出售天然铀，并物理交付至俄罗斯的《西伯利亚化学联合体》股份公司。《铀一集团》隶属于俄罗斯国家原子能公司管理范围，是俄罗斯公司海外铀开采资产的最大运营商之一。该公司也是哈萨克斯坦国家原子能公司合资企业的参与者和股东。双方已商定铀供应合同草案。与中国公司的情况一样，价格、数量和交付期限因商业信息保密而未披露。哈萨克斯坦国家原子能公司指出，交易参数符合市场条件。临时股东大会议程的另一项议题是变更哈萨克斯坦国家原子能公司董事会组成。——由于代表《萨姆鲁克-卡泽纳》股份公司利益的哈萨克斯坦国家原子能公司董事会成员奥特恩希耶夫·叶尔扎斯·穆拉托维奇被任命为《哈萨克斯坦铁路》股份公司管理委员会主席，有必要提前终止其作为公司董事会成员的权力。根据大股东的倡议，公司…</div>
+<ul>
+<li>计划与中国SNURDC签署铀精矿销售合同</li>
+<li>计划与俄罗斯《铀一集团》签署铀销售合同</li>
+<li>交易价格、数量、期限均保密</li>
+<li>临时股东大会将变更董事会成员</li>
+<li>奥特恩希耶夫因新任命提前卸任董事</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该交易强化哈萨克斯坦在铀市场的多元出口，平衡中俄两大买家，提升地缘经济影响力。同时，董事会变动可能影响公司治理，但总体利好矿业出口稳定，巩固哈国作为全球铀供应大国的地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://www.inform.kz/ru/za-shest-let-eshe-4-mln-kazahstantsev-poluchili-dostup-k-prirodnomu-gazu-9bb326b3" target="_blank">六年内又有400万哈萨克斯坦人获得天然气供应</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/22 15:18<span class="source-link"><a href="https://www.inform.kz/ru/za-shest-let-eshe-4-mln-kazahstantsev-poluchili-dostup-k-prirodnomu-gazu-9bb326b3" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦六年来新增400万居民获得天然气，覆盖超1000个居民点，建成2万公里配气管网。2025年新增35.4万用户，2026年计划再增3.6万人。目前天然气化水平达64.2%，惠及1310万人。重点项目“伊希姆—阿斯塔纳”管道将保障北部三市供应，目标到2035年实现80%覆盖率。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：六年来又有400万哈萨克斯坦人获得天然气供应
+正文：在此期间，天然气化覆盖了超过1000个居民点，建成了2万公里的配气管网。这一指标的增长是实施旨在发展天然气运输和分配系统以及连接新居民点的基础设施项目的结果。能源部指出，仅2025年一年，就有94个居民点的超过35.4万居民获得了天然气。一年内建成了约2000公里的配气管网。2026年，天然气基础设施的发展仍在继续。正在实施40个项目，包括7个结转项目和33个新项目。在正在实施的项目框架内，预计今年还将有约3.6万人获得天然气。信息图表：哈萨克斯坦共和国能源部。对北部地区天然气化具有特殊意义的是“伊希姆—阿斯塔纳”干线天然气管道建设项目。哈萨克斯坦政府与俄罗斯天然气工业股份公司（PJSC Gazprom）签署了实施该项目的备忘录。该项目将确保阿斯塔纳、科克舍套和彼得罗巴甫洛夫斯克的可靠天然气供应，并使该国北部地区的天然气供应路线多样化。进一步的天然气化扩展将根据国家元首的指示进行，即到2035年将居民天然气供应水平提高到80%。天然气化仍然是该国能源基础设施发展的关键方向之一。扩大居民获得天然气的机会有助于提高生活质量、促进地区发展和加强哈萨克斯坦的能源安全。此前，Kazinform报道称，2025年有超过35.4万居民从94个居民点获得了天然气。截至2026年1月1日，该国天然气化水平达到64.2%，获得天然气的居民人数为1310万。提醒一下，2026年哈萨克斯坦正在实施40个天然气化项目。此前，哈萨克斯坦能源部报告称，这些项目将使新居民点的数万居民获得天然气。</div>
+<ul>
+<li>六年新增400万天然气用户，覆盖千余居民点</li>
+<li>2025年新增35.4万用户，建成2000公里管网</li>
+<li>2026年实施40个项目，预计再增3.6万人</li>
+<li>伊希姆—阿斯塔纳管道保障北部三市供气</li>
+<li>目标2035年天然气化率达80%</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">天然气化提升居民生活质量，促进区域均衡发展，增强能源安全。与俄气合作建设管道，深化对俄能源依赖，但多元化供应路线。基础设施投资拉动经济增长，助力实现国家能源战略目标。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://www.inform.kz/ru/dolya-zelenoy-energetiki-vkazahstane-virosla-vchetire-raza-zashest-let-c570d815" target="_blank">哈萨克斯坦绿色能源占比六年增长四倍</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/22 12:39<span class="source-link"><a href="https://www.inform.kz/ru/dolya-zelenoy-energetiki-vkazahstane-virosla-vchetire-raza-zashest-let-c570d815" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦绿色能源占比六年增长四倍，得益于拍卖、投资和新设施投产。现有172座可再生能源电站，2025年发电86亿千瓦时，新增9个项目共500兆瓦。2026年计划再投10个项目245兆瓦，预计发电88亿千瓦时。未来将实施约100个项目共3.6吉瓦，另有4吉瓦大型项目在推进。国际投资者包括道达尔、中国电力、马斯达尔等。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦绿色能源占比六年内增长四倍
+正文：该指标的提升得益于可再生能源项目拍卖、吸引投资以及新增发电能力的投产。现有设施中，主要部分为71座风电场和54座太阳能电站。此外，国内还有44座水电站和3座生物质电站。截至2025年底，可再生能源设施发电量达86亿千瓦时。年内有9个新设施投产，总装机容量超过500兆瓦。2026年该行业继续发展。计划再启动10个可再生能源项目，总装机容量245兆瓦——包括4座风电场、5座太阳能电站和1座水电站。预计到年底，可再生能源发电量将达到88亿千瓦时。信息图：哈萨克斯坦共和国能源部。近期计划实施约100个项目，总装机容量3.6吉瓦。此外，还在推进另外4吉瓦的大型可再生能源项目。该领域已吸引大型国际投资者，包括道达尔能源、中国电力、马斯达尔和中国能源。他们的参与有助于引进现代技术和投资，并增加新的发电能力。预计可再生能源的进一步发展将提高清洁能源在国家能源结构中的占比，增强电力系统的稳定性，并加强能源安全。此前，Kazinform报道称，2026年哈萨克斯坦已投产10个计划中的7个可再生能源项目，总装机容量212兆瓦。到年底，计划启动总容量约245兆瓦的项目。另外，4月能源部长叶尔兰·阿克肯热诺夫曾表示，到2026年底，可再生能源设施的发电量应达到88亿千瓦时。</div>
+<ul>
+<li>绿色能源占比六年增四倍</li>
+<li>2025年发电86亿千瓦时</li>
+<li>2026年计划新增245兆瓦</li>
+<li>未来项目总容量3.6吉瓦</li>
+<li>吸引国际巨头投资</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">可再生能源增长将提升哈萨克斯坦能源独立性，减少对化石燃料依赖，增强能源安全。吸引外资和技术，促进经济多元化，改善国际形象，助力实现碳中和目标，对全球能源转型和区域能源合作产生积极影响。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-08-23 09:04</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
