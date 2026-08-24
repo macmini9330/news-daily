@@ -55,6 +55,12 @@ def main():
     if not run_step("生成 HTML", [sys.executable, os.path.join(SCRAPER_DIR, "generate_kz_html.py")]):
         sys.exit(1)
 
+    # 3.5 质量检查（通过才继续；失败终止，不推送坏内容）
+    today = datetime.now().strftime("%Y-%m-%d")
+    if not run_step("质量检查", [sys.executable, os.path.join(SCRAPER_DIR, "check_quality.py"), "--date", today], timeout=30):
+        print(f"\n🚫 日报质量检查未通过，终止流程（不推送、不发布）")
+        sys.exit(1)
+
     # 4. 推送（可选）
     if not args.no_push:
         if not run_step("git 提交推送", ["git", "add", "-A"]):
