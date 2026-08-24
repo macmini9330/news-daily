@@ -55,10 +55,20 @@ def main():
     if not run_step("生成 HTML", [sys.executable, os.path.join(SCRAPER_DIR, "generate_kz_html.py")]):
         sys.exit(1)
 
-    # 3.5 质量检查（通过才继续；失败终止，不推送坏内容）
+    # 3.5 质量检查（通过才继续；失败终止 + 只通知管理员）
     today = datetime.now().strftime("%Y-%m-%d")
-    if not run_step("质量检查", [sys.executable, os.path.join(SCRAPER_DIR, "check_quality.py"), "--date", today], timeout=30):
+    qc = subprocess.run(
+        [sys.executable, os.path.join(SCRAPER_DIR, "check_quality.py"), "--date", today],
+        cwd=BASE_DIR, capture_output=True, text=True, timeout=30)
+    if qc.stdout:
+        print(qc.stdout)
+    if qc.returncode != 0:
+        reason = (qc.stdout or qc.stderr or "未知原因").strip()[-500:]
         print(f"\n🚫 日报质量检查未通过，终止流程（不推送、不发布）")
+        print(f"   原因: {reason}")
+        # 只通知管理员（其他人员静默）
+        run_step("管理员告警", [sys.executable, os.path.join(SCRAPER_DIR, "push_daily.py"),
+                                "--date", today, "--alert", reason], timeout=60)
         sys.exit(1)
 
     # 4. 推送（可选）

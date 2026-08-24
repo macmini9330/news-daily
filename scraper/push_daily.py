@@ -126,23 +126,87 @@ def build_card(date_display: str, total: int, counts: dict, homepage_url: str) -
     }
 
 
+# ============ 管理员告警卡片 ============
+def build_alert_card(date_display: str, reason: str) -> dict:
+    """检查失败告警卡片（红色，只发管理员）"""
+    return {
+        "config": {"wide_screen_mode": True},
+        "header": {
+            "title": {"tag": "plain_text", "content": "🚨 日报质量检查未通过"},
+            "template": "red",
+        },
+        "elements": [
+            {
+                "tag": "div",
+                "text": {
+                    "tag": "lark_md",
+                    "content": (
+                        f"**{date_display}日报** 质量检查未通过 ❌\n\n"
+                        f"**失败原因：**\n{reason}\n\n"
+                        f"⚠️ 今日日报**未推送、未发布**，请及时处理。"
+                    ),
+                },
+            },
+            {
+                "tag": "note",
+                "elements": [
+                    {"tag": "plain_text", "content": f"由 Hermes 自动告警 · {datetime.now().strftime('%Y-%m-%d %H:%M')}"}
+                ],
+            },
+        ],
+    }
+
+
+def send_alert(app_id: str, app_secret: str, admin_open_id: str, date_display: str, reason: str):
+    """向管理员发送检查失败告警"""
+    card = build_alert_card(date_display, reason)
+    token = get_tenant_token(app_id, app_secret)
+    resp = send_card(token, admin_open_id, card)
+    if resp.get("code") == 0:
+        print(f"✅ 管理员告警已发送: {admin_open_id}")
+        return True
+    else:
+        print(f"⚠️ 管理员告警发送失败: {resp.get('msg')}")
+        return False
+
+
 # ============ 主流程 ============
 def main():
-    # 1. 配置检查（未配置 → 静默跳过，不阻断流水线）
+    # 1. 配置读取
     app_id, app_secret, open_ids = get_config()
     if not app_id or not app_secret:
         print("⏭️  推送未配置（FEISHU_PUSH_APP_ID/SECRET 缺失），跳过推送")
         return
-    if not open_ids:
-        print("⏭️  推送未配置（FEISHU_PUSH_OPEN_IDS 为空），跳过推送")
-        return
 
-    # 2. 参数（日期 / 首页链接）
+    # 2. 参数（日期 / 首页链接 / 告警模式）
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("--date", default=datetime.now().strftime("%Y-%m-%d"))
     parser.add_argument("--homepage", default="https://macmini9330.github.io/news-daily/")
+    parser.add_argument("--alert", default="", help="告警模式：传入失败原因，只通知管理员")
     args = parser.parse_args()
+
+    d = datetime.strptime(args.date, "%Y-%m-%d")
+    date_display = f"{d.year}年{d.month}月{d.day}日"
+
+    # ⚠️ 告警模式：只发管理员，其他人员静默
+    if args.alert:
+        env = load_env()
+        admin_open_id = env.get("FEISHU_PUSH_ADMIN_OPEN_ID", "")
+        if not admin_open_id:
+            print("⏭️  告警未配置（FEISHU_PUSH_ADMIN_OPEN_ID 缺失），跳过告警")
+            return
+        try:
+            send_alert(app_id, app_secret, admin_open_id, date_display, args.alert)
+        except Exception as e:
+            print(f"❌ 告警发送失败: {e}")
+            sys.exit(1)
+        return
+
+    # ⬇️ 正常推送模式
+    if not open_ids:
+        print("⏭️  推送未配置（FEISHU_PUSH_OPEN_IDS 为空），跳过推送")
+        return
 
     # 3. 日报统计数据（读 analyze 产物）
     counts = {"politics_domestic": 0, "politics_foreign": 0, "finance": 0, "mining": 0}
@@ -157,9 +221,6 @@ def main():
             total = sum(counts.values())
         except Exception as e:
             print(f"⚠️ 读取分析产物失败（用 0 计数）: {e}")
-
-    d = datetime.strptime(args.date, "%Y-%m-%d")
-    date_display = f"{d.year}年{d.month}月{d.day}日"
 
     # 4. 构造卡片 + 发送
     card = build_card(date_display, total, counts, args.homepage)
