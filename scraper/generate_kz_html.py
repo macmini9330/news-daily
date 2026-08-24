@@ -170,6 +170,16 @@ def esc(text: str) -> str:
     return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
 
 
+def _sort_items_desc(items: list) -> list:
+    """板块内新闻按时间降序（新→旧）。time 格式 'YYYY-MM-DD HH:MM'；解析失败排最后。"""
+    def key_fn(it):
+        try:
+            return datetime.strptime(it.get("time", ""), "%Y-%m-%d %H:%M")
+        except Exception:
+            return datetime.min
+    return sorted(items, key=key_fn, reverse=True)
+
+
 def generate_daily_html(analyzed: dict, date_str: str, window_label: str) -> str:
     """生成单日日报 HTML（date_str=发布日，window_label=时间范围说明）"""
     sections = analyzed["sections"]
@@ -191,7 +201,7 @@ def generate_daily_html(analyzed: dict, date_str: str, window_label: str) -> str
     # 各板块内容（OpenClaw 深色风格）
     sections_html = ""
     for sec in SECTIONS:
-        items = sections.get(sec["id"], [])
+        items = _sort_items_desc(sections.get(sec["id"], []))  # 板块内按时间新→旧
         sections_html += f'<div class="doc-section" id="sec-{sec["id"]}">\n'
         sections_html += f'<h2 class="section-title"><span class="sec-seq">{esc(sec["num"])}</span> {esc(sec["name"])} <span class="count">({len(items)} 条)</span></h2>\n'
         if not items:
