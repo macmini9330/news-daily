@@ -72,6 +72,9 @@ def main():
             sys.exit(1)
         print(f"✅ 已推送到 GitHub Pages")
 
+    # 4.5 飞书推送（可选，失败不阻断——独立缓冲机器人推送给指定人员）
+    run_step("飞书推送", [sys.executable, os.path.join(SCRAPER_DIR, "push_daily.py")], timeout=60)
+
     print(f"\n🎉 完成! 访问 https://macmini9330.github.io/news-daily/")
 
 
