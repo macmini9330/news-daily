@@ -47,8 +47,8 @@ def main():
     # 1.5 汇率（失败不阻断——首页汇率卡片可选显示）
     run_step("抓取汇率", [sys.executable, os.path.join(SCRAPER_DIR, "fetch_rates.py")], timeout=30)
 
-    # 2. 分析（LLM 逐条翻译 50-60 条，900s 上限）
-    if not run_step("LLM 分类分析", [sys.executable, os.path.join(SCRAPER_DIR, "analyze_kz_news.py")], timeout=900):
+    # 2. 分析（LLM 逐条翻译，221条实测需 15-25 分钟；1800s=30分钟上限）
+    if not run_step("LLM 分类分析", [sys.executable, os.path.join(SCRAPER_DIR, "analyze_kz_news.py")], timeout=1800):
         sys.exit(1)
 
     # 3. 生成 HTML
