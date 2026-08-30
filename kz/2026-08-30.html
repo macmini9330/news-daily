@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年8月30日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年8月30日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年08月29日早9:00至2026年08月30日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 15 条</span><span class="stat-chip">3 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">7</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">7</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">1</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">0</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(7 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/ofitsialniy-sayt-kurultaya-zarabotal-vkazahstane-2f1d2cf2" target="_blank">哈萨克斯坦库鲁尔泰官方网站上线</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/29 19:42<span class="source-link"><a href="https://www.inform.kz/ru/ofitsialniy-sayt-kurultaya-zarabotal-vkazahstane-2f1d2cf2" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦库鲁尔泰（国家大会）官方网站quryltai.kz正式上线，将发布活动信息、法案文本、分析材料及会议直播。此前，首届库鲁尔泰第一次会议在阿斯塔纳举行，选举产生了八个常设委员会及其主席，国家元首宣布了库鲁尔泰获得的新权限。此举旨在提升立法透明度和公众参与度。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦库鲁尔泰官方网站正式上线
+正文：库鲁尔泰网站将发布关于库鲁尔泰及其议员活动的实时信息、法律草案文本、预告和分析材料。同时，还将提供会议在线直播、照片和视频资料。
+官方网站访问地址为 quryltai.kz。
+提醒一下，昨天在阿斯塔纳举行了首届库鲁尔泰第一次会议。
+在库鲁尔泰第一次全体会议上，选举产生了常设委员会成员。
+库鲁尔泰设立了八个常设委员会，并选举了各委员会主席。
+国家元首介绍了库鲁尔泰获得的新权限。</div>
+<ul>
+<li>库鲁尔泰官网quryltai.kz上线，提供法案和直播。</li>
+<li>首届库鲁尔泰会议在阿斯塔纳召开。</li>
+<li>设立八个常设委员会并选举主席。</li>
+<li>国家元首宣布库鲁尔泰新权限。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">库鲁尔泰官网启动及新权限赋予，增强立法透明度和公众参与，可能推动政治改革，提升决策合法性，对哈萨克斯坦政治格局产生积极影响，并可能间接影响经济政策制定和外交透明度。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/tokaev-obrazoval-apparat-soveta-bezopasnosti-d3ed3fdb" target="_blank">托卡耶夫签署关于成立安全委员会机构的法令</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/29 18:53<span class="source-link"><a href="https://www.inform.kz/ru/tokaev-obrazoval-apparat-soveta-bezopasnosti-d3ed3fdb" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫签署总统令，正式设立安全委员会办公室，该机构作为国家机构直接隶属于总统并对其负责。此举旨在强化总统对国家安全事务的直接掌控，优化安全决策机制，提升国家应对安全挑战的效率。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：托卡耶夫签署关于设立安全委员会办公室的总统令
+正文：根据总统令，哈萨克斯坦共和国安全委员会办公室作为国家机构成立，直接隶属于哈萨克斯坦共和国总统并向其汇报工作。</div>
+<ul>
+<li>托卡耶夫签署设立安全委员会办公室的总统令</li>
+<li>新机构直接隶属总统并对其负责</li>
+<li>强化总统对国家安全事务的直接掌控</li>
+<li>优化安全决策机制，提升应对效率</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该举措将加强总统对安全领域的集中领导，可能推动安全政策更高效执行，对哈萨克斯坦政治格局产生集权化影响，同时提升外交决策的协调性，并可能影响矿产资源领域的安全审查机制。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/vibori-vkurultay-tsifrovoy-rivok-inovie-investitsii-chto-mirovie-smi-pishut-okaz-b5578b08" target="_blank">库鲁尔泰选举、数字飞跃和探险旅游中心：世界媒体如何报道哈萨克斯坦</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/29 13:30<span class="source-link"><a href="https://www.inform.kz/ru/vibori-vkurultay-tsifrovoy-rivok-inovie-investitsii-chto-mirovie-smi-pishut-okaz-b5578b08" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>本文综述了国际媒体对哈萨克斯坦的报道。塔斯社关注新议会选举，投票率74.08%，库鲁尔泰由145名议员组成，国际观察员称选举透明。时事通讯社报道新加坡资深部长李显龙访哈，强调两国合作潜力，并提及新加坡培训了800多名哈官员。文章还涉及数字发展和探险旅游等话题，展现哈萨克斯坦在多领域的国际形象。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：库鲁尔泰选举、数字飞跃和探险旅游中心：世界媒体如何报道哈萨克斯坦
+
+塔斯社：五个政党。关于哈萨克斯坦新议会选举初步结果的主要信息
+俄罗斯新闻机构塔斯社详细分析了哈萨克斯坦新一院制议会首次选举的初步结果。
+据中央选举委员会数据，在登记的1262万选民中，超过935万人参加了投票。投票率为74.08%，另有2.51%的投票者选择了“反对所有人”一栏。
+该出版物还关注哈萨克斯坦新的政治架构。库鲁尔泰将由145名议员组成，根据政党名单选举产生，任期五年。向一院制议会的过渡由7月1日生效的新哈萨克斯坦宪法规定。
+塔斯社特别强调了国际观察员的评价。上合组织和独联体观察团表示，选举透明进行，组织水平高，没有可能影响结果的违规行为。
+
+时事通讯社：李显龙谈哈萨克斯坦、全球合作以及变化世界中的新机遇
+新加坡资深部长李显龙表示，在全球经济和政治变化的背景下，哈萨克斯坦和新加坡可以从更紧密的合作中获得显著优势，日本时事通讯社报道。
+在纳扎尔巴耶夫大学演讲时，他指出，尽管两国之间的贸易和投资规模相对较小，但哈萨克斯坦正成为新加坡越来越重要的伙伴。
+李显龙表示，各国需要在传统经济伙伴之外寻找新机遇，并加强与利益一致国家的合作。他称哈萨克斯坦是新加坡在中亚的新兴有前景伙伴之一。
+该出版物还提到新加坡经验对哈萨克斯坦发展的影响。自2013年以来，纳扎尔巴耶夫大学公共政策学院与李光耀公共政策学院合作，培训了800多名哈萨克斯坦官员。
+访问期间，李显龙被授予纳扎尔巴耶夫大学名誉教授称号。他是该大学16年历史上第八位获得此称号的人。
+
+中亚时报：K</div>
+<ul>
+<li>哈新议会选举投票率74.08%，库鲁尔泰145席</li>
+<li>国际观察员称选举透明无违规</li>
+<li>李显龙称哈为新加坡中亚新兴伙伴</li>
+<li>新加坡已培训800多名哈官员</li>
+<li>哈推动数字发展和探险旅游</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">选举巩固新政治架构，提升国际合法性；与新加坡合作促进经济多元化；数字和旅游发展增强国际吸引力，对哈政治稳定、经济转型和外交拓展有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/jiangjin30gegongxian-9fc86922/" target="_blank">哈萨克斯坦将推进30个公路口岸现代化改造</a></h3>
+<div class="item-meta">哈通社中文版 · 08/29 13:19<span class="source-link"><a href="https://cn.inform.kz/news/jiangjin30gegongxian-9fc86922/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦计划对30个公路口岸进行现代化改造，其中3个已开工，部分2026年底前完成，其余2027年完成。哈俄双方在阿勒姆别特口岸会谈，讨论提升通行能力、数字化（e-SMR、E-Permit等）及基础设施。目前哈已与42国签署公路运输协议。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据交通部新闻处消息，为落实国家元首关于现代化改造和发展边境口岸的指示，哈萨克斯坦与俄罗斯交通及边境主管部门代表日前在阿克托别州“阿勒姆别特”公路口岸举行工作会谈。
+
+会谈期间，双方就进一步发展哈俄交通联系、提升边境通行能力以及完善边境基础设施等问题进行了讨论。
+
+车辆拥堵及如何保障车辆顺畅通行，是此次会谈重点讨论的问题之一。双方还研究了提高口岸通行能力、进一步完善边境通行手续等问题。
+
+双方还重点讨论了信息系统整合和运输手续数字化。具体包括推进信息系统整合、发展e-SMR电子货运单据、向E-Permit系统过渡，在试点项目框架下开展查验检查系统数据交换，应用电子导航封条，以及扩大无人驾驶运输工具应用项目等。
+
+此外，代表团在工作访问期间还前往“伊莱克-1”铁路口岸和“扎伊桑”公路口岸进行了实地考察。
+
+目前，哈萨克斯坦计划对国家边境线上的30个公路口岸进行现代化改造。其中，“阿勒姆别特–奥尔斯克”“斯热穆–马什塔科沃”和“霍萨克–巴夫洛夫卡”3个口岸正在进行施工安装。
+
+据交通部介绍，部分口岸改造工程计划于2026年底前完成，其余口岸的相关工作计划于2027年完成。
+
+会谈结束后，双方确定了进一步发展双边交通联系、完善边境基础设施以及推进通关手续数字化等领域的后续合作安排。相关措施落地后，将进一步提升边境口岸通行能力，缩短车辆通行时间，为国际运输企业和从业人员提供更加便利的通行条件。
+
+据此前交通部介绍，截至目前，哈萨克斯坦已与42个国家签署政府间公路货物运输合作协议，并对开展国际公路货物运输的相关条件作出了明确规定。</div>
+<ul>
+<li>30个公路口岸现代化改造，3个已开工</li>
+<li>部分2026年底前完成，其余2027年完成</li>
+<li>哈俄会谈聚焦通行能力与数字化</li>
+<li>已与42国签署公路运输协议</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该计划将提升哈萨克斯坦边境通行效率，促进与俄罗斯及中亚贸易，强化其欧亚运输枢纽地位。数字化和基础设施改善可吸引国际运输投资，增强经济活力，同时巩固与俄关系，对区域物流格局产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://www.inform.kz/ru/prestupnost-vkazahstane-snizilas-na10-vpervom-polugodii-2026-goda-805f553b" target="_blank">2026年上半年哈萨克斯坦犯罪率下降10%</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/29 12:36<span class="source-link"><a href="https://www.inform.kz/ru/prestupnost-vkazahstane-snizilas-na10-vpervom-polugodii-2026-goda-805f553b" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年上半年哈萨克斯坦犯罪率同比下降10%，2025年全年下降6%至9.66万起。公共场所违法案件2025年减少9%，2026年上半年再降19%。得益于数字分析和视频监控，侦破率提升。总统生态倡议下查处大量环境违法，家庭暴力案件减少7%，网络诈骗侦破超3500起。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：2026年上半年哈萨克斯坦犯罪率下降10%
+正文：2025年全年，登记犯罪总数减少了6%，从10.27万起降至9.66万起。在最为危险的犯罪类型中，如特别严重犯罪、抢劫、盗窃、抢夺、谋杀和流氓行为，均实现了显著下降。
+2026年上半年，总体犯罪率进一步下降10%，同时得益于数字分析和视频监控系统的应用，案件侦破率有所提高。2025年公共场所违法案件数量减少了9%，2026年上半年又减少了19%。
+法治的加强是通过持续坚持“零容忍”原则和扩大“地毯式”视频监控系统实现的。该倡议旨在创建公共空间的全面数字覆盖，将街道摄像头、庭院监控系统、教育设施和交通枢纽的监控系统整合为一个无“盲区”的统一生态系统。目前，大多数犯罪案件都是借助数字技术侦破的。
+图片：primeminister.kz 2025年查处行政违法行为超过1700万起，其中包括：
+2026年上半年查处违法行为超过810万起，其中包括：
+在总统卡瑟姆-若马尔特·托卡耶夫的生态倡议“清洁哈萨克斯坦”框架下，约7000名警察和超过1200个流动小组参与工作——自2025年以来，已发现49.6万起违反美化规则的行为，11.9万起公共场所污染事件，清除2600个自发垃圾场。额外的监控由超过2.7万个带视频分析的摄像头提供，其中包括568个垃圾抓拍摄像头和205个烟雾监控摄像头，通过这些摄像头发现了超过2万起生态违法行为。
+特别关注家庭生活领域的违法预防。采用保护性命令、临时禁止共同居住以及对违法者实施心理矫正项目等措施。
+2026年上半年，该领域的违法数量下降了7%。自年初以来，已有1877人获得专项社会救助。
+该国还加强了打击网络诈骗的力度。自2026年初以来，已侦破超过3500起此类案件。</div>
+<ul>
+<li>2026年上半年犯罪率降10%，2025年降6%</li>
+<li>公共场所违法案件2026年上半年再降19%</li>
+<li>数字监控和零容忍政策提升侦破率</li>
+<li>生态倡议查处49.6万起违规，清除2600个垃圾场</li>
+<li>家庭暴力案件降7%，网络诈骗侦破超3500起</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">犯罪率持续下降增强社会稳定性，提升政府公信力，有利于吸引外资和促进经济发展。数字监控和生态治理强化了国家治理能力，但需关注隐私保护。家庭暴力减少和网络诈骗打击改善民生，助力社会和谐。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/guojiazaiguorifaming-b85b53d2/" target="_blank">国家元首在国际禁止核试验日发表声明</a></h3>
+<div class="item-meta">哈通社中文版 · 08/29 12:00<span class="source-link"><a href="https://cn.inform.kz/news/guojiazaiguorifaming-b85b53d2/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在国际禁止核试验日发表声明，回顾35年前关闭塞梅核试验场的历史，强调哈萨克斯坦自愿放弃世界第四大核武库，选择和平发展道路。他呼吁核大国通过谈判解决问题，加快《全面禁止核试验条约》生效，并指出全民公投支持核能发展，为经济科技进步奠定基础。改革目标是建设公正、可持续、清洁的哈萨克斯坦。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">国家元首在国际禁止核试验日发表声明
+
+- 今天，国际社会庆祝由联合国大会在哈萨克斯坦倡议下设立的国际禁止核试验日。35年前，尽管国际形势严峻，塞梅核试验场还是被关闭了。数十年来进行的爆炸对我国公民的健康和环境造成了巨大损害，给我国人民带来了无法弥补的苦难。今天是一个尤为重要的日子，它提醒我们核试验对全人类造成的严重后果，并呼吁国际社会防止此类灾难再次发生。-总统说。
+国家元首表示，哈萨克斯坦自愿放弃了其核武库，该武库按容量计算位居世界第四。哈萨克斯坦做出了历史性的决定，选择了和平、安全和可持续发展的道路。正因如此，人民长久以来的梦想得以实现。
+- 这一举措无疑展现了我国对年轻一代的深切责任感。新宪法序言明确指出，我国致力于和平，并与所有国家建立友好关系。这一原则始终是我国外交政策不可动摇的基石。作为国际反核运动的领导者之一，我国的立场始终如一：我们支持核大国之间通过谈判而非对抗解决问题，并呼吁采取共同的大胆举措，加快《全面禁止核试验条约》的生效，消除与使用核武器相关的威胁。我们认为，原子能应该只用于建设性用途。我国人民在全民公投中一致支持核能发展的战略方向，为哈萨克斯坦数十年来经济、科技进步奠定了坚实的基础。-总统说。
+托卡耶夫总统表示，显然，这一战略选择将为深远的变革铺平道路，并为我国的可持续发展和繁荣注入强劲动力。
+- 今天在各个领域推行的全面改革的目标只有一个：建设一个公正、可持续、清洁的哈萨克斯坦。我们同属一个国家，必将实现我们崇高的目标。我对此深信不疑。-国家元首说。</div>
+<ul>
+<li>纪念塞梅核试验场关闭35周年</li>
+<li>哈萨克斯坦自愿弃核，世界第四大核武库</li>
+<li>呼吁核大国谈判，推动《全面禁止核试验条约》生效</li>
+<li>全民公投支持核能发展，奠定经济科技基础</li>
+<li>改革目标：公正、可持续、清洁的哈萨克斯坦</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此声明强化哈萨克斯坦作为国际反核运动领导者的地位，提升其外交影响力。同时，强调核能发展，为国内经济科技转型提供政策支持，并巩固总统改革议程的合法性，对矿产和能源格局产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://www.inform.kz/ru/tokaev-prizval-yadernie-derzhavi-kperegovoram-iskoreyshemu-zapretu-yadernih-ispi-96850892" target="_blank">托卡耶夫呼吁核大国进行谈判并尽快禁止核试验</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/29 11:01<span class="source-link"><a href="https://www.inform.kz/ru/tokaev-prizval-yadernie-derzhavi-kperegovoram-iskoreyshemu-zapretu-yadernih-ispi-96850892" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在塞米巴拉金斯克核试验场关闭35周年之际发表讲话，强调该试验场曾造成严重健康和环境损害，呼吁核大国谈判并尽快使《全面禁止核试验条约》生效。他重申哈萨克斯坦自愿放弃世界第四大核武库，坚持反核立场，同时指出全民公投支持发展核能，为经济科技发展奠定基础，推动建设公正、进步、清洁的哈萨克斯坦。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫呼吁核大国进行谈判并尽快禁止核试验
+
+&amp;nbsp;— 35年前，在复杂的国际形势下，塞米巴拉金斯克核试验场被关闭。几十年来，它给人民健康和环境造成了不可挽回的损害，在我们民族的命运中留下了痛苦的印记，——国家元首指出。
+据总统称，这一日期将提醒全人类铭记核试验的悲惨后果，并呼吁今后不再发生此类事件。
+他还强调，哈萨克斯坦自愿放弃了世界第四大核武库。
+&amp;nbsp;— 自愿放弃地球上第四大核武库，哈萨克斯坦做出了有利于和平、安全和可持续发展的历史性选择。这一决定实现了哈萨克斯坦人民的愿望，并展示了我们国家对子孙后代命运的责任，——卡瑟姆-若马尔特·托卡耶夫指出。
+总统强调，新宪法序言中确立的与所有国家和平友好相处的愿望，仍然是哈萨克斯坦外交政策不可动摇的原则。
+— 我国作为世界反核运动领导者之一的立场不变：我们呼吁核大国之间进行谈判，尽快使《全面禁止核试验条约》生效，并采取果断的多边行动，以消除核武器使用的威胁，——国家元首声明。
+卡瑟姆-若马尔特·托卡耶夫特别指出，原子能应仅用于建设性目的。在全民众公投中，我们人民坚定支持发展核能的方针，为哈萨克斯坦未来几十年的经济、科技发展奠定了坚实基础。
+托卡耶夫强调，这一战略选择是改革的重要组成部分，开启了国家可持续发展的新阶段。社会生活各领域的全面改革旨在建设公正、进步、清洁的哈萨克斯坦。
+&amp;nbsp;— 我相信，我们将共同实现这一崇高目标，——总统总结道。
+此前有报道称，在塞米巴拉金斯克核试验场关闭35周年之际，首都举行了“哈萨克斯坦共和国反核政策：历史教训、国家学说与地缘政治”圆桌会议。</div>
+<ul>
+<li>呼吁核大国谈判并尽快禁止核试验</li>
+<li>重申自愿放弃世界第四大核武库</li>
+<li>强调核能仅用于建设性目的</li>
+<li>全民公投支持发展核能</li>
+<li>推动建设公正、进步、清洁的哈萨克斯坦</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该讲话强化哈萨克斯坦反核国际形象，巩固其外交道义优势，同时为国内核能发展提供政治合法性，平衡安全与能源需求，影响中亚地缘政治格局，并可能推动全球核裁军议程。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(7 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/25-let-deyatelnosti-shos-kakmenyalas-rol-tsentralnoy-azii-18781e26" target="_blank">25年上合组织活动：中亚角色如何变化</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/30 00:46<span class="source-link"><a href="https://www.inform.kz/ru/25-let-deyatelnosti-shos-kakmenyalas-rol-tsentralnoy-azii-18781e26" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>上合组织成立25年来，中亚国家角色从安全合作扩展到经济、交通、生态等多领域。哈萨克斯坦作为创始国，在2023-2024年主席国期间举办超150场活动，阿斯塔纳峰会为高潮。中国研究员指出，地区议程拓宽，稳定环境正转化为发展机遇。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：上合组织25年：中亚角色如何演变
+
+——作为一名多年研究中国的研究员，我认为这25年最显著的趋势之一是地区在多边合作中角色的扩大。这并非从“被动”角色向“主动”角色的转变。哈萨克斯坦、吉尔吉斯斯坦、塔吉克斯坦和乌兹别克斯坦从一开始就是上合组织的创始国。变化的主要是议程、形式和地区国家参与合作的机会。——她指出。
+
+专家表示，四分之一世纪前，中亚国家获得独立仅约十年。加强边境稳定、增进互信、打击恐怖主义、分裂主义和极端主义是最紧迫的共同任务。从“上海五国”到上合组织的建立，逐步形成了基于信任、协商和合作的区域互动机制。
+
+——今天，安全问题仍然至关重要，但地区议程已大大拓宽。交通走廊、产业合作与投资、数字经济、绿色发展、能源、农业和教育在合作中占据越来越重要的位置。对中亚国家而言，如何将稳定的地区环境转化为更多发展机遇变得越来越重要。——专家继续说道。
+
+这位中国研究员认为，哈萨克斯坦尤其清晰地展示了这一趋势。作为上合组织创始国之一，它始终参与组织的发展。在2023-2024年哈萨克斯坦担任上合组织主席国期间，举办了超过150场经济、投资、交通、文化和人文及生态领域的活动，而主席国的最高潮是阿斯塔纳上合组织峰会。
+
+古丽孜亚·拜山认为，议程从安全问题扩展到经济、交通、生态和人文合作，也反映了组织内互动内容变化的更普遍过程。
+
+——地理意义也获得了新的内涵。</div>
+<ul>
+<li>中亚国家在上合组织角色从安全扩展到经济等多领域。</li>
+<li>哈萨克斯坦2023-2024年主席国期间举办超150场活动。</li>
+<li>阿斯塔纳峰会成为主席国任期高潮。</li>
+<li>地区议程拓宽，稳定环境转化为发展机遇。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">上合组织议程扩展将增强哈萨克斯坦在中亚的经济枢纽地位，吸引投资，促进交通和数字经济发展，同时巩固其多边外交影响力，对矿产合作和区域一体化产生积极推动。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/kazahstan-stal-liderom-initsiativ-po-likvidatsii-yadernogo-oruzhiya-ekspert-eac9a1bb" target="_blank">专家：哈萨克斯坦成为消除核武器倡议的领导者</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/29 23:42<span class="source-link"><a href="https://www.inform.kz/ru/kazahstan-stal-liderom-initsiativ-po-likvidatsii-yadernogo-oruzhiya-ekspert-eac9a1bb" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>新西兰籍专家阿林·韦尔在日内瓦国际反核试验日活动中表示，哈萨克斯坦因深知核武器后果，已成为消除核武器倡议的领导者。他提到哈萨克斯坦推动建立中亚无核武器区，并在联合国领导全面消除核武器的谈判。太平洋地区也受核试验影响，因此支持哈萨克斯坦的立场。当日日内瓦举行了支持核裁军的和平游行。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：专家称哈萨克斯坦已成为消除核武器倡议的领导者
+正文：
+— 我现在住在瑞士，来自新西兰。今天我参加这个纪念国际反核试验日的活动。这不仅是纪念核试验受害者及其所有受影响者的日子，也是认识到建设一个无核武器世界的必要性的日子，— 阿林·韦尔指出。
+据他所说，太平洋地区也遭受了核试验的后果，因此其居民认同哈萨克斯坦对消除核武器理念的承诺。
+阿林·韦尔特别强调了哈萨克斯坦在国际核裁军倡议中的作用。
+— 哈萨克斯坦深知核武器使用的后果，并理解任何使用都是无意义和不人道的，因此已成为消除核武器倡议的领导者。这包括建立中亚无核武器区，类似于南太平洋无核区，以及在联合国领导关于全面消除核武器的谈判，— 他强调。
+提醒一下，今天在日内瓦举行了支持核裁军的和平游行。</div>
+<ul>
+<li>哈萨克斯坦成为核裁军倡议领导者</li>
+<li>推动建立中亚无核武器区</li>
+<li>在联合国领导全面消除核武器谈判</li>
+<li>太平洋地区支持哈萨克斯坦立场</li>
+<li>日内瓦举行支持核裁军和平游行</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">哈萨克斯坦通过核裁军领导地位提升国际影响力，巩固其作为全球和平倡导者的形象，有助于加强外交软实力，并可能推动中亚地区安全合作，同时为国内矿产开发（如铀矿）提供和平利用核能的国际支持。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/okolo-400-gruzovikov-skopilis-nakazahstansko-kirgizskoy-granitse-0c9914bb" target="_blank">约400辆卡车在哈吉边境积压</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/29 23:12<span class="source-link"><a href="https://www.inform.kz/ru/okolo-400-gruzovikov-skopilis-nakazahstansko-kirgizskoy-granitse-0c9914bb" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦-吉尔吉斯斯坦边境约400辆卡车积压，因国际货运季节性增长和吉尔吉斯斯坦温度限制。哈国家收入委员会加强过境点工作，与内务机构调控交通，部分分流至邻近过境点，并与吉方保持协作，通过即时通讯频道和现场解释告知司机。此前哈乌边境也曾出现类似拥堵。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：约400辆卡车在哈萨克斯坦-吉尔吉斯斯坦边境积压
+正文：哈萨克斯坦国家收入委员会指出，积压受到国际货运季节性增长以及吉尔吉斯斯坦境内现行货运车辆温度限制的影响。该委员会与相关国家机构联合采取措施，以稳定局势并提高过境点的通行能力。
+——已加强过境点的工作，与内务机构共同组织交通流调控，并将其部分分流至邻近过境点。与吉尔吉斯斯坦主管机构保持常态化互动，以便快速评估局势并协调所采取的措施，国家收入委员会报告称。
+承运人和司机可及时获得关于检查站情况和可能替代路线的信息。
+——为告知承运人和司机，即时通讯工具中设有工作频道，发布关于过境点情况和可能替代路线的最新信息。此外，在过境点前直接对司机进行解释工作，国家收入委员会补充道。
+此外，国家收入委员会请承运人在规划路线时考虑当前局势。
+此前，哈萨克斯坦与乌兹别克斯坦边境的卡车队伍绵延数十公里。</div>
+<ul>
+<li>约400辆卡车在哈吉边境积压</li>
+<li>季节性货运增长和温度限制是主因</li>
+<li>哈方加强过境点并分流交通</li>
+<li>与吉方协作，提供替代路线信息</li>
+<li>此前哈乌边境也出现拥堵</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次拥堵反映哈国边境物流瓶颈，影响区域贸易效率，可能促使哈国优化过境设施和协调机制，短期增加运输成本，长期推动与邻国合作改善基础设施，对中亚经济一体化有潜在影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://www.inform.kz/ru/sammit-shos-vbishkeke-glavnie-temi-iozhidaemie-resheniya-f41149fb" target="_blank">比什凯克上合组织峰会：主要议题和预期决定</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/29 20:14<span class="source-link"><a href="https://www.inform.kz/ru/sammit-shos-vbishkeke-glavnie-temi-iozhidaemie-resheniya-f41149fb" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>上合组织峰会将于2026年在比什凯克举行，主题为“25年：共同迈向可持续和平、发展与繁荣”。各国元首将讨论国际议程、深化政治、经贸、物流、数字、生态和人文合作，并签署比什凯克宣言。联合国秘书长古特雷斯将出席，习近平将访问吉尔吉斯斯坦。峰会期间，比什凯克将加强安保，关闭部分商业设施，1.5万警察维持秩序，并实施交通管制。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：比什凯克上合组织峰会：主要议题和预期决定
+正文：预计上海合作组织成员国、受邀国家和一系列国际组织负责人的元首和代表将参加此次活动。
+各国元首将讨论国际和地区议程中的热点问题、组织进一步发展的优先方向，以及在政治、经贸、交通物流、数字、生态和人文领域深化合作的前景。
+在“上合组织+”模式的扩大会议上，将就加强联合国和国际法的核心协调作用、促进可持续发展和扩大互利合作等问题交换意见。
+会议结束后，将签署《上合组织二十五周年比什凯克宣言》，以及旨在进一步加强多领域合作和完善组织运作的文件和决定，并通过一系列元首主题声明。
+据悉，即将举行的峰会是吉尔吉斯共和国在2025-2026年担任上合组织主席国期间的主要总结性活动，其主题为“上合组织25年：共同迈向可持续和平、发展与繁荣”。
+此前我们曾报道，联合国秘书长古特雷斯将参加比什凯克上合组织峰会。
+另据报道，8月30日，中国国家主席习近平应总统萨德尔·扎帕罗夫邀请，将对吉尔吉斯斯坦进行国事访问。
+在筹备和举办上海合作组织峰会及第六届世界游牧民族运动会期间，该国加强了安全措施。
+在上合组织峰会举办期间，比什凯克居民被要求离开城市。
+为确保峰会及第六届世界游牧民族运动会期间的安全并减轻交通系统压力，8月31日和9月1日，比什凯克将关闭大型购物中心、市场以及官方代表团行进路线上的多个地下通道。
+超过1.5万名警察将保障上合组织峰会和第六届世界游牧民族运动会在比什凯克的秩序。
+鉴于首都的大型活动，自2026年8月30日起，部分路段将实施临时交通管制。</div>
+<ul>
+<li>峰会聚焦国际议程及多领域合作深化。</li>
+<li>将签署比什凯克宣言及多项合作文件。</li>
+<li>联合国秘书长和习近平将参会或访问。</li>
+<li>比什凯克加强安保，1.5万警察维持秩序。</li>
+<li>峰会期间实施交通管制并关闭部分设施。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次峰会将强化哈萨克斯坦在上合组织中的多边合作，促进其经贸和物流发展，提升区域影响力。同时，安全措施和交通管制可能短期影响比什凯克经济，但长期看有助于吸引投资和稳定地区局势。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://www.inform.kz/ru/v-mid-obyasnili-kak-inostranniy-investor-mozhet-zashitit-svoi-prava-v-kazahstane-ea13a8a1" target="_blank">外交部解释外国投资者如何在哈萨克斯坦保护自身权利</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/29 18:03<span class="source-link"><a href="https://www.inform.kz/ru/v-mid-obyasnili-kak-inostranniy-investor-mozhet-zashitit-svoi-prava-v-kazahstane-ea13a8a1" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦外交部就外国投资者权利保护作出解释，指出投资争端解决需先通过谈判、国内法院等国内机制，用尽后方可诉诸国际仲裁或ICSID。外交部无权干预具体司法案件，但强调法律保障投资者权益。此举旨在回应外界对长期诉讼影响投资环境的担忧，维护国家投资吸引力。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：外国投资者如何在哈萨克斯坦保护自己的权利——外交部解释
+正文：向哈萨克斯坦共和国外交部提出申诉的理由可能是保护外国投资者的问题，这些投资者面临漫长的司法或刑事诉讼，并认为国内规定的保护其权利的机制已经用尽。
+在正式请求中，Kazinform通讯社还要求该部门评估旷日持久的诉讼可能如何影响哈萨克斯坦的投资吸引力和外国合作伙伴的信任，并解释在这种情况下投资者可以使用哪些工具。
+外交部指出，投资者权利和投资保护的主要保障已在哈萨克斯坦共和国《企业家法典》中确立。立法规定了解决投资争端的几个阶段。
+——投资者与国家机关之间的争端通过谈判解决，如果未能达成协议，则在哈萨克斯坦共和国法院或国际仲裁中解决，如果法律或国际条约有规定的话，——哈萨克斯坦共和国外交部报告说。
+同时，外交部不能干预具体的司法或刑事案件。外交部强调，其无权评估法院、检察院和刑事追诉机关程序性决定的合法性，或以任何方式影响诉讼结果。
+根据宪法，司法问题完全属于法院的权限。刑事追诉机关的工作则按照哈萨克斯坦共和国法律规定的程序进行。
+外交部还单独解释了在国内无法解决争端时的行动程序。在转向国际机制之前，投资者必须使用可用的国内权利保护方式。其中包括审前调解、向授权国家机关提出申诉以及在哈萨克斯坦法院进行诉讼。
+在用尽这些机制后，投资者在特定条件下可以向国际投资争端解决中心（ICSID）提出申诉。
+——如果投资者用尽了所有可用的国内权利保护机制，且未能解决争端，他有权向国际中心提出申诉……</div>
+<ul>
+<li>投资争端先国内谈判或法院解决</li>
+<li>用尽国内机制后可诉诸ICSID</li>
+<li>外交部不干预司法个案</li>
+<li>法律保障投资者基本权利</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该解释明确了投资争端解决路径，有助于增强外国投资者信心，稳定外资流入，对哈萨克斯坦经济多元化和国际形象有积极影响，同时重申司法独立性，平衡外交与法律边界。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://www.inform.kz/ru/kazahstan-i-indiya-gotovyat-spetsialistov-po-kiberprestupleniyam-9f372c07" target="_blank">哈萨克斯坦与印度共同培养网络犯罪专家</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/29 17:30<span class="source-link"><a href="https://www.inform.kz/ru/kazahstan-i-indiya-gotovyat-spetsialistov-po-kiberprestupleniyam-9f372c07" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与印度合作启动网络犯罪专家联合培养项目，由哈内务部管理学院与印度国家法医科学大学实施。20名硕士生将接受数字取证、网络安全、司法鉴定等培训，毕业后获双学位。项目由总统府委托，旨在提升哈数字犯罪调查能力。此前，另有550名博士生将在土耳其接受战略专业培训。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦与印度联合培养网络犯罪专家
+
+在项目正式启动仪式上，哈萨克斯坦内务部代理部长叶尔詹·萨杰诺夫、科学和高等教育部代理部长萨亚萨特·努尔别克，以及印度国家法医科学大学（NFSU）和哈内务部管理学院领导及教职工代表出席。
+
+该项目由总统府委托，在科学和高等教育部及印度国家法医科学大学的参与下实施。
+
+根据计划，内务部管理学院的20名硕士研究生将接受数字取证、网络安全、司法鉴定和现代犯罪调查方法等方向的培训。
+
+NFSU是印度一所专门从事法医鉴定、犯罪学、数字取证和网络安全领域人才培养与科学研究的专业大学。
+
+联合项目将使哈萨克斯坦专家学习国际经验，掌握数字环境犯罪调查所需的现代实践方法。
+
+完成学业后，毕业生将获得两所大学的文凭。
+
+此前有报道称，550名战略专业博士生将在土耳其接受培训。</div>
+<ul>
+<li>哈印联合培养20名网络犯罪硕士生</li>
+<li>培训涵盖数字取证、网络安全等方向</li>
+<li>毕业生将获两所大学双文凭</li>
+<li>项目由总统府委托实施</li>
+<li>另有550名博士生在土耳其培训</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该合作提升哈国数字犯罪调查能力，强化网络安全领域人才储备，深化哈印教育合作，并可能推动哈国在区域网络安全治理中发挥更大作用，同时优化矿产等关键领域的信息安全防护。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/waibuzhengzaizhongdedisangongmin-8a91f87e/" target="_blank">外交部：正在搜寻中尼边境失联的第三名哈萨克斯坦公民</a></h3>
+<div class="item-meta">哈通社中文版 · 08/29 14:10<span class="source-link"><a href="https://cn.inform.kz/news/waibuzhengzaizhongdedisangongmin-8a91f87e/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦外交部表示，正在搜寻在中尼边境失联的第三名哈萨克斯坦公民。此前已有两名哈萨克斯坦女性公民在该地区因严重自然灾害失联。外交官正与中尼两国政府机构密切合作，持续进行搜救工作。目前尚未公布失联人员具体身份及灾害详情。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 外交部：正在搜寻中尼边境失联的第三名哈萨克斯坦公民
+正文:
+外交部称，哈萨克斯坦外交官目前与两国相关机构密切沟通，正在搜寻失联游客。
+- 根据最新消息，可能身处尼泊尔和中国边境的灾区的第三名哈萨克斯坦公民失联。哈萨克斯坦外交官正继续与两国政府机构合作，搜寻哈萨克斯坦同胞的工作仍在进行中。-外交部称。
+据此前报道，在遭受严重自然灾害的中国与尼泊尔边境地区有两名哈萨克斯坦女性公民失联。</div>
+<ul>
+<li>第三名哈公民在中尼边境失联</li>
+<li>此前两名哈女性公民已失联</li>
+<li>哈外交部与中尼机构合作搜寻</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此事件影响哈萨克斯坦外交应急能力，凸显跨境灾害救援合作需求，可能推动哈中尼三方在边境安全与领事保护机制上的强化，对哈外交形象和公民海外安全保障提出新要求。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/kursi-valyut-v-obmennikah-astani-i-almati-na-29-avgusta-4a53a19e" target="_blank">8月29日阿斯塔纳和阿拉木图兑换点汇率</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/29 12:10<span class="source-link"><a href="https://www.inform.kz/ru/kursi-valyut-v-obmennikah-astani-i-almati-na-29-avgusta-4a53a19e" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>8月29日哈萨克斯坦主要城市兑换点汇率显示，美元在阿斯塔纳卖出价460坚戈，阿拉木图462.73坚戈，奇姆肯特463.44坚戈；官方汇率美元兑坚戈为464.77，较前日上涨6.78坚戈。欧元和卢布汇率在各城市略有差异，官方欧元汇率541.36坚戈，卢布5.41坚戈。整体汇率波动反映坚戈贬值压力。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：8月29日阿斯塔纳和阿拉木图兑换点汇率
+正文：根据Kurs.kz数据，目前阿斯塔纳兑换点的平均汇率为：美元：卖出460.00坚戈，买入467.00坚戈；欧元：卖出533.00坚戈，买入543.00坚戈；卢布：卖出5.20坚戈，买入5.40坚戈。
+在阿拉木图的兑换点：美元：可以以462.73坚戈卖出，以465.90坚戈买入；欧元：卖出537.54坚戈，买入542.96坚戈；卢布交易区间为5.25-5.40坚戈。
+在奇姆肯特：美元：卖出463.44坚戈，买入465.50坚戈；欧元：卖出537.02坚戈，买入542.23坚戈；卢布：卖出5.21坚戈，买入5.31坚戈。
+今日官方汇率如下：1美元兑464.77坚戈，1欧元兑541.36坚戈，1卢布兑5.41坚戈。
+根据8月28日白天交易结果，美元加权平均汇率为464.77坚戈，上涨6.78坚戈。</div>
+<ul>
+<li>美元官方汇率464.77坚戈，日涨6.78坚戈</li>
+<li>阿斯塔纳美元卖出价460，阿拉木图462.73</li>
+<li>欧元官方汇率541.36坚戈，卢布5.41坚戈</li>
+<li>各城市兑换点汇率存在小幅差异</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈兑美元显著贬值，可能加剧进口成本上升，推高国内通胀，影响民众购买力。同时，汇率波动或促使央行调整货币政策，对哈萨克斯坦外贸和外汇储备构成压力，需关注资本流动和投资信心变化。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-08-30 09:02</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
