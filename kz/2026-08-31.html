@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年8月31日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年8月31日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年08月30日早9:00至2026年08月31日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 8 条</span><span class="stat-chip">3 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">4</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">2</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">2</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">0</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(4 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/pervaya-sessiya-kurultaya-glavnoe-soveshanie-uchiteley-strani-iproekt-respublika-6bf58197" target="_blank">库鲁尔泰首次会议、教师主要会议和预算：哈萨克斯坦夏季最后一周回顾</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/30 18:00<span class="source-link"><a href="https://www.inform.kz/ru/pervaya-sessiya-kurultaya-glavnoe-soveshanie-uchiteley-strani-iproekt-respublika-6bf58197" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦夏季最后一周聚焦外交与政治。总统托卡耶夫与新加坡高级部长李显龙会谈，签署投资保护条约，计划采用樟宜机场标准建设阿斯塔纳航空枢纽，并授予李显龙一级“友谊”勋章。与美国众议院代表团讨论贸易、核安全等，提议建立立法机构直接联系。国内举行一院制库鲁尔泰选举并启动工作，标志制度重启。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦库鲁尔泰首届会议、教师主要会议和预算：哈萨克斯坦夏季最后一周令人难忘的事件
+正文：本周国家元首的外交议程包括关于加强与新加坡和美国联系的谈判，以及关于吸引投资、发展交通基础设施和引进先进技术的实际协议。
+与新加坡的投资协议和与美国众议院的对话
+照片：阿克奥尔达 新加坡高级部长李显龙对哈萨克斯坦的首次访问具有历史背景。35年前，他的父亲——新加坡首任总理、“新加坡经济奇迹”的创造者李光耀——曾访问该国。如今，两国经贸伙伴关系基于近500家新加坡资本公司的运营，包括港口码头运营商PSA International和国有投资公司淡马锡控股。
+照片：阿克奥尔达 哈萨克斯坦计划在设计和建设阿斯塔纳现代化航空枢纽时采用世界航空业“黄金标准”——新加坡樟宜机场。双方还讨论了人工智能、数字化、智慧城市发展、物流、农业、关键矿产开采和旅游领域的项目。新加坡方面批准了《相互保护投资条约》和《服务贸易与投资协定》，为扩大合作提供了法律基础。为表彰其对加强双边关系的贡献，卡瑟姆-若马尔特·托卡耶夫授予李显龙一级“友谊”勋章。
+照片：阿克奥尔达 在与美国国会众议院代表团（由预算与税收委员会主席杰森·史密斯率领）的会晤中，哈萨克斯坦总统提议建立美国立法者与一院制库鲁尔泰之间的直接联系。与会者审议了贸易、投资、技术交流、科学与高等教育合作、核安全及不扩散制度等问题。卡瑟姆-若马尔特·托卡耶夫强调，与美国总统唐纳德·特朗普的建设性和信任对话使两国关系达到了前所未有的高度。
+制度重启：选举和新立法机构的工作
+照片：Kazinform / AI / 哈萨克斯坦议会马吉利斯 本周哈萨克斯坦的主要政治事件是一院制库鲁尔泰的选举及其开始工作。本周初，中央选举委员会……</div>
+<ul>
+<li>与新加坡签署投资保护条约，加强经贸合作</li>
+<li>计划采用樟宜机场标准建设阿斯塔纳航空枢纽</li>
+<li>与美国众议院讨论贸易、核安全，提议立法机构直联</li>
+<li>一院制库鲁尔泰选举完成并开始工作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此周外交成果强化哈萨克斯坦与新加坡、美国的关系，吸引投资和技术，提升交通和数字基础设施，巩固其作为区域枢纽地位。国内库鲁尔泰选举推进政治改革，增强立法机构代表性，可能影响未来政策制定和治理效率。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/balaeva-prizvala-zhurnalistov-soblyudat-professionalnuyu-etiku-865e734f" target="_blank">阿伊达·巴拉耶娃呼吁记者遵守职业道德</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/30 17:25<span class="source-link"><a href="https://www.inform.kz/ru/balaeva-prizvala-zhurnalistov-soblyudat-professionalnuyu-etiku-865e734f" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦代理副总理兼文化和信息部长阿伊达·巴拉耶娃在Facebook上回应近期针对议员的住房问题争议，澄清住房分配规则：早期按编辑部名单，现仅向无房产者发放。她呼吁记者遵守职业道德，避免人身攻击和操纵，并援引《大众媒体法》强调其法律义务。今年已向媒体工作者发放66套公寓，包括地区记者。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：阿伊达·巴拉耶娃呼吁记者遵守职业道德
+正文：代理副总理兼文化和信息部部长阿伊达·巴拉耶娃就媒体工作者住房分配问题发表评论，并呼吁记者遵守职业道德。她在自己的Facebook页面上写道。
+据她称，最近几天，针对库鲁尔泰（议会）多名议员，包括住房问题，出现了“各种诽谤和不恰当言论，甚至演变为欺凌”。
+巴拉耶娃解释说，国家元首正在系统性地解决文化和媒体领域工作者的住房问题。
+——在最初几年，记者公寓是根据编辑部提交的名单分配的。在随后的几年及至今，公寓按照住房分配规则发放，且仅面向名下无房产的领域工作者。——阿·巴拉耶娃写道。
+她还指出，为避免误解，国家机关代表和库鲁尔泰议员应尽可能就媒体关心的问题提供必要解释。
+同时，巴拉耶娃提醒记者必须遵守职业道德。
+——为了耸人听闻的标题而进行骚扰、人身攻击、操纵、挑衅，并不为专业记者增光。——代理文化和信息部长强调。
+阿伊达·巴拉耶娃指出，根据哈萨克斯坦共和国《大众媒体法》第26条第4款第8项，遵守职业道德规范是记者的义务。
+最后，她呼吁记者不仅遵守认证规则和活动规程，还要遵守职业道德。
+提醒一下，今年为庆祝职业节日，向媒体工作者颁发了66套公寓，包括为地区记者提供的住房。</div>
+<ul>
+<li>巴拉耶娃澄清住房分配规则，仅限无房产者。</li>
+<li>批评针对议员的诽谤和欺凌行为。</li>
+<li>呼吁记者遵守职业道德和法律义务。</li>
+<li>今年已发放66套公寓给媒体工作者。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该声明旨在平息住房分配争议，维护政府公信力，同时强化对媒体的职业规范要求，可能影响媒体监督力度，但有助于稳定社会舆论，对政治稳定和媒体治理格局产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/mir-stanovitsya-opasnee-poetomu-vnimanie-prezidenta-k-bezopasnosti-zakonomerno-m-b9af1e50" target="_blank">世界变得更加危险，因此总统对安全的关注是合乎逻辑的——马拉特·希布托夫</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/30 15:49<span class="source-link"><a href="https://www.inform.kz/ru/mir-stanovitsya-opasnee-poetomu-vnimanie-prezidenta-k-bezopasnosti-zakonomerno-m-b9af1e50" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫签署法令，将安全委员会办公室提升为独立国家机关，直属总统。此举旨在加强安全委员会在国家决策中的作用，并计划增设副主席职位。政治学家马拉特·希布托夫认为，这体现了权力合理划分，提高管理效率，并反映全球安全形势恶化下总统对安全问题的重视。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：世界变得更加危险，因此总统对安全的关注是合乎逻辑的——马拉特·希布托夫
+正文：
+近期，安全委员会将增设副主席一职。所提出的倡议的实施对于加强安全委员会在国家决策中的作用意味着什么？即将发生的变化有多严重，哈萨克斯坦最高权力架构如何演变？本编辑部与库鲁尔泰议员、政治学家马拉特·希布托夫讨论了细节。
+——马拉特·马克苏莫维奇，根据总统卡瑟姆-若马尔特·托卡耶夫的法令，安全委员会办公室获得了独立国家机关的地位，直接隶属于国家元首并向其汇报。这一决定在哈萨克斯坦国家管理体系中从根本上改变了什么？
+安全委员会办公室实际上获得了独立国家机构的地位，从总统行政结构中脱离出来。这种重组通常会导致组织资源的扩大——从员工人数到资金，即使仅仅因为独立出来。同时，各机构与强力部门之间的协调重要性增加：看来，加强这一职能目前被视为关键任务之一。
+——安全委员会结构中也可能出现新的副主席职位。在您看来，这一职位与之前存在的安全委员会秘书副职有何根本不同，它可能发挥什么作用？
+“秘书”这一职位名称在历史上意味着行政组织和机构职能，而主席的地位显然具有政治性质。形式上，安全委员会由总统卡瑟姆-若马尔特·托卡耶夫领导，但这一角色与国家元首的其他职责相结合，客观上限制了他持续参与安全委员会工作的可能性。因此，在办公室转变为独立国家机关时，总统将直接领导权移交给其副手是合乎逻辑的，副手可以完全专注于这一方向。实质上，这是权力的合理划分和管理效率的提高。
+——哈萨克斯坦共和国安全委员会是什么，它解决哪些问题？</div>
+<ul>
+<li>安全委员会办公室成为独立国家机关，直属总统。</li>
+<li>计划增设副主席职位，以加强日常领导。</li>
+<li>此举旨在提高安全决策效率和协调能力。</li>
+<li>反映全球安全形势恶化，总统重视安全。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该改革强化了总统对安全事务的直接控制，提升安全委员会在决策中的核心地位，可能影响哈萨克斯坦政治权力结构，并加强外交和安全政策的协调性，以应对全球不稳定局势。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://www.inform.kz/ru/ot-natsbanka-do-kurultaya-kadrovie-resheniya-nedeli-v-kazahstane-90625717" target="_blank">从央行到库鲁尔泰：哈萨克斯坦本周人事决策</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/30 13:30<span class="source-link"><a href="https://www.inform.kz/ru/ot-natsbanka-do-kurultaya-kadrovie-resheniya-nedeli-v-kazahstane-90625717" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统任命铁木尔·苏莱梅诺夫为国家银行行长，他拥有丰富经济管理经验，曾任国民经济部长、央行副行长等职。同时任命叶尔梅克·萨吉姆巴耶夫为国家安全委员会主席，他具有法律和军事背景。这些人事调整旨在加强经济与安全领域的管理。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：从央行到安全会议：哈萨克斯坦本周人事决定
+正文：照片：维克多·费多宁 / Kazinform 根据国家元首令，苏莱梅诺夫·铁木尔·穆拉托维奇被任命为哈萨克斯坦共和国国家银行行长。
+铁木尔·苏莱梅诺夫于2000年毕业于巴甫洛达尔国立大学，专业为“管理学”；2002年通过“博拉沙克”项目在美国马里兰大学获得工商管理硕士学位，专攻“金融”。他还获得了英国特许会计师协会的认证。
+他的职业生涯始于阿拉木图“安永哈萨克斯坦”审计公司首席顾问，后担任“勘探开采‘哈萨克斯坦石油天然气’”股份公司税务会计与税务规划部门主任。
+他曾任哈萨克斯坦共和国经济与预算规划部副部长（2009年3月-2010年3月）、经济发展与贸易部副部长（2010年3月19日-2012年2月）、欧亚经济委员会经济与金融政策委员（部长）（2012年2月1日-2014年4月）、哈萨克斯坦共和国国民经济部长（2016年12月28日-2019年2月25日）、哈萨克斯坦共和国国家银行副行长（2019年3月1日-2019年3月21日）、哈萨克斯坦共和国总统助理（2019年3月22日-2019年7月）、总统办公厅副主任（2019年7月22日-2022年1月13日）、总统办公厅第一副主任（2022年1月13日-2023年1月9日）、哈萨克斯坦共和国国家银行行长（自2023年9月4日起）。
+照片：国家安全委员会 根据国家元首令，萨吉姆巴耶夫·叶尔梅克·阿尔达别尔格诺维奇被任命为哈萨克斯坦共和国国家安全委员会主席。
+他毕业于哈萨克理工学院，专业为“电气机械工程师”；哈萨克国立大学（阿尔-法拉比大学）法学专业。他在国防大学攻读“国家保卫领域管理”硕士（资格：保卫活动组织），并获得“国家安全与军事学硕士”学位。
+他的工作经历包括1985-1987年在苏联武装力量服兵役，以及在国家安全机关担任军官职务。</div>
+<ul>
+<li>苏莱梅诺夫任央行行长，有经济管理背景。</li>
+<li>萨吉姆巴耶夫任安全委员会主席，具法律军事背景。</li>
+<li>两人均有丰富政府及安全部门工作经验。</li>
+<li>人事调整聚焦经济与国家安全两大领域。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次人事调整强化了央行独立性及安全机构领导力，有助于稳定金融体系、应对外部安全挑战，对哈萨克斯坦经济改革和地缘政治平衡产生积极影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/si-tszinpin-pribil-v-kirgizstan-s-gosudarstvennim-vizitom-3ba7bb15" target="_blank">习近平抵达吉尔吉斯斯坦进行国事访问</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/30 23:10<span class="source-link"><a href="https://www.inform.kz/ru/si-tszinpin-pribil-v-kirgizstan-s-gosudarstvennim-vizitom-3ba7bb15" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>中国国家主席习近平抵达吉尔吉斯斯坦进行国事访问，在玛纳斯机场受到吉总统扎帕罗夫夫妇迎接。双方举行非正式会晤和晚宴，讨论双边合作及上合组织峰会事宜。习近平将出席9月1日在比什凯克举行的上合组织元首理事会及“上合组织+”会议。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：习近平抵达吉尔吉斯斯坦进行国事访问
+正文：在“玛纳斯”国际机场，中华人民共和国主席习近平和第一夫人彭丽媛受到了吉尔吉斯共和国总统萨德尔·扎帕罗夫和第一夫人艾古尔·扎帕罗娃的迎接。
+照片：吉尔吉斯斯坦总统府
+据吉尔吉斯斯坦总统府报道，萨德尔·扎帕罗夫和习近平举行了非正式会晤。
+在非正式晚宴上，两国领导人进行了交谈，讨论了双边合作的现实问题，以及即将举行的正式活动的关键议题。
+照片：吉尔吉斯斯坦总统府
+另据报道，中华人民共和国主席还将出席上海合作组织成员国元首理事会会议和“上合组织+”模式会议。
+回顾：9月1日，吉尔吉斯斯坦首都将主办上海合作组织成员国元首理事会例行会议，还将举行“上合组织+”模式的高层会议。</div>
+<ul>
+<li>习近平访吉，扎帕罗夫机场迎接</li>
+<li>非正式会晤讨论双边合作</li>
+<li>将出席上合组织峰会及“上合+”会议</li>
+<li>峰会9月1日在比什凯克举行</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化中吉战略伙伴关系，提升中国在中亚影响力。上合峰会聚焦安全与经济合作，可能推动区域互联互通和矿产开发，对哈萨克斯坦构成外交竞争与合作并存格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/kakbishkek-gotovitsya-ksammitu-shos-17840a8a" target="_blank">比什凯克如何筹备上合组织峰会</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/30 18:43<span class="source-link"><a href="https://www.inform.kz/ru/kakbishkek-gotovitsya-ksammitu-shos-17840a8a" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>吉尔吉斯斯坦首都比什凯克为迎接上海合作组织峰会进行大规模准备：改善城市环境、升级基础设施、加强安保。玛纳斯国际机场完成现代化改造，新建中亚最大会议中心之一“伊雷斯-奥尔多”，占地超3.9万平方米，可容纳2000余人，配备大型会议厅和谈判室。峰会主题和预期成果待公布。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：比什凯克如何为上海合作组织峰会做准备
+正文：在大型国际活动前夕，吉尔吉斯斯坦首都正在焕然一新。城市的街道和公共空间正在整理，基础设施得到更新，安全措施得到加强。
+照片：古尔米拉·阿布德拉赫曼诺娃/Kazinform 特别关注中心区域的改善和官方活动场所的准备工作。
+照片：古尔米拉·阿布德拉赫曼诺娃/Kazinform 市政府力求体面地迎接客人，并将比什凯克展示为一座现代且好客的城市。
+照片：古尔米拉·阿布德拉赫曼诺娃/Kazinform 为迎接高级别活动，“玛纳斯”国际机场完成了全面现代化改造，进行了基础设施改善和旅客服务质量提升工作。
+照片：古尔米拉·阿布德拉赫曼诺娃/Kazinform 在通往机场的道路交叉口，安装了一座带有雪豹纪念碑的新雕塑。
+照片：古尔米拉·阿布德拉赫曼诺娃/Kazinform 专门为峰会建造了中亚最大的会议设施之一“伊雷斯-奥尔多”，占地面积超过3.9万平方米，可同时接待超过2000名客人。
+照片：古尔米拉·阿布德拉赫曼诺娃/Kazinform 会议中心设有可容纳1238人的“库鲁尔泰”会议厅、可容纳1000人的宴会厅、可容纳235人的新闻厅，以及用于高级别会议和谈判的现代化厅室。
+照片：古尔米拉·阿布德拉赫曼诺娃/Kazinform 关于上海合作组织将讨论哪些议题以及预期做出哪些决定——请阅读此处。</div>
+<ul>
+<li>比什凯克全面美化城市，升级基础设施和安保。</li>
+<li>玛纳斯机场完成现代化改造，提升服务质量。</li>
+<li>新建会议中心“伊雷斯-奥尔多”，占地3.9万平米。</li>
+<li>会议中心可容纳2000余人，含1238座会议厅。</li>
+<li>峰会讨论议题和预期成果尚未公布。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次峰会准备展示吉尔吉斯斯坦的区域枢纽地位，提升其国际形象。新会议中心将增强中亚会议承办能力，可能吸引更多国际活动，促进经济合作。对哈萨克斯坦而言，邻国基础设施升级或加剧区域竞争，但亦带来合作机遇。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/kursi-valyut-v-obmennikah-astani-i-almati-na-30-avgusta-f1d14381" target="_blank">8月30日阿斯塔纳和阿拉木图兑换点汇率</a></h3>
+<div class="item-meta">哈通社俄语版 · 08/30 11:42<span class="source-link"><a href="https://www.inform.kz/ru/kursi-valyut-v-obmennikah-astani-i-almati-na-30-avgusta-f1d14381" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>8月30日，哈萨克斯坦主要城市兑换点汇率显示坚戈贬值压力。阿斯塔纳美元买入价466.99坚戈，阿拉木图465.61坚戈，奇姆肯特465.52坚戈。国家银行官方汇率美元464.77坚戈，欧元541.36坚戈，卢布5.41坚戈。此前8月28日美元汇率上涨6.78坚戈，反映近期坚戈走弱趋势。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：8月30日阿斯塔纳和阿拉木图兑换点货币汇率
+正文：根据Kurs.kz数据，在阿斯塔纳的兑换点，居民平均可以以459.99坚戈卖出美元，以466.99坚戈买入美元。欧元可以以532.97坚戈卖出，以542.97坚戈买入。俄罗斯卢布以5.15坚戈买入，以5.36坚戈卖出。
+在阿拉木图，美元平均可以以463.38坚戈卖出，以465.61坚戈买入。欧元可以以535.95坚戈卖出，以540.97坚戈买入。俄罗斯卢布可以以5.23坚戈卖出，以5.38坚戈买入。
+在奇姆肯特的兑换点，美元可以以463.41坚戈卖出，以465.52坚戈买入。欧元可以以536.32坚戈卖出，以541.68坚戈买入。俄罗斯卢布可以以5.22坚戈卖出，以5.30坚戈买入。
+哈萨克斯坦国家银行今日官方汇率为：1美元——464.77坚戈，1欧元——541.36坚戈，1卢布——5.41坚戈。
+此前，根据8月28日白天交易结果，美元加权平均汇率为464.77坚戈，上涨了6.78坚戈。</div>
+<ul>
+<li>阿斯塔纳美元买入价466.99坚戈，阿拉木图465.61坚戈</li>
+<li>国家银行官方美元汇率464.77坚戈，欧元541.36坚戈</li>
+<li>8月28日美元汇率上涨6.78坚戈，显示坚戈贬值压力</li>
+<li>各城市兑换点汇率差异较小，市场预期稳定</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈兑美元汇率近期上涨，可能加剧进口成本，影响国内物价稳定。对依赖外汇的行业如能源和矿业有负面影响，但可能提升出口竞争力。央行需关注汇率波动，可能调整货币政策以稳定市场信心。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/guojiawai655-353d5af6/" target="_blank">哈萨克斯坦国家基金外汇资产达655亿美元</a></h3>
+<div class="item-meta">哈通社中文版 · 08/30 11:32<span class="source-link"><a href="https://cn.inform.kz/news/guojiawai655-353d5af6/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国家银行批准2026年第二季度国家基金业绩报告，资产盈利29.2亿美元，总外汇资产达655亿美元。投资受地缘政治缓和、科技增长和股市复苏影响，但石油和黄金价格下跌。央行修订货币交易规则，改进法人非现金购汇流程。政府目标到2029年外汇资产增至706亿美元。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦国家银行董事会批准了2026年第二季度国家基金资产信托管理业绩报告。会议还听取了货币和外汇市场情况报告。
+报告期内，国家基金资产盈利达29.2亿美元。
+央行称，国家基金的投资业绩受到地缘政治紧张局势缓和、科技行业增长以及全球股市复苏的影响。此外，全球债券市场也保持了温和增长。与此同时，包括石油和黄金在内的原材料价格有所下跌。
+哈萨克斯坦国家银行对哈萨克斯坦境内的货币交易规则进行了修订和补充。新规旨在改进法人实体非现金购买外币的流程。
+此外，国家银行董事会的多项决议也进行了修订。这些文件与哈萨克斯坦共和国新宪法、《数字法典》及其他法律相符。
+此前，副总理兼国民经济部长塞热克·朱曼哈林在政府会议上表示，到2029年，国家基金的外汇资产将增至706亿美元。</div>
+<ul>
+<li>国家基金外汇资产达655亿美元</li>
+<li>第二季度盈利29.2亿美元</li>
+<li>地缘缓和及科技增长推动收益</li>
+<li>央行修订货币交易规则</li>
+<li>2029年目标资产706亿美元</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">国家基金资产增长增强哈萨克斯坦经济稳定性，为财政储备提供支撑。修订货币规则优化外汇市场，吸引外资。投资受全球市场影响，需关注油价波动。长期目标显示政府财政规划积极，提升国际信誉。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-08-31 09:01</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
