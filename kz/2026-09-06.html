@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年9月6日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年9月6日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年09月05日早9:00至2026年09月06日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 15 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">9</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">1</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">2</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(9 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/erlan-karin-ukazal-nanedostatki-vustanovke-pamyatnikov-vregionah-c527c249" target="_blank">叶尔兰·卡林指出各地区纪念碑安装的不足</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/05 23:09<span class="source-link"><a href="https://www.inform.kz/ru/erlan-karin-ukazal-nanedostatki-vustanovke-pamyatnikov-vregionah-c527c249" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统顾问叶尔兰·卡林会见国内著名雕塑家，指出各地区在纪念碑安装方面存在不足。双方就多个新方向达成合作共识，旨在推进系统性历史记忆保存工作。此前，国家已对纪念碑安装流程进行规范，此次会议旨在进一步优化相关实践，提升纪念碑的文化与历史价值。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：叶尔兰·卡林指出各地区纪念碑安装中的不足
+正文：叶尔兰·卡林会见了哈萨克斯坦多位著名雕塑家，并分享了自己的想法。
+——我们就几个新方向达成了合作共识，——叶尔兰·卡林写道。
+据他介绍，这项工作将成为保存历史记忆的系统性活动的一部分。此前，国内已对纪念碑安装过程本身进行了规范和整顿。</div>
+<ul>
+<li>卡林会见雕塑家，指出纪念碑安装不足。</li>
+<li>双方就新方向达成合作共识。</li>
+<li>工作纳入历史记忆保存体系。</li>
+<li>此前已规范纪念碑安装流程。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该举措将强化哈萨克斯坦历史叙事，提升文化治理水平，可能推动纪念碑安装标准细化，影响公共空间艺术布局，并间接服务于国家认同建设，对政治文化领域产生积极引导作用。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/erlan-karin-provel-soveshanie-povoprosam-vnutrenney-politiki-263b0b3d" target="_blank">叶尔兰·卡林主持召开内政问题会议</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/05 17:56<span class="source-link"><a href="https://www.inform.kz/ru/erlan-karin-provel-soveshanie-povoprosam-vnutrenney-politiki-263b0b3d" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统助理叶尔兰·卡林主持召开内政会议，重点审议托卡耶夫总统关于加强社会团结、普及宪法价值观和原则的倡议实施情况。会议旨在评估当前进展，确保相关措施有效落实，以促进国家内部稳定和公民意识提升。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">叶尔兰·卡林主持召开了关于内政问题的会议。会议审议了总统卡瑟姆-若马尔特·托卡耶夫提出的旨在加强社会团结、普及宪法价值观和原则的各项倡议的实施进展。</div>
+<ul>
+<li>卡林主持内政会议，聚焦总统倡议实施。</li>
+<li>倡议旨在加强社会团结和宪法价值观。</li>
+<li>会议审议了相关措施的具体进展。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次会议显示哈国政府正积极落实总统政治议程，通过强化宪法价值观和社会团结，巩固政权合法性，为未来政治改革和社会政策奠定基础，可能影响国内政治生态和公民参与度。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/tokaev-podpisal-ukaz-o-polnomochiyah-vitse-prezidenta-kazahstana-864bb416" target="_blank">托卡耶夫签署关于哈萨克斯坦副总统权限的法令</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/05 16:08<span class="source-link"><a href="https://www.inform.kz/ru/tokaev-podpisal-ukaz-o-polnomochiyah-vitse-prezidenta-kazahstana-864bb416" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年9月5日，托卡耶夫总统签署总统令，明确副总统的权限，包括制定战略倡议、代表总统与各方互动、参与国际活动、主持宗教领袖大会秘书处、监督战略研究所，并管理多个委员会。副总统可发布指令、下达任务、出席会议和索取信息。此举旨在加强总统权力下放和治理效率。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：托卡耶夫签署关于哈萨克斯坦副总统权限的总统令
+正文：
+2026年9月5日
+根据哈萨克斯坦共和国宪法第49条第3款和《哈萨克斯坦共和国总统法》宪法性法律，兹决定：
+1. 哈萨克斯坦共和国副总统：
+1) 确保制定并向哈萨克斯坦共和国总统提交国家内外政策领域的战略性倡议；
+2) 根据哈萨克斯坦共和国总统的委托，在与库鲁尔泰、政府及其他国家机关，以及政党、社会团体和国际组织互动时代表总统；
+3) 根据哈萨克斯坦共和国总统的委托，参加国际活动；
+4) 主持世界和传统宗教领袖大会秘书处；
+5) 监督哈萨克斯坦共和国总统下属哈萨克斯坦战略研究所的活动；
+6) 确保以下机构的工作：国家奖励委员会；国籍问题委员会；国家象征及部门和其他同等奖励纹章共和国委员会；国外人才培训共和国委员会；阿尔-法拉比哈萨克斯坦共和国科学技术领域国家奖评审委员会；阿拜哈萨克斯坦共和国文学艺术领域国家奖评审委员会；青年政策委员会；
+7) 根据哈萨克斯坦共和国总统的委托行使其他权力。
+2. 为实施本总统令所确定的权力，哈萨克斯坦共和国副总统有权：
+1) 发布指令；
+2) 就其职权范围内的问题向中央和地方执行机构下达任务；
+3) 出席哈萨克斯坦共和国库鲁尔泰、哈萨克斯坦共和国政府、哈萨克斯坦人民委员会、哈萨克斯坦共和国总统下属咨询协商机构的会议；
+4) 就其职权范围内的问题向国家机关和官员索取并获取必要的信息、文件和其他材料；</div>
+<ul>
+<li>副总统负责制定内外政策战略倡议并提交总统。</li>
+<li>副总统代表总统与政府、政党及国际组织互动。</li>
+<li>副总统主持世界宗教领袖大会秘书处并监督战略研究所。</li>
+<li>副总统管理国家奖励、国籍、纹章等六个委员会。</li>
+<li>副总统有权发布指令、下达任务并获取信息。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该总统令明确了副总统的职权，强化了总统权力下放和治理体系，可能提升政策执行效率，并影响外交活动中的代表层级，但未改变总统制核心，对矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/quanhuigongzhuzhu-e1633cdc/" target="_blank">托卡耶夫任命安全会议办公厅主任及副主任</a></h3>
+<div class="item-meta">哈通社中文版 · 09/05 14:56<span class="source-link"><a href="https://cn.inform.kz/news/quanhuigongzhuzhu-e1633cdc/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫任命安全会议办公厅主任及副主任，包括穆拉特·拜穆卡舍夫任主任，努尔詹·卡吉阿克巴罗夫任第一副主任，鲁斯兰·扎克斯勒科夫和根纳季·祖耶夫任副主任。此前，8月29日总统令正式成立该办公厅，作为直属总统的国家机关，旨在完善国家治理体系。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫任命安全会议办公厅主任及副主任
+正文:
+根据命令：
+穆拉特·拜穆卡舍夫被任命为哈萨克斯坦安全会议办公厅主任，并免去其此前职务；
+努尔詹·卡吉阿克巴罗夫被任命为安全会议办公厅第一副主任，并免去其此前职务；
+鲁斯兰·扎克斯勒科夫被任命为安全会议办公厅副主任，并免去其此前职务；
+根纳季·祖耶夫被任命为安全会议办公厅副主任。
+此前，托卡耶夫于8月29日签署《关于进一步完善哈萨克斯坦共和国国家治理体系措施》的总统令。根据总统令，哈萨克斯坦共和国安全会议办公厅正式成立，并作为直属且向总统负责的国家机关开展工作。</div>
+<ul>
+<li>托卡耶夫任命安全会议办公厅新领导层</li>
+<li>拜穆卡舍夫任主任，卡吉阿克巴罗夫任第一副主任</li>
+<li>扎克斯勒科夫和祖耶夫任副主任</li>
+<li>办公厅依据8月29日总统令成立</li>
+<li>直属总统，负责完善国家治理体系</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次任命强化总统对安全事务的直接掌控，推动治理体系改革，可能影响哈萨克斯坦政治权力结构及外交决策，尤其在安全与矿产领域，确保国家战略稳定。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://www.inform.kz/ru/naznacheni-zamestiteli-rukovoditelya-apparata-soveta-bezopasnosti-kazahstana-bcbdb5e1" target="_blank">任命哈萨克斯坦安全会议办公厅副主任</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/05 13:36<span class="source-link"><a href="https://www.inform.kz/ru/naznacheni-zamestiteli-rukovoditelya-apparata-soveta-bezopasnosti-kazahstana-bcbdb5e1" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统签署命令，任命卡吉亚克巴罗夫为安全会议办公厅第一副主任，扎克西雷科夫和祖耶夫为副主任，三人均解除原职。此前，穆拉特·拜穆卡舍夫已任办公厅主任。此次人事调整涉及国家安全会议核心岗位，旨在加强安全决策协调。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦任命安全会议办公厅副主任
+正文：根据国家元首的命令：
+卡吉亚克巴罗夫·努尔詹·哈吉穆拉图雷被任命为哈萨克斯坦共和国安全会议办公厅第一副主任，解除其此前担任的职务；
+照片：阿克奥尔达 扎克西雷科夫·鲁斯兰·法蒂霍维奇被任命为哈萨克斯坦共和国安全会议办公厅副主任，解除其此前担任的职务；
+照片：苏尔坦·热克森别科夫/ Kazinform 祖耶夫·根纳季·伊万诺维奇被任命为哈萨克斯坦共和国安全会议办公厅副主任。
+提醒一下，穆拉特·拜穆卡舍夫已担任哈萨克斯坦安全会议办公厅主任。</div>
+<ul>
+<li>卡吉亚克巴罗夫任第一副主任</li>
+<li>扎克西雷科夫和祖耶夫任副主任</li>
+<li>三人均解除原任职务</li>
+<li>拜穆卡舍夫此前已任办公厅主任</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次人事调整强化安全会议领导层，可能提升安全决策效率，影响哈萨克斯坦政治稳定和外交政策协调，对矿产等战略资源管理或间接产生安全导向影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/2030nianqianjiangnengli3000-70fb3aa7/" target="_blank">哈萨克斯坦加快交通基础设施升级 海港能力将增至3000万吨</a></h3>
+<div class="item-meta">哈通社中文版 · 09/05 13:34<span class="source-link"><a href="https://cn.inform.kz/news/2030nianqianjiangnengli3000-70fb3aa7/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦过去五年新建和改造铁路约5000公里，过境运输量达3300万吨，铁路收入超3万亿坚戈。未来三年将再建2200公里铁路，并计划2026年引进191节新型车厢。海港吞吐能力计划从2180万吨提升至2030年3000万吨，跨里海路线货运量增长5.6倍至450万吨。交通运输业占GDP约6.1%，总产值超14万亿坚戈。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦加快交通基础设施升级 海港能力将增至3000万吨
+正文:
+过去五年，哈萨克斯坦新建和现代化改造铁路约5000公里，规模接近此前30年的两倍。全国过境运输量已达到3300万吨，铁路行业收入超过3万亿坚戈。
+在多斯特克—莫因特铁路和阿拉木图绕行铁路项目完工后，哈萨克斯坦目前正继续建设达尔巴扎—马克塔阿拉尔、莫因特—克孜勒扎尔、阿亚古兹—巴克特等新铁路，并对现有线路进行升级。未来三年，还计划新建和改造约2200公里铁路。
+机车和客运车厢更新也在同步推进。通过与Alstom和Wabtec等企业合作，今年8月，相关生产企业分别下线第200台和第700台机车。
+2026年，哈萨克斯坦计划引进191节新型客运车厢，配备现代安全系统、视频监控、生物卫生间和互联网接入功能。按照总统部署，全国还在实施124座火车站改造计划，目前已有100座车站完成建筑安装工程。
+海运基础设施方面，目前哈萨克斯坦海港总吞吐能力为2180万吨，计划到2030年提升至3000万吨。
+过去五年，跨里海国际运输路线货运量增长5.6倍，由80万吨增至450万吨。
+阿克套港和库雷克港扩建、新建码头、疏浚工程、泊位改造以及船队扩充工作正在推进。哈萨克斯坦计划在2029年前再购置8艘新船，包括散货船和集装箱船。
+通过综合升级，跨里海国际运输路线以及“北—南”国际运输走廊的年通行能力有望由600万吨提高至1000万吨。
+与此同时，哈萨克斯坦还在推进交通运输领域数字化。E-Joldar数字平台将用于监测公路建设和维修进度，Smart Cargo平台则重点用于优化货运管理、推动人工智能技术应用、多式联运和“绿色通道”机制。
+政府表示，当前交通基础设施现代化已覆盖公路、铁路、航空、港口、车辆装备和数字服务等多个领域，有助于提升基础设施通行能力，加快客货运输效率，并进一步增强哈萨克斯坦的国际过境运输潜力。
+目前，交通运输业已贡献哈萨克斯坦国内生产总值约6.1%。过去五年，该行业总产值增长近两倍，超过14万亿坚戈。</div>
+<ul>
+<li>五年新建改造铁路5000公里，过境运输量3300万吨</li>
+<li>未来三年再建2200公里铁路，更新机车和车厢</li>
+<li>海港吞吐能力计划2030年增至3000万吨</li>
+<li>跨里海路线货运量五年增5.6倍至450万吨</li>
+<li>交通运输业占GDP6.1%，总产值超14万亿坚戈</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">交通升级将增强哈萨克斯坦过境运输潜力，提升其作为欧亚枢纽的地位，促进经济多元化，减少对资源出口依赖，并加强与中国、欧洲及里海沿岸国家的互联互通，对矿产出口和区域合作有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://www.inform.kz/ru/murat-baymukashev-naznachen-rukovoditelem-apparata-soveta-bezopasnosti-kazahstan-12710bf4" target="_blank">穆拉特·拜穆卡舍夫出任哈萨克斯坦安全会议办公厅主任</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/05 13:33<span class="source-link"><a href="https://www.inform.kz/ru/murat-baymukashev-naznachen-rukovoditelem-apparata-soveta-bezopasnosti-kazahstan-12710bf4" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>穆拉特·拜穆卡舍夫被任命为哈萨克斯坦安全会议办公室主任。其职业生涯始于1994年，长期在内务部系统任职，历任交警、内务部干部司司长、行政警察委员会主席、内务部副部长等职。2019年起进入安全会议，先后担任副秘书长、第一副秘书长，2023年9月起任副秘书长。此次任命延续其安全领域经验，反映哈国对安全架构的重视。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：穆拉特·拜穆卡舍夫出任哈萨克斯坦安全会议办公室主任
+正文：
+工作经历：
+检查员、国家汽车检查员、塔尔迪库尔干州和 Акмолин州内务管理局国家汽车检查局高级检查员（1994年6月-1997年12月）
+哈萨克斯坦共和国内务部道路交通警察司检查员、高级检查员、科科长、处处长（1997年12月-2006年5月）
+哈萨克斯坦共和国内务部参谋部-司副司长（2006年5月-2007年8月）
+哈萨克斯坦共和国内务部干部工作司司长（2007年8月-2009年4月）
+哈萨克斯坦共和国总检察长特别重要事务高级助理（2009年4月-2009年8月）
+哈萨克斯坦共和国总理办公室国防与法律秩序处副处长（2009年8月-2012年2月）
+哈萨克斯坦共和国总理办公室立法、国防与法律秩序处副处长（2012年3月-2013年1月）
+哈萨克斯坦共和国总理办公室国防与法律秩序处处长（2013年9月-2019年4月）
+哈萨克斯坦共和国安全会议副秘书长（2019年4月10日-2020年2月）
+哈萨克斯坦共和国内务部行政警察委员会主席（2020年3月-2021年7月）
+哈萨克斯坦共和国内务部副部长（2021年7月22日-2022年5月20日）
+哈萨克斯坦共和国安全会议第一副秘书长（2022年5月20日-2023年9月1日）
+哈萨克斯坦共和国安全会议副秘书长（自2023年9月1日起）
+哈萨克农业学院（1994年）</div>
+<ul>
+<li>拜穆卡舍夫任安全会议办公室主任</li>
+<li>长期内务部系统任职，经验丰富</li>
+<li>2019年起深耕安全会议工作</li>
+<li>拥有哈萨克农业学院教育背景</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此任命强化安全会议领导层，有利于维护国内稳定。拜穆卡舍夫熟悉执法与安全事务，可能推动安全政策连贯性，对哈国政治稳定和外交安全战略产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://www.inform.kz/ru/moshnost-morskih-portov-kazahstana-uvelichat-do-30-mln-tonn-197e9c6b" target="_blank">哈萨克斯坦海港吞吐能力将增至3000万吨</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/05 12:31<span class="source-link"><a href="https://www.inform.kz/ru/moshnost-morskih-portov-kazahstana-uvelichat-do-30-mln-tonn-197e9c6b" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦过去五年新建和改造约5000公里铁路，过境量达3300万吨，行业收入超3万亿坚戈。未来三年计划再建2200公里。海港吞吐能力将从2180万吨增至2030年的3000万吨，跨里海运输量五年增长5.6倍至450万吨。同时推进124个车站改造，已完工100个，2026年将交付191节新客车厢。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦海港吞吐能力将增至3000万吨
+正文：
+5000公里铁路、3300万吨过境量和124个车站的改造
+铁路基础设施的持续发展是增强国家过境潜力的关键因素之一。
+过去五年，建成并现代化改造了约5000公里铁路线路，这几乎是前三十年总和的两倍。过境运输量达到3300万吨，行业收入超过3万亿坚戈。
+在“多斯特克-莫因特”和“阿拉木图绕行站”项目完成后，正在继续建设达尔巴扎-马克塔拉尔、莫因特-克孜勒扎尔、阿亚古兹-巴赫特等新线路，并对现有网络进行现代化改造。未来三年内，计划再建设和改造2200公里铁路线路。
+图片：哈萨克斯坦交通部
+特别关注机车和车厢的更新。得益于与国内企业阿尔斯通和瓦布泰克的合作，今年8月分别生产了第200台和第700台纪念性机车。
+信息图：哈萨克斯坦政府新闻处
+继续更新配备现代安全系统、视频监控、生物厕所和互联网接入的客运车厢。2026年计划交付191节新客运车厢，届时更新比例将达到总车厢数的7.5%。根据国家元首的指示，正在实施124个火车站的大规模改造计划。截至目前，已有100个站点的施工安装工作完成，显著提高了乘客服务质量。
+跨里海线路运输量增长5.6倍，港口吞吐能力将增至3000万吨
+海上基础设施的发展旨在进一步巩固哈萨克斯坦在国际物流中的作用。目前，哈萨克斯坦海港的总吞吐能力为2180万吨，到2030年计划增至3000万吨。
+过去五年，跨里海国际运输线路的运输量增长了5.6倍，从80万吨增至450万吨。
+图片：哈萨克斯坦政府
+阿克套和库里克港口的开发仍在继续，包括建设新码头、进行疏浚工程、改造泊位和扩大海运船队。到2029年，计划再购置8艘新船，包括干货船和集装箱船。
+综合现代化将使跨里海线路的通行能力得到提升。</div>
+<ul>
+<li>五年新建改造铁路5000公里，过境量3300万吨</li>
+<li>未来三年再建2200公里铁路，更新机车和车厢</li>
+<li>124个车站改造，已完工100个，提升服务质量</li>
+<li>海港吞吐能力2030年增至3000万吨</li>
+<li>跨里海运输量五年增5.6倍至450万吨</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该计划将强化哈萨克斯坦作为欧亚过境枢纽的地位，提升铁路和港口运力，促进跨里海线路发展，吸引外资和技术合作，带动经济增长，并增强其在地缘政治中的战略价值。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://www.inform.kz/ru/transportnaya-otrasl-kazahstana-za-pyat-let-virosla-pochti-v-tri-raza-53f50b8f" target="_blank">哈萨克斯坦交通运输业五年间增长近三倍</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/05 12:13<span class="source-link"><a href="https://www.inform.kz/ru/transportnaya-otrasl-kazahstana-za-pyat-let-virosla-pochti-v-tri-raza-53f50b8f" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦交通运输业五年增长近三倍，产值超14万亿坚戈，占GDP约6.1%。民航安全标准符合率升至95.7%，直航国家从25增至32个，国际航线从74增至161条。2026年完成阿尔卡雷克机场改造，计划新建多个机场，并至2029年改造多座城市跑道。政府正推进公路、铁路、航空和海运综合发展，强化欧亚交通枢纽地位。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦交通运输业五年增长近三倍
+正文：国家元首指示加快公路和铁路干线的现代化，发展航空枢纽、海上基础设施、集装箱运输、数字物流服务以及国际运输走廊。
+为执行总统指示，政府正在实施一项涵盖公路、铁路、航空和海运的交通运输业综合发展计划。与此同时，该行业正在数字化，国际航线不断扩展，哈萨克斯坦作为欧亚交通物流枢纽的作用日益增强。
+如今，交通运输已成为国家经济的驱动力之一，约占国内生产总值的6.1%。过去五年，该行业总产值增长近三倍，超过14万亿坚戈，这反映了运输量的稳步增长、基础设施的大规模现代化以及哈萨克斯坦过境吸引力的提升。
+信息图：哈萨克斯坦政府新闻处 161条国际航线、32个国家及机场现代化：哈萨克斯坦发展航空枢纽
+民航发展仍是落实国家元首指示的关键方向之一。过去五年，国际民航组织安全标准符合率提升至95.7%，与哈萨克斯坦有直航的国家数量从25个增至32个，国际航线数量从74条增至161条。
+机场基础设施的大规模现代化仍在继续。2026年，阿尔卡雷克机场现代化改造完成，随后恢复了飞往阿斯塔纳、阿拉木图和科斯塔奈的定期航班。年底前，计划完成斋桑区和卡通-卡拉盖区以及肯德尔利度假区新机场的建设。
+到2029年前，计划在阿斯塔纳、阿拉木图、奇姆肯特、塔拉兹、阿克托别、乌拉尔斯克和杰兹卡兹甘建设并改造跑道，同时改造国内主要机场的航站楼。这些项目的实施将提高机场吞吐能力，提升旅客服务质量，并为形成现代化航空枢纽创造条件。
+与此同时，国际运输的地理范围也在扩大。自年初以来，已开通飞往亚美尼亚、塞浦路斯、中国、蒙古、格鲁吉亚的新航线，</div>
+<ul>
+<li>交通运输业五年增长近三倍，产值超14万亿坚戈</li>
+<li>民航安全标准符合率达95.7%，国际航线增至161条</li>
+<li>2026年完成阿尔卡雷克机场改造，恢复定期航班</li>
+<li>计划新建斋桑、卡通-卡拉盖及肯德尔利机场</li>
+<li>至2029年改造多个城市跑道，提升航空枢纽能力</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该发展将强化哈萨克斯坦作为欧亚运输枢纽的地位，提升过境收入，促进经济多元化。航空和铁路现代化将改善区域连通性，吸引外资，并增强其在全球供应链中的竞争力，对政治稳定和外交影响力有积极影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/35-kazahstanskih-kompaniy-vishli-nazernovuyu-platformu-kitaya-a9b74d61" target="_blank">35家哈萨克斯坦企业进入中国粮食平台</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/05 21:10<span class="source-link"><a href="https://www.inform.kz/ru/35-kazahstanskih-kompaniy-vishli-nazernovuyu-platformu-kitaya-a9b74d61" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦35家公司入驻中国国家粮食交易平台，启动首日即签订2.4万吨油用亚麻出口合同。该平台基于中国粮食交易互联网平台建立，整合约5万家企业，提供拍卖、招标等多种交易方式，并设有担保、在线结算等机制。哈农业部副部长哈特波娃表示，此举将扩大销售市场，增加农产品出口，加强两国农业合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：35家哈萨克斯坦公司进入中国粮食平台
+正文：平台工作的首个实际成果是签订了供应2.4万吨亚麻的合同。平台启动是在哈萨克斯坦代表团参加第八届中国粮食贸易会议的框架内进行的。哈萨克斯坦农业部副部长纳兹古尔·哈特波娃参加了此次活动。该联合平台是在中国国家粮食交易互联网平台的基础上创建的，该平台汇集了约5万家农业企业。运营商是中国国家粮食和战略储备局（NAFRA）下属的粮食交易协调中心。
+照片：哈萨克斯坦共和国农业部 新的数字工具将使两国公司能够以在线形式进行贸易操作，直接与潜在合作伙伴互动，并在没有多余中间环节的情况下达成交易。贸易既可以通过竞争性程序进行，也可以以直接谈判的形式进行。该平台提供了公开拍卖、邀请招标、协议交易和固定价格交易。
+为了提高操作的可靠性和透明度，平台设有担保机制、在线结算、独立检验和争议解决机制。这应使出口交易更加高效和可预测，包括在定价方面。
+照片：哈萨克斯坦共和国农业部 ——今天，已有35家哈萨克斯坦公司在贸易平台上注册。已经签订了出口2.4万吨油用亚麻的交易。这证实了中国合作伙伴对哈萨克斯坦农产品的高度兴趣。
+在第一阶段，通过该平台将进行谷物和油料作物以及植物油和油脂行业产品的贸易。未来，考虑到中国市场的需求，商品清单可能会扩大。
+哈特波娃指出：“我相信，使用该平台将扩大销售市场，增加国内产品的供应量，并加强我们两国之间的农业合作。”
+此前有报道称，哈萨克斯坦计划增加对中国的谷物和油料作物供应。</div>
+<ul>
+<li>35家哈企入驻中国粮食平台</li>
+<li>首单出口2.4万吨亚麻</li>
+<li>平台提供拍卖、招标等交易</li>
+<li>设有担保和在线结算机制</li>
+<li>未来或扩大商品种类</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该平台将提升哈萨克斯坦对华农产品出口效率，减少中间环节，增强价格透明度，有助于扩大中国市场占有率，巩固其作为中亚农业出口国的地位，并推动中哈农业合作深化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/kazahstan-nameren-narastit-postavki-zerna-imaslichnih-kultur-vkitay-49110974" target="_blank">哈萨克斯坦计划增加对中国的粮食和油料作物出口</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/05 18:55<span class="source-link"><a href="https://www.inform.kz/ru/kazahstan-nameren-narastit-postavki-zerna-imaslichnih-kultur-vkitay-49110974" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦农业部副部长访华，与中方官员会谈，旨在扩大对华谷物和油料出口。2025年两国农产品贸易额达19.7亿美元，增长36.8%。双方讨论增加供应、吸引投资、发展农业物流等，并同意深化合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦计划增加对中国的谷物和油料作物供应。在访问中国期间，哈萨克斯坦农业部副部长与中华人民共和国国家粮食和物资储备局（NAFRA）局长刘焕鑫举行了会晤。双方讨论了经贸合作状况、扩大双边贸易规模的前景，以及增加农产品供应的措施。哈萨克斯坦农业部副部长纳兹古尔·哈特波娃指出：“中国是哈萨克斯坦在农业领域的关键战略伙伴之一。地理上的邻近、经济的互补性以及粮食需求的持续增长，为扩大互利合作奠定了坚实基础。我们有兴趣开展系统性合作，以确保我国产品获得稳定需求，并开辟进入中国市场的新渠道。”2025年，两国农产品贸易额增长了36.8%，达到19.7亿美元。双方指出，进一步扩大贸易量和实现互供多元化的潜力巨大。副部长向中方提出了一系列旨在建立长期合作机制的建议。具体而言，建议扩大互供产品范围，增加谷物和油料作物的采购，包括用于充实中国的战略储备。会谈中还讨论了吸引中国投资参与农产品储存和加工项目、发展农业物流等问题。中方表示，愿进一步加强与哈萨克斯坦在农业领域的合作，并继续在上述方向上共同努力。会后，双方同意继续研究相关建议，并加强两国相关政府部门和企业代表之间的互动。此外，副部长还会见了湖南省省长毛伟明。会见中特别关注了哈萨克斯坦与湖南省之间的务实合作发展。除了加强粮食安全领域的伙伴关系外，毛伟明省长还提议加强科技合作和经验交流。此前有消息称，中国货运……</div>
+<ul>
+<li>2025年哈中农产品贸易额增长36.8%，达19.7亿美元。</li>
+<li>哈方提议扩大谷物和油料对华出口，包括战略储备。</li>
+<li>双方讨论吸引中国投资于农产品储存加工和物流。</li>
+<li>哈方与湖南省长会谈，加强科技合作和经验交流。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举将深化哈中农业合作，扩大哈农产品出口市场，吸引中国投资，促进农业基础设施升级，增强哈国在区域粮食安全中的地位，并推动双边贸易多元化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/sovmestnie-ucheniya-odkb-rubezh-2026-proydut-v-kazahstane-38f00eed" target="_blank">集安组织联合演习“边界-2026”将在哈萨克斯坦举行</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/05 16:29<span class="source-link"><a href="https://www.inform.kz/ru/sovmestnie-ucheniya-odkb-rubezh-2026-proydut-v-kazahstane-38f00eed" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦将于9月7日至30日在阿拉木图州、江布尔州和杰特苏州举行集安组织“边界-2026”联合演习，期间将进行军事装备和人员调动及野外训练，演练部队重组、指挥和任务执行。国防部呼吁民众勿信谣言，并提醒传播虚假信息将承担法律责任。此前8月13日已举行反恐演习。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：集体安全条约组织联合演习“边界-2026”将在哈萨克斯坦举行
+正文：在演习准备和实施框架内，9月7日至30日期间，在阿拉木图州、江布尔州以及杰特苏州境内将进行军事装备和人员的计划性调动。演习期间计划进行野外训练。军人将演练部队重新部署、分队指挥和完成既定任务等问题。国防部指出，这些活动是根据集体安全条约组织成员国批准的作战训练计划进行的。“边界”演习定期举行，轮流在组织成员国境内进行。国防部呼吁公民、媒体代表和社交网络用户不要传播未经核实的信息，并以官方来源的信息为准。国防部还提醒，传播故意虚假信息和发布不实信息将根据哈萨克斯坦法律承担责任。此前，8月13日在布拉拜区的休钦斯克举行了反恐演习。</div>
+<ul>
+<li>集安组织“边界-2026”演习9月7日至30日在哈举行</li>
+<li>演习涉及阿拉木图、江布尔和杰特苏三州</li>
+<li>演练部队重组、指挥和任务执行</li>
+<li>国防部警告勿传播虚假信息</li>
+<li>此前8月已举行反恐演习</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次演习强化哈萨克斯坦与集安组织成员国的军事协作，提升地区安全应对能力，同时可能引发邻国关注，影响中亚地缘政治平衡，并展示哈国在组织内的积极角色。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/sp-uluchshilo-otsenku-bankovskogo-sektora-kazahstana-2dcbc178" target="_blank">标普上调哈萨克斯坦银行业评级</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/05 21:31<span class="source-link"><a href="https://www.inform.kz/ru/sp-uluchshilo-otsenku-bankovskogo-sektora-kazahstana-2dcbc178" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年9月4日，S&amp;P Global Ratings上调哈萨克斯坦银行业国家风险评估，行业风险从“7”升至“6”，经济风险展望调为“积极”。此举归因于监管机构强化监督，包括资产质量评估、SREP方法应用及限制风险偏好。S&amp;P认为哈监管优于中亚邻国，有助于应对地缘政治不确定性，延续2021-2024年改善趋势。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：S&amp;P上调哈萨克斯坦银行业评估
+正文：2026年9月4日，S&amp;P Global Ratings宣布上调哈萨克斯坦共和国银行业国家风险（BICRA）评估。其中“行业风险”部分从“7”组上调至“6”组。同时，S&amp;P将“经济风险”部分的展望从“稳定”调整为“积极”。此次上调巩固了银行业地位改善的长期趋势，延续了2021年、2023年和2024年此前调整的势头。根据S&amp;P的报告，行业风险评估的上调是金融组织监管机构举措有效性的直接结果。S&amp;P分析师指出，已实施的措施确保了监管体系的持续加强，并有助于在经济下行期间维持国家金融稳定。该评级机构评估认为，由于这些变化，哈萨克斯坦的银行监管和监督比该地区其他国家（乌兹别克斯坦、吉尔吉斯斯坦、亚美尼亚、阿塞拜疆）更为有效。S&amp;P强调了评级上调的关键因素：——监管机构采取的措施包括：定期评估银行体系资产质量，采用监管审查和评估流程（SREP）方法向银行财务风险评估审查过渡，以及限制银行风险偏好，尤其是在近期快速增长零售领域。——报告中强调。S&amp;P指出，实施措施应有助于银行应对地缘政治风险持续时间和规模高度不确定的时期。报告指出金融市场监管质量，包括持续控制、细致监测，以及在收紧银行资本和流动性要求、压力测试方面提高报告透明度。监管流程还整合了公司治理要求和对新型风险（如网络韧性和气候因素）的评估。据S&amp;P评估，哈萨克斯坦银行展现出……</div>
+<ul>
+<li>S&amp;P上调哈银行业行业风险至6组</li>
+<li>经济风险展望调为积极</li>
+<li>监管强化措施获国际认可</li>
+<li>哈监管优于中亚邻国</li>
+<li>延续2021-2024年改善趋势</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">提升哈萨克斯坦银行业国际信誉，吸引外资，增强金融稳定性。监管认可有助于应对地缘政治风险，巩固区域金融中心地位，对经济多元化及矿产投资融资环境产生积极影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/perspektivnie-uchastki-nedr-kazahstana-planiruyut-vistavit-naauktsioni-v2027-god-d23061cd" target="_blank">哈萨克斯坦计划于2027年拍卖有前景的矿区</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/05 19:25<span class="source-link"><a href="https://www.inform.kz/ru/perspektivnie-uchastki-nedr-kazahstana-planiruyut-vistavit-naauktsioni-v2027-god-d23061cd" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦工业和建设部长纳加斯帕耶夫在乌勒套州检查地质研究进展。2027年计划拍卖有前景矿段。今年已启动20个区块的1:50 000地质填图，覆盖超10万平方公里，涉及11个地区。乌勒套州7个区块研究面积3.6万平方公里。采用无人机航空地球物理和Ionic Leach方法。已钻探约300口井。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦计划于2027年将具有前景的矿段进行拍卖
+正文：哈萨克斯坦工业和建设部部长叶尔赛因·纳加斯帕耶夫在乌勒套州检查了国家元首卡瑟姆-若马尔特·托卡耶夫关于提高哈萨克斯坦领土地质研究程度指示的落实情况。
+照片：哈萨克斯坦工业和建设部 今年，在全国20个区块启动了1:50 000比例尺地质填图（ГС-50）工作。覆盖总面积超过10万平方公里，项目在11个地区实施。在乌勒套州，正在7个区块范围内对3.6万平方公里的区域进行综合地质研究。
+照片：哈萨克斯坦工业和建设部 部长在研究现场直接了解了航空地球物理和地质勘探工作的新方法。
+专家们正在进行综合工作，包括解释地球遥感数据、应用无人机航空地球物理系统、高精度地球化学方法Ionic Leach。
+照片：哈萨克斯坦工业和建设部 ——全面开展地质研究是国家元首卡瑟姆-若马尔特·克梅列维奇·托卡耶夫向部和整个行业提出的关键战略任务之一。我们的主要任务是确保获得高质量的地质信息。地质勘探投资的流入和工业部门的发展直接取决于此。——叶尔赛因·纳加斯帕耶夫强调。
+在实施国家地质研究计划（ГосГИН）框架内，组建了一个由“国家地质服务”股份公司领导的勘探公司集团。
+“Kazakhmys Barlau”有限责任公司在乌勒套州进行超前航空地球物理研究，包括航空磁测、航空伽马能谱测量和航空重力测量。这些方法可以在短时间内获得广大区域的地球物理信息，并快速评估研究区域的前景。此外，在乌勒套州和阿拜州共钻探了约300口井。
+照片：哈萨克斯坦工业和建设部 属于“国家地质公司‘陶-肯萨姆鲁克’股份公司”集团的“哈萨克地质”股份公司正在进行类似的研究……</div>
+<ul>
+<li>2027年计划拍卖有前景矿段</li>
+<li>今年启动20个区块地质填图，覆盖超10万平方公里</li>
+<li>乌勒套州7个区块研究面积3.6万平方公里</li>
+<li>采用无人机航空地球物理和Ionic Leach方法</li>
+<li>已钻探约300口井</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该计划将提升地质研究水平，吸引投资，促进矿业发展，增强矿产出口潜力，巩固哈萨克斯坦在中亚的资源战略地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/podryadchik-nezakonno-dobival-inertnie-materiali-v-oblasti-abay-25a24bbc" target="_blank">承包商在阿拜州非法开采惰性材料</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/05 15:38<span class="source-link"><a href="https://www.inform.kz/ru/podryadchik-nezakonno-dobival-inertnie-materiali-v-oblasti-abay-25a24bbc" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2025年底，哈萨克斯坦阿拜州一承包商在加固600米岸线时，未经许可擅自开采惰性材料，违反刑法第334条。检察机关介入后，官员被追责，法院判承包商赔偿国家1570万坚戈非法所得预算资金。此前已有副乡长等10名官员因检查受罚。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：承包商在阿拜州非法开采惰性材料
+正文：2025年底，“技术服务”有限责任公司完成了600米岸线加固工程。检查中发现，该承包组织未按规定程序购买惰性材料，而是在居民点土地上擅自开采，且无相应许可文件。就此事实，已根据哈萨克斯坦共和国刑法典第334条“擅自使用地下资源”启动审前调查。此外，根据检察官监督令，相关官员被追究纪律责任。法院还责令承包组织向国家赔偿1570万坚戈，这些资金是用于购买惰性材料而拨付的不合理取得的预算资金。此前有报道称，在检察院检查后，副乡长及另外9名官员受到处罚。</div>
+<ul>
+<li>承包商非法开采惰性材料，涉刑法334条</li>
+<li>600米岸线工程暴露监管漏洞</li>
+<li>法院追缴1570万坚戈预算资金</li>
+<li>副乡长等10名官员被问责</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此案显示哈萨克斯坦对非法采矿和预算滥用的打击力度，强化法治威慑，可能推动矿业监管改革，影响承包商的合规成本，并提升政府财政透明度。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-09-06 09:01</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
