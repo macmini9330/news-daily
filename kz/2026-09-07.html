@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年9月7日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年9月7日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年09月06日早9:00至2026年09月07日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 7 条</span><span class="stat-chip">3 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">4</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">2</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">1</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">0</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(4 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/jiangzaimindonghuiweiguoren-b2e462fe/" target="_blank">托卡耶夫：将表彰在世界游牧民族运动会为国争光人员</a></h3>
+<div class="item-meta">哈通社中文版 · 09/07 00:56<span class="source-link"><a href="https://cn.inform.kz/news/jiangzaimindonghuiweiguoren-b2e462fe/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫通过旅游和体育部长向参加世界游牧民族运动会的本国运动员致以问候，祝愿他们取得佳绩，并感谢教练员和冠军运动员，承诺表彰所有为国家队成绩做出贡献的人员。8月31日，托卡耶夫出席开幕式。目前哈萨克斯坦代表团已获26枚金牌，暂列金牌榜首位。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">斯玛迪亚尔沃夫介绍，托卡耶夫通过旅游和体育部长叶尔波勒·穆尔扎波森诺夫向代表哈萨克斯坦参赛的运动员致以问候，并祝愿他们在友谊与公平竞赛精神下取得优异成绩。总统还对教练员和冠军运动员表示感谢，并强调，所有为哈萨克斯坦国家队整体成绩作出贡献的人员，其付出都将得到肯定和表彰。8月31日，托卡耶夫与多国领导人共同出席了世界游牧民族运动会开幕式。目前，哈萨克斯坦代表团在本届赛事中已获得26枚金牌，暂居金牌榜首位。</div>
+<ul>
+<li>托卡耶夫向参赛运动员致以问候并祝愿佳绩</li>
+<li>总统感谢教练和冠军，承诺表彰贡献者</li>
+<li>托卡耶夫出席游牧民族运动会开幕式</li>
+<li>哈萨克斯坦获26金暂居金牌榜首位</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举提升体育外交影响力，强化民族认同，促进旅游业发展，并可能推动游牧文化相关产业，巩固哈萨克斯坦在中亚的文化领导地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/noviy-vitse-prezident-iperestanovki-vkabmine-glavnie-naznacheniya-nedeli-vkazahs-b6d59a0a" target="_blank">新副总统和内阁改组：哈萨克斯坦本周主要任命</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/06 13:30<span class="source-link"><a href="https://www.inform.kz/ru/noviy-vitse-prezident-iperestanovki-vkabmine-glavnie-naznacheniya-nedeli-vkazahs-b6d59a0a" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>本周哈萨克斯坦进行重大人事调整：叶尔兰·卡林被任命为副总统（库鲁尔泰141票支持），奥尔扎斯·别克捷诺夫继续担任总理，艾达·巴拉耶娃任安全委员会副主席，穆拉特·拜穆卡舍夫任安全委员会机构负责人。这些任命涉及总统亲信和反腐败专家，旨在加强政治稳定和权力集中。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：新副总统与内阁改组：哈萨克斯坦本周主要人事任命
+正文：本周主要人事事件是国家副总统的任命。8月31日，国家元首提议叶尔兰·卡林担任此职。随后，库鲁尔泰以141票支持其当选，之后总统签署了任命法令。
+照片：阿克奥尔达 卡林的职业生涯始于阿克托别大学的教师和记者，曾担任政治观察员，从事政治研究，并领导哈萨克斯坦战略研究所。在不同年份，他曾担任曼格斯套州州长顾问、总统行政当局内政部主任、“祖国之光”党秘书。近年来，他担任总统助理、国务秘书和国务顾问，并于2026年6月成为总统行政当局第一副主任。
+同一天，政府首脑的问题得到解决。总统提议奥尔扎斯·别克捷诺夫为候选人，库鲁尔泰代表支持，随后国家元首任命他为总理。
+照片：哈萨克斯坦共和国政府新闻处 别克捷诺夫受过法律教育。他曾在司法机构、总理办公室和总统行政当局工作，随后其职业生涯长期与反腐败部门相关。他曾任反腐败局第一副主席，随后担任主席。2023年4月，他领导总统行政当局，自2024年2月起领导政府。
+照片：哈萨克斯坦共和国文化和信息部 另一个高层变动涉及艾达·巴拉耶娃——她成为安全委员会副主席。她的职业生涯长期与内政和信息领域相关。巴拉耶娃曾领导阿拉木图和阿斯塔纳的专业部门，担任首都副市长，负责总统行政当局内政部。后来，她领导信息和公共发展部，担任总统行政当局副主任、文化和信息部长，自2025年12月起兼任副总理。
+照片：阿克奥尔达 到本周末，安全委员会机构内部继续变动。穆拉特·拜穆卡舍夫领导安全委员会机构。他的职业生涯始于……</div>
+<ul>
+<li>卡林任副总统，获141票支持</li>
+<li>别克捷诺夫留任总理，反腐败背景</li>
+<li>巴拉耶娃转任安全委员会副主席</li>
+<li>拜穆卡舍夫领导安全委员会机构</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次人事调整强化总统对安全与行政系统的控制，卡林作为政治战略家有助于政策连贯性，别克捷诺夫留任确保反腐延续，可能影响政治稳定和外交方向，但短期对经济矿产格局影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/stali-izvestni-usloviya-obyazatelnogo-strahovaniya-zhilya-otpavodkov-ipozharov-69176572" target="_blank">强制性住房保险：哈萨克斯坦人将支付多少，涵盖哪些内容？</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/06 12:00<span class="source-link"><a href="https://www.inform.kz/ru/stali-izvestni-usloviya-obyazatelnogo-strahovaniya-zhilya-otpavodkov-ipozharov-69176572" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦因2024年洪水损失惨重，政府支出2510亿坚戈补偿，但民众不满。为此，拟推行强制性住房保险，覆盖地震、洪水和森林火灾。目前仅3.2%业主投保，但保险市场增长迅速，2025年保费达1.7万亿坚戈。年缴费拟定为2000至20000坚戈，具体金额将差异化。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：强制性住房保险：哈萨克斯坦人将支付多少，它将覆盖什么
+
+正文：在2024年洪水席卷多个地区后，数千家庭失去了住房。据政府数据，用于房屋维修、新建和购买现成住房的资金达2510亿坚戈。同时，一些居民抱怨政府提供的补偿金额与恢复住房的实际成本不符。
+
+这一经验促使对现行自然灾害损失赔偿程序进行重新审视。目前，在此类情况下，主要负担落在国家身上：评估损失，从预算中拨款，修复或提供新住房。根据新提议，计划提前积累资金，而不是在紧急情况发生后寻找资金。
+
+为此，引入强制性住房自然灾害保险。该计划规定保护住宅免受地震、洪水和自然森林火灾的影响。
+
+据金融市场监管和发展署消息，哈萨克斯坦仅有3.2%的业主为自己的住房投保。在阿拉木图，这一比例达到7.7%。
+
+然而，近年来该国保险市场显示出显著增长。2025年，保险公司收取的保费总额达到1.7万亿坚戈：市场一年内增长12.5%，过去五年增长3.3倍。
+
+财产保险也呈现积极动态。但其对住房领域的影响仍然有限。过去五年，自愿财产保险合同数量增加了12%，保费额增长了51%，但投保住房的公民比例仍然极低。
+
+因此，在新秩序框架内，住房保险将成为强制性。哈萨克斯坦共有8种强制性保险。2025年，该方向收取保费2720亿坚戈。保险赔付达到1570亿坚戈，占所有赔付总额的34%。
+
+在初始阶段，强制性住房保险的年缴费额建议设定为1000至20000坚戈。
+
+在国家银行和金融市场监管和发展署提出的方案中，缴费下限设定在2000至20000坚戈范围内。
+
+该金额不会对所有公民相同。缴费额将有所区分（原文截断）</div>
+<ul>
+<li>2024年洪水致数千家庭失房，政府支出2510亿坚戈。</li>
+<li>拟推行强制性住房保险，覆盖地震、洪水、森林火灾。</li>
+<li>目前仅3.2%业主投保，阿拉木图7.7%。</li>
+<li>2025年保费总额1.7万亿坚戈，年增12.5%。</li>
+<li>年缴费拟定为2000至20000坚戈，将差异化。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该政策将减轻国家财政负担，提高保险覆盖率，促进保险市场发展。但可能增加民众经济压力，需平衡费率。长期看，有助于建立灾害风险分担机制，提升住房恢复效率，对经济稳定和民生保障有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/zhuguozhenggongzuohui-huiduiyu-f5c3400a/" target="_blank">卡林主持国内政策工作会议 强调加强社会对话与团结</a></h3>
+<div class="item-meta">哈通社中文版 · 09/06 11:28<span class="source-link"><a href="https://cn.inform.kz/news/zhuguozhenggongzuohui-huiduiyu-f5c3400a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统办公厅主任卡林主持国内政策工作会议，审议托卡耶夫总统关于社会团结、宪法价值等倡议的落实进展，讨论“法律与秩序”、“清洁哈萨克斯坦”项目及“诚信公民”价值观。会议明确国内政策纲领性文件为基础，强调建立社会对话、巩固民族宗教和谐，并决定定期召开会议推进落实。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 卡林主持国内政策工作会议 强调加强社会对话与团结
+正文:
+总统办公厅相关部门以及负责社会文化和信息领域的中央国家机关负责人出席会议。
+会议审议了总统托卡耶夫有关加强社会团结、宣传宪法价值和原则等倡议的落实进展，并围绕推进“法律与秩序”原则、实施“清洁哈萨克斯坦”项目以及弘扬“诚信公民”价值观等具体措施进行了讨论。
+卡林指出，根据总统令通过的国内政策纲领性文件明确了国内政策的基本原则、价值观和主要方向，是各国家机关开展相关工作的内容基础。
+该文件明确了国家机关在国内政策领域的重点任务，包括建立开放、持续的社会对话机制，进一步巩固民族和宗教间和谐，以及有效推进青年、信息和文化人文领域政策。
+会议结束后，卡林表示，今后将定期召开有关落实总统国内政策倡议的工作会议，并向有关国家机关下达具体任务。</div>
+<ul>
+<li>卡林主持国内政策会议，强调社会对话与团结</li>
+<li>审议托卡耶夫倡议，推进法律与秩序及清洁项目</li>
+<li>明确国内政策文件为基础，指导国家机关工作</li>
+<li>建立开放对话机制，巩固民族宗教和谐</li>
+<li>决定定期召开会议，下达具体任务</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次会议强化了托卡耶夫总统的社会团结议程，通过制度化会议机制提升政策执行力，有助于维护社会稳定，巩固执政基础，并可能影响哈萨克斯坦的外交形象和矿产资源领域的国际合作环境。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/dzhordzha-meloni-poblagodarila-kasim-zhomarta-tokaeva-za-iskrennyuyu-druzhbu-2770284a" target="_blank">乔治亚·梅洛尼感谢卡瑟姆-若马尔特·托卡耶夫的真诚友谊</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/06 18:32<span class="source-link"><a href="https://www.inform.kz/ru/dzhordzha-meloni-poblagodarila-kasim-zhomarta-tokaeva-za-iskrennyuyu-druzhbu-2770284a" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>意大利总理梅洛尼在社交媒体X上发文，感谢哈萨克斯坦总统托卡耶夫的真诚友谊和高度评价，称其为具有战略眼光的未来导向型领导人。她强调两国正加强双边关系，在能源、关键矿产资源和高等教育领域开辟新合作机会。此前，托卡耶夫曾祝贺梅洛尼政府成为意大利历史上执政时间最长的政府。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：乔治娅·梅洛尼感谢卡瑟姆-若马尔特·托卡耶夫的真诚友谊
+正文：意大利政府首脑在其社交媒体X页面上发布了一条感谢哈萨克斯坦总统的帖子。
+——感谢卡瑟姆-若马尔特·托卡耶夫总统的高度评价和真诚友谊，这种友谊始终贯穿于我们的会晤。与一位具有战略眼光、面向未来的领导人合作，我感到非常愉快。——乔治娅·梅洛尼写道。
+意大利总理指出，两国正在加强双边关系，并开辟新的合作机会。
+——我们共同加强意大利与哈萨克斯坦之间的关系，开辟从能源和关键矿产资源到高等教育领域合作的新战略机遇。我们将继续沿着这条道路前进，以促进我们两国人民的增长与繁荣。——帖子中写道。
+Grazie Presidente @TokayevKZ per le parole di stima e per la sincera amicizia che ha sempre caratterizzato i nostri incontri. È un piacere lavorare con un leader che guarda al futuro con visione. Insieme stiamo rafforzando i rapporti tra Italia e Kazakistan, aprendo a nuove e… https://t.co/ky2VgybjE6
+此前，哈萨克斯坦总统卡瑟姆-若马尔特·托卡耶夫在其社交媒体X页面上祝贺乔治娅·梅洛尼，她所领导的政府成为意大利共和国历史上执政时间最长的政府。</div>
+<ul>
+<li>梅洛尼感谢托卡耶夫真诚友谊</li>
+<li>强调能源、关键矿产、教育合作</li>
+<li>托卡耶夫祝贺梅洛尼政府创纪录</li>
+<li>双边关系战略升级</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此互动凸显哈意战略伙伴关系深化，尤其在能源和关键矿产领域，有助于哈萨克斯坦多元化出口，减少对俄依赖，提升其在国际资源供应链中的地位，并促进欧洲外交平衡。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/zhongyong-chu24-2573d82a/" target="_blank">哈中启用农产品数字贸易平台 首批签约出口2.4万吨亚麻籽</a></h3>
+<div class="item-meta">哈通社中文版 · 09/06 15:35<span class="source-link"><a href="https://cn.inform.kz/news/zhongyong-chu24-2573d82a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈中在第八届中国粮食交易大会期间启动农产品数字贸易平台，依托中国国家粮食交易平台，汇集约5万家农业企业。目前已有35家哈萨克斯坦企业注册，签署2.4万吨油用亚麻籽出口合同。平台提供竞价、直接谈判等多种交易方式，并设履约保障、线上结算等机制。初期交易粮食、油料等，未来将扩大范围，旨在拓展哈农产品市场，深化两国农业合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈中启用农产品数字贸易平台 首批签约出口2.4万吨亚麻籽
+该平台是在哈萨克斯坦代表团参加第八届中国粮食交易大会期间启动的。哈萨克斯坦农业部副部长纳兹古莉·哈特波娃出席相关活动。
+联合平台依托中国国家粮食交易平台建设。该平台汇集约5万家农业企业，由中国国家粮食和物资储备局下属相关粮食交易协调机构负责运营。
+新平台可帮助两国企业通过线上方式开展交易，与潜在合作伙伴建立直接联系，并在减少中间环节的情况下达成交易。交易既可通过竞价方式进行，也可通过直接谈判完成，具体形式包括公开竞拍、邀请交易、协议交易以及按预设价格成交等。
+为提高交易可靠性和透明度，平台还设置了履约保障、线上结算、第三方独立检验以及争议解决等机制，有助于加快出口合同签署和价格形成过程，并提高交易稳定性和可预期性。
+哈特波娃表示，目前已有35家哈萨克斯坦企业在平台完成注册，并已签署涉及2.4万吨油用亚麻籽出口的交易。她指出，这反映出中国合作伙伴对哈萨克斯坦农产品保持较高兴趣。
+平台初期将主要交易粮食、油料作物、植物油以及油脂加工产品。未来还将根据中国市场需求进一步扩大商品范围。
+哈特波娃表示，平台的有效运行将有助于拓展哈萨克斯坦农产品销售市场、增加出口规模，并进一步深化哈中农业合作。
+哈萨克斯坦农业部表示，将继续扩大本国生产企业进入国际市场的机会，提升农业出口潜力，并在农产品贸易中推广现代数字化解决方案。</div>
+<ul>
+<li>哈中启动农产品数字贸易平台，首批签约2.4万吨亚麻籽</li>
+<li>平台依托中国国家粮食交易平台，汇集约5万家企业</li>
+<li>35家哈企注册，交易方式多样，含履约保障机制</li>
+<li>初期交易粮食油料，未来按中国市场需求扩大范围</li>
+<li>平台助力哈拓展市场，深化哈中农业合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该平台将提升哈萨克斯坦农产品出口效率，减少中间环节，增强对中国市场的准入。短期增加亚麻籽等油料出口，长期可能扩大至更多品类，巩固哈作为中国粮食供应国的地位，并推动哈农业数字化进程，深化双边经济合作。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/kursi-valyut-v-obmennikah-astani-i-almati-na-6-sentyabrya-5a886701" target="_blank">9月6日阿斯塔纳和阿拉木图兑换点汇率</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/06 11:14<span class="source-link"><a href="https://www.inform.kz/ru/kursi-valyut-v-obmennikah-astani-i-almati-na-6-sentyabrya-5a886701" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>9月6日，哈萨克斯坦官方汇率显示1美元兑456.56坚戈，1欧元兑530.52坚戈，1卢布兑5.28坚戈。过去一周美元兑坚戈汇率曾下跌近7坚戈，随后开始回升。阿斯塔纳、阿拉木图和奇姆肯特等城市的兑换点汇率数据由Kurs.kz提供，但具体数值未在新闻中列出。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：9月6日阿斯塔纳和阿拉木图兑换点的汇率
+正文：根据Kurs.kz的数据，目前阿斯塔纳兑换点的平均汇率为：
+在阿拉木图的兑换点：
+在奇姆肯特：
+今天的官方汇率如下：1美元为456.56坚戈，1欧元为530.52坚戈，1卢布为5.28坚戈。
+提醒一下，在过去一周内，美元汇率几乎下跌了7坚戈，之后开始回升。哈萨克斯坦坚戈兑美元的汇率如何变化，以及欧元和卢布在哈萨克斯坦兑换点的价格，请阅读Kazinform通讯社记者的报道。</div>
+<ul>
+<li>官方汇率：美元456.56坚戈，欧元530.52坚戈，卢布5.28坚戈。</li>
+<li>美元汇率上周下跌近7坚戈后开始回升。</li>
+<li>阿斯塔纳、阿拉木图、奇姆肯特兑换点汇率数据已公布。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈汇率波动影响哈萨克斯坦进出口贸易和外汇储备，短期波动可能加剧通胀压力，但回升趋势有助于稳定市场预期，对矿产出口收入产生间接影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-09-07 09:01</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
