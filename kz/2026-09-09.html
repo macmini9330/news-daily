@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年9月9日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年9月9日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年09月08日早9:00至2026年09月09日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 22 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">6</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">13</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">2</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">1</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(6 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/erlan-karin-poruchil-uluchshit-rabotu-regionalnih-kontakt-tsentrov-8dddbfe7" target="_blank">叶尔兰·卡林指示改善地区呼叫中心工作</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/08 23:29<span class="source-link"><a href="https://www.inform.kz/ru/erlan-karin-poruchil-uluchshit-rabotu-regionalnih-kontakt-tsentrov-8dddbfe7" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统办公厅主任叶尔兰·卡林主持召开会议，指示改善地区联络中心工作。会议参与者包括儿童权利专员、总统府官员、战略研究所及多个部委代表。此举旨在提升公共服务效率，加强政府与公民沟通，推动数字化转型。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：叶尔兰·卡林指示改善地区联络中心工作
+正文：会议参加者包括哈萨克斯坦共和国儿童权利专员、总统府公民诉求审理监督部门主任、哈萨克斯坦战略研究所代表、总检察院下属机构代表、劳动和社会保障部、财政部、人工智能和数字发展部代表。</div>
+<ul>
+<li>卡林指示改善地区联络中心工作</li>
+<li>多部门代表参与会议协调</li>
+<li>强调提升公共服务效率</li>
+<li>涉及数字化转型与人工智能发展</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该指示将推动哈萨克斯坦政府服务数字化升级，加强中央与地方协调，提升公民诉求处理效率，对政治治理现代化和数字经济发展产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/eldar-tolganbaev-stal-pomoshnikom-prezidenta-po-vnutrenney-politike-i-kommunikat-385ff11c" target="_blank">叶尔达尔·托尔甘巴耶夫被任命为总统内政与通讯事务助理</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/08 21:30<span class="source-link"><a href="https://www.inform.kz/ru/eldar-tolganbaev-stal-pomoshnikom-prezidenta-po-vnutrenney-politike-i-kommunikat-385ff11c" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统任命埃勒达尔·托尔甘巴耶夫为内政与通讯事务助理。托尔甘巴耶夫生于1981年，阿拉木图州人，毕业于塞米巴拉金斯克国立大学和库纳耶夫大学。此任命旨在加强总统府对内政和通讯事务的管理，可能影响政策协调与信息传播。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：埃勒达尔·托尔甘巴耶夫被任命为总统内政与通讯事务助理
+正文：埃勒达尔·托尔甘巴耶夫于1981年出生于阿拉木图州。毕业于塞米巴拉金斯克国立大学（以沙卡里姆命名）及库纳耶夫大学。</div>
+<ul>
+<li>托尔甘巴耶夫任总统内政与通讯助理</li>
+<li>生于1981年，阿拉木图州人</li>
+<li>毕业于两所哈萨克斯坦大学</li>
+<li>任命旨在强化内政与通讯协调</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此任命将增强总统府对国内政策执行和信息传播的控制，可能提升政策协调效率，对哈萨克斯坦政治稳定和外交沟通产生积极影响，但具体矿产格局影响尚不明确。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/nedolzhno-bit-takogo-mneniya-chto-vstrane-net-raboti-olzhas-bektenov-58dc6f3b" target="_blank">“不应认为国内没有工作”——奥尔扎斯·别克捷诺夫</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/08 15:10<span class="source-link"><a href="https://www.inform.kz/ru/nedolzhno-bit-takogo-mneniya-chto-vstrane-net-raboti-olzhas-bektenov-58dc6f3b" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总理别克捷诺夫在政府会议上强调，国内有充足的工作机会，不应存在“没有工作”的观点。劳动部长叶尔塔耶夫报告称，今年电子劳动交易所已发布85万个职位空缺，其中42万个为工人职业，60-70%的公民通过该平台找到工作，但30-40%的空缺因缺乏本地工人而需引进外国专家，每年约30万外国工人被吸引。总理要求向民众正确解释，避免误解。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：不应存在国家没有工作的观点——奥尔扎斯·别克捷诺夫
+
+在政府会议上，政府首脑询问劳动和社会保障部部长阿斯卡尔别克·叶尔塔耶夫关于可用职位空缺数量及该领域的主要趋势。
+——自年初以来，雇主在电子劳动交易所发布了85万个职位空缺，其中42万个为工人职业。总体而言，60%至70%的公民通过该门户网站找到工作。但30%至40%的职位空缺无法找到工人，因此雇主吸引外国专家。——部长报告说。
+据他介绍，每年约有30万名外国工人被吸引到该国。
+——80万个职位空缺，大约有100万个职位空缺？也就是说，对于想工作的人来说，总能找到工作？——别克捷诺夫问道。
+部长回答：
+——是的，想工作的人——对他来说有工作。
+照片：阿吉拜·阿亚普别尔格诺夫/Kazinform 总理在回应中强调，这一信息必须传达给民众。
+——我们被迫从国外引进数千名专家，以免工作停滞。有必要正确地向民众解释。不应存在国家没有工作的观点。——奥尔扎斯·别克捷诺夫补充道。
+此前，劳动部长介绍了哈萨克斯坦至2035年的人才需求预测。</div>
+<ul>
+<li>总理强调国内有工作，需消除无业误解。</li>
+<li>今年发布85万职位空缺，42万为工人职业。</li>
+<li>60-70%公民通过电子平台就业。</li>
+<li>30-40%空缺缺人，年引30万外籍劳工。</li>
+<li>政府将加强信息传达，减少外劳依赖。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举旨在稳定国内就业预期，减少对外籍劳工的依赖，可能推动劳动市场改革和技能培训，增强政治公信力，并影响外交中劳务合作政策，同时优化矿产等行业的本地用工结构。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://www.inform.kz/ru/olzhas-bektenov-obratilsya-knovomu-sostavu-pravitelstva-rk-8aac1731" target="_blank">奥尔扎斯·别克捷诺夫向哈萨克斯坦新一届政府发表讲话</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/08 14:15<span class="source-link"><a href="https://www.inform.kz/ru/olzhas-bektenov-obratilsya-knovomu-sostavu-pravitelstva-rk-8aac1731" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总理别克捷诺夫在新政府会议上强调，国家进入政治经济现代化新阶段，需依据新宪法采取全面措施，推动社会经济发展。他要求政府工作超前，落实“法律与秩序”和“清洁哈萨克斯坦”原则，并强调要回报总统信任。新政府已组建，多数部长留任，部分部委换帅。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：奥尔扎斯·别克捷诺夫向哈萨克斯坦新一届政府致辞
+正文：
+——在国家政治和经济现代化的新阶段，随着新宪法的通过，我们所有人都必须采取一切必要措施，促进国家进一步的社会经济发展。应在所有方向和领域系统、全面地落实国家元首提出的任务。——奥尔扎斯·别克捷诺夫在政府内阁会议上表示。
+总理指出，“法律与秩序”和“清洁哈萨克斯坦”的宪法原则应始终处于首位。
+——政府的工作应以超前速度进行，并采取全面措施。现在是承担全部责任、迅速做出必要决定以实现具体成果的时候了。我们都必须充分回报总统的高度信任。——奥尔扎斯·别克捷诺夫强调。
+回顾：哈萨克斯坦已组建新一届政府。内阁大多数关键成员保留原职，同时多个部委由新任负责人领导。</div>
+<ul>
+<li>新宪法开启现代化新阶段，需全面促发展</li>
+<li>政府工作须超前，落实总统任务</li>
+<li>坚持“法律与秩序”和“清洁哈萨克斯坦”原则</li>
+<li>新政府组建，多数部长留任，部分换新</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该讲话表明政府将加速改革，强化法治和反腐，可能推动政策执行效率提升。新政府延续性为主，但新部长或带来局部调整，影响经济改革和外交方向，需关注后续具体措施。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://www.inform.kz/ru/ne-narushaet-svobodu-truda-konstitutsionniy-sud-priznal-dogovor-o-nekonkurentsii-b6ebd9c1" target="_blank">不违反劳动自由：宪法法院认定竞业禁止协议合法</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/08 13:36<span class="source-link"><a href="https://www.inform.kz/ru/ne-narushaet-svobodu-truda-konstitutsionniy-sud-priznal-dogovor-o-nekonkurentsii-b6ebd9c1" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦宪法法院裁定，劳动法典第29条允许双方协商签订竞业限制协议，不违反劳动自由和创业自由。法院认为具体条款有效性及罚款问题属普通法院管辖，宪法法院无权复审，故拒绝受理申请。此裁决确认了竞业限制协议的合法性，为雇主保护商业利益提供法律依据，同时明确了司法权限划分。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：不违反劳动自由：宪法法院认定竞业限制协议合法
+正文：申请人认为，劳动合同终止后设定限制的可能性侵犯了劳动自由和创业自由的权利。
+宪法法院指出，《劳动法典》第29条具有框架性质，规定双方可协商签订竞业限制协议，具体条件和限制由双方根据法律要求确定。
+——同时，协议条款的有效性、罚款的追索以及雇主是否遭受损失等问题，属于普通法院的管辖范围。对法院判决的复审和对案件事实的评估不属于宪法法院的权限。因此，没有理由将申请纳入宪法诉讼程序。——法院消息称。
+此前，宪法法院解释了谁可以申请司法破产。</div>
+<ul>
+<li>宪法法院认定竞业限制协议合法，不侵犯劳动自由。</li>
+<li>劳动法典第29条为框架性规定，允许协商限制条款。</li>
+<li>协议有效性及罚款问题归普通法院管辖。</li>
+<li>宪法法院拒绝受理，因无权评估事实。</li>
+<li>裁决为雇主提供法律保障，明确司法权限。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该裁决巩固了竞业限制的法律基础，有利于企业保护商业秘密，可能促进雇佣合同规范化，但需平衡劳动者权益。同时明确宪法法院与普通法院分工，减少法律不确定性，对哈萨克斯坦劳动法和商业环境产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://www.inform.kz/ru/noviy-ministr-po-chs-prines-prisyagu-v-pravitelstve-rk-4656e6d3" target="_blank">新任紧急情况部长在哈萨克斯坦政府宣誓就职</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/08 13:11<span class="source-link"><a href="https://www.inform.kz/ru/noviy-ministr-po-chs-prines-prisyagu-v-pravitelstve-rk-4656e6d3" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年9月3日，穆拉特·穆哈诺夫被任命为哈萨克斯坦新任紧急情况部部长，并在政府宣誓就职。宣誓内容包括忠于宪法、服务人民、维护国家权威等。此前，政府计划讨论工人职业培训问题。此次人事任命是政府内部调整的一部分，旨在加强应急管理能力。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦政府新任紧急情况部部长宣誓就职
+正文：
+——我向人民和总统庄严宣誓，将全部力量和知识奉献于祖国经济和精神发展事业，严格遵守国家宪法和法律，在一切行动中遵循合法与公正、公民、民族间和宗教间和谐的原则，忠诚服务于哈萨克斯坦人民，加强国家体制和我国在国际社会中的权威。我宣誓！——穆拉特·穆哈诺夫说。
+回顾，2026年9月3日，他被任命为新任紧急情况部部长。
+此前有报道称，哈萨克斯坦政府将讨论工人职业的人才培养问题。</div>
+<ul>
+<li>穆拉特·穆哈诺夫宣誓就任紧急情况部部长</li>
+<li>任命日期为2026年9月3日</li>
+<li>宣誓强调宪法忠诚和民族和谐</li>
+<li>政府将讨论工人职业培训议题</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">新部长上任可能强化应急管理体系，提升灾害应对能力，对国内安全治理有积极影响。人事调整反映政府优化部门运作，但短期对经济外交格局影响有限，长期或改善公共安全环境。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(13 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/yuribenjiangjinyinengzuo-2bbef21b/" target="_blank">哈萨克斯坦与日本将进一步加强能源领域合作</a></h3>
+<div class="item-meta">哈通社中文版 · 09/09 00:44<span class="source-link"><a href="https://cn.inform.kz/news/yuribenjiangjinyinengzuo-2bbef21b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与日本举行会谈，讨论能源和经济合作现状及前景，重点涉及油气领域（炼油基础设施、投资和技术）、可再生能源和低碳发展，以及电力工业和能源基础设施现代化。哈方表示愿与日本扩大长期合作，吸引日企参与可再生能源项目。双方确认将继续对话，加强能源伙伴关系。此前，哈工业和建设部长也会见日方代表讨论投资合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">会谈期间，双方就哈萨克斯坦与日本在能源和经济领域的合作现状及发展前景，以及进一步落实两国高层达成的协议等问题进行了讨论。
+双方重点讨论了油气领域的合作，包括发展炼油基础设施、吸引投资和引入现代技术等问题。
+Фото: gov.kz 阿克肯杰诺夫指出，哈萨克斯坦有意与拥有较强技术和投资潜力的日本伙伴扩大长期合作。他表示，哈萨克斯坦拥有较为丰富的资源基础和有利的地理位置，目前正为实施大型投资项目创造必要条件。
+会谈期间，双方还重点讨论了可再生能源和低碳发展领域的合作。哈萨克斯坦有意进一步吸引日本企业参与可再生能源项目，并在双边气候和技术倡议框架下推进合作。
+双方还就电力工业发展、能源基础设施现代化以及提高能源供应可靠性等问题交换了意见。
+会谈结束时，双方确认将继续开展建设性对话，并进一步加强哈日两国在能源领域的伙伴关系。
+此前，工业和建设部长叶尔赛因·纳哈斯帕耶夫也会见山田贤司，双方就投资合作和工业协作等议题进行了讨论。</div>
+<ul>
+<li>哈日会谈聚焦油气、可再生能源和电力合作</li>
+<li>哈方愿吸引日本投资和技术，扩大长期合作</li>
+<li>双方确认加强能源领域伙伴关系并继续对话</li>
+<li>此前哈工业部长会见日方讨论投资和工业协作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此会谈将深化哈日能源合作，有助于哈萨克斯坦吸引日本投资和技术，推动油气基础设施现代化和可再生能源发展，提升能源出口多元化，增强其在区域能源格局中的地位，并促进经济转型和外交关系多元化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/deputati-kurultaya-prinyali-uchastie-vdialoge-politicheskih-partiy-kitay-tsentra-1fb092b0" target="_blank">库鲁尔泰议员参加“中国—中亚”政党对话</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/09 00:24<span class="source-link"><a href="https://www.inform.kz/ru/deputati-kurultaya-prinyali-uchastie-vdialoge-politicheskih-partiy-kitay-tsentra-1fb092b0" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦库鲁尔泰议员参加“中国—中亚”政党对话，讨论党际合作与区域发展。哈方强调托卡耶夫总统提出制定2026-2030年“中亚—中国”长期战略，优先领域包括交通物流、工业、数字技术、AI、能源、农业和教育。议员还介绍新宪法及库鲁尔泰工作重点，体现哈国开放态度。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：库鲁尔泰议员参加“中国—中亚”政党对话
+
+据Telegram频道@quryltairesmi报道，在哈萨克斯坦、中国和中亚国家代表团参加的活动中，讨论了党际互动前景及区域合作的进一步发展。
+
+艾多斯·萨雷姆强调，哈萨克斯坦总统卡瑟姆-若马尔特·托卡耶夫提出了制定2026至2030年“中亚—中国”模式长期发展战略的倡议。
+
+照片：quryltai.kz 他指出，库鲁尔泰议员支持在信任、平等和互利原则基础上发展该模式。优先事项包括交通物流互联互通、工业合作、数字技术、人工智能、能源、农业、教育和人文交流。
+
+照片：quryltai.kz 艾多斯·萨雷姆还介绍了新宪法和新一院制立法机构——库鲁尔泰工作的主要优先事项。同时他指出，新库鲁尔泰议员参与国际党际对话表明哈萨克斯坦的开放性和与伙伴交流经验的意愿。</div>
+<ul>
+<li>哈议员参加中国—中亚政党对话</li>
+<li>托卡耶夫倡议制定2026-2030年战略</li>
+<li>优先合作领域含交通、工业、AI等</li>
+<li>新宪法和库鲁尔泰工作重点获介绍</li>
+<li>体现哈国开放与经验交流意愿</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此对话强化哈中及中亚政治互信，推动“中亚—中国”模式制度化，利好哈国交通物流和工业升级，提升其区域枢纽地位，并展示新政治机构外交开放性。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/tokaev-nagradil-genseka-vsemirnoy-tamozhennoy-organizatsii-ordenom-dostik-ii-ste-d1c3d1be" target="_blank">托卡耶夫向世界海关组织秘书长颁发“友谊”二级勋章</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/08 21:57<span class="source-link"><a href="https://www.inform.kz/ru/tokaev-nagradil-genseka-vsemirnoy-tamozhennoy-organizatsii-ordenom-dostik-ii-ste-d1c3d1be" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在总统府会见世界海关组织秘书长伊恩·桑德斯，并授予其二级“友谊”勋章。该勋章旨在表彰桑德斯在促进国际海关合作、支持哈萨克斯坦加入世界贸易组织及推动贸易便利化方面作出的贡献。此次授勋体现了哈国对国际组织合作的重视，并强化了双边关系。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：托卡耶夫向世界海关组织秘书长授予二级“友谊”勋章
+正文：回顾，在总统府举行了总统卡瑟姆-若马尔特·托卡耶夫与世界海关组织秘书长伊恩·桑德斯的会晤。</div>
+<ul>
+<li>托卡耶夫授予桑德斯二级“友谊”勋章</li>
+<li>会晤在总统府举行，聚焦海关合作</li>
+<li>表彰桑德斯对哈贸易便利化支持</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此授勋提升哈国在国际海关领域影响力，巩固与世界海关组织合作，利于简化贸易流程、吸引外资，并强化外交关系，对经济开放和矿产出口通道优化有积极意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/huiguanchang-65cd1053/" target="_blank">托卡耶夫总统会见世界海关组织秘书长</a></h3>
+<div class="item-meta">哈通社中文版 · 09/08 21:52<span class="source-link"><a href="https://cn.inform.kz/news/huiguanchang-65cd1053/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫会见世界海关组织秘书长伊恩·桑德斯，强调合作对完善海关立法和提高管理效率的重要性。哈方正推进“智慧边境”和数字化海关程序，加强欧亚运输联系。桑德斯赞赏哈方成就。双方重申深化30余年互利合作，并就贸易挑战和中亚物流潜力交换意见。托卡耶夫授予桑德斯二级友谊勋章。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫总统会见世界海关组织秘书长
+正文:
+国家元首指出，与世界海关组织的合作在完善哈萨克斯坦海关立法和提高海关管理效率方面发挥着重要作用。
+托卡耶夫指出，哈萨克斯坦正大力加强欧亚大陆的交通运输联系，并为货物运输创造有利条件。他还指出，哈萨克斯坦正在持续推进“智慧边境”模式，并广泛运用数字化解决方案来优化海关程序。
+Фото: Акорда 伊恩·桑德斯高度赞赏世界海关组织与哈萨克斯坦之间关系的良好势头，并指出我国在改善海关管理、引入现代数字解决方案，以及加强相关机构的制度能力方面取得了显著成就。
+托卡耶夫总统和世界海关组织秘书长重申了进一步加强已成功发展30余年的互利合作的承诺。此外，他们还就世界贸易面临的挑战和趋势交换了意见，特别关注扩大贸易和经济联系，以及提升中亚地区运输和物流潜力的前景。
+Фото: Акорда 最后，托卡耶夫授予世界海关组织秘书长伊恩·桑德斯二级友谊勋章，以表彰他对加强伙伴关系和友好关系所作出的贡献。</div>
+<ul>
+<li>托卡耶夫强调海关合作重要性</li>
+<li>哈推进智慧边境和数字化海关</li>
+<li>双方重申30余年合作承诺</li>
+<li>关注中亚运输物流潜力</li>
+<li>桑德斯获二级友谊勋章</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次会晤强化哈与世界海关组织合作，提升哈海关数字化和智慧边境水平，促进欧亚运输走廊发展，增强中亚物流枢纽地位，对哈经济多元化和外交拓展有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://www.inform.kz/ru/prezident-kazahstana-obsudil-s-glavoy-vsemirnoy-tamozhennoy-organizatsii-razviti-4694be2b" target="_blank">哈萨克斯坦总统与世界海关组织负责人讨论“智慧边境”发展</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/08 21:48<span class="source-link"><a href="https://www.inform.kz/ru/prezident-kazahstana-obsudil-s-glavoy-vsemirnoy-tamozhennoy-organizatsii-razviti-4694be2b" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统与世界海关组织秘书长伊恩·桑德斯会晤，讨论“智慧边境”发展。总统强调哈方致力于完善海关立法、提升管理效率，并应用数字解决方案优化程序，以加强欧亚交通联系和货物过境。桑德斯肯定哈方在海关现代化和机构能力建设方面的进展。双方确认延续30多年的合作，并就全球贸易新挑战和中亚物流潜力交换意见。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦总统与世界海关组织负责人讨论“智慧边境”发展
+正文：国家元首指出，与世界海关组织在完善立法和提高哈萨克斯坦海关管理效率方面的合作具有重要作用。总统强调，哈萨克斯坦为加强欧亚交通联系和创造有利的货物过境条件付出了巨大努力。他还指出，我国正在通过应用数字化解决方案优化海关程序，持续推进“智慧边境”模式。照片：阿克奥尔达 世界海关组织秘书长伊恩·桑德斯则高度评价了世界海关组织与哈萨克斯坦之间联系的逐步发展，指出在完善海关管理、引入现代数字解决方案和加强相关机构制度能力方面取得了显著进展。双方确认了进一步巩固互利合作的承诺，这种合作已成功发展了30多年。此外，双方就世界贸易中的新挑战和趋势交换了意见，特别关注了扩大经贸联系和加强中亚地区交通物流潜力的前景。</div>
+<ul>
+<li>哈总统与世海关组织秘书长会晤，聚焦智慧边境。</li>
+<li>哈方强调数字方案优化海关程序，促欧亚过境。</li>
+<li>世贸组织肯定哈海关现代化及机构能力进步。</li>
+<li>双方确认30年合作，共商全球贸易新挑战。</li>
+<li>关注中亚经贸联系与交通物流潜力拓展。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次会晤将推动哈萨克斯坦海关数字化和“智慧边境”建设，提升过境效率，增强其作为欧亚物流枢纽的竞争力，并深化与国际组织合作，利好经贸发展和区域互联互通。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/hewaichang-cb27836d/" target="_blank">哈萨克斯坦和吉尔吉斯斯坦外长通电话</a></h3>
+<div class="item-meta">哈通社中文版 · 09/08 20:58<span class="source-link"><a href="https://cn.inform.kz/news/hewaichang-cb27836d/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与吉尔吉斯斯坦外长通电话，吉方祝贺特列吾别尔德出任哈外长。双方确认盟友关系发展良好，愿加强政治对话，并在经贸、投资、运输物流、水资源能源及人文领域扩大合作。同时，两国外长就区域和国际议程当前问题及即将举行的高级别国际活动日程进行了讨论。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">电话会谈中，吉尔吉斯斯坦外长祝贺特列吾别尔德出任哈萨克斯坦外长，并祝愿其工作顺利。
+会谈中，双方注意到哈萨克斯坦与吉尔吉斯斯坦盟友关系的蓬勃发展。双方表示愿进一步加强政治对话，并在经贸、投资、运输和物流、水资源和能源，以及人文领域提供全面援助，以扩大合作。
+此外，两国外长还讨论了区域和国际议程上的当前问题，并讨论了即将举行的高级别和特高级别国际活动的日程安排。</div>
+<ul>
+<li>吉外长祝贺特列吾别尔德出任哈外长</li>
+<li>双方确认盟友关系蓬勃发展</li>
+<li>愿加强经贸、投资、运输、能源等领域合作</li>
+<li>讨论区域和国际议程及高级别活动日程</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次通话巩固了哈吉盟友关系，为双边经贸、能源合作注入动力，有助于哈萨克斯坦稳定中亚外交环境，提升区域影响力，并可能推动跨境基础设施和水资源合作项目进展。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/qi-2900f668/" target="_blank">托卡耶夫向北马其顿总统致贺电</a></h3>
+<div class="item-meta">哈通社中文版 · 09/08 19:15<span class="source-link"><a href="https://cn.inform.kz/news/qi-2900f668/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫向北马其顿总统西利亚诺夫斯卡-达夫科娃致贺电，强调两国关系在友谊和相互理解基础上稳步发展，并祝愿对方工作顺利及北马其顿人民幸福安康。此贺电体现哈国积极拓展对外友好关系的外交姿态。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫向北马其顿总统致贺电
+
+托卡耶夫在贺电中指出，建立在友谊和相互理解基础上的两国关系正在稳步发展。
+托卡耶夫祝愿西利亚诺夫斯卡-达夫科娃工作顺利，并祝愿北马其顿人民幸福安康。</div>
+<ul>
+<li>托卡耶夫致贺电北马其顿总统</li>
+<li>强调两国关系稳步发展</li>
+<li>祝愿对方工作顺利及人民安康</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此贺电有助于巩固哈萨克斯坦与北马其顿的双边友好关系，提升哈国在欧洲的外交存在感，但无直接经济或矿产影响，主要体现外交礼仪与软实力建设。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://www.inform.kz/ru/tokaev-pozdravil-prezidenta-severnoy-makedonii-s-dnem-nezavisimosti-8c74f616" target="_blank">托卡耶夫祝贺北马其顿总统独立日</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/08 19:15<span class="source-link"><a href="https://www.inform.kz/ru/tokaev-pozdravil-prezidenta-severnoy-makedonii-s-dnem-nezavisimosti-8c74f616" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫致贺电，祝贺北马其顿总统戈尔达娜·西利亚诺夫斯卡-达夫科娃独立日。贺电强调两国关系基于友谊与相互理解，呈稳步发展态势。托卡耶夫祝愿对方工作顺利，并祝福北马其顿人民幸福繁荣。此事件体现哈国积极拓展对外交往，巩固与欧洲国家的外交联系。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：托卡耶夫祝贺北马其顿总统独立日
+正文：贺电中指出，基于友谊和相互理解纽带的双边关系正在稳步发展。
+哈萨克斯坦总统祝愿戈尔达娜·西利亚诺夫斯卡-达夫科娃在其负责任的活动中取得成功，并祝愿北马其顿人民幸福繁荣。</div>
+<ul>
+<li>托卡耶夫祝贺北马其顿独立日</li>
+<li>强调双边关系稳步发展</li>
+<li>基于友谊与相互理解</li>
+<li>祝愿对方成功及人民繁荣</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此贺电显示哈萨克斯坦重视与北马其顿的关系，有助于加强双边外交合作，拓展欧洲影响力，对哈国对外经济和政治布局具有积极象征意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://www.inform.kz/ru/inostrannie-investitsii-virosli-v-kazahstane-chego-zhdat-v-2026-godu-aecee859" target="_blank">哈萨克斯坦外国投资增长：2026年预期如何</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/08 17:20<span class="source-link"><a href="https://www.inform.kz/ru/inostrannie-investitsii-virosli-v-kazahstane-chego-zhdat-v-2026-godu-aecee859" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2025年哈萨克斯坦外国直接投资达205亿美元，同比增长14.4%。欧亚开发银行专家扎博耶夫预测，短期和中期内投资将继续流入，但2026年可能不会重复高增速。来自独联体国家对中亚的投资从2020年67亿增至2025年104亿美元，其中41%集中于哈萨克斯坦，加工业贡献21亿美元增长。制度环境和国家政策是吸引资本的关键因素。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦外国投资增长：2026年可期
+正文：欧亚开发银行一体化研究中心主任亚历山大·扎博耶夫发表了这一预测。
+2025年，哈萨克斯坦的外国直接投资额达到205亿美元，同比增长14.4%。Kazinform记者询问专家，未来是否能期待类似增长，以及什么将支撑资本流入。
+——我们预计，哈萨克斯坦及整个中亚地区的有利制度环境和投资环境不仅将保持，而且会进一步发展。因此，在短期和中期内，我们预计外国直接投资将继续流入该国。——扎博耶夫在ITS Ideas 2026：市场动态会议间隙表示。
+根据扎博耶夫在会议上提供的数据，来自独联体国家对中亚的外国直接投资在过去五年稳步增长：从2020年的67亿美元增至2024年的87亿美元。2025年增长明显加速——投资额达到104亿美元。
+同时，专家强调，年度动态可能有所不同，不一定会重复2025年的高增长率。
+——外国直接投资的流入动态可能变化。例如，2026年可能不会重复2025年的高增速。但最重要的是趋势。当趋势稳定并持续数年时，这为预期经济中累计外国直接投资总额增加提供了依据。——他指出。
+根据扎博耶夫的演示数据，来自独联体国家对中亚的累计投资中，41%集中在哈萨克斯坦。同时，加工业为该地区的外国直接投资贡献了21亿美元的增长。
+专家指出，国家政策和哈萨克斯坦建立的制度环境是资本进一步流入的因素之一。
+——这是向企业和外国投资者发出的明确信号，表明国家正沿着经济稳步发展、技术现代化的道路前进，并欢迎对快速增长的中亚市场感兴趣的外国投资者。</div>
+<ul>
+<li>2025年哈国FDI达205亿美元，年增14.4%</li>
+<li>专家预计短期中期投资持续流入，但增速或放缓</li>
+<li>独联体对中亚投资2025年达104亿美元，五年增55%</li>
+<li>哈国占独联体对中亚累计投资41%</li>
+<li>加工业贡献FDI增量21亿美元，制度环境成关键</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">投资增长巩固哈国作为中亚经济枢纽地位，增强其矿产和制造业吸引力，但增速不确定性或影响短期预期。制度环境优化利好长期外资政策，推动经济多元化，减少对资源出口依赖，提升区域影响力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">10</span> <a href="https://cn.inform.kz/news/zhongchang55-chengzhuyao-2cfb69c4/" target="_blank">贡献中亚投资增长55% 哈萨克斯坦成区域主要投资支撑</a></h3>
+<div class="item-meta">哈通社中文版 · 09/08 16:42<span class="source-link"><a href="https://cn.inform.kz/news/zhongchang55-chengzhuyao-2cfb69c4/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦贡献了中亚地区投资增长的55%，成为区域主要投资支撑。哈仍是外国投资流入中亚的主要目的地，同时中亚国家间内部贸易和直接投资持续增长，投资模式从单向转向双向和多向。乌兹别克斯坦资本开始进入哈萨克斯坦市场，反映区域互信增强，对观察中亚FDI趋势具有重要意义。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 贡献中亚投资增长55% 哈萨克斯坦成区域主要投资支撑
+正文:
+扎博耶夫指出，哈萨克斯坦目前仍是外国投资流入中亚的主要目的地之一，并凭借长期积累形成了较高的国际投资吸引力。
+“中亚地区投资增长的55%由哈萨克斯坦贡献。这表明哈萨克斯坦是整个地区的重要支撑。”他说。
+与此同时，中亚国家之间的经贸和投资联系也在不断加强。
+扎博耶夫表示，近年来，中亚国家之间的区域内部贸易持续增长，各国之间的直接投资规模也呈上升趋势。
+“我们看到，中亚国家之间的区域内部贸易正在增长。同时，各国之间的外国直接投资也在增加。”他说。
+扎博耶夫指出，中亚内部投资正在由过去相对单向的流动模式逐步向双向和多向投资发展。
+哈萨克斯坦在向其他中亚国家投资的同时，来自邻国的资本也开始更多进入哈萨克斯坦市场。
+“乌兹别克斯坦正逐步开始向邻国投资。目前，我们已经看到乌兹别克斯坦资本进入哈萨克斯坦经济。”他说。
+扎博耶夫认为，这一趋势反映出中亚国家之间的相互信任正在增强。
+他表示，区域内部投资联系不断加深，对于观察中亚外国直接投资市场未来的发展方向，以及判断其规模和其他关键指标的变化具有重要意义。</div>
+<ul>
+<li>哈萨克斯坦贡献中亚投资增长55%。</li>
+<li>中亚内部贸易和直接投资持续增长。</li>
+<li>投资模式从单向转向双向多向。</li>
+<li>乌兹别克斯坦资本进入哈萨克斯坦市场。</li>
+<li>区域互信增强，投资联系加深。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">哈萨克斯坦作为区域投资引擎，巩固其在中亚的经济主导地位，增强对周边国家的影响力。双向投资增加促进区域经济一体化，吸引更多外资，提升哈国在欧亚经济格局中的战略地位，并可能推动矿产领域合作深化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">11</span> <a href="https://www.inform.kz/ru/kazahstan-obespechil-bolshe-polovini-prirosta-investitsiy-vovsey-tsentralnoy-azi-36713117" target="_blank">哈萨克斯坦贡献中亚投资增长的一半以上</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/08 16:41<span class="source-link"><a href="https://www.inform.kz/ru/kazahstan-obespechil-bolshe-polovini-prirosta-investitsiy-vovsey-tsentralnoy-azi-36713117" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦保障了中亚地区投资增长的55%，成为区域投资锚点。尽管乌兹别克斯坦和吉尔吉斯斯坦增长迅速，哈萨克斯坦仍保持领先。投资结构从原材料转向高附加值行业，如加工、电力、交通和农业。区域内部投资增加，哈萨克斯坦在乌兹别克斯坦有项目，乌兹别克资本也流入哈萨克斯坦。主要亚洲投资者包括中国、阿联酋和土耳其，占外国投资的80%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦保障了中亚地区投资增长的一半以上
+正文：据他所说，尽管该地区其他国家吸引投资额快速增长，哈萨克斯坦仍保持领先地位。
+——中亚地区所有投资增长的55%由哈萨克斯坦保障。这表明哈萨克斯坦是该地区的锚定国家。当然，尽管乌兹别克斯坦目前增长相当快，吉尔吉斯共和国也在快速吸引外国投资，但这并不改变哈萨克斯坦是外国投资流入的关键点，并且对国际投资者具有累积高度投资吸引力的事实，扎博耶夫在ITS Ideas 2026: Markets in motion会议上指出。
+照片：阿吉拜·阿亚普别尔根诺夫 / Kazinform 同时，外国投资的结构也在变化。如果以前很大一部分与原材料行业相关，现在资本越来越积极地流向高附加值行业：加工业、电力、交通和农工综合体。
+——这一趋势具有全球性，表明中亚正在发生质变。它有新的需求：需要更多电力，需要现代化发电厂和交通基础设施。所有这些都吸引资金，因为国际投资者不仅看到有利的投资环境，他们还看到这里存在的具体真实市场的发展潜力，专家强调。
+与此同时，中亚国家之间的投资联系也在增长。扎博耶夫指出，首先涉及哈萨克斯坦对邻国的投资。特别是，哈萨克斯坦公司在乌兹别克斯坦实施项目。同时，反向流动也在逐渐形成——乌兹别克资本进入哈萨克斯坦。
+——这表明该地区国家也开始相互信任，他指出。
+在亚洲对中亚的最大投资者中，扎博耶夫突出中国、波斯湾国家、土耳其、日本、韩国和马来西亚。
+——三个国家——中国、阿联酋和土耳其保障了进入中亚的所有外国投资的大约80%，而中亚</div>
+<ul>
+<li>哈萨克斯坦贡献中亚投资增长55%，保持区域领先地位。</li>
+<li>投资结构转向高附加值行业，如加工、电力和交通。</li>
+<li>区域内部投资增加，哈乌双向资本流动显现。</li>
+<li>中国、阿联酋和土耳其占中亚外国投资约80%。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">哈萨克斯坦作为区域投资引擎，巩固其在中亚的经济主导地位，吸引高附加值产业投资，促进经济多元化，减少对原材料依赖，同时加强与邻国及亚洲大国的经济联系，提升地缘政治影响力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">12</span> <a href="https://www.inform.kz/ru/kazahstan-ikitay-dogovorilis-ovzaimnom-priznanii-voditelskih-prav-ibezopasnosti--702e49e0" target="_blank">哈萨克斯坦与中国就互认驾照及霍尔果斯安全达成协议</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/08 13:22<span class="source-link"><a href="https://www.inform.kz/ru/kazahstan-ikitay-dogovorilis-ovzaimnom-priznanii-voditelskih-prav-ibezopasnosti--702e49e0" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与中国在安全领域达成两项重要协议：一是签署关于霍尔果斯国际边境合作中心安全与法律秩序制度的协议，以加强预防犯罪和应急响应；二是同意互认并交换两国公民的驾驶证，简化出行手续。这些成果旨在深化双边安全合作，解决共同关切。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦与中国就驾驶证互认及“霍尔果斯”安全达成协议
+
+部长们讨论了地区安全、打击跨国有组织犯罪、非法毒品贩运、网络犯罪及其他现代威胁等问题。
+
+访问期间，叶尔詹·萨德诺夫与中国公安部部长王小洪举行了单独双边会晤。双方讨论了哈中安全领域合作的现实问题及未来联合工作方向。
+
+——双边会晤的重要成果之一是签署了《哈萨克斯坦共和国政府与中华人民共和国政府关于确保霍尔果斯国际边境合作中心区域安全与法律秩序制度的协议》，哈萨克斯坦内务部指出。
+
+该文件的签署完成了关于建立霍尔果斯国际边境合作中心安全法律机制的长期联合工作。协议确定了两国主管机关的互动程序，将有助于更有效地预防违法行为、快速应对出现的威胁，并保障国际中心区域内公民的安全。
+
+此外，双边谈判的另一重要成果是达成了关于哈萨克斯坦与中国公民国家驾驶证互认和交换的协议。这将简化两国公民的相关程序，为相互出行创造更便利的条件。
+
+哈萨克斯坦内务部强调，达成的协议旨在进一步发展哈中在安全领域的务实合作，并解决双方共同关心的具体问题。
+
+为什么数十名科斯塔奈居民无法获得CE类驾照——请阅读此处。</div>
+<ul>
+<li>哈中签署霍尔果斯中心安全协议，明确执法合作机制。</li>
+<li>两国同意互认驾驶证，便利公民跨境出行。</li>
+<li>双方讨论打击跨国有组织犯罪、毒品和网络犯罪。</li>
+<li>协议将提升霍尔果斯区域安全与应急响应效率。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该协议强化了哈萨克斯坦与中国在边境安全领域的合作，提升霍尔果斯国际中心的法治环境，有利于吸引投资和人员往来。驾驶证互认将促进民间交流，深化双边关系，对哈萨克斯坦的交通管理和区域经济一体化产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">13</span> <a href="https://www.inform.kz/ru/60-soglasheniy-na-37-mlrd-dollarov-kazahstan-i-yaponiya-narashivayut-promishlenn-3f3f4e29" target="_blank">60项协议总额37亿美元：哈萨克斯坦与日本加强工业合作</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/08 11:56<span class="source-link"><a href="https://www.inform.kz/ru/60-soglasheniy-na-37-mlrd-dollarov-kazahstan-i-yaponiya-narashivayut-promishlenn-3f3f4e29" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与日本在托卡耶夫总统2025年12月访日期间签署60项商业协议，总额超37亿美元，重点引进日本先进技术。目前双方有17个联合工业项目，总额约9.4亿美元，其中10个已投产。哈方表示将全面支持投资，并计划于2025年12月在阿斯塔纳举行第9次哈日政府间经济合作委员会会议，以深化双边合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：60项协议总额37亿美元：哈萨克斯坦与日本加强工业合作
+正文：特别关注落实哈萨克斯坦共和国总统卡瑟姆-若马尔特·托卡耶夫2025年12月对东京进行国事访问期间达成的协议。双方共签署60项商业协议，总额超过37亿美元，其中包括引进日本先进技术和生产解决方案的协议。
+——哈萨克斯坦高度重视与日本的战略伙伴关系。近年来，我们在经济、工业和投资领域的关系显著加强。目前，在工业合作框架内正在实施17个联合项目，总额约9.4亿美元，其中10个项目已成功投产。新的合作方向正在积极探讨。我们愿为所有投资项目的实施提供全面协助和支持。——叶尔赛因·纳加斯帕耶夫强调，即将于今年12月在阿斯塔纳举行的哈日政府间经济合作委员会第9次会议十分重要。
+图片：哈萨克斯坦工业和建设部。会议结束时，双方就进一步发展双边伙伴关系达成协议。
+此前有报道称，哈萨克斯坦计划增加对中国的谷物和油料作物供应。
+另有报道称，哈萨克斯坦GDP增长由加工业、贸易和建筑业加速推动。</div>
+<ul>
+<li>签署60项协议，总额37亿美元</li>
+<li>17个联合项目，总额9.4亿美元</li>
+<li>10个项目已投产</li>
+<li>12月阿斯塔纳举行第9次委员会会议</li>
+<li>重点引进日本先进技术</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该合作将增强哈萨克斯坦工业技术能力，促进经济多元化，减少对资源出口依赖，同时深化与日本战略伙伴关系，提升在中亚的地缘经济影响力，并可能吸引更多日资进入矿产加工和制造业。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/chengfaxingdierzhu-7f8b8b54/" target="_blank">哈萨克斯坦成功发行第二期主权熊猫债券</a></h3>
+<div class="item-meta">哈通社中文版 · 09/08 11:35<span class="source-link"><a href="https://cn.inform.kz/news/chengfaxingdierzhu-7f8b8b54/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦成功发行第二期主权熊猫债券，总额66亿元人民币，分3年期（50亿，利率1.82%）和5年期（16亿，利率1.95%）。融资条件媲美A级国家，反映市场对哈经济改革认可。此前标普上调哈主权评级至BBB，展望稳定。政府债务占GDP约20.9%，外债占4.5%。此次发行深化哈中金融合作，完善人民币收益率曲线，为国企发行提供基准。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦成功发行第二期主权熊猫债券
+此次熊猫债券分为两个期限品种：其中，3年期债券发行规模为50亿元人民币，票面年利率为1.82%；5年期债券发行规模为16亿元人民币，票面年利率为1.95%。
+哈萨克斯坦财政部表示，此次融资条件可与部分信用评级更高的“A”级国家相媲美。投资者的高度关注，反映出市场对哈萨克斯坦当前经济和结构性改革的积极评价，这些改革旨在推动经济多元化并增强经济韧性。
+此次发行是在标普全球评级将哈萨克斯坦主权信用评级由“BBB-”上调至“BBB”、评级展望维持“稳定”之后完成的。相关评级反映出哈萨克斯坦稳定的经济增长前景以及较低的政府债务水平。
+目前，哈萨克斯坦政府债务约占国内生产总值的20.9%，其中外债占GDP的4.5%，处于全球较低水平。
+财政部指出，此次发行也是哈中两国关系持续深化背景下金融合作不断扩大的体现。两国领导人的长期战略引领正推动全面战略伙伴关系进一步发展，其中包括贸易、投资和金融领域合作。哈萨克斯坦发行人在中国资本市场的持续参与，是这一合作方向的具体体现。
+哈萨克斯坦持续拓展国际资本市场，有助于扩大融资来源、优化债务组合，并增强面向不同类型投资者的长期融资能力。
+财政部今后将继续根据市场形势和国家债务管理任务，坚持平衡的政府融资政策。此次3年期和5年期债券的发行，将进一步完善哈萨克斯坦人民币主权收益率曲线，并为今后哈萨克斯坦准国有企业和公司发行人民币债券提供市场基准。
+此次发行由中国国际金融股份有限公司（中金公司，CICC）担任牵头主承销商。中国建设银行、中国工商银行、中国进出口银行和中国银行担任联席主承销商。田吉兹资本投资银行（Teniz Capital Investment Banking）担任本地交易管理机构。
+值得一提的是，今年6月，哈萨克斯坦首期主权熊猫债券曾在阿斯塔纳国际交易所举行上市仪式。</div>
+<ul>
+<li>发行66亿元熊猫债券，利率低于2%</li>
+<li>标普上调评级至BBB，展望稳定</li>
+<li>政府债务占GDP20.9%，水平较低</li>
+<li>深化哈中金融合作，完善收益率曲线</li>
+<li>为国企发行人民币债券提供基准</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次发行提升哈萨克斯坦国际融资信誉，降低融资成本，优化债务结构。深化哈中金融合作，增强经济韧性，为国企进入中国资本市场铺路，巩固其作为中亚金融枢纽地位，对经济多元化和外交关系有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/guoyouwai-e1874ba5/" target="_blank">哈萨克斯坦研究放宽准国有债券场外交易税收限制</a></h3>
+<div class="item-meta">哈通社中文版 · 09/08 10:32<span class="source-link"><a href="https://cn.inform.kz/news/guoyouwai-e1874ba5/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦正研究放宽准国有债券场外交易的税收限制，拟对非居民投资者通过Euroclear和Clearstream等国际系统进行的OTC交易免征资本利得税。目前此类债券规模约17.6万亿坚戈，潜在外资投资约1.4万亿坚戈。政府认为现行税收差异阻碍外资，项目办公室原则上支持修订税法，由经济部和财政部具体落实。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦研究放宽准国有债券场外交易税收限制
+
+这一问题在由副总理兼国家经济部长赛热克·朱曼哈林主持的《税法典》实施项目办公室第27次会议上进行了讨论。
+
+目前，哈萨克斯坦正在研究通过欧洲清算银行（Euroclear）和明讯银行（Clearstream）等国际托管结算系统，进一步扩大外国投资者对哈萨克斯坦准国有部门债券的投资渠道。预计，此类证券的主要持有人将包括非居民投资者。
+
+不过，现行税法对于部分场外交易的资本利得税收安排尚未完全统一。
+
+哈萨克斯坦国家银行副行长阿丽娅·莫尔达别科娃表示，如果非居民投资者在哈萨克斯坦证券交易所出售准国有部门债券，其因证券升值获得的收入可享受免税待遇。
+
+- 但如果这些证券随后在哈萨克斯坦证券交易所以外出售，现行法律并未规定相同的税收待遇。 - 莫尔达别科娃说。
+
+随着通过Euroclear和Clearstream等国际基础设施进行的交易不断增加，这一问题的重要性也日益上升。
+
+在Euroclear和Clearstream系统内，非居民投资者之间的交易并不通过哈萨克斯坦本国的交易和结算基础设施完成。如果非居民投资者与哈萨克斯坦市场参与者进行场外交易，即OTC交易，则目前无法享受通过证券交易所组织市场交易所适用的相关税收优惠。
+
+目前，哈萨克斯坦准国有部门主体发行并流通的坚戈计价债券规模约为17.6万亿坚戈。
+
+考虑到2026年前8个月非居民投资者在政府证券中的平均占比为8.1%，其对准国有部门债券的潜在投资规模可能达到约1.4万亿坚戈。
+
+政府认为，交易所内外交易适用不同税收政策，可能对外国投资者形成额外障碍，并限制准国有部门债券通过国际托管结算基础设施扩大流通的潜力。
+
+经讨论，项目办公室成员原则上支持，对符合条件的场外债券交易中因证券价值上涨取得的收入免征相关税款。
+
+国家经济部将与财政部共同研究并完善税收法律所需的具体修订内容。相关工作结果将另行向市场参与者公布。</div>
+<ul>
+<li>研究放宽准国有债券场外交易税收限制</li>
+<li>拟对非居民OTC交易免征资本利得税</li>
+<li>债券规模17.6万亿坚戈，潜在外资1.4万亿</li>
+<li>现行税收差异阻碍外资进入</li>
+<li>经济部与财政部将修订税法</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举将吸引更多外资进入哈国准国有债券市场，提升债券流动性，促进金融国际化。同时，通过国际托管系统扩大交易，增强哈国资本市场与全球接轨，对经济多元化和吸引投资有积极影响，但需平衡国内税收公平。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/kazahstan-priostanovil-vziskanie-shtrafa-na23trln-tenge-soperatora-kashagana-09698677" target="_blank">哈萨克斯坦暂停向卡沙甘运营商追缴2.3万亿坚戈罚款</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/08 21:45<span class="source-link"><a href="https://www.inform.kz/ru/kazahstan-priostanovil-vziskanie-shtrafa-na23trln-tenge-soperatora-kashagana-09698677" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦暂停对卡沙甘油田运营商NCOC的2300亿坚戈罚款追缴。该罚款源于2023年生态部因硫磺储存超标而开出，但法院因程序违规撤销后，生态部重新处罚。NCOC已提起国际仲裁，司法部确认参与。暂停执行或为应对仲裁及法律程序。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦暂停对卡沙甘运营商追缴2300亿坚戈罚款。根据系统数据，针对该油气财团的强制执行程序于7月21日启动，9月7日状态变更为“已暂停”。系统中未说明暂停原因。图片：aisoip.adilet.gov.kz。Kazinform通讯社已向NCOC发出正式询问，截至发稿时公司尚未回应。8月有报道称，罚款追缴已移交国家法警执行。回顾：争议与卡沙甘油田的环境违规有关。2023年，生态和自然资源部因运营商储存硫磺超出规定量而提出索赔，罚款金额约为2300亿坚戈。2025年8月1日，阿斯塔纳市法院行政案件司法小组因生态部下达命令时存在程序违规，撤销了其指令。随后，该部门纠正了法院指出的问题，再次对NCOC处以2300亿坚戈罚款。目前，NCOC及其国际股东正在国际仲裁中对环境罚款提出异议。司法部此前确认哈萨克斯坦参与了该仲裁程序。</div>
+<ul>
+<li>暂停追缴2300亿坚戈罚款</li>
+<li>涉及卡沙甘油田硫磺储存违规</li>
+<li>法院曾撤销原处罚，生态部重罚</li>
+<li>NCOC提起国际仲裁</li>
+<li>司法部确认参与仲裁</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此事件影响哈萨克斯坦能源领域执法公信力，暂停追缴或为缓和与NCOC国际股东矛盾，避免投资环境恶化。同时，仲裁结果将影响生态监管政策及卡沙甘项目运营，对哈国财政和外资信心有潜在冲击。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-09-09 09:03</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
