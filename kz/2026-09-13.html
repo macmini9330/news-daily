@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年9月13日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年9月13日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年09月12日早9:00至2026年09月13日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 20 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">2</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">12</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">4</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">2</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/erlan-karin-anonsiroval-izmeneniya-vprogramme-adal-azamat-dlyashkol-kazahstana-7b372b9c" target="_blank">叶尔兰·卡林宣布将修改全国学校“诚实公民”计划</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/12 23:51<span class="source-link"><a href="https://www.inform.kz/ru/erlan-karin-anonsiroval-izmeneniya-vprogramme-adal-azamat-dlyashkol-kazahstana-7b372b9c" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国务顾问叶尔兰·卡林宣布，根据总统指示，将对全国学校实施的«Адал азамат»计划进行内容更新。该计划旨在培养学生勤劳、正直、求知、责任感和整洁品质。此次修改与通过新宪法及推广阅读文化有关，涉及计划内容和品牌手册的调整。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">叶尔兰·卡林宣布对国家学校«Адал азамат»计划进行修改
+
+«Адал азамат»计划是根据国家元首的指示制定的，并在所有教育机构中实施。据叶尔兰·卡林介绍，该计划旨在培养学生勤劳、正直、求知欲、责任感和整洁的品质。
+
+——重要的是要根据新的要求和社会需求以及根本性变化，不断更新«Адал азамат»计划的内容。为此，根据哈萨克斯坦总统的指示，正在对计划内容和品牌手册进行修改。这些修改与通过新宪法和在社会中推广阅读文化有关。——叶尔兰·卡林指出，并附上了视频。</div>
+<ul>
+<li>叶尔兰·卡林宣布修改«Адал азамат»教育计划</li>
+<li>计划旨在培养勤劳、正直、求知等品质</li>
+<li>修改依据总统指示，涉及新宪法和阅读文化</li>
+<li>更新计划内容和品牌手册</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该计划修改反映哈国通过新宪法后对教育内容的调整，强化价值观塑造，有助于提升社会道德和阅读文化，对政治稳定和长期人力资本发展具有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/voinskiy-uchet-v-kazahstane-perevodyat-v-tsifrovoy-format-chto-izmenitsya-9df5052e" target="_blank">哈萨克斯坦兵役登记转为数字化：将有哪些变化</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/12 17:54<span class="source-link"><a href="https://www.inform.kz/ru/voinskiy-uchet-v-kazahstane-perevodyat-v-tsifrovoy-format-chto-izmenitsya-9df5052e" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统令生效，军事委员局升格为共和国级机构，统管所有州级单位。国防部推进“智慧军事委员局”项目，兵役登记全面数字化，与20多个政府信息系统集成。17岁青年自动登记，体检、延期、免除兵役等流程自动化。8月25日至9月25日在“东部”地区司令部举行动员演习。兵役信息共享至劳动部，公民免于开具证明。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦兵役登记转为数字化：将有哪些变化
+
+正文：
+
+当日，总统令生效，赋予军事委员局共和国级机构地位，所有州级下属单位均划归其管辖。
+
+——地方军事管理机关的活动涵盖广泛任务。哈萨克斯坦国防部指出，它们与国家和地方执行机关互动，负责登记应征入伍者和兵役义务人员，组织征召和派遣公民服义务兵役，参与组建训练有素的动员储备。
+
+例如，地方军事管理机关组织了预警、集结和派遣预备役军人前往“东部”地区司令部所属部队，自8月25日至9月25日期间，与兵役义务人员举行指挥参谋动员演习。这些措施旨在对受过军事训练的储备人员进行再培训，更新知识并提升战士在军事登记专业方面的技能。
+
+照片：哈萨克斯坦国防部 “智慧军事委员局”：兵役登记迈向数字化 在数字化和人工智能之年，总参谋部组织动员工作司加强了“智慧军事委员局”项目关键方向的工作。其主要元素是一个完整的兵役登记数字系统，已与超过20个国家机关的信息资源集成。
+
+关于公民兵役态度的所有必要信息均显示在Egov、Mgov资源以及Kaspi Bank应用程序的“个人账户”中。此外，还实行了对17岁青年的主动登记至地方军事管理机关，应征入伍者的体检程序也已转为数字格式。
+
+自动提供延期和免除义务兵役，以及在公民国内迁移时按登记地自动归属至地方军事管理机关。由于将兵役信息传输至劳动和社会保障部，公民无需再为办理社会津贴和养老金支付而申请证明。
+
+照片：哈萨克斯坦国防部 优惠待</div>
+<ul>
+<li>总统令生效，军事委员局升格为共和国级机构</li>
+<li>兵役登记数字化，集成超20个政府信息系统</li>
+<li>17岁青年自动登记，体检和延期程序自动化</li>
+<li>8月25日至9月25日举行指挥参谋动员演习</li>
+<li>兵役信息共享劳动部，免开社会津贴证明</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">提升国防动员效率与兵役管理透明度，推动数字政府建设；减少官僚程序，便利公民；加强中央对地方军事管理控制，可能影响与集安组织等盟友的军事协作。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(12 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/35nian-75d72a92/" target="_blank">特朗普致信托卡耶夫 祝贺哈萨克斯坦独立35周年</a></h3>
+<div class="item-meta">哈通社中文版 · 09/13 02:23<span class="source-link"><a href="https://cn.inform.kz/news/35nian-75d72a92/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>特朗普致信祝贺哈萨克斯坦独立35周年，高度评价两国扩大版战略伙伴关系，并表示将继续巩固其两届总统任期内建立的牢固联系。贺信由美国总统南亚和中亚事务特别代表塞尔吉奥·戈尔在第十八届金砖国家领导人峰会期间转交托卡耶夫。哈萨克斯坦1991年12月16日宣布独立，今年12月16日迎来独立35周年。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">特朗普在贺信中写道：
+“尊敬的总统先生！
+值此哈萨克斯坦独立35周年之际，请接受我诚挚的祝贺！
+自1991年宣布独立以来，数百万哈萨克斯坦人民在阿斯塔纳以及全国各地，以无比自豪之情展示并传承着国家丰富的文化、历史遗产和独特风貌。
+我高度重视两国之间的扩大版战略伙伴关系，并相信我们将继续巩固在我两届总统任期内建立的牢固联系。
+哈萨克斯坦人民有您这样一位坚毅而勇敢的领导人，是他们的幸运。能够与你们共同分享这一喜悦时刻，我深感荣幸。”
+此前，在新德里举行的第十八届金砖国家领导人峰会期间，托卡耶夫会见美国总统南亚和中亚事务特别代表塞尔吉奥·戈尔。会谈中，戈尔向托卡耶夫转交了美国总统特朗普致哈萨克斯坦独立35周年的贺信。
+Фото: Акорда 哈萨克斯坦于1991年12月16日宣布独立，今年12月16日将迎来独立35周年。</div>
+<ul>
+<li>特朗普致信祝贺哈萨克斯坦独立35周年</li>
+<li>贺信强调扩大版战略伙伴关系与牢固联系</li>
+<li>戈尔在金砖峰会期间向托卡耶夫转交贺信</li>
+<li>哈萨克斯坦1991年独立，今年满35周年</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此贺信强化哈美战略伙伴关系，有助哈国平衡外交、吸引美资与技术，尤其在关键矿产领域合作可能深化，同时提升哈国在地区事务中的国际能见度。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/konstitutsionnie-reformi-kazahstana-obsudili-vbryussele-35ef446c" target="_blank">哈萨克斯坦宪法改革在布鲁塞尔讨论</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/13 00:53<span class="source-link"><a href="https://www.inform.kz/ru/konstitutsionnie-reformi-kazahstana-obsudili-vbryussele-35ef446c" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦驻比利时大使馆举行Shanyraq Dialogues会议，讨论宪法改革成果。哈驻欧盟和北约代表瓦西连科介绍改革进展，强调即将成立的人民委员会将促进社会对话，并关注数字化、人工智能等经济现代化。欧盟机构、比利时王室、欧洲投资银行等代表参会。EUalive主编戈特夫称首届库鲁尔泰选举为重要里程碑，Diplomatic World总监蒂尔克斯特拉称当前为转折点。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">周五，在哈萨克斯坦驻比利时大使馆举行了Shanyraq Dialogues讨论平台的例行会议，主题为“哈萨克斯坦的新政治时代：宪法改革在行动”。
+与会者讨论了新宪法模式实施的首批成果、政治体制的更新以及国家进一步政治发展的前景。
+比利时王室、欧盟主要机构、欧洲投资银行、外交使团以及专家、商界和媒体界的代表参加了此次活动。
+哈萨克斯坦驻比利时和卢森堡大使、常驻欧盟和北约代表罗曼·瓦西连科在讨论开幕时介绍了宪法改革的主要成果。他指出，哈萨克斯坦正进入实际落实改革的新阶段，这些改革旨在加强国家机构、发展社会对话和提高国家治理效率。
+在此背景下，大使强调了即将成立的人民委员会（Халық Кеңесі）的重要性，该委员会将成为广泛社会对话和不同社会群体参与制定国家议程的额外平台。
+会议特别关注了国家的经济和技术现代化，包括数字化、人工智能、基础设施和人力资本的发展。在谈到改革的国际层面时，瓦西连科强调了哈萨克斯坦对主权、对话、和平与互利合作原则的承诺，以及进一步深化与国际伙伴，包括与欧盟互动的前景。
+欧洲出版物EUalive主编格奥尔基·戈特夫分享了最近在哈萨克斯坦期间参加首届库鲁尔泰选举的印象，称其为该国政治发展的重要里程碑。他还高度评价了Shanyraq Dialogues作为非正式平台的形式，补充了哈萨克斯坦与欧盟和比利时之间充满活力的关系。
+《外交世界》项目总监阿尔贝托·蒂尔克斯特拉将当前阶段描述为哈萨克斯坦政治和制度发展的转折点。在他看来，关键...</div>
+<ul>
+<li>哈在布鲁塞尔举行宪法改革讨论会</li>
+<li>瓦西连科强调将成立人民委员会</li>
+<li>改革聚焦数字化和人工智能</li>
+<li>欧盟及比利时代表参会</li>
+<li>欧洲媒体称库鲁尔泰选举为里程碑</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">会议强化哈与欧盟关系，展示改革成果以吸引投资；人民委员会将影响国内政治对话格局；数字化和AI合作或推动经济转型，但矿产格局未直接涉及。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/huiguohezhongshishi-916a14a4/" target="_blank">托卡耶夫会见美国总统南亚和中亚事务特使塞尔吉奥·戈尔</a></h3>
+<div class="item-meta">哈通社中文版 · 09/13 00:45<span class="source-link"><a href="https://cn.inform.kz/news/huiguohezhongshishi-916a14a4/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫会见美国总统南亚和中亚事务特使塞尔吉奥·戈尔。戈尔转交特朗普致哈独立35周年贺信。托卡耶夫感谢并邀请特朗普访哈，指出哈美战略伙伴关系积极发展，并提到正为迈阿密G20峰会做准备。戈尔称两国合作达前所未有高水平，经贸联系积极发展。双方重点讨论人工智能和数字技术等优先领域，重申拓展多领域伙伴关系。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫会见美国总统南亚和中亚事务特使塞尔吉奥·戈尔
+正文:
+会谈开始时，塞尔吉奥·戈尔向托卡耶夫转交了美国总统唐纳德·特朗普在哈萨克斯坦独立35周年前夕发来的贺信。
+托卡耶夫对特朗普的良好祝愿表示感谢，并重申邀请美国总统访问哈萨克斯坦。
+Фото: Акорда 托卡耶夫指出，哈美战略伙伴关系正保持积极发展势头，并强调进一步拓展和深化两国合作的重要性。
+“目前，我正在为出席迈阿密二十国集团（G20）峰会做准备。我认为，这将是讨论双边议程相关问题的良好机会。在推动互利合作方面，我们更愿意以实际行动取代空谈。”托卡耶夫说。
+Фото: Акорда 塞尔吉奥·戈尔表示，得益于哈美两国领导人之间密切且建立在相互信任基础上的关系，两国合作已达到前所未有的高水平。
+“目前，两国经贸联系与合作正在积极发展。我们的总统高度重视加强与哈萨克斯坦以及整个中亚地区的伙伴关系。”戈尔说。
+Фото: Акорда 会谈期间，双方还就共同合作的重要方向交换意见，重点讨论了人工智能和数字技术等优先领域。
+托卡耶夫和塞尔吉奥·戈尔重申，将继续拓展多领域伙伴关系，为双方互利合作注入新动力。</div>
+<ul>
+<li>戈尔转交特朗普致哈独立35周年贺信</li>
+<li>托卡耶夫邀请特朗普访问哈萨克斯坦</li>
+<li>托卡耶夫将出席迈阿密G20峰会</li>
+<li>双方重点讨论人工智能和数字技术合作</li>
+<li>哈美合作达前所未有高水平</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈美战略伙伴关系，有助于哈国拓展外交空间、吸引美方投资与技术，尤其在人工智能和数字领域。同时提升哈萨克斯坦在中亚地区的地缘经济地位，为矿产和能源合作创造新机遇。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/hui-260a786c/" target="_blank">托卡耶夫会见阿布扎比王储</a></h3>
+<div class="item-meta">哈通社中文版 · 09/12 23:42<span class="source-link"><a href="https://cn.inform.kz/news/hui-260a786c/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫会见阿布扎比王储哈立德·本·穆罕默德·本·扎耶德·阿勒纳哈扬。托卡耶夫称其此前访哈具有历史意义，双方签署重要文件。会谈讨论能源、交通物流、信息技术和农业等领域大型投资项目，认为有助于深化经济合作、扩大双边贸易。双方重申加强密切合作意愿。托卡耶夫向阿联酋总统谢赫穆罕默德·本·扎耶德·阿勒纳哈扬致以问候，并期待其访哈。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫会见阿布扎比王储
+
+托卡耶夫指出，哈立德·本·穆罕默德·本·扎耶德·阿勒纳哈扬此前对阿斯塔纳的访问具有历史意义。访问期间，双方签署了一系列重要文件，为两国关系发展注入了新动力。
+
+托卡耶夫说：
+“我们的合作真正具有多元化特点，涵盖众多领域。今后，我们将继续共同努力，推动双方合作不断向前发展。”
+
+会谈中，双方讨论了能源、交通物流、信息技术和农业等领域正在顺利实施的大型投资项目。双方指出，这些项目将有助于进一步深化经济合作，扩大双边贸易规模。
+
+会谈结束时，双方重申了进一步加强两国密切合作的共同意愿。
+
+托卡耶夫还向阿联酋总统谢赫穆罕默德·本·扎耶德·阿勒纳哈扬致以诚挚问候，并表示期待其访问哈萨克斯坦。</div>
+<ul>
+<li>托卡耶夫会见阿布扎比王储哈立德</li>
+<li>称此前访哈具有历史意义并签署重要文件</li>
+<li>讨论能源、交通物流、信息技术和农业项目</li>
+<li>双方重申加强合作并期待阿联酋总统访哈</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈国与阿联酋战略伙伴关系，有助于吸引海湾投资，推动能源、交通物流和农业等非资源领域合作，促进经济多元化，并提升哈国在中亚的外交与经济地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://www.inform.kz/ru/glava-gosudarstva-vstretilsya-s-naslednim-printsem-abu-dabi-c8ee86fd" target="_blank">哈萨克斯坦总统与阿布扎比王储讨论大型投资项目实施</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/12 23:30<span class="source-link"><a href="https://www.inform.kz/ru/glava-gosudarstva-vstretilsya-s-naslednim-printsem-abu-dabi-c8ee86fd" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与阿布扎比王储谢赫哈立德·本·穆罕默德·本·扎耶德·阿勒纳哈扬在阿斯塔纳举行会晤，讨论能源、交通物流、信息技术和农业领域大型投资项目实施情况。双方签署重要文件，确认加强紧密合作承诺。托卡耶夫请转达对阿联酋总统的问候并期待其访哈。托卡耶夫于9月12日抵达印度出席金砖峰会，将在“金砖+”全体会议发言并举行双边会晤。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦总统与阿布扎比王储讨论大型投资项目实施
+
+正文：
+国家元首指出，谢赫哈立德·本·穆罕默德·本·扎耶德·阿勒纳哈扬访问阿斯塔纳具有历史意义，期间签署了一揽子重要文件，为双边关系发展注入了强大动力。
+
+——我们的合作确实具有多层面性质，涵盖广泛领域。我们将继续尽一切努力，继续并进一步发展共同工作，——卡瑟姆-若马尔特·托卡耶夫强调。
+
+图片：阿克奥尔达
+
+双方讨论了已在能源、交通和物流、信息技术及农业领域成功实施的一系列大型投资项目的进展情况。
+
+会议指出，这些项目将促进经济互动发展，并推动双边贸易额增长。
+
+图片：阿克奥尔达
+
+会晤成果确认了哈萨克斯坦与阿联酋致力于加强紧密合作的共同承诺。
+
+卡瑟姆-若马尔特·托卡耶夫向阿联酋总统谢赫穆罕默德·本·扎耶德·阿勒纳哈扬转达了最良好的祝愿，并表示期待他访问哈萨克斯坦。
+
+图片：阿克奥尔达
+
+回顾，9月12日，卡瑟姆-若马尔特·托卡耶夫抵达印度出席金砖国家峰会。访问期间，卡瑟姆-若马尔特·托卡耶夫将在“外联”/“金砖+”形式全体会议上发言，并举行一系列双边会晤。
+
+此前，阿克奥尔达发布了国家元首9月12日至16日的工作日程。</div>
+<ul>
+<li>托卡耶夫与阿布扎比王储讨论能源、交通、IT、农业投资项目</li>
+<li>双方签署重要文件，确认加强紧密合作共同承诺</li>
+<li>托卡耶夫期待阿联酋总统访问哈萨克斯坦</li>
+<li>托卡耶夫9月12日抵印度出席金砖峰会并举行双边会晤</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">深化哈与阿联酋投资合作，推动能源、交通、农业等非资源领域经济多元化，提升哈在矿产与物流过境格局中的地位；同时借金砖峰会拓展多边外交空间，平衡大国关系。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/li-jiangchuguojiarendishihui-3dde713a/" target="_blank">托卡耶夫抵达新德里 将出席金砖国家领导人第十八次会晤</a></h3>
+<div class="item-meta">哈通社中文版 · 09/12 20:40<span class="source-link"><a href="https://cn.inform.kz/news/li-jiangchuguojiarendishihui-3dde713a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫抵达印度新德里，将出席金砖国家领导人第十八次会晤。抵达后受到印度政府官员迎接。访问期间，托卡耶夫将出席“外展/金砖+”形式全体会议并发表讲话，还将举行一系列双边会晤。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫抵达新德里 将出席金砖国家领导人第十八次会晤
+正文:
+哈萨克斯坦总统抵达后受到印度政府官员迎接。
+访问期间，托卡耶夫总统将出席“外展/金砖+”形式的全体会议并发表讲话。
+此外，托卡耶夫总统还将举行一系列双边会晤。
+Фото: Акорда Фото: Акорда</div>
+<ul>
+<li>托卡耶夫抵达新德里出席金砖会晤</li>
+<li>将出席“外展/金砖+”全体会议并发言</li>
+<li>访问期间举行一系列双边会晤</li>
+<li>印度政府官员迎接托卡耶夫</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">提升哈萨克斯坦与金砖国家及印度的政治外交关系，拓展多边合作平台，为经贸与矿产领域合作创造新机遇，增强哈国在区域外交中的影响力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://www.inform.kz/ru/kasim-zhomart-tokaev-pribil-v-indiyu-na-sammit-briks-de71e3b0" target="_blank">卡瑟姆-若马尔特·托卡耶夫抵达印度出席金砖国家峰会</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/12 20:39<span class="source-link"><a href="https://www.inform.kz/ru/kasim-zhomart-tokaev-pribil-v-indiyu-na-sammit-briks-de71e3b0" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统卡西姆-若马尔特·托卡耶夫抵达印度出席金砖峰会，在机场受到印度政府官员迎接。访问期间，托卡耶夫将在“外联”/“金砖+”全体会议上发表讲话，并举行多场双边会晤。此前，总统府阿克奥尔达公布了托卡耶夫9月12日至16日的工作日程。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：卡西姆-若马尔特·托卡耶夫抵达印度出席金砖峰会
+
+正文：
+哈萨克斯坦总统在机场受到印度政府官员的迎接。
+图片：阿克奥尔达 访问期间，卡西姆-若马尔特·托卡耶夫将在“外联”/“金砖+”形式的全体会议上发表讲话，并举行一系列双边会晤。
+图片：阿克奥尔达 图片：阿克奥尔达 图片：阿克奥尔达 此前，阿克奥尔达发布了国家元首9月12日至16日的工作日程。</div>
+<ul>
+<li>托卡耶夫抵达印度出席金砖峰会</li>
+<li>将在“外联”/“金砖+”全会发表讲话</li>
+<li>访问期间举行多场双边会晤</li>
+<li>总统府公布9月12-16日工作日程</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访提升哈萨克斯坦在国际多边平台的存在感，拓展与金砖国家的外交与经济联系，有助于平衡多元外交，并可能推动矿产等领域合作。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/fanghehoukekai-e9435e9a/" target="_blank">伊朗总统：美方停止封锁和袭击后可开放霍尔木兹海峡</a></h3>
+<div class="item-meta">哈通社中文版 · 09/12 19:50<span class="source-link"><a href="https://cn.inform.kz/news/fanghehoukekai-e9435e9a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>伊朗总统佩泽希齐扬接受印度电视台采访时表示，美国未能通过军事手段实现目标，转而采取经济施压和海上封锁，但伊朗不会停止。他强调，若美国停止封锁和袭击，霍尔木兹海峡将重新开放。佩泽希齐扬还透露，伊朗与阿曼正谈判建立霍尔木兹海峡联合通道，阿拉伯国家外长将于周一在马斯喀特签署协议并通报国际海事组织。此前伊朗宣布建立新海上通行机制和特别管控区域，美国总统曾提议将海峡更名为“特朗普海峡”。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据阿纳多卢通讯社报道，佩泽希齐扬在接受印度India Today电视台采访时表示，美国未能通过军事手段实现其目标，因此转而采取经济施压措施。
+佩泽希齐扬说：
+“他们没有通过战争实现自己的目标，因此转而采取经济施压。但我们不会停下。”
+伊朗总统表示，他认为美国同样无法通过海上封锁达到目的。
+“当然，海上通道并不是我们赖以生存的唯一途径。他们通过这种方式同样无法实现自己的目标。”
+佩泽希齐扬指出，如果美国停止封锁和袭击，霍尔木兹海峡将重新开放。
+谈及霍尔木兹海峡局势时，佩泽希齐扬还介绍了伊朗与阿曼正在进行的相关谈判。他表示，阿拉伯国家外长将于周一在阿曼首都马斯喀特举行会议。
+他说：
+“本周一，阿拉伯国家外长将在马斯喀特举行会议，签署阿曼与伊朗关于通过霍尔木兹海峡建立联合通道的协议，并将有关协议通报国际海事组织。曾从其境内对我们发动袭击的国家也将参加此次会议。”
+此前，伊朗方面宣布正在建立新的霍尔木兹海峡海上通行机制，并计划在海峡附近设立特别管控区域。
+此外，美国总统此前曾提出将霍尔木兹海峡更名为“特朗普海峡”。</div>
+<ul>
+<li>伊朗总统称美方军事手段失败后转向经济施压和海上封锁</li>
+<li>佩泽希齐扬表示美停止封锁和袭击后霍尔木兹海峡将重新开放</li>
+<li>伊朗与阿曼谈判建立霍尔木兹海峡联合通道协议</li>
+<li>阿拉伯国家外长周一在马斯喀特签署协议并通报国际海事组织</li>
+<li>伊朗计划设立海峡附近特别管控区域，美方曾提议更名</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该表态凸显伊朗在霍尔木兹海峡问题上的强硬立场，可能加剧美伊紧张关系。对哈萨克斯坦而言，海峡局势影响全球能源运输和价格，进而波及哈国石油出口经济；哈方需关注外交平衡，避免卷入大国博弈，同时寻求里海通道等替代运输路线以保障能源安全。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://www.inform.kz/ru/gornodobivayushaya-otrasl-i-apk-kazahstan-i-malavi-obsudili-sotrudnichestvo-32301e48" target="_blank">采矿业和农业：哈萨克斯坦与马拉维讨论合作</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/12 18:47<span class="source-link"><a href="https://www.inform.kz/ru/gornodobivayushaya-otrasl-i-apk-kazahstan-i-malavi-obsudili-sotrudnichestvo-32301e48" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与马拉维举行会谈，讨论双边合作前景。双方重点关注扩大贸易经济合作和建立商界直接联系，将采矿业、农业和粮食安全列为有前景的方向。此外，还探讨了政府服务数字化经验交流以及教育、职业培训和人员进修领域的合作。会后双方表示将继续就共同关心的问题保持对话。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：采矿业与农工综合体：哈萨克斯坦与马拉维讨论合作
+正文：
+双方就哈萨克斯坦与马拉维双边关系发展前景及可能的互动方向交换了意见。
+图片：哈萨克斯坦外交部
+特别关注了扩大贸易经济合作以及建立两国商界直接联系。在具有前景的方向中，提到了采矿业、农业和粮食安全。
+此外，双方还探讨了在政府服务数字化领域交流经验的可能性，以及在教育、职业培训和人员进修领域的合作。
+会谈结束后，两国代表指出了上述方向的前景，并表示有兴趣继续就共同关心的问题进行对话。
+此前我们曾报道，哈萨克斯坦与捷克正在扩大在公用基础设施现代化领域的合作。</div>
+<ul>
+<li>哈萨克斯坦与马拉维讨论双边合作前景</li>
+<li>重点方向：采矿业、农业和粮食安全</li>
+<li>探讨政府服务数字化及教育领域合作</li>
+<li>双方愿继续对话，建立商界直接联系</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次会谈为哈萨克斯坦拓展非洲外交与经济联系提供契机，有助于推动矿业和农业出口多元化，但短期实质影响有限，更多具有战略布局意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">10</span> <a href="https://www.inform.kz/ru/briks-reysi-vsingapur-ipervaya-raketka-mira-chto-mirovie-smi-pishut-okazahstane-7a6ce251" target="_blank">金砖国家、飞往新加坡的航班和世界第一：世界媒体如何报道哈萨克斯坦</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/12 13:30<span class="source-link"><a href="https://www.inform.kz/ru/briks-reysi-vsingapur-ipervaya-raketka-mira-chto-mirovie-smi-pishut-okazahstane-7a6ce251" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫将于9月12-13日访问印度，出席第十八届金砖国家峰会并在“金砖+”全体会议上发言，期间与印度总理莫迪及多国领导人会晤。同时，哈国与阿塞拜疆、土库曼斯坦、格鲁吉亚港口加强协调，推动中间走廊发展。此外，哈计划到2030年实施五个石油天然气化工项目，总价值约120亿美元，创造2万个工作岗位。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：金砖国家、飞往新加坡的航班和世界第一球拍：世界媒体如何报道哈萨克斯坦
+
+据阿塞拜疆出版物Report援引阿科达的消息，哈萨克斯坦总统卡西姆-若马尔特·托卡耶夫将于9月12日至13日对印度进行工作访问，参加第十八届金砖国家峰会。
+
+照片：阿科达。在新德里，国家元首将在以“加强韧性、创新、合作与稳定”为主题的“外联”/“金砖+”全体会议上发表讲话。访问日程还包括与印度总理纳伦德拉·莫迪的会谈，以及与一系列国家和政府首脑的会晤。
+
+哈萨克斯坦参加金砖国家峰会成为推进该国外交政策和经济倡议的又一平台。与主要国家代表讨论国际合作、可持续发展、创新和加强经贸联系等问题具有特殊意义。
+
+据AZƏRTAC报道，哈萨克斯坦、阿塞拜疆、土库曼斯坦和格鲁吉亚的港口打算加强协调，以在里海和黑海之间形成更有效的运输物流空间。
+
+照片：阿塞塔吉。据该机构报道，在亚洲相互协作与信任措施会议港口负责人会议框架内，阿克套、库里克、土库曼巴希、波季和巴统港口的负责人在巴库举行了会议。谈判的主要议题是进一步发展中间走廊，以及提高货物流的效率和可预测性。与会者讨论了区域港口之间的协调、共同应对新出现的挑战以及建立更可持续的互动模式。
+
+阿塞拜疆媒体写道，港口之间联系的加强表明，中间走廊的发展正逐渐超越单独的基础设施项目。哈萨克斯坦及其区域伙伴致力于形成一个统一的运输系统，能够确保亚洲和欧洲市场之间货物更快、更可靠的流通。
+
+据TV Brics报道，哈萨克斯坦计划到2030年在石油天然气化工领域实施五个大型项目，总价值约120亿美元。
+
+照片：dongfang zhao / iStock。这些项目列入了2024-2030年石油天然气化工工业发展路线图。据能源部估计，该计划的实施将创造多达2万个固定和临时工作岗位，扩大国内原材料消费，增加产量。</div>
+<ul>
+<li>托卡耶夫9月12-13日访印出席金砖峰会</li>
+<li>哈国与里海黑海港口加强中间走廊协调</li>
+<li>2030年前实施五个油气化工项目投资120亿美元</li>
+<li>项目将创造2万个固定和临时工作岗位</li>
+<li>金砖峰会成哈国推进外交经济倡议平台</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">哈国参与金砖峰会有助于拓展外交空间，深化与印度及主要国家经贸合作；港口协调推动中间走廊建设，提升过境运输潜力；油气化工项目将促进经济多元化，增加就业和原材料加工能力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">11</span> <a href="https://cn.inform.kz/news/lijingzuodedian-97119155/" target="_blank">阿斯塔纳—新德里：欧亚经济合作的新支点</a></h3>
+<div class="item-meta">哈通社中文版 · 09/12 12:00<span class="source-link"><a href="https://cn.inform.kz/news/lijingzuodedian-97119155/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫访问印度，旨在深化双边关系。今年2月哈总理访印，双方讨论贸易、投资、能源、关键矿产、交通物流等合作，哈方计划将对印出口增加1.5亿美元。2026年上半年哈自印进口2.428亿美元，占进口总额0.77%。印度是“北—南”国际运输走廊重要终点市场，托卡耶夫支持欧亚经济联盟与印度谈判建立自贸区。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 阿斯塔纳—新德里：欧亚经济合作的新支点
+正文:
+过去30多年间，哈萨克斯坦总统与印度高层曾多次在国际场合会面。但此次访问具有更加鲜明的政治意义，体现出哈萨克斯坦将印度视为南亚重要伙伴以及多极化世界格局中的关键力量之一。
+此次访问的准备工作实际上从年初便已展开。今年2月，哈萨克斯坦总理沃勒扎斯·别克帖诺夫访问印度，与印度总理纳伦德拉·莫迪举行会谈，并出席India AI Impact Summit国际峰会。双方讨论了贸易、投资、能源、农业、人工智能、关键矿产、航天以及交通物流等领域合作。
+Фото: Х.com/@narendramodi 当时，哈方曾表示，准备在多个商品类别上将对印出口增加1.5亿美元。
+与此同时，印度的关注重点也不再局限于传统原材料进口。关键矿产、高科技、医药、数字化、交通物流以及新投资项目正成为双方合作的新方向。哈印关系的经济内容由此逐渐发生变化。
+印度拥有庞大的市场，与这一全球主要经济体扩大贸易和投资合作，对哈萨克斯坦而言具有现实意义。分析人士认为，托卡耶夫此次访问有望为双边关系注入新的动力。
+据哈萨克斯坦贸易和一体化部数据，2026年1月至6月，哈萨克斯坦自印度进口商品额为2.428亿美元，占同期全国进口总额的0.77%。
+从数字上看，这一比例并不算高，但恰恰说明双方经济合作仍有较大的开发空间。
+哈萨克斯坦具备向印度供应金属、化工和石化产品、农产品以及关键矿产的潜力；印度则可向哈萨克斯坦提供医药产品、技术和设备。
+交通物流是另一项重点。
+印度是“北—南”国际运输走廊的重要终点市场。通过该走廊，哈萨克斯坦可经伊朗连接波斯湾港口，并进一步进入印度市场。
+2025年6月举行的第四次“印度—中亚”对话会上，印度提出更加积极利用“北—南”国际运输走廊，加强与中亚国家的互联互通，同时对哈萨克斯坦发展该走廊东线的倡议给予积极评价。
+因此，印度方向正在成为哈萨克斯坦交通物流战略中的重要组成部分。哈萨克斯坦—伊朗—印度路线基础设施建设越完善，双边及区域贸易的增长空间也越大。
+另一个重要因素是哈萨克斯坦在欧亚经济联盟框架内的工作。
+今年5月，托卡耶夫曾表示支持欧亚经济联盟与印度就建立自由贸易区开展谈判，并强调联盟有必要进一步扩大同亚洲、非洲、阿拉伯世界和拉丁美洲国家的对外经济联系。
+托卡耶夫当时表示：</div>
+<ul>
+<li>托卡耶夫访印凸显印度为南亚重要伙伴</li>
+<li>哈计划对印出口增加1.5亿美元</li>
+<li>2026年上半年哈自印进口2.428亿美元</li>
+<li>印度是“北—南”运输走廊重要终点市场</li>
+<li>托卡耶夫支持欧亚经济联盟与印度谈自贸区</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访将强化哈国多极化外交，拓展南亚市场，推动关键矿产和交通物流合作，促进欧亚经济联盟与印度自贸谈判，提升哈国在区域互联互通中的枢纽地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">12</span> <a href="https://www.inform.kz/ru/vizit-prezidenta-tokaeva-vindiyu-chto-prineset-sammit-briks-strane-iregionu-1fabddc3" target="_blank">阿斯塔纳—德里：欧亚经济增长中心</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/12 11:00<span class="source-link"><a href="https://www.inform.kz/ru/vizit-prezidenta-tokaeva-vindiyu-chto-prineset-sammit-briks-strane-iregionu-1fabddc3" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫即将对印度进行正式访问，正值双边议程从传统贸易向关键矿产、稀土、高科技、人工智能、制药、数字化和交通物流等领域扩展。2026年2月哈总理别克捷诺夫访印，双方讨论多领域合作，哈方拟增加出口约1.5亿美元。哈方视印度为多极世界中心之一，此访旨在为战略伙伴关系注入新政治动力。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">阿斯塔纳——德里：欧亚全球经济增长中心
+
+尽管哈萨克斯坦与印度的关系已历经三十余年，但此次访问正值双边议程显著扩大并逐步超越传统贸易范畴之际。
+
+三十多年来，哈萨克斯坦总统与印度领导人多次在各类国际场合会晤。但正式格式的访问已是另一层次的政治信号。它表明，哈萨克斯坦不仅将印度视为南亚的重要伙伴，更将其视为正在形成的多极世界中心之一。
+
+哈萨克斯坦总统访问的筹备工作早在九月之前就已启动。2026年2月，哈萨克斯坦总理奥尔扎斯·别克捷诺夫访问印度，与纳伦德拉·莫迪举行会谈，并参加了印度人工智能影响力峰会。当时双方讨论了贸易、投资、能源、农业、人工智能、关键矿产、航天、交通与物流等议题。哈萨克斯坦表示准备将一系列商品出口增加约1.5亿美元。
+
+图片来源：X.com/@narendramodi 印度方面则表现出不仅对传统原材料进口的兴趣。关注焦点转向关键矿产和稀土元素、高科技、制药、数字化、交通互联互通及新投资项目。因此，关系内涵正逐步变化：从个别商品类别的贸易——转向寻求长期经济合作点。
+
+这在印度市场规模背景下尤为重要。哈萨克斯坦清楚认识到：当前贸易额尚未反映与全球最大经济体之一合作的潜在意义。正因如此，卡瑟姆-若马尔特·托卡耶夫的访问可被视为为现有联系注入新政治动力的契机。
+
+哈萨克斯坦总统本人在八月致印度总理纳伦德拉·莫迪的独立日贺电中，强调了印度在国际关系中的重要角色、其经济成就和科技潜力，并指出两国战略伙伴关系稳步发展及进一步扩大合作的可能性。</div>
+<ul>
+<li>哈总统托卡耶夫将正式访印，双边关系超越传统贸易</li>
+<li>2026年2月哈总理访印，讨论关键矿产与AI合作</li>
+<li>哈方拟增加出口约1.5亿美元，拓展商品种类</li>
+<li>印度关注稀土、高科技、制药和数字化投资</li>
+<li>哈方视印度为多极世界中心，欲注入新政治动力</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访将深化哈印战略伙伴关系，推动哈国经济多元化，减少对传统资源出口依赖；关键矿产与稀土合作可能重塑中亚矿产供应链，增强哈国在多极格局中的外交回旋空间。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(4 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/shiyuzhonghuizaixing-a55997a2/" target="_blank">信任时代与金融新架构：中亚金融科技峰会在阿拉木图举行</a></h3>
+<div class="item-meta">哈通社中文版 · 09/13 00:30<span class="source-link"><a href="https://cn.inform.kz/news/shiyuzhonghuizaixing-a55997a2/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>中亚金融科技峰会在阿拉木图举行。哈国央行行长苏莱曼诺夫表示数字技术正改变金融市场结构。自2026年10月起，哈国将引入第一类支付机构，可开展部分银行业务。银行间移动支付系统自7月19日以来交易超2000万笔，金额约4000亿坚戈。数字坚戈预计2026至2027年交易规模达2万亿坚戈。国家加密资产储备已配置7亿美元。反欺诈中心阻止1270亿坚戈欺诈交易。SHART RATE获Fintech Stars Battle最高奖及10万美元投资。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 信任时代与金融新架构：中亚金融科技峰会在阿拉木图举行
+正文:
+哈萨克斯坦国家银行行长提穆尔·苏莱曼诺夫在峰会上表示，数字技术正在从根本上改变金融市场结构，新的市场参与者、投资工具和结算方式不断涌现，监管机构的角色也随之发生变化。
+“这要求我们采取前瞻性行动，为创新和竞争创造条件，同时确保金融体系的可靠性以及市场对其的信任。”他说。
+Фото: Central Asia Fintech Summit 2026 峰会期间，哈萨克斯坦支付市场新架构正式亮相。自2026年10月起，金融市场将出现新的监管主体——第一类支付机构。这类机构将在国家银行许可下运营，在提供支付服务的同时，可开展部分银行业务。
+与会者在公开全体会议上指出，有针对性地扩大市场参与主体、确保各方平等使用基础设施，旨在促进市场良性竞争。新参与者的加入有望加快金融业发展，引入新的专业能力，并为银行与科技企业开展互利合作创造更多机会。
+新参与者还将在支付市场与数字资产市场之间发挥受监管的连接渠道作用。与此同时，其资本实力、数字基础设施和信息安全将面临更严格要求。
+Фото: Central Asia Fintech Summit баспасөз қызметі 国家数字金融基础设施加速落地 新市场主体的引入，是哈萨克斯坦金融基础设施大规模转型的延续。峰会指出，目前该国国家数字金融基础设施的主要组成部分，包括银行间支付、数字坚戈、生物识别以及金融反欺诈工具均已投入运行。
+今年的重要成果之一是银行间移动支付系统上线。自7月19日以来，通过手机号码转账和统一二维码完成的交易已超过2000万笔，总金额约4000亿坚戈。
+数字坚戈建设也在持续推进，预计2026年至2027年相关交易规模将达到2万亿坚戈。目前，国家银行已投入实际运行的系统中已有10余项基于人工智能的解决方案。
+数字资产市场同样保持较快发展。目前，监管沙盒内共有34个项目正在实施，国家加密资产储备已获得7亿美元资金配置。
+Фото: пресс-служба Central Asia Fintech Summit 安全成为行业标准 峰会期间举行了National Antifraud Awards 2026颁奖活动，展示金融行业在用户保护领域取得的实际成果。
+目前，哈萨克斯坦国家反欺诈中心已有270余家机构参与。数据显示，截至2026年9月1日，该中心已及时阻止总额达1270亿坚戈的欺诈交易。
+活动主办方认为，这一成果表明，反欺诈体系正在逐步发展成为覆盖全国的金融安全机制。
+Фото: Central Asia Fintech Summit баспасөз қызметі 支持创新与拓展合作 峰会还公布了面向哈萨克斯坦金融科技初创企业的Fintech Stars Battle竞赛结果。来自银行、风险投资基金和IT企业的评委，对区块链、人工智能、支付系统、数字身份识别和开放银行等领域的创新方案进行了评审。
+Фото: пресс-служба Central Asia Fintech Summit SHART RATE获得Fintech Stars Battle 2026最高奖，并获得White Hill Capital以SAFE协议形式提供的最高10万美元投资。该项目是一款面向安全在线交易的数字平台，可帮助个人和企业在数分钟内签订具有法律效力的合同，并在合同条款遭到违反时快速获得法院裁决。
+Фото: пресс-служба Central Asia Fintech Summit 2026 Фото: пресс-служба Central Asia Fintech Summit Фото: пресс-служба Central Asia Fintech Summit 其他入围项目也获得合作伙伴提供的支持。由艾格林·别伊谢姆比娜担任首席执行官的BEHYPE项目，主要开发网红营销平台及面向博主的金融科技卡，获得参加Tumar Innovation Hub在迪拜举办的加速计划的机会。</div>
+<ul>
+<li>哈国2026年10月起引入第一类支付机构，可开展部分银行业务</li>
+<li>银行间移动支付上线，交易超2000万笔，金额约4000亿坚戈</li>
+<li>数字坚戈预计2026至2027年交易规模达2万亿坚戈</li>
+<li>国家加密资产储备已获7亿美元资金配置</li>
+<li>反欺诈中心阻止1270亿坚戈欺诈交易，270余家机构参与</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">新支付机构将重塑哈国金融竞争格局，推动银行与科技企业合作；数字坚戈和加密资产储备强化货币主权与数字资产地位；反欺诈机制提升金融安全，增强市场信任，助力阿拉木图巩固中亚金融科技枢纽地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/kazahstanskiy-startap-dlyabezopasnih-onlayn-sdelok-viigral-fintech-stars-battle--4985276f" target="_blank">哈萨克斯坦安全在线交易初创企业赢得Fintech Stars Battle 2026</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/12 23:35<span class="source-link"><a href="https://www.inform.kz/ru/kazahstanskiy-startap-dlyabezopasnih-onlayn-sdelok-viigral-fintech-stars-battle--4985276f" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦初创公司 SHART RATE 在 Fintech Stars Battle 2026 中获胜。该平台允许个人和企业在几分钟内签订具有法律效力的在线合同，并在违约时快速获得法院判决。公司计划利用奖金发展产品、团队，并推动改变“口头协议”文化。其他决赛项目 BEHYPE、BYTRADER 等也获得奖励，其中 BYTRADER 获 600 万坚戈资助。White Hill Capital 拟通过 SAFE 投资最高 10 万美元。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">SHART RATE——一个用于安全在线交易的数字平台，允许个人和企业在几分钟内签订具有法律效力的合同，并在条款被违反时迅速获得法院判决。
+
+——我们的全球使命是创建一个大规模生态系统，用于进行公平交易，使双方都受到法律保护。目前，我们正在引入神经网络 Shart AI，用于根据任何商业请求自动生成合同。所获奖金不仅将用于产品开发和团队建设，还将用于我们的主要目标——改变“口头协议”文化。我们希望让社会养成透明记录义务的习惯，这将有助于节省金融资源和维护人际关系，SHART RATE 创始人兼总经理捷米尔·阿登分享了他的计划。
+
+图片：Central Asia Fintech Summit 新闻处。其他决赛入围者也获得了合作伙伴的奖品。BEHYPE 项目（CEO——艾格丽姆·贝塞姆比娜）开发影响者营销平台和面向博主的金融科技卡，获得了参加 Tumar Innovation Hub 在迪拜的加速器计划的机会。BYTRADER 初创公司（CEO——穆斯利姆·阿卜杜拉耶夫）是一个带有 AI 工具和风险管理系统的交易终端，获得了 Yandex Cloud 提供的 600 万坚戈资助。
+
+在决赛中，另外三个项目也展示了自己的解决方案：PAIDAX——一个移动社交投资平台，最低 1 美元即可参与；ENKI——将建筑验证作为付款触发器的系统；以及 FAQTOR——一个基于人工智能的金融平台，用于为中小企业提供贷款。
+
+——对于 White Hill Capital 来说，参与 Fintech Stars Battle 不是赞助，而是完整的投资工作：我们像看待我们投资管道中的任何交易一样看待决赛入围者。SHART RATE 之所以脱颖而出，是因为它结合了明确的市场痛点、可运行的产品以及一支已经证明能够将想法转化为实际法律和财务成果的团队。通过 SAFE 投资最高 10 万美元是第一步：我们</div>
+<ul>
+<li>SHART RATE 获 Fintech Stars Battle 2026 冠军</li>
+<li>平台可几分钟内生成法律合同并快速裁决</li>
+<li>计划用奖金改变口头协议文化</li>
+<li>BYTRADER 获 600 万坚戈资助</li>
+<li>White Hill Capital 拟投资最高 10 万美元</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该胜利提升哈萨克斯坦金融科技形象，推动数字合同和在线交易安全发展，吸引国际投资，促进法律文化转变，对区域矿产等传统行业合同规范化也有潜在示范效应。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/tsifrovoy-tenge-ediniy-qriii-kakmenyaetsya-finansoviy-rinok-kazahstana-283dc7f9" target="_blank">数字坚戈、统一二维码和人工智能：哈萨克斯坦金融市场如何变化</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/12 22:53<span class="source-link"><a href="https://www.inform.kz/ru/tsifrovoy-tenge-ediniy-qriii-kakmenyaetsya-finansoviy-rinok-kazahstana-283dc7f9" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国家银行行长苏莱曼诺夫在Central Asia Fintech Summit上宣布，自2026年10月起将引入第一类支付组织这一新受监管参与者，可结合支付服务与部分银行业务，并充当支付市场与数字资产市场的受监管渠道。跨行移动支付系统自7月19日以来已完成超2000万笔交易，金额约4000亿坚戈；数字坚戈2026—2027年业务量预计达2万亿坚戈，国家银行已有十多个AI解决方案投入工业运行。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">图片：中亚金融科技峰会新闻处——数字技术正在改变金融市场的组织方式本身：新的参与者、投资工具和结算方式不断涌现。与此同时，监管者的角色也在发生变化——要求我们提前行动，为创新和竞争创造条件，同时确保金融体系的可靠性及其公信力，——哈萨克斯坦国家银行行长铁木尔·苏莱曼诺夫表示。
+在峰会框架内，展示了哈萨克斯坦支付市场的新架构。自2026年10月起，金融市场将出现一类新的受监管参与者——第一类支付组织。它们将依据国家银行颁发的许可证运营，并可将提供支付服务与某些类型的银行业务相结合。
+在开幕全体会议上讨论到，有针对性地扩大参与者范围并确保基础设施的平等接入，旨在加强市场的健康竞争。预计新参与者的出现将加速金融部门的发展，带来新的专业能力，并为银行与科技公司之间的互利合作开辟更多前景。
+新参与者还将充当支付市场与数字资产市场之间的受监管渠道，同时对其提出了更高的资本、数字基础设施和信息安全要求。
+新市场参与者的发展是哈萨克斯坦金融基础设施更广泛转型的延续。峰会上指出，目前国内国家数字金融基础设施的所有主要组成部分均已成功运行：跨行支付、数字坚戈、生物识别以及反金融欺诈工具。
+图片：中亚金融科技峰会新闻处 年度关键成果之一是跨行移动支付系统的启动：自7月19日以来，通过手机号转账和统一QR码已完成的交易超过2000万笔，金额约4000亿坚戈。与此同时，数字坚戈也在发展（2026—2027年其业务量预计将达到2万亿坚戈），而国家银行的工业运行中已有十多个基于人工智能的解决方案在运行。积极</div>
+<ul>
+<li>2026年10月起哈国将新增第一类支付组织</li>
+<li>新参与者须持国家银行牌照，资本与安全要求更高</li>
+<li>跨行移动支付已超2000万笔，金额约4000亿坚戈</li>
+<li>数字坚戈2026—2027年业务量预计达2万亿坚戈</li>
+<li>国家银行已有十多个AI解决方案投入工业运行</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">新支付组织将加剧市场竞争，推动银行与科技公司合作；数字坚戈和统一QR提升支付效率与监管能力，助力数字资产合规化，巩固国家银行对金融基础设施的主导权。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://www.inform.kz/ru/kursi-valyut-vobmennikah-astani-ialmati-na12sentyabrya-3886012a" target="_blank">9月12日阿斯塔纳和阿拉木图兑换点汇率</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/12 13:12<span class="source-link"><a href="https://www.inform.kz/ru/kursi-valyut-vobmennikah-astani-ialmati-na12sentyabrya-3886012a" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>根据Kurs.kz数据，9月12日阿斯塔纳、阿拉木图和奇姆肯特兑换点的平均汇率显示：阿斯塔纳美元买入448.05坚戈、卖出455.05坚戈；阿拉木图美元买入450.55坚戈、卖出452.67坚戈；奇姆肯特美元买入450.67坚戈、卖出452.69坚戈。欧元和卢布汇率也各有差异。哈萨克斯坦国家银行公布的9月12-13日官方汇率为：1美元兑450.91坚戈，1欧元兑522.69坚戈，1俄罗斯卢布兑5.33坚戈。此前报道称坚戈对美元明显走强，而欧元和卢布动态不一。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：9月12日阿斯塔纳和阿拉木图兑换点汇率
+
+正文：
+根据Kurs.kz的数据，当前平均汇率如下：
+在阿斯塔纳的兑换点：
+美元：买入448.05坚戈，卖出455.05坚戈；欧元：买入520.04坚戈，卖出530.04坚戈；卢布：买入5.07坚戈，卖出5.28坚戈。
+在阿拉木图的兑换点：
+美元：买入450.55坚戈，卖出452.67坚戈；欧元：买入522.17坚戈，卖出527.48坚戈；卢布：买入5.14坚戈，卖出5.25坚戈。
+在奇姆肯特：
+美元：买入450.67坚戈，卖出452.69坚戈；欧元：买入522.30坚戈，卖出528.19坚戈；卢布：买入5.17坚戈，卖出5.24坚戈。
+哈萨克斯坦国家银行设定的9月12日至13日官方汇率为：
+1美元——450.91坚戈，1欧元——522.69坚戈，1俄罗斯卢布——5.33坚戈。
+此前有报道称，坚戈对美元明显走强，而欧元和俄罗斯卢布在兑换点的动态则不那么明确。</div>
+<ul>
+<li>阿斯塔纳美元买入448.05坚戈，卖出455.05坚戈</li>
+<li>阿拉木图美元买入450.55坚戈，卖出452.67坚戈</li>
+<li>官方汇率：1美元兑450.91坚戈，1欧元兑522.69坚戈</li>
+<li>坚戈对美元走强，欧元和卢布动态不一</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率波动反映坚戈对美元走强，可能影响哈萨克斯坦进出口和外汇储备管理。对依赖俄罗斯和欧洲贸易的行业带来不确定性，但整体经济稳定。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/zhonggaoying-guo100shangfang-4cdc6b12/" target="_blank">中东局势推高供应风险 国际油价维持每桶100美元上方</a></h3>
+<div class="item-meta">哈通社中文版 · 09/12 18:54<span class="source-link"><a href="https://cn.inform.kz/news/zhonggaoying-guo100shangfang-4cdc6b12/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>中东局势持续紧张，布伦特原油报每桶104.61美元，WTI报每桶100.05美元，交易期间两大基准油价均创5月中旬以来新高。沙特8月石油日产量减少230万桶至600万桶，为30多年最低。霍尔木兹海峡通行谈判消息令油价回落，但能源设施遇袭及“东—西”管道被破坏加剧供应担忧。美国柴油均价首次突破每加仑6美元，分析人士警告柴油等产品价格压力或超原油。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据路透社报道，布伦特原油价格下跌3.02美元，跌幅2.81%，报每桶104.61美元；WTI原油价格下跌2.43美元，跌幅2.37%，报每桶100.05美元。交易期间，两大基准油价均一度升至5月中旬以来最高水平。
+市场出现回落，主要受到有关各方可能就临时调整霍尔木兹海峡海上通行安排展开谈判的消息影响。不过，能源基础设施遭袭以及石油供应可能进一步中断，仍令市场保持高度警惕。
+国际能源署数据显示，今年8月，沙特阿拉伯石油日产量减少230万桶，降至每日600万桶，为30多年来最低水平。
+与此同时，有消息称，沙特阿拉伯用于绕开霍尔木兹海峡出口石油的“东—西”输油管道遭到破坏，进一步加剧了市场对能源供应的担忧。
+受原油及石油产品供应中断影响，美国柴油平均价格首次突破每加仑6美元。
+分析人士认为，在中东地区海上运输受到限制，以及俄罗斯炼油厂生产运行受阻的背景下，柴油及其他石油产品价格面临的上涨压力可能超过原油本身。
+此前，国际油价已自7月24日以来首次突破每桶101美元。</div>
+<ul>
+<li>布伦特原油报104.61美元，WTI报100.05美元</li>
+<li>沙特8月日产量减少230万桶至600万桶</li>
+<li>霍尔木兹海峡通行谈判消息令油价回落</li>
+<li>沙特“东—西”输油管道遭破坏加剧担忧</li>
+<li>美国柴油均价首次突破每加仑6美元</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈萨克斯坦而言，油价高企利好石油出口收入，但霍尔木兹海峡风险凸显哈国经里海及俄罗斯的替代出口路线价值。沙特减产与管道遇袭或促使哈国加快多元化出口，同时柴油价格上涨可能推高国内通胀压力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/tseni-na-neft-derzhatsya-vishe-100-na-fone-situatsii-na-blizhnem-vostoke-bc627a81" target="_blank">中东局势背景下油价维持在每桶100美元以上</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/12 11:43<span class="source-link"><a href="https://www.inform.kz/ru/tseni-na-neft-derzhatsya-vishe-100-na-fone-situatsii-na-blizhnem-vostoke-bc627a81" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>布伦特原油下跌2.81%至104.61美元/桶，WTI下跌2.37%至100.05美元/桶，但仍维持高位。下跌与霍尔木兹海峡临时通航谈判消息有关，但市场对能源设施遇袭和供应中断的担忧持续。沙特8月日产量降至600万桶，为30多年最低。美国柴油均价首次突破6美元/加仑。分析人士认为航运限制和俄炼油厂中断或使成品油价格涨幅超过原油。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：中东局势背景下油价维持在每桶100美元以上
+
+正文：
+布伦特原油价格下跌3.02美元，跌幅2.81%，至每桶104.61美元。WTI原油下跌2.43美元，跌幅2.37%，至每桶100.05美元。交易期间，两种基准油价均触及5月中旬以来的最高值。
+油价下跌与有关可能就霍尔木兹海峡临时通航协议进行谈判的消息有关。与此同时，市场参与者仍对能源基础设施遭袭及供应进一步中断的风险感到担忧。
+据国际能源署数据，沙特阿拉伯8月石油日产量减少230万桶，降至每日600万桶，为30多年来最低水平。
+另一风险因素是有关沙特阿拉伯“东西向”输油管道受损的消息，该管道可使石油出口绕开霍尔木兹海峡。
+在石油及石油产品供应中断的背景下，美国柴油平均价格首次超过每加仑6美元。
+据分析人士评估，该地区航运限制及俄罗斯炼油厂运营中断，可能使柴油及其他石油产品价格维持在高于原油本身价格涨幅的水平。
+此前有报道称，布伦特原油价格已超过每桶100美元，并以稳健涨势结束本周。</div>
+<ul>
+<li>布伦特跌至104.61美元，WTI跌至100.05美元，仍高于100美元</li>
+<li>下跌因霍尔木兹海峡临时通航谈判消息，但风险担忧未消</li>
+<li>沙特8月日产量降至600万桶，创30多年新低</li>
+<li>沙特东西向输油管道受损，绕行霍尔木兹能力受限</li>
+<li>美国柴油均价首次突破6美元/加仑</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">高油价利好哈国石油出口收入，但霍尔木兹风险与沙特减产或加剧全球供应紧张，推升哈国成品油进口成本。哈方可借机拓展绕俄出口路线，但需警惕地区冲突外溢至里海能源通道。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-09-13 09:02</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
