@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年9月14日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年9月14日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年09月13日早9:00至2026年09月14日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 27 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">6</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">19</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">1</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">1</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(6 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/deputati-ot-partii-adlet-proveli-subbotnik-v-stolichnom-detskom-tsentre-b1de6a3e" target="_blank">“Әділет”党议员在首都儿童中心开展义务劳动</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/13 17:45<span class="source-link"><a href="https://www.inform.kz/ru/deputati-ot-partii-adlet-proveli-subbotnik-v-stolichnom-detskom-tsentre-b1de6a3e" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦«Әділет»党议员别克詹·阿利姆库洛夫和努尔詹·尼亚扎利耶夫与«Семизбай-U»公司共同在首都儿童支持中心开展星期六义务劳动，种植树木并更新游乐场地。参与者引用总统托卡耶夫关于清洁是文明社会镜子的讲话，并强调新宪法将保护自然列为公民义务。活动还向学生转交100个包和一周食品储备，包括乳制品、水果和甜食。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">«Әділет»党议员在首都儿童中心开展星期六义务劳动
+
+库鲁尔泰议员别克詹·阿利姆库洛夫和努尔詹·尼亚扎利耶夫与«Семизбай-U»公司共同对首都儿童支持中心的区域进行了美化。在这处社会设施院内，参与者种植了树木并更新了游乐场地。
+
+图片：«Әділет»党。参与者提到了国家元首卡瑟姆-若马尔特·托卡耶夫关于清洁是文明社会镜子的讲话。议员别克詹·阿利姆库洛夫强调，新宪法将保护自然直接规定为每位公民的义务。他认为，这一生态倡议早已超越普通星期六义务劳动的形式，变成了大规模运动以及哈萨克斯坦人的个人选择。
+
+图片：«Әділет»党。除绿化和清理区域外，组织者还向该机构提供了定向援助。他们向学生们转交了100个包以及一周的食品储备，包括乳制品、新鲜水果和甜食。</div>
+<ul>
+<li>«Әділет»党议员在首都儿童中心开展星期六义务劳动</li>
+<li>与«Семизбай-U»公司共同种树并更新游乐场地</li>
+<li>引用托卡耶夫讲话，强调新宪法规定保护自然义务</li>
+<li>向学生转交100个包和一周食品储备</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该活动强化«Әділет»党的社会形象，呼应新宪法环保义务和总统清洁理念，有助于提升公民生态意识；对政治生态有正面示范作用，对矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/zaigehejiazhongxin-7165e212/" target="_blank">哈萨克斯坦计划在每个区和城市设立家庭支持中心</a></h3>
+<div class="item-meta">哈通社中文版 · 09/13 14:31<span class="source-link"><a href="https://cn.inform.kz/news/zaigehejiazhongxin-7165e212/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦计划将家庭支持中心从160个增至208个，实现每个区和城市全覆盖。2026年初以来，超5万名公民寻求帮助，4.3万个家庭获咨询，近6000个家庭纳入长期帮扶。2024年通过保障妇女儿童安全法律，家庭暴力追究刑事责任。已通过《2025—2027年维护和巩固家庭与婚姻制度行动计划》，“父母学院”项目2026年计划覆盖超4万人。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">今年家庭日期间，哈萨克斯坦各地区共举办1000余场活动，覆盖近1.2万人。各地组织开展了主题活动、交流会、研讨会和宣传教育活动，内容涉及弘扬家庭和民族价值观、提高父母在子女教育方面的知识和技能、促进儿童和青少年健康以及预防家庭暴力等。
+巩固家庭制度是总统哈斯穆-卓玛尔特·托卡耶夫高度重视的国家政策优先方向之一。在这方面，哈萨克斯坦共和国新宪法具有重要意义。新宪法明确，婚姻是由国家依法登记的男女双方自愿、平等结合的关系。
+此外，哈萨克斯坦于2024年通过关于保障妇女权利和儿童安全问题的法律。根据该法，家庭暴力被追究刑事责任，同时进一步加大了对各种针对儿童暴力行为的责任追究力度。围绕落实相关法律规定，哈萨克斯坦制定了一系列综合措施，以预防家庭暴力、巩固家庭制度并保障未成年人安全。
+文化和信息部表示，为进一步加强面向家庭的针对性援助，家庭支持中心的工作机制已经得到完善。目前，全国共有160个家庭支持中心，未来计划将其数量增加至208个，实现哈萨克斯坦每个区和城市均设有家庭支持中心。
+自2026年初以来，已有超过5万名公民向家庭支持中心寻求帮助，超过4.3万个家庭获得咨询服务，近6000个家庭被纳入长期社会帮扶体系。
+文化和信息部指出，这些中心为家庭提供综合性援助，同时帮助预防社会风险，并为陷入生活困境的公民提供支持。
+此外，哈萨克斯坦已经制定并通过《2025—2027年维护和巩固家庭与婚姻制度行动计划》。该文件旨在预防离婚，引导公民有意识地为家庭生活做好准备，并培养负责任的育儿文化。
+在文化和信息部支持下实施的“父母学院”项目也在持续推进。该项目旨在巩固家庭制度，提高父母在子女教育方面的知识和技能，并培养负责任的家庭教育文化。2026年，计划通过该项目在全国覆盖超过4万人，包括家长、教师以及社会领域专业人员。
+在国家家庭政策框架下，为公民兼顾工作和家庭责任创造有利条件的相关措施也在持续实施。文化和信息部与联合国人口基金共同推进“家庭友好型工作场所”项目，旨在发展充分考虑员工家庭状况和家庭责任的企业文化，并为在职父母提供支持。
+2026年，面向国家机关和用人单位代表的培训项目正式启动，旨在推动各类机构采用兼顾员工家庭责任的工作方式。相关措施旨在进一步增强家庭内部的团结与支持，并强化国家与社会在保障家庭安全和福祉方面的共同责任。</div>
+<ul>
+<li>家庭支持中心将从160个增至208个，覆盖每个区和城市</li>
+<li>2026年初以来超5万公民求助，4.3万家庭获咨询</li>
+<li>2024年立法将家庭暴力追究刑事责任</li>
+<li>通过2025—2027年家庭与婚姻制度行动计划</li>
+<li>“父母学院”项目2026年计划覆盖超4万人</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该政策强化家庭制度作为国家优先方向，有助于稳定社会结构、预防家庭暴力，提升人口素质。通过家庭友好型工作场所项目，可改善劳动力参与率，间接促进经济。与联合国人口基金合作提升国际形象，但需关注财政投入与地方执行能力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/noviy-sovetnik-iposli-kadrovie-naznacheniya-zanedelyu-vkazahstane-7c156f8e" target="_blank">新顾问和大使：哈萨克斯坦一周人事任命</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/13 13:29<span class="source-link"><a href="https://www.inform.kz/ru/noviy-sovetnik-iposli-kadrovie-naznacheniya-zanedelyu-vkazahstane-7c156f8e" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统上周签署多项人事任命：穆尔扎林·马利克任驻马来西亚大使，阿杜奥夫·塔尔加特任驻格鲁吉亚大使；托尔甘巴耶夫·埃尔达尔任总统内政和沟通事务助理，其生于1981年，有文化和信息部、总统办公厅等多部门经验；劳拉·艾哈迈特尼亚兹领导卫生部医疗控制委员会，生于1971年，有医疗和保险领域背景。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">新顾问和大使：哈萨克斯坦一周人事任命
+
+上周，国家元首签署命令，任命穆尔扎林·马利克·克涅斯巴耶维奇为哈萨克斯坦共和国驻马来西亚特命全权大使。此前他担任驻格鲁吉亚同等职务。
+
+图片：哈萨克斯坦共和国驻格鲁吉亚大使馆 同时，阿杜奥夫·塔尔加特·穆巴拉科维奇被任命为哈萨克斯坦共和国驻格鲁吉亚特命全权大使。
+
+国家元首签署命令，任命托尔甘巴耶夫·埃尔达尔·谢伊达赫梅托维奇为哈萨克斯坦共和国总统负责内政和沟通事务的助理。埃尔达尔·托尔甘巴耶夫1981年出生于阿拉木图州。毕业于沙卡里姆塞米巴拉金斯克国立大学、库纳耶夫大学。2005年开始职业生涯，担任阿拉木图州阿拉科尔区马斯利哈特机构首席专家。2006-2008年在哈萨克斯坦共和国文化和信息部系统工作。2012年至2016年任哈萨克斯坦共和国总统直属“中央沟通服务”共和国国家机构副主任。
+
+图片：primeminister.kz 2016-2019年任哈萨克斯坦共和国议会马吉利斯主席顾问，2019-2020年任“阿拉木图市发展中心”股份公司董事会副主席，2020-2022年任“阿拉木图电视广播公司”股份公司第一副总经理，2022年6月至2023年6月任哈萨克斯坦共和国总统办公厅国家监察员。2023年6月至2023年8月任哈萨克斯坦共和国信息和社会发展部副部长，2023年9月至2024年2月任哈萨克斯坦共和国总统办公厅沟通部门副主任，自2024年2月起任哈萨克斯坦共和国政府办公厅副主任。
+
+劳拉·艾哈迈特尼亚兹本周领导哈萨克斯坦共和国卫生部医疗控制委员会。1971年出生于东哈萨克斯坦州。毕业于阿克托别国立医学院，1993年开始在奇姆肯特市“磷”医疗单位担任地段内科医生。1997年至2009年在南哈萨克斯坦州医疗保险基金、南哈萨克斯坦州卫生局、医疗服务质量控制委员会阿克莫拉州管理局、“国家医疗控股”股份公司工作。
+
+图片：哈萨克斯坦共和国政府 2009-2010年曾任（文本截断）</div>
+<ul>
+<li>穆尔扎林任驻马来西亚大使，此前驻格鲁吉亚</li>
+<li>阿杜奥夫任驻格鲁吉亚大使</li>
+<li>托尔甘巴耶夫任总统内政和沟通事务助理</li>
+<li>劳拉·艾哈迈特尼亚兹领导卫生部医疗控制委员会</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">人事调整强化总统内政沟通团队，外交官轮换优化驻外使节布局，医疗监管换将可能影响卫生政策执行，整体有利于哈国政治稳定和外交经济合作。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://www.inform.kz/ru/160-tsentrov-podderzhki-semi-rabotayut-v-kazahstane-kakaya-pomosh-dostupna-c2be71f2" target="_blank">哈萨克斯坦有160个家庭支持中心：可提供哪些帮助</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/13 12:18<span class="source-link"><a href="https://www.inform.kz/ru/160-tsentrov-podderzhki-semi-rabotayut-v-kazahstane-kakaya-pomosh-dostupna-c2be71f2" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦全国已设立160个家庭支持中心，计划增至208个，覆盖每个区和市。2026年初以来，超5万公民求助，4.3万余家庭获咨询，约6千家庭长期跟踪。2024年通过保障妇女权利和儿童安全法，家庭暴力入罪。国家还推出2025—2027年家庭婚姻制度行动计划及“父母学院”项目，强化家庭价值观和预防家暴。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦设有160个家庭支持中心：可获得哪些帮助
+
+正文：
+全国各地举办了专题活动、会议、研讨会和教育活动，旨在加强家庭和民族价值观、提高父母教育能力、支持儿童和青年健康，以及预防家庭暴力。
+
+——加强家庭制度是国家政策的优先方向之一，受到总统卡瑟姆-若马尔特·托卡耶夫的特别关注。在这方面，哈萨克斯坦共和国新宪法具有特殊意义，其中规定婚姻是男女自愿和平等的联盟，依照法律由国家登记，——哈萨克斯坦共和国文化和信息部指出。
+
+此外，2024年通过了哈萨克斯坦共和国关于保障妇女权利和儿童安全的法律。根据该文件，家庭暴力已被入罪，加强了对一切形式暴力侵害儿童行为的责任追究。
+
+为落实法律规范，制定了预防家庭暴力、加强家庭制度和提高未成年人安全的综合预防措施。
+
+为加强对家庭的定向援助，家庭支持中心的活动进行了转型。目前全国有160个此类中心。计划将其数量增至208个，确保在哈萨克斯坦每个区和市开展工作。
+
+自2026年初以来，已有超过5万名公民向家庭支持中心求助。超过4.3万个家庭获得了咨询服务，约6千个家庭处于长期跟踪帮扶中。
+
+这些中心是国家与社会互动的重要环节，为家庭提供综合帮助，促进社会风险预防，并支持处于困难生活境况的公民。
+
+此外，还制定并通过了2025—2027年维护和加强家庭与婚姻制度的行动计划。该文件旨在预防离婚、提高对家庭生活的自觉准备水平，并发展负责任的父母教育。
+
+在哈萨克斯坦共和国文化和信息部支持下实施的“父母学院”项目继续积极发展。其主要任务是……</div>
+<ul>
+<li>全国设160个家庭支持中心，计划增至208个</li>
+<li>2026年初超5万公民求助，4.3万家庭获咨询</li>
+<li>2024年立法将家庭暴力入罪，强化儿童保护</li>
+<li>推出2025—2027年家庭婚姻制度行动计划</li>
+<li>“父母学院”项目促进负责任父母教育</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该政策强化哈国家庭制度与社会稳定，体现托卡耶夫总统对传统价值观的重视。通过立法和基层中心网络，有助于降低家暴和离婚率，提升社会凝聚力，但短期内财政和人力投入压力较大。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/quanguominyijiari-f9d247ab/" target="_blank">国家元首：共同建设一个家家幸福的公正哈萨克斯坦</a></h3>
+<div class="item-meta">哈通社中文版 · 09/13 11:04<span class="source-link"><a href="https://cn.inform.kz/news/quanguominyijiari-f9d247ab/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫发表贺词，强调家庭是国家和社会发展的重要制度，通过家庭传承民族价值观。他指出，今年7月1日生效的新宪法规定婚姻与家庭、母亲、父亲和儿童受国家保护，首次明确婚姻为男女自愿平等结合，并设立家庭事务专员制度。托卡耶夫强调儿童教育是国家重要使命，呼吁通过家庭教育培养爱国、守法等价值观，共同建设家家幸福的公正哈萨克斯坦。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫在贺词中表示，家庭是塑造民族独特精神特质、直接影响国家和社会发展的重要社会制度。每个人的世界观和品格都在家庭中逐渐形成。母亲的温暖和父亲的言传身教激励人们追求更高目标，长辈的智慧和人生经验为年轻一代指引方向，亲人的支持则始终给予人们力量。
+总统指出，正是通过家庭，哈萨克斯坦的传统习俗和民族价值观得以代代相传，民族文化根基和精神凝聚力不断得到巩固。
+托卡耶夫表示，根据今年7月1日起正式生效的《哈萨克斯坦共和国宪法》，婚姻与家庭、母亲、父亲和儿童均受到国家保护。宪法特别重视加强儿童权利保障，以及女性和母亲在家庭中的作用，并首次明确规定，“婚姻是由国家依法登记的男女双方自愿、平等的结合”。此外，今年还设立了家庭事务专员制度。
+总统强调，以高度责任感对待儿童教育，为年轻一代全面发展创造有利条件，是国家的重要使命之一。这也是加强人力资本、提升国家发展潜力的重要前提。
+托卡耶夫指出，对祖国的热爱，以及遵守法律和秩序、爱护自然、维护公共场所清洁、向年轻一代传承民族优秀传统等价值观，首先都应通过家庭教育加以培养。
+— 如果我们共同为这一目标付出努力，就能在社会中形成符合文明国家特征的全新伦理风尚。
+总统表示，哈萨克斯坦将以建设性民族的姿态，满怀信心迈入历史发展的新阶段，实现既定目标和任务。
+— 我们将共同建设一个家家幸福的公正哈萨克斯坦。我对此深信不疑。
+最后，托卡耶夫祝愿全体哈萨克斯坦公民身体健康、事业有成。</div>
+<ul>
+<li>家庭是塑造民族精神、推动国家发展的重要社会制度</li>
+<li>新宪法7月1日生效，首次明确婚姻定义并保护家庭</li>
+<li>设立家庭事务专员制度，加强儿童和母亲权益保障</li>
+<li>儿童教育是国家重要使命，关乎人力资本和国家潜力</li>
+<li>呼吁通过家庭教育培养爱国、守法等核心价值观</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该贺词强化家庭作为社会基石的地位，新宪法条款和家庭事务专员制度将提升儿童、女性和母亲权益保障，有助于巩固社会凝聚力和人力资本，为哈国长期稳定与发展提供伦理支撑。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://www.inform.kz/ru/kasim-zhomart-tokaev-pozdravil-kazahstantsev-s-dnem-semi-e5fcab3d" target="_blank">正是家庭及其传统塑造了民族认同——托卡耶夫</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/13 11:03<span class="source-link"><a href="https://www.inform.kz/ru/kasim-zhomart-tokaev-pozdravil-kazahstantsev-s-dnem-semi-e5fcab3d" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在家庭日发表贺词，强调家庭是塑造民族认同和国家最重要的制度。他指出，今年7月1日生效的新宪法首次规定婚姻为男女自愿平等结合，并加强儿童、妇女和母亲权利，还设立了家庭权利监察员制度。托卡耶夫表示，支持负责任父母身份和青年全面发展旨在加强人力资本，这是国家竞争力的关键因素，最终目标是共建公正的哈萨克斯坦。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">尊敬的同胞们！衷心祝贺你们家庭日快乐！
+家庭作为国家最重要的制度、社会的基本单元，这一理解已被普遍公认。正是家庭及其根基塑造了民族的认同。正是在家庭中，公民世界观的基础及其道德品质得以奠定。母亲的关怀帮助我们在世界上迈出第一步，父亲的教诲是达成既定目标的指路明灯，而老一辈的智慧则保护青年在荆棘丛生的人生道路上免受不幸。我们代代相传民族传统和崇高道德理想，从而巩固我们人民的文化密码和精神支柱。
+根据今年7月1日生效的宪法，婚姻和家庭、母性、父性和童年均受国家保护。基本法显著加强了儿童权利、妇女和母亲在家庭中的地位。宪法首次规定，婚姻是男女自愿平等的结合，依照法律登记。今年设立了家庭权利监察员制度。
+支持负责任的父母身份、为年轻一代的全面发展创造条件，都服从于一个主要目标：加强人力资本——国家竞争力的关键因素。
+首先，正是在家庭层面，新的社会伦理得以扎根，对祖国的热爱得以培养，人们认识到遵守法律秩序、爱护自然、保持所有公共场所清洁、以我们人民的最佳传统教育子女的极端重要性。
+我相信，在这个建设性的基础上，我们能够在新的历史周期中实现民族全面发展的重大进步，实现既定目标，共同建设一个公正的哈萨克斯坦，让每个家庭都享有福祉与温馨。
+祝愿所有哈萨克斯坦公民健康幸福。</div>
+<ul>
+<li>托卡耶夫家庭日致辞：家庭塑造民族认同</li>
+<li>新宪法7月1日生效，强化家庭儿童妇女权益</li>
+<li>首次设立家庭权利监察员制度</li>
+<li>支持负责任父母身份，加强人力资本建设</li>
+<li>目标：共建公正的哈萨克斯坦</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">新宪法强化家庭制度与儿童妇女权益，设立家庭权利监察员，有助于提升社会稳定性与人力资本质量，为哈国长期竞争力奠定社会基础，同时体现托卡耶夫政治改革中注重社会伦理与民族认同的治理方向。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(19 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/shvetsiya-vibiraet-noviy-parlament-295d0dfa" target="_blank">瑞典选举新议会</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/14 06:32<span class="source-link"><a href="https://www.inform.kz/ru/shvetsiya-vibiraet-noviy-parlament-295d0dfa" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>瑞典举行议会选举，投票站于当地时间08:00至20:00开放，超过800万公民有投票权，约半数选民已参与8月26日开始的提前投票。议会共349席，获多数需175席。初步民调显示，社会民主党领导的中左翼阵营与首相克里斯特松领导的中右翼阵营差距极小。若右翼保住多数，瑞典民主党可能首次入阁。主要议题为医疗、教育、犯罪、移民和经济。投票率传统上超80%。瑞典2024年加入北约，此次为入盟后首次议会选举。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：瑞典选举新一届议会
+
+正文：
+投票站于当地时间08:00至20:00开放。超过八百万公民拥有投票权。约半数选民已经参与了8月26日开始的提前投票。
+瑞典议会——即瑞典议会（Riksdag）——共有349个席位。获得多数需要175个席位。同时还将选举地区和地方议会议员。
+根据初步民调，由玛格达莱娜·安德松领导的社会民主党为首的中左翼阵营与首相乌尔夫·克里斯特松领导的中右翼阵营差距极小。右翼阵营包括温和党、基督教民主党、自由党和瑞典民主党。
+如果右翼保住多数，瑞典民主党可能首次获得部长职位。现任乌尔夫·克里斯特松政府过去四年在议会中依赖该党的支持，但未将其代表纳入内阁。
+竞选活动的主要议题是医疗保健、教育、犯罪、移民和经济形势。
+瑞典的投票率传统上很高，超过80%。
+瑞典议会选举的首批初步数据预计在投票日晚上公布。
+瑞典自2024年起是北约成员国。此次选举将是该国加入该联盟后的首次议会选举。</div>
+<ul>
+<li>瑞典议会选举投票日开放，超800万公民有投票权</li>
+<li>议会349席，多数需175席，同时选举地方议员</li>
+<li>中左与中右阵营民调差距极小，右翼或保多数</li>
+<li>瑞典民主党若右翼胜选可能首次获得部长职位</li>
+<li>主要议题：医疗、教育、犯罪、移民和经济</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国影响有限，但瑞典入约后首次大选结果将影响北约内部对俄政策走向，进而牵动中亚地缘平衡；哈国可关注瑞典新政府在矿产供应链、绿色转型及对中亚外交上的政策调整。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/prezident-kazahstana-pribil-s-gosudarstvennim-vizitom-v-respubliku-koreya-89cfa7cb" target="_blank">哈萨克斯坦总统抵达韩国进行国事访问</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/14 03:17<span class="source-link"><a href="https://www.inform.kz/ru/prezident-kazahstana-pribil-s-gosudarstvennim-vizitom-v-respubliku-koreya-89cfa7cb" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫抵达韩国进行国事访问，韩国副总理兼科技信息通信部长官裴庆勋在机场迎接。访问期间将举行高层会谈，讨论双边合作发展前景。此前，托卡耶夫于9月12日抵达印度参加金砖国家峰会，在“金砖+”全体会议上呼吁核大国进行高层对话，并提议建立人工智能领域“金砖+”伙伴关系。他还将于9月参加首届“韩国-中亚”峰会。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦总统抵达韩国进行国事访问
+
+正文：
+韩国副总理兼科学技术信息通信部长官裴庆勋在机场迎接了国家元首。
+
+图片：Akorda
+
+访问期间，预计将举行高层会谈，并讨论哈萨克斯坦-韩国合作进一步发展的前景。
+
+图片：Akorda 图片：Akorda 图片：Akorda
+
+9月12日之前，卡瑟姆-若马尔特·托卡耶夫抵达印度参加金砖国家峰会。在新德里举行了“金砖+”全体会议，我国国家元首发表了讲话。
+
+在讲话中，哈萨克斯坦总统呼吁核大国进行高层对话。他还提议在人工智能领域建立“金砖+”伙伴关系。
+
+此前有报道称，9月卡瑟姆-若马尔特·托卡耶夫将参加首届“韩国-中亚”峰会。更多详情请点击此处阅读。</div>
+<ul>
+<li>托卡耶夫抵韩进行国事访问，韩国副总理裴庆勋迎接</li>
+<li>访问期间将举行高层会谈，讨论哈韩合作前景</li>
+<li>托卡耶夫此前赴印度参加金砖峰会并发表讲话</li>
+<li>呼吁核大国高层对话，提议建AI领域金砖+伙伴关系</li>
+<li>9月将参加首届韩国-中亚峰会</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访将深化哈韩政治经济合作，拓展矿产与科技领域投资；同时通过金砖+和韩国-中亚峰会，哈国强化多向量外交，提升在中亚地区的地缘经济影响力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/jiazhengchengweiduiyouzhanyideguojia-0765494d/" target="_blank">专家：哈萨克斯坦正成为对华盛顿具有独立战略意义的国家</a></h3>
+<div class="item-meta">哈通社中文版 · 09/13 21:18<span class="source-link"><a href="https://cn.inform.kz/news/jiazhengchengweiduiyouzhanyideguojia-0765494d/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>专家阿穆尔塔耶娃指出，特朗普在哈萨克斯坦独立35周年前约三个月致托卡耶夫贺信，由特使戈尔转交，表明华盛顿有意加强政治对话。2025年11月双方在华盛顿签署29份文件，总额约170亿美元，2026年继续围绕关键矿产、物流、人工智能等合作。贺信使用“扩大版战略伙伴关系”表述，并在金砖峰会期间转交，凸显哈萨克斯坦多元平衡外交的生命力及其对美独立战略意义。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">阿穆尔塔耶娃在接受哈通社记者采访时指出，这封贺信在距离哈萨克斯坦独立35周年约三个月时发出，并由美国总统南亚和中亚事务特使塞尔吉奥·戈尔亲自转交给托卡耶夫，其时间和形式都值得关注。
+“贺信的时间和转交方式表明，华盛顿有意进一步加强与哈萨克斯坦的政治对话。在我看来，这背后体现的是一个更为广泛的趋势。哈萨克斯坦正逐渐成为对华盛顿具有独立战略意义的国家。美国的中亚政策也日益具体，并越来越围绕经济和战略利益展开。”她说。
+阿穆尔塔耶娃指出，特朗普在贺信中使用“扩大版战略伙伴关系”这一表述同样值得关注。如今，这一概念已经拥有越来越丰富的务实合作内容。
+2025年11月，托卡耶夫与特朗普在华盛顿会晤后，哈美双方在工业、能源、数字化、教育和创新等领域签署29份文件，总金额约170亿美元。2026年，双方继续围绕关键矿产、物流、人工智能以及新的投资项目开展对话。
+“新的合作方向之一，是在阿斯塔纳举行的C5+1关键矿产对话。这本身就说明双边议程正在发生质的变化。经济合作越来越多地与技术竞争、供应链韧性以及经济安全问题联系在一起。在这一背景下，哈萨克斯坦正在成为美国在未来重要性将进一步上升的领域中具有吸引力的合作伙伴。”阿穆尔塔耶娃说。
+专家认为，哈美关系中的领导人个人互动同样值得关注。
+她指出，特朗普在贺信中表示，希望继续发展其“两届总统任期内”与托卡耶夫建立起来的关系，并称哈萨克斯坦总统是一位“坚毅而勇敢的领导人”。
+“考虑到个人因素历来在特朗普的政治风格中占据重要位置，这样的评价表明，两国领导层之间具有较高水平的政治互信，也反映出双方有意继续保持国家元首之间的直接联系。”她说。
+阿穆尔塔耶娃指出，托卡耶夫在特朗普首个总统任期内就已与其开展互动，特朗普重返白宫后，双方联系继续保持。
+2026年7月，两国总统举行电话会谈，就政治和经济合作以及此前达成协议的落实情况交换意见。当时，托卡耶夫邀请特朗普访问哈萨克斯坦。此次特朗普贺信转交后，托卡耶夫再次确认了这一邀请。
+专家认为，另一个值得注意的因素是，美国对哈萨克斯坦的关注正在阿斯塔纳同步发展与中国、俄罗斯、欧盟以及其他重要国际力量关系的背景下不断增强。
+在她看来，这也反映出哈萨克斯坦多元平衡外交政策的内涵正在发生一定变化。经过多年积累，多元平衡外交已经成为哈萨克斯坦重要的外交资本。哈萨克斯坦在同时与不同力量中心开展合作的情况下，仍能够保持可预期的伙伴形象并坚持独立外交路线，这进一步提升了其对国际伙伴的重要性。
+“从这一角度看，这封贺信在金砖国家峰会期间转交同样具有象征意义。在阿斯塔纳不断拓展国际联系、深化不同机制下合作的背景下，美方仍在寻求进一步发展与哈萨克斯坦的关系。这体现了哈萨克斯坦外交模式的生命力。与不同方向建立稳定的关系网络，能够扩大国家的外交空间，并增强其在谈判中的地位。”阿穆尔塔耶娃说。
+她同时指出，这一问题还具有重要的地区层面意义。美国的中亚政策正获得越来越具体的经济内涵，C5+1机制正在得到B5+1经济议程以及关键矿产、交通运输、数字技术和人工智能等领域合作的补充。
+专家认为，凭借经济规模、投资联系以及地理位置，哈萨克斯坦在这一逐渐形成的区域合作架构中占据特殊位置。</div>
+<ul>
+<li>特朗普贺信在哈独立35周年前约三个月由特使戈尔转交托卡耶夫</li>
+<li>2025年11月哈美签署29份文件，总金额约170亿美元</li>
+<li>2026年双方围绕关键矿产、物流、人工智能等继续对话</li>
+<li>贺信在金砖峰会期间转交，凸显哈多元平衡外交生命力</li>
+<li>美国中亚政策日益具体，C5+1获B5+1经济议程补充</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">政治互信提升，哈外交空间扩大；经济合作聚焦关键矿产与AI，助哈融入高价值供应链；美中俄博弈下，哈多元平衡外交地位增强，矿产格局或向美西方倾斜。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/huijian-yuduoguorenguoren-2304f9a2/" target="_blank">金砖峰会期间 托卡耶夫与多国领导人及国际组织负责人交流</a></h3>
+<div class="item-meta">哈通社中文版 · 09/13 21:00<span class="source-link"><a href="https://cn.inform.kz/news/huijian-yuduoguorenguoren-2304f9a2/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫于9月12日抵达新德里出席第十八届金砖国家领导人会晤。峰会期间，他与俄罗斯总统普京、马来西亚总理安瓦尔、联合国秘书长古特雷斯、世卫组织总干事谭德塞、世贸组织总干事伊韦阿拉等多国领导人及国际组织负责人简短交谈，并分别与印度总理莫迪、阿布扎比王储哈立德、埃塞俄比亚总理阿比举行会谈，会见美国总统南亚和中亚事务特使戈尔。托卡耶夫在“金砖+”全体会议上阐述哈方立场，提议建立“金砖+”人工智能领域合作伙伴关系。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">峰会期间，托卡耶夫分别与俄罗斯总统弗拉基米尔·普京、马来西亚总理安瓦尔·易卜拉欣、越南总理黎明兴、布隆迪总统埃瓦里斯特·恩达伊希米耶、联合国秘书长安东尼奥·古特雷斯、世界卫生组织总干事谭德塞、世界贸易组织总干事恩戈齐·奥孔乔-伊韦阿拉以及泰国副总理西哈萨·蓬格革进行了简短交谈。
+Фото: Акорда Фото: Акорда Фото: Акорда 交流期间，各方就不同领域双边合作的发展前景，以及在国际组织和多边机制框架下进一步加强合作等问题交换了意见。
+托卡耶夫于9月12日抵达新德里，出席第十八届金砖国家领导人会晤。访问期间，总统出席“外展/金砖+”全体会议并发表讲话，围绕全球安全与大国互信、多边合作、经贸投资、交通物流、人工智能和水资源等议题阐述哈萨克斯坦立场，并提议建立“金砖+”人工智能领域合作伙伴关系。
+新德里之行期间，托卡耶夫还分别与印度总理纳伦德拉·莫迪、阿布扎比王储哈立德·本·穆罕默德·本·扎耶德·阿勒纳哈扬、埃塞俄比亚总理阿比·艾哈迈德举行会谈，并会见美国总统南亚和中亚事务特使塞尔吉奥·戈尔，就双边关系以及经贸、投资、科技等领域合作交换意见。</div>
+<ul>
+<li>托卡耶夫9月12日出席新德里第十八届金砖峰会</li>
+<li>与普京、安瓦尔、古特雷斯等多国领导人及国际组织负责人交谈</li>
+<li>与莫迪、阿布扎比王储、埃塞俄比亚总理举行双边会谈</li>
+<li>会见美国总统南亚和中亚事务特使戈尔</li>
+<li>提议建立“金砖+”人工智能领域合作伙伴关系</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈萨克斯坦多向量外交，拓展与金砖国家及国际组织合作空间；推动经贸、投资、交通物流和人工智能合作，有助于提升哈国在欧亚矿产与物流格局中的枢纽地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://www.inform.kz/ru/tokaev-vstretilsya-s-putinim-i-guterrishem-na-polyah-sammita-briks-c58fef0e" target="_blank">托卡耶夫在金砖峰会期间会见普京和古特雷斯</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/13 20:51<span class="source-link"><a href="https://www.inform.kz/ru/tokaev-vstretilsya-s-putinim-i-guterrishem-na-polyah-sammita-briks-c58fef0e" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在新德里金砖峰会期间与俄罗斯总统普京、联合国秘书长古特雷斯、马来西亚总理安瓦尔、越南总理黎明兴、布隆迪总统恩达伊施米耶、世卫组织总干事谭德塞、世贸组织总干事奥孔乔-伊韦阿拉、泰国副总理西哈萨等举行简短会晤，讨论双边合作及国际框架互动，并与印度总理莫迪会谈。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：托卡耶夫在金砖峰会期间会见普京和古特雷斯
+正文：
+在新德里举行的金砖峰会期间，国家元首卡瑟姆-若马尔特·托卡耶夫与多位世界领导人和全球机构负责人举行了一系列简短会晤，包括俄罗斯总统弗拉基米尔·普京、马来西亚总理安瓦尔·易卜拉欣、越南总理黎明兴、布隆迪总统埃瓦里斯特·恩达伊施米耶、联合国秘书长安东尼奥·古特雷斯、世界卫生组织总干事谭德塞、世界贸易组织总干事恩戈齐·奥孔乔-伊韦阿拉以及泰国副总理西哈萨·蓬克特乔。
+照片：阿克奥尔达 会谈中讨论了各领域双边合作发展前景，以及在国际框架内的互动问题。
+照片：阿克奥尔达 照片：阿克奥尔达 照片：阿克奥尔达 此外，今天国家元首还与印度总理纳伦德拉·莫迪举行了会晤。</div>
+<ul>
+<li>托卡耶夫在金砖峰会期间会见普京和古特雷斯等多国领导人</li>
+<li>会晤对象包括马来西亚、越南、布隆迪、泰国及世卫、世贸负责人</li>
+<li>讨论双边合作发展前景和国际框架内互动问题</li>
+<li>托卡耶夫还与印度总理莫迪举行单独会晤</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">哈国借金砖平台开展多边外交，平衡与俄及全球机构关系，提升国际能见度；与印度、东盟国家接触或促进经贸与矿产合作多元化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/huijingyuzi-e8124c77/" target="_blank">托卡耶夫会见莫迪：支持欧亚经济联盟与印度建立自贸区</a></h3>
+<div class="item-meta">哈通社中文版 · 09/13 20:31<span class="source-link"><a href="https://cn.inform.kz/news/huijingyuzi-e8124c77/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在第十八届金砖国家领导人会晤期间会见印度总理莫迪，双方讨论能源、数字化、教育、旅游及高科技合作。托卡耶夫表示，约600家印度资本企业在哈运营，去年约15万印度公民访哈。作为欧亚经济联盟现任主席国，哈萨克斯坦支持与印度建立自贸区谈判。莫迪邀请哈方参加明年孟买WAVES创意产业峰会，托卡耶夫邀请莫迪对哈进行国事访问。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫祝贺莫迪成功举办第十八届金砖国家领导人会晤，并高度评价此次国际性活动的组织工作。
+总统指出，印度是世界主要经济体之一，在科技领域取得显著成就，在国际舞台上具有重要影响力。
+“在您富有远见和强有力的领导下，印度正在进步与可持续发展的道路上坚定前行。”托卡耶夫说。
+托卡耶夫表示，哈印关系正在多个领域快速发展。
+“目前，哈萨克斯坦约有600家印度资本参与的企业成功运营。去年，约15万名印度公民来到哈萨克斯坦。许多印度学生正在哈萨克斯坦接受教育。此外，两国在国际组织框架内也建立了密切合作。”托卡耶夫说。
+Фото: Акорда 莫迪感谢托卡耶夫出席金砖国家峰会，并指出哈萨克斯坦总统在峰会上提出的倡议和建议具有现实意义。
+印度总理表示，印方高度重视与哈萨克斯坦建立在友谊和相互信任基础上的关系。
+会谈中，双方就双边议程中的具体问题交换意见，并讨论了进一步发展能源、数字化、教育和旅游等领域合作的途径。
+莫迪指出，两国在高科技和创意产业领域拥有巨大潜力。在这方面，阿斯塔纳枢纽（Astana Hub）与印度海得拉巴科技生态系统之间的合作具有广阔前景。
+印度总理还邀请哈萨克斯坦代表、特别是青年代表参加明年在孟买举行的WAVES创意产业峰会。
+双方还讨论了进一步发展印度与欧亚经济联盟合作的可能性。
+托卡耶夫表示，作为欧亚经济联盟现任主席国，哈萨克斯坦支持就欧亚经济联盟与印度建立自由贸易区开展谈判，并愿为推动这一进程作出努力。
+会见结束时，托卡耶夫邀请莫迪对哈萨克斯坦进行国事访问。
+此前，托卡耶夫于9月12日抵达印度新德里，出席第十八届金砖国家领导人会晤。访问期间，总统出席“外展/金砖+”全体会议并发表讲话，围绕全球安全与大国互信、多边合作、经贸投资、交通物流、人工智能和水资源等议题阐述哈萨克斯坦立场，并提议建立“金砖+”人工智能领域合作伙伴关系。
+新德里之行期间，托卡耶夫还分别会见了阿布扎比王储哈立德·本·穆罕默德·本·扎耶德·阿勒纳哈扬、美国总统南亚和中亚事务特使塞尔吉奥·戈尔以及埃塞俄比亚总理阿比·艾哈迈德，就双边关系以及经贸、投资等领域合作交换意见。</div>
+<ul>
+<li>托卡耶夫会见莫迪，支持欧亚经济联盟与印度建自贸区</li>
+<li>约600家印度资本企业在哈运营，去年15万印度公民访哈</li>
+<li>双方讨论能源、数字化、教育、旅游及高科技合作</li>
+<li>莫迪邀哈参加明年孟买WAVES创意产业峰会</li>
+<li>托卡耶夫邀请莫迪对哈萨克斯坦进行国事访问</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">推动欧亚经济联盟与印度自贸谈判，将扩大哈国出口市场并吸引印度投资；深化科技与教育合作有助于哈国经济多元化；平衡中俄影响，提升哈国在欧亚外交中的枢纽地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://www.inform.kz/ru/tokaev-priglasil-premer-ministra-indii-vkazahstan-de06fe0b" target="_blank">卡瑟姆-若马尔特·托卡耶夫邀请印度总理访问哈萨克斯坦</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/13 20:14<span class="source-link"><a href="https://www.inform.kz/ru/tokaev-priglasil-premer-ministra-indii-vkazahstan-de06fe0b" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在印度金砖峰会期间会见印度总理莫迪，祝贺峰会成功举办，并邀请莫迪对哈进行国事访问。托卡耶夫指出，约600家印度资本企业在哈运营，去年约15万印度公民访哈。双方讨论能源、数字化、教育、旅游合作，并探讨哈印技术生态系统对接及欧亚经济联盟与印度自贸区谈判。莫迪邀请哈青年参加明年孟买创意产业峰会。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：卡瑟姆-若马尔特·托卡耶夫邀请印度总理访问哈萨克斯坦
+
+正文：
+总统卡瑟姆-若马尔特·托卡耶夫祝贺总理纳伦德拉·莫迪成功举办金砖国家峰会，并指出这一大型国际活动组织得无可挑剔。
+卡瑟姆-若马尔特·托卡耶夫指出印度在世界经济中的领先地位、其在科技领域的杰出成就以及在国际舞台上的崇高威望。
+图片来源：阿克奥尔达——在您英明而强有力的领导下，国家正坚定地沿着进步和可持续发展的道路前进，总统说。
+国家元首强调，哈萨克斯坦与印度的关系在广泛领域内蓬勃发展。
+——如今，约有600家印度资本公司在哈萨克斯坦成功运营。去年，约有15万印度公民访问了我国。大量印度学生在哈萨克斯坦学习。我们还在国际组织框架内卓有成效地合作，卡瑟姆-若马尔特·托卡耶夫说。
+纳伦德拉·莫迪则感谢我国元首参加金砖国家峰会，并指出哈萨克斯坦总统的发言令人鼓舞且充满切合实际的倡议。
+图片来源：阿克奥尔达 印度总理强调，他特别重视与哈萨克斯坦的友好和信任关系。
+双方讨论了一系列具体双边议程问题，包括能源、数字化、教育和旅游领域的合作。
+据纳伦德拉·莫迪称，哈萨克斯坦和印度在高科技和创意产业方面拥有巨大潜力。在这方面，阿斯塔纳（Astana Hub）和海得拉巴（Cyberabad）技术生态系统之间的互动前景广阔。
+印度总理邀请哈萨克斯坦代表，特别是青年，参加明年在孟买举行的创意产业峰会WAVES。
+会谈中，领导人还探讨了印度与欧亚经济联盟发展合作的可能性。
+卡瑟姆-若马尔特·托卡耶夫表示，作为欧亚经济联盟轮值主席国，哈萨克斯坦欢迎欧亚经济联盟与印度建立自由贸易区的谈判进程，并准备协助推进。
+国家元首邀请印度总理对哈萨克斯坦进行国事访问。
+回顾，昨天，9月12日，卡瑟姆-若马尔特·托卡耶夫抵达印度参加金砖国家峰会。我国元首感谢总理纳伦德拉·莫迪的盛情</div>
+<ul>
+<li>托卡耶夫祝贺印度成功举办金砖峰会，邀请莫迪访哈</li>
+<li>约600家印度企业在哈运营，去年15万印度公民访哈</li>
+<li>双方讨论能源、数字化、教育、旅游及高科技合作</li>
+<li>探讨阿斯塔纳与海得拉巴技术生态对接及欧亚经济联盟印度自贸区</li>
+<li>莫迪邀请哈青年参加明年孟买创意产业峰会WAVES</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈印战略伙伴关系，推动欧亚经济联盟与印度自贸谈判，为哈能源、数字化及创意产业引入印度投资与技术，提升哈在欧亚地区的外交与经济枢纽地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://www.inform.kz/ru/pozdravlenie-trampa-tokaevu-soderzhit-politicheskiy-signal-politolog-801b34dc" target="_blank">政治学家：特朗普对托卡耶夫的祝贺包含政治信号</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/13 19:49<span class="source-link"><a href="https://www.inform.kz/ru/pozdravlenie-trampa-tokaevu-soderzhit-politicheskiy-signal-politolog-801b34dc" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>政治学家指出，特朗普致托卡耶夫的贺信包含政治信号。信函于9月12日由美国总统特别代表塞尔吉奥·戈尔在新德里递交，距12月16日还有95天。特朗普在信中高度评价扩大的战略伙伴关系，并关联其当前总统任期。托卡耶夫确认邀请特朗普访问哈萨克斯坦，并计划在2026年12月迈阿密G20峰会上讨论双边议程。专家认为，贺信事由上是礼节性的，功能上是政治性的，表明白宫希望与阿斯塔纳保持直接接触并巩固协议。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：特朗普致托卡耶夫的贺信包含政治信号——政治学家
+
+专家指出，当前哈美对话的动态已将两国关系提升至历史上最高水平之一。
+
+——信函于9月12日，即12月16日前95天，由美国总统南亚和中亚事务特别代表塞尔吉奥·戈尔在新德里与卡瑟姆-若马尔特·托卡耶夫会晤时递交。唐纳德·特朗普在信中表示“高度评价扩大的战略伙伴关系”，并将其后续工作与当前总统任期相联系。明显的政治信号显而易见。选择了高级别传递渠道，使用了哈萨克斯坦总统的个人特质，表明了继续合作的意图。单独来看，每个细节可能只是外交礼节的一部分。但它们的组合表明白宫希望与阿斯塔纳保持直接接触并巩固已开始的协议——专家指出。
+
+他提醒说，阿科尔达的官方消息中也指出，托卡耶夫总统确认邀请特朗普访问哈萨克斯坦，并期待在2026年12月于迈阿密举行的G20峰会上讨论双边议程。
+
+——因此，贺信应被评估为事由上是礼节性的，功能上是政治性的——专家说。
+
+专家还指出，唐纳德·特朗普对卡瑟姆-若马尔特·托卡耶夫使用的“强有力且果断的领导人”这一表述，符合美国总统个人化的风格。据他所说，在特朗普的外交辞令中，对国家的评价往往与其领导人的评价相关联，即能够做出决定并确保达成的协议得到执行。
+
+专家指出，类似的评价已于2025年11月6日在华盛顿举行的C5+1格式会议上出现过。当时，在回答有关可能访问哈萨克斯坦的问题时，特朗普两次称托卡耶夫为杰出总统，并允许访问的可能性。因此，专家认为，在书面信函中重复这一评价表明该路线的稳定性。
+
+专家强调，对华盛顿而言，合作伙伴的可预测性至关重要。哈萨克斯坦在紧密的经济和基础设施等复杂条件下做出决策。</div>
+<ul>
+<li>特朗普贺信由特别代表戈尔于9月12日在新德里递交托卡耶夫</li>
+<li>特朗普高度评价扩大的战略伙伴关系并关联其总统任期</li>
+<li>托卡耶夫邀请特朗普访哈，计划2026年12月G20峰会会晤</li>
+<li>专家称贺信事由礼节性、功能政治性，信号明显</li>
+<li>特朗普曾于2025年11月6日C5+1会议称托卡耶夫为杰出总统</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此信强化哈美战略伙伴关系，提升哈萨克斯坦在地区外交中的枢纽地位，有助于吸引美国投资并平衡中俄影响，同时为矿产和能源合作创造更可预测的政治环境。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://www.inform.kz/ru/tokaev-predlozhil-sozdat-partnerstvo-briks-plyus-v-sfere-ii-5d3eebc6" target="_blank">托卡耶夫提议在金砖+框架下建立人工智能领域伙伴关系</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/13 18:15<span class="source-link"><a href="https://www.inform.kz/ru/tokaev-predlozhil-sozdat-partnerstvo-briks-plyus-v-sfere-ii-5d3eebc6" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在金砖峰会提议建立人工智能领域“金砖+”伙伴关系，联合各国AI中心、开放实验室并开发多语言方案。他还建议成立国际水资源组织作为联合国专门机构，邀请金砖成员参与磋商。托卡耶夫强调多极化需有效多边主义，避免“大分裂”。2025年哈与金砖成员及伙伴贸易额约720亿美元。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：托卡耶夫提议在人工智能领域建立“金砖+”伙伴关系
+
+国家元首随后谈到了人工智能的作用，它已经在改变经济、社会和全球力量平衡。
+
+——通过将主要发展中经济体的技术能力与其规模相结合，金砖国家能够为创新、投资和可持续增长开辟新的机遇。哈萨克斯坦将人工智能视为战略优先方向，并准备利用其发达的计算基础设施以及联合国国家和数字中心，以扩大“金砖+”模式下的有效协作。作为具体步骤，我提议启动人工智能领域的“金砖+”伙伴关系，以联合各国人工智能中心，提供实验室和科学项目的准入，并开发多语言解决方案，——总统强调。
+
+图片：Akorda 卡瑟姆-若马尔特·托卡耶夫还强调，可持续性不仅需要技术进步。
+
+——我想谈谈对我们所有人都具有根本意义的水资源问题。在全球范围内，水资源管理仍然分散。在这方面，我们提议建立一个国际水资源组织，作为联合国专门机构，以确保全球努力更加协调一致，并加强国家间协调。我邀请金砖国家成员国和伙伴加入我国发起的国际磋商，——国家元首指出。
+
+图片：Akorda 在讲话最后，哈萨克斯坦总统表示，没有有效多边主义的多极化必然会使“大分裂”对人类更加危险。他认为，因此哈萨克斯坦主张基于主权平等、利益平衡和共同责任的多极化。
+
+卡瑟姆-若马尔特·托卡耶夫表示相信，新德里峰会将通过务实合作和共同进步促进这一愿景的推进。
+
+国家元首还通报，2025年哈萨克斯坦与金砖国家成员国和伙伴的贸易额达到约720亿美元。</div>
+<ul>
+<li>托卡耶夫提议建AI领域“金砖+”伙伴关系</li>
+<li>倡议成立国际水资源组织作为联合国机构</li>
+<li>强调多极化需有效多边主义避免大分裂</li>
+<li>2025年哈与金砖贸易额达约720亿美元</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该提议提升哈萨克斯坦在金砖框架内的科技与外交话语权，推动AI和水利领域多边合作，强化其作为中间力量的角色，同时深化与金砖国家经济联系，贸易额已达720亿美元，有助于平衡外交格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">10</span> <a href="https://www.inform.kz/ru/tovarooborot-kazahstana-sostranami-briks-dostig-72mlrd-tokaev-ae1e22ab" target="_blank">托卡耶夫：哈萨克斯坦与金砖国家贸易额达720亿美元</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/13 18:13<span class="source-link"><a href="https://www.inform.kz/ru/tovarooborot-kazahstana-sostranami-briks-dostig-72mlrd-tokaev-ae1e22ab" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫表示，哈萨克斯坦与金砖国家贸易额已达720亿美元，计划多元化贸易投资联系。作为欧亚经济联盟主席国，哈主张扩大与金砖合作，推动与印度签署自贸协定。哈去年过境货运量近4000万吨，目标提升至每年1亿吨，其过境网络已保障中欧85%陆路货运。哈欢迎印度提出的金砖物流合作框架，并建议新开发银行考虑为金砖国家商业可行项目融资。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">——拥有显著的工业、过境和技术潜力，我们打算与所有金砖国家实现贸易经济和投资联系的多元化。作为欧亚经济联盟主席国，哈萨克斯坦主张扩大与金砖国家的经济合作，并推动与印度签署自由贸易协定的工作。作为关键原材料的可靠供应国，我国为保障全球供应安全作出贡献。我们看到在能源深加工、关键矿产和农业领域发展伙伴关系的巨大机遇，特别关注技术转让、知识交流和联合投资。此外，我们拥有共同实施大规模基础设施项目的巨大潜力，包括具有国际意义的项目。新开发银行可以考虑为所有金砖国家，包括哈萨克斯坦的商业可行项目提供融资的可能性，——我国元首指出。
+哈萨克斯坦总统认为，加强交通互联互通将释放这一潜力并推动共同经济增长。
+——作为欧亚大陆关键的过境物流中心之一，哈萨克斯坦致力于通过发展铁路网络、港口和数字基础设施来加速并提高跨境运输的可预测性。去年，通过哈萨克斯坦的过境货运量接近4000万吨。我们的长期目标是将这一指标提升至每年1亿吨。总体而言，我们的过境网络已保障了中国与欧洲之间高达85%的陆路货运。在跨里海国际运输路线框架内，哈萨克斯坦通过里海充当亚洲与欧洲之间的纽带。这一重要运输路线与“一带一路”倡议及“南北”国际运输走廊的进一步协同，将形成更加一体化和可持续的欧亚交通网络。在这方面，我欢迎印度提出的金砖国家物流与供应链合作框架，因为它可以促进“金砖+”框架内的务实合作，——卡瑟姆-若马尔特·托卡耶夫说。
+哈萨克斯坦总统还表示——</div>
+<ul>
+<li>哈与金砖国家贸易额达720亿美元</li>
+<li>哈推动与印度签署自由贸易协定</li>
+<li>去年过境货运近4000万吨，目标1亿吨</li>
+<li>哈过境网络保障中欧85%陆路货运</li>
+<li>欢迎印度金砖物流合作框架</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">深化与金砖合作有助于哈国拓展贸易投资渠道，提升过境运输枢纽地位，增强关键矿产和能源领域外资与技术引入，同时平衡多边外交，巩固其在欧亚经济与物流格局中的战略作用。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">11</span> <a href="https://cn.inform.kz/news/chuhui-rengongnengzuoguan-af5685aa/" target="_blank">托卡耶夫出席“金砖+”峰会：呼吁重建大国互信 倡议加强人工智能合作</a></h3>
+<div class="item-meta">哈通社中文版 · 09/13 18:11<span class="source-link"><a href="https://cn.inform.kz/news/chuhui-rengongnengzuoguan-af5685aa/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在“金砖+”峰会发表讲话，呼吁重建大国互信，加强人工智能合作。他指出金砖机制覆盖全球近半人口，经济总量占全球GDP约40%，但大国互信缺失制约其潜力。2025年哈与金砖国家贸易额近720亿美元，哈方愿推动经贸多元化，支持欧亚经济联盟与金砖合作及与印度签署自贸协定，并强调在能源、关键矿产和农产品深加工领域合作空间广阔。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">本次会议主题为“加强韧性、创新、合作与稳定”。
+托卡耶夫首先感谢印度总理纳伦德拉·莫迪的热情接待以及为高水平举办金砖国家峰会所作的工作。
+“我们的会议在展现印度独特而丰富文化遗产的新德里举行，本身就具有象征意义。当前，以‘人类至上’为原则、以各国人民利益为导向的议程尤为重要。恰逢金砖合作机制成立20周年，印度担任主席国为这一方向注入了新的动力。”托卡耶夫说。
+托卡耶夫指出，金砖合作机制覆盖全球近一半人口，经济总量约占世界国内生产总值的40%，具有巨大潜力。与此同时，金砖国家也肩负着减少分歧、推动取得实际成果的重要责任。
+“然而，如果国际社会无法解决面临的根本性问题，无法恢复主要大国之间的信任，金砖合作机制的潜力就无法得到充分释放。这一点在2026年发布的全球和平指数中得到清晰体现。在地缘政治冲突加剧、军事化程度上升、多边机构弱化以及贸易壁垒增加的背景下，出现了‘大分裂’这一概念。去年，冲突给全球经济造成约22万亿美元损失，相当于全球国内生产总值的10%。这是令人担忧的局面。我们正在看到，地区冲突造成的影响已不再局限于冲突各方，而是开始冲击全球经济。重要海上航线受阻，充分暴露出全球能源、粮食和贸易供应链的脆弱性。”托卡耶夫说。
+总统还将跨境基础设施面临的风险不断增加列为另一项严峻挑战。
+他指出，正因如此，和平与战略稳定是实现经济发展和可持续发展的必要前提，而这一问题的意义已经超出经济领域本身。
+“应当通过政治对话和持续外交努力，优先缓解地区紧张局势并建立长期稳定。从更广泛的角度看，国际安全架构遭到破坏以及长期冲突持续存在，将加剧新一轮军备竞赛、战略误判和错误决策的风险。因此，为降低核领域以及新技术带来的相关风险，核武器国家之间开展高级别对话十分必要。”托卡耶夫说。
+托卡耶夫认为，主要大国之间互信水平下降，也限制了联合国有效发挥作用的能力。
+“但是，联合国无可替代。改革应当增强联合国预防冲突和作出集体决策的能力。《联合国宪章》必须得到严格遵守，不能任由各方按照自身需要加以解释。在改革联合国安理会时，应充分考虑当今世界现实，确保亚洲、非洲和拉丁美洲国家拥有代表席位。发展中的中等强国也应当在全球决策中发挥更加重要的作用，因为它们能够促进对话，帮助克服地缘政治矛盾和分歧。”总统说。
+托卡耶夫表示，作为金砖伙伴国，哈萨克斯坦将金砖合作机制视为开展务实合作的开放平台。这一平台能够补充联合国在多边体系中的主导作用，并进一步连接不同国家、地区和市场。
+“为每一个复杂问题寻找解决方案，是我们坚定不移的立场。这符合哈萨克斯坦奉行的平衡、务实并以实际成果为导向的外交政策，即致力于同所有伙伴发展互利合作。”他说。
+谈及经贸合作时，托卡耶夫指出，2025年哈萨克斯坦与金砖成员国和伙伴国的贸易额接近720亿美元。
+“我们有意进一步推动与所有金砖国家经贸和投资关系多元化。哈萨克斯坦拥有实现这一目标所需要的工业、过境运输和技术潜力。作为欧亚经济联盟现任主席国，哈萨克斯坦支持扩大欧亚经济联盟与金砖国家之间的经济合作，并支持与印度签署自由贸易协定。”托卡耶夫说。
+总统表示，作为关键原材料的可靠供应伙伴，哈萨克斯坦正在为保障全球供应链安全作出贡献。双方在能源、关键矿产和农产品深加工领域具有广阔合作空间，应特别重视技术和知识交流以及共同投资。</div>
+<ul>
+<li>托卡耶夫呼吁重建大国互信，推动政治对话缓解地区紧张</li>
+<li>金砖覆盖全球近半人口，经济总量占全球GDP约40%</li>
+<li>2025年哈与金砖国家贸易额接近720亿美元</li>
+<li>哈支持欧亚经济联盟与金砖合作及与印度签署自贸协定</li>
+<li>哈愿在能源、关键矿产和农产品深加工领域加强合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">托卡耶夫借金砖平台强化平衡外交，提升哈作为中等强国和关键矿产供应国的地位。深化与金砖经贸合作有助于哈经济多元化，但需在大国博弈中谨慎维护多边平衡，避免过度依赖单一方向。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">12</span> <a href="https://www.inform.kz/ru/tokaev-zayavil-o-neobhodimosti-vosstanovit-doverie-mezhdu-vedushimi-derzhavami-297ba7e6" target="_blank">哈萨克斯坦总统表示必须恢复大国间信任</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/13 18:05<span class="source-link"><a href="https://www.inform.kz/ru/tokaev-zayavil-o-neobhodimosti-vosstanovit-doverie-mezhdu-vedushimi-derzhavami-297ba7e6" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在金砖国家峰会上表示，金砖国家代表世界近半人口和40%全球GDP，但若不解决根本问题并恢复主要大国间信任，就无法充分实现潜力。他援引2026年全球和平指数提出的“大分裂”概念，指出地缘政治对抗、军事化加剧和多边机构削弱等趋势。去年暴力造成的全球经济损害近22万亿美元，占全球GDP的10%，地区冲突严重冲击世界经济，海上航线中断暴露了全球能源、粮食和贸易链的脆弱性。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦总统表示必须恢复主要大国之间的信任
+
+正文：
+我国元首感谢总理纳伦德拉·莫迪的热情接待和出色组织金砖国家峰会。
+
+图片：阿克奥尔达——具有象征意义的是，我们的会晤在新德里举行——这座城体现了印度独特而丰富的文化遗产。在金砖国家合作20周年之际，印度担任主席国为以人民利益为导向、以“人类至上”原则为基础的紧迫议程注入了特殊动力，——哈萨克斯坦总统表示。
+
+正如卡瑟姆-若马尔特·托卡耶夫所强调的，金砖国家代表着世界近一半人口和全球40%的GDP，不仅拥有巨大机遇，也肩负着克服分裂、取得具体成果的责任。
+
+——然而，如果不解决国际社会面临的根本问题，不恢复主要大国之间的信任水平，就不可能充分实现这一潜力。这一趋势反映在2026年发布的全球和平指数中，该指数使用了“大分裂”这一概念——地缘政治对抗、军事化加剧、多边机构削弱和贸易壁垒加强的时代。去年，暴力造成的全球经济损害达到近22万亿美元，占全球GDP的10%。这是一个令人警惕的信号。我们看到，地区冲突远远超出直接对抗区域，对世界经济产生严重影响。重要海上航线的中断暴露了全球能源、粮食和贸易链的脆弱性，——国家元首指出。</div>
+<ul>
+<li>托卡耶夫感谢莫迪组织金砖峰会，称新德里会晤具象征意义</li>
+<li>金砖国家代表世界近半人口和40%全球GDP，责任重大</li>
+<li>托卡耶夫呼吁恢复主要大国间信任，解决根本问题</li>
+<li>2026年全球和平指数提出“大分裂”概念，警示地缘对抗</li>
+<li>去年暴力致全球经济损害近22万亿美元，占全球GDP10%</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国而言，此表态强化其多向量外交定位，借金砖平台提升国际话语权；同时警示地缘分裂对哈国经济与贸易链的冲击，推动其加强区域合作与运输通道多元化，维护能源和粮食安全。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">13</span> <a href="https://www.inform.kz/ru/prezident-kazahstana-prizval-yadernie-derzhavi-k-dialogu-na-visokom-urovne-e4a3c26d" target="_blank">卡瑟姆-若马尔特·托卡耶夫呼吁核大国进行高层对话</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/13 18:02<span class="source-link"><a href="https://www.inform.kz/ru/prezident-kazahstana-prizval-yadernie-derzhavi-k-dialogu-na-visokom-urovne-e4a3c26d" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在讲话中呼吁核大国进行高级别对话以降低核风险，包括新技术相关风险。他指出国际安全架构侵蚀和长期冲突增加军备竞赛风险，强调和平与战略稳定是可持续发展的必要条件。托卡耶夫认为大国间信任下降限制联合国效能，但联合国无可替代，应改革安理会以公平代表亚非拉，并让中等强国拥有更大发言权。他还表示哈萨克斯坦将金砖国家视为补充联合国体系的实际合作平台。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：卡瑟姆-若马尔特·托卡耶夫呼吁核大国进行高级别对话
+
+正文：
+哈萨克斯坦总统将跨境基础设施日益增长的威胁称为另一严重问题。
+
+——因此，和平与战略稳定是经济和可持续发展的必要条件。然而，这远不止关乎经济。优先事项应是通过政治对话和持续外交，从地区紧张局势降级转向长期稳定。在更广泛的背景下，国际安全架构的侵蚀和旷日持久的冲突增加了新一轮军备竞赛以及战略误判和错误决策的风险。因此，核大国之间迫切需要进行高级别对话，以降低核风险，包括与新技术相关的风险，——卡瑟姆-若马尔特·托卡耶夫表示。
+
+图片：阿克奥尔达 国家元首认为，主要大国之间信任水平的下降限制了联合国有效行动的能力。
+
+图片：阿克奥尔达 ——然而，联合国无可替代。改革应加强其在预防冲突和采取集体决策方面的潜力。《联合国宪章》应得到一贯遵守，而非选择性遵守。安全理事会的改革应反映当代现实，并确保亚洲、非洲和拉丁美洲的公平代表性。发展中的中等强国也应在全球决策中拥有更大的发言权，因为它们能够支持对话并促进克服地缘政治分歧和矛盾。作为伙伴国，哈萨克斯坦将金砖国家视为一个开放的实际合作平台，它补充了以联合国为核心的多边体系，并连接了人民、地区和市場。我们不变的原则是在每个复杂问题上寻求共同点。这一方针反映了我们平衡、以具体目标为导向的外交政策，其基础是寻求与所有伙伴的互利合作，——总统强调。</div>
+<ul>
+<li>托卡耶夫呼吁核大国高级别对话降低核风险</li>
+<li>国际安全架构侵蚀增加军备竞赛风险</li>
+<li>联合国无可替代但需改革安理会代表性</li>
+<li>中等强国应在全球决策中拥有更大发言权</li>
+<li>哈萨克斯坦视金砖国家为补充性合作平台</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该表态强化哈萨克斯坦作为中等强国在核不扩散与多边外交中的调解者角色，有助于提升其国际话语权；同时平衡与俄罗斯、西方及金砖国家关系，维护外交多元性，对哈国政治稳定与经济合作环境产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">14</span> <a href="https://www.inform.kz/ru/prezident-kazahstana-vistupil-na-plenarnom-zasedanii-briks-plyus-352dca50" target="_blank">哈萨克斯坦总统在金砖+全会上发表讲话</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/13 18:01<span class="source-link"><a href="https://www.inform.kz/ru/prezident-kazahstana-vistupil-na-plenarnom-zasedanii-briks-plyus-352dca50" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在印度举行的金砖国家峰会“金砖+”全体会议上发表讲话，主题为“加强韧性、创新、合作与稳定”。托卡耶夫于前一日抵达印度出席峰会。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦总统在“金砖+”全体会议上发表讲话
+
+国家元首在金砖国家“外联”/“金砖+”全体会议上发表讲话，主题为：“加强韧性、创新、合作与稳定”。
+
+回顾，昨日卡瑟姆-若马尔特·托卡耶夫抵达印度出席金砖国家峰会。</div>
+<ul>
+<li>托卡耶夫在印度金砖峰会“金砖+”全会发言</li>
+<li>讲话主题聚焦韧性、创新、合作与稳定</li>
+<li>托卡耶夫前一日抵达印度出席峰会</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">哈萨克斯坦参与金砖+机制，有助于拓展与新兴经济体合作，平衡多边外交，提升在中亚地缘政治中的话语权，并促进经贸与矿产领域合作机会。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">15</span> <a href="https://www.inform.kz/ru/svoya-igra-v-usloviyah-globalnoy-nestabilnosti-politolog-erkin-baydarov-o-diplom-3a71374d" target="_blank">哈萨克斯坦在新德里：金砖、多向量外交与哈印关系新动力</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/13 16:03<span class="source-link"><a href="https://www.inform.kz/ru/svoya-igra-v-usloviyah-globalnoy-nestabilnosti-politolog-erkin-baydarov-o-diplom-3a71374d" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫访问新德里，出席金砖国家峰会并与印度领导人会谈，同时会见美国、阿联酋代表。哈方利用一次访问推进多方向合作，旨在扩大伙伴选择、资本与技术来源，降低对单一外部参与者的依赖。访问为哈印关系注入新动力，涵盖贸易、投资、工业合作、技术和交通互联互通。专家指出，多向量外交需政治接触在政府和公司层面持续跟进。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦在新德里：金砖国家、多向量外交与对印关系新动力
+
+正文：
+此次访问的密集程度体现了哈萨克斯坦外交政策的特征。在同一平台上，阿斯塔纳同时与不同影响力中心的代表保持对话，发展同金砖国家的互动，并推进与印度——世界最大国家之一和增长最快的经济中心之一——的双边议程。
+
+印度方向本身也具有特殊意义。经过长期中断后，哈萨克斯坦与印度的最高层接触获得了新动力的可能，而且不仅涉及政治对话，还涉及贸易、投资、工业合作、技术和交通互联互通。
+
+参与金砖国家能给哈萨克斯坦带来什么？为什么托卡耶夫在该平台上同时会见美国和阿联酋代表？此次访问为对印关系开辟了哪些前景？我们就此与哈萨克斯坦总统战略研究所亚洲研究室主任、国际关系学博士艾达尔·库尔马舍夫进行了交谈。
+
+——艾达尔，总统的行程安排非常密集：在金砖国家峰会上发表讲话，与印度领导人谈判，同时与美国、阿联酋等国代表举行单独会晤。您如何总体评价此次访问的意义？它说明了哈萨克斯坦当前的外交定位是什么？
+
+——哈萨克斯坦利用一次国际访问推进多个合作方向。合作伙伴属于某个特定组织并不能涵盖我们与其关系的全部内容。哈萨克斯坦在托卡耶夫总统的领导下，基于自身的政治和经济任务来构建这些关系。
+
+这种做法的实际意义在于扩大合作伙伴、资本来源和技术来源的选择。当合作在多个方向展开时，国家就有更多机会比较项目条件，减少对某一个外部参与者决定的依赖。同时，多向量外交需要持续努力：政治接触必须在政府和公司层面得到延续。
+
+——哈萨克斯坦不是金砖国家成员，然而卡西姆-若马</div>
+<ul>
+<li>托卡耶夫访印出席金砖峰会，同时会见美阿代表</li>
+<li>哈萨克斯坦利用一次访问推进多方向合作</li>
+<li>多向量外交旨在扩大伙伴、资本和技术选择</li>
+<li>访问为哈印关系注入新动力，涵盖多领域</li>
+<li>专家强调政治接触需在政府和公司层面延续</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国政治经济外交矿产格局的影响：此访强化哈萨克斯坦多向量外交，提升其作为欧亚枢纽的调解地位；深化对印贸易投资合作，有助出口多元化和吸引技术资本；同时平衡中俄美等影响力，为矿产和交通项目引入更多合作伙伴，降低单一依赖风险。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">16</span> <a href="https://cn.inform.kz/news/zailihuili-013a083b/" target="_blank">托卡耶夫在新德里会见埃塞俄比亚总理阿比·艾哈迈德</a></h3>
+<div class="item-meta">哈通社中文版 · 09/13 15:51<span class="source-link"><a href="https://cn.inform.kz/news/zailihuili-013a083b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在新德里会见埃塞俄比亚总理阿比·艾哈迈德，表示哈高度重视对埃关系，双方商定互派代表团，研究在哈建立埃塞俄比亚茶叶、咖啡及花卉产品供应枢纽的前景。阿比祝贺哈成功举行库鲁尔泰选举，并考虑在哈设立大使馆。托卡耶夫邀请阿比正式访哈。此前，托卡耶夫于9月12日抵达新德里出席第十八届金砖国家领导人会晤，并会见阿布扎比王储和美国特使。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫在新德里会见埃塞俄比亚总理阿比·艾哈迈德
+正文:
+托卡耶夫表示，哈萨克斯坦高度重视与埃塞俄比亚的关系。
+“我们对贵国怀有高度敬意。哈萨克斯坦常驻亚的斯亚贝巴大使馆是我国在非洲大陆设立的首批外交代表机构之一。此外，哈萨克斯坦还是非洲联盟观察员国。因此，我们对非洲的兴趣是明确而持久的，尤其重视与埃塞俄比亚的关系。我想强调，我们有意进一步加强两国关系。”托卡耶夫说。
+托卡耶夫认为，通过扩大双边贸易规模，两国在进一步促进商业合作方面拥有巨大潜力。
+Фото: Ақорда 会谈期间，双方商定互派代表团，以进一步了解彼此的经贸和投资潜力，并研究在哈萨克斯坦建立埃塞俄比亚茶叶、咖啡及花卉产品供应枢纽的前景。
+阿比·艾哈迈德祝贺托卡耶夫成功举行哈萨克斯坦共和国库鲁尔泰选举，并指出两国之间保持着高度相互理解和建设性合作。
+“埃塞俄比亚同样致力于提高人民福祉、增强国家制度能力。在这方面，我们愿借鉴哈萨克斯坦等友好国家的先进经验。正如您所指出的，哈萨克斯坦在埃塞俄比亚设有大使馆。我们也将考虑在哈萨克斯坦设立大使馆的可能性。这无疑将有助于进一步加强两国关系。”阿比·艾哈迈德说。
+会见结束时，托卡耶夫邀请阿比·艾哈迈德对哈萨克斯坦进行正式访问。
+Фото: Акорда 此前，托卡耶夫于9月12日抵达新德里，出席第十八届金砖国家领导人会晤。当天，托卡耶夫还分别会见了阿布扎比王储哈立德·本·穆罕默德·本·扎耶德·阿勒纳哈扬和美国总统南亚和中亚事务特使塞尔吉奥·戈尔，就双边合作及共同关心的议题交换意见。</div>
+<ul>
+<li>托卡耶夫在新德里会见埃塞俄比亚总理阿比·艾哈迈德</li>
+<li>双方商定互派代表团，研究在哈建立埃塞俄比亚茶叶、咖啡及花卉供应枢纽</li>
+<li>阿比祝贺哈库鲁尔泰选举成功，考虑在哈设立大使馆</li>
+<li>托卡耶夫邀请阿比正式访问哈萨克斯坦</li>
+<li>托卡耶夫9月12日抵新德里出席第十八届金砖国家领导人会晤</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈对非外交，拓展经贸合作，推动哈成为埃塞俄比亚农产品供应枢纽，提升哈在非洲经济存在感，同时借金砖平台平衡外交，对哈政治外交多元化及矿产格局无直接冲击。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">17</span> <a href="https://www.inform.kz/ru/prezident-kazahstana-vstretilsya-s-premer-ministrom-efiopii-abiy-ahmedom-69ac89fa" target="_blank">托卡耶夫与埃塞俄比亚总理讨论发展经贸合作</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/13 15:45<span class="source-link"><a href="https://www.inform.kz/ru/prezident-kazahstana-vstretilsya-s-premer-ministrom-efiopii-abiy-ahmedom-69ac89fa" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与埃塞俄比亚总理阿比·艾哈迈德举行会谈，讨论扩大政治对话、激活经贸和投资合作。托卡耶夫表示哈驻亚的斯亚贝巴使馆是哈在非洲最早的外交机构之一，哈以观察员身份参与非盟。双方商定互派代表团考察贸易投资潜力，研究在哈建立埃塞俄比亚茶叶、咖啡和花卉产品供应枢纽。阿比祝贺哈议会选举成功，并表示考虑在哈开设使馆。托卡耶夫邀请阿比正式访哈。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：托卡耶夫与埃塞俄比亚总理讨论发展经贸合作
+
+正文：
+会谈期间，双方讨论了双边关系发展前景，包括扩大政治对话、激活贸易经济和投资互动。
+
+——我们非常尊重贵国。我们在亚的斯亚贝巴常设的大使馆是哈萨克斯坦在非洲大陆最早的外交代表机构之一。此外，哈萨克斯坦作为观察员国参与非洲联盟。因此，我们对非洲的兴趣是完全明显且稳定的。我想强调我们对贵国的一贯兴趣，以及我们发展和加强同埃塞俄比亚关系的意愿，——卡瑟姆-若马尔特·托卡耶夫说。
+
+据总统称，现有扩大相互贸易的巨大潜力使得可以激活商业伙伴关系。
+
+双方商定派遣两国代表团相互了解贸易经济和投资潜力，并研究在哈萨克斯坦建立埃塞俄比亚茶叶、咖啡和花卉产品供应枢纽的前景。
+
+此外，阿比·艾哈迈德祝贺卡瑟姆-若马尔特·托卡耶夫成功举行哈萨克斯坦共和国议会选举，并指出两国之间高度相互理解和建设性互动。
+
+——埃塞俄比亚也致力于提高公民福祉和加强国家机构潜力。在这方面，我们继续借鉴先进经验，包括向哈萨克斯坦这样的友好国家学习。正如您所指出的，哈萨克斯坦已经在我国设有大使馆。我们也将考虑在贵国开设我国大使馆的可能性。相信这将促进加强和扩大我们的关系，——埃塞俄比亚政府首脑强调。
+
+最后，国家元首邀请埃塞俄比亚总理对哈萨克斯坦进行正式访问。</div>
+<ul>
+<li>托卡耶夫与埃塞俄比亚总理讨论扩大政治对话和经贸投资合作</li>
+<li>哈驻亚的斯亚贝巴使馆是哈在非洲最早外交机构之一</li>
+<li>双方商定互派代表团，研究在哈建立埃塞俄比亚产品供应枢纽</li>
+<li>埃塞俄比亚考虑在哈萨克斯坦开设大使馆</li>
+<li>托卡耶夫邀请埃塞俄比亚总理正式访问哈萨克斯坦</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访拓展哈国非洲外交布局，强化非盟观察员地位；推动茶叶、咖啡、花卉进口枢纽建设，丰富哈国消费市场与转口贸易潜力；为哈国在矿产之外开辟农业合作新方向，提升在中亚与非洲间的经济纽带作用。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">18</span> <a href="https://cn.inform.kz/news/jiazhengfa-9502c26b/" target="_blank">布鲁塞尔专家探讨哈萨克斯坦政治发展新阶段</a></h3>
+<div class="item-meta">哈通社中文版 · 09/13 15:33<span class="source-link"><a href="https://cn.inform.kz/news/jiazhengfa-9502c26b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦驻比利时大使馆举行“哈萨克斯坦政治新时代：宪法改革付诸实践”会议，比利时王室、欧盟机构、欧洲投资银行等代表出席。哈驻欧盟和北约代表团团长瓦西连科介绍宪法改革成果，强调组建哈萨克斯坦人民理事会的重要意义。会议讨论数字化、人工智能、基础设施等经济科技现代化议题，以及深化与欧盟合作前景。欧洲媒体人士高度评价首次库鲁尔泰选举和“Shanyraq Dialogues”平台，认为新一院制库鲁尔泰推动政治现代化。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">本次会议主题为“哈萨克斯坦政治新时代：宪法改革付诸实践”。
+会议在哈萨克斯坦驻比利时大使馆举行，来自比利时王室、欧盟主要机构、欧洲投资银行的代表，以及外交使团成员、专家和工商界、媒体界人士出席。
+与会者围绕新宪政模式实施的初步成果、政治制度革新以及国家未来政治发展前景进行了讨论。
+Photo credit: mfa.kz 哈萨克斯坦驻比利时和卢森堡大使、驻欧盟和北约代表团团长罗曼·瓦西连科在致辞中介绍了宪法改革取得的主要成果。
+他指出，哈萨克斯坦已经进入改革付诸实践的新阶段，相关改革旨在加强国家机构、促进社会对话并提高国家治理效能。
+瓦西连科同时强调了未来组建哈萨克斯坦人民理事会的重要意义。他表示，这一机构将成为开展广泛社会对话、推动社会不同群体参与国家议程制定的又一平台。
+会议还重点讨论了哈萨克斯坦经济和科技现代化进程，包括数字化、人工智能发展以及基础设施和人力资本建设等议题。
+谈及改革的国际层面，瓦西连科表示，哈萨克斯坦始终坚持主权、对话、和平与互利合作原则。与会者还就进一步深化与国际伙伴、包括欧盟的合作前景交换了意见。
+欧洲媒体EUalive总编辑格奥尔基·戈捷夫介绍了其近期访问哈萨克斯坦的情况，其中包括首次库鲁尔泰选举期间的访问。他认为，此次选举是哈萨克斯坦政治发展进程中的一个重要阶段。
+戈捷夫同时高度评价“Shanyraq Dialogues”平台，认为这一非正式对话机制进一步丰富了哈萨克斯坦与欧盟及比利时快速发展的关系。
+《Diplomatic World》项目总监阿尔贝托·蒂尔克斯特拉将当前阶段称为哈萨克斯坦政治和制度发展中的转折时期。
+他认为，当前的关键问题已经不仅在于宪法改革本身的内容，更在于新机构如何在实践中运行，以及围绕这些机构将形成怎样的政治文化。
+蒂尔克斯特拉特别谈到新的一院制库鲁尔泰在推动政治现代化和提高决策效率方面的作用。他认为，相关改革体现出哈萨克斯坦推动国家机构适应国家发展新阶段，并更加重视问责、公民参与和制度平衡的努力。
+在问答环节，与会者围绕宪法改革、营商和投资环境发展，以及哈萨克斯坦与欧盟和比利时的合作前景进行了讨论。
+作为新的宪政机构，哈萨克斯坦人民理事会的组建问题受到与会者特别关注。会议还探讨了在与欧洲伙伴合作框架下，进一步拓展经贸、投资及其他具有发展潜力领域合作的可能性。</div>
+<ul>
+<li>布鲁塞尔会议探讨哈萨克斯坦宪法改革实践</li>
+<li>瓦西连科强调组建人民理事会促进社会对话</li>
+<li>会议聚焦数字化、人工智能等经济科技现代化</li>
+<li>欧洲专家肯定首次库鲁尔泰选举和对话平台</li>
+<li>与会者关注深化哈萨克斯坦与欧盟合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">会议提升哈萨克斯坦国际形象，展示政治改革成果，有助于吸引欧盟投资和技术合作，推动经济现代化。同时，强调主权与对话原则，巩固多元外交，为矿产等领域合作创造更有利外部环境。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">19</span> <a href="https://www.inform.kz/ru/yaponiya-provedet-perestanovki-v-pravitelstve-17-sentyabrya-3ae300f6" target="_blank">日本将进行政府改组</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/13 14:54<span class="source-link"><a href="https://www.inform.kz/ru/yaponiya-provedet-perestanovki-v-pravitelstve-17-sentyabrya-3ae300f6" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>日本将进行政府人事调整，古川俊治可能首次入阁，村井英树或任自民党议会事务委员会主席。自民党干事长铃木俊一等现任领导预计留任，铃木是麻生太郎妹夫，麻生在2025年助高市早苗当选党首和首相。高市拟让2025年竞选对手小泉进次郎、茂木敏充、林芳正、小林鹰之留任高层，但此举可能束缚对手，甚至导致高市在2027年无替代候选人情况下连任。9月13日瑞典举行议会选举。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：日本将进行政府人事调整
+
+正文：
+据最新消息，古川俊治可能首次进入政府任职。在自民党内部，村井英树可能出任议会事务委员会主席。
+
+预计许多现任领导人将留任，包括自民党干事长铃木俊一，他在党的实际运营中发挥关键作用。他是自民党内极具影响力的麻生太郎的妹夫，麻生太郎在2025年积极推动高市早苗当选党首和首相。在2027年的选举中，高市早苗仍需要他的支持。
+
+据此前报道，高市早苗打算让其在2025年上次选举中的竞争对手保留高层职位。其中包括防卫大臣小泉进次郎、外务大臣茂木敏充、总务大臣林芳正以及自民党政调会长小林鹰之。他们有能力在2027年对现任首相构成强劲竞争。然而，据认为，将竞争对手保留在领导层结构中可能会束缚他们的行动，甚至导致高市早苗在无替代候选人的情况下再次当选。
+
+值得一提的是，今天，9月13日，瑞典人将选举新一届议会。</div>
+<ul>
+<li>日本将调整政府及自民党高层人事</li>
+<li>古川俊治或首次入阁，村井英树拟任要职</li>
+<li>铃木俊一等现任领导预计留任</li>
+<li>高市早苗拟保留2025年竞选对手高层职位</li>
+<li>9月13日瑞典举行新一届议会选举</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国影响有限。日本政局稳定利于双边经济外交合作，但高市若连任，日哈在矿产、能源领域合作或延续现有框架，哈方需关注日本对中亚外交政策连续性。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/kursi-valyut-v-obmennikah-astani-i-almati-na-13-sentyabrya-e0121b46" target="_blank">9月13日阿斯塔纳和阿拉木图兑换点汇率</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/13 13:12<span class="source-link"><a href="https://www.inform.kz/ru/kursi-valyut-v-obmennikah-astani-i-almati-na-13-sentyabrya-e0121b46" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>9月13日，哈萨克斯坦阿斯塔纳、阿拉木图和奇姆肯特兑换点的平均汇率显示：阿斯塔纳美元买入448坚戈、卖出455坚戈；阿拉木图美元买入450.88坚戈、卖出453.08坚戈；奇姆肯特美元买入449.98坚戈、卖出452.13坚戈。欧元和卢布汇率也同时公布。哈萨克斯坦国家银行设定的9月12日至13日官方汇率为：1美元兑450.91坚戈，1欧元兑522.69坚戈，1俄罗斯卢布兑5.33坚戈。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：9月13日阿斯塔纳和阿拉木图兑换点汇率
+正文：
+根据Kurs.kz的数据，当前平均汇率如下：
+在阿斯塔纳的兑换点：
+美元：买入448坚戈，卖出455坚戈；欧元：买入520坚戈，卖出530坚戈；卢布：买入5.07坚戈，卖出5.28坚戈。
+在阿拉木图的兑换点：
+美元：买入450.88坚戈，卖出453.08坚戈；欧元：买入522.26坚戈，卖出527.47坚戈；卢布：买入5.14坚戈，卖出5.26坚戈。
+在奇姆肯特：
+美元：买入449.98坚戈，卖出452.13坚戈；欧元：买入522.65坚戈，卖出527.75坚戈；卢布：买入5.17坚戈，卖出5.23坚戈。
+哈萨克斯坦国家银行设定的9月12日至13日官方汇率为：
+1美元——450.91坚戈，1欧元——522.69坚戈，1俄罗斯卢布——5.33坚戈。
+此前，Kazinform报道了哈萨克斯坦一周内美元汇率的变化情况。</div>
+<ul>
+<li>阿斯塔纳美元买入448坚戈，卖出455坚戈</li>
+<li>阿拉木图美元买入450.88坚戈，卖出453.08坚戈</li>
+<li>奇姆肯特美元买入449.98坚戈，卖出452.13坚戈</li>
+<li>国家银行官方汇率：1美元兑450.91坚戈</li>
+<li>欧元和卢布汇率在各地兑换点略有差异</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率数据反映坚戈对美元、欧元和卢布的相对稳定，官方汇率与市场汇率接近，表明哈国货币当局对外汇市场的调控有效，有利于维持经济稳定和吸引外资，对矿产等出口行业影响有限。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/neft-gotovitsya-nachat-novuyu-nedelyu-vishe-100-dollarov-zabarrel-199e6b23" target="_blank">油价准备以每桶100美元以上开启新一周</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/14 00:56<span class="source-link"><a href="https://www.inform.kz/ru/neft-gotovitsya-nachat-novuyu-nedelyu-vishe-100-dollarov-zabarrel-199e6b23" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>周五布伦特原油下跌2.81%至每桶100美元上方，WTI下跌2.37%，但本周累计涨幅均超8%，因中东供应风险及霍尔木兹海峡运输威胁持续。此前9月12日布伦特报104.61美元，WTI报100.05美元；9月11日布伦特一度接近110美元。市场关注供应中断和关键路线风险。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：油价准备以每桶100美元以上开启新一周
+
+周五，布伦特原油下跌3.02美元，跌幅2.81%；WTI原油下跌2.43美元，跌幅2.37%。然而，由于中东供应风险和紧张局势，两种基准原油本周累计涨幅均超过8%。
+
+石油运输中断以及对关键供应路线的持续威胁，给市场带来额外压力。市场参与者继续关注霍尔木兹海峡局势以及该地区原材料出口面临的其他风险。
+
+此前，Kazinform报道称，9月12日油价维持在每桶100美元以上。当时布伦特原油交易价格为104.61美元，WTI为100.05美元。
+
+此外，9月11日Kazinform报道称，布伦特原油价格以稳健涨势结束当周。交易中，布伦特原油一度升至接近每桶110美元。</div>
+<ul>
+<li>周五布伦特跌2.81%，WTI跌2.37%，但周涨幅超8%</li>
+<li>中东供应风险与霍尔木兹海峡威胁推高油价</li>
+<li>9月12日布伦特报104.61美元，WTI报100.05美元</li>
+<li>9月11日布伦特一度接近110美元/桶</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">油价高企利好哈萨克斯坦石油出口收入，但中东局势推高全球风险溢价，可能加剧哈国经济对能源依赖，并促使其外交上平衡与中东产油国及消费国关系。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-09-14 09:03</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
