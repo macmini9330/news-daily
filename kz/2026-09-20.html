@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年9月20日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年9月20日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年09月19日早9:00至2026年09月20日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 33 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">25</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">2</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">4</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">2</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(25 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/gibel-sotrudnika-suda-v-kokshetau-chto-zayavili-v-sudebnoy-administratsii-4151b4d6" target="_blank">科克舍套法院工作人员死亡：法院行政管理部门发表声明</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/20 06:31<span class="source-link"><a href="https://www.inform.kz/ru/gibel-sotrudnika-suda-v-kokshetau-chto-zayavili-v-sudebnoy-administratsii-4151b4d6" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦科克舍套法院员工阿扬·杜伊谢科夫死亡后，法院行政管理部门否认对其施加压力，确认8月13日因违反劳动纪律给予训诫，称未提出或审议迁出公务住房问题，国家公务员事务署地方机关检查未发现追责程序违规。该部门表示正协助调查，呼吁在调查结束前不要用假设取代事实。死者亲属此前称其遭受持续道德和心理压力，要求全面客观调查。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：科克舍套法院员工死亡：法院行政管理部门发表声明
+
+正文：
+该部门还驳斥了死者亲属此前提出的说法。
+
+——没有因阿扬·杜伊谢科夫的工作活动对其施加任何压力。在整个工作期间，与他的关系都是公务和得体的。劳动关系框架内作出的所有决定都完全出于公务情况，并按规定程序执行，——该部门指出。
+
+该部门确认，8月13日对阿扬·杜伊谢科夫实施了纪律处分，形式为训诫。据该部门称，该决定是按规定程序因违反劳动纪律并在有规定依据的情况下作出的。
+
+——其实施完全与公务情况有关，并非个人态度或对员工施压的表现，——该部门表示。
+
+与追究阿扬·杜伊谢科夫纪律责任相关的材料，也由哈萨克斯坦共和国国家公务员事务署授权地方机关在审议相关申诉时进行了研究。检查结果显示，未发现追究纪律责任程序存在违规。
+
+该部门还单独就公务住房信息进行了评论。
+
+——没有提出或审议将阿扬·杜伊谢科夫从其所占用的公务住房中迁出的问题，因为没有必要使用该住房安置法官。因此，未作出任何关于其迁出的决定，——该部门表示。
+
+该部门补充说，正在向调查提供必要协助，提供所要求的信息和材料。
+
+——在调查框架内，正在全面研究事件情况，包括与阿扬·杜伊谢科夫的工作活动和个人生活可能有关的、导致悲剧后果的情况。关于事件原因和情况的最终结论只能根据调查结果作出，——该部门指出。
+
+该部门还呼吁在调查结束前不要用假设和版本取代已确定的事实。
+
+回顾：死者亲属此前曾表明立场，并要求对事件所有情况进行全面客观的检查。据家属称，阿扬一直受到道德和心理压力。亲属</div>
+<ul>
+<li>法院行政部门否认对死亡员工杜伊谢科夫施加工作压力</li>
+<li>8月13日因违反劳动纪律对其作出训诫处分</li>
+<li>未提出或审议将其迁出公务住房的问题</li>
+<li>公务员事务署检查未发现追责程序违规</li>
+<li>亲属称其遭受道德心理压力并要求全面调查</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该事件可能加剧公众对哈国司法系统内部管理的质疑，若调查处理不当，或引发对公务员权益保障和司法透明度的讨论，影响司法机构公信力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/goskomissiya-rassmotrela-meri-po-povisheniyu-ustoychivosti-energosistemi-kazahst-58dcf4e4" target="_blank">国家委员会审议提高哈萨克斯坦能源系统稳定性的措施</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/19 22:50<span class="source-link"><a href="https://www.inform.kz/ru/goskomissiya-rassmotrela-meri-po-povisheniyu-ustoychivosti-energosistemi-kazahst-58dcf4e4" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国家委员会审议能源系统稳定性措施，听取能源部和KEGOC关于技术违规调查的报告，讨论跨国断面自动化及与邻国互联。重点关注阿拉木图热电厂-2、热电厂-3、&quot;突厥斯坦&quot;联合循环燃气电站等灵活发电。8月14日大规模故障后2.5小时恢复，计划2027年新增845兆瓦容量。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：国家委员会审议提高哈萨克斯坦能源系统稳定性的措施
+正文：
+听取了能源部和“KEGOC”股份公司第一负责人关于对技术违规原因调查所做工作的报告。
+审议了完善能源系统稳定运行以及提高跨国断面继电保护自动化效率的问题。
+特别关注确保对消费者的可靠供电、发展与邻国的跨系统联系，以及发展阿拉木图热电厂-2和热电厂-3、&quot;突厥斯坦&quot;联合循环燃气电站及其他能源设施的灵活发电能力。
+根据会议结果，责成相关国家机关和组织确保严格执行技术违规调查结果所提出的措施。
+回顾一下，8月14日大规模故障后，哈萨克斯坦能源系统在2.5小时内恢复。
+此外，此前已知，哈萨克斯坦计划在2027年投产845兆瓦的新增能源容量。</div>
+<ul>
+<li>国家委员会审议能源系统稳定性措施</li>
+<li>听取能源部和KEGOC技术违规调查报告</li>
+<li>关注阿拉木图热电厂和突厥斯坦燃气电站</li>
+<li>8月14日故障后2.5小时恢复</li>
+<li>2027年计划新增845兆瓦容量</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">强化能源系统稳定性与跨国互联，提升供电可靠性，推动灵活发电和新增容量，有助于保障经济稳定和外交能源合作，但矿产格局影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/vitse-prezident-erlan-karin-prinyal-uchastie-vekoaktsii-taza-kazakstan-ca755d8c" target="_blank">副总统叶尔兰·卡林参加“清洁哈萨克斯坦”生态行动</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/19 21:06<span class="source-link"><a href="https://www.inform.kz/ru/vitse-prezident-erlan-karin-prinyal-uchastie-vekoaktsii-taza-kazakstan-ca755d8c" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦副总统叶尔兰·卡林在Instagram发文称，全国性环保行动“清洁哈萨克斯坦”当天在全国各地区同步开展。卡林与民族文化组织、青年组织代表、社会活动人士及“希望之桥”志愿者共同在首都植物园参加植树活动。该行动旨在推动生态保护与公众参与。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">副总统叶尔兰·卡林参加了“清洁哈萨克斯坦”环保行动
+
+——今天，在全国性行动“清洁哈萨克斯坦”框架下，全国各地举办了各种活动。我们与民族文化组织和青年组织代表、社会活动人士以及“希望之桥”志愿者一起，参加了在城市植物园举行的植树活动，——叶尔兰·卡林在其Instagram页面上写道。</div>
+<ul>
+<li>副总统卡林参加全国环保行动“清洁哈萨克斯坦”</li>
+<li>全国各地区同步举办各类环保活动</li>
+<li>卡林与民族文化、青年组织及志愿者共同植树</li>
+<li>活动地点为城市植物园，通过Instagram发布</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该环保行动强化了国家生态议程，提升公众环保意识，展现政府与社会协同治理形象，对哈国政治稳定和社会凝聚力有积极影响，同时为绿色经济与可持续发展营造舆论氛围。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/niandaohegreenlinexinggong-c7013d75/" target="_blank">托卡耶夫视察阿斯塔纳“千年”林荫道和GreenLine线性公园</a></h3>
+<div class="item-meta">哈通社中文版 · 09/19 20:33<span class="source-link"><a href="https://cn.inform.kz/news/niandaohegreenlinexinggong-c7013d75/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫视察阿斯塔纳“千年”林荫道和GreenLine线性公园，并参与“清洁哈萨克斯坦”全民生态环保行动。此前，他与青年积极分子和志愿者在总统公园植树。当天，他听取了阿斯塔纳市市长杰恩斯·哈斯穆别克和生态和自然资源部长阿勒别克·库安特洛夫的工作汇报，并向活动参与者发表讲话。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">Фото: Акорда 此前，作为“清洁哈萨克斯坦”全民生态环保行动的一部分，托卡耶夫曾与青年积极分子和志愿者一道，在阿斯塔纳总统公园参加植树活动，亲手种下树苗。
+Фото: Акорда 当天，托卡耶夫听取了阿斯塔纳市市长杰恩斯·哈斯穆别克、生态和自然资源部长阿勒别克·库安特洛夫关于相关工作的汇报。
+Фото: Акорда 在“清洁哈萨克斯坦”生态行动现场，托卡耶夫还向参加活动的人员发表讲话。</div>
+<ul>
+<li>托卡耶夫视察阿斯塔纳“千年”林荫道和GreenLine线性公园</li>
+<li>参与“清洁哈萨克斯坦”生态行动，在总统公园植树</li>
+<li>听取市长哈斯穆别克和部长库安特洛夫工作汇报</li>
+<li>向生态行动现场人员发表讲话</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举强化托卡耶夫对生态环保的重视，提升公众环保意识，推动阿斯塔纳城市绿化。政治上有助于塑造亲民形象，经济上促进绿色投资，外交上展示环保承诺，矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://www.inform.kz/ru/vistuplenie-glavi-gosudarstva-kasim-zhomarta-tokaeva-naekologicheskoy-aktsii-taz-3fe5ac52" target="_blank">卡瑟姆-若马尔特·托卡耶夫在阿斯塔纳“清洁哈萨克斯坦”生态行动上发表讲话——全文</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/19 19:43<span class="source-link"><a href="https://www.inform.kz/ru/vistuplenie-glavi-gosudarstva-kasim-zhomarta-tokaeva-naekologicheskoy-aktsii-taz-3fe5ac52" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在阿斯塔纳参加“清洁哈萨克斯坦”环保植树活动并发表讲话。他强调植树活动团结民众，感谢志愿者对国家政策的支持，称年轻参与者是真正的爱国者。托卡耶夫引用民间谚语“砍一棵树，种十棵”，指出环保是民族传统，并已写入新宪法。他称“清洁哈萨克斯坦”是国家光明未来的保障，需形成高度生态文化，所有工作为了年轻一代。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">亲爱的朋友们！
+尊敬的志愿者们！
+今天在这个公园里植树，将我们所有人团结在一起，为了一个共同的崇高目标。
+毫无疑问，这对我们的社会和国家来说是一件非常重要且有益的事情。
+我向大家表示诚挚的感谢，感谢你们对国家政策的一贯支持。
+对我来说，那些支持这种崇高事业的年轻人是真正的爱国者。
+的确，对祖国和家乡的真正热爱总是从点滴做起——从关心自己的家、乡村和城市开始。
+民间谚语说得好：“Бір тал кессең, он тал ек”（“砍一棵树，种十棵”）。
+关爱自然、爱护环境——这些高尚品质是我们民族生活方式不可分割的一部分。它们是祖先留给我们的无价遗产和美好遗训。
+这些行为准则得到了认可，并写入我们的新宪法。
+这正是我们所有人共同实施的全国性项目“Таза Қазақстан”（清洁哈萨克斯坦）所具有的特殊社会和历史意义。
+我们必须在社会中形成高度的生态文化。我想再次重申：这是宪法中提出的极其重要的任务。
+“Таза Қазақстан”是我们光明未来的保障。这不仅仅是一个口号，这是通往我们国家光明未来的主干道。
+文明、创造和进步的概念与肮脏和缺乏文化绝对不相容。这是显而易见的。
+归根结底，我们所有的创造性工作都是为了年轻一代。</div>
+<ul>
+<li>托卡耶夫在阿斯塔纳参加“清洁哈萨克斯坦”植树活动</li>
+<li>感谢志愿者支持国家政策，称年轻爱国者</li>
+<li>引用谚语“砍一棵树，种十棵”，强调环保传统</li>
+<li>环保原则写入新宪法，需形成高度生态文化</li>
+<li>“清洁哈萨克斯坦”是国家光明未来的保障</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该讲话强化托卡耶夫对生态文明的重视，将环保提升至宪法高度，有助于推动哈国绿色转型和社会凝聚力，同时展示国家形象，对政治稳定和外交软实力有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://www.inform.kz/ru/deputati-kurultaya-visadili-150-derevev-vastane-8ac1449e" target="_blank">库鲁尔泰议员参加“清洁哈萨克斯坦”行动</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/19 19:20<span class="source-link"><a href="https://www.inform.kz/ru/deputati-kurultaya-visadili-150-derevev-vastane-8ac1449e" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>库鲁尔泰议员首次在立法机构外参加“清洁哈萨克斯坦”全国生态行动，与首都居民共同植树。议长艾别克·达德拜表示，该行动由总统托卡耶夫于2024年发起，旨在培养个人环保责任。议员巴亚雷什巴耶夫和别加利耶娃强调无障碍环境和包容性，指出联合行动能消除社会界限，促进团结。行动涵盖卫生清洁、美化和绿化。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：库鲁尔泰议员参加“清洁哈萨克斯坦”行动
+
+正文：
+库鲁尔泰议长指出，由国家元首发起的全国性生态行动“清洁哈萨克斯坦”不仅旨在改善国家面貌和绿化，还旨在培养个人责任感、对公共空间和环境的尊重。
+
+——总统多次强调，清洁和爱护环境应成为我们日常文化的一部分。“清洁哈萨克斯坦”行动正是为此而设。今天，我们与首都居民一起种下了一条林荫道。多年后，这些树木将装点阿斯塔纳，提醒我们共同的劳动。对我们来说，重要的是不袖手旁观，而是以亲身参与表明，对城市和国家的关怀始于我们每个人，——艾别克·达德拜说。
+
+图片：库鲁尔泰新闻处 对库鲁尔泰议员来说，这是他们在立法机构之外首次联合生态行动。叶尔多斯·巴亚雷什巴耶夫和扎希拉·别加利耶娃参加了植树。议员们指出，无障碍城市环境应使有特殊需求的人士能够与他人平等参与社会生活。
+
+图片：库鲁尔泰新闻处 ——我们首次与同事一起参加这样的行动。这不仅是为首都美化做贡献的机会，也是展示为每个人参与城市生活创造条件的重要性。无障碍环境始于所有人都能感到舒适并平等参与共同事务的无障碍公共空间，——叶尔多斯·巴亚雷什巴耶夫指出。
+
+图片：库鲁尔泰新闻处 议员扎希拉·别加利耶娃则强调，包容是能够为社会做贡献的机会。
+
+图片：库鲁尔泰新闻处 ——正是这样的联合倡议给人以真正的团结感。当我们亲手为城市的未来做贡献，并以身作则表明对故土的真诚关怀人人可为时，我们正在消除一切社会界限，——她强调。
+
+“清洁哈萨克斯坦”行动于2024年根据总统卡瑟姆-若马尔特·托卡耶夫的倡议启动。它团结不同世代的人们围绕我国宪法所载的生态价值观。该项目框架内开展全国居民点的卫生清洁、美化和绿化工作。</div>
+<ul>
+<li>库鲁尔泰议员首次参加“清洁哈萨克斯坦”生态行动</li>
+<li>行动由总统托卡耶夫2024年发起，旨在培养环保责任</li>
+<li>议员与居民在阿斯塔纳共同植树，强调无障碍环境</li>
+<li>议员指出包容性和联合行动能消除社会界限</li>
+<li>行动涵盖全国卫生清洁、美化和绿化工作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该行动强化托卡耶夫总统的生态议程，提升库鲁尔泰立法机构的社会形象，促进社会包容与团结。对哈国政治而言，展示总统倡议的基层落实；经济上推动绿色基建；外交上契合全球环保趋势；矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/chengweidonghuiwenmingjindezhongyaoli-7b8e0a55/" target="_blank">托卡耶夫：让“清洁哈萨克斯坦”成为推动社会文明进步的重要力量</a></h3>
+<div class="item-meta">哈通社中文版 · 09/19 19:00<span class="source-link"><a href="https://cn.inform.kz/news/chengweidonghuiwenmingjindezhongyaoli-7b8e0a55/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫总统将“清洁哈萨克斯坦”定位为全国性社会文明倡议，强调其超越环保行动，旨在推动清洁、秩序、责任和共同参与的文化。自年初以来，全国已开展600多项生态活动，约700万人参与，清理土地超13万公顷，种植130万棵树木。托卡耶夫指出，该倡议有助于提升国际形象和投资吸引力，并将在独立纪念活动期间表彰积极参与者。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫指出，“清洁哈萨克斯坦”已经成为一项具有全国性影响的倡议，其意义远不止于清理垃圾、植树造林等具体环保行动，更在于推动社会形成更加重视清洁、秩序、责任和共同参与的文化。
+“今天，我们大家一起在这座公园植树，共同参与这项理性而有意义的事业。这对于我们的社会以及整个国家而言，确实是一项十分必要且有益的工作。”托卡耶夫说。
+国家元首对长期支持国家政策、积极参与相关活动的各界人士表示感谢。
+托卡耶夫强调，珍爱自然、保护环境是哈萨克民族传统中重要的价值观，也是先辈留给后人的教诲和嘱托。他指出，根据哈萨克斯坦新宪法，相关理念和行动已经成为公民应尽的责任，因此，“清洁哈萨克斯坦”作为一项全民参与的国家项目，具有特殊的社会和历史意义。
+国家元首表示，哈萨克斯坦应当成为一个生态文明程度较高的国家。“清洁哈萨克斯坦”不仅是一句口号，更是通往文明未来的一条重要道路。托卡耶夫指出，文明、创造和进步与冷漠、脏乱无序没有任何关系，相关工作的最终目的，是为下一代创造更加舒适、宜居的生活环境。
+他强调，良好的生活环境不会凭空出现，需要每一位公民形成自觉意识并付诸行动。只有全社会共同维护清洁、秩序和公共环境，哈萨克斯坦的国际形象和投资吸引力才能进一步提升。
+托卡耶夫指出，“清洁”应当被赋予更加广泛的内涵。他说，一个思想和内心纯正的人，其行为也会更加正直，因此，维护清洁首先应当从自身做起。
+国家元首强调，“清洁哈萨克斯坦”项目旨在改善国家环境面貌，同时通过共同参与公共事务增强社会团结。目前，相关工作正在哈萨克斯坦各地区持续推进。自今年年初以来，全国已开展600多项不同类型的生态活动，约700万人参与其中，清理土地面积超过13万公顷，并种植了130万棵树木。
+托卡耶夫对积极参与生态行动的民众表示感谢，并指出，这些实际行动体现了公民对祖国的关心和责任感。他表示，国家应当对积极参与公益事业、为国家作出实际贡献的爱国人士给予表彰，并将在即将到来的独立纪念活动期间履行这一承诺。
+谈及志愿服务，国家元首强调，青年是“清洁哈萨克斯坦”等社会公益行动的重要参与者。他表示，志愿服务是关心国家、服务社会的具体体现，哈萨克斯坦支持志愿者运动的发展，并重视为志愿服务创造更加完善的制度和社会条件。
+托卡耶夫还表示，“清洁哈萨克斯坦”已经具有全国性意义，是哈萨克斯坦民众的自觉选择。他认为，这一项目正在推动社会形成新的价值观和行为方式，其意义已经超越一次性的环保行动。
+“如今，哈萨克斯坦已经迈入了一个具有历史意义和命运攸关的伟大时代。社会各个领域都正进行着意义深远的重大改革。我们国家的政治体系正在发生根本性的革新与现代化转型。国家经济也正以焕然一新的强劲势头繁荣发展。在哈萨克斯坦的各个地区，诸如学校、综合门诊部、文化及体育设施等具有重大社会意义的现代化地标正拔地而起。在我们辽阔的土地上，数万公里的公路与铁路线正在紧锣密鼓地建设中。这项工作绝不会停歇，哈萨克斯坦应当成为一个巨大的建设工地，换句话说，应当成为一片充满创造力的热土。工程建设的质量必须达到极高的标准。我本人正对此予以高度关注，并将该项工作置于最严厉的监督之下。”托卡耶夫强调。
+国家元首特别谈到阿斯塔纳。他指出，首都是哈萨克斯坦的“镜子”和展示国家形象的重要城市。近年来，阿斯塔纳城市面貌不断改善，这离不开市政府及相关工作人员的努力。托卡耶夫强调，哈萨克斯坦公民以及来访的外国人士都应当维护公共场所的清洁和秩序，尊重相关法律法规，让“清洁哈萨克斯坦”的价值理念真正成为社会生活的一部分。
+托卡耶夫还指出，整洁、有序和舒适的公共空间不仅影响居民生活质量，也会影响外国游客和国际社会对哈萨克斯坦的印象。他提到，近期一些美国国会议员访问阿斯塔纳和阿拉木图时，对当地街道的整洁程度以及城市管理水平给予积极评价。
+与此同时，托卡耶夫强调，改善城市环境不能只是为了塑造国家形象，更重要的是改善本国民众的生活条件。他指出，国内取得的实际成果能够增强民众的自豪感和爱国情感，进一步激发人们建设家乡、服务国家的积极性。</div>
+<ul>
+<li>托卡耶夫称“清洁哈萨克斯坦”是全民参与的国家项目，具社会历史意义</li>
+<li>年初以来全国开展600多项生态活动，700万人参与，植树130万棵</li>
+<li>项目旨在改善环境、增强社会团结，提升国际形象和投资吸引力</li>
+<li>国家将在独立纪念活动期间表彰积极参与公益的爱国人士</li>
+<li>托卡耶夫强调青年和志愿服务的重要性，支持志愿者运动发展</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该倡议强化社会团结与公民责任，提升哈国国际形象和投资吸引力，推动生态文明建设，为政治改革和经济现代化营造良好社会环境。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://www.inform.kz/ru/unas-net-drugoy-rodini-prezident-obratilsya-kkazahstantsam-92eab51f" target="_blank">我们没有别的祖国——总统向哈萨克斯坦人民发表讲话</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/19 18:27<span class="source-link"><a href="https://www.inform.kz/ru/unas-net-drugoy-rodini-prezident-obratilsya-kkazahstantsam-92eab51f" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在阿斯塔纳“清洁哈萨克斯坦”行动中向民众发表讲话，强调建设公正、安全、先进和清洁的哈萨克斯坦是每个人的神圣职责，国家稳定直接关系公民福祉。他特别赞扬志愿者，提及2020年志愿者年、在联合国提议设立国际志愿者年及国际绿化地球日，并指出哈萨克斯坦在宪法层面保障志愿服务。总统寄语年轻人，称国家未来掌握在他们手中。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">——建设一个公正、安全、先进和清洁的哈萨克斯坦是我们每个人的神圣职责。我们都必须为此不懈努力。通往我们神圣祖国繁荣的道路别无他途。我们都必须秉持公正、诚信和责任。有时，不假思索的言论可能比某些行为造成更大的损害。绝不能忘记这一点。永远不要忘记我们国家的利益，关心哈萨克斯坦的福祉。我们没有别的祖国，——国家元首在阿斯塔纳向“清洁哈萨克斯坦”行动参与者发表讲话时强调。
+
+据他所说，国家的稳定直接关系到公民的福祉。
+
+——如果我们国家保持稳定，那么每个家庭、每个家庭都将充满和谐与富足。一个强大而繁荣的哈萨克斯坦，首先是我们自己需要的，——总统说。
+
+照片：阿克奥尔达 卡瑟姆-若马尔特·托卡耶夫特别向从事志愿活动的年轻人发表了讲话。
+
+——你们都很年轻。你们从事志愿活动是正确的。我一直支持志愿者，包括我在联合国工作时。2020年我们举办了志愿者年，随后在联合国发言时，我提议设立国际志愿者年。这一倡议得到了几乎所有国家的支持。此外，我们成为世界上少数几个在最高法律层面——宪法中——将志愿服务合法化的国家之一。祝贺我们国家和国外的所有善意人士！——国家元首说。
+
+照片：阿克奥尔达 他还回顾了自己关于设立国际绿化地球日的倡议，该倡议得到了联合国大会几乎所有成员国的支持。
+
+——所有这些都表明，哈萨克斯坦与进步趋势同步，对地球上的和平生活表现出责任感，并尽其所能为这一崇高事业做出贡献。我们国家的未来掌握在像你们这样受过教育、积极、进步和目标明确的年轻人手中！愿你们的道路光明！祝你们幸福和成功！——总统总结道。</div>
+<ul>
+<li>托卡耶夫强调建设公正安全先进清洁的哈萨克斯坦是全民神圣职责</li>
+<li>国家稳定与公民福祉直接相关，强大哈萨克斯坦首先为自己所需</li>
+<li>总统赞扬志愿者，提及联合国国际志愿者年及国际绿化地球日倡议</li>
+<li>哈萨克斯坦在宪法层面保障志愿服务，为全球少数国家之一</li>
+<li>总统寄语年轻人，称国家未来掌握在受教育、积极、进步的年轻人手中</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">总统讲话强化国家认同与社会稳定，推动志愿服务和环保议程，有助于提升哈萨克斯坦国际形象，巩固国内政治凝聚力，对经济和社会治理产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://www.inform.kz/ru/otorvites-ottiktok-tokaev-rasskazal-osotsialnih-obyazatelstvah-kazahstana-cc50c4c2" target="_blank">放下TikTok：托卡耶夫谈哈萨克斯坦的社会责任</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/19 18:25<span class="source-link"><a href="https://www.inform.kz/ru/otorvites-ottiktok-tokaev-rasskazal-osotsialnih-obyazatelstvah-kazahstana-cc50c4c2" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在讲话中强调哈萨克斯坦是社会国家，宪法规定提供免费医疗援助，覆盖公民、归国同胞及部分外国公民，包括基础诊疗、急救、糖尿病、肿瘤和结核病治疗等。他提到从意大利紧急接回患病学者，并指出“Қазақстан халқына”基金对儿童提供重要帮助。同时揭露社会领域滥用问题：曾有时期2000万人口中残疾人超80万，老兵“变年轻”表明残疾认定存在明显舞弊。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：放下TikTok：托卡耶夫谈哈萨克斯坦的社会义务
+
+——哈萨克斯坦确实是一个社会国家。这不是空话。问题甚至不在于用于改善社会福利的巨额资金。尽管没有这些也不行。这是一个根本因素，——国家元首指出。
+
+据他所说，国家基本法中有单独条款规定了提供保障性免费医疗援助这一国家义务。
+
+图片来源：Akorda ——请放下TikTok，去了解一下，还有哪国宪法包含这样的国家义务？哪国？要知道，正是在哈萨克斯坦，由预算支付向我们国家的每位公民提供医疗援助。而且不仅是我们公民，还有从国外来的归国同胞，甚至某些长期居住在我国境内的外国公民类别，——卡瑟姆-若马尔特·托卡耶夫说。
+
+总统强调，这不仅仅涉及发放药品。保障范围包括看家庭医生、基础检查、诊断、紧急状态下的急救、社会重大疾病治疗，包括糖尿病、肿瘤和结核病。
+
+此外，据卡瑟姆-若马尔特·托卡耶夫说，国家为某些患者提供药品，以及急救和航空医疗救援工作。
+
+——最近我们从意大利运回了一位我们的学者，他在那里病得很重。必须紧急救助，——总统讲述道。
+
+国家元首还单独提到了根据他的建议和倡议成立的“Қазақстан халқына”基金。据他所说，该基金提供了重要帮助，尤其是对儿童。
+
+——据医生数据，所谓上世纪灾难、战争和冲突的“老兵”正在积极利用优惠。这些都是很久以前的事件，但老兵们却奇怪地变年轻了。这表明社会领域存在明显的滥用，尤其是在不同等级残疾认定过程中，——总统指出。
+
+图片来源：Akorda 据国家元首说，哈萨克斯坦曾有一个时期，在2000万人口中残疾人数量超过80万，但在和平条件下这令人难以置信，或者用经典作家契诃夫的话说：“这不可能，因为这不</div>
+<ul>
+<li>托卡耶夫称哈萨克斯坦宪法保障免费医疗，覆盖公民及部分外国人</li>
+<li>保障范围含基础诊疗、急救、糖尿病、肿瘤和结核病治疗</li>
+<li>总统提及从意大利紧急接回患病学者，展示国家救助能力</li>
+<li>“Қазақстан халқына”基金对儿童提供重要帮助</li>
+<li>揭露残疾认定滥用：2000万人口中残疾人曾超80万</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">托卡耶夫讲话强化社会国家定位，凸显医疗义务，但揭露残疾认定滥用，或推动社会福利监管改革，影响国内政治信任与财政分配。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">10</span> <a href="https://www.inform.kz/ru/tokaev-nazval-kachestvo-dorog-ahillesovoy-pyatoy-kazahstana-5ae716a1" target="_blank">国家元首称道路质量为哈萨克斯坦的“阿喀琉斯之踵”</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/19 18:19<span class="source-link"><a href="https://www.inform.kz/ru/tokaev-nazval-kachestvo-dorog-ahillesovoy-pyatoy-kazahstana-5ae716a1" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在讲话中称道路质量为国家的“阿喀琉斯之踵”，批评无人解决或不愿解决，并警告将依法严惩。他指示政府和各州长关注市内及全国道路质量，同时要求在所有地区激活城市学中心，借鉴首都经验，形成城市统一建筑风格。托卡耶夫还参加了“清洁哈萨克斯坦”活动并植树。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">——我们坚定地走上了数字化和人工智能的发展道路。成果显而易见，你们看到了并在日常生活中使用这些成就。正如我已经指出的，首都城市学中心的经验具有实际意义，该中心成功引入了城市空间发展的现代方法。中心正在制定模型和设计规范，形成首都统一的建筑风格。当然，也在借鉴国外经验。这是必须做的，——国家元首说。
+卡瑟姆-若马尔特·托卡耶夫指出，应毫不拖延地激活所有地区类似中心的工作。它们应形成我们城市完整和谐的面貌。
+照片：阿克奥尔达 同时，政府和各州长需最密切关注市内和“全国性”道路的质量，即大中小城市以外的道路。
+——这是我们的“阿喀琉斯之踵”，必须承认。这个问题没有人能够解决（这本身就可耻），或者干脆不想解决，那就是怠工。我们将依法采取最严厉措施，——总统强调。
+总统还指示激活哈萨克斯坦所有地区城市学中心的工作。
+回顾，今天国家元首参加了“清洁哈萨克斯坦”活动，并在阿斯塔纳总统公园种下了一棵树。</div>
+<ul>
+<li>托卡耶夫称道路质量为“阿喀琉斯之踵”</li>
+<li>批评问题未解决或怠工，将依法严惩</li>
+<li>指示激活所有地区城市学中心</li>
+<li>要求关注市内和全国道路质量</li>
+<li>参加“清洁哈萨克斯坦”活动并植树</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该表态凸显哈国基础设施短板，可能推动道路建设投资和反腐，改善交通物流，促进经济发展；同时强化城市规划和数字化，提升治理水平，但需警惕地方执行不力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">11</span> <a href="https://www.inform.kz/ru/amerikanskie-kongressmeni-svostorgom-otmetili-chistotu-ulits-astani-ialmati-glav-19749421" target="_blank">我们必须为改善公民社会福祉而努力，而非为形象——托卡耶夫</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/19 18:16<span class="source-link"><a href="https://www.inform.kz/ru/amerikanskie-kongressmeni-svostorgom-otmetili-chistotu-ulits-astani-ialmati-glav-19749421" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在参加“清洁哈萨克斯坦”活动时表示，爱护自然、遵守规范应成为公民心态和宪法义务，清洁秩序是民族文明指标。他提到美国国会议员代表团访问阿斯塔纳和阿拉木图，高度评价城市清洁和市政管理。托卡耶夫强调，必须致力于改善公民社会自我感受，而非追求形象，这是主要目标。当天他在阿斯塔纳总统公园种树。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">——对自然的爱护、相互尊重的原则、遵守所有规定的规范和规则，应当成为同胞们行为乃至心态中不可分割的一部分。更何况这已经是宪法义务。清洁、秩序、舒适在全世界都被视为日常生活文化和民族文明程度、其道德自我感受的指标。这已是公理，——总统说。
+他还谈到，不久前一个由有影响力的美国国会议员组成的代表团访问了阿斯塔纳和阿拉木图。
+——他们对我们主要城市街道的清洁和整洁赞叹不已，高度评价了市政管理的水平和质量。社交网络上，赞叹我们大城市整洁的外国客人和游客的视频越来越多。完善的公共区域、安全、舒适在海外塑造了哈萨克斯坦的吸引力形象。这当然很好，但我们必须致力于改善公民的社会自我感受，而不是为了形象。这是主要目标。随着哈萨克斯坦国内取得成就，他们的真正爱国主义、对自己国家的自豪感以及为巩固我们国家实力做些有益事情的愿望也会增强——国家元首强调。
+提醒一下，今天国家元首参加了“清洁哈萨克斯坦”活动，并在阿斯塔纳总统公园种下了一棵树。</div>
+<ul>
+<li>托卡耶夫：爱护自然和遵守规范是宪法义务</li>
+<li>美国议员代表团赞扬哈城市清洁和市政管理</li>
+<li>总统强调工作目标应为改善公民社会感受</li>
+<li>托卡耶夫参加“清洁哈萨克斯坦”活动并种树</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该表态强化国内治理导向，推动地方改善民生与市政，提升社会凝聚力；同时借美国议员访问展示外交形象，但强调不追求外部形象，或影响外资对哈治理稳定性的预期。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">12</span> <a href="https://www.inform.kz/ru/prezident-taza-kazakstan-eto-osoznanniy-vibor-nashego-naroda-452dc2af" target="_blank">总统：“清洁哈萨克斯坦”是我国人民的自觉选择</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/19 18:10<span class="source-link"><a href="https://www.inform.kz/ru/prezident-taza-kazakstan-eto-osoznanniy-vibor-nashego-naroda-452dc2af" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统称«清洁哈萨克斯坦»为全民自觉选择，是促进社会意识和民族认同积极变化的独特项目。他强调不能自满，需继续前进，将该行动提升至新水平，并提议制定清洁国家标准，此前曾呼吁形成高度生态文化。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">«清洁哈萨克斯坦»——这不仅仅是全民倡议，这是我们人民的自觉选择。
+«清洁哈萨克斯坦»堪称独一无二的项目，促进了社会意识和民族认同的积极变化。
+得益于这一行动，社会中正在形成全新的品质和价值观。
+但我们不能袖手旁观、满足于已有成就。如果我们想成为进步国家，就必须只向前迈进。
+我们面前还有许多重要目标和任务。我们必须将«清洁哈萨克斯坦»行动提升到质的全新水平。
+我认为有必要制定清洁国家标准。这是时代的要求，——国家元首说。
+此前，哈萨克斯坦总统呼吁在社会中形成高度的生态文化。</div>
+<ul>
+<li>总统称«清洁哈萨克斯坦»是人民自觉选择</li>
+<li>项目促进社会意识和民族认同积极变化</li>
+<li>总统强调不能自满，必须继续前进</li>
+<li>提议制定清洁国家标准，提升行动水平</li>
+<li>此前总统呼吁形成高度生态文化</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该倡议强化社会生态意识与民族认同，推动环保政策制度化，制定清洁标准可能影响相关行业规范，提升哈国国际形象，但短期内对政治经济格局直接影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">13</span> <a href="https://www.inform.kz/ru/tokaev-poruchil-aktivizirovat-rabotu-tsentrov-urbanistiki-vovseh-regionah-kazahs-c397f808" target="_blank">总统指示激活哈萨克斯坦各地区城市学中心的工作</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/19 18:10<span class="source-link"><a href="https://www.inform.kz/ru/tokaev-poruchil-aktivizirovat-rabotu-tsentrov-urbanistiki-vovseh-regionah-kazahs-c397f808" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫强调首都城市学中心在制定舒适城市环境建议、改善城市面貌方面的重要作用，并指出其工作考虑了公民意见。他要求各州州长积极推广该中心经验，加强各地区城市学中心的工作。托卡耶夫还呼吁公民和外国人保持公共场所清洁与秩序，遵守法律，使“清洁哈萨克斯坦”价值观成为民族认同的一部分。当天，托卡耶夫参加了“清洁哈萨克斯坦”行动，并在阿斯塔纳总统公园植树。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">——在此背景下，我想特别指出首都城市学中心的特殊作用。这是一个重要机构，负责制定为居民创造舒适环境的建议，并提出旨在改善城市面貌的有效解决方案和项目。最重要的是，在这项工作中考虑了公民的意见、诉求和愿望。因此，该机构的经验应在其他地区推广。各州州长需要在这方面加强工作。总体而言，我们的公民和外国人都应保持公共场所的清洁与秩序，遵守法律要求。只有这样，“清洁哈萨克斯坦”价值观才能成为民族认同不可分割的一部分，——卡瑟姆-若马尔特·托卡耶夫强调。
+
+回顾，今天国家元首参加了“清洁哈萨克斯坦”行动，并在阿斯塔纳总统公园种下了一棵树。</div>
+<ul>
+<li>托卡耶夫强调首都城市学中心的重要作用</li>
+<li>要求各州州长推广城市学中心经验</li>
+<li>呼吁公民和外国人保持公共场所清洁</li>
+<li>“清洁哈萨克斯坦”价值观应成民族认同部分</li>
+<li>托卡耶夫参加环保行动并在总统公园植树</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该指令将推动哈国各地区城市治理体系升级，强化中央对地方城市发展的统筹。通过推广首都经验，有望改善城市人居环境，提升民众满意度，同时以“清洁哈萨克斯坦”价值观增强社会凝聚力，巩固国家认同。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">14</span> <a href="https://www.inform.kz/ru/kasim-zhomart-tokaev-poruchil-razrabotat-vkazahstane-natsionalniy-standart-chist-932f08f2" target="_blank">卡瑟姆-若马尔特·托卡耶夫指示制定哈萨克斯坦国家清洁标准</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/19 18:09<span class="source-link"><a href="https://www.inform.kz/ru/kasim-zhomart-tokaev-poruchil-razrabotat-vkazahstane-natsionalniy-standart-chist-932f08f2" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在总统公园向生态活动人士和青年发表讲话，称“清洁哈萨克斯坦”生态行动自年初以来已举办超600场活动，700万人参与，清理超13万公顷土地，种植130万棵树。他指示制定国家清洁标准，并呼吁从广义理解清洁，强调青年是心灵纯洁的公民。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">在总统公园向生态活动人士和青年发表讲话时，国家元首称“清洁哈萨克斯坦”生态行动是一个独特的项目，为国家风貌带来了先进变革。
+据他介绍，如今哈萨克斯坦所有地区都在开展大规模工作。自年初以来，全国已举办超过600场各类生态活动。共有700万人参与了这项工作。清理了超过13万公顷土地。全国种植了130万棵树。
+——得益于如此重要的工作，我们的人民开始形成全新的品质和价值观。但不能放松，不能固步自封。如果我们想成为一个文明国家，就必须不断前进。我们面前还有许多重要而紧迫的目标和任务。我们必须将“清洁哈萨克斯坦”运动提升到新的质量水平。我认为有必要制定国家清洁标准。这是时代的要求，——卡瑟姆-若马尔特·托卡耶夫强调。
+他还呼吁更广泛地理解清洁的概念。
+——我们必须从广义上理解清洁的概念。一个思想纯洁、意图纯洁的人，他的每一个行为都会是正确的。重要的是从自身做起。我认为哈萨克斯坦的青年是心灵纯洁的人和诚实的公民，——国家元首说。</div>
+<ul>
+<li>托卡耶夫称“清洁哈萨克斯坦”行动带来先进变革</li>
+<li>年初以来举办超600场生态活动，700万人参与</li>
+<li>清理超13万公顷土地，种植130万棵树</li>
+<li>指示制定国家清洁标准，提升运动质量水平</li>
+<li>呼吁广义理解清洁，强调青年心灵纯洁</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该倡议将生态行动制度化，提升国家清洁标准，有助于改善哈国生态环境和公民意识，增强社会凝聚力，同时展现托卡耶夫对青年和生态的重视，巩固其政治形象。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">15</span> <a href="https://www.inform.kz/ru/derzhu-nastrogom-kontrole-tokaev-poruchil-obespechit-visokoe-kachestvo-stroitels-90dd7e77" target="_blank">我严格掌控：托卡耶夫指示确保哈萨克斯坦高质量建设</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/19 18:07<span class="source-link"><a href="https://www.inform.kz/ru/derzhu-nastrogom-kontrole-tokaev-poruchil-obespechit-visokoe-kachestvo-stroitels-90dd7e77" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫表示，国家正处于历史性变革时代，各领域实施大规模改革，经济动态发展，各地区建设学校、医院等基础设施，已铺设数万公里公路铁路。他强调必须确保最高建筑质量，将亲自严格监督，违规者依法追责。他还指出要改善民生，阿斯塔纳是模范城市，并赞扬市长热尼斯·卡瑟姆别克及其团队的努力。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据他所说，今天哈萨克斯坦进入了历史性、命运攸关的变革时代。社会各领域正在实施大规模改革。国家政治体制正在进行根本性现代化。
+——我们的经济蓬勃发展。各地区都在建设社会重要基础设施——学校、医院、文化和体育设施。全国已铺设数万公里的公路和铁路。这项工作不会停止。哈萨克斯坦应成为一个巨大的建设工地，一个创造之地。必须确保最高质量的建筑。我将密切关注这一问题，并严格亲自监督。那些违反要求和既定规则的人，必将依法追究责任，——总统说。
+国家元首强调，我们面临明确的目标。
+——我们必须努力改善人民生活质量，为每位公民创造最舒适的条件。从这个角度看，阿斯塔纳无疑是一个模范城市，是整个哈萨克斯坦成就的体现。今天可以完全自信地说，首都已成为创新和创意人士的向往之地。阿斯塔纳每天都在变得更美。这也是城市市长热尼斯·马赫穆德吾勒·卡瑟姆别克及其团队无私奉献和不懈努力的结果，——卡瑟姆-若马尔特·托卡耶夫说。</div>
+<ul>
+<li>托卡耶夫称哈进入历史性变革时代，各领域推大规模改革</li>
+<li>全国建学校医院等设施，铺数万公里公路铁路</li>
+<li>总统要求确保最高建筑质量，亲自严格监督</li>
+<li>违规者将依法追责，目标改善民生</li>
+<li>阿斯塔纳为模范城市，赞扬市长及其团队</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举强化总统对基建质量的直接管控，推动政治现代化和经济多元化，提升民生与外资信心，巩固阿斯塔纳作为外交与创新中心地位，对矿产等战略行业开发形成规范效应。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">16</span> <a href="https://www.inform.kz/ru/prezident-poblagodaril-vseh-kto-aktivno-podderzhal-aktsiyu-taza-kazakstan-4482fd3e" target="_blank">总统感谢所有积极支持“清洁哈萨克斯坦”行动的人</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/19 18:04<span class="source-link"><a href="https://www.inform.kz/ru/prezident-poblagodaril-vseh-kto-aktivno-podderzhal-aktsiyu-taza-kazakstan-4482fd3e" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫感谢支持“清洁哈萨克斯坦”全国行动的人。自年初以来，全国举办超600场生态活动，700万公民参与，清理超13万公顷土地，种植130万棵树。托卡耶夫强调洁净始于每个人，该行动旨在改善国家、加强团结，爱国公民将在独立周年纪念日前获高级别奖励。他还在阿斯塔纳总统公园与志愿者共同植树。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">——我们国家的每一位公民，无论现在还是将来，都应当在“清洁哈萨克斯坦”行动中生活在舒适与洁净之中。然而，这种良好的环境不会自行出现——它的形成直接取决于公民的世界观和行为。只有这样，我们才能巩固我们人民和整个国家的国际威望，确保投资吸引力的增长，——总统说。
+卡瑟姆-若马尔特·托卡耶夫提醒说，他在讲话中始终呼吁从广义上理解洁净的概念。
+——如果一个人有真诚的意念和良好的意图，那么他的行为也会是体面的。洁净首先从我们每个人开始。在像你们这样的年轻人身上，我看到了心怀纯净的负责任公民的真正榜样。如果从更广泛的意义上理解“洁净”一词的含义，那么污垢永远不会战胜洁净，洁净必将胜利。这是生活不可动摇的法则。
+“清洁哈萨克斯坦”项目的目标是改善我们的国家，加强团结与凝聚力，将人民团结在共同目标周围，——国家元首说。
+他指出，如今所有地区都开展了大规模行动。
+——自年初以来，全国已举办600多场各类生态活动。700万公民参与了这项重要活动，清理了超过13万公顷土地，种植了130万棵树。取得了不错的成果，确实做了大量工作。所有这些都是纯净意图、真正参与，最重要的是，我们同胞为祖国利益而辛勤劳动的体现。
+在这方面，我要感谢所有积极支持“清洁哈萨克斯坦”全国行动的人。这些真正爱国的公民值得国家认可。在独立周年纪念日前夕，他们必将获得高级别奖励，——总统说。
+今天，在参与“清洁哈萨克斯坦”生态行动框架内，卡瑟姆-若马尔特·托卡耶夫与活动人士和志愿者一起在阿斯塔纳总统公园区域内种下了一棵树。</div>
+<ul>
+<li>托卡耶夫感谢“清洁哈萨克斯坦”行动支持者</li>
+<li>全国已办超600场生态活动，700万人参与</li>
+<li>清理超13万公顷土地，种植130万棵树</li>
+<li>爱国公民将在独立周年纪念日前获高级别奖励</li>
+<li>总统在阿斯塔纳总统公园与志愿者共同植树</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该行动强化社会团结与公民责任，提升国家形象和投资吸引力，为独立周年纪念营造积极氛围，对哈国政治稳定和经济环境产生正面影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">17</span> <a href="https://www.inform.kz/ru/tokaev-prizval-sformirovat-vobshestve-visokuyu-ekologicheskuyu-kulturu-9e591705" target="_blank">我们必须在社会中形成高度的生态文化——托卡耶夫</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/19 18:03<span class="source-link"><a href="https://www.inform.kz/ru/tokaev-prizval-sformirovat-vobshestve-visokuyu-ekologicheskuyu-kulturu-9e591705" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在阿斯塔纳总统公园参与“清洁哈萨克斯坦”生态行动，与志愿者共同植树。他强调爱护自然是民族价值观和宪法规定的公民义务，青年是真正的爱国者。托卡耶夫指出该全民族项目具有特殊社会和历史意义，目标是将哈萨克斯坦建成高度生态文化国家。他还听取阿斯塔纳市政和项目落实报告，并指示市长严厉打击破坏公物和涂鸦行为。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：我们必须在社会中形成高度的生态文化——托卡耶夫
+
+正文：
+在参与“清洁哈萨克斯坦”生态行动框架内，国家元首卡瑟姆-若马尔特·托卡耶夫与活动人士和志愿者一起在阿斯塔纳总统公园内种下了一棵树。
+
+——今天，我们大家一起在这个公园里种下了树木，参与了一项共同的美好而明智的事业。实际上，这对我们的社会和国家来说是非常需要和有益的工作。我真诚地感谢你们所有人对国家政策的持续支持。——总统说。
+
+国家元首指出了青年对生态倡议的贡献，并称行动参与者是真正的爱国者。
+
+——我认为为这些善举做出贡献的年轻人是真正的爱国者。因为对祖国、对故土的爱始于自己的家、自己的村庄和城市。——卡瑟姆-若马尔特·托卡耶夫强调。
+
+据他所说，爱护自然和关心环境是民族价值观的一部分。
+
+——这是祖先留给我们的教诲和遗训。而根据新宪法，这种态度和类似行动是公民义务。因此，我们举国启动的全民族项目“清洁哈萨克斯坦”具有特殊的社会和历史意义。我们必须成为一个拥有高度生态文化的国家。再次强调：这是我国宪法中规定的最重要任务。——总统补充道。
+
+今天，国家元首在“清洁哈萨克斯坦”共和国生态行动框架内，在阿斯塔纳总统公园种下了一棵树。
+
+总统听取了负责国家机构负责人关于阿斯塔纳市改善和“清洁哈萨克斯坦”实施情况的报告。
+
+卡瑟姆-若马尔特·托卡耶夫指示阿斯塔纳市市长对破坏公物和涂鸦行为采取严厉措施。</div>
+<ul>
+<li>托卡耶夫在总统公园参与植树，启动清洁哈萨克斯坦行动</li>
+<li>称环保是民族价值观和宪法义务，青年是爱国者</li>
+<li>项目具特殊社会历史意义，目标建高度生态文化国家</li>
+<li>指示阿斯塔纳市长严厉打击破坏公物和涂鸦行为</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该行动强化托卡耶夫“新哈萨克斯坦”生态议程，将环保提升至宪法义务和民族认同高度，有助于凝聚社会共识、提升政府形象。对经济而言，推动绿色基建和城市治理；外交上展示环保承诺，吸引绿色投资；矿产格局短期无直接影响，但长期或推动可持续开采标准。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">18</span> <a href="https://www.inform.kz/ru/prezident-poruchil-akimu-astani-prinyat-meri-protiv-vandalizma-i-graffiti-e2bd1338" target="_blank">总统指示阿斯塔纳市长对破坏公物和涂鸦采取严厉措施</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/19 17:50<span class="source-link"><a href="https://www.inform.kz/ru/prezident-poruchil-akimu-astani-prinyat-meri-protiv-vandalizma-i-graffiti-e2bd1338" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫指示阿斯塔纳市长对破坏公物和涂鸦采取严厉措施，强调应通过立法和规范性手段全面禁止此类行为，称其为破坏公物和恶意流氓行为。此前总统听取了相关国家机构负责人的汇报，并参加了“清洁哈萨克斯坦”活动，在阿斯塔纳总统公园植树。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：总统指示阿斯塔纳市长对破坏公物和涂鸦采取严厉措施
+正文：
+国家元首坚信，在哈萨克斯坦的城市中不能允许这种行为，应采取立法和规范性措施，全面禁止这种在世界各地破坏市政区域的所谓“创作”，将其视为破坏公物和恶意流氓行为的表现。
+此前有报道称，总统卡瑟姆-若马尔特·托卡耶夫听取了相关国家机构负责人的汇报。
+回顾一下，今天国家元首参加了“清洁哈萨克斯坦”活动，并在阿斯塔纳总统公园种下了一棵树。</div>
+<ul>
+<li>总统指示阿斯塔纳市长严打破坏公物和涂鸦</li>
+<li>要求立法全面禁止此类‘创作’行为</li>
+<li>总统听取相关国家机构负责人汇报</li>
+<li>总统参加‘清洁哈萨克斯坦’活动并植树</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举强化城市治理与公共秩序，可能推动相关立法，对哈国政治体现总统权威，经济上或增加市政维护成本，外交无直接影响，矿产格局无关。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">19</span> <a href="https://www.inform.kz/ru/trk-prezidenta-podderzhal-respublikanskuyu-ekologicheskuyu-aktsiyu-taza-kazaksta-3a4fe543" target="_blank">总统电视广播公司支持共和国生态行动“清洁哈萨克斯坦”</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/19 17:43<span class="source-link"><a href="https://www.inform.kz/ru/trk-prezidenta-podderzhal-respublikanskuyu-ekologicheskuyu-aktsiyu-taza-kazaksta-3a4fe543" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统电视广播综合体参与“清洁哈萨克斯坦”生态行动，记者在努拉-叶西尔运河沿岸从F.翁加尔瑟诺娃街至T.雷斯库洛夫街区域进行清理，收集运走超200袋垃圾。该行动由总统托卡耶夫发起，全国各地区居民、国家机关、社会组织和企业代表共同参与，旨在支持生态价值观、发展清洁文化、加强公民责任，体现对故土尊重和代际责任。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">总统电视广播综合体支持“清洁哈萨克斯坦”共和国生态行动
+
+记者们参与了区域整治工作：进行了卫生清理，收集了生活垃圾，整理了公共空间。具体而言，清理了努拉-叶西尔运河沿岸区域——从F.翁加尔瑟诺娃街到T.雷斯库洛夫街。收集并运走了超过200袋垃圾。
+
+图片：维克托·费久宁/Kazinform 国家元首发起的“清洁哈萨克斯坦”倡议远不止一次性的清扫活动。它体现了对故土的尊重、对秩序的追求，以及对我们将留给后代一个怎样的哈萨克斯坦的自觉态度。
+
+图片：维克托·费久宁/Kazinform 总统电视广播综合体参与“清洁哈萨克斯坦”行动，成为支持生态价值观、发展清洁文化和加强公民责任共同工作的一部分。记者们表明，集体行动不仅能改变区域面貌，还能改变社会对生态问题的态度。
+
+图片：维克托·费久宁/Kazinform 总统电视广播综合体团队支持卡瑟姆-若马尔特·托卡耶夫关于团结社会围绕清洁、秩序和生态责任价值观的呼吁。
+
+图片：维克托·费久宁/Kazinform 今天，全国所有地区的居民、国家机关、社会组织和企业代表都参与了公共和自然区域、水体沿岸、公园及其他地段的清理工作。
+
+图片：维克托·费久宁/Kazinform 这可以理解：“清洁哈萨克斯坦”从我们每个人开始！</div>
+<ul>
+<li>总统电视广播综合体参与清洁行动</li>
+<li>清理努拉-叶西尔运河沿岸区域</li>
+<li>收集运走超过200袋垃圾</li>
+<li>全国各地区共同参与生态行动</li>
+<li>托卡耶夫倡导清洁与生态责任</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该行动强化托卡耶夫总统的生态议程，提升公民环保意识和社会凝聚力，对哈国政治形象有正面作用，经济上推动绿色治理，外交上展示可持续发展承诺，矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">20</span> <a href="https://cn.inform.kz/news/doushenggongzuo-a8c00c1e/" target="_blank">托卡耶夫听取首都绿化及生态环保工作汇报</a></h3>
+<div class="item-meta">哈通社中文版 · 09/19 17:21<span class="source-link"><a href="https://cn.inform.kz/news/doushenggongzuo-a8c00c1e/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫总统听取首都绿化和生态环保工作汇报。阿斯塔纳已完成近500个庭院及公共空间改造，年底前计划再完成170多个。生态和自然资源部长汇报“清洁哈萨克斯坦”倡议成果：自2024年启动以来，全国组织2000多场活动，清理垃圾约380万吨，取缔近1万个垃圾倾倒点。9月19日世界清洁日当天，全国开展大规模生态环保活动。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">活动期间，阿斯塔纳市市长杰恩斯·哈斯姆别克向托卡耶夫总统汇报了首都综合环境改善和绿化工作进展。
+
+据介绍，近年来阿斯塔纳已完成近500个庭院及公共空间的改造和环境提升。今年年底前，还计划完成170多个庭院和公共场所的整治，其中包括公园、花坛和林荫大道等。
+
+此外，阿斯塔纳正在沿伊希姆河逐步构建统一的公共和休闲空间体系。相关工作将把分布在城市不同区域的公园、步行区和体育活动场所连接起来，形成连续的绿色空间带。
+
+生态和自然资源部长阿勒别克·库安特罗夫向国家元首汇报了“清洁哈萨克斯坦”倡议实施以来取得的成果。
+
+据他介绍，自“清洁哈萨克斯坦”倡议启动以来，全国已组织开展2000多场生态环保活动，共清理垃圾约380万吨，并清理和取缔近1万个垃圾倾倒点。
+
+9月19日是世界清洁日（World Cleanup Day）。当天，全国各地区围绕“清洁哈萨克斯坦”项目开展了大规模生态环保活动。
+
+“清洁哈萨克斯坦”全民生态行动于2024年启动。</div>
+<ul>
+<li>阿斯塔纳已完成近500个庭院及公共空间改造</li>
+<li>年底前计划再完成170多个庭院和公共场所整治</li>
+<li>沿伊希姆河构建统一公共休闲空间体系</li>
+<li>“清洁哈萨克斯坦”倡议清理垃圾约380万吨</li>
+<li>全国取缔近1万个垃圾倾倒点，开展2000多场活动</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">提升城市生态与宜居性，增强民众环保意识；推动绿色基础设施建设，改善投资环境；强化国家生态治理形象，助力外交软实力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">21</span> <a href="https://www.inform.kz/ru/tokaev-zaslushal-dokladi-oblagoustroystve-stolitsi-irealizatsii-taza-kazakstan-e06d9084" target="_blank">总统听取关于阿斯塔纳市容改善和“清洁哈萨克斯坦”实施情况的汇报</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/19 17:11<span class="source-link"><a href="https://www.inform.kz/ru/tokaev-zaslushal-dokladi-oblagoustroystve-stolitsi-irealizatsii-taza-kazakstan-e06d9084" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫听取阿斯塔纳市美化及“清洁哈萨克斯坦”倡议汇报。阿斯塔纳近年已美化约500个庭院和公共空间，年底前计划再建170余个，并沿叶西尔河打造连续绿色路线。生态部长库安特罗夫表示，该倡议实施以来全国举办超2000场环保活动，收集超380万吨垃圾，清理约1万处非法垃圾场。托卡耶夫当日参加植树活动。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：总统听取关于阿斯塔纳市美化及“清洁哈萨克斯坦”倡议落实情况的汇报
+
+正文：
+阿斯塔纳市市长热尼斯·卡瑟姆别克汇报了首都综合绿化与美化工作。
+
+据其介绍，近年来阿斯塔纳已美化约500个庭院和公共空间，计划在今年年底前再建设超过170个庭院和公共区域，包括公园、街心花园和林荫道。
+
+卡瑟姆-若马尔特·托卡耶夫听取了关于沿叶西尔河构建统一公共与休闲空间系统进展的汇报。在此框架下，计划打造一条连续的绿色路线，将城市不同区域的公园、步行区和运动区连接起来。
+
+生态与自然资源部部长阿利别克·库安特罗夫报告称，自“清洁哈萨克斯坦”倡议实施以来，全国已举办超过2000场环保活动，收集超过380万吨垃圾，清理约1万处非法垃圾场。
+
+需要提醒的是，今日国家元首参加了“清洁哈萨克斯坦”行动，并在阿斯塔纳总统公园种下了一棵树。</div>
+<ul>
+<li>阿斯塔纳已美化约500个庭院和公共空间</li>
+<li>年底前计划再建170余个庭院及公共区域</li>
+<li>沿叶西尔河打造连续绿色路线连接各区</li>
+<li>“清洁哈萨克斯坦”活动收集超380万吨垃圾</li>
+<li>全国清理约1万处非法垃圾场</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该倡议提升哈国生态环境治理形象，推动城市基础设施与绿化投资，增强民众环保意识，同时巩固总统亲民务实形象，对政治稳定和经济可持续发展具有积极意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">22</span> <a href="https://cn.inform.kz/news/guojiazaigong-2f908ddd/" target="_blank">托卡耶夫参加“清洁哈萨克斯坦”生态行动并与青年共同植树</a></h3>
+<div class="item-meta">哈通社中文版 · 09/19 16:37<span class="source-link"><a href="https://cn.inform.kz/news/guojiazaigong-2f908ddd/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫参加“清洁哈萨克斯坦”全民生态行动，与青年在阿斯塔纳总统公园植树。生态和自然资源部长及阿斯塔纳市长汇报工作。托卡耶夫强调环保是宪法义务，该项目具有社会和历史意义。9月19日世界清洁日，全国将开展大规模生态行动。该行动于2024年启动，旨在培育全社会清洁文化。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据总统府新闻局消息，国家元首哈斯穆-卓玛尔特·托卡耶夫参加“清洁哈萨克斯坦”全民生态行动，并与青年生态活动人士一同在阿斯塔纳总统公园内植树。
+活动期间，生态和自然资源部长阿勒别克·库安特罗夫以及阿斯塔纳市市长金恩斯·哈斯姆别克就相关工作进展作了汇报。
+Фото: Акорда “今天，我们大家一起在这座公园植树，共同参与这项理性而有意义的事业。这对于我们的社会以及年轻的国家而言，确实是一项十分必要且有益的工作。在此，我向大家长期以来对国家政策给予支持表示衷心感谢。”国家元首说。
+Фото: Акорда 托卡耶夫指出，他认为积极参与此类公益事业的青年是真正具有爱国情怀的公民。因为对祖国、故土的热爱，正是从自己的家庭、村庄和城市开始的。
+“珍爱自然、关心环境，是我们民族与生俱来的宝贵品质，也是我们的祖先留给我们的教诲和嘱托。根据新宪法，这种理念和相关行动已成为公民的一项义务。因此，我们举全国之力开展的‘清洁哈萨克斯坦’项目具有特殊的社会和历史意义。我们应当成为一个生态文明程度较高的国家。再次强调，这是宪法明确规定的一项重要任务。”托卡耶夫说。
+Фото: Акорда 值得一提的是，9月19日是世界清洁日（World Cleanup Day）。当天，全国各地区都将围绕“清洁哈萨克斯坦”项目开展大规模生态行动。
+回顾来看，“清洁哈萨克斯坦”全国生态行动于2024年启动。同年，托卡耶夫总统提出了在全社会培育清洁文化的倡议。</div>
+<ul>
+<li>托卡耶夫参加清洁哈萨克斯坦生态行动并植树</li>
+<li>强调环保是宪法义务，项目具社会历史意义</li>
+<li>9月19日世界清洁日全国开展大规模生态行动</li>
+<li>行动于2024年启动，旨在培育清洁文化</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该行动强化托卡耶夫总统的生态治理形象，推动宪法环保义务落实，促进社会清洁文化培育，对哈国政治稳定、经济绿色转型及国际生态合作产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">23</span> <a href="https://www.inform.kz/ru/glava-gosudarstva-posadil-derevo-vprezidentskom-parke-astani-a5cbc190" target="_blank">国家元首在阿斯塔纳总统公园植树</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/19 16:26<span class="source-link"><a href="https://www.inform.kz/ru/glava-gosudarstva-posadil-derevo-vprezidentskom-parke-astani-a5cbc190" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在阿斯塔纳总统公园参与“清洁哈萨克斯坦”生态行动，与活动人士和志愿者共同植树。活动旨在推动国家生态倡议，提升公众环保意识。托卡耶夫亲自参与，体现国家对环境问题的重视。此举也呼应了哈萨克斯坦近年来在绿色经济和可持续发展领域的政策方向。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：国家元首在阿斯塔纳总统公园植树
+
+正文：
+在参与“清洁哈萨克斯坦”生态行动框架内，国家元首卡瑟姆-若马尔特·托卡耶夫与活动人士和志愿者一起，在阿斯塔纳总统公园区域内种植了一棵树。
+
+图片：阿克奥尔达 图片：阿克奥尔达 图片：阿克奥尔达</div>
+<ul>
+<li>托卡耶夫参与“清洁哈萨克斯坦”生态行动</li>
+<li>在阿斯塔纳总统公园与志愿者共同植树</li>
+<li>活动旨在推动环保和生态意识</li>
+<li>总统亲自参与彰显国家重视环境</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举强化托卡耶夫亲民环保形象，推动国内生态议程，助力绿色经济转型；对外展示哈萨克斯坦可持续发展承诺，提升国际环保合作话语权。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">24</span> <a href="https://www.inform.kz/ru/24-uchastnika-transnatsionalnoy-opg-osudili-zatelefonnoe-moshennichestvo-vastane-e9e3e218" target="_blank">24名跨国犯罪集团成员因电话诈骗在阿斯塔纳被判刑</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/19 15:23<span class="source-link"><a href="https://www.inform.kz/ru/24-uchastnika-transnatsionalnoy-opg-osudili-zatelefonnoe-moshennichestvo-vastane-e9e3e218" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦卡拉干达州法院判处24名跨国组织犯罪集团成员，该集团通过SIM-box设备从阿斯塔纳向公民拨打诈骗电话，冒充政府机构、银行和哈萨克邮政工作人员，获取确认码并诱骗贷款转账。大多数成员来自俄罗斯，通过Telegram协调，每日报酬50-100美元。关键证据为手机中的Telegram聊天记录。被告不认罪，判决尚未生效。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：24名跨国组织犯罪集团成员因电话诈骗在阿斯塔纳被判刑
+
+正文：
+卡拉干达州检察官确保了对所提交证据的全面和客观审查。
+
+——法院认定，参与者协同行动，每人被分配了特定角色，其行动由组织者协调。大多数参与者从俄罗斯联邦来到哈萨克斯坦。个别人员根据组织者的指示前往俄罗斯获取设备。执行者通过Telegram寻找。他们被要求抵达特定城市，租房，接收或运送SIM-box，将设备连接到互联网，安装哈萨克斯坦运营商的SIM卡，并确保其不间断运行。据总检察院消息，参与者每天获得50至100美元的报酬。
+
+案件的关键证据是在被判刑者手机中发现的Telegram聊天记录。消息中包含有关设备安装和维护、更换SIM卡、执行任务以及准备和向协调员发送报告的指示。
+
+——通过连接到SIM-box的电话号码，向公民拨打诈骗电话。犯罪分子冒充国家机关、银行、哈萨克邮政股份公司和其他组织的工作人员，获取公民的确认码，说服他们办理贷款并转账。——该部门补充道。
+
+尽管被告不认罪，但控方提交的证据表明他们参与了有组织犯罪活动。
+
+判决尚未生效。
+
+此前，检察官解释了如何避免成为利用人工智能模仿亲人声音的诈骗者的受害者。</div>
+<ul>
+<li>24名跨国诈骗集团成员在阿斯塔纳被判刑</li>
+<li>通过SIM-box设备拨打诈骗电话，冒充政府银行人员</li>
+<li>成员多来自俄罗斯，通过Telegram协调，日薪50-100美元</li>
+<li>关键证据为Telegram聊天记录，被告不认罪</li>
+<li>判决尚未生效，检察官提醒防范AI语音诈骗</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此案显示哈萨克斯坦对跨国网络犯罪打击力度加强，有助于维护金融安全和公民信任，但需关注与俄罗斯的司法协作及区域网络安全治理。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">25</span> <a href="https://cn.inform.kz/news/yingdongzhedechengjiuyu-dbcba8f8/" target="_blank">叶尔兰·卡林：应持续宣传劳动者的成就与奋斗历程</a></h3>
+<div class="item-meta">哈通社中文版 · 09/19 14:02<span class="source-link"><a href="https://cn.inform.kz/news/yingdongzhedechengjiuyu-dbcba8f8/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统办公厅主任叶尔兰·卡林主持召开会议，审议内政议程并讨论“劳动节”等活动的筹备。卡林强调应持续宣传劳动者成就，弘扬宪法价值观，包括崇尚劳动、尊重工人职业。总统托卡耶夫以国家高级勋章奖励杰出专业人士和劳动世家。卡林要求长期、系统地在信息空间宣传劳动者贡献，关注本土IT项目和数字技术应用，并让勤劳成为民族性格的一部分。会议最后向国家机关负责人提出具体工作要求，确保总统倡议有效落实。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">会议审议了当前内政议程，并详细讨论了“劳动节”等即将举行的重点活动筹备情况。
+卡林特别强调，应继续大力推动勤劳和进取理念，在全社会营造崇尚劳动、追求发展的价值氛围。
+“国家正在全方位弘扬宪法价值观，其中包括崇尚劳动、追求进步以及尊重工人职业。总统哈斯穆-卓玛尔特·托卡耶夫高度重视弘扬创造性劳动理念，并持续以国家高级勋章奖励各领域的杰出专业人士和劳动世家代表。”他说。
+卡林指出，应在信息空间持续宣传劳动者的成就和人生经历，充分展现他们为国家发展所作出的贡献。同时，应特别关注本土IT项目、初创企业取得的成果以及新数字技术的应用。这项工作不能局限于某些具体活动，而应长期、持续、系统地开展。
+“正如总统所明确指出的，我们的最终目标，是让勤劳成为民族性格中不可或缺的一部分。”卡林说。
+会议最后，卡林就当前内政议程向相关国家机关负责人提出具体工作要求。他同时强调，应确保国家元首各项倡议和指示得到有效落实，并继续加强对执行情况的监督。</div>
+<ul>
+<li>卡林强调全社会应崇尚劳动、追求发展</li>
+<li>总统托卡耶夫以高级勋章奖励杰出劳动者</li>
+<li>应长期系统宣传劳动者成就和本土IT成果</li>
+<li>最终目标是让勤劳成为民族性格的一部分</li>
+<li>会议要求国家机关落实总统倡议并加强监督</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举强化哈国官方劳动价值观，有助于凝聚社会共识、稳定内政；通过表彰劳动世家和IT人才，间接推动经济创新与数字转型，但对外交和矿产格局无直接显著影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/kazahstanskie-mirotvortsi-unichtozhili-350-vzrivoopasnih-predmetov-nagolanskih-v-1cbd4384" target="_blank">哈萨克斯坦维和人员在戈兰高地销毁350个爆炸物</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/20 04:30<span class="source-link"><a href="https://www.inform.kz/ru/kazahstanskie-mirotvortsi-unichtozhili-350-vzrivoopasnih-predmetov-nagolanskih-v-1cbd4384" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦第三个国家维和分队在联合国戈兰高地脱离接触观察员部队服役满四个月。期间，工兵排雷小组发现并销毁350个爆炸物和1800件轻武器弹药。6月至9月，国家分队共开展470次行动，包括379次巡逻、49个临时夜间观察哨、11次快速反应演习和11次社区会面。维和连根据联合国授权执行巡逻、监测、加强观察哨、撤离人员及护送任务。此前报道称哈工兵在戈兰高地已排除超2000件弹药。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">9月19日，哈萨克斯坦第三个国家维和分队在联合国戈兰高地脱离接触观察员部队服役满四个月。
+
+照片：哈萨克斯坦共和国国防部 根据联合国特派团授权，维和连人员在其责任区内巡逻，监测局势，并保持快速反应部队的持续战备状态。
+
+必要时，军人被调派加强观察哨、撤离联合国人员，以及护送该组织代表和货物。
+
+照片：哈萨克斯坦共和国国防部 四个月内，哈萨克斯坦分队的工兵排雷小组发现并销毁了350个爆炸物和1800件轻武器弹药。
+
+照片：哈萨克斯坦共和国国防部 6月至9月期间，国家分队共开展了470次行动。除379次巡逻外，军人还组织了49个临时夜间观察哨，进行了11次快速反应部队演习，并与当地社区代表举行了11次会面。
+
+照片：哈萨克斯坦共和国国防部 哈萨克斯坦维和分队继续根据联合国授权执行任务。
+
+此前有报道称，哈萨克斯坦工兵在戈兰高地排除了2000多件弹药。</div>
+<ul>
+<li>哈维和分队在戈兰高地服役满四个月</li>
+<li>工兵销毁350个爆炸物和1800件弹药</li>
+<li>四个月共开展470次行动含379次巡逻</li>
+<li>组织49个夜间观察哨和11次快反演习</li>
+<li>维和连按联合国授权执行多项任务</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此行动提升哈萨克斯坦作为联合国维和贡献者的国际形象，巩固与联合国合作，增强在中东事务中的外交存在，同时展示其工兵专业能力，对地区安全稳定产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/partnerstvo-s-yuzhnoy-koreey-novie-platezhi-i-triumf-ribakinoy-chto-mirovie-smi--27cec320" target="_blank">与韩国合作、新支付方式和雷巴金娜的胜利：世界媒体如何报道哈萨克斯坦</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/19 13:30<span class="source-link"><a href="https://www.inform.kz/ru/partnerstvo-s-yuzhnoy-koreey-novie-platezhi-i-triumf-ribakinoy-chto-mirovie-smi--27cec320" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>韩国《韩国时报》报道托卡耶夫与李在明在首尔签署13项协议，将双边关系提升为未来全面战略伙伴关系，韩国累计投资达120亿美元，去年游客超5.1万人次。国际文传电讯社关注哈韩卫星合作，涉及“Ғалам”项目及卫星组件生产。Trend通讯社报道托卡耶夫提议构建经中亚至欧洲的运输链，中间走廊运量六年增长五倍，目标吞吐量2000万吨。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：与韩国的伙伴关系、新支付方式及雷巴金娜的胜利：世界媒体如何报道哈萨克斯坦
+
+正文：
+图片：koreatimes.co.kr 韩国《韩国时报》报道了哈萨克斯坦总统卡瑟姆-若马尔特·托卡耶夫与韩国总统李在明在首尔会谈的成果。双方签署了13项协议和备忘录，涵盖能源、工业、技术、劳动力流动和文化合作。关键决定之一是将双边关系提升至未来全面战略伙伴关系水平。
+
+该报援引韩国领导人的话，强调哈萨克斯坦对韩国经济安全的重要性，并指出该国的资源潜力及高科技产业发展前景。文章还提到，韩国对哈萨克斯坦的累计投资额已达120亿美元，去年来自韩国的游客数量超过5.1万人次。
+
+俄罗斯国际文传电讯社关注哈韩合作的技术层面。哈萨克斯坦与韩国CONTEC Space Group正在讨论投资“Ғалам”项目、联合生产卫星及其组件，以及发展地面站网络。
+
+该社指出，有前景的方向包括在哈萨克斯坦建立卫星组件生产中心，随后向中亚、中东和欧洲国家供应。此外，还考虑本地化大型地面天线系统以及应用人工智能处理卫星图像。
+
+图片：ru.trend.az 阿塞拜疆通讯社Trend强调了哈萨克斯坦总统访问首尔的运输物流层面。该社报道称，卡瑟姆-若马尔特·托卡耶夫提议利用TRIPP倡议，构建从韩国经中亚到欧洲的全程运输物流链。
+
+Trend在中间走廊发展及其与其他路线进一步对接的背景下看待这一提议。据该社数据，过去六年中间走廊的运输量增长了五倍，哈萨克斯坦计划将其吞吐能力提升至2000万吨。
+
+图片：vedomosti.ru 俄罗斯商业报纸《Vedomosti》报道</div>
+<ul>
+<li>哈韩签署13项协议，关系升级为未来全面战略伙伴关系</li>
+<li>韩国累计对哈投资120亿美元，去年游客超5.1万人次</li>
+<li>哈韩讨论卫星联合生产及地面站网络建设</li>
+<li>托卡耶夫提议构建韩国经中亚至欧洲运输链</li>
+<li>中间走廊运量六年增五倍，目标吞吐量2000万吨</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">哈韩关系升级将吸引韩国技术与资本，推动哈国卫星产业和运输物流发展，增强其在中亚的枢纽地位，同时深化与韩国在能源、技术领域的合作，对地区矿产和供应链格局产生积极影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(4 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/mozhetli-strahovka-pogasit-kredit-posle-smerti-zaemshika-8eb14caa" target="_blank">借款人去世后保险能否偿还贷款</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/19 21:05<span class="source-link"><a href="https://www.inform.kz/ru/mozhetli-strahovka-pogasit-kredit-posle-smerti-zaemshika-8eb14caa" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈通社报道，若借款人死亡，需合同明确将死亡列为保险事故，保险方才赔付。若保险金划转银行，则用于还贷。若赔付不足，剩余债务未必由继承人全额承担，保险公司按合同赔付，法律也规定可拒赔情形。记者还梳理了继承人面对逝者未还贷款时需知事项。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">——根据哈通社报道，若借款人死亡后需通过保险偿还贷款，则必须在合同中明确将该人的死亡列为保险事故。如此，保险机构将按照合同规定的条件和程序进行保险赔付。
+如果根据保险合同条款，保险金被划转给银行，则这些资金将用于偿还贷款债务。
+——如果保险赔付不足以全额偿还贷款，部分债务可能仍未清偿。但这并不意味着继承人必须全额偿还剩余债务。同时，保险公司根据保险合同规定的条件进行赔付。法律也规定了保险公司有权拒绝赔付的情形，——奥尔扎斯·拉马扎诺夫补充道。
+此外，该机构记者还探讨了继承人需要了解的事项：若亲属去世后留有未偿还贷款。</div>
+<ul>
+<li>死亡须为合同约定保险事故，保险方才赔付</li>
+<li>保险金若划转银行，将用于偿还贷款债务</li>
+<li>赔付不足时，剩余债务未必由继承人全额承担</li>
+<li>保险公司按合同赔付，法律允许特定情形下拒赔</li>
+<li>继承人需了解逝者未还贷款的相关规定</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该报道有助于明确哈国借款人死亡后保险与债务处理规则，减少继承人纠纷，稳定银行信贷风险，对金融消费者保护和保险市场规范有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/kredit-posle-smerti-zaemshika-chto-dolzhni-znat-nasledniki-ea27e298" target="_blank">借款人去世后的贷款：继承人应知事项</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/19 19:40<span class="source-link"><a href="https://www.inform.kz/ru/kredit-posle-smerti-zaemshika-chto-dolzhni-znat-nasledniki-ea27e298" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦政策研究分析师指出，借款人去世后，其贷款债务将转移给继承人，但继承人仅需在继承遗产价值范围内承担偿还责任。若债务超过遗产价值，继承人无需以个人财产补足；若无遗产或未接受遗产，则无偿还义务。此外，哈萨克斯坦公民可在14天内无罚款拒绝贷款。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据他所说，一个人去世后，继承人不仅继承其房屋、汽车或其他财产，还继承某些义务。其中包括贷款债务。因此，借款人的死亡并不终止偿还贷款的义务。
+然而，继承人没有义务用自己的资金全额偿还死者的债务。他仅在所继承遗产的价值范围内对债务承担责任。
+——被继承人的义务在继承人接受遗产的价值范围内转移给继承人。如果没有遗产或者遗产未被接受，死者的继承人没有理由偿还其债务，——他表示。
+因此，即使死者的债务金额超过其遗留财产的价值，继承人的责任也不能超过所接受遗产的价值。
+需要指出的是，哈萨克斯坦人可以在14天内无罚款地拒绝贷款。</div>
+<ul>
+<li>借款人死亡不终止还贷义务，债务随遗产转移</li>
+<li>继承人仅在继承遗产价值范围内承担债务</li>
+<li>债务超过遗产价值时，继承人无需个人补足</li>
+<li>无遗产或未接受遗产，继承人无还债义务</li>
+<li>哈萨克斯坦人可在14天内无罚款拒绝贷款</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该规定明确了继承债务的有限责任原则，有助于保护继承人权益，减少因债务继承引发的纠纷，对哈国金融消费保护和家庭财产稳定具有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/eksperti-otsenili-vozmozhnoe-izmenenie-minimalnoy-zarplati-v2027-godu-952848ff" target="_blank">专家评估哈萨克斯坦2027年最低工资可能的变化</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/19 16:00<span class="source-link"><a href="https://www.inform.kz/ru/eksperti-otsenili-vozmozhnoe-izmenenie-minimalnoy-zarplati-v2027-godu-952848ff" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦专家评估2027年最低工资调整可能性。经济学家阿尔曼·拜加诺夫认为上调概率高，建议最低工资至少为中位数工资（约30万坚戈）的50%，并随收入年增8-10%调整。另一位经济学家包尔詹·伊斯卡科夫则强调尚未决定，当前预算草案中2027年最低工资仍为8.5万坚戈，此前曾讨论9万、11万甚至15万坚戈等方案。最终将在审议2027-2029年共和国预算时决定。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：专家评估哈萨克斯坦2027年最低工资可能的变化
+
+正文：
+需要提醒的是，此前，国民经济第一副部长阿扎马特·阿姆林表示，最低工资的调整问题将在审议共和国预算时讨论。据他称，相关计算已经完成，最终决定将在稍后公布。
+
+R-Finance的经济学家兼财务顾问阿尔曼·拜加诺夫表示，明年提高最低工资的可能性仍然很高。
+
+——我认为明年提高最低工资的可能性相当高。对预算来说，这不应成为重大负担。哈萨克斯坦的中位数工资约为30万坚戈，因此在我看来，最低工资可能的变化不会对预算或企业造成显著负担，——阿尔曼·拜加诺夫说。
+
+照片：来自阿尔曼·拜加诺夫的个人档案。据专家称，在确定最低工资标准时，应考虑居民收入的动态。他建议将中位数工资作为参考指标之一。
+
+——最低工资应每年根据哈萨克斯坦中位数工资的变化进行调整。如果中位数工资约为30万坚戈，那么在我看来，最低工资至少应达到这一水平的50%。如果中位数工资或居民平均收入每年增长8-10%，那么最低工资也应相应地根据这一动态进行调整，——经济学家指出。
+
+与此同时，经济学家包尔詹·伊斯卡科夫认为，现在谈论提高最低工资作为已决定的问题还为时过早。
+
+——今天我不会把提高最低工资说成是已经做出的决定。目前谈论的正是将在审议2027-2029年共和国预算时讨论的可能性，——包尔詹·伊斯卡科夫指出。
+
+照片：来自包尔詹·伊斯卡科夫的个人档案。据他称，在当前预算草案中，2027年的最低工资保持在8.5万坚戈的水平。同时，此前在公开讨论中曾出现过不同的参考标准——9万、11万甚至15万坚戈。
+
+经济学家解释说，最低工资的确定考虑了一系列指标。其中包括中位数工资、劳动生产率、通货膨胀、就业水平、企业状况、预算能力以及指标变化的社会后果。
+
+现行方法规定了几项</div>
+<ul>
+<li>专家评估2027年最低工资上调可能性高</li>
+<li>建议最低工资为中位数工资30万坚戈的50%</li>
+<li>当前预算草案中2027年最低工资为8.5万坚戈</li>
+<li>曾讨论9万、11万、15万坚戈等参考标准</li>
+<li>最终决定将在审议2027-2029年预算时作出</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">若上调最低工资，将直接提升低收入群体购买力，对哈国消费市场产生温和刺激；但对企业用工成本影响有限。政治上可缓解社会压力，经济上需平衡预算能力与通胀风险，外交与矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://www.inform.kz/ru/narusheniya-viyavleni-prizakupke-medoborudovaniya-na174mln-tenge-v-kostanayskoy--47a0d5cb" target="_blank">科斯塔奈州1740万坚戈医疗设备采购中发现违规行为</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/19 13:05<span class="source-link"><a href="https://www.inform.kz/ru/narusheniya-viyavleni-prizakupke-medoborudovaniya-na174mln-tenge-v-kostanayskoy--47a0d5cb" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦科斯塔奈州费奥多罗夫区医院在采购医疗设备时被查出违规，涉及金额1740万坚戈。总检察院发现，技术规格人为偏向特定型号和制造商，违反政府采购法。此前该医院在购买胃镜、冲洗泵、显微镜等设备时也存在类似做法。分析结果已发往全州用于监督。此前乌拉尔斯克还发生政府采购欺诈未遂事件。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：科斯塔奈州采购医疗设备时发现违规行为，涉案金额1740万坚戈
+
+正文：
+在对“费奥多罗夫区医院”公用企业进行检查时，核查了用于购买医疗设备的预算资金使用的合法性。检察院发现了在政府采购过程中人为限制竞争的事实。
+
+——所采购设备的技术规格在制定时包含了过于详细的特性，这些特性针对特定型号和特定制造商。这违反了哈萨克斯坦共和国政府采购法、诚信竞争原则、供应商平等原则以及预算资金有效使用原则，——总检察院通报称。
+
+总检察院指出，对以往采购的分析显示，该医院在购买胃镜、冲洗泵、实验室显微镜、手术台、病人监护仪及其他医疗产品时也采用了类似做法。
+
+——鉴于该做法的系统性，分析结果已发送至全州，供监督措施参考和使用，——该部门补充道。
+
+此前有报道称，在乌拉尔斯克制止了一起政府采购领域的欺诈未遂事件：一名承包商在竞标中提供了伪造的银行担保。</div>
+<ul>
+<li>科斯塔奈州医院采购医疗设备违规，涉案1740万坚戈</li>
+<li>技术规格偏向特定制造商，人为限制竞争</li>
+<li>以往采购胃镜、显微镜等也存在类似问题</li>
+<li>总检察院将分析结果发往全州用于监督</li>
+<li>乌拉尔斯克此前发生政府采购欺诈未遂事件</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该事件暴露哈国政府采购监管漏洞，可能推动完善招标法规、加强反腐，短期影响地方医疗采购效率，长期利于优化营商环境和预算使用。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/13-professiy-neftegazovoy-otrasli-mogut-ischeznut-vkazahstane-4f5f792a" target="_blank">哈萨克斯坦石油天然气行业13个职业可能消失</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/19 22:32<span class="source-link"><a href="https://www.inform.kz/ru/13-professiy-neftegazovoy-otrasli-mogut-ischeznut-vkazahstane-4f5f792a" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦石油天然气行业正经历数字化转型，自动化、机器人化、人工智能等技术改变劳动性质。根据新职业和能力图谱研究，该行业确定了37个新职业、7个转型职业和13个消失职业。变化受生产自动化、远程控制、无人机、大数据、机器学习和人工智能影响。计划转向数字油田和数字模型。传统职业不会完全消失，但工作内容和要求将变化，员工再培训和数字技能发展成优先方向。哈萨克斯坦正形成新人才培养模式。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据该部门消息，数字技术、自动化和生产机器人化正在逐步改变石油天然气行业的劳动性质和对专家资格的要求。
+——在哈萨克斯坦新职业和能力图谱中，研究了石油天然气行业的所有方向——从地质勘探到石油和天然气的开采、运输、储存和加工。根据行业研究结果，确定了37个新职业、7个转型职业和13个消失职业，——消息中写道。
+行业变化受到生产自动化、设备远程控制、无人机使用、大数据分析、机器学习和人工智能技术的影响。
+此外，计划转向人员参与最少的数字油田，以及创建油田和炼油厂的数字模型。
+该部还指出，传统职业不会完全消失。未来几年，其工作内容和专家要求可能会发生变化。因此，行业员工的再培训和数字技能发展成为优先方向之一。
+提醒一下，哈萨克斯坦正在根据人工智能的发展形成新的人才培养模式。</div>
+<ul>
+<li>油气行业13个职业可能消失，37个新职业出现</li>
+<li>自动化、AI、大数据等技术改变行业劳动性质</li>
+<li>计划转向数字油田和炼油厂数字模型</li>
+<li>传统职业不会消失，但需再培训和数字技能</li>
+<li>哈萨克斯坦形成新人才培养模式适应AI发展</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该变化将推动哈国油气行业技术升级，减少低技能岗位，增加数字人才需求，影响就业结构和教育体系。同时，数字油田和AI应用可能提升开采效率，增强能源经济竞争力，并对外资和技术合作产生新需求。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/guo18rixia-27e4fe31/" target="_blank">国际油价18日下跌</a></h3>
+<div class="item-meta">哈通社中文版 · 09/19 11:15<span class="source-link"><a href="https://cn.inform.kz/news/guo18rixia-27e4fe31/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>9月18日国际油价下跌。纽约商品交易所10月交货的轻质原油期货价格下跌1.61美元，收于每桶100.30美元，跌幅1.58%；伦敦布伦特11月交货原油期货价格下跌95美分，收于每桶103.87美元，跌幅0.91%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 国际油价18日下跌
+正文:
+截至当天收盘，纽约商品交易所10月交货的轻质原油期货价格下跌1.61美元，收于每桶100.30美元，跌幅为1.58%；11月交货的伦敦布伦特原油期货价格下跌95美分，收于每桶103.87美元，跌幅为0.91%。</div>
+<ul>
+<li>纽约轻质原油期货价格下跌1.61美元，收于每桶100.30美元</li>
+<li>布伦特原油期货价格下跌95美分，收于每桶103.87美元</li>
+<li>纽约原油跌幅1.58%，布伦特原油跌幅0.91%</li>
+<li>国际油价18日整体呈现下跌态势</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">国际油价下跌可能减少哈萨克斯坦石油出口收入，对哈国财政和经济形成压力，或影响其与欧佩克+的产量政策协调，并波及矿产能源领域投资。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-09-20 09:04</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
