@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年9月21日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年9月21日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年09月20日早9:00至2026年09月21日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 6 条</span><span class="stat-chip">3 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">2</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">1</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">0</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/ot-konstitutsionnogo-suda-do-akimatov-kadrovie-naznacheniya-za-nedelyu-v-kazahst-2ed54d9b" target="_blank">从宪法法院到地方政府：哈萨克斯坦一周人事任命</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/20 13:30<span class="source-link"><a href="https://www.inform.kz/ru/ot-konstitutsionnogo-suda-do-akimatov-kadrovie-naznacheniya-za-nedelyu-v-kazahst-2ed54d9b" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>本周哈萨克斯坦进行多项人事任命：努尔兰·库尔巴特罗夫任QazTrade总经理，萨肯·马梅尔别科夫任突厥斯坦国际机场总经理，叶尔克詹·昆图甘任总统电视广播综合体副主任。正义党任命阿斯哈特·奥拉洛夫、努尔苏丹·拜蒂列索夫和埃尔达尔·茹马加济耶夫为副主席，分别负责监督分析、法律立法及经济区域发展。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">从宪法法院到各州政府：哈萨克斯坦一周内的人事任命
+
+本周伊始，努尔兰·库尔巴特罗夫被任命为QazTrade总经理。此前，自2016年5月起，他一直担任QazTrade贸易政策发展中心股份公司副总经理。库尔巴特罗夫于2009年在经济研究所开始职业生涯。多年来，他从事投资分析、战略研究和企业发展等工作。在QazTrade，他负责贸易分析、与世界贸易组织和经济合作与发展组织的互动、一体化进程以及制裁合规。
+
+图片：哈萨克斯坦共和国贸易和一体化部
+
+民航领域也发生了人事变动。萨肯·马梅尔别科夫被批准为突厥斯坦国际机场股份公司总经理。任命前，他已担任该航空港负责人超过一年。马梅尔别科夫在航空业工作18年。2008年在奇姆肯特机场股份公司开始职业生涯，担任过多个职位，包括经济和财务董事会副主席。2019年，他参加了美国SABIT项目实习，该项目致力于欧亚机场发展。
+
+图片：突厥斯坦机场
+
+叶尔克詹·昆图甘被任命为哈萨克斯坦共和国总统电视广播综合体副主任。此前，她领导Jibek Joly电视频道。多年来，她曾担任总统电视广播综合体创意总监、Atameken Business执行制片人以及欧亚电视频道创意制片人。在新职位上，她将参与协调电视内容、信息和创意项目的发展，以及制作流程。
+
+图片：Kazinform
+
+在政治舞台上，正义党进行了人事任命。新副主席被任命。他们是阿斯哈特·奥拉洛夫、努尔苏丹·拜蒂列索夫和埃尔达尔·茹马加济耶夫。
+
+阿斯哈特·奥拉洛夫将负责监督、分析和评估活动。任命前，他担任曼吉斯套州第一副州长，此前曾任哈萨克斯坦共和国文化和体育部长、信息和社会发展部副部长以及阿斯塔纳市副市长。
+
+图片：正义党
+
+努尔苏丹·拜蒂列索夫将负责法律和立法方向。他在司法系统拥有多年经验，此前曾是马吉利斯议员。
+
+图片：正义党
+
+埃尔达尔·茹马加济耶夫将负责经济、行业和区域发展。此前曾在内部政策领域工作。</div>
+<ul>
+<li>库尔巴特罗夫任QazTrade总经理，负责贸易分析与WTO互动</li>
+<li>马梅尔别科夫任突厥斯坦机场总经理，航空业经验18年</li>
+<li>昆图甘任总统电视广播综合体副主任，曾领导Jibek Joly</li>
+<li>正义党任命三名新副主席，分管监督、法律和经济</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">人事调整强化贸易、航空和媒体领域管理，正义党领导层更新或影响政党格局，经济与法律方向任命有助于政策协调，对哈国政治经济外交产生温和影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/benyechang37jinjin-de41286b/" target="_blank">哈萨克斯坦本土医药制造业增长37% 进口替代持续推进</a></h3>
+<div class="item-meta">哈通社中文版 · 09/20 12:28<span class="source-link"><a href="https://cn.inform.kz/news/benyechang37jinjin-de41286b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2025年哈萨克斯坦医药市场规模增长31%至1.285万亿坚戈，本土医药制造业产值增长37%至1910亿坚戈；2026年上半年产值达1266亿坚戈，同比增长约30%。本土企业市场份额达40.3%，已注册2994种药品和医疗产品。国家采购本土产品比例达32%，已签署8个制药厂项目协议，总投资3913亿坚戈，计划生产约494种药品并创造1200多个就业岗位。药品监管体系达到世卫组织成熟度三级，并申请加入PIC/S。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦本土医药制造业增长37% 进口替代持续推进
+正文:
+发展本土医药市场，是促进经济增长、吸引投资、支持企业发展和创造就业岗位的重要途径。哈萨克斯坦卫生部医疗和医药监管委员会数据显示，2025年，哈萨克斯坦医药市场规模增长31%，达到1.285万亿坚戈。与此同时，国内医药制造业产值增长37%，达到1910亿坚戈。
+这一增长势头在2026年继续保持。今年上半年，哈萨克斯坦医药制造业产值达到1266亿坚戈，较去年同期的976亿坚戈增长约30%。与此同时，行业投资活跃度也不断提升。2025年，医药行业吸引投资额增长56%，达到1.428亿美元；仅2026年第一季度，又吸引投资710万美元。
+目前，哈萨克斯坦共有209家医药及医疗产品生产企业，其中43家生产药品。本土产品种类也在不断丰富。截至2026年8月，哈萨克斯坦生产企业已注册2994种药品和医疗产品。药品赋码追踪系统数据显示，目前哈萨克斯坦本土生产企业的市场份额已达到40.3%。
+卫生部表示，目前哈萨克斯坦企业正在生产种类较为丰富、市场需求较大的药品，包括抗菌药、心血管系统用药、镇痛和抗炎药、中枢神经系统疾病治疗药物以及其他药品。
+Фото: freepik.com 新项目与产能扩张
+国家采购在扩大本土生产方面发挥着重要作用。2025年，通过统一分销商“SK-Pharmacy”有限责任公司采购本土生产企业产品的比例达到32%。与此同时，哈萨克斯坦还为生产企业建立了产品生产和投资规划的长期机制。截至2026年初，已有31家本土生产企业签署83份长期供货合同，涉及2022种药品和医疗产品。
+此外，哈萨克斯坦医药产业发展还着眼于扩大技术能力、深化本土化水平以及掌握更加复杂的产品类型。目前，包括AstraZeneca、Pfizer和Roche在内的国际大型制药企业正参与哈萨克斯坦相关项目建设。国际合作有助于吸引投资和引进现代先进技术。
+卫生部指出，行业发展的新阶段与大规模投资项目密切相关。自2025年12月以来，哈萨克斯坦已签署8个制药厂建设投资项目实施协议，总投资额达3913亿坚戈。项目计划掌握约494种药品的生产，包括罕见病用药、抗菌药和抗肿瘤药物，并创造1200多个长期就业岗位。
+上述项目将主要在阿拉木图市、奇姆肯特市、阿拉木图州和卡拉干达州实施。项目落地后，将进一步丰富医药产品种类、提高本土化水平，并为哈萨克斯坦医药产品拓展出口市场创造新的机遇。
+严守药品质量关
+哈萨克斯坦药品生产严格遵循药品生产质量管理规范（GMP）要求，医疗产品生产企业则确保产品符合国际ISO质量标准。同时，哈萨克斯坦正持续加强国家药品监管体系建设。
+据世界卫生组织专家评估，哈萨克斯坦国家药品监管体系已达到成熟度三级。哈萨克斯坦是独联体国家中首个达到这一成熟度等级的国家，也是世卫组织欧洲区域53个成员国中第四个达到该等级的国家。
+下一步，哈萨克斯坦将推进加入国际药品检查合作计划（PIC/S）。目前，相关入会申请已经提交。加入该组织将进一步提升哈萨克斯坦药品监管和检验水平，并推动国家监管体系获得国际认可。
+Фото: Gov.kz 卫生部表示，减少行政审批壁垒的工作也在持续推进。随着按照“单一窗口”原则推出复合式服务，药品注册时间已缩短一半以上，从原来的210个工作日缩短至100个工作日。部分常用药品的注册时间甚至可缩短至15个工作日。在确保药品质量、安全性和有效性要求得到落实的同时，这一举措将进一步加快急需药品进入市场。
+生物技术发展也是哈萨克斯坦医药产业下一阶段的重要方向。目前，哈萨克斯坦正在制定到2036年的生物技术发展战略，为构建从科学研究、新型生物制剂研发，到临床前和临床试验、产品注册、工业化生产以及进入国内外市场的全产业链创造条件。</div>
+<ul>
+<li>2025年医药市场规模增31%至1.285万亿坚戈，本土制造业增37%</li>
+<li>2026年上半年本土医药产值1266亿坚戈，同比增长约30%</li>
+<li>本土企业市场份额达40.3%，已注册2994种药品和医疗产品</li>
+<li>8个制药厂项目签约，总投资3913亿坚戈，创1200余岗位</li>
+<li>药品监管达世卫成熟度三级，申请加入PIC/S并缩短注册时间</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上推动进口替代、吸引外资并创造就业；政治上强化监管体系与国际认可；外交上深化与AstraZeneca、Pfizer、Roche等合作；矿产格局无直接影响，但提升医药产业自主性。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/19mlrd-skoreey-pervaya-raketka-mira-izoloto-aziadi-glavnie-sobitiya-nedeli-vkaza-9c3d4873" target="_blank">与韩国达成190亿美元协议、世界第一网球选手和亚运金牌——哈萨克斯坦一周主要事件</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/20 18:00<span class="source-link"><a href="https://www.inform.kz/ru/19mlrd-skoreey-pervaya-raketka-mira-izoloto-aziadi-glavnie-sobitiya-nedeli-vkaza-9c3d4873" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫国事访问韩国，双方将关系提升为全面战略伙伴关系，签署商业协议总额190亿美元。总统提议贸易额翻倍，推动“资源—技术—工业”合作模式，建立关键材料合资公司、AI培训计划，目标过境运量达1亿吨。Alatau City将引入韩国技术及KAIST分校，现代、乐天等韩企扩大投资，签署天然气加工厂和新车生产协议。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：与韩国达成190亿美元协议、世界第一网球选手和亚运会金牌——哈萨克斯坦一周主要事件
+
+本周主要政治事件是卡瑟姆-若马尔特·托卡耶夫对韩国进行国事访问。抵达首尔后即可看出，谈判将远超礼宾框架——双方同意将关系提升至全面战略伙伴关系水平，商业协议总额达到190亿美元。总统提议将贸易额翻倍，不仅依靠贸易，还依靠联合生产。
+
+托卡耶夫用“资源—技术—工业”公式表达了此访的经济逻辑。哈萨克斯坦提供原材料基础和进入该地区市场的通道，韩国提供技术和工业专长，结果应是高附加值产业链。因此提出建立关键材料合资公司、开设中亚和韩国技术中心、将该国变为该地区计算节点的倡议。在更广泛层面，阿斯塔纳提出了人工智能专家培训计划和“中亚—韩国”形式的工业伙伴关系。
+
+在交通部分，重点放在哈萨克斯坦的地理位置上。总统提出将过境该国总运量提升至1亿吨的目标，并建议韩国企业参与中间走廊。一项至2030年的合作计划应将这些计划固定下来，将贸易、投资和工业项目整合为统一路线图。
+
+Alatau City成为合作的单独展示窗口。这座新城不应只是建筑项目，而应成为城市枢纽，在那里测试韩国技术，包括基于人工智能的解决方案。计划在此开设KAIST分校，补充两国高校间现有的230项协议网络。韩国KIND公司准备参与该市基础设施，会后已签署三项协议。
+
+企业谈判也获得具体延续。现代公司打算扩大本地化，成果是签署了建设天然气加工厂和发布新Tucson的协议。在与乐天就扩大投资谈判后，获悉了相关计划。</div>
+<ul>
+<li>托卡耶夫访韩，关系升级为全面战略伙伴，签190亿美元协议</li>
+<li>提出“资源—技术—工业”模式，建关键材料合资公司</li>
+<li>目标过境运量1亿吨，韩国企业参与中间走廊</li>
+<li>Alatau City引入韩国技术，设KAIST分校</li>
+<li>现代扩大本地化，建天然气加工厂，产新Tucson</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访深化哈韩战略伙伴关系，吸引韩技术和投资，推动哈从资源出口向高附加值产业转型，增强过境枢纽地位，并引入AI和城市创新，对哈经济多元化和外交多元化有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/mezhdunarodniy-turisticheskiy-poezd-sian-almati-pribil-v-kazahstan-7d1c6416" target="_blank">西安至阿拉木图国际旅游列车抵达哈萨克斯坦</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/20 16:20<span class="source-link"><a href="https://www.inform.kz/ru/mezhdunarodniy-turisticheskiy-poezd-sian-almati-pribil-v-kazahstan-7d1c6416" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>9月14日，西安至阿拉木图国际旅游列车从中国西安出发，沿丝绸之路经新疆，从霍尔果斯口岸进入哈萨克斯坦。哈方由“客运”股份公司负责运输，并制定专门时刻表。公司董事会主席阿赫梅特扎诺夫表示，发展旅游列车具有战略意义。游客将在阿拉木图参观独立纪念碑、升天大教堂、科克托别等景点。该线路于2025年首开，2026年6月完成国家承运人首航，本次为今年第二趟。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据客运公司新闻处消息，列车于9月14日从中国西安出发。路线沿历史丝绸之路，途经中国西北地区和新疆。列车经霍尔果斯口岸跨越哈中边境。
+在哈萨克斯坦境内，由“客运”股份公司负责游客运输。为国际列车制定了专门时刻表，考虑边境手续办理及两国铁路衔接。
+“发展旅游列车对我们具有战略意义。铁路能够形成完整的旅游路线，将城市、地区、历史和自然景点连接起来。我们的任务是与国外合作伙伴共同发展这一形式，扩大哈萨克斯坦境内的旅行范围，为乘客打造高质量的旅游产品，”‘客运’股份公司董事会主席阿努阿尔·阿赫梅特扎诺夫指出。
+为抵达阿拉木图的游客准备了文化游览项目。客人将参观独立纪念碑、28名潘菲洛夫近卫军战士公园、升天大教堂、中央清真寺、科克托别、琼布拉克、中央国家博物馆等景点。
+中国方面于2025年开通了首趟西安至阿拉木图国际旅游列车。2026年6月，使用国家承运人列车完成了首趟运行。本次运行是今年第二趟。</div>
+<ul>
+<li>西安至阿拉木图国际旅游列车9月14日出发，经霍尔果斯入境</li>
+<li>哈方由客运股份公司运营，制定专门时刻表保障衔接</li>
+<li>公司主席称发展旅游列车具有战略意义，将扩大路线</li>
+<li>游客在阿拉木图参观独立纪念碑、科克托别等景点</li>
+<li>线路2025年首开，2026年6月国家承运人首航，本次为今年第二趟</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">促进哈中旅游合作与丝绸之路沿线经济联动，提升哈国过境运输和旅游收入；强化阿拉木图区域枢纽地位，推动对华外交与人文交流，但暂不涉及矿产格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/otluvra-doastana-balet-kazahstan-ifrantsiya-rasshiryayut-sotrudnichestvo-vsfere--ac5af4c4" target="_blank">从卢浮宫到“阿斯塔纳芭蕾”：哈萨克斯坦与法国扩大文化领域合作</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/20 15:10<span class="source-link"><a href="https://www.inform.kz/ru/otluvra-doastana-balet-kazahstan-ifrantsiya-rasshiryayut-sotrudnichestvo-vsfere--ac5af4c4" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦文化和信息部长阿尔曼·克雷克巴耶夫访问法国，与法国文化机构代表卡特琳·佩加尔及卢浮宫馆长克里斯托夫·莱里博举行会谈，讨论扩大文化合作、互访巡演、联合项目及在哈举办卢浮宫展览。活动包括哈萨克斯坦电影日、圆桌会议和在巴黎马里尼剧院举行的盛大音乐会。双方强调2023年马克龙访哈和2024年托卡耶夫访法为双边合作注入新动力。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">从卢浮宫到“阿斯塔纳芭蕾舞团”：哈萨克斯坦与法国扩大文化合作
+
+在会见中，双方讨论了文化领域的进一步合作。阿尔曼·克雷克巴耶夫指出，哈萨克斯坦与法国之间的文化联系正在积极发展。部长补充说，双边关系的高水平和接触频率在很大程度上得益于哈萨克斯坦总统与法国总统之间的友好和信任关系。
+
+照片：哈萨克斯坦文化和信息部
+
+会见期间，部门负责人确认愿意努力扩大文化机构之间的互动。特别关注了哈萨克斯坦和法国艺术团体的互访巡演。
+
+卡特琳·佩加尔则表示对联合项目感兴趣。双方还讨论了培训、实习以及两国专家互办大师班的事宜。
+
+照片：哈萨克斯坦文化和信息部
+
+此外，在对法国进行工作访问期间，阿尔曼·克雷克巴耶夫会见了卢浮宫馆长克里斯托夫·莱里博。双方讨论了在哈萨克斯坦举办卢浮宫展品展览的可能性，以及其他博物馆项目的实施。
+
+照片：哈萨克斯坦文化和信息部
+
+哈萨克斯坦文化日法国活动计划还包括哈萨克斯坦电影日和在布朗利河岸博物馆——雅克·希拉克博物馆举行的圆桌会议“哈萨克斯坦——法国：从文化对话到联合项目”。关键活动是在巴黎马里尼剧院举行的哈萨克斯坦艺术大师盛大音乐会。
+
+照片：哈萨克斯坦文化和信息部
+
+在音乐会开幕时，阿尔曼·克雷克巴耶夫指出哈萨克斯坦-法国关系的持续发展以及文化在拉近两国人民距离中的特殊作用。
+
+照片：哈萨克斯坦文化和信息部
+
+“今天，哈萨克斯坦与法国之间的关系在加强战略伙伴关系的精神下蓬勃发展。2024年哈萨克斯坦共和国总统卡瑟姆-若马尔特·托卡耶夫对法国的国事访问和2023年法国总统埃马纽埃尔·马克龙对哈萨克斯坦的访问为双边合作注入了新动力。我相信，今天的盛大音乐会将成为加强我们两国人民友谊道路上的又一重要步骤，”部长说。
+
+照片：哈萨克斯坦文化和信息部
+
+盛大音乐会向法国公众介绍了哈萨克斯坦文化的丰富性和多样性。</div>
+<ul>
+<li>哈法文化合作积极发展，高层互访推动双边关系</li>
+<li>讨论互访巡演、培训实习及专家大师班</li>
+<li>拟在哈萨克斯坦举办卢浮宫展品展览</li>
+<li>巴黎马里尼剧院举行哈萨克斯坦艺术大师音乐会</li>
+<li>2023-2024年两国总统互访注入新动力</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈法文化外交，提升哈萨克斯坦在法语区文化影响力，为博物馆、演艺等领域的务实合作铺路，有助于平衡哈国多元外交格局，巩固其在中亚的文化枢纽地位。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/kursi-valyut-v-obmennikah-astani-i-almati-na-20-sentyabrya-854bcd83" target="_blank">9月20日阿斯塔纳和阿拉木图兑换点汇率</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/20 11:27<span class="source-link"><a href="https://www.inform.kz/ru/kursi-valyut-v-obmennikah-astani-i-almati-na-20-sentyabrya-854bcd83" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>根据Kurs.kz数据，9月20日哈萨克斯坦全国平均汇率显示，官方汇率为1美元兑447坚戈，1欧元兑513坚戈，1卢布兑5.31坚戈。阿斯塔纳、阿拉木图和奇姆肯特的兑换点汇率信息未具体列出，但可通过链接查看过去一周美元、欧元和卢布的走势。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：9月20日阿斯塔纳和阿拉木图兑换点汇率
+正文：根据Kurs.kz的数据，当前全国平均汇率为：
+在阿斯塔纳的兑换点：
+在阿拉木图的兑换点：
+在奇姆肯特：
+官方汇率如下：1美元兑447坚戈，1欧元兑513坚戈，1卢布兑5.31坚戈。
+过去一周美元、欧元和卢布的走势如何——可通过链接了解。</div>
+<ul>
+<li>官方汇率：1美元兑447坚戈</li>
+<li>1欧元兑513坚戈，1卢布兑5.31坚戈</li>
+<li>阿斯塔纳、阿拉木图、奇姆肯特兑换点汇率未详列</li>
+<li>过去一周汇率走势可通过链接查询</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率稳定对哈萨克斯坦经济和政治有积极影响，有助于吸引外资和稳定金融市场。官方汇率明确，但兑换点具体汇率缺失可能影响市场透明度。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-09-21 09:01</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
