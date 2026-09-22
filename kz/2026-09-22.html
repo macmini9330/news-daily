@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年9月22日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年9月22日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年09月21日早9:00至2026年09月22日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 30 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">10</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">9</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">8</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">3</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(10 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/quanmianzaigongsuo-d37a2b91/" target="_blank">哈萨克斯坦拟全面禁止在公共场所涂鸦涂画</a></h3>
+<div class="item-meta">哈通社中文版 · 09/21 23:46<span class="source-link"><a href="https://cn.inform.kz/news/quanmianzaigongsuo-d37a2b91/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦内务部在会议上汇报了打击破坏行为及涉毒涂鸦的成果：已对损坏文化遗产和自然景观行为开展11起刑事调查，清除约8万处涉毒涂鸦，立案侦查81起涉毒宣传案件，19人被判刑，市民通过数字服务举报150起违法行为。内务部长叶尔詹·萨德诺夫建议禁止在公共建筑上随意涂写并追究行政责任。总理沃勒扎斯·别克帖诺夫指示内务部准备修法建议，全面禁止有损公共场所环境的涂鸦行为。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">会议期间，相关方面专门研究了防止破坏行为和公共空间受损的措施。内务部表示，目前正在采取措施制止各类破坏行为，对损坏文化遗产纪念碑和自然景观的行为已开展11起刑事案件调查。此外，在志愿者的配合下，相关部门已清除约8万处所谓“涉毒涂鸦”及相关文字。
+针对宣传和广告毒品的行为，已立案侦查81起刑事案件，19人被判刑。在“拒绝毒品”数字服务框架下，市民已向警方举报150起违法行为。此外，各地还通过快速指挥中心的视频监控摄像头，对相关设施开展监测。
+内务部部长叶尔詹·萨德诺夫介绍了完善这一领域相关法律法规的建议。其中包括，禁止在公共建筑物及构筑物上随意书写、绘画，并对违反相关规定者追究行政责任。
+总理强调，制止城市中各种破坏行为和严重扰乱公共秩序行为的工作十分重要，并就此作出相关指示。
+“内务部应准备修改法律法规的相关建议，旨在全面禁止所有有损公共场所环境的‘涂鸦’行为，防止破坏行为和扰乱公共秩序现象发生。”总理沃勒扎斯·别克帖诺夫作出指示。</div>
+<ul>
+<li>内务部已开展11起损坏文化遗产刑事调查</li>
+<li>清除约8万处涉毒涂鸦，立案81起，19人判刑</li>
+<li>市民通过数字服务举报150起涉毒违法行为</li>
+<li>内务部长建议禁止公共建筑涂写并追究行政责任</li>
+<li>总理指示全面禁止有损公共环境的涂鸦行为</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该政策将强化哈国公共秩序管理，打击涉毒涂鸦有助于遏制毒品传播，改善城市环境；但全面禁止涂鸦可能引发对艺术表达限制的讨论，对旅游业和青年文化产生一定影响，同时体现政府加强社会管控的倾向。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/talgat-erseitov-naznachen-akimom-stepnogorska-ca577294" target="_blank">塔尔加特·叶尔谢伊托夫被任命为斯捷普诺戈尔斯克市市长</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/21 23:33<span class="source-link"><a href="https://www.inform.kz/ru/talgat-erseitov-naznachen-akimom-stepnogorska-ca577294" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年9月21日，阿克莫拉州州长阿赫梅特扎诺夫任命塔尔加特·叶尔谢伊托夫为斯捷普诺戈尔斯克市市长。叶尔谢伊托夫生于1974年，毕业于采利诺格勒农学院等院校，长期在阿斯特拉罕区任职，自2023年11月起任该区区长，此前曾担任叶西尔区和布兰登区区长。此次任命前，阿克莫拉州有两名区长被免职。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">根据阿克莫拉州州长马拉特·阿赫梅特扎诺夫2026年9月21日的命令，塔尔加特·叶尔谢伊托夫被任命为斯捷普诺戈尔斯克市市长。在此任命前，他自2023年11月起担任阿斯特拉罕区区长。
+塔尔加特·叶尔谢伊托夫1974年4月15日出生于阿克莫拉州阿斯特拉罕区阿斯特拉罕卡村。1996年毕业于采利诺格勒农学院。1997年毕业于阿克莫拉农业大学，专业为“组织经济学家”，2003年毕业于阿斯塔纳市管理学院，专业为“经济学家”。
+1996年开始工作，先后担任阿斯特拉罕区区长办公室内政部高级专家和首席专家。1997年12月起，在阿斯特拉罕区税务委员会担任专家、首席专家。2004年4月起，任阿斯特拉罕区税务委员会副主席。
+2007年8月起，任阿斯特拉罕区马斯利哈特（地方议会）秘书，2009年10月起，任阿斯特拉罕区副区长。2012年起，领导阿克莫拉州阿斯特拉罕区。2017年起，任叶西尔区区长，2019年起，任布兰登区区长。自2023年11月8日起，再次领导阿斯特拉罕区。
+此前有报道称，阿克莫拉州有两名区长被免职。</div>
+<ul>
+<li>叶尔谢伊托夫2026年9月21日被任命为斯捷普诺戈尔斯克市市长</li>
+<li>此前自2023年11月起担任阿斯特拉罕区区长</li>
+<li>其生于1974年，毕业于农学院和管理学院</li>
+<li>曾历任阿斯特拉罕、叶西尔、布兰登等区区长</li>
+<li>阿克莫拉州此前有两名区长被免职</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次人事调整强化阿克莫拉州地方治理，叶尔谢伊托夫丰富的农业区管理经验或促进斯捷普诺戈尔斯克市经济与矿业发展，同时反映州内干部轮换与问责趋势。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/zhengzhengzaixing-dadc04ae/" target="_blank">哈萨克斯坦拟调整育儿政策：正在研究男性育儿假制度</a></h3>
+<div class="item-meta">哈通社中文版 · 09/21 22:12<span class="source-link"><a href="https://cn.inform.kz/news/zhengzhengzaixing-dadc04ae/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦政府21日召开会议，讨论落实总统托卡耶夫指示，研究男性育儿假制度及调整女性产后两年支持方式，包括扩大幼儿园覆盖和解决照护人员短缺。政府表示尚未最终决定。社会救助改革第一阶段拟将36种补贴中的14种转为精准救助，并将地方13种救助整合为4种。2027年起对“老兵”部分支持引入精准救助。AI核查发现167起伪造残疾医疗文件案件和18,647起异常数据。10月1日起分阶段推送补贴条件变化信息。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">21日，哈萨克斯坦政府召开有关落实国家元首哈斯穆-卓玛尔特·托卡耶夫重要指示的专题会议。
+会议讨论了由国家向男性公民提供育儿假是否合理，并探讨调整女性在孩子出生后两年内所获部分支持的方式。其中，相关方案包括扩大幼儿园覆盖面，以及研究解决低龄儿童照护人员短缺问题。
+政府表示，目前尚未就上述建议作出最终决定。
+有关育儿假的调整是在社会救助体系改革框架下进行讨论的。改革第一阶段，政府计划将现有36种社会补贴中的14种转为精准救助，即根据公民的实际需求提供相应支持。
+此外，目前还提出将地方执行机构提供的13种社会救助形式整合为4种。
+与此同时，从2027年初起，计划对面向“老兵”的部分支持措施引入精准救助原则。
+会议期间，劳动和社会保障部部长阿斯哈尔别克·叶尔塔耶夫还介绍了利用人工智能核查残疾人员相关数据的工作情况。
+据介绍，系统发现167起伪造作为残疾认定依据的医疗文件的案件，相关材料已移交执法机关。此外，还发现18,647起不同人员的相关数据出现相同情况的异常案例。
+另据政府消息，自10月1日起，哈萨克斯坦将通过短信（SMS）、eGov Mobile以及各银行移动应用程序，分阶段向民众推送有关社会补贴发放条件变化的信息。</div>
+<ul>
+<li>政府研究男性育儿假及调整女性产后支持</li>
+<li>社会救助改革：36种补贴中14种转精准救助</li>
+<li>地方13种社会救助整合为4种</li>
+<li>2027年起对“老兵”支持引入精准救助</li>
+<li>AI核查发现167起伪造残疾文件及18,647起异常</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">调整育儿假和精准救助改革将重塑哈国家庭支持体系，缓解女性负担并优化财政支出；AI核查提升社保数据透明度，但可能引发隐私争议；整合救助形式或提高行政效率，对矿产等经济领域无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/bufenguojiajiguanjiang-63163e3f/" target="_blank">阿拉木图城市群部分区域国家收入机关管辖权将调整</a></h3>
+<div class="item-meta">哈通社中文版 · 09/21 21:47<span class="source-link"><a href="https://cn.inform.kz/news/bufenguojiajiguanjiang-63163e3f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年9月15日，哈萨克斯坦财政部长签署命令，自9月29日起调整阿拉木图城市群部分区域的国家收入机关管辖权。涉及伊犁县和卡拉赛县部分区域，包括杰特艮定居点（现阿拉套市）、卡兹齐克乡、博拉尔岱定居点及阔克乌泽克统计区内的物流设施和临时仓储库。这些区域将从阿拉木图州国家收入机关划归阿拉木图市国家收入局管辖，海关手续、报关及案头监管等业务随之变更。财政部表示不应导致行政障碍。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 阿拉木图城市群部分区域国家收入机关管辖权将调整
+正文:
+相关部长令于2026年9月15日由财政部长签署，新规将于9月29日起生效。
+此次调整涉及阿拉木图城市群范围内伊犁县和卡拉赛县的部分区域。这些区域分布着大型交通物流设施和临时仓储库。此次改革旨在优化快速发展的阿拉木图城市群税收监管和海关管理。
+根据财政部命令，相关土地及区域将划出阿拉木图州国家收入机关的管辖范围，转由阿拉木图市国家收入局负责。
+具体而言，伊犁县杰特艮定居点（现阿拉套市）附近以及卡兹齐克乡（托克潘诺夫乡）的物流设施被纳入新的管辖范围；卡拉赛县的调整则涉及博拉尔岱定居点附近以及阔克乌泽克统计区内的相关设施。
+此次调整意味着，在上述区域开展业务的外贸活动参与者以及临时仓储库所有者，其对应的国家收入机关将发生变化。
+今后，相关区域的海关手续、报关以及案头监管等业务，将由阿拉木图市国家收入机关负责。
+哈萨克斯坦财政部表示，重新划分相关区域的管辖范围不应导致行政障碍。</div>
+<ul>
+<li>2026年9月29日起调整阿拉木图城市群部分区域国家收入机关管辖权</li>
+<li>涉及伊犁县和卡拉赛县物流设施及临时仓储库所在区域</li>
+<li>管辖权从阿拉木图州划归阿拉木图市国家收入局</li>
+<li>海关手续、报关及案头监管业务由阿拉木图市负责</li>
+<li>财政部称调整不应导致行政障碍</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该调整优化阿拉木图城市群税收与海关监管，提升物流和仓储区域管理效率，可能影响外贸企业合规成本，对哈国经济治理和区域行政协调具有示范意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://www.inform.kz/ru/olzhas-bektenov-poruchil-primenit-strogie-meri-k-nedobrosovestnim-podryadchikam-9e590552" target="_blank">奥尔扎斯·别克捷诺夫指示对不诚信承包商采取严厉措施</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/21 20:10<span class="source-link"><a href="https://www.inform.kz/ru/olzhas-bektenov-poruchil-primenit-strogie-meri-k-nedobrosovestnim-podryadchikam-9e590552" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总理别克捷诺夫召开会议，要求对不诚信承包商采取严厉措施。工业和建设部长纳加斯帕耶夫汇报，自年初启用统一建设门户网站，引入AI辅助项目鉴定，所有州已设立城市学专业组织，并批准2026-2027年城市发展路线图。新建筑法典将设计规范列为强制性工具。总理强调要严格监督每个建设项目，确保高质量建设。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">在与政府首脑共同参加的会议上，工业和建设部部长叶尔赛因·纳加斯帕耶夫汇报了落实总统关于确保高质量建设指示的措施。据他介绍，大规模社会基础设施建设将基于区域综合发展原则实施。国家建筑监督已加强，重点是在早期阶段预防违规行为。自年初以来，统一建设门户网站已投入使用，为规划、设计和建设过程提供数字化支持。正在开展工作，在项目鉴定阶段引入人工智能工具。作为将首都城市学中心经验推广到其他地区的部分，所有州都已建立并运行城市学领域的专业组织。各州政府已批准2026-2027年路线图，规定引入现代城市空间发展方法、创造舒适环境和改善城市面貌。此外，新建筑法典将设计规范确定为形成居民点建筑面貌的强制性工具。——国家元首特别指出，哈萨克斯坦应成为一个巨大的建设工地、创造之地，必须确保高质量建设。因此，政府必须确保对建设的严格监督。我指示对不诚信承包商采取严厉责任措施，——奥尔扎斯·别克捷诺夫强调。工业和建设部与各地区州长共同被指示确保对每个建设项目进行严格监督和监测，遵守设计标准，确保基础设施和社会设施的高质量建设。还下达了组织推广城市学中心经验工作的指示。——该中心是一个重要机构，为城市居民创造舒适环境制定具体建议、合理解决方案和改善城市面貌的项目，以及城市空间发展的现代方法，——总理指出。回顾，总理奥尔扎斯·别克捷诺夫举行了关于落实的会议。</div>
+<ul>
+<li>总理要求严惩不诚信承包商</li>
+<li>统一建设门户网站年初启用</li>
+<li>AI工具引入项目鉴定阶段</li>
+<li>各州设立城市学专业组织</li>
+<li>2026-2027年城市发展路线图获批</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举强化建筑行业监管，推动数字化和AI应用，提升建设质量与透明度。对哈国政治彰显执行力，经济上促进基建投资，外交上展示治理现代化，矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://www.inform.kz/ru/sistemu-sotsialnoy-pomoshi-peresmotryat-v-kazahstane-chto-izmenitsya-2e83bba2" target="_blank">哈萨克斯坦将重新审视社会援助体系：将有哪些变化</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/21 19:21<span class="source-link"><a href="https://www.inform.kz/ru/sistemu-sotsialnoy-pomoshi-peresmotryat-v-kazahstane-chto-izmenitsya-2e83bba2" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦劳动和社会保障部部长叶尔塔耶夫宣布，将分两阶段改革社会援助体系：第一阶段为14种支付制定定向模式规范基础，第二阶段将13种地方援助合并为4个方向。人工智能工具在残疾人援助中发现167起伪造医疗文件案件，并识别出18 647个数据相同案例。改革涉及“家庭数字卡”中A类和B类高福祉人群，10月1日起将通过短信、eGov Mobile等通知变化，相关立法修正案将提交库鲁尔泰。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦将重新审视社会援助体系：将有哪些变化
+
+劳动和社会保障部部长阿斯卡尔别克·叶尔塔耶夫在哈萨克斯坦共和国政府会议上宣布了这一消息，会议旨在落实国家元首在9月19日“清洁哈萨克斯坦”共和国生态行动框架内讲话中提出的指示。
+
+据他介绍，第一阶段正在为向定向模式过渡制定规范性基础，涉及当前36种支付中的14种。主要原则是向真正有需要的公民提供援助。
+
+第二阶段计划将地方执行机构的13种社会援助按需求程度合并为四个方向。
+
+此外，内阁会议还审议了其他一系列问题和建议：
+
+此外，还汇报了在向残疾人提供援助过程中引入人工智能工具的结果。据劳动部数据，由此发现了167起伪造医疗文件以确立残疾身份的案件。这些材料已移交执法机关。
+
+此外，还形成了18 647个不同人员被发现数据相同的案例清单。对这些案例的核查工作仍在继续。
+
+该部门明确，改革将涉及根据“家庭数字卡”系统属于“A”类——高福祉水平和“B”类——富裕福祉水平的国家援助领取者。
+
+目前，各地方政府正在通过“家庭数字卡”信息系统对公民进行问卷调查。从10月1日起，将通过短信、eGov Mobile和银行移动应用程序分阶段向居民通报社会支付条件的变化。
+
+将针对所有拟议变化制定立法修正案，并提交库鲁尔泰审议。
+
+此前，国家元首指出，哈萨克斯坦不仅向本国公民提供免费医疗援助，还向坎达斯以及长期居住在该国的特定类别外国人提供。</div>
+<ul>
+<li>社会援助改革分两阶段：14种支付转定向，13种地方援助合并为4类</li>
+<li>AI工具发现167起伪造医疗文件骗残案件，已移交执法机关</li>
+<li>识别18 647个不同人数据相同案例，核查持续进行</li>
+<li>改革针对家庭数字卡中A类高福祉和B类富裕人群</li>
+<li>10月1日起通过短信、eGov Mobile和银行App通知变化</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">改革将优化财政支出，使援助更精准投向真正困难群体，减少欺诈和重复领取。对政治而言，体现政府提高治理效率；经济上可缓解预算压力；外交无直接影响；矿产格局不受波及。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/weilijun-3a8d16d1/" target="_blank">乌什塔耶夫被任命为哈萨克斯坦武装力量陆军总司令</a></h3>
+<div class="item-meta">哈通社中文版 · 09/21 18:45<span class="source-link"><a href="https://cn.inform.kz/news/weilijun-3a8d16d1/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国家元首签署命令，免去梅热科·玛特穆吾勒·阔谢科巴耶夫的哈萨克斯坦共和国武装力量陆军总司令职务。该命令未提及新任人选，但标题显示乌什塔耶夫被任命为陆军总司令。此次人事变动涉及哈国武装力量陆军最高指挥层。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">根据国家元首签署的另一项命令，梅热科·玛特穆吾勒·阔谢科巴耶夫被免去哈萨克斯坦共和国武装力量陆军总司令职务。</div>
+<ul>
+<li>总统签署命令免去阔谢科巴耶夫陆军总司令职务</li>
+<li>乌什塔耶夫被任命为哈萨克斯坦武装力量陆军总司令</li>
+<li>命令由国家元首签署，未透露更多细节</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次陆军总司令换人属正常人事调整，有助于总统强化对军队的直接控制，确保国防政策连贯性。对哈国政治稳定、军事外交及安全格局影响有限，但可能微调陆军内部管理风格。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://www.inform.kz/ru/mereke-kuchekbaev-osvobozhden-ot-dolzhnosti-glavnokomanduyushego-suhoputnimi-voy-9c09c6d2" target="_blank">梅列克·库切克巴耶夫被解除哈萨克斯坦武装力量陆军总司令职务</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/21 18:04<span class="source-link"><a href="https://www.inform.kz/ru/mereke-kuchekbaev-osvobozhden-ot-dolzhnosti-glavnokomanduyushego-suhoputnimi-voy-9c09c6d2" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统解除梅列克·库切克巴耶夫陆军总司令职务。库切克巴耶夫1976年出生，1997年毕业于阿拉木图高等诸兵种合成指挥学校，2007年毕业于国防大学，2017年毕业于俄联邦总参谋部军事学院。历任坦克排长、营长、多个部队指挥官、南部地区司令部司令等职，2022年3月起任南部地区司令部司令，2024年升任陆军总司令。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：梅列克·库切克巴耶夫被解除哈萨克斯坦共和国武装力量陆军总司令职务
+正文：
+库切克巴耶夫·梅列克·马蒂莫维奇，1976年8月7日出生。
+1997年毕业于阿拉木图高等诸兵种合成指挥学校；2007年毕业于国防大学；2017年毕业于俄罗斯联邦武装力量总参谋部军事学院。
+历任坦克排长、坦克连长、参谋长——坦克营副营长、营长；
+第43053部队指挥官（2003年2月-2005年3月）；
+第32039部队指挥官（2005年3月-2007年6月）；
+第25744部队参谋长——第一副指挥官（2007年6月-2007年10月）；
+第10810部队指挥官（2007年10月-2012年1月）；
+第25744部队指挥官（2012年1月-2013年11月）；
+地区司令部部队副司令（负责战斗训练）——南部地区司令部战斗训练局局长（2013年11月-2017年6月）；
+空降突击部队副司令（负责战斗训练）——哈萨克斯坦共和国武装力量陆军空降突击部队司令部战斗训练局局长（2017年7月-2017年12月）；
+哈萨克斯坦共和国武装力量陆军空降突击部队参谋长——第一副司令（2017年12月-2020年1月）；
+阿斯塔纳地区司令部部队司令（2020年1月-2021年6月）；
+哈萨克斯坦共和国武装力量陆军空降突击部队司令（2021年6月-2022年3月）；
+南部地区司令部部队司令（自2022年3月起）。
+2024年被任命为哈萨克斯坦共和国武装力量陆军总司令。</div>
+<ul>
+<li>库切克巴耶夫被解职，曾任陆军总司令</li>
+<li>1976年生，毕业于阿拉木图高等指挥学校</li>
+<li>历任坦克排长、营长、部队指挥官</li>
+<li>2022年任南部地区司令部司令</li>
+<li>2024年升任陆军总司令</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次解职可能影响哈国陆军指挥体系与人事布局，反映高层对国防管理的调整，或涉及军事改革与安全战略微调，对地区安全合作及外交关系产生间接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://www.inform.kz/ru/kayrat-aksholak-naznachen-akimom-shalkarskogo-rayona-aktyubinskoy-oblasti-20620eaa" target="_blank">凯拉特·阿克肖拉克被任命为阿克托别州沙尔卡尔区区长</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/21 17:34<span class="source-link"><a href="https://www.inform.kz/ru/kayrat-aksholak-naznachen-akimom-shalkarskogo-rayona-aktyubinskoy-oblasti-20620eaa" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>凯拉特·阿克肖拉克被任命为阿克托别州沙尔卡尔区区长，候选人资格经总统办公厅和区地方议会协商一致。他生于1969年，拥有金融与法学教育背景，职业生涯始于1990年，曾在税务、警察系统工作，2018-2020年任区长办公厅主任，2020年9月起任副区长。新区长任务包括发展工业、农产品加工、吸引投资、支持创业、创造就业、改善土地 use、发展畜牧业、修复沙尔卡尔湖闸门及完成道路项目等。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">凯拉特·阿克肖拉克被任命为阿克托别州沙尔卡尔区区长
+
+凯拉特·阿克肖拉克的候选人资格已与哈萨克斯坦共和国总统办公厅及沙尔卡尔区地方议会代表协商一致。
+
+凯拉特·阿克肖拉克于1969年出生于西哈萨克斯坦州。1994年毕业于哈萨克国立管理学院，专业为“金融与信贷”；2002年毕业于哈萨克斯坦共和国内务部科学院法学院，专业为“法学”。
+
+他于1990年开始职业生涯，担任沙尔卡尔运营段操作员。
+
+多年来，他曾在税务机关和警察部门工作，担任过刑侦人员、未成年人事务检查员和侦查员。
+
+2003年至2018年，他担任沙尔卡尔区警察局副局长和局长，负责教育和人事工作，并领导了伊尔吉兹区警察局。
+
+2018年至2020年，他担任沙尔卡尔区区长办公厅主任。自2020年9月起至此次任命前，他担任该区副区长。
+
+新区长面临的任务包括发展工业和农产品加工、吸引投资、支持创业和创造新的就业机会。
+
+他还被责成加强土地有效利用、发展良种畜牧业、改善居民点环境与绿化、垃圾分类与处理、修复沙尔卡尔湖闸门以及完成道路项目。
+
+计划特别关注改善农村地区移动通信质量以及预防青少年违法犯罪。
+
+此前有报道称，乌拉斯别克·萨迪别科夫被任命为突厥斯坦州拜迪别克区区长。</div>
+<ul>
+<li>凯拉特·阿克肖拉克任阿克托别州沙尔卡尔区区长</li>
+<li>候选人资格经总统办公厅和区地方议会协商一致</li>
+<li>新区长任务涵盖工业、农业、投资、就业等多领域</li>
+<li>重点修复沙尔卡尔湖闸门并完成道路项目</li>
+<li>关注农村移动通信质量与青少年犯罪预防</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次任命属地方人事调整，有助于延续沙尔卡尔区工业与农业政策，推动基础设施修复和投资环境改善，对区域经济与民生有积极影响，外交和矿产格局无直接关联。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">10</span> <a href="https://www.inform.kz/ru/dvuh-akimov-snyali-s-dolzhnostey-v-akmolinskoy-oblasti-3966e787" target="_blank">阿克莫拉州两名区长被免职</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/21 17:14<span class="source-link"><a href="https://www.inform.kz/ru/dvuh-akimov-snyali-s-dolzhnostey-v-akmolinskoy-oblasti-3966e787" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>阿克莫拉州政府官网发布命令，免去两名区长职务。其中，卡谢诺夫·盖达尔·卡布杜拉耶维奇生于1976年，拥有经济学副博士学位，曾历任阿斯塔纳市“阿尔马特”区区长、肖尔坦迪区区长、科斯希市市长，2024年11月13日刚被任命为斯捷普诺戈尔斯克市市长。另一名区长叶斯扎诺夫·多斯坦别克·别里科维奇生于1982年3月17日，其履历未完整显示。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：阿克莫拉州两名区长被免职
+
+关于立即免去两名区长的命令已经发布在阿克莫拉州政府官方网站上。
+
+卡谢诺夫·盖达尔·卡布杜拉耶维奇，1976年出生于阿克莫拉州阿特巴萨尔区马里诺夫卡村。1998年毕业于阿斯塔纳市S. 塞富林农业大学，专业为农业生产机械化。2002年通过函授毕业于L. N. 古米廖夫欧亚国立大学，专业为社会领域和行业的经济与管理。2004年毕业于车里雅宾斯克国立农业工程大学研究生院，被授予经济学副博士学位。2012年毕业于国际商学院硕士课程，专业为管理。
+
+1998年至1999年2月，在阿斯塔纳市“阿尔马特”区政府机构经济与市场关系处担任首席专家。
+
+1999年2月至2001年6月，担任“阿斯塔纳-金融”股份公司董事会主席助理，随后担任规划、营销和信息技术处专家。2001年8月至2002年2月，在阿斯塔纳市“阿斯塔纳燃气服务”开放股份公司担任销售处处长。2002年2月至2006年1月，担任阿斯塔纳市“中央燃气供应”有限责任合伙公司经理。2004年6月至2006年1月，担任阿斯塔纳市“欧亚Central LTD”有限责任合伙公司经理。2006年2月至2007年8月，担任阿斯塔纳市“阿尔马特”区副区长。2007年8月至2008年4月，担任阿斯塔纳市“阿尔马特”区区长。2008年4月至2015年4月，担任阿斯塔纳市哈萨克斯坦铁路“Қазтеміртранс”股份公司副总裁。2015年9月至2019年10月23日，担任阿斯塔纳市“阿尔马特”区“Nur Otan”党分部第一副主席。2019年10月至2021年8月，担任阿克莫拉州肖尔坦迪区区长。2021年8月至2024年11月，担任阿克莫拉州科斯希市市长。自2024年11月13日起，被任命为斯捷普诺戈尔斯克市市长。
+
+叶斯扎诺夫·多斯坦别克·别里科维奇，1982年3月17日出生</div>
+<ul>
+<li>阿克莫拉州免去两名区长职务</li>
+<li>卡谢诺夫生于1976年，经济学副博士</li>
+<li>卡谢诺夫曾任科斯希市市长，2024年11月任斯捷普诺戈尔斯克市长</li>
+<li>叶斯扎诺夫生于1982年3月17日</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次人事调整可能影响阿克莫拉州地方治理效率，尤其是斯捷普诺戈尔斯克市刚上任市长被免，或引发对地方官员稳定性的关注。对矿产格局无直接关联，但可能间接影响地方经济政策执行。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(9 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/k-novuyu-alyansu-es-i-kanadi-prisoedinilis-chetire-strani-eb43c220" target="_blank">已有四国加入欧盟与加拿大新联盟</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/22 05:00<span class="source-link"><a href="https://www.inform.kz/ru/k-novuyu-alyansu-es-i-kanadi-prisoedinilis-chetire-strani-eb43c220" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>欧盟与加拿大发起的新联盟已吸引巴西、肯尼亚、印度和澳大利亚四国加入。该联盟定位为开放格式，旨在加强国际合作与联合国作用，并在人工智能、气候变化和抗疫等领域合作。分析认为，该联盟可能成为G20的替代方案。此前欧盟提议加拿大成为首个“联系成员”，而美国总统特朗普威胁欧盟若与加拿大走近将停止贸易。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：已有四国加入欧盟与加拿大的新联盟
+
+正文：
+除欧盟和加拿大外，巴西、肯尼亚、印度和澳大利亚也加入了该倡议。该联盟被设想为一个开放形式，未来其他国家也可以加入。
+
+参与方希望加强国际合作和联合国的作用，并共同致力于人工智能、气候变化和抗击流行病。发起者表示，有必要在政治传统不同的国家之间“搭建桥梁”。
+
+这个新团体出现之际，大国竞争加剧，传统国际形式面临危机。未来它可能成为G20的替代方案，因为在G20中，合作越来越常因大国之间的分歧而复杂化。
+
+此前有报道称，欧盟已单独提议加拿大成为欧盟历史上首个“联系成员”——在经济、技术、能源和国防领域进行特别紧密的合作。而美国总统特朗普则威胁欧盟，若其与加拿大走近，将停止贸易。</div>
+<ul>
+<li>巴西、肯尼亚、印度、澳大利亚加入欧盟-加拿大新联盟</li>
+<li>联盟聚焦AI、气候、抗疫，强化联合国作用</li>
+<li>新联盟或成G20替代方案，应对大国分歧</li>
+<li>欧盟提议加拿大成为首个“联系成员”</li>
+<li>特朗普威胁欧盟：与加拿大走近将停止贸易</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该联盟可能重塑哈萨克斯坦的多边外交环境，提供新的合作平台，但也可能加剧大国竞争，影响哈国与欧盟、美国、俄罗斯的平衡外交。经济上，哈国可借机拓展与印度、巴西等国的矿产和能源合作。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/guohuiwen-fanghuijianzuo-21950005/" target="_blank">英国议会代表团访问库鲁尔泰 双方讨论加强议会间合作</a></h3>
+<div class="item-meta">哈通社中文版 · 09/22 01:17<span class="source-link"><a href="https://cn.inform.kz/news/guohuiwen-fanghuijianzuo-21950005/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>英国议会代表团访问哈萨克斯坦库鲁尔泰，这是库鲁尔泰成立后首个外国议会代表团。双方讨论加强议会间合作、深化战略伙伴关系，重点涉及贸易经济、投资、交通运输、数字化、人工智能和教育等领域。哈方提议建立委员会直接对话机制，围绕立法数字化和人工智能安全使用交流经验。英方表示有意深化战略伙伴关系。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 英国议会代表团访问库鲁尔泰 双方讨论加强议会间合作
+正文:
+会谈期间，双方就进一步加强哈萨克斯坦与英国议会间合作、深化战略伙伴关系以及加强两国议会相关委员会之间的联系等问题进行了讨论。
+Фото: Құрылтай баспасөз қызметі 别克纳扎罗夫指出，英国议会代表团此次访问具有重要的政治和历史意义。这是库鲁尔泰成立后首个访问哈萨克斯坦的外国议会代表团。
+“我相信，此次访问将有助于进一步加强两国议会间联系，推动哈萨克斯坦与英国战略合作不断扩大。”他说。
+Фото: Құрылтай баспасөз қызметі 双方重点就扩大贸易经济和投资合作、提升交通运输和过境潜力、加强数字化和人工智能、教育等领域的合作进行了交流。
+此外，双方还就发展议会间关系的具体方向进行了讨论。别克纳扎罗夫指出，在库鲁尔泰各委员会与英国议会上下两院相关委员会之间建立直接对话机制具有重要意义，并提议围绕立法进程数字化以及负责任、安全地使用人工智能等领域开展经验交流。
+Фото: Құрылтай баспасөз қызметі 德希表示，英国方面有意进一步深化同哈萨克斯坦的战略伙伴关系。他指出，两国议员的积极参与将为这一进程增添动力。
+会谈结束时，双方表示愿继续保持哈萨克斯坦与英国议会间对话，进一步加强双边合作。</div>
+<ul>
+<li>英国议会代表团访哈，系库鲁尔泰成立后首个外国议会代表团</li>
+<li>双方讨论加强议会间合作与战略伙伴关系</li>
+<li>重点合作领域包括贸易、投资、交通、数字化和AI</li>
+<li>哈方提议建立委员会直接对话机制</li>
+<li>英方表示有意深化同哈萨克斯坦战略伙伴关系</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访提升哈国议会外交地位，推动哈英战略伙伴关系深化，促进贸易投资与交通过境合作，并引入数字化和AI治理经验，对哈国政治外交多元化及矿产经济合作具有积极意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/si-tszinpin-posetit-ssha-s-23-po-25-sentyabrya-52b6a7c3" target="_blank">习近平将于9月23日至25日访问美国</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/21 22:20<span class="source-link"><a href="https://www.inform.kz/ru/si-tszinpin-posetit-ssha-s-23-po-25-sentyabrya-52b6a7c3" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>中国外交部发言人郭嘉昆宣布，习近平将于9月23日至25日应邀访问美国。访问期间，习近平与特朗普将就中美关系及全球和平发展等重大问题深入交换意见。中方称元首外交对中美关系具有不可替代的战略引领作用，半年内两国元首互访具有历史性意义。中国愿与美方加强对话合作，妥善管控分歧，促进世界和平稳定与繁荣。此前特朗普已结束访华。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">中国外交部发言人郭嘉昆周一在新闻发布会上宣布，习近平将于9月23日至25日访问美国。外交部指出，此次访问是应美国总统邀请进行的。
+郭嘉昆表示：“访问期间，习近平和唐纳德·特朗普将就中美关系及世界和平与发展的最重要问题进行深入交流。”
+据他称，元首外交对中美关系发挥着不可替代的战略引领作用，两国元首在半年内实现互访，具有历史性意义。
+这位外交官强调：“中国愿与美国共同丰富双边关系内涵，构建建设性战略稳定，加强对话与合作，妥善管控分歧，不断增进两国人民福祉，并促进世界和平、稳定与繁荣。”
+此前有报道称，特朗普结束了对中国的访问。</div>
+<ul>
+<li>习近平将于9月23日至25日应邀访问美国</li>
+<li>访问期间将与特朗普深入讨论中美关系及全球议题</li>
+<li>中方称半年内元首互访具有历史性意义</li>
+<li>中国愿与美加强对话合作并妥善管控分歧</li>
+<li>此前特朗普已结束对中国的访问</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈萨克斯坦而言，中美高层互动可能影响全球地缘政治平衡与贸易格局，间接波及哈国经济与外交空间；若中美在矿产供应链上达成协调，或影响哈国关键矿产的出口市场与议价能力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/jiuchang-9da048d7/" target="_blank">托卡耶夫就迪拜埃米尔兄长逝世致唁电</a></h3>
+<div class="item-meta">哈通社中文版 · 09/21 21:04<span class="source-link"><a href="https://cn.inform.kz/news/jiuchang-9da048d7/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫就迪拜埃米尔兄长谢赫·艾哈迈德·阿勒马克图姆逝世致唁电，赞扬其为阿联酋繁荣、安全与经济增长作出的重要贡献，并向阿勒马克图姆家族表示慰问。同日，托卡耶夫与俄罗斯总统普京通电话。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫就迪拜埃米尔兄长逝世致唁电
+正文:
+国家元首在唁电中指出，谢赫·艾哈迈德·阿勒马克图姆为阿联酋繁荣发展、巩固国家安全以及促进经济增长作出了重要贡献。
+哈斯穆-卓玛尔特·托卡耶夫向阿勒马克图姆家族成员表示诚挚慰问，并希望他们在这一悲痛时刻坚强面对。
+当天，托卡耶夫总统同俄罗斯总统弗拉基米尔·普京通电话。</div>
+<ul>
+<li>托卡耶夫致唁电哀悼迪拜埃米尔兄长逝世</li>
+<li>赞扬谢赫·艾哈迈德对阿联酋发展的重要贡献</li>
+<li>向阿勒马克图姆家族表达诚挚慰问</li>
+<li>同日托卡耶夫与普京通电话</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">巩固哈国与阿联酋友好关系，展现外交礼仪；与普京通话或涉及地区合作，对哈国政治外交有积极影响，矿产经济合作或受关注。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/guojiatong-98cf1302/" target="_blank">国家元首同俄罗斯总统普京通电话</a></h3>
+<div class="item-meta">哈通社中文版 · 09/21 19:03<span class="source-link"><a href="https://cn.inform.kz/news/guojiatong-98cf1302/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与俄罗斯总统普京通电话，祝贺俄罗斯国家杜马选举成功举行，并指出投票过程组织有序。两国元首就双边合作热点问题交换意见，讨论下一阶段共同举办的活动及高层接触日程。此前，托卡耶夫已致贺电祝贺俄罗斯第九届国家杜马选举顺利举行。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 国家元首同俄罗斯总统普京通电话
+正文:
+托卡耶夫总统向俄罗斯领导人致以诚挚祝贺，祝贺俄罗斯国家杜马选举成功举行。
+托卡耶夫指出，本次投票过程组织得井然有序，并祝愿新一届俄罗斯议会在维护国家和公民福祉的道路上取得丰硕成果。
+两国元首在通话中就双边合作的热点问题交换了意见，并讨论了下一阶段共同举办的活动以及高层接触日程。
+此前，托卡耶夫向俄罗斯总统普京致贺电，祝贺俄罗斯第九届国家杜马选举顺利举行。</div>
+<ul>
+<li>托卡耶夫祝贺俄国家杜马选举成功</li>
+<li>指出投票过程组织井然有序</li>
+<li>讨论双边合作热点及高层接触日程</li>
+<li>此前已致贺电祝贺第九届杜马选举</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">通话巩固哈俄传统友好关系，强化政治互信，为双边经贸、能源及矿产合作提供高层保障，有助于哈国平衡外交，维护地区稳定。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/junshijiangjunshiheren-35167521/" target="_blank">集安组织军事演习：哈萨克斯坦将向俄罗斯调运军事装备和人员</a></h3>
+<div class="item-meta">哈通社中文版 · 09/21 18:15<span class="source-link"><a href="https://cn.inform.kz/news/junshijiangjunshiheren-35167521/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国防部宣布，为筹备集安组织联合军事演习，9月21日至10月5日将通过铁路向俄罗斯车里雅宾斯克州米西亚什火车站调运军事装备和人员，演习结束后原路返回。演习包括野外训练、行军准备、部队指挥等，按集安组织批准的战斗训练计划进行。“协作-2026”“搜寻-2026”和“梯队-2026”是集安组织定期机制性演习，轮流在成员国举行。国防部呼吁公众勿传未经核实信息，违者将承担法律责任。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 集安组织军事演习：哈萨克斯坦将向俄罗斯调运军事装备和人员
+正文:
+为筹备和实施此次演习，9月21日至10月5日期间，哈萨克斯坦境内将通过铁路向俄罗斯车里雅宾斯克州米西亚什火车站调运军事装备和人员，演习结束后再按原路返回。
+演习期间，各方将开展野外训练，重点演练行军准备、部队指挥以及完成既定任务等内容。
+各项活动将按照集安组织成员国批准的战斗训练计划进行。
+“协作-2026”“搜寻-2026”和“梯队-2026”联合军事演习是集安组织成员国定期开展的机制性活动，轮流在成员国境内举行。
+“我们呼吁公民、媒体代表和社交网络用户不要传播未经核实的信息，仅关注官方信息源发布的数据。同时提醒大家，传播虚假信息和发布与事实不符的信息，将依据哈萨克斯坦法律承担相应责任。”国防部在声明中表示。</div>
+<ul>
+<li>9月21日至10月5日，哈向俄调运军事装备和人员</li>
+<li>演习重点为行军准备、部队指挥及完成任务</li>
+<li>集安组织“协作-2026”等三场演习轮流举行</li>
+<li>哈国防部呼吁勿传虚假信息，违者担责</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举强化哈俄及集安组织军事合作，巩固集体安全机制，但可能引发西方对哈外交平衡的质疑。经济上促进铁路运输，矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/jiu35nianguoren-a958a1a5/" target="_blank">托卡耶夫总统就亚美尼亚独立35周年向该国领导人致贺电</a></h3>
+<div class="item-meta">哈通社中文版 · 09/21 17:49<span class="source-link"><a href="https://cn.inform.kz/news/jiu35nianguoren-a958a1a5/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫就亚美尼亚独立35周年向亚美尼亚领导人致贺电。托卡耶夫在贺电中表示，这一历史性日子彰显了亚美尼亚人民的民族团结和创造精神，以及该国在国际舞台上的声誉。他相信两国国家间合作与战略伙伴关系将进一步巩固和加强，并重申哈萨克斯坦愿深化与亚美尼亚多方面、多领域的联系。托卡耶夫还祝愿亚美尼亚领导人和人民幸福安康。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">国家元首在贺电中指出，这一具有重要历史意义的日子，充分彰显了亚美尼亚人民的民族团结和创造精神，也体现了亚美尼亚在国际舞台上的声誉与威望。托卡耶夫表示相信，两国间的国家间合作与战略伙伴关系将进一步得到巩固和加强。
+“哈萨克斯坦与亚美尼亚合作进展顺利，在双方共同努力下，其内涵不断丰富。这符合两国之间的友谊与战略伙伴关系精神。我重申，哈萨克斯坦愿进一步加强与亚美尼亚多方面、多领域的联系。”贺电称。
+托卡耶夫总统祝愿亚美尼亚领导人在国家公务中取得全面成功，并祝愿友好的亚美尼亚人民幸福安康、吉祥如意。</div>
+<ul>
+<li>托卡耶夫就亚美尼亚独立35周年致贺电</li>
+<li>贺电强调亚美尼亚民族团结与国际威望</li>
+<li>相信两国战略伙伴关系将进一步巩固</li>
+<li>哈方愿深化与亚美尼亚多领域联系</li>
+<li>祝愿亚美尼亚领导人和人民幸福安康</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此贺电有助于巩固哈萨克斯坦与亚美尼亚的战略伙伴关系，促进双边政治互信与经济合作，对哈国拓展南高加索外交空间、平衡地区关系具有积极意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://www.inform.kz/ru/kazahstan-prohodit-otsenku-faa-dlyazapuska-pryamogo-aviasoobsheniya-sssha-3018720a" target="_blank">哈萨克斯坦正在接受美国联邦航空管理局评估以开通直飞美国航班</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/21 12:31<span class="source-link"><a href="https://www.inform.kz/ru/kazahstan-prohodit-otsenku-faa-dlyazapuska-pryamogo-aviasoobsheniya-sssha-3018720a" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦将于2026年9月21日至25日接受美国联邦航空管理局（FAA）的国际航空安全评估（IASA），旨在推动开通直飞美国的航班。评估前夕，哈交通部副部长拉斯塔耶夫与FAA专家会晤。评估将审查哈航空立法及监管能力是否符合国际民航组织（ICAO）标准。此前2024年8月已进行初步技术审查。9月24日FAA团队将访问阿斯塔纳航空，该公司已申请美国交通部商业运营许可。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据哈萨克斯坦民航委员会（КГА）消息，2026年9月21日至25日将进行美国联邦航空管理局（FAA）国际航空安全评估（IASA）。
+在评估开始前夕，哈萨克斯坦共和国交通部副部长塔尔加特·拉斯塔耶夫与抵达哈萨克斯坦的FAA专家举行了会晤。副部长欢迎美方代表，感谢他们的来访和参与评估，并祝愿专家们工作顺利、取得丰硕成果。
+据КГА指出，会晤期间双方讨论了即将进行的评估以及进一步互动的问题，旨在提高飞行安全水平和发展哈萨克斯坦与美国之间的国际航空联系。
+评估针对国家飞行安全监督系统，旨在确定哈萨克斯坦共和国航空当局是否符合国际民航组织（ICAO）适用标准和推荐做法，这些标准和做法载于附件1《航空人员执照的颁发》、附件6第一部分《国际商业航空运输——飞机》和附件8《航空器的适航性》。在IASA评估期间，FAA专家将审查航空立法、次级法规以及国家根据ICAO国家飞行安全监督系统的八个关键要素实施监督的能力。
+2026年的评估是與FAA准备工作的延续。2024年8月26日至30日期间，在哈萨克斯坦进行了IASA初步技术审查，此后双方继续互动以准备当前评估。FAA专家团队包括国际航空法、航空人员执照颁发、适航性和飞行运行方面的专家。
+9月24日计划安排FAA团队对阿斯塔纳航空（Air Astana）进行技术访问，该公司已提交申请，寻求获得美国交通部（DOT）从事商业活动的许可。访问目的是确认在ААК框架内获得的信息，以确保流程的完整性。</div>
+<ul>
+<li>2026年9月21-25日FAA对哈进行IASA评估</li>
+<li>评估旨在推动哈美直航开通</li>
+<li>审查哈航空监管是否符合ICAO标准</li>
+<li>2024年8月已进行初步技术审查</li>
+<li>FAA将访问阿斯塔纳航空审查其运营许可申请</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">若评估通过，哈萨克斯坦将获FAA一类评级，可开通直飞美国航班，提升航空业国际地位，促进对美经贸与外交关系，并增强其作为欧亚中转枢纽的竞争力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://cn.inform.kz/news/guojia-guojiaxing-4d9ffe2e/" target="_blank">国家元首向普京致电 祝贺俄国家杜马选举顺利举行</a></h3>
+<div class="item-meta">哈通社中文版 · 09/21 12:01<span class="source-link"><a href="https://cn.inform.kz/news/guojia-guojiaxing-4d9ffe2e/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫致电俄罗斯总统普京，祝贺俄罗斯国家杜马选举顺利举行。托卡耶夫表示，选举结果体现了俄罗斯民众对普京战略路线的广泛支持，相信新当选议员将提升民众福祉、增强俄罗斯实力。他特别强调议会间合作是哈俄同盟关系的重要组成部分，期待哈萨克斯坦库鲁尔泰议员与俄罗斯议员继续合作，推动两国多领域合作和战略伙伴关系发展，并祝愿普京取得新成绩。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫在贺电中表示，此次选举是俄罗斯社会政治生活中的重要事件，投票结果体现了俄罗斯民众对普京所推行、旨在维护俄罗斯国家长期利益战略路线的广泛支持。
+“毫无疑问，新当选的国家杜马议员将采取有效措施并作出相应决策，以提升民众福祉，进一步增强俄罗斯作为世界大国的实力。”
+贺电中特别提到议会间合作，并将其视为哈俄同盟关系的重要组成部分。
+托卡耶夫表示相信，哈萨克斯坦库鲁尔泰议员与俄罗斯议员将继续积极开展合作，进一步推动两国多领域合作和战略伙伴关系发展。
+托卡耶夫最后祝愿普京在促进俄罗斯联邦繁荣发展的国家工作中取得新的成绩。</div>
+<ul>
+<li>托卡耶夫致电普京祝贺俄国家杜马选举顺利举行</li>
+<li>称选举结果体现俄民众对普京战略路线的广泛支持</li>
+<li>强调议会间合作是哈俄同盟关系的重要组成部分</li>
+<li>期待哈俄议员继续合作推动战略伙伴关系发展</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此贺电巩固哈俄同盟关系，强化议会间合作机制，有利于哈国在政治外交上借重俄罗斯平衡外部压力，经济上促进多领域合作，矿产领域或推动与俄在资源开发及运输通道上的协调。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(8 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/dollar-prodolzhaet-ukreplyatsya-k-tenge-2fac106d" target="_blank">美元兑坚戈继续走强</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/21 18:47<span class="source-link"><a href="https://www.inform.kz/ru/dollar-prodolzhaet-ukreplyatsya-k-tenge-2fac106d" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>9月20日，哈萨克斯坦外汇市场美元继续走强，日间交易加权平均汇率达448.44坚戈，较前日上涨1.36坚戈。国家银行9月21日官方汇率定为446.56坚戈。阿斯塔纳、阿拉木图和奇姆肯特三地兑换点数据显示，美元买入价在449.26至451.01坚戈之间，卖出价在444.01至447.81坚戈之间。欧元和卢布汇率也同步更新。此前9月18日美元加权平均汇率为446.56坚戈，上涨1.65坚戈。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">根据日间交易结果，美元加权平均汇率为448.44坚戈，上涨1.36坚戈。哈萨克斯坦国家银行9月21日的官方汇率定为446.56坚戈。
+根据Kurs.kz的数据，在阿斯塔纳的兑换点，居民平均可以以444.01坚戈卖出美元，以451.01坚戈买入。欧元可以以507.01坚戈卖出，以517.01坚戈买入。俄罗斯卢布可以以4.95坚戈卖出，以5.15坚戈买入。
+在阿拉木图，美元平均可以以447.30坚戈卖出，以449.26坚戈买入。居民可以以510.21坚戈卖出欧元，以515.29坚戈买入。卖出卢布可以得到5.00坚戈，而买入卢布需要5.12坚戈。
+在奇姆肯特的兑换点，美元可以以447.81坚戈卖出，以449.83坚戈买入。欧元可以以512.92坚戈卖出，以517.04坚戈买入。俄罗斯卢布可以以5.04坚戈卖出，以5.12坚戈买入。
+值得注意的是，根据9月18日的日间交易结果，美元加权平均汇率为446.56坚戈，上涨1.65坚戈。</div>
+<ul>
+<li>美元加权平均汇率升至448.44坚戈，单日上涨1.36坚戈</li>
+<li>国家银行9月21日官方汇率定为446.56坚戈</li>
+<li>阿斯塔纳美元买入价最高达451.01坚戈</li>
+<li>阿拉木图美元买入价449.26坚戈，卖出价447.30坚戈</li>
+<li>奇姆肯特美元买入价449.83坚戈，卖出价447.81坚戈</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈持续贬值将推高哈萨克斯坦进口商品价格，加剧通胀压力，促使央行可能收紧货币政策。同时，本币走弱有利于出口和矿产企业收入，但可能引发资本外流和民众对经济稳定的担忧。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/oborot-reguliruemogo-kriptorinka-kazahstana-previsil-10-mlrd-c8011873" target="_blank">哈萨克斯坦受监管加密市场交易额超过100亿美元</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/21 16:57<span class="source-link"><a href="https://www.inform.kz/ru/oborot-reguliruemogo-kriptorinka-kazahstana-previsil-10-mlrd-c8011873" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦受监管加密市场交易额突破100亿美元，2026年上半年交易额达55亿美元。客户基数从2023年的5.3万人增至27万人。AIFC现有35家数字资产服务提供商，包括Binance和Bybit等11家交易所。自2026年5月起实行全国性监管模式，KASE获数字资产平台运营商地位。监管沙盒实施34个项目，Web3培训超8000人，57家初创企业获1.21亿坚戈资助。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦年复一年地持续实施数字资产市场发展措施，紧跟全球趋势，并在该领域形成自身的监管模式。国家元首今年7月签署的《关于刺激和发展哈萨克斯坦共和国数字资产行业的措施》总统令成为重要阶段。
+该文件的目标是为加密行业发展创造有利条件，提高行业投资吸引力，保障市场参与者安全，并形成现代且具有竞争力的数字资产生态系统。
+目前，哈萨克斯坦已在形成受监管的数字资产市场，从个别试点项目过渡到完整的基础设施和持牌经营活动。
+2026年上半年，交易额达到55亿美元。
+与此同时，市场参与者数量也在增加。如果说2023年客户基数为5.3万人，那么如今已达到27万人。
+目前，阿斯塔纳国际金融中心（AIFC）共有35家数字资产服务提供商。其中包括11家数字资产交易所，包括Binance和Bybit，16家投资服务提供商和8家支付机构，其中包括3家稳定币发行方。
+自2026年5月1日起，哈萨克斯坦实行全面的全国性数字资产市场监管模式。哈萨克斯坦证券交易所KASE获得了数字金融资产平台运营商和数字资产交易平台的地位。
+该国还设有监管沙盒，在14个方向实施34个项目。其中包括稳定币、代币化、加密交易所、托管和加密法币服务。
+投资者对新工具的兴趣也在增长。2026年上半年，比特币期货ETF共达成约3.4万笔交易，金额为205亿坚戈。另有650笔交易、金额10亿坚戈来自与三种加密资产相关的新ETF。
+与此同时，哈萨克斯坦正在发展Web3方向。一年内，超过8000人在Solana生态系统中接受了培训，约2000人获得了证书。
+此外，57家哈萨克斯坦初创企业获得了总额1.21亿坚戈的资助。
+哈萨克斯坦还跻身国际Web3黑客马拉松申请数量世界前十。在Cypherpunk上，该国在135个国家中排名第七，提交了249份申请；在Frontier上，在165个国家中排名第八，提交了362份申请。
+据Ranking.kz数据，哈萨克斯坦仍是唯一一个……</div>
+<ul>
+<li>受监管加密市场交易额超100亿美元</li>
+<li>客户基数从5.3万增至27万人</li>
+<li>AIFC聚集35家数字资产服务商</li>
+<li>2026年5月起实行全国性监管模式</li>
+<li>Web3培训超8000人，57家初创获资助</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该进展巩固哈国中亚数字资产枢纽地位，吸引外资并推动金融科技就业；全国性监管模式与KASE入局将重塑矿产及能源密集型加密挖矿格局，增强经济多元化与外交数字议程影响力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/wuxian-f06c70a5/" target="_blank">哈萨克斯坦无现金支付占比接近美英水平</a></h3>
+<div class="item-meta">哈通社中文版 · 09/21 15:56<span class="source-link"><a href="https://cn.inform.kz/news/wuxian-f06c70a5/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦无现金支付占比接近美英水平。美国现金支付占比约11%，英国10%，挪威最低仅4%。互联网银行和手机银行占交易总额约80%。二维码支付交易笔数占比达10%，2026年前5个月交易额约170亿美元（8万亿坚戈），连续第二年超过POS终端交易额（约160亿美元，7.5万亿坚戈）。报告由RISE Research等编制，获哈国央行支持，并指出国际比较因统计方法差异仅供参考。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦无现金支付占比接近美英水平
+
+正文:
+数据显示，美国消费支付中现金支付占比约为11%，英国为10%。挪威现金使用比例最低，仅为4%；中国和瑞典均为5%，韩国为7%。巴西现金支付占比则为17%。
+从支付渠道看，互联网银行和手机银行仍在交易金额方面占据主导地位，约占全部交易总额的80%，主要用于较大金额支付。
+与此同时，二维码支付已成为日常小额零售消费中的重要支付方式。
+报告显示，二维码支付交易笔数占比已接近翻倍，达到全部交易的10%。2026年前5个月，哈萨克斯坦二维码支付交易额达到约170亿美元，折合8万亿坚戈，连续第二年超过POS终端交易额。同期，POS终端交易额约为160亿美元，折合7.5万亿坚戈。
+《Fintech in Kazakhstan 2026》由RISE Research联合bcc hub、Fintech Center和Tarlan编制，并得到哈萨克斯坦国家银行支持。研究采用了国家银行统计数据以及《Worldpay Global Payments Report 2025》相关资料。
+报告作者同时指出，由于统计方法存在差异，上述国际比较数据只能作为参考。国际统计主要基于POS终端处理数据和调查结果，而哈萨克斯坦相关指标则反映银行卡交易总额中无现金交易所占比重。
+总体来看，随着移动银行和二维码支付快速普及，哈萨克斯坦无现金支付在居民日常消费中的比重持续扩大。</div>
+<ul>
+<li>哈国无现金支付占比接近美英水平</li>
+<li>互联网和手机银行占交易总额约80%</li>
+<li>二维码支付交易额连续第二年超POS终端</li>
+<li>2026年前5个月二维码交易额达170亿美元</li>
+<li>报告获哈国央行支持，国际比较仅供参考</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">无现金支付快速普及将推动哈国金融科技发展，提升经济效率，减少现金流通成本，增强央行监管能力，并可能影响矿产等大宗商品交易的支付方式，促进数字化经济转型。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/heyongyi-1741af4b/" target="_blank">哈萨克斯坦汽油、柴油和车用燃气价格一览</a></h3>
+<div class="item-meta">哈通社中文版 · 09/21 14:33<span class="source-link"><a href="https://cn.inform.kz/news/heyongyi-1741af4b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>截至9月21日，哈萨克斯坦三大城市阿斯塔纳、阿拉木图和奇姆肯特的汽油、柴油和车用燃气价格公布。阿斯塔纳汽油价格为247坚戈/升，阿拉木图为245—249坚戈/升，奇姆肯特为233—241坚戈/升。柴油价格在304—327坚戈/升之间，车用燃气价格在102—112坚戈/升之间。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦汽油、柴油和车用燃气价格一览
+正文:
+截至9月21日，阿斯塔纳、阿拉木图和奇姆肯特主要燃油价格区间如下：
+阿斯塔纳：247坚戈/升阿拉木图：245—249坚戈/升奇姆肯特：233—241坚戈/升
+阿斯塔纳：315—319坚戈/升阿拉木图：320—327坚戈/升奇姆肯特：304—306坚戈/升
+阿斯塔纳：355—365坚戈/升阿拉木图：360—380坚戈/升奇姆肯特：345—350坚戈/升
+阿斯塔纳：337—343坚戈/升阿拉木图：343—351坚戈/升奇姆肯特：340—349坚戈/升
+阿斯塔纳：112坚戈/升阿拉木图：112坚戈/升奇姆肯特：102坚戈/升</div>
+<ul>
+<li>阿斯塔纳汽油247坚戈/升，阿拉木图245—249坚戈/升</li>
+<li>奇姆肯特汽油价格最低，为233—241坚戈/升</li>
+<li>柴油价格区间为304—327坚戈/升</li>
+<li>车用燃气价格在102—112坚戈/升之间</li>
+<li>阿拉木图燃油价格普遍高于其他两城</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">燃油价格差异反映地区市场供需和运输成本，对哈国经济稳定和民生有直接影响。价格透明有助于政府调控通胀，维护政治稳定，并影响矿产和能源出口竞争力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/xinggong21riyuzhuyaowaizhijiande-e9304bf1/" target="_blank">央行公布21日坚戈与主要外币之间的汇率标准</a></h3>
+<div class="item-meta">哈通社中文版 · 09/21 13:34<span class="source-link"><a href="https://cn.inform.kz/news/xinggong21riyuzhuyaowaizhijiande-e9304bf1/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行公布2026年9月21日坚戈汇率：美元兑坚戈1:446.56，欧元兑坚戈1:512.34，卢布兑坚戈1:5.3，里拉兑坚戈1:9.15，人民币兑坚戈1:66.68。央行规定，以阿斯塔纳时间15:30证券交易所坚戈兑美元加权平均汇率作为下一工作日官方汇率，其他外币汇率依据16:00交叉汇率计算。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">根据央行公布的信息，2026年9月21日，哈萨克斯坦坚戈与国际主要货币之间的兑换汇率标准如下：
+美元兑坚戈（USD/KZT） – 1：446.56
+欧元兑坚戈（EUR/KZT）- 1：512.34
+俄罗斯卢布兑坚戈（RUB / KZT）-1: 5.3
+土耳其里拉兑坚戈（TRY / KZT）- 1: 9.15
+中国元兑坚戈（CNY / KZT）- 1：66.68
+值得一提的是，根据哈萨克斯坦国家银行规定，截至阿斯塔纳时间当日15:30，在哈萨克斯坦证券交易所形成的坚戈兑美元加权平均汇率，将被确定为下一工作日坚戈兑美元官方汇率；坚戈兑其他外币的官方汇率，则依据截至阿斯塔纳时间16:00形成的交叉汇率计算得出。</div>
+<ul>
+<li>美元兑坚戈汇率为1:446.56</li>
+<li>欧元兑坚戈汇率为1:512.34</li>
+<li>人民币兑坚戈汇率为1:66.68</li>
+<li>卢布兑坚戈汇率为1:5.3</li>
+<li>官方汇率依据交易所加权平均和交叉汇率确定</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率公布反映坚戈对主要货币的稳定态势，有利于哈萨克斯坦外贸和投资环境。人民币汇率明确有助于中哈经贸合作，卢布汇率低位显示区域经济联系。央行定价机制增强汇率透明度，对矿产等大宗商品贸易结算具有参考意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/xingyeqian8geyuetongxia136-dc7a1b9d/" target="_blank">哈萨克斯坦银行业前8个月净利润同比下降13.6%</a></h3>
+<div class="item-meta">哈通社中文版 · 09/21 12:36<span class="source-link"><a href="https://cn.inform.kz/news/xingyeqian8geyuetongxia136-dc7a1b9d/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年前8个月，哈萨克斯坦银行业净利润同比下降13.6%，利息收入虽增16.1%至7.02万亿坚戈，但利息支出大增30.7%至4.21万亿坚戈，净手续费收入降25.5%至3181亿坚戈，准备金支出升至1.73万亿坚戈。2025年同期净利润为1.864万亿坚戈，同比增长14.7%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦银行业前8个月净利润同比下降13.6%
+
+正文:
+2025年同期，哈萨克斯坦银行业净利润为1.864万亿坚戈。
+尽管净利润下降，银行利息收入仍保持增长。今年前8个月，银行利息收入同比增长16.1%，由约6.05万亿坚戈增至7.02万亿坚戈。
+与此同时，利息支出增长速度明显更快，同比增加30.7%，由约3.22万亿坚戈增至4.21万亿坚戈。
+受此影响，银行利息收入与利息支出之间的差额基本没有扩大，约为2.81万亿坚戈，而去年同期为2.83万亿坚戈。
+手续费收入下降也是影响银行业盈利表现的重要因素之一。
+2026年1月至8月，银行手续费收入同比下降13.2%，从6771亿坚戈降至5877亿坚戈。同期，手续费支出增长7.8%，达到2696亿坚戈。
+由此，银行净手续费收入同比下降25.5%，从4271亿坚戈降至3181亿坚戈。也就是说，与去年同期相比，银行从手续费业务中获得的净收入减少约1090亿坚戈。
+此外，银行计提准备金的支出也有所上升。今年前8个月，该项支出达到1.73万亿坚戈，高于去年同期的1.62万亿坚戈。与此同时，准备金转回收入基本保持稳定，约为1.17万亿坚戈。
+值得注意的是，去年同期哈萨克斯坦银行业利润仍保持两位数增长。2025年1月至8月，银行净利润达到1.864万亿坚戈，同比增长14.7%。
+2025年全年，哈萨克斯坦银行业净利润达到2.7万亿坚戈，同比增长6.7%。截至2026年初，银行业资产收益率为4.2%，资本收益率为28.4%。
+2026年以来，银行业利润下降趋势此前已显现。数据显示，今年1月至7月，银行净利润为1.396万亿坚戈，同比下降14.9%。</div>
+<ul>
+<li>前8月净利润同比降13.6%，利息支出增30.7%</li>
+<li>净手续费收入降25.5%，减少约1090亿坚戈</li>
+<li>准备金支出升至1.73万亿坚戈，盈利承压</li>
+<li>2025年全年净利润2.7万亿坚戈，增6.7%</li>
+<li>1-7月净利润已降14.9%，趋势延续</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">银行业利润下滑可能抑制信贷扩张，增加实体经济融资成本；若持续，或影响坚戈稳定与财政税收，促使监管关注资产质量与手续费竞争。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/guoxia2-1f640ae5/" target="_blank">国际油价下跌约2%</a></h3>
+<div class="item-meta">哈通社中文版 · 09/21 11:52<span class="source-link"><a href="https://cn.inform.kz/news/guoxia2-1f640ae5/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>截至9月21日，国际油价普遍下跌。布伦特原油期货报每桶101.75美元，下跌2.04%；WTI原油报每桶98.20美元，下跌2.09%；俄罗斯乌拉尔原油报每桶113.41美元，跌幅达6.74%，此前曾升至每桶100美元以上，为今年5月以来最高。分析人士认为，后续油价走势取决于原油供应恢复及霍尔木兹海峡航运状况。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">截至9月21日，布伦特原油期货价格报每桶101.75美元，下跌2.04%。
+美国西德克萨斯中质原油（WTI）价格报每桶98.20美元，下跌2.09%。
+俄罗斯乌拉尔原油（Urals）价格报每桶113.41美元，跌幅达到6.74%。此前，乌拉尔原油价格一度升至每桶100美元以上，达到今年5月以来的最高水平。
+分析人士指出，后续国际油价走势将主要取决于原油供应恢复情况，以及霍尔木兹海峡航运状况。</div>
+<ul>
+<li>布伦特原油报101.75美元/桶，跌2.04%</li>
+<li>WTI原油报98.20美元/桶，跌2.09%</li>
+<li>乌拉尔原油报113.41美元/桶，跌6.74%</li>
+<li>乌拉尔原油此前创5月以来新高</li>
+<li>后续油价取决于供应恢复与霍尔木兹航运</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">油价下跌可能缓解哈萨克斯坦进口成本与通胀压力，但若持续走低将减少其原油出口收入，影响财政平衡。乌拉尔原油大幅下跌或改变哈国原油出口竞争格局，需关注霍尔木兹海峡航运对里海通道的间接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://www.inform.kz/ru/kursi-valyut-vobmennikah-astani-ialmati-na21sentyabrya-b2fd1af0" target="_blank">9月21日阿斯塔纳和阿拉木图兑换点汇率</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/21 11:45<span class="source-link"><a href="https://www.inform.kz/ru/kursi-valyut-vobmennikah-astani-ialmati-na21sentyabrya-b2fd1af0" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>9月21日，哈萨克斯坦阿斯塔纳、阿拉木图和奇姆肯特兑换点的汇率显示，美元卖出价约445-447坚戈，买入价约448-452坚戈；欧元卖出价约508-512坚戈，买入价约515-518坚戈；卢布卖出价约5.00-5.04坚戈，买入价约5.11-5.20坚戈。官方汇率为1美元兑446.56坚戈，1欧元兑512.34坚戈，1卢布兑5.3坚戈。9月18日美元加权平均汇率上涨1.65坚戈至446.56坚戈。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：9月21日阿斯塔纳和阿拉木图兑换点汇率
+正文：
+根据Kurs.kz的数据，在阿斯塔纳的兑换点，居民平均可以以445.00坚戈卖出美元，以451.93坚戈买入。欧元平均可以以508.03坚戈卖出，以518.00坚戈买入。卢布可以以5.00坚戈卖出，以5.20坚戈买入。
+阿拉木图居民平均可以以445.25坚戈卖出一美元，以447.91坚戈买入。欧元平均可以以509.97坚戈卖出，以515.53坚戈买入。卖出卢布可以得到5.00坚戈，而买入需要5.13坚戈。
+奇姆肯特居民平均可以以446.97坚戈卖出美元，以449.00坚戈买入。卖出欧元可以得到约512.11坚戈，而买入平均需要516.05坚戈。俄罗斯卢布可以以5.04坚戈卖出，以5.11坚戈买入。
+今日官方汇率为：1美元兑446.56坚戈，1欧元兑512.34坚戈，1卢布兑5.3坚戈。
+值得注意的是，根据9月18日的日间交易结果，美元加权平均汇率为446.56坚戈，上涨了1.65坚戈。</div>
+<ul>
+<li>阿斯塔纳美元买入价451.93坚戈，卖出价445.00坚戈</li>
+<li>阿拉木图欧元买入价515.53坚戈，卖出价509.97坚戈</li>
+<li>奇姆肯特卢布买入价5.11坚戈，卖出价5.04坚戈</li>
+<li>官方汇率：美元446.56，欧元512.34，卢布5.3</li>
+<li>9月18日美元加权平均汇率上涨1.65坚戈</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率波动反映坚戈面临贬值压力，可能影响哈萨克斯坦进口成本和通胀，促使央行调整货币政策；外交上需平衡与俄罗斯及西方经济关系；矿产出口以美元计价，汇率变动影响财政收入。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/56-uchastkov-nedr-po-uglevodorodam-vistavyat-na-auktsion-v-kazahstane-86235ebf" target="_blank">哈萨克斯坦将拍卖56个油气区块</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/21 21:46<span class="source-link"><a href="https://www.inform.kz/ru/56-uchastkov-nedr-po-uglevodorodam-vistavyat-na-auktsion-v-kazahstane-86235ebf" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦将于2026年12月25日在e-Qazyna平台拍卖56个油气区块，申请截止11月18日。多数区块用于勘探和开采，四个直接开采。区块主要位于西部阿克托别、阿特劳、西哈萨克斯坦和曼吉斯套州，另有西乌雷套区块位于科斯塔奈和乌雷套州。起始签约奖金各异，如秋别吉克区块1.1892亿坚戈，乌斯秋尔特4号区块7167万坚戈，卡拉苏区块4468万坚戈。首批国家地质研究区块计划2027年起拍卖。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦将拍卖56个油气区块
+
+正文：
+拍卖将于2026年12月25日在e-Qazyna平台举行。参与申请截止日期为11月18日（含）。
+
+大多数拍卖标的用于油气勘探和开采。另有四个标的直接用于开采。
+
+大部分区块位于哈萨克斯坦西部地区——阿克托别州、阿特劳州、西哈萨克斯坦州和曼吉斯套州。此外，西乌雷套区块位于科斯塔奈州和乌雷套州。
+
+各区块的起始签约奖金金额不同。例如，曼吉斯套州的秋别吉克（卡拉库姆）区块，面积为58.95平方公里，起始签约奖金为1.1892亿坚戈。曼吉斯套州的乌斯秋尔特4号区块，起始签约奖金为7167万坚戈，区块面积为4058.53平方公里。阿特劳州和阿克托别州的卡拉苏区块，起始奖金为4468万坚戈，面积为2339.49平方公里。
+
+此前有报道称，在国家地质研究框架下准备的首批有前景的矿产区块，计划从2027年起向投资者拍卖。</div>
+<ul>
+<li>2026年12月25日拍卖56个油气区块</li>
+<li>申请截止11月18日，多数用于勘探开采</li>
+<li>区块集中于西部四州及乌雷套地区</li>
+<li>起始奖金从4468万到1.1892亿坚戈不等</li>
+<li>首批国家地质研究区块2027年起拍卖</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次拍卖有助于吸引投资、增加财政收入，推动西部油气产区开发，提升哈国能源出口潜力，并强化其在中亚矿产格局中的地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/kazatomprom-poluchil-pravo-na-razvedku-urana-na-uchastke-kiziltu-v-kizilordinsko-edec7646" target="_blank">哈萨克原子工业公司获得克孜勒奥尔达州克孜勒图区块铀矿勘探权</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/21 15:55<span class="source-link"><a href="https://www.inform.kz/ru/kazatomprom-poluchil-pravo-na-razvedku-urana-na-uchastke-kiziltu-v-kizilordinsko-edec7646" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克原子工业公司获得克孜勒奥尔达州克孜勒图地段铀矿勘探权，该地段初步评估铀资源量约1万吨。公司计划近期开展地质勘探以明确资源量。董事会主席尤苏波夫表示，这是扩大矿产资源基地战略的一部分。公司还计划达成两笔大型铀销售交易，旨在巩固哈萨克斯坦在全球铀市场的地位。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克原子工业公司获得克孜勒奥尔达州克孜勒图地段铀矿勘探权
+正文：
+该地段的地下资源使用权仅属于哈萨克原子工业公司。
+据初步评估，克孜勒图地段的铀资源量可能约为1万吨。近期，公司计划开展地质勘探工作，以明确资源量并评估该地段的潜力。
+哈萨克原子工业公司董事会主席梅伊尔詹·尤苏波夫指出，获得克孜勒图地段铀矿勘探许可证是公司扩大矿产资源基地战略的一部分。
+哈萨克原子工业公司还表示，增加并有效利用资源基地仍是公司的关键优先事项之一。为此，正在实施一项地质勘探计划，旨在发展原料潜力并巩固哈萨克斯坦在全球铀市场的地位。
+此前有报道称，哈萨克原子工业公司计划达成两笔大型铀销售交易。</div>
+<ul>
+<li>哈萨克原子工业公司获克孜勒图铀矿勘探权</li>
+<li>初步评估该地段铀资源量约1万吨</li>
+<li>勘探旨在扩大公司矿产资源基地</li>
+<li>公司计划达成两笔大型铀销售交易</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">增强哈国铀资源储备，巩固其全球铀市场主导地位，提升经济收益与外交能源筹码，但需关注勘探进度及国际铀价波动风险。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/territoriyu-kuda-bilo-vilito-9-tisyach-tonn-neftyanih-othodov-brosili-vmangistau-d05f9ae3" target="_blank">曼吉斯套州被倾倒9000吨石油废料的区域遭废弃</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/21 13:41<span class="source-link"><a href="https://www.inform.kz/ru/territoriyu-kuda-bilo-vilito-9-tisyach-tonn-neftyanih-othodov-brosili-vmangistau-d05f9ae3" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>曼吉斯套州一块6.0790公顷、租期49年的土地被用于石油废弃物加工，处理约8000吨废弃物后，公司未履行合同义务。法院判令“乌拉尔能源建设”公司赔偿6.516亿坚戈并清理场地，但因无法追回欠款，执行退回。目前约9000吨废弃物由区部门接管，但区预算无资金用于复垦，正考虑移交州属。该公司此前还因阿特劳州生态违规被罚14亿坚戈。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：曼吉斯套州一处被倾倒9000吨石油废弃物的地块遭废弃
+
+正文：
+据州生态局消息，此前该公司获得了一块面积为6.0790公顷的土地，租期为49年，用于加工石油产品和生产道路建筑材料。
+
+在该企业区域内加工了约8000吨石油废弃物。然而，后来公司未能妥善履行租赁合同义务。
+
+法院认定租赁合同无效，并判决向“乌拉尔能源建设”有限责任公司追缴6.516亿坚戈作为生态损害赔偿金，上缴国家。
+
+此外，法院责令该公司拆除区域内已建成的设施，腾退地块，并清理泄漏的石油产品和废弃物。法院判决已生效。然而，由于无法向债务人追回欠款，执行文件被退回。
+
+——目前，区域内约9000吨废弃物已由相关区部门接收并纳入资产负债表。为恢复该区域，需制定复垦方案，进行实验室研究，并完成设计勘察工作。然而，区预算中未安排用于这些目标的资金。因此，正在考虑将该对象移交州属公共财产的问题。——消息中称。
+
+此前，该公司因在阿特劳州的生态违规行为被处以14亿坚戈罚款。</div>
+<ul>
+<li>曼吉斯套州6.0790公顷土地被倾倒约9000吨石油废弃物</li>
+<li>法院判“乌拉尔能源建设”赔偿6.516亿坚戈并清理场地</li>
+<li>因无法追回欠款，执行文件被退回，场地遭废弃</li>
+<li>区预算无复垦资金，正考虑将对象移交州属公共财产</li>
+<li>该公司此前因阿特劳州生态违规被罚14亿坚戈</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此事件凸显哈国生态执法与执行难问题，可能推动地方财政与环保责任调整，影响矿产及能源行业投资环境，并促使中央与地方在环境治理上加强协调。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-09-22 09:03</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
