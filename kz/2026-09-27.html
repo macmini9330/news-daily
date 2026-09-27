@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年9月27日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年9月27日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年09月26日早9:00至2026年09月27日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 12 条</span><span class="stat-chip">3 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">8</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">1</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">0</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(8 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/prezident-kazahstana-sozdal-komissiyu-dlya-kompleksnoy-proverki-ministerstva-obo-d7c79341" target="_blank">哈萨克斯坦总统成立委员会对国防部进行全面检查</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/26 19:42<span class="source-link"><a href="https://www.inform.kz/ru/prezident-kazahstana-sozdal-komissiyu-dlya-kompleksnoy-proverki-ministerstva-obo-d7c79341" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年9月26日，哈萨克斯坦总统签署命令，成立国防部事务全面检查委员会，由安全委员会副主席巴利亚耶娃任主席，最高审计院主席斯迈洛夫任副主席，成员包括总统办公厅副主任、金融监管署主席、财政部长、总检察院第一副检察长、国家安全委员会第一副主席、国民经济部第一副部长等。委员会须在七日内报告首批工作结果，命令自签署之日起生效。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">2026年9月26日
+为对哈萨克斯坦共和国国防部的事务状况进行全面检查，包括军事单位的财政和物资技术保障领域：
+1. 成立哈萨克斯坦共和国国防部事务全面检查委员会（以下简称委员会），组成如下：
+巴利亚耶娃·艾达·加雷莫夫娜——哈萨克斯坦共和国安全委员会副主席，委员会主席；
+斯迈洛夫·阿里汗·阿斯卡诺维奇——哈萨克斯坦共和国最高审计院主席，委员会副主席；
+日延巴耶夫·叶尔詹·努尔兰诺维奇——哈萨克斯坦共和国总统办公厅副主任；
+埃利马诺夫·扎纳特·卡尔德别科维奇——哈萨克斯坦共和国金融监管署主席；
+拜穆卡舍夫·穆拉特·卡利别科维奇——哈萨克斯坦共和国安全委员会机关负责人；
+塔基耶夫·马迪·托克绍维奇——哈萨克斯坦共和国财政部长；
+乌米拉利耶夫·詹多斯·扎尼别科维奇——哈萨克斯坦共和国总检察院第一副检察长；
+阿尔滕巴耶夫·阿里·萨帕尔加利耶维奇——哈萨克斯坦共和国国家安全委员会第一副主席；
+阿姆林·阿扎马特·克门格罗维奇——哈萨克斯坦共和国国民经济部第一副部长。
+2. 委员会应在七日内报告已开展工作的首批结果。
+3. 本命令自签署之日起生效。
+总统</div>
+<ul>
+<li>总统令成立国防部全面检查委员会</li>
+<li>安全委员会副主席巴利亚耶娃任委员会主席</li>
+<li>最高审计院主席斯迈洛夫任副主席</li>
+<li>成员含财政部长、金融监管署主席等</li>
+<li>委员会须七日内报告首批工作结果</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该委员会高规格跨部门组成，显示总统对国防部财务与物资保障的高度关注，可能推动国防预算透明化与反腐，强化安全系统对军队的监督，短期内或引发国防部人事调整，对政治稳定和外交形象产生一定影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/dangguozhu-70725371/" target="_blank">托卡耶夫祝贺季穆尔·图尔洛夫当选国际棋联主席</a></h3>
+<div class="item-meta">哈通社中文版 · 09/26 18:12<span class="source-link"><a href="https://cn.inform.kz/news/dangguozhu-70725371/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫祝贺季穆尔·图尔洛夫当选国际棋联主席。选举于9月26日在撒马尔罕举行的国际棋联大会期间进行，与第46届国际象棋奥林匹克团体赛同期。图尔洛夫在196张可能票数中获得110票。托卡耶夫祝愿其在领导这一全球影响力国际组织期间取得成功。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据总统府消息，托卡耶夫祝愿图尔洛夫在领导这一具有全球影响力的国际组织期间取得成功。
+国际棋联主席选举于9月26日在撒马尔罕举行的国际棋联大会期间进行。该大会与第46届国际象棋奥林匹克团体赛同期举行。
+根据投票结果，图尔洛夫在196张可能票数中获得110票。</div>
+<ul>
+<li>托卡耶夫祝贺图尔洛夫当选国际棋联主席</li>
+<li>选举于9月26日在撒马尔罕国际棋联大会期间举行</li>
+<li>图尔洛夫在196张可能票数中获得110票</li>
+<li>大会与第46届国际象棋奥林匹克团体赛同期举行</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">图尔洛夫当选提升哈萨克斯坦在国际体育组织中的影响力，有利于哈国拓展体育外交，增强在中亚地区的软实力，并可能促进国内象棋运动发展。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/zhanseyt-kaynarbaev-vozglavil-karakiyanskiy-rayon-mangistauskoy-oblasti-0609188f" target="_blank">詹谢伊特·凯纳尔巴耶夫出任曼吉斯套州卡拉基亚区区长</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/26 15:27<span class="source-link"><a href="https://www.inform.kz/ru/zhanseyt-kaynarbaev-vozglavil-karakiyanskiy-rayon-mangistauskoy-oblasti-0609188f" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>曼吉斯套州任命詹塞伊特·凯纳尔巴耶夫为卡拉基亚区区长。他1984年生于库兰迪村，2006年起在企业工作，历任公司负责人、公用企业领导、图普卡拉甘区副区长、扎瑙津市副市长及市长。同期，曼吉斯套州还任命了州第一副州长、两名副州长及阿克套市和扎瑙津市市长。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">詹塞伊特·凯纳尔巴耶夫出任曼吉斯套州卡拉基亚区区长
+
+詹塞伊特·伊萨哈诺维奇·凯纳尔巴耶夫，1984年5月20日出生于曼吉斯套州卡拉基亚区库兰迪村。
+
+2006年，他在“阿克套道路-07”有限责任公司以工长身份开始职业生涯。
+
+2008至2009年，任“库拉格尔”有限责任公司副总机械师；2009至2012年，任“运输服务城市建设”有限责任公司负责人。
+
+2012至2014年，任“清洁”国家公用企业部门主任；2014至2015年，任“公共服务”国家公用企业负责人。
+
+2015至2016年，领导图普卡拉甘区住房和公用事业、客运交通和公路部门。
+
+2016至2022年，任图普卡拉甘区副区长。
+
+2022至2024年，任扎瑙津市副市长。
+
+自2024年2月12日至最近，任扎瑙津市市长。
+
+值得注意的是，近日曼吉斯套州进行了一系列人事任命。叶尔博尔·伊兹别尔格诺夫出任州第一副州长，别克博尔·奥伦巴萨罗夫和加雷姆詹·尼亚佐夫出任副州长。此外，今天还任命了阿克套市和扎瑙津市市长。</div>
+<ul>
+<li>凯纳尔巴耶夫1984年生于曼吉斯套州库兰迪村</li>
+<li>2006年起在企业及公用事业领域任职</li>
+<li>2016-2022年任图普卡拉甘区副区长</li>
+<li>2024年2月起任扎瑙津市市长</li>
+<li>曼吉斯套州同期调整多个高层职位</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次人事调整强化曼吉斯套州地方治理，凯纳尔巴耶夫熟悉当地事务，有利于石油重镇扎瑙津及卡拉基亚区稳定，对里海沿岸经济与矿产开发政策执行具有积极意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://www.inform.kz/ru/maksat-mukash-naznachen-akimom-aktau-9390983c" target="_blank">马克萨特·穆卡什被任命为阿克套市市长</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/26 14:54<span class="source-link"><a href="https://www.inform.kz/ru/maksat-mukash-naznachen-akimom-aktau-9390983c" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>马克萨特·穆卡什被任命为阿克套市市长。他毕业于欧亚国立大学、哈萨克人文法律大学及哈萨克经济、金融与国际贸易大学，获体育、法学及国家与地方管理学位。2013年起在扎瑙津市从事体育教育工作，2019至2023年领导第1青少年体育学校，2021至2023年任扎瑙津市马斯利哈特议员及“阿玛纳特”党市分部负责人。2023年任曼吉斯套州州长助理，同年10月任州体育与运动管理局局长，2025年12月起任扎瑙津市副市长。近日曼吉斯套州进行系列人事调整，包括州第一副州长、副州长及扎瑙津市新市长。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">马克萨特·穆卡什被任命为阿克套市市长
+
+马克萨特·穆卡什毕业于列·尼·古米廖夫欧亚国立大学，专业为“体育与运动”，以及哈萨克人文法律大学，专业为“法学”。2015年毕业于哈萨克经济、金融与国际贸易大学，专业为“国家与地方管理”。
+
+他于2013年在扎瑙津市开始工作，担任第7中学的体育教师和第2青少年体育学校的自由式摔跤教练。
+
+2016至2017年，担任扎瑙津市克孜勒赛村第3青少年学校副校长，2018至2019年担任该校校长。
+
+2019年至2023年6月，领导扎瑙津市第1青少年体育学校。
+
+2021至2023年，担任扎瑙津市第七届市马斯利哈特议员，以及“阿玛纳特”党扎瑙津市分部负责人。
+
+2023年6月至10月，担任曼吉斯套州州长助理。
+
+2023年10月24日，被任命为曼吉斯套州体育与运动管理局局长。
+
+自2025年12月至今，担任扎瑙津市副市长。
+
+值得注意的是，近日曼吉斯套州进行了一系列人事任命。叶尔博尔·伊兹别尔格诺夫成为州第一副州长，别克博尔·奥伦巴萨罗夫和加雷姆詹·尼亚佐夫成为副州长。此外，今天还任命了扎瑙津市新市长——西姆巴特·托列塔耶夫。</div>
+<ul>
+<li>马克萨特·穆卡什被任命为阿克套市市长</li>
+<li>其拥有体育、法学及国家与地方管理教育背景</li>
+<li>2013年起在扎瑙津市从事体育教育和管理工作</li>
+<li>2023年任曼吉斯套州体育与运动管理局局长</li>
+<li>曼吉斯套州近期进行系列人事调整</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次任命是曼吉斯套州人事调整的一部分，可能强化地方体育与青年政策导向。穆卡什的体育和党务背景或有助于提升阿克套市社会政策执行力，对州内政治格局影响有限，但反映地方精英轮换趋势。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://www.inform.kz/ru/knb-soobshil-o-spetsoperatsii-protiv-opg-v-10-regionah-kazahstana-7f87c2d2" target="_blank">哈萨克斯坦国家安全委员会通报在10个地区开展打击有组织犯罪集团的特别行动</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/26 14:43<span class="source-link"><a href="https://www.inform.kz/ru/knb-soobshil-o-spetsoperatsii-protiv-opg-v-10-regionah-kazahstana-7f87c2d2" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国家安全委员会在10个地区开展特别行动，打击有组织犯罪集团、边境犯罪团伙及刑事执行系统内的非法活动。行动中拘留并押送29名涉嫌严重和特别严重犯罪的嫌疑人，其中9人关押在临时拘留所。缴获25件武器、2枚手榴弹和236件弹药。目前正在进行审前调查，其他信息根据《刑事诉讼法》第201条第1部分不予披露。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦国家安全委员会通报在10个地区针对有组织犯罪集团开展特别行动
+
+正文：
+此次行动旨在制止有组织犯罪集团成员、边境地区犯罪团伙以及刑事执行系统设施内的非法活动。
+
+照片：哈萨克斯坦共和国国家安全委员会
+因涉嫌实施严重和特别严重犯罪，29人被拘留并押送。其中9人被关押在临时拘留所。
+
+照片：哈萨克斯坦共和国国家安全委员会
+行动期间，从非法流通中缴获25件武器、2枚手榴弹和236件弹药。
+
+照片：哈萨克斯坦共和国国家安全委员会
+就上述事实正在进行审前调查。
+
+照片：哈萨克斯坦共和国国家安全委员会
+根据《刑事诉讼法》第201条第1部分，其他信息不予披露。
+
+照片：哈萨克斯坦共和国国家安全委员会</div>
+<ul>
+<li>哈国安委在10个地区开展特别行动</li>
+<li>拘留29名严重犯罪嫌疑人，9人关押</li>
+<li>缴获25件武器、2枚手榴弹、236件弹药</li>
+<li>行动针对有组织犯罪及边境犯罪团伙</li>
+<li>审前调查进行中，信息不予披露</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次行动强化哈国打击有组织犯罪力度，维护边境与刑事执行系统安全，有助于提升国内治安和政治稳定，但可能引发犯罪集团反弹，对地区安全格局产生短期影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://www.inform.kz/ru/akimom-zhanaozena-stal-simbat-toretaev-f20e3bfd" target="_blank">瑟姆巴特·托列塔耶夫出任扎瑙津市市长</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/26 13:12<span class="source-link"><a href="https://www.inform.kz/ru/akimom-zhanaozena-stal-simbat-toretaev-f20e3bfd" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>瑟姆巴特·托列塔耶夫被任命为扎瑙津市市长。他生于1978年，2000年起在曼吉斯套州内务局工作，2006-2010年任“努尔”公司经理，2010-2014年任穆奈什村村长，2015-2019年先后在州长办公室负责执法协作和反恐部门，2019-2023年任卡拉基亚区副区长，2023年5月起任该区区长。同时，曼吉斯套州进行人事调整，叶尔博尔·伊兹别尔格诺夫任第一副州长，别克博尔·奥伦巴萨罗夫和加雷姆詹·尼亚佐夫任副州长。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">扎瑙津市市长由瑟姆巴特·托列塔耶夫担任
+
+瑟姆巴特·托列塔耶夫于1978年1月27日出生在曼吉斯套州叶拉利耶夫区热特拜村。
+
+2000年，他在曼吉斯套州内务局打击有组织犯罪局担任特派员，开始了职业生涯。此后，他先后担任高级特派员、特别重要事务高级特派员。
+
+2006年至2010年，他担任“努尔”有限责任合伙公司经理。
+
+2010年至2014年，他担任卡拉基亚区穆奈什村村长。
+
+2015年至2017年，他领导曼吉斯套州州长办公室与执法机关协作、反恐、动员准备和民防部门。
+
+2017年至2019年，他领导曼吉斯套州州长办公室反恐部门。
+
+2019年至2023年，他担任卡拉基亚区副区长。
+
+自2023年5月至今，他担任卡拉基亚区区长。
+
+回顾一下，曼吉斯套州州长办公室进行了一系列人事任命。其中，叶尔博尔·伊兹别尔格诺夫成为州第一副州长，别克博尔·奥伦巴萨罗夫和加雷姆詹·尼亚佐夫成为副州长。</div>
+<ul>
+<li>托列塔耶夫被任命为扎瑙津市市长</li>
+<li>其履历涵盖内务、企业、村长、反恐及副区长</li>
+<li>2023年5月起任卡拉基亚区区长</li>
+<li>曼吉斯套州任命第一副州长和两名副州长</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">扎瑙津是石油重镇，市长更替可能影响当地石油产业和社会稳定。曼吉斯套州人事调整或强化州长对关键地区的控制，对哈国能源外交和矿产格局产生一定影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://www.inform.kz/ru/eks-senator-bekbol-orinbasarov-stal-zamestitelem-akima-mangistauskoy-oblasti-fa86d5d1" target="_blank">前参议员别克博尔·奥伦巴萨罗夫出任曼吉斯套州副州长</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/26 12:23<span class="source-link"><a href="https://www.inform.kz/ru/eks-senator-bekbol-orinbasarov-stal-zamestitelem-akima-mangistauskoy-oblasti-fa86d5d1" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>前参议员别克博尔·奥伦巴萨罗夫被任命为曼吉斯套州副州长。他生于1971年，1993年开启职业生涯，曾在银行、阿克套市政府及州国家机关任职，2006-2008年任经济与预算规划部内部行政司司长，2008-2010年领导“卡斯皮”社会企业家公司资产管理部，2010-2019年任“奥提拉尔能源”和“阿代”公司总经理，2020-2021年任“阿克套海港”经济特区董事会主席，2021-2023年任曼吉斯套州副州长及第一副州长，2023-2026年任参议院议员。同时，叶尔博尔·伊兹别尔格诺夫和加雷姆詹·尼亚佐夫也获新职。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">前参议员别克博尔·奥伦巴萨罗夫出任曼吉斯套州副州长
+
+别克博尔·奥伦巴萨罗夫于1971年6月18日出生在曼吉斯套州图普卡拉甘区。
+
+他于1993年开始职业生涯，担任曼吉斯套州海关管理局“巴乌京斯基”海关检查站检查员。
+
+多年来，他曾在银行领域、阿克套市政府和曼吉斯套州国家机关工作。曾担任阿克套市市长助理、阿克套市市长办公厅主任、阿克套市住房和公用事业、客运和公路局局长、阿克套市副市长。
+
+2006-2008年，担任哈萨克斯坦共和国经济与预算规划部内部行政司司长。
+
+2008-2010年，担任“卡斯皮”社会企业家公司国家公司股份公司资产管理部主任，后任管理总监兼公司秘书。
+
+2010-2019年，担任“奥提拉尔能源”有限责任合伙企业和“阿代”有限责任合伙企业总经理。
+
+2020-2021年，担任“阿克套海港”经济特区股份公司董事会主席。
+
+2021-2023年，担任曼吉斯套州副州长，后任第一副州长。
+
+2023-2026年，担任哈萨克斯坦共和国议会参议院第七届和第八届议员，财政与预算常设委员会委员。
+
+此外，曼吉斯套州政府的新职位还有叶尔博尔·伊兹别尔格诺夫和加雷姆詹·尼亚佐夫。</div>
+<ul>
+<li>前参议员奥伦巴萨罗夫出任曼吉斯套州副州长</li>
+<li>其履历涵盖海关、银行、市政府及州政府</li>
+<li>2021-2023年曾任该州第一副州长</li>
+<li>2023-2026年任参议院财政预算委员</li>
+<li>同日另有两人获州政府新职位</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">奥伦巴萨罗夫重返地方行政，凭借其财政预算和能源领域经验，可能强化曼吉斯套州经济治理与矿产开发，同时体现中央与地方人事轮换，对哈国政治稳定和里海地区经济布局有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://www.inform.kz/ru/erbol-izbergenov-naznachen-pervim-zamestitelem-akima-mangistauskoy-oblasti-9233f6b3" target="_blank">叶尔博尔·伊兹别尔格诺夫被任命为曼吉斯套州第一副州长</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/26 12:17<span class="source-link"><a href="https://www.inform.kz/ru/erbol-izbergenov-naznachen-pervim-zamestitelem-akima-mangistauskoy-oblasti-9233f6b3" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>叶尔博尔·伊兹别尔格诺夫被任命为曼吉斯套州第一副州长。他生于1973年8月11日，1991年从砌砖工起步，历任建筑机构、阿克套市政府、穆奈林区副州长、州建设局局长、投资与发展部和卫生部局长、阿克套海港经济特区董事会副主席、阿塔梅肯企业家协会主任、阿克套市市长、曼吉斯套州第一副州长及副州长等职。此前加雷姆詹·尼亚佐夫也被任命为该州副州长。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">叶尔博尔·伊兹别尔格诺夫被任命为曼吉斯套州第一副州长
+
+叶尔博尔·伊兹别尔格诺夫于1973年8月11日出生在曼吉斯套州卡拉基亚区库雷克村。
+
+他于1991年开始工作，在“曼吉斯套石油天然气勘探”综合考察队建筑安装工段担任砌砖工。
+
+多年来，他曾在地区级建筑机构、阿克套市州长办公室工作，担任过穆奈林区副州长和州建设局局长。
+
+他还曾在哈萨克斯坦共和国投资与发展部和哈萨克斯坦共和国卫生与社会发展部工作，担任局长职务。
+
+2019至2020年，他担任“阿克套海港”经济特区股份公司董事会副主席，之后担任“阿塔梅肯”地区企业家协会主任。
+
+2020至2023年，他担任阿克套市副市长和阿克套市市长。
+
+2024至2025年，他担任曼吉斯套州第一副州长。
+
+自2025年9月2日至今，他担任曼吉斯套州副州长。
+
+此前也有报道称，加雷姆詹·尼亚佐夫被任命为曼吉斯套州副州长。</div>
+<ul>
+<li>伊兹别尔格诺夫被任命为曼吉斯套州第一副州长</li>
+<li>1973年生于库雷克村，1991年砌砖工起步</li>
+<li>历任阿克套市长、州第一副州长等要职</li>
+<li>2025年9月2日起任曼吉斯套州副州长</li>
+<li>尼亚佐夫此前也被任命为曼吉斯套州副州长</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次人事调整强化曼吉斯套州领导班子，伊兹别尔格诺夫熟悉地方经济与建设，有利于石油重镇阿克套的基建和投资，对哈国里海沿岸经济与外交布局有积极影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/jiangduozhu-6baf2fbc/" target="_blank">特列吾别尔德：哈萨克斯坦将继续坚持多边主义原则</a></h3>
+<div class="item-meta">哈通社中文版 · 09/26 13:41<span class="source-link"><a href="https://cn.inform.kz/news/jiangduozhu-6baf2fbc/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦外长特列吾别尔德表示，哈将继续坚持多边主义原则。他介绍2026年新宪法强化人权、教育、创新与生态责任，新一届库鲁尔泰选举后女性议员比例达34%的历史新高。哈支持核裁军，提议建立国际生物安全机构，并推动在联合国框架内建立国际水资源组织。哈还将继续在环保、气候变化、生物多样性及水安全等领域开展国际合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据哈萨克斯坦外交部消息，特列吾别尔德在发言中重点介绍了哈萨克斯坦正在推进的政治改革。他指出，2026年新宪法进一步强化了对人的尊严、人力资本发展、教育、创新以及生态责任等方面的重视。
+他还提到，上个月举行的新一届库鲁尔泰选举具有重要意义。选举结束后，议会中社会各界力量的代表性进一步扩大，女性议员比例达到历史最高水平的34%。
+Фото: МИД РК “对哈萨克斯坦而言，多边主义是增进互信、寻求共同解决方案，并为我国公民和未来世代取得切实成果的重要工具。同时，它也是国家长期政治转型的重要组成部分。” - 特列吾别尔德表示。
+在国际安全与裁军问题上，特列吾别尔德重申哈萨克斯坦一贯支持核裁军，并主张恢复核大国之间的对话。他还提到哈萨克斯坦提出建立国际生物安全机构的倡议，以进一步加强《禁止生物武器公约》。
+谈及国家未来发展时，特列吾别尔德指出，政治现代化、可持续发展与环境责任之间密切相关。哈萨克斯坦将继续推动环境保护、应对气候变化、生物多样性保护以及加强水安全等领域的国际合作。
+Фото: МИД РК 在此背景下，他介绍了在阿斯塔纳举行的区域生态峰会成果、托卡耶夫总统提出将4月22日设立为“国际地球绿化日”的倡议，以及旨在培养生态责任意识、公民参与意识和珍惜公共福祉文化的“清洁哈萨克斯坦”全国性倡议。
+特列吾别尔德特别强调水安全的重要性，指出水资源是可持续发展、粮食与能源安全、气候韧性以及和平的重要基础因素之一。
+为此，他介绍了托卡耶夫总统提出的在联合国框架内建立国际水资源组织的倡议。该组织旨在推动建立更加统一、高效的国际水资源治理体系。
+讲话最后，特列吾别尔德重申，哈萨克斯坦将继续坚持多边主义原则，并愿同联合国所有成员国开展建设性合作，为维护和平、安全和推动可持续发展作出贡献。</div>
+<ul>
+<li>2026年新宪法强化人权、教育、创新与生态责任</li>
+<li>新一届库鲁尔泰选举女性议员比例达34%创新高</li>
+<li>哈支持核裁军，提议建立国际生物安全机构</li>
+<li>托卡耶夫提议在联合国框架内建立国际水资源组织</li>
+<li>哈将继续坚持多边主义并深化国际合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">政治改革与选举包容性提升有助于增强政权合法性；多边主义及水安全、生态倡议可提升哈国际话语权；核裁军与生物安全立场利于平衡外交；水资源组织倡议或影响中亚矿产与能源格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/otinfrastrukturi-kii-kakuyu-rol-bayterek-igraet-vsotrudnichestve-kazahstana-ikit-9c3e1c29" target="_blank">从基础设施到人工智能：“巴伊捷列克”在哈中合作中扮演什么角色</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/26 12:44<span class="source-link"><a href="https://www.inform.kz/ru/otinfrastrukturi-kii-kakuyu-rol-bayterek-igraet-vsotrudnichestve-kazahstana-ikit-9c3e1c29" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦-中国投资论坛在阿拉木图举行，总统托卡耶夫出席。巴伊杰列克控股公司董事会副主席翁扎诺夫主持数字经济与金融小组讨论，聚焦数字基础设施、数据中心、AI计算和长期资本吸引。翁扎诺夫表示，2025年融资额达8万亿坚戈，含住房领域为10.4万亿坚戈。与会者认为，哈萨克斯坦可凭借亚欧之间的地理位置成为区域数字枢纽，推动数据存储和处理本地化，并深化两国金融互联互通。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">从基础设施到人工智能：“巴伊杰列克”在哈萨克斯坦与中国合作中扮演什么角色
+
+在阿拉木图举行了哈萨克斯坦-中国投资论坛，总统卡瑟姆-若马尔特·托卡耶夫出席。该平台汇聚了两国政府机构、发展机构和领先企业的代表。论坛框架内讨论了新的投资项目和扩大经济合作的机会。
+
+图片：哈萨克斯坦国家管理控股公司“巴伊杰列克”股份公司
+其中一个关键环节是题为“数字经济与金融：未来投资基础设施”的小组讨论，由控股公司“巴伊杰列克”董事会副主席铁木尔·翁扎诺夫主持。讨论的核心是数字基础设施、数据中心和人工智能计算的发展、能源、吸引长期资本以及新的金融工具。
+
+图片：哈萨克斯坦国家管理控股公司“巴伊杰列克”股份公司
+与会者指出，哈萨克斯坦位于亚洲和欧洲之间的地理位置为国家发展成为区域数字枢纽创造了机会。跨哈萨克斯坦光纤通道、新的数据中心和能源能力不仅能够增加数据传输，还能为在国内存储和处理数据创造条件。
+
+图片：哈萨克斯坦国家管理控股公司“巴伊杰列克”股份公司
+据铁木尔·翁扎诺夫称，下一阶段应发展两国不仅基础设施而且金融的互联互通。
+
+——“重要的是，数据或大数据不仅仅是过境哈萨克斯坦，而是围绕其创建综合生态系统。对巴伊杰列克而言，基础设施的发展和现代化，包括数字基础设施，是投资授权的重要组成部分，”他指出。
+
+图片：哈萨克斯坦国家管理控股公司“巴伊杰列克”股份公司
+控股公司在内部和国际市场吸引资本，并以坚戈和外币（包括人民币和美元）为商业提供融资。据翁扎诺夫称，2025年融资额为8万亿坚戈，加上住房领域则为10.4万亿坚戈。巴伊杰列克的工具也被用于资助与中国合作伙伴的一系列项目。
+
+图片：哈萨克斯坦国家管理控股公司“巴伊杰列克”股份公司
+对哈萨克斯坦而言，这种合作不仅意味着资本流入，还意味着技术本地化、数字和能源基础设施的发展、新生产设施的创建以及……</div>
+<ul>
+<li>哈中投资论坛在阿拉木图举行，托卡耶夫出席</li>
+<li>巴伊杰列克主持数字经济与金融小组讨论</li>
+<li>2025年融资额8万亿坚戈，含住房10.4万亿</li>
+<li>哈萨克斯坦定位为亚欧区域数字枢纽</li>
+<li>推动数据本地化存储和AI计算发展</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">论坛强化哈中数字与金融合作，推动哈国从数据过境向数据存储和AI计算升级，吸引中国资本和技术，促进数字基础设施和能源建设，巩固其区域数字枢纽地位，同时深化人民币融资和金融互联。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/shiduozhongdezhe-91b98d1a/" target="_blank">古特雷斯：哈萨克斯坦是多极世界中的“桥梁建设者”</a></h3>
+<div class="item-meta">哈通社中文版 · 09/26 12:10<span class="source-link"><a href="https://cn.inform.kz/news/shiduozhongdezhe-91b98d1a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦外交部长特列吾别尔德在联合国大会期间会见秘书长古特雷斯，转达总统托卡耶夫的问候，高度评价古特雷斯坚持多边主义及《联合国宪章》宗旨，并肯定其为加强哈萨克斯坦与联合国合作所作贡献。双方讨论国际热点问题、第81届联大合作优先方向，以及阿拉木图联合国中亚和阿富汗可持续发展目标区域中心工作。古特雷斯称哈萨克斯坦为多极世界中的“桥梁建设者”。特列吾别尔德还与塞浦路斯、格鲁吉亚和罗马尼亚外长举行双边会见。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据哈萨克斯坦外交部消息，特列吾别尔德向古特雷斯转达了哈萨克斯坦总统托卡耶夫的问候。
+他代表国家元首高度评价古特雷斯在当前复杂国际形势下开展的工作，以及其始终坚持多边主义原则和《联合国宪章》宗旨，并肯定其本人为加强哈萨克斯坦与联合国全方位合作作出的贡献。
+双方就当前国际议程中的热点问题以及第81届联合国大会期间双方合作的优先方向交换了意见。
+特列吾别尔德重申，哈萨克斯坦支持古特雷斯为提高联合国工作效率所作的努力。
+双方还重点讨论了设在阿拉木图的联合国中亚和阿富汗可持续发展目标区域中心的工作，并指出该中心是推动区域层面多边合作的重要平台。
+古特雷斯特别指出，在正在形成的多极世界格局中，哈萨克斯坦的作用日益提升，并将哈萨克斯坦评价为“桥梁建设者”。他同时肯定哈萨克斯坦与主要国际伙伴保持建设性关系的能力。
+会见期间，特列吾别尔德在联合国贵宾留言簿上留言，高度评价古特雷斯为加强多边主义作出的贡献，并重申哈萨克斯坦将继续致力于深化联合国框架内的合作。
+此外，特列吾别尔德还在第81届联合国大会期间分别与塞浦路斯、格鲁吉亚和罗马尼亚外交部长举行双边会见。
+会谈结束后，各国外长重申，将继续在联合国及其他多边平台框架内保持密切协调，并就当前国际和地区议程中的热点问题交换意见。</div>
+<ul>
+<li>特列吾别尔德转达托卡耶夫问候，高度评价古特雷斯多边主义工作</li>
+<li>双方讨论第81届联大合作优先方向及国际热点问题</li>
+<li>重点讨论阿拉木图联合国中亚和阿富汗可持续发展目标区域中心</li>
+<li>古特雷斯称哈萨克斯坦为多极世界中的“桥梁建设者”</li>
+<li>特列吾别尔德与塞浦路斯、格鲁吉亚和罗马尼亚外长双边会见</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">提升哈萨克斯坦国际形象，巩固其中亚外交枢纽地位；强化联合国框架内合作，有利于吸引投资与区域稳定；平衡多极关系，增强在矿产等领域的议价能力。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/kursi-valyut-v-obmennikah-astani-almati-i-shimkenta-na-26-sentyabrya-aa89b849" target="_blank">9月26日阿斯塔纳、阿拉木图和奇姆肯特兑换点汇率</a></h3>
+<div class="item-meta">哈通社俄语版 · 09/26 11:22<span class="source-link"><a href="https://www.inform.kz/ru/kursi-valyut-v-obmennikah-astani-almati-i-shimkenta-na-26-sentyabrya-aa89b849" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>9月26日，哈萨克斯坦三城市兑换点汇率显示：阿斯塔纳美元卖出均价439.05坚戈、买入446.05坚戈；阿拉木图卖出442.17、买入444.46；奇姆肯特卖出442.04、买入444.17。欧元和卢布汇率也各有差异。官方汇率为1美元兑441.88坚戈，1欧元兑503.61坚戈，1卢布兑5.24坚戈。9月25日美元加权平均汇率441.89坚戈，下跌3.6坚戈。本周坚戈对美元和欧元明显走强，卢布变化不大。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：9月26日阿斯塔纳、阿拉木图和奇姆肯特兑换点汇率
+正文：
+根据Kurs.kz的数据，阿斯塔纳的兑换点居民平均可以439.05坚戈卖出美元，以446.05坚戈买入。欧元平均可以500.00坚戈卖出，以510.00坚戈买入。卢布可以5.00坚戈卖出，以5.20坚戈买入。
+阿拉木图居民平均可以442.17坚戈卖出一美元，以444.46坚戈买入。欧元平均可以502.64坚戈卖出，以507.85坚戈买入。卖出1卢布可以得到5.00坚戈，而买入需要5.12坚戈。
+奇姆肯特居民平均可以442.04坚戈卖出美元，以444.17坚戈买入。卖出欧元可以得到约502.40坚戈，而买入平均需要508.50坚戈。俄罗斯卢布可以5.04坚戈卖出，以5.10坚戈买入。
+今日官方汇率为：1美元兑441.88坚戈，1欧元兑503.61坚戈，1卢布兑5.24坚戈。
+值得注意的是，根据9月25日白天交易结果，美元加权平均汇率为441.89坚戈，下跌了3.6坚戈。
+本周，坚戈对美元和欧元明显走强，而俄罗斯卢布汇率变化不大。Kazinform通讯社记者追踪了过去几天主要外币的动态。</div>
+<ul>
+<li>阿斯塔纳美元卖出均价439.05坚戈，买入446.05坚戈</li>
+<li>阿拉木图美元卖出442.17坚戈，买入444.46坚戈</li>
+<li>奇姆肯特美元卖出442.04坚戈，买入444.17坚戈</li>
+<li>官方汇率：1美元=441.88坚戈，1欧元=503.61坚戈</li>
+<li>本周坚戈对美元和欧元走强，卢布变化不大</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈走强有助于降低进口成本、抑制通胀，但可能削弱出口竞争力，影响矿产等大宗商品收入。对俄卢布稳定，利于双边贸易与劳务汇款。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-09-27 09:01</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
