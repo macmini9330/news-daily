@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年9月30日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年9月30日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年09月29日早9:00至2026年09月30日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 21 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">2</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">17</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">1</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">1</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/min857dezhejun-b1379b7a/" target="_blank">民调：85.7%的哈萨克斯坦受访者支持军队改革</a></h3>
+<div class="item-meta">哈通社中文版 · 09/30 00:13<span class="source-link"><a href="https://cn.inform.kz/news/min857dezhejun-b1379b7a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>民主研究所于2026年9月28日至29日在线调查1012名18岁以上受访者，覆盖哈萨克斯坦17个州及阿斯塔纳、阿拉木图、奇姆肯特三市。结果显示，85.7%受访者支持军队改革，85.2%支持对国防部综合检查。最受支持的建议是提高国防部透明度和问责制（47.4%），其次为更新指挥人员（34.3%）和加强反腐败（29.4%）。社会期待全面改革，同时关注军人待遇、装备更新和数字化。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 民调：85.7%的哈萨克斯坦受访者支持军队改革
+正文:
+为了解社会对国家元首所采取相关措施的看法，民主研究所于9月28日至29日开展了此次民意调查。
+调查结果显示，85.2%的受访者完全或部分支持对国防部开展综合检查的决定；而对军队改革决定持积极评价的受访者比例为85.7%。
+在调查中，受访者被问及“军队需要进行哪些改变”，并可选择多个答案。
+其中，获得最多支持的建议是“提高国防部的透明度和问责制”，47.4%的受访者选择了这一选项。
+此外，34.3%的受访者支持“更新指挥人员并提高其专业水平”，29.4%的受访者支持“加强国防领域反腐败斗争”。
+研究结论指出，调查结果显示，社会期待军队进行全面改革。在加强国家防御能力的同时，公众也希望进一步改善军事服务的日常组织工作。
+与此同时，25.3%的受访者认为应改善军人的安全保障和社会待遇；20.7%的人提出更新武器装备和军事技术；20.4%的人认为应引入包括数字化解决方案在内的新技术；19.2%的人则认为应提高战斗训练和军事演习水平。
+据悉，此次调查由民主研究所于2026年9月28日至29日通过在线问卷方式开展，共有1012名年满18岁的受访者参与调查，覆盖哈萨克斯坦17个州以及阿斯塔纳、阿拉木图和奇姆肯特三座城市。</div>
+<ul>
+<li>85.7%受访者支持军队改革，85.2%支持国防部综合检查</li>
+<li>47.4%支持提高国防部透明度和问责制，居首位</li>
+<li>34.3%支持更新指挥人员，29.4%支持加强反腐败</li>
+<li>调查覆盖1012人，含17州及三大城市</li>
+<li>社会期待全面改革，兼顾防御能力与日常组织改善</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">高支持率赋予政府改革合法性，有助于推动国防部透明化与反腐败，提升军队效能。政治社会稳定，经济或增国防预算，外交上展示治理决心，矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/alatau-cityjiangjinyedejingheti-a60be20c/" target="_blank">Alatau City将推进产业园区融入新的经济和监管体系</a></h3>
+<div class="item-meta">哈通社中文版 · 09/29 22:49<span class="source-link"><a href="https://cn.inform.kz/news/alatau-cityjiangjinyedejingheti-a60be20c/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>阿拉套经济特区管理公司与多家产业园区代表举行圆桌会议，讨论经济特区参与者转为Alatau City居民身份、基础设施建设及土地登记等问题。身份转换无需解除现有合同，计划2027年1月1日生效，7月1日前完成。会议还涉及资产代币化，计划2026年建立法律和技术基础并启动试点。下次会议定于2026年10月举行。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: Alatau City将推进产业园区融入新的经济和监管体系
+正文:
+“阿拉套”经济特区管理公司以及“团结”、G-Trans Service、“地平线”、TULIP、Damu Logistics和“伊斯康特兰斯”等产业园区代表参加了圆桌会议。
+会议讨论了经济特区参与者转为Alatau City居民身份、工程及交通基础设施建设、将产业园区纳入城市总体规划，以及为投资者和土地使用者明确今后的运营条件等问题。
+根据相关安排，经济特区参与者转为Alatau City居民身份时，无需解除现有合同，现有合同条件将予以保留。相关规定计划于2027年1月1日起生效，并计划在2027年7月1日前完成身份转换。
+“任务是将产业园区的发展与Alatau City的基础设施和监管改革相衔接，为现有及未来投资者建立清晰的合作条件。”消息称。
+会议还重点讨论了基础设施问题。与会者指出，产业园区开发应与企业建设同步推进，同时完善电力、天然气和供水管网，以及公路和铁路基础设施。
+此外，与会各方还讨论了部分产业园区的交通可达性问题，包括建设绕行阿拉木图交通枢纽道路的必要性。
+会上还介绍了Alatau City未来总体规划中的区域功能分区方案，以及现有产业园区在新城市结构中的定位。同时，与会者讨论了私有土地和临时土地使用权地块的登记问题。
+各方还就投资者可享受的税收优惠、优先发展产业、吸引外国专家以及许可办理等问题交换了意见。
+会议还关注了实体资产权益代币化问题。按照计划，2026年将建立这一领域所需的法律和技术基础，并启动首批试点项目。
+各产业园区代表介绍了现有运营情况和未来项目，并提出了有关接入工程管网、交通可达性、税收条件、土地地块法律状态以及经济特区参与者转为Alatau City居民身份具体程序等问题。
+圆桌会议结束时，各方同意继续在上述领域开展合作，并计划于2026年10月举行产业园区代表下一次会议。</div>
+<ul>
+<li>经济特区参与者将转为Alatau City居民，合同保留，2027年完成</li>
+<li>会议讨论基础设施同步建设，包括电力、天然气、供水和交通</li>
+<li>资产代币化计划2026年建立法律技术基础并启动试点</li>
+<li>各方同意继续合作，下次会议定于2026年10月举行</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该举措将整合产业园区入Alatau City，提升监管效率，吸引投资，促进基础设施和交通发展，推动矿产及物流产业升级，增强哈国区域经济竞争力。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(17 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/guojialiangguoyiyouchengdefa-1046b36d/" target="_blank">国家元首：哈德两国已走过富有成果的发展历程</a></h3>
+<div class="item-meta">哈通社中文版 · 09/30 03:11<span class="source-link"><a href="https://cn.inform.kz/news/guojialiangguoyiyouchengdefa-1046b36d/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在哈德建交35周年前夕接受“丝绸之路”电视频道记者迪丽娜兹·叶尔兰诺娃采访，高度评价两国合作成果，表示哈萨克斯坦对德国怀有特殊情谊，钦佩德国经济等领域成就。托卡耶夫称已与德方达成重要共识，当前任务是落实协议，并邀请德国总理默茨明年对哈进行国事访问。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 国家元首：哈德两国已走过富有成果的发展历程
+正文:
+“丝绸之路”电视频道记者迪丽娜兹·叶尔兰诺娃向国家元首提问，请其评价两国即将迎来建交35周年之际哈萨克斯坦与德国的合作成果。
+“我们对两国共同走过的历程给予高度评价。正如俗语所说：‘路之志在抵达。’我们克服了重重困难，取得了巨大成就。众所周知，哈萨克斯坦对德国怀有特殊的深厚情谊。我们热爱并尊重这个国家，对德国在经济以及其他领域取得的成就深感钦佩。德国是国际舞台上享有很高声誉的国家。因此，我怀着与德国达成新协议的希望来到这里。目前，我们已经达成了一些重要共识。现在摆在我们面前的任务，就是确保这些协议得到应有的落实。因此，我对未来抱有很大希望，并坚信我们将取得更加丰硕的成果。会谈期间，我还邀请默茨总理明年在方便的时候对哈萨克斯坦进行国事访问。”托卡耶夫说。</div>
+<ul>
+<li>哈德即将迎来建交35周年，托卡耶夫高度评价合作历程</li>
+<li>托卡耶夫称哈萨克斯坦对德国怀有特殊深厚情谊</li>
+<li>哈德已达成重要共识，当前任务是确保协议落实</li>
+<li>托卡耶夫邀请德国总理默茨明年对哈国事访问</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访有助深化哈德政治互信与经济合作，推动哈国多元外交，吸引德国投资与技术，尤其在矿产和绿色能源领域，提升哈国在欧亚地缘格局中的战略地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/zhuhewai-1d94862d/" target="_blank">哈萨克斯坦总统：哈方主张通过和平外交途径解决冲突</a></h3>
+<div class="item-meta">哈通社中文版 · 09/30 03:06<span class="source-link"><a href="https://cn.inform.kz/news/zhuhewai-1d94862d/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在接受德国ARD电视台采访时表示，哈方主张通过和平外交途径解决乌克兰冲突，呼吁暂时停止军事行动并转入谈判进程。他强调哈萨克斯坦遵循《联合国宪章》原则，尊重各国领土完整，同时指出俄罗斯和乌克兰都是哈友好国家。托卡耶夫提到哈俄拥有7597公里共同边界，哈境内生活着270万俄罗斯族人，需综合考虑这些因素。他重申哈萨克斯坦需要和平与稳定以保障国家发展。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦总统：哈方主张通过和平外交途径解决冲突
+
+“对于我在这一问题上的个人立场，感谢普京总统对此表示理解。因为我们所有国家元首，包括俄罗斯总统在内，都主张停止乌克兰境内的军事行动。我与普京总统关系非常好，我认为他是一位杰出的政治家。”托卡耶夫表示。
+
+他同时指出，在他看来，普京对于中亚国家，包括哈萨克斯坦，以及欧洲和整个世界而言，都是一个合适的人选。
+
+“我非常了解他。他具备一个大国领导人所应有的一切素质，有着复杂的历史背景，并对本国面临的战略目标有着自己的理解。当然，我们所有人都对乌克兰正在发生的局势感到担忧。”托卡耶夫在回答德国ARD电视台记者提问时表示。
+
+托卡耶夫强调，哈萨克斯坦自始至终遵循《联合国宪章》的各项原则。
+
+“我们要求尊重和维护所有国家领土完整的原则。我们从一开始就表明，对乌克兰人民、乌克兰的历史、文化、传统以及当然包括乌克兰语，都抱有高度尊重。我并不是说战争应该立即结束。我理解，在当前形势下，这并不现实。我所说的是，应当暂时停止军事行动，使乌克兰境内的军事行动停下来，从而转入外交或其他形式的谈判进程。这就是我们的立场。”他说。
+
+他同时强调，俄罗斯和乌克兰都是哈萨克斯坦的友好国家。
+
+“就俄罗斯而言，我们不能忘记，哈萨克斯坦与俄罗斯之间拥有7597公里长的共同边界，这是世界上最长的陆地边界。这一因素难道不应该对发展同该国的友好关系产生影响吗？此外，哈萨克斯坦境内生活着270万俄罗斯族人，我国也有东正教教会，我们对此予以高度尊重。因此，必须综合考虑所有这些因素，不能简单地一概而论。”托卡耶夫指出。
+
+托卡耶夫强调，哈萨克斯坦需要和平与稳定。
+
+“没有和平与稳定，我们就不可能成为一个成功的国家。当前，我们的发展已经取得了显著成就，各项指标有力表明，我们正在不断向前迈进。因此，作为国家元首，我将尽一切努力确保国内的和平与稳定。这也是我们为在邻近地区实现和平、为尽快结束战争尽己所能作出贡献的必要条件。”托卡耶夫说。</div>
+<ul>
+<li>托卡耶夫主张暂停乌克兰军事行动，转入外交谈判</li>
+<li>哈方遵循《联合国宪章》，尊重各国领土完整</li>
+<li>俄乌均为哈友好国家，哈俄边界长7597公里</li>
+<li>哈境内有270万俄罗斯族人，需综合考量</li>
+<li>托卡耶夫强调和平稳定是国家发展前提</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">哈方立场平衡俄乌关系，维护与俄传统纽带，同时彰显遵守国际法原则，有助于巩固其中亚外交斡旋者角色，保障国内民族和谐与经济稳定发展。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/yuguolixinghuihoutonghuizhe-f7f4423d/" target="_blank">托卡耶夫总统与德国总理默茨举行双边会谈后共同会见记者</a></h3>
+<div class="item-meta">哈通社中文版 · 09/30 02:52<span class="source-link"><a href="https://cn.inform.kz/news/yuguolixinghuihoutonghuizhe-f7f4423d/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与德国总理默茨举行双边会谈后共同会见记者。托卡耶夫表示，德国是哈萨克斯坦在欧洲的可靠战略伙伴，明年将迎来两国建交35周年。会谈期间，双方签署了30多份商业文件，总价值约20亿美元。托卡耶夫计划前往巴伐利亚州出席哈萨克斯坦-巴伐利亚技术论坛。双方还就地区和全球热点问题交换意见，商定进一步发展“中亚-德国”机制框架内的对话，并强调任何冲突都应通过和平外交途径解决。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫总统与德国总理默茨举行双边会谈后共同会见记者
+
+托卡耶夫表示，相信此次会谈将为进一步加强两国联系创造条件，并强调此次访问具有重要意义。
+
+“德国是政治影响力强大、综合实力雄厚、国际声誉卓著的国家。贵国在经济、科学、技术等领域取得的巨大成就就是有力证明。借此机会，尊敬的总理先生，我谨向您以及全体德国人民致以即将到来的德国统一日的诚挚祝贺！毫无疑问，这是一个具有历史意义的日子，它开启了德国发展的新时期，也为整个欧洲的发展繁荣注入了新的动力。我衷心祝愿友好的德国人民不断发展繁荣。”托卡耶夫表示。
+
+托卡耶夫指出，德国是哈萨克斯坦在欧洲的可靠战略伙伴，也是最早承认哈萨克斯坦独立的国家之一。
+
+“明年将迎来两国建立外交关系35周年。自那时以来，我们的伙伴关系在各个层面持续稳步发展。特别是，双方在贸易经济、投资以及文化人文领域的联系不断加强，相关条约法律基础已经形成，我们在国际组织框架内的合作也得到拓展。我相信，建立在相互尊重和支持基础上的合作今后也将取得成功。”托卡耶夫说。
+
+总结此次访问成果时，国家元首指出，在与德国联邦总理举行的富有成效的会谈中，双方达成了一系列重要协议。
+
+Фото: Ақорда 托卡耶夫指出，今天的会谈内容充实、成果显著。
+
+“在会谈框架下，双方共签署了30多份商业文件，总价值约20亿美元。如果这些协议得到有效落实，两国合作无疑将进一步巩固。我计划明天前往巴伐利亚州，与当地一些高级别官员举行会晤，并出席一场独具意义的活动——哈萨克斯坦-巴伐利亚技术论坛。我相信，此次活动也将有助于进一步加强两国友好合作。”托卡耶夫表示。
+
+他说，两国领导人还就地区和全球层面的热点问题交换了意见。
+
+“我们认为，任何冲突都应通过和平和外交途径加以解决，这是两国共同的立场。此外，双方商定进一步发展‘中亚-德国’机制框架内的对话。哈萨克斯坦愿与德国进一步加强长期、互利以及以实际成果为导向的战略伙伴关系。”国家元首指出。</div>
+<ul>
+<li>托卡耶夫与德国总理默茨举行双边会谈并共同会见记者</li>
+<li>双方签署30多份商业文件，总价值约20亿美元</li>
+<li>明年将迎来两国建立外交关系35周年</li>
+<li>托卡耶夫将赴巴伐利亚出席哈-巴技术论坛</li>
+<li>双方商定发展“中亚-德国”机制框架内对话</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访深化哈德战略伙伴关系，20亿美元商业协议助力哈国经济多元化与矿产合作；强化“中亚-德国”机制提升哈区域外交地位，平衡多方地缘影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/yuduozuo-9b5afe2f/" target="_blank">托卡耶夫与默茨讨论深化哈德多领域合作</a></h3>
+<div class="item-meta">哈通社中文版 · 09/30 02:06<span class="source-link"><a href="https://cn.inform.kz/news/yuduozuo-9b5afe2f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与德国总理默茨举行会谈，双方确认深化多领域合作。托卡耶夫指出，德国是哈主要贸易伙伴和重要投资国，去年双边贸易额增长13.4%至45亿美元，过去21年德国对哈投资达80亿美元。双方共同投资项目组合有40个工业项目，总价值约54亿美元。两国还商定在“中亚—德国”机制等框架下保持积极联系，并扩大文化、教育、科学合作。托卡耶夫邀请默茨对哈进行国事访问。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">会谈伊始，哈萨克斯坦国家元首对德国总理的热情接待表示感谢。双方确认，愿进一步巩固和深化哈德两国多方面合作。
+会谈中，双方指出，两国政府将为扩大相互合作创造有利条件。
+托卡耶夫指出，德国已成为哈萨克斯坦主要贸易伙伴和重要投资国之一。双方在工业、关键矿产、交通和物流、数字技术，以及机械制造、化工等高附加值产业领域拥有进一步深化合作的较大空间。
+此外，双方还就多边合作问题交换了意见，并商定继续在包括“中亚—德国”机制在内的国际框架下保持积极联系。
+随后，托卡耶夫总统和默茨总理率两国代表团举行了大范围会议。
+托卡耶夫指出，哈萨克斯坦与德国的战略伙伴关系建立在牢固的政治对话、共同的经济利益以及两国人民密切联系的基础之上。
+“去年，双边贸易额增长13.4%，达到45亿美元。过去21年间，德国对哈萨克斯坦投资额达到80亿美元。在此，我想强调，确保德国投资安全始终受到高度重视。”托卡耶夫表示。
+会谈期间，双方重点讨论了加强贸易和经济合作问题。
+目前，双方共同投资项目组合中共有40个工业项目，总价值约54亿美元。
+托卡耶夫对政府间工作小组以及哈萨克斯坦—德国商业理事会协调有序、富有成效的工作给予积极评价。
+托卡耶夫还指出，德国在当今世界政治和经济中发挥着重要作用。他表示，德国强大的生产能力、雄厚的科研实力以及德国人民认真负责的工作态度得到国际社会广泛认可。
+此外，哈萨克斯坦总统与德国总理还讨论了扩大文化和人文合作，以及在教育、科学领域实施联合倡议等问题。
+双方表示相信，托卡耶夫总统此次访德将有助于推动两国合作取得积极成果，促进两国共同福祉与繁荣。
+会谈结束时，哈萨克斯坦总统托卡耶夫邀请德国总理弗里德里希·默茨在方便的时候对哈萨克斯坦进行国事访问。</div>
+<ul>
+<li>托卡耶夫与默茨确认深化哈德多领域合作</li>
+<li>去年双边贸易额增13.4%达45亿美元</li>
+<li>过去21年德国对哈投资80亿美元</li>
+<li>双方共同投资40个工业项目价值54亿美元</li>
+<li>托卡耶夫邀请默茨对哈进行国事访问</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈德战略伙伴关系，有助于哈国吸引德国投资和技术，推动关键矿产、工业及物流合作，促进经济多元化；同时借助“中亚—德国”机制提升哈国在地区外交中的枢纽地位，平衡多方地缘影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/yuyintongchuye-3a183c11/" target="_blank">托卡耶夫与施泰因迈尔共同出席哈德商业论坛</a></h3>
+<div class="item-meta">哈通社中文版 · 09/30 01:32<span class="source-link"><a href="https://cn.inform.kz/news/yuyintongchuye-3a183c11/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与德国总统施泰因迈尔共同出席哈德商业论坛。托卡耶夫表示，德国是哈国可靠战略伙伴，双方项目组合中共有40项投资倡议，总价值超540亿美元，其中21个已实施。过去五年CLAAS在哈生产2100多台农业机械。哈国拥有欧盟认定的34种战略原材料中的21种。2025年农产品贸易额增长23%，哈对德农产品出口增长38%。哈方提议启动‘哈萨克斯坦—德国投资与工业倡议’，深化工业、原材料、农业和能源合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫与施泰因迈尔共同出席哈德商业论坛
+
+托卡耶夫指出，哈萨克斯坦与德国多年来在相互尊重和务实合作的基础上建立了牢固的联系。
+
+“哈萨克斯坦将德国视为经受住时间考验的可靠战略伙伴。我们高度尊重德国的经济成就和工业文化。无论经历多少代人的更替，‘德国制造’始终是品质、卓越工程、严谨和责任的象征。德国之所以成为经济强国，不仅得益于其跨国企业，中型企业、高素质人才、科研潜力以及独特的生产文化同样发挥了重要作用。”托卡耶夫说。
+
+托卡耶夫指出，德国在哈萨克斯坦与欧盟关系中发挥着特殊作用。欧盟是哈萨克斯坦最大的贸易和投资伙伴，而德国则是推动哈萨克斯坦与欧洲经济融合的重要力量。
+
+“当前，关键原材料、能源、交通、农业、数字化和先进技术是我们议程中的重要议题。哈萨克斯坦和德国可以在这些领域凝聚力量，取得重要成果。”托卡耶夫说。
+
+他将两国关系比作连接中亚与欧洲经济的桥梁。
+
+Фото: Акорда 托卡耶夫认为，工业合作是哈萨克斯坦与德国伙伴关系的重要方向之一。目前，双方项目组合中共有40项投资倡议，总价值超过540亿美元，其中21个项目已经实施。
+
+托卡耶夫表示，哈萨克斯坦已经与CLAAS、Horsch、Amazonen-Werke和Knauf等企业建立了富有成效的合作关系。过去五年中，CLAAS公司已在哈萨克斯坦生产2100多台农业机械。
+
+“借此机会，我想指出，两国工业合作正逐步呈现双向发展态势。哈萨克斯坦对德国工业产品出口增加就是一个例证。例如，在此次访问期间，双方就向德国市场出口哈萨克斯坦本国生产的机械制造产品达成协议，其中包括使用德国设备生产的铁路车辆车轮。”托卡耶夫说。
+
+Фото: Ақорда 托卡耶夫表示，哈萨克斯坦愿进一步扩大与德国企业在自动化、机床、工业机器人、机械制造、先进生产以及生产流程数字化等领域的合作。
+
+“这些例子表明了我们未来经济联系的发展方向。我们不应局限于个别成功项目，而应转向系统性的工业合作。为此，哈萨克斯坦准备启动‘哈萨克斯坦—德国投资与工业倡议’，并以此为基础制定优质项目统一清单。我们的目标十分明确：遴选具有商业可行性、能够推动哈萨克斯坦形成新产业的项目，掌握德国技术和知识，生产在区域和全球市场具有竞争力的产品。在这一过程中，德国的中型企业，即Mittelstand，可以发挥重要作用。”托卡耶夫说。
+
+Фото: Акорда 国家元首还谈到了关键原材料领域的合作。哈萨克斯坦拥有欧盟认定为战略资源的34种原材料中的21种。
+
+“德国需要可靠且不依赖单一方向的原材料供应渠道，而哈萨克斯坦则希望通过投资和先进技术形成高附加值产品链。以此为基础，我们可以形成强有力的战略协同。下一阶段合作应着眼于确定大型项目，完整覆盖从地质勘探、矿产开采，到原材料加工以及在哈萨克斯坦生产高技术材料等环节。”托卡耶夫说。
+
+Фото: Акорда 托卡耶夫认为，农业领域的合作仍具有较大拓展空间。
+
+“2025年，农产品贸易额增长23%，哈萨克斯坦对德国的农产品出口增长38%。下一步是实施涵盖高附加值产品完整生产链的共同项目，即从科学种植和节水生产，到产品加工、储存和出口等环节。”他强调。
+
+能源是双方合作的另一重要领域。总统指出，作为欧洲石油供应国之一，哈萨克斯坦正在为能源安全作出重要贡献。</div>
+<ul>
+<li>哈德商业论坛举行，托卡耶夫与施泰因迈尔出席</li>
+<li>双方40个投资项目总价值超540亿美元，21个已实施</li>
+<li>CLAAS五年在哈生产2100多台农业机械</li>
+<li>哈拥有欧盟34种战略原材料中的21种</li>
+<li>2025年哈对德农产品出口增长38%</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">深化哈德战略伙伴关系，吸引德国投资和技术，推动哈国工业升级和原材料高附加值加工，拓展农产品对德出口，增强哈国作为欧洲能源和原材料供应国的地位，促进中亚与欧洲经济融合。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/heguoyinfaming-12693512/" target="_blank">哈萨克斯坦总统托卡耶夫和德国总统施泰因迈尔发表联合声明</a></h3>
+<div class="item-meta">哈通社中文版 · 09/30 01:04<span class="source-link"><a href="https://cn.inform.kz/news/heguoyinfaming-12693512/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年9月29日至30日，哈萨克斯坦总统托卡耶夫应德国总统施泰因迈尔邀请对德国进行正式访问，两国元首通过《联合声明》。声明总结建交三十余年合作成果，重申支持“中亚—德国”战略区域伙伴关系，坚持多边主义与和平解决争端，呼吁尽快在乌克兰实现全面公正持久和平。双方深化经贸、工业与能源合作，欢迎《2026—2028年工业、技术和原材料合作联合路线图》，重点包括关键原材料开采加工、联合生产及建立可靠供应链。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">应德国联邦总统施泰因迈尔邀请，哈萨克斯坦总统托卡耶夫于2026年9月29日至30日对德国进行正式访问。访问期间，两国元首通过了《联合声明》。
+
+总结建交三十余年合作成果，深化政治对话
+两国元首高度评价自哈萨克斯坦独立以来两国建立的成功合作关系。双方指出，三十多年来，两国合作不断发展，互信持续深化，高层政治对话不断推进，并对继续保持密切合作表示欢迎。
+双方强调，应继续推进各自国家的改革与现代化建设，在遵循民主、法治、人权保护、投资安全、司法独立和可持续发展原则的基础上，营造稳定、有利的法律和经济环境。
+
+推进“中亚—德国”战略区域伙伴关系
+两国元首重申支持2023年9月29日在柏林举行的首届中亚—德国峰会以及2024年9月17日在阿斯塔纳举行的第二届峰会所确立的“中亚—德国”战略区域伙伴关系。双方高度评价2026年2月11日在柏林举行的中亚与德国外长会晤成果，并欢迎近期举行第三届峰会的计划。
+双方欢迎中亚国家间合作不断扩大，认为这有助于增强该地区的自主性、稳定与繁荣。
+
+坚持多边主义与和平解决争端
+两国元首重申致力于多边合作以及国际法和《联合国宪章》的基本原则，包括尊重所有国家的主权、独立和领土完整。双方强调，应通过和平、政治和外交手段解决争端与冲突。
+两国元首同时指出，有必要根据《联合国宪章》原则，尽快在乌克兰实现全面、公正和持久的和平。
+
+深化经贸、工业与能源合作
+两国元首指出，经贸和投资合作是双边合作的重要基础，并重申将进一步扩大双边贸易，丰富贸易商品种类，增加投资，推进生产本土化。
+双方欢迎为德国企业，包括中小企业，在哈萨克斯坦开展经营创造有利条件的相关举措，并支持继续推进有关改革。双方表示，希望在考虑德国、欧洲和国际标准的基础上，进一步推动标准化领域相关做法的衔接。
+两国元首高度评价哈德经贸合作政府间工作小组、哈德商业理事会、柏林欧亚俱乐部、德国经济中亚办事处以及德国经济东部委员会在加强经贸联系和促进双边出口增长方面发挥的重要作用。
+为进一步深化工业合作，双方欢迎《2026—2028年工业、技术和原材料合作联合路线图》。合作重点包括联合生产、关键原材料的开采和加工、提高本国生产商品的附加值，以及建立可靠、可持续的供应链。</div>
+<ul>
+<li>托卡耶夫2026年9月29-30日访德，两国元首通过联合声明</li>
+<li>重申支持“中亚—德国”战略区域伙伴关系，欢迎第三届峰会计划</li>
+<li>呼吁根据《联合国宪章》尽快在乌克兰实现全面公正持久和平</li>
+<li>欢迎《2026—2028年工业、技术和原材料合作联合路线图》</li>
+<li>深化经贸投资合作，推进生产本土化和标准化衔接</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈德战略伙伴关系，提升哈国在中亚区域合作中的枢纽地位。工业与关键原材料合作路线图有助于哈国吸引德国投资和技术，推动矿产加工升级与供应链多元化，增强经济自主性。同时，哈国在大国间保持平衡外交，巩固多边主义立场，提升国际话语权。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/yujinyijingzuo-955d1115/" target="_blank">哈萨克斯坦与阿富汗进一步拓展跨区域经贸合作</a></h3>
+<div class="item-meta">哈通社中文版 · 09/30 00:49<span class="source-link"><a href="https://cn.inform.kz/news/yujinyijingzuo-955d1115/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与阿富汗在赫拉特省举行经贸活动，图库莫夫会见赫拉特省长，双方聚焦“West2West”合作模式，推动贸易、工业与交通物流直接联系。商业论坛期间，哈方参与建设的“哈夫—赫拉特”铁路第三路段开通。2026年1至7月，两国贸易额达5.811亿美元，同比增长2.4倍，其中哈出口5.729亿美元，主要商品为面粉、小麦和植物油；哈自阿进口820万美元，未来干果、藏红花等供应潜力较大。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">访问期间，图库莫夫会见了阿富汗西部赫拉特省省长努尔·艾哈迈德·伊斯兰扎尔。双方就经贸及跨区域合作的现状和发展前景进行了讨论，并就挖掘地区潜力、扩大两国工商界直接互动等可能性交换了意见。
+
+双方特别关注发展“West2West”合作模式，旨在加强哈萨克斯坦与阿富汗西部地区在贸易、工业合作以及交通物流领域的直接联系。
+
+哈萨克斯坦贸易和集成部、曼格斯套州和西哈萨克斯坦州政府以及两国工商界代表参加了此次经贸活动。
+
+访问期间，“哈萨克斯坦—阿富汗：跨区域合作”商业论坛举行。与会代表围绕扩大双边贸易、建立企业间直接联系、发展工业合作以及交通物流联系等务实问题进行了讨论。阿富汗方面还举办了工业产品、农产品和食品展览。
+
+期间，由哈萨克斯坦“Integra Construction KZ”有限责任公司参与建设的“哈夫—赫拉特”铁路第三路段举行了开通仪式。
+
+赫拉特系列活动标志着“West2West”合作模式进入实践阶段，也是哈萨克斯坦与阿富汗进一步扩大合作的延续。双方确认，将继续保持直接对话，并推动已讨论的合作方向取得实际进展。
+
+数据显示，2026年1月至7月，两国贸易额达到5.811亿美元，同比增长2.4倍。其中，哈萨克斯坦出口额为5.729亿美元，包括面粉2.156亿美元、小麦1.22亿美元和植物油5110万美元。同期，哈萨克斯坦自阿富汗进口额为820万美元。上述数据表明，未来进一步扩大干果、藏红花、葡萄、地毯等阿富汗产品供应仍具有较大潜力。</div>
+<ul>
+<li>哈阿举行赫拉特经贸活动，聚焦West2West合作模式</li>
+<li>哈夫—赫拉特铁路第三路段开通，由哈企参与建设</li>
+<li>2026年前7月双边贸易额5.811亿美元，增长2.4倍</li>
+<li>哈对阿出口以面粉、小麦、植物油为主</li>
+<li>阿富汗干果、藏红花、地毯等对哈供应潜力大</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">政治外交上，哈国深化与阿富汗西部直接联系，提升区域影响力；经济上，贸易激增2.4倍，铁路开通强化物流通道；矿产格局短期未直接涉及，但交通合作或为未来资源运输铺垫。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/yin-84772cf2/" target="_blank">托卡耶夫向施泰因迈尔授予“金鹰”勋章</a></h3>
+<div class="item-meta">哈通社中文版 · 09/30 00:33<span class="source-link"><a href="https://cn.inform.kz/news/yin-84772cf2/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在正式访问德国期间，向德国总统施泰因迈尔授予哈萨克斯坦最高国家勋章“金鹰”勋章，以表彰其为巩固和深化哈德两国合作所作的重要贡献。托卡耶夫高度评价施泰因迈尔对对话与团结的信念，称德国是工业、科学和技术领域的创新型国家。施泰因迈尔表示哈萨克斯坦人民在他心中占有特殊地位，相信两国友好纽带将延续长久。访问期间，两国元首举行了小范围和大范围会谈。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫向施泰因迈尔授予“金鹰”勋章
+正文:
+在授勋仪式上，哈萨克斯坦总统高度评价施泰因迈尔为巩固和深化哈萨克斯坦与德国两国合作所作出的重要贡献。
+Фото: Акорда “您的睿智领导、坚定立场以及对对话与团结的坚定信念，赢得了广泛尊重。这些品质增强了德国在世界各国合作伙伴中的信任，也为开展合作创造了条件。如今，德国已成为在工业、科学和技术领域走在前列、发展迅速的创新型国家之一。”托卡耶夫表示。
+Фото: Ақорда 托卡耶夫还谈到施泰因迈尔在推动两国关系发展方面发挥的作用。
+“尊敬的总统先生，我们始终将您视为哈萨克斯坦真诚而可靠的朋友，以及享有国际声誉的杰出政治家。鉴于您为巩固哈萨克斯坦与德国之间的友谊、推动两国合作取得活力所作出的重要贡献，我谨向您授予哈萨克斯坦共和国最高国家勋章——“金鹰”勋章。请将这份荣誉视为哈萨克斯坦人民对您的特殊敬意和诚挚谢意。”托卡耶夫指出。
+Фото: Ақорда 德国总统施泰因迈尔在致辞中表示，他始终关注中亚地区，哈萨克斯坦人民在他心中占有特殊地位。
+“对我而言，哈萨克斯坦人民具有特殊的地位。我相信，两国未来将取得更加丰硕的成果。我会怀着亲切之情回忆此次哈萨克斯坦之行。我相信，两国牢不可破的友好纽带将延续长久。”施泰因迈尔表示。
+Фото: Ақорда 据此前报道，应德国联邦总统施泰因迈尔邀请，托卡耶夫总统于28日抵达德国，开始对德国进行正式访问。
+29日，托卡耶夫总统在德国联邦国防部出席德国总统施泰因迈尔举行的欢迎仪式。随后，两国元首举行了小范围会谈。
+同日，两国总统举行了大范围会谈。</div>
+<ul>
+<li>托卡耶夫向施泰因迈尔授予“金鹰”勋章</li>
+<li>表彰施泰因迈尔深化哈德合作的重要贡献</li>
+<li>托卡耶夫称德国为工业科技创新型国家</li>
+<li>施泰因迈尔称哈萨克斯坦人民地位特殊</li>
+<li>两国元首举行小范围和大范围会谈</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈德战略伙伴关系，有助于哈国拓展欧洲外交空间，吸引德国工业与科技投资，促进矿产领域合作，平衡地缘政治影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://cn.inform.kz/news/yuguoyinxingdahui-f9ea4ded/" target="_blank">托卡耶夫总统与德国总统施泰因迈尔举行大范围会谈</a></h3>
+<div class="item-meta">哈通社中文版 · 09/29 23:38<span class="source-link"><a href="https://cn.inform.kz/news/yuguoyinxingdahui-f9ea4ded/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与德国总统施泰因迈尔举行大范围会谈。托卡耶夫表示德国是哈在欧洲主要伙伴，双边关系具有战略性和全面性。2025年两国贸易额达45亿美元，2026年前7个月超26亿美元，在哈德资企业超1400家，过去20年德国对哈投资总额达80亿美元。双方还讨论了文化、教育、医疗等领域合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">会谈伊始，哈萨克斯坦元首对施泰因迈尔总统邀请他访问德国表示感谢，并指出两国高层之间保持密切互动，表明双边伙伴关系具有战略性和全面性。
+托卡耶夫强调，德国是哈萨克斯坦在欧洲的主要伙伴，两国由牢固的友谊和相互信任紧密相连，双方进一步发展合作具有巨大潜力。
+“当前，我们涵盖广泛领域的双边关系正稳步发展。高层政治对话保持活跃，两国政府和工商界之间持续保持密切联系，为双边关系发展发挥了重要作用。在我此次访问前夕，政府间工作组会议以及哈萨克斯坦-德国战略合作商业理事会在柏林举行，这表明双方都希望进一步推动互利合作。”托卡耶夫表示。
+国家元首高度评价了双边经贸和投资关系的快速发展。
+“2025年，两国双边贸易额达到45亿美元。今年这一积极势头仍在延续。今年前7个月，双边贸易额已超过26亿美元。目前，哈萨克斯坦注册的德资企业超过1400家。过去20年间，德国对哈萨克斯坦投资总额达到80亿美元。德国克拉斯集团、雷诺斯物流、西门子能源、林德集团等知名企业与哈萨克斯坦的合作，是双方务实合作的良好范例。”托卡耶夫指出。
+在会谈中，两国元首还高度重视进一步加强双边文化和人文领域合作。双方确认，愿进一步推动教育、医疗和文化等领域的合作。
+据此前报道，应德国联邦总统施泰因迈尔邀请，托卡耶夫总统于28日抵达德国，开始对德国进行正式访问。
+29日，托卡耶夫总统在德国联邦国防部出席德国总统施泰因迈尔举行的欢迎仪式。随后，两国元首举行了小范围会谈。</div>
+<ul>
+<li>托卡耶夫与施泰因迈尔举行大范围会谈</li>
+<li>德国是哈在欧洲主要伙伴，关系具战略性</li>
+<li>2025年双边贸易额达45亿美元</li>
+<li>在哈德资企业超1400家，德投资累计80亿美元</li>
+<li>双方愿深化文化、教育、医疗等领域合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈德战略伙伴关系，有助于哈国平衡外交、吸引德资与技术，推动经济多元化，并在矿产和能源领域拓展合作，提升哈国在欧洲的地缘经济地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">10</span> <a href="https://cn.inform.kz/news/yuyinxingxiaohui-86eac1b7/" target="_blank">托卡耶夫与施泰因迈尔举行小范围会谈</a></h3>
+<div class="item-meta">哈通社中文版 · 09/29 21:40<span class="source-link"><a href="https://cn.inform.kz/news/yuyinxingxiaohui-86eac1b7/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与德国总统施泰因迈尔举行小范围会谈。托卡耶夫感谢邀请和接待，指出德国是哈在欧洲重要战略伙伴，双边合作基于相互信任、尊重和共同利益，明年将迎来两国建交35周年。施泰因迈尔高度评价托卡耶夫为扩大阿斯塔纳与柏林合作所作贡献，相信此访将推动双边关系提升到全新水平。托卡耶夫于28日抵达德国开始正式访问，29日出席欢迎仪式。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">会谈中，托卡耶夫对施泰因迈尔邀请他访问德国以及给予的热情接待表示衷心感谢。
+托卡耶夫总统指出，德国是哈萨克斯坦在欧洲的重要战略伙伴，两国双边合作建立在相互信任、相互尊重和共同利益基础之上。托卡耶夫回顾道，明年将迎来两国建立外交关系35周年。在此期间，两国在各个合作领域均取得了显著成果。
+Фото: Акорда 德国总统施泰因迈尔高度评价托卡耶夫为扩大阿斯塔纳与柏林之间多方面合作所作出的贡献。他表示相信，哈萨克斯坦总统此次访问将为两国关系注入新的动力，并推动双边关系提升到全新水平。
+据此前报道，应德国联邦总统弗兰克-瓦尔特·施泰因迈尔邀请，哈萨克斯坦共和国总统哈斯穆-卓玛尔特·托卡耶夫于28日抵达德国，开始对德国进行正式访问。
+29日，托卡耶夫总统在德国联邦国防部出席德国总统·施泰因迈尔举行的欢迎仪式。</div>
+<ul>
+<li>托卡耶夫与施泰因迈尔举行小范围会谈</li>
+<li>德国是哈萨克斯坦在欧洲重要战略伙伴</li>
+<li>明年将迎来两国建立外交关系35周年</li>
+<li>施泰因迈尔相信此访推动双边关系升级</li>
+<li>托卡耶夫28日抵德，29日出席欢迎仪式</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈德战略伙伴关系，有助于哈国拓展欧洲外交空间，吸引德国投资与技术，促进经济多元化，并在矿产和能源领域深化合作，提升哈国在欧亚地缘格局中的地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">11</span> <a href="https://cn.inform.kz/news/chuguoxingde-00a6096d/" target="_blank">托卡耶夫出席德国总统举行的欢迎仪式</a></h3>
+<div class="item-meta">哈通社中文版 · 09/29 21:18<span class="source-link"><a href="https://cn.inform.kz/news/chuguoxingde-00a6096d/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫应德国联邦总统施泰因迈尔邀请，于28日抵达德国进行正式访问。在欢迎仪式上，两国元首介绍各自代表团成员，仪仗队报告并奏响两国国歌。仪式结束后，两国元首前往德国联邦总统官邸举行会谈。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫出席德国总统举行的欢迎仪式
+正文:
+抵达仪式现场后，托卡耶夫总统与德国联邦总统弗兰克-瓦尔特·施泰因迈尔相互介绍了各自代表团成员。
+Фото: Ақорда 随后，仪仗队连队长官向两国元首报告，两国国歌相继奏响。
+Фото: Акорда 欢迎仪式结束后，两国元首共同前往德国联邦总统官邸举行会谈。
+Фото: Ақорда 据悉，应德国联邦总统弗兰克-瓦尔特·施泰因迈尔邀请，哈萨克斯坦共和国总统哈斯穆-卓玛尔特·托卡耶夫于28日抵达德国，开始对德国进行正式访问。</div>
+<ul>
+<li>托卡耶夫28日抵德正式访问</li>
+<li>施泰因迈尔举行欢迎仪式</li>
+<li>两国元首介绍代表团并奏国歌</li>
+<li>欢迎仪式后举行会谈</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈德政治互信，推动经贸与能源合作，有助于哈国平衡外交，并在矿产领域吸引德国投资与技术。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">12</span> <a href="https://cn.inform.kz/news/huidar-metall-aggongshihuizhu-cb37561f/" target="_blank">托卡耶夫会见D.A.R. Metall AG公司董事会主席</a></h3>
+<div class="item-meta">哈通社中文版 · 09/29 20:46<span class="source-link"><a href="https://cn.inform.kz/news/huidar-metall-aggongshihuizhu-cb37561f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫会见D.A.R. Metall AG董事会主席，讨论在哈共同实施金属加工项目前景。托卡耶夫强调合作及引进德国技术符合哈工业和生态发展重点，并介绍Qarmet公司改造情况。德方感谢信任，确认继续推进生产项目，有意在阿拉套市开展生活垃圾和工业废弃物再利用项目，并对与Qarmet合作兴趣浓厚。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫会见D.A.R. Metall AG公司董事会主席
+正文:
+会谈中，托卡耶夫指出，发展与D.A.R. Metall AG的合作以及引进现代德国技术，符合哈萨克斯坦工业和生态领域的发展重点。因此，双方重点讨论了在哈萨克斯坦共同实施金属加工项目的前景。
+托卡耶夫指出，冶金业对哈萨克斯坦具有重要意义，并介绍了国内该行业骨干企业Qarmet（卡拉干达冶金）公司目前正在进行的改造情况。
+Фото: Акорда 阿特纳对哈方给予德国企业的信任表示感谢，并确认公司有意继续在哈萨克斯坦推进生产项目。
+据介绍，D.A.R. Metall AG有意在阿拉套市开展生活垃圾和工业废弃物再利用项目，同时对与Qarmet公司共同实施新项目表现出浓厚兴趣。</div>
+<ul>
+<li>托卡耶夫会见D.A.R. Metall AG董事会主席</li>
+<li>讨论在哈实施金属加工项目前景</li>
+<li>合作符合哈工业和生态发展重点</li>
+<li>德方有意在阿拉套市开展废弃物再利用项目</li>
+<li>德方对与Qarmet合作兴趣浓厚</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">深化哈德冶金合作，引进德国技术助力哈工业升级与生态治理；Qarmet改造获外资关注，有望推动金属加工和废弃物再利用项目落地，促进经济多元化与外交合作。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">13</span> <a href="https://cn.inform.kz/news/huiguogongren-52061872/" target="_blank">托卡耶夫会见威乐集团国际技术公司负责人</a></h3>
+<div class="item-meta">哈通社中文版 · 09/29 20:32<span class="source-link"><a href="https://cn.inform.kz/news/huiguogongren-52061872/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫会见威乐集团国际技术公司负责人，高度评价该德国企业作为在哈本地化生产典范。威乐集团决定投资建设阿拉木图州生产综合体，并将哈萨克斯坦作为进入中亚市场的平台。托卡耶夫建议深化本地化进程，提高本土零部件占比，发展工程技术和服务能力，扩大本土供应商队伍。总统欢迎威乐集团计划在Alatau City建立区域性服务和工程技术中心，并推动与本土企业、高校合作。威乐集团代表赫尔墨斯感谢支持，指出哈萨克斯坦已成为其中亚区域枢纽。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫会见威乐集团国际技术公司负责人
+正文:
+该集团主要生产水泵，并为住宅、公共建筑和工业设施提供节能解决方案。
+托卡耶夫高度评价威乐集团是德国企业在哈萨克斯坦发展本地化生产的典范。国家元首对该公司决定投资建设阿拉木图州生产综合体，并将哈萨克斯坦作为进入中亚市场的平台表示肯定。
+托卡耶夫指出，下一步应进一步深化本地化进程，即提高哈萨克斯坦本土生产零部件的占比，发展工程技术和服务能力，并扩大本土供应商队伍。
+在此背景下，总统对威乐集团计划在Alatau City建立专注于水泵设备的区域性服务和工程技术中心表示欢迎。
+托卡耶夫表示，哈方有意推动威乐集团与哈萨克斯坦本土工程企业、高等院校及技术专家加强合作。双方可以在人才培养、服务保障以及引进数字化生产先进经验等方面进一步拓展合作。
+Фото: Акорда 赫尔墨斯对哈萨克斯坦总统长期以来对威乐集团在哈项目给予的支持表示感谢，并介绍了集团进一步扩大与哈萨克斯坦合作的计划。
+他指出，哈萨克斯坦已成为威乐集团在中亚地区的区域枢纽。</div>
+<ul>
+<li>托卡耶夫会见威乐集团负责人，肯定其本地化生产典范地位</li>
+<li>威乐集团投资阿拉木图州生产综合体，定位中亚市场平台</li>
+<li>托卡耶夫建议提高本土零部件占比，发展工程技术能力</li>
+<li>威乐集团计划在Alatau City建区域服务和工程技术中心</li>
+<li>哈萨克斯坦已成为威乐集团在中亚地区的区域枢纽</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该合作强化哈国作为德国企业中亚枢纽地位，推动本地化生产与工程技术能力提升，促进矿产相关工业设备供应链多元化，并深化哈德经济外交关系。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">14</span> <a href="https://cn.inform.kz/news/yuguowuzuo-d091bfc9/" target="_blank">托卡耶夫与德国铁路集团代表讨论深化交通物流合作</a></h3>
+<div class="item-meta">哈通社中文版 · 09/29 20:08<span class="source-link"><a href="https://cn.inform.kz/news/yuguowuzuo-d091bfc9/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与德国铁路集团代表会谈，高度评价该集团对哈铁路现代化的贡献，特别提及德铁工程咨询公司与哈国铁在客运领域的联合项目。托卡耶夫强调将哈本土生产商纳入德铁供应链并助其通过认证。德铁采购总监扬·格罗特感谢哈方评价，重申深化合作意愿。双方已合作集装箱货运，正重点发展跨里海国际运输路线（中间走廊），并确认在交通物流领域巩固长期合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">国家元首高度评价了德国铁路集团长期以来为推动哈萨克斯坦铁路行业现代化所作出的贡献。
+托卡耶夫特别提及了集团旗下德铁工程咨询公司（DB Engineering &amp; Consulting）与哈萨克斯坦国家铁路公司（哈国铁）在客运发展领域开展的联合项目。
+托卡耶夫同时指出，将哈萨克斯坦本土生产商纳入德国集团的供应链体系，并帮助其通过相关认证，具有重要意义。
+德国铁路集团采购总监扬·格罗特对哈方积极评价该集团在哈业务表示感谢，并重申了进一步深化合作的意愿。
+此外，德铁货运欧亚公司负责人安德烈亚斯·吕布斯也出席了会谈。
+Фото: Акорда 目前，哈萨克斯坦与德铁货运欧亚公司已在集装箱货运领域建立合作关系。当前，双方正重点关注跨里海国际运输路线（中间走廊）的发展。
+会谈结束时，双方确认有意在交通物流综合体各领域进一步巩固长期合作。</div>
+<ul>
+<li>托卡耶夫高度评价德铁对哈铁路现代化贡献</li>
+<li>德铁咨询与哈国铁合作客运项目</li>
+<li>哈本土生产商拟纳入德铁供应链并认证</li>
+<li>双方合作集装箱货运，聚焦中间走廊</li>
+<li>确认深化交通物流长期合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">深化哈德交通物流合作，推动哈铁路现代化和本土企业融入国际供应链，提升跨里海路线战略地位，促进哈过境运输经济，平衡地缘外交，增强矿产等资源出口通道多元化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">15</span> <a href="https://cn.inform.kz/news/liyuchengweizhongyaowu-609d7f6f/" target="_blank">托卡耶夫：哈萨克斯坦致力于成为欧亚重要交通物流枢纽</a></h3>
+<div class="item-meta">哈通社中文版 · 09/29 18:40<span class="source-link"><a href="https://cn.inform.kz/news/liyuchengweizhongyaowu-609d7f6f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫总统会见雷诺斯集团，强调哈萨克斯坦致力于成为欧亚大陆重要交通物流枢纽。会谈重点为跨里海国际运输路线（中间走廊）发展，托卡耶夫呼吁打造现代物流通道，完善港口、铁路及数字化服务，并欢迎雷诺斯参与阿克套港多式联运枢纽建设。巴茨高度评价哈潜力，表示将积极参与联合项目。同日，托卡耶夫会见德国经济协会和金融机构负责人，提议建立哈德投资金融平台，扩大金融、工业、能源、关键原材料、数字创新和人工智能等领域合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫：哈萨克斯坦致力于成为欧亚重要交通物流枢纽
+正文:
+会见中，托卡耶夫总统指出，该公司多年来为加强哈萨克斯坦交通互联互通作出了积极贡献。同时，他表示，哈萨克斯坦正致力于成为欧亚大陆重要的交通物流枢纽。
+跨里海国际运输路线（中间走廊）的发展成为会谈重点。托卡耶夫呼吁共同打造具有竞争力的现代物流通道，进一步完善港口、物流终端、铁路和数字化服务体系。同时，他欢迎雷诺斯集团参与阿克套港多式联运枢纽建设。
+巴茨高度评价哈萨克斯坦作为重要交通物流枢纽所具有的巨大潜力，并表示该公司有意积极参与双方联合项目。
+Фото: Ақорда 会谈结束时，双方确认将进一步拓展互利合作领域。
+据此前报道，同日，托卡耶夫会见德国主要经济协会和金融机构负责人，并提议建立哈德投资金融平台，以进一步扩大两国在金融、工业、能源、关键原材料、数字创新和人工智能等领域的合作。</div>
+<ul>
+<li>托卡耶夫强调哈萨克斯坦打造欧亚交通物流枢纽</li>
+<li>跨里海国际运输路线（中间走廊）成会谈重点</li>
+<li>欢迎雷诺斯集团参与阿克套港多式联运枢纽建设</li>
+<li>同日提议建立哈德投资金融平台扩大多领域合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">提升哈萨克斯坦作为欧亚中转枢纽地位，促进跨里海路线货运量增长，带动阿克套港及物流基建投资。深化与德国金融、关键原材料合作，有助于吸引外资、拓展矿产出口通道，增强外交多元平衡。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">16</span> <a href="https://cn.inform.kz/news/huiguojing-47090941/" target="_blank">托卡耶夫会见德国经济金融界代表 提议建立哈德投资金融平台</a></h3>
+<div class="item-meta">哈通社中文版 · 09/29 17:45<span class="source-link"><a href="https://cn.inform.kz/news/huiguojing-47090941/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫会见德国经济金融界代表，提议建立哈德投资金融平台，结合德国资本与哈萨克斯坦共同融资、担保及风险共担机制。他指出哈开发机构去年提供支持总额达200亿美元，哈开发银行已从德国金融机构吸引超12亿美元。合作重点包括关键原材料、可再生能源、绿色氢能、数字创新和人工智能。托卡耶夫还邀请德企参与Alatau City智慧城市项目，并承诺改善营商环境。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫会见德国经济金融界代表 提议建立哈德投资金融平台
+
+托卡耶夫表示，哈萨克斯坦希望成为德国在中亚和欧亚地区可靠的合作伙伴，并推动德国资本、专业经验和风险管理机制与哈萨克斯坦资源及交通运输优势相结合。
+
+- 我要强调的是，德国在哈萨克斯坦民众中享有高度尊重和良好声誉。我们十分赞赏德国银行业严谨的管理体系、高质量的工程解决方案，以及中小企业体系（Mittelstand）的稳定性。在推进经济现代化和技术转型过程中，这些正是我们希望借鉴的优势。德国是哈萨克斯坦在欧洲的重要伙伴之一。哈德合作也是哈萨克斯坦与欧盟合作的重要组成部分。双方已经走过很长一段路，但经济合作潜力远未充分释放。哈萨克斯坦愿将双方合作提升至新的质量水平。- 总统说。
+
+总统指出，哈萨克斯坦开发机构积极参与国家经济融资。去年相关机构提供的支持总额达到200亿美元。
+
+- 多年来，哈萨克斯坦开发银行在德国金融机构支持下，为工业、能源和交通基础设施领域的重要项目提供融资，并从德意志银行、Helaba、LBBW、德国商业银行、德国复兴信贷银行等机构吸引超过12亿美元资金。- 托卡耶夫说。
+
+托卡耶夫提议建立哈德投资金融平台，将德国和欧洲资本与哈萨克斯坦共同融资、担保及风险共担机制相结合。
+
+Фото: Акорда - 这一平台可以把德国和欧洲资本与哈萨克斯坦的共同融资、担保以及风险分担机制结合起来，并由“巴伊铁列克”国家管理控股公司负责项目结构设计。我们欢迎德国出口信贷和投资保险机构与已经在哈萨克斯坦开展业务的国际金融机构一道参与相关项目。在这方面，我们特别重视与Euler Hermes公司的合作。- 总统说。
+
+托卡耶夫表示，关键原材料应成为两国合作重点之一。哈萨克斯坦有意与德国原材料保障基金建立合作，并推动符合UFK担保条件、有助于保障德国工业原材料稳定供应的项目。
+
+能源和工业现代化同样被列为重点方向，包括发展可再生能源和绿色氢能项目。托卡耶夫认为，在德国资本参与下，欧洲投资银行与哈萨克斯坦开发银行在这些领域拥有较大的合作潜力。
+
+在数字领域，托卡耶夫提出推动哈德数字创新和人工智能伙伴关系。
+
+Фото: Акорда - 我们邀请德国企业发挥自身优势，参与数据中心技术、能源效率、云基础设施和网络安全等领域合作。另一个具有前景的方向是金融科技。哈萨克斯坦已经形成较高水平的数字金融生态系统，可以先在国内市场推出先进支付解决方案和代币化技术，之后再向整个地区推广。- 托卡耶夫说。
+
+托卡耶夫还将Alatau City列为吸引德国金融资本更广泛参与哈萨克斯坦经济的重要合作方向。- 总统说。
+
+Фото: Ақорда - 这一项目是中亚首座从规划之初就按照数字时代各项要求设计的“智慧城市”。它可以成为连接德国机构资本与哈萨克斯坦投资机遇的实际桥梁。我相信，Alatau City将成为整个欧亚地区吸引人才、技术和商业的新中心。- 总统说。
+
+托卡耶夫在讲话最后指出，哈萨克斯坦和德国依托高水平政治对话，具备进一步深化金融、技术和投资伙伴关系的条件。
+
+- 我们的主要目标不仅仅是增加资本流入，更重要的是共同培育新的产业和长期增长点。 - 他说。
+
+总统同时表示，哈萨克斯坦将继续为投资者提供有利且可预期的营商环境，保护投资者权益，并支持具有战略意义的项目。</div>
+<ul>
+<li>托卡耶夫提议建立哈德投资金融平台，由巴伊铁列克负责项目设计</li>
+<li>哈开发机构去年支持总额200亿美元，从德机构吸引超12亿美元</li>
+<li>关键原材料、可再生能源和绿色氢能列为合作重点</li>
+<li>推动数字创新和人工智能伙伴关系，邀请德企参与数据中心</li>
+<li>Alatau City智慧城市项目成为吸引德国金融资本的重要方向</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">政治外交上深化哈德及哈欧合作，提升哈国在中亚的枢纽地位；经济上引入德国资本与技术，推动产业多元化和现代化；矿产格局上强化关键原材料合作，保障德国工业供应并提升哈国资源议价能力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">17</span> <a href="https://cn.inform.kz/news/yuxingzuoshi50ge-80-87e2cffd/" target="_blank">哈萨克斯坦与世界银行合作实施逾50个项目 总额超80亿美元</a></h3>
+<div class="item-meta">哈通社中文版 · 09/29 11:30<span class="source-link"><a href="https://cn.inform.kz/news/yuxingzuoshi50ge-80-87e2cffd/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总理官网消息，朱曼哈林指出哈国与世界银行集团伙伴关系具战略意义。过去33年，在世界银行支持下，哈国在交通、教育、环保、绿色技术和数字化等领域实施50多个项目，总额超80亿美元。阿杜格纳积极评价哈国经济增长和投资进展。双方讨论基础设施发展及融资机制，世界银行强调投资应与制度改革同步。朱曼哈林表示哈国基建兼顾区域发展，打造连接中亚的交通通道。世界银行愿继续合作完善融资机制。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据哈萨克斯坦总理官网消息，朱曼哈林指出，哈萨克斯坦与世界银行集团的伙伴关系具有战略意义。过去33年来，在世界银行支持下，哈萨克斯坦已在交通、教育、环境保护、绿色技术和数字化等领域实施50多个项目，总金额超过80亿美元。
+阿杜格纳积极评价哈萨克斯坦经济发展态势，特别是经济增长和投资活动方面取得的进展。
+会谈期间，双方重点讨论了基础设施发展及融资机制。世界银行代表指出，基础设施投资应与制度和监管改革同步推进，以提高投资效率，并为生产率提升和创新发展创造条件。
+朱曼哈林表示，哈萨克斯坦在推进基础设施建设时，不仅着眼于国内需求，也充分考虑区域发展需要，其中包括进一步发展连接中亚与其他地区的交通运输通道。朱曼哈林说：
+“哈萨克斯坦的基础设施只是构建中亚统一大型基础设施链条的第一步。我们不仅要改善国内公路和铁路，还必须确保这些交通线路能够为哈萨克斯坦以及周边国家带来经济效益。”
+世界银行表示，愿继续与哈萨克斯坦方面合作，结合国际经验进一步研究和完善基础设施融资机制。</div>
+<ul>
+<li>哈国与世界银行合作33年，实施50多个项目，总额超80亿美元</li>
+<li>项目涵盖交通、教育、环保、绿色技术和数字化等领域</li>
+<li>双方讨论基础设施融资机制，强调投资与制度改革同步</li>
+<li>哈国推动连接中亚与其他地区的交通运输通道建设</li>
+<li>世界银行愿继续合作，结合国际经验完善融资机制</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该合作强化哈国政治稳定性，推动经济多元化和基础设施升级，提升外交上作为中亚枢纽的地位，并促进矿产等资源领域绿色技术和数字化发展。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/xinggong29riyuzhuyaowaizhijiande-ddefa427/" target="_blank">央行公布29日坚戈与主要外币之间的汇率标准</a></h3>
+<div class="item-meta">哈通社中文版 · 09/29 13:37<span class="source-link"><a href="https://cn.inform.kz/news/xinggong29riyuzhuyaowaizhijiande-ddefa427/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行公布2026年9月29日坚戈与主要外币汇率：美元兑坚戈1:441.77，欧元兑坚戈1:502.38，俄罗斯卢布兑坚戈1:5.23，土耳其里拉兑坚戈1:9.02，中国元兑坚戈1:65.83。央行规定，坚戈兑美元官方汇率基于阿斯塔纳时间15:30证券交易所加权平均汇率确定，其他外币汇率依据16:00交叉汇率计算。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">根据央行公布的信息，2026年9月29日，哈萨克斯坦坚戈与国际主要货币之间的兑换汇率标准如下：
+美元兑坚戈（USD/KZT） – 1：441.77
+欧元兑坚戈（EUR/KZT）- 1：502.38
+俄罗斯卢布兑坚戈（RUB / KZT）-1: 5.23
+土耳其里拉兑坚戈（TRY / KZT）- 1: 9.02
+中国元兑坚戈（CNY / KZT）- 1：65.83
+值得一提的是，根据哈萨克斯坦国家银行规定，截至阿斯塔纳时间当日15:30，在哈萨克斯坦证券交易所形成的坚戈兑美元加权平均汇率，将被确定为下一工作日坚戈兑美元官方汇率；坚戈兑其他外币的官方汇率，则依据截至阿斯塔纳时间16:00形成的交叉汇率计算得出。</div>
+<ul>
+<li>美元兑坚戈汇率为1:441.77</li>
+<li>欧元兑坚戈汇率为1:502.38</li>
+<li>中国元兑坚戈汇率为1:65.83</li>
+<li>卢布兑坚戈汇率为1:5.23</li>
+<li>官方汇率基于交易所加权平均和交叉汇率</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率公布反映坚戈对主要货币的稳定态势，有利于哈萨克斯坦外贸和投资环境。中国元汇率明确，促进中哈经贸合作。央行定价机制增强汇率透明度，对矿产等大宗商品贸易结算具有参考意义。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/guo28ri-3b3597fa/" target="_blank">国际油价28日微涨</a></h3>
+<div class="item-meta">哈通社中文版 · 09/29 10:29<span class="source-link"><a href="https://cn.inform.kz/news/guo28ri-3b3597fa/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>28日国际油价微涨。纽约商品交易所11月交货的轻质原油期货价格上涨19美分，收于每桶92.60美元，涨幅0.21%；伦敦布伦特原油期货价格上涨96美分，收于每桶105.28美元，涨幅0.92%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 国际油价28日微涨
+
+正文:
+截至当天收盘，纽约商品交易所11月交货的轻质原油期货价格上涨19美分，收于每桶92.60美元，涨幅为0.21%；11月交货的伦敦布伦特原油期货价格上涨96美分，收于每桶105.28美元，涨幅为0.92%。</div>
+<ul>
+<li>纽约轻质原油涨19美分至92.60美元/桶</li>
+<li>布伦特原油涨96美分至105.28美元/桶</li>
+<li>纽约原油涨幅0.21%，布伦特涨幅0.92%</li>
+<li>均为11月交货期货合约</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">油价微涨对哈萨克斯坦经济影响有限，但布伦特涨幅较大可能增加石油出口收入，利好财政；外交上需平衡与主要产油国关系；矿产格局中或刺激对替代能源投资。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-09-30 09:02</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
