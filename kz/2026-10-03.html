@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年10月3日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年10月3日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年10月02日早9:00至2026年10月03日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 18 条</span><span class="stat-chip">3 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">8</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">8</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">2</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">0</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(8 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/yinggongminyuguojiadongquan-291d46d6/" target="_blank">柯比：数字化转型应覆盖公民与国家互动全过程</a></h3>
+<div class="item-meta">哈通社中文版 · 10/03 00:44<span class="source-link"><a href="https://cn.inform.kz/news/yinggongminyuguojiadongquan-291d46d6/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>专家柯比指出，数字化转型应进入“数字国家”阶段，覆盖公民与国家互动全过程。他主张大部分政府数据向公民和企业开放，但国家安全和个人医疗信息需特别保护。强调建立高质量数据资源库以支持创业者，并需明确指标体系评估系统实效。政府服务应从公民“生活事件”角度整体评价，而非逐项评估。数据必须达到AI-ready标准，才能被人工智能系统有效利用。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">在他看来，数字化转型的下一阶段不能仅仅停留在提供电子服务，而应覆盖公民与国家互动的各个环节。
+“当我们迈向GovTech（政府科技）的下一阶段时，讨论的就不再只是线上服务，而是数字国家。核心目标是让公民在整个服务过程中获得最有效的服务。”柯比说。
+他表示，政府部门收集的大部分数据都应向公民和企业开放。不过，涉及国家安全以及个人医疗信息的数据则应得到特别保护。
+“当国家建立起高质量的数据资源库时，就会产生巨大的发展机遇。如今，许多年轻创业者都希望创办科技企业，但如果缺少企业进一步发展所需的数据，这可能成为一个很大的障碍。”柯比说。
+柯比同时指出，指标体系在政府数字化项目中同样十分重要。他认为，必须建立明确的衡量标准，以评估已经投入运行的系统是否真正发挥作用，并在必要时确定需要提供额外支持的环节。
+“不仅要建设系统，还要衡量系统是否真正运行起来，同时确定在哪个环节需要额外支持。”他说。
+柯比还谈到了哈萨克斯坦在数字化领域开展的工作。
+他表示，哈萨克斯坦近十年来一直将数字化作为优先发展方向，对这一时期取得的进展进行持续跟踪十分重要。
+此外，他指出，政府服务不能简单地逐项评估，而应从公民完整的“生活事件”（Life Events）角度进行评价。
+“例如，在面对某一特定生活事件时，公民可能需要办理五项电子服务。很多国家会分别对这五项服务进行评估，但这样并不能反映公民经历的完整过程。我们需要评估这些服务之间的关联，以及整个服务流程。”理查德·柯比解释说。
+最后，这位专家强调，仅仅公开数据还远远不够，数据还必须具备能够被人工智能系统使用的结构。
+“数据非常重要，但必须是AI-ready，也就是能够用于人工智能的数据。仅仅把数据上传到网站上是不够的。”他总结道。</div>
+<ul>
+<li>数字化转型应覆盖公民与国家互动全过程</li>
+<li>大部分政府数据应开放，敏感数据需保护</li>
+<li>建立指标体系评估数字化系统实际效果</li>
+<li>从公民“生活事件”角度整体评价政府服务</li>
+<li>数据必须AI-ready，仅公开不够</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该观点将推动哈萨克斯坦数字化从电子服务转向数字国家建设，促进数据开放与AI应用，优化营商环境，但需平衡国家安全与个人隐私。对矿产等经济领域，高效数据共享可能提升资源管理效率，吸引科技投资。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/shihuidongyuzhujiguanzhixia-a8939fd3/" target="_blank">宗教事务委员会：传教活动处于主管机关监督之下</a></h3>
+<div class="item-meta">哈通社中文版 · 10/02 22:42<span class="source-link"><a href="https://cn.inform.kz/news/shihuidongyuzhujiguanzhixia-a8939fd3/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦宗教事务委员会回复哈通社称，目前国内共有451名传教士，其中408人为外国公民，43人为哈萨克斯坦公民，均属依法登记的宗教联合会。他们来自东正教、天主教、卫理公会、福音派基督教浸礼会联合会、五旬节派、长老会、奎师那意识协会等组织。传教活动受《宗教活动与宗教联合会法》规范，违反程序将依《行政违法法典》第490条追责，传教活动处于主管国家机关监督之下。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">宗教事务委员会：传教活动处于主管机关监督之下
+
+该委员会在回复哈通社问询时指出，目前在国内开展传教活动的共有451人，其中408人为外国公民，43人为哈萨克斯坦公民。该委员会指出，这些传教士均为依法登记的宗教联合会成员。
+
+据介绍，他们来自东正教、天主教、卫理公会、福音派基督教浸礼会联合会、五旬节派、长老会、奎师那意识协会等宗教组织。
+
+“传教士的活动受《哈萨克斯坦共和国宗教活动与宗教联合会法》规范。同时，对于违反传教活动程序的行为，《行政违法法典》第490条规定了相应的行政责任。总体而言，传教活动一直处于主管国家机关的监督之下。”该部门称。</div>
+<ul>
+<li>全国传教士451人，外国公民408人，哈国公民43人</li>
+<li>传教士均属依法登记的宗教联合会成员</li>
+<li>涉及东正教、天主教、卫理公会等多个宗教组织</li>
+<li>传教活动受宗教法与行政违法法典双重规范</li>
+<li>主管国家机关对传教活动持续进行监督</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该声明强调国家对宗教活动的依法监管，有助于维护宗教领域稳定，防范非法传教。对外国传教士占多数的现状，哈国将继续平衡宗教自由与国家安全，外交上或需与相关国家沟通，对矿产等经济领域无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/chuguorengongnengkaibing-d054f490/" target="_blank">托卡耶夫出席首届阿斯塔纳国际人工智能电影节开幕式并讲话</a></h3>
+<div class="item-meta">哈通社中文版 · 10/02 22:22<span class="source-link"><a href="https://cn.inform.kz/news/chuguorengongnengkaibing-d054f490/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫出席首届阿斯塔纳国际人工智能电影节开幕式并讲话。他指出人工智能正给世界经济带来根本性变化，强调负责任使用AI的重要性，并类比核能安全。电影节收到来自全球125个国家的8000多份申请，美国、印度、中国、韩国等国创作者提交作品。托卡耶夫表示，哈萨克斯坦人口平均年龄33岁，青年一代热爱创新，AI为小型创意团队提供了与大型制片公司竞争的机会。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫出席首届阿斯塔纳国际人工智能电影节开幕式并讲话
+正文:
+“阿斯塔纳人工智能电影节是一项前所未有的独特项目，汇聚了求知、创新、创造的优秀人才。这是敏锐思维与创新倡议的竞争。当前时代是知识、科学和前沿创新的时代。人工智能正在给世界经济各领域带来根本性变化。简而言之，技术进步已经呈现出广泛的全球化特征。”托卡耶夫指出。
+国家元首表示，这一独特项目是哈萨克斯坦创意产业快速发展的生动体现。哈萨克斯坦正在采取具体措施，推动构建统一的产业生态系统，同时为有才华的公民提供全方位支持。
+Фото: Ақорда 在谈到人工智能的伦理与安全问题时，托卡耶夫指出了负责任使用人工智能的重要性。
+“在技术以前所未有的速度发展的今天，政治家、科学家和行业领军人物都对人工智能的潜力以及无序使用人工智能所带来的风险日益增加感到担忧。有一点是明确的，这一进程无法停止。我认为，没有人对此有异议。在人类历史上，普罗米修斯之火既被视为繁荣的象征，也被视为一股强大力量。对于核能源，我们同样可以引用这一例子。因此，我们首先应当高度重视安全问题，制定人工智能发展和负责任使用的规则。这对于确保年轻一代拥有无忧的未来十分必要。我们必须尽一切努力，利用未来技术巨大的创造潜力造福人类。这也是本届电影节的核心理念。”托卡耶夫表示。
+Фото: Ақорда 托卡耶夫认为，人工智能带来的新机遇为提升青年群体潜力创造了条件。
+“如今，小型创意团队已经可以与大型制片公司展开竞争。对于创意人士和摄制团队而言，拍摄电影已经不再需要频繁拜访制片公司、四处寻找赞助商。进入市场的渠道已经大大便利。这一方面加剧了竞争，另一方面也为有才华的人展示自己提供了机会。我们应当有效利用这些积极变化，推动创意群体加强联系。当然，人工智能无法与真正的天才相提并论，但对于那些毕生致力于创意事业的人来说，它无疑是不可多得的助手。”他指出。
+Фото: Акорда 国家元首表示相信，阿斯塔纳人工智能国际电影节这一国际赛事将为有才华、有抱负的人创造新的机会，并有助于推动全球创意产业发展。
+“在阿斯塔纳举办这样一场具有全球影响力的活动并非偶然。哈萨克斯坦是一个年轻人的国家，我国人口平均年龄为33岁。我认为，哈萨克斯坦青年是求知上进、热爱创新、思想前卫的一代。友善待人、不歧视任何人，是我们民族所具有的优秀品质。我认为，世界各国也对此有所了解并予以认可。例如，本届电影节共收到来自全球125个国家的8000多份申请，美国、印度、中国、韩国、英国、印度尼西亚、日本、巴西、法国等国的创作者都提交了作品。在这里，我还想特别指出，评审团成员中有世界知名的艺术和科技领域专家。今天，我向大家表示特别感谢。我相信，通过这一赛事，参赛者能够相互交流经验，并在未来共同实施更多项目。”哈斯穆-卓玛尔特·托卡耶夫说。
+Фото: Акорда 开幕式上，阿斯塔纳人工智能国际电影节创始人阿勒玛斯·贾里、自由控股公司首席执行官提穆尔·图尔洛夫、网络学校创始人巴拉德吉·什里尼瓦桑、电影节参赛者贾敏·塔斯克尔以及阿斯塔纳人工智能国际电影节评审团主席奥德丽·阿祖莱分别致辞。</div>
+<ul>
+<li>托卡耶夫出席首届阿斯塔纳国际人工智能电影节开幕式</li>
+<li>电影节收到全球125个国家8000多份申请</li>
+<li>托卡耶夫强调AI伦理安全，类比核能负责任使用</li>
+<li>AI降低电影制作门槛，小型团队可竞争大制片公司</li>
+<li>哈萨克斯坦人口平均年龄33岁，青年推动创意产业</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">提升哈萨克斯坦在全球AI与创意产业中的话语权，推动经济多元化；强化青年创新潜力，促进外交软实力；为矿产等传统领域引入AI技术合作创造契机。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/huikaijiangdarengongnengzaixuedeyingyong-677bad24/" target="_blank">托卡耶夫会见李开复：将扩大人工智能在学校的应用</a></h3>
+<div class="item-meta">哈通社中文版 · 10/02 21:18<span class="source-link"><a href="https://cn.inform.kz/news/huikaijiangdarengongnengzaixuedeyingyong-677bad24/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫会见李开复，讨论人工智能在教育领域的应用。托卡耶夫表示，政府依托李开复的建议和国际经验，正实施将人工智能引入中等教育的项目。试点分阶段推进：今年9月起在10所学校实施，2027年1月扩至60所，4月推广至500所。托卡耶夫强调要确保城乡学生平等受益，并关注人工智能促进创业的前景。李开复还介绍了人工智能和数字化转型领域的多项倡议。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫会见李开复：将扩大人工智能在学校的应用
+
+托卡耶夫指出，李开复作为专家，为哈萨克斯坦制定人工智能和数字化转型发展方向作出了重要贡献。
+
+他表示，哈萨克斯坦政府正依托李开复提出的建议和国际先进经验，着手实施将人工智能引入中等教育体系的项目。
+
+李开复在会谈中介绍了向小规模学校引入人工智能项目的主要参数。
+
+据介绍，试点项目分阶段推进：第一阶段将于今年9月起在10所学校实施；计划从2027年1月起扩大至60所学校，并于4月进一步推广至500所学校。
+
+托卡耶夫指出，在项目实施过程中，扩大项目规模并取得提高教育质量的实际成效十分重要。
+
+托卡耶夫强调，城市和农村居民都应平等享受到人工智能带来的益处。
+
+与此同时，国家元首还关注了将人工智能作为促进创业发展的手段加以利用的前景。
+
+会谈期间，李开复向国家元首介绍了人工智能和数字化转型领域的一系列倡议。</div>
+<ul>
+<li>托卡耶夫会见李开复，讨论人工智能教育应用</li>
+<li>试点项目分三阶段：10所、60所、500所学校</li>
+<li>2027年1月扩至60所，4月推广至500所</li>
+<li>强调城乡学生平等享受人工智能益处</li>
+<li>关注人工智能作为促进创业发展的手段</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该合作将推动哈国教育数字化转型，提升中等教育质量，缩小城乡数字鸿沟。人工智能引入学校有助于培养未来人才，促进创业创新，增强经济竞争力。同时深化与李开复等国际专家的合作，提升哈国在人工智能领域的国际形象。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/zhukairengongnengfalishihuidisanhui-16d7c0c3/" target="_blank">托卡耶夫主持召开人工智能发展理事会第三次会议</a></h3>
+<div class="item-meta">哈通社中文版 · 10/02 20:15<span class="source-link"><a href="https://cn.inform.kz/news/zhukairengongnengfalishihuidisanhui-16d7c0c3/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫主持人工智能发展理事会第三次会议，指出AI是决定竞争力的关键因素。今年前八个月哈工业生产规模近46万亿坚戈，制造业同比增长8.4%。在《数字哈萨克斯坦2029》战略下，哈国正构建国家AI生态系统。托卡耶夫提出多项任务：全面转型生产流程、建立AI研究大学、推进工业Deep-Tech项目、实施AI Challenge机制、建立行业生产数据库，并要求政府建立统一机制加快AI解决方案商业化。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫主持召开人工智能发展理事会第三次会议
+
+托卡耶夫指出，在新的数字时代，人工智能正日益成为决定竞争力的重要因素之一。
+
+“根据联合国《2026年工业发展报告》，人工智能被列为重塑全球经济面貌的五大转型性大趋势之一。过去五年，与人工智能相关的专利占比增长了近三倍。这表明，根本性的技术变革正在发生。如今，竞争不仅围绕自然资源、资本和市场展开，也越来越体现在生产效率上。哈萨克斯坦不应错失这些机遇。当前首要任务是提高劳动生产率、加快技术现代化进程，扩大高附加值产品生产。在完成这些任务的过程中，人工智能应当成为重要工具之一。”托卡耶夫说。
+
+托卡耶夫指出，在《数字哈萨克斯坦2029》战略框架下，一个旨在取得实际经济成果的国家综合人工智能生态系统正在形成。
+
+“今年前八个月，工业生产规模接近46万亿坚戈。制造业产量较去年同期增长8.4%。不过，要保持较快的经济增长速度，就必须提高劳动生产率，加快工业基础现代化，并更加重视高附加值产品生产。人工智能在实现这一目标方面具有重要作用。人工智能的真正价值在于增强人的能力。也就是说，人工智能能够帮助工程师采取具体行动、提高工作效率，也能让管理层在需要时及时依据分析数据作出快速而准确的决策。我们的工业政策正是建立在这一原则基础之上。”国家元首说。
+
+Фото: Ақорда 随后，国家元首提出了几项主要任务。
+
+“我们需要利用人工智能对生产流程进行全面转型。目前，许多企业的数字化工作比较分散。尽管我们实现了部分操作自动化，也推出了一些新服务，但生产模式在很多情况下并没有发生变化。这种做法难以取得预期效果。企业应当重新审视整个生产链，明确在哪些环节能够借助人工智能最大限度提高效率。政府应与‘萨姆鲁克-卡泽纳’基金合作，确定核心业务流程将通过人工智能进行全面转型的企业。新技术应当直接融入生产管理体系。对于较为成功的模式，可以在全国范围内推广。”托卡耶夫说。
+
+国家元首呼吁加强应用科学。他回顾说，理事会此前一次会议已经决定建立一所专门从事人工智能研究的大学。
+
+“哈萨克斯坦人工智能研究大学不仅应成为培养高水平专业人才的中心，也应成为开展应用研究的重要平台之一。其全部科研项目都应根据经济发展的实际需求进行调整。为此，我们将不断更新工业领域人工智能相关重点任务清单。在这项工作中不能有官僚主义。这些任务应由处于生产一线的工程师、技术人员、技师和操作员确定。这些专业人员最清楚哪里存在损耗、哪些设备处于停机状态、哪些环节存在问题和风险。这样一来，管理层就能够全面了解生产中存在的问题，而这也将有助于确定人工智能应当在哪里以及如何应用。哈萨克斯坦人工智能研究大学以及其他高等院校和科研机构也应以这份清单为依据。只有这样，科学与生产之间才能建立直接联系。我责成政府会同国家企业和私营企业，制定确定并定期更新工业领域重点人工智能任务的机制。”托卡耶夫说。
+
+Фото: Ақорда 托卡耶夫认为，推进工业Deep-Tech项目、组建实力较强的技术团队十分重要。他表示，承担工业领域具体任务的团队应包括科研界、科技企业和初创企业生态系统的代表。
+
+“此外，还应采用AI Challenge机制。可以吸引‘数字游民’和青年人才参与其中。具体形式应根据每项任务的特点进行调整。也就是说，从公开选拔团队、确定任务，到在实际生产中测试研发成果，整个过程都应保持灵活。数据、算力资源和生产基础设施应向团队开放。同时，项目需求方不能置身事外，而应参与整个过程的每一个阶段。当然也应看到，对于人工智能和Deep-Tech领域的工业项目，尤其是在技术风险较高、商业效益尚未得到验证的早期阶段，需要投入一定的时间和资源。政府应帮助降低初期风险，为吸引私人资本创造条件。此后，有前景的项目原则上应在市场环境中发展。”国家元首说。
+
+托卡耶夫认为，AI-Sana计划应与生产中的具体任务紧密结合。青年人才应在经济现代化进程中积累实践经验。他责成政府建立解决工业领域人工智能应用任务的统一机制，涵盖从选定合适团队，到测试成果、评估经济效益等各个环节。
+
+Фото: Акорда 托卡耶夫指出，有必要建立明确、合理的机制，加快推广经过验证的解决方案。
+
+“许多有前景的解决方案虽然成功通过了试点阶段，却因为额外审批、重复测试、复杂的采购流程以及法律限制等原因最终搁置。这阻碍了企业获得收益，也限制了开发者进入市场的机会。必须建立明确的有效解决方案商业化机制。对于生产条件相似的企业，没有必要重复进行测试。同时，也应更加重视有竞争力的本土解决方案。我建议政府研究如何迅速推动成功试点项目商业化并扩大推广。在落实具有经济效益的解决方案时，应尽量减少不必要的障碍。”国家元首说。
+
+Фото: Акорда 托卡耶夫认为，没有高质量的生产数据，就无法有效应用人工智能。他指出，企业虽然积累了大量生产数据，但这些数据质量参差不齐，而且较为分散，其中许多数据并不适合人工智能系统使用。
+
+“在理事会此前的会议上，我曾指出，需要转向数据驱动模式，并建立行业数据库。现在，这项工作还要继续向生产领域推进。我们需要符合统一质量标准、相互关联且能够安全使用的行业生产数据。哈萨克斯坦本国研究人员和软件开发人员应能够顺畅获取这些数据。当然，商业秘密、战略信息和关键数据必须得到可靠保护。政府应会同商业界制定建立行业生产数据库的统一方法。在开发本国技术解决方案时，应优先考虑实际利用上述数据。”·托卡耶夫说。</div>
+<ul>
+<li>AI被列为重塑全球经济五大趋势之一，专利占比五年增近三倍</li>
+<li>前八个月工业产值近46万亿坚戈，制造业同比增长8.4%</li>
+<li>在《数字哈萨克斯坦2029》框架下构建国家AI生态系统</li>
+<li>建立AI研究大学，科研项目对接经济发展实际需求</li>
+<li>建立行业生产数据库，推动AI解决方案商业化</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该会议推动哈国经济向技术驱动转型，提升劳动生产率与高附加值产品生产。通过AI研究大学和行业数据库建设，强化本土技术能力，减少对资源出口依赖。外交上借鉴联合国报告，与全球AI趋势接轨。矿产格局方面，AI应用于生产流程或提升采矿效率，但短期影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/gongyitianzhuxiangying-9d5046e5/" target="_blank">哈萨克斯坦：工资每拖欠一天，雇主均须支付相应滞纳金</a></h3>
+<div class="item-meta">哈通社中文版 · 10/02 19:18<span class="source-link"><a href="https://cn.inform.kz/news/gongyitianzhuxiangying-9d5046e5/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦劳动法典规定工资每月至少发放一次，不得晚于次月第一个十日内。若雇主拖欠工资，须按每个日历日支付滞纳金，标准为国家银行基准利率的1.25倍。劳动者可向劳动监察部门申诉或通过eOtinish系统提交申请。违规雇主将面临行政罚款：公职人员30个按月计算指数，小型企业或非营利组织60个按月计算指数。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">工资发放的法定标准与期限
+根据《哈萨克斯坦共和国劳动法典》第113条规定，工资每月至少发放一次，且不得晚于次月第一个十日内支付。具体发薪日期由劳动合同或集体合同予以确定。如果约定的发薪日恰逢休息日或法定节假日，工资应提前支付。
+工资遭到拖欠时，劳动者该如何维权？
+如果出现工资拖欠问题，劳动者可以首先向雇主提出要求，了解工资延迟支付的原因，并要求其尽快偿还欠款。
+如果问题仍未得到解决，劳动者有权向雇主所在地的劳动和社会保障部国家劳动监察委员会所属地区部门提出申诉。劳动者也可以通过“eOtinish”系统以电子形式提交申请。
+提交申请时，应附上现有的相关证明材料，以证明劳动关系以及工资欠款事实，包括劳动合同、工资结算单、银行流水、相关命令以及其他证明材料。
+申请受理后将采取哪些措施？
+如有必要，国家劳动监察员将按照法律规定的程序开展监督检查。
+如果确认存在工资欠款事实，劳动监察员将向雇主下达必须执行的整改指令，要求其消除违法行为，包括偿还拖欠的工资。国家劳动监察员还将对该指令的执行情况进行监督。
+劳动和社会保障部表示，此外，雇主不仅必须向劳动者支付拖欠的工资，还必须按照拖欠的每一个日历日支付相应的滞纳金。滞纳金按照履行工资支付义务当日适用的哈萨克斯坦国家银行基准利率的1.25倍计算。
+雇主将承担哪些法律责任？
+根据《哈萨克斯坦共和国行政违法法典》第87条规定，未在规定期限内足额支付工资，以及因雇主过错未计算并支付相应滞纳金的，将承担行政责任。
+具体罚款标准如下：
+· 公职人员：处以30个按月计算指数的罚款；
+· 小型企业主体或非营利组织：处以60个按月计算指数的罚款；</div>
+<ul>
+<li>工资每月至少发一次，不晚于次月第一个十日内</li>
+<li>拖欠工资须按日支付滞纳金，基准利率1.25倍</li>
+<li>劳动者可向劳动监察部门或eOtinish系统申诉</li>
+<li>公职人员拖欠工资罚款30个按月计算指数</li>
+<li>小型企业或非营利组织罚款60个按月计算指数</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该规定强化劳动者权益保护，增加雇主拖欠工资成本，有助于稳定社会民生。对哈国政治而言，体现劳动法执行力度；经济上可能增加企业用工成本，但促进合规；外交和矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/youchengweizhongrengongnengzhongxin-99937294/" target="_blank">巴格达特·穆辛：哈萨克斯坦有望成为中亚人工智能基础设施中心</a></h3>
+<div class="item-meta">哈通社中文版 · 10/02 16:10<span class="source-link"><a href="https://cn.inform.kz/news/youchengweizhongrengongnengzhongxin-99937294/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦数字发展部长巴格达特·穆辛在“人工智能与数字桥2026”论坛上表示，哈国应利用煤炭等能源资源转化为算力，结合数据中心建设和与英伟达等企业合作，打造中亚人工智能基础设施中心。他提出新增5吉瓦能源产能、将数据传输延迟缩短至45毫秒，并强调政府支持、法律环境和国际数字互联对吸引大型科技企业的重要性。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">巴格达特·穆辛：哈萨克斯坦有望成为中亚人工智能基础设施中心
+
+穆辛在“人工智能与数字桥2026”（AI &amp; Digital Bridge 2026）国际论坛期间作出上述表示。
+
+他指出，哈萨克斯坦应首先从有效利用现有资源和技术条件入手，推动人工智能基础设施建设。
+
+— 首先，我们应该从现有条件出发。我们拥有资源，也拥有煤炭，可以将其转化为能源，并进一步形成算力。穆辛说。
+
+他表示，当前全球对人工智能发展所需算力的需求持续增长。在这一背景下，哈萨克斯坦可以将自身能源资源与数字基础设施相结合，开拓新的技术发展方向。
+
+— 目前，全球对算力的需求非常旺盛。如果我们将自身优势、数据中心建设以及与英伟达等科技企业的合作结合起来，就能够逐步形成这一领域的自身能力。穆辛说。
+
+据他介绍，人工智能基础设施建设还与航天产业密切相关。除提升算力外，推动太空基础设施与地面基础设施之间的互联同样具有重要意义。
+
+穆辛还谈到了吸引大型科技企业进入哈萨克斯坦的问题。他认为，哈萨克斯坦在中亚地区的地理位置，使其具备向周边国家提供数字服务的潜力。
+
+— 为什么大型科技企业应该来到哈萨克斯坦？首先，较早进入并应用这些技术的市场能够获得更多收益。我们可以向中亚国家提供相关服务。在这方面，哈萨克斯坦可以成为区域中心。穆辛说。
+
+与此同时，他指出，对于人工智能产业而言，仅具备算力还远远不够，高质量的国际数字互联同样发挥着重要作用。
+
+— 人工智能革命不仅需要算力，也需要国家之间的互联互通。我们必须与全球数字空间保持紧密连接。穆辛说。
+
+在此背景下，穆辛提到了哈萨克斯坦正在推进的光纤通信基础设施建设，以及扩大里海地区数据传输通道能力等工作。他表示，其中一项目标是将数据传输延迟缩短至45毫秒。
+
+穆辛同时强调，政府支持以及良好的法律环境，对于吸引大型科技企业同样至关重要。
+
+— 政府支持这一产业。为了吸引这样的企业，我们必须创造必要的条件。穆辛说。
+
+他表示，充足的能源基础设施是发展数据中心的关键因素之一。
+
+— 谈到能源生产计划，我想指出，我们具备新增5吉瓦能源产能的潜力。这些能源可以用于发展此类算力基础设施。穆辛总结说。</div>
+<ul>
+<li>穆辛称哈国可借能源资源发展算力，成为中亚AI中心</li>
+<li>计划新增5吉瓦能源产能，用于数据中心建设</li>
+<li>目标将数据传输延迟缩短至45毫秒</li>
+<li>强调与英伟达等科技企业合作及政府支持</li>
+<li>哈国可向中亚国家提供数字服务，发挥区域优势</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该战略若落地，将推动哈国经济多元化，减少对资源出口依赖，增强在中亚的数字经济主导权；外交上可提升与科技大国合作筹码；矿产与能源格局或向算力基础设施倾斜，但需平衡传统能源出口。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/rengongnengyingyongfangyouweilaida-a0f9c18c/" target="_blank">马迪耶夫：人工智能应用解决方案有望为哈萨克斯坦带来最大收益</a></h3>
+<div class="item-meta">哈通社中文版 · 10/02 14:50<span class="source-link"><a href="https://cn.inform.kz/news/rengongnengyingyongfangyouweilaida-a0f9c18c/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦官员马迪耶夫在“人工智能与数字桥2026”论坛上表示，人工智能潜在市场规模已超50万亿美元，哈国将同步发展能源基础设施、芯片、云平台接入、大语言模型开发和应用解决方案五个层级。他强调追求技术主权不意味全部自研，需与东西方伙伴合作，并指出应用解决方案层有望为哈国带来最大实际收益。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">马迪耶夫在“人工智能与数字桥2026”（AI &amp; Digital Bridge 2026）国际论坛框架内举行的一场专题讨论会上作出上述表示。
+他指出，目前人工智能技术仍处于发展初期，因此，对哈萨克斯坦而言，构建完整的人工智能经济体系具有重要意义。
+—— 当前，我们仍处于人工智能技术发展的最初阶段。根据不同机构的评估，人工智能潜在市场总体规模目前已超过50万亿美元。马迪耶夫说。
+据他介绍，哈萨克斯坦选择系统性发展人工智能经济的五个主要层级。
+—— 这五个层级分别是能源基础设施、芯片、各类云平台的接入、大语言模型开发——包括本地化和主权大语言模型，以及应用解决方案。马迪耶夫说。
+他表示，目前尚难准确判断未来上述哪个层级能够创造最高附加值，并实现更高的盈利水平。
+—— 因此，哈萨克斯坦决定同步发展这五个层级，以确保未来人工智能成为经济活动和商业领域常态化组成部分时，我们不会错失新的发展机遇。
+马迪耶夫同时强调，追求人工智能领域的技术主权，并不意味着所有必要技术都必须由哈萨克斯坦自主开发。
+—— 与其他国家以及世界各地的大型科技企业开展合作，同时保持多元化的发展路径十分重要。
+他指出，目前哈萨克斯坦尚不具备芯片生产能力。因此，为获得关键技术，需要继续发展与东西方合作伙伴的关系。
+—— 为确保获得关键技术，我们需要与负责出口管制的监管机构和有关部门保持良好关系。马迪耶夫说。
+在谈及大语言模型和云解决方案时，马迪耶夫表示，相关技术的开发需要充分考虑哈萨克斯坦本土内容和文化背景。
+—— 我们需要了解如何对这些模型进行训练和进一步训练，并发展相应的专业能力。因此，需要实施能力建设项目，为进一步进入应用解决方案层级创造条件。
+马迪耶夫认为，在人工智能经济的五个层级中，应用解决方案可能为哈萨克斯坦创造最大的实际价值。
+—— 我们认为，哈萨克斯坦能够在应用解决方案层级获得最大收益。这类解决方案可以广泛应用于整个经济体系以及人们的日常生活。马迪耶夫总结说。</div>
+<ul>
+<li>AI潜在市场规模超50万亿美元，哈国构建完整AI经济体系</li>
+<li>哈国同步发展五大层级：能源、芯片、云平台、大模型、应用方案</li>
+<li>追求技术主权不意味全部自研，需与东西方伙伴多元化合作</li>
+<li>哈国尚无芯片生产能力，需与出口管制机构保持良好关系</li>
+<li>应用解决方案层被认为能为哈国创造最大实际价值</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该表态明确哈国AI经济路线图，推动能源与数字基建投资，强化与东西方技术合作以弥补芯片短板，同时以应用方案带动经济数字化，提升外交多元平衡与矿产等关键资源在AI供应链中的战略价值。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(8 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/guojiajinengli-83eec08d/" target="_blank">哈萨克斯坦提议整合突厥国家医疗机构数字化能力</a></h3>
+<div class="item-meta">哈通社中文版 · 10/03 01:51<span class="source-link"><a href="https://cn.inform.kz/news/guojiajinengli-83eec08d/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>10月2日，哈萨克斯坦卫生部长阿勒纳扎尔沃娃在比什凯克突厥国家组织卫生部长第六次会议上提议整合成员国医疗机构数字化能力，建立统一数字平台，汇集诊所、专家及医疗服务信息，供患者选择机构、咨询、境外治疗及后续陪护。合作重点包括制定安全医疗数据交换方式，并联合测试基于本土人工智能的医疗解决方案，如Cerebra AI和AIDENTIS。哈方还建议统一临床评估、数据安全及伦理方法，以扩大现代医疗技术获取渠道。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">10月2日，哈萨克斯坦卫生部长阿赫马拉尔·阿勒纳扎尔沃娃在比什凯克举行的突厥国家组织卫生部长第六次会议上提出了上述倡议。
+据计划，统一的数字平台将汇集突厥国家组织成员国领先诊所、医疗专家、治疗方向以及可提供的医疗服务等信息。
+未来，患者可以通过该平台选择医疗机构、获取前期咨询、安排境外治疗以及接受后续医疗陪护。
+合作的一个重要方向，是制定国家间安全的医疗数据交换方式。这将确保医生能够获取在本国境外寻求医疗援助的患者健康状况所需信息，同时遵守个人数据保护要求。
+目前，哈萨克斯坦已启用统一医疗数据仓库，该仓库整合医疗信息，并为构建公民健康状况数字档案奠定基础。
+“对我们而言，核心导向并非引入技术的数量，而是它们对患者的实际意义——即医疗援助的及时性、可及性和质量。”阿勒纳扎尔沃娃强调。
+哈萨克斯坦提出的另一项倡议，是联合测试基于本土人工智能的医疗解决方案，并进一步在突厥国家组织成员国推广高效技术。
+目前，哈萨克斯坦已在临床中应用用于早期诊断中风的“Cerebra AI”和用于分析牙科影像的“AIDENTIS”等本土研发成果。
+此外，用于早期发现肺癌和乳腺癌、诊断眼部疾病以及辅助医生开展工作的人工智能解决方案也正在引入，并处于试点测试阶段。
+哈方表示，愿意分享在卫生与流行病学监督数字化方面的经验，包括利用数字工具进行风险监测和预测。
+与此同时，阿勒纳扎尔沃娃指出，有必要制定医疗算法临床评估、数据安全以及新技术应用伦理方面的统一方法。
+上述倡议旨在扩大突厥国家公民获取现代医疗技术的渠道，并进一步推动卫生领域国际合作。
+参加此次会议的还有吉尔吉斯斯坦卫生部长达米尔别克·奥斯莫诺夫、阿塞拜疆卫生部长泰穆尔·穆萨耶夫、土耳其卫生部副部长努鲁拉赫·奥克穆什、乌兹别克斯坦卫生部第一副部长奥塔别克·伊马莫夫以及突厥国家组织秘书长库巴内奇别克·奥穆拉利耶夫。</div>
+<ul>
+<li>哈国提议建突厥国家统一医疗数字平台</li>
+<li>平台将汇集诊所、专家及医疗服务信息</li>
+<li>推动安全医疗数据交换与个人数据保护</li>
+<li>联合测试本土AI医疗方案并推广</li>
+<li>哈方建议统一临床评估与数据安全伦理</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该倡议将强化哈国在突厥国家组织中的医疗数字化引领地位，促进区域卫生合作与数据安全规则制定，提升公民跨境医疗可及性，并推动本土AI医疗技术出口，对哈国政治外交和经济多元化产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/dashiguo-9493b251/" target="_blank">新任哈萨克斯坦驻匈牙利大使向匈牙利总统递交国书</a></h3>
+<div class="item-meta">哈通社中文版 · 10/02 23:43<span class="source-link"><a href="https://cn.inform.kz/news/dashiguo-9493b251/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦新任驻匈牙利大使阿涅勒·巴赫特别克克兹向匈牙利总统递交国书，双方确认进一步巩固战略伙伴关系，扩大经贸、投资、文化人文及教育合作。明年将迎来两国建交35周年，双方就筹备高层互访、落实互利项目及在“中亚—欧盟”机制下加强合作交换意见。匈牙利强调哈萨克斯坦是其在中亚地区可靠伙伴。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">在随后的双边会谈中，阿涅勒·巴赫特别克克兹向匈牙利总统转达了哈萨克斯坦共和国总统哈斯穆-卓玛尔特·托卡耶夫的诚挚问候与良好祝愿。
+双方就哈匈合作的广泛议题进行了讨论，并确认有意进一步巩固战略伙伴关系、延续积极的政治对话，同时扩大两国在经贸、投资、文化人文及教育领域的务实合作。
+双方指出，哈萨克斯坦与匈牙利两国关系建立在传统友好纽带和两国人民历史亲近感的基础之上。双方强调，通过具体联合项目和合作倡议进一步充实战略伙伴关系具有重要意义。
+双方重点就落实新的互利项目以及筹备高层和最高级别双边互访的前景交换了意见。双方指出，明年将迎来哈匈两国建交35周年，届时开展联合活动和倡议具有重要意义。
+此外，双方还就国际和地区议程中的热点问题交换了意见，其中包括发展哈萨克斯坦与欧盟关系，以及在“中亚—欧盟”机制下开展互动等问题。双方指出，哈萨克斯坦和匈牙利在进一步加强中亚与欧洲之间经贸、投资及交通物流联系方面具有发挥作用的潜力。
+鲍卡·安德拉什·巴林特请大使转达他对哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫的诚挚问候，指出哈匈关系具有战略性质，并特别强调哈萨克斯坦作为匈牙利在中亚地区可靠伙伴的重要性。
+仪式结束后，大使会见了匈牙利外交部双边关系国务秘书克拉拉·布勒费尔以及匈牙利总统办公室公共与国际关系司司长捷尔吉·凯赖克什。双方就进一步加强两国各领域合作的前景进行了讨论。</div>
+<ul>
+<li>哈新任驻匈大使递交国书，转达托卡耶夫问候</li>
+<li>双方确认巩固战略伙伴关系，扩大多领域合作</li>
+<li>明年哈匈建交35周年，将举办联合活动</li>
+<li>讨论“中亚—欧盟”机制及哈欧关系发展</li>
+<li>匈牙利强调哈萨克斯坦为可靠中亚伙伴</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈匈战略伙伴关系，有利于哈国拓展对欧外交，吸引匈牙利投资，促进中亚与欧洲交通物流联系，提升哈国在“中亚—欧盟”机制中的枢纽作用，对哈国矿产出口多元化具有潜在积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/huijianduibubuchang-e7b01fc4/" target="_blank">副总统叶尔兰·卡林会见圣座宗教间对话部部长</a></h3>
+<div class="item-meta">哈通社中文版 · 10/02 23:14<span class="source-link"><a href="https://cn.inform.kz/news/huijianduibubuchang-e7b01fc4/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦副总统叶尔兰·卡林会见圣座宗教间对话部部长乔治·雅各布·库瓦卡德枢机，后者率团赴阿斯塔纳出席第二届联合讨论会。库瓦卡德转达教宗利奥十四世对托卡耶夫总统的问候。双方讨论世界和传统宗教领袖大会框架下互动及人道主义倡议。卡林与库瓦卡德共同出席保护重病及绝症儿童权益的第二届联合讨论会开幕式，重点讨论哈萨克斯坦与梵蒂冈共同倡议的《绝症儿童权益宪章》草案。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 副总统叶尔兰·卡林会见圣座宗教间对话部部长
+正文:
+乔治·雅各布·库瓦卡德此次率领圣座代表团赴阿斯塔纳出席第二届联合讨论会。
+会谈期间，双方就讨论会与世界和传统宗教领袖大会框架下的互动问题，以及共同落实人道主义倡议等事宜进行了讨论。
+乔治·雅各布·库瓦卡德枢机向哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫转达了教宗利奥十四世的亲切问候和对哈萨克斯坦人民的美好祝愿。
+会谈结束后，卡林与乔治·雅各布·库瓦卡德枢机共同出席了旨在保护重病及绝症儿童生命、健康和尊严的第二届联合讨论会开幕式。
+来自国家机关、宗教组织以及医疗、科学和教育机构的代表和专家参加了此次活动。
+卡林在开幕式上致辞时指出，宗教间对话应当以取得切实的人道主义成果为目标。同时，他介绍了在托卡耶夫总统领导下正在实施的重大政治和社会经济改革。
+他表示，正在推进的各项改革主要旨在增进公民福祉，而保护儿童，特别是社会最弱势群体儿童的权利和利益，是国家政策的重要优先事项之一。
+与会者重点讨论了作为哈萨克斯坦与梵蒂冈共同倡议提出的《绝症儿童权益宪章》草案。卡林对圣座宗教间对话部和“耶稣圣婴”儿童医院为文件起草工作所作的贡献表示感谢，并指出该医院与哈萨克斯坦“University Medical Center”企业基金会开展的合作。
+活动最后，卡林祝愿与会代表工作顺利、讨论取得积极成果。</div>
+<ul>
+<li>卡林会见圣座宗教间对话部部长库瓦卡德枢机</li>
+<li>库瓦卡德转达教宗利奥十四世对托卡耶夫的问候</li>
+<li>双方讨论宗教间对话与人道主义倡议合作</li>
+<li>共同出席保护绝症儿童权益联合讨论会开幕式</li>
+<li>重点讨论哈梵共同倡议的《绝症儿童权益宪章》草案</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此会晤强化哈萨克斯坦作为宗教间对话平台的角色，提升其国际人道主义形象；深化与梵蒂冈关系，推动《绝症儿童权益宪章》等倡议，有利于外交多元化和软实力建设，对国内社会政策亦有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/shiguozhongyao-a1dea428/" target="_blank">普京：阿塞拜疆境内路段是“南北国际运输走廊”重要环节</a></h3>
+<div class="item-meta">哈通社中文版 · 10/02 20:49<span class="source-link"><a href="https://cn.inform.kz/news/shiguozhongyao-a1dea428/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>俄罗斯总统普京表示，阿塞拜疆境内路段是“南北国际运输走廊”的重要环节，阿方已同意实施该项目。俄方准备为走廊提供信贷资金，并拥有所需财政资源。普京同时指出，伊朗需完成其负责的工作，特别是购买运输线路途经地区的土地。该走廊旨在加强俄罗斯、伊朗与南亚国家间的交通联系。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">普京：阿塞拜疆境内路段是“南北国际运输走廊”重要环节
+
+“我想强调的是，该路线的一部分必须途经阿塞拜疆。阿塞拜疆同意实施这一项目，并认为这是一个具有发展前景的项目。”普京指出。
+
+普京表示，俄方已准备好为该项目提供所需的信贷资金。
+
+“我们准备为‘南北国际运输走廊’提供信贷资源。我们拥有所需的财政资源。”他说道。
+
+普京同时指出，现阶段伊朗方面需要完成其负责的相关工作，特别是确保完成运输线路途经地区土地的购买工作。
+
+“南北国际运输走廊”旨在加强俄罗斯、伊朗与南亚国家之间的交通联系，而阿塞拜疆境内路段则被视为该运输线路的重要环节。</div>
+<ul>
+<li>普京称阿塞拜疆路段是南北走廊重要环节</li>
+<li>阿塞拜疆同意实施该项目并看好前景</li>
+<li>俄方准备提供信贷资金和财政资源</li>
+<li>伊朗需完成土地购买等负责工作</li>
+<li>走廊旨在加强俄伊与南亚交通联系</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国而言，南北走廊若加速推进，将强化跨里海运输竞争，可能分流部分过境货运，促使哈国加快东西向通道建设并深化与阿塞拜疆、伊朗的物流协调。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/qianchangdangrenqinghui-9adece6b/" target="_blank">哈萨克斯坦前参议院议长当选扎耶德人类兄弟情谊奖评委会委员</a></h3>
+<div class="item-meta">哈通社中文版 · 10/02 19:52<span class="source-link"><a href="https://cn.inform.kz/news/qianchangdangrenqinghui-9adece6b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦前参议院议长玛吾林·阿什姆巴耶夫应埃及爱资哈尔大伊玛目艾哈迈德·塔伊布提名，当选扎耶德人类兄弟情谊奖评委会委员。该奖项于2019年由塔伊布与罗马教皇方济各会晤后设立，以阿联酋首任总统谢赫·扎耶德命名。评委会职责为遴选体现人类兄弟情谊价值观的个人和组织。组委会肯定哈萨克斯坦在托卡耶夫总统领导下成为促进对话与文化交流的国际平台，哈方代表加入进一步彰显其促进宗教文化和平共处的贡献。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据悉，玛吾林·阿什姆巴耶夫应埃及爱资哈尔大伊玛目艾哈迈德·塔伊布提名，加入该奖项评委会。
+评委会成员的主要职责，是遴选那些通过自身生活和工作充分体现人类兄弟情谊价值观，并能够为世界各地民众和社会群体树立榜样的个人和组织。
+“扎耶德人类兄弟情谊奖”于2019年在爱资哈尔大伊玛目艾哈迈德·塔伊布与罗马教皇方济各会晤后设立。两人在会晤期间签署了《人类兄弟情谊文件》。该奖项以阿联酋开国元勋、首任总统谢赫·扎耶德·本·苏尔坦·阿勒纳哈扬的名字命名。
+该奖项组委会指出，在哈斯穆-卓玛尔特·托卡耶夫总统的领导下，哈萨克斯坦已成为促进对话、增进不同民族和文化之间交流的重要国际平台，并赢得了良好声誉。
+因此，哈萨克斯坦代表加入该奖项评委会，也进一步体现了哈萨克斯坦为促进不同宗教和文化背景群体和平共处与相互理解所作的贡献。</div>
+<ul>
+<li>阿什姆巴耶夫应爱资哈尔大伊玛目提名加入扎耶德奖评委会</li>
+<li>扎耶德奖2019年设立，以阿联酋首任总统命名</li>
+<li>评委会遴选体现人类兄弟情谊价值观的个人和组织</li>
+<li>组委会肯定哈萨克斯坦促进对话与文化交流的国际平台作用</li>
+<li>哈方代表加入彰显哈国促进宗教文化和平共处的贡献</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">提升哈萨克斯坦国际形象，巩固其作为跨宗教对话平台的外交地位；加强与埃及、阿联酋及梵蒂冈的文化联系，拓展软实力；对矿产格局无直接影响，但有助于吸引中东投资。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/liangguojiangdazuo-7650dc95/" target="_blank">哈丹两国将扩大贸易投资及交通合作</a></h3>
+<div class="item-meta">哈通社中文版 · 10/02 17:55<span class="source-link"><a href="https://cn.inform.kz/news/liangguojiangdazuo-7650dc95/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与丹麦举行会谈，重点讨论经贸、投资和交通合作。2025年双边贸易额达1.63亿美元，自2005年以来丹麦对哈累计直接投资超3.94亿美元。嘉士伯集团在阿拉木图州伊犁区投资3.44亿美元建设百事非酒精饮料厂，年产能最高10亿升，创造230个就业岗位。双方还探讨了跨里海国际运输路线“中间走廊”发展前景及与马士基合作可能性，并签署多份谅解备忘录，包括建立双边贸易、经济和投资合作委员会。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈丹两国将扩大贸易投资及交通合作
+正文:
+会谈期间，双方重点讨论了经贸合作前景，并指出两国贸易额和直接投资近年来持续增长。2025年，哈丹双边贸易额达到1.63亿美元；自2005年以来，丹麦对哈萨克斯坦累计直接投资超过3.94亿美元。
+双方还重点讨论了嘉士伯集团在哈萨克斯坦实施的大型投资项目。该集团在阿拉木图州伊犁区建设了百事公司非酒精饮料生产厂，拉斯穆森于10月1日出席了工厂启用仪式。
+该项目投资总额达3.44亿美元，设计年产能最高可达10亿升，预计将创造230个就业岗位。项目投产后，有望成为嘉士伯集团全球规模最大的生产基地之一。
+在交通运输领域，双方讨论了跨里海国际运输路线，即“中间走廊”的发展前景，以及该线路在加强欧亚交通连接方面的作用。双方还就与丹麦航运企业马士基开展合作、进一步增加中间走廊货运量的可能性交换了意见。
+特列吾别尔德表示：
+丹麦是哈萨克斯坦在北欧的重要合作伙伴。我们高度重视双边关系发展，希望通过具体且具有实质意义的项目，进一步充实两国经贸合作内容。
+拉斯穆森则重申丹麦有意进一步扩大与哈萨克斯坦的合作，并指出，中亚地区在丹麦外交政策和经济议程中的重要性不断提升。他还提到，拉尔斯·图森已被任命为丹麦驻哈萨克斯坦大使兼丹麦外交部中亚事务特别代表。
+双方还就联合国等多边机制框架内的合作，以及进一步加强中亚与北欧国家之间联系的前景进行了讨论。
+访问期间，拉斯穆森还率丹麦高级别商业代表团参加在科纳耶夫举行的哈萨克斯坦—丹麦商业论坛。两国企业围绕扩大商业联系、吸引丹麦投资以及在哈萨克斯坦重点经济领域实施联合项目进行了交流。
+会谈结束后，双方签署多份谅解备忘录，其中包括哈萨克斯坦和丹麦外交部门关于建立贸易、经济和投资合作双边委员会的谅解备忘录。</div>
+<ul>
+<li>2025年哈丹双边贸易额达1.63亿美元，丹麦累计投资超3.94亿美元</li>
+<li>嘉士伯集团投资3.44亿美元在哈建百事饮料厂，年产能10亿升</li>
+<li>双方讨论跨里海“中间走廊”发展及与马士基合作增加货运量</li>
+<li>丹麦任命拉尔斯·图森为驻哈大使兼中亚事务特别代表</li>
+<li>双方签署谅解备忘录，建立贸易、经济和投资合作双边委员会</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">深化哈丹经贸投资合作，助力哈国吸引外资、创造就业并推动非资源领域发展；拓展跨里海运输路线，提升哈国欧亚交通枢纽地位；强化与北欧及中亚多边联系，平衡外交格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/huiwaida-fangdaduozuo-3117a13a/" target="_blank">托卡耶夫会见丹麦外交大臣 双方讨论扩大多领域合作</a></h3>
+<div class="item-meta">哈通社中文版 · 10/02 17:16<span class="source-link"><a href="https://cn.inform.kz/news/huiwaida-fangdaduozuo-3117a13a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫会见丹麦外交大臣拉斯穆森，双方讨论扩大多领域合作。托卡耶夫称丹麦是哈在北欧和欧盟的重要可靠合作伙伴，明年两国将迎来建交35周年。双方积极评价双边贸易、经济和投资合作，指出仍有未开发潜力。托卡耶夫欢迎嘉士伯公司在阿拉木图州启动旗舰投资项目。拉斯穆森祝贺哈即将迎来独立35周年，重申丹麦有意加强政治对话和经贸合作。双方还就交通物流、数字化转型、人工智能、关键矿产、农业和水安全等交换意见。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫会见丹麦外交大臣 双方讨论扩大多领域合作
+
+托卡耶夫表示，丹麦是哈萨克斯坦在北欧和欧盟的重要可靠合作伙伴。明年，两国将迎来建交35周年。
+
+- 我们将丹麦视为欧洲具有威望和影响力的国家，也是哈萨克斯坦可靠的合作伙伴。我相信，两国关系蕴含巨大潜力。要充分释放这一潜力，双方需要在这一方向上积极、有针对性地开展工作。- 总统说。
+
+会谈期间，双方积极评价近年来双边贸易、经济和投资合作的发展态势。
+
+Фото: Акорда 托卡耶夫同时指出，两国进一步深化合作仍拥有较大的未开发潜力。
+
+他对嘉士伯公司在阿拉木图州启动旗舰投资项目表示欢迎，并高度评价该项目对哈萨克斯坦食品工业发展的贡献。
+
+拉斯穆森祝贺哈萨克斯坦即将迎来独立35周年，并指出，哈萨克斯坦在独立以来取得了显著发展成就。
+
+他同时重申，丹麦有意进一步加强与哈萨克斯坦的政治对话，并扩大双边经贸合作。
+
+- 哈萨克斯坦是中亚地区规模领先的经济体。已有许多丹麦企业在这里开展业务，而且企业对进一步扩大合作的兴趣正在不断增长。- 总统说。
+
+会谈中，双方还就交通物流、数字化转型、人工智能、关键矿产、农业和水安全等领域的合作前景交换了意见。</div>
+<ul>
+<li>托卡耶夫会见丹麦外交大臣，明年两国建交35周年</li>
+<li>双方积极评价经贸投资合作，认为潜力未充分释放</li>
+<li>托卡耶夫欢迎嘉士伯在阿拉木图州启动旗舰投资项目</li>
+<li>丹麦重申加强政治对话，扩大双边经贸合作</li>
+<li>双方讨论交通物流、AI、关键矿产、农业和水安全合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈国与丹麦及欧盟关系，有助于吸引北欧投资，推动食品工业发展。关键矿产合作讨论或提升哈国在全球矿产供应链地位，多元化外交助力经济转型。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/xiangmingguogongye-duowai-adc51b04/" target="_blank">“哈萨克斯坦制造”亮相明斯克国际工业展 多项创新产品加速走向海外</a></h3>
+<div class="item-meta">哈通社中文版 · 10/02 11:00<span class="source-link"><a href="https://cn.inform.kz/news/xiangmingguogongye-duowai-adc51b04/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>明斯克国际工业展吸引近40国代表，哈萨克斯坦20家企业参展，覆盖机械、数字化、采矿冶金、化工和轻工业。哈工业和建设部副部长萨帕尔别科夫重点推介高出口潜力产品，包括新型S形铁路车轮轮盘。DS Multimedia CA五年产超25万台电视机，价值约100亿坚戈，日产量增至1200—1300台，已出口俄罗斯。Almaty Turmystyq Tehnika Zavody产量从2024年3万台计划增至2026年10万—11万台。Maker公司展示自主研制的ОСС-180卧式离心泵。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：“哈萨克斯坦制造”亮相明斯克国际工业展 多项创新产品加速走向海外
+
+正文：
+本届展会吸引来自近40个国家的代表参加。哈萨克斯坦共有20家企业参展，覆盖机械制造、数字化、采矿冶金、化工和轻工业等领域。
+欧亚经济联盟成员国和观察员国代表团团长参观了展会，并了解哈萨克斯坦企业展示的创新产品。
+Фото: primeminister.kz 哈萨克斯坦工业和建设部副部长沃勒扎斯·萨帕尔别科夫（Олжас Сапарбеков）表示，今年哈萨克斯坦重点展示了一批具有较高出口潜力的新型工业产品。
+“每个项目都有自己的独特之处。在铁路领域，可以特别提到哈萨克斯坦生产的轮对。此外，国内企业还研制出用于铁路车辆制造的新型S形铁路车轮轮盘，其使用寿命比目前应用于1520毫米轨距铁路的同类产品更长。这些研发成果表明，我们的企业有能力生产具有创新性和竞争力的产品。”他说。
+消费类制造业是此次哈萨克斯坦展区展示的重要组成部分。
+哈萨克斯坦电视机生产企业DS Multimedia CA过去5年累计生产超过25万台电视机，总价值约100亿坚戈。目前，哈萨克斯坦生产的电视机中近一半来自该企业。
+Фото: primeminister.kz 过去一年，该工厂电视机日产量增加近一倍，从600—700台提高至1200—1300台。与此同时，企业已实现电视机后盖、包装和部分零部件的本地生产。
+目前，公司产品已出口俄罗斯。下一阶段，企业计划进一步扩大产品种类，并研究进入乌兹别克斯坦、吉尔吉斯斯坦等国家市场的可能性，希望借助此次展会寻找新的合作伙伴，进一步扩大“哈萨克斯坦制造”产品的出口市场。
+另一家本土家电企业Almaty Turmystyq Tehnika Zavody同样处于快速扩产阶段。
+该企业目前生产厨房炉灶、烤箱、灶具和抽油烟机。2024年产量为3万台，2025年增至5.5万台，预计2026年全年将进一步增至10万—11万台。
+这意味着两年内其年产量有望增长至2024年的3倍以上。
+Фото: primeminister.kz 企业负责人阿尔森·乌什塔耶夫（Арсен Уштаев）表示，目前工厂拥有冲压、喷涂和搪瓷车间以及包装用泡沫塑料生产线，金属零部件使用企业自主研发的模具生产，产品设计也由企业自行完成。
+“下一阶段是掌握气候设备、冰箱和冷冻设备生产技术。我们计划于2028年启动这一项目并投入生产。”他说。
+除了扩大产能，哈萨克斯坦企业此次还展示了面向工业生产实际需求自主开发的技术和设备。
+Maker有限责任公司带来的ОСС-180卧式离心泵就是其中之一。该设备由企业自主研发，主要用于矿山大规模排水，并针对普通水泵难以长期运行的高磨蚀性作业环境进行设计。</div>
+<ul>
+<li>哈萨克斯坦20家企业参加明斯克国际工业展，覆盖多领域</li>
+<li>新型S形铁路车轮轮盘寿命优于1520毫米轨距同类产品</li>
+<li>DS Multimedia CA五年产超25万台电视机，价值约100亿坚戈</li>
+<li>Almaty家电企业产量计划两年内增长至2024年3倍以上</li>
+<li>Maker公司展示自主研制ОСС-180卧式离心泵用于矿山排水</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">展会有助哈国工业产品出口多元化，强化与欧亚经济联盟合作。家电和铁路产品出口俄罗斯及中亚，将促进制造业升级和出口增长，但需关注对矿产及工业供应链的依赖。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/xinggong2riyuzhuyaowaizhijiande-128824cd/" target="_blank">央行公布2日坚戈与主要外币之间的汇率标准</a></h3>
+<div class="item-meta">哈通社中文版 · 10/02 13:37<span class="source-link"><a href="https://cn.inform.kz/news/xinggong2riyuzhuyaowaizhijiande-128824cd/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行公布2026年10月2日坚戈与主要外币汇率：美元兑坚戈1:441.91，欧元兑坚戈1:499.05，俄罗斯卢布兑坚戈1:5.3，土耳其里拉兑坚戈1:9.01，中国元兑坚戈1:65.91。央行规定，坚戈兑美元官方汇率基于阿斯塔纳时间15:30证券交易所加权平均汇率确定，其他外币汇率依据16:00交叉汇率计算。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">根据央行公布的信息，2026年10月2日，哈萨克斯坦坚戈与国际主要货币之间的兑换汇率标准如下：
+美元兑坚戈（USD/KZT） – 1：441.91
+欧元兑坚戈（EUR/KZT）- 1：499.05
+俄罗斯卢布兑坚戈（RUB / KZT）-1: 5.3
+土耳其里拉兑坚戈（TRY / KZT）- 1: 9.01
+中国元兑坚戈（CNY / KZT）- 1：65.91
+值得一提的是，根据哈萨克斯坦国家银行规定，截至阿斯塔纳时间当日15:30，在哈萨克斯坦证券交易所形成的坚戈兑美元加权平均汇率，将被确定为下一工作日坚戈兑美元官方汇率；坚戈兑其他外币的官方汇率，则依据截至阿斯塔纳时间16:00形成的交叉汇率计算得出。</div>
+<ul>
+<li>美元兑坚戈汇率为1:441.91</li>
+<li>欧元兑坚戈汇率为1:499.05</li>
+<li>人民币兑坚戈汇率为1:65.91</li>
+<li>卢布兑坚戈汇率为1:5.3</li>
+<li>官方汇率基于交易所加权平均和交叉汇率</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率公布反映坚戈币值稳定，有利于哈萨克斯坦外贸和投资环境。人民币汇率明确，促进中哈经贸合作。央行定价机制增强汇率透明度，对矿产等大宗商品贸易结算有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/yetongchang19-29e50d49/" target="_blank">哈萨克斯坦简化税制企业收入同比增长近19%</a></h3>
+<div class="item-meta">哈通社中文版 · 10/02 12:55<span class="source-link"><a href="https://cn.inform.kz/news/yetongchang19-29e50d49/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦简化税制经营主体收入从7.9万亿坚戈增至9.4万亿坚戈，同比增长18.9%。受雇员工从44.5万人增至50.9万人，增长14.2%，工资基金增长7.2%。无雇员经营主体数量下降30.5%，收入0至500万坚戈的经营者减少近三分之一。数据来自2026年上半年首次申报。该税制面向年收入不超过60万个月核算指标的个体经营者和法人，税率4%，申报周期半年，免缴社会税和增值税（进口及代非居民缴纳除外）。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦简化税制企业收入同比增长近19%
+正文:
+数据显示，与去年同期相比，适用简化税制的经营主体收入从7.9万亿坚戈增至9.4万亿坚戈，增幅为18.9%。
+就业方面也呈现增长态势。受雇员工人数从44.5万人增至50.9万人，同比增长14.2%；工资基金增长7.2%。
+与此同时，没有雇佣员工的经营主体数量下降30.5%。申报收入在0至500万坚戈之间的经营者数量也减少近三分之一。
+上述数据来自更新后的特别税制实施后的首次申报结果。今年8月，经营者首次提交了2026年上半年的税务申报。
+根据哈萨克斯坦《税法典》，符合相关条件、年收入不超过60万个月核算指标的个体经营者和法人，可以适用基于简化申报的特别税制。
+该税制下，个人所得税或企业所得税税率为4%。地方代表机构可在法律规定范围内对税率进行下调或上调。税务申报和纳税周期均为半年。
+适用该税制的经营主体还免缴社会税和增值税，但进口商品增值税以及代非居民缴纳的增值税除外。</div>
+<ul>
+<li>简化税制企业收入达9.4万亿坚戈，同比增长18.9%</li>
+<li>受雇员工增至50.9万人，同比增长14.2%</li>
+<li>无雇员经营主体数量下降30.5%</li>
+<li>税率4%，申报周期半年，免缴社会税和增值税</li>
+<li>数据来自2026年上半年首次税务申报</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">简化税制促进企业收入与就业增长，优化经营结构，减少微型无雇员主体。对哈国经济而言，税基扩大但免税范围广，短期财政压力与长期合规化并存，有利于扶持中小企业并稳定社会就业。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-10-03 09:02</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
