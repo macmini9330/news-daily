@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年10月4日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年10月4日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年10月03日早9:00至2026年10月04日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 9 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">4</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">1</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">1</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/churengongnenghe-2026bingweizhe-b1c3fe00/" target="_blank">别克帖诺夫出席“人工智能和数字桥 2026”论坛并为获奖者颁奖</a></h3>
+<div class="item-meta">哈通社中文版 · 10/03 19:19<span class="source-link"><a href="https://cn.inform.kz/news/churengongnenghe-2026bingweizhe-b1c3fe00/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总理别克帖诺夫出席“人工智能和数字桥 2026”论坛，国内科技企业展示多项AI应用成果。论坛期间达成60多项新协议。别克帖诺夫强调扩大高效技术应用，并宣布“数据中心谷”项目能源潜力达1吉瓦，为中亚最大园区。DREAM、Freedom Holding、Crimson Education、Higgsfield AI等企业高管发表演讲，总理为AI和数字化转型贡献者颁奖。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">期间，国内科技企业和组织向别克帖诺夫展示了多项基于人工智能、面向不同领域应用的技术成果。
+Фото: Правительство РК 论坛期间，各方达成60多项新协议。别克帖诺夫强调，进一步扩大经实践验证的高效技术应用十分重要。
+“哈萨克斯坦正以领先速度推进数字基础设施建设。目前，‘数据中心谷’大型项目正在积极实施。这是中亚地区规模最大的园区，能源潜力可达1吉瓦（GW）。数据中心将成为发展人工智能、云服务、科学研究和新型数字产业的重要基础。我们愿意与其他全球科技企业建立合作关系。”别克帖诺夫表示。
+Photo credit: AI &amp; Digital Bridge 2026 此外，在论坛全会环节，DREAM公司总裁塞巴斯蒂安·库尔茨、Freedom Holding Corp.首席执行官提穆尔·图尔洛夫、Crimson Education创始人杰米·比顿以及Higgsfield AI首席执行官亚历山大·马什拉博夫分别发表演讲。
+全会结束后，总理向为人工智能发展和数字化转型作出贡献的科技领域代表颁发了奖项。
+“人工智能和数字桥 2026”获奖名单如下：</div>
+<ul>
+<li>论坛达成60多项新协议</li>
+<li>数据中心谷能源潜力达1吉瓦</li>
+<li>别克帖诺夫强调扩大技术应用</li>
+<li>多家国际科技企业高管演讲</li>
+<li>总理为AI领域贡献者颁奖</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">推动哈国数字经济和AI产业发展，巩固中亚数字基建领先地位，吸引全球科技合作，促进经济多元化，提升外交科技影响力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/guobuduogao-4e0a6168/" target="_blank">托卡耶夫总统解除国防部多位高级官员职务</a></h3>
+<div class="item-meta">哈通社中文版 · 10/03 18:10<span class="source-link"><a href="https://cn.inform.kz/news/guobuduogao-4e0a6168/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫签署命令，解除国防部第一副部长兼武装力量总参谋长阿布巴克罗夫、国防部副部长朱马克耶夫、武装力量海军总司令尼亚孜别阔夫职务。此前9月24日，哈国海军在里海军事训练演习期间发生事故，造成14名军人遇难。此次人事调整涉及国防部及海军高层，与演习事故直接相关。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">根据国家元首签署的命令：
+坎尼什·阿斯汗吾勒·阿布巴克罗夫被解除哈萨克斯坦共和国国防部第一副部长兼武装力量总参谋长职务；
+阿勒玛兹·杰恩斯吾勒·朱马克耶夫被解除哈萨克斯坦共和国国防部副部长职务；
+哈纳特·赛热克哈利吾勒·尼亚孜别阔夫被解除哈萨克斯坦共和国武装力量海军总司令职务。
+值得一提的是，9月24日，哈萨克斯坦共和国武装力量海军里海军事训练演习期间发生事故，造成14名军人遇难。</div>
+<ul>
+<li>托卡耶夫解除国防部第一副部长兼总参谋长职务</li>
+<li>国防部副部长和海军总司令同时被解职</li>
+<li>9月24日里海演习事故致14名军人遇难</li>
+<li>高层人事调整与军事演习事故直接相关</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次高层解职凸显哈国对军事安全事故的问责力度，短期内可能影响国防部及海军指挥体系稳定，但有助于重塑军队纪律和公众信任。外交上或引发对哈国军事训练安全标准的关注，经济与矿产格局无直接关联。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/chengyushiheyingyingzhongxin-59a048b6/" target="_blank">哈萨克斯坦成立核与辐射事件快速监测和应急响应中心</a></h3>
+<div class="item-meta">哈通社中文版 · 10/03 13:33<span class="source-link"><a href="https://cn.inform.kz/news/chengyushiheyingyingzhongxin-59a048b6/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦在美国能源部国家核安全局（DOE/NNSA）支持下成立核与辐射事件快速监测和应急响应中心。哈原子能署、美国驻哈使馆及DOE/NNSA代表出席启用仪式。中心主要任务包括监测分析辐射状况、快速信息交换及协调各方行动，旨在及时获取真实信息，为科学决策提供保障。该中心启用是加强哈国家核与辐射安全体系的重要一步，将提高应对潜在事件的准备程度，推动国家机关与专业机构协作。下一步计划提升技术分析能力、完善协作机制、加强人员培训并开展实践演练。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据介绍，该中心是在哈萨克斯坦与美国合作框架下成立的，并得到美国能源部国家核安全局（DOE/NNSA）的支持。
+哈萨克斯坦原子能署、美国驻哈萨克斯坦大使馆以及美国能源部国家核安全局代表出席了中心启用仪式。
+该中心的主要任务包括监测和分析辐射状况、开展快速信息交换，以及在发生核与辐射事件时协调各方行动。
+中心投入运行后，将能够及时获取真实、准确的信息，为迅速作出科学、合理的决策提供必要保障。
+据悉，该中心的启用是加强哈萨克斯坦国家核与辐射安全体系的重要一步。其运行将有助于提高应对潜在核与辐射事件的准备程度，并推动国家机关与专业机构之间进一步加强协作。
+下一步，该中心计划进一步提升技术和分析能力，完善部门间协作机制，加强专业人员培训和能力提升，并开展实践演练。</div>
+<ul>
+<li>哈美合作成立核与辐射事件快速监测和应急响应中心</li>
+<li>美国能源部国家核安全局（DOE/NNSA）提供支持</li>
+<li>中心任务：监测辐射、快速信息交换、协调行动</li>
+<li>中心启用加强哈国家核与辐射安全体系</li>
+<li>下一步提升技术能力、完善协作、加强培训演练</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该中心强化哈国核与辐射安全监管能力，深化哈美在核安全领域合作，提升地区核事件应急响应水平，对哈国政治外交具有积极意义，经济上保障核能相关产业安全，矿产格局影响有限。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(4 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/jiuguoyiriguoren-5b7b329f/" target="_blank">托卡耶夫就德国统一日向德国领导人致贺电</a></h3>
+<div class="item-meta">哈通社中文版 · 10/03 18:49<span class="source-link"><a href="https://cn.inform.kz/news/jiuguoyiriguoren-5b7b329f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫就德国统一日向德国总统施泰因迈尔和总理默茨致贺电，称该节日彰显德国坚韧与创造力。托卡耶夫感谢访德期间的热情接待，高度评价双方会谈成果，并表示在柏林达成的共识将为拓展哈德战略伙伴关系及在重点领域落实联合项目开辟新前景。他祝愿德国领导人工作顺利，德国人民幸福繁荣。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫就德国统一日向德国领导人致贺电
+
+托卡耶夫在贺电中指出，这是一个彰显德国坚韧不拔、富有创造力的力量，以及在繁荣发展道路上坚定前行的重要节日。
+
+托卡耶夫总统同时对不久前访问德国期间受到的热情接待和周到款待表示诚挚感谢，并高度评价了双方富有成果的会谈。
+
+国家元首表示，在柏林达成的共识将为拓展哈德战略伙伴关系以及在重点领域落实联合项目开辟新的前景。
+
+托卡耶夫祝愿弗兰克-瓦尔特·施泰因迈尔和弗里德里希·默茨工作顺利，并祝愿友好的德国人民幸福安康、繁荣昌盛。</div>
+<ul>
+<li>托卡耶夫就德国统一日向德领导人致贺电</li>
+<li>感谢访德接待，高度评价双边会谈成果</li>
+<li>柏林共识将拓展哈德战略伙伴关系</li>
+<li>祝愿施泰因迈尔和默茨工作顺利</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此贺电巩固哈德战略伙伴关系，为政治互信与经贸合作注入动力，尤其在矿产和能源领域联合项目有望加速落实，提升哈萨克斯坦外交多元平衡。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/jiuguoguorizaiming-18b3e30a/" target="_blank">托卡耶夫就韩国国庆日向李在明致贺电</a></h3>
+<div class="item-meta">哈通社中文版 · 10/03 15:52<span class="source-link"><a href="https://cn.inform.kz/news/jiuguoguorizaiming-18b3e30a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫就韩国国庆日向韩国总统李在明致贺电，高度评价节日意义，指出哈韩合作保持高水平发展。托卡耶夫提及不久前在首尔访问期间，两国关系提升至面向未来的全面战略伙伴关系，相信这将推动双边合作，造福两国人民。托卡耶夫祝愿李在明工作顺利，韩国人民繁荣幸福。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫在贺电中高度评价了这一彰显韩国人民丰富历史文化遗产、民族团结与和谐的重要节日的意义，并指出哈韩两国多方面合作正保持高水平发展势头。
+“不久前在首尔访问期间，我们将两国关系提升至面向未来的全面战略伙伴关系。我坚信，这一决定将进一步推动建立在友谊和牢固伙伴关系基础上的哈韩合作，为两国人民带来更多福祉。”托卡耶夫在贺电中指出。
+托卡耶夫祝愿李在明工作顺利，并祝愿友好的韩国人民繁荣昌盛、幸福安康。</div>
+<ul>
+<li>托卡耶夫就韩国国庆日向李在明致贺电</li>
+<li>哈韩合作保持高水平发展势头</li>
+<li>首尔访问期间两国关系提升为全面战略伙伴关系</li>
+<li>托卡耶夫祝愿韩国繁荣昌盛、幸福安康</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此贺电巩固哈韩全面战略伙伴关系，有利于哈国推进多元外交、吸引韩国投资与技术，促进经济合作，并在矿产等领域拓展合作空间，提升哈国在地区事务中的影响力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/zhengjianlishihuihuizaimingxing-duozuowen-1e5747fd/" target="_blank">欧亚政府间理事会会议在明斯克举行 多领域合作文件签署</a></h3>
+<div class="item-meta">哈通社中文版 · 10/03 12:27<span class="source-link"><a href="https://cn.inform.kz/news/zhengjianlishihuihuizaimingxing-duozuowen-1e5747fd/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>欧亚政府间理事会会议在明斯克举行，哈萨克斯坦总理别克帖诺夫出席。会议讨论落实欧亚经济联盟元首任务，审议农工综合体预测、2026—2027年供需平衡、工业合作及相互贸易。2026年上半年欧亚经济联盟GDP增长1.1%，固定资本投资增长17%至2445亿美元，工业产值9386亿美元。哈国交通产值五年增长3倍超14万亿坚戈。农产品仓单制度6月生效。会议签署贸易、能源、工业等领域文件及合作备忘录。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">欧亚政府间理事会会议按照惯例以小范围和大范围两种形式举行。会议重点讨论了落实欧亚经济联盟成员国元首在最高欧亚经济委员会会议上提出的各项任务。
+“在哈萨克斯坦担任欧亚经济联盟机构轮值主席国期间，我们将以成员国元首致辞中确定的主要目标为指导，有序推进各项工作。今天，我们将讨论欧亚经济联盟对外贸易、成员国之间交通联系，以及成员国提出的具体议题。这些方向对于发展各国经济、提升竞争力具有重要意义。我相信，今天会议取得的成果将有助于进一步实现委员会确定的目标、落实相关任务。”别克帖诺夫表示。
+小范围会议期间，与会各方围绕广泛议题进行了讨论，重点涉及交通领域优先一体化基础设施项目清单以及其他合作方向。
+大范围会议审议了农工综合体发展联合预测、2026—2027年供需平衡、工业合作主要方向落实情况以及欧亚经济联盟成员国相互贸易现状。会议还听取了海上口岸电子文件流转发展的最新进展，并就统一电力市场运行、海关行政管理领域合作等问题进行了讨论。
+别克帖诺夫强调，支持投资和生产活动、扩大经济合作以及培育新的经济增长点，对于各方开展联合工作具有重要意义。数据显示，2026年上半年，欧亚经济联盟国内生产总值较去年同期增长1.1%。今年1月至6月，按现价计算的固定资本投资增长17%，达到2445亿美元。
+释放欧亚经济联盟过境运输潜力，是推动成员国相互贸易发展的重要因素之一。别克帖诺夫指出，推进交通领域数字化转型，构建欧亚经济联盟数字交通走廊完整生态体系具有重要意义。
+目前，哈萨克斯坦通过物流单一窗口Smart Cargo系统，为货物电子跟踪以及政府部门与企业之间的数据交换提供支持。此外，哈萨克斯坦还利用Echelon Alpha平台预测货物流向、模拟运输线路网络，并通过KinetiX系统对移动运输设备进行非接触式诊断。过去五年，哈萨克斯坦交通运输业总产值增长至原来的3倍，超过14万亿坚戈。
+2026年上半年，欧亚经济联盟工业产品产值达到9386亿美元，其中制造业产值达到6309亿美元。别克帖诺夫强调，应进一步加强落实欧亚经济联盟到2030年工业领域合作主要方向，重点推进联合项目、构建新的附加值产业链，并提升成员国生产综合体的竞争力。
+作为经济一体化的一项务实工具，农产品仓单制度已于今年6月生效。相关协议允许以农产品作为抵押，并为粮食及其他农产品融资拓宽渠道。欧亚经济委员会将与成员国共同推动这一机制得到充分、有效的实际应用。
+会议最后，各方签署了贸易、能源、工业等领域的一系列文件，以及欧亚经济委员会与欧亚稳定与发展基金之间的合作备忘录。</div>
+<ul>
+<li>欧亚政府间理事会会议在明斯克举行，签署多领域合作文件</li>
+<li>2026年上半年欧亚经济联盟GDP增长1.1%，投资增17%至2445亿美元</li>
+<li>哈国交通产值五年增3倍超14万亿坚戈，推数字交通走廊</li>
+<li>农产品仓单制度6月生效，拓宽农产品融资渠道</li>
+<li>工业产值达9386亿美元，制造业6309亿美元</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">会议强化哈国轮值主席国角色，推动欧亚经济联盟交通与工业一体化。数字交通走廊和农产品仓单制度提升哈国过境运输与农业融资潜力，利于矿产及非资源产品出口多元化，巩固哈国在区域经济合作中的枢纽地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/waibuzhengyufanggongminshi-b347c69e/" target="_blank">哈萨克斯坦外交部正与俄方磋商撤离冲突区域公民事宜</a></h3>
+<div class="item-meta">哈通社中文版 · 10/03 11:32<span class="source-link"><a href="https://cn.inform.kz/news/waibuzhengyufanggongminshi-b347c69e/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦外交部正与俄方磋商，制定从冲突区域撤离哈国公民的联合措施。外交部强调保护海外公民权益是优先事项，已开通专门热线接收求助，并要求信息直接从公民或其亲属处获取。目前已有家庭提出申请。哈外长会见俄驻哈临时代办，哈驻俄大使近期将与俄外交部、国防部会谈。外交部将适时通报进展。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦外交部正与俄方磋商撤离冲突区域公民事宜
+
+外交部指出，正密切关注有关情况。保护哈萨克斯坦公民在海外的权利、自由和合法利益，是外交部工作的绝对优先事项。
+
+“哈萨克斯坦外交部在从世界各国和地区的战乱地区撤回同胞方面积累了相关经验。”外交部称。
+
+外交部表示，鉴于此，获取有关哈萨克斯坦公民的完整、准确信息尤为重要，而这些信息应直接从公民本人或其亲属处获取，而非通过媒体获得。目前，已有一些家庭向外交部提出求助申请。
+
+外交部称，为接收身处战乱地区的哈萨克斯坦公民亲属提出的求助，外交部已开通专门热线。
+
+同时，外交部请求各大媒体协助公布相关联系方式。为保障公民合法权益，外交部需要掌握详细信息，包括当事人的姓名、出生日期、预计所在地，以及其所签订劳动合同的具体条款等。
+
+为制定将哈萨克斯坦公民接回祖国的联合措施，外交部正继续与俄方进行磋商。
+
+“今天，哈萨克斯坦外交部长会见了俄罗斯联邦驻哈萨克斯坦临时代办。近期，哈萨克斯坦驻俄罗斯联邦大使还将与俄罗斯外交部和国防部领导层举行会谈。”外交部发布消息称。
+
+外交部表示，将适时通报相关工作的进展和成果。</div>
+<ul>
+<li>哈外交部与俄磋商撤离冲突区公民</li>
+<li>保护海外公民权益是绝对优先事项</li>
+<li>已开通专门热线接收亲属求助</li>
+<li>哈外长会见俄驻哈临时代办</li>
+<li>哈驻俄大使将与俄外交部国防部会谈</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举凸显哈国对海外公民安全的高度重视，有助于稳定国内民意。与俄方磋商撤离，反映哈俄在安全事务上的务实合作，但可能引发西方对哈外交立场的关注。若冲突区域涉及矿产利益，撤离行动或影响哈国在该地区的资源合作布局。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/cheng653-c1c989d1/" target="_blank">哈萨克斯坦科研项目成果销售收入达653亿坚戈</a></h3>
+<div class="item-meta">哈通社中文版 · 10/03 14:12<span class="source-link"><a href="https://cn.inform.kz/news/cheng653-c1c989d1/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦科学和高等教育部表示，由“科学基金会”支持的项目成果商业化需加强科技界与商界合作及私人配套融资。获支持项目对科技发展综合贡献达1472亿坚戈，累计缴税135亿坚戈，吸引私人融资约282亿坚戈，创造近2400个就业岗位，销售收入653亿坚戈（含出口16亿坚戈），购置固定资产401亿坚戈。商业界还提供生产设施和分销网络，加速科研成果商业化。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">科学和高等教育部在回复哈通社问询时表示，由“科学基金会”股份公司提供支持的项目，其成果商业化的主要特点和必要条件是加强科技界与商界合作，同时必须有私人投资者参与配套融资。获支持项目对哈萨克斯坦科技发展的综合贡献达到1472亿坚戈，其中包括产品销售额、吸引的配套资金、税收以及固定资产购置等。
+据该部门统计，相关项目已累计向国家预算缴纳税款135亿坚戈，吸引私人融资约282亿坚戈。
+据介绍，在项目实施过程中，累计创造近2400个就业岗位，销售收入达到653亿坚戈，其中出口产品销售额为16亿坚戈。同时，项目累计购置价值401亿坚戈的固定资产。商业界代表不仅提供资金支持，还为科研成果走向市场提供生产基地、实验室和分销网络，推动科研成果加快实现商业化。</div>
+<ul>
+<li>项目综合贡献1472亿坚戈，销售收入653亿坚戈</li>
+<li>累计缴税135亿坚戈，吸引私人融资282亿坚戈</li>
+<li>创造近2400个就业岗位，出口销售额16亿坚戈</li>
+<li>购置固定资产401亿坚戈，商界提供生产设施</li>
+<li>成果商业化需科技界与商界合作及私人配套融资</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该成果促进哈国科技与经济融合，增加税收和就业，吸引私人投资，推动出口和固定资产积累，强化矿产等领域的科研商业化，提升外交合作潜力。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/guo2rixia-35e62229/" target="_blank">国际油价2日下跌</a></h3>
+<div class="item-meta">哈通社中文版 · 10/03 10:46<span class="source-link"><a href="https://cn.inform.kz/news/guo2rixia-35e62229/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>国际油价2日下跌。纽约商品交易所11月交货的轻质原油期货价格下跌1.76美元，收于每桶91.11美元，跌幅1.9%；12月交货的伦敦布伦特原油期货价格下跌6美分，收于每桶102.25美元，跌幅0.06%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 国际油价2日下跌
+正文:
+截至当天收盘，纽约商品交易所11月交货的轻质原油期货价格下跌1.76美元，收于每桶91.11美元，跌幅为1.9%；12月交货的伦敦布伦特原油期货价格下跌6美分，收于每桶102.25美元，跌幅为0.06%。</div>
+<ul>
+<li>纽约轻质原油期货价格下跌1.76美元，收于每桶91.11美元</li>
+<li>纽约轻质原油跌幅为1.9%</li>
+<li>伦敦布伦特原油期货价格下跌6美分，收于每桶102.25美元</li>
+<li>伦敦布伦特原油跌幅为0.06%</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">国际油价下跌可能减少哈萨克斯坦石油出口收入，影响国家预算和经济增长；同时可能促使哈国调整能源出口策略，并在地缘政治中平衡与主要产油国关系。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-10-04 09:00</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
