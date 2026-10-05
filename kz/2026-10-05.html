@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年10月5日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年10月5日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年10月04日早9:00至2026年10月05日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 4 条</span><span class="stat-chip">2 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">0</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">1</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">0</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/shizhengliderenwu-e2361f44/" target="_blank">佩斯科夫称托卡耶夫是“极具政治影响力的人物”</a></h3>
+<div class="item-meta">哈通社中文版 · 10/05 02:01<span class="source-link"><a href="https://cn.inform.kz/news/shizhengliderenwu-e2361f44/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>俄罗斯总统新闻秘书佩斯科夫在接受记者帕维尔·扎鲁宾采访时，高度评价哈萨克斯坦总统托卡耶夫为“极具政治影响力的人物”，拥有巨大政治资源，并称赞其具备政治远见、坚定立场和一贯原则。此番评价针对托卡耶夫此前在访问德国期间对俄罗斯总统普京的正面言论。托卡耶夫曾表示了解普京，认为其具备领导复杂历史大国所需的素质。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">佩斯科夫在接受记者帕维尔·扎鲁宾采访时作出上述表示，并对托卡耶夫此前提及俄罗斯总统弗拉基米尔·普京的一番讲话作出评价。
+“托卡耶夫总统是一位极具政治影响力的人物，拥有巨大的政治资源。只有真正具备对未来的政治远见、坚定立场和一贯原则的人，才能发表这样的言论。其他人做不到。”佩斯科夫说。
+托卡耶夫此前在访问德国期间曾表示，他十分了解普京，并认为普京具备领导一个拥有复杂历史的大国所需要的素质。</div>
+<ul>
+<li>佩斯科夫称托卡耶夫极具政治影响力，拥有巨大政治资源</li>
+<li>佩斯科夫赞扬托卡耶夫具备政治远见、坚定立场和一贯原则</li>
+<li>托卡耶夫访德期间曾正面评价普京的领导素质</li>
+<li>佩斯科夫评价针对托卡耶夫此前涉普京言论</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">俄方高层公开肯定托卡耶夫，有助于巩固哈俄关系，提升哈国在地区外交中的斡旋地位，同时向外界展示哈国领导人的政治分量，对哈国政治稳定和外交平衡产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/guogaohebuzhan-30ef5228/" target="_blank">联合国高度评价哈萨克斯坦维和部队备战水平</a></h3>
+<div class="item-meta">哈通社中文版 · 10/04 14:24<span class="source-link"><a href="https://cn.inform.kz/news/guogaohebuzhan-30ef5228/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>联合国评估高度评价哈萨克斯坦第三批维和分队，称其表现专业、应急能力强。该分队由中校伊利亚斯·阿勒玛托夫指挥，6月至9月执行470次应急行动，设49处夜间观察哨，组织11次快速反应演练，与当地社群会晤11次，销毁350件爆炸物和1800发轻武器弹药。维和人员按联合国授权执行巡逻、检查站守卫、排爆及护送疏散等任务，保持高度戒备。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">评估结果显示，哈萨克斯坦维和分队表现出色，各级官兵展现出较高的专业素养，以及在各种突发情况下高效完成既定任务的能力。
+哈萨克斯坦第三批维和分队由中校伊利亚斯·阿勒玛托夫指挥。根据联合国任务授权，哈萨克斯坦维和人员承担巡逻、守卫检查站、排除和销毁爆炸物，以及护送和疏散联合国工作人员等任务。
+国防部表示，6月至9月期间，国家维和分队共开展470次应急行动。除开展巡逻外，分队还设立了49处临时夜间观察哨，组织了11次快速反应部队演练，并与当地社群代表举行了11次会晤。此外，工兵排爆小组共发现并销毁350件爆炸物和1800发轻武器弹药。
+国防部指出，哈萨克斯坦维和分队正按照联合国任务授权继续履行各项职责。维和人员时刻保持高度戒备，密切关注责任区局势，随时准备在各种情况下迅速采取行动。</div>
+<ul>
+<li>联合国高度评价哈维和分队备战水平</li>
+<li>第三批分队由中校阿勒玛托夫指挥</li>
+<li>6至9月执行470次应急行动</li>
+<li>销毁350件爆炸物和1800发弹药</li>
+<li>分队保持高度戒备履行联合国授权</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">提升哈萨克斯坦国际维和形象，强化与联合国合作，增强外交软实力；展示军事专业能力，有利于地区安全稳定，但未直接涉及矿产格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/jiangyu10yue5ri6riduijinxingguoshiwen-424e6a86/" target="_blank">阿曼苏丹将于10月5日至6日对哈萨克斯坦进行国事访问</a></h3>
+<div class="item-meta">哈通社中文版 · 10/04 13:15<span class="source-link"><a href="https://cn.inform.kz/news/jiangyu10yue5ri6riduijinxingguoshiwen-424e6a86/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>阿曼苏丹将于10月5日至6日对哈萨克斯坦进行国事访问。访问期间，两国元首将举行高级别会谈，重点讨论巩固政治对话，以及拓展经贸、投资和文化人文领域合作的前景。此外，两国元首还将共同出席哈萨克斯坦—阿曼商业论坛。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 阿曼苏丹将于10月5日至6日对哈萨克斯坦进行国事访问
+正文:
+访问期间，两国元首将举行高级别会谈，重点就巩固政治对话，以及拓展经贸、投资和文化人文领域合作的前景交换意见。
+此外，两国元首还将共同出席哈萨克斯坦—阿曼商业论坛。</div>
+<ul>
+<li>阿曼苏丹10月5日至6日访哈</li>
+<li>两国元首举行高级别会谈</li>
+<li>重点讨论政治对话与经贸合作</li>
+<li>共同出席哈阿商业论坛</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访将强化哈阿政治互信，推动经贸投资合作，拓展哈国海湾外交空间，并可能促进矿产领域合作，对哈国经济多元化和外交平衡有积极影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/guorenzaigongbingdangdilai-5078f2df/" target="_blank">美国投资人皮谢瓦尔：计划在哈萨克斯坦设立办公室并投资当地未来</a></h3>
+<div class="item-meta">哈通社中文版 · 10/04 17:48<span class="source-link"><a href="https://cn.inform.kz/news/guorenzaigongbingdangdilai-5078f2df/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>美国投资人谢尔文·皮谢瓦尔表示计划在哈萨克斯坦设立办公室并投资当地未来，认为该国工程人才、政府支持和资源基础为人工智能经济提供有利条件，并以Higgsfield为例说明工程潜力。哈萨克斯坦政府副总理兼人工智能和数字发展部长扎斯兰·马迪耶夫表示计划系统推进人工智能经济五个层级发展，从能源和芯片基础设施到本土语言模型及应用解决方案。“哈萨克电信”董事会主席巴格达特·穆辛指出，哈国具备发展计算能力出口的潜力。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 美国投资人皮谢瓦尔：计划在哈萨克斯坦设立办公室并投资当地未来
+正文:
+在谈及哈萨克斯坦人工智能发展前景时，谢尔文·皮谢瓦尔指出，该国工程人才、政府对创新的支持以及资源基础的结合，为发展人工智能经济提供了有利条件。
+“你们拥有许多可以分享的真实案例和实践。比如Higgsfield就是一个很好的例子，它让哈萨克斯坦走到了前列，也展现了哈萨克斯坦人的工程潜力。数十亿美元规模的相关表现本身就说明，你们拥有巨大的工程潜力。这一点值得为之自豪。”他说。
+Министерство искусственного интеллекта и цифрового развития Республики Казахстан 这位投资人表示，哈萨克斯坦具备一系列有助于推动人工智能经济发展的因素。
+“你们拥有优秀人才、工程人才，拥有支持创新和开拓精神的政府，也拥有发展人工智能经济所需要的资源。你们拥有航天工业所需的各种矿产资源、卫星、核能基础设施，还有Higgsfield这样的企业。因此，我希望能在哈萨克斯坦开设办公室，把公司部分业务迁到这里，并开始投资这个国家的未来。”皮谢瓦尔说。
+他还将科技生态系统的形成过程与硅谷的发展进行比较，并指出，随着时间推移，科技生态系统的优势往往会更多体现为无形价值，并建立在不断积累的知识和专业能力基础之上。
+Фото: Жасанды интеллект және цифрлық даму министрлігі 这一表态正值哈萨克斯坦正在讨论人工智能基础设施发展问题之际。哈萨克斯坦政府副总理兼人工智能和数字发展部长扎斯兰·马迪耶夫表示，哈萨克斯坦计划系统推进人工智能经济五个层级的发展，从能源和芯片基础设施，到本土语言模型以及应用解决方案。
+此外，“哈萨克电信”股份公司董事会主席巴格达特·穆辛指出，哈萨克斯坦具备发展计算能力出口的潜力。他表示，通过发展数据中心以及加强与科技公司的合作，哈萨克斯坦有望形成一条人工智能经济发展的新方向。</div>
+<ul>
+<li>美国投资人皮谢瓦尔计划在哈国设办公室并投资未来</li>
+<li>皮谢瓦尔称哈国人才、政府和资源利于AI经济发展</li>
+<li>哈国计划系统推进AI经济五个层级发展</li>
+<li>哈萨克电信称哈国具备计算能力出口潜力</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该投资意向和AI经济发展计划将提升哈萨克斯坦在中亚科技领域的地位，吸引外资，推动经济多元化，减少对资源出口依赖，并可能改变区域矿产和能源格局，增强外交影响力。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-10-05 09:00</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
