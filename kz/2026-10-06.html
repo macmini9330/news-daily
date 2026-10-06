@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年10月6日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年10月6日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年10月05日早9:00至2026年10月06日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 20 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">8</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">6</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">3</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(8 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/zhengxinghuijiangyu6rizailikai-353db1fd/" target="_blank">政府例行会议将于6日在总理府召开</a></h3>
+<div class="item-meta">哈通社中文版 · 10/05 21:44<span class="source-link"><a href="https://cn.inform.kz/news/zhengxinghuijiangyu6rizailikai-353db1fd/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦政府将于6日在总理府召开例行会议，议程为落实“数字哈萨克斯坦”国家战略。会后，人工智能和数字发展部第一副部长科尼亚什金、副部长穆哈梅特哈利耶夫、工业和建设部副部长穆尔扎巴耶夫、财政部副部长图尔索夫将举行新闻发布会。会议可通过总理官网及政府YouTube、Facebook官方主页观看直播。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">政府例行会议将于6日在总理府召开
+
+会议议程：落实“数字哈萨克斯坦”国家战略。
+
+根据会议结果，人工智能和数字发展部第一副部长罗斯季斯拉夫·科尼亚什金、人工智能和数字发展副部长巴赫提亚尔·穆哈梅特哈利耶夫、工业和建设部副部长达尔汗·穆尔扎巴耶夫、财政部副部长阿赛特·图尔索夫将召开新闻发布会。
+
+消息称，可通过总理官网，以及政府在YouTube、 Facebook等社交媒体的官方主页观看会议直播。</div>
+<ul>
+<li>政府例行会议6日在总理府召开</li>
+<li>议程聚焦落实“数字哈萨克斯坦”国家战略</li>
+<li>四名副部长会后将召开新闻发布会</li>
+<li>会议通过总理官网及社交媒体直播</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">会议推动数字战略落实，促进经济数字化转型；多部门副部长参与显示跨部门协作，有助于提升政府治理效率和国际数字合作形象。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/shizhongdixueduodeguojia-e7c76fe0/" target="_blank">副总统：哈萨克斯坦是中亚地区新建学校数量最多的国家</a></h3>
+<div class="item-meta">哈通社中文版 · 10/05 21:14<span class="source-link"><a href="https://cn.inform.kz/news/shizhongdixueduodeguojia-e7c76fe0/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦副总统卡林在教师节庆祝活动上表示，自2023年10月5日教师节正式设立以来，总统府特别招待会已成传统。托卡耶夫总统推动通过《教育者地位法》，教师获“哈萨克斯坦劳动英雄”称号并大幅加薪。过去七年全国新建1301所学校，哈萨克斯坦成为中亚地区新建学校数量最多的国家。卡林强调优秀教师是高素质国家的支柱。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">他指出，虽然教师节是一个职业纪念日，但它实际上已经演变成一场全国性的庆祝活动。
+
+- 2023年，根据国家元首哈斯穆-卓玛尔特·托卡耶夫的决定，10月5日被正式定为教师节。自此，总统在总统府举行特别招待会向教师们表示祝贺的惯例已成为一项珍贵的传统。今天，国家元首再次向资深教育工作者、为教育事业做出杰出贡献的教师，以及取得卓越成就的教师致以崇高的敬意。-卡林说。
+
+副总统表示，托卡耶夫总统一直特别重视提升教师地位并给予他们支持。
+
+- 我们深知，总统上任后做出的首批重要决定之一便与教师相关。正是在他的直接推动下，《教育者地位法》得以通过。教师开始获得国家最高荣誉——“哈萨克斯坦劳动英雄”称号。此外，教师的工资也大幅提高，从而提升了教育行业的竞争力。
+
+总统不仅对教师，而且对整个教育部门都给予了特别支持。仅在过去七年中，全国就新建了1301所学校。值得一提的是，哈萨克斯坦是中亚地区新建学校数量最多的国家。
+
+值此教师节之际，我衷心祝贺各位！正如国家元首所言，“优秀的教师是高素质国家的支柱”。我们祝愿肩负国家未来重任、培养下一代重任的教师们事业有成、前程似锦。-他说。
+
+据此前报道，哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫在总统府出席教师节庆祝活动，向全国教育工作者致以节日祝贺。</div>
+<ul>
+<li>2023年10月5日被正式定为哈萨克斯坦教师节</li>
+<li>托卡耶夫推动通过《教育者地位法》，教师大幅加薪</li>
+<li>过去七年全国新建1301所学校</li>
+<li>哈萨克斯坦是中亚新建学校数量最多的国家</li>
+<li>教师可获“哈萨克斯坦劳动英雄”最高荣誉</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该政策强化了托卡耶夫总统对教育领域的重视，有助于提升教师社会地位和行业竞争力，促进人力资源开发。新建学校数量领先中亚，可增强哈国区域教育影响力，为长期经济发展和外交软实力提供支撑。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/duiguobudegongzuoyi13qishi-9d55f1f3/" target="_blank">针对国防部的检查工作：已立案13起刑事案件</a></h3>
+<div class="item-meta">哈通社中文版 · 10/05 20:58<span class="source-link"><a href="https://cn.inform.kz/news/duiguobudegongzuoyi13qishi-9d55f1f3/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫总统听取国防部全面检查初步结果。曼格斯套州悲剧暴露武装部队系统性问题，军事行动计划制定严重错误，前任领导层缺乏监督。已立案13起刑事案件，5名官员被拘留，涉及挪用国家财产、滥用职权等。总统宣布初步人事决定，强调追究责任，并要求与国防部新领导层制定整改方案，建设现代化军队。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">消息称，托卡耶夫总统会见了负责国防部进行全面检查的委员会成员。
+国家元首听取了关于已开展工作初步结果的汇报。委员会主席兼安全委员会副主席阿依达·巴拉耶娃介绍了针对此次检查重点领域的调查结果。
+会议指出，曼格斯套州发生的悲剧事件暴露了武装部队内部长期积累的系统性问题。
+初步调查结果显示，军事行动计划制定过程中出现了严重错误，且前任领导层缺乏有效监督。
+国家元首宣布已做出初步人事决定，但强调所有对军人死亡负有责任的官员必须依法追究责任。此事将继续由总统亲自监督。
+根据第一阶段的检查结果，执法部门已针对国防部下属机构及部门在运作过程中存在的挪用国家财产、滥用职权及其他违规行为，立案调查13起刑事案件。
+Фото: Ақорда 针对指挥人员涉嫌玩忽职守的审前调查正在进行中。已有五名官员被拘留。待调查结束后，将对他们的行为作出明确的法律定性。
+此外，还发现军纪和预防措施方面存在重大缺陷。查获了欺凌和违反军规的行为，并已立案调查。有关方面正重点关注安全要求合规性、服役条件、后勤保障以及针对人员的教育工作组织等问题。
+托卡耶夫指示该委员会与国防部新任领导层合作，针对已发现的不足之处制定具体的整改方案。在制定武装力量改革计划时，必须将此次检查的结果纳入考量。
+Фото: Ақорда 会议强调，必须建设一支能够有效应对当代挑战的现代化军队。这种现代化特征应体现在严明的军纪、军人服役期间良好的保障条件以及更高水平的安全保障上。
+此外，会议强调，必须客观开展全面检查，且不得削弱军队的战备状态。
+总统强调，武装部队必须严格遵守“法律与秩序”的宪法原则。</div>
+<ul>
+<li>国防部检查立案13起刑事案件，5名官员被拘留</li>
+<li>曼格斯套州悲剧暴露武装部队系统性问题</li>
+<li>总统宣布初步人事决定，强调追究责任</li>
+<li>发现军纪重大缺陷，包括欺凌和违反军规</li>
+<li>要求制定整改方案，建设现代化军队</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次检查及立案将推动哈国国防部人事调整与军队改革，强化总统对安全机构的控制，可能影响与俄罗斯等国的军事合作，同时提振国内法治信心。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/guojiagaochang-2ea42089/" target="_blank">国家元首接见最高审计院院长</a></h3>
+<div class="item-meta">哈通社中文版 · 10/05 20:16<span class="source-link"><a href="https://cn.inform.kz/news/guojiagaochang-2ea42089/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫接见最高审计院院长斯马伊洛夫，听取国防部预算支出效率专项审计汇报。审计覆盖50个设施（含48个军事单位），评估后勤、战备、训练、基建、装备现代化及数字系统。审计后向政府和相关机构提出57项建议纠正违规。托卡耶夫还听取经济和社会领域审计进展，并了解阿斯塔纳首次举办的亚洲最高审计机关组织理事会第63次会议成果，19国代表出席。总统就国防部审计及完善国家审计体系下达具体指示。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 国家元首接见最高审计院院长
+正文:
+会谈中，托卡耶夫听取了关于国防部目前正在进行的预算支出效率专项审计情况的汇报。
+斯马伊洛夫表示，此次大规模检查涵盖50个设施，其中包括48个军事单位。为此，已组建一支由国家审计系统顶尖专家，以及信息技术和通信领域专家组成的特别小组。此次审计将评估武装部队所有关键行动领域的状况。
+具体来说，将对部队后勤保障、人员战备状态、军事训练演习开展情况、军事基础设施建设、武器装备现代化，以及数字系统的顺畅运行等方面进行全面检查。
+总统获悉了针对国家国防采购所进行的审计结果。
+根据审计结果，最高审计院向政府和相关国家机构提出了57项具体建议和指示，要求其纠正已发现的违规行为。此外，国家元首听取了关于计划审计进展情况的汇报，该审计涵盖经济发展和社会领域的优先领域。
+此外，斯马伊洛夫还介绍了在阿斯塔纳举行的亚洲最高审计机关组织（ASOSAI）理事会第63次会议的成果。来自19个国家的代表出席了此次会议。这是哈萨克斯坦首次举办此类形式的会议。
+最后，托卡耶夫总统就国防部审计工作及进一步完善国家整体审计体系下达了具体指示。</div>
+<ul>
+<li>国防部专项审计覆盖50个设施，含48个军事单位</li>
+<li>审计评估后勤、战备、训练、基建、装备及数字系统</li>
+<li>审计后提出57项建议纠正违规行为</li>
+<li>阿斯塔纳首次举办ASOSAI理事会会议，19国出席</li>
+<li>托卡耶夫就国防审计及国家审计体系下达指示</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">强化国防预算监督，提升军事支出透明度与效率，推动审计体系改革；对哈国政治增强问责，经济优化资源配置，外交借ASOSAI会议提升国际形象，矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/buchang-5fefc81f/" target="_blank">托卡耶夫总统接见内务部长萨德诺夫</a></h3>
+<div class="item-meta">哈通社中文版 · 10/05 19:46<span class="source-link"><a href="https://cn.inform.kz/news/buchang-5fefc81f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫接见内务部长萨德诺夫，听取治安工作汇报。今年前九个月全国犯罪率下降15%，犯罪案件减少超11000起。追回490亿坚戈，同比增长22.5%；返还网络诈骗受害者65亿坚戈，此类犯罪下降21%。屏蔽8700个欺诈网站，拦截1.87亿个诈骗电话。交通事故减少5%，死亡人数减少16%。总统就提升法律秩序下达具体指示。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫总统接见内务部长萨德诺夫
+
+会谈期间，萨德诺夫向总统汇报了国内治安形势及内务机关落实“法律与秩序”原则的相关工作进展。
+
+内务部长称，根据今年前九个月的数据，全国犯罪率下降了15%。
+
+具体而言，与上一年相比，犯罪案件数量减少了11000多起。特别严重的犯罪案件、发生在公共场所、街道和家庭内部的犯罪案件，以及未成年人和有前科人员的犯罪案件均有所下降。
+
+萨德诺夫表示，过去几年里已侦破了2500多起案件。包括DNA分析在内的现代法医技术，使得识别多年前所犯罪行涉案人员成为可能。
+
+公众积极协助警方维护法治与社会秩序。今年以来，根据市民、志愿者及协助人员提供的信息，已预防或制止了超过12,000起行政违法行为，并侦破了357起刑事案件。
+
+内务部长表示，与外国执法机构的合作使得惩罚不可避免。查获通缉人员1039人，逮捕旅居海外人员154人。应外国要求，哈萨克斯坦境内逮捕了537名犯罪分子。
+
+内务部报告称，自今年年初以来，在针对正在调查的刑事案件采取的行动中，已追回490亿坚戈。这比去年同期增长了22.5%。
+
+数据显示，超过65亿坚戈已返还给遭受网络诈骗的公民。此类犯罪数量下降了21%。为遏制此类活动，当局已屏蔽8700个欺诈和钓鱼网站，并拦截了1.87亿个诈骗电话。
+
+萨德诺夫介绍了关于开发数字机制以保障公共安全的相关情况。在视频监控网络的协助下，已有超过2200人被确认身份并被拘留。
+
+他同时还指出，正在积极采用数字化解决方案，以确保道路安全。这些措施加强了预防工作，使交通事故数量减少了5%。此外，死亡人数减少了16%，受伤人数减少了7%。
+
+听取汇报后，托卡耶夫总统针对进一步提升国家法律秩序和公共安全水平下达了一系列具体指示。</div>
+<ul>
+<li>前九月犯罪率降15%，案件减少超11000起</li>
+<li>追回490亿坚戈，同比增22.5%</li>
+<li>网络诈骗降21%，返还65亿坚戈</li>
+<li>屏蔽8700个欺诈网站，拦截1.87亿诈骗电话</li>
+<li>交通事故降5%，死亡人数降16%</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">治安改善有助于巩固托卡耶夫政府国内治理合法性，增强社会稳定性；追回资金和打击网络诈骗利好经济秩序与投资环境；与外国执法合作强化了哈国国际执法协作形象，但需关注数字化监控对公民权利的潜在影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/quanguoyirishidaguojiade-1a9603ae/" target="_blank">托卡耶夫向全国教师致以节日祝贺：优秀教师是强大国家的基石</a></h3>
+<div class="item-meta">哈通社中文版 · 10/05 18:39<span class="source-link"><a href="https://cn.inform.kz/news/quanguoyirishidaguojiade-1a9603ae/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫在教师节之际发表贺词，强调教师是强大国家的基石。他指出哈萨克斯坦有超过400万名中小学生，过去七年建设了1342所学校，可容纳超100万名学生。今年还有101所学校在建，“未来学校”项目已建成217所，其中84所位于农村。今年超过1.2万名毕业生获得教育学国家助学金，教师专业奖学金提高至2.5倍，新招聘超1.5万名教师。总统要求推进人工智能课程进入中小学，并解决学校短缺问题。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫向全国教师致以节日祝贺：优秀教师是强大国家的基石
+
+托卡耶夫指出，教师在每个人的成长过程中都具有特殊地位。尤其是在信息快速传播、先进技术迅猛发展的今天，教师的作用更加重要。
+
+“尊重教师群体，感谢他们为国家未来付出的辛勤劳动，是我们共同的责任。”托卡耶夫说。
+
+总统表示，作为国家元首，他始终高度重视对教师的全方位支持。
+
+近年来，哈萨克斯坦通过了《教师地位法》，并在国家荣誉体系中增设“哈萨克斯坦功勋教师”称号，多名教师还获得国家最高荣誉之一的“哈萨克斯坦劳动英雄”称号。10月5日也被正式确定为教师职业节日。
+
+托卡耶夫强调，在全国范围内弘扬尊师重教风尚的工作将继续推进，这对于国家具有重要意义。
+
+托卡耶夫指出，年轻一代应当生活在发达国家、安全环境和文明社会之中。目前，哈萨克斯坦拥有超过400万名中小学生，相当于全国约每五名居民中就有一人在校学习。
+
+总统表示，一个文明、先进国家的实力首先取决于人力资本质量，而不是自然资源禀赋。一个国家在世界上的地位及其经济潜力，同样与教育和科学发展水平密切相关。
+
+“过去七年，我们在全国建设了1342所学校，可容纳超过100万名学生。今年还有101所学校正在建设。”总统说。
+
+在“未来学校”国家项目框架下，哈萨克斯坦形成了新的教育设施建设标准。目前已建成217所此类学校，可容纳46万名学生，其中84所、即接近40%位于农村地区。
+
+托卡耶夫强调，无论农村还是城市，学校都应成为能够为儿童提供同等优质教育的现代化教育机构。
+
+目前，哈萨克斯坦正在推进以人工智能技术为基础的专项课程大规模进入中小学。总统要求政府高度重视相关工作，同时确保各地区不再面临学校短缺问题。
+
+托卡耶夫表示，近年来选择教师职业的年轻人不断增加，这是一个积极趋势。
+
+今年，超过1.2万名毕业生获得教育学专业国家助学金，其中包括2000多名“金质徽章”优秀毕业生。选择教师专业的大学生奖学金已经提高至原来的2.5倍。
+
+新学年开始前，全国各地区共招聘超过1.5万名教师，其中近一半为年轻专业人才。
+
+“这意味着，一批知识丰富、充满活力、思维敏捷的新一代教师正在走进学校。可以说，优秀教师就是强大国家的基石。”托卡耶夫说。</div>
+<ul>
+<li>托卡耶夫强调优秀教师是强大国家的基石</li>
+<li>全国超400万中小学生，七年建1342所学校</li>
+<li>未来学校项目已建成217所，84所在农村</li>
+<li>今年1.2万余人获教育学国家助学金</li>
+<li>新招聘超1.5万名教师，近半为年轻人才</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该政策强化人力资本优先导向，有助于缓解城乡教育不均，提升长期经济竞争力；同时以教育现代化推动社会文明和安全环境建设，巩固国家认同，减少对自然资源的依赖。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/16yixiajiangshiyong-chu-3bd6e999/" target="_blank">16岁以下账号或将暂停使用 哈萨克斯坦拟出台社交平台新规</a></h3>
+<div class="item-meta">哈通社中文版 · 10/05 18:18<span class="source-link"><a href="https://cn.inform.kz/news/16yixiajiangshiyong-chu-3bd6e999/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦政府起草法律修正案，拟规范16岁以下用户在在线平台注册，目前正由库鲁尔泰审议。修正案通过后将制定年龄核验专门规则，考虑人工智能身份识别、浏览内容及使用活跃度等技术机制，并设置过渡期，可能暂时停用16岁以下用户现有账号。相关文件将与在哈设有代表机构的在线平台共同讨论，核心原则是防止个人数据泄露。措施旨在保护儿童数字空间权益，具体实施机制将由工作组进一步细化。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">别克帖诺夫表示，政府已起草现行法律修正案，对16岁以下用户在在线平台注册问题进行规范。目前，相关修正案正在哈萨克斯坦库鲁尔泰审议。
+法律修正案通过后，将制定在线平台用户年龄核验专门规则。在制定过程中，将考虑在线平台现有技术机制，包括借助人工智能进行身份识别，以及结合用户浏览内容和使用活跃度等因素。目前，在线平台已经具备相应技术条件。- 别克帖诺夫说。
+他指出，为确保新要求能够有效落实，相关规定正式实施前将设置过渡期。
+届时将考虑暂时停用16岁以下在线平台用户现有账号。相关规范性法律文件将与在哈萨克斯坦境内设有代表机构的在线平台共同讨论。拟议方案将以在防止用户个人数据泄露的前提下核验年龄为基本原则。- 他说。
+别克帖诺夫表示，这一措施旨在保护儿童在数字空间中的权利和合法利益，并为未成年人营造更加安全的数字环境。
+他还指出，相关限制措施的具体实施机制，将在与库鲁尔泰议员组成的工作组讨论过程中进一步细化。</div>
+<ul>
+<li>政府起草修正案规范16岁以下用户在线平台注册</li>
+<li>修正案正由哈萨克斯坦库鲁尔泰审议</li>
+<li>将制定年龄核验规则，借助AI识别等技术</li>
+<li>拟设置过渡期，或暂停16岁以下现有账号</li>
+<li>措施旨在保护儿童数字权益，防止数据泄露</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该新规将强化哈国对数字空间的监管，影响在线平台运营与用户数据管理，推动AI身份识别技术应用。政治上体现对未成年人保护的重视，外交上或引发与外国平台的数据合规协商，经济上增加平台合规成本，矿产格局无直接关联。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/duogao-5b37ffdc/" target="_blank">托卡耶夫总统任命多名高级官员</a></h3>
+<div class="item-meta">哈通社中文版 · 10/05 13:15<span class="source-link"><a href="https://cn.inform.kz/news/duogao-5b37ffdc/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫签署多项命令，任命奥玛尔别阔夫为国防部第一副部长兼武装力量总参谋长，哈谢诺夫为国家警卫局副局长兼特种部队司令。同时，解除叶斯卡拉耶夫驻印度、孟加拉、不丹、马尔代夫和尼泊尔大使职务，改任总统办公厅国家法律部主任。此前10月3日，托卡耶夫已解除国防部第一副部长兼总参谋长、副部长及海军总司令职务。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">根据国家元首签署的命令，阿依特库尔曼·卓拉曼吾勒·奥玛尔别阔夫被任命为哈萨克斯坦共和国国防部第一副部长兼武装力量总参谋长，并解除其此前担任的职务。
+根据另一项命令，阿扎马特·巴赫特詹吾勒·哈谢诺夫被任命为哈萨克斯坦共和国国家警卫局副局长兼特种部队司令。
+此外，根据总统令，阿扎马特·涅西普拜吾勒·叶斯卡拉耶夫被解除哈萨克斯坦共和国驻印度共和国特命全权大使，以及兼任驻孟加拉人民共和国、不丹王国、马尔代夫共和国和尼泊尔特命全权大使职务。
+随后，根据国家元首签署的命令，叶斯卡拉耶夫被任命为哈萨克斯坦共和国总统办公厅国家法律部主任。
+此前，10月3日，托卡耶夫总统签署命令，解除国防部第一副部长兼武装力量总参谋长、国防部副部长以及武装力量海军总司令职务。</div>
+<ul>
+<li>奥玛尔别阔夫任国防部第一副部长兼总参谋长</li>
+<li>哈谢诺夫任国家警卫局副局长兼特种部队司令</li>
+<li>叶斯卡拉耶夫被解除驻五国大使职务</li>
+<li>叶斯卡拉耶夫改任总统办公厅国家法律部主任</li>
+<li>10月3日已解除国防部及海军高层职务</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次人事调整强化了总统对国防和安全系统的直接控制，有助于提升军队指挥效率。外交官转任法律部门，可能预示总统办公厅法律事务将加强。对矿产格局无直接影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(6 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/chufafatongdengjihuididahui-87ad3b5b/" target="_blank">哈萨克斯坦代表出席亚洲宪法法院及同等机构协会第七届大会</a></h3>
+<div class="item-meta">哈通社中文版 · 10/05 23:52<span class="source-link"><a href="https://cn.inform.kz/news/chufafatongdengjihuididahui-87ad3b5b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦宪法法院代表团由副院长巴赫特·努尔穆哈诺夫率领，出席亚洲宪法法院及同等机构协会第七届大会。来自18个以上国家的宪法法院和最高法院院长、国际组织代表及法律专家参会。努尔穆哈诺夫介绍了哈国数字化转型举措，并指出这些举措已载入2026年3月15日全民公决通过的新宪法。会议聚焦数字环境法律基础、司法独立、人工智能应用、个人数据保护等议题，通过了《撒马尔罕宣言》。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦代表出席亚洲宪法法院及同等机构协会第七届大会
+正文:
+来自18个以上国家的宪法法院和最高法院院长，以及国际组织代表和法律专家出席了此次会议。哈萨克斯坦宪法法院代表团介绍了其在数字化与人工智能背景下关于宪法司法的相关举措。
+哈萨克斯坦宪法法院代表团由副院长巴赫特·努尔穆哈诺夫率领。他在发言中介绍了哈萨克斯坦在数字化转型方面的举措，并指出这些举措已载入经2026年3月15日全民公决通过的新宪法之中。
+Фото: Конституциялық сот 会议重点关注了构建数字环境的法律基础，包括保障人身安全、平衡公共和私人利益、确保数字环境的可访问性，以及探讨数字伦理和社会责任。
+与会代表讨论了数字环境下的司法独立、人权与法治保障、人工智能应用、个人数据保护、网络安全以及程序保障等议题。
+大会通过了《撒马尔罕宣言》，旨在推动数字与技术转型背景下的宪法司法发展、人权保障、法治建设及国际合作。</div>
+<ul>
+<li>18国以上代表出席亚洲宪法法院协会第七届大会</li>
+<li>哈宪法法院副院长努尔穆哈诺夫率团参会</li>
+<li>哈数字化转型举措载入2026年新宪法</li>
+<li>会议聚焦数字司法、AI应用与数据保护</li>
+<li>大会通过《撒马尔罕宣言》推动国际合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国政治与外交而言，此次参会强化了其在中亚区域宪法司法合作中的存在感，新宪法中的数字化条款获得国际展示。经济上间接推动数字治理环境优化，矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/liangguozhijiandezuolida-45d2709a/" target="_blank">托卡耶夫总统：两国之间的合作潜力巨大</a></h3>
+<div class="item-meta">哈通社中文版 · 10/05 22:40<span class="source-link"><a href="https://cn.inform.kz/news/liangguozhijiandezuolida-45d2709a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在机场与阿曼苏丹海赛姆·本·塔里克·阿勒赛义德举行简短会谈，称此次访问对双边关系具有历史意义。托卡耶夫指出阿曼经济发展成就显著，是国际舞台上积极主动的调解人，两国合作潜力巨大，需大幅拓展合作范围。阿曼苏丹感谢热情款待，相信明日会谈富有实质内容且卓有成效。访问行程包括高层会谈、签署多项重要文件及出席哈萨克斯坦-阿曼商业论坛。阿曼苏丹于10月5日至6日对哈进行国事访问。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">两国领导人在机场进行了简短会谈。国家元首指出，阿曼苏丹此次访问对双边关系发展具有历史意义。
+- 阿曼苏丹国在经济发展方面取得了巨大成就，并在国际舞台上以积极主动、富有建设性的调解人而闻名。贵国在地区内外，包括哈萨克斯坦在内，都享有很高的声望。我相信，我们两国之间拥有巨大的合作潜力。我们面临的任务是大幅拓展合作范围。-总统说。
+Фото: Акорда 阿曼苏丹感谢托卡耶夫总统的热情款待，并表示相信明日的会谈将富有实质内容且卓有成效。
+此次访问行程包括高层会谈、签署多项重要文件，以及两国元首出席哈萨克斯坦-阿曼商业论坛。
+据此前报道，应哈萨克斯坦共和国总统哈斯穆-卓玛尔特·托卡耶夫邀请，阿曼苏丹国苏丹海赛姆·本·塔里克·阿勒赛义德将于10月5日至6日对哈萨克斯坦进行国事访问。</div>
+<ul>
+<li>托卡耶夫称阿曼苏丹访问对双边关系具有历史意义</li>
+<li>两国合作潜力巨大，需大幅拓展合作范围</li>
+<li>访问行程包括高层会谈、签署重要文件和商业论坛</li>
+<li>阿曼苏丹于10月5日至6日对哈萨克斯坦进行国事访问</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访将深化哈阿政治互信，拓展经贸与投资合作，助力哈国经济多元化；阿曼作为海湾调解人，可提升哈国在中东的外交空间；双方在矿产与能源领域合作潜力大，有望优化哈国矿产格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/zidaoji-359a5079/" target="_blank">阿曼苏丹飞抵阿斯塔纳 托卡耶夫总统亲自到机场迎接</a></h3>
+<div class="item-meta">哈通社中文版 · 10/05 22:18<span class="source-link"><a href="https://cn.inform.kz/news/zidaoji-359a5079/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫亲自到阿斯塔纳机场迎接阿曼苏丹海赛姆·本·塔里克·阿勒赛义德。阿曼苏丹专机进入哈领空后由哈空军战机护航至阿斯塔纳机场，机场举行仪仗队欢迎仪式。应托卡耶夫邀请，阿曼苏丹于10月5日至6日对哈萨克斯坦进行国事访问。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据总统府新闻局消息，哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫亲自到机场迎接阿曼苏丹的到来。
+
+消息称，自进入哈萨克斯坦领空起，阿曼苏丹专机便由哈萨克斯坦空军战机护航直至阿斯塔纳机场。
+
+为迎接阿曼苏丹到访，机场停机坪前列队举行了仪仗队欢迎仪式。
+
+据此前报道，应哈萨克斯坦共和国总统哈斯穆-卓玛尔特·托卡耶夫邀请，阿曼苏丹国苏丹海赛姆·本·塔里克·阿勒赛义德将于10月5日至6日对哈萨克斯坦进行国事访问。</div>
+<ul>
+<li>托卡耶夫亲自到机场迎接阿曼苏丹</li>
+<li>阿曼苏丹专机由哈空军战机护航</li>
+<li>机场举行仪仗队欢迎仪式</li>
+<li>阿曼苏丹10月5日至6日国事访问</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访将深化哈萨克斯坦与阿曼的政治互信，拓展经贸与投资合作，并可能推动哈国在矿产、能源领域的多元化外交布局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/guojiashengri-74650ecf/" target="_blank">国家元首向塔吉克斯坦总统致生日贺电</a></h3>
+<div class="item-meta">哈通社中文版 · 10/05 19:10<span class="source-link"><a href="https://cn.inform.kz/news/guojiashengri-74650ecf/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫向塔吉克斯坦总统拉赫蒙致生日贺电，强调拉赫蒙在塔吉克斯坦独立建国、和平和谐及长远发展中的历史性贡献，并赞扬其在加强两国战略伙伴与同盟关系中的作用。电话会谈中，双方对双边合作发展速度表示满意，强调拓展各领域联系，并就国际和地区紧迫问题及即将举行的会议日程交换意见。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 国家元首向塔吉克斯坦总统致生日贺电
+正文:
+贺电中，托卡耶夫强调了埃莫马利·拉赫蒙在塔吉克斯坦独立国家构建、和平与和谐确立，以及国家长远发展方面所作出的历史性贡献。
+哈萨克斯坦总统高度赞扬塔吉克斯坦领导人在加强两国战略伙伴关系和同盟关系方面发挥的作用——两国关系植根于数百年来的友谊和相互支持。
+电话会谈中，托卡耶夫总统和埃莫马利·拉赫蒙对双边合作的发展速度表示满意。他们还强调，应在所有国家间互动领域拓展哈萨克斯坦和塔吉克斯坦的联系。
+两国元首就国际和地区议程中的紧迫问题交换了意见，并讨论了即将举行的会议日程。</div>
+<ul>
+<li>托卡耶夫致电祝贺拉赫蒙生日</li>
+<li>赞扬拉赫蒙历史性贡献与双边关系</li>
+<li>双方满意合作速度，强调拓展联系</li>
+<li>就国际地区问题及会议日程交换意见</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此贺电与通话巩固哈塔战略伙伴与同盟关系，有利于中亚地区稳定与合作。双方讨论国际地区问题及会议日程，显示外交协调加强，可能推动经贸、安全等领域合作，对哈国政治外交有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/guodashizhongdedaxianxin-6a1ab3f0/" target="_blank">英国大使眼中的哈萨克斯坦建筑：大胆、现代且充满雄心</a></h3>
+<div class="item-meta">哈通社中文版 · 10/05 17:56<span class="source-link"><a href="https://cn.inform.kz/news/guodashizhongdedaxianxin-6a1ab3f0/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>英国大使阿克斯沃西高度评价哈萨克斯坦建筑，称其大胆、现代且体现国家雄心。她提到Foster + Partners设计的阿斯塔纳和平和谐宫和“可汗之帐”，Zaha Hadid Architects设计的国家银行新办公楼，以及Chapman Taylor设计的阿拉木图艺术博物馆等英国事务所的贡献。她指出哈英合作已从地标建设转向景观设计、城市规划和公共空间，关注步行基础设施、绿地和气候适应能力，并认为阿拉木图、卡拉干达和塔拉兹是苏联时期规划较完善的案例。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">英国大使眼中的哈萨克斯坦建筑：大胆、现代且充满雄心
+
+我认为，第一次来到哈萨克斯坦的人都会被这里的建筑所震撼。这里似乎给了建筑师充分的自由，让他们能够把自己的创意和想象变成现实。这是一座体现国家雄心的城市。阿克斯沃西说。
+
+她指出，哈萨克斯坦的现代城市建筑有助于改变外国访客对该国的固有认知。
+
+这是一座能够打破外国人对哈萨克斯坦各种先入之见的城市。这样的城市确实独一无二。
+
+阿克斯沃西特别提到英国建筑事务所在哈萨克斯坦城市建设中的贡献。
+
+她表示，阿斯塔纳和平和谐宫，也就是人们熟知的“金字塔”，以及“可汗之帐”购物娱乐中心均由Foster + Partners参与设计；哈萨克斯坦国家银行新办公楼则由Zaha Hadid Architects设计。
+
+谈到阿拉木图近年来的新文化建筑时，她还提到由英国建筑事务所Chapman Taylor设计的阿拉木图艺术博物馆，以及由建筑师阿西夫·汗打造的“Целинный”当代文化中心。
+
+在我看来，这些建筑都从当地自然景观和传统文化中汲取了灵感，同时又带来了完全不同、十分现代的表达。
+
+阿克斯沃西认为，如今哈英两国在建筑和城市发展领域面临的课题，已经不仅仅是建设更多地标性建筑。
+
+今天的问题已经不只是我们能建多少座建筑，而是人们如何感受这些建筑，以及如何使用建筑之间的城市空间。
+
+她表示，哈萨克斯坦对英国在景观设计、城市规划和公共空间建设方面的经验表现出越来越浓厚的兴趣。
+
+相关合作方向包括发展步行基础设施、扩大城市绿地、完善公共空间，以及推进以人为本的城市设计。
+
+如何打造更健康的社区？如何鼓励人们多步行、多骑自行车、多进行户外活动？如何让城市街区更加绿色，并具备更强的气候适应能力？又如何在促进经济增长的同时，提高居民生活质量？这些都是城市规划需要回答的问题。
+
+英国大使还提到哈萨克斯坦自身的城市规划传统。
+
+她认为，阿拉木图、卡拉干达和塔拉兹都可以被视为苏联时期规划较为完善的城市案例。
+
+我认为，建设宜居城市的理念已经融入哈萨克斯坦的“基因”。我希望双方能够共同重新激活这一传统，并在现代城市发展中继续推进。</div>
+<ul>
+<li>英国大使称哈萨克斯坦建筑大胆现代，体现国家雄心</li>
+<li>Foster + Partners、Zaha Hadid等英国事务所参与哈国地标设计</li>
+<li>哈英合作转向景观设计、城市规划和公共空间建设</li>
+<li>关注步行基础设施、城市绿地和气候适应能力</li>
+<li>阿拉木图、卡拉干达和塔拉兹被视为苏联时期规划较完善案例</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">提升哈国国际形象，深化哈英在建筑与城市规划领域合作，推动以人为本的城市设计和气候适应型基础设施建设，助力宜居城市传统复兴。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/rengongnengchengweizhanguanzuofang-6a7e3d05/" target="_blank">人工智能成为哈印战略伙伴关系合作新方向</a></h3>
+<div class="item-meta">哈通社中文版 · 10/05 14:11<span class="source-link"><a href="https://cn.inform.kz/news/rengongnengchengweizhanguanzuofang-6a7e3d05/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>印度2024年启动IndiaAI Mission计划，2026年2月在新德里举行AI Impact Summit，莫迪提出“在印度开发，为世界和人类服务”。哈萨克斯坦总理别克帖诺夫与会，表示哈正在建设“区域数字枢纽”，人工智能是国家战略支柱。两国2014年已成立信息通信技术专业能力中心，2026年9月金砖峰会期间托卡耶夫与莫迪讨论先进技术、能源、关键矿产合作。人工智能有望成为哈印战略伙伴关系新方向。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">近年来，印度将人工智能视为推动国家数字化转型的重要工具。2024年，印度政府启动IndiaAI Mission计划，重点发展本土人工智能技术、支持初创企业、扩大算力基础设施，并推动人工智能技术在社会领域的应用。
+2026年2月在新德里举行的AI Impact Summit期间，印度总理纳伦德拉·莫迪提出，要推动印度不仅成为人工智能技术研发国，也成为面向全球提供相关技术的中心。
+莫迪将这一理念概括为“在印度开发，为世界和人类服务”。
+人工智能同样已成为哈萨克斯坦重点发展的战略方向。在上述峰会期间，哈萨克斯坦总理沃勒扎斯·别克帖诺夫与莫迪举行会谈，双方就人工智能、数字化、能源及其他新技术领域合作进行了讨论。
+别克帖诺夫在峰会上表示，哈萨克斯坦正在建设“区域数字枢纽”，人工智能是国家发展的战略支柱之一。
+“人工智能应当具有包容性和自主性，更重要的是，它应当成为推动经济关键领域转型的工具。”别克帖诺夫说。
+事实上，哈印两国在信息技术领域的合作已有一定基础。2014年，位于阿斯塔纳的古米廖夫欧亚国立大学与印度先进计算发展中心（Centre for Development of Advanced Computing）签署协议，成立印度—哈萨克斯坦信息通信技术专业能力中心。
+2026年9月在新德里举行的金砖国家峰会期间，哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫与莫迪举行会晤。双方除讨论政治和经贸关系外，还就先进技术、能源、关键矿产等领域的合作交换了意见。
+今年恰逢莫迪从政25周年，其政治生涯与印度近年来的数字化转型进程密切交织。随着两国均将人工智能列为重要发展方向，人工智能及相关数字技术有望成为哈印战略伙伴关系进一步发展的重要合作领域。</div>
+<ul>
+<li>印度2024年启动IndiaAI Mission计划，推动本土AI发展</li>
+<li>2026年2月新德里AI峰会，莫迪提出“在印度开发，为世界服务”</li>
+<li>哈总理别克帖诺夫参会，称哈建设区域数字枢纽，AI为战略支柱</li>
+<li>哈印2014年已成立信息通信技术专业能力中心</li>
+<li>2026年9月金砖峰会，托卡耶夫与莫迪讨论技术、能源、矿产合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">哈印AI合作将推动哈国数字化转型和区域数字枢纽建设，助力经济关键领域升级；深化外交战略伙伴关系，拓展能源与关键矿产合作，增强哈国在欧亚数字格局中的地位。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/10yue5ri-herenminqing-3726d697/" target="_blank">10月5日终盘 美元、卢布和人民币兑坚戈汇率情况</a></h3>
+<div class="item-meta">哈通社中文版 · 10/05 23:23<span class="source-link"><a href="https://cn.inform.kz/news/10yue5ri-herenminqing-3726d697/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>10月5日，哈萨克斯坦KASE交易所28个成员参与交易。美元兑坚戈平均报455.36，涨7.00坚戈，交易额6.4514亿美元；欧元兑坚戈平均报509.04，涨4.31坚戈，交易额707.6万欧元；卢布兑坚戈平均报5.3838，涨0.0077坚戈，交易额28.2537亿卢布；人民币兑坚戈平均报67.8235，涨1.0030坚戈，交易额1312万元。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 10月5日终盘 美元、卢布和人民币兑坚戈汇率情况
+正文:
+28个KASE成员参与了交易。
+根据现货市场交易结果： 美元兑坚戈（交易工具USDKZT_TOM）汇率平均报价为1: 455.36（+7.00坚戈），外汇交易总额为6.4514亿美元（+1.8781亿美元）。交易过程中，最新报价为1:450.00坚戈，最高报价为1:458.05坚戈。
+欧元兑坚戈（交易工具EURKZT_TOM）汇率平均报价为1: 509.04（+4.31坚戈），外汇交易总额为707.6万欧元（-445.6万欧元）。交易过程中，最低报价为1:503.60坚戈，最高报价为1:513.66坚戈。
+卢布兑坚戈（交易工具RUBKZT_TOM）汇率平均报价为1:5.3838（+0.0077坚戈），外汇交易总额28.2537亿卢布（-7.1609亿卢布）。交易过程中，最低报价为1:5.3499坚戈，最高报价为1: 5.4208坚戈。
+人民币兑坚戈（交易工具CNYKZT_TOD）汇率平均报价为1:67.8235（+1.0030坚戈），外汇交易总额1312万元（-983万元）。交易过程中，最低报价为1:67.1500坚戈，最高报价为1:68.2655坚戈。</div>
+<ul>
+<li>美元兑坚戈平均报455.36，涨7.00坚戈，交易额6.4514亿美元</li>
+<li>欧元兑坚戈平均报509.04，涨4.31坚戈，交易额707.6万欧元</li>
+<li>卢布兑坚戈平均报5.3838，涨0.0077坚戈，交易额28.2537亿卢布</li>
+<li>人民币兑坚戈平均报67.8235，涨1.0030坚戈，交易额1312万元</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈对主要货币普遍贬值，可能加大输入性通胀压力，促使央行维持紧缩政策；美元交易额增加显示外汇需求上升，或影响外汇储备管理；人民币汇率上升反映中哈贸易结算成本变化，对双边经贸合作产生一定影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/yinianshang15-b1f48f2a/" target="_blank">哈萨克斯坦房价一年上涨15% 优惠房贷增长27%</a></h3>
+<div class="item-meta">哈通社中文版 · 10/05 15:56<span class="source-link"><a href="https://cn.inform.kz/news/yinianshang15-b1f48f2a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2025年哈萨克斯坦新房和二手房价格全年均上涨约15%，2026年上半年涨幅放缓但仍高于通胀，交易量同比略有下降。同期优惠住房贷款发放规模同比增长27%，约5000亿坚戈从统一累积养老基金提取用于改善住房条件。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据他介绍，2025年房地产市场整体较为活跃，新房和二手房市场价格全年均上涨约15%。
+
+- 2025年市场总体保持活跃。全年两个市场的房价均上涨了15%。2026年上半年，房价涨幅有所放缓，但仍高于通货膨胀水平。- 扎尔肯拜说。
+
+与此同时，2026年上半年房地产市场交易数量较2025年同期有所减少。
+
+- 如果通过房屋买卖交易数量来观察市场活跃度，那么2026年上半年交易数量较2025年上半年略有下降。- 他说。
+
+不过，同期优惠住房贷款发放规模有所增加。
+
+数据显示，2026年上半年，哈萨克斯坦优惠住房贷款发放规模同比增长27%。
+
+此外，居民从统一累积养老基金提取资金用于改善住房条件的规模仍然较大。
+
+- 2026年上半年，约有5000亿坚戈从统一累积养老基金中被提取，用于改善住房条件。- 扎尔肯拜表示。</div>
+<ul>
+<li>2025年哈国房价全年上涨约15%</li>
+<li>2026年上半年房价涨幅放缓但仍高于通胀</li>
+<li>2026年上半年房产交易量同比略降</li>
+<li>优惠住房贷款发放规模同比增长27%</li>
+<li>约5000亿坚戈养老基金提取用于住房</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">房价上涨加重居民购房负担，但优惠房贷和养老基金提取支撑住房需求，反映政府稳楼市意图；交易量下降或抑制建筑及相关行业，对经济形成一定压力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/liangnianzhe5026-6e09a4b0/" target="_blank">哈萨克斯坦近两年向患者支付5.026亿坚戈保险赔偿</a></h3>
+<div class="item-meta">哈通社中文版 · 10/05 11:24<span class="source-link"><a href="https://cn.inform.kz/news/liangnianzhe5026-6e09a4b0/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦《医务人员职业责任保险法》2024年10月生效。截至2026年9月1日，17.8296万名医务人员参保，其中公立15.5856万人、私立2.244万人。2026年初以来签订1867份保险合同，完成112笔赔付，近两年向患者支付5.026亿坚戈赔偿。患者可申请独立专家委员会审查，确认保险事故后由保险公司赔付，医务人员获财务风险保障。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦近两年向患者支付5.026亿坚戈保险赔偿
+
+哈萨克斯坦卫生部表示，根据总统指示制定的《医务人员职业责任保险法》于2024年10月生效。截至2026年9月1日，全国已有17.8296万名医务人员参保，其中15.5856万人就职于公立医疗机构，2.244万人就职于私立医疗机构。
+自2026年初以来，各医疗机构共签订1867份保险合同，并已完成112笔赔付。
+根据现行机制，如果患者在接受医疗服务过程中被确认遭受生命或健康损害，可依法获得保险赔偿；与此同时，相关医务人员也可获得相应的财务风险保障。
+卫生部指出，如果患者或其法定代理人认为诊疗过程中造成了生命或健康损害，可向有关医疗机构提出申请。案件将由独立专家委员会审查，委员会成员包括相关专业领域专家、医疗专业团体代表以及统一保险池成员保险公司的代表。
+涉事医疗机构工作人员不得进入该委员会。
+专家委员会将审查医疗文件以及诊疗过程。如果确认属于保险事故，保险公司将依法向患者或其代理人支付赔偿，患者无需直接向医务人员个人追偿。
+卫生部强调，对医务人员而言，该保险同样具有保护作用。保险费用由医疗机构承担，一旦发生保险事故，相关赔偿由保险公司在规定额度内支付。</div>
+<ul>
+<li>《医务人员职业责任保险法》2024年10月生效</li>
+<li>截至2026年9月1日，17.8296万名医务人员参保</li>
+<li>2026年初以来签订1867份合同，完成112笔赔付</li>
+<li>近两年向患者支付5.026亿坚戈保险赔偿</li>
+<li>独立专家委员会审查，涉事机构人员不得进入</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该法实施强化哈国医疗责任保障体系，减少医患直接纠纷，稳定医务人员执业环境；保险赔付由机构承担，对财政影响有限，但有助于提升医疗服务质量与公众信任。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/zhenglizhukaigongyefagongzuohui-1cffa3ae/" target="_blank">政府总理别克帖诺夫主持召开核工业发展工作会议</a></h3>
+<div class="item-meta">哈通社中文版 · 10/05 15:05<span class="source-link"><a href="https://cn.inform.kz/news/zhenglizhukaigongyefagongzuohui-1cffa3ae/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦政府总理别克帖诺夫主持召开核工业发展工作会议，重点讨论《核工业发展至2050年战略》框架下工作进展，包括勘查新铀矿区、开展地质勘探和扩大矿产资源基础。会议审议了哈萨克斯坦国家原子能工业公司（Kazatomprom）大规模地质勘探计划。别克帖诺夫强调发展核能对保障经济长期稳定发展具有重要意义，并责成有关国家机关和机构采取措施提升核工业发展潜力，提高矿产资源开发对国家经济的综合效益。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">政府总理别克帖诺夫主持召开核工业发展工作会议
+
+会议重点讨论了《哈萨克斯坦共和国核工业发展至2050年战略》框架下相关工作的推进情况，包括勘查新的潜在铀矿区、开展地质勘探以及扩大矿产资源基础等。
+
+与会人员还审议了哈萨克斯坦国家原子能工业公司（Kazatomprom）进一步开展大规模地质勘探工作的相关计划。
+
+别克帖诺夫指出，发展核能对于保障哈萨克斯坦经济长期稳定发展具有重要意义。
+
+会议结束后，总理责成有关国家机关和机构采取措施，进一步提升核工业发展潜力，并提高矿产资源开发为国家经济带来的综合效益。</div>
+<ul>
+<li>总理别克帖诺夫主持核工业发展会议</li>
+<li>讨论至2050年核工业战略推进工作</li>
+<li>重点勘查新铀矿区并扩大矿产基础</li>
+<li>审议Kazatomprom大规模地质勘探计划</li>
+<li>总理责成提升核工业潜力和经济效益</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">会议强化核能作为哈国经济长期稳定支柱的战略定位，推动铀矿勘探和资源基础扩大，有利于巩固哈萨克斯坦在全球铀市场的领先地位，提升核工业对国民经济的综合贡献，并增强能源外交筹码。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/guotongyi11yuedangqian-9a6702c3/" target="_blank">欧佩克+七国同意11月维持当前石油产量水平</a></h3>
+<div class="item-meta">哈通社中文版 · 10/05 12:54<span class="source-link"><a href="https://cn.inform.kz/news/guotongyi11yuedangqian-9a6702c3/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>欧佩克+七国决定11月维持2026年9月确定的石油产量水平，连续两个月不增产。各国重申遵守合作协议，关注全球石油市场。下次会议定于2026年11月1日。此前，七国集团同意联合从战略储备中投放1亿桶石油及石油产品，持续4个月，以稳定全球能源市场。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 欧佩克+七国同意11月维持当前石油产量水平
+正文:
+根据会议决定，2026年9月确定的石油生产水平将在11月继续维持不变。这意味着相关国家将连续两个月不增加石油产量。
+与会各国重申将继续遵守合作协议，并表示将持续密切关注全球石油市场形势。
+欧佩克+上述七个成员国下一次会议计划于2026年11月1日举行。
+此前，七国集团（G7）成员国同意，为稳定全球能源市场，将联合从战略储备中向市场投放1亿桶石油及石油产品。相关投放工作将于近期启动，并持续4个月。</div>
+<ul>
+<li>欧佩克+七国11月维持产量不变，连续两月不增产</li>
+<li>各国重申遵守合作协议，关注全球石油市场</li>
+<li>下次会议计划于2026年11月1日举行</li>
+<li>七国集团同意投放1亿桶战略石油储备</li>
+<li>投放工作近期启动，持续4个月</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国而言，欧佩克+维持产量限制可能支撑油价，利好哈国石油出口收入；但G7投放储备或抑制油价上涨，增加哈国财政预算不确定性。哈国需平衡减产义务与市场份额，外交上继续与欧佩克+及西方协调。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/guo-10143-a7521a8c/" target="_blank">国际油价周初走低 布伦特原油跌至101.43美元</a></h3>
+<div class="item-meta">哈通社中文版 · 10/05 11:41<span class="source-link"><a href="https://cn.inform.kz/news/guo-10143-a7521a8c/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>10月5日上午，布伦特原油期货报每桶101.43美元，下跌0.80%；WTI原油跌1.21%至90.01美元；俄罗斯乌拉尔原油报105.55美元，跌1.07%。G7决定释放1亿桶战略石油储备，持续4个月，以稳定全球能源市场。沙特恢复“东西输油管道”输送原油，进一步压低油价。但波斯湾紧张局势持续，全球石油供应风险未完全消除。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">截至10月5日上午，布伦特原油期货价格报每桶101.43美元，下跌0.82美元，跌幅为0.80%。
+据Oilprice数据显示，WTI原油价格下跌1.21%，报每桶90.01美元。
+俄罗斯乌拉尔原油（Urals）价格报每桶105.55美元，下跌1.07%。
+目前，七国集团（G7）释放战略石油储备的决定正在对国际油价走势产生影响。为稳定全球能源市场，G7决定从战略储备中释放1亿桶原油及石油产品。相关供应预计近期启动，持续时间为4个月。
+与此同时，沙特阿拉伯恢复通过“东西输油管道”输送原油，也进一步对油价形成下行压力。该管道可使沙特原油出口绕开霍尔木兹海峡。
+不过，由于波斯湾地区紧张局势仍在持续，全球石油供应面临的风险尚未完全消除。</div>
+<ul>
+<li>布伦特原油跌至101.43美元，跌幅0.80%</li>
+<li>WTI原油跌1.21%至90.01美元</li>
+<li>G7释放1亿桶战略石油储备，持续4个月</li>
+<li>沙特恢复“东西输油管道”输送原油</li>
+<li>波斯湾紧张局势持续，供应风险未消</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">油价走低可能减少哈萨克斯坦石油出口收入，影响国家预算和经济稳定。G7释放储备和沙特管道恢复或加剧竞争，但波斯湾风险仍存，哈国需关注外交平衡与矿产出口格局变化。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-10-06 09:02</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
