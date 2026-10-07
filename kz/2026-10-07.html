@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年10月7日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年10月7日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年10月06日早9:00至2026年10月07日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 20 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">2</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">11</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">5</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">2</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/yudahuihuiyuhuizhexinghui-5defef1c/" target="_blank">副总统与世界及传统宗教领袖大会秘书处会议与会者举行双边会谈</a></h3>
+<div class="item-meta">哈通社中文版 · 10/07 01:40<span class="source-link"><a href="https://cn.inform.kz/news/yudahuihuiyuhuizhexinghui-5defef1c/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦副总统叶尔兰·卡林与世界及传统宗教领袖大会秘书处会议与会者举行双边会谈，讨论即将举行的会议议程及大会框架下合作。会见高加索穆斯林管理局主席帕沙扎德、爱资哈尔大伊玛目国际合作顾问穆萨、世界穆斯林联盟副秘书长阿尔-扎伊德、圣公会团体副秘书长威尔斯等。哈方希望坎特伯雷大主教萨拉·马拉利出席2028年在阿斯塔纳举行的第九届大会。外宾祝贺哈萨克斯坦通过新宪法。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 副总统与世界及传统宗教领袖大会秘书处会议与会者举行双边会谈
+
+正文:
+会谈期间，双方就即将举行的会议议程以及在大会框架下进一步发展合作等问题进行了讨论。
+在会见高加索穆斯林管理局主席谢赫-乌尔-伊斯兰·阿拉赫舒库尔·帕沙扎德时，双方谈到了他多年来为大会成立及推动宗教间对话所作出的个人贡献。叶尔兰·卡林指出了他在推动和平、相互尊重与和谐理念方面所作努力的重要意义。
+爱资哈尔大伊玛目国际合作顾问阿卜杜勒拉赫曼·穆萨在会见中向哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫转达了大伊玛目的问候和良好祝愿。双方就哈萨克斯坦与爱资哈尔进一步加强互动的潜力进行了讨论，其中包括宗教教育、宣教以及宗教间对话等领域的合作。
+Фото: Акорда 在同世界穆斯林联盟副秘书长阿卜杜勒拉赫曼·阿卜杜拉·阿尔-扎伊德会谈时，双方谈到了该联盟多年来参与大会工作以及为推动宗教间对话所作出的贡献。叶尔兰·卡林表示，继续支持论坛工作及其务实倡议具有重要意义。
+Фото: Ақорда 在会见圣公会团体副秘书长、主教乔·贝利·威尔斯时，双方谈到了该团体积极参与大会工作以及为论坛发展所作出的努力。同时，双方表达了希望坎特伯雷大主教萨拉·马拉利出席2028年在阿斯塔纳举行的第九届世界及传统宗教领袖大会。
+Фото: Акорда 此外，外宾还向哈萨克斯坦通过新宪法表示祝贺。</div>
+<ul>
+<li>副总统卡林与多国宗教领袖举行双边会谈</li>
+<li>讨论世界及传统宗教领袖大会议程与合作</li>
+<li>哈方希望坎特伯雷大主教出席2028年第九届大会</li>
+<li>外宾祝贺哈萨克斯坦通过新宪法</li>
+<li>会见涉及高加索、爱资哈尔、世界穆斯林联盟等</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">巩固哈萨克斯坦作为宗教间对话平台的地位，提升国际形象；通过宗教外交拓展与伊斯兰及基督教机构合作，增强软实力；新宪法获宗教领袖认可，有利于国内政治稳定。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/junqianyin-282ef578/" target="_blank">哈萨克斯坦海军前总司令因涉嫌玩忽职守被捕</a></h3>
+<div class="item-meta">哈通社中文版 · 10/06 19:47<span class="source-link"><a href="https://cn.inform.kz/news/junqianyin-282ef578/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦内务部在调查里海军事演习期间军人死亡案件时，依法扣押并逮捕了海军前总司令、海军上校，其涉嫌玩忽职守。经法院批准，该人员已被正式逮捕，目前审前调查仍在继续。此前担任海军总司令的是哈纳特·尼亚孜别阔夫。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">内务部指出，在针对里海军事演习期间军人死亡事件展开的刑事案件调查过程中，内务部军事侦查部门依法将哈萨克斯坦武装力量海军前总司令、海军上校作为涉嫌玩忽职守人员予以扣押，并将其送往临时拘留所。经法院批准，该人员已被正式逮捕。
+消息称，目前该案的审前调查工作仍在继续。
+值得一提的是，此前担任哈萨克斯坦武装力量海军总司令的是哈纳特·尼亚孜别阔夫。</div>
+<ul>
+<li>哈海军前总司令因里海军演军人死亡案被捕</li>
+<li>涉嫌玩忽职守，经法院批准正式逮捕</li>
+<li>审前调查仍在继续，前总司令为尼亚孜别阔夫</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">事件暴露哈军演安全管理漏洞，或引发海军高层问责与人事调整，影响里海方向军事部署与政治稳定，但暂未波及矿产与外交格局。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(11 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/xingxing-f2abe20e/" target="_blank">阿曼苏丹结束访哈行程托卡耶夫总统送行</a></h3>
+<div class="item-meta">哈通社中文版 · 10/06 22:04<span class="source-link"><a href="https://cn.inform.kz/news/xingxing-f2abe20e/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>阿曼苏丹海赛姆·本·塔里克·阿勒赛义德结束对哈萨克斯坦国事访问，托卡耶夫总统送行。访问期间，托卡耶夫6日在阿斯塔纳独立宫举行欢迎仪式，双方举行小范围会谈，发表联合声明并签署8项重要文件。两国元首共同参观阿斯塔纳国际金融中心，并出席哈萨克斯坦-阿曼商业论坛。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 阿曼苏丹结束访哈行程托卡耶夫总统送行
+正文:
+据此前报道，托卡耶夫6日在首都阿斯塔纳独立宫举行隆重的欢迎仪式，欢迎阿曼苏丹海赛姆·本·塔里克·阿勒赛义德对哈萨克斯坦进行的国事访问。
+随后，双方举行小范围会谈，就深化双边合作及推动哈阿关系发展交换意见。
+根据会谈结果，两国元首发表联合声明，两国政府还签署了8项重要文件。
+此外，托卡耶夫与阿曼苏丹共同参观阿斯塔纳国际金融中心，并出席哈萨克斯坦-阿曼商业论坛。
+Фото: Ақорда Фото: Ақорда Фото: Ақорда Фото: Акорда</div>
+<ul>
+<li>阿曼苏丹结束访哈，托卡耶夫送行</li>
+<li>托卡耶夫在独立宫举行欢迎仪式</li>
+<li>双方会谈并发表联合声明</li>
+<li>两国签署8项重要文件</li>
+<li>共同参观阿斯塔纳国际金融中心并出席商业论坛</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访深化哈阿政治互信，签署8项文件促进经贸与投资合作，商业论坛及金融中心参观有助于哈国吸引阿曼资本，推动经济多元化，并拓展海湾外交空间。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/zai-yefa-5830a684/" target="_blank">托卡耶夫总统在哈萨克斯坦-阿曼商业论坛发表讲话</a></h3>
+<div class="item-meta">哈通社中文版 · 10/06 21:52<span class="source-link"><a href="https://cn.inform.kz/news/zai-yefa-5830a684/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在哈萨克斯坦-阿曼商业论坛发表讲话，两国领先企业代表出席。托卡耶夫强调加强法律和制度框架以促进经贸投资联系，突出《促进投资协定》的重要性，欢迎萨姆鲁克-卡泽纳股份公司与阿曼投资局签署协议设立联合投资平台。他指出两国在能源、物流、采矿领域合作已显积极成果，阿曼是交通物流关键合作伙伴，哈萨克斯坦可成为保障海湾地区粮食安全的可靠伙伴。首要任务是将政治共识转化为具体行动。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">消息称，两国领先企业和商界代表出席了论坛。
+托卡耶夫在致辞中指出，在相互信任与理解精神下举行的高级别会谈公开、客观且富有实质性。
+国家元首强调，有必要加强相关法律和制度框架，以促进哈萨克斯坦与阿曼之间的经贸及投资联系。
+Фото: Акорда 在此背景下，托卡耶夫总统强调了《促进投资协定》的重要性。根据该协定实施项目的投资者，将享有更为明确、透明且可靠的条款保障。
+双方还特别重视发展两国工商界之间的直接联系。
+- 我坚信，哈萨克斯坦-阿曼商业理事会将成为企业界代表开展积极互动的平台。-他说。
+国家元首认为，有效的金融机制将巩固哈萨克斯坦与阿曼的共同目标。
+- 我们欢迎萨姆鲁克-卡泽纳股份公司与阿曼投资局签署协议，共同设立联合投资平台。这一重要举措将汇集资金资源，并有助于吸引更多投资。我们还认为，双方有望与阿曼新设立的国际金融中心开展合作。两国金融机构之间的直接对接将开辟新的投资机遇。-总统说。
+Фото: Акорда 托卡耶夫详细阐述了在经济关键领域实施联合项目的经验。
+- 我们在能源、物流和采矿领域长期且卓有成效的合作伙伴关系已开始显现积极成果，我们对此深感自豪。整合我们在这些关键行业的潜力，正推动着符合两国利益的新合资企业的建立。-他说。
+哈萨克斯坦总统指出，运输和物流领域具有巨大的合作潜力。
+- 我们将阿曼视为交通与物流领域的关键合作伙伴。该国地理位置优越，拥有先进的港口基础设施，并可由此进入中东和非洲市场。与此同时，哈萨克斯坦自然资源丰富，工业基础雄厚；它在亚欧交通运输通道中发挥着战略性作用，并制定了拓展交通互联互通的具体规划。-他说。
+此外，国家元首呼吁加强在农业和粮食安全领域的合作。
+- 我国广阔的草原为农业发展提供了巨大机遇。因此，我们能够成为保障整个海湾地区粮食安全的可靠伙伴。-他说。
+Фото: Ақорда 托卡耶夫在总结发言中指出，首要任务是将政治层面达成的共识转化为具体行动，并使经贸关系成为哈萨克斯坦与阿曼伙伴关系的基石。</div>
+<ul>
+<li>托卡耶夫强调加强哈阿经贸投资法律和制度框架</li>
+<li>萨姆鲁克-卡泽纳与阿曼投资局共建联合投资平台</li>
+<li>能源、物流、采矿领域合作已显现积极成果</li>
+<li>阿曼被视为交通物流关键合作伙伴，可进入中东非洲市场</li>
+<li>哈国可成为保障海湾地区粮食安全的可靠伙伴</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访推动哈国与阿曼经贸合作制度化，联合投资平台有助于吸引海湾资本进入能源、矿产和物流领域，拓展哈国经阿曼港口进入中东和非洲市场的通道，同时提升哈国作为海湾地区粮食安全伙伴的战略地位，增强其外交多元平衡。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/yuguozhongxin-d7a7d6b2/" target="_blank">托卡耶夫与阿曼苏丹参观阿斯塔纳国际金融中心</a></h3>
+<div class="item-meta">哈通社中文版 · 10/06 21:06<span class="source-link"><a href="https://cn.inform.kz/news/yuguozhongxin-d7a7d6b2/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与阿曼苏丹共同参观阿斯塔纳国际金融中心。中心总裁别克图罗夫介绍，自成立以来已为哈吸引逾280亿美元投资，来自90个国家的6600多家企业注册。两国元首听取了基于英国法的司法管辖机制、金融服务监管机构、法院和国际仲裁中心运行情况，以及伊斯兰金融发展潜力和智能助手AIDA的介绍。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫与阿曼苏丹参观阿斯塔纳国际金融中心
+正文:
+阿斯塔纳国际金融中心总裁雷纳特·别克图罗夫向贵宾介绍了中心的工作成果，并介绍了中心为进一步推动哈萨克斯坦与阿曼投资及经贸关系发展所提供的机遇。
+Фото: Ақорда 据介绍，自成立以来，阿斯塔纳国际金融中心已为哈萨克斯坦吸引逾280亿美元投资。目前，已有来自90个国家的6600多家企业在中心注册。
+两国元首听取了有关阿斯塔纳国际金融中心基于英国法的司法管辖机制及其特点，以及金融服务监管机构、阿斯塔纳国际金融中心法院和国际仲裁中心运行情况的介绍。
+Фото: Акорда 此外，中心方面还介绍了阿斯塔纳国际金融中心在伊斯兰金融领域的发展潜力，以及提供全天候咨询支持的智能助手AIDA（AIFC Intelligent Digital Assistant）的相关情况。</div>
+<ul>
+<li>托卡耶夫与阿曼苏丹参观阿斯塔纳国际金融中心</li>
+<li>中心已吸引逾280亿美元投资，6600多家企业注册</li>
+<li>注册企业来自90个国家，凸显国际化程度</li>
+<li>中心采用基于英国法的司法管辖机制</li>
+<li>重点推介伊斯兰金融潜力和智能助手AIDA</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈阿投资经贸合作，提升阿斯塔纳国际金融中心区域金融枢纽地位。伊斯兰金融潜力或吸引阿曼资本，推动哈经济多元化，并深化与海湾国家外交关系。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/-07bf949c/" target="_blank">托卡耶夫总统被授予“阿勒赛义德”勋章</a></h3>
+<div class="item-meta">哈通社中文版 · 10/06 20:50<span class="source-link"><a href="https://cn.inform.kz/news/-07bf949c/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在独立宫举行仪式，授予阿曼苏丹海赛姆·本·塔里克·阿勒赛义德国家最高荣誉“阿勒赛义德”勋章。此前，托卡耶夫曾向阿曼苏丹授予“金鹰”勋章。6日，托卡耶夫在阿斯塔纳为阿曼苏丹举行欢迎仪式，双方进行小范围会谈，就深化双边合作交换意见，并发表联合声明，签署8项重要文件。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫总统被授予“阿勒赛义德”勋章
+正文:
+在两国元首会谈后，于独立宫举行了颁发国家最高荣誉勋章的仪式。
+此前，托卡耶夫向阿曼苏丹授予“金鹰”勋章。
+据此前报道，托卡耶夫6日在首都阿斯塔纳独立宫举行隆重的欢迎仪式，欢迎阿曼苏丹海赛姆·本·塔里克·阿勒赛义德对哈萨克斯坦进行的国事访问。
+随后，双方举行小范围会谈，就深化双边合作及推动哈阿关系发展交换意见。
+根据会谈结果，两国元首发表联合声明，两国政府还签署了8项重要文件。</div>
+<ul>
+<li>托卡耶夫被授予“阿勒赛义德”勋章</li>
+<li>托卡耶夫向阿曼苏丹授予“金鹰”勋章</li>
+<li>阿曼苏丹6日对哈萨克斯坦进行国事访问</li>
+<li>双方发表联合声明并签署8项文件</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈阿政治互信，签署8项文件拓展经贸与投资合作，助力哈国多元外交，但未直接涉及矿产格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/-05dfb831/" target="_blank">托卡耶夫向阿曼苏丹授予“金鹰”勋章</a></h3>
+<div class="item-meta">哈通社中文版 · 10/06 19:12<span class="source-link"><a href="https://cn.inform.kz/news/-05dfb831/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在阿斯塔纳向阿曼苏丹海赛姆·本·塔里克·阿勒赛义德授予“金鹰”勋章，表彰其为巩固两国人民友谊所作贡献。托卡耶夫指出，这是阿曼苏丹首次对哈萨克斯坦和中亚进行国事访问，具有历史意义。双方合作涵盖传统石油天然气行业及交通运输、物流、数字化、人工智能等新兴领域。托卡耶夫强调阿曼是哈萨克斯坦在阿拉伯世界具有重要战略意义的可靠伙伴，并赞赏阿曼在地区稳定、不同信仰间对话及人道主义倡议方面的作用。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">总统指出，阿曼苏丹的访问具有历史意义，必将极大地促进双边关系。
+- 阿曼是哈萨克斯坦在阿拉伯世界具有重要战略意义且历史悠久的可靠伙伴。三十年来，我们本着互信、理解和支持的精神，不断发展合作。今天，在阿斯塔纳与您会面，我们将把两国关系提升到一个重要的历史水平。这是阿曼苏丹首次对哈萨克斯坦和中亚进行国事访问。因此，我认为这是对我们国家的特殊礼遇，也是双方加强在所有共同关心领域的贸易与合作的标志。这些重要领域包括传统的石油和天然气行业，以及交通运输、物流、数字化、人工智能等新兴领域，同时还包括贸易关系和农产品方面的信息交流。我们很高兴能与阿曼这样的国家建立战略伙伴关系。我们也将竭尽全力成为贵国值得信赖的合作伙伴。-托卡耶夫说。
+国家元首指出，苏丹海赛姆·本·塔里克·阿勒赛义德一直对加强双边关系抱有浓厚兴趣。
+- 尊敬的苏丹陛下，您是一位杰出的政治家。您高瞻远瞩的治国方略和对人民的长期奉献值得我们由衷的敬佩。哈萨克斯坦人民对您无比敬重，并为能称阿曼为伙伴、友好兄弟之国而感到自豪。您已证明，通过制定战略目标，您能够使国家繁荣昌盛，走上发展之路。这一点体现在您为投资人力资本、发展创新以及打造面向未来的经济所采取的各项举措中。“阿曼2040愿景”展现了您在建设多元化、具有竞争力和可持续发展的经济的同时，保护国家认同、价值观和传统的战略方向。作为一位英明领袖、和平缔造者和智者，您激励了世界各地许多充满活力和声望的政治家。-他说。
+Фото: Акорда 托卡耶夫总统强调了阿曼在加强地区稳定、促进不同信仰间对话，以及落实人道主义倡议方面所发挥的作用。
+- 您在各方之间发挥了桥梁作用，不断促进相互理解。这种明智的方略使阿曼在地区和国际关系中成为具有重要影响力的国家。我们高度重视这一立场。贵国被公认为公正客观的调解者。您的历史性访问将作为哈萨克斯坦与阿曼双边关系史上的重要里程碑被载入史册。陛下，我很荣幸向您颁发“金鹰”勋章，以表彰您为巩固两国人民友谊所作出的巨大贡献。-他说。
+据此前报道，托卡耶夫6日在首都阿斯塔纳独立宫举行隆重的欢迎仪式，欢迎阿曼苏丹海赛姆·本·塔里克·阿勒赛义德对哈萨克斯坦进行的国事访问。
+随后，双方举行小范围会谈，就深化双边合作及推动哈阿关系发展交换意见。</div>
+<ul>
+<li>托卡耶夫向阿曼苏丹授予“金鹰”勋章</li>
+<li>阿曼苏丹首次对哈萨克斯坦和中亚进行国事访问</li>
+<li>双方合作涵盖石油天然气及数字化、人工智能等新兴领域</li>
+<li>托卡耶夫称阿曼为阿拉伯世界重要战略伙伴</li>
+<li>阿曼被公认为公正客观的调解者，促进地区稳定</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访提升哈国与阿拉伯世界关系水平，拓展能源外交通道，为哈国在矿产、物流和数字化领域引入阿曼投资与合作创造机遇，增强哈国在中亚的外交影响力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/yuming-jiangjinyiduozuo-bde2c07c/" target="_blank">哈萨克斯坦与阿曼签署联合声明 将进一步深化多领域合作</a></h3>
+<div class="item-meta">哈通社中文版 · 10/06 18:51<span class="source-link"><a href="https://cn.inform.kz/news/yuming-jiangjinyiduozuo-bde2c07c/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年10月5日至6日，阿曼苏丹海赛姆首次对哈萨克斯坦进行国事访问。两国元首签署联合声明，并见证签署政府间投资保护、航空运输、成立商业理事会及联合投资基金、欧亚开发银行在阿曼运营等多项协议。双方就贸易多元化、能源、矿产开采、交通物流、农业、数字技术等10项共识达成一致，强调加强中亚与海湾国家互联互通，建立直航，推动阿斯塔纳与阿曼国际金融中心合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">联合声明全文如下：
+应哈萨克斯坦共和国总统哈斯穆-卓玛尔特·托卡耶夫阁下邀请，阿曼苏丹海赛姆·本·塔里克·阿勒赛义德陛下于2026年10月5日至6日对哈萨克斯坦进行国事访问。这是阿曼苏丹首次对哈萨克斯坦进行国事访问，是两国长期关系发展进程中的重要历史事件。
+访问期间，两国元首举行了高层会谈，并就双边关系现状及未来发展进行了全面交流。双方重点讨论了共同项目以及进一步巩固合作的途径，并就地区和国际议程中的热点问题交换了意见。两国领导人对建立在相互尊重与信任基础上的双边友好、建设性关系表示满意，并表达了进一步发展和巩固双方在各领域合作的意愿。
+在两国元首见证下，双方签署了政府间鼓励和相互保护投资协定、航空运输协定、关于成立阿曼—哈萨克斯坦商业理事会及联合投资基金的协议、关于欧亚开发银行在阿曼苏丹国开展业务条件的协议，以及涵盖多个领域合作的一系列部门间谅解备忘录。
+总统阁下和苏丹陛下全面审视了双边关系发展情况，并就一系列重要国际和地区问题交换意见，就以下事项达成共识：
+1. 两国元首指出，阿曼与哈萨克斯坦之间的关系建立在友谊、相互尊重和建设性合作基础上，并重申有意进一步加强两国伙伴关系。双方重申致力于开展多边合作，遵守国际法基本原则和《联合国宪章》，包括尊重所有国家的主权、独立和领土完整，并强调通过和平、政治和外交途径解决争端与冲突的重要性。
+2. 两国元首指出，进一步扩大和实现双边贸易多元化具有较大潜力。双方同意采取协调措施，扩大两国之间商品和产品的种类，消除现有贸易壁垒，并便利两国商品进一步进入对方市场。
+3. 两国元首确认，进一步扩大能源、自然资源、制造业、食品加工、医疗卫生、物流、旅游、可再生能源及矿产开采等双方共同关心领域的投资合作十分重要。两国领导人对近期签署的能源、可再生能源、矿产开采及旅游领域多项合作协议和备忘录表示欢迎。
+4. 两国元首指出，进一步深化重点经济领域投资合作的重要性日益凸显。双方认为，通过推动共同经济倡议，在扩大相互投资、建设新生产能力、创造就业岗位和扩大工业合作等方面存在较大空间。双方对成立“哈萨克斯坦—阿曼投资基金”表示欢迎，并强调发展阿斯塔纳国际金融中心与阿曼国际金融中心之间业务联系和互利伙伴关系的重要性。
+5. 两国元首指出，哈萨克斯坦—阿曼政府间委员会发挥着重要作用，并肯定其在进一步深化和拓展双方共同关心各领域双边合作方面发挥的关键作用。
+6. 两国元首指出，加强中亚与海湾国家之间交通和物流联系具有战略意义。双方认为，哈萨克斯坦和阿曼在发展高效、可持续的交通物流走廊方面拥有较大潜力，可连接中亚、中东、非洲及其他主要地区的市场。
+7. 两国元首指出，尽快建立哈萨克斯坦与阿曼之间的直航和定期航空运输十分重要，并认为这将有助于发展两国在商业、旅游、文化领域的关系以及人文联系。
+8. 两国元首指出，双方在农业和粮食安全领域扩大合作具有较大潜力。
+9. 两国元首确认，双方有意进一步扩大和深化能源领域合作。双方表示，愿探索在能源、石油化工、工业生产和加工领域制定并实施互利合作项目的可能性。
+10. 两国元首指出，双方在进一步发展数字技术、人工智能、创新及人力资本领域合作方面拥有较大潜力。双方表示，愿加强两国科技企业、创新孵化机构、学术及教育机构之间的互动与合作，推动知识交流、创新成果应用以及互利倡议的实施。</div>
+<ul>
+<li>阿曼苏丹首次国事访问哈萨克斯坦，签署联合声明</li>
+<li>双方签署投资保护、航空运输、联合投资基金等多项协议</li>
+<li>共识涵盖贸易、能源、矿产、物流、农业、数字技术</li>
+<li>强调加强中亚与海湾国家交通物流战略联系</li>
+<li>推动阿斯塔纳与阿曼国际金融中心互利合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访提升哈国与海湾国家外交关系，吸引阿曼投资进入能源、矿产和物流领域，助力贸易多元化；联合投资基金和金融中心合作强化阿斯塔纳区域金融地位，直航与走廊建设增强哈国过境运输潜力，对哈政治经济外交矿产格局产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/heliangguo8zhongyaowen-5022bbe4/" target="_blank">哈萨克斯坦和阿曼两国签署8项重要文件</a></h3>
+<div class="item-meta">哈通社中文版 · 10/06 18:14<span class="source-link"><a href="https://cn.inform.kz/news/heliangguo8zhongyaowen-5022bbe4/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与阿曼签署8项重要文件，涵盖投资保护、航空服务、联合投资基金、Blue City Rixos合资项目、金融合作、商业理事会、地质勘探及欧亚开发银行运营等领域。两国元首发表联合声明，规划双边关系未来方向。阿曼苏丹海赛姆·本·塔里克·阿勒赛义德对哈进行国事访问，双方举行小范围会谈，就深化合作交换意见。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦和阿曼两国签署8项重要文件
+正文:
+根据会谈结果，两国元首发表了联合声明，概述了双边关系的未来方向。
+此外，两国元首出席了政府间和部门间文件交换仪式。
+1. 哈萨克斯坦共和国政府与阿曼苏丹国政府关于促进和相互保护投资的协定；
+2. 哈萨克斯坦共和国政府与阿曼苏丹国政府之间的航空服务协定；
+3. 萨穆鲁克-卡泽纳国家基金与阿曼投资局之间关于设立联合投资结构（基金）的协议；
+4. 萨穆鲁克-卡泽纳国家基金与阿曼投资局就 Blue City Rixos 合资项目框架内的主要条款和条件达成一致；
+5. 哈萨克斯坦共和国财政部与阿曼苏丹国财政部在金融领域开展合作的谅解备忘录；
+6. 阿塔梅肯企业家协会与阿曼苏丹国工商会就建立哈萨克斯坦-阿曼商业理事会达成的相互谅解协议；
+7. 哈萨克斯坦国家石油天然气公司与OQ勘探生产公司就地质勘探领域战略合作达成的协议；
+8. 欧亚开发银行与阿曼苏丹国政府就欧亚开发银行在阿曼苏丹国的运营条款达成的协议。
+据此前报道，托卡耶夫6日在首都阿斯塔纳独立宫举行隆重的欢迎仪式，欢迎阿曼苏丹海赛姆·本·塔里克·阿勒赛义德对哈萨克斯坦进行的国事访问。
+随后，双方举行小范围会谈，就深化双边合作及推动哈阿关系发展交换意见。</div>
+<ul>
+<li>哈阿签署8项文件，涉及投资、航空、金融、能源等领域</li>
+<li>设立联合投资基金，推进Blue City Rixos合资项目</li>
+<li>哈国油与OQ勘探生产公司开展地质勘探战略合作</li>
+<li>建立哈萨克斯坦-阿曼商业理事会，促进企业对接</li>
+<li>欧亚开发银行获准在阿曼运营，拓展金融布局</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈阿政治互信，吸引阿曼资本进入哈能源与矿产勘探，推动投资多元化；欧亚开发银行落地阿曼，拓展哈国金融外交空间，助力哈国经济多元化与地区影响力提升。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/yu-hewuzuo-c99d74be/" target="_blank">连接欧亚与印度洋 哈萨克斯坦和阿曼寻求物流合作新突破</a></h3>
+<div class="item-meta">哈通社中文版 · 10/06 17:12<span class="source-link"><a href="https://cn.inform.kz/news/yu-hewuzuo-c99d74be/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与阿曼苏丹海赛姆·本·塔里克·阿勒赛义德举行会谈，这是阿曼苏丹首次访问中亚。双方将签署能源、交通物流、农业、信息技术、数字化、医疗卫生等领域双边协议，并通过联合声明确定优先发展方向。合作项目包括东加油田开发、Solidcore Resources企业、与阿曼投资局联合投资基金及酒店疗养设施建设。阿曼苏丹强调两国地理和运输网络互补，哈位于欧亚贸易走廊，阿曼拥有通往海湾、印度洋及亚非市场的海上通道，愿利用阿曼港口共同发展贸易运输走廊并扩大航空联系。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据总统府新闻局消息，托卡耶夫在会谈中对阿曼苏丹表示欢迎，并指出，这是海赛姆·本·塔里克·阿勒赛义德以苏丹身份首次访问中亚地区。
+“我们将阿曼视为哈萨克斯坦在阿拉伯世界经受时间考验的可靠伙伴。明年，我们将隆重庆祝哈萨克斯坦与阿曼建交35周年。多年来，两国在友好、相互尊重和相互支持的基础上，为双边伙伴关系进入新阶段奠定了坚实基础。”托卡耶夫说。
+总统指出，近期由阿曼副首相齐亚津·本·海赛姆·阿勒赛义德率领的高级别代表团成功访问阿斯塔纳，充分体现了两国关系不断深化的积极态势。
+托卡耶夫相信，此次访问期间达成的协议将为两国人民带来切实利益，并推动哈阿战略伙伴关系迈上新台阶。
+“根据会谈成果，我们将签署涵盖经济合作多个领域的双边协议，包括能源、交通物流、农业、信息技术、数字化、医疗卫生等。此外，我们还将通过一份联合声明，确定双边伙伴关系的优先发展方向。”托卡耶夫表示。
+Фото: Акорда 哈萨克斯坦总统积极评价两国正在实施的合作项目。
+其中包括东加油田开发项目、Solidcore Resources公司位于巴甫洛达尔州和北哈萨克斯坦州的企业、与阿曼投资局（Oman Investment Authority）合作设立的联合投资基金，以及酒店和疗养设施基础设施建设项目。
+阿曼苏丹海赛姆·本·塔里克·阿勒赛义德感谢托卡耶夫的热情接待及富有成果的会谈，并高度评价近年来两国关系取得的积极进展。
+“阿曼高度重视与哈萨克斯坦的合作。近年来，两国伙伴关系获得了新的发展动力，我们对此表示欢迎。高层互访以及政府间联合委员会的工作，将为进一步加强双边合作创造有利条件。”阿曼苏丹说。
+海赛姆·本·塔里克·阿勒赛义德指出，阿曼认为，两国在能源、采矿业、农业、粮食安全、交通物流、金融服务、旅游、技术及人工智能等多个领域具有广阔的投资合作潜力。
+Фото: Акорда 他表示，阿方支持实施能够充分发挥两国主权投资机构、私营部门及专门政府机构优势的联合项目。
+在谈及交通物流合作时，阿曼苏丹特别强调了两国地理位置和运输网络的互补优势。
+“哈萨克斯坦位于连接亚洲与欧洲的全球贸易走廊沿线，具有重要的战略地理优势。而阿曼则拥有通往海湾地区、印度洋以及亚洲和非洲主要市场的海上运输通道。两国优势互补，将有助于促进共同发展，实现互利共赢。”阿曼苏丹表示。
+他指出，阿曼有意进一步加强与哈萨克斯坦在交通物流领域的合作，包括利用阿曼港口共同发展贸易运输走廊，以及扩大两国之间的航空联系。
+会谈期间，海赛姆·本·塔里克·阿勒赛义德还邀请托卡耶夫在方便的时候对阿曼进行访问。</div>
+<ul>
+<li>阿曼苏丹首次访中亚，明年庆祝哈阿建交35周年</li>
+<li>双方将签署能源、交通物流、农业等多领域双边协议</li>
+<li>合作项目含东加油田、联合投资基金及酒店疗养设施</li>
+<li>阿曼苏丹强调两国地理和运输网络互补优势</li>
+<li>阿方愿利用阿曼港口共同发展贸易运输走廊</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访将深化哈阿战略伙伴关系，拓展哈国经阿曼港口通往印度洋的物流通道，降低对传统路线的依赖。能源、矿产和农业领域合作有望吸引阿曼投资，促进哈国经济多元化，并增强其在中亚与阿拉伯世界之间的外交桥梁作用。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://cn.inform.kz/news/yuxingxiaohui-fangjiangguan-ad3215ff/" target="_blank">托卡耶夫与阿曼苏丹举行小范围会谈 双方期待将双边关系提升至新水平</a></h3>
+<div class="item-meta">哈通社中文版 · 10/06 16:05<span class="source-link"><a href="https://cn.inform.kz/news/yuxingxiaohui-fangjiangguan-ad3215ff/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与阿曼苏丹海赛姆·本·塔里克·阿勒赛义德举行小范围会谈。托卡耶夫强调此访具有历史意义，双方签署涉及东加油田的重要协议，并计划增加商业直航航班。阿曼苏丹表示过去30多年双边关系显著进展，访问期间将签署系列协议和谅解备忘录，深化经济、政治及人文合作，并邀请托卡耶夫近期在马斯喀特会晤。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">会谈前，独立宫举行了隆重的官方欢迎仪式。托卡耶夫与阿曼苏丹相互介绍了双方代表团成员。仪仗队指挥官报告后，总统乐团奏响哈萨克斯坦和阿曼两国国歌。
+在随后举行的小范围会谈中，托卡耶夫对阿曼苏丹首次对哈萨克斯坦进行国事访问表示欢迎，并强调此次访问具有重要历史意义。
+“尊敬的苏丹陛下，能够迎接您首次对我国进行国事访问，我深感荣幸。我相信，此次访问具有特殊的历史意义，将为振兴两国多领域合作、推动双边关系迈上新台阶创造条件。正如我此前所强调的，双方合作潜力巨大，我们应当充分挖掘这一潜力。”托卡耶夫说。
+哈萨克斯坦总统表示，哈方愿为推动两国成为值得信赖的合作伙伴作出最大努力。
+Фото: Kazinform 托卡耶夫指出，哈萨克斯坦人民对阿曼怀有深厚的敬意，近年来前往阿曼旅游的哈萨克斯坦公民数量较多。他认为，增加两国之间的商业直航航班，将有助于进一步密切人员往来。
+总统还特别提及双方在能源领域取得的新进展。
+“我了解到，在您此次访问期间，双方签署了一项涉及东加油田的重要协议。这表明两国都有意愿、也有能力进一步发展双边关系。我认为，这是我们共同取得的成果。”托卡耶夫表示。
+阿曼苏丹海赛姆·本·塔里克·阿勒赛义德对哈方的热情接待表示感谢，并高度评价两国关系的发展成果。
+“过去30多年来，我们的关系取得了显著进展，并不断得到巩固。今天的会晤将进一步巩固既有成果，推动双边关系迈上新台阶。”阿曼苏丹说。
+Фото: Акорда 他指出，访问期间，双方将签署一系列协议和谅解备忘录，为进一步深化合作创造条件。
+“我相信，在您的支持下，我们将在经济、政治以及文化和人文领域建立更加牢固的联系。我们也希望进一步扩大两国人员往来。”阿曼苏丹表示。
+会谈最后，海赛姆·本·塔里克·阿勒赛义德再次感谢托卡耶夫的热情接待，并表达了期待近期在阿曼首都马斯喀特再次会晤的愿望。</div>
+<ul>
+<li>托卡耶夫与阿曼苏丹举行小范围会谈，强调访问历史意义</li>
+<li>双方签署涉及东加油田的重要能源协议</li>
+<li>计划增加商业直航航班，密切人员往来</li>
+<li>阿曼苏丹称过去30多年双边关系显著进展</li>
+<li>访问期间将签署系列协议和谅解备忘录</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访推动哈阿关系升级，东加油田协议增强哈国能源外交多元化，直航与人员往来促进经济人文联系，有助于哈国拓展海湾合作，平衡地区外交格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">10</span> <a href="https://cn.inform.kz/news/wenhuinengchengming-dizuo-7c78cda9/" target="_blank">阿富汗问题莫斯科会议未能达成联合声明 哈萨克斯坦强调地区合作</a></h3>
+<div class="item-meta">哈通社中文版 · 10/06 15:10<span class="source-link"><a href="https://cn.inform.kz/news/wenhuinengchengming-dizuo-7c78cda9/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>阿富汗问题莫斯科会议因阿富汗与巴基斯坦分歧未达成联合声明。哈萨克斯坦代表图库莫夫强调地区合作，指出2026年1至7月哈阿双边贸易额达5.811亿美元，同比增长2.4倍，哈方有意扩大贸易、产业合作和交通互联互通。今年6月，哈向阿富汗运送约319吨人道主义援助物资，含16.1万件药品和医疗用品。双方还开展打击毒品走私合作。各方重申“莫斯科模式”仍是协调地区对话的重要平台。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 阿富汗问题莫斯科会议未能达成联合声明 哈萨克斯坦强调地区合作
+正文:
+与会代表就阿富汗当前政治和经济形势、地区安全、打击恐怖主义和非法毒品贩运，以及未来与喀布尔开展合作的前景交换了意见。
+图库莫夫在会上指出，哈萨克斯坦与阿富汗经贸合作保持积极发展势头，哈方有意进一步扩大双边贸易、产业合作和交通互联互通。
+数据显示，2026年1月至7月，哈萨克斯坦与阿富汗双边贸易额达到5.811亿美元，同比增长2.4倍。
+双方还重点关注地区运输走廊建设，以及哈萨克斯坦企业参与阿富汗基础设施项目的可能性。
+在人道主义合作方面，图库莫夫强调，继续向阿富汗提供人道主义援助具有重要意义。
+今年6月，哈萨克斯坦向阿富汗运送了约319吨人道主义援助物资，其中包括16.1万件药品和医疗用品。
+此外，哈方介绍了双方在打击毒品走私领域持续开展的务实合作，包括培训阿富汗缉毒犬训导员以及提供工作犬等。
+会议期间，由于阿富汗与巴基斯坦方面仍存在分歧，与会各方未能就最终联合声明达成一致。
+尽管如此，各方重申，阿富汗问题“莫斯科模式”仍是协调地区对话与合作的重要平台，有助于推动阿富汗和平、安全与发展。</div>
+<ul>
+<li>莫斯科会议未达成联合声明，因阿巴分歧</li>
+<li>哈阿2026年前7月贸易额5.811亿美元，增2.4倍</li>
+<li>哈方拟扩大双边贸易、产业合作和交通互联互通</li>
+<li>哈6月向阿富汗提供319吨人道主义援助物资</li>
+<li>各方重申“莫斯科模式”是重要地区对话平台</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国而言，会议未达成联合声明凸显地区协调难度，但哈方通过双边贸易增长、人道援助和禁毒合作，巩固其在中亚与阿富汗间的桥梁角色，有助于提升地区经济与外交影响力，并保障运输走廊和矿产合作潜力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">11</span> <a href="https://cn.inform.kz/news/xingxing-d64f63b3/" target="_blank">托卡耶夫总统举行仪式 欢迎阿曼苏丹访哈</a></h3>
+<div class="item-meta">哈通社中文版 · 10/06 14:16<span class="source-link"><a href="https://cn.inform.kz/news/xingxing-d64f63b3/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在阿斯塔纳举行正式欢迎仪式，迎接阿曼苏丹到访。仪式上两国元首介绍官方代表团成员，军乐团奏响两国国歌，阿曼苏丹向哈萨克斯坦国旗致敬并检阅仪仗队。随后两国总统进入会议室开始小范围会谈。此前托卡耶夫已在阿斯塔纳机场迎接阿曼苏丹，双方在机场进行了简短交谈。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫总统举行仪式 欢迎阿曼苏丹访哈
+正文:
+仪式上，两国元首相互介绍了双方官方代表团成员。哈三军仪仗队队长向两国领导人致敬，随后军乐团奏响哈萨克斯坦和阿曼两国国歌。
+Фото: Акорда Фото: Акорда 国歌奏毕后，根据惯例，阿曼苏丹向哈萨克斯坦国旗致敬，随后在哈萨克斯坦总统托卡耶夫的陪同下，检阅仪仗队。
+欢迎仪式结束后，两国总统进入会议室，开始小范围会谈。
+Фото: Ағыбай Аяпбергенов / Kazinform Фото: Агибай Аяпбергенов/Kazinform Фото: Агибай Аяпбергенов/Kazinform Фото: Ағибай Аяпбергенов / Kazinform 此前，托卡耶夫总统已在阿斯塔纳机场迎接到访的阿曼苏丹。两国元首还在机场进行了简短交谈。</div>
+<ul>
+<li>托卡耶夫举行仪式欢迎阿曼苏丹访哈</li>
+<li>军乐团奏两国国歌，阿曼苏丹检阅仪仗队</li>
+<li>两国总统开始小范围会谈</li>
+<li>托卡耶夫此前在机场迎接阿曼苏丹</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访有助于加强哈萨克斯坦与阿曼的政治互信，推动双边经贸与投资合作，拓展哈国在中东的外交空间，并可能促进矿产与能源领域合作。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(5 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/yedongwei504jingbuqingru-e234d565/" target="_blank">商业活动指数为50.4：哈萨克斯坦各经济部门情况如何？</a></h3>
+<div class="item-meta">哈通社中文版 · 10/06 23:49<span class="source-link"><a href="https://cn.inform.kz/news/yedongwei504jingbuqingru-e234d565/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国家银行数据显示，9月生产、建筑和服务业商业活动指数分别为52.3、51.0和50.9，均高于中性水平50，保持积极。贸易和采矿业指数为48.4和48.9，变化不大。商业景气指数（BAI）为9.9，仍处正值区间，但企业家评价略有下降。相关数据通过“开放数据存储库”的Qlik Sense仪表板展示，支持按经济部门和企业规模分析并下载Excel数据。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 商业活动指数为50.4：哈萨克斯坦各经济部门情况如何？
+正文:
+根据哈萨克斯坦国家银行公布的数据，生产、建筑和服务业商务活动保持积极水平。这些地区的指数分别为 52.3、51.0 和 50.9（8 月份为 52.1、54.3 和 51.1），高于中性水平（50）。贸易和采矿业的指数分别为48.4和48.9（8月份为48.9和48.3），变化不大。
+2026年9月，商业景气指数（BAI）为9.9。尽管企业家对当前及未来商业状况的评价较此前略有下降，但该指标仍处于正值区间。
+关于商业活动指数和商业景气指数动态变化的详细信息，以仪表板形式展示在“开放数据存储库”（Open Data Repository）测试版中 Qlik Sense 平台的“分析”板块内，可通过该链接访问。
+该交互式仪表板允许用户选择并分析数据、生成图表、查看特定时期的各项指标，以及按经济部门和企业规模（大、中、小型）细分查看结果。此外，用户还可以将基于所选参数的时间序列数据下载为 Excel 格式。</div>
+<ul>
+<li>生产、建筑、服务业指数高于50，保持积极</li>
+<li>贸易和采矿业指数低于50，变化不大</li>
+<li>9月商业景气指数为9.9，仍处正值区间</li>
+<li>数据通过Qlik Sense仪表板交互展示</li>
+<li>支持按部门和企业规模分析并下载Excel</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上，多数部门扩张支撑增长，但贸易和采矿业疲软或拖累整体。政治上，商业信心正值有助于稳定预期。外交上，数据透明化可能增强投资者信心。矿产格局上，采矿业指数偏低或影响资源开发投资。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/10yue6ri-herenminqing-5135e4b5/" target="_blank">10月6日终盘 美元、卢布和人民币兑坚戈汇率情况</a></h3>
+<div class="item-meta">哈通社中文版 · 10/06 23:14<span class="source-link"><a href="https://cn.inform.kz/news/10yue6ri-herenminqing-5135e4b5/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>10月6日KASE现货市场交易终盘，28个成员参与。美元兑坚戈平均报452.74，跌2.62坚戈，交易额5.0807亿美元；欧元兑坚戈平均报508.62，跌0.42坚戈，交易额1376.7万欧元；卢布兑坚戈平均报5.2619，跌0.1219坚戈，交易额19.9284亿卢布；人民币兑坚戈平均报67.5618，跌0.2617坚戈，交易额1821万元。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 10月6日终盘 美元、卢布和人民币兑坚戈汇率情况
+正文:
+28个KASE成员参与了交易。
+根据现货市场交易结果： 美元兑坚戈（交易工具USDKZT_TOM）汇率平均报价为1: 452.74（-2.62坚戈），外汇交易总额为5.0807亿美元（-1.3707亿美元）。交易过程中，最新报价为1:449.38坚戈，最高报价为1:456.60坚戈。
+欧元兑坚戈（交易工具EURKZT_TOM）汇率平均报价为1: 508.62（-0.42坚戈），外汇交易总额为1376.7万欧元（+669万欧元）。交易过程中，最低报价为1:505.28坚戈，最高报价为1:511.29坚戈。
+卢布兑坚戈（交易工具RUBKZT_TOM）汇率平均报价为1:5.2619（-0.1219坚戈），外汇交易总额19.9284亿卢布（-8.3253亿卢布）。交易过程中，最低报价为1:5.2443坚戈，最高报价为1: 5.3282坚戈。
+人民币兑坚戈（交易工具CNYKZT_TOD）汇率平均报价为1:67.5618（-0.2617坚戈），外汇交易总额1821万元（+509万元）。交易过程中，最低报价为1:67.0760坚戈，最高报价为1:67.9780坚戈。</div>
+<ul>
+<li>美元兑坚戈跌2.62至452.74，交易额5.08亿美元</li>
+<li>欧元兑坚戈跌0.42至508.62，交易额增669万欧元</li>
+<li>卢布兑坚戈跌0.1219至5.2619，交易额降8.33亿卢布</li>
+<li>人民币兑坚戈跌0.2617至67.5618，交易额增509万元</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈对主要货币全线升值，减轻输入性通胀压力，利好哈国经济稳定；但美元交易额下降，或反映市场观望情绪，需关注外汇流动性与外贸结算变化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/minxing285-2bcc989e/" target="_blank">哈萨克斯坦居民银行存款达28.5万亿坚戈</a></h3>
+<div class="item-meta">哈通社中文版 · 10/06 17:58<span class="source-link"><a href="https://cn.inform.kz/news/minxing285-2bcc989e/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦居民存款总额达28.5万亿坚戈，今年以来累计增长4.5%。8月法人存款环比下降3.9%至21.6万亿坚戈，自然人存款微增0.1%。本币存款降至41万亿坚戈，外币存款降至9.2万亿坚戈。坚戈兑美元升值2.4%，存款美元化率降至18.3%。定期存款利率小幅下降，个人存款利率降至14.6%。客户存款总额51万亿坚戈，占银行业负债79.2%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦居民银行存款达28.5万亿坚戈
+正文:
+尽管8月份有所下降，但今年以来，居民存款总额仍累计增长4.5%。
+数据显示，8月份法人存款环比下降3.9%，至21.6万亿坚戈。与此同时，自然人存款小幅增长0.1%，达到28.5万亿坚戈。
+按币种划分，本币存款环比下降0.5%，至41万亿坚戈；外币存款则下降5.6%，至9.2万亿坚戈。
+监管机构指出，外币存款变化部分受到汇率重估影响。8月份，坚戈兑美元升值2.4%。受此影响，截至9月1日，存款美元化率降至18.3%，而今年7月这一比例为19.1%。
+8月份，坚戈定期存款利率也有所下降。
+其中，非银行法人定期存款加权平均利率由7月份的15.9%降至15.7%；个人存款利率下降0.1个百分点，至14.6%。
+总体来看，客户存款仍是哈萨克斯坦银行业负债的主要来源。截至9月1日，客户存款规模达到51万亿坚戈，占银行业全部负债的79.2%。</div>
+<ul>
+<li>居民存款28.5万亿坚戈，年内累计增长4.5%</li>
+<li>法人存款环比降3.9%，自然人存款微增0.1%</li>
+<li>坚戈升值2.4%，存款美元化率降至18.3%</li>
+<li>个人定期存款利率降至14.6%</li>
+<li>客户存款51万亿坚戈，占银行业负债79.2%</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">存款持续增长增强银行体系稳定性，降低美元化率减轻汇率风险，但法人存款下降或反映企业流动性压力。利率下行可能刺激信贷，对经济复苏形成支撑。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/weizheng4100-ziren805ren-b0dae186/" target="_blank">数字化为哈萨克斯坦财政增收4100亿坚戈 自雇人员增至80.5万人</a></h3>
+<div class="item-meta">哈通社中文版 · 10/06 15:33<span class="source-link"><a href="https://cn.inform.kz/news/weizheng4100-ziren805ren-b0dae186/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦财政部推进财政数字化，通过统一数字体系实现透明管理。税务系统已完成39亿笔业务，开具18亿份发票，风险管理系统处理177亿份文件。数字化带来额外财政收入4100亿坚戈。自2026年起对自雇人员实施特殊税收制度，由38个数字平台代扣4%社会缴费，自雇人员从1.45万增至80.5万，社会缴费从14亿增至161亿坚戈，超60万未登记人员纳入正式经济体系。根据“数字哈萨克斯坦”战略，到2029年将覆盖主要领域。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据塔克耶夫介绍，财政部正在逐步将国家财政管理整合至统一数字化体系。
+我们的任务不仅是将个别流程自动化，而是要建立统一的国家财政管理体系，使每一项决策都基于数据作出，每一坚戈资金从预算规划到实际使用都实现透明和可控。 - 塔克耶夫说。
+目前，哈萨克斯坦税务系统处理规模显著扩大。截至目前，系统已完成39亿笔业务，开具18亿份发票，风险管理系统累计处理177亿份文件。
+通过Smart Data Finance系统已发送9.9万份通知，并签发290万份过境申报单。
+塔克耶夫表示：
+数字化带来的额外财政收入已达到4100亿坚戈。这意味着，数据已不仅仅是监管工具，也正在成为财政增收的重要来源。
+财政数字化同时正在推动经济活动“走出灰色地带”。
+塔克耶夫指出，自2026年起，哈萨克斯坦开始对自雇人员实施特殊税收制度，由数字平台作为税务代理，代扣4%的社会缴费。
+该机制最初从Yandex平台开始实施，目前已有包括inDrive、Wolt和Glovo在内的38个平台接入。
+结果显示，自雇人员数量已从1.45万人增加至80.5万人，社会缴费规模也从14亿坚戈增至161亿坚戈。 - 塔克耶夫说。
+与此同时，超过60万名此前未登记人员被纳入正式经济活动体系。
+塔克耶夫强调：
+这表明，数字化不仅能够加强对经济活动的监管，也能够在不给公民和企业增加额外行政负担的情况下，推动经济活动正规化。
+根据“数字哈萨克斯坦”（Digital Qazaqstan）战略，到2029年，这一数字化管理模式将进一步覆盖国家、企业和公民相关的主要领域。
+其中，财政数字化转型的一项重点任务，是将国家税务委员会打造成为“财政数据工厂”。</div>
+<ul>
+<li>数字化为哈国财政增收4100亿坚戈</li>
+<li>税务系统完成39亿笔业务，开具18亿份发票</li>
+<li>自雇人员从1.45万增至80.5万，缴费增11.5倍</li>
+<li>38个数字平台接入代扣4%社会缴费机制</li>
+<li>超60万未登记人员纳入正式经济活动体系</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">数字化提升财政透明度与税收效率，推动经济正规化，扩大税基。对哈国政治增强治理能力，经济促进正规就业，外交展示数字改革成果，矿产格局暂无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/xinggong6riyuzhuyaowaizhijiande-97e23057/" target="_blank">央行公布6日坚戈与主要外币之间的汇率标准</a></h3>
+<div class="item-meta">哈通社中文版 · 10/06 13:38<span class="source-link"><a href="https://cn.inform.kz/news/xinggong6riyuzhuyaowaizhijiande-97e23057/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行公布2026年10月6日坚戈与主要外币汇率：美元兑坚戈1:454.98，欧元兑坚戈1:509.53，俄罗斯卢布兑坚戈1:5.37，土耳其里拉兑坚戈1:9.26，中国元兑坚戈1:67.86。央行规定，下一工作日美元官方汇率基于阿斯塔纳时间15:30证券交易所加权平均汇率确定，其他外币官方汇率依据16:00交叉汇率计算。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">根据央行公布的信息，2026年10月6日，哈萨克斯坦坚戈与国际主要货币之间的兑换汇率标准如下：
+美元兑坚戈（USD/KZT） – 1：454.98
+欧元兑坚戈（EUR/KZT）- 1：509.53
+俄罗斯卢布兑坚戈（RUB / KZT）-1: 5.37
+土耳其里拉兑坚戈（TRY / KZT）- 1: 9.26
+中国元兑坚戈（CNY / KZT）- 1：67.86
+值得一提的是，根据哈萨克斯坦国家银行规定，截至阿斯塔纳时间当日15:30，在哈萨克斯坦证券交易所形成的坚戈兑美元加权平均汇率，将被确定为下一工作日坚戈兑美元官方汇率；坚戈兑其他外币的官方汇率，则依据截至阿斯塔纳时间16:00形成的交叉汇率计算得出。</div>
+<ul>
+<li>美元兑坚戈汇率为1:454.98</li>
+<li>欧元兑坚戈汇率为1:509.53</li>
+<li>人民币兑坚戈汇率为1:67.86</li>
+<li>卢布兑坚戈汇率为1:5.37</li>
+<li>官方汇率依交易所加权平均及交叉汇率确定</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率公布反映坚戈币值稳定，有利于哈萨克斯坦外贸和投资环境。对华汇率明确，促进中哈经贸合作；对俄卢布汇率较低，影响双边贸易结构。矿产出口以美元计价，汇率稳定保障财政收入。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/xiegongyouweijingdongli-030c1e53/" target="_blank">哪些煤化工项目有望为哈萨克斯坦经济注入新动力</a></h3>
+<div class="item-meta">哈通社中文版 · 10/06 12:38<span class="source-link"><a href="https://cn.inform.kz/news/xiegongyouweijingdongli-030c1e53/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦能源部推动煤化工产业发展，已有3个大型项目正在实施，多个项目纳入2026—2031年路线图草案。重点项目包括：卡拉干达州年产100万吨冶金焦工厂（已与中国投资者签署协议）、巴甫洛达尔州Naz Dan Group年产10万吨煤制柴油项目、卡拉干达州Alfa Plast年产10万吨煤制柴油项目。路线图还涵盖Qarmet焦化集群（年加工20万吨焦油、产3.5万吨苯）、Samal Commodities年产30万吨氨和52万吨尿素项目，以及Kaz Nedro Resource年产10万吨柴油项目。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据哈萨克斯坦能源部消息，目前该领域已有3个大型投资项目正在实施，另有多个项目被纳入2026—2031年煤化工产业发展路线图草案。
+
+其中一项重点项目位于卡拉干达州，计划建设一座年产100万吨冶金焦的工厂。目前，哈方已与中国投资者签署投资协议。
+
+在巴甫洛达尔州，Naz Dan Group有限责任公司正在实施煤制柴油项目，设计年产能为10万吨。该公司已获得矿产资源使用许可证。
+
+类似项目也在卡拉干达州推进。Alfa Plast有限责任公司计划建设年产10万吨煤制柴油项目，并已获得矿产资源使用许可证。
+
+为系统推动这一新兴产业发展，哈萨克斯坦能源部联合煤化工企业、煤炭开采企业及其他相关机构，制定了2026—2031年煤化工产业发展路线图草案。
+
+该文件计划推动一系列煤炭深加工项目。
+
+其中，卡拉干达州拟依托Qarmet股份公司发展焦化产业集群。项目计划每年加工最多20万吨焦油，生产最多3.5万吨苯，同时开展焦炉煤气净化。
+
+在阿拜州，Samal Commodities有限责任公司正在研究建设年产30万吨氨和52万吨尿素的项目。
+
+此外，巴甫洛达尔州的Kaz Nedro Resource有限责任公司也在研究相关项目。该公司计划依托萨雷科尔矿床，建设年产10万吨柴油的生产设施。
+
+能源部指出，发展煤化工产业将有助于扩大哈萨克斯坦煤炭的应用范围，推动产业从单纯供应原材料向深加工和高附加值产品生产转型。</div>
+<ul>
+<li>3个大型煤化工项目已实施，多个纳入2026—2031年路线图</li>
+<li>卡拉干达州年产100万吨冶金焦项目与中国投资者签约</li>
+<li>巴甫洛达尔州和卡拉干达州各推进年产10万吨煤制柴油项目</li>
+<li>路线图涵盖焦化、煤制柴油、氨和尿素等深加工项目</li>
+<li>推动煤炭从原材料供应向高附加值产品转型</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">煤化工发展将优化哈国经济结构，减少对原材料出口依赖，提升矿产资源附加值；吸引中国等外资，深化外交合作；创造就业，促进卡拉干达、巴甫洛达尔等地区发展，但需关注环境与水资源压力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/guo5rixia-d3dcc26c/" target="_blank">国际油价5日下跌</a></h3>
+<div class="item-meta">哈通社中文版 · 10/06 10:36<span class="source-link"><a href="https://cn.inform.kz/news/guo5rixia-d3dcc26c/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>截至5日收盘，国际油价下跌。纽约商品交易所11月交货的轻质原油期货价格下跌1.68美元，收于每桶89.43美元，跌幅1.84%；伦敦布伦特原油12月交货期货价格下跌1.93美元，收于每桶100.32美元，跌幅1.89%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 国际油价5日下跌
+正文:
+截至当天收盘，纽约商品交易所11月交货的轻质原油期货价格下跌1.68美元，收于每桶89.43美元，跌幅为1.84%；12月交货的伦敦布伦特原油期货价格下跌1.93美元，收于每桶100.32美元，跌幅为1.89%。</div>
+<ul>
+<li>纽约轻质原油期货下跌1.68美元，收于89.43美元/桶</li>
+<li>布伦特原油期货下跌1.93美元，收于100.32美元/桶</li>
+<li>两大基准油价跌幅均接近1.9%</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">国际油价下跌可能减少哈萨克斯坦石油出口收入，对财政预算和经济增长构成压力，但有助于降低国内燃料成本，并可能影响其与欧佩克+的产量协调立场。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-10-07 09:02</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
