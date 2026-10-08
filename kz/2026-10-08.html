@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年10月8日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年10月8日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年10月07日早9:00至2026年10月08日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 15 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">2</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">8</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">2</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/shihuizaifamianbuchangzuochuying-bd17f0d3/" target="_blank">哈萨克斯坦是否会在法律层面引入“垃圾直播”概念？内务部长作出回应</a></h3>
+<div class="item-meta">哈通社中文版 · 10/08 00:48<span class="source-link"><a href="https://cn.inform.kz/news/shihuizaifamianbuchangzuochuying-bd17f0d3/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦内务部长萨德诺夫表示，无需在法律中引入“垃圾直播”概念，因现行《在线平台与在线广告法》已定义“在线平台内容”并禁止违法内容。该术语无明确法律内涵，可能导致适用不统一。违法行为可依据《刑法典》第174条、第274条及《行政违法法典》第456-2条追责。今年前9个月，第174条立案72起，21起移送法院；第274条立案64起，9起移送法院；第456-2条追责124人。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦是否会在法律层面引入“垃圾直播”概念？内务部长作出回应
+正文:
+“我们认为，没有必要在哈萨克斯坦共和国立法实践中引入‘垃圾直播’这一概念。现行法律，特别是《哈萨克斯坦共和国在线平台与在线广告法》，已经对‘在线平台内容’作出了定义。该概念涵盖视听形式的信息，并禁止传播违法内容，包括宣传残酷行为、暴力、色情等。”萨德诺夫说。
+他表示，“垃圾直播”这一术语具有评价性质，没有明确的法律内涵。
+“这可能导致法律适用不统一。对于具体的违法行为，现行法律已经规定了相应的责任。相关人员可能依据《刑法典》第174条、第274条以及《行政违法法典》第456-2条被追究责任。”萨德诺夫说。
+根据部长答复所附信息，今年前9个月，依据《刑法典》第174条共立案72起刑事案件，其中21起已移送法院；依据《刑法典》第274条登记64起刑事案件，其中9起已移送法院。此外，依据《行政违法法典》第456-2条，已有124人被追究责任。</div>
+<ul>
+<li>内务部长称无需引入“垃圾直播”法律概念</li>
+<li>现行法律已定义在线平台内容并禁止违法信息</li>
+<li>“垃圾直播”术语无明确法律内涵，易致适用不统一</li>
+<li>违法行为可依刑法第174、274条及行政违法法典第456-2条追责</li>
+<li>前9个月：第174条立案72起，第274条64起，行政追责124人</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">哈国明确不引入“垃圾直播”概念，维持现行法律框架，有助于法律适用统一，避免评价性术语干扰司法。此举强化对在线平台违法内容的现有追责机制，对政治稳定、网络治理及外交形象影响有限，但可能引发对言论自由与监管平衡的讨论。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/guojiaguobubuchang-ccedcc77/" target="_blank">国家元首任命新任国防部副部长</a></h3>
+<div class="item-meta">哈通社中文版 · 10/07 15:11<span class="source-link"><a href="https://cn.inform.kz/news/guojiaguobubuchang-ccedcc77/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国家元首签署命令，任命塔季扬娜·萨韦利耶娃为国防部副部长，同时免去阿斯克尔·贝森诺夫的国防部副部长职务。此次人事调整涉及国防部一名副部长的更替，属于国家元首依法行使人事任免权的常规操作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">根据国家元首命令，塔季扬娜·萨韦利耶娃被任命为哈萨克斯坦国防部副部长。
+同时，阿斯克尔·贝森诺夫被免去哈萨克斯坦国防部副部长职务。</div>
+<ul>
+<li>国家元首任命塔季扬娜·萨韦利耶娃为国防部副部长</li>
+<li>阿斯克尔·贝森诺夫被免去国防部副部长职务</li>
+<li>人事变动依据国家元首命令执行</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次国防部副部长更替属常规人事调整，有助于优化国防管理架构，对哈国政治稳定、经济与外交无直接显著影响，矿产格局亦不受波及。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(8 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/jinxinggongzuowen-01134f1b/" target="_blank">托卡耶夫抵达土库曼斯坦进行工作访问</a></h3>
+<div class="item-meta">哈通社中文版 · 10/08 02:35<span class="source-link"><a href="https://cn.inform.kz/news/jinxinggongzuowen-01134f1b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫抵达土库曼斯坦进行工作访问，土库曼斯坦内阁副总理兼外交部长拉希德·梅列多夫到机场迎接。访问期间，托卡耶夫将出席中亚与阿塞拜疆国家元首第八次磋商会议、独联体国家元首理事会会议和里海环境峰会。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫抵达土库曼斯坦进行工作访问
+正文:
+在机场，土库曼斯坦内阁副总理兼外交部长拉希德·梅列多夫迎接哈萨克斯坦总统。
+Фото: Акорда Фото: Акорда Фото: Акорда 据悉，访问期间，托卡耶夫总统将出席中亚与阿塞拜疆国家元首第八次磋商会议、以及独联体国家元首理事会会议和里海环境峰会。</div>
+<ul>
+<li>托卡耶夫抵土库曼斯坦工作访问</li>
+<li>土外长梅列多夫机场迎接</li>
+<li>将出席中亚与阿塞拜疆元首第八次磋商会议</li>
+<li>将出席独联体国家元首理事会会议</li>
+<li>将出席里海环境峰会</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈萨克斯坦与土库曼斯坦及中亚-阿塞拜疆区域合作，推动独联体框架内协调，并聚焦里海环境议题，有利于哈国拓展外交空间、保障能源过境与生态安全。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/junshizuo-73d4e3c6/" target="_blank">库鲁尔泰批准哈塞军事技术合作协议</a></h3>
+<div class="item-meta">哈通社中文版 · 10/07 21:44<span class="source-link"><a href="https://cn.inform.kz/news/junshizuo-73d4e3c6/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦库鲁尔泰批准与塞尔维亚的军事技术合作协议。议员朱克巴耶夫称，协议基于平等原则和两国法律，旨在发展互利军事技术合作。双方可相互供应武器装备、军事技术装备，并提供工程、服务及知识产权成果，涵盖军事技术信息和设计、规范、技术等文件。预计将为哈国防工业发展创造有利条件。该法案已于9月16日一读通过。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">库鲁尔泰议员阿勒马特·朱克巴耶夫表示，协议旨在本着平等原则，并依据两国国内法律，建立和进一步发展哈萨克斯坦政府与塞尔维亚政府之间互利的军事技术合作。
+根据协议，双方可相互供应军用产品，包括武器装备、军事技术装备，以及合作框架下提供或研发的工程、服务和知识产权成果，其中包括相关专有权。
+协议还涵盖军事技术领域的信息，以及设计、规范、技术、工艺和操作文件等符合双方国内法律规定的相关产品。
+预计，该协议的批准将为哈萨克斯坦国防工业进一步发展创造有利条件。
+此前，库鲁尔泰议员已于9月16日一读通过该协议批准法案。</div>
+<ul>
+<li>库鲁尔泰批准哈塞军事技术合作协议</li>
+<li>双方可相互供应武器装备和军事技术装备</li>
+<li>合作涵盖工程、服务、知识产权及技术文件</li>
+<li>协议基于平等原则和两国国内法律</li>
+<li>预计促进哈国防工业进一步发展</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该协议将深化哈塞军事技术合作，提升哈国防工业能力，减少对单一供应方的依赖，增强外交多元平衡，但可能引发地区军备动态关注。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/yu-75c1cd68/" target="_blank">托卡耶夫与俄罗斯总统普京通电话</a></h3>
+<div class="item-meta">哈通社中文版 · 10/07 21:11<span class="source-link"><a href="https://cn.inform.kz/news/yu-75c1cd68/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与俄罗斯总统普京通电话，托卡耶夫祝贺普京生日快乐，并祝愿其工作顺利。托卡耶夫强调普京为俄罗斯繁荣及人民福祉发挥卓越作用，并肯定其为加强两国战略伙伴关系及盟友关系所作重大贡献。双方还审议了即将开展的联合活动日程。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">电话会谈中，托卡耶夫总统祝贺普京生日快乐，并祝愿其工作顺利。
+哈萨克斯坦总统强调了弗拉基米尔·普京为俄罗斯繁荣及人民福祉所发挥的卓越作用与倾注的辛勤努力。
+国家元首强调了俄罗斯总统为加强两国战略伙伴关系及盟友关系所作出的重大贡献。
+此外，双方还审议了即将开展的联合活动日程。</div>
+<ul>
+<li>托卡耶夫祝贺普京生日快乐并祝愿工作顺利</li>
+<li>托卡耶夫强调普京为俄繁荣及人民福祉发挥卓越作用</li>
+<li>托卡耶夫肯定普京为加强两国战略伙伴关系及盟友关系作出重大贡献</li>
+<li>双方审议即将开展的联合活动日程</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次通话凸显哈俄战略伙伴与盟友关系稳固，有利于哈国平衡外交，巩固政治互信，促进经贸与安全合作，对地区矿产格局影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/huigongren-a140f85b/" target="_blank">托卡耶夫会见卢克石油公司创始人阿列克佩罗夫</a></h3>
+<div class="item-meta">哈通社中文版 · 10/07 20:03<span class="source-link"><a href="https://cn.inform.kz/news/huigongren-a140f85b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫会见了卢克石油公司创始人阿列克佩罗夫。会谈中，托卡耶夫听取了卢克石油在哈经营活动及未来几年计划的介绍，双方讨论了在石油天然气领域联合项目框架下进一步发展合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫会见卢克石油公司创始人阿列克佩罗夫
+正文:
+会谈期间，托卡耶夫听取了关于“卢克石油”公司在哈萨克斯坦经营活动情况及未来几年计划的介绍。
+双方在会谈中就进一步发展石油天然气领域联合项目框架下的合作进行了讨论。</div>
+<ul>
+<li>托卡耶夫会见卢克石油创始人阿列克佩罗夫</li>
+<li>听取卢克石油在哈经营及未来计划</li>
+<li>讨论油气领域联合项目合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次会谈强化哈俄能源合作，有助于稳定哈国油气产业投资与出口，巩固俄罗斯企业在哈矿产格局中的地位，对哈经济与外交产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/huiguozhengguoda-f6884f39/" target="_blank">托卡耶夫会见英国贸易政策国务大臣萨瓦尔</a></h3>
+<div class="item-meta">哈通社中文版 · 10/07 19:37<span class="source-link"><a href="https://cn.inform.kz/news/huiguozhengguoda-f6884f39/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫会见英国贸易政策国务大臣萨瓦尔，指出英国是哈主要贸易和投资伙伴之一，去年双边贸易额增长83%，超过16亿美元，目前有500多家英国企业在哈开展业务。托卡耶夫请萨瓦尔转达对英国首相安迪·伯纳姆的问候并邀请其访哈。双方还讨论了加强人文交流、学术交流、联合教育倡议，以及能源、交通物流、数字化和人工智能等领域合作前景。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫会见英国贸易政策国务大臣萨瓦尔
+
+托卡耶夫指出，哈萨克斯坦高度重视发展同英国的双边关系。
+
+“哈萨克斯坦与英国保持着建设性的政治对话以及各层级的积极互动。同时，我相信双方进一步扩大合作仍具有充分潜力。”托卡耶夫表示。
+
+托卡耶夫指出，英国是哈萨克斯坦主要贸易和投资伙伴之一。去年，双边贸易额增长83%，超过16亿美元。目前，已有500多家英国企业在哈萨克斯坦开展业务。
+
+“推动经贸关系不仅需要新的项目和投资，也需要能够在国际环境中开展工作的专业人才。正因如此，我经常呼吁哈萨克斯坦年轻人走向世界、拓宽视野、学习多种语言，首先要掌握作为国际交流工具的英语。”托卡耶夫强调。
+
+会谈期间，托卡耶夫请萨瓦尔勋爵转达对英国首相安迪·伯纳姆的诚挚问候，并邀请其访问哈萨克斯坦。
+
+萨瓦尔表示，对哈萨克斯坦与英国战略伙伴关系稳步发展感到满意，并感谢托卡耶夫总统支持英国商业项目、在哈萨克斯坦营造良好投资环境。
+
+“我们高度关注贵国快速发展的态势。我们高度评价双方在国际议程主要问题上的立场相近。开放、伙伴关系、创新、相互信任和自由贸易将我们联系在一起。我们希望同战略伙伴一道取得与高水平合作相匹配的具体成果，哈萨克斯坦无疑也在其中。”萨瓦尔指出。
+
+双方在会谈中还谈到了加强人文交流、扩大学术交流以及落实联合教育倡议的重要性。
+
+托卡耶夫强调，英国在教育以及青年专业人才培养方面拥有很高水平。
+
+此外，与会者还讨论了进一步推动能源、交通物流、数字化和人工智能等领域合作的前景。</div>
+<ul>
+<li>托卡耶夫会见英国贸易政策国务大臣萨瓦尔</li>
+<li>去年双边贸易额增长83%，超过16亿美元</li>
+<li>500多家英国企业在哈萨克斯坦开展业务</li>
+<li>托卡耶夫邀请英国首相安迪·伯纳姆访问哈萨克斯坦</li>
+<li>双方讨论能源、交通物流、数字化和人工智能合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈英战略伙伴关系，有助于吸引英国投资和技术，推动哈经济多元化与数字化。贸易增长83%显示合作潜力，但哈仍需平衡与俄罗斯、中国及西方关系，外交上保持多向量平衡。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/riwen-eb4afc9e/" target="_blank">托卡耶夫向尼日利亚总统致慰问电</a></h3>
+<div class="item-meta">哈通社中文版 · 10/07 18:45<span class="source-link"><a href="https://cn.inform.kz/news/riwen-eb4afc9e/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫就尼日利亚西南部翁多州军用飞机坠毁事故造成多人伤亡，向尼日利亚总统博拉·提努布致慰问电，表示深切哀悼，并向遇难者家属致以诚挚慰问。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">慰问电中，托卡耶夫总统就尼日利亚西南部翁多州发生的军用飞机坠毁事故造成多人伤亡，向该国总统博拉·提努布表示深切哀悼。
+此外，哈萨克斯坦总统向遇难者家属表示诚挚的慰问。</div>
+<ul>
+<li>托卡耶夫就尼日利亚军机坠毁致多人伤亡致慰问电</li>
+<li>慰问对象为尼日利亚总统博拉·提努布</li>
+<li>事故发生在尼日利亚西南部翁多州</li>
+<li>托卡耶夫向遇难者家属表示诚挚慰问</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此慰问电体现哈萨克斯坦对非洲国家的外交关注，有助于增进与尼日利亚的双边友好关系，提升哈国在国际事务中的道义形象，对哈国政治外交具有积极意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/waibuzhengzaigongmin-bingyufangguoshi-a263fe05/" target="_blank">外交部正与俄方协商接回身处冲突地区的哈萨克斯坦公民</a></h3>
+<div class="item-meta">哈通社中文版 · 10/07 16:15<span class="source-link"><a href="https://cn.inform.kz/news/waibuzhengzaigongmin-bingyufangguoshi-a263fe05/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦外交部正与俄方协商，接回通过社交媒体求助的哈萨克斯坦公民。这些公民称赴俄从事安保工作，签约后面临被派往冲突地区的风险。核查完成后名单将提交俄方。10月2日，哈外交部已向俄方发出外交照会，并开通热线接收求助信息。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">外交部表示，针对此前通过社交媒体发布视频求助的哈萨克斯坦公民，相关部门正在采取必要措施。
+“核查工作结束后，整理完成的人员名单将提交俄罗斯方面。目前正在就协助他们返回国内进行协商。”
+哈萨克斯坦外交部同时表示，目前正就这一问题与俄罗斯方面在不同层级保持持续联系。
+此前，多名哈萨克斯坦公民通过社交媒体发布视频求助。他们称，赴俄罗斯后原计划从事安保相关工作，但在签署相关文件后面临被派往冲突地区的风险。
+10月2日，哈萨克斯坦外交部曾表示，已就相关情况向俄罗斯方面发出外交照会。
+外交部此前还呼吁，身处冲突地区的哈萨克斯坦公民家属向有关部门提供相关人员信息。目前，外交部已开通专门热线接收相关求助。</div>
+<ul>
+<li>哈外交部正与俄方协商接回公民</li>
+<li>公民称赴俄安保工作面临冲突风险</li>
+<li>10月2日哈方向俄发出外交照会</li>
+<li>外交部开通热线接收求助信息</li>
+<li>人员名单核查后将提交俄方</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该事件考验哈俄外交关系，哈方需平衡与俄合作及保护公民安全。若处理不当，可能引发国内舆论压力，影响民众对政府外交能力的信任，并促使哈国重新评估公民赴俄务工风险。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/chang342-duogezhongguobendisheng-2eafbcb6/" target="_blank">哈萨克斯坦汽车产量增长34.2% 多个中国品牌加快本地化生产</a></h3>
+<div class="item-meta">哈通社中文版 · 10/07 13:43<span class="source-link"><a href="https://cn.inform.kz/news/chang342-duogezhongguobendisheng-2eafbcb6/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2025年前9个月，哈萨克斯坦生产10.9223万辆汽车，同比增长34.2%。9月产量2.0215万辆，同比增长55.2%，环比增长32.4%。Allur工厂产量居首，达5.613万辆。中国品牌Changan、Chery、Haval加快本地化生产，OMODA、JAECOO和Li Auto项目推进。Chevrolet Cobalt为最畅销车型。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据哈萨克斯坦汽车联盟初步数据，2025年前9个月，全国共生产10.9223万辆汽车及其他机动车辆。
+今年9月，哈萨克斯坦汽车制造企业共生产2.0215万辆汽车及其他机动车辆，较2025年同期增长55.2%，较今年8月增长32.4%。
+哈萨克斯坦汽车联盟主席阿娜尔·马卡舍娃表示：
+“前9个月数据显示，哈萨克斯坦汽车工业继续保持较快发展势头。该行业对投资具有吸引力，汽车制造商正在巩固其在哈萨克斯坦的市场地位，并实施新的项目。”
+据她介绍，目前阿拉木图正在实施OMODA和JAECOO汽车生产项目，库斯塔奈则在为Li Auto汽车生产做准备。今年秋季，哈萨克斯坦还签署了一系列旨在发展汽车零部件生产和提高本地化水平的协议。
+从企业产量来看，位于库斯塔奈的Allur（SaryarkaAvtoProm）工厂位居首位，今年前9个月共生产5.613万辆汽车及其他机动车辆。
+阿拉木图Astana Motors Manufacturing Kazakhstan工厂共生产4.0245万辆Changan、Chery和Haval品牌汽车。
+此外，Hyundai Trans Kazakhstan生产2.7305万辆汽车，Kia Qazaqstan工厂生产1.3782万辆汽车。
+从品牌来看，今年前9个月产量最高的汽车品牌包括：Chevrolet 2.9555万辆、Hyundai 2.7275万辆、Kia 1.7712万辆、Changan 1.5148万辆、Chery 1.2593万辆以及Haval 1.0955万辆。
+从具体车型来看，Chevrolet Cobalt以2.7659万辆的产量位居首位。其后依次为Hyundai Tucson 1.0522万辆、Kia Sportage 7139辆、Hyundai Mufasa 6743辆以及Changan CS35 Max 5296辆。</div>
+<ul>
+<li>前9个月汽车产量10.9223万辆，增长34.2%</li>
+<li>9月产量2.0215万辆，同比增55.2%</li>
+<li>Allur工厂产量5.613万辆居首</li>
+<li>中国品牌Changan、Chery、Haval本地化生产</li>
+<li>OMODA、JAECOO和Li Auto项目推进</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汽车产量增长提升哈国制造业实力，吸引投资并巩固市场地位。中国品牌本地化生产深化中哈经贸合作，促进技术转移和就业，推动外交关系。同时，零部件生产协议有助于优化矿产和工业格局，减少进口依赖。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/fawuzuoyong-329c4b17/" target="_blank">《世界金融评论》：哈萨克斯坦交通网络发展提升区域物流枢纽作用</a></h3>
+<div class="item-meta">哈通社中文版 · 10/07 23:16<span class="source-link"><a href="https://cn.inform.kz/news/fawuzuoyong-329c4b17/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>过去七年，哈萨克斯坦新建和修缮公路3.63万公里，新建和现代化改造约5000公里铁路，完成110个铁路车站建设。交通网络发展巩固了其区域物流枢纽作用，为国际企业布局分拨中心和供应链创造条件。2025年哈货物和服务外贸额超1700亿美元，五年增长40.5%。2026年与欧洲复兴开发银行签署至2030年新五年期协议，合作发展私营部门、可持续基础设施、数字化和金融市场。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">《世界金融评论》：哈萨克斯坦交通网络发展提升区域物流枢纽作用
+
+报道指出，过去七年来，哈萨克斯坦累计新建和修缮公路3.63万公里；同时，约5000公里铁路网完成新建和现代化改造，此外，110个铁路车站的建设及安装施工已经完成。
+
+报道称，交通网络的发展进一步巩固了哈萨克斯坦作为交通物流枢纽的作用。对于国际企业而言，这为布局分拨中心、组织区域供应链以及推动哈萨克斯坦生产融入国际价值链创造了条件。
+
+报道说，基础设施的变化与对外经济活动的扩大同步推进。2025年，哈萨克斯坦货物和服务外贸额超过1700亿美元，五年间增长40.5%。
+
+报道提到，交通互联互通正成为国际投资合作的方向之一。2026年，哈萨克斯坦与欧洲复兴开发银行（EBRD）签署了一项实施至2030年的新五年期协议。该协议包括双方围绕发展私营部门、可持续基础设施、数字化和金融市场，以及巩固哈萨克斯坦作为区域贸易物流枢纽的作用开展合作。
+
+报道强调，不断发展的交通基础设施与持续增长的贸易流相结合，为物流、仓储、交通运输服务和出口导向型生产等领域带来了新的发展机遇。</div>
+<ul>
+<li>七年新建修缮公路3.63万公里，改造铁路5000公里</li>
+<li>完成110个铁路车站建设，巩固区域物流枢纽</li>
+<li>2025年外贸额超1700亿美元，五年增长40.5%</li>
+<li>与EBRD签署2026至2030年新五年期合作协议</li>
+<li>交通与贸易流结合，带来物流仓储等新机遇</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">交通网络升级强化哈国区域物流枢纽地位，促进外贸增长和外资合作，推动经济多元化；与EBRD协议深化外交经济联系，助力融入国际价值链，但矿产格局短期影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/10yue7ri-herenminqing-b4eafc0b/" target="_blank">10月7日终盘 美元、卢布和人民币兑坚戈汇率情况</a></h3>
+<div class="item-meta">哈通社中文版 · 10/07 22:40<span class="source-link"><a href="https://cn.inform.kz/news/10yue7ri-herenminqing-b4eafc0b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>10月7日，27个KASE成员参与交易。美元兑坚戈平均报447.21，跌5.53坚戈，交易额4.6888亿美元；欧元兑坚戈平均报500.67，跌7.95坚戈，交易额322.7万欧元；卢布兑坚戈平均报5.2361，跌0.0258坚戈，交易额24.0205亿卢布；人民币兑坚戈平均报66.6395，跌0.9223坚戈，交易额6352.2万元。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 10月7日终盘 美元、卢布和人民币兑坚戈汇率情况
+正文:
+27个KASE成员参与了交易。
+根据现货市场交易结果： 美元兑坚戈（交易工具USDKZT_TOM）汇率平均报价为1: 447.21（-5.53坚戈），外汇交易总额为4.6888亿美元（-3918.9万美元）。交易过程中，最新报价为1:446.05坚戈，最高报价为1:449.52坚戈。
+欧元兑坚戈（交易工具EURKZT_TOM）汇率平均报价为1: 500.67（-7.95坚戈），外汇交易总额为322.7万欧元（-1054万欧元）。交易过程中，最低报价为1:499.63坚戈，最高报价为1:503.46坚戈。
+卢布兑坚戈（交易工具RUBKZT_TOM）汇率平均报价为1:5.2361（-0.0258坚戈），外汇交易总额24.0205亿卢布（+4.0921亿卢布）。交易过程中，最低报价为1:5.2115坚戈，最高报价为1: 5.2650坚戈。
+人民币兑坚戈（交易工具CNYKZT_TOD）汇率平均报价为1:66.6395（-0.9223坚戈），外汇交易总额6352.2万元（+4531.1万元）。交易过程中，最低报价为1:66.5130坚戈，最高报价为1:66.8600坚戈。</div>
+<ul>
+<li>美元兑坚戈跌5.53至447.21，交易额4.6888亿美元</li>
+<li>欧元兑坚戈跌7.95至500.67，交易额322.7万欧元</li>
+<li>卢布兑坚戈跌0.0258至5.2361，交易额24.0205亿卢布</li>
+<li>人民币兑坚戈跌0.9223至66.6395，交易额6352.2万元</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈对主要货币升值，减轻进口通胀压力，但可能削弱出口竞争力。人民币交易额大增，反映哈中贸易本币结算扩大，利于双边经济合作与去美元化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/xinggong7riyuzhuyaowaizhijiande-d358bee4/" target="_blank">央行公布7日坚戈与主要外币之间的汇率标准</a></h3>
+<div class="item-meta">哈通社中文版 · 10/07 13:39<span class="source-link"><a href="https://cn.inform.kz/news/xinggong7riyuzhuyaowaizhijiande-d358bee4/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行公布2026年10月7日坚戈与主要外币汇率：美元兑坚戈1:453.65，欧元兑坚戈1:509.99，卢布兑坚戈1:5.31，里拉兑坚戈1:9.22，人民币兑坚戈1:67.66。央行规定，坚戈兑美元官方汇率基于阿斯塔纳时间15:30证券交易所加权平均汇率确定，其他外币汇率则依据16:00交叉汇率计算。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">央行公布7日坚戈与主要外币之间的汇率标准
+
+根据央行公布的信息，2026年10月7日，哈萨克斯坦坚戈与国际主要货币之间的兑换汇率标准如下：
+美元兑坚戈（USD/KZT） – 1：453.65
+欧元兑坚戈（EUR/KZT）- 1：509.99
+俄罗斯卢布兑坚戈（RUB / KZT）-1: 5.31
+土耳其里拉兑坚戈（TRY / KZT）- 1: 9.22
+中国元兑坚戈（CNY / KZT）- 1：67.66
+值得一提的是，根据哈萨克斯坦国家银行规定，截至阿斯塔纳时间当日15:30，在哈萨克斯坦证券交易所形成的坚戈兑美元加权平均汇率，将被确定为下一工作日坚戈兑美元官方汇率；坚戈兑其他外币的官方汇率，则依据截至阿斯塔纳时间16:00形成的交叉汇率计算得出。</div>
+<ul>
+<li>美元兑坚戈汇率为1:453.65</li>
+<li>欧元兑坚戈汇率为1:509.99</li>
+<li>卢布兑坚戈汇率为1:5.31</li>
+<li>人民币兑坚戈汇率为1:67.66</li>
+<li>官方汇率基于交易所加权平均和交叉汇率</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率公布反映坚戈对主要货币的稳定态势，影响哈国进出口成本、外债偿付及外汇市场预期，对矿产出口计价和外资投资决策具有参考意义。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/ying-1f18a3ce/" target="_blank">库鲁尔泰批准恢复哈俄石油及石油产品供应协议</a></h3>
+<div class="item-meta">哈通社中文版 · 10/07 14:44<span class="source-link"><a href="https://cn.inform.kz/news/ying-1f18a3ce/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦库鲁尔泰批准恢复哈俄石油及石油产品供应协议。该议定书于2024年11月27日在阿斯塔纳签署，旨在恢复2024年1月1日到期的协议效力，并更新部分合作条款。协议有效期延长至2028年1月1日，此后若无异议将自动按5年期限延长。双方将继续每年协商供应指导性平衡方案，保持信息交流并实施监管。能源部长阿克肯杰诺夫表示，该协议对保障哈国能源安全和国内市场稳定具有重要意义。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">能源部长叶尔兰·阿克肯杰诺夫向议员介绍了相关文件。
+- 该议定书于2024年11月27日在阿斯塔纳签署，主要目的是恢复已于2024年1月1日到期的协议效力，并更新两国合作中的部分条款。 - 他说。
+根据议定书，双方将恢复该协议效力，并将其适用于自2024年1月1日起产生的相关法律关系。
+文件同时规定，双方将继续每年协商石油及石油产品供应指导性平衡方案，保持两国主管部门之间的信息交流，并对协议框架内供应的石油产品使用情况实施监管。
+协议有效期将延长至2028年1月1日。此后，如任何一方均未提出异议，协议将自动按5年期限延长。
+阿克肯杰诺夫指出：
+- 对哈萨克斯坦而言，该协议对于保障能源安全和国内石油产品市场稳定运行具有重要意义。协议为两国主管部门协调行动提供了国际法律基础，有助于及时制定石油产品供需平衡方案，并在个别石油产品出现短缺风险时采取必要措施。
+审议结束后，库鲁尔泰议员投票通过了该法案。</div>
+<ul>
+<li>库鲁尔泰批准恢复哈俄石油供应协议</li>
+<li>议定书2024年11月27日在阿斯塔纳签署</li>
+<li>协议有效期延长至2028年1月1日</li>
+<li>双方每年协商供应平衡方案并监管</li>
+<li>协议保障哈国能源安全和市场稳定</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该协议恢复并延长哈俄石油供应合作，有助于保障哈萨克斯坦能源安全和国内市场稳定，强化两国能源外交关系，同时为哈国石油产品供需平衡和短缺风险应对提供法律基础，对地区矿产及能源格局影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/fakai844-liangren4nian-00234beb/" target="_blank">非法开采价值8.44亿坚戈黄金 两人获刑4年</a></h3>
+<div class="item-meta">哈通社中文版 · 10/07 14:32<span class="source-link"><a href="https://cn.inform.kz/news/fakai844-liangren4nian-00234beb/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦两名前国企高管利用EastGoldStone公司在乌兰区什宾德地段非法开采黄金超15公斤，价值逾8.44亿坚戈。该公司仅有勘探许可，无开采许可。执法部门查获6.7公斤黄金和579克白银，并发现非法作业破坏18.2公顷土地及国家森林资源，修复费用超3亿坚戈。法院判处两人各4年有期徒刑，没收价值3.72亿坚戈的财产，包括卡车、挖掘机、装载机、淘洗设备及现金。判决尚未生效。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 非法开采价值8.44亿坚戈黄金 两人获刑4年
+正文:
+据调查，曾任“政府为公民服务”国有公司分公司副主任的A.A.拉希姆扎诺夫与D.M.努尔塔津利用EastGoldStone有限责任公司，在乌兰区什宾德地段组织黄金开采活动。该公司仅持有固体矿产勘探许可证，并无黄金开采许可。
+非法采金作业使用了挖掘机、装载机、自卸卡车以及淘洗设备。涉案非法开采黄金总量超过15公斤，价值逾8.44亿坚戈。
+调查期间，执法人员查获6.7公斤黄金和579克白银，其中黄金价值3.82亿坚戈。
+非法开采活动还对当地生态环境造成破坏，受损土地面积达到18.2公顷。此外，属于国家森林资源的树木和灌木遭到毁坏和损伤。修复相关生态损害所需费用超过3亿坚戈。
+根据法院判决，总价值3.72亿坚戈的涉案财产被没收，包括4辆卡车、2台挖掘机、2台装载机、1套水力淘洗设备，以及1000万坚戈和5.6万美元现金。
+目前，该判决尚未生效。</div>
+<ul>
+<li>两名前国企高管非法开采黄金超15公斤，价值8.44亿坚戈</li>
+<li>非法作业破坏18.2公顷土地及森林，修复费超3亿坚戈</li>
+<li>法院判处两人各4年徒刑，没收3.72亿坚戈财产</li>
+<li>查获6.7公斤黄金和579克白银，价值3.82亿坚戈</li>
+<li>判决尚未生效，涉案公司仅有勘探许可</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此案暴露哈国矿产监管漏洞，涉国企人员犯罪损害政府公信力；没收财产及生态修复费用对地方财政形成一定补充，但非法采矿破坏环境加剧资源管理压力；判决尚未生效，后续可能影响外资对哈矿业合规信心。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-10-08 09:01</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
