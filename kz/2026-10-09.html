@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年10月9日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年10月9日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年10月08日早9:00至2026年10月09日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 19 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">4</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">8</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">6</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">1</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(4 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/zhukaigongzuohui-jinyihe-43ecbd0c/" target="_blank">副总统卡林主持召开工作会议 讨论进一步巩固族际和谐</a></h3>
+<div class="item-meta">哈通社中文版 · 10/09 00:41<span class="source-link"><a href="https://cn.inform.kz/news/zhukaigongzuohui-jinyihe-43ecbd0c/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦副总统卡林主持召开工作会议，总检察院、总统办公厅、外交部、内务部、司法部、文化和信息部、教育部、科学和高等教育部及哈萨克斯坦人民理事会秘书处负责人参加。会议讨论落实总统在人民理事会首届会议提出的任务，将族际和宗教和谐确立为宪法价值，确保“法律与秩序”原则，推进“清洁哈萨克斯坦”项目和“诚实公民”教育计划。卡林要求加强宣传总统立场、监督指示落实，完善国家机关协作机制，巩固族际和谐。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 副总统卡林主持召开工作会议 讨论进一步巩固族际和谐
+正文:
+总检察院、总统办公厅相关部门、哈萨克斯坦人民理事会秘书处，以及外交部、内务部、司法部、文化和信息部、教育部、科学和高等教育部负责人参加会议。
+会议首先讨论了落实国家元首在哈萨克斯坦人民理事会首届会议开幕式上提出的任务。卡林要求继续做好宣传和阐释总统主要立场的工作，同时加强对国家元首各项指示落实情况的监督。
+“宪法确立的价值观构成总统哈斯穆-卓玛尔特·托卡耶夫政治方针的核心，也是巩固社会团结的坚实基础。在这一背景下，族际和宗教和谐作为宪法价值具有特殊重要意义，是国家稳定发展的基础。因此，应围绕在社会意识中巩固并广泛宣传这些价值观，开展系统、持续的工作。”卡林说。
+他还指出，哈萨克斯坦人民理事会秘书处已经围绕族际和谐、社会对话和地区发展等问题，系统开展汇总和分类整理民众诉求的工作，并着力建立稳定的公共对话平台。
+“总统已明确提出，要保持与哈萨克斯坦民族和睦大会和国家库鲁尔泰大会的延续性，继承其传统和先进经验。哈萨克斯坦人民理事会秘书处将在完善这一方向的组织工作中发挥主要作用。”卡林说。
+随后，会议讨论了将族际和宗教和谐确立为宪法价值的问题。
+卡林指出，随着新宪法通过和主要权力机构组建，国家正在向现代、富有活力的政治模式转型。他表示，当前内政工作的一个重要方向，是在社会中巩固宪法确立的国家原则和全民族价值观。其中，确保“法律与秩序”原则、巩固民族团结具有特别重要的意义。
+“正如国家元首所强调的，在我国，不得因语言、民族、宗教观点和信仰或其他原因而受到歧视。因此，对于任何损害社会团结的行为，国家都将在‘法律与秩序’原则框架内坚决予以遏制。社会也应展现责任感和理性。应当认识到，围绕语言、族际关系、宗教等敏感问题过度情绪化、展开争论，可能在一定程度上损害社会团结的思想基础。”卡林说。
+此外，会议还讨论了系统、具体落实“法律与秩序”原则、“清洁哈萨克斯坦”项目和“诚实公民”教育计划的问题。卡林指出，总统提出的这些倡议相互关联，共同构成推动新社会伦理形成的有机整体。
+“当前，我国已经围绕全民族议程中的主要问题形成了稳定的社会共识。而社会中不时出现的各种引发关注的事件，大多源于个别公民不遵守基本礼仪规范以及缺乏对他人的尊重。因此，当前形成和弘扬新的社会伦理尤为重要。”他说。
+卡林强调，这一领域工作的成效，需要国家机关之间持续协调工作，并与社会机构开展系统互动。
+会议结束时，卡林责成各国家机关进一步完善相互协作机制，改进工作方式，进一步巩固族际和谐。</div>
+<ul>
+<li>卡林主持工作会议，多部门负责人参加讨论族际和谐。</li>
+<li>会议聚焦落实总统在人民理事会首届会议提出的任务。</li>
+<li>将族际和宗教和谐确立为宪法价值，确保法律与秩序。</li>
+<li>推进“清洁哈萨克斯坦”项目和“诚实公民”教育计划。</li>
+<li>卡林责成完善协作机制，巩固族际和谐。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">会议强化总统托卡耶夫的政治方针，将族际和宗教和谐提升为宪法价值，有助于维护哈国政治稳定和社会团结。推动“法律与秩序”原则和“清洁哈萨克斯坦”项目，可能影响经济治理和社会伦理。外交上延续民族和睦大会传统，巩固多民族共存形象。矿产格局未直接涉及，但稳定环境有利于资源开发。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/130gongdiguoyou-50005520/" target="_blank">哈萨克斯坦130万公顷闲置土地被收回国有</a></h3>
+<div class="item-meta">哈通社中文版 · 10/08 23:19<span class="source-link"><a href="https://cn.inform.kz/news/130gongdiguoyou-50005520/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦已完成重新分配1350万公顷农业用地的任务，其中550万公顷划为公共牧场，800万公顷通过竞标提供给农业生产者。目前130万公顷闲置土地被收回国有，但阿特劳州、曼格斯套州和乌勒套州再分配进度缓慢，分别仅为32.4%、24.6%和21.1%。会议还确定三个退化牧场恢复试点区，总面积3.3万公顷。副总理朱曼哈林强调土地使用者须履行有效利用义务，否则国家将收回土地。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">这一情况是在哈萨克斯坦副总理兼国家经济部长赛热克·朱曼哈林主持召开的全国农村居民需求用地再分配和土地资源合理利用问题委员会会议上公布的。
+农业部副部长阿扎特·苏丹诺夫表示，一年前国家元首在国情咨文中提出的重新分配1350万公顷农业用地的任务已经完成。
+其中，550万公顷土地被确定为公共使用牧场，800万公顷土地则通过竞标方式提供给公民和其他土地使用者，用于开展农业生产。
+目前，对收回国有土地进行再分配的工作仍在继续。不过，一些地区将这些土地交给最终使用者的进度较为缓慢。其中，阿特劳州为32.4%，曼格斯套州为24.6%，乌勒套州为21.1%。
+会议还重点讨论了退化牧场恢复问题。为制定相关措施，已确定三个试点区，这些地区均已制定牧场管理计划，并完成地植物学研究。
+其中，阿拉木图州拉伊姆别克县的试点项目涉及9200公顷山地和山前牧场，当地牧场生产力有所下降，并出现不同程度的退化迹象。
+阿克托别州赫罗姆套县将有1.74万公顷牧场纳入试点项目，这些牧场所在居民点面临较高的放牧负荷。
+阿克莫拉州切利诺格勒县将在靠近居民点、退化程度较高的6600公顷草原牧场实施相关措施。
+由此，首批试点区域总面积达到3.3万公顷。相关措施旨在恢复牧场生产力，并为居民提供放牧牲畜所需的牧场。
+朱曼哈林强调，将国家出资建设必要基础设施的农业用地交给土地使用者时，应同时明确其有效利用土地的具体义务。
+“如果国家为土地灌溉建设了基础设施，土地使用者也应承担相应义务。具体包括安装灌溉系统、按照土地规定用途使用土地、种植具有盈利能力的农作物以及履行其他相关义务。土地应按照既定用途使用，并取得实际成效。如果这类土地没有得到合理利用，或者没有按照规定用途使用，国家应将其重新纳入农业流转。”朱曼哈林说。
+会议还审议了将收回国有土地交给新使用者过程中出现的问题。其中包括没有明确规定土地使用权终止登记的具体强制期限、将未利用土地认定为无主财产的程序耗时较长，以及其他行政障碍。</div>
+<ul>
+<li>1350万公顷农业用地重新分配任务完成</li>
+<li>130万公顷闲置土地被收回国有</li>
+<li>三州土地再分配进度缓慢，最低仅21.1%</li>
+<li>三个退化牧场恢复试点区总面积3.3万公顷</li>
+<li>土地使用者须履行有效利用义务，否则收回</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举强化国家对土地资源的控制，推动农业用地高效利用，缓解牧场退化。但地方执行缓慢可能影响政策效果，需平衡土地使用者义务与行政效率，对农业投资和畜牧业发展具有引导作用。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/yisuoxuefashengxuesheng-chang-3ab9b4c2/" target="_blank">阿斯塔纳一所学校发生学生拥挤 校长被免职</a></h3>
+<div class="item-meta">哈通社中文版 · 10/08 21:13<span class="source-link"><a href="https://cn.inform.kz/news/yisuoxuefashengxuesheng-chang-3ab9b4c2/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>阿斯塔纳一所学校发生学生拥挤事件，视频显示大量学生聚集在衣帽间入口，发布者称有学生被挤倒失去意识。市教育局称与第二时段七个班级同时下课有关，监控核查未证实摔倒失意识说法。因管理不善，校长被免职。学校已加强衣帽间管理和值班，确保学生安全通行。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">视频发布在Instagram平台上。画面显示，大量学生同时聚集在衣帽间入口处。视频发布者称，这种情况经常发生，并称有学生在人群中被挤倒并失去意识。
+据阿斯塔纳市教育局消息，这一情况与第二时段的课程安排有关。当时共有七个班级同时下课，学生集中到衣帽间领取外衣。
+该部门表示，在核查监控摄像头录像后，关于有学生摔倒并失去意识的消息未得到证实。由于管理不善，该校校长被免去职务。
+事件发生后，学校加强了衣帽间工作人员的现场管理和值班，同时采取了其他补充措施，以确保学生安全通行。</div>
+<ul>
+<li>阿斯塔纳学校发生学生拥挤事件</li>
+<li>七个班级同时下课致衣帽间拥堵</li>
+<li>监控未证实学生摔倒失去意识</li>
+<li>校长因管理不善被免职</li>
+<li>学校加强衣帽间管理和值班</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">事件暴露学校管理漏洞，校长免职显示问责力度，或推动哈国校园安全措施升级，对教育系统治理产生警示效应。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/congshengdaoduozijianengdexie-977cac7b/" target="_blank">从生育补贴到多子女津贴：哈萨克斯坦家庭能获得哪些支持？</a></h3>
+<div class="item-meta">哈通社中文版 · 10/08 20:15<span class="source-link"><a href="https://cn.inform.kz/news/congshengdaoduozijianengdexie-977cac7b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦2026年约27%国家预算用于社会保障，自2016年社会支付达40.1万亿坚戈，国家社会保险基金支付增长6.5倍。生育补贴方面，第一至第三孩一次性支付164,350坚戈，第四孩及以上272,475坚戈，且不设收入门槛。与中亚及部分欧洲国家相比，哈国补贴水平较高，尤其第四孩差距扩大。多数OECD国家无一次性补贴，侧重月度补贴。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 从生育补贴到多子女津贴：哈萨克斯坦家庭能获得哪些支持？
+正文:
+这一体系的规模也可以从财政投入中看出。2026年，哈萨克斯坦约27%的国家预算支出用于社会保障。这一比例与许多经合组织（OECD）国家的水平相当。在这些国家，政府用于社会保障的支出通常占预算总额的四分之一至三分之一。
+近年来，社会支付支出持续增加。自2016年以来，哈萨克斯坦用于社会支付的资金已达40.1万亿坚戈，其中大部分来自国家预算。
+这一时期，增长最快的是国家社会保险基金支付的各类社会保险待遇，其规模约增长6.5倍。该基金主要面向就业人员提供支付，因此，这一增长也反映出社会保险体系覆盖范围不断扩大。
+从孩子出生开始获得支持
+家庭与国家支持体系的首次接触，始于孩子出生。
+第一、第二和第三个孩子出生时，国家一次性支付164,350坚戈。第四个及以上孩子出生时，一次性支付金额提高至272,475坚戈。也就是说，随着孩子数量增加，一次性补贴金额也随之提高。
+如果将这一标准与周边国家进行比较，差异较为明显。在吉尔吉斯斯坦，孩子出生时可获得约21,500坚戈的一次性补贴，低于哈萨克斯坦。
+乌兹别克斯坦的相关补贴约为29,700坚戈，并与最低工资水平挂钩。塔吉克斯坦采取了不同的模式：第一胎获得的补贴金额最高，此后每增加一个孩子，补贴金额随之减少。由此来看，在第一胎出生时，哈萨克斯坦家庭获得的一次性补贴高于本次比较中的其他中亚国家；到了第四胎，差距进一步扩大。
+在俄罗斯，无论家庭收入如何，孩子出生时均可获得约98,000坚戈的补贴。白俄罗斯和亚美尼亚的补贴金额相对较高，尤其是第二胎及以后。不过，由于各国货币的购买力不同，这些金额难以直接进行比较。
+格鲁吉亚没有面向所有家庭的统一出生补贴。只有社会弱势家庭可以获得约90,435坚戈的一次性补助。此外，各市镇还可以提供额外补贴。
+在大多数经合组织国家，孩子出生时并没有一次性补贴。德国、瑞典、加拿大和英国更侧重于提供持续的月度补贴。
+法国的一次性补贴乍看之下高于哈萨克斯坦，约为67万坚戈。但只有收入低于规定门槛的家庭才能领取。
+波兰也有类似要求，一次性补贴取决于家庭收入。在芬兰，父母可以选择领取现金，或者领取由国家提供的新生儿用品礼包。现金选项的金额约为11.4万坚戈。
+相比之下，哈萨克斯坦的出生一次性补贴不设家庭收入门槛，所有家庭均可领取。这意味着父母无论收入水平如何，都可以获得这项补贴。
+按月发放的育儿津贴</div>
+<ul>
+<li>2026年哈国27%预算用于社会保障，与OECD国家相当</li>
+<li>2016年以来社会支付达40.1万亿坚戈，社保基金支付增6.5倍</li>
+<li>第一至第三孩一次性补贴164,350坚戈，第四孩起272,475坚戈</li>
+<li>哈国出生补贴不设收入门槛，所有家庭均可领取</li>
+<li>与中亚国家相比，哈国第一胎和第四胎补贴优势明显</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该政策强化家庭福利，提升生育意愿，缓解人口压力；财政支出向社保倾斜，长期或影响预算平衡；不设收入门槛体现普惠性，但可能加大财政负担，对矿产等资源收入依赖度提出更高要求。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(8 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/waibujinzaihezhongguogongminqing-49d3a4f2/" target="_blank">外交部：持续跟进在尼泊尔和中国西藏失联公民情况</a></h3>
+<div class="item-meta">哈通社中文版 · 10/09 01:45<span class="source-link"><a href="https://cn.inform.kz/news/waibujinzaihezhongguogongminqing-49d3a4f2/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>尼泊尔搜救行动于10月5日结束，中国西藏吉隆县搜救仍在继续。3名哈萨克斯坦游客失联，其中1人已联系上并返回哈萨克斯坦，其余2人下落不明。家属已提交DNA样本，哈外交官正与家属保持联系并提供支持。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据尼泊尔方面消息，尼泊尔境内的搜救行动已于10月5日正式结束。
+外交部在通报中指出，目前，受灾地区正在开展恢复工作，期间发现的遗体及个人物品正在进行身份确认。在中国西藏自治区受灾最为严重的吉隆县，搜救工作仍在继续。中方同时开展遗体身份确认和基因检测工作。
+此前，3名来自哈萨克斯坦的游客被认为失联，其中2人在尼泊尔，1人在中国。据最新核实，被认为可能在尼泊尔并被列入失联人员名单的一名游客已取得联系。经确认，该游客并未前往自然灾害受灾地区，目前已返回哈萨克斯坦。
+外交部表示，目前尚未确定其余两名同胞的下落。他们的家属已完成相关身份确认程序，并按照尼泊尔和中国主管部门规定的程序，提交了用于DNA分析的生物学样本。
+哈萨克斯坦外交官正与失联人员家属保持联系，并为他们提供所需支持。</div>
+<ul>
+<li>尼泊尔搜救10月5日结束，西藏吉隆县搜救继续</li>
+<li>3名哈国游客失联，1人已联系并返回</li>
+<li>其余2人下落不明，家属已提交DNA样本</li>
+<li>哈外交官与失联人员家属保持联系并提供支持</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">事件考验哈国领事保护能力，可能推动与尼泊尔、中国在灾害应对和公民安全领域的合作，对哈国政治外交影响有限，但需关注后续善后处理。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/yutiguojiamin-be163991/" target="_blank">托卡耶夫与独联体国家元首参观民族传统美食节</a></h3>
+<div class="item-meta">哈通社中文版 · 10/09 01:15<span class="source-link"><a href="https://cn.inform.kz/news/yutiguojiamin-be163991/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与独联体国家元首在土库曼斯坦国家馆参观民族传统美食节，观看园艺烘焙展及歌舞表演《乌古斯人》。哈萨克斯坦国家馆设多个主题展区，展示历史文化遗产和现代成就。元首们了解独联体成员国传统美食制作过程，并参与表彰“骏马奔腾：力量与优雅”电视电影大赛获奖者。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫与独联体国家元首参观民族传统美食节
+正文:
+在土库曼斯坦国家馆内，各国元首参观了当地园艺及烘焙食品展，并欣赏了文学音乐歌舞表演《乌古斯人》。
+Фото: Ақорда Фото: Ақорда 哈萨克斯坦国家馆由多个主题展区组成，展示了我国丰富的历史文化遗产和现代发展成就。
+Фото: Ақорда Фото: Ақорда 活动期间，各国元首了解了独联体成员国传统美食的制作过程。
+Фото: Ақорда Фото: Акорда Фото: Ақорда Фото: Ақорда 作为美食节的一项活动，在各国总统的参与下，对独联体成员国间举办的“骏马奔腾：力量与优雅”电视电影大赛获奖者进行了表彰。</div>
+<ul>
+<li>托卡耶夫与独联体元首参观土库曼斯坦国家馆美食节</li>
+<li>哈萨克斯坦国家馆展示历史文化遗产和现代成就</li>
+<li>元首们了解独联体成员国传统美食制作过程</li>
+<li>表彰“骏马奔腾：力量与优雅”电视电影大赛获奖者</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">活动强化哈萨克斯坦与独联体国家文化联系，提升区域合作氛围，有助于巩固哈国在独联体中的外交地位，促进经济与文化互动，对矿产等务实合作产生间接积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/hexinghui-df009677/" target="_blank">哈萨克斯坦总统和土库曼斯坦总统举行会晤</a></h3>
+<div class="item-meta">哈通社中文版 · 10/08 19:42<span class="source-link"><a href="https://cn.inform.kz/news/hexinghui-df009677/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统与土库曼斯坦总统举行会晤。哈总统感谢土方热情接待，指出两国关系处于高水平，建立在友谊、睦邻友好和相互支持基础上。双方注意到各合作领域呈现积极态势，讨论了此前达成的各项协议以及能源、工业、农业、交通运输等领域联合项目进展，并特别重视拓展人文合作，审议了即将举行的联合活动日程。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦总统和土库曼斯坦总统举行会晤
+正文:
+会谈中，国家元首感谢土库曼斯坦总统的热情接待与盛情款待。他还指出，哈萨克斯坦与土库曼斯坦的关系处于高水平，建立在友谊、睦邻友好和相互支持的基础之上。
+会晤期间，双方注意到两国各合作领域均呈现积极态势。
+Фото: Ақорда 两国元首讨论了此前达成的各项协议，以及能源、工业、农业、交通运输及其他领域具有前景的联合项目的进展情况。
+此外，双方还特别重视拓展人文合作，还审议了即将举行的联合活动的日程安排。
+&amp;nbsp;</div>
+<ul>
+<li>哈土总统会晤，哈方感谢土方热情接待</li>
+<li>两国关系处于高水平，基于友谊与相互支持</li>
+<li>讨论能源、工业、农业、交通等联合项目进展</li>
+<li>重视拓展人文合作，审议联合活动日程</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">会晤巩固哈土睦邻关系，推动能源、交通等联合项目落实，有助于哈国拓展里海地区合作空间，增强在中亚的外交与经济影响力，同时促进人文交流与地区稳定。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/14guogongminjiangcongwaibuyingbushi-d03ca4ba/" target="_blank">网传14名哈国公民将从冲突区撤离？外交部回应：消息不实</a></h3>
+<div class="item-meta">哈通社中文版 · 10/08 19:14<span class="source-link"><a href="https://cn.inform.kz/news/14guogongminjiangcongwaibuyingbushi-d03ca4ba/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦外交部否认网传14名哈国公民将从冲突区撤离的消息，称其不实。外交部强调，传播未经核实信息会误导等待亲人消息的家庭，并影响公民保护工作。外交部正与俄方保持不同层级沟通，持续推进身处冲突地区本国公民回国事宜，将另行发布进展。呼吁公民和媒体以官方消息为准，并指出传播虚假信息需承担法律责任。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦外交部正式表示，上述消息与事实不符。
+“我们完全理解这一议题对社会，特别是对这些公民的亲属而言有多么重要。因此，绝不能传播未经核实的信息。”外交部在声明中指出。
+外交部表示，这类消息会误导正在等待亲人消息的家庭，引发盲目期待，并可能对外交部开展的公民保护工作产生负面影响。
+“外交部正继续与俄方保持不同层级的沟通。目前，这一问题一直处于持续关注之下。外交部将就相关工作的进展另行发布消息。我们呼吁广大公民和媒体代表以官方消息为准。”外交部说。
+需要指出的是，哈萨克斯坦法律法规对传播虚假信息规定了相应的法律责任。
+外交部日前发布声明称，正在推进身处冲突地区的本国公民回国事宜。</div>
+<ul>
+<li>外交部否认14名公民撤离消息，称不实</li>
+<li>传播虚假信息会误导家庭并影响保护工作</li>
+<li>外交部与俄方保持沟通，推进公民回国</li>
+<li>呼吁以官方消息为准，虚假信息有法律责任</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该声明有助于维护社会稳定，防止虚假信息干扰外交工作，保障在冲突区公民权益，同时强化官方信息权威，对哈俄外交协调及公民保护机制提出更高要求。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/chuzhongyurenhui-churengongnengzuo-2d008a99/" target="_blank">托卡耶夫出席中亚与阿塞拜疆领导人会晤 提出贸易、交通及人工智能合作新倡议</a></h3>
+<div class="item-meta">哈通社中文版 · 10/08 17:35<span class="source-link"><a href="https://cn.inform.kz/news/chuzhongyurenhui-churengongnengzuo-2d008a99/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫在中亚与阿塞拜疆领导人会晤上指出，会议恰逢各国独立35周年，地区已成为欧亚地缘政治合作中心。去年地区内部贸易额约130亿美元，仅占商品贸易总额8%，他提议制定联合行动计划，将内部贸易额提升至200亿美元。哈国正推进莫因特—克孜勒扎尔、达尔巴扎—马克塔阿拉尔铁路建设，巴克特—阿亚古兹铁路计划2027年开通，咸海—里海运输干线已启动，并重点发展跨里海“中间走廊”和南北国际运输走廊。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫指出，本次会议恰逢中亚国家和阿塞拜疆独立35周年，具有特殊的象征意义。
+35年来，我们走过了一段漫长而富有建设性、卓有成效的发展历程。我们巩固了国家主权，形成了符合自身国情的发展模式，并在国际社会中确立了应有的地位。如今，中亚和阿塞拜疆已成为欧亚大陆一个不断发展壮大的地缘政治合作中心。
+总统强调，地区国家依靠各国人民的智慧、团结与互信，维护了和平稳定的社会环境。在地缘政治紧张局势加剧、国际关系格局发生变化的背景下，团结、相互支持和信任已成为各国共同应对挑战的重要战略基础。
+在谈及地区经济合作时，托卡耶夫表示，近年来，各国通过共同努力，不断丰富贸易和经济合作内容，合资企业数量持续增加，工商界联系日益密切，工业、机械制造、能源和农业等领域的大型项目正在推进。
+与此同时，贸易壁垒逐步消除，边境新口岸陆续开放，公路和铁路运输联系不断扩大。
+Фото: Kazinform 不过，总统认为，地区内部市场仍具有巨大潜力。
+去年，地区内部贸易额约为130亿美元，仅占各国商品贸易总额的8%左右。因此，我认为有必要要求各国政府制定并通过联合行动计划，提高相互贸易比重，将地区内部贸易额至少提升至200亿美元。
+托卡耶夫指出，各国在边境地区建设的贸易物流综合体和工业合作中心，为进一步扩大经济联系创造了有利条件。
+他建议，尽快将这些设施相互连接，推动建立区域附加值产业链，进一步释放投资、能源、制造业及其他战略领域的合作潜力。
+托卡耶夫表示，哈萨克斯坦正在持续推进交通基础设施建设，以扩大地区互联互通。
+目前，莫因特—克孜勒扎尔铁路和达尔巴扎—马克塔阿拉尔铁路建设已接近完工，巴克特—阿亚古兹铁路计划于2027年开通。
+Фото: Акорда 此外，连接中国、里海及欧洲市场的咸海—里海运输干线已启动建设。
+这些都是具有重要意义、甚至具有战略性质的交通路线。我相信，哈萨克斯坦交通基础设施的大规模现代化，将进一步增强整个地区的过境运输地位。
+总统强调，哈萨克斯坦将继续重点发展跨里海国际运输路线，即“中间走廊”。近年来的运输发展趋势表明，该走廊的市场需求正在不断增长。
+与此同时，考虑到与俄罗斯的合作，南北国际运输走廊对哈萨克斯坦同样具有重要意义。</div>
+<ul>
+<li>会议恰逢中亚与阿塞拜疆独立35周年，具象征意义</li>
+<li>地区内部贸易额130亿美元，仅占总额8%，目标提升至200亿</li>
+<li>建议连接边境贸易物流综合体，建立区域附加值产业链</li>
+<li>哈国推进多条铁路建设，巴克特—阿亚古兹铁路2027年开通</li>
+<li>重点发展跨里海“中间走廊”和南北国际运输走廊</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">将强化中亚区域经济一体化，提升哈国过境运输枢纽地位，推动贸易额增长和产业链整合，增强地区在欧亚地缘格局中的自主性与合作韧性。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/wen-lianghaoguan-33f0dd94/" target="_blank">德布勒森代表团访问奇姆肯特 两市拟建立友好城市关系</a></h3>
+<div class="item-meta">哈通社中文版 · 10/08 17:23<span class="source-link"><a href="https://cn.inform.kz/news/wen-lianghaoguan-33f0dd94/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>德布勒森代表团访问奇姆肯特，双方举行商务论坛和B2B会谈，探讨贸易、经济与投资合作。德布勒森市长帕普与当地工商界在植物园植树，象征友谊。帕普接受采访介绍跨区域合作前景。两市计划建立友好城市关系，以推动经贸、文化和人文领域合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 德布勒森代表团访问奇姆肯特 两市拟建立友好城市关系
+正文:
+访问期间，双方举行了奇姆肯特—德布勒森商务论坛。德布勒森代表团与奇姆肯特工商界代表就贸易、经济和投资合作前景，以及共同实施项目的可能性交换意见。
+双方企业代表还举行了B2B双边会谈，旨在建立新的商业联系，推动联合倡议落地。
+此外，德布勒森市长与当地工商界代表在奇姆肯特植物园共同参加植树活动。主办方表示，此次活动象征着两座城市之间的友谊，以及双方发展长期稳定合作关系的意愿。
+访问期间，帕普还接受当地媒体采访，并介绍了两地跨区域合作前景及建立伙伴关系的重要意义。
+目前，奇姆肯特与德布勒森还计划建立友好城市关系。相关安排有望进一步推动双方在经贸、文化和人文领域的合作。</div>
+<ul>
+<li>德布勒森代表团访问奇姆肯特，举行商务论坛</li>
+<li>双方企业B2B会谈，探讨贸易投资合作</li>
+<li>德布勒森市长帕普参加植树活动并接受采访</li>
+<li>两市计划建立友好城市关系</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">促进哈国与匈牙利地方经贸合作，拓展外交渠道，推动奇姆肯特吸引外资，对哈国经济多元化和区域外交有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/qian7geyueyi979-8f6a8627/" target="_blank">前7个月哈意贸易额达97.9亿美元</a></h3>
+<div class="item-meta">哈通社中文版 · 10/08 15:45<span class="source-link"><a href="https://cn.inform.kz/news/qian7geyueyi979-8f6a8627/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年1—7月，哈意贸易额达97.9亿美元，其中哈对意出口约90亿美元，自意进口7.896亿美元，意对哈出口增长13.5%。2025年双边贸易额约169亿美元。双方讨论贸易多元化、工业合作、联合投资、能源、交通物流和农业等领域合作，哈方估计新增出口潜力约3.075亿美元，并邀请意企参与“中间走廊”及阿克套港、库雷克港项目。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：前7个月哈意贸易额达97.9亿美元
+
+意方代表团由意大利外交与国际合作部副部长埃德蒙多·奇里耶利（Edmondo Cirielli）率领。
+
+会议期间，双方回顾了此前所达成协议的落实情况，并就进一步扩大贸易、经济和投资合作进行讨论，重点涉及双边贸易多元化、工业合作、联合投资项目以及能源、交通物流和农业等领域。
+
+数据显示，2025年哈意双边贸易额约为169亿美元。2026年1—7月，两国贸易额达到97.9亿美元，其中哈萨克斯坦对意大利出口约90亿美元，自意大利进口7.896亿美元。同期，意大利对哈出口增长13.5%。
+
+双方指出，进一步实现贸易结构多元化、增加高附加值产品供应是当前重点任务之一。
+
+哈方估计，哈萨克斯坦产品对意大利市场的新增出口潜力约为3.075亿美元，其中冶金、石油化工、食品、化工和机械制造等领域潜力较大。
+
+会议还提到，今年2月在阿拉木图开设的哈萨克斯坦—意大利贸易之家将成为促进两国商业联系的重要平台。该平台主要用于推动出口、支持投资项目、发展工业合作并促进两国企业建立直接联系。
+
+投资合作也是会议重点议题之一。双方表示，有意利用阿斯塔纳国际金融中心平台推动联合项目，并进一步加强两国金融机构和工商界之间的合作。
+
+在交通物流领域，双方重点讨论了跨里海国际运输路线，即“中间走廊”的发展。哈方邀请意大利铁路及物流企业利用阿克套港和库雷克港的运输潜力参与相关联合项目。
+
+能源领域，双方确认将继续深化传统能源方向的合作。
+
+在农业领域，双方讨论了种植业、粮食加工和畜牧业等方面的合作前景，并同意继续提高生产本地化水平和零部件配套能力，推动哈萨克斯坦生产的零部件进入全球供应链。
+
+双方还同意扩大生态环境、水资源可持续管理、旅游、体育、文化和教育领域合作，并重点关注气候倡议、能源效率、脱碳，以及在水资源领域引入现代工程和数字化解决方案。
+
+访问期间，沙卡利耶夫还与意大利企业就扩大两国工商界务实合作进行磋商，内容涵盖哈萨克斯坦产品进入意大利市场、吸引投资和技术以及实施联合项目等。
+
+在与Blacktrace和Value Partners代表举行的会谈中，双方讨论了组建具体项目库，以及为相关项目吸引投资者、技术和工程合作伙伴的可能性。
+
+双方认为，关键矿产和稀土金属深加工、“中间走廊”物流基础设施、水资源节约技术、数据处理中心以及人工智能基础设施等领域具有较大合作潜力。
+
+哈方同时表示，希望合作不仅局限于吸引资金和承包商，还应进一步深化生产合作，包括推动工程能力和技术本地化、提高哈萨克斯坦本国承包商参与度、加强人才培养并逐步提高本地化比例。</div>
+<ul>
+<li>2026年前7个月哈意贸易额97.9亿美元，哈方顺差约82亿美元</li>
+<li>哈方新增对意出口潜力约3.075亿美元，聚焦冶金、石化、食品等</li>
+<li>双方推动“中间走廊”及阿克套港、库雷克港物流合作</li>
+<li>合作拓展至关键矿产、稀土深加工、AI基础设施等领域</li>
+<li>哈方要求深化生产合作，提高技术本地化和本国承包商参与度</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">哈意贸易持续增长，有助哈国经济多元化和高附加值出口。深化“中间走廊”合作可提升哈国过境运输地位，关键矿产与稀土合作或改变矿产加工格局。吸引意方投资和技术，利于哈国外交平衡及工业本地化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/zhongguojiadihui-8ac983b9/" target="_blank">总统抵达阿瓦扎 参加中亚+阿塞拜疆国家元首第八次协商会晤</a></h3>
+<div class="item-meta">哈通社中文版 · 10/08 15:07<span class="source-link"><a href="https://cn.inform.kz/news/zhongguojiadihui-8ac983b9/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫10月7日晚抵达土库曼斯坦进行工作访问，10月8日在土库曼巴希市阿瓦扎国家旅游区出席第八次中亚国家和阿塞拜疆领导人协商会议。土库曼斯坦总统别尔德穆哈梅多夫迎接。哈萨克斯坦、乌兹别克斯坦、吉尔吉斯斯坦、塔吉克斯坦、土库曼斯坦和阿塞拜疆六国领导人参会，讨论政治外交、贸易投资、能源交通、环保、气候变化和地区安全等议题。阿塞拜疆2025年正式加入该机制，此次为扩至六国后的重要会议。阿瓦扎还将举办独联体国家元首理事会会议和里海生态峰会。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">总统抵达阿瓦扎 参加中亚+阿塞拜疆国家元首第八次协商会晤
+
+土库曼斯坦总统谢尔达尔·别尔德穆哈梅多夫迎接了托卡耶夫。
+
+第八次中亚国家和阿塞拜疆领导人协商会议于10月8日在土库曼斯坦土库曼巴希市的阿瓦扎国家旅游区举行，由土库曼斯坦主办。
+
+Фото: Ақорда 哈萨克斯坦、乌兹别克斯坦、吉尔吉斯斯坦、塔吉克斯坦、土库曼斯坦和阿塞拜疆六国领导人出席会议。会议重点讨论加强地区政治外交合作、扩大贸易和投资往来、深化能源及交通运输领域合作，以及环境保护、气候变化和地区安全等议题。
+
+值得关注的是，阿塞拜疆于2025年正式加入这一协商机制，此次会议也是该机制扩大至六国后举行的重要领导人会议。与此同时，阿瓦扎还将举办独联体国家元首理事会会议和里海生态峰会。
+
+10月7日晚，托卡耶夫抵达土库曼斯坦，开始进行工作访问。</div>
+<ul>
+<li>托卡耶夫10月7日晚抵土库曼斯坦工作访问</li>
+<li>10月8日六国领导人协商会议在阿瓦扎举行</li>
+<li>阿塞拜疆2025年加入，机制扩至六国</li>
+<li>会议讨论政治、贸易、能源、安全等议题</li>
+<li>阿瓦扎还将举办独联体峰会和里海生态峰会</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国而言，此次会议强化其在中亚区域合作中的关键角色，推动贸易、能源和交通合作，有助于拓展外交空间，并在里海生态和地区安全议题上增强话语权。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(6 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/10yue8ri-herenminqing-955d7fbe/" target="_blank">10月8日终盘 美元、卢布和人民币兑坚戈汇率情况</a></h3>
+<div class="item-meta">哈通社中文版 · 10/08 22:23<span class="source-link"><a href="https://cn.inform.kz/news/10yue8ri-herenminqing-955d7fbe/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>10月8日，哈萨克斯坦证券交易所（KASE）27个成员参与外汇交易。美元兑坚戈平均报449.87，涨2.66坚戈，交易额4.2417亿美元；欧元兑坚戈平均报503.63，涨2.69坚戈，交易额483.2万欧元；卢布兑坚戈平均报5.2840，涨0.0479坚戈，交易额29.1815亿卢布；人民币兑坚戈平均报67.1757，涨0.5362坚戈，交易额3345万元。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 10月8日终盘 美元、卢布和人民币兑坚戈汇率情况
+正文:
+27个KASE成员参与了交易。
+根据现货市场交易结果： 美元兑坚戈（交易工具USDKZT_TOM）汇率平均报价为1: 449.87（+2.66坚戈），外汇交易总额为4.2417亿美元（-4471.2万美元）。交易过程中，最新报价为1:446.61坚戈，最高报价为1:454.00坚戈。
+欧元兑坚戈（交易工具EURKZT_TOM）汇率平均报价为1: 503.63（+2.69坚戈），外汇交易总额为483.2万欧元（+160.5万欧元）。交易过程中，最低报价为1:500.37坚戈，最高报价为1:507.19坚戈。
+卢布兑坚戈（交易工具RUBKZT_TOM）汇率平均报价为1:5.2840（+0.0479坚戈），外汇交易总额29.1815亿卢布（+5.1610亿卢布）。交易过程中，最低报价为1:5.2184坚戈，最高报价为1: 5.3400坚戈。
+人民币兑坚戈（交易工具CNYKZT_TOD）汇率平均报价为1:67.1757（+0.5362坚戈），外汇交易总额3345万元（-3007.1万元）。交易过程中，最低报价为1:66.6860坚戈，最高报价为1:67.6260坚戈。</div>
+<ul>
+<li>美元兑坚戈平均报449.87，涨2.66坚戈</li>
+<li>欧元兑坚戈平均报503.63，涨2.69坚戈</li>
+<li>卢布兑坚戈平均报5.2840，涨0.0479坚戈</li>
+<li>人民币兑坚戈平均报67.1757，涨0.5362坚戈</li>
+<li>27个KASE成员参与交易</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈对主要货币普遍走弱，或加大输入性通胀压力，增加外债偿付成本。美元交易额下降而卢布交易额上升，反映贸易结算结构变化，可能影响哈国与俄罗斯及中国的经济联系。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/yishang1200-9d96c018/" target="_blank">哈萨克斯坦金价一周上涨逾1200坚戈</a></h3>
+<div class="item-meta">哈通社中文版 · 10/08 18:16<span class="source-link"><a href="https://cn.inform.kz/news/yishang1200-9d96c018/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦每克黄金价格一周内上涨1257.91坚戈，从59371.25坚戈升至更高水平。国际市场金价同步回升，现货黄金涨0.5%至每金衡盎司4132.66美元，美国12月黄金期货涨0.4%至每盎司4157.60美元。分析认为美元走弱是推动金价上涨的重要因素，降低了其他货币持有者购买黄金的成本，提振市场需求。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦金价一周上涨逾1200坚戈
+正文:
+一周前，每克黄金价格为59371.25坚戈，这意味着过去7天内每克黄金上涨1257.91坚戈。
+国际市场金价也出现回升。据路透社报道，在此前受美元走势影响一度跌至两个月低点后，黄金价格重新走高。
+现货黄金价格上涨0.5%，至每金衡盎司4132.66美元。美国12月黄金期货价格上涨0.4%，至每盎司4157.60美元。
+分析认为，美元走弱是推动金价上涨的重要因素之一。美元贬值通常会降低其他货币持有者购买黄金的成本，从而提振市场需求。</div>
+<ul>
+<li>哈国每克黄金一周上涨1257.91坚戈</li>
+<li>现货黄金涨0.5%至4132.66美元/盎司</li>
+<li>美国12月黄金期货涨0.4%至4157.60美元</li>
+<li>美元走弱是金价上涨重要因素</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">金价上涨可能增加哈国黄金出口收入，提振坚戈资产吸引力，但也会推高国内通胀压力。外交上，哈国可借金价高位加强与中国、俄罗斯等黄金贸易伙伴合作，同时需关注美元走势对坚戈汇率和矿产投资的影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/guoyouda-9d1cae67/" target="_blank">哈萨克斯坦国债有望纳入摩根大通新兴市场指数</a></h3>
+<div class="item-meta">哈通社中文版 · 10/08 14:54<span class="source-link"><a href="https://cn.inform.kz/news/guoyouda-9d1cae67/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>摩根大通将在未来12个月内评估哈萨克斯坦政府证券市场对国际投资者的开放程度及债券流动性，以决定是否纳入GBI-EM指数。哈萨克斯坦已进入正面观察名单，这是财政部与国家银行推动市场发展、完善基础设施的成果。若成功纳入，将扩大外国投资者基础、提高流动性并降低融资成本。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦国债有望纳入摩根大通新兴市场指数
+正文:
+未来12个月内，摩根大通将评估哈萨克斯坦政府证券市场对国际投资者的开放程度，包括通过国际清算和结算基础设施进入该市场的便利性。
+与此同时，符合指数纳入标准的政府债券流动性也将接受评估。
+财政部表示，哈萨克斯坦进入正面观察名单，是财政部与国家银行共同推动政府证券市场发展、完善市场基础设施以及提高哈萨克斯坦金融工具对国际投资者可及性所取得的成果。
+进入新的评估阶段，也反映出哈萨克斯坦政府证券市场进一步融入国际资本市场所取得的进展。
+如果未来成功纳入GBI-EM指数，将有助于扩大外国投资者基础、提高政府债券市场流动性，并降低融资成本。</div>
+<ul>
+<li>摩根大通12个月内评估哈国债市场开放度</li>
+<li>评估包括国际清算结算便利性和债券流动性</li>
+<li>哈进入正面观察名单，财政部与国家银行推动</li>
+<li>若纳入GBI-EM指数，将扩大投资者基础并降低融资成本</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">若纳入GBI-EM指数，将提升哈国债券市场国际地位，吸引外资流入，降低政府融资成本，增强经济稳定性，并深化与全球资本市场融合，对政治经济外交产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/502-961df901/" target="_blank">哈萨克斯坦股票市场总市值升至50.2万亿坚戈</a></h3>
+<div class="item-meta">哈通社中文版 · 10/08 14:29<span class="source-link"><a href="https://cn.inform.kz/news/502-961df901/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>8月哈萨克斯坦股票市场总市值升至50.2万亿坚戈，KASE指数上涨4%至8121.46点，年初以来累计上涨15.5%。增长主要受Kaspi.kz和Kazatomprom股价分别上涨16%和8.5%推动。股票交易额达243亿坚戈，环比增长22.6%。KASE Global板块交易额322亿坚戈，增长20.6%。公司债券交易额下降76%，政府债务规模增长0.8%至36.7万亿坚戈。投资账户数量接近600万个。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦股票市场总市值升至50.2万亿坚戈
+正文:
+据金融市场监管和发展署消息，8月份股票市场市值增长主要得益于Kaspi.kz和哈萨克原子能工业公司（Kazatomprom）股价分别上涨16%和8.5%。两家公司均被纳入哈萨克斯坦证券交易所（KASE）指数代表性成分股名单。
+8月份，KASE指数上涨4%，截至9月1日达到8121.46点，较年初累计上涨15.5%。
+同期，股票市场投资者活跃度也有所上升。8月份股票交易额达到243亿坚戈，较上月增长22.6%。交易增长主要来自哈萨克斯坦人民银行、Kaspi.kz、KEGOC、Freedom Holding Corp.、Kcell和哈原工等公司股票。
+截至9月1日，哈萨克斯坦证券交易所交易名单中共有72家本国发行人的85只股票。
+外国证券交易额增长20.6%
+截至9月初，KASE Global板块共有71家外国发行人的52只股票、3只美国存托凭证（ADR）和25只交易型开放式指数基金（ETF）。
+8月份，该板块交易额达到322亿坚戈，环比增长20.6%。交易增长主要由ProShares Trust、Space Exploration Technologies Corp.、SPDR Gold Trust、NVIDIA、VanEck ETF Trust、Salesforce、Moderna和Micron Technology等证券带动。
+债券市场表现分化
+8月份，在KASE交易的公司债务规模环比下降0.6%，至16.7万亿坚戈，但较年初增长2.7%。
+同期，公司债券交易额大幅下降76%，至3124亿坚戈。金融市场监管和发展署表示，这主要与一级市场交易规模减少有关。
+与此同时，在KASE交易的政府债务规模8月份增长0.8%，达到36.7万亿坚戈，较年初增长15.1%。
+8月份，政府证券交易额达到1.2万亿坚戈，环比增长16.4%。
+一级市场交易额增长7.7%，达到9000亿坚戈。其中，财政部通过发行10期债券融资7803亿坚戈，到期收益率介于14%至18.3%之间。
+此外，16个州及奇姆肯特市地方政府在实施国家项目框架下融资1147亿坚戈。
+投资账户数量接近600万个</div>
+<ul>
+<li>股票市值达50.2万亿坚戈，KASE指数年初累涨15.5%</li>
+<li>Kaspi.kz和Kazatomprom股价分别涨16%和8.5%</li>
+<li>股票交易额243亿坚戈，环比增22.6%</li>
+<li>公司债券交易额降76%，政府债务规模增0.8%</li>
+<li>投资账户数量接近600万个</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">股市上涨反映投资者信心增强，Kazatomprom表现突出，有利于提升哈国铀矿产业融资能力。政府债务增长为基础设施和国家项目提供资金，但公司债券交易萎缩可能影响企业融资。外资参与度上升，有助于深化与西方经济联系。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/xinggong8riyuzhuyaowaizhijiande-0ad1b39c/" target="_blank">央行公布8日坚戈与主要外币之间的汇率标准</a></h3>
+<div class="item-meta">哈通社中文版 · 10/08 13:36<span class="source-link"><a href="https://cn.inform.kz/news/xinggong8riyuzhuyaowaizhijiande-0ad1b39c/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行公布2026年10月8日坚戈与主要外币汇率：美元兑坚戈1:447.14，欧元兑坚戈1:500.35，俄罗斯卢布兑坚戈1:5.24，土耳其里拉兑坚戈1:9.09，中国元兑坚戈1:66.69。央行规定，坚戈兑美元官方汇率基于阿斯塔纳时间15:30证券交易所加权平均汇率确定，其他外币汇率则依据16:00交叉汇率计算。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">央行公布8日坚戈与主要外币之间的汇率标准
+
+根据央行公布的信息，2026年10月8日，哈萨克斯坦坚戈与国际主要货币之间的兑换汇率标准如下：
+美元兑坚戈（USD/KZT） – 1：447.14
+欧元兑坚戈（EUR/KZT）- 1：500.35
+俄罗斯卢布兑坚戈（RUB / KZT）-1: 5.24
+土耳其里拉兑坚戈（TRY / KZT）- 1: 9.09
+中国元兑坚戈（CNY / KZT）- 1：66.69
+值得一提的是，根据哈萨克斯坦国家银行规定，截至阿斯塔纳时间当日15:30，在哈萨克斯坦证券交易所形成的坚戈兑美元加权平均汇率，将被确定为下一工作日坚戈兑美元官方汇率；坚戈兑其他外币的官方汇率，则依据截至阿斯塔纳时间16:00形成的交叉汇率计算得出。</div>
+<ul>
+<li>美元兑坚戈汇率为1:447.14</li>
+<li>欧元兑坚戈汇率为1:500.35</li>
+<li>中国元兑坚戈汇率为1:66.69</li>
+<li>卢布兑坚戈汇率为1:5.24</li>
+<li>汇率确定基于交易所加权平均和交叉汇率</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率公布反映坚戈对主要货币的稳定态势，有利于哈萨克斯坦外贸和投资环境。中国元汇率明确，促进中哈经贸合作。央行定价机制透明，增强市场信心，对矿产等大宗商品交易提供汇率参考。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/guojijing5-57bcf732/" target="_blank">国际机构预计哈萨克斯坦经济增速接近5%</a></h3>
+<div class="item-meta">哈通社中文版 · 10/08 10:52<span class="source-link"><a href="https://cn.inform.kz/news/guojijing5-57bcf732/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>欧洲复兴开发银行预计哈萨克斯坦2026年经济增长4.7%、2027年增长4.5%；亚洲开发银行预计2026年增长4.8%、2027年增长4.5%。标普8月将哈主权信用评级从BBB-上调至BBB，展望稳定，预计2026年GDP增长5.1%；惠誉确认BBB评级，展望稳定。多家机构评估显示，哈经济增长、投资级评级和充足金融储备相互支撑，为外国企业投资提供重要参考。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据《The World Financial Review》刊文介绍，欧洲复兴开发银行今年9月维持对哈萨克斯坦经济增长的预测，预计2026年经济增长4.7%，2027年增长4.5%。
+亚洲开发银行同样预计，哈萨克斯坦经济将继续保持积极增长势头。根据其预测，哈萨克斯坦国内生产总值2026年将增长4.8%，2027年增长4.5%。
+两家国际机构的预测显示，未来两年哈萨克斯坦经济增速预计将保持在4.5%至5%左右。
+与此同时，哈萨克斯坦主权信用评级也成为国际投资者关注的重要因素。
+今年8月，标普全球评级（S&amp;P Global Ratings）将哈萨克斯坦长期主权信用评级由“BBB-”上调至“BBB”，展望为“稳定”。
+标普指出，在全球不确定性上升的背景下，哈萨克斯坦经济展现出较强韧性，同时拥有较为充足的外部储备，预计非石油财政赤字将进一步收窄。
+标普预计，哈萨克斯坦2026年实际国内生产总值将增长5.1%，中期经济增速约为4%。
+惠誉评级（Fitch Ratings）也确认哈萨克斯坦主权信用评级为投资级“BBB”，展望为“稳定”。
+惠誉认为，哈萨克斯坦较大规模的净外部资产以及相对较低的政府债务水平，是支撑该国信用状况的重要因素。
+该机构预计，中期来看，交通运输、加工制造业和服务业将继续为哈萨克斯坦经济活动提供支撑。
+文章指出，当前多家国际机构的评估总体反映出哈萨克斯坦经济增长、投资级主权信用评级以及较为充足的金融储备相互支撑。对于外国企业而言，这些指标也是评估在哈投资风险和规划长期项目的重要参考。</div>
+<ul>
+<li>欧行预计哈2026年经济增长4.7%，2027年增长4.5%</li>
+<li>亚行预计哈2026年GDP增长4.8%，2027年增长4.5%</li>
+<li>标普8月将哈主权信用评级上调至BBB，展望稳定</li>
+<li>惠誉确认哈主权信用评级为投资级BBB，展望稳定</li>
+<li>交通、加工制造业和服务业将支撑哈中期经济</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">国际机构看好哈经济增速接近5%，主权评级上调至BBB，增强投资者信心，有利于吸引外资、稳定坚戈汇率，巩固其中亚经济枢纽地位，但经济仍依赖能源出口，多元化转型需持续推进。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/guo7rixia-2bafbd3a/" target="_blank">国际油价7日下跌</a></h3>
+<div class="item-meta">哈通社中文版 · 10/08 10:31<span class="source-link"><a href="https://cn.inform.kz/news/guo7rixia-2bafbd3a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>截至7日收盘，国际油价下跌。纽约商品交易所11月交货的轻质原油期货价格下跌1.16美元，收于每桶88.28美元，跌幅1.3%；12月交货的伦敦布伦特原油期货价格下跌38美分，收于每桶100.20美元，跌幅0.38%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 国际油价7日下跌
+正文:
+截至当天收盘，纽约商品交易所11月交货的轻质原油期货价格下跌1.16美元，收于每桶88.28美元，跌幅为1.3%；12月交货的伦敦布伦特原油期货价格下跌38美分，收于每桶100.20美元，跌幅为0.38%。</div>
+<ul>
+<li>纽约轻质原油期货下跌1.16美元，收于88.28美元/桶</li>
+<li>布伦特原油期货下跌38美分，收于100.20美元/桶</li>
+<li>纽约原油跌幅1.3%，布伦特跌幅0.38%</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">国际油价下跌可能减少哈萨克斯坦石油出口收入，影响国家预算和经济增长；或促使哈国调整能源出口策略，加强与非传统伙伴合作，以稳定财政收入。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-10-09 09:01</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
