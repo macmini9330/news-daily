@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年10月11日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年10月11日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年10月10日早9:00至2026年10月11日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 4 条</span><span class="stat-chip">2 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">1</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">0</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">0</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/lizhongzuozhanbu-ec38a194/" target="_blank">哈萨克斯坦武装力量特种作战部队任命新司令</a></h3>
+<div class="item-meta">哈通社中文版 · 10/10 13:15<span class="source-link"><a href="https://cn.inform.kz/news/lizhongzuozhanbu-ec38a194/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦武装力量特种作战部队任命新司令。该指挥部于2022年1月19日根据总统令成立。此前，托卡耶夫总统已解除国防部3名高级官员职务。9月24日，在里海海域举行的“里海之盾—2026”军事演习中，17名军人被海浪卷入海中，14人遇难，3人幸存。哈萨克斯坦将9月25日定为全国哀悼日。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦武装力量特种作战部队任命新司令
+
+哈萨克斯坦武装力量特种作战部队指挥部于2022年1月19日根据总统令成立。
+
+值得注意的是，此前，托卡耶夫总统已解除国防部3名高级官员的职务。
+
+据此前报道，9月24日，在哈萨克斯坦里海海域举行的“里海之盾—2026”（Khazar Qorgany – 2026）军事演习期间，17名军人被海浪卷入海中，其中14人不幸遇难，3人幸存。
+
+为悼念遇难军人，哈萨克斯坦将9月25日定为全国哀悼日。</div>
+<ul>
+<li>特种作战部队任命新司令</li>
+<li>指挥部于2022年1月19日成立</li>
+<li>总统解除国防部3名高官职务</li>
+<li>军演事故致14死3幸存</li>
+<li>9月25日定为全国哀悼日</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次任命与高官解职或旨在强化特种作战指挥、回应军演事故问责，提升军队管理效能。对哈国政治显示总统加强军权控制，经济上或增加国防预算，外交上维持里海地区安全合作，矿产格局无直接影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/huishiwaihoudezhan-8c0bac8f/" target="_blank">阿瓦扎峰会观察：托卡耶夫总统务实外交议程背后的战略逻辑</a></h3>
+<div class="item-meta">哈通社中文版 · 10/10 19:35<span class="source-link"><a href="https://cn.inform.kz/news/huishiwaihoudezhan-8c0bac8f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>10月8日，第八次中亚国家元首协商会议举行。托卡耶夫总统提出将中亚国家间贸易额从约130亿美元提升至200亿美元，推动跨里海国际运输走廊等互联互通建设。会议将水资源列为地区稳定主要挑战，建议以《中亚水资源利用框架公约》为基础探索新模式，并推动在联合国框架下成立国际水资源组织。科技合作方面，倡议制定《中亚人工智能伙伴关系计划》和《负责任使用人工智能宣言》。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">10月8日，第八次中亚国家元首协商会议举行。托卡耶夫总统在会上既肯定了区域合作取得的成果，也指出了当前存在的局限。
+去年，中亚国家之间的贸易额约为130亿美元，仅占各国对外贸易总额的8%左右。
+哈萨克斯坦提出，将这一数字提升至200亿美元。托卡耶夫总统将这一贸易目标与边境贸易物流综合体和工业合作中心的发展联系起来。这意味着区域经济合作将从单一的边境项目逐步转向相互关联的经济体系，其核心在于消除贸易壁垒、扩大生产合作以及协调交通物流枢纽的运作。
+因此，哈萨克斯坦高度重视跨里海国际运输走廊的发展。近年来的运输数据表明，这条线路的需求正在不断增长。与此同时，对哈萨克斯坦而言，与俄罗斯合作发展的“南北”国际运输走廊以及与TRIPP倡议的对接，同样具有重要意义。
+哈萨克斯坦将不同运输方向视为更加广泛的互联互通网络的组成部分。当国内基础设施建设能够帮助周边经济体获得更多运输选择和进入国际市场的通道时，其发展便具有了区域意义。
+在此次协商会议上，水资源问题被列为影响中亚地区稳定的主要挑战之一。
+Фото: Akorda 托卡耶夫总统建议，在相互尊重、平等以及兼顾各国利益的原则基础上，探索跨境水资源管理的新模式。他提出，可以将《中亚水资源利用框架公约》作为这一进程的起点。
+此外，哈萨克斯坦还建议各国共同推动在联合国框架下成立国际水资源组织的倡议，并赋予该组织更加鲜明的中亚区域特色。
+东方学专家扎纳特·莫明库洛夫指出，中亚国家正在从传统的水资源分配模式，转向更加现代化的风险与利益共同管理模式。
+“实现这一转变，需要持续交换水文数据，协调水库运行机制，建立透明的成本与补偿分担制度，并进一步加强水资源、能源和农业政策之间的联系。”这位政治学专家强调。
+科技合作也是哈萨克斯坦此次提出的重要议题之一。
+托卡耶夫总统在协商会议上倡议制定《中亚人工智能伙伴关系计划》，为区域内科研机构、高等院校和科技企业交流经验与信息创造条件。
+与此同时，人工智能安全问题也受到特别关注。随着神经网络应用带来的潜在风险逐渐成为国际社会讨论的议题，哈萨克斯坦建议中亚国家与阿塞拜疆共同制定《负责任使用人工智能宣言》。
+由此可见，哈萨克斯坦提出的科技合作倡议包含两个相互关联的方向：一方面推动技术能力建设，另一方面协调人工智能安全治理原则。
+在全球局势持续动荡的背景下，人文合作倡议也获得了更加重要的意义。</div>
+<ul>
+<li>中亚国家间贸易额约130亿美元，仅占外贸总额8%，哈国提议提升至200亿美元</li>
+<li>哈国推动跨里海国际运输走廊及南北走廊等互联互通网络建设</li>
+<li>水资源被列为地区稳定主要挑战，建议探索跨境管理新模式</li>
+<li>倡议制定《中亚人工智能伙伴关系计划》和AI安全宣言</li>
+<li>科技合作兼顾技术能力建设与人工智能安全治理</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上，贸易目标与运输走廊建设将促进区域一体化，扩大哈国过境运输收益。外交上，水资源与AI治理倡议提升哈国区域领导力。矿产格局方面，互联互通增强有助于哈国能源与矿产出口多元化，降低对单一通道依赖。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/shiguoyuhoujiangduijinxingguoshiwen-0263535d/" target="_blank">比利时国王菲利普与王后玛蒂尔德将对哈萨克斯坦进行国事访问</a></h3>
+<div class="item-meta">哈通社中文版 · 10/10 16:05<span class="source-link"><a href="https://cn.inform.kz/news/shiguoyuhoujiangduijinxingguoshiwen-0263535d/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>比利时国王菲利普与王后玛蒂尔德将对哈萨克斯坦进行国事访问。访问期间，双方高层将讨论加强多领域合作前景。托卡耶夫总统与比利时国王夫妇计划出席哈萨克斯坦—比利时商务理事会第四次会议、两国高校校长论坛等活动。访问结束后，双方预计发表联合声明并签署一系列合作文件。此前哈通社已报道主要议题、行程及随行代表团情况。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 比利时国王菲利普与王后玛蒂尔德将对哈萨克斯坦进行国事访问
+正文:
+访问期间，双方将在高层会谈中就进一步加强哈萨克斯坦与比利时多领域合作的前景进行讨论。
+根据访问日程安排，托卡耶夫总统与比利时国王菲利普、王后玛蒂尔德计划出席哈萨克斯坦—比利时商务理事会第四次会议、两国高校校长论坛以及其他相关活动。
+访问结束后，双方预计将发表联合声明，并签署一系列合作文件。
+此前，哈通社曾报道此次国事访问的主要议题、王室夫妇的具体行程及随行代表团成员情况。</div>
+<ul>
+<li>比利时国王菲利普与王后玛蒂尔德将对哈萨克斯坦进行国事访问</li>
+<li>双方高层讨论加强哈萨克斯坦与比利时多领域合作前景</li>
+<li>托卡耶夫总统与比利时国王夫妇出席商务理事会第四次会议和高校校长论坛</li>
+<li>访问结束后预计发表联合声明并签署一系列合作文件</li>
+<li>哈通社此前已报道主要议题、行程及随行代表团情况</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访将深化哈比政治互信，推动经贸与教育合作，促进投资与技术交流，对哈国多元外交及矿产等领域合作具有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/guoweiguanzhongjiannengxiezuoji-0829e5dc/" target="_blank">美国为何关注“中间走廊”？哈萨克斯坦能提供哪些合作机遇？</a></h3>
+<div class="item-meta">哈通社中文版 · 10/10 12:00<span class="source-link"><a href="https://cn.inform.kz/news/guoweiguanzhongjiannengxiezuoji-0829e5dc/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>美国关注“中间走廊”源于供应链多元化需求，并推动“特朗普路线”（TRIPP）倡议，通过亚美尼亚连接阿塞拜疆与纳希切万。美国众议员哈马德在第七届里海商业论坛上表示，该路线将使欧洲至中亚整个地区受益，增强美国供应链韧性并保障关键矿产供应。对哈萨克斯坦而言，走廊有助于加强其与南高加索、土耳其及欧洲联系，推动交通现代化并吸引投资。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">美国对“中间走廊”的关注，首先源于其推动运输路线和供应链多元化的需求。
+在全球贸易格局不断变化的背景下，连接中亚、南高加索、土耳其及欧洲市场的运输通道正变得越来越重要。
+与此同时，华盛顿也高度关注南高加索地区的交通互联互通建设。其中，美国提出的“特朗普路线”（TRIPP）倡议占据重要位置。该倡议旨在通过亚美尼亚领土建立连接阿塞拜疆本土与纳希切万的交通通道。
+这一项目的实施，有望进一步加强东西向交通联系，为区域运输网络的衔接创造新的机遇。
+对美国而言，此类基础设施建设的意义远不止货物运输本身。
+Фото: caspianpolicy.org 美国众议员亚伯拉罕·哈马德在纽约举行的第七届里海商业论坛上表示：
+“‘特朗普路线’将使从欧洲、南高加索、里海直至中亚的整个地区受益。美国仍然能够在这一地区发挥不可替代的外交和经济大国作用。”
+由此可见，交通互联互通被视为美国扩大在该地区经济影响力的重要基础。
+与此同时，“中间走廊”也被视为一个跨行业合作项目，能够为美国企业在基础设施、物流、能源、电信和技术等领域创造新的商业机会。
+交通基础设施的发展对于获取中亚资源同样具有重要意义。连接中亚与全球市场的运输路线越高效，该地区的原材料和制造业基础就越容易融入全球供应链。
+哈马德指出：
+“这一走廊能够增强美国供应链的韧性，并有助于保障能源领域关键矿产资源的供应安全。”
+正因如此，“中间走廊”对美国的地缘经济意义正在不断提升。它不仅连接不同市场，也为更加稳定地获取中亚地区资源创造了条件。
+对哈萨克斯坦而言，“中间走廊”的意义不仅在于扩大过境运输规模。
+这一走廊的发展有助于加强哈萨克斯坦与南高加索、土耳其及欧洲之间的联系，推动交通基础设施现代化，并为吸引新的投资创造条件。</div>
+<ul>
+<li>美国推动供应链多元化，关注“中间走廊”</li>
+<li>“特朗普路线”经亚美尼亚连接阿塞拜疆与纳希切万</li>
+<li>美议员称该路线保障关键矿产供应安全</li>
+<li>中间走廊为美企创造基建物流能源等机会</li>
+<li>哈萨克斯坦可借走廊吸引投资并推动交通现代化</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国而言，中间走廊提升过境运输地位，推动交通现代化并吸引投资，加强其与南高加索、土耳其及欧洲联系；同时增强美在哈经济存在，影响地区矿产与能源格局。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-10-11 09:01</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
