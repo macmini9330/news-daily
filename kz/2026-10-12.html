@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年10月12日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年10月12日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年10月11日早9:00至2026年10月12日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 15 条</span><span class="stat-chip">2 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">6</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">9</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">0</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">0</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(6 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/skolko-chelovek-prozhivayut-vavariynih-domah-vkizilordinskoy-oblasti-7a4e11f4" target="_blank">克孜勒奥尔达州有多少人居住在危房中</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/12 05:23<span class="source-link"><a href="https://www.inform.kz/ru/skolko-chelovek-prozhivayut-vavariynih-domah-vkizilordinskoy-oblasti-7a4e11f4" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>克孜勒奥尔达州共有69栋危房，其中63栋位于州中心克孜勒奥尔达市。673人唯一住房被认定为危房并排队等待安置。2024年州预算拨款17亿坚戈，2025年3月已交付135套住房，并拆除3栋危房。2025年再拨17亿坚戈购135套住房。全州1505栋多层住宅中601栋需大修，占比从2011年73%降至40%。2024年大修33栋，2025年申请14亿坚戈修14栋未获拨款。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据州能源与住房公用事业管理局数据，此类房屋大部分位于克孜勒奥尔达市。具体而言，州中心有63栋危房。另有3栋位于卡尔马克申区，2栋位于锡尔河区，1栋位于扎拉加什区。
+——排队等待住房的有673人，其唯一住房被认定为危房。2024年从州预算中拨款17亿坚戈，2025年3月交付了135套住房。三栋危房已拆除。今年州预算中已预留17亿坚戈用于购买135套住房，——消息中称。
+该地区1505栋多层住宅中，有601栋需要大修。这一指标从2011年的73%降至40%。
+——2024年通过共和国预算的预算贷款，对33栋多层住宅进行了大修，其中18栋在克孜勒奥尔达。阿拉尔斯克更新了6栋，扎拉加什区2栋，锡尔河区7栋。2025年已提交14栋大修的预算申请，金额为14亿坚戈，但未获拨款，——管理局表示。
+哈萨克斯坦哪里危房最多——点击此处阅读。</div>
+<ul>
+<li>克孜勒奥尔达州有69栋危房，63栋在州中心</li>
+<li>673人唯一住房被认定危房，排队等安置</li>
+<li>2024年拨17亿坚戈，2025年3月交付135套住房</li>
+<li>全州601栋多层住宅需大修，占比降至40%</li>
+<li>2025年申请14亿坚戈修14栋，未获拨款</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该州危房改造压力集中于州中心，财政拨款与安置需求仍存缺口。大修比例下降显示改善，但2025年申请未获拨款或延缓进度，影响地方民生与政治稳定，对建筑和建材需求有局部拉动。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/pochti-25mln-tenge-rastratil-predsedatel-osi-vpavlodare-8d60a1af" target="_blank">巴甫洛达尔一业主协会主席挪用近250万坚戈</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/12 04:23<span class="source-link"><a href="https://www.inform.kz/ru/pochti-25mln-tenge-rastratil-predsedatel-osi-vpavlodare-8d60a1af" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>巴甫洛达尔市洛莫夫街一栋多层住宅楼的业主协会主席于2023年底当选，2024年6月起将公共账户当作个人账户，挪用近250万坚戈用于餐饮、药店和食品店等个人消费，一年后亏空暴露。警方立案调查，案件进入法院，但因受害人代表与被告达成和解、损害全额赔偿，法院最终裁定免除其刑事责任。该男子已不再居住在该楼。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：巴甫洛达尔一业主协会主席侵吞近250万坚戈
+
+正文：
+居住在洛莫夫街一栋多层住宅楼里的巴甫洛达尔市民，于2023年底被选为业主协会主席。邻居们以此将管理所有事务以及公共账户的权力托付给了这名男子。
+
+这位管理者并非一开始就挪用邻居们缴纳的钱款，而是在半年后才开始。一切始于2024年6月。该男子几乎将公共账户当作个人账户使用，从中转账给自己用于支付咖啡馆、食堂、糕点店、药店、肉店和食品店的费用。当然，他什么也没归还，一年后亏空暴露。
+
+警方就侵吞事实立案，并根据全年银行流水查明业主协会资金的“流向”。案件进入法院审理，但判决始终未作出。
+
+巴甫洛达尔市跨区刑事法院的裁定中称：“庭审期间，业主协会受害人代表提出申请，要求终止案件，理由是已与被告达成和解，因为犯罪行为造成的损害已由其全额赔偿，对被告无任何诉求。法院已就终止刑事案件的法律后果进行解释，各方均已知悉并理解。”
+
+法院最终作出免除其刑事责任的决定。
+
+值得一提的是，该男子已不再居住在洛莫夫街的这栋楼里。
+
+回顾此前，巴甫洛达尔第45机构的一名前员工因多次收受一名囚犯的贿赂而被判有罪。</div>
+<ul>
+<li>巴甫洛达尔业主协会主席侵吞公共账户近250万坚戈</li>
+<li>2024年6月起将公款用于餐饮、药店等个人消费</li>
+<li>一年后亏空暴露，警方立案并查明资金流向</li>
+<li>因全额赔偿并达成和解，法院免除其刑事责任</li>
+<li>该男子已不再居住于洛莫夫街涉事住宅楼</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此案暴露哈国业主协会资金监管漏洞，可能推动物业财务透明化改革；司法以和解免刑虽减轻讼累，但或削弱威慑力，影响基层治理信任。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/serveri-yandeksa-spersonalnimi-dannimi-kazahstantsev-rabotayut-shtatno-mintsifri-18f912c2" target="_blank">数字发展部：Yandex存储哈萨克斯坦公民个人数据的服务器运行正常</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/12 00:38<span class="source-link"><a href="https://www.inform.kz/ru/serveri-yandeksa-spersonalnimi-dannimi-kazahstantsev-rabotayut-shtatno-mintsifri-18f912c2" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦数字发展部表示，存储哈国公民个人数据的Yandex服务器位于哈国境内且运行正常，但出租车和配送等部分服务组件位于境外。10月11日，Yandex在哈萨克斯坦、亚美尼亚和吉尔吉斯斯坦出现服务中断。目前Yandex正进行恢复工作，数字发展部与该公司及哈国基础设施组织协作提供支持，并与其他出租车和配送平台共同确保负荷增加下的稳定性。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：数字发展部：存储哈萨克斯坦公民个人数据的Yandex服务器运行正常
+
+正文：
+Yandex服务运行中断引发了关于哈萨克斯坦公民日常使用的数字平台可靠性的合理质疑。
+
+——用于存储哈萨克斯坦用户个人数据的服务器位于本国境内，运行正常。但这并不意味着整个平台完全自主运行，提供出租车和配送服务所需的某些组件位于哈萨克斯坦境外。保障服务不间断运行对用户至关重要。因此，将数据存储在哈萨克斯坦境内与确保数字平台稳定运行是两项独立任务，需要综合解决方案——消息中称。
+
+该部门指出，目前Yandex正在进行恢复工作。
+
+——数字发展部正与该公司及哈萨克斯坦基础设施组织协作，提供必要支持。同时，正与其他出租车和配送平台共同开展工作，确保其在负荷增加条件下的稳定性——数字发展部补充道。
+
+回顾：今日，10月11日，有报道称Yandex服务在哈萨克斯坦、亚美尼亚和吉尔吉斯斯坦出现故障。</div>
+<ul>
+<li>Yandex存储哈公民个人数据服务器在哈境内运行正常</li>
+<li>出租车和配送等部分服务组件位于哈萨克斯坦境外</li>
+<li>10月11日Yandex在哈、亚美尼亚、吉尔吉斯斯坦服务中断</li>
+<li>数字发展部与Yandex及哈基础设施组织协作提供支持</li>
+<li>与其他平台共同确保负荷增加下的服务稳定性</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">事件凸显哈国数字平台对外依赖风险，数据本地化与平台自主运行需综合解决。哈政府借机强化数字基础设施韧性，推动与Yandex合作及多平台稳定性建设，或加速数字主权政策。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://www.inform.kz/ru/litsa-sinvalidnostyu-vkazahstane-poluchat-edinovremennuyu-pomosh-skolko-videlili-975485c3" target="_blank">哈萨克斯坦残疾人将获得一次性援助：各地区拨款多少</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/11 23:40<span class="source-link"><a href="https://www.inform.kz/ru/litsa-sinvalidnostyu-vkazahstane-poluchat-edinovremennuyu-pomosh-skolko-videlili-975485c3" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦多个地区向残疾人发放一次性社会援助。阿斯塔纳按残疾类别发放；阿克莫拉州向一级至三级残疾人及残疾儿童发放3个月计算指数（12 975坚戈），覆盖25 103人，拨款3.257亿坚戈；阿拜州发放5个月计算指数（21 625坚戈）；阿克托别州在共和国日前发放，残疾人获13个月计算指数（56 225坚戈），残疾儿童获26个月计算指数（112 450坚戈）；阿特劳州向22 996人发放20个月计算指数（86 500坚戈）。无需申请，资金自动转账。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦残疾人将获得一次性援助：各地区拨款多少
+
+在阿斯塔纳，向残疾公民提供一次性社会援助取决于残疾类别。根据首都马斯利哈特的决定，支付金额为：
+
+社会援助无需申请，根据国家公司“为民政府”的数据，向在阿斯塔纳登记的公民发放。然而，最近更换居住地的人需要检查新地址的登记情况。
+
+根据规定，一次性社会援助每个日历年提供一次，且仅基于一个理由。因此，今年已因其他理由获得一次性援助的公民，在残疾人权利保护日不重复发放。
+
+在阿克莫拉州，一级、二级和三级残疾人以及残疾儿童可获得一次性援助，金额为3个月计算指数，即12 975坚戈。
+
+据州就业协调和社会规划局数据，截至2026年9月25日，应有25 103人获得该款项。为此，从区和市预算中拨款3.257亿坚戈。
+
+该地区一些城市和区已完成转账。其余公民计划于10月发放。随着名单的更新，领取人数可能会变化。
+
+在阿拜州，一级和二级成年残疾公民以及残疾儿童将获得5个月计算指数，即21 625坚戈。
+
+该地区的社会援助转账已经开始。计划在10月20日前全部完成。
+
+在阿克托别州，将在10月25日——共和国日之前向残疾公民提供一次性社会援助。
+
+领取国家社会补助金的残疾人可获得13个月计算指数，即56 225坚戈，残疾儿童为26个月计算指数，即112 450坚戈。
+
+在阿特劳州，共和国日之前，一级、二级和三级成年残疾公民将获得20个月计算指数，即86 500坚戈的一次性社会援助，共22 996人。
+
+无需提交申请即可获得款项。资金将按规定转入公民账户。</div>
+<ul>
+<li>阿斯塔纳按残疾类别发放一次性社会援助，无需申请</li>
+<li>阿克莫拉州向25 103人发放12 975坚戈，拨款3.257亿坚戈</li>
+<li>阿拜州发放21 625坚戈，计划10月20日前完成</li>
+<li>阿克托别州残疾人获56 225坚戈，残疾儿童获112 450坚戈</li>
+<li>阿特劳州向22 996人发放86 500坚戈，共和国日前到位</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该政策直接改善残疾人生活，缓解地区不平等，增强社会稳定性；财政支出增加地方预算压力，但有助于提升政府民生形象，对政治稳定有积极作用。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://www.inform.kz/ru/zhenshinu-vshimkente-nakazali-zafeyk-opogibshih-ipostradavshih-nakontserte-kayra-84c750eb" target="_blank">奇姆肯特一名女子因散布凯拉特·努尔塔斯演唱会伤亡假消息被处罚</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/11 22:23<span class="source-link"><a href="https://www.inform.kz/ru/zhenshinu-vshimkente-nakazali-zafeyk-opogibshih-ipostradavshih-nakontserte-kayra-84c750eb" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦奇姆肯特市一名女性因在社交媒体散布关于歌手凯拉特·努尔塔斯演唱会伤亡的虚假信息被警方查处。她声称演唱会致3人死亡、100人受伤、50人腿骨折，6000人冲垮大门。警方证实信息不实，已收集材料提交法院。此前演唱会入口踩踏事件中8人就医，7人出院，1名18岁女孩住院，演唱会组织者已被关押。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">此前，社交媒体上出现一则帖子，声称凯拉特·努尔塔斯演唱会结束后有三人死亡，另有100人受伤，据称还有50人腿部骨折。该消息作者还声称，活动期间由6000人组成的人群冲垮了大门，因为演唱会原本只计划容纳少得多的观众。
+
+然而，据警方消息，所传播的信息与事实不符，并在居民中引发了无端的恐慌。
+
+——在采取的措施中，警方确定了该女性的身份。已收集相关材料，并已提交法院，以便依法审议和作出决定，——奇姆肯特市警察局表示。
+
+该部门呼吁公民对社交媒体上的发布内容负责，核实所传播信息的真实性，只信任官方信息来源。
+
+警方还提醒，传播明知虚假的信息将承担法律规定的责任。
+
+据报道，此前有八人在哈萨克斯坦歌手凯拉特·努尔塔斯于奇姆肯特的演唱会入口处发生踩踏后寻求医疗帮助。其中七人经医生检查后已回家，一名18岁女孩被送往医院。
+
+此外，凯拉特·努尔塔斯演唱会的组织者已被关押在临时拘留所。</div>
+<ul>
+<li>奇姆肯特女性散布演唱会虚假伤亡信息被警方查处</li>
+<li>虚假信息称3死100伤50腿骨折，6000人冲垮大门</li>
+<li>警方证实信息不实，已提交法院处理</li>
+<li>演唱会入口踩踏致8人就医，1名18岁女孩住院</li>
+<li>演唱会组织者已被关押在临时拘留所</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此事件凸显哈国对网络虚假信息的法律管控趋严，可能加强社交媒体监管。演唱会安全事故及组织者被拘，或促使当局审查大型活动安保标准，影响公共活动管理政策。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/fabuyingzidongguojiajiguan-fazhongguan-e3438e88/" target="_blank">议员：法院不应自动支持国家机关 哈萨克斯坦司法改革重塑权利关系</a></h3>
+<div class="item-meta">哈通社中文版 · 10/11 15:10<span class="source-link"><a href="https://cn.inform.kz/news/fabuyingzidongguojiajiguan-fazhongguan-e3438e88/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年哈萨克斯坦新宪法于3月15日公投通过、7月1日生效，将米兰达规则和律师制度独立地位写入宪法，明确行政诉讼类型。自2021年行政法院运行以来，公民和企业起诉国家机关胜诉率从15%升至60%。议员沙帕克指出，改革核心是强化法官独立性，法院不应自动支持国家机关，而应客观审查其行为合法性。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">议员：法院不应自动支持国家机关 哈萨克斯坦司法改革重塑权利关系
+
+2026年实施的宪法改革成为哈萨克斯坦法治建设进程中的重要里程碑。新宪法于3月15日经全民公投通过，并于7月1日正式生效，将保障人权与自由、维护法治原则以及促进国家权力机构之间的协调运作确立为基本原则。
+
+其中，一项重要变化是将“米兰达规则”提升至宪法层面。根据这一规定，执法机关必须在限制被拘留人人身自由时，立即向其告知所享有的权利以及被拘留的原因。
+
+另一项重要变化是赋予律师制度独立的宪法地位。律师制度被明确确立为保护公民权利和合法利益的重要法律保障机制，其在确保司法公正方面的作用也得到进一步明确。
+
+与此同时，新宪法更加重视司法独立以及公民权利与自由的保护，进一步明确了司法监督的保障机制和宪法法院在人权保护方面的地位。
+
+新宪法的另一项显著变化，是在司法程序类型中明确列入“行政”诉讼。根据宪法规定，司法权通过法律规定的民事、行政、刑事及其他诉讼程序行使。
+
+Фото: Kazinform 上述规定旨在保障司法公正，加强对国家机关活动的法律监督，并为公民维护自身合法权益提供更加广泛的途径。
+
+近年来，哈萨克斯坦持续推进司法体系改革，重点加强司法独立，提高公民获得公正司法救济的便利程度，并完善权利保护的法律机制。
+
+这些改革不仅涉及司法体系的机构设置，也涵盖公民与国家之间的法律关系。
+
+沙帕克认为，司法和法律改革的核心，在于通过切实有效的法律机制保障公民权利，同时增强法院独立于国家行政机关作出裁决的能力。
+
+其中一项重要举措是强化法官独立性的制度保障。具体而言，法官选拔及职业发展等主要事项已划归最高司法委员会负责。此外，法院行政管理职能与审判职能实现分离，并建立了法院经费保障机制。
+
+司法独立与公民获得公正审判的权利密切相关。在这一方面，自2021年起在哈萨克斯坦实施的行政司法制度发挥了重要作用。
+
+官方统计数据显示，在行政法院设立之前，公民和企业在与国家机关发生的法律纠纷中，胜诉率约为15%。行政法院投入运行后，这一比例已提高至60%。
+
+沙帕克指出，这一变化表明，公民与国家之间的法律权利关系正在发生转变。行政法院的职责并非自动支持国家机关的立场，而是客观审查其决定及行为是否合法。
+
+“当前司法和法律改革的核心，是通过具体有效的机制保障公民权利，并增强法院独立于国家机关作出裁决的能力。其中一项重要举措，就是进一步强化法官独立性的制度保障。行政法院的职责不是自动支持国家机关的立场，而是客观评估其决定和行为的合法性。公民和企业在与国家机关的纠纷中，胜诉率从15%提高至60%，这表明公民与国家之间的法律权利关系正在发生变化。”沙帕克说。
+
+刑事诉讼领域的统计数据同样反映出司法监督机制的实际运行情况。</div>
+<ul>
+<li>新宪法2026年生效，米兰达规则入宪</li>
+<li>律师制度获独立宪法地位</li>
+<li>行政法院设立后公民胜诉率从15%升至60%</li>
+<li>法官选拔划归最高司法委员会</li>
+<li>法院行政与审判职能分离</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">司法改革强化法院独立性，重塑公民与国家权力关系，提升公民胜诉率，有助于改善投资环境和法治形象，对哈国政治体制平衡、经济营商环境及外交法治声誉产生积极影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(9 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/yuzhnaya-koreya-mozhet-zapustit-regulyarnie-reysi-po-severnomu-morskomu-puti-e252596d" target="_blank">韩国可能开通经北方海航道的定期航班</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/12 06:56<span class="source-link"><a href="https://www.inform.kz/ru/yuzhnaya-koreya-mozhet-zapustit-regulyarnie-reysi-po-severnomu-morskomu-puti-e252596d" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>韩国驻俄大使李锡培表示，基于8月22日集装箱船PanStar Acro从釜山经北极试航欧洲的结果，韩国将研究开通北极航道定期航线的可能性，并将其视为本届政府重要国家任务。北极路线比苏伊士运河路线短约7000公里，可缩短运输时间约10天，全程约40-45天。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：韩国可能开通北极航道定期航线
+
+正文：
+根据试航结果，首尔将研究组织北极航线定期通航的可能性。
+
+——该项目极为重要。我国相关部委和机构很可能将在试航结果基础上进行全面研究，随后我们将在中长期考虑组织定期通航的可能性，——韩国驻俄罗斯大使李锡培表示。
+
+据他称，韩国长期以来对北极航线表现出兴趣。他还将北极航道试航称为本届政府最重要的国家任务之一。
+
+回顾，8月22日，集装箱船PanStar Acro首次从釜山经北极前往欧洲。此次航行旨在检验北极航道在多大程度上适合亚洲与欧洲之间的定期商业运输。
+
+经北极的路线比经苏伊士运河的路线短约7000公里。据韩国当局评估，这可将货物运输时间缩短约10天。全程约需40-45天。</div>
+<ul>
+<li>韩国拟研究北极航道定期通航可行性</li>
+<li>8月22日PanStar Acro从釜山经北极试航欧洲</li>
+<li>北极路线比苏伊士运河短约7000公里</li>
+<li>可缩短运输时间约10天，全程40-45天</li>
+<li>韩国驻俄大使称此为重要国家任务</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国而言，北极航道若常态化将分流部分欧亚过境运输，削弱哈萨克斯坦作为陆桥的竞争力，但也可能促使其加快跨里海通道建设，并影响其与韩国在矿产和物流领域的合作格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/iran-zayavil-o-podrive-tankera-na-morskoy-mine-v-ormuzskom-prolive-934e47f4" target="_blank">伊朗称一艘油轮在霍尔木兹海峡触水雷爆炸</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/12 03:28<span class="source-link"><a href="https://www.inform.kz/ru/iran-zayavil-o-podrive-tankera-na-morskoy-mine-v-ormuzskom-prolive-934e47f4" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>伊朗伊斯兰革命卫队海军称，一艘载有大批原油的油轮在霍尔木兹海峡关闭AIS和导航传感器，偏离安全走廊进入禁航区后触雷。这是两天内第三起类似事件。伊朗警告将把关闭导航数据的船只视为敌方并采取一切措施。事件加剧海峡紧张局势，CENTCOM等未予评论。此前一艘货船遇袭致两名船员死伤。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">伊朗伊斯兰革命卫队海军（IRGC海军）新闻处报道称，一艘载有大批原油的船只试图驶出霍尔木兹海峡水域。该油轮完全关闭了船载自动识别系统（AIS）和导航传感器，违反了国际航行规则，偏离了商定的安全走廊，进入了禁止通行区域。
+
+IRGC海军指出，此次事件已是过去两天内第三起违规油轮触雷爆炸事件。
+
+对此，伊朗方面发出严厉警告，称海峡区域内任何隐藏自身导航数据的船只都将被自动归类为敌方目标，并采取一切可能的措施予以打击。
+
+该事件发生在霍尔木兹海峡局势恶化、航行威胁加剧的背景下——霍尔木兹海峡是全球碳氢化合物运输最重要的路线之一。截至发稿时，美国中央司令部（CENTCOM）、负责海上航行安全的国际机构以及船只运营公司均未对此事发表评论。现有航行简报中缺乏关于油轮归属、船员状况以及可能发生石油泄漏威胁的信息。
+
+此前，霍尔木兹海峡曾有一艘货船遭到袭击，导致两名船员死亡或受伤。</div>
+<ul>
+<li>伊朗称油轮关闭AIS进入禁航区触雷</li>
+<li>两天内发生第三起违规油轮触雷事件</li>
+<li>伊朗警告将打击关闭导航数据的船只</li>
+<li>霍尔木兹海峡航行威胁加剧，各方未回应</li>
+<li>此前货船遇袭致两名船员死伤</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈萨克斯坦影响有限，但霍尔木兹海峡紧张可能推高全球油价，利好哈国石油出口收入；同时加剧地缘风险，或影响哈国经伊朗的运输通道及里海能源外运安全。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/tramp-obyavil-energeticheskoe-peremirie-mezhdu-rossiey-iukrainoy-26aa43ba" target="_blank">特朗普宣布俄罗斯与乌克兰之间“能源休战”</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/12 01:50<span class="source-link"><a href="https://www.inform.kz/ru/tramp-obyavil-energeticheskoe-peremirie-mezhdu-rossiey-iukrainoy-26aa43ba" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>特朗普在Truth Social宣布俄乌立即生效能源停火，双方已同意。协议旨在降低因袭击炼油厂和发电站引发的紧张，并允许俄罗斯柴油供应美国及全球市场，俄方需立即供应超30万吨燃料，11月有额外供应，美国临时放宽制裁。泽连斯基表示乌克兰支持停火，期待美方细节，俄方暂未评论。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">特朗普宣布俄罗斯与乌克兰之间达成“能源停火”
+
+——俄罗斯与乌克兰战争中的能源停火立即生效。双方已同意。不要违反它！——唐纳德·特朗普在Truth Social上写道。
+据特朗普称，该协议旨在缓解数周以来对炼油厂和发电站袭击后的紧张局势。他声称，这些袭击破坏了柴油供应，并导致美国价格上涨。
+停火声明是在一项允许俄罗斯柴油供应美国及全球市场的协议背景下宣布的。根据协议，俄罗斯应立即供应超过30万吨燃料，预计11月还会有额外供应。为便利出口，美国还暂时放宽了制裁限制。
+弗拉基米尔·泽连斯基对此消息作出回应，指出乌克兰支持这一停火，重要的是俄罗斯也支持它。
+——我们期待美方的细节——泽连斯基在X上写道。
+俄罗斯方面尚未对特朗普的声明发表评论。</div>
+<ul>
+<li>特朗普宣布俄乌能源停火立即生效</li>
+<li>协议允许俄柴油供应美国及全球市场</li>
+<li>俄需立即供应超30万吨燃料，11月追加</li>
+<li>美国临时放宽制裁以促进出口</li>
+<li>泽连斯基支持停火，俄方未评论</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国而言，俄乌能源停火及俄柴油出口可能影响全球油价和地区能源安全，哈国作为能源出口国需关注市场波动及制裁变化对自身出口的间接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/yushiguozaijixing-e4777991/" target="_blank">托卡耶夫总统与比利时国王夫妇在机场举行简短交谈</a></h3>
+<div class="item-meta">哈通社中文版 · 10/12 01:27<span class="source-link"><a href="https://cn.inform.kz/news/yushiguozaijixing-e4777991/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与比利时国王菲利普和王后玛蒂尔德在机场简短交谈。托卡耶夫称此次国事访问具有历史性意义，将巩固双边关系。菲利普感谢接待，对次日高级别会谈充满信心，强调深化多领域伙伴关系。访问为期三天，期间将出席哈比商务理事会第四次会议、高校校长论坛等活动，结束后预计发表联合声明并签署合作文件。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫总统与比利时国王夫妇在机场举行简短交谈
+
+正文:
+交谈中，托卡耶夫总统指出，比利时国王和王后此次对哈萨克斯坦进行的国事访问具有历史性意义，将进一步巩固哈萨克斯坦与比利时之间的双边关系。
+托卡耶夫总统表示：
+“欢迎来到哈萨克斯坦。此次访问恰逢我国发展的重要阶段。当前，哈萨克斯坦正不断发展，经济持续向前迈进。可以说，你们的到访将为两国关系注入新的动力。”
+比利时国王菲利普对托卡耶夫总统的热情接待表示感谢，并对将于次日举行的高级别会谈取得成功充满信心。
+菲利普国王同时强调了进一步深化两国多领域伙伴关系的重要性。
+Фото: Акорда 菲利普国王表示：
+“从走下飞机舷梯、踏上哈萨克斯坦土地的那一刻起，我们就感受到了热情而隆重的接待。对此，我向您表示感谢。我们很高兴能够对哈萨克斯坦进行为期三天的访问，也期待借此机会更加深入地了解贵国。”
+根据访问日程安排，托卡耶夫总统与比利时国王菲利普、王后玛蒂尔德计划出席哈萨克斯坦—比利时商务理事会第四次会议、两国高校校长论坛以及其他相关活动。
+访问结束后，双方预计将发表联合声明，并签署一系列合作文件。</div>
+<ul>
+<li>托卡耶夫与比利时国王夫妇机场简短交谈</li>
+<li>托卡耶夫称访问具历史性意义，将巩固双边关系</li>
+<li>菲利普感谢接待，对高级别会谈充满信心</li>
+<li>访问为期三天，将出席商务理事会和校长论坛</li>
+<li>访问结束后预计发表联合声明并签署合作文件</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访将强化哈比政治互信，推动经贸与投资合作，尤其在矿产和绿色能源领域；高校论坛促进教育交流，联合声明可能涉及关键矿产供应链，有助于哈国多元外交和经济发展。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://www.inform.kz/ru/tokaev-nazval-vizit-korolya-belgiytsev-vazhnim-etapom-v-otnosheniyah-dvuh-stran-bdcb1a9b" target="_blank">托卡耶夫称比利时国王访问是两国关系的重要阶段</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/12 01:25<span class="source-link"><a href="https://www.inform.kz/ru/tokaev-nazval-vizit-korolya-belgiytsev-vazhnim-etapom-v-otnosheniyah-dvuh-stran-bdcb1a9b" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在阿斯塔纳机场欢迎比利时国王菲利普和王后玛蒂尔德，称此访是两国关系的重要阶段。托卡耶夫表示，哈萨克斯坦正处于重要发展时期，经济持续增长，此访将为双边关系注入强大动力。菲利普国王感谢热情接待，表示将在哈度过三天，期待深化多领域伙伴关系。此次国事访问应托卡耶夫邀请进行。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">在阿斯塔纳机场抵达大厅，哈萨克斯坦总统与高级贵宾进行了简短交谈。
+国家元首热烈欢迎比利时国王和王后的访问，强调此访对加强哈萨克斯坦-比利时关系具有历史意义。
+——哈萨克斯坦非常高兴接待您的访问。您抵达正值我国发展的极其重要时期。总体而言，我们发展顺利，经济不断增长。可以毫不夸张地说，您的访问将为双边关系注入强大动力，——总统指出。
+比利时国王菲利普则感谢卡瑟姆-若马尔特·托卡耶夫的热情接待，并表示相信即将举行的会谈将成功举行，强调其对深化两国多领域伙伴关系的重要意义。
+——感谢您从我们飞机降落、舷梯旁开始就给予我们的如此热情接待。我们非常高兴能在这里度过整整三天，并希望尽可能近距离地了解您的国家，——比利时国王说。
+需要提醒的是，比利时国王菲利普和王后玛蒂尔德应国家元首卡瑟姆-若马尔特·托卡耶夫的邀请抵达哈萨克斯坦进行国事访问。</div>
+<ul>
+<li>托卡耶夫在阿斯塔纳机场迎接比利时国王菲利普和王后玛蒂尔德</li>
+<li>托卡耶夫称此访是哈比关系重要阶段，将注入强大动力</li>
+<li>菲利普国王感谢热情接待，期待深化多领域伙伴关系</li>
+<li>比利时国王夫妇应托卡耶夫邀请进行国事访问，为期三天</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访提升哈萨克斯坦与欧盟核心国家比利时的政治互信，推动经贸、投资与矿产领域合作，有助于哈国外交多元化和吸引欧洲资本技术。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/shiguohou-2318ad55/" target="_blank">托卡耶夫总统迎接比利时国王菲利普及王后玛蒂尔德</a></h3>
+<div class="item-meta">哈通社中文版 · 10/12 00:55<span class="source-link"><a href="https://cn.inform.kz/news/shiguohou-2318ad55/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫迎接比利时国王菲利普和王后玛蒂尔德。比利时王室专机进入哈领空后，哈空军战机全程伴飞护航至阿斯塔纳。机场举行隆重欢迎仪式，哈仪仗队和总统乐团列队迎接。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据总统府新闻局消息，比利时国王及王后乘坐的专机进入哈萨克斯坦领空后，哈萨克斯坦空军战机全程伴飞护航，直至抵达阿斯塔纳。
+Фото: Ақорда Фото: Ақорда Фото: Акорда Фото: Акорда 为隆重迎接比利时王室贵宾，机场停机坪上举行了欢迎仪式。哈萨克斯坦仪仗队和总统乐团列队迎接。
+Фото: Акорда Фото: Акорда Фото: Акорда &amp;nbsp;</div>
+<ul>
+<li>托卡耶夫迎接比利时国王菲利普与王后</li>
+<li>哈空军战机为专机全程伴飞护航</li>
+<li>阿斯塔纳机场举行隆重欢迎仪式</li>
+<li>仪仗队和总统乐团列队迎接</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访提升哈国国际形象，深化与比利时及欧盟的政治外交关系，为经贸、投资与关键矿产合作创造契机，有助于哈国多元外交战略。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://www.inform.kz/ru/mid-kazahstana-osudil-ataki-husitov-nagrazhdanskie-obekti-saudovskoy-aravii-e424f049" target="_blank">哈萨克斯坦外交部谴责胡塞武装袭击沙特阿拉伯民用设施</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/11 22:47<span class="source-link"><a href="https://www.inform.kz/ru/mid-kazahstana-osudil-ataki-husitov-nagrazhdanskie-obekti-saudovskoy-aravii-e424f049" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦外交部谴责胡塞武装对沙特阿拉伯民用设施的袭击，称其违反国际法并破坏也门稳定。哈方呼吁立即停止袭击，通过政治外交手段解决危机，并重申支持沙特主权和安全。此前胡塞武装威胁袭击沙特机场，利雅得哈立德国王国际机场遇袭致12死300余伤。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦外交部谴责胡塞武装对沙特阿拉伯民用设施的袭击
+
+——从人道主义角度看，此类袭击不可接受，且违反国际法准则。这些行为破坏了也门局势稳定的努力，阻碍了冲突的政治解决。我们呼吁立即停止袭击，并仅通过政治外交手段解决危机，——哈萨克斯坦共和国外交部消息中称。
+
+哈萨克斯坦重申沙特阿拉伯有权保护其主权和安全。
+
+——哈萨克斯坦表达与沙特阿拉伯王国的团结，并重申其根据《联合国宪章》保护主权和安全的权利，——外交部补充道。
+
+此前有报道称，胡塞武装威胁对沙特阿拉伯机场发动新的打击。
+
+回顾，对利雅得哈立德国王国际机场的袭击造成12人死亡，另有300多人受伤。</div>
+<ul>
+<li>哈外交部谴责胡塞武装袭击沙特民用设施</li>
+<li>袭击违反国际法，破坏也门稳定与政治解决</li>
+<li>呼吁立即停袭，仅用政治外交手段解决危机</li>
+<li>哈方支持沙特主权安全，依据联合国宪章</li>
+<li>利雅得机场遇袭致12死300余伤</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">哈国此举巩固与沙特关系，展现平衡外交，但可能影响与伊朗及胡塞关系。对哈国经济无直接影响，但中东局势不稳或波及能源市场与矿产出口通道安全。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://www.inform.kz/ru/zarubezhniy-investor-nazval-astanu-sleduyushim-dubaem-isingapurom-bc8c8531" target="_blank">外国投资者称阿斯塔纳是下一个迪拜和新加坡</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/11 22:43<span class="source-link"><a href="https://www.inform.kz/ru/zarubezhniy-investor-nazval-astanu-sleduyushim-dubaem-isingapurom-bc8c8531" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>新加坡投资者巴拉吉·斯里尼瓦桑在 Network State Conference 2026 上称阿斯塔纳为下一个迪拜和新加坡。他指出风险资本和初创企业正从美国流向哈萨克斯坦等更技术开放的国家，并提及谢尔文·皮谢瓦尔、奥拉夫·卡尔森-维和 Binance 已进入该市场。他强调哈萨克斯坦可发行加密资产、建设 AI 数据中心、吸引国际人才，优势包括领导层以初创速度工作、资源土地充足及灵活签证政策。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">外国投资者称阿斯塔纳将成为下一个迪拜和新加坡
+
+巴拉吉·斯里尼瓦桑在昨日于新加坡举行的国际会议 Network State Conference 2026 上发表了上述声明。
+
+据他所说，风险资本和初创企业正在离开美国，前往包括哈萨克斯坦在内的更“技术开放”的国家。他提到已进入该市场的投资者和公司包括：Uber 和 DoorDash 的早期投资者谢尔文·皮谢瓦尔、Polychain 创始人奥拉夫·卡尔森-维以及加密货币交易所 Binance。
+
+视频截图——阿斯塔纳是一座快速发展的城市。它是下一个迪拜和新加坡。阿斯塔纳证明，可以比西方习惯认为的速度更快地建设美好的基础设施。如果在旧金山可以开设一个初创企业孵化器，那么在哈萨克斯坦——整个城市就是一个孵化器，”他表示。
+
+这位新加坡投资者还强调，在哈萨克斯坦可以发行加密资产、建设人工智能数据中心并吸引国际人才。
+
+“当所有这些在世界其他地区被缩减或关闭时，它却在哈萨克斯坦这样的地方启动，尤其是在哈萨克斯坦本身，”他继续说道。
+
+投资者将哈萨克斯坦的关键优势列为：国家领导层愿意“以初创企业的速度工作”、资源和土地的可用性，以及灵活的签证政策，使其能够在美国移民规则收紧的背景下吸引来自世界各地的高素质人才。
+
+此前，巴拉吉·斯里尼瓦桑分享了对未来几年 AI 电影市场发展的预测。</div>
+<ul>
+<li>投资者称阿斯塔纳为下一个迪拜和新加坡</li>
+<li>风险资本和初创企业从美国流向哈萨克斯坦</li>
+<li>哈萨克斯坦可发行加密资产和建设AI数据中心</li>
+<li>优势包括初创速度、资源土地和灵活签证</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该表态提升哈萨克斯坦作为技术开放经济体的国际形象，可能吸引更多风险投资和加密、AI领域企业入驻，推动数字经济发展；同时强化其在中亚作为替代性创新中心的地位，对区域矿产和人才格局产生潜在影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://cn.inform.kz/news/zaibu-minzaixiang-f8adc1ee/" target="_blank">身在异乡不忘故土 近百名哈萨克斯坦侨民在华盛顿相聚</a></h3>
+<div class="item-meta">哈通社中文版 · 10/11 21:04<span class="source-link"><a href="https://cn.inform.kz/news/zaibu-minzaixiang-f8adc1ee/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>近百名哈萨克斯坦侨民在美国华盛顿附近的马里兰州卡德罗克休闲区举行“Bas Qosu”野餐聚会。哈萨克裔美国人协会副主席叶什帕耶夫表示，活动旨在凝聚在美哈萨克斯坦人，提供相互支持、结识新友和建立商业联系的平台，并帮助下一代了解民族文化。QazTrade驻华盛顿代表斯拉姆哈诺夫指出，此类聚会每年举办数次，有助于加强侨民联系，也能让美国民众了解哈萨克斯坦文化。美国企业家杰克·康科尔曾七次访哈，并向哈萨克斯坦人民致以共和国日祝福。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">此次名为“Bas Qosu”（相聚）的野餐活动在美国马里兰州蒙哥马利县的卡德罗克休闲区（Carderock Recreation Area）举行。该公园距离华盛顿约10分钟车程，以优美的自然风光闻名，是攀岩、徒步和骑行爱好者经常光顾的休闲场所。
+哈萨克裔美国人协会副主席拉苏尔·叶什帕耶夫表示，活动的主要目的是将生活在美国的哈萨克斯坦人聚集在一起。
+“我们非常怀念自己的文化。举办这类活动的主要目的，是让大家相聚一堂，让人们知道，在美国有一个庞大的哈萨克斯坦人社群，大家可以相互支持、结识新朋友并建立商业联系。通过这样的聚会，即使身在美国，每个人也能感受到自己与哈萨克斯坦的距离更近了一些。我们举办这些活动，首先是为了孩子们，让他们有机会认识同龄伙伴，更深入地了解自己的民族文化。”叶什帕耶夫说。
+Фото: Рустем Кожыбаев / Kazinform 哈萨克斯坦贸易和一体化部下属QazTrade贸易政策发展中心驻华盛顿代表拉马赞·斯拉姆哈诺夫认为，此类聚会对于生活在美国的哈萨克斯坦同胞、他们的子女以及当地居民都具有重要意义。
+“一切都非常棒！这是一个难得的机会，大家可以聚在一起，感受家的温暖，品尝美食，与同胞畅谈交流。这里都是我们自己人，是亲近的朋友，是哈萨克斯坦人。同时，这也是孩子们练习哈萨克语的绝佳机会。”斯拉姆哈诺夫说。
+他介绍，哈萨克裔美国人协会每年都会组织数次类似活动，为侨民提供相聚交流、共同度过愉快时光的机会。
+Фото: Рустем Кожыбаев / Kazinform 斯拉姆哈诺夫还指出，这类活动不仅有助于加强侨民之间的联系，也能够让美国民众更加深入地了解哈萨克斯坦的文化、传统习俗和民族美食。
+“如果能够专门邀请美国朋友参加这样的活动，将是一件非常好的事情。这有助于向更多人介绍我们的文化、民族美食和传统价值观。”他说。
+美国企业家杰克·康科尔和妻子阿卢娅·康科尔表示，他们每年都会尽量参加这一聚会。
+“我们每年会来两次，因为我们喜欢与人交流。这是结交朋友、建立联系的好地方。这些年来，我们在这里认识了许多朋友。参加聚会不仅能与老朋友见面，也能让我的孩子们有机会了解他们母亲的文化。”杰克·康科尔说。
+Фото: Рустем Кожыбаев / Kazinform 杰克介绍，他曾七次前往哈萨克斯坦，一直对探索和了解不同文化抱有浓厚兴趣。
+学生时代，他便对苏联历史产生兴趣，并梦想有一天能够亲眼看看哈萨克草原。后来，这一梦想终于成为现实。
+迄今为止，他已经到访过科克舍套、彼得罗巴甫尔、布拉拜、阿斯塔纳、卡拉干达和阿拉木图等地。他最喜欢的哈萨克斯坦美食是哈萨克传统煮肉和抓饭。
+Фото: Рустем Кожыбаев / Kazinform 采访中，杰克还向哈萨克斯坦人民送上了即将到来的共和国日节日祝福。
+“我从华盛顿向全体哈萨克斯坦人民致以共和国日的祝贺，祝愿大家以愉快的心情欢度节日。”他说。</div>
+<ul>
+<li>近百名哈萨克斯坦侨民在华盛顿附近举行“Bas Qosu”野餐聚会</li>
+<li>活动旨在凝聚在美哈萨克斯坦人，促进交流与商业联系</li>
+<li>QazTrade代表称聚会每年举办数次，助力文化传播</li>
+<li>美国企业家杰克·康科尔曾七次访哈，送上共和国日祝福</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该活动有助于增强在美哈萨克斯坦侨民的民族认同与社群凝聚力，促进哈美民间文化交流，间接支持哈国公共外交。对哈国而言，侨民网络可成为拓展对美经济与人文联系的潜在渠道，但短期内对政治、经济及矿产格局无直接实质影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-10-12 09:02</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
