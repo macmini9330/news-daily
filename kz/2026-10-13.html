@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年10月13日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年10月13日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年10月12日早9:00至2026年10月13日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 25 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">14</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">6</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">2</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/qusannianzaidexiayishiyizaidefa-fa9a7c86/" target="_blank">副总统：过去三年在总统的倡议下已通过十一项旨在保护儿童权利的法案</a></h3>
+<div class="item-meta">哈通社中文版 · 10/13 00:49<span class="source-link"><a href="https://cn.inform.kz/news/qusannianzaidexiayishiyizaidefa-fa9a7c86/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦副总统卡林主持儿童权利会议，聚焦落实2026–2030年“哈萨克斯坦儿童”构想。过去三年通过11项儿童权益法案，向超700万儿童发放逾25亿美元，新建1342所学校。2024年妇女儿童安全法实施后，特别严重犯罪下降45%，未成年人犯罪下降10%。全国设160个家庭支持中心，“111”热线收到超18.6万条信息，阻止73起自杀。正起草残疾儿童支持法案，将每两月评估进展。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">会议听取了儿童权利专员迪娜拉·扎克耶娃、第一副总检察长詹多斯·奥米拉利耶夫、教育部长朱勒德兹·苏莱曼诺娃、劳动和人民社会保障部部长阿斯哈尔别克·叶尔塔耶夫、卫生部长阿赫马拉尔·阿勒纳扎尔沃娃的报告。
+会议主要聚焦于有效落实根据总统哈斯穆-卓玛尔特·托卡耶夫指示通过的2026–2030年“哈萨克斯坦儿童”统一构想。
+副总统指出，为儿童的全面发展创造全方位条件，是国家元首所推行方针的重点工作之一。
+- 在总统的倡议下，一系列综合措施正在落实之中，旨在保护儿童权利、确保儿童安全、提高教育质量、保障儿童健康、提供社会支持，并以宪法价值观培育年轻一代。-他说。
+卡林指出，在“儿童国家基金”这一总统计划框架下，过去三年里已向超过700万名儿童发放了总额逾25亿美元的资金。此外，得益于总统各项倡议的实施，过去七年间该国新建了1342所学校，总容纳能力超过100万名学生。
+过去三年间，在国家元首的倡议下，共通过了十一项旨在保障儿童权益的法案。其中一个重要范例是2024年通过的关于保障妇女权利与儿童安全的法律；该法律引入了预防措施，加大了对各类暴力行为的惩处力度，并确立了针对欺凌行为的法律责任。
+由于采取了相关立法措施，涉及未成年人的犯罪案件数量有所下降。具体而言，与2024年相比，特别严重的犯罪案件数量下降了45%，而涉及胁迫青少年发生性关系的犯罪案件数量下降了10%。此外，未成年人犯罪案件数量也下降了10%。
+儿童权利专员办公室已在各地区投入运作，儿童权利部门也已成立，监护机构的人员配备也在不断增加。此外，还在各城市和地区开设了160个家庭支持中心。
+自2024年起，学校开始安装国家“111”紧急求助热线二维码以来，儿童心理学家已收到超过18.6万条信息和6700通电话。他们为9000名面临生活困境的儿童提供了帮助，并阻止了73起自杀事件。
+讨论的另一部分聚焦于包容性政策议题。目前，根据总统的指示，库鲁尔泰（一院制议会）议员正在起草一项法案，旨在规范对残疾儿童的全面支持。
+- 至关重要的是，立法条款不应仅仅流于形式或仅具宣示性，而应建立切实可行的机制，以完善子女抚养制度并保障儿童的合法权益，同时明确界定相关国家职能部门之间的协作关系。-卡林说。
+此外，副总统强调有必要制定旨在预防和禁止针对残疾人歧视行为的法律条款。
+最后，叶尔兰·卡林强调，保障儿童权益将作为国内政策的优先事项，继续受到特别监督。为此，国家级委员会将系统且定期地（至少每两个月一次）评估总统各项倡议的落实进展。此外，他还指示在地方层面按月监督国家元首关于保护儿童权益各项指示的执行情况。</div>
+<ul>
+<li>过去三年通过11项儿童权益法案，发放逾25亿美元</li>
+<li>七年新建1342所学校，容纳超100万学生</li>
+<li>2024年安全法实施后，特别严重犯罪下降45%</li>
+<li>全国设160个家庭支持中心，热线阻止73起自杀</li>
+<li>正起草残疾儿童支持法案，每两月评估进展</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">强化儿童权益保护，提升教育与社会支持，降低未成年人犯罪；巩固总统社会政策议程，增强国内稳定；对矿产格局无直接影响，但长期人力资本改善或间接利好经济。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/guojiafaqian-751c0071/" target="_blank">国家元首签署法令提前终止各级马斯利哈特任期</a></h3>
+<div class="item-meta">哈通社中文版 · 10/12 19:25<span class="source-link"><a href="https://cn.inform.kz/news/guojiafaqian-751c0071/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫于2026年10月12日签署第1521号法令，依据宪法第88条第5款、选举法第101条第3款及地方公共行政和自治法第23条第2款，立即终止各级马斯利哈特（地方代表机关）任期。法令要求中央选举委员会安排非例行选举，政府及阿斯塔纳、各州、阿拉木图、奇姆肯特市长提供组织、后勤和财政支持。法令自公布之日起生效。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">总统令全文如下：
+根据《哈萨克斯坦共和国宪法》第88条第5款、《哈萨克斯坦共和国宪法性法律“哈萨克斯坦共和国选举法”》第101条第3款以及《哈萨克斯坦共和国法律“哈萨克斯坦共和国地方公共行政和自治法”》第23条第2款，特此颁布法令：
+1. 各级马斯利哈特（地方代表机关）任期应立即终止。
+2. 哈萨克斯坦共和国中央选举委员会应采取措施，安排、筹备和组织各级马斯利哈特（地方代表机关）议员的非例行选举。
+3. 哈萨克斯坦共和国政府和阿斯塔纳市、各州以及阿拉木图市和奇姆肯特市市长应采取措施，为各级马斯利哈特议员非例行选举提供组织、后勤和财政支持。
+4. 该法令自公布之日起生效。
+哈萨克斯坦共和国总统
+哈斯穆-卓玛尔特·托卡耶夫
+阿斯塔纳，总统府，2026 年 10 月 12 日
+第1521号</div>
+<ul>
+<li>托卡耶夫签署第1521号法令，立即终止各级马斯利哈特任期</li>
+<li>中央选举委员会负责安排非例行地方议员选举</li>
+<li>政府及市长提供选举组织、后勤和财政支持</li>
+<li>法令依据宪法、选举法和地方自治法相关条款</li>
+<li>法令自2026年10月12日公布之日起生效</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该法令提前解散地方代表机关，强化总统垂直权力，可能削弱地方自治；非例行选举将重塑地方政治格局，短期增加财政支出，但有助于中央政策在地方执行，外交和矿产格局暂无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/guojiajiuqianshitonglizhuxinghui-0bd36ae1/" target="_blank">国家元首就提前终止各级马斯利哈特任期事宜同总理及库鲁尔泰主席举行会商</a></h3>
+<div class="item-meta">哈通社中文版 · 10/12 14:13<span class="source-link"><a href="https://cn.inform.kz/news/guojiajiuqianshitonglizhuxinghui-0bd36ae1/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与总理别克帖诺夫、库鲁尔泰主席达德巴耶夫会商，讨论提前终止各级马斯利哈特任期事宜。托卡耶夫强调马斯利哈特对保障公民权益、审批地方预算和监督地区发展的重要性，认为更新议员队伍将提升地方代表机关效能。根据宪法第88条第5款，总理和库鲁尔泰主席提出建议。总统表示将严格遵循宪法，充分考虑各方意见后作出最终决定。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 国家元首就提前终止各级马斯利哈特任期事宜同总理及库鲁尔泰主席举行会商
+正文:
+托卡耶夫指出，马斯利哈特充分、有效地开展工作，对于保障公民合法权益、审议批准地方预算以及监督地区发展具有重要意义。
+托卡耶夫表示，相信更新议员队伍将显著提升地方代表机关的工作效能。
+根据《哈萨克斯坦共和国宪法》第88条第5款，在会商过程中，总理沃勒扎斯·别克帖诺夫和库鲁尔泰主席阿依别克·达德巴耶夫分别就所讨论的事项提出了各自的建议。
+会商结束后，总统表示，将严格遵循宪法的基本规定，并充分考虑各方提出的意见，作出最终决定。</div>
+<ul>
+<li>托卡耶夫会商总理及库鲁尔泰主席讨论提前终止马斯利哈特任期</li>
+<li>强调马斯利哈特对保障公民权益、审批地方预算和监督地区发展的重要性</li>
+<li>相信更新议员队伍将显著提升地方代表机关工作效能</li>
+<li>依据宪法第88条第5款，总理和库鲁尔泰主席提出建议</li>
+<li>总统将严格遵循宪法并考虑各方意见后作出最终决定</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举可能重塑哈国地方政治格局，提前选举或调整议员队伍将影响地方治理效能，强化中央对地方的控制，同时为地方经济政策带来不确定性，外交上无直接影响，但矿产等地方资源管理可能随议员更新而调整。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(14 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/armeniya-ikitay-dogovorilis-olgotah-dlyaperevozchikov-ec2effb3" target="_blank">亚美尼亚与中国就承运人优惠政策达成一致</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/13 05:39<span class="source-link"><a href="https://www.inform.kz/ru/armeniya-ikitay-dogovorilis-olgotah-dlyaperevozchikov-ec2effb3" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>亚美尼亚与中国在北京就跨里海国际运输走廊发展达成协议，规定承运人特别许可制度并免除部分道路税费。许可证分普通和特殊货物两类，简化国际及过境运输程序，但不适用于两国国内运输。双方还讨论增加运输量、发展基础设施、简化边境海关程序及物流数字化，并允许组织国际巴士运输。许可证由亚美尼亚领土管理和基础设施部与中国交通运输部发放。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">文件规定了承运人特别许可制度，并免除一系列道路通行费。相关协议是在北京举行的跨里海国际运输走廊发展会议上达成的。
+据亚美尼亚领土管理和基础设施部副部长克里斯蒂娜·加列奇扬介绍，许可证将按两类发放：普通货物和特殊货物。这将使承运人能够按简化程序执行国际和过境运输。同时，该协议不适用于亚美尼亚和中国境内的国内运输。
+双方还商定在互惠基础上免除承运人使用公路的部分税费。例外的是为赔偿车辆对道路造成的损害而征收的费用。
+加列奇扬表示，与会者讨论了增加跨里海国际运输走廊的运输量、发展基础设施、简化边境和海关程序以及物流数字化。该协议还规定，可组织定期和不定期国际巴士运输，沿商定路线并通过特定边境口岸。
+许可证将由两国授权机构发放——亚美尼亚方面为领土管理和基础设施部，中国方面为交通运输部。</div>
+<ul>
+<li>亚美尼亚与中国达成承运人许可及道路税费互免协议</li>
+<li>许可证分普通和特殊货物两类，简化国际过境运输</li>
+<li>协议不适用于亚美尼亚和中国国内运输</li>
+<li>双方讨论增加跨里海运输量、简化边境海关及物流数字化</li>
+<li>允许组织定期和不定期国际巴士运输</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该协议促进跨里海国际运输走廊发展，提升亚美尼亚过境潜力，可能分流部分中欧货运，对哈萨克斯坦作为关键过境国的地位构成竞争，但亦推动区域物流数字化与基础设施升级。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/perviy-vizit-korolya-ikorolevi-belgii-vkazahstan-chto-pishut-zarubezhnie-smi-61bf5711" target="_blank">比利时国王和王后首次访问哈萨克斯坦：外媒如何报道</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/13 02:50<span class="source-link"><a href="https://www.inform.kz/ru/perviy-vizit-korolya-ikorolevi-belgii-vkazahstan-chto-pishut-zarubezhnie-smi-61bf5711" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>外国媒体将哈萨克斯坦视为欧洲重要伙伴，关注中间走廊、关键矿产和投资合作。比利时国王菲利普和王后玛蒂尔德首次访哈，Paris Match详述阿克奥尔达欢迎仪式，EU Reporter刊发哈驻比大使文章，强调此访将深化双边协议。比利时是哈主要欧洲投资者之一，合作前景涵盖物流、农业、关键矿产、人工智能、医疗、科教等领域，双方致力于从原材料贸易转向联合生产和技术项目。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：比利时国王和王后首次访问哈萨克斯坦：外国媒体如何报道
+
+正文：
+外国出版物将哈萨克斯坦视为欧洲在发展运输路线、确保获取关键矿产、吸引投资和扩大科技合作方面的重要伙伴。报道特别关注中间走廊的潜力、欧洲商业的机会以及从原材料贸易向联合生产和技术项目过渡的前景。
+
+比利时版《Paris Match》杂志详细描述了在阿克奥尔达为菲利普国王和玛蒂尔德王后举行的正式欢迎仪式。
+
+据该刊物报道，仪式上奏响了两国国歌，总统卫队在宫殿的礼仪大厅欢迎了国王夫妇和总统卡西姆-若马尔特·托卡耶夫。悬挂着哈萨克斯坦和比利时国旗的直升机飞过建筑上空。报道还列举了两国参加仪式的代表。
+
+欧洲出版物《EU Reporter》发表了哈萨克斯坦驻比利时大使罗曼·瓦西连科关于双边合作前景的文章。文章强调，菲利普国王和玛蒂尔德王后的国事访问为将多年的外交和商业联系转化为新的实际协议创造了机会。
+
+作者指出，比利时仍然是哈萨克斯坦经济的主要欧洲投资者之一。合作前景方向包括发展中间走廊、物流、农业、关键矿产、人工智能、医疗保健、科学和教育。
+
+特别关注连接亚洲和欧洲、途经哈萨克斯坦、里海和南高加索的运输路线。作者认为，发展这一方向需要在港口基础设施、铁路运输、货物处理和物流服务领域采取协调一致的决定。文章还强调了关键原材料领域的合作潜力。对欧洲工业而言，供应多元化很重要，而哈萨克斯坦则有意引进技术、发展加工和制造更高附加值的产品。其他方向包括大学互动、联合……</div>
+<ul>
+<li>比利时国王和王后首次对哈萨克斯坦进行国事访问</li>
+<li>外媒关注中间走廊潜力及关键矿产合作</li>
+<li>比利时是哈萨克斯坦主要欧洲投资者之一</li>
+<li>合作方向包括物流、农业、AI、医疗、科教</li>
+<li>双方寻求从原材料贸易转向联合生产和技术项目</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈欧关系，提升哈萨克斯坦作为欧洲关键矿产和运输伙伴的地位，推动中间走廊建设，促进投资和技术转移，助力哈经济多元化和外交平衡。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/turtsiya-podderzhala-initsiativu-kazahstana-porazvitiyu-srednego-koridora-03d5b2b4" target="_blank">土耳其支持哈萨克斯坦发展中间走廊的倡议</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/13 01:18<span class="source-link"><a href="https://www.inform.kz/ru/turtsiya-podderzhala-initsiativu-kazahstana-porazvitiyu-srednego-koridora-03d5b2b4" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>土耳其执政党正义与发展党副主席屈尔沙德·佐尔卢表示，哈萨克斯坦关于发展中间走廊的倡议有助于加强亚欧交通联系，提升该走廊作为国际过境路线的意义。此前在第八次中亚国家与阿塞拜疆元首磋商会议上，托卡耶夫提议在专家层面讨论将中间走廊与TRIPP交通倡议整合。佐尔卢在土耳其科贾埃利省突厥世界青年会议上强调，地区冲突背景下突厥国家合作尤为重要，发展纳希切万方向铁路等基础设施将扩大集装箱运输和人道主义行动能力。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据土耳其执政党正义与发展党副主席、突厥国家联络局局长屈尔沙德·佐尔卢认为，哈萨克斯坦的倡议可能有助于加强亚洲与欧洲之间的交通联系，进而提升中间走廊作为国际过境运输路线的意义。
+
+回顾一下，在第八次中亚国家与阿塞拜疆元首磋商会议上，卡瑟姆-若马尔特·托卡耶夫提议在专家层面讨论将中间走廊与TRIPP交通倡议进行整合。
+
+——在地区冲突及其引发的经济和能源不稳定背景下，加强突厥国家之间的合作具有特殊意义，——屈尔沙德·佐尔卢在土耳其科贾埃利省举行的突厥世界青年会议上表示。
+
+这位政治家声称，发展纳希切万方向的交通基础设施，包括铁路建设，将能够扩大集装箱运输和开展人道主义行动的能力。
+
+此前，专家们解释了为什么中间走廊的重要性正在上升。</div>
+<ul>
+<li>土耳其执政党支持哈国中间走廊倡议</li>
+<li>托卡耶夫提议整合中间走廊与TRIPP</li>
+<li>纳希切万方向铁路建设可扩大运输能力</li>
+<li>地区冲突凸显突厥国家合作重要性</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该倡议若推进，将提升哈萨克斯坦作为亚欧过境枢纽的地缘经济地位，强化与土耳其及突厥国家的政治经济纽带，推动跨里海运输路线发展，并可能影响区域矿产资源出口通道格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/waibuchangzhengyuhuijiuwenkaixiangguangongzuo-26d57b9b/" target="_blank">外交部长：正与欧盟委员会就免签问题开展相关工作</a></h3>
+<div class="item-meta">哈通社中文版 · 10/13 00:22<span class="source-link"><a href="https://cn.inform.kz/news/waibuchangzhengyuhuijiuwenkaixiangguangongzuo-26d57b9b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦外长穆合塔尔·特列吾别尔德表示，哈与欧盟计划批准未来三年路线图，签证问题列为优先事项，正与欧盟委员会就免签开展相关工作，当前首要任务是简化签证流程、减少文件。哈与比利时合作拓展至文化、教育、科学等领域。明日商业论坛将签署17项商业协议，大学校长会议期间计划签署24项教育科学合作协议。两国外交部磋商将确定新合作领域，并着重加强人工智能和数字化合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">外交部长：正与欧盟委员会就免签问题开展相关工作
+
+外长表示，哈萨克斯坦和欧盟计划批准一份未来三年的路线图。该文件将涵盖双方将开展的联合活动。
+
+据他介绍，签证相关问题也已被列为优先事项。目前正与欧盟委员会就此开展相关工作。
+
+- 当然，我们希望未来能够实现免签制度。然而，眼下的首要任务是简化签证申请流程，减少所需文件数量。-他说。
+
+外长称，哈萨克斯坦与比利时的合作不仅限于经济领域。双方还计划拓展在文化、传统、教育和科学领域的合作。
+
+穆合塔尔·特列吾别尔德表示，在此背景下，预计明天举行的商业论坛将签署17项商业协议。与此同时，在大学校长会议期间，计划签署24项关于教育和科学领域合作的协议。
+
+此外，两国外交部磋商还将确定新的合作领域。目前，双方还着重加强在人工智能和数字化领域的合作。</div>
+<ul>
+<li>哈与欧盟计划批准未来三年路线图</li>
+<li>签证问题列为优先，正与欧盟委员会就免签开展工作</li>
+<li>当前首要任务是简化签证流程、减少文件</li>
+<li>哈与比利时拓展文化、教育、科学合作</li>
+<li>商业论坛将签17项协议，校长会议签24项</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">推动哈欧关系制度化，简化签证将促进商务与人员往来，助力经济多元化；深化教育科技合作，提升人工智能与数字化水平；强化外交多元平衡，减少对传统伙伴依赖，增强地区影响力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/kai-b4aaac8a/" target="_blank">迪拜航空开通阿拉木图-迪拜货运航班</a></h3>
+<div class="item-meta">哈通社中文版 · 10/12 23:54<span class="source-link"><a href="https://cn.inform.kz/news/kai-b4aaac8a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>迪拜航空开通阿拉木图-迪拜货运航线，首架航班于12日抵达阿拉木图国际机场，每周一班，由波音737执飞。该航线连接中亚和中东两大物流枢纽，将促进进出口业务、扩大物流合作、加强贸易经济联系。阿拉木图国际机场借此提升货运能力，巩固其中亚航空物流中心地位。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">阿拉木图国际机场12日迎来了迪拜航空（flydubai）运营的首架迪拜-阿拉木图-迪拜货运航班。为庆祝新货运航线的开通，机场举行了仪式，并以传统的航空水门礼迎接了该货运机。
+据了解，该航线的货运航班每周运营一班，由波音737机型执飞。
+Фото: Көлік министрлігі 这条新航线建立了阿拉木图和迪拜之间的直航货运连接，这两座城市都是中亚和中东地区重要的运输和物流枢纽。该航线的定期航班将为发展进出口业务、扩大物流合作以及加强贸易和经济联系创造更多机遇。
+阿拉木图国际机场持续拓展与全球主要物流枢纽的航空货运连接，致力于提升货运能力，巩固阿拉木图作为中亚航空物流中心的地位。</div>
+<ul>
+<li>迪拜航空开通阿拉木图-迪拜货运航线</li>
+<li>每周一班，波音737执飞</li>
+<li>连接中亚与中东重要物流枢纽</li>
+<li>促进进出口与物流合作</li>
+<li>巩固阿拉木图航空物流中心地位</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该航线强化哈萨克斯坦作为中亚物流枢纽的地位，促进与中东的贸易和经济联系，有助于出口多元化和吸引物流投资，对哈国经济与外交具有积极意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/guojiayushiguohehouyitongwenguojiazhongxin-acf262de/" target="_blank">国家元首与比利时国王和王后一同访问国家儿童康复中心</a></h3>
+<div class="item-meta">哈通社中文版 · 10/12 22:26<span class="source-link"><a href="https://cn.inform.kz/news/guojiayushiguohehouyitongwenguojiazhongxin-acf262de/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国家元首与比利时国王菲利普和王后玛蒂尔德一同访问国家儿童康复中心。贵宾们了解了为发育迟缓儿童提供的全面援助流程，包括医疗、心理教育康复及社会适应现代方法，并观看了机器人康复技术的应用。该中心每年为来自全国各地的5000多名患有神经心理障碍、脑瘫和自闭症谱系障碍等儿童提供康复服务，特别强调社会融合。菲利普国王和玛蒂尔德王后与孩子们、家长及医务人员进行了互动交流。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">消息称，贵宾们了解了为发育迟缓儿童提供全面援助的流程。
+比利时国王和王后听取了关于医疗、心理教育康复及社会适应现代方法的介绍，这些方法旨在提升有特殊需求儿童的沟通能力、认知能力和独立性。
+值得一提的是，机器人康复技术也被应用于个性化康复方案中。
+Фото: Акорда 该中心的工作特别强调社会融合，并致力于创造条件，使儿童能够过上充实的生活，而不被排斥在社区生活之外。
+菲利普国王和玛蒂尔德王后参加了一项互动活动，与孩子们、他们的父母以及医务人员进行了交谈。
+随后，宾客们在贵宾册上留下了纪念性题词。
+Фото: Акорда 据悉，国家儿童康复中心为患有神经心理障碍以及言语、认知发育和行为障碍的儿童（包括脑瘫和自闭症谱系障碍儿童）提供全面护理。
+每年，来自哈萨克斯坦各地的5000多名患者在这里接受康复服务。
+Фото: Акорда &amp;nbsp;</div>
+<ul>
+<li>国家元首与比利时国王王后共同访问儿童康复中心</li>
+<li>中心采用医疗、心理教育及机器人康复技术</li>
+<li>每年为5000多名神经心理障碍儿童提供康复服务</li>
+<li>比利时国王王后与儿童、家长及医务人员互动</li>
+<li>中心特别强调社会融合，避免儿童被排斥</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访问凸显哈萨克斯坦在儿童康复领域的国际合作，提升国家形象；引入机器人康复技术可能推动医疗现代化；与比利时王室的互动有助于加强双边外交关系，并为社会福利政策提供国际支持。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/gaodengbuchangzhengyu12suoshidaxuezuo-fa0d0f80/" target="_blank">高等教育部长：正与12所比利时大学建立合作</a></h3>
+<div class="item-meta">哈通社中文版 · 10/12 21:24<span class="source-link"><a href="https://cn.inform.kz/news/gaodengbuchangzhengyu12suoshidaxuezuo-fa0d0f80/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>首届哈萨克斯坦-比利时高等教育论坛将于明日举行，比利时12所大学校长及哈国高校负责人出席，托卡耶夫总统和菲利普国王也将参加。论坛将签署12项协议，涵盖联合硕士博士项目及博拉沙克计划实习。此前6月访比期间，根特大学与Alem.ai共建人工智能与数学实验室，鲁汶大学与东哈技术大学共建稀有金属选矿与冶金中心。哈国还与韩国KIRAM签署协议，获1450万美元投资，明年在萨特巴耶夫大学启用矿物加工与稀有金属中心。微电子和芯片产业也是重点领域。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据部长透露，首届哈萨克斯坦-比利时高等教育论坛将于明日举行。来自比利时12所大学的校长将参加此次论坛，哈萨克斯坦方面则由国家级和技术级高等教育机构的负责人代表出席。哈萨克斯坦总统托卡耶夫和比利时国王菲利普也将出席此次论坛。
+
+萨亚萨特·努尔别克表示，国家元首今年6月对布鲁塞尔进行正式访问期间，签署了两项重要协议。
+
+第一项是根特大学与Alem.ai中心达成协议，共同建立一个专门的“人工智能与数学”实验室；比利时方面在算法和数学建模方面实力雄厚。第二项重要协议是与比利时顶尖大学之一——鲁汶大学（KU Leuven）达成的。鲁汶大学拥有600年历史，位列世界前50强大学之列。该大学将与位于乌斯卡曼的东哈萨克斯坦技术大学联合建立一个“稀有金属选矿与冶金”中心。-他说。
+
+部长指出，哈萨克斯坦拥有丰富的稀有金属储量，但强调需要进一步发展稀有金属的提纯方法，利用这些原材料生产必要的零部件，以及制造芯片和航天技术所需的材料。
+
+- 在总统最近访问韩国期间，我们与韩国稀有金属中心（KIRAM）签署了一项特别协议。韩国政府将为该项目投资1450万美元。明年，位于阿拉木图萨特巴耶夫大学的“矿物加工与稀有金属”中心将正式启用。-他说。
+
+高等教育部长表示，即将举行的哈萨克斯坦-比利时高等教育论坛将签署共计12项协议。这些文件涵盖联合硕士和博士项目的实施，以及根据“博拉沙克”（Bolashak）计划安排博士生到比利时一流大学进行研究实习。
+
+萨亚萨特·努尔别克还将微电子和芯片产业的发展列为重点领域之一。
+
+- 比利时是全球芯片产业的重要枢纽。比利时和荷兰都设有专门从事芯片设计的中心。在正式访问期间，我们与相关方举行了会谈并进行了磋商。目前尚未签署任何具体合同，我们将继续推进相关工作。-他说。
+
+据此前报道，比利时国王菲利普和王后玛蒂尔德11日晚飞抵阿斯塔纳，开始对哈萨克斯坦进行国事访问。
+
+哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫亲自到机场迎接，并与贵宾进行了简短交谈。
+
+12日，国家元首在总统府举行隆重的欢迎仪式，并举行了小范围和大范围会谈。</div>
+<ul>
+<li>首届哈比高等教育论坛举行，12所比利时大学校长参会</li>
+<li>论坛将签署12项协议，涵盖联合培养和博拉沙克实习</li>
+<li>根特大学与Alem.ai共建人工智能与数学实验室</li>
+<li>鲁汶大学与东哈技术大学共建稀有金属选矿与冶金中心</li>
+<li>韩国KIRAM投资1450万美元，明年启用矿物加工中心</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">论坛深化哈比教育科技合作，助力哈国稀有金属提纯和芯片产业发展，推动经济多元化；同时平衡与中俄关系，拓展欧洲外交，提升矿产加工自主权。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/heguofaming-aff5edea/" target="_blank">托卡耶夫总统和菲利普国王发表联合声明</a></h3>
+<div class="item-meta">哈通社中文版 · 10/12 20:59<span class="source-link"><a href="https://cn.inform.kz/news/heguofaming-aff5edea/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年10月11日至14日，比利时国王菲利普对哈萨克斯坦进行国事访问，与托卡耶夫总统发表联合声明。双方重申在2015年《加强伙伴关系与合作协定》框架内深化合作，满意比利时企业在哈长期业务，欢迎哈比商业理事会第四次会议。确认在关键矿产、石油化工、工业、机械工程、交通物流及可再生能源领域合作重要性，强调关键矿产战略意义并举行圆桌会议。突出跨里海国际运输路线作用，关注数字化、人工智能合作，推动农业贸易与教育项目。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">联合声明全文如下：
+应哈萨克斯坦共和国总统哈斯穆-卓玛尔特·托卡耶夫阁下的邀请，比利时国王菲利普陛下与玛蒂尔德王后陛下于2026年10月11日至14日对哈萨克斯坦进行国事访问。
+哈萨克斯坦共和国总统哈斯穆-卓玛尔特·托卡耶夫阁下和比利时国王菲利普陛下全面探讨了哈萨克斯坦与比利时关系的现状及前景，并就地区和国际议程中的紧迫问题交换了意见。
+双方重申致力于在平等互利合作精神的基础上，进一步发展和深化哈萨克斯坦与比利时之间的友好关系。
+1. 双方指出，哈萨克斯坦与比利时之间的双边合作是在密切对话、相互信任与相互尊重的基础上发展的。
+2. 双方表示，愿在哈萨克斯坦共和国与欧盟及其成员国于2015年12月21日签署的《加强伙伴关系与合作协定》框架内，继续开展密切合作。
+3. 对比利时企业在哈萨克斯坦保持长期业务以及双方进一步扩大贸易与投资的巨大潜力表示满意。
+4. 欢迎哈萨克斯坦-比利时商业理事会的活动及其在国事访问期间举行的第四次会议，认为这是发展两国工商界联系的重要机制。
+5. 确认了在关键矿产、石油化工、工业、机械工程、交通物流及可再生能源领域进一步发展合作的重要性。
+6. 双方强调了关键矿产领域合作关系的战略重要性，并对国事访问期间举行关键矿产圆桌会议表示欢迎。
+7. 双方强调进一步发展交通物流合作及加强欧亚互联互通的重要性，并突出强调了“跨里海国际运输路线”作为连接亚欧的可靠且可持续的运输通道，其作用正日益增强。
+8. 双方注意到数字化、人工智能和创新对于两国可持续经济发展及竞争力日益重要。
+9. 双方表示有兴趣在人工智能、大数据、云技术、超级计算机基础设施及数据处理中心等领域开展合作。
+10. 鉴于农业领域合作潜力巨大，双方表示有意推动扩大农产品双边贸易、促进食品工业发展以及引进现代农业技术。
+11. 欢迎在国事访问期间举办哈萨克斯坦-比利时校长论坛，并表示支持开展联合教育项目、学术交流、联合科学研究以及高校与研究中心之间的伙伴关系。</div>
+<ul>
+<li>比利时国王菲利普2026年10月11-14日对哈萨克斯坦国事访问</li>
+<li>双方重申在2015年《加强伙伴关系与合作协定》框架内合作</li>
+<li>确认关键矿产、能源、交通物流及可再生能源合作重要性</li>
+<li>强调跨里海国际运输路线作为亚欧可靠运输通道作用增强</li>
+<li>推动人工智能、农业、教育及联合科研等领域合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈国与欧盟关系，提升外交多元平衡；关键矿产合作吸引比利时投资，助力矿产开发与出口多元化；跨里海路线获支持，增强过境运输地位；AI与农业合作促进经济现代化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://cn.inform.kz/news/heshiguokaifahui-58f7f902/" target="_blank">哈萨克斯坦总统和比利时国王召开联合新闻发布会</a></h3>
+<div class="item-meta">哈通社中文版 · 10/12 20:28<span class="source-link"><a href="https://cn.inform.kz/news/heshiguokaifahui-58f7f902/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与比利时国王菲利普举行联合新闻发布会，称国事访问开启双边关系新篇章。托卡耶夫表示，自2005年以来比利时对哈投资总额超过150亿美元，双方同意在交通物流、关键矿产、能源、工业、农业、生物技术、数字化及航天技术等领域重振合作。双方还达成人文领域协议，包括大学、博物馆合作及公务护照免签。菲利普国王称两国过去三十年建立了牢固联系，哈萨克斯坦国际声誉不断提高。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">国家元首指出，比利时国王和王后对哈萨克斯坦进行的具有历史意义的国事访问，开启了双边关系的新篇章，并进一步巩固了两国人民之间的友谊。
+- 尊敬的陛下，在您英明果敢的领导下，比利时不仅保持了其独特的多元特色，更以开放包容的姿态享誉世界。您心系国民，并不懈致力于促进比利时各族群间的相互理解，这充分彰显了王室在维护团结方面所发挥的重要作用。在充满挑战的时刻，您展现出了一位深谙孝道、气度非凡者的崇高风范，这令人深感钦佩并倍受鼓舞。我由衷珍视我们之间长久的友谊，以及您为加强同哈萨克斯坦关系所作出的努力。我很高兴能与您携手，进一步深化这一伙伴关系。得益于您的努力与支持，我们对双方合作的未来充满希望与信心。-他说。
+托卡耶夫强调了富有成效的会谈成果，此次会谈是在热诚友好的精神和建设性氛围中进行的。
+- 我们重申了加强哈萨克斯坦与比利时多方面伙伴关系的承诺。两国之间不存在政治分歧或未决问题，这为拓展各领域合作奠定了坚实基础。经济融合始终是我们伙伴关系的重要支柱。比利时是哈萨克斯坦主要的投资伙伴之一。自2005年以来，贵国对哈经济的投资总额已超过150亿美元。双方同意在交通物流、关键矿产、能源、工业、农业、生物技术、数字化及航天技术等领域重振合作并探索新机遇。比利时知名企业的代表也随团参加了此次历史性访问，这充分彰显了比利时对我国经济潜力的坚定信心。哈萨克斯坦政府将为比利时投资者在哈拓展业务及实施前景广阔的新项目创造有利条件。我将亲自督导这些措施得到全面、及时的落实。-总统说。
+托卡耶夫总统表示，定于明天举行的哈萨克斯坦-比利时商业理事会会议、校长论坛以及关于关键原材料的圆桌会议，将成为实现共同目标与取得务实成果的重要平台。这些活动将促成数十项协议与文件的签署，为双方伙伴关系的发展注入新的动力。
+Фото: Акорда 随后，托卡耶夫总统向媒体代表介绍了双方在人文领域达成的协议。
+- 我们重申了建立两国大学、博物馆和文化机构之间直接联系的意愿，并承诺开展联合教育项目和学术交流。我衷心感谢比利时合作伙伴在哈萨克斯坦国家博物馆展出詹姆斯·恩索尔的著名作品。我也支持加强阿拉木图艺术博物馆与蓬皮杜中心之间的合作；这一举措体现了比利时的创造潜力及其对文化发展的承诺。这些举措有助于人们了解比利时丰富的艺术遗产，并促进两国人民之间的紧密联系。我们通过修订公务护照持有者免签协议，成功地为旅行提供了便利。今天通过的联合声明符合我们的共同目标。-他说。
+Фото: Ақорда 总统指出，双方就紧迫的国际和地区问题交换了意见。
+- 哈萨克斯坦与比利时致力于维护国际法准则、加强多边合作并以和平方式解决冲突。在全球局势动荡的背景下，对话、互信与负责任的外交显得尤为重要。在我近期访问布鲁塞尔期间，双方重申了哈萨克斯坦与欧盟之间战略伙伴关系的重要性，这一关系已在相关专门协定中得到确立。-他说。
+国家元首向比利时国家元首表达了谢意，感谢其展现出的热情，以及给予的这份具有深远象征意义的殊荣——即在布鲁塞尔市中心大广场（Grand Place）的市政厅前，首次升起哈萨克斯坦国旗。
+- 比利时的国家格言“团结就是力量”，与哈萨克斯坦的谚语“团结之处即有生命”有着异曲同工之妙。我们的友谊正是建立在这些共同价值观之上的。我坚信，此次国事访问将成为推动哈萨克斯坦与比利时关系发展的一个转折点。哈萨克斯坦人民对您善良、高尚且充满智慧的品格深表敬意。-他说。
+Фото: Акорда 菲利普国王感谢托卡耶夫总统的热情接待，并指出两国在过去三十年间建立了牢固且不可动摇的联系。
+- 总统先生，您访问布鲁塞尔时，曾邀请我们对贵国进行国事访问。我们当即接受了这一邀请。我很高兴此次访问恰逢哈萨克斯坦独立35周年之际。在接下来的三天里，我们将亲身体验并深入了解两国间的合作机遇。通过文化交流，我们的友谊将得到进一步巩固；同时，我们也将有机会领略哈萨克斯坦丰富的文化遗产与独特的传统习俗。-他说。
+菲利普国王表示，比利时是哈萨克斯坦经济的主要投资者之一，多家比利时企业在哈萨克斯坦市场开展业务。他对即将召开的哈萨克斯坦-比利时商业理事会会议寄予厚望。
+比利时国王还指出，哈萨克斯坦在国际舞台上的声誉不断提高，经济各领域都在快速增长。</div>
+<ul>
+<li>比利时国王对哈萨克斯坦进行国事访问，开启双边关系新篇章</li>
+<li>自2005年以来比利时对哈投资总额超过150亿美元</li>
+<li>双方同意在关键矿产、能源、交通物流等领域重振合作</li>
+<li>将举行商业理事会、校长论坛及关键原材料圆桌会议</li>
+<li>双方修订公务护照免签协议，加强人文与教育合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈国与欧盟核心国家关系，吸引比利时投资与技术，推动关键矿产和能源合作多元化，提升哈国在欧亚外交中的平衡地位，助力经济转型与矿产格局优化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">10</span> <a href="https://cn.inform.kz/news/gongmingongkeqiansangeguojia-050d0c13/" target="_blank">哈萨克斯坦公民持公务护照可免签前往三个欧洲国家</a></h3>
+<div class="item-meta">哈通社中文版 · 10/12 19:57<span class="source-link"><a href="https://cn.inform.kz/news/gongmingongkeqiansangeguojia-050d0c13/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>比利时驻阿斯塔纳大使馆开馆20周年之际，比利时国王菲利普于10月11-14日对哈萨克斯坦进行首次国事访问。自11月1日起，涵盖比利时、荷兰和卢森堡的“比荷卢议定书”生效，哈萨克斯坦公务护照持有人可免签前往这三个国家。双方将通过2029年前外交部合作路线图，并签署多项企业、高校及机构协议。过去十年双边贸易额增长两倍，比利时对哈投资超100亿美元。双方将在交通物流、重要原材料、医疗卫生、农业、可再生能源等领域深化合作，跨里海国际运输路线具有战略意义。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">让-吕克·克鲁克表示，此次国事访问恰逢比利时驻阿斯塔纳大使馆开馆20周年，这标志着双边关系史上的一个重要里程碑。
+
+- 我还想强调此次国事访问取得的具体成果。自11月1日起，涵盖比利时、荷兰和卢森堡的“比荷卢议定书”将正式生效，哈萨克斯坦公务护照持有人将获准免签前往这三个国家。此外，双方还将通过一份路线图，明确两国在2029年之前的外交部合作重点领域。该文件将为包括经贸合作在内的双边关系发展奠定基础。-他说。
+
+此外，比利时与哈萨克斯坦的企业、高校及各类机构之间将签署多项协议。这将进一步加强双方在经济、科教及人文领域的联系。
+
+- 鉴于2027年将迎来两国建交35周年，这些成就彰显了双边伙伴关系的牢固程度。近年来，两国的经济联系显著增强。过去十年间，双边贸易额增长了两倍，比利时对哈萨克斯坦经济的投资总额已超过100亿美元。-他说。
+
+双方指出，两国在交通物流、重要原材料、医疗卫生、农业、可再生能源等领域有深化合作的良好契机。
+
+- 跨里海国际运输路线对于发展欧洲与中亚之间的交通联系具有战略意义。-让-吕克·克鲁克说。
+
+据此前报道，比利时国王菲利普和王后玛蒂尔德10月11-14日期间对哈萨克斯坦进行首次国事访问。</div>
+<ul>
+<li>比荷卢议定书11月1日生效，哈公务护照免签三国</li>
+<li>比哈将通过2029年前外交部合作路线图</li>
+<li>过去十年双边贸易额增长两倍，比投资超100亿美元</li>
+<li>双方签署多项企业、高校及机构合作协议</li>
+<li>跨里海国际运输路线具战略意义</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">政治外交上，免签与路线图强化哈与比荷卢关系，提升哈在欧洲外交存在。经济上，贸易投资增长及多领域合作助推哈经济多元化。矿产格局上，重要原材料合作可能影响关键矿产供应链，跨里海路线增强哈过境运输战略地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">11</span> <a href="https://cn.inform.kz/news/shiguoren-6050a8b6/" target="_blank">比利时国王谈访哈感受：令人影响深刻！</a></h3>
+<div class="item-meta">哈通社中文版 · 10/12 18:49<span class="source-link"><a href="https://cn.inform.kz/news/shiguoren-6050a8b6/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>比利时国王菲利普对哈萨克斯坦进行国事访问，感谢托卡耶夫总统的热情款待，并回忆其作为王储时的历次访哈。菲利普表示，哈萨克斯坦在托卡耶夫领导下走上清晰发展道路，令人印象深刻。此次访问重点探讨人工智能、能源及核能领域合作，随行庞大代表团包括多位大学校长及企业代表。11日晚，菲利普国王和王后玛蒂尔德飞抵阿斯塔纳，托卡耶夫亲自到机场迎接。12日，总统府举行隆重欢迎仪式，并举行小范围和大范围会谈。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 比利时国王谈访哈感受：令人影响深刻！
+
+正文:
+会谈中，比利时国王菲利普感谢哈萨克斯坦总统的热情款待，并回忆起他作为王储时对哈萨克斯坦的历次访问。
+- 贵国在您的领导下走上了一条清晰的发展道路，这令我们印象深刻。我们此次访问拟探讨的领域——人工智能、能源及核能——对两国都至关重要。我们期待见证科学家们在圆桌会议上的交流探讨。随我们一同前来的庞大代表团成员包括多位大学校长及企业代表。-他说。
+Фото: Ақорда 据此前报道，比利时国王菲利普和王后玛蒂尔德11日晚飞抵阿斯塔纳，开始对哈萨克斯坦进行国事访问。
+哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫亲自到机场迎接，并与贵宾进行了简短交谈。
+12日，国家元首在总统府举行隆重的欢迎仪式，并举行了小范围和大范围会谈。</div>
+<ul>
+<li>比利时国王菲利普对哈萨克斯坦进行国事访问</li>
+<li>访问聚焦人工智能、能源及核能领域合作</li>
+<li>随行代表团包括大学校长及企业代表</li>
+<li>托卡耶夫亲自到机场迎接并举行会谈</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈比政治互信，推动人工智能、能源及核能合作，有助于哈国经济多元化和外交平衡，并可能影响其矿产与核能格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">12</span> <a href="https://cn.inform.kz/news/yushiguoxingdahui-bc2cbfd4/" target="_blank">哈萨克斯坦总统与比利时国王举行大范围会谈</a></h3>
+<div class="item-meta">哈通社中文版 · 10/12 18:14<span class="source-link"><a href="https://cn.inform.kz/news/yushiguoxingdahui-bc2cbfd4/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与比利时国王菲利普举行首次国事访问大范围会谈。托卡耶夫表示，明年两国将迎来建交35周年，比利时是哈主要贸易伙伴和前十大投资国之一。双方强调在交通物流、关键矿产、可再生能源、农业、医疗卫生及人工智能领域扩大合作潜力，并计划举行哈-比商业理事会第四次会议。菲利普国王指出，人工智能、能源及核能对两国至关重要。双方重申深化务实合作意愿。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦总统与比利时国王举行大范围会谈
+正文:
+会谈中，哈萨克斯坦总统欢迎比利时国王和王后对哈萨克斯坦进行首次国事访问。
+- 能在这一历史性时刻与您会面，并庆祝我们两国之间历久弥坚的友谊，我深感荣幸。菲利普国王陛下，我们对您为国民所付出的辛勤奉献深表敬意。自您登基以来，贵国繁荣发展，并在国际舞台上进一步巩固了其应有的地位。您心系国民，并坚定致力于促进比利时多元社群间的相互理解，这彰显了王室在维护国家团结方面所发挥的关键作用。我们也同样高度重视“多元一体”的原则，希望每一位公民都能参与塑造我们的未来。多年来，您在推动创业、教育和创新方面倾注了大量心血，这些努力堪称典范。王室对比利时工商业的一贯支持，值得我们给予最高的敬意。玛蒂尔德王后陛下，您的莅临使此次访问倍增光彩，也为这一场合增添了独特的优雅风范。我们深为钦佩您在儿童保护、教育事业以及捍卫人类尊严方面所展现出的非凡爱心与关怀；这些崇高的理念深深激励着我们的国民。-托卡耶夫说。
+托卡耶夫总统指出，哈萨克斯坦将比利时视为在欧洲经受住时间考验的可靠伙伴。
+- 明年将迎来两国建交35周年。您的访问将为这一重要里程碑的筹备工作注入新动力，并以实实在在的成果进一步丰富我们的合作。比利时是哈萨克斯坦的主要贸易伙伴之一，同时也是哈萨克斯坦经济的前十大投资国之一。我认为，这充分彰显了对哈萨克斯坦经济前景的信心。-他说。
+Фото: Ақорда 国家元首强调了哈萨克斯坦与比利时在交通物流、关键矿产、可再生能源、农业、医疗卫生及人工智能领域扩大合作的巨大潜力。
+- 我谨向各位政府机构、地方当局及商界代表，以及随行的知名学者和新闻界人士致以问候。明天，我们将举行哈萨克斯坦-比利时商业理事会第四次会议。令人欣慰的是，这一机制已成为我们挖掘潜力、取得务实成果的有效平台。我们同样高度重视在欧盟及其他多边框架下与比利时的合作。在全球局势不稳的背景下，建立在信任、尊重和相互理解基础上的经贸联系显得尤为重要。我对双边关系的巨大潜力充满信心，并将竭尽全力，确保全面落实此次访问期间达成的各项共识。-总统说。
+Фото: Акорда 比利时国王菲利普感谢哈萨克斯坦总统的热情款待，并回忆起他作为王储时对哈萨克斯坦的历次访问。
+- 贵国在您的领导下走上了一条清晰的发展道路，这令我们印象深刻。我们此次访问拟探讨的领域——人工智能、能源及核能——对两国都至关重要。我们期待见证科学家们在圆桌会议上的交流探讨。随我们一同前来的庞大代表团成员包括多位大学校长及企业代表。-他说。
+此外，两国代表团成员也在会谈期间发表了讲话。
+最后，各方对提出的多项举措表示满意，并重申了进一步深化务实合作的意愿。</div>
+<ul>
+<li>比利时国王首次对哈萨克斯坦进行国事访问</li>
+<li>明年两国将迎来建交35周年</li>
+<li>比利时是哈前十大投资国之一</li>
+<li>双方聚焦关键矿产、AI、能源等领域合作</li>
+<li>哈-比商业理事会第四次会议即将举行</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈欧外交纽带，吸引比利时投资与技术，助力关键矿产和能源开发，推动经济多元化；同时平衡地缘政治，提升哈在中亚的枢纽地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">13</span> <a href="https://cn.inform.kz/news/tongshiguoxingxiaohui-4c9a3b01/" target="_blank">托卡耶夫总统同比利时国王菲利普举行小范围会谈</a></h3>
+<div class="item-meta">哈通社中文版 · 10/12 16:43<span class="source-link"><a href="https://cn.inform.kz/news/tongshiguoxingxiaohui-4c9a3b01/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫同比利时国王菲利普举行小范围会谈。托卡耶夫称比利时国王首次国事访问具有历史意义，明年两国建交35周年，哈视比为可靠伙伴。菲利普表示哈萨克斯坦发展迅速，比利时对中亚兴趣浓厚，率大规模代表团访哈，相信访问将推动合作迈上新台阶。双方还谈及哈社会经济成就和国际声誉。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">随后，哈萨克斯坦总统同比利时国王和王后举行了小范围会谈。
+会谈中，托卡耶夫总统指出，比利时国王和王后首次对哈萨克斯坦进行国事访问，是一项具有历史意义的事件，将为双边伙伴关系开启新的发展阶段。
+“很高兴在阿斯塔纳迎接您，这对我而言是莫大的荣幸。您的此次历史性访问引起了社会各界的广泛关注。随同您访哈的代表团成员来自比利时联邦政府、地方政府、商界、学术界和新闻媒体等领域。您此前曾以王储身份三次访问哈萨克斯坦。我们高度重视您推动两国关系发展的意愿，也始终感受到您给予的支持。”托卡耶夫总统表示。
+托卡耶夫强调，哈萨克斯坦始终视比利时为在欧洲经受住时间考验的可靠伙伴。
+“明年，两国建交将迎来35周年。35年来，我们建立了以真诚友谊和相互尊重为基础的密切关系，持续的政治对话为双方合作奠定了坚实基础。我们一直关注比利时取得的成就，这些成就确实令人赞叹。我们需要向你们学习，借鉴你们的经验。我至今仍清楚地记得五年前访问比利时时与您举行的富有成效的会谈。今年6月，我再次访问比利时期间，同首相巴尔特·德韦弗举行会谈，双方再次确认了加强伙伴关系的共同意愿。”托卡耶夫总统指出。
+比利时国王菲利普和王后玛蒂尔德对托卡耶夫总统及哈萨克斯坦方面的热情接待和礼遇表示衷心感谢。
+他们还谈到了哈萨克斯坦在社会经济领域取得的成就，以及哈萨克斯坦在国际舞台上的声誉。
+“对比利时而言，哈萨克斯坦是一个发展迅速、十分重要的国家。总体来看，比利时对整个中亚地区都抱有浓厚兴趣，这一地区具有重要意义。此次我率领一个规模较大的代表团到访。35年来，两国建立了良好的关系，我们希望共同庆祝建交35周年这一重要时刻。同时，我相信，此次访问将推动双方合作迈上新的台阶。随行代表团成员来自多个面向未来的领域。总统先生，我知道您为陪同我们调整了工作日程。对此，我们深感荣幸，也十分感谢您专门抽出宝贵时间给予我们礼遇。”比利时国王菲利普表示。</div>
+<ul>
+<li>比利时国王首次国事访问哈萨克斯坦，具历史意义</li>
+<li>明年两国建交35周年，哈视比为可靠欧洲伙伴</li>
+<li>托卡耶夫今年6月访比，与首相德韦弗确认加强伙伴关系</li>
+<li>菲利普率大规模代表团访哈，对比中亚兴趣浓厚</li>
+<li>双方相信访问将推动双边合作迈上新台阶</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈欧外交纽带，提升哈国际声誉；比利时对中亚兴趣浓厚，或促进经贸与矿产投资合作，为哈多元外交增添欧洲支点。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">14</span> <a href="https://cn.inform.kz/news/xingshiguohehouwen-7ca64e3b/" target="_blank">托卡耶夫举行仪式欢迎比利时国王和王后访问哈萨克斯坦</a></h3>
+<div class="item-meta">哈通社中文版 · 10/12 14:24<span class="source-link"><a href="https://cn.inform.kz/news/xingshiguohehouwen-7ca64e3b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫举行仪式欢迎比利时国王菲利普和王后玛蒂尔德访问。比利时国王于10月11日至14日对哈进行国事访问，日程涵盖关键矿产资源、人工智能、医疗卫生及历史文化四大领域。比利时代表团共110人，包括4位部长、25位企业负责人、10所大学校长和13名记者。访问期间将参访阿斯塔纳和阿拉木图的文化科研机构，结束后双方将发表联合声明并签署系列文件。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">总统府礼宾大厅举行了隆重的欢迎仪式，仪仗队整齐列队。两国元首及贵宾相互介绍了各自出席仪式的官方代表团成员。
+随后，仪仗队队长向贵宾敬礼，并作正式报告。
+哈萨克斯坦总统管弦乐团奏响了哈萨克斯坦和比利时两国国歌。
+国歌奏毕，托卡耶夫陪同比利时国王菲利普和王后玛蒂尔德沿红毯走向哈萨克斯坦国旗。随后，两国元首举行小范围会谈。
+据悉，比利时国王菲利普和王后玛蒂尔德将于10月11日至14日对哈萨克斯坦进行国事访问。
+此次访问的日程涵盖四个主要领域，分别是关键矿产资源、人工智能、医疗卫生以及历史与文化。
+比利时此次访哈代表团共110人，其中包括4位政府部长、25位企业负责人、10所大学的校长和13名记者。代表团规模较大，表明比利时方面对即将开展的访问抱有浓厚兴趣。
+访问期间，比利时国王和王后还将参访阿斯塔纳和阿拉木图的文化与科研机构，并参加围绕两国合作举行的相关会议。
+访问结束后，双方将发表联合声明，并签署一系列文件。</div>
+<ul>
+<li>托卡耶夫举行仪式欢迎比利时国王菲利普和王后玛蒂尔德</li>
+<li>比利时国王10月11日至14日对哈萨克斯坦进行国事访问</li>
+<li>访问涵盖矿产、AI、医疗、历史文化四大领域</li>
+<li>比利时代表团110人，含4部长、25企业负责人、10校长</li>
+<li>访问结束将发表联合声明并签署系列文件</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访聚焦关键矿产与人工智能，将强化哈国在关键矿产供应链中的地位，吸引比利时技术与投资，推动经济多元化；同时深化哈欧外交关系，提升哈国国际影响力。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(6 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/10yue12ri-herenminqing-0378f373/" target="_blank">10月12日终盘 美元、卢布和人民币兑坚戈汇率情况</a></h3>
+<div class="item-meta">哈通社中文版 · 10/12 23:23<span class="source-link"><a href="https://cn.inform.kz/news/10yue12ri-herenminqing-0378f373/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>10月12日，哈萨克斯坦证券交易所（KASE）32个成员参与交易。美元兑坚戈平均报451.13，跌2.83坚戈，交易额3.1158亿美元；欧元兑坚戈平均报504.66，跌5.04坚戈，交易额435.8万欧元；卢布兑坚戈平均报5.3742，涨0.0188坚戈，交易额23.3739亿卢布；人民币兑坚戈平均报67.4591，跌0.4691坚戈，交易额2520万元。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 10月12日终盘 美元、卢布和人民币兑坚戈汇率情况
+正文:
+32个KASE成员参与了交易。
+根据现货市场交易结果： 美元兑坚戈（交易工具USDKZT_TOM）汇率平均报价为1: 451.13（-2.83坚戈），外汇交易总额为3.1158亿美元（-1.0967亿美元）。交易过程中，最新报价为1:449.74坚戈，最高报价为1:453.25坚戈。
+欧元兑坚戈（交易工具EURKZT_TOM）汇率平均报价为1: 504.66（-5.04坚戈），外汇交易总额为435.8万欧元（-770.3万欧元）。交易过程中，最低报价为1:502.84坚戈，最高报价为1:507.21坚戈。
+卢布兑坚戈（交易工具RUBKZT_TOM）汇率平均报价为1:5.3742（+0.0188坚戈），外汇交易总额23.3739亿卢布（+9.0508亿卢布）。交易过程中，最低报价为1:5.3451坚戈，最高报价为1: 5.3956坚戈。
+人民币兑坚戈（交易工具CNYKZT_TOD）汇率平均报价为1:67.4591（-0.4691坚戈），外汇交易总额2520万元（-1760.8万元）。交易过程中，最低报价为1:67.2100坚戈，最高报价为1:67.6300坚戈。</div>
+<ul>
+<li>美元兑坚戈跌2.83至451.13，交易额3.1158亿美元</li>
+<li>欧元兑坚戈跌5.04至504.66，交易额435.8万欧元</li>
+<li>卢布兑坚戈涨0.0188至5.3742，交易额23.3739亿卢布</li>
+<li>人民币兑坚戈跌0.4691至67.4591，交易额2520万元</li>
+<li>32个KASE成员参与现货市场交易</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈对美元、欧元、人民币升值，降低进口成本，缓解通胀压力；卢布交易额大增，反映哈俄贸易活跃。汇率稳定有助于吸引外资，但可能影响出口竞争力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/guojiajingbugongyushixian-2900aed6/" target="_blank">国家经济部：哈萨克斯坦最低工资与养老金标准实现倍增</a></h3>
+<div class="item-meta">哈通社中文版 · 10/12 17:19<span class="source-link"><a href="https://cn.inform.kz/news/guojiajingbugongyushixian-2900aed6/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国家经济部宣布，最低工资标准从4.25万坚戈提高至8.5万坚戈，实现倍增；最低养老金标准从3.61万坚戈提高至6.9万坚戈，增长近一倍；人均国内生产总值从71.55万坚戈增至166.16万坚戈。此外，政府推出“Іскер аймақ”创业区域计划，到2029年预计支持约1.5万个商业项目，扶持资金总额达1.2万亿坚戈，重点支持农产品加工、食品生产、家具及建筑材料制造、手工艺等领域。针对制造业、信息技术、旅游业、创意产业和物流业，政府设定专项融资额度，单项最高70亿坚戈，年利率不超过12.6%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 国家经济部：哈萨克斯坦最低工资与养老金标准实现倍增
+正文:
+具体如下：
+最低工资标准：提高至原来的2倍，从4.25万坚戈增至8.5万坚戈；
+最低养老金标准：增长近一倍，从3.61万坚戈提高至6.9万坚戈；
+人均国内生产总值：从71.55万坚戈增至166.16万坚戈。
+此外，国家经济部还介绍了国家为企业发展推出的多项支持举措。
+国家经济部表示，为激发各地区私营企业的创业活力，哈萨克斯坦启动了面向小城镇和农村地区的长期扶持计划——“Іскер аймақ”（创业区域）计划。到2029年，该计划预计将支持约1.5万个商业项目，扶持资金总额达1.2万亿坚戈。计划将重点支持农产品加工、食品生产、家具及建筑材料制造，以及手工艺发展等领域。在国家层面，创业项目还将通过“白纸”原则和“Өрлеу”优惠贷款计划获得支持。
+哈萨克斯坦国家经济部还表示，针对重点扶持领域，包括制造业、信息技术、旅游业、创意产业和物流业，政府已设定专项融资额度，单项融资额度最高可达70亿坚戈，年利率不超过12.6%。</div>
+<ul>
+<li>最低工资翻倍至8.5万坚戈，最低养老金增至6.9万坚戈</li>
+<li>人均GDP从71.55万坚戈增至166.16万坚戈</li>
+<li>创业区域计划到2029年支持1.5万个项目，资金1.2万亿坚戈</li>
+<li>重点领域单项融资最高70亿坚戈，年利率不超12.6%</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">提高最低工资和养老金将刺激消费、改善民生，但增加财政压力。创业区域计划促进农村和小城镇私营经济发展，推动经济多元化。专项融资支持制造业、IT、旅游等，有助于减少对矿产依赖，优化产业结构，增强经济韧性。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/guojiajingbuzhongxiaoyejiuyerenchang367-c7a4d504/" target="_blank">国家经济部：哈萨克斯坦中小企业就业人数增长36.7%</a></h3>
+<div class="item-meta">哈通社中文版 · 10/12 16:17<span class="source-link"><a href="https://cn.inform.kz/news/guojiajingbuzhongxiaoyejiuyerenchang367-c7a4d504/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国家经济部数据显示，中小企业就业人数达4,527,381人，占全国就业人口48.6%，过去7年增长36.7%。在营中小企业数量增长63.5%至220万家，2025年产值达104.8万亿坚戈，占GDP比重提高9.2个百分点至40.9%。个体经营者占主体69%，中型企业就业42.82万人。贸易业企业数量占比35%，制造业、建筑业和农产品加工业潜力更大。女性在中小企业中作用显著。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据国家经济部消息，根据国家统计局的数据，目前哈萨克斯坦中小企业领域共有4,527,381人就业，占全国就业人口的48.6%。过去7年，该领域就业人数增长了36.7%，2018年为330万人。
+与此同时，哈萨克斯坦在营中小企业数量增长63.5%，达到220万家。中小企业产值增长至原来的3.2倍，2025年达到104.8万亿坚戈，创下新高。中小企业在国内生产总值（GDP）中的占比也提高了9.2个百分点，达到40.9%。
+国家经济部表示，个体经营者仍是中小企业的主体，占中小企业经营主体总数的69%，为200多万人提供就业岗位。与此同时，中型企业虽然仅占市场经营主体总数的0.1%，但能够提供相对稳定、配有完整社会保障待遇的工作岗位。目前，中型企业共有42.82万人就业。
+从行业分布来看，贸易业在企业数量上位居首位，占比为35%。不过，在通过扩大经营规模创造新就业岗位方面，制造业、建筑业和农产品加工业具有更大的潜力。
+此外，女性在中小企业发展中发挥着重要作用。数据显示，全国48.1%的中小企业由女性经营管理。在个体经营者中，女性占52.6%；在法人企业中，女性负责人占28.1%。</div>
+<ul>
+<li>中小企业就业452.7万人，占全国就业48.6%</li>
+<li>7年就业增长36.7%，企业数量增63.5%至220万家</li>
+<li>2025年产值104.8万亿坚戈，占GDP40.9%</li>
+<li>个体经营者占69%，中型企业就业42.82万人</li>
+<li>女性管理48.1%中小企业，个体经营者中占52.6%</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">中小企业就业与产值显著增长，有助于哈国经济多元化、降低失业率，增强社会稳定。贸易业主导，但制造业等潜力大，利于工业升级。女性参与度高，促进包容性增长。外交上，经济韧性提升可增强区域合作吸引力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/chuli2028niandao15-3d5405c1/" target="_blank">哈萨克斯坦油脂产品出口额力争2028年达到15亿美元</a></h3>
+<div class="item-meta">哈通社中文版 · 10/12 15:54<span class="source-link"><a href="https://cn.inform.kz/news/chuli2028niandao15-3d5405c1/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦油脂产品出口收入过去五个市场季增长五倍，从2.47亿美元增至12.32亿美元，占加工农产品出口27%。2025年成为全球第六大葵花籽油出口国、中国第二大供应国，并跻身中国菜籽油五大供应国。在乌兹别克斯坦和塔吉克斯坦市场份额超90%。长期目标为跻身全球三大葵花籽油出口国，年出口收入达20亿美元。葵花籽种植面积自2021年增长2.3倍至220万公顷。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦油脂产品出口额力争2028年达到15亿美元
+正文:
+出口收入五个市场季增长五倍
+统计数据显示，过去五个市场季，哈萨克斯坦油脂产品出口带来的外汇收入增长了五倍，从2.47亿美元增至12.32亿美元。去年，油脂产业出口额占全国加工农产品出口总额的27%。这一数据反映出，农产品深加工在哈萨克斯坦农业综合体发展中的作用日益突出。
+近年来，在国内完成原料加工、再将成品销往海外市场的重要性不断提升。
+Фото: АШМ 目前，哈萨克斯坦油脂加工企业的年生产能力超过520万吨。未来，随着新的投资项目陆续实施，行业产能有望进一步提高。与此同时，哈方将继续推进原料深加工，扩大在国内外市场具有需求的成品生产。
+主要产品出口竞争力不断增强
+2025年，哈萨克斯坦成为全球第六大葵花籽油出口国，也是中国葵花籽油第二大供应国。根据2024/2025市场季的结果，哈萨克斯坦还跻身中国菜籽油五大供应国之列。
+哈萨克斯坦也是欧盟和中国市场主要的葵花籽粕供应国之一，位列前三。同时，该国还满足了中亚国家对这一产品的相当一部分需求。
+哈萨克斯坦与邻国的经贸联系也在不断加强，目前已成为乌兹别克斯坦和塔吉克斯坦植物油的主要供应国之一。在乌兹别克斯坦市场，哈萨克斯坦产品的份额从2017年的13%升至2024年的65%，并于2025年超过90%。在塔吉克斯坦市场，这一比例也从2017年的15%升至2024年的74%，并于2025年超过90%。
+目前，哈萨克斯坦生产的油脂产品出口至全球20多个国家和地区，主要市场包括中国、中亚国家、欧盟成员国和中东地区。
+哈萨克斯坦的长期目标是跻身全球三大葵花籽油出口国之列，并将油脂产品出口带来的年度外汇收入提高至20亿美元。
+扩大原料供应 推动种植与加工衔接
+扩大本土原料供应是油脂产业发展的重要条件。自2021年以来，哈萨克斯坦葵花籽种植面积增长了2.3倍，从95.8万公顷扩大至2026年的创纪录水平——220万公顷。
+不过，国内加工企业对原料的需求仍然较大，现有原料供应尚不能完全满足这一需求。
+Фото: Midjourney 鼓励农业生产的另一项有效措施，是由加工企业直接向农户提供资金支持。这些资金主要用于春耕生产，以及购买种子、化肥和植物保护用品。仅2025年，加工企业就为此投入超过430亿坚戈。
+这种支持有助于加强农产品生产者与加工企业之间的联系，推动形成从农业生产、产品加工到出口相互衔接的产业链。</div>
+<ul>
+<li>油脂产品出口收入五个市场季增长五倍至12.32亿美元</li>
+<li>2025年成为全球第六大葵花籽油出口国</li>
+<li>乌兹别克斯坦和塔吉克斯坦市场份额超90%</li>
+<li>长期目标年出口收入20亿美元，跻身全球前三</li>
+<li>葵花籽种植面积2026年扩至220万公顷</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">油脂产品出口增长将增强哈国经济韧性，巩固其在中亚和中国的农产品供应地位，提升外交影响力。产能扩张和种植面积增加有助于优化矿产以外的出口结构，但原料供应不足可能制约加工潜力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/quan50dajingtizhi-dc3713f5/" target="_blank">哈萨克斯坦跻身全球50大经济体之列</a></h3>
+<div class="item-meta">哈通社中文版 · 10/12 15:33<span class="source-link"><a href="https://cn.inform.kz/news/quan50dajingtizhi-dc3713f5/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2019至2026年，哈萨克斯坦推进政治改革，2026年3月15日全民公投通过新宪法。2025年GDP达159.6万亿坚戈，增长6.5%，世界银行排名从第55位升至第48位，跻身全球50大经济体。固定资本投资从12.6万亿增至23.5万亿坚戈，2019年至2026年一季度累计吸引外国直接投资超1620亿美元。政府计划2026至2028年年均增速保持5%以上，2028年通胀率降至5%至7%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">2019年至2026年，哈萨克斯坦在国家治理体系和社会生活领域经历了一系列重大变化。
+这一时期的重要政治变化之一，是2026年3月15日举行的全民公投通过了新宪法。与此同时，哈萨克斯坦持续推进政治改革，经济发展也取得了相应进展。
+2025年，哈萨克斯坦国内生产总值（GDP）达到159.6万亿坚戈，经济增长6.5%，增速处于近年来较高水平。同期，哈萨克斯坦在世界银行经济体排名中的位次由第55位升至第48位，进入全球50大经济体行列。
+随着经济增长，哈萨克斯坦吸引的投资规模也有所扩大。固定资本投资年规模从12.6万亿坚戈增至23.5万亿坚戈。2019年至2026年第一季度，哈萨克斯坦累计吸引外国直接投资超过1620亿美元。
+根据政府制定的2026—2028年宏观经济稳定计划，哈萨克斯坦计划将经济年均增速保持在5%以上。同时，政府计划到2028年将通胀率降至5%至7%的区间。</div>
+<ul>
+<li>2026年3月15日全民公投通过新宪法</li>
+<li>2025年GDP达159.6万亿坚戈，增长6.5%</li>
+<li>世行排名从第55位升至第48位，进入全球50大</li>
+<li>固定资本投资从12.6万亿增至23.5万亿坚戈</li>
+<li>2019至2026年一季度累计吸引外资超1620亿美元</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济排名提升增强哈国政治信心，新宪法巩固治理体系；外资扩大助力经济多元化和矿产开发；外交上提升中亚影响力，但需平衡大国博弈，确保资源收益惠及民生。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/guojiajingbu2025nianrengdpdao15-8e16ab7f/" target="_blank">国家经济部：哈萨克斯坦2025年人均GDP达到1.5万美元</a></h3>
+<div class="item-meta">哈通社中文版 · 10/12 14:51<span class="source-link"><a href="https://cn.inform.kz/news/guojiajingbu2025nianrengdpdao15-8e16ab7f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国家经济部数据显示，2025年人均GDP达1.5万美元，较2018年增长52.9%。名义GDP从61.8万亿坚戈增至159.6万亿坚戈，经济总量达3060亿美元。实体经济中，建筑业增长2.4倍，制造业增长41.8%，农业增长25.6%。服务业增长22.1%，固定资本投资增长65.9%。过去7年吸引外国直接投资557亿美元，非资源类出口从158亿美元增至288亿美元。石油年产量达9960万吨，劳动生产率提高21.7%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 国家经济部：哈萨克斯坦2025年人均GDP达到1.5万美元
+正文:
+数据显示，2025年，哈萨克斯坦人均国内生产总值（GDP）达到1.5万美元，较2018年的9800美元增长52.9%。
+国家经济部指出，人均GDP增长得益于国家经济的持续稳定发展。哈萨克斯坦名义GDP总量从2018年的61.8万亿坚戈增至2025年的159.6万亿坚戈。去年，按美元计算，哈萨克斯坦经济总量达到3060亿美元，比2018年增长70.6%。
+具体来看，2019年至2025年，经济和投资结构多元化、对工业、农业、建筑业、交通运输与仓储业及贸易等主要行业的投资与发展、竞争力提升、吸引投资以及社会经济改革的推进，共同推动了GDP增长。
+这一时期，实体经济继续成为经济增长的重要动力，商品生产总量增长38.8%。其中，建筑业工程量增长2.4倍，制造业产值增长41.8%，农业产值增长25.6%，采矿业产值增长14.9%。
+国家经济部表示，基础设施项目的实施以及实体经济的积极发展，带动服务业增长22.1%。其中，贸易业增长44.1%，交通运输服务业增长38.4%，通信业增长56.4%。与此同时，固定资本投资增长65.9%，达到23.5万亿坚戈。
+此外，过去7年，哈萨克斯坦累计吸引外国直接投资557亿美元。通过扶持制造业企业、拓展重点出口市场等举措，哈萨克斯坦非资源类出口取得增长，出口额扩大至原来的1.8倍，从158亿美元增至288亿美元。
+与此同时，哈萨克斯坦石油年产量增加920万吨，2025年达到9960万吨。
+同期，全国劳动生产率提高21.7%。其中，建筑业劳动生产率增长2.3倍，农业增长66.3%，制造业增长32%，贸易业增长28.9%。</div>
+<ul>
+<li>2025年人均GDP达1.5万美元，较2018年增长52.9%</li>
+<li>名义GDP达159.6万亿坚戈，经济总量3060亿美元</li>
+<li>建筑业增长2.4倍，制造业增长41.8%，农业增长25.6%</li>
+<li>7年吸引外国直接投资557亿美元，非资源出口增至288亿美元</li>
+<li>石油年产量达9960万吨，劳动生产率提高21.7%</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济持续增长增强哈国政治稳定，提升外交话语权；经济多元化降低对资源依赖，改善矿产格局；吸引外资和扩大非资源出口促进经济结构转型。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/mirovoy-rinok-dizelya-pod-davleniem-mea-prizvalo-uskorit-postavki-iz-rezervov-1368dddc" target="_blank">全球柴油市场承压：国际能源署呼吁加快释放储备供应</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/13 07:35<span class="source-link"><a href="https://www.inform.kz/ru/mirovoy-rinok-dizelya-pod-davleniem-mea-prizvalo-uskorit-postavki-iz-rezervov-1368dddc" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>国际能源署执行主任比罗尔呼吁各国加快释放石油储备，特别是柴油供应，以应对全球柴油市场压力。3月该机构32国同意释放4亿桶石油，截至10月初已投放约3.25亿桶。各国拥有约11亿桶应急储备，含超2亿桶柴油。柴油短缺源于霍尔木兹海峡供应中断和炼油厂受损，俄罗斯炼油问题和中国出口限制加剧局势。美国暂时放宽对俄柴油制裁至2027年4月7日。布伦特原油价格超100美元/桶，欧洲柴油期货跌至1437美元/吨。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：全球柴油市场承压：国际能源署呼吁加快释放储备供应
+
+正文：
+国际能源署执行主任法提赫·比罗尔在该机构管理委员会10月15日会议前，向各国政府发出了相应呼吁。
+
+建议尚未履行3月释放石油储备承诺的国家加快供应，并尽可能向市场投放更多柴油。其他参与方也被建议评估额外供应的必要性并确定可能的供应时间。
+
+3月，由32个国家组成的国际能源署同意从战略储备中释放史上最大规模的石油——4亿桶——以试图稳定市场。
+
+截至10月初，约3.25亿桶已进入市场。据该机构数据，各国拥有约11亿桶国家应急石油储备，其中包括超过2亿桶柴油。
+
+七国集团也在讨论额外措施。此前该集团领导人表示打算确保向市场供应1亿桶石油和石油产品。同时，这些量可能覆盖3月协议中尚未完成的承诺，而非成为单独的额外供应。
+
+柴油短缺与霍尔木兹海峡供应中断和炼油厂受损有关。尽管波斯湾地区原油出口恢复，但成品油供应仍然有限。
+
+俄罗斯炼油问题和中国的燃料出口限制使局势更加复杂。
+
+在此背景下，美国暂时放宽了对俄罗斯柴油销售和供应的制裁限制，包括对美国市场。据报道，该许可有效期至2027年4月7日。
+
+提醒，10月12日上午，布伦特原油交易价格超过每桶100美元。欧洲柴油期货价格下跌约3%，至每吨1437美元。</div>
+<ul>
+<li>国际能源署呼吁加快释放石油储备，尤其是柴油供应</li>
+<li>3月协议释放4亿桶，截至10月初已投放3.25亿桶</li>
+<li>柴油短缺因霍尔木兹海峡中断和炼油厂受损</li>
+<li>美国暂时放宽对俄罗斯柴油制裁至2027年4月</li>
+<li>布伦特原油超100美元/桶，欧洲柴油期货跌至1437美元/吨</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国而言，全球柴油紧张可能推高国内燃料成本，影响农业和运输业。作为石油出口国，高油价利好财政收入，但需平衡国内供应。哈国可借机扩大对欧柴油出口，但需关注俄罗斯炼油问题对区域供应链的冲击。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/shidaxuezaikaiyouzhongxin-01e18ac6/" target="_blank">比利时大学计划在哈开设“稀有金属选矿”中心</a></h3>
+<div class="item-meta">哈通社中文版 · 10/13 01:18<span class="source-link"><a href="https://cn.inform.kz/news/shidaxuezaikaiyouzhongxin-01e18ac6/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>纳扎尔巴耶夫大学教授巴肯诺夫在哈比关键矿产研讨会上宣布，比利时鲁汶大学计划在哈开设稀有金属选矿中心。研讨会成果将于10月13日圆桌会议公布，比利时国王菲利普和王后玛蒂尔德将出席。双方拟合作开发关键矿产开采、选矿及加工技术，并设立双学位项目。哈国目标是从原材料出口转向国内全面加工，生产超导体、半导体、催化剂和磁体等成品。哈目前向比利时出口钼矿和钛矿。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">纳扎尔巴耶夫大学教授兼能源领域新材料与技术研究所所长朱马巴伊·巴肯诺夫在哈萨克斯坦与比利时联合举办的关于关键矿产的研讨会期间宣布了这一消息。
+研讨会成果计划于10月13日在圆桌会议上公布，比利时国王菲利普和王后玛蒂尔德将出席此次会议。
+巴肯诺夫教授称，哈萨克斯坦虽然拥有矿产资源加工技术，但其中一些技术已经过时。相比之下，比利时鲁汶大学以其在选矿、湿法冶金和火法冶金领域的研究而闻名，这些领域汇聚了众多经验丰富的科学家。
+- 哈萨克斯坦和比利时之间，特别是通过鲁汶大学，拥有巨大的合作潜力。我们的目标之一是在哈萨克斯坦建立联合中心，用于关键矿物的研究和加工。-他说。
+在这类中心，来自两国的专家可以合作开发关键矿产的开采、选矿及加工技术。此外，相关计划还旨在为哈萨克斯坦学生提供赴比利时留学及参与双学位项目的机会。
+- 我们希望探讨设立双学位项目，使哈萨克斯坦和比利时的学生能够同时在两所大学学习。我们计划加快在科学研究及建立联合研究中心方面的各项工作。如果比利时合作方准备就绪，我们已做好签署协议、启用这些中心并共同提供资金的准备。-他说。
+教授表示，哈萨克斯坦的目标不再局限于开采矿产资源并将其作为原材料出售，而是力求在国内完成矿产资源的全面加工，生产成品。具体而言，哈萨克斯坦正在探索利用国产原材料生产超导体、半导体、催化剂和磁体的潜力。
+值得一提的是，哈萨克斯坦目前已向比利时出口钼矿和钛矿。</div>
+<ul>
+<li>比利时鲁汶大学计划在哈开设稀有金属选矿中心</li>
+<li>10月13日圆桌会议公布成果，比利时国王王后出席</li>
+<li>双方拟合作开发关键矿产加工技术及双学位项目</li>
+<li>哈国目标从原材料出口转向国内全面加工成品</li>
+<li>哈萨克斯坦目前向比利时出口钼矿和钛矿</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该合作将提升哈国关键矿产加工能力，推动从原材料出口向高附加值成品转型，促进矿业经济升级。对比利时而言，可获取稳定矿产供应并扩大科研影响力。外交上深化哈比关系，但可能引发其他大国对哈矿产资源格局的关注。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-10-13 09:03</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
