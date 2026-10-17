@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年10月17日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年10月17日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年10月16日早9:00至2026年10月17日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 20 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">11</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">3</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/49-zayavok-monopolistov-ne-prinyali-k-rassmotreniyu-v-zhambilskoy-oblasti-db885d68" target="_blank">江布尔州49份垄断企业申请未被受理</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/17 07:17<span class="source-link"><a href="https://www.inform.kz/ru/49-zayavok-monopolistov-ne-prinyali-k-rassmotreniyu-v-zhambilskoy-oblasti-db885d68" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦江布尔州有39个自然垄断主体提供59种服务，受费率监管。州自然垄断监管委员会共收到企业提交的费率计算和投资计划申请，其中49份未获受理，18份被企业自愿撤回，仅批准8项费率。此前阿特劳州批准新电力费率，阿拉木图自10月初调整水费和排水费。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：江布尔州49份垄断企业申请未获受理
+
+正文：
+该地区有39个自然垄断主体处于费率监管之下，提供59种服务。其中包括供水、排水、供热、天然气运输、电力输送和分配。
+
+费率申请由自然垄断监管委员会州级部门负责审批。企业向其提交费率计算和投资计划，计划框架内拟更新基础设施。
+
+据该部门消息，49份申请未获受理。另有18份企业申请被自愿撤回。在此期间，监管机构仅批准了8项费率。
+
+此前有报道称，阿特劳州批准了新的电力费率。
+
+自10月初以来，阿拉木图的水费和排水费发生了变化。</div>
+<ul>
+<li>江布尔州39个自然垄断主体提供59种服务</li>
+<li>49份费率申请未获受理，18份自愿撤回</li>
+<li>监管机构仅批准8项费率</li>
+<li>阿特劳州批准新电力费率</li>
+<li>阿拉木图10月初调整水费</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">费率申请大量未受理或撤回，反映江布尔州公用事业企业合规压力增大，可能延缓基础设施更新。仅批准8项费率，显示监管趋严，或影响供水、供热、电力等关键服务投资，对民生和经济活动构成潜在风险。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/zakonoproekt-o-razvitii-kreativnoy-industrii-razrabativayut-v-kazahstane-88100c24" target="_blank">哈萨克斯坦正在制定发展创意产业的法案</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/17 00:41<span class="source-link"><a href="https://www.inform.kz/ru/zakonoproekt-o-razvitii-kreativnoy-industrii-razrabativayut-v-kazahstane-88100c24" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦正在制定创意产业发展法律草案，计划将创意经济占GDP比重从目前不足1%提升至3%。草案涉及融资机制、基础设施、版权保护和海外推广，由文化和信息部等多部门协调，QazTrade公司协助出口。创意产业涵盖音乐、电影、设计、游戏开发等53个方向，议员强调借鉴韩国经验，并指出创意产品可带动旅游业，如迪玛希演唱会吸引外国游客。10月17-18日将在阿斯塔纳举办CREATIVE AIMAQ集市。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据议员称，国家计划将创意经济在GDP中的占比提升至3%。因为根据国家统计局数据，过去五年该指标未超过1%。因此，为发展该行业，必须系统化其融资机制、完善基础设施和国家支持。
+——目前，专家组正在审议有关制度、金融和基础设施问题的法律草案。这个问题不仅属于文化和信息部的职权范围，——古丽斯汗·纳赫巴耶娃说。
+该法律草案规定，在支持创意产品的同时，完善版权保护机制和推动国产作品走向海外。在这些方向上，司法、经济和体育领域的主管国家机关也有任务。QazTrade公司将协助哈萨克斯坦产品进入国际市场。
+为了有效工作，必须加强国家机关之间的协调。据议员称，在库鲁尔台数字化、创新和科学委员会的基础上，已成立八个专家组。它们都将审议创意经济发展问题。
+创意产业包括53个方向，如音乐、电影、设计和游戏开发。该法律草案计划确定这些行业的优先方向。议员指出，对哈萨克斯坦而言，韩国的经验很重要。
+——哈萨克斯坦的声乐艺术、电影产业和GameDev市场正在发展。韩国的经验可以成为我们的榜样。他们在发展创意产业的同时，也发展创意旅游。例如，外国游客专程来我国观看迪玛希·库达伊别尔根的演唱会。这是一个明显的例子，说明创意产品也能为旅游业提供动力，——古·纳赫巴耶娃说。
+此前报道称，10月17日至18日，CREATIVE AIMAQ集市将在阿斯塔纳举行，届时将汇集卡拉干达州55多位创作者、设计师、艺术家、手工艺人和现代创意产业代表。</div>
+<ul>
+<li>哈国拟立法将创意经济GDP占比从1%提至3%</li>
+<li>草案涵盖融资、基建、版权保护及海外推广</li>
+<li>创意产业含53个方向，重点借鉴韩国经验</li>
+<li>QazTrade将协助创意产品进入国际市场</li>
+<li>10月阿斯塔纳举办CREATIVE AIMAQ创意集市</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该法案将推动哈国经济多元化，减少对资源依赖，提升软实力和外交文化影响力。创意产业发展有望带动旅游和就业，但需跨部门协调和资金落实，短期内对矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/lianghuiyu2027nianqishang85-09dc252f/" target="_blank">两类社会保障金拟于2027年起上调8.5%</a></h3>
+<div class="item-meta">哈通社中文版 · 10/16 14:37<span class="source-link"><a href="https://cn.inform.kz/news/lianghuiyu2027nianqishang85-09dc252f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦劳动和社会保障部起草决议草案，拟自2027年1月1日起将丧失劳动能力人员和失去家庭供养人家庭的两类社会保险金上调8.5%，公众讨论至11月2日。此前自2026年1月1日起这两类保险金已提高10%。2026年失去家庭供养人补助金按供养人数从46,783坚戈至152,553坚戈不等。该方案尚未获批，需政府决议通过后生效。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦劳动和社会保障部已起草有关政府决议草案，并将其公布在“公开法规草案”门户网站上，公众讨论将持续至11月2日。
+草案指出，此次调整旨在提高丧失劳动能力人员及失去家庭供养人家庭的社会保障水平。
+值得注意的是，拟议中的8.5%涨幅仅适用于上述两类社会保险金，并不涉及所有社会保障待遇。
+此前，自2026年1月1日起，哈萨克斯坦国家社会保险基金发放的这两类社会保险金已提高10%。
+其中，丧失劳动能力社会保险金的具体金额根据个人情况单独计算。符合条件的人员可通过“居民服务中心”（ХҚКО）应用程序中的计算器功能查询相关金额。
+失去家庭供养人相关补助金的金额则根据家庭中丧失劳动能力的受供养人数确定。
+2026年，相关补助金标准如下：
+1人：46,783坚戈；
+2人：86,447坚戈；
+3人：114,415坚戈；
+4人：132,213坚戈；
+5人：139,841坚戈；
+6人及以上：152,553坚戈。
+需要强调的是，此次提高社会保险金的方案尚未正式获批。只有在相关政府决议获得通过后，拟议调整才会于2027年1月1日起生效。</div>
+<ul>
+<li>两类社保金拟2027年起上调8.5%</li>
+<li>仅涉及丧失劳动能力和失去供养人两类</li>
+<li>2026年已上调10%，补助金按人数分档</li>
+<li>草案公示至11月2日，尚未正式获批</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该调整若获批，将小幅提升弱势群体保障水平，缓解通胀压力，有利于社会稳定；但仅覆盖两类保险金，财政支出增量有限，对矿产格局无直接影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(11 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/bogataya-neftyu-alberta-provedet-predvaritelniy-referendum-onezavisimosti-otkana-21248517" target="_blank">石油资源丰富的阿尔伯塔省将就脱离加拿大独立举行初步公投</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/17 04:24<span class="source-link"><a href="https://www.inform.kz/ru/bogataya-neftyu-alberta-provedet-predvaritelniy-referendum-onezavisimosti-otkana-21248517" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>阿尔伯塔省将举行初步公投，决定是否启动脱离加拿大的法律程序。省长史密斯应约30万签名请愿将议题列入选票，但她本人反对独立。民调显示约70%居民反对分离，约25%支持。阿尔伯塔占加拿大石油产量约80%，去年原油出口额达1420亿加元（约1000亿美元）。总理卡尼呼吁支持统一，并警告结果取决于投票率。美国方面对阿尔伯塔表现出兴趣。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">在卡尔加里的一次集会上，卡尼呼吁该省居民支持国家统一。
+——结果将取决于投票率——政府首脑强调，并呼吁统一加拿大的支持者前来投票。
+关于脱离加拿大的问题成为提交投票的十个议题之一。同时，这里说的不是直接宣布独立，而是是否应启动就此问题举行强制性公投的法律程序。
+阿尔伯塔省省长丹妮尔·史密斯在5月将这一问题列入选票，此前独立支持者收集了约30万个签名支持相关请愿书。
+史密斯本人反对脱离加拿大，并将此次投票视为该省居民表达立场的机会。
+民调数据显示，约70%的阿尔伯塔居民反对分离，而约四分之一支持这一想法。尽管形势如此，卡尼警告国家统一的支持者，投票结果将取决于选民的积极性。
+阿尔伯塔是加拿大领先的油气开采区，占全国石油产量的约80%。原油仍是加拿大主要出口商品之一：去年其供应带来1420亿加元，约合1000亿美元。
+该省位于该国西部，没有出海口。大部分开采的石油出口到美国的炼油厂。
+独立支持者声称，阿尔伯塔上缴联邦政府的资金多于其获得的返还，而渥太华的气候政策抑制了油气行业的发展。
+与此同时，卡尼政府表示支持该省的能源项目。特别是，总理宣布加快审批一条新的输油管道，该管道应将阿尔伯塔与太平洋沿岸连接起来。
+阿尔伯塔独立问题也在加拿大与美国关系的背景下被讨论。美国总统唐纳德·特朗普多次发表涉及加拿大主权的言论，而一些美国政界人士表示有兴趣与这个能源资源丰富的省份建立更紧密的联系。美国财政部长斯科特·贝森特曾称阿尔伯塔是美国的“天然伙伴”。</div>
+<ul>
+<li>阿尔伯塔省将初步公投是否启动脱加法律程序</li>
+<li>约30万签名请愿推动，省长史密斯反对独立</li>
+<li>民调：约70%反对分离，约25%支持</li>
+<li>阿尔伯塔占加石油产量80%，出口额1420亿加元</li>
+<li>卡尼呼吁统一，美国称阿尔伯塔为天然伙伴</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">若公投推进，将加剧加拿大联邦与产油省紧张，冲击加能源出口与美国关系；对哈国而言，加原油出口若受扰可能影响全球油价，哈作为产油国或获替代出口机遇，但需关注美加能源格局变化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/erdogan-predlozhil-prevratit-aeroport-imeni-atatyurka-vkrupneyshiy-vmire-tehnolo-af31f510" target="_blank">埃尔多安提议将阿塔图尔克机场改造成全球最大科技中心</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/17 02:20<span class="source-link"><a href="https://www.inform.kz/ru/erdogan-predlozhil-prevratit-aeroport-imeni-atatyurka-vkrupneyshiy-vmire-tehnolo-af31f510" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>土耳其总统埃尔多安宣布，计划将伊斯坦布尔阿塔图尔克机场航站楼改造成全球最大的科技与创业中心，品牌名为Terminal İstanbul。他指出，得益于国家技术倡议，土耳其已建立强大的研发创新基础设施，2025年国防和航空航天产品出口额超过100亿美元，覆盖180个国家和地区。埃尔多安强调，投资高科技是必然选择，需加快向高附加值生产转型。此前因恶劣天气，数十航班被改道。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：埃尔多安提议将阿塔图尔克机场改造成全球最大科技中心
+
+正文：
+国家元首指出，得益于国家技术倡议，土耳其建立了强大的研究、开发和创新基础设施，世界上只有少数国家拥有这样的设施。
+据埃尔多安称，2025年，土耳其向全球180个国家和地区出口了价值超过100亿美元的国防和航空航天工业产品。
+总统还宣布了计划将伊斯坦布尔阿塔图尔克机场的航站楼改造成全球最大的科技和创业中心，品牌名为Terminal İstanbul。
+——对土耳其来说，投资高科技不是选择，而是必然。我们必须加快向高附加值生产的转型，——土耳其领导人强调。
+此前有报道称，由于伊斯坦布尔恶劣天气，数十个航班被改道至其他机场。</div>
+<ul>
+<li>埃尔多安提议将阿塔图尔克机场改为全球最大科技中心</li>
+<li>2025年土耳其国防航空航天出口超100亿美元</li>
+<li>出口覆盖全球180个国家和地区</li>
+<li>新中心品牌名为Terminal İstanbul</li>
+<li>强调高科技投资是必然，需加快高附加值转型</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈萨克斯坦而言，土耳其科技中心崛起可能加剧区域高科技竞争，影响哈国吸引科技投资；同时哈可借鉴土模式推动自身机场经济转型，并深化双边科技与矿产合作。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/armeniya-mozhet-nachat-zakupat-elektroenergiyu-u-azerbaydzhana-969628b9" target="_blank">亚美尼亚可能开始从阿塞拜疆购买电力</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/17 01:35<span class="source-link"><a href="https://www.inform.kz/ru/armeniya-mozhet-nachat-zakupat-elektroenergiyu-u-azerbaydzhana-969628b9" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>亚美尼亚可能开始从阿塞拜疆购买电力。亚美尼亚官员表示，现有基础设施经较小投资即可利用，并考虑通过卡尔斯—久姆里线路与土耳其进行电力买卖。由于人工智能相关企业和数据中心发展推高用电需求，亚美尼亚可能需从邻国补充供电。目前亚美尼亚以易货方式向伊朗供电换取天然气，并向格鲁吉亚出口电力。8月，亚美尼亚总理帕希尼扬称正准备向阿塞拜疆出口商品。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：亚美尼亚可能开始从阿塞拜疆购买电力
+
+据部长称，对现有基础设施的研究表明，可以在相对较小的投资下加以利用。对于卡尔斯—久姆里输电线路也在考虑类似方案，这将使亚美尼亚能够向土耳其出售多余电力，或在需要时购买电力。
+
+胡达强指出，此前亚美尼亚拥有电力盈余，但消费增长，包括与人工智能相关企业和数据中心发展有关的增长，可能需要从邻国额外供应。
+
+目前，亚美尼亚以易货方式向伊朗供电，以换取天然气，并向格鲁吉亚出口电力。
+
+从长远看，埃里温正在考虑扩大与邻国的能源合作，包括阿塞拜疆。
+
+8月，亚美尼亚总理尼科尔·帕希尼扬表示，正准备开始向阿塞拜疆出口亚美尼亚商品。</div>
+<ul>
+<li>亚美尼亚或从阿塞拜疆购电</li>
+<li>现有设施经小投资可利用</li>
+<li>卡尔斯—久姆里线可连土耳其</li>
+<li>AI与数据中心推高电力需求</li>
+<li>亚美尼亚拟扩大邻国能源合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">若亚美尼亚从阿塞拜疆购电，将推动两国关系正常化，改变南高加索能源格局，削弱俄罗斯调解角色，并促进地区经济互联互通。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/guojiachengguotigaobuchanghuizaixing-a7710586/" target="_blank">突厥国家组织成员国媒体高级官员及部长级会议在阿斯塔纳举行</a></h3>
+<div class="item-meta">哈通社中文版 · 10/17 01:22<span class="source-link"><a href="https://cn.inform.kz/news/guojiachengguotigaobuchanghuizaixing-a7710586/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>突厥国家组织成员国媒体高级官员及部长级会议在阿斯塔纳举行，哈萨克斯坦、土耳其、乌兹别克斯坦、吉尔吉斯斯坦、阿塞拜疆等国代表出席。哈方第一副部长伊斯卡科夫指出，数字技术与人工智能正重塑媒体行业，虚假内容制作成本降低，权威信息信任受侵蚀。会议讨论检测深度伪造、信息核实、加强通讯社联系及记者新技术能力等议题，签署联合公报，决定下一届会议在比什凯克举行。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦共和国文化与信息部第一副部长哈纳特·伊斯卡科夫、突厥国家组织副秘书长奥梅尔·克贾曼、乌兹别克斯坦共和国总统办公厅下属媒体内容制作中心主任科布尔琼·阿赫梅多夫、土耳其共和国总统府新闻署副署长费尔哈特·皮林奇、吉尔吉斯共和国文化、信息与青年政策部副部长萨尔金·萨尔诺戈耶娃，以及阿塞拜疆共和国媒体与广播委员会国际关系部主任拉西姆·巴吉罗夫等人出席了会议。
+哈萨克斯坦代表在会上谈及了现代技术对媒体行业的影响，并指出了当前信息领域所面临的挑战。
+- 数字技术与人工智能的迅猛发展，正在从根本上重塑媒体行业、信息传播方式以及与受众互动的方式。-伊斯卡科夫说。
+Фото: Мәдениет және ақпарат министрлігі 第一副部长指出，人工智能在开启新机遇之门的同时，也放大了既有的风险。如今，制作虚假内容——即那些难以与真实的视频、图像或音频录音区分开来的内容——已不再需要大量的资金投入。在此背景下，虚假信息的传播又叠加了另一个紧迫问题：人们对权威信息来源的信任正受到侵蚀。
+与会者讨论了诸如检测深度伪造（deepfakes）、快速核实信息真实性、加强各国通讯社之间的联系，以及提升记者运用新技术的能力等议题。
+此次会议是在“阿斯塔纳媒体周”框架内举行的；该活动是一项年度国际媒体论坛，有来自媒体行业的代表及各领域的专家出席。
+根据会议结果，与会各方签署了一份联合公报。会议决定，下一届（第九届）会议将在吉尔吉斯共和国首都比什凯克举行。</div>
+<ul>
+<li>突厥国家组织媒体高官会议在阿斯塔纳举行</li>
+<li>哈方强调AI重塑媒体并加剧虚假信息风险</li>
+<li>会议聚焦深度伪造检测与信息核实</li>
+<li>各方签署联合公报，下届会议在比什凯克</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">会议强化了突厥国家组织在媒体与信息领域的合作机制，有助于哈萨克斯坦提升区域信息话语权，推动共同应对AI虚假信息威胁，并促进通讯社间协作，对哈国数字治理与外交形象有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/duochutiguobuchanglishihuihui-1e6406af/" target="_blank">阿依多斯·穆尔扎赫梅托夫出席独联体国防部长理事会会议</a></h3>
+<div class="item-meta">哈通社中文版 · 10/17 00:24<span class="source-link"><a href="https://cn.inform.kz/news/duochutiguobuchanglishihuihui-1e6406af/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦防长阿依多斯·穆尔扎赫梅托夫出席独联体国防部长理事会会议。与会者审议了2026年军事合作优先事项及成果，讨论军事教育、人事政策、作战训练等议题，并审议2027年工作计划。会议重点关注军事体育合作及青少年军事爱国主义教育，签署了规范未来军事合作的文件。哈防长还举行双边会晤，就军事合作交换意见。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据国防部消息，与会者审议了理事会各工作机构在2026年军事合作发展方向上的主要优先事项和活动成果，特别讨论了军事教育、人事政策、作战训练等议程问题。
+此外，会议还审议了2027年工作计划。
+与会者还重点关注了在军事体育领域开展合作，并对青少年进行军事爱国主义教育。
+根据会议结果，与会者签署了规范成员国之间未来军事合作的文件。
+会议框架下，哈萨克斯坦防长举行了一系列双边会晤，并就军事合作相关议题交换了意见。</div>
+<ul>
+<li>哈防长出席独联体国防部长理事会会议</li>
+<li>审议2026年军事合作优先事项及成果</li>
+<li>讨论军事教育、人事政策、作战训练</li>
+<li>审议2027年工作计划并签署合作文件</li>
+<li>关注军事体育合作与青少年爱国主义教育</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">巩固哈国在独联体安全框架内地位，深化军事教育、训练合作，促进双边防务关系；对矿产格局无直接影响，但稳定地区安全环境间接利好资源开发与出口。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/zaiguolihuizhong-d6405172/" target="_blank">哈萨克斯坦在联合国安理会呼吁缓解中东紧张局势</a></h3>
+<div class="item-meta">哈通社中文版 · 10/16 23:21<span class="source-link"><a href="https://cn.inform.kz/news/zaiguolihuizhong-d6405172/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦常驻联合国代表奥玛若夫在联合国安理会呼吁缓解中东紧张局势，强调政治外交解决冲突，支持“两国方案”和《纽约宣言》，关注人道援助、平民保护及加沙重建。哈方愿在基础设施修复、粮食安全和数字化领域提供帮助，并建议发挥阿斯塔纳“伊斯兰粮食安全组织”潜力。哈方还表达了加入《亚伯拉罕协议》的意向，视其为联合国框架内的补充平台，并呼吁各方保持克制。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">消息称，哈萨克斯坦常驻联合国代表海拉特·奥玛若夫代表哈萨克斯坦参与了讨论，并阐述了哈方在区域议程关键问题上的立场。
+哈萨克斯坦外交官在发言中对中东地区持续存在的紧张局势表示关切，强调必须通过政治和外交手段解决冲突，并防止局势进一步升级。
+奥玛若夫指出，哈萨克斯坦重申支持基于“两国方案”的解决途径，并支持为朝着这一方向采取具体步骤奠定基础的《纽约宣言》。此外，他还特别关注了人道主义援助的畅通无阻、平民保护以及加沙重建问题，同时也强调了联合国（包括联合国近东巴勒斯坦难民救济和工程处，简称“近东救济工程处”）所发挥的核心作用。
+哈萨克斯坦常驻联合国代表指出，哈方愿为稳定加沙局势及推动当地恢复重建做出切实贡献，包括在修复民用基础设施、保障粮食安全以及数字化等领域。在此背景下，建议充分发挥总部设在阿斯塔纳的“伊斯兰粮食安全组织”的潜力。
+此外，哈萨克斯坦加入《亚伯拉罕协议》的意向也受到了关注。哈萨克斯坦将该协议视为一个补充平台，有助于在联合国框架内推动政治进程，旨在实现基于“两国方案”的解决方案。
+最后，哈方呼吁各方保持最大限度克制，优先通过对话与外交途径解决问题。
+奥玛若夫同时重申，哈方愿继续开展建设性接触，旨在确保中东地区的和平与稳定。</div>
+<ul>
+<li>哈方呼吁政治外交解决中东冲突，防止升级</li>
+<li>支持“两国方案”和《纽约宣言》，关注加沙重建</li>
+<li>愿在基建、粮食安全、数字化领域提供切实贡献</li>
+<li>建议发挥阿斯塔纳伊斯兰粮食安全组织潜力</li>
+<li>表达加入《亚伯拉罕协议》意向，视为补充平台</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">提升哈萨克斯坦作为中立调解者的国际形象，增强与中东国家经济合作潜力，尤其在粮食安全和基建领域；加入《亚伯拉罕协议》意向可能调整其外交平衡，但强调联合国框架可缓解与伊朗等国的关系压力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/zaicop17renhuixiaxingyihui-e296ba11/" target="_blank">托卡耶夫总统在COP17领导人峰会框架下举行一系列会晤</a></h3>
+<div class="item-meta">哈通社中文版 · 10/16 19:44<span class="source-link"><a href="https://cn.inform.kz/news/zaicop17renhuixiaxingyihui-e296ba11/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在COP17领导人峰会框架下，分别会见联合国教科文组织总干事哈立德·埃尔-埃纳尼和欧盟委员会执行副主席特蕾莎·里韦拉。与教科文组织讨论教育、科学、文化合作前景，强调扩大国际倡议合作以发展人道主义联系和加强对话。与欧盟讨论可持续发展、能源及环境保护领域合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫总统分别同联合国教科文组织总干事哈立德·埃尔-埃纳尼，以及负责“清洁、公正与竞争性转型”事务的欧盟委员会执行副主席特蕾莎·里韦拉举行了会谈。
+在与哈立德·埃尔-埃纳尼会晤期间，双方讨论了哈萨克斯坦与联合国教科文组织在教育、科学和文化领域开展合作的前景。
+Фото: Акорда 会议强调了在推进国际倡议方面扩大合作的重要性。此举旨在发展各国间的人道主义联系，并加强彼此间的对话。
+在与特蕾莎·里韦拉的交谈中，双方讨论了加强哈萨克斯坦与欧盟在可持续发展、能源及环境保护领域合作的相关议题。</div>
+<ul>
+<li>托卡耶夫在COP17峰会期间举行系列双边会晤</li>
+<li>会见联合国教科文组织总干事埃尔-埃纳尼</li>
+<li>讨论教育、科学、文化领域合作前景</li>
+<li>会见欧盟执行副主席里韦拉</li>
+<li>讨论可持续发展、能源及环保合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">会晤强化哈萨克斯坦多边外交，提升国际形象；与欧盟深化能源与环保合作，有助于吸引绿色投资和技术；与教科文组织合作促进人文交流，为矿产和能源转型营造有利外部环境。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/zaishengwuduoyangxinggongdishifangdahuifa-c02b978a/" target="_blank">托卡耶夫总统在《生物多样性公约》第十七次缔约方大会发表讲话</a></h3>
+<div class="item-meta">哈通社中文版 · 10/16 19:22<span class="source-link"><a href="https://cn.inform.kz/news/zaishengwuduoyangxinggongdishifangdahuifa-c02b978a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫总统在《生物多样性公约》第十七次缔约方大会发表讲话，强调生物多样性对文明存续的关键作用，呼吁国际合作克服政治分歧。他介绍哈萨克斯坦生态成就：赛加羚羊从2003年2.1万只增至470万只，雪豹回升至约190只，图兰虎时隔70年放归野外，里海海豹从100万只骤降至27万只。哈国新宪法首次将生态文化列为国家核心原则，并倡议建立保护珍稀物种的国际基金。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫总统在《生物多样性公约》第十七次缔约方大会发表讲话
+正文:
+国家元首向峰会与会者致以问候，并感谢亚美尼亚总理尼科尔·帕希尼扬的热情款待，以及为在联合国生物多样性大会框架下举办的领导人峰会所做的高水平组织工作。
+总统强调了在自然保护方面对子孙后代肩负的共同责任，以及协调国际努力的必要性。
+- 我们齐聚于此，旨在深化国际合作，为子孙后代守护大自然的馈赠。换言之，我们正致力于履行对年轻一代的共同责任，因为他们很可能将面临复杂的挑战。这关乎我们文明的存续，毕竟生物多样性对于保障人类福祉、经济稳定及长远安全至关重要。完好的生态系统在粮食生产、水资源保护以及保障数百万人的生计方面发挥着至关重要的作用。荒漠化、水资源短缺及其他环境挑战，对自然与人类之间脆弱的平衡构成了严重威胁。对于数百万人而言，缺水和土地退化已成为常态。这些问题所带来的后果十分严重，因为它们的影响跨越了国界，不仅阻碍了可持续发展，还动摇了全球稳定。我们需要制定一项包含周密且具体举措的环境议程，并设法克服政治分歧。我们亟需开展国际合作，这种合作应建立在真诚的伙伴关系与包容性的基础之上，且最重要的是，必须致力于取得切实可行的成果。-他说。
+托卡耶夫总统表示，“清洁哈萨克斯坦”运动正成为一项全国性的理念。
+Фото: Ақорда 国家元首指出，哈萨克斯坦国土面积居世界第九位，并以其独特的生物多样性而著称。
+- 保护这一自然馈赠既是我们对公众应尽的义务，也是我们对国际社会承担的责任。这些价值观在哈萨克斯坦新宪法中得到了明确体现。国家历史上首次将培育高水平的生态文化确立为国家建设的核心原则之一，并写入根本大法。如今，公民有义务悉心呵护自然及其资源；此外，保护有利于公民生活与健康的环境也已被确立为国家的一项重要目标。我们坚信，保护自然财富必须与经济发展齐头并进。在全国范围内开展的“清洁哈萨克斯坦”（Taza Qazaqstan）行动，正是植根于这些价值观之中。这一运动已超越了单纯的环境清洁范畴；令人欣慰的是，它正演变为一种全国性的理念，塑造着公民的世界观与生活方式。-他说。
+托卡耶夫强调了哈萨克斯坦在保护和繁育珍稀动物物种方面所作的努力。他同时还表示，哈萨克斯坦在生物多样性保护领域已取得显著成果。目前，哈萨克斯坦鹿数量的增加可以说是这些成就之一。
+- 这种历经冰河时代幸存下来的古老动物，在维护我们草原生态平衡方面发挥着独特的作用。如今，全球近98%的赛加羚羊栖息在哈萨克斯坦草原上。2003年，我国境内的赛加羚羊数量仅为2.1万只，而到了今年春天，这一数字已达到470万只。此外，旨在恢复雪豹种群数量的努力也成效显著，令人倍感振奋；雪豹常被视为我们高山地区的标志性守护者，其约70%的自然栖息地位于我国境内的保护区内。雪豹种群曾在20世纪90年代濒临灭绝，但得益于各项保护举措和系统的科学监测，如今其数量已回升至约190只。这一成就凝聚了政府部门、科学家及国际合作伙伴多年来坚持不懈、尽职尽责的努力。-总统说。
+托卡耶夫对俄罗斯联邦及其总统、联合国开发计划署、世界自然基金会以及其他国际合作伙伴和非政府组织表示感谢，感谢它们支持将图兰虎重新引入其历史栖息地的努力。他还指出，今年7月，一只老虎时隔七十年首次被放归野外，这对哈萨克斯坦而言是一件具有重大意义的事件。
+Фото: Ақорда 此外，国家元首指出，将普氏野马重新引入哈萨克斯坦草原的工作，是在与捷克、德国和匈牙利各方伙伴的合作下开展的。
+哈萨克斯坦总统强调，有必要保护里海独特的生物多样性。
+- 近期在土库曼斯坦举行的首届里海环境峰会上，我呼吁采取紧急且协调一致的行动。这对于防止可能给这一脆弱生态系统造成不可逆转损害的事态发展至关重要。里海海豹面临的灭绝威胁尤其令人担忧；过去一个世纪里，其种群数量已从100万只骤降至27万只。在哈萨克斯坦，里海海豹已被正式列为珍稀濒危物种。我呼吁里海沿岸五国及国际社会携手合作，共同保护这一物种。咸海的悲剧是一个严峻的警示，提醒人们不负责任地利用自然资源会带来严重后果。我们绝不能让里海重蹈咸海的覆辙。-他说。
+国家元首强调了哈萨克斯坦旨在建立一个保护珍稀物种及维护生物多样性的国际基金的倡议，并呼吁外国伙伴支持这一举措。
+- 这一为期十年的倡议与“国家生物多样性保护计划”相辅相成。该计划概述了恢复自然栖息地、保护物种以及扩大特殊保护自然区域网络的方案。此外，我们已着手建立“国家生物多样性基因库”。哈萨克斯坦积极参与区域性的自然保护工作。今年4月，阿斯塔纳举办了区域环境峰会，会议通过了《关于中亚环境合作的阿斯塔纳宣言》。在里海沿岸五国的支持下，哈萨克斯坦提议通过一项旨在保护里海水资源的国际计划。-他说。
+随后，托卡耶夫总统列举了若干可开展联合工作的领域。国家元首认为，在水资源管理方面，必须加强协调。</div>
+<ul>
+<li>托卡耶夫在生物多样性公约大会呼吁国际合作保护自然</li>
+<li>哈国赛加羚羊从2.1万只增至470万只，雪豹回升至190只</li>
+<li>图兰虎时隔70年首次放归野外，普氏野马合作引入</li>
+<li>里海海豹百年间从100万只骤降至27万只，濒临灭绝</li>
+<li>哈国新宪法首次将生态文化列为国家建设核心原则</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">提升哈国生态外交话语权，强化中亚环境合作领导地位；推动绿色经济转型与生态文化入宪，增强政治合法性；国际基金倡议或吸引外资，但里海生态危机需平衡能源开发与保护。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://cn.inform.kz/news/huizhongshi-c47702a3/" target="_blank">副总统会见欧盟中亚事务特别代表</a></h3>
+<div class="item-meta">哈通社中文版 · 10/16 18:24<span class="source-link"><a href="https://cn.inform.kz/news/huizhongshi-c47702a3/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦副总统叶尔兰·卡林会见欧盟中亚事务特别代表，双方重点讨论了托卡耶夫总统倡议的宪法改革成果。卡林指出新宪法通过标志着国家体制现代化延续，为政治体制更新奠定基础，并强调宪法价值观是总统改革战略方向的基础。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">副总统会见欧盟中亚事务特别代表
+
+会谈中，双方重点关注了在国家元首倡议下实施的宪法改革成果。
+
+叶尔兰·卡林指出，新宪法的通过标志着国家体制现代化进程的延续，并为政治体制的更新奠定了基础。
+
+副总统表示，宪法价值观构成了哈斯穆-卓玛尔特·托卡耶夫总统改革战略方向的基础。</div>
+<ul>
+<li>副总统卡林会见欧盟中亚事务特别代表</li>
+<li>双方关注托卡耶夫倡议的宪法改革成果</li>
+<li>新宪法标志国家体制现代化进程延续</li>
+<li>宪法价值观构成总统改革战略基础</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次会谈强化哈国与欧盟关系，展示宪法改革进展，有助于提升国际形象，吸引投资，并平衡地缘政治影响，对政治稳定和外交多元化有积极意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">10</span> <a href="https://cn.inform.kz/news/chulicop17shengwuduoyangxingrenhui-4756e762/" target="_blank">托卡耶夫出席埃里温COP17生物多样性领导人峰会</a></h3>
+<div class="item-meta">哈通社中文版 · 10/16 14:51<span class="source-link"><a href="https://cn.inform.kz/news/chulicop17shengwuduoyangxingrenhui-4756e762/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫出席在埃里温举行的COP17生物多样性领导人峰会，亚美尼亚总理帕希尼扬和联合国秘书长古特雷斯迎接。峰会于2026年10月16日举行，是10月19日至30日COP17大会的高级别活动，主题为“为自然采取行动”。塔吉克斯坦、吉尔吉斯斯坦总统和格鲁吉亚总理等政要参加。大会将审议《昆明—蒙特利尔全球生物多样性框架》落实进展，目标到2030年保护至少30%的陆地和海洋区域，并恢复至少30%的退化生态系统。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据总统府新闻局消息，亚美尼亚总理尼科尔·帕希尼扬和联合国秘书长安东尼奥·古特雷斯迎接了托卡耶夫总统。
+Фото: Ақорда 峰会期间，托卡耶夫总统与其他与会领导人共同合影留念。
+据了解，COP17将于2026年10月19日至30日在埃里温举行，主题为“为自然采取行动”。
+Фото: Акорда 根据《生物多样性公约》秘书处公布的安排，本届COP17将于2026年10月19日至30日在亚美尼亚首都埃里温举行，主要会场设在Meridian Expo and Event会展中心。大会主题为“为自然采取行动”（Taking Action for Nature）。10月16日举行的生物多样性领导人峰会则是大会正式开幕前的重要高级别活动，主题口号为“领导人支持自然”（Leaders for Nature）。
+作为大会正式开幕前的重要高级别活动，生物多样性领导人峰会汇聚多国领导人及国际组织负责人。参加相关活动的政要包括塔吉克斯坦总统埃莫马利·拉赫蒙、吉尔吉斯斯坦总统萨德尔·扎帕罗夫和格鲁吉亚总理伊拉克利·科巴希泽等。
+本届COP17将重点审议《昆明—蒙特利尔全球生物多样性框架》的落实进展，并围绕生态系统保护与恢复、生物多样性保护资金以及国际合作等议题展开讨论。
+根据上述框架，各国致力于到2030年保护至少30%的陆地、内陆水域、沿海和海洋区域，并恢复至少30%的退化生态系统。
+COP17将对全球落实相关目标的进展进行首次全面审查，为各国进一步加强生物多样性保护行动提供重要平台。</div>
+<ul>
+<li>托卡耶夫出席埃里温COP17生物多样性领导人峰会</li>
+<li>COP17于2026年10月19日至30日在埃里温举行</li>
+<li>峰会主题为“为自然采取行动”</li>
+<li>多国领导人及国际组织负责人参加峰会</li>
+<li>大会将首次全面审查全球生物多样性目标进展</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">托卡耶夫出席COP17峰会有助于提升哈萨克斯坦在中亚生态外交中的话语权，推动区域生物多样性合作，并可能吸引国际资金支持哈国生态保护与绿色经济转型。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">11</span> <a href="https://cn.inform.kz/news/yuqiyiyongwuzike-2cca39bd/" target="_blank">哈萨克斯坦与土耳其已启用过境货物运输电子许可单证</a></h3>
+<div class="item-meta">哈通社中文版 · 10/16 12:12<span class="source-link"><a href="https://cn.inform.kz/news/yuqiyiyongwuzike-2cca39bd/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与土耳其已启用过境货物运输电子许可单证，简化申领流程并加快行政手续。土耳其正将此前与乌兹别克斯坦联合推出的电子许可系统推广至他国。双方强调在中间走廊货运发展中数字技术的重要性，需统一标准、实现信息系统互联互通，并建议启动试点明确信息交换规则与数据权限，以建立稳定可靠的公共数字服务体系。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据他介绍，土耳其高度重视国际公路运输数字化建设。目前，土方正将此前与乌兹别克斯坦联合推出的电子许可发放系统推广至其他国家。
+
+“通过与哈萨克斯坦在这一领域的合作，过境运输电子许可单证现已向承运人开放。这简化了单证申领流程，有助于加快行政手续办理，并对相关流程的执行情况进行监督。”博伊拉兹说。
+
+Фото: Ағыбай Аяпбергенов/Kazinform 他指出，随着中间走廊货运发展不断推进，数字技术的重要性日益凸显。实时掌握货物位置、分析运输途中出现的延误对后续环节的影响，并及时作出决策，对于保障国际贸易的可靠性至关重要。
+
+“我们的目标是建立一个综合系统，使货物运输各个阶段的信息都能及时获取，便于不同运输方式之间衔接，并能够提前规划物流流程。”他说。
+
+博伊拉兹还强调，要深化中间走廊沿线的数字合作，各参与国需要在统一标准的基础上，实现现有信息系统之间的互联互通。同时，各方应提前就数据共享的内容、权限以及相关责任主体达成一致。
+
+为此，土耳其方面建议从具体运输线路入手，启动相关试点工作，并由各方共同明确信息交换规则、数据访问权限以及相关负责机构的职责。
+
+“我们的目标是在整个走廊沿线建立一套运行稳定、可靠的公共数字服务体系。土耳其愿与本地区合作伙伴在这一方向上携手推进。”博伊拉兹总结道。</div>
+<ul>
+<li>哈土启用过境运输电子许可单证，简化流程并加强监督</li>
+<li>土耳其将哈乌联合电子许可系统推广至其他国家</li>
+<li>中间走廊货运发展凸显数字技术重要性</li>
+<li>各方需统一标准实现信息系统互联互通</li>
+<li>土耳其建议启动试点明确信息交换规则与数据权限</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">提升哈国过境运输效率与透明度，强化其作为中间走廊关键节点的地位，促进区域数字合作与贸易便利化，对矿产等大宗商品过境运输的物流格局产生积极影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/10yue15ri-herenminqing-5b5cc405/" target="_blank">10月16日终盘 美元、卢布和人民币兑坚戈汇率情况</a></h3>
+<div class="item-meta">哈通社中文版 · 10/16 22:23<span class="source-link"><a href="https://cn.inform.kz/news/10yue15ri-herenminqing-5b5cc405/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>10月16日，31个KASE成员参与外汇交易。美元兑坚戈平均报452.51，跌1.40坚戈，交易额3.4962亿美元，减少1.2855亿美元。欧元兑坚戈报509.38，涨0.22坚戈，交易额483万欧元。卢布兑坚戈报5.4134，跌0.0034坚戈，交易额18.1421亿卢布，大增7.5113亿卢布。人民币兑坚戈报67.8010，跌0.0719坚戈，交易额5635万元，增4590.6万元。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 10月16日终盘 美元、卢布和人民币兑坚戈汇率情况
+正文:
+31个KASE成员参与了交易。
+根据现货市场交易结果： 美元兑坚戈（交易工具USDKZT_TOM）汇率平均报价为1: 452.51（-1.40坚戈），外汇交易总额为3.4962亿美元（-1.2855亿美元）。交易过程中，最新报价为1:451.00坚戈，最高报价为1:454.03坚戈。
+欧元兑坚戈（交易工具EURKZT_TOM）汇率平均报价为1: 509.38（+0.22坚戈），外汇交易总额为483万欧元（-187.3万欧元）。交易过程中，最低报价为1:506.56坚戈，最高报价为1:510.94坚戈。
+卢布兑坚戈（交易工具RUBKZT_TOM）汇率平均报价为1:5.4134（-0.0034坚戈），外汇交易总额18.1421亿卢布（+7.5113亿卢布）。交易过程中，最低报价为1:5.3979坚戈，最高报价为1: 5.4344坚戈。
+人民币兑坚戈（交易工具CNYKZT_TOD）汇率平均报价为1:67.8010（-0.0719坚戈），外汇交易总额5635万元（+4590.6万元）。交易过程中，最低报价为1:67.4960坚戈，最高报价为1:67.8830坚戈。</div>
+<ul>
+<li>美元兑坚戈下跌1.40至452.51，交易额减少</li>
+<li>欧元兑坚戈微涨0.22至509.38，交易额下降</li>
+<li>卢布兑坚戈微跌至5.4134，交易额大增</li>
+<li>人民币兑坚戈跌至67.8010，交易额激增</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率波动反映坚戈对美元走强，卢布和人民币交易量增加，可能影响哈国与中俄的贸易结算和外汇储备结构，需关注货币政策调整。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/jiaxingchufen-jia-d1b0421b/" target="_blank">哈萨克斯坦六家银行推出分期付款卡 哪家条件更优惠？</a></h3>
+<div class="item-meta">哈通社中文版 · 10/16 14:17<span class="source-link"><a href="https://cn.inform.kz/news/jiaxingchufen-jia-d1b0421b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>Ranking.kz网站10月15日发布分析报告，哈萨克斯坦六家银行推出分期付款卡。Bereke Bank、Home Credit Bank、Altyn Bank、ForteBank、Bank CenterCredit和Kaspi Bank提供分期服务。Bereke Bank最长36个月，Altyn Bank和ForteBank One卡最长6个月，Home Credit Bank和ForteMarket最长12个月，Bank CenterCredit为3至24个月，Kaspi Red+仅4个月且限合作商户。除Kaspi Bank外，其余五家允许取现，Bereke Bank和Home Credit Bank免手续费，Altyn Bank取现手续费3%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据Ranking.kz网站10月15日发布的分析报告，哈萨克斯坦分期付款市场近年来发展迅速。从食品、药品到家用电器、汽车及各类服务，越来越多的商品和服务可以通过分期付款方式购买。
+这类产品遵循“先购买、后付款”的原则。在符合相关条件的情况下，消费者可以将购买费用分成若干期支付，无需承担额外费用。
+目前，哈萨克斯坦提供分期付款卡的银行包括Bereke Bank、Home Credit Bank、Altyn Bank、ForteBank、Bank CenterCredit和Kaspi Bank。
+其中，Bereke Bank的Alğa卡、Home Credit Bank的Özen卡、Altyn Bank的相关产品，以及ForteBank的Black卡和One卡，均支持在全球范围内使用，不局限于指定合作商户。
+相比之下，Bank CenterCredit和Kaspi Bank的分期付款服务主要面向合作商户。
+不同银行的分期期限存在明显差异。
+Bereke Bank提供最长36个月的分期付款服务，消费者可选择12个月、24个月或36个月等期限。
+Altyn Bank及ForteBank的One卡最长分期期限为6个月。
+在合作商户网络内，Home Credit Bank和ForteBank旗下ForteMarket平台均提供最长12个月的分期付款服务。
+Bank CenterCredit的#картакарта卡根据合作商户协议，提供3至24个月的分期付款服务。
+Kaspi Bank的Kaspi Red+卡则提供4个月分期，仅限合作商户使用。
+六家银行中，除Kaspi Bank外，其余五家均允许持卡人提取信用资金。
+其中，Bereke Bank和Home Credit Bank提供免手续费取现服务。
+其他银行的取现手续费分别为：
+Altyn Bank：3%；</div>
+<ul>
+<li>六家银行推出分期付款卡，市场快速发展</li>
+<li>Bereke Bank分期最长36个月，Kaspi Red+仅4个月</li>
+<li>五家银行允许取现，两家免手续费</li>
+<li>部分卡全球通用，部分仅限合作商户</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">促进消费信贷市场发展，加剧银行竞争，推动无现金支付普及。对经济有刺激消费作用，但需关注家庭债务风险。外交和矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/xinggong16riyuzhuyaowaizhijiande-3520a195/" target="_blank">央行公布16日坚戈与主要外币之间的汇率标准</a></h3>
+<div class="item-meta">哈通社中文版 · 10/16 13:31<span class="source-link"><a href="https://cn.inform.kz/news/xinggong16riyuzhuyaowaizhijiande-3520a195/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行公布2026年10月9日坚戈与主要外币汇率：美元兑坚戈1:454.14，欧元兑坚戈1:509.23，俄罗斯卢布兑坚戈1:5.41，土耳其里拉兑坚戈1:9.19，中国元兑坚戈1:67.87。央行规定，坚戈兑美元官方汇率基于阿斯塔纳时间15:30证券交易所加权平均汇率确定，其他外币汇率依据16:00交叉汇率计算。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">央行公布16日坚戈与主要外币之间的汇率标准
+
+根据央行公布的信息，2026年10月9日，哈萨克斯坦坚戈与国际主要货币之间的兑换汇率标准如下：
+美元兑坚戈（USD/KZT） – 1：454.14
+欧元兑坚戈（EUR/KZT）- 1：509.23
+俄罗斯卢布兑坚戈（RUB / KZT）-1: 5.41
+土耳其里拉兑坚戈（TRY / KZT）- 1: 9.19
+中国元兑坚戈（CNY / KZT）- 1：67.87
+值得一提的是，根据哈萨克斯坦国家银行规定，截至阿斯塔纳时间当日15:30，在哈萨克斯坦证券交易所形成的坚戈兑美元加权平均汇率，将被确定为下一工作日坚戈兑美元官方汇率；坚戈兑其他外币的官方汇率，则依据截至阿斯塔纳时间16:00形成的交叉汇率计算得出。</div>
+<ul>
+<li>美元兑坚戈汇率为1:454.14</li>
+<li>欧元兑坚戈汇率为1:509.23</li>
+<li>人民币兑坚戈汇率为1:67.87</li>
+<li>卢布兑坚戈汇率为1:5.41</li>
+<li>汇率确定基于交易所加权平均和交叉汇率</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率数据反映坚戈对主要货币的稳定态势，有利于哈萨克斯坦外贸和投资环境。央行明确的汇率形成机制增强了政策透明度，对矿产等大宗商品贸易的汇率风险管理具有积极意义。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/guonengtongyiyiying-4a71f8e2/" target="_blank">国际能源署同意加快释放石油储备以增加市场供应</a></h3>
+<div class="item-meta">哈通社中文版 · 10/16 16:49<span class="source-link"><a href="https://cn.inform.kz/news/guonengtongyiyiying-4a71f8e2/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>国际能源署理事会15日举行会议，重申对国际能源安全的承诺，继续落实2026年3月为应对霍尔木兹海峡危机采取的集体行动。截至目前，成员国已释放约3.3亿桶原油，并同意采取一切必要措施及时完成剩余储备释放，同时加快交付速度，包括尽快交付超过2000万桶柴油。今年3月，32个成员国一致同意释放4亿桶战略石油储备，以应对美国和以色列军事打击伊朗导致的全球石油供应紧张。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据国际能源署官网消息，国际能源署理事会15日举行会议。会后声明称，国际能源署重申了其对国际能源安全的承诺，将继续落实2026年3月为应对霍尔木兹海峡危机而采取的集体行动。
+声明指出，国际能源署成员国截至目前已释放约3.3亿桶原油。各成员国同意根据本国实际情况，采取一切必要措施，及时完成剩余储备的释放。
+此外，各成员国已同意加快剩余货物的交付速度，具体计划已经制定，包括尽快交付超过2000万桶柴油。
+今年3月，国际能源署宣布32个成员国一致同意释放4亿桶战略石油储备，以应对因美国和以色列军事打击伊朗导致全球石油供应紧张的局面。</div>
+<ul>
+<li>国际能源署理事会15日举行会议，重申国际能源安全承诺</li>
+<li>成员国已释放约3.3亿桶原油，同意完成剩余储备释放</li>
+<li>同意加快交付速度，包括尽快交付超2000万桶柴油</li>
+<li>今年3月32国一致同意释放4亿桶战略石油储备</li>
+<li>行动背景为美以军事打击伊朗致全球石油供应紧张</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈萨克斯坦而言，国际能源署加快释放石油储备可能短期压低国际油价，影响哈国石油出口收入；但供应增加有助于稳定全球能源市场，降低哈国经济面临的外部不确定性。哈国作为欧佩克+非成员产油国，需关注油价波动对财政和矿产格局的传导。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/xingyuquan-bb85ed16/" target="_blank">哈萨克斯坦加入世界银行“金属与矿产契约”全球倡议</a></h3>
+<div class="item-meta">哈通社中文版 · 10/16 15:30<span class="source-link"><a href="https://cn.inform.kz/news/xingyuquan-bb85ed16/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦成为中亚首个加入世界银行“金属与矿产契约”的国家，加入仪式于10月16日在泰国举行的世行与国际货币基金组织年会期间举行。契约由哈工业和建设部与战略规划和改革署同世行共同制定，明确2026至2030年合作方向，目标在2031年前吸引约200亿美元投资，涵盖完善政策监管、推进地质勘探与基础设施、吸引私人投资三大方向。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦加入世界银行“金属与矿产契约”全球倡议
+
+哈萨克斯坦由此成为中亚地区首个加入世界银行集团“金属与矿产契约”（Metals and Minerals Compact）全球倡议的国家。
+
+今年10月16日，哈萨克斯坦正式加入该倡议的仪式在泰国举行的世界银行集团与国际货币基金组织年会期间举行。
+
+为落实国家元首在国情咨文中关于发展矿业冶金综合体、吸引投资的指示，哈萨克斯坦工业和建设部与战略规划和改革署同世界银行合作，共同制定了《金属与矿产国家契约》（Metals and Minerals Compact）。该文件明确了2026年至2030年双方合作的主要方向，并整合了世界银行集团的金融、分析和技术支持工具。
+
+《契约》以哈萨克斯坦多项国家战略文件为基础，包括《至2029年国家发展计划》《2023—2027年地质领域发展构想》以及《2024—2028年稀有金属和稀土金属领域发展综合计划》。其中一项主要目标是助力哈萨克斯坦在2031年前吸引约200亿美元投资。相关资金计划用于扩大矿产原料基地、发展矿产开采与加工企业、引进现代技术以及建设必要的配套基础设施。
+
+《契约》涵盖三大合作方向：
+
+第一，完善矿业冶金综合体的国家政策与监管机制。通过这一举措，营造透明、可预期的营商环境，改善投资环境，并为引入国际环境和社会标准创造必要条件。
+
+第二，推进地质勘探、基础设施和人才队伍建设。重点包括地质数据数字化、改善能源和交通基础设施、引进现代金属加工技术，以及培养高素质专业人才。
+
+第三，吸引私人投资，推动矿产资源开采与精深加工。计划利用世界银行集团的融资和担保工具支持投资项目，发展生产高附加值产品的企业，并吸引国际投资者参与。
+
+该契约的实施将有助于推动原材料精深加工、创造新的就业岗位，并进一步巩固哈萨克斯坦在全球生产链中的地位。</div>
+<ul>
+<li>哈萨克斯坦成中亚首个加入世行金属与矿产契约国家</li>
+<li>契约明确2026至2030年合作方向，目标吸引200亿美元投资</li>
+<li>三大合作方向：政策监管、地质勘探与基建、私人投资</li>
+<li>契约基于多项国家战略，助力矿产精深加工与全球链地位</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该契约将改善哈国矿业投资环境，吸引约200亿美元外资，推动矿产精深加工与就业，巩固其全球生产链地位，并深化与世行及国际投资者合作。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/guo15ribuyi-ad1f6afc/" target="_blank">国际油价15日涨跌不一</a></h3>
+<div class="item-meta">哈通社中文版 · 10/16 10:48<span class="source-link"><a href="https://cn.inform.kz/news/guo15ribuyi-ad1f6afc/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>截至15日收盘，国际油价涨跌不一。纽约商品交易所11月交货的轻质原油期货价格上涨2.88美元，收于每桶97.97美元，涨幅3.03%；12月交货的伦敦布伦特原油期货价格下跌14美分，收于每桶105.92美元，跌幅0.13%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 国际油价15日涨跌不一
+正文:
+截至当天收盘，纽约商品交易所11月交货的轻质原油期货价格上涨2.88美元，收于每桶97.97美元，涨幅为3.03%；12月交货的伦敦布伦特原油期货价格下跌14美分，收于每桶105.92美元，跌幅为0.13%。</div>
+<ul>
+<li>WTI原油涨2.88美元至97.97美元/桶，涨幅3.03%</li>
+<li>布伦特原油跌0.14美元至105.92美元/桶，跌幅0.13%</li>
+<li>两大基准油价走势分化，涨跌不一</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈萨克斯坦经济影响有限，因油价仍处高位，有利于石油出口收入；但布伦特微跌可能抑制短期财政预期，外交上需关注OPEC+后续产量政策。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-10-17 09:03</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
