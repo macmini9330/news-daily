@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年10月18日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年10月18日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年10月17日早9:00至2026年10月18日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 12 条</span><span class="stat-chip">3 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">8</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">0</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">1</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/gosgarantiya-navnesennie-pensionnie-vznosi-sohranitsya-prichastnom-upravlenii-mi-1648b277" target="_blank">劳动部：私人管理下养老金缴费的国家保障将保留</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/18 04:48<span class="source-link"><a href="https://www.inform.kz/ru/gosgarantiya-navnesennie-pensionnie-vznosi-sohranitsya-prichastnom-upravlenii-mi-1648b277" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦劳动部宣布，私人管理养老金时，国家仍担保实际缴纳的养老金缴费保全，但投资风险由存款人自担。从2026年9月7日起，公民可将最多100%的养老金累积资金（含强制性和强制性职业养老金缴费）移交私人管理公司，自主选择管理公司和投资策略。具体条件和担保范围由现行法律确定，建议公民仔细评估风险。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：劳动部：私人管理下缴纳的养老金缴费国家担保将保留
+正文：
+——在选择私人管理时，实际缴纳的养老金缴费保全的国家担保完全保留，而对自愿选择的投资风险的全部责任直接由存款人本人承担，该部网站报道。
+这种方法意味着国家担保与投资风险的明确区分。
+规定可以移交高达100%的累积养老金资金，包括移交私人管理。正如在中央通信局简报会上所解释的，每位存款人将能够独立选择管理公司和适合他的投资策略。
+移交累积资金的具体条件和担保的极限范围由现行养老金法律规定。
+在做出决定并选择管理公司之前，建议公民仔细了解其投资策略和潜在风险。
+此前有报道称，从2026年9月7日起，哈萨克斯坦人将能够将高达100%的由强制性养老金缴费和强制性职业养老金缴费形成的养老金累积资金移交投资组合管理公司（УИП）信托管理。</div>
+<ul>
+<li>私人管理下国家担保实际缴费保全，投资风险由存款人承担</li>
+<li>2026年9月7日起可移交最多100%养老金累积资金</li>
+<li>存款人可自主选择管理公司和投资策略</li>
+<li>移交条件和担保范围由现行养老金法律规定</li>
+<li>建议公民选择前仔细了解投资策略和风险</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该政策赋予公民养老金投资选择权，推动养老金市场化管理，但风险自担可能增加个人投资压力。对哈国经济而言，私人管理或提升养老金收益，影响资本市场格局；政治层面体现国家担保与市场责任的平衡；外交和矿产格局无直接关联。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/mintruda-obyasnilo-pochemu-semi-sodinakovim-chislom-detey-mogut-nuzhdatsya-vrazn-e3ac6919" target="_blank">劳动部解释为何子女数量相同的家庭可能需要不同的国家支持</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/18 04:09<span class="source-link"><a href="https://www.inform.kz/ru/mintruda-obyasnilo-pochemu-semi-sodinakovim-chislom-detey-mogut-nuzhdatsya-vrazn-e3ac6919" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦劳动部宣布，自2027年1月1日起，14种国家补贴将改用需求原则，通过“家庭数字地图”综合评估家庭物质状况、就业、住房、财产、信贷等，将家庭分为A至E五类。A、B类家庭将不再获得相关补贴（法律例外除外），C、D、E类在符合条件时保留权利。其余22种补贴程序不变。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：劳动部解释为何子女数量相同的家庭可能需要不同的国家支持
+
+正文：
+目前，一系列补贴的权利按类别原则确定。这意味着，社会地位相同的家庭可能获得相同的支付，尽管其在物质状况和独立满足自身需求的能力上存在显著差异。
+
+该部举了两个假定的多子女家庭的例子，每个家庭都养育着四个孩子。迪达尔家庭拥有自己的住房、昂贵的汽车、稳定的就业和自己的生意。根据这些指标的综合，该家庭属于“A”类——社会福祉水平高。
+
+叶尔兰家庭住在一套小公寓里，父母受雇工作，没有昂贵的财产和额外的物质资源。根据指标的综合，该家庭属于“C”类——福祉水平令人满意。
+
+因此，在家庭构成相同的情况下，家庭独立满足自身需求的能力存在显著差异。对于“A”类家庭来说，额外的国家支持并非首要，而对于“C”类家庭来说，支付可能具有更大的意义，包括用于覆盖日常开支。
+
+自2027年1月1日起，在指定某些补贴时将适用需求原则，该原则规定对家庭的社会福祉进行综合评估。为此使用“家庭数字地图”，它根据国家信息系统的数据确定家庭的生活状况。评估时考虑物质状况、就业、住房条件、财产情况、经营活动、信贷义务和家庭的社会稳定性。
+
+根据分析结果，家庭被划分为五个类别：
+
+同时，拥有公寓、汽车或其他单独财产本身并不是将家庭归入高福祉类别的依据。类别根据反映家庭实际状况的指标综合确定。
+
+自2027年1月1日起，需求原则将适用于14种国家补贴。对于“A”类和“B”类家庭，相应支付将不予指定，除非法律规定的例外情况。“C”、“D”和“E”类家庭在符合规定条件的情况下保留获得这些支持措施的权利。
+
+由共和国预算资助的其他22种国家补贴的指定程序不会改变。</div>
+<ul>
+<li>2027年起14种补贴改用需求原则</li>
+<li>数字地图综合评估家庭福祉分五类</li>
+<li>A、B类家庭将不再获得相关补贴</li>
+<li>C、D、E类符合条件可保留补贴</li>
+<li>其余22种国家补贴程序不变</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举优化财政支出，提高补贴精准性，缓解社会不平等；但可能引发部分中产家庭不满，需平衡政治稳定与福利效率。对矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/vezdehodi-proverili-vokzal-astana-1-pered-otkritiem-posle-rekonstruktsii-26e07f23" target="_blank">“全地形车”在改造后开放的“阿斯塔纳-1”火车站进行测试</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/18 02:27<span class="source-link"><a href="https://www.inform.kz/ru/vezdehodi-proverili-vokzal-astana-1-pered-otkritiem-posle-rekonstruktsii-26e07f23" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦劳动和社会保护部专家对改造后的«阿斯塔纳-1»火车站进行无障碍检查，评估周边区域、入口、内部路线、卫生设施、站台出口等，确保行动不便群体安全独立通行。自2026年7月1日新建筑法典生效，委员会参与协调无障碍声明。2026年前九个月收到562份申请，协调147份（26%），拒绝259份（46%），其余审议中。阿克莫拉州已改造16个火车站。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：«越野车»在改造后开放前检查了«阿斯塔纳-1»火车站
+正文：检查目的是帮助消除火车站投入运营前可能存在的障碍。此次出行有当地执行机构代表、阿斯塔纳市居民社会保护领域调节与监督委员会地区部门代表、«哈萨克斯坦铁路»国家公司股份公司代表、承包组织代表以及劳动和社会保护部编外顾问参加。
+图片：哈萨克斯坦共和国劳动和社会保护部 专家们评估了火车站周边区域、入口和通行路径、入口组、内部路线、卫生设施、站台出口、行动不便群体休息室、接待区和铁路售票区。特别关注了开门便利性以及在整个路线上独立安全移动的可能性。
+图片：哈萨克斯坦共和国劳动和社会保护部 这种互动形式使客户和承包商能够在设施开放前考虑意见并做出必要调整。
+图片：哈萨克斯坦共和国劳动和社会保护部 自2026年7月1日起，哈萨克斯坦共和国新建筑法典生效。居民社会保护领域调节与监督委员会在其职权范围内参与协调关于设施符合残疾人和其他行动不便群体无障碍要求的声明。
+2026年前九个月，地区部门收到了562份此类声明协调申请。已协调147份声明（26%），259份申请（46%）被拒绝，其余正在审议中。
+此前有报道称，阿克莫拉州已现代化改造了16个火车站。</div>
+<ul>
+<li>专家检查阿斯塔纳-1火车站无障碍设施</li>
+<li>评估入口、路线、卫生设施及站台出口</li>
+<li>新建筑法典2026年7月1日生效</li>
+<li>前九月562份无障碍声明申请，协调26%</li>
+<li>阿克莫拉州已改造16个火车站</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">提升残疾人出行便利，体现社会政策落实；新建筑法典强化无障碍标准，可能增加改造合规成本；火车站现代化助力区域交通与经济联通。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(8 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/erdogan-k2027-godu-tret-abonentov-vturtsii-budet-potreblyat-mestniy-gaz-8c7aaefd" target="_blank">埃尔多安：到2027年土耳其三分之一用户将消费本地天然气</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/18 00:56<span class="source-link"><a href="https://www.inform.kz/ru/erdogan-k2027-godu-tret-abonentov-vturtsii-budet-potreblyat-mestniy-gaz-8c7aaefd" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>土耳其总统埃尔多安在宗古尔达克省菲利奥斯港为浮式生产平台“奥斯曼·加齐”号启航发表视频讲话，称该平台是能源行业新阶段。平台配备21套装置处理萨卡里亚气田天然气，投用后黑海天然气日产量将翻倍至2000万立方米。埃尔多安表示，从2027年初起，土耳其每三户家庭就有一户使用国产天然气。平台长298.5米、宽56米、高29.5米，将有140名专家工作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">土耳其总统雷杰普·塔伊普·埃尔多安在向宗古尔达克省菲利奥斯港举行的浮式生产平台“奥斯曼·加齐”号启航仪式参与者发表的视频讲话中宣布了这一点。
+土耳其总统称该平台的启航是该国能源行业发展的新阶段。
+“今天，我们正在翻开我国能源史上全新的一页。我们正将‘奥斯曼·加齐’号平台派往黑海执行任务，它实际上是一个浮式工业综合体，”埃尔多安表示。
+据他介绍，该平台配备了21套技术装置，用于处理来自萨卡里亚气田井口的天然气，并通过海底管道将其输送至菲利奥斯。
+该平台投入使用将使黑海的天然气产量翻倍，达到每日2000万立方米。
+“因此，从2027年初开始，土耳其每三户家庭中就有一户将使用我们国产的天然气，”总统指出。
+平台长298.5米，宽56米，船体高29.5米。将有140名专家在该设施上工作。
+2025年5月，我们曾报道，土耳其历史上首座浮式天然气生产平台（FPU）“奥斯曼·加齐”号被派往黑海。</div>
+<ul>
+<li>埃尔多安称“奥斯曼·加齐”平台启航是能源行业新阶段</li>
+<li>平台配备21套装置处理萨卡里亚气田天然气</li>
+<li>投用后黑海天然气日产量翻倍至2000万立方米</li>
+<li>2027年初起土耳其三分之一家庭将用国产气</li>
+<li>平台长298.5米宽56米高29.5米，140名专家工作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国而言，土耳其国产天然气增产将降低其能源进口依赖，可能影响里海地区天然气出口格局；哈国作为天然气出口国需关注土耳其市场变化，同时可借鉴其浮式生产平台技术经验。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/guojialiwen-cc7c1bcd/" target="_blank">国家元首向巴基斯坦总理夏巴兹致慰问电</a></h3>
+<div class="item-meta">哈通社中文版 · 10/17 19:15<span class="source-link"><a href="https://cn.inform.kz/news/guojialiwen-cc7c1bcd/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫就巴基斯坦西北部白沙瓦市一所学校屋顶坍塌事故造成多人伤亡，向巴基斯坦总理夏巴兹致慰问电，对巴基斯坦人民表示深切慰问，并祝愿伤者早日康复。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 国家元首向巴基斯坦总理夏巴兹致慰问电
+正文:
+慰问电中，托卡耶夫总统就巴基斯坦西北部白沙瓦市一所学校屋顶坍塌事故造成多人伤亡，向该国总理表示慰问。
+国家元首对巴基斯坦人民表示深切慰问，并祝愿伤者早日康复。</div>
+<ul>
+<li>托卡耶夫就白沙瓦学校屋顶坍塌事故致慰问电</li>
+<li>事故造成多人伤亡</li>
+<li>向巴基斯坦人民表示深切慰问</li>
+<li>祝愿伤者早日康复</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此慰问电体现哈萨克斯坦对巴基斯坦的人道关怀，有助于巩固双边友好关系，提升哈国在伊斯兰世界的形象，但短期内对政治经济矿产格局无实质影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/yuxiangfaming-liangguozheng6zhongyaowen-1f530472/" target="_blank">托卡耶夫总统与柬埔寨首相洪玛奈发表联合声明 两国政府签署6项重要文件</a></h3>
+<div class="item-meta">哈通社中文版 · 10/17 18:10<span class="source-link"><a href="https://cn.inform.kz/news/yuxiangfaming-liangguozheng6zhongyaowen-1f530472/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与柬埔寨首相洪玛奈举行会谈并发表联合声明，两国政府签署6项重要文件，涵盖人工智能与数字发展、数字政府与GovTech、贸易经济合作、文化艺术、旅游以及阿斯塔纳与金边建立友好城市关系等领域。托卡耶夫在总统府为洪玛奈举行欢迎仪式，双方随后进行了小范围和大范围会谈。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫总统与柬埔寨首相洪玛奈发表联合声明 两国政府签署6项重要文件
+正文:
+两国领导人还出席了政府间合作协议文件交换仪式。
+根据会谈结果，两国政府间签署了以下6项重要文件：
+1. 哈萨克斯坦共和国人工智能与数字发展部同柬埔寨王国邮电部关于相互理解的谅解备忘录；
+2. 哈萨克斯坦共和国人工智能与数字发展部、“国家信息技术”股份公司同柬埔寨王国内政部关于数字政府、GovTech（政府科技）及信息通信技术领域合作的谅解备忘录；
+3. 哈萨克斯坦共和国贸易和一体化部同柬埔寨王国商业部关于贸易和经济合作的谅解备忘录；
+4. 哈萨克斯坦共和国文化和信息部同柬埔寨王国文化艺术部关于文化和艺术领域合作的谅解备忘录；
+5. 哈萨克斯坦共和国旅游和体育部同柬埔寨王国旅游部关于旅游领域合作的谅解备忘录；
+6. 阿斯塔纳市与金边市建立友好城市关系的谅解备忘录。
+Фото: Акорда Фото: Акорда Фото: Акорда Фото: Акорда 据此前报道，国家元首哈斯穆-卓玛尔特·托卡耶夫在总统府举行仪式，欢迎柬埔寨首相洪玛奈对哈萨克斯坦进行正式访问。
+随后，两国领导人举行了小范围和大范围会谈。</div>
+<ul>
+<li>哈柬签署6项合作文件，涵盖数字、贸易、文化、旅游等领域</li>
+<li>人工智能与数字发展部同柬方签署数字政府和GovTech合作备忘录</li>
+<li>贸易和一体化部与柬商业部签署贸易经济合作备忘录</li>
+<li>阿斯塔纳与金边建立友好城市关系</li>
+<li>托卡耶夫为洪玛奈举行欢迎仪式并举行大小范围会谈</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈柬双边关系，拓展哈国在东南亚的外交布局；数字与贸易合作有助于哈国经济多元化和GovTech经验输出，旅游合作促进人员往来，友好城市机制增强地方外交，但矿产领域未涉及，对哈国矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/hexiangxingdahui-bd822628/" target="_blank">哈萨克斯坦总统和柬埔寨首相举行大范围会谈</a></h3>
+<div class="item-meta">哈通社中文版 · 10/17 17:47<span class="source-link"><a href="https://cn.inform.kz/news/hexiangxingdahui-bd822628/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与柬埔寨首相洪玛奈举行大范围会谈，今年是两国建交32周年。双方将通过《联合声明》并签署系列合作文件，哈方视柬埔寨为东南亚可靠伙伴和扩大与东盟合作的重要国家。托卡耶夫表示支持柬埔寨《2050年愿景》和“五角战略”，认为在高技术、人工智能领域合作潜力巨大。洪玛奈指出超过120名柬埔寨学生曾留学哈萨克斯坦，柬方有意在粮食安全、农业和加工工业领域深化合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">国家元首指出，柬埔寨首相洪玛奈对哈萨克斯坦的首次访问，将为重启双边关系开辟道路，并为将共同意愿转化为具体行动提供机遇。
+今年是两国建交32周年。多年来，两国保持了建设性的政治对话，并持续稳步推进互利合作。我们未来的发展方向已体现在今天即将通过的《联合声明》中。此外，我们还将签署一系列合作文件。哈萨克斯坦视柬埔寨为东南亚的可靠伙伴，也是扩大与东盟组织合作的重要国家之一。——总统说。
+托卡耶夫总统指出，哈萨克斯坦与柬埔寨在国际舞台上建立了密切的联系，其中包括在两国常驻联合国代表团工作框架内的积极互动。
+总统高度评价了柬埔寨对哈萨克斯坦在联合国大会议程中提出的倡议的支持。
+Фото: Акорда 托卡耶夫指出，在洪玛奈的领导下，柬埔寨在社会经济发展方面取得了显著成就。
+国家元首表示，哈萨克斯坦支持柬埔寨政府为实现《2050年柬埔寨愿景》和“五角战略”等规划中所确定的长期战略目标而做出的努力。
+总统在讲话中认为，在加强高技术领域合作方面存在着巨大的潜力。
+——我知道您和您的代表团对我国为发展人工智能正在采取的措施表现出了兴趣。今天，在阿斯塔纳的 Alem.ai 国际人工智能中心，您可以了解哈萨克斯坦在该领域取得的成就和主要研发成果。根据联合国电子政务发展指数，我国在各个方向上都持续展现出积极的发展势头。我坚信，只要有共同的意愿和坚定的政治决心，我们就能够在许多符合我们共同利益的方向上扩大合作范围。——他说。
+Фото: Акорда 柬埔寨首相洪玛奈特别指出了两国之间文化和人文交流的独特性质。
+——超过120名柬埔寨学生曾在哈萨克斯坦求学。如今，他们中的许多人在各省担任省长、国务秘书等职务，同时也在国家机关中担任重要负责职务。这表明，两国有着共同的历史纽带，两国人民之间也保持着紧密的联系。——他说。
+洪玛奈表示，柬方有意在粮食安全、农业和加工工业领域深化合作。
+双方表示相信，今天的高级别会谈将有助于扩大两国贸易额、加强商务往来，并开辟新的合作方向。
+Фото: Ақорда</div>
+<ul>
+<li>两国建交32周年，将通过《联合声明》并签署系列合作文件</li>
+<li>哈方视柬埔寨为东南亚可靠伙伴和扩大与东盟合作重要国家</li>
+<li>托卡耶夫支持柬埔寨《2050年愿景》和“五角战略”</li>
+<li>双方认为人工智能等高技术领域合作潜力巨大</li>
+<li>超120名柬埔寨学生曾留学哈萨克斯坦，多人担任要职</li>
+<li>柬方有意在粮食安全、农业和加工工业领域深化合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访重启哈柬双边关系，拓展哈国在东南亚的外交布局，强化与东盟合作。农业和粮食安全合作有助于哈国粮食出口多元化，人工智能合作推动数字经济转型，但短期经济效应有限，更多体现外交平衡与战略布局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/yuxiangxingxiaohui-bdf7ec68/" target="_blank">托卡耶夫总统与柬埔寨首相洪玛奈举行小范围会谈</a></h3>
+<div class="item-meta">哈通社中文版 · 10/17 16:20<span class="source-link"><a href="https://cn.inform.kz/news/yuxiangxingxiaohui-bdf7ec68/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与柬埔寨首相洪玛奈举行小范围会谈。托卡耶夫表示此访具有历史意义，是柬埔寨首相首次访哈，并提及洪玛奈父亲1982年曾访哈。双方讨论开通直航、密切人文联系、扩大自然资源合作、巩固经贸合作。洪玛奈感谢邀请，指出两国建交超30周年，建议深化能源合作并交流电子政府经验。双方还讨论了扩大政治对话和多边平台合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫总统与柬埔寨首相洪玛奈举行小范围会谈
+正文:
+哈萨克斯坦总统向高贵的外宾致以亲切问候，并表示此访将为双边关系注入新的动力，为开展互利合作的发展前景开辟道路。
+- 我认为您的访问具有重大的历史意义。因为在此之前，柬埔寨首相从未访问过哈萨克斯坦。而您本人与哈萨克斯坦土地有着深厚的渊源，您的父亲曾在1982年访问过我国。今天，我们将探讨双边关系的广泛议题。哈萨克斯坦人民对贵国怀有特殊的情谊，许多同胞都渴望前往柬埔寨旅游并领略当地的美景。我们应当研究开通两国的直航航班问题，同时也有必要进一步密切人文领域的联系。- 托卡耶夫说道。
+Фото: Акорда 总统指出，哈萨克斯坦和柬埔寨都是自然资源丰富的国家，双方完全可以在该领域扩大合作。
+此外，托卡耶夫总统还表示，在会谈期间将就巩固经贸合作的相关问题进行探讨。
+Фото: Акорда 柬埔寨首相感谢托卡耶夫总统的访问邀请，并指出两国建交已超过30周年。
+- 我认为，今天我们迎来了深化能源领域合作的机遇。我们可以指示各自的相关部门确定相互利益的方向。哈萨克斯坦在电子政府建设方面取得了显著成就，并拥有先进的开发成果。我们的各部委对此领域的经验交流表现出浓厚的兴趣。- 洪玛奈说道。
+会谈期间，双方就进一步扩大政治对话、经贸联系以及在多边平台上的合作进行了全面讨论。
+Фото: Ақорда &amp;nbsp;</div>
+<ul>
+<li>柬埔寨首相首次访哈，洪玛奈父亲1982年曾访哈</li>
+<li>双方研究开通直航，密切人文领域联系</li>
+<li>两国均为资源富国，同意扩大自然资源合作</li>
+<li>洪玛奈提议深化能源合作，交流电子政府经验</li>
+<li>两国建交超30周年，将扩大政治对话和多边合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访将推动哈柬关系升级，拓展哈国在东南亚的外交布局；能源与矿产合作有望为哈国经济注入新动力，直航开通将促进人文旅游交流，电子政府经验输出提升哈国区域影响力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/xingxiangwen-e630008e/" target="_blank">托卡耶夫举行仪式欢迎柬埔寨首相洪玛奈访问哈萨克斯坦</a></h3>
+<div class="item-meta">哈通社中文版 · 10/17 14:22<span class="source-link"><a href="https://cn.inform.kz/news/xingxiangwen-e630008e/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在总统府为到访的柬埔寨首相洪玛奈举行隆重欢迎仪式，两国领导人介绍官方代表团成员，仪仗队敬礼报告，军乐团奏两国国歌，随后举行小范围会谈。2026年1至8月双边贸易额达2,940万美元，同比增长3.2%，哈从柬进口纺织品、鞋类及消费品，向柬出口测控仪器。此前7月17日两人在上海世界人工智能大会期间已会晤。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">总统府礼宾大厅举行了隆重的欢迎仪式，仪仗队整齐列队。两国领导人相互介绍了各自出席仪式的官方代表团成员。
+Фото: Акорда 随后，仪仗队队长向贵宾敬礼，并作正式报告。
+哈萨克斯坦总统管弦乐团奏响了哈萨克斯坦和柬埔寨两国国歌。
+Фото: Акорда 国歌奏毕，托卡耶夫陪同柬埔寨首相洪玛奈沿红毯走向哈萨克斯坦国旗。随后，两国领导人举行小范围会谈。
+值得一提的是，2026年1月至8月，哈萨克斯坦与柬埔寨之间的双边贸易额达到2,940万美元，较去年同期增长了3.2%。
+Фото: Акорда 哈萨克斯坦从柬埔寨进口的主要商品为纺织品及针织品、鞋类以及部分消费品。而哈萨克斯坦向柬埔寨出口的产品则主要以测控仪器为主。
+据悉，今年7月17日，在上海举行的世界人工智能大会期间，哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫与柬埔寨首相洪玛奈举行了会晤。</div>
+<ul>
+<li>托卡耶夫为洪玛奈举行隆重欢迎仪式</li>
+<li>两国领导人举行小范围会谈</li>
+<li>2026年前8月双边贸易额2,940万美元，增3.2%</li>
+<li>哈进口纺织品鞋类，出口测控仪器</li>
+<li>两人7月已在上海AI大会期间会晤</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈柬政治互信，贸易规模虽小但增长稳定，有助于哈拓展东南亚外交与经济联系，矿产领域无直接涉及，测控仪器出口体现技术产品合作潜力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/xiangduijinxingzhengwen-04a2ecba/" target="_blank">直播：柬埔寨首相洪玛奈对哈萨克斯坦进行正式访问</a></h3>
+<div class="item-meta">哈通社中文版 · 10/17 13:59<span class="source-link"><a href="https://cn.inform.kz/news/xiangduijinxingzhengwen-04a2ecba/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2024年7月17日，哈萨克斯坦总统托卡耶夫与柬埔寨首相洪玛奈在上海世界人工智能大会期间会晤。托卡耶夫表示珍视两国基于友谊和相互尊重的伙伴关系，强调在农业、纺织业、旅游业、建筑业、食品工业和交通物流业等领域扩大双边贸易的潜力。洪玛奈确认柬方有兴趣加强双边关系，强调深化政府及工商界联系，并准备为共同合作项目提供全方位支持。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">今年7月17日，在上海举行的世界人工智能大会期间，哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫与柬埔寨首相洪玛奈举行了会晤。
+国家元首表示，哈萨克斯坦高度珍视与柬埔寨基于牢固友谊和相互尊重建立的伙伴关系。哈萨克斯坦总统强调，两国在为双边经贸合作注入新动力方面具有巨大的潜力。
+总统认为，有望扩大双边贸易额的潜力领域包括农业、纺织业、旅游业、建筑业、食品工业以及交通物流业。
+柬埔寨首相洪玛奈确认，柬方有兴趣加强与哈萨克斯坦的关系。他强调了深化两国政府及工商界之间联系的重要性，并表示准备为共同合作项目提供全方位的支持。</div>
+<ul>
+<li>托卡耶夫与洪玛奈7月17日在上海会晤</li>
+<li>哈方珍视与柬埔寨的友谊和伙伴关系</li>
+<li>重点合作领域包括农业、旅游、交通物流等</li>
+<li>柬方愿深化政府及工商界联系</li>
+<li>洪玛奈承诺为合作项目提供全方位支持</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访有助于哈萨克斯坦拓展东南亚外交布局，推动双边贸易与投资，促进交通物流和农业合作，但短期对哈国政治和矿产格局影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/yizai-3c0a7430/" target="_blank">伊朗革命卫队：一艘油轮在霍尔木兹海峡触雷爆炸</a></h3>
+<div class="item-meta">哈通社中文版 · 10/17 11:26<span class="source-link"><a href="https://cn.inform.kz/news/yizai-3c0a7430/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>伊朗革命卫队声明称，一艘载有超过200万桶原油的油轮在关闭所有导航和雷达系统后，试图在美军支持下通过霍尔木兹海峡，触雷爆炸。声明再次强调霍尔木兹海峡已关闭。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 伊朗革命卫队：一艘油轮在霍尔木兹海峡触雷爆炸
+正文:
+声明说，该油轮载有超过200万桶原油，在关闭所有导航和雷达系统后试图在美军的支持下通过霍尔木兹海峡。
+声明再次强调“霍尔木兹海峡已关闭”。</div>
+<ul>
+<li>油轮载超200万桶原油</li>
+<li>油轮关闭导航雷达系统</li>
+<li>油轮试图在美军支持下通过</li>
+<li>油轮触雷爆炸</li>
+<li>革命卫队重申海峡已关闭</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该事件加剧霍尔木兹海峡紧张局势，可能推高国际油价，影响哈萨克斯坦石油出口通道安全与外交平衡，促使哈方关注替代路线。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/eksport-podsolnechnogo-masla-izkazahstana-viros-na485-6aefdf17" target="_blank">哈萨克斯坦葵花籽油出口增长48.5%</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/18 00:10<span class="source-link"><a href="https://www.inform.kz/ru/eksport-podsolnechnogo-masla-izkazahstana-viros-na485-6aefdf17" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2025年哈萨克斯坦葵花籽油出口额增长48.5%，实物量增35.9%至61.14万吨，跻身全球六大出口国并对华排名第二。葵花籽粕出口位列欧盟和中国三大供应国。小麦出口额增26.5%至12.5亿美元，实物量超550万吨；面粉出口额增36%至4亿美元；亚麻籽出口额增2.3倍至3.878亿美元；成品饲料出口额增60.8%至5.776亿美元。高附加值产品出口总额达16.5亿美元，增长约48%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦葵花籽油出口增长48.5%
+——按实物量计算，供应量增长35.9%，达到61.14万吨。据哈萨克斯坦共和国农业部消息，2025年全年，哈萨克斯坦跻身全球六大葵花籽油出口国，并在对华供应国中排名第二。在葵花籽粕出口方面，该国位列欧盟和中国三大供应国之列，同时满足中亚国家需求的很大一部分。
+总体而言，哈萨克斯坦正在增加农产品原料及其加工产品的供应，且在一系列品类上，增长速度显著超过出口总体动态。
+粮食部门也呈现增长。小麦出口增长26.5%，达到12.5亿美元。向国外发送超过550万吨粮食，比去年同期增长13.8%。
+同时，粮食加工产品供应也在增长。小麦粉和小麦黑麦粉出口增长36%，达到4亿美元。按实物量计算，供应量增长22.8%，达到138万吨。
+亚麻籽出口显著增长。按金额计算增长2.3倍，达到3.878亿美元；按实物量计算增长2.5倍，达到78.08万吨。
+成品动物饲料供应价值增长60.8%，达到5.776亿美元，实物量增长44.2%。
+据该部数据，葵花籽油、面粉和成品动物饲料的出口总额达到16.5亿美元，比去年指标高出约48%。这表明高附加值产品出口在扩大。
+此前有报道称，哈萨克斯坦跻身全球最大小麦生产国之列，份额为2.3%。</div>
+<ul>
+<li>葵花籽油出口额增48.5%，实物量达61.14万吨</li>
+<li>跻身全球六大葵花籽油出口国，对华供应第二</li>
+<li>小麦出口额增26.5%至12.5亿美元，量超550万吨</li>
+<li>面粉出口额增36%至4亿美元，实物量138万吨</li>
+<li>高附加值产品出口总额16.5亿美元，增约48%</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上，高附加值农产品出口扩大将优化贸易结构、增加外汇收入；外交上，深化对华及欧盟的农业贸易纽带，提升哈国在中亚粮食安全中的枢纽地位；矿产格局无直接关联，但农业出口多元化有助于降低对资源型经济的依赖。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-10-18 09:02</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
