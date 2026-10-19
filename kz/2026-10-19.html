@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年10月19日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年10月19日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年10月18日早9:00至2026年10月19日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 4 条</span><span class="stat-chip">2 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">0</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">0</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">1</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/natskoordinatori-shos-dogovorilis-povisit-effektivnost-mehanizmov-organizatsii-9ecc2076" target="_blank">上合组织国家协调员商定提高组织机制效率</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/19 00:41<span class="source-link"><a href="https://www.inform.kz/ru/natskoordinatori-shos-dogovorilis-povisit-effektivnost-mehanizmov-organizatsii-9ecc2076" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>上合组织国家协调员会议讨论经贸与人文合作，就2026-2027年高层活动日程交换意见，重点筹备10月19-20日在杜尚别举行的政府首脑理事会会议，关注过境运输和金融合作成果文件。各方商定继续提高组织机制效率，加强成员国多领域协作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：上合组织国家协调员商定提高组织机制效率
+
+正文：
+与会者讨论了上海合作组织框架内经贸和人文合作发展的广泛问题。双方还就2026-2027年上合组织最高级别和高层级活动日程详细交换了意见。
+
+具体而言，会议审议了上合组织成员国政府首脑（总理）理事会会议的筹备问题，该会议将于10月19日至20日在杜尚别举行。特别关注了过境运输协作和加强金融合作领域的成果文件草案，以及完善组织活动的问题。
+
+会议结束后，国家协调员商定继续采取具体措施，提高上合组织机制效率，旨在加强成员国之间的多领域协作。
+
+上合组织成员国国家协调员理事会协调本组织当前活动，并保障参与国相关部委和机构的协作。</div>
+<ul>
+<li>上合组织国家协调员会议讨论经贸与人文合作发展</li>
+<li>审议2026-2027年上合组织高层活动日程安排</li>
+<li>重点筹备10月19-20日杜尚别政府首脑理事会会议</li>
+<li>关注过境运输与金融合作成果文件及组织完善</li>
+<li>商定继续提高机制效率，加强多领域协作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">上合组织机制效率提升将促进哈萨克斯坦过境运输潜力发挥和金融合作深化，有利于哈方在区域经贸格局中增强枢纽地位，并推动矿产等领域多边协作。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/kazahstanskiy-diplomat-bagdat-amreev-izbran-zamestitelem-gensekretarya-ois-a1de3a22" target="_blank">哈萨克斯坦外交官巴格达特·阿姆列耶夫当选伊斯兰合作组织副秘书长</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/18 22:38<span class="source-link"><a href="https://www.inform.kz/ru/kazahstanskiy-diplomat-bagdat-amreev-izbran-zamestitelem-gensekretarya-ois-a1de3a22" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>伊斯兰合作组织外长理事会第52届会议决定任命哈萨克斯坦外交官巴格达特·阿姆列耶夫为负责行政和财务的副秘书长。哈萨克斯坦代表团由副外长阿尔曼·伊萨加利耶夫率领。会议讨论了伊斯兰世界局势、巴以冲突等议题，哈方强调和平解决冲突及核不扩散、粮食安全等优先方向。哈所有倡议均纳入最终文件。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦外交官巴格达特·阿姆列耶夫当选伊斯兰合作组织副秘书长
+
+正文：
+该决定是在伊斯兰合作组织外交部长理事会（伊合组织外长理事会）第52届会议上作出的。哈萨克斯坦代表团由外交部副部长阿尔曼·伊萨加利耶夫率领出席。
+
+——对哈萨克斯坦而言，本届会议的重要成果是巴格达特·阿姆列耶夫大使当选为伊斯兰合作组织负责行政和财务问题的副秘书长。这一决定表明伊斯兰合作组织成员国对哈萨克斯坦的高度信任，并认可其为发展组织框架内多边合作所做的贡献，哈萨克斯坦外交部通报称。
+
+图片：哈萨克斯坦外交部
+
+会议期间，伊斯兰合作组织成员国代表团团长讨论了国际和地区议程的紧迫问题，特别关注伊斯兰世界局势、军事政治和人道主义危机的解决，包括巴以冲突。与会者指出，必须加强外交努力以缓和近东紧张局势，巩固和平与地区稳定。
+
+图片：哈萨克斯坦外交部
+
+阿尔曼·伊萨加利耶夫在会议上发言时表示，哈萨克斯坦始终致力于仅通过政治外交手段，基于国际法原则和《联合国宪章》和平解决国际和地区冲突。他还指出，加强多边对话和凝聚伊斯兰合作组织成员国力量以促进和平、安全与可持续发展的重要性。
+
+外交部指出，对哈萨克斯坦而言，核不扩散、粮食安全、交通物流互联互通、人工智能、数字化和先进技术领域的合作具有特殊意义。此外，共和国还推动生态倡议，包括恢复前塞米巴拉金斯克试验场领土。
+
+根据会议结果，通过了一系列关于政治、经济、法律和文化人道主义问题的决议。据外交部信息，哈萨克斯坦的所有倡议均体现在伊斯兰合作组织外长理事会最终文件中。
+
+此前有报道称，哈萨克斯坦打算扩大与伊斯兰合作组织的合作。</div>
+<ul>
+<li>哈外交官阿姆列耶夫当选伊合组织副秘书长</li>
+<li>哈副外长率团出席伊合组织第52届外长理事会</li>
+<li>会议聚焦伊斯兰世界局势与巴以冲突</li>
+<li>哈方强调和平解决冲突及核不扩散等议题</li>
+<li>哈萨克斯坦所有倡议均纳入会议最终文件</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">提升哈萨克斯坦在伊斯兰世界的制度性话语权，强化其中亚外交枢纽地位；有助于推动交通物流、粮食安全等经济合作，并扩大在矿产与数字技术领域的多边协作空间。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/huixiang-d2313a84/" target="_blank">别克帖诺夫会见柬埔寨首相洪玛奈</a></h3>
+<div class="item-meta">哈通社中文版 · 10/18 12:26<span class="source-link"><a href="https://cn.inform.kz/news/huixiang-d2313a84/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总理别克帖诺夫会见柬埔寨首相洪玛奈，双方讨论释放贸易投资潜力，重点合作领域包括农业工业、交通物流、数字化与人工智能、旅游人文。哈方表示有意向柬埔寨供应粮食、植物油、肉类及农产品加工原料。双方探讨将跨里海国际运输路线与中国—老挝—越南—柬埔寨通道整合，并邀请柬方利用阿斯塔纳国际金融中心（AIFC）开展联合项目。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">别克帖诺夫指出，哈萨克斯坦将柬埔寨视为东南亚地区一个重要且可靠的伙伴。
+会谈中，两国政府代表团讨论了旨在释放贸易与投资领域合作潜力的各项举措。双方就农业工业及交通物流领域的合作、数字化与人工智能，以及在旅游和人文领域发展联系等议题进行了讨论。
+双方还讨论重点在于扩大商品种类，并在双方商业界之间建立新的直接联系。柬埔寨金融和商业界的代表受邀利用阿斯塔纳国际金融中心（AIFC）的优势，开展联合项目，并拓展其在该地区的投资布局。
+Фото: Правительство РК 在农业综合产业领域，别克帖诺夫表示，哈萨克斯坦有意向柬埔寨市场供应粮食作物、植物油、肉类以及农产品加工原料。双方还探讨了在农产品加工与仓储、推广现代灌溉技术以及深化农业合作等领域开展联合项目的相关前景。
+在交通与物流领域，相关讨论聚焦于将“跨里海国际运输路线”与“中国—老挝—越南—柬埔寨”通道进行整合的潜力。这一举措将有助于拓展东南亚与中亚之间的交通联系，同时也将为货物运往欧洲市场创造更有利的条件。
+数字化、人工智能和旅游业也被确定为双边合作中具有前景的领域。
+最后，双方重申致力于进一步发展哈萨克斯坦与柬埔寨之间的关系，扩大经贸联系，并在贸易与经济合作等重点领域切实落实各项共同倡议。
+Фото: Үкімет</div>
+<ul>
+<li>哈柬政府代表团讨论贸易投资合作潜力</li>
+<li>哈方拟向柬供应粮食、植物油、肉类等</li>
+<li>探讨跨里海路线与中老越柬通道整合</li>
+<li>邀请柬方利用AIFC开展联合项目</li>
+<li>数字化、AI和旅游被列为前景领域</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">外交上拓展东南亚伙伴关系，经济上推动农产品出口和交通物流整合，矿产格局影响有限，但有助于提升哈国过境运输地位和区域经济影响力。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/hemianchu-c06ea55c/" target="_blank">哈萨克斯坦葵花籽油和面粉出口量激增</a></h3>
+<div class="item-meta">哈通社中文版 · 10/18 13:41<span class="source-link"><a href="https://cn.inform.kz/news/hemianchu-c06ea55c/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2023年1-8月，哈萨克斯坦葵花籽油出口收入增长48.5%至6.728亿美元，出口量增长35.9%至61.14万吨，成为全球六大葵花籽油出口国之一，并是中国第二大供应国。小麦出口收入增长26.5%至12.5亿美元，出口量超550万吨。小麦和小麦黑麦粉出口收入增长36%至4亿美元。亚麻籽出口额增长2.3倍至3.878亿美元。成品动物饲料出口增长60.8%至5.776亿美元。葵花籽油、葵花籽粉和预制动物饲料总出口额达16.5亿美元，增长48%。哈国出口结构逐步转向高附加值加工产品。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦正在增加农产品原料及其加工产品的出口。尤其值得注意的是，某些类型商品的出口增长速度显著超过了整体出口增速。
+尤其值得一提的是葵花籽油。今年1月至8月，出口收入增长48.5%，达到6.728亿美元，出口量增长35.9%，达到61.14万吨。去年，哈萨克斯坦跻身世界六大葵花籽油出口国之列，并在中国市场占据第二大供应国地位。此外，哈萨克斯坦也成为欧盟和中国三大葵花籽粕出口国之一。同时，哈萨克斯坦还满足了中亚国家对这些产品的大部分需求。
+粮食行业也呈现快速增长。小麦出口增长26.5%，达到12.5亿美元。超过550万吨粮食出口，比去年同期增长13.8%。
+谷物深加工产品的出口也在增长。小麦和小麦黑麦粉的出口收入增长了36%，达到4亿美元，而这些产品的出口量增长了22.8%，达到138万吨。
+亚麻籽是另一种出口增长率较高的商品。过去八个月，其出口额增长了2.3倍，达到3.878亿美元。与此同时，亚麻籽的出口量增长了2.5倍，达到78.08万吨。
+成品动物饲料出口也呈现增长态势，增幅达60.8%，达到5.776亿美元，而产品销量也增长了44.2%。
+葵花籽油、葵花籽粉和预制动物饲料的总出口额达到16.5亿美元。与去年同期相比，这三类产品的出口收入增长了48%。
+这清楚地表明，哈萨克斯坦的出口结构正在逐步转变，高附加值加工产品的份额不断增加。换言之，哈萨克斯坦不再局限于销售农产品原料，而是开始将其加工成成品，从而巩固其在国际市场上的地位。</div>
+<ul>
+<li>葵花籽油出口收入增48.5%至6.728亿美元，量增35.9%至61.14万吨</li>
+<li>小麦出口收入增26.5%至12.5亿美元，出口量超550万吨</li>
+<li>小麦和小麦黑麦粉出口收入增36%至4亿美元，量增22.8%至138万吨</li>
+<li>亚麻籽出口额增2.3倍至3.878亿美元，量增2.5倍至78.08万吨</li>
+<li>成品动物饲料出口增60.8%至5.776亿美元，三类产品总出口额16.5亿美元增48%</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上，出口结构向高附加值加工产品转型，增强出口创汇能力；外交上，巩固在中国、欧盟及中亚的农产品供应国地位；矿产格局无直接关联，但农业加工崛起或促使资源分配向农业倾斜。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-10-19 09:01</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
