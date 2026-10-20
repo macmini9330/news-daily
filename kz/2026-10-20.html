@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年10月20日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年10月20日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年10月19日早9:00至2026年10月20日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 17 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">6</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">8</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">2</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">1</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(6 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/bolee-370-nesanktsionirovannih-svalok-likvidirovali-vakmolinskoy-oblasti-c4dd0083" target="_blank">阿克莫拉州清理了370多处未经批准的垃圾填埋场</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/20 05:39<span class="source-link"><a href="https://www.inform.kz/ru/bolee-370-nesanktsionirovannih-svalok-likvidirovali-vakmolinskoy-oblasti-c4dd0083" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>自2024年4月以来，哈萨克斯坦阿克莫拉州在“清洁哈萨克斯坦”倡议框架下清理了379处未经批准的垃圾填埋场，运出废物超21.7万吨。189个机动小组参与执法，制止超28.5万起行政违法行为，95家法人被追责，81辆违规排污车被扣。警方强调清洁工作需居民共同负责。此前东哈州12名地方行政长官因垃圾问题被追责。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据阿克莫拉州警察局新闻处消息，自2024年4月起，在该地区“清洁哈萨克斯坦”倡议框架内，已清理379处未经批准的垃圾填埋场，收集并运出的废物总量超过21.7万吨。为发现和制止违反环境保护法的行为，已成立189个机动小组。
+——在倡议实施期间，警方制止了超过28.5万起行政违法行为。95家法人被追究责任。此外，81辆排污车被停放到专门停车场，这些车辆的司机在非指定地点倾倒污水，——警方消息称。
+特别关注发现非法倾倒生活垃圾和建筑垃圾以及违反改善规则的事实。警方提醒：“清洁哈萨克斯坦”框架内的巡查活动每天进行，而地区的清洁不仅取决于相关国家机关或公用事业部门的工作，也取决于每位居民的责任。
+此前曾报道，东哈萨克斯坦州12名地方行政长官因自发垃圾填埋场被追究责任。</div>
+<ul>
+<li>阿克莫拉州清理379处非法垃圾填埋场，运出废物超21.7万吨</li>
+<li>成立189个机动小组，制止超28.5万起行政违法行为</li>
+<li>95家法人被追责，81辆违规排污车被扣</li>
+<li>警方强调地区清洁需每位居民共同负责</li>
+<li>东哈州12名地方行政长官因垃圾问题被追责</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该行动强化了哈国地方生态治理执法力度，推动环境法规落实，对地方官员形成问责压力，有助于改善投资环境和民生，但需持续投入以巩固成效。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/pereplati-sotrudnikam-ilishnie-rashodi-naremont-nashli-vkolledzhe-zhambilskoy-ob-8b4dd746" target="_blank">江布尔州一所学院发现员工超额支付和维修多余支出</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/20 04:01<span class="source-link"><a href="https://www.inform.kz/ru/pereplati-sotrudnikam-ilishnie-rashodi-naremont-nashli-vkolledzhe-zhambilskoy-ob-8b4dd746" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年3月，江布尔州一所学院因预算资金使用检查被发现两项违规：多名员工工资超额支付，以及教学楼大修存在多余支出。校方被要求在9月前整改，但未完全执行。院长因此被提起行政笔录，案件移交茹阿雷区法院，依据《行政违法法典》第462条第3款审理。院长认罪悔过，法院认定无加重情节，判处其64,000坚戈罚款。此前该州还曝出医院维修1600万坚戈无理支付及学生社会权利侵权问题。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：江布尔州一所学院发现员工超额支付和维修多余支出
+
+正文：
+对学院的预算资金使用检查始于2026年3月。委员会立即在两个方向发现了违规行为：几名员工的工资支付超过了应得金额，而在教学楼大修期间发现了多余支出。
+根据检查结果，学院领导层收到了在9月前消除违规行为的指令。然而，到了规定期限，要求并未完全执行。
+针对院长制定了行政笔录，案件移交至茹阿雷区法院。法院根据《行政违法法典》第462条第3款进行了审理。
+在审理过程中，院长承认了过错并表示悔过。法院将此视为减轻情节，未发现加重情节。学院院长被认定有罪，并被处以64,000坚戈的罚款。
+因此，罚款的依据是未执行检查人员的指令。案件根据《行政违法法典》第462条第3款审理。
+在审理过程中，院长承认了过错并表示悔过。法院将此视为减轻情节，未发现加重情节。学院院长被认定有罪，并被处以64,000坚戈的罚款。
+此前有报道称，在江布尔州发现医院维修期间有1600万坚戈的无理支付。
+检察院在江布尔州发现了侵犯学生社会权利的行为。</div>
+<ul>
+<li>江布尔州学院检查发现工资超额支付和维修多余支出</li>
+<li>校方未在9月前完成整改要求</li>
+<li>院长被罚款64,000坚戈，依据行政违法法典第462条第3款</li>
+<li>院长认罪悔过，法院未认定加重情节</li>
+<li>该州此前曝出医院维修1600万坚戈无理支付</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">事件反映哈国地方预算监管趋严，行政问责强化，但罚款金额较低，震慑有限；可能推动教育机构财务合规，对矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/faminxingdong-fazuochuchuding2243-40842e10/" target="_blank">“非法移民”专项行动收官 哈萨克斯坦法院作出驱逐出境决定2243项</a></h3>
+<div class="item-meta">哈通社中文版 · 10/19 22:48<span class="source-link"><a href="https://cn.inform.kz/news/faminxingdong-fazuochuchuding2243-40842e10/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>10月5日至16日，哈萨克斯坦开展“非法移民”专项行动，查处移民领域违法行为1.58万余起。7595名外国公民因违反停留规定被追责，3899名因非法务工被处理，815名雇主因非法雇佣被罚，3533名个人和法人未报告外国公民停留情况被追责。法院作出2243项驱逐出境决定，2479人停留期限被缩短，236人被强制驱逐并5年内禁入。警方还发现14名非法越境者和62名被通缉的外国公民。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">10月5日至16日，哈萨克斯坦在全国范围内开展“非法移民”专项行动，旨在维护社会公共秩序，预防和制止违反移民法规的行为，并加强对外国公民在哈停留情况的监督管理。
+据哈萨克斯坦内务部透露，行动期间，警方在个人和法人单位中广泛开展预防宣传，向相关人员讲解移民法规要求及违法行为所应承担的法律责任，重点就向外国公民提供住房、遵守外国公民登记规定，以及禁止非法雇佣外籍劳工等事项进行说明。
+与此同时，警方对外国公民集中居住的区域、建筑工地、集贸市场，以及使用外籍劳工的企业和单位开展了检查。
+行动结果显示，警方共查处移民领域违法行为1.58万余起。
+因违反在哈停留规定，7595名外国公民被追究行政责任；因非法从事劳动活动，另有3899名外国公民被采取相应措施。因未经许可雇佣外籍劳工，815名雇主被依法处理。此外，3533名未按规定及时向内务机关报告外国公民在其处停留情况的个人和法人单位也被追究责任。
+法院已对违反移民法规的人员作出2243项驱逐出境决定。此外，2479名被认定不宜继续在哈萨克斯坦停留的外国公民，其在哈停留期限被依法缩短。
+目前，已有236名外国公民被依法强制驱逐出境，并均被禁止在未来5年内入境哈萨克斯坦。
+检查期间，警方还发现14名非法越过哈萨克斯坦国境的外国公民。目前，警方正会同边防部门对相关事实展开调查。
+与此同时，警方还抓获了62名被本国执法机关通缉、藏匿于哈萨克斯坦境内的外国公民。
+对查获的违法行为进行分析后发现，非法移民问题的主要成因之一，是部分人员企图绕过法定程序，以谋取经济利益。
+在一些案件中，哈萨克斯坦公民也参与其中，协助外国公民非法入境、安排其在当地停留并提供住房，甚至在未取得必要许可文件的情况下雇佣其工作。
+例如，在阿拉木图州，一名哈萨克斯坦公民因涉嫌向违反移民法规的外国公民提供住房、组织非法移民而被警方拘捕。江布尔州和巴甫洛达尔州也发现了类似违法行为。
+打击非法雇佣外籍劳工是此次专项行动的重点之一。
+例如，在奇姆肯特市一处建筑工地，警方发现近40名未取得相关许可、擅自从事劳动活动的外国公民。阿拉木图市以及卡拉干达州、阿拉木图州、阿特劳州、曼格斯套州、东哈萨克斯坦州、库斯塔奈州和北哈萨克斯坦州也查获了类似违法行为。警方已依法对涉事外籍劳工和雇主采取相应措施。
+此外，警方已对10名在一年内两次或多次违反外籍劳工聘用规定的雇主启动调查。根据哈萨克斯坦共和国法律，屡次违反相关规定者将被追究刑事责任。</div>
+<ul>
+<li>行动查处移民违法1.58万余起，7595名外国人被追责</li>
+<li>法院作出2243项驱逐决定，236人强制驱逐并5年禁入</li>
+<li>815名雇主因非法雇佣外籍劳工被依法处理</li>
+<li>警方抓获62名被通缉外国公民和14名非法越境者</li>
+<li>10名屡次违规雇主被调查，或面临刑事责任</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">行动强化移民管控，维护社会秩序；打击非法劳工或影响部分行业用工，但规范市场；外交上可能引发劳务来源国关注；对矿产等依赖外劳行业短期用工趋紧。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/jiujunzhanheshiyongzuochubu-90d5cd56/" target="_blank">托卡耶夫就提升军队战备水平和资金使用效益作出部署</a></h3>
+<div class="item-meta">哈通社中文版 · 10/19 20:35<span class="source-link"><a href="https://cn.inform.kz/news/jiujunzhanheshiyongzuochubu-90d5cd56/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫听取国防部关于武装力量战备状态、军事训练经费保障及预算执行情况的汇报。国防部两位副部长汇报了军队资金保障和发展计划实施情况。托卡耶夫强调完善军队指挥体系、提高决策效率，讨论动员规划、后备力量训练、预算纪律和资金使用效益等问题，并就保持高度战备、提高训练质量、保障核心需求及高效使用预算资金作出部署。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">国家元首听取了有关武装力量当前运转和战备状态、军事训练活动经费保障，以及国防部预算执行情况的汇报。
+托卡耶夫还听取了有关官兵状态、部队动员准备情况，以及国防部门和官兵履行职责情况的报告。
+国防部两位副部长向总统汇报了军队当前需求的资金保障情况及军队发展计划的实施情况。还就根据战备任务合理调配资金、完善基础设施装备，以及保障部队日常活动等问题进行了讨论。
+会见中特别强调，要进一步完善军队指挥体系，提高决策效率和反应速度，并根据官兵的专业方向加强其履行相应任务的能力。
+此外，还讨论了动员规划和军事后备力量训练、计划支出的合理性论证、严格执行预算纪律、提高财政资金使用效益，以及完善财务监督和支出绩效评估机制等问题。
+会见结束时，托卡耶夫就保持武装力量高度战备状态、提高军事训练质量、保障军队核心需求，以及合理高效使用预算资金等工作作出部署。</div>
+<ul>
+<li>托卡耶夫听取军队战备和国防预算执行汇报</li>
+<li>强调完善指挥体系，提高决策效率和反应速度</li>
+<li>讨论动员规划、后备力量训练和预算纪律</li>
+<li>部署保持高度战备、提高训练质量及资金效益</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举强化哈国军队战备与指挥效率，优化国防预算使用，提升财政纪律和资金效益，对政治稳定和地区安全有积极意义，但矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/renfaguojianimenshiheniande-4d51b770/" target="_blank">托卡耶夫总统向救援人员颁发国家奖章：你们是和平年代的英雄</a></h3>
+<div class="item-meta">哈通社中文版 · 10/19 16:52<span class="source-link"><a href="https://cn.inform.kz/news/renfaguojianimenshiheniande-4d51b770/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫向救援人员颁发国家奖章，称赞他们是“和平年代的英雄”，强调救援工作光荣崇高，需要勇敢、坚毅和爱国精神。托卡耶夫还提及国家改革进程，指出新宪法已于7月1日生效，明确规定人及其生命是最高价值，救援人员是安全哈萨克斯坦的坚实支柱。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫在讲话中指出，“救援人员”一词蕴含着广泛而深刻的意义。救援不仅意味着将人们从危险中解救出来，也包括向身处困境的人伸出援手，帮助他们消除恐惧、获得安慰。
+
+总统表示：“救援”始终与行善、做好事紧密相连。挽救生命、保护公民免受危险侵害、帮助遭遇突发事件的人们，甚至安抚他们的恐惧、给予一句温暖的话语，这些都是一名真正的救援人员应当具备的宝贵品质。
+
+因此，人民将全国救援人员称为和平年代的英雄。这是对你们最公正的评价。
+
+救援工作无疑是一项光荣而崇高的事业，但我们也必须认识到，并非所有人都能够胜任民防领域的艰巨任务。勇敢、坚毅、敏捷和果断固然重要，但救援人员首先必须是心系人民的爱国者和专业能力过硬的工作者。只有意志坚定、责任感强、勇于担当的人，才会选择这样一份艰巨的职业。
+
+托卡耶夫强调，应急救援人员是经过专业训练、能够直面危险并在关键时刻迅速作出决策的专业队伍。
+
+救援人员的工作始终受到全国人民的关注。你们每天都在承担风险，将职业使命和责任置于一切之上。可以说，你们始终奔走于水火之间。
+
+为了帮助陷入紧急情况的人们摆脱困境，你们不知疲倦地履行职责。每当发生突发事件，救援人员总是第一时间冲向现场，为了挽救他人的生命，不惜将自己的生命置于危险之中。
+
+这才是真正的英雄主义。作为国家元首，我认为你们的杰出贡献理应得到全社会的特别尊重和崇高敬意。
+
+总统随后谈及哈萨克斯坦正在推进的国家改革进程。
+
+他指出，当前哈萨克斯坦正坚定推进全面现代化和深层次变革，各领域正在实施大规模改革。
+
+我们的国家目标和任务十分明确。我们正在全社会共同努力，建设法治与秩序得到维护、社会团结稳固、人民同心协力的公正、先进、强大、清洁的哈萨克斯坦。
+
+得到全民支持的新宪法已于7月1日正式生效。这是我国具有历史意义的重大事件。新宪法受到许多国家的高度关注，因为它作为指引民族发展的根本性文件，顺应时代要求，展现出全新的面貌。
+
+宪法明确规定，人及其生命是国家的最高价值。民防领域的每一位工作人员都在通过保护人民生命，为维护这一不可动摇的宪法价值作出重要贡献。
+
+因此，将全国救援人员称为安全哈萨克斯坦的坚实支柱，毫不为过。</div>
+<ul>
+<li>托卡耶夫向救援人员颁发国家奖章，称其为和平年代英雄</li>
+<li>救援人员需具备勇敢坚毅和爱国专业品质</li>
+<li>新宪法7月1日生效，规定人及生命为最高价值</li>
+<li>救援人员被视为安全哈萨克斯坦的坚实支柱</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举提升救援人员士气，强化社会对民防的重视；结合新宪法生效，彰显国家以人为本的治理导向，有利于社会稳定和改革推进，增强政权合法性。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/zhengliyaoguojiachudejingfa-f6f86795/" target="_blank">政府总理要求研究国际专家提出的经济发展建议</a></h3>
+<div class="item-meta">哈通社中文版 · 10/19 16:09<span class="source-link"><a href="https://cn.inform.kz/news/zhengliyaoguojiachudejingfa-f6f86795/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦政府总理沃勒扎斯·别克帖诺夫召开会议，讨论全球市场形势、经济增长措施及居民福祉改善。重点涉及优化经济结构、非资源领域多元化、完善工业政策，国际专家建议吸引外国投资和促进私营企业发展。会议还讨论地区产业专业化、扩大出口潜力、吸引战略投资者及私人资本参与经济。总理责成相关机构分析研究国际专家建议。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">会议期间，与会人员围绕全球市场当前形势、提高促进经济增长措施的有效性，以及为居民福祉持续改善创造有利条件等问题交换了意见。
+讨论重点涉及优化经济结构、推动非资源领域多元化发展，以及完善哈萨克斯坦工业政策等方面。
+国际专家还就进一步吸引外国投资、为私营企业发展创造有利条件等提出了相关建议。
+政府新闻处在通报中指出：
+与会人员还重点讨论了推动各地区产业专业化发展、扩大出口潜力以及吸引战略投资者等问题。此外，会议还就扩大私人资本参与经济发展进行了交流。
+会议结束后，沃勒扎斯·别克帖诺夫责成有关国家机关和机构对国际专家提出的建议进行分析研究。</div>
+<ul>
+<li>总理召开会议讨论经济结构与多元化发展</li>
+<li>国际专家建议吸引外资和促进私营企业</li>
+<li>会议聚焦地区产业专业化与扩大出口潜力</li>
+<li>总理责成机构研究国际专家建议</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该会议推动经济结构优化和非资源领域多元化，有助于吸引外资和私人资本，提升地区产业专业化与出口潜力，对哈国经济多元化和外交合作产生积极影响，但矿产格局短期不变。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(8 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/laidashiguogaoguo-fc014bbf/" target="_blank">新任哈萨克斯坦驻马来西亚大使向该国最高元首递交国书</a></h3>
+<div class="item-meta">哈通社中文版 · 10/20 01:22<span class="source-link"><a href="https://cn.inform.kz/news/laidashiguogaoguo-fc014bbf/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦新任驻马来西亚大使穆尔扎林向马来西亚最高元首苏丹易卜拉欣递交国书。穆尔扎林转达了哈总统托卡耶夫的问候，重申哈方愿巩固与马来西亚的友好关系，并指出积极政治对话为拓展互利合作创造条件。双方强调2027年两国将迎来建交35周年，这将为加强交往与合作注入新动力。苏丹易卜拉欣祝贺穆尔扎林履新，指出哈萨克斯坦是马来西亚在中亚地区的重要合作伙伴，支持进一步深化双边合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">递交国书期间，穆尔扎林向马来西亚最高元首转达了哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫的亲切问候和良好祝愿，并重申哈方愿进一步巩固与马来西亚友好关系的意愿。
+穆尔扎林指出，积极的政治对话为拓展互利合作、加强两国联系创造了良好条件。他表示，2027年哈萨克斯坦与马来西亚将迎来建交35周年，这将为两国进一步加强交往与合作注入新的动力。
+苏丹易卜拉欣祝贺穆尔扎林履新，并向哈萨克斯坦总统和人民致以良好祝愿。他指出，哈萨克斯坦是马来西亚在中亚地区的重要合作伙伴，并表示支持进一步巩固两国友好关系、深化双方合作。</div>
+<ul>
+<li>哈新任驻马大使穆尔扎林向马最高元首递交国书</li>
+<li>穆尔扎林转达托卡耶夫问候，重申巩固双边关系意愿</li>
+<li>2027年哈马将迎来建交35周年，为合作注入新动力</li>
+<li>马最高元首称哈萨克斯坦是中亚重要合作伙伴</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访有助于巩固哈马政治对话，为2027年建交35周年预热，推动经贸与投资合作；外交上拓展哈在东南亚存在，平衡地区关系；矿产领域或促进哈资源出口多元化，但短期实质影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/kazahstan-iazerbaydzhan-predstavili-yaponskim-investoram-vozmozhnosti-transkaspi-87286846" target="_blank">哈萨克斯坦和阿塞拜疆向日本投资者介绍跨里海路线机遇</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/20 01:00<span class="source-link"><a href="https://www.inform.kz/ru/kazahstan-iazerbaydzhan-predstavili-yaponskim-investoram-vozmozhnosti-transkaspi-87286846" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦和阿塞拜疆向日本投资者推介跨里海国际运输路线（TMTM），约100人参会。哈驻日大使介绍运输系统发展计划，并提及10月15日在巴库启动的跨里海光纤通信线路。日本经济产业省国务大臣高木启强调TMTM对日本运输路线多元化的战略意义。会议还讨论了日本协助阿克套港现代化海关监管项目（价值7.19亿日元，安装X射线检查系统，货物检查时间缩短三分之二），以及阿拉木图至东京直飞航班计划于12月开通。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦和阿塞拜疆向日本投资者介绍跨里海路线机遇
+
+约100人参加了会议，其中包括日本相关部委、日本国际协力机构（JICA）、ROTOBO协会和物流公司的代表。主要议题之一是为跨里海国际运输路线（TMTM）的基础设施发展吸引日本投资。
+
+哈萨克斯坦大使叶尔兰·包达尔别克-科扎塔耶夫和阿塞拜疆大使法里德·塔雷博夫介绍了各自国家发展运输系统、提高运输效率和加强国际合作的计划。
+
+叶尔兰·包达尔别克-科扎塔耶夫还提到了跨里海光纤通信线路的启动。启动仪式于10月15日在巴库举行，哈萨克斯坦总统卡西姆-若马尔特·托卡耶夫和阿塞拜疆总统伊利哈姆·阿利耶夫出席。新线路将扩大国际数据传输能力，提高数字通信的可靠性。
+
+日本经济产业省国务大臣高木启强调，TMTM对于日本运输路线的多元化具有战略意义。据他所说，中间走廊的发展为扩大日本与中亚和南高加索国家的经贸联系创造了额外机会。
+
+日本国土交通省国际物流办公室主任小柳美惠子介绍了日本公司沿中间走廊进行试运输的结果。测试期间评估了交货时间和成本、海关手续特点以及物流服务质量。
+
+会议参与者还讨论了日本协助阿克套港现代化海关监管。该项目价值高达7.19亿日元，规定安装固定式大型X射线检查系统。预计新设备将使货物检查时间缩短三分之二。
+
+阿斯塔纳航空韩国和日本区域高级经理阿德尔·道列特别克谈到了两国间航空联系的前景。从阿拉木图飞往东京（成田机场）的定期直飞航班计划于今年12月开通。
+
+图片：哈萨克斯坦外交部</div>
+<ul>
+<li>哈阿向日本投资者推介跨里海运输路线，约100人参会</li>
+<li>跨里海光纤通信线路10月15日在巴库启动</li>
+<li>日本高官称TMTM对日运输路线多元化具战略意义</li>
+<li>日本援助阿克套港海关现代化，项目值7.19亿日元</li>
+<li>阿拉木图至东京直飞航班计划12月开通</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">吸引日本投资跨里海路线，推动哈国运输多元化与过境经济；日方参与阿克套港海关现代化提升物流效率；光纤线路强化数字联通；直航开通促进人员经贸往来，增强哈国在中间走廊的战略枢纽地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/dashihuizhongguoshichanggao-5edf319a/" target="_blank">哈萨克斯坦驻华大使努雷舍夫会见中建国际董事长高波</a></h3>
+<div class="item-meta">哈通社中文版 · 10/20 00:20<span class="source-link"><a href="https://cn.inform.kz/news/dashihuizhongguoshichanggao-5edf319a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦驻华大使努雷舍夫会见中建国际董事长高波，双方讨论拓展建筑和基础设施领域合作，重点关注阿拉木图州阿拉套市大型项目。高波介绍项目设计筹备进展及公司能力，中建国际正研究参与阿斯塔纳和阿拉木图交通基础设施、数据处理中心及能源项目。努雷舍夫表示哈方愿吸引中国投资和先进技术，并强调资金保障的重要性。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据外交部新闻处消息，双方就拓展建筑和基础设施领域合作的前景进行了讨论，并重点关注阿拉木图州阿拉套市大型项目的实施情况。
+高波介绍了项目设计和前期筹备工作的进展，并表示公司愿发挥在城市综合开发领域的经验优势。他还介绍了公司在各类工程和交通基础设施建设，以及后续设施运营管理方面的能力。
+据悉，中建国际正在研究参与阿斯塔纳和阿拉木图两市交通基础设施建设、数据处理中心建设，以及在哈萨克斯坦共同实施能源项目的可能性。
+努雷舍夫表示，哈方有意吸引中国投资和先进技术，并强调为上述合作倡议提供资金保障的重要性。</div>
+<ul>
+<li>哈驻华大使努雷舍夫会见中建国际董事长高波</li>
+<li>双方重点讨论阿拉木图州阿拉套市大型项目</li>
+<li>中建国际研究参与阿斯塔纳和阿拉木图基建</li>
+<li>合作领域涉及交通、数据中心和能源项目</li>
+<li>哈方强调吸引中国投资并需保障资金</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此合作将推动哈国基础设施升级和城市开发，吸引中国投资与技术，促进经济多元化；外交上深化哈中经贸关系；能源和数据中心项目可能影响区域矿产与能源格局，但资金保障是关键挑战。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/huichang-qunian4-72d33b28/" target="_blank">托卡耶夫会见俄罗斯列宁格勒州州长 去年双边贸易超过4亿美元</a></h3>
+<div class="item-meta">哈通社中文版 · 10/19 19:13<span class="source-link"><a href="https://cn.inform.kz/news/huichang-qunian4-72d33b28/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫会见俄罗斯列宁格勒州州长德罗兹坚科，双方强调跨区域合作对深化哈俄战略伙伴关系的重要性。托卡耶夫表示列宁格勒州在工业和交通物流领域潜力较大，愿拓展务实合作。去年双边贸易额超过4亿美元。德罗兹坚科转达普京问候，赞扬哈萨克斯坦军人在列宁格勒保卫战中的英勇精神。双方还讨论了工业、核能、交通和农工综合体联合项目前景及文化人文合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫会见俄罗斯列宁格勒州州长 去年双边贸易超过4亿美元
+正文:
+会晤期间，双方指出，跨区域合作在深化哈俄战略伙伴关系方面发挥着重要作用。
+托卡耶夫指出，列宁格勒州在工业和交通物流领域具有较大发展潜力，并表示哈萨克斯坦愿与该州进一步拓展务实合作。
+托卡耶夫表示，哈萨克斯坦与列宁格勒州的经贸关系正稳步发展。去年，双方贸易额超过4亿美元。
+德罗兹坚科感谢托卡耶夫的热情接待，并转达了俄罗斯总统弗拉基米尔·普京的问候。
+Фото: Ақорда 他还特别赞扬了卫国战争期间哈萨克斯坦军人在列宁格勒保卫战中表现出的英勇精神和英雄气概，并指出，相关英雄事迹和历史记忆将得到珍视与传承。
+会谈中，双方还讨论了在工业、核能、交通和农工综合体等领域开展联合项目的前景，并就进一步深化文化和人文领域的合作交换了意见。</div>
+<ul>
+<li>托卡耶夫会见列宁格勒州州长，强调跨区域合作重要性</li>
+<li>去年哈萨克斯坦与列宁格勒州贸易额超4亿美元</li>
+<li>双方讨论工业、核能、交通和农工综合体联合项目</li>
+<li>德罗兹坚科转达普京问候，赞扬哈军人历史贡献</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈俄战略伙伴关系，拓展跨区域经贸合作，4亿美元贸易额显示增长潜力。核能、交通等领域合作有望促进哈国经济多元化，但需平衡对俄依赖与外交多元。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/waichangyuguoxinghui-youyizaig20huihoubuwen-6d2b3c58/" target="_blank">哈外长与美国务卿举行会谈 鲁比奥确认有意在G20峰会后不久访问哈萨克斯坦</a></h3>
+<div class="item-meta">哈通社中文版 · 10/19 18:41<span class="source-link"><a href="https://cn.inform.kz/news/waichangyuguoxinghui-youyizaig20huihoubuwen-6d2b3c58/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦外长特列吾别尔德与美国国务卿鲁比奥举行会谈，讨论发展扩大后的战略伙伴关系，重点加强经贸与投资合作。双方高度评价双边关系积极势头，强调落实2025年11月托卡耶夫与特朗普会晤成果。特列吾别尔德指出深化能源、关键矿产、数字化、交通物流合作的重要性。鲁比奥确认有意在迈阿密G20峰会后不久正式访问哈萨克斯坦。双方重申巩固战略伙伴关系并取得务实成果。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据外交部新闻处消息，双方探讨了进一步发展两国扩大后的战略伙伴关系的前景，并重点就加强经贸与投资合作交换了意见。
+双方高度评价双边关系的积极发展势头，并重申将共同致力于拓展务实合作、扩大贸易额以及推动联合投资项目落地。
+双方特别强调，要切实落实两国高层达成的各项共识，包括哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫与美国总统唐纳德·特朗普于2025年11月会晤所取得的成果。
+特列吾别尔德强调了加强商业联系、吸引美国投资和引进先进技术的重要性，并指出，深化双方在能源、关键矿产、数字化、交通和物流等领域的合作具有重要意义。
+双方还就即将在迈阿密举行的二十国集团峰会筹备工作交换了意见。此外，鲁比奥确认，有意在G20峰会结束后不久对哈萨克斯坦进行正式访问。
+会谈结束时，双方重申，将继续巩固哈美扩大后的战略伙伴关系，并致力于取得具体、务实的成果。</div>
+<ul>
+<li>哈美外长会谈探讨扩大战略伙伴关系与经贸投资合作</li>
+<li>双方强调落实2025年11月托卡耶夫与特朗普会晤共识</li>
+<li>哈方重点推动能源、关键矿产、数字化、交通物流合作</li>
+<li>鲁比奥确认G20峰会后不久正式访问哈萨克斯坦</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访将强化哈美战略伙伴关系，吸引美资与技术进入能源和关键矿产领域，推动哈国经济多元化和外交平衡，但需关注对中俄关系的潜在影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/c51jiwaichanghuizaixing-34563401/" target="_blank">“C5+1”机制外长级会议在撒马尔罕举行</a></h3>
+<div class="item-meta">哈通社中文版 · 10/19 18:15<span class="source-link"><a href="https://cn.inform.kz/news/c51jiwaichanghuizaixing-34563401/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦外长特列吾别尔德出席在乌兹别克斯坦撒马尔罕举行的“C5+1”外长级会议，中亚五国外长与美国国务卿鲁比奥共同参会。会议讨论经贸投资合作、区域互联互通及联合倡议落实。特列吾别尔德强调该机制是有效区域合作平台，并肯定哈美在机制形成中的历史性作用。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：“C5+1”机制外长级会议在撒马尔罕举行
+正文：哈萨克斯坦外交部长穆赫塔尔·特列吾别尔德出席了“C5+1”机制外长级会议。此次会议在乌兹别克斯坦担任该对话平台轮值主席国期间举行，中亚国家外长及美国国务卿马克·鲁比奥共同出席。会谈期间，与会各方讨论了发展经贸与投资合作、加强区域互联互通，以及落实旨在促进区域经济持续增长的联合倡议等问题。特列吾别尔德指出，“C5+1”机制已证明自己是推动区域合作的有效平台，并强调了哈萨克斯坦和美国在该机制形成过程中发挥的历史性作用。</div>
+<ul>
+<li>C5+1外长会议在撒马尔罕举行，乌兹别克斯坦任轮值主席国</li>
+<li>哈萨克斯坦外长特列吾别尔德与美国国务卿鲁比奥等共同出席</li>
+<li>各方讨论经贸投资、区域互联互通与联合倡议落实</li>
+<li>特列吾别尔德肯定C5+1机制有效性及哈美历史性作用</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">会议强化中亚与美国对话平台，利于哈国拓展经贸投资与互联互通，提升区域合作话语权；同时平衡大国关系，为矿产与交通合作创造外交空间。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/zhong1500zhijinrufangzhengdingsheng-ea8e2f2b/" target="_blank">哈中1500只赛加羚羊赠送计划进展如何？双方正制定兽医卫生证书</a></h3>
+<div class="item-meta">哈通社中文版 · 10/19 15:31<span class="source-link"><a href="https://cn.inform.kz/news/zhong1500zhijinrufangzhengdingsheng-ea8e2f2b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与中国就赠送1500只赛加羚羊事宜进行多轮磋商，已签署保护合作谅解备忘录。中方要求羚羊来自哈无口蹄疫疫区州，哈方于2026年5月22日在世界动物卫生组织第93届大会上获疫苗接种无口蹄疫区地位。目前双方正制定兽医卫生证书。接收方须提供适宜饲养繁育条件，哈方有权检查和监测。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈中1500只赛加羚羊赠送计划进展如何？双方正制定兽医卫生证书
+正文:
+据该委员会介绍，哈中双方已就赛加羚羊移交事宜举行多轮磋商，讨论了赛加羚羊保护领域的合作问题，并签署了相关谅解备忘录。
+委员会在回复哈通社的询问时表示：
+关于向中华人民共和国移交1500只赛加羚羊的问题，哈萨克斯坦方面已与邻国开展多轮谈判，讨论了赛加羚羊保护领域的合作事宜，并与中方签署了谅解备忘录。
+此外，中方提出，拟移交的赛加羚羊必须从哈萨克斯坦境内被认定为无口蹄疫疫区的州捕获。
+值得注意的是，2026年5月22日，在巴黎举行的世界动物卫生组织第93届大会上，哈萨克斯坦正式获得了实施疫苗接种的无口蹄疫区地位。
+对此，委员会解释称：
+鉴于上述情况，目前双方正在制定赛加羚羊出口至中国所需的兽医卫生证书，相关工作仍在持续推进。
+据了解，哈萨克斯坦于去年宣布计划向中国赠送1500只赛加羚羊。
+根据此前公布的安排，接收方须为这些动物提供适宜的饲养和繁育条件。
+相关设施应尽可能接近赛加羚羊的自然栖息环境，并配备满足其觅食、繁殖及疾病防控需求的必要基础设施。
+与此同时，哈萨克斯坦方面有权开展相应检查和监测，以确认接收方已为拟移交的赛加羚羊提供全部必要条件。</div>
+<ul>
+<li>哈中已就移交1500只赛加羚羊举行多轮磋商并签署谅解备忘录</li>
+<li>中方要求羚羊来自哈无口蹄疫疫区州</li>
+<li>哈2026年5月获疫苗接种无口蹄疫区地位</li>
+<li>双方正制定出口所需兽医卫生证书</li>
+<li>接收方须提供适宜饲养繁育条件，哈方有权检查监测</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该合作强化哈中双边关系，体现哈在动物卫生领域的国际认可；促进哈生态保护外交，但需平衡国内野生动物保护与对华合作，对矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/waidangzuochang-69129e68/" target="_blank">哈萨克斯坦外交官巴赫达特·阿穆列夫当选伊斯兰合作组织副秘书长</a></h3>
+<div class="item-meta">哈通社中文版 · 10/19 12:08<span class="source-link"><a href="https://cn.inform.kz/news/waidangzuochang-69129e68/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦外交部副部长阿尔曼·伊萨加利耶夫出席伊斯兰合作组织会议，讨论巴以冲突等国际热点问题。哈方重申致力于在国际法原则和《联合国宪章》基础上和平解决冲突，并强调核不扩散、粮食安全、交通物流、人工智能及原塞米巴拉金斯克核试验场生态修复等优先方向。会议重要成果是巴赫达特·阿穆列夫当选伊斯兰合作组织负责行政和财政事务的副秘书长，哈方各项倡议均被纳入成果文件。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦外交部副部长阿尔曼·伊萨加利耶夫出席了此次会议。
+会议期间，伊斯兰合作组织成员国代表团团长就当前国际和地区议程中的热点问题进行了讨论，重点关注伊斯兰世界局势，以及包括巴以冲突在内的军事政治和人道主义危机的解决途径。
+与会代表强调，有必要加强外交努力，推动缓解中东地区紧张局势，维护和平与地区稳定。
+阿尔曼·伊萨加利耶夫在发言中重申，哈萨克斯坦始终致力于在国际法原则和《联合国宪章》基础上，通过政治和外交途径和平解决国际及地区冲突。
+他同时强调，应进一步加强多边对话，凝聚伊斯兰合作组织成员国的共同努力，推动实现和平、安全与可持续发展。
+哈萨克斯坦外交部在声明中指出：
+在哈萨克斯坦参与伊斯兰合作组织活动的框架下，重点关注核不扩散、加强粮食安全、发展交通物流互联互通、扩大人工智能、数字化及先进技术领域合作，以及推进包括原塞米巴拉金斯克核试验场地区生态修复在内的环境保护倡议。
+此次会议对哈萨克斯坦而言的一项重要成果，是巴赫达特·阿穆列夫当选伊斯兰合作组织负责行政和财政事务的副秘书长。
+哈萨克斯坦外交部表示，这一决定体现了伊斯兰合作组织成员国对哈萨克斯坦的高度信任，也是对哈萨克斯坦为推动该组织框架内多边合作所作贡献的认可。
+会议结束后，与会各方通过了一系列涉及政治、经济、法律以及文化和人道主义领域的决议。
+哈萨克斯坦提出的各项倡议均被纳入相关成果文件，并在伊斯兰合作组织外交部长理事会决议中得到体现。</div>
+<ul>
+<li>哈副外长伊萨加利耶夫出席伊斯兰合作组织会议</li>
+<li>会议关注巴以冲突等军事政治和人道主义危机</li>
+<li>哈方倡议聚焦核不扩散、粮食安全与互联互通</li>
+<li>巴赫达特·阿穆列夫当选伊斯兰合作组织副秘书长</li>
+<li>哈萨克斯坦各项倡议被纳入会议成果文件</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">政治上升哈在伊斯兰世界话语权；经济上助推交通物流与数字合作；外交上强化多边调解者角色；矿产与生态议题获关注，利于吸引绿色投资。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/spor-odolge-svishe-14mlrd-tenge-uregulirovali-vzhambilskoy-oblasti-262d31a8" target="_blank">江布尔州调解了一起超过14亿坚戈的债务纠纷</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/20 03:21<span class="source-link"><a href="https://www.inform.kz/ru/spor-odolge-svishe-14mlrd-tenge-uregulirovali-vzhambilskoy-oblasti-262d31a8" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年1月，江布尔州一家供应商向买方交付化工产品后，买方仅支付部分款项，欠款超14亿坚戈。供应商向江布尔州跨区经济专门法院起诉。审理中双方通过调解达成协议，买方承认债务并承诺2026年11月底前分三笔付清，法院批准协议并终止案件。若买方违约，供应商可申请强制执行。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：江布尔州调解超14亿坚戈债务纠纷
+正文：
+企业间合作始于2026年1月。根据合同条款，供应商应交付化工产品，买方应在30天内付款。供应商完全履行了义务，但买方仅支付了部分款项。
+欠款金额超过14亿坚戈。为追讨款项，供应商向江布尔州跨区经济专门法院提起诉讼。
+在法庭审理过程中，双方通过调解解决了争议。买方承认债务，并承诺在2026年11月底前分三笔支付。法院批准了协议并终止了案件审理。
+如果买方不自愿履行协议条款，供应商有权获得执行令并寻求强制执行债务。
+回顾此前，江布尔州农民在法庭上解决了与农业机械供应有关的纠纷。
+哈萨克斯坦法院在九个月内审理了160万起民事案件。</div>
+<ul>
+<li>江布尔州化工产品交易欠款超14亿坚戈</li>
+<li>供应商起诉后双方通过调解解决争议</li>
+<li>买方承认债务并承诺2026年11月底前分三笔付清</li>
+<li>法院批准协议终止案件，违约可强制执行</li>
+<li>哈国法院九个月审理160万起民事案件</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此案反映哈国法院推广调解机制解决商业纠纷，有助于改善营商环境、保障供应商权益，对江布尔州化工贸易秩序和区域经济稳定具有积极意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/xinggong19riyuzhuyaowaizhijiande-d6c7d026/" target="_blank">央行公布19日坚戈与主要外币之间的汇率标准</a></h3>
+<div class="item-meta">哈通社中文版 · 10/19 13:30<span class="source-link"><a href="https://cn.inform.kz/news/xinggong19riyuzhuyaowaizhijiande-d6c7d026/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行公布2026年10月19日坚戈对主要外币官方汇率：美元兑坚戈1:452.12，欧元兑坚戈1:508.95，俄罗斯卢布兑坚戈1:5.41，土耳其里拉兑坚戈1:9.14，中国元兑坚戈1:67.62。央行规定，坚戈兑美元官方汇率基于阿斯塔纳时间15:30证券交易所加权平均汇率确定，其他外币汇率依据16:00交叉汇率计算。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：央行公布19日坚戈与主要外币之间的汇率标准
+正文：根据央行公布的信息，2026年10月19日，哈萨克斯坦坚戈与国际主要货币之间的兑换汇率标准如下：
+美元兑坚戈（USD/KZT） – 1：452.12
+欧元兑坚戈（EUR/KZT）- 1：508.95
+俄罗斯卢布兑坚戈（RUB / KZT）-1: 5.41
+土耳其里拉兑坚戈（TRY / KZT）- 1: 9.14
+中国元兑坚戈（CNY / KZT）- 1：67.62
+值得一提的是，根据哈萨克斯坦国家银行规定，截至阿斯塔纳时间当日15:30，在哈萨克斯坦证券交易所形成的坚戈兑美元加权平均汇率，将被确定为下一工作日坚戈兑美元官方汇率；坚戈兑其他外币的官方汇率，则依据截至阿斯塔纳时间16:00形成的交叉汇率计算得出。</div>
+<ul>
+<li>美元兑坚戈汇率为1:452.12</li>
+<li>欧元兑坚戈汇率为1:508.95</li>
+<li>中国元兑坚戈汇率为1:67.62</li>
+<li>卢布兑坚戈1:5.41，里拉兑坚戈1:9.14</li>
+<li>美元汇率基于交易所加权平均价确定</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率数据反映坚戈对主要货币的比价关系，为贸易和投资提供定价基准。美元汇率形成机制体现市场化导向，有助于增强货币政策透明度，对哈国金融稳定和外贸结算具有参考意义。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/digaogongzuozhengzaijin-ef2a1e1c/" target="_blank">新规落地：哈萨克斯坦高鼻羚羊角销售筹备工作正在推进</a></h3>
+<div class="item-meta">哈通社中文版 · 10/19 21:19<span class="source-link"><a href="https://cn.inform.kz/news/digaogongzuozhengzaijin-ef2a1e1c/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦林业和野生动物委员会表示，根据2025年12月CITES第20次缔约方大会决议，哈国获准开展总量30吨的高鼻羚羊角国际贸易。哈方计划销售30吨高鼻羚羊角，“绿色发展”股份公司正推进筹备工作，目前尚未正式对外销售。资金将用于生物多样性保护、高鼻羚羊保护及改善林业和野生动物保护单位装备条件。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">林业和野生动物委员会日前在回复哈通社问询时表示，根据2025年12月在撒马尔罕举行的《濒危野生动植物种国际贸易公约》（CITES）缔约方大会第20次会议通过的决议，哈萨克斯坦获准开展总量为30吨的高鼻羚羊角国际贸易。根据这一决定，哈方计划销售30吨高鼻羚羊角。目前，“绿色发展”股份公司正在推进相关组织筹备工作。截至目前，高鼻羚羊角尚未正式对外销售。
+
+值得一提的是，哈萨克斯坦计划出口高鼻羚羊角的消息于去年12月首次对外公布。
+
+今年3月，时任生态和自然资源部部长叶尔兰·尼桑巴耶夫曾说明高鼻羚羊角销售所得资金的具体用途。相关资金将用于保护生物多样性、加强对高鼻羚羊的保护，以及改善相关林业和野生动物保护单位的物资技术装备条件。</div>
+<ul>
+<li>CITES第20次大会批准哈国30吨高鼻羚羊角国际贸易</li>
+<li>哈方计划销售30吨，“绿色发展”股份公司推进筹备</li>
+<li>高鼻羚羊角尚未正式对外销售</li>
+<li>销售资金用于生物多样性保护和高鼻羚羊保护</li>
+<li>消息于去年12月首次公布，今年3月说明资金用途</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上开辟新出口收入来源；政治上体现哈国在CITES框架下合规利用野生动物资源；外交上展示与国际公约组织合作；矿产格局无直接影响，但强化资源管理形象。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-10-20 09:02</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
