@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年10月22日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年10月22日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年10月21日早9:00至2026年10月22日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 21 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">5</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">9</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">5</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">2</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(5 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/guojiazhukaiguojiaquanhuihui-junshiwen-657c53f4/" target="_blank">国家元首主持召开国家安全委员会会议 讨论军事改革问题</a></h3>
+<div class="item-meta">哈通社中文版 · 10/22 01:55<span class="source-link"><a href="https://cn.inform.kz/news/guojiazhukaiguojiaquanhuihui-junshiwen-657c53f4/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫主持召开国家安全委员会会议，审议军事改革计划草案。改革旨在短期内建成现代化、机动性强、技术装备先进的军队，涵盖指挥管理、军人培训、人事政策、军事教育、国防规划及技术装备现代化等领域。计划包括调整义务兵役为两阶段模式（6个月训练+6个月服役）、组建无人系统部队、设立军事顾问和军人事务专员制度、发展“青年勇士”军事爱国主义教育体系等。组织实施工作今年年底前完成，主要改革措施明年落实。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">国家元首主持召开国家安全委员会会议 讨论军事改革问题
+
+会议主要就军事改革计划草案进行了审议。
+
+考虑到哈萨克斯坦国内正在进行的大规模改革，总统此前责成有关部门制定国防领域改革方案，并提交国家安全委员会审议。
+
+托卡耶夫总统强调，必须在较短时间内建成一支现代化、机动性强、技术装备先进的军队，这具有特别重要的意义。
+
+- 我们已经明确提出，要全面提升武装力量的质量。改革应涵盖指挥管理、军人培训、人事政策、军事教育、国防规划以及技术装备现代化等领域。必须特别重视军事服役安全、军队指挥文化，以及国家资源的有效利用。同时，军队与社会之间的关系也应当发生改变。我们需要推进综合性改革。只有制定并落实全面、系统的解决方案，才能实现预期目标。-他说。
+
+Фото: Акорда 会议期间，国家安全委员会副主席阿伊达·巴拉耶娃介绍了军事改革计划的主要内容。该计划综合考虑了国际军队建设经验、现代作战方式以及哈萨克斯坦国内专家提出的建议。
+
+文件提出了一系列制度性改革措施，旨在提高国家整个军事体系的运行效率。
+
+具体而言，计划重新审视武装力量的组织架构和人员编制，完善指挥管理与国防规划机制，组建无人系统部队，并加强军队的核心组成部分。
+
+此次改革的一项重要内容是，将义务兵役制度调整为分两个阶段实施的模式。应征入伍人员将在前六个月于训练中心接受军事训练，随后六个月在具体军事单位服役。在这一阶段，军队将重点加强战斗训练，以及官兵在所属分队中执行任务的能力。
+
+改革还将特别重视保障军人安全和维护军人合法权益。
+
+哈萨克斯坦计划设立军事顾问和军人事务专员制度。同时，将采取措施防止违反军队条例的行为，进一步加强军纪。
+
+此外，哈萨克斯坦还计划以“诚信公民”理念为基础，发展统一的“青年勇士”军事爱国主义教育与训练体系，扩大专业军事学校网络，并进一步完善初级军事训练。
+
+Фото: Ақорда 会上，国防部长阿依多斯·穆尔扎赫梅托夫汇报武装力量现代化改革计划。
+
+改革的一项重要内容是制定并实施武装力量新的信息与通信战略，同时按照宪法确立的“法治与秩序”原则，提高军队思想教育工作的质量。
+
+上述措施旨在加强军队纪律，增强社会对军队的信任。
+
+根据计划，相关组织实施工作将在今年年底前完成，主要的纲领性改革措施将于明年落实。</div>
+<ul>
+<li>托卡耶夫主持国安委会议，审议军事改革计划草案</li>
+<li>改革目标：短期建成现代化、机动性强、技术装备先进的军队</li>
+<li>义务兵役调整为两阶段：6个月训练+6个月服役</li>
+<li>组建无人系统部队，设立军事顾问和军人事务专员制度</li>
+<li>今年年底前完成组织实施，主要改革措施明年落实</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">军事改革将提升哈国国防能力与军队效率，优化兵役制度与军纪，增强社会信任；组建无人系统部队顺应现代战争趋势，可能影响地区军事平衡；改革涉及资源重新配置，对财政和经济产生一定压力，但长期有利于国家安全与稳定。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/voennuyu-reformu-v-kazahstane-planiruyut-realizovat-v-dva-etapa-do-kontsa-2027-g-e6f5a80c" target="_blank">哈萨克斯坦军事改革计划分两阶段实施至2027年底</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/22 01:45<span class="source-link"><a href="https://www.inform.kz/ru/voennuyu-reformu-v-kazahstane-planiruyut-realizovat-v-dva-etapa-do-kontsa-2027-g-e6f5a80c" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦计划在2027年底前分两阶段实施军事改革。组织措施于今年年底前完成，主要概念性措施于2027年实施。改革包括通过武装力量新的信息通信战略，在“法律与秩序”原则基础上提高教育工作质量，以加强军队纪律和公众信任。安全委员会主席指示年底前完成对国防部的综合检查。总统强调军事安全是全民任务，要求所有机构协调工作。改革计划已获批准，协调工作由政府和安全委员会负责。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据部长称，军事改革的重要要素将是通过武装力量新的信息通信战略，并在“法律与秩序”宪法原则基础上提高教育工作质量。这些措施旨在加强军队纪律和公众对军队的信任。
+计划中的组织措施将在今年年底前实施，主要概念性措施将在2027年实施。
+会议期间，安全委员会主席指示在年底前完成对哈萨克斯坦共和国国防部状况综合检查委员会的工作。
+总统强调，军事安全是一项全民任务，需要所有相关机构协调一致的工作。
+会议结果，军事改革计划获得批准。
+国家元首表示，及时、全面实施计划中的改革具有决定性意义。
+执行计划的协调工作已委托给政府和安全委员会。
+此前在安全委员会会议上，哈萨克斯坦总统强调了在最短时间内建立现代化、机动性和技术化军队的特殊重要性。
+安全委员会副主席艾达·巴拉耶娃介绍了军队改革计划的主要条款。</div>
+<ul>
+<li>军事改革分两阶段实施，2027年底前完成</li>
+<li>组织措施今年底完成，概念性措施2027年实施</li>
+<li>通过新信息通信战略，强化军队纪律与公众信任</li>
+<li>年底前完成对国防部状况的综合检查</li>
+<li>改革计划获批，政府和安全委员会负责协调</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">军事改革将提升哈国军队现代化水平与纪律性，增强公众信任，巩固政权安全基础；分阶段实施有助于资源合理配置，但需关注执行效率与国防预算分配。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/aida-balaeva-predstavila-plan-reformi-armii-kazahstana-a05cc0ca" target="_blank">无人机部队与新型士兵训练：哈萨克斯坦军队将有哪些变化</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/22 01:41<span class="source-link"><a href="https://www.inform.kz/ru/aida-balaeva-predstavila-plan-reformi-armii-kazahstana-a05cc0ca" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦计划对武装力量进行机构改革，包括重新审视结构和组成、组建无人力量、过渡到两阶段义务兵役模式（前六个月训练中心，后六个月部队服役）。还将设立军事顾问和军人事务专员制度，防止不正当关系，加强纪律。在“诚实公民”理念下发展“青年勇士”军事爱国主义训练体系，扩大军事学校网络。总统要求尽快建立现代化、机动化和技术化军队。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">该文件规定了旨在提高国家整个军事组织效率的机构改革。
+计划重新审视武装力量的结构和组成，完善管理体系和国防规划，组建无人力量并加强军队的关键组成部分。
+军事改革最重要的方面是过渡到两阶段义务兵役模式。前六个月，新兵将在训练中心接受训练，后六个月将直接在部队服役，重点在于战斗训练和以分队为单位执行任务。
+必须特别关注确保军人安全和保护其权利。
+计划设立军事顾问和军人事务专员制度，并采取措施防止不正当关系，加强军事纪律。
+还规定在“诚实公民”理念基础上发展“青年勇士”统一军事爱国主义训练体系，扩大专门军事学校网络，完善初级军事训练。
+如前所述，国家元首指示制定并提交安全委员会审议国防领域改革建议，考虑国家大规模变革。总统强调在最短时间内建立现代化、机动化和技术化军队的特殊重要性。</div>
+<ul>
+<li>重新审视武装力量结构和组成，组建无人力量</li>
+<li>义务兵役改为两阶段：6个月训练+6个月部队服役</li>
+<li>设立军事顾问和军人事务专员，加强军人权利保护</li>
+<li>发展“青年勇士”军事爱国主义训练体系</li>
+<li>总统要求尽快建立现代化、机动化和技术化军队</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">改革提升哈国军队效率和现代化水平，无人力量建设增强国防技术能力；两阶段兵役优化兵员训练；军人权利保护制度有助于社会稳定；整体上强化哈国军事自主性，对地区安全格局产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/guojiadexinshirenmin-094d52db/" target="_blank">玛吾林·阿什姆巴耶夫：国家元首改革的核心是维护人民利益</a></h3>
+<div class="item-meta">哈通社中文版 · 10/21 19:19<span class="source-link"><a href="https://cn.inform.kz/news/guojiadexinshirenmin-094d52db/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国家和社会活动家玛吾林·阿什姆巴耶夫在奇姆肯特举行新书发布会，探讨托卡耶夫总统倡议的政治、经济和社会改革。他强调“公正的哈萨克斯坦”理念核心是从“国家为了国家”转向“国家为了人民”，新宪法体现以人为本原则。阿什姆巴耶夫还会见地掷球联合会代表和青年，指出过去两年奇姆肯特参与地掷球运动人数大幅增加，并承诺支持包容性体育发展。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">活动期间，本书作者、国家和社会活动家玛吾林·阿什姆巴耶夫与当地科研和文化界人士、专家学者及社会积极分子一道，共同探讨了在国家元首倡议下我国正在实施的政治、经济和社会改革的主要方向。
+此外，访问期间，阿什姆巴耶夫还与当地地掷球（博查/Boccia）联合会代表以及该地区青年代表进行了会面。
+新书发布会在奥埃佐夫南哈萨克斯坦研究型大学举行。会面期间，作者就国家元首哈斯穆-卓玛尔特·托卡耶夫倡议实施的各项改革的历史意义及其对国家未来的影响，分享了自己的见解。
+书中探讨了公共管理现代化、政治与经济变革、区域发展、国家认同，以及确定哈萨克斯坦在国际舞台上的地位与声誉等相关问题。
+Фото: Мәулен Әшімбаев 阿什姆巴耶夫在发言中重点谈到了若干核心问题，这些问题揭示了总统各项改革的实质与内涵。
+- “公正的哈萨克斯坦”理念的根本意义，在于实现从“国家为了国家”的观念向“国家为了人民”原则的根本性转变。国家发展新范式的基础是以人为本和维护人的这一利益。这一立场在新宪法中得到了明确体现。-他说。
+作者还指出，宪法中载明的价值观界定了国家的长期发展目标。
+此外，与会人员还探讨了增强国家科技潜力以及有效利用数字发展新机遇的相关议题。阿什姆巴耶夫表示，全球变革正在为哈萨克斯坦打开新的机遇之门。在这种形势下，关键是要置身于全球正在发生的变革进程之中，不游离于边缘，而是成为其中的积极参与者。
+Фото: Шымкент әкімдігі 在访问奇姆肯特期间，阿什姆巴耶夫前往“冶金”体育综合体，与当地地抛球国家队的运动员们举行了会面。他了解了训练开展情况，并与残疾运动员、残疾儿童家长以及教练员团队共同探讨了推广包容文化（Inclusion Culture）的相关议题。
+会面期间，阿什姆巴耶夫特别指出了奇姆肯特运动员取得的成绩，并强调在过去两年里，该市参与地抛球运动的人数有了大幅增加。当地代表队的选手们积极参加各项全国性比赛并频频获奖。此外，会议还指出，奇姆肯特包容性体育中心的建设将为运动员提供持续训练和备战赛事的新契机。
+- 我相信，你们当中一定会涌现出国家队的新生力量以及国际大赛的冠军。未来我们将继续为你们提供支持。我们将与你们的教练团队紧密合作，全力创造必要条件，以便你们能在国际舞台上尊严地捍卫国家荣誉。-他说。
+阿什姆巴耶夫的奇姆肯特之行在“友谊之家”与当地青年的会面中圆满结束。在开放式对话的形式下，与会人员探讨了在国家元首倡议下实施的各项改革为年轻一代带来的机遇、青年参与国家变革的途径及其对社会承担的责任。</div>
+<ul>
+<li>阿什姆巴耶夫在奇姆肯特发布新书，阐释总统改革核心内涵</li>
+<li>改革理念从“国家为了国家”转向“国家为了人民”</li>
+<li>新宪法明确体现以人为本和维护人民利益的原则</li>
+<li>奇姆肯特地掷球运动参与人数过去两年大幅增加</li>
+<li>阿什姆巴耶夫承诺支持包容性体育和青年发展</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">政治方面强化“公正的哈萨克斯坦”叙事，巩固托卡耶夫改革合法性；社会方面推动包容性体育和青年参与，促进社会稳定；外交上通过国际舞台定位提升国家形象；矿产格局未直接涉及，但区域发展议题间接关联资源型地区转型。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/kaihi-techxingdong-1595qi-1abdd96f/" target="_blank">内务部开展“Hi-tech”专项行动 查处1595起网络犯罪</a></h3>
+<div class="item-meta">哈通社中文版 · 10/21 16:21<span class="source-link"><a href="https://cn.inform.kz/news/kaihi-techxingdong-1595qi-1abdd96f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦内务部反网络犯罪司司长苏因拜宣布，在“Hi-tech”专项行动中，全国共查处网络犯罪1595起，办结1242起，侦破积案917起，抓获嫌疑人724人（含22名外国公民），逮捕97人，抓获在逃人员8名。今年前9个月发现并封堵约8.2万个违法网络资源。预防宣传方面，刊发报道250万余篇（条），举办宣讲10.4万场、交流会1.8万场，发放材料470余万份。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">内务部开展“Hi-tech”专项行动 查处1595起网络犯罪
+
+哈萨克斯坦内务部反网络犯罪司司长詹多斯·苏因拜在中央通讯服务中心举行的新闻发布会上公布了上述数据。
+
+据他介绍，此次专项行动旨在预防和侦破网络犯罪，同时查明犯罪链条中的参与人员。
+
+“行动期间，全国共查处网络犯罪1595起，办结案件1242起，侦破此前发生的917起网络犯罪案件。因涉嫌此类犯罪，共有724人被抓获，其中包括22名外国公民，97人被依法逮捕。此外，还抓获了8名在逃人员。”苏因拜说。
+
+他指出，为及时发现违法网络资源，执法部门持续对互联网开展监测。今年前9个月，共发现约8.2万个违法网络资源，并已移交相关部门予以封堵。
+
+“预防工作也在持续开展。各类媒体围绕这一主题刊发了250万余篇（条）相关报道和宣传材料；各类机构组织开展了10.4万场预防性宣讲活动和1.8万场居民交流会；累计发放宣传手册和宣传册470余万份。”苏因拜补充说。</div>
+<ul>
+<li>专项行动查处网络犯罪1595起，办结1242起</li>
+<li>抓获嫌疑人724人，含22名外国公民，逮捕97人</li>
+<li>前9个月发现并封堵约8.2万个违法网络资源</li>
+<li>预防宣传覆盖广，举办宣讲10.4万场、交流会1.8万场</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">行动强化哈国网络空间治理，提升执法威慑力，有助维护政治稳定；打击网络犯罪优化数字经济环境；涉及外国公民案件或推动跨境执法合作；对矿产等关键行业网络防护提出更高要求。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(9 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/waichanghuiguojiachang-7a71072e/" target="_blank">哈萨克斯坦外长会见阿拉伯国家联盟秘书长</a></h3>
+<div class="item-meta">哈通社中文版 · 10/22 01:15<span class="source-link"><a href="https://cn.inform.kz/news/waichanghuiguojiachang-7a71072e/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦外长会见阿拉伯国家联盟秘书长，双方讨论加强阿拉伯世界与中亚合作、签署保障中东和平安全的新谅解备忘录，并就国际地区热点交换意见。哈方祝贺秘书长履新，强调阿盟在维护国际法与稳定中的作用，愿将对话提升至高质量水平。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦外长会见阿拉伯国家联盟秘书长
+
+正文：
+会谈中，双方讨论了加强阿拉伯世界与中亚地区合作的重要议题。
+哈萨克斯坦外交部长向阿拉伯国家联盟秘书长正式履新表示祝贺，并强调了该组织在维护国际法与稳定方面发挥的重要作用。
+Фото: ҚР СІМ  
+会晤期间，双方讨论了签署一份新的谅解备忘录的相关事宜，该备忘录体现了双方旨在保障中东地区和平与安全的共同努力。
+此外，双方还就国际和地区议程中的热点问题交换了意见。
+会晤结束时，哈方表示致力于将与阿拉伯国家联盟的对话提升至崭新的高质量水平，并祝愿该组织领导层取得成功。</div>
+<ul>
+<li>哈外长会见阿盟秘书长，讨论阿拉伯世界与中亚合作</li>
+<li>双方拟签署新谅解备忘录，保障中东和平与安全</li>
+<li>哈方祝贺秘书长履新，强调阿盟维护国际法作用</li>
+<li>就国际和地区热点问题交换意见</li>
+<li>哈方愿将双方对话提升至高质量水平</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈萨克斯坦与阿拉伯世界政治对话，为中东和平安全合作提供机制化框架，有助于哈国拓展外交空间、提升在中亚与伊斯兰世界间的桥梁作用，对矿产等经济合作亦有潜在推动。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/xuehegaodengbuchanghuidashi-d6bc0670/" target="_blank">科学和高等教育部长会见瑞士驻哈大使</a></h3>
+<div class="item-meta">哈通社中文版 · 10/22 00:20<span class="source-link"><a href="https://cn.inform.kz/news/xuehegaodengbuchanghuidashi-d6bc0670/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦科学和高等教育部长会见瑞士驻哈大使，讨论深化科学及高等教育合作。会谈涉及部长即将访问瑞士日内瓦、加强双边关系、拓展科研教育机构合作，并特别关注签署科学技术合作议定书，以落实哈政府与欧洲核子研究中心（CERN）的国际合作协定。双方强调发展国际科学联系、加强研究伙伴关系，为哈科学家创造与国际顶尖机构交流的机会，并确认落实联合倡议。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">科学和高等教育部长会见瑞士驻哈大使
+
+双方探讨了哈萨克斯坦与瑞士在科学及高等教育领域进一步深化合作的前景。讨论内容涵盖了部长即将对瑞士日内瓦进行的访问，以及如何加强双边关系、拓展两国科研与教育机构间合作的途径。
+
+双方特别关注了签署科学技术合作议定书的相关事宜；该议定书旨在落实哈萨克斯坦政府与欧洲核子研究中心（CERN）之间所达成的国际合作协定。
+
+Фото: Ғылым және жоғары білім министрлігі 与会者强调了发展国际科学联系、加强研究领域合作伙伴关系，以及为哈萨克斯坦科学家与国际顶尖科学机构开展交流创造更多机会的重要性。
+
+根据会谈结果，双方确认有意进一步加强哈萨克斯坦与瑞士在科学及高等教育领域的合作，并落实各项联合倡议。</div>
+<ul>
+<li>哈科学和高等教育部长会见瑞士驻哈大使</li>
+<li>讨论部长即将访问瑞士日内瓦及加强双边关系</li>
+<li>重点签署科学技术合作议定书以落实与CERN协定</li>
+<li>强调发展国际科学联系和为哈科学家创造交流机会</li>
+<li>双方确认进一步加强科学教育合作并落实联合倡议</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此会谈将推动哈萨克斯坦与瑞士及CERN的科技合作，提升哈国科研国际化和高等教育水平，有助于吸引先进技术和管理经验，增强哈国在核科学等领域的参与度，对哈国科技外交和人才培养产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/waichanghuida-487feadf/" target="_blank">哈萨克斯坦外长会见爱资哈尔大伊玛目塔伊布</a></h3>
+<div class="item-meta">哈通社中文版 · 10/21 23:22<span class="source-link"><a href="https://cn.inform.kz/news/waichanghuida-487feadf/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦外长会见爱资哈尔大伊玛目塔伊布，双方探讨保护传统精神价值、推进跨宗教对话及宗教教育合作。哈埃两国拥有数世纪历史文化和精神兄弟情谊，提及开罗苏丹拜巴尔斯清真寺修缮后重新开放及在哈“努尔-穆巴拉克”埃及伊斯兰文化大学的运营。哈外长感谢爱资哈尔对阿斯塔纳世界和传统宗教领袖大会的持续支持，并邀请塔伊布工作访问。双方共识将精神与教育合作提升至全新水平。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦外长会见爱资哈尔大伊玛目塔伊布
+正文:
+会谈期间，双方探讨了保护传统精神价值、推进跨宗教对话以及宗教教育领域双边合作的当前要务与热点问题。
+哈萨克斯坦与埃及被源远流长、跨越数个世纪的历史、文化和精神兄弟情谊紧密联系在一起。作为两国成功伙伴关系的鲜明例证，特别提及了开罗历史悠久的苏丹拜巴尔斯清真寺（Sultan Baibars Mosque）在经历大规模修缮后隆重重新开放，以及位于哈萨克斯坦的“努尔-穆巴拉克”埃及伊斯兰文化大学的富有成效的运营。
+Фото: Министерство иностранных дел РК 最后，哈萨克斯坦外交部长就对在阿斯塔纳举行的世界和传统宗教领袖大会所给予的持续支持，向谢赫艾哈迈德·塔伊布表示感谢，并邀请爱资哈尔大伊玛目对阿斯塔纳进行工作访问。
+根据会谈结果双方达成共识，将精神与教育领域的合作提升至一个质的全新水平，以造福两国兄弟人民，促进其繁荣发展。</div>
+<ul>
+<li>哈外长会见爱资哈尔大伊玛目塔伊布</li>
+<li>双方探讨跨宗教对话与宗教教育合作</li>
+<li>提及苏丹拜巴尔斯清真寺修缮后重开</li>
+<li>哈方感谢对世界宗教领袖大会的支持</li>
+<li>邀请大伊玛目对阿斯塔纳进行工作访问</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈埃精神与教育合作，提升哈国在伊斯兰世界宗教对话中的地位，有助于巩固国内传统精神价值，促进跨宗教和谐，对哈外交多元平衡及软实力有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/yelishihuicheng-47599ef9/" target="_blank">哈萨克斯坦-保加利亚商业理事会成立</a></h3>
+<div class="item-meta">哈通社中文版 · 10/21 20:54<span class="source-link"><a href="https://cn.inform.kz/news/yelishihuicheng-47599ef9/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦-保加利亚商业理事会正式成立，两国50多位企业代表出席。会议由哈外贸商会、保工商会、哈驻保使馆及哈保工商会共同支持举办。哈驻保大使铁穆尔巴耶夫表示，理事会将推动双边贸易、吸引投资。哈方主席哈热姆萨科夫重点介绍农业、IT、交通物流等合作领域。保工商会主席西梅奥诺夫强调哈在中亚的战略作用。B2B对接会探讨了农业、制造业、建筑、交通、物流、IT等项目，各方同意加强直接商业联系并扩大共同投资项目。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦-保加利亚商业理事会成立
+
+两国50多位领军企业代表出席了此次活动。本次会议由哈萨克斯坦外贸商会、保加利亚工商会（BCCI）、哈萨克斯坦驻保加利亚使馆以及汇聚了两国近40家企业代表的哈萨克斯坦-保加利亚工商会共同支持协助举办。
+
+哈萨克斯坦驻保加利亚大使维克托·铁穆尔巴耶夫强调，在两国元首倡议下成立的商务理事会将成为推动双边贸易发展、吸引投资以及促进合作项目落地的实用工具。
+
+哈萨克斯坦“阿塔梅肯”企业家协会董事会副主席、哈萨克斯坦外贸商会董事会主席兼哈萨克斯坦-保加利亚商业理事会哈方主席穆拉特·哈热姆萨科夫向与会者介绍了双边经贸合作的现状与前景，并重点提到了农业、信息技术（IT）、交通运输及物流等领域。
+
+Фото: Сыртқы істер министрлігі 保加利亚工商会主席茨韦坦·西梅奥诺夫指出，哈萨克斯坦在中亚地区发挥着战略性作用；他强调，哈萨克斯坦行之有效的对外经济政策至关重要，为外国企业在该国开展业务提供了有力支持。
+
+在企业间（B2B）对接会上，来自商界的代表们探讨了多个具有发展前景的合作项目，涵盖农业、制造业、建筑业、交通运输、物流以及信息技术等领域。
+
+根据会议结果，各方同意加强直接商业联系，并扩大双方共同投资项目的组合。</div>
+<ul>
+<li>哈保商业理事会成立，50多位企业代表出席</li>
+<li>理事会旨在推动贸易、吸引投资、促进项目落地</li>
+<li>重点合作领域包括农业、IT、交通物流等</li>
+<li>B2B对接会探讨农业、制造、建筑等多领域项目</li>
+<li>各方同意加强直接商业联系，扩大共同投资</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">理事会有助于深化哈保经贸合作，吸引保加利亚及欧盟投资，推动哈农业、交通物流和IT产业发展，拓展哈外交空间，但短期内对矿产格局影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/chuguojianianshiyutibuchanghui-64092f82/" target="_blank">哈萨克斯坦代表出席突厥国家组织青年事务与体育部长会议</a></h3>
+<div class="item-meta">哈通社中文版 · 10/21 19:52<span class="source-link"><a href="https://cn.inform.kz/news/chuguojianianshiyutibuchanghui-64092f82/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦、阿塞拜疆、吉尔吉斯斯坦、土耳其和乌兹别克斯坦国家机关代表及突厥国家组织秘书处领导层出席会议。各方探讨发展青年政策与体育领域合作、拓展主管部门联系、交流经验，并研究未来共同推进多项合作项目的可行性。会议旨在加强突厥国家组织框架内伙伴关系，发展国家间对话，推动青年政策和体育领域共同协作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦、阿塞拜疆、吉尔吉斯斯坦、土耳其和乌兹别克斯坦的国家机关代表，以及突厥国家组织秘书处领导层出席了会议。
+与会人员探讨了发展青年政策与体育领域合作、拓展相关主管部门间的联系以及交流经验等事宜。此外，各方还探讨了未来共同推进多项合作项目的可行性。
+此次会议旨在加强突厥国家组织框架内的伙伴关系，发展国家间对话，并推动在青年政策和体育领域的共同协作。</div>
+<ul>
+<li>五国代表及突厥国家组织秘书处出席青年与体育部长会议</li>
+<li>探讨青年政策与体育合作、拓展部门联系及经验交流</li>
+<li>研究未来共同推进多项合作项目的可行性</li>
+<li>会议旨在加强突厥国家组织框架内伙伴关系与对话</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">会议强化哈萨克斯坦在突厥国家组织中的多边协作，促进青年政策与体育领域区域合作，有助于提升哈国软实力和外交影响力，对政治互信与人文交流产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/zhengbuchangjiang100-68acc5cd/" target="_blank">财政部长：哈乌计划将双边贸易额提升至100亿美元</a></h3>
+<div class="item-meta">哈通社中文版 · 10/21 18:42<span class="source-link"><a href="https://cn.inform.kz/news/zhengbuchangjiang100-68acc5cd/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦财政部长表示，哈乌双边贸易额去年达47亿美元，今年前9个月为37亿美元，同比增长29%，目标提升至100亿美元。为此双方签署协议设立海关代表处，代表将在哈驻乌大使馆工作，协助解决货物滞留等问题，促进贸易增长。10月21日，相关协议法案在库鲁尔泰全体会议经两轮审议通过。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">财政部长表示，哈萨克斯坦与乌兹别克斯坦之间的贸易往来十分活跃。
+截至去年年底，这一数字已达到47亿美元。今年前9个月，贸易额达37亿美元，同比增长29%。然而，目前的目标是将这一数字提升至100亿美元。——他说。
+部长还指出，为实现这一目标，双方已签署协议，设立两国海关代表处。
+这些代表处为国内外企业家提供实际和理论方面的支持，从而促进贸易额增长。例如，其目标是与乌兹别克斯坦的同行合作，解决各种问题，例如确保货物不会在边境滞留。——他说。
+据他介绍，海关代表将在哈萨克斯坦驻乌兹别克斯坦大使馆工作，目前没有为此设立单独办公室的计划。
+我们看到贸易额正在增长。因此，需要海关部门派代表提供相关支持。——他说。
+此外，海关代表的首要任务是与当地海关当局进行沟通。他们将协助解决货物运输过程中出现的问题，并及时向哈萨克斯坦企业家提供信息。
+造成困难的原因多种多样。问题并非总是与海关或边境口岸的运作相关；例如，道路封闭或天气状况可能导致交通受限。与现有程序相比，代表可以及时向企业传递信息，从而加快沟通速度。——他说。
+据此前报道，10月21日，在库鲁尔泰全体会议上，关于批准《哈萨克斯坦共和国政府与乌兹别克斯坦共和国政府关于设立哈萨克斯坦共和国与乌兹别克斯坦共和国海关服务代表处的协议》的法案经两轮审议后获表决通过。</div>
+<ul>
+<li>哈乌贸易额去年47亿美元，今年前9个月37亿美元，同比增长29%</li>
+<li>目标将双边贸易额提升至100亿美元</li>
+<li>双方签署协议设立海关代表处，代表将在哈驻乌大使馆工作</li>
+<li>海关代表协助解决货物运输问题，加快信息传递</li>
+<li>10月21日，相关协议法案在库鲁尔泰全体会议经两轮审议通过</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该协议将促进哈乌贸易便利化，推动双边贸易额向100亿美元目标迈进，加强经济合作与区域一体化；海关代表处的设立有助于解决边境滞留问题，改善营商环境，对哈国经济外交产生积极影响，并可能促进中亚地区贸易格局优化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/yuzhongguoyefa-4305bf0f/" target="_blank">哈萨克斯坦与中国企业讨论阿拉木图垃圾焚烧发电项目</a></h3>
+<div class="item-meta">哈通社中文版 · 10/21 17:24<span class="source-link"><a href="https://cn.inform.kz/news/yuzhongguoyefa-4305bf0f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与中国企业就阿拉木图垃圾焚烧发电项目举行会谈，重点讨论垃圾能源化利用工厂的投资实施事宜，并交流了在哈其他地区推广同类项目的前景。哈方承诺继续支持相关投资倡议，协同解决项目推进中的问题，推动两国在废弃物管理领域的合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦与中国企业讨论阿拉木图垃圾焚烧发电项目
+正文:
+会谈期间，双方重点讨论了在阿拉木图市建设垃圾能源化利用工厂投资项目的实施事宜。
+双方还就未来在哈萨克斯坦其他地区实施同类项目的前景进行了交流。
+会谈结束时，哈方表示，将继续为相关投资倡议提供支持，协同解决项目推进过程中遇到的问题，并进一步推动哈中两国在废弃物管理领域的合作。</div>
+<ul>
+<li>哈中讨论阿拉木图垃圾焚烧发电项目投资实施</li>
+<li>双方交流在哈其他地区推广同类项目前景</li>
+<li>哈方承诺支持投资倡议并协调解决问题</li>
+<li>项目聚焦垃圾能源化利用，推动废弃物管理合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该项目将提升哈萨克斯坦垃圾处理与可再生能源能力，吸引中国投资，深化哈中绿色经济合作，并可能带动其他地区类似项目，对哈国经济与外交产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/yujiangguan-2096c1ac/" target="_blank">哈萨克斯坦与乌兹别克斯坦将设立海关服务代表处</a></h3>
+<div class="item-meta">哈通社中文版 · 10/21 15:11<span class="source-link"><a href="https://cn.inform.kz/news/yujiangguan-2096c1ac/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与乌兹别克斯坦于2025年11月15日在塔什干签署协议，将互设海关服务代表处，建立法律和组织基础，开展即时信息交流并协调行动。哈乌边境现有11个过境点（8公路、3铁路），2025年完成三个过境点改造，前9个月通关汽车近65万辆。今年前8个月双边贸易额达37亿美元，同比增长29%，目标2030年提升至100亿美元。协议无需额外预算拨款，不影响海关法规和预算收入。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦与乌兹别克斯坦将设立海关服务代表处
+正文:
+该协议于2025年11月15日在塔什干签署，旨在为两国海关领域的合作建立法律和组织基础。协议规定，双方将开展即时信息交流，协商海关合作措施，并协调主管部门的行动。
+“目前，哈乌边境共有11个过境点投入运行，其中8个为公路过境点，3个为铁路过境点。2025年，‘卡普兰别克’‘卡兹古尔特’和‘阿塔梅肯’过境点的改造工程已经完成。接下来，‘丝绸之路’过境点也将投入运营。经过相关升级改造，过境点的旅客、货物和汽车通行能力均提高了数倍。今年前9个月，通关汽车数量已接近65万辆。”哈萨克斯坦财政部部长马迪·塔克耶夫表示。
+他指出，批准该协议将有助于提高海关管理效率、加强国家经济安全、促进两国贸易发展，并为哈乌两国海关部门建立额外的制度化合作机制。
+“落实该协议无需国家预算额外拨款，也不需要修改海关法律法规，不会对国家预算收入产生负面影响。”塔克耶夫解释说。
+据悉，该法案于今年5月18日提交议会，旨在确保两国海关服务代表处持续、有效运转。
+“哈萨克斯坦与乌兹别克斯坦之间贸易额的快速增长，凸显了消除合作障碍、推进边境管理现代化的必要性。现有的行政壁垒有时会造成商业货物运输滞留，也降低了应对突发挑战的效率。建立海关代表互设机制，将推动双边贸易进入更加活跃的发展阶段。今年前8个月，两国贸易额达到37亿美元，同比增长29%。考虑到两国元首提出的到2030年将双边贸易额提升至100亿美元的目标，转向新的合作模式将为高效开展边境合作建立统一的对接渠道。”库鲁尔泰议员巴赫特别克·毕巴耶夫表示。
+该机制将有助于保障货物运输稳定，消除行政和技术障碍，及时协调双方行动，共同解决边境出现的问题。总体而言，协议的落实将进一步巩固哈乌两国的战略伙伴关系与睦邻友好关系。
+在讨论该法案时，议员亚历山大·达尼洛夫指出，由于货物流量大、游客数量多，哈乌边境此前经常出现长达数公里的排队拥堵现象。
+“在这种情况下，边境过境点承受着巨大压力，不得不在接近技术承载能力极限的状态下运行。过去三年，哈萨克斯坦投入1180亿坚戈用于改造全国边境过境点，其中约590亿坚戈用于升级哈乌边境过境点。那么，既然已经开展了改造工作，为何边境拥堵问题仍未得到解决？财政部目前正在采取哪些措施，切实提高这些过境点的通行能力？”达尼洛夫质询道。
+对此，财政部部长马迪·塔克耶夫表示，过去两年已完成9个过境点的升级改造。
+“今年10月，我们正在完成与乌兹别克斯坦接壤的‘丝绸之路’过境点建设。该项目完全使用预算外资金，具体来说，就是由赞助资金提供支持。这个过境点专供行人通行，设计能力为每天7万人次和200辆客车。”塔克耶夫表示。
+他还补充说，提高过境点通行能力不仅要依靠新建检查设施，也要通过延长工作时间来实现。目前，相关过境点正逐步转向三班制、全天24小时运行，海关部门也在同步推进这一安排。</div>
+<ul>
+<li>哈乌签署协议互设海关服务代表处，建立制度化合作机制</li>
+<li>哈乌边境11个过境点运行，前9个月通关汽车近65万辆</li>
+<li>今年前8个月双边贸易额37亿美元，同比增长29%</li>
+<li>目标2030年双边贸易额提升至100亿美元</li>
+<li>过去三年哈投入1180亿坚戈改造边境，其中590亿用于哈乌边境</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该协议将提升哈乌边境通关效率，降低行政壁垒，促进双边贸易向100亿美元目标迈进；强化哈国经济安全与海关管理能力，巩固中亚战略伙伴关系，对区域矿产及货物运输格局产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://cn.inform.kz/news/guan-yuguanzuo-4b479994/" target="_blank">海关信息互通提速 哈萨克斯坦深化与乌兹别克斯坦、巴基斯坦海关合作</a></h3>
+<div class="item-meta">哈通社中文版 · 10/21 12:00<span class="source-link"><a href="https://cn.inform.kz/news/guan-yuguanzuo-4b479994/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦库鲁尔泰主席团会议确定全体会议议程，重点审议与乌兹别克斯坦和巴基斯坦的两项海关合作国际协议。哈乌协议于2025年11月15日在塔什干签署，规定互设海关代表机构，提高协作效率、交换业务信息并协调风险应对；哈萨克斯坦已在中国、土耳其、俄罗斯等8国设立此类机构。哈巴协议于2026年2月4日在伊斯兰堡签署，涵盖行政互助、技术支持、海关申报信息交换及执法合作，旨在提升经贸与物流效率。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据悉，10月16日，库鲁尔泰在主席艾别克·达德拜（Айбек Дәдебай）主持下召开主席团会议，确定了本次全体会议的议程。其中，与乌兹别克斯坦和巴基斯坦开展海关合作的两项国际协议成为重点审议事项。
+库鲁尔泰将首先审议关于批准哈萨克斯坦与乌兹别克斯坦政府间互设海关代表机构协议的法律草案。
+该协议于2025年11月15日在塔什干签署，旨在提高两国海关部门的协作效率，确保及时交换业务信息，并协调采取预防和应对潜在风险的措施。
+目前，哈萨克斯坦已在中国、土耳其、俄罗斯等8个国家设立海关代表机构。
+根据协议，派驻对方国家的海关代表机构将在本国驻在国外交代表机构负责人的总体领导下开展工作。代表机构工作人员的具体人数由双方协商确定。
+协议明确了海关代表机构的主要职责，包括代表本国在海关监管领域的利益，积极推动双边海关合作，参与制定海关基础设施建设和提高监管效率的联合建议，以及协调涉及海关业务的相关措施。
+此外，代表机构还将负责推动双方海关信息交换，参与落实两国在海关领域签署的国际条约，并就协调哈萨克斯坦与乌兹别克斯坦海关法律法规体系提出建议。
+双方还将加强海关人才培养合作，协调在两国相关教育机构开展海关工作人员职业培训和专业技能提升等工作。
+本次会议还将审议关于批准哈萨克斯坦与巴基斯坦政府间海关事务合作及相互行政协助协议的法律草案。
+该协议于2026年2月4日在伊斯兰堡签署，涵盖两国海关部门之间的行政互助、技术支持以及海关申报信息交换等内容。
+协议的实施有望提高两国在扩大经贸合作、发展交通运输和物流联系方面相关措施的执行效率。
+根据协议，哈萨克斯坦与巴基斯坦海关部门将在完善货物和运输工具通关程序、加强相互行政协助等方面开展合作。
+双方将交换有关商品归类、海关估价及原产地的信息，以核实相关申报资料的准确性，确保关税正确计征，并监督货物进出口禁令和限制措施的执行情况。
+协议同时规定，双方必须对交换的信息予以保密。
+在执法合作方面，两国海关部门将协调开展海关法律法规执行、违法行为预防、发现和制止以及相关调查工作，并加强海关业务经验交流。</div>
+<ul>
+<li>库鲁尔泰主席团会议确定议程，审议哈乌、哈巴两项海关合作协议</li>
+<li>哈乌协议2025年11月15日签署，规定互设海关代表机构并交换信息</li>
+<li>哈萨克斯坦已在中国、土耳其、俄罗斯等8国设立海关代表机构</li>
+<li>哈巴协议2026年2月4日签署，涵盖行政互助、技术支持与信息交换</li>
+<li>协议规定信息保密，并加强执法合作与海关经验交流</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">政治层面深化与乌、巴双边关系；经济上提升通关效率、促进经贸物流；外交上拓展海关合作网络；矿产格局方面，海关信息互通有助于哈国矿产出口监管与合规，降低贸易风险，但短期对矿产格局直接影响有限。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(5 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/ifc-planiruet-privlech-okolo-3-mlrd-v-proekti-kazahstana-9f5733af" target="_blank">国际金融公司计划为哈萨克斯坦项目吸引约30亿美元</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/22 04:19<span class="source-link"><a href="https://www.inform.kz/ru/ifc-planiruet-privlech-okolo-3-mlrd-v-proekti-kazahstana-9f5733af" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统顾问伊尔加利耶夫与IFC区域副总裁法胡里在线讨论投资合作，IFC计划为哈项目吸引约30亿美元，其中60%来自私人投资者，40%为自有资金。自1993年IFC已向哈115个私营项目投资超29亿美元。双方关注交通基础设施、水领域和PPP合作。10月16日哈国民经济部与世界银行签署JERP咨询服务协议，消除制度障碍并制定PPP计划。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：IFC计划为哈萨克斯坦项目吸引约30亿美元
+
+正文：
+哈萨克斯坦总统顾问兼战略规划和改革署署长阿塞特·伊尔加利耶夫与IFC中东和北亚区域副总裁伊马德·法胡里在在线会议上讨论了投资合作前景。
+据该署信息，计划融资的约60%预计通过吸引私人投资者提供，其余40%由公司自有资金提供。
+自1993年以来，IFC已向哈萨克斯坦私营部门的115个项目投资超过29亿美元。
+会议期间，双方审议了在交通基础设施和水领域扩大合作的前景，以及吸引私人资本参与实施基础设施项目的可能性。
+特别关注了公私伙伴关系（PPP）的发展，这有助于吸引投资并提高基础设施对象的设计、建设和运营质量。
+据该署指出，10月16日，哈萨克斯坦国民经济部和世界银行集团在哈萨克斯坦联合经济研究计划（JERP）框架内签署了咨询服务协议。
+文件规定消除制度和程序障碍、在优先领域制定PPP发展计划以及形成投资建议。
+会议结果，双方确认了进一步扩大伙伴关系和实施哈萨克斯坦有前景的基础设施项目的兴趣。
+此前有报道称，欧亚开发银行将向阿斯塔纳的数据中心项目投资3120万美元。</div>
+<ul>
+<li>IFC计划为哈项目吸引约30亿美元，60%来自私人投资者</li>
+<li>自1993年IFC已向哈115个私营项目投资超29亿美元</li>
+<li>双方讨论交通基础设施和水领域合作及私人资本参与</li>
+<li>哈国民经济部与世界银行签署JERP咨询服务协议</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">IFC融资将缓解哈基础设施投资缺口，推动PPP模式发展，促进交通和水领域建设；与世界银行合作有助于改善制度环境，吸引更多外资，增强经济多元化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/kazahstantsi-peredali-bolee-92-mln-tenge-pensionnih-nakopleniy-v-upravlenie-chas-d1115ca0" target="_blank">哈萨克斯坦民众将超9200万坚戈养老金储蓄转交私营公司管理</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/22 03:34<span class="source-link"><a href="https://www.inform.kz/ru/kazahstantsi-peredali-bolee-92-mln-tenge-pensionnih-nakopleniy-v-upravlenie-chas-d1115ca0" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>自2026年9月起，哈萨克斯坦人可将最多100%的养老金储蓄转交私营公司管理。9月7日至10月14日，32921名储户转账总额达9220万坚戈，超过前八个月总和。30-39岁储户最活跃，占转账笔数的38%。平均转账金额从92.2万坚戈增至160万坚戈。投资门户网站用户约8.2万。国家担保保留。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦人将超过9200万坚戈的养老金储蓄转交私营公司管理
+正文：
+自2026年9月起，哈萨克斯坦人获得了将强制性、强制性职业和自愿养老金缴费形成的养老金储蓄最多100%转交私营公司管理的机会。
+此前，储户可将强制性及强制性职业缴费形成的储蓄最多50%转交投资组合管理公司（УИП），自愿缴费形成的储蓄最多100%转交。
+据统一积累养老基金（ЕНПФ）消息，新规允许公民自主选择管理公司和投资策略，并在多个管理公司和投资组合之间分配储蓄。
+根据该基金统计，2026年1月1日至9月6日，共有44167名储户将养老金储蓄转交私人管理，总金额为6910万坚戈。
+新规生效后，9月7日至10月14日，共有32921名储户完成转账。总金额达到9220万坚戈，超过了前八个月的总和。
+据ЕНПФ数据，30至39岁的储户最为活跃。在9月7日至10月14日期间，该年龄段占所有转账的38%，占转账总金额的37.6%。
+该年龄组的平均转账金额从92.2万坚戈增长至160万坚戈。在40至49岁的储户中，该指标从120万坚戈增长至210万坚戈。
+该基金还报告称，2026年初启动的投资门户网站invest.enpf.kz的关注度有所上升。截至10月1日，独立用户数量已达到约8.2万，其中约2.75万用户在9月份使用了该门户。
+在该平台上，储户可以了解管理公司的投资策略，比较不同时期的收益率指标，研究投资组合结构以及养老金资产所投资的金融工具。
+ЕНПФ提醒，将储蓄转交私人管理的决定由储户自行做出。在此之前，必须研究管理条件、佣金报酬金额和收益率指标。
+同时，过去的投资结果不保证未来具有类似的收益率，资产价值既可能增加也可能减少。
+此前有报道称，在私人管理下，对已缴纳养老金缴费的国家担保将保留。</div>
+<ul>
+<li>2026年9月起，养老金储蓄可100%转交私营管理</li>
+<li>9月7日至10月14日转账9220万坚戈，超前八月总和</li>
+<li>30-39岁储户最活跃，占转账笔数38%</li>
+<li>平均转账金额从92.2万增至160万坚戈</li>
+<li>投资门户网站用户约8.2万，国家担保保留</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">新规提升公民养老金管理自主权，促进私营资管市场竞争，可能影响养老基金资产配置格局。对经济而言，更多储蓄进入私人投资渠道，或提高资本市场活跃度，但需关注投资风险。外交和矿产领域无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/10yue20ri-herenminqing-da2e98c6/" target="_blank">10月21日终盘 美元、卢布和人民币兑坚戈汇率情况</a></h3>
+<div class="item-meta">哈通社中文版 · 10/21 22:23<span class="source-link"><a href="https://cn.inform.kz/news/10yue20ri-herenminqing-da2e98c6/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>10月21日KASE现货市场交易中，30个成员参与。美元兑坚戈平均报448.30（-2.22），交易额4.1115亿美元（+8179.6万）；欧元兑坚戈平均报503.12（-2.48），交易额501.1万欧元（+320.3万）；卢布兑坚戈平均报5.4648（+0.0104），交易额40.9248亿卢布（-16.1767亿）；人民币兑坚戈平均报67.1210（-0.3307），交易额4899.9万元（+4199.9万）。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 10月21日终盘 美元、卢布和人民币兑坚戈汇率情况
+正文:
+30个KASE成员参与了交易。
+根据现货市场交易结果： 美元兑坚戈（交易工具USDKZT_TOM）汇率平均报价为1: 448.30（-2.22坚戈），外汇交易总额为4.1115亿美元（+8179.6万美元）。交易过程中，最新报价为1:446.55坚戈，最高报价为1:450.00坚戈。
+欧元兑坚戈（交易工具EURKZT_TOM）汇率平均报价为1: 503.12（-2.48坚戈），外汇交易总额为501.1万欧元（+320.3万欧元）。交易过程中，最低报价为1:501.84坚戈，最高报价为1:504.84坚戈。
+卢布兑坚戈（交易工具RUBKZT_TOM）汇率平均报价为1:5.4648（+0.0104坚戈），外汇交易总额40.9248亿卢布（-16.1767亿卢布）。交易过程中，最低报价为1:5.4451坚戈，最高报价为1: 5.4738坚戈。
+人民币兑坚戈（交易工具CNYKZT_TOD）汇率平均报价为1:67.1210（-0.3307坚戈），外汇交易总额4899.9万元（+4199.9万元）。交易过程中，最低报价为1:66.9500坚戈，最高报价为1:67.3500坚戈。</div>
+<ul>
+<li>美元兑坚戈平均448.30，跌2.22坚戈，交易额4.1115亿美元</li>
+<li>欧元兑坚戈平均503.12，跌2.48坚戈，交易额501.1万欧元</li>
+<li>卢布兑坚戈平均5.4648，涨0.0104坚戈，交易额40.9248亿卢布</li>
+<li>人民币兑坚戈平均67.1210，跌0.3307坚戈，交易额4899.9万元</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈对美元、欧元、人民币升值，降低进口成本、缓解通胀压力，但削弱出口竞争力；卢布微升反映俄哈贸易联动。外汇交易额变化显示市场活跃度调整，对矿产出口计价与外资环境有间接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/guojiaxingyuxingjiangdazuo-7c032560/" target="_blank">哈萨克斯坦国家银行与世界银行将扩大合作范围</a></h3>
+<div class="item-meta">哈通社中文版 · 10/21 21:48<span class="source-link"><a href="https://cn.inform.kz/news/guojiaxingyuxingjiangdazuo-7c032560/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年10月，哈萨克斯坦国家银行行长苏莱曼诺夫与世界银行副行长巴萨尼在曼谷IMF/世行年会期间达成原则性协议，世行将为哈金融体系稳定性压力测试提供咨询支持。测试由哈国家银行协调，金融市场监管和发展署、财政部、国家经济部共同参与，准备阶段2026年底前完成，模拟演练2027年举行。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦国家银行与世界银行将扩大合作范围
+正文：作为下一步举措，在2026年10月12日至18日于曼谷举行的国际货币基金组织（IMF）与世界银行集团年会上，哈萨克斯坦国家银行行长提穆尔·苏莱曼诺夫与世界银行主管欧洲和中亚地区的副行长安东内拉·巴萨尼（Antonella Bassani）达成原则性协议。该协议旨在由世界银行向哈萨克斯坦金融体系的稳定性压力测试（模拟测试）提供咨询支持。
+此类演练亦得到了金融稳定理事会（FSB）的肯定与支持，全球各国的中央银行和金融监管机构也会定期开展此类演练。演练有助于加强主管机关之间的相互协作，在实践中磨合决策机制，并提升应对潜在金融风险的整体准备水平。这进而为巩固金融体系的稳健性与可持续性提供了保障。
+哈萨克斯坦方面，情景模拟测试将由多个部门共同开展，具体包括金融市场监管和发展署、财政部以及国家经济部。哈萨克斯坦国家银行在其中担任国家级协调方的角色。准备阶段计划于2026年底前完成，而模拟演练本身将于2027年正式举行。</div>
+<ul>
+<li>哈国家银行与世行达成压力测试咨询支持协议</li>
+<li>测试由哈国家银行协调，多部门共同参与</li>
+<li>准备阶段2026年底完成，演练2027年举行</li>
+<li>演练获金融稳定理事会肯定，旨在提升风险应对能力</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该合作有助于提升哈金融体系稳健性与监管协作水平，增强应对外部冲击能力，对维护经济稳定和吸引外资具有积极意义，同时深化哈与世界银行的机构合作。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/xinggong21riyuzhuyaowaizhijiande-184bd171/" target="_blank">央行公布21日坚戈与主要外币之间的汇率标准</a></h3>
+<div class="item-meta">哈通社中文版 · 10/21 13:33<span class="source-link"><a href="https://cn.inform.kz/news/xinggong21riyuzhuyaowaizhijiande-184bd171/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行公布2026年10月21日坚戈与主要外币汇率：美元兑坚戈1:450.69，欧元兑坚戈1:505.04，俄罗斯卢布兑坚戈1:5.45，土耳其里拉兑坚戈1:9.09，中国元兑坚戈1:67.49。央行规定，坚戈兑美元官方汇率基于阿斯塔纳时间15:30证券交易所加权平均汇率确定，其他外币汇率依据16:00交叉汇率计算。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 央行公布21日坚戈与主要外币之间的汇率标准
+正文:
+根据央行公布的信息，2026年10月21日，哈萨克斯坦坚戈与国际主要货币之间的兑换汇率标准如下：
+美元兑坚戈（USD/KZT） – 1：450.69
+欧元兑坚戈（EUR/KZT）- 1：505.04
+俄罗斯卢布兑坚戈（RUB / KZT）-1: 5.45
+土耳其里拉兑坚戈（TRY / KZT）- 1: 9.09
+中国元兑坚戈（CNY / KZT）- 1：67.49
+值得一提的是，根据哈萨克斯坦国家银行规定，截至阿斯塔纳时间当日15:30，在哈萨克斯坦证券交易所形成的坚戈兑美元加权平均汇率，将被确定为下一工作日坚戈兑美元官方汇率；坚戈兑其他外币的官方汇率，则依据截至阿斯塔纳时间16:00形成的交叉汇率计算得出。</div>
+<ul>
+<li>美元兑坚戈汇率为1:450.69</li>
+<li>欧元兑坚戈汇率为1:505.04</li>
+<li>中国元兑坚戈汇率为1:67.49</li>
+<li>卢布兑坚戈1:5.45，里拉兑坚戈1:9.09</li>
+<li>官方汇率依交易所加权平均和交叉汇率确定</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率数据反映坚戈对主要货币的比价关系，为贸易和投资提供定价基准。美元兑坚戈汇率稳定有助于控制输入性通胀，对矿产出口计价和外资流入具有参考意义，同时影响中哈贸易结算成本。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/kazahstan-vhodit-vtop-15-stran-poproizvodstvu-zolota-851da34e" target="_blank">哈萨克斯坦跻身全球黄金产量前15国</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/22 02:57<span class="source-link"><a href="https://www.inform.kz/ru/kazahstan-vhodit-vtop-15-stran-poproizvodstvu-zolota-851da34e" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2025年全球黄金需求首次超5000吨，均价涨44%至3400美元/盎司，投资需求增84%而珠宝需求降18%。全球产量达3800吨，增2%。中国以384.3吨居首，俄罗斯345吨第二，哈萨克斯坦未进前十但跻身全球前15大黄金生产国。前五大生产国合计占全球37.9%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">黄金不仅广泛用于珠宝业和电子产品制造，还作为投资资产和形成国家储备的工具。分析人士指出，近年来全球市场黄金主要消费方向之间的比例正在发生变化。在投资需求增长的背景下，黄金在珠宝业和其他一些行业的使用量正在减少。
+
+据美国地质调查局（USGS）估计，全球黄金消费的最大份额——40%——用于珠宝首饰。另有24%为实物金条，21%为中央银行和其他机构的采购。官方金币、奖章及其仿制品占7%，电气和电子设备也占7%。其他方向占1%。这些估计未考虑对交易所交易基金（ETF）及类似黄金支持工具的投资。
+
+据世界黄金协会（World Gold Council）分析人士指出，包括场外交易在内的全球黄金需求在2025年首次超过5000吨。黄金年均价格上涨44%，达到每金衡盎司3400美元。在价格上涨的背景下，珠宝首饰的实物需求下降了18%，而投资需求增长了84%。
+
+全球黄金产量继续增长
+
+2025年全球黄金产量达到3800吨，较2024年的3700吨增长2%。
+
+十年间产量增长了13.6%。2015年为3400吨。这一时期最明显的下降出现在2020年——下降4.4%。
+
+根据所引数据，自2021年以来黄金产量逐年增加，但增长率未超过3.5%。同时，2023年和2024年增幅低于1%。
+
+2025年全球最大黄金生产国是中国。该国产量达到384.3吨，较上年增长1.1%。
+
+第二位是俄罗斯，产量345吨，增长4.5%。随后是澳大利亚——293.2吨，加拿大——213.3吨，秘鲁——208.9吨。
+
+这五国合计占全球黄金产量的37.9%。
+
+十大生产国还包括加纳——187.3吨，美国——157吨，乌兹别克斯坦——125.4吨，墨西哥——113.5吨，印度尼西亚——104.2吨。</div>
+<ul>
+<li>2025年全球黄金需求首超5000吨，均价涨44%至3400美元/盎司</li>
+<li>投资需求增84%，珠宝需求降18%，消费结构变化明显</li>
+<li>全球黄金产量3800吨增2%，中国384.3吨居首</li>
+<li>俄罗斯、澳大利亚、加拿大、秘鲁分列第二至第五</li>
+<li>哈萨克斯坦进入全球黄金生产前15强</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">黄金产量跻身前15强有助于提升哈萨克斯坦在国际矿产市场地位，增强国家储备能力，吸引矿业投资，并强化其在中亚资源外交中的议价权。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/yeyuzhongguoyouyougongdizuo-d81c980a/" target="_blank">哈萨克斯坦矿业集团与中国有色金属建设股份有限公司签署地质勘查合作备忘录</a></h3>
+<div class="item-meta">哈通社中文版 · 10/21 14:33<span class="source-link"><a href="https://cn.inform.kz/news/yeyuzhongguoyouyougongdizuo-d81c980a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>10月19日，KAZ Minerals集团与中国有色金属建设股份有限公司在阿拉木图签署地质勘查合作备忘录。双方计划应用遥感、地球物理和地球化学勘查、人工智能及三维建模等现代技术，研究历史地质数据、确定钻探区域并评估矿产资源，同时开展人才培养与联合科研。KAZ Minerals董事会主席诺瓦丘克与CNMC董事长文岗均强调深化战略合作，并探讨共同投资矿业。双方合作已超十年，NFC曾承建波兹沙阔勒和阿克托盖选矿厂。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">10月19日，KAZ Minerals集团与中国有色矿业集团有限公司（CNMC）旗下子公司——中国有色金属建设股份有限公司在阿拉木图举行了备忘录签署仪式。
+目前，KAZ Minerals集团正积极推动哈萨克斯坦境内地质勘查业务的发展，重点是应用创新技术、提高地质研究效率。与NFC开展合作是这一工作的重要方向之一，也标志着双方长期合作进入新阶段。
+根据备忘录，双方计划探讨应用遥感技术、地球物理和地球化学勘查、人工智能以及地质数据三维建模等现代地质勘查方法。此外，双方还将重点研究历史地质数据、确定适宜的钻探区域，并评估矿产资源。
+备忘录还提出了开展专业人才培养、联合科研及实施培训计划的可能性。下一步，双方计划制定具体合作路线图。
+KAZ Minerals集团董事会主席奥列格·诺瓦丘克回顾了双方此前的合作经历。
+“在阿克托盖和波兹沙阔勒项目建设期间，CNMC展现了很高的专业水平，证明两家公司能够开展高水平合作。我们与CNMC携手，打造了世界一流的采选企业。”他表示。
+Фото: KAZ Minerals CNMC董事长文岗谈到了哈萨克斯坦和KAZ Minerals集团对海外合作伙伴的重要意义。
+“对我们公司而言，哈萨克斯坦是本地区最重要的国家，而KAZ Minerals集团则是我们最重要的战略合作伙伴。我们将通过强强联合推动地质勘查领域的发展，并探讨共同投资矿业领域的可能性。”文岗表示。
+据了解，KAZ Minerals集团与NFC的合作已有十多年。在此期间，NFC先后承建并投产了波兹沙阔勒硫化矿和高岭土化矿选矿厂，以及阿克托盖硫化矿选矿厂等重点项目。</div>
+<ul>
+<li>10月19日KAZ Minerals与NFC在阿拉木图签署地质勘查备忘录</li>
+<li>合作聚焦遥感、AI、三维建模等现代勘查技术应用</li>
+<li>双方将研究历史地质数据、确定钻探区域并评估矿产</li>
+<li>备忘录涵盖人才培养、联合科研及培训计划</li>
+<li>双方合作超十年，NFC曾承建多个选矿厂项目</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该合作将提升哈国地质勘查效率与矿产资源评估能力，推动矿业技术创新和人才培养；深化中哈矿业合作，吸引中国投资，增强哈国矿业国际竞争力，对区域矿产格局产生积极影响。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-10-22 09:03</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
