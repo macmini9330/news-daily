@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年10月23日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年10月23日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年10月22日早9:00至2026年10月23日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 19 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">2</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">13</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">1</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/guojiazinengchang-3109289e/" target="_blank">国家元首接见原子能署署长</a></h3>
+<div class="item-meta">哈通社中文版 · 10/22 20:40<span class="source-link"><a href="https://cn.inform.kz/news/guojiazinengchang-3109289e/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫接见原子能署署长萨特哈利耶夫，听取2026年工作成果汇报。会谈涉及核电站建设、核科学与创新、人才培养及提升本土参与份额。重点讨论建立塞梅核安全区、完善放射性废物管理及加强核与辐射安全监管法律框架。总统指示对原子能领域发展实施专项监管，及时落实核工业发展战略任务。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">会谈中，萨特哈利耶夫向托卡耶夫总统汇报了原子能署2026年工作主要成果。
+国家元首听取了关于核工业及能源领域的汇报。具体讨论议题包括：核电站建设、核科学与创新发展、专业人才培养，以及提升该领域相关项目中的本土参与份额。
+重点关注了建立塞梅核安全区、完善放射性废物管理体系，以及加强核与辐射安全领域的监管和法律框架等问题。
+最后，总统指示，要对推进国家原子能领域发展相关事项实施专项监管，并采取及时措施，落实核工业发展战略框架内所确定的各项任务。</div>
+<ul>
+<li>总统听取原子能署2026年工作成果汇报</li>
+<li>讨论核电站建设与核科学创新发展</li>
+<li>重点关注塞梅核安全区与放射性废物管理</li>
+<li>指示对原子能领域实施专项监管</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">会谈强化核能领域国家管控，推动核电站建设与核安全体系完善，有利于吸引投资、提升本土参与，并巩固哈国在核燃料与矿产领域的战略地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/huilibuxing-035a7f33/" target="_blank">托卡耶夫总统会见马德里竞技俱乐部首席执行官</a></h3>
+<div class="item-meta">哈通社中文版 · 10/22 17:25<span class="source-link"><a href="https://cn.inform.kz/news/huilibuxing-035a7f33/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫会见马德里竞技俱乐部首席执行官希尔·马林，高度评价双方合作。托卡耶夫表示，哈方正积极投资足球基础设施和青训体系，推进俱乐部私有化，并与国际足联合作建设100多个儿童足球场。他特别提及西班牙足球成就，希望借鉴其经验培养本国人才。希尔·马林积极评价阿拉木图州马德里竞技足球学院建设，认为其有望成为优秀训练综合体。托卡耶夫向希尔·马林授予二级“友谊”勋章。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">会谈期间，托卡耶夫总统高度评价哈萨克斯坦与马德里竞技足球俱乐部之间卓有成效的合作，并指出，希尔·马林此次访问哈萨克斯坦，将为双方进一步提升合作水平创造有利条件。
+总统表示，哈萨克斯坦正积极投资建设现代化足球基础设施和训练基地，并持续完善青少年足球人才培养体系。与此同时，国内足球俱乐部的私有化进程也在稳步推进。
+托卡耶夫还指出，哈萨克斯坦正与国际足联（FIFA）合作，在全国各地区推进建设100多个儿童足球场的项目。
+会谈中，托卡耶夫总统特别提及西班牙国家足球队及西班牙足球培养体系取得的突出成就。他表示，哈萨克斯坦有意深入研究西班牙足球发展的先进经验，并将其运用于培养本国新一代优秀足球人才。
+马德里竞技俱乐部首席执行官希尔·马林对哈萨克斯坦总统高度重视足球事业发展表示感谢。
+他对位于阿拉木图州的马德里竞技足球学院基础设施建设给予积极评价，并表示，该学院未来有望成为最优秀的足球教学与训练综合体之一。
+会见期间，托卡耶夫总统向希尔·马林授予二级“友谊”勋章，以表彰其为推动哈萨克斯坦足球事业发展作出的贡献。</div>
+<ul>
+<li>托卡耶夫会见马竞CEO希尔·马林，评价双方合作</li>
+<li>哈国投资足球基建和青训，推进俱乐部私有化</li>
+<li>哈国与FIFA合作建设100多个儿童足球场</li>
+<li>托卡耶夫希望借鉴西班牙足球培养体系经验</li>
+<li>托卡耶夫向希尔·马林授予二级“友谊”勋章</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次会晤强化哈西体育合作，助推哈国足球基础设施与青训体系升级，俱乐部私有化进程有望加速；同时通过体育外交提升哈国国际形象，为矿产等领域合作营造友好氛围。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(13 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/kazahstan-i-shveytsariya-rasshiryat-sotrudnichestvo-v-sfere-obrasheniya-s-radioa-7f777531" target="_blank">哈萨克斯坦与瑞士将扩大放射性废物处理领域合作</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/23 03:17<span class="source-link"><a href="https://www.inform.kz/ru/kazahstan-i-shveytsariya-rasshiryat-sotrudnichestvo-v-sfere-obrasheniya-s-radioa-7f777531" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>10月22日，哈萨克斯坦-瑞士政府间贸易经济合作委员会第12次会议在伯尔尼举行，双方签署了扩大放射性废物管理合作的路线图及委员会议定书。哈方提议在农产品深加工、可再生能源、数字化等领域合作，并邀请瑞士参与Alatau City建设；瑞方建议发展关键原材料合作。双方还讨论了兽医、网络安全等议题，并商定第13次会议在哈萨克斯坦举行。此前，哈瑞商业论坛签署了总额4600万美元的合作备忘录。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">文件于10月22日在伯尔尼举行的哈萨克斯坦-瑞士政府间贸易经济合作委员会第12次会议结束后签署。
+哈萨克斯坦代表团由贸易和一体化部长阿尔曼·沙卡利耶夫率领，瑞士代表团由经济国务秘书处（SECO）双边经济关系司司长安德烈亚·劳伯·扎克塞尔率领。
+会议期间，双方审议了扩大贸易经济和投资合作的前景，指出增加相互商品和服务贸易量的潜力。
+特别关注了吸引瑞士投资和先进技术进入哈萨克斯坦经济优先领域。
+哈方建议瑞士公司参与农产品深加工、水资源合理利用、可再生能源、交通、物流、数字化和人工智能领域的联合项目。
+此外，瑞士技术公司、投资者、大学和科学中心受邀参与Alatau City的发展，包括城市数字基础设施和金融技术项目。
+瑞方则建议发展关键原材料领域的合作，包括签署相关谅解备忘录的可能性。
+还讨论了兽医、科学和高等教育、网络安全、知识产权保护以及刑事司法协助领域的合作问题。
+会议结束后，除哈萨克斯坦国家核中心与NAGRA之间的路线图外，双方还签署了政府间委员会议定书。
+双方商定下次第13次会议在哈萨克斯坦举行。其日期和地点将通过外交渠道确定。
+此前，在瑞士沙夫豪森市开设了哈萨克斯坦-瑞士文化商务中心，旨在促进两国贸易、投资和文化联系的发展。
+此外，在苏黎世举行的哈萨克斯坦-瑞士商业论坛结束后，双方签署了总额4600万美元的合作备忘录。协议涵盖贸易、商业房地产和生产合作。</div>
+<ul>
+<li>哈瑞签署放射性废物管理合作路线图</li>
+<li>第12次政府间委员会在伯尔尼举行</li>
+<li>哈方邀请瑞士参与Alatau City等项目</li>
+<li>瑞方提议关键原材料合作并签备忘录</li>
+<li>第13次会议将在哈萨克斯坦举行</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该合作将提升哈萨克斯坦放射性废物管理能力，吸引瑞士技术与投资，促进关键原材料领域合作，推动经济多元化，并加强哈瑞双边关系。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/shihuizhongguochang-9b2b827a/" target="_blank">哈萨克斯坦驻西安总领事会见中国酒泉市副市长魏永辉</a></h3>
+<div class="item-meta">哈通社中文版 · 10/23 01:56<span class="source-link"><a href="https://cn.inform.kz/news/shihuizhongguochang-9b2b827a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦驻西安总领事克拉巴耶夫·佐齐汗会见酒泉市常务副市长魏永辉，双方讨论经贸、投资、过境运输、新能源、文化、教育、农业、旅游等领域合作，强调加强中小企业联系，推动哈各地区与甘肃省建立紧密联系。中方邀请总领事参加11月4日第九届丝绸之路（敦煌）国际文化博览会，并请总领馆协助组织友好合作与商界对接活动。甘肃省代表参观哈萨克斯坦商品展，表示当地市场需求旺盛，对开设哈产品专营场所感兴趣。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦共和国驻西安总领事克拉巴耶夫·佐齐汗近日会见甘肃省酒泉市委常委、常务副市长魏永辉。双方就哈中地区间合作现状与发展前景交换意见，并重点讨论了深化经贸、投资、过境运输、新能源产业、文化、高等教育、农业、旅游等领域合作的可能性。
+会晤中，双方重申深化双边互动的共同意愿，并探讨了加强哈中私营和中小企业代表联系的可能路径。克拉巴耶夫总领事强调，有必要制定工作计划，推动哈萨克斯坦各地区积极与甘肃省建立紧密、互利联系。
+双方还就进一步加强贸易投资和人文教育互动、2026年举办联合经贸和人文活动的前景交换意见。中方请总领事考虑参加今年11月4日在甘肃省举行的第九届丝绸之路（敦煌）国际文化博览会。
+中方请总领馆就组织旨在推动哈萨克斯坦有关地区与酒泉市建立友好合作关系、促进商界对接的活动提出建议。
+甘肃省代表还参观了总领馆试点设立的哈萨克斯坦商品展。中方代表表示，甘肃省居民喜爱哈萨克斯坦产品，市场需求旺盛，并对开设销售“哈萨克斯坦产品”的场所表现出兴趣。</div>
+<ul>
+<li>哈驻西安总领事会见酒泉市副市长魏永辉</li>
+<li>双方讨论经贸、投资、过境运输、新能源等多领域合作</li>
+<li>总领事强调制定工作计划推动哈各地区与甘肃合作</li>
+<li>中方邀请总领事参加11月4日敦煌文博会</li>
+<li>甘肃省代表参观哈商品展，对开设哈产品专营场所感兴趣</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次会晤有助于深化哈中地方合作，推动哈萨克斯坦农产品和商品对华出口，拓展过境运输和新能源合作，促进哈地方经济发展和外交多元化，但矿产领域未直接涉及。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/waixiayiguochang-f00e61dd/" target="_blank">阿联酋外交官努赛贝参选下一任联合国秘书长</a></h3>
+<div class="item-meta">哈通社中文版 · 10/23 01:13<span class="source-link"><a href="https://cn.inform.kz/news/waixiayiguochang-f00e61dd/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>阿联酋外交部国务部长、48岁的努赛贝参选下一任联合国秘书长，其2013年至2024年任阿联酋常驻联合国代表。联合国秘书长古特雷斯今年年底任期结束，遴选去年11月启动。目前包括努赛贝共8名候选人，另有厄瓜多尔、阿根廷、哥斯达黎加、乌干达、圭亚那、塞内加尔等国人士。安理会已举行六轮意向性投票，暂无候选人达到推荐门槛。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 阿联酋外交官努赛贝参选下一任联合国秘书长
+正文:
+当天，努赛贝作为候选人出现在下一任联合国秘书长遴选网页上。48岁的努赛贝现任阿联酋外交部国务部长，由阿联酋推荐参选。2013年至2024年，她担任阿联酋常驻联合国代表。
+联合国秘书长古特雷斯将于今年年底结束任期。下任秘书长遴选已于去年11月启动。
+目前，除努赛贝外，还有七人参选下一任联合国秘书长，分别为厄瓜多尔外交官伊沃内·巴基、来自厄瓜多尔的前联大主席玛丽亚·费尔南达·埃斯皮诺萨、来自阿根廷的现任国际原子能机构总干事拉斐尔·格罗西、来自哥斯达黎加的现任联合国贸易和发展会议秘书长蕾韦卡·格林斯潘、来自乌干达的联合国前副秘书长奥拉拉·奥通努、现任圭亚那常驻联合国代表卡罗琳·罗德里格斯-伯基特、塞内加尔前总统麦基·萨勒。
+根据《联合国宪章》，联合国秘书长必须首先由安理会推荐，然后由联合国大会任命。安理会目前已举行六轮意向性投票。据悉，暂无候选人达到安理会推荐门槛。</div>
+<ul>
+<li>努赛贝48岁，现任阿联酋外交部国务部长，获阿联酋推荐参选。</li>
+<li>她2013至2024年担任阿联酋常驻联合国代表。</li>
+<li>下任秘书长遴选去年11月启动，共8名候选人。</li>
+<li>安理会已举行六轮意向性投票，无人达推荐门槛。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国影响有限：联合国秘书长遴选属全球治理议题，哈国作为联合国成员国关注多边外交走向；若阿联酋候选人当选，或强化海湾国家在联合国话语权，间接影响哈国与海湾合作及矿产外交平衡。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://www.inform.kz/ru/investori-izoae-rasskazali-gde-vkazahstane-postroyat-20-inklyuzivnih-shkol-za1ml-a3ff5818" target="_blank">阿联酋投资者介绍将在哈萨克斯坦何处投资10亿美元建设20所全纳学校</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/23 01:12<span class="source-link"><a href="https://www.inform.kz/ru/investori-izoae-rasskazali-gde-vkazahstane-postroyat-20-inklyuzivnih-shkol-za1ml-a3ff5818" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>在第九届哈萨克斯坦全球投资圆桌会议上，哈教育部与阿联酋DSKZ &amp; KAMC公司签署备忘录，计划投资10亿美元在哈17个州和3个共和国级城市（阿斯塔纳、阿拉木图、奇姆肯特）建设20所包容性学校，面向所有儿童包括有特殊教育需求者。具体地点、期限和名额未公布。该集团还计划在哈开设分公司，发展化学工业。KGIR-2026论坛共签22份文件，总额48亿美元。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">阿联酋投资者介绍了在哈萨克斯坦哪里将建造20所包容性学校，价值10亿美元。
+
+在第九届哈萨克斯坦全球投资圆桌会议上，哈萨克斯坦共和国教育部与“DSKZ &amp; KAMC”有限责任公司签署了合作备忘录。
+
+谢赫哈立德·阿尔·穆阿拉是DSKZ国际投资有限责任公司的股东。这家总部位于阿布扎比的投资公司隶属于国际DSKZ集团。
+
+“我们代表来自阿联酋、印度和埃及的公司集团。我们来这里是为了与政府共同投资哈萨克斯坦，”谢赫说。
+
+据他介绍，该项目计划在哈萨克斯坦17个州和3个共和国级城市各建一所学校。所有儿童，包括有特殊教育需求的儿童，都可以在这些学校学习。
+
+“今天我们与哈萨克斯坦教育部签署了合作备忘录。它涉及建设20所包容性学校，每个地区一所，以及在阿斯塔纳、阿拉木图和奇姆肯特各一所。这些学校面向所有儿童，包括有特殊需求的儿童。每个孩子都应该得到良好的教育。有特殊需求的儿童也应该享有平等的机会。对我们来说，这是一项神圣的使命。帮助儿童是最好的投资，”谢赫强调。
+
+同时，具体的建设地点、项目实施期限和学生名额尚未公布。
+
+除了社会项目，该国际集团还打算在哈萨克斯坦发展工业方向。据投资者代表介绍，该集团从事化学行业，在阿联酋和沙特阿拉伯开展业务。该公司还计划在哈萨克斯坦开设分公司。
+
+提醒一下，在奇姆肯特举行的KGIR-2026论坛上，共签署了22份文件，总金额达48亿美元。包容性学校建设项目成为按申报投资额计算的最大项目之一。</div>
+<ul>
+<li>哈教育部与阿联酋公司签备忘录，建20所包容性学校</li>
+<li>投资额10亿美元，覆盖17州和3个直辖市</li>
+<li>学校面向所有儿童，包括有特殊教育需求者</li>
+<li>具体建设地点、期限和学生名额尚未公布</li>
+<li>该集团还计划在哈开设分公司，发展化学工业</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该项目将改善哈国特殊教育基础设施，促进教育公平；10亿美元投资增强外资信心，推动社会领域合作；阿联酋资本进入化工领域，可能影响哈国矿产加工格局；深化哈与阿联酋经济外交关系。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/wenyuzhongxinzai-a3c59446/" target="_blank">哈萨克斯坦文化与商务中心在瑞士揭幕</a></h3>
+<div class="item-meta">哈通社中文版 · 10/23 00:50<span class="source-link"><a href="https://cn.inform.kz/news/wenyuzhongxinzai-a3c59446/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦文化与商务中心在瑞士沙夫豪森州揭幕，重点推动冶金、农产品、食品、化工产品对瑞出口，促进直接商业联系与投资合作，并展示哈国历史文化。贸易和集成部部长沙卡利耶夫、QazTrade代表及两国企业家出席。自2005年以来瑞士对哈投资超365亿美元，到2025年底双边贸易额将达15亿美元。倡议方欧亚集团已投资8850万美元，计划2025年起在哈本地化生产约翰迪尔农机。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦文化与商务中心在瑞士揭幕
+正文:
+该中心活动的主要方向之一是将哈萨克斯坦产品出口到瑞士和其他国际市场。特别重点推介冶金、农产品、食品、化工产品。
+此外，该中心促进哈萨克斯坦生产商与外国进口商之间建立直接业务联系和贸易网络，以及发展投资合作。同时，中心活动的另一个方向致力于展示哈萨克斯坦的历史和文化。
+哈萨克斯坦共和国贸易和集成部部长阿尔曼·沙卡利耶夫、沙夫豪森州政府代表、哈萨克斯坦驻瑞士大使馆代表、哈萨克斯坦贸易政策发展中心（QazTrade）代表、哈萨克斯坦与瑞士两国企业家以及学术界代表出席了揭幕仪式。
+Фото: Gov.kz 阿尔曼·沙卡利耶夫在讲话中指出，哈萨克斯坦有意扩大与瑞士的经济合作，具体包括引进技术、发展工业能力以及落实长期联合项目。
+QazTrade首席执行官努尔兰·库尔巴特罗夫介绍了哈萨克斯坦的出口和投资潜力，以及旨在帮助国内生产商进入瑞士市场的现有工具。
+欧亚集团股份公司总裁扎欣先生谈到了建立该中心的初衷及其在促进两国企业家之间商业联系方面所发挥的作用。
+Фото: Gov.kz 沙夫豪森州代表与哈萨克斯坦就商业、农业及农产品加工领域的合作前景进行了探讨。双方还在活动中讨论了发展科学、教育和文化联系的机遇。
+哈萨克斯坦驻瑞士大使萨尔扎诺夫介绍了双边经济合作的关键指标。自2005年以来，瑞士对哈萨克斯坦的投资额已超过365亿美元。到2025年底，两国贸易额将达到15亿美元。
+该中心的建立倡议由欧亚集团提出，该公司在哈萨克斯坦农业机械市场运营。欧亚集团已在哈萨克斯坦投资8850万美元，用于发展服务基础设施、购置设备和培训专业人员。该公司计划从2025年开始在哈萨克斯坦实现约翰迪尔农业机械的本地化生产。</div>
+<ul>
+<li>哈文化与商务中心在瑞士揭幕，聚焦出口与投资</li>
+<li>重点推介冶金、农产品、食品、化工产品</li>
+<li>瑞士对哈投资自2005年超365亿美元</li>
+<li>2025年底双边贸易额将达15亿美元</li>
+<li>欧亚集团计划2025年本地化生产约翰迪尔农机</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该中心将促进哈对瑞出口和投资合作，强化经济外交，推动冶金、农业和化工领域矿产与农产品出口，助力农机本地化生产，提升哈国在瑞士及国际市场的经济存在。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/hewaichangdazuoqian-95a53f4f/" target="_blank">穆合塔尔·特列吾别尔德与埃及外长讨论扩大双边合作前景</a></h3>
+<div class="item-meta">哈通社中文版 · 10/23 00:15<span class="source-link"><a href="https://cn.inform.kz/news/hewaichangdazuoqian-95a53f4f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦外长特列吾别尔德与埃及外长会谈，讨论加强政治对话、经贸投资合作及多边平台互动。双方同意重振议会间友好小组，深化人文联系，并签署议定书将免签待遇扩大至公务护照持有人。埃及还同意将哈萨克斯坦从旅游额外入境要求名单中剔除，以促进旅游交流。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 穆合塔尔·特列吾别尔德与埃及外长讨论扩大双边合作前景
+正文:
+会谈中，双方就加强政治对话、扩大经贸与投资合作，以及在国际多边平台内开展互动的前景进行了讨论。
+双方重申了哈萨克斯坦与埃及之间的高水平关系，以及两国各外交部门间政治磋商机制的重要性。
+在埃及议会选举和哈萨克斯坦修宪的背景下，两国外长同意重振议会间“友好小组”的活动。
+Фото: Сыртқы істер министрлігі 双方特别重视发展文化与人文联系，包括在“世界和传统宗教领袖大会”框架内的互动。
+在经贸领域，双方指出，扩大相互贸易规模以及开展联合投资项目具有良好前景。
+此外，双方还签署了一份议定书，旨在修订2006年11月7日签署的关于免除外交护照持有人签证要求的政府间协定。该文件规定，将免签待遇扩大至持有有效公务护照的哈萨克斯坦和埃及公民。
+Фото: Сыртқы істер министрлігі 根据会谈结果，双方就将哈萨克斯坦从“其公民前往埃及旅游需满足额外入境要求”的中亚国家名单中剔除问题达成了共识。这一决定旨在放宽哈萨克斯坦游客的入境条件，并进一步促进双方的旅游交流。
+最后，两国外长向媒体发表了联合声明，通报了会晤成果，并重申了双方进一步加强双边伙伴关系的共同意愿。</div>
+<ul>
+<li>两国外长讨论加强政治对话与经贸投资合作</li>
+<li>同意重振议会间友好小组活动</li>
+<li>签署议定书将免签待遇扩大至公务护照</li>
+<li>埃及将哈从旅游额外入境要求名单中剔除</li>
+<li>双方重申深化双边伙伴关系共同意愿</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次会谈将促进哈埃经贸与旅游合作，扩大公务护照免签便利人员往来，重振议会交流有助于政治互信。旅游入境限制的取消将增加哈游客赴埃数量，推动人文交流，但对矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/zhengliyuduojiaguoyerenxingleyihui-eefa3be1/" target="_blank">政府总理与多家国际企业负责人举行了一系列双边会晤</a></h3>
+<div class="item-meta">哈通社中文版 · 10/22 19:46<span class="source-link"><a href="https://cn.inform.kz/news/zhengliyuduojiaguoyerenxingleyihui-eefa3be1/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦政府总理与阿克萨能源、嘉士伯、Solico集团、CONTEC等国际企业负责人举行双边会晤，讨论能源、食品、农工和航天领域联合投资项目。重点包括：克孜勒奥尔达2150亿坚戈蒸汽-天然气工厂（240兆瓦）投运；阿拉木图州3.44亿美元非酒精饮料厂运营，创造230个岗位，本地化比例71.5%；奶酪厂投资450亿坚戈，年产能4.1万吨，2029年投运；航天领域探讨卫星联合生产与AI应用。总理指示支持高附加值项目。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">政府总理与多家国际企业负责人举行了一系列双边会晤
+
+在会晤期间，双方审议了能源、农工、食品及航天领域内现有的和具有发展前景的联合投资项目。根据哈斯穆-卓玛尔特·托卡耶夫总统所设定的目标，各方重点讨论了扩大合作、发展制造业以及引入新技术等议题。此外，提升“本地成分”（即本地化生产/本地采购）占比也受到了特别关注。
+
+与阿克萨能源公司（Aksa Energy）首席执行官兼执行委员会主席纳吉·阿格巴尔会面时，讨论了合作成果以及在哈萨克斯坦实施新能源项目的前景。值得一提的是，价值2150亿坚戈的蒸汽-天然气工厂在克孜勒奥尔达成功启动。该电站的发电能力为240兆瓦，火力为277大卡/小时，今年6月投入商业使用。该设施将满足该地区日益增长的电力和热力需求。此外，双方还就该公司在哈萨克斯坦的投资计划进行了讨论。
+
+在与嘉士伯哈萨克斯坦公司（Carlsberg Kazakhstan）首席执行官维亚切斯拉夫·马尔采夫会晤期间，双方重点讨论了食品工业发展、生产本地化以及扩大出口等议题。嘉士伯哈萨克斯坦公司现已成为百事公司（PepsiCo）产品在哈萨克斯坦的官方分销商。作为双方合作的一部分，一座投资额达3.44亿美元的非酒精饮料生产厂于今年10月1日在阿拉木图州投入运营。该工厂的产品既面向国内市场，也用于出口，并创造了230个长期就业岗位。目前，嘉士伯哈萨克斯坦公司运营中的本地化比例已达到71.5%。双方强调，将进一步加强与国内原材料及包装材料供应商的合作。
+
+在与Solico集团独联体国家首席执行官兼董事会成员阿里礼萨·穆罕默德·拉希米的会谈中，双方审视了阿拉木图州奶酪生产厂的建设进展。该项目投资额约为450亿坚戈，建成后年产能将达到4.1万吨，并计划创造近450个长期就业岗位。目前，项目现场的施工与安装工作正在进行中，预计该设施将于2029年投入运营。此外，双方还探讨了在哈萨克斯坦各农业区增设加工设施的前景；此举有望显著推动哈萨克斯坦本土产品的出口。
+
+在与CONTEC创始人兼首席执行官李成熙（Lee Seong-hee）会晤期间，双方探讨了扩大航天领域合作的前景。讨论议题涵盖了在哈萨克斯坦联合生产卫星及其组件、发展地面基础设施，以及实现特定制造流程的本土化。双方还重点关注了将人工智能技术应用于卫星数据处理、合作培养当地专业人才，以及将联合开发的产品推向国际市场的潜力。
+
+哈萨克斯坦有意吸引新投资，并落实高附加值产品生产项目。总理已指示相关行业主管部门及负责机构，为这些投资项目提供必要支持。
+
+据此前报道，哈萨克斯坦第九届全球投资圆桌会议签署48亿美元合作文件。</div>
+<ul>
+<li>克孜勒奥尔达2150亿坚戈蒸汽-天然气工厂投运，发电240兆瓦</li>
+<li>嘉士伯3.44亿美元非酒精饮料厂在阿拉木图州运营，本地化71.5%</li>
+<li>Solico集团450亿坚戈奶酪厂2029年投运，年产能4.1万吨</li>
+<li>与CONTEC探讨卫星联合生产、AI数据处理及人才培养</li>
+<li>总理指示相关部门为高附加值投资项目提供支持</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上吸引外资并提升本地化生产，创造就业；政治上落实总统制造业目标；外交上深化与多国企业合作；矿产能源格局上增强电力供应，航天合作引入新技术。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/dangtihuijiandahuiyeheshengwenhuizhu-e08bcbf9/" target="_blank">哈萨克斯坦议员当选独联体议会间大会农业和生态问题委员会主席</a></h3>
+<div class="item-meta">哈通社中文版 · 10/22 19:19<span class="source-link"><a href="https://cn.inform.kz/news/dangtihuijiandahuiyeheshengwenhuizhu-e08bcbf9/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>独联体议会间大会农业政策、自然资源和生态问题常务委员会会议22日在圣彼得堡塔夫利宫举行。会议审议了关于矿产储量、资源及矿床开发专家专业活动的建议草案，并讨论了适应气候变化、改善水资源管理、建立自然灾害预警系统、推行干旱条件农业耕作方式等议题。与会议员还讨论了第二届“山区可持续发展”国际论坛决定的落实情况及加强独联体国家粮食安全的方法与合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">独联体议会间大会农业政策、自然资源和生态问题常务委员会会议22日在位于圣彼得堡的塔夫利宫举行。
+会上，与会者审议了一份建议草案，内容涉及独联体成员国中参与矿产储量、资源及矿床开发工作的专家和相关官员的专业活动。
+此外，会议还就适应气候变化、改善水资源管理、建立针对自然灾害的预警系统，以及推行适宜干旱条件的农业耕作方式等问题进行了讨论。
+与会各国议员还讨论了第二届“山区可持续发展”国际论坛各项决定的落实情况，以及加强独联体国家粮食安全的方法和该领域内的合作相关议题。</div>
+<ul>
+<li>会议在圣彼得堡塔夫利宫举行，审议矿产开发专家活动建议草案</li>
+<li>讨论适应气候变化、改善水资源管理及自然灾害预警系统</li>
+<li>推行适宜干旱条件的农业耕作方式</li>
+<li>讨论第二届“山区可持续发展”国际论坛决定落实情况</li>
+<li>探讨加强独联体国家粮食安全的方法与合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">会议推动独联体国家在矿产开发、气候变化适应和粮食安全领域的政策协调，有助于哈萨克斯坦借助区域合作提升水资源管理和农业抗旱能力，并强化其在独联体生态与资源议题中的参与度。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://cn.inform.kz/news/duidehechu-319f8402/" target="_blank">哈萨克斯坦计划增加对利比亚的粮食和肉类出口</a></h3>
+<div class="item-meta">哈通社中文版 · 10/22 19:12<span class="source-link"><a href="https://cn.inform.kz/news/duidehechu-319f8402/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦农业部长表示计划增加对利比亚的粮食和肉类出口，主要供应谷物、牛肉和羊肉。哈国连续两年粮食产量超2700万吨，去年粮食出口1530万吨，增长70%，过去五年农产品出口额翻番超70亿美元。双方讨论兽医和植物检疫合作，拟近期确定产品准入条件。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦农业部长指出，加强与利比亚的经贸联系，并提高国产农工产品在北非市场的份额，是当前工作的重点。
+- 我们已做好准备，增加向利比亚市场供应的高质量、高竞争力农产品数量，主要包括谷物、牛肉和羊肉。我们的目标是将现有潜力转化为具体的贸易项目，拓展业务联系，并建立符合利比亚市场需求的稳定供应渠道。哈萨克斯坦拥有充足的资源来实施这些计划。-他说。
+哈萨克斯坦的生产潜力为其扩大出口地域奠定了坚实的基础。目前，哈萨克斯坦已连续两年粮食产量超过2700万吨。油籽产量达到480万吨，豆类产量超过100万吨。过去五年，农产品出口额翻了一番，超过70亿美元。
+根据去年的数据，哈萨克斯坦粮食出口量为1530万吨，比上年同期增长70%。出口目的地多元化和开拓新市场仍然是农业产业发展的关键优先事项。
+Фото: Министерство сельского хозяйства РК 利比亚农业和畜牧业部长强调了加强农业领域国际合作的重要性。他表示，相关政府机构之间的直接互动有助于确定有前景的合作领域，并扩大两国间产品供应的机会。
+- 我们有意扩大合作，交流专业知识，并为产品互供创造更多机会。我相信，直接对话将有助于我们找到互利共赢的领域，并为我们的经贸关系注入新的动力。-他说。
+双方还特别关注了扩大哈萨克斯坦肉类产品出口的前景。目前，哈萨克斯坦的牛存栏量为930万头，小反刍动物（绵羊和山羊）存栏量为2430万头。这些数字表明，哈萨克斯坦拥有巨大的资源潜力，可以发展畜牧业，并增加国内肉类产品对国外市场的供应量。
+为充分发挥出口潜力，双方讨论了兽医和植物检疫合作、确保产品安全以及改进贸易程序等相关问题。拟供应产品的要求以及产品进入利比亚市场的准入条件预计将在近期内最终确定。</div>
+<ul>
+<li>哈计划增加对利比亚谷物、牛肉和羊肉出口</li>
+<li>哈连续两年粮食产量超2700万吨，去年出口1530万吨增70%</li>
+<li>过去五年哈农产品出口额翻番超70亿美元</li>
+<li>哈牛存栏930万头，绵羊山羊存栏2430万头</li>
+<li>双方将确定兽医和植物检疫要求及市场准入条件</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举有助于哈国拓展北非农产品市场，推动出口多元化，增强农业经济外向度；同时深化与利比亚经贸关系，提升哈国在非洲的外交影响力，但需关注检疫准入和市场竞争风险。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">10</span> <a href="https://cn.inform.kz/news/yuqijingzuo-231-e8cd4d3e/" target="_blank">阿拉木图州与土耳其深化经贸投资合作 双边贸易额达2.31亿美元</a></h3>
+<div class="item-meta">哈通社中文版 · 10/22 16:17<span class="source-link"><a href="https://cn.inform.kz/news/yuqijingzuo-231-e8cd4d3e/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>阿拉木图州与土耳其经贸合作深化，截至去年底双边贸易额达2.31亿美元。该州有147家土耳其资本参与企业，双方共同运营31家合资企业，涉及建材、乳制品、制药等领域。州长阿仁诺夫表示将推进工业与化工项目，引进技术发展出口导向型企业。土耳其总领事指出，在哈土耳其企业超3800家，半数以上位于阿拉木图市和州，土耳其建筑企业在哈实施500多个项目，总价值300亿美元。双方还同意加强文化人文交流。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">截至去年年底，土耳其与阿拉木图州之间的贸易额达到2.31亿美元。目前，该州共有147家有土耳其资本参与的企业。此外，双方还共同设立并运营着31家企业，业务涉及建筑材料、乳制品、制药、塑料制品、糖果及饮料生产等领域。
+
+会谈期间，阿仁诺夫表示，基于两国人民数百年来形成的历史、文化和精神纽带，哈土战略伙伴关系正不断深化发展。
+
+“目前，我州正在顺利推进一批有土耳其资本参与的投资项目，其中包括工业产品制造和化学工业领域的项目。我们希望与土耳其投资者建立合资企业，引进先进技术，发展出口导向型企业。州政府愿为投资者提供全方位的信息支持，并与有关政府部门共同研究解决项目实施过程中遇到的问题，”阿仁诺夫说。
+
+阿仁诺夫还指出，发展文化人文交流也是双方合作的重要方向。目前，哈萨克斯坦全国约四分之一的土耳其族裔人口居住在阿拉木图州。自2005年以来，该州一直设有“阿赫斯卡”土耳其民族文化中心。过去三年间，该州服务与餐饮领域创新技术学院共有50名学生赴土耳其实习，25名生产实习指导教师参加了研修，另有4名教师参加了职业能力提升培训。今年，该学院还与土耳其安纳托利亚旅游职业技术学院签署了合作备忘录，为双方开展经验交流创造了条件。
+
+会谈中，土耳其驻阿拉木图总领事厄兹登费达卡尔表示，土耳其与哈萨克斯坦已建立起以友谊和信任为基础的战略伙伴关系。
+
+“目前，哈萨克斯坦注册的土耳其企业超过3800家，其中半数以上位于阿拉木图市和阿拉木图州。土耳其建筑企业还在哈萨克斯坦实施了500多个项目，总价值达300亿美元。目前，双方在国防工业、能源和航空等领域的合作也在不断发展。哈萨克斯坦地处交通要道，是重要的物流枢纽。因此，我们希望加强企业家和投资者之间的联系，为该地区吸引新的投资，并与州政府密切合作，”厄兹登费达卡尔说。
+
+会谈结束时，双方同意进一步深化双边关系，并共同协商解决合作过程中遇到的问题。</div>
+<ul>
+<li>双边贸易额达2.31亿美元，土耳其资本企业147家</li>
+<li>共同运营31家合资企业，涉及建材、制药等领域</li>
+<li>在哈土耳其企业超3800家，半数在阿拉木图地区</li>
+<li>土耳其建筑企业在哈实施500多个项目，价值300亿美元</li>
+<li>双方同意深化经贸投资与人文交流合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上，土耳其投资将促进阿拉木图州工业多元化和出口导向型发展；外交上，强化哈土战略伙伴关系，拓展国防、能源、航空合作；矿产格局短期影响有限，但化工项目可能间接带动矿产加工需求。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">11</span> <a href="https://cn.inform.kz/news/leoheshang2027nianjin-9419eca2/" target="_blank">亚马逊LEO和上海垣信卫星预计2027年进入哈萨克斯坦市场</a></h3>
+<div class="item-meta">哈通社中文版 · 10/22 15:40<span class="source-link"><a href="https://cn.inform.kz/news/leoheshang2027nianjin-9419eca2/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦数字发展部长马迪耶夫表示，OneWeb于2024年10月在阿拉木图州启用地面接入站，2025年1月起提供卫星互联网服务，2025年覆盖329个偏远村庄，2026年公共Wi-Fi热点村庄增至362个。星链终端已安装于1798所学校。2026年10月2日，星链和OneWeb获牌照转入商业化运营。预计2027年亚马逊LEO和上海垣信卫星进入哈市场，增强偏远地区覆盖和备用通信保障。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">马迪耶夫指出，卫星通信能够为偏远及交通不便的聚居点提供互联网接入服务，尤其适用于地面基础设施建设在技术上存在困难或在经济上不具可行性的地区。
+“2024年10月，OneWeb公司在阿拉木图州阔克铁列克村启用了地面接入站，并从2025年1月起在哈萨克斯坦提供卫星互联网服务。在‘可及互联网’国家项目框架下，2025年已有329个偏远村庄接入一网（OneWeb）卫星互联网。2026年，利用一网终端设备设立公共Wi-Fi热点的村庄数量增至362个。目前，主管部门正根据各州政府提出的申请，研究将更多聚居点纳入覆盖范围的问题，”马迪耶夫说。
+据马迪耶夫介绍，目前，星链（Starlink）终端设备已安装在全国1798所学校。此外，偏远地区和旅游景区的居民及企业也在使用这项技术。星链和一网均已满足提供商业通信服务所需的技术要求，包括落实专项侦查措施相关要求、完成与电信网络管理中心的对接，并建设相应的地面基础设施。2026年10月2日，两家公司取得所需牌照，开始由试点运行转入商业化通信服务阶段。
+“预计2027年，亚马逊LEO和上海垣信卫星的运营商将进入哈萨克斯坦市场。卫星通信技术的发展，将有助于扩大居民、社会公共设施和企业的互联网覆盖范围，同时在地面基础设施遭到破坏等情况下提供备用通信保障，”马迪耶夫说。
+上海垣信卫星（Shanghai SpaceSail Technologies）为中国卫星互联网企业；亚马逊LEO（Amazon LEO，前身为 Project Kuiper 柯伊伯计划）为巨型低轨卫星互联网系统。</div>
+<ul>
+<li>OneWeb 2025年覆盖329个偏远村庄，2026年Wi-Fi热点村增至362个</li>
+<li>星链终端已安装于全国1798所学校</li>
+<li>星链和OneWeb于2026年10月2日获牌照商业化运营</li>
+<li>预计2027年亚马逊LEO和上海垣信卫星进入哈市场</li>
+<li>卫星通信为偏远地区及地面设施受损时提供备用通信</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上缩小数字鸿沟，促进偏远地区发展；外交上引入美中卫星企业，平衡技术合作；矿产格局无直接冲击，但通信保障或助力偏远矿区开发。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">12</span> <a href="https://cn.inform.kz/news/diquanhui48zuowen-5da99fe0/" target="_blank">哈萨克斯坦第九届全球投资圆桌会议签署48亿美元合作文件</a></h3>
+<div class="item-meta">哈通社中文版 · 10/22 15:32<span class="source-link"><a href="https://cn.inform.kz/news/diquanhui48zuowen-5da99fe0/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦第九届全球投资圆桌会议（KGIR-2026）在奇姆肯特举行，签署48亿美元合作文件，吸引40多国500多名投资者。总理别克帖诺夫表示，去年GDP增长6.5%超3000亿美元，独立以来累计吸引外商直接投资近5000亿美元，过去5年超1000亿美元。标普将哈主权信用评级上调至“BBB”，全球投资风险与韧性指数排名上升17位至第53位。会议聚焦加工工业、可再生能源、农工综合体及高科技城市等领域。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">本届投资圆桌会议在奇姆肯特举行，展现了这座位于欧亚主要贸易通道与“西欧—中国西部”国际运输走廊交汇处的城市蓬勃发展的势头。
+全体会议开始前，别克帖诺夫与外国合作伙伴一同考察了正在推进的多个项目，涉及加工工业、农工综合体、能源等领域。其中包括 Masdar 公司在江布尔州建设的风力发电站、中国能建在卡拉干达州和突厥斯坦州实施的可再生能源项目、嘉士伯集团在阿拉木图州建设的无酒精饮料生产厂，以及 Alatau City 项目。此外，奇姆肯特市的 Alsera 温室综合体和 QazAlPack 工厂建设项目也受到特别关注。
+KGIR-2026 吸引了来自40多个国家的500多名投资者和商界代表，共同开展建设性对话。
+Фото: Үкімет 哈萨克斯坦总理向商界代表介绍了该国正在积极拓展的多元化投资机遇。这些机遇正按照国家元首的重要指示逐步形成并不断发展。
+“我们高度重视与国际工商界建立直接对话，今天举行的圆桌会议正是这样一个重要平台。去年，我国国内生产总值增长了6.5%，超过3000亿美元。根据国际货币基金组织的预测，今年这一指标将达到3000亿美元。独立以来，哈萨克斯坦累计吸引外商直接投资近5000亿美元，仅过去5年，吸引的外资就超过1000亿美元。通过引进先进技术、建设新生产设施和深化原材料加工，推动经济实现高质量现代化，是我们的一项重要任务。这些战略优先方向已体现在更新后的《2030年前国家投资政策构想》中。哈萨克斯坦将继续保持开放、稳定，为长期投资提供可靠环境。”别克帖诺夫强调。
+此外，总理还邀请投资者积极参与在埃基巴斯图兹建设“数据中心之谷”、打造高科技城市 Alatau City，以及其他有望开辟互利合作新空间的大型倡议。
+据介绍，哈萨克斯坦投资项目的重点发展方向包括加工工业和化学工业、食品生产、交通运输装备制造、农工综合体及农产品深加工、IT基础设施数字化与发展，以及高科技城市建设等。
+为进一步营造有利的营商环境，哈萨克斯坦为投资者提供了多项支持措施。在按照“单一窗口”原则提供服务的 哈萨克斯坦投资之家（Kazakhstan Investment House ）中心，投资者可获得100多种出口和工业支持服务；哈方正在推行黄金签证制度；在阿斯塔纳国际金融中心框架下，可适用英国法规范；总检察院层面的投资者权益保护机制正在发挥作用；政府下设的相关委员会则负责为投资项目提供跟踪服务。哈萨克斯坦的投资吸引力也得到了国际评级的认可，多家主要评级机构维持该国的投资级评级。标普（S&amp;P）将哈萨克斯坦的主权信用评级上调至“BBB”，展望为稳定，这是该国近十年来达到的最高评级水平。此外，哈萨克斯坦在全球投资风险与韧性指数（Global Investment Risk and Resilience Index）中的排名上升了17位，位列全球第53位。
+Фото: Үкімет 别克帖诺夫指出，越来越多的国际领先企业继续选择哈萨克斯坦作为新项目的落地地，一系列正在推进或已取得进展的投资项目便是明证。例如，施泰德铁路公司（Stadler Rail）已在阿斯塔纳启动新一代客运车厢生产；嘉士伯集团建成了现代化饮料生产设施；Harvest Agro Holding 正在打造大型农业产业集群；玛氏公司（Mars）正在建设宠物食品生产项目；液空集团（Air Liquide）则积极参与哈萨克斯坦氢能产业发展。</div>
+<ul>
+<li>KGIR-2026在奇姆肯特举行，签署48亿美元合作文件</li>
+<li>哈去年GDP增长6.5%超3000亿美元，5年吸引外资超1000亿美元</li>
+<li>标普上调哈主权信用评级至“BBB”，为近十年最高</li>
+<li>会议聚焦加工工业、可再生能源、农工综合体和高科技城市</li>
+<li>哈推出黄金签证、英国法适用等多项投资支持措施</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上，48亿美元协议和评级上调增强外资信心，推动非资源领域发展；政治上，展示投资环境改善；外交上，深化与多国工商界对话；矿产格局上，引导外资投向加工和绿色能源，促进原材料深加工转型。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">13</span> <a href="https://cn.inform.kz/news/buyuzhongguoyewurenzuo-a0eedf56/" target="_blank">哈交通部与中国企业签署无人驾驶交通合作谅解备忘录</a></h3>
+<div class="item-meta">哈通社中文版 · 10/22 14:18<span class="source-link"><a href="https://cn.inform.kz/news/buyuzhongguoyewurenzuo-a0eedf56/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦交通部与中国企业签署无人驾驶交通合作谅解备忘录，为引入无人驾驶技术和数字化解决方案奠定长期合作基础。哈方正推进国际运输走廊建设，今年已与俄罗斯在“阿斯塔纳—莫斯科”线路试点无人驾驶货运卡车，下一步计划与中国探讨在国际运输走廊部分路段开展类似试点，以推动两国国际道路运输发展，加强交通互联互通。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据哈萨克斯坦交通部新闻处通报，该文件为双方在交通领域引入无人驾驶技术和数字化解决方案奠定了长期合作基础。
+
+目前，哈萨克斯坦正持续推进国际运输走廊建设，并通过引入现代技术提高运输效率，充分释放本国的过境运输潜力。
+
+今年，哈萨克斯坦与俄罗斯已在“阿斯塔纳—莫斯科”线路上开展无人驾驶货运卡车试点运行。作为下一步合作举措之一，哈萨克斯坦计划与中国共同探讨在国际运输走廊的部分路段开展类似试点项目的可行性。
+
+此举将有助于推动哈中两国国际道路运输发展，进一步加强两国交通互联互通。</div>
+<ul>
+<li>哈交通部与中国企业签署无人驾驶交通合作备忘录</li>
+<li>哈方持续推进国际运输走廊建设，释放过境运输潜力</li>
+<li>哈俄今年已在“阿斯塔纳—莫斯科”线路试点无人驾驶货运卡车</li>
+<li>哈中计划探讨在国际运输走廊部分路段开展类似试点</li>
+<li>合作旨在推动哈中道路运输发展，加强交通互联互通</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该合作将提升哈国过境运输效率与数字化水平，强化其国际运输走廊枢纽地位；深化哈中交通互联互通，拓展双边经贸合作；为无人驾驶技术在中亚跨境运输中应用提供试点经验，助力哈国物流经济多元化。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/guojiaxingjiangfaxingaqyq-8622d5a1/" target="_blank">国家银行将发行«AQYQ»纪念硬币</a></h3>
+<div class="item-meta">哈通社中文版 · 10/22 23:48<span class="source-link"><a href="https://cn.inform.kz/news/guojiaxingjiangfaxingaqyq-8622d5a1/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国家银行将发行“AQYQ”纪念硬币，属于国际银行《魔法符号》系列。硬币由925银打造，镶嵌玛瑙石，重20克，直径33毫米，采用复古银工艺，面值1000坚戈，发行量5000枚。设计体现哈萨克传统珠宝工艺，顶部有小吊环可作项链吊坠佩戴。纪念币由哈央行造币厂制造，为法定货币，可流通，可在国家银行分部和官网购买。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 国家银行将发行«AQYQ»纪念硬币
+正文:
+据了解，该纪念硬币属于国际银行发行的主题为《魔法符号》系列。
+该硬币由925银打造，镶嵌有玛瑙石。重20克，直径33毫米，制造工艺为“复古银”（antique silver），面值为1000坚戈，发行量为5000（五千）枚。
+“AQYQ”（玛瑙）是一种半宝石，属于玉髓类，常用于珠宝首饰和装饰品的制作。该硬币的艺术设计清晰体现了哈萨克传统珠宝工艺的特色：细致精湛的金属工艺、背面精美的纹饰与镶嵌的玛瑙相互辉映、相得益彰。硬币顶部还专门设计了一个小吊环，使其可以作为项链吊坠佩戴。
+据悉，本次发行的纪念币由哈萨克斯坦央行造币厂制成，纪念币是哈萨克斯坦法定货币，可以作为一般货币流通。
+纪念币可在所有国家银行分部和官方网站（nationalbank.kz）购买。</div>
+<ul>
+<li>发行“AQYQ”纪念硬币，属《魔法符号》系列</li>
+<li>925银镶玛瑙，重20克，面值1000坚戈</li>
+<li>发行量5000枚，复古银工艺，可作吊坠</li>
+<li>哈央行造币厂制造，法定货币可流通</li>
+<li>国家银行分部和官网可购买</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举有助于推广哈萨克传统珠宝文化，提升国家银行纪念币的国际系列参与度，增加铸币收入，对政治经济无重大影响，但可促进矿产（银、玛瑙）的象征性应用。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/10yue22ri-herenminqing-24e48e38/" target="_blank">10月22日终盘 美元、卢布和人民币兑坚戈汇率情况</a></h3>
+<div class="item-meta">哈通社中文版 · 10/22 22:23<span class="source-link"><a href="https://cn.inform.kz/news/10yue22ri-herenminqing-24e48e38/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>10月22日KASE现货市场交易中，30个成员参与。美元兑坚戈平均报448.09（跌0.21），交易额4.4618亿美元（增3502.6万）；欧元兑坚戈报503.19（涨0.07），交易额570.3万欧元（增69.2万）；卢布兑坚戈报5.5221（涨0.0573），交易额29.55亿卢布（减11.38亿）；人民币兑坚戈报67.2152（涨0.0942），交易额5404.7万元（增504.7万）。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 10月22日终盘 美元、卢布和人民币兑坚戈汇率情况
+正文:
+30个KASE成员参与了交易。
+根据现货市场交易结果：
+美元兑坚戈（交易工具USDKZT_TOM）汇率平均报价为 1:448.09（-0.21坚戈），外汇交易总额为 4.4618393 亿美元（+3502.631 万美元）。交易过程中，最低报价为 1:446.10 坚戈，最高报价为 1:450.26 坚戈。
+欧元兑坚戈（交易工具EURKZT_TOM）汇率平均报价为 1:503.19（+0.07坚戈），外汇交易总额为 570.347 万欧元（+69.201 万欧元）。交易过程中，最低报价为 1:501.48 坚戈，最高报价为 1:505.44 坚戈。
+卢布兑坚戈（交易工具RUBKZT_TOM）汇率平均报价为 1:5.5221（+0.0573坚戈），外汇交易总额为 29.5459044 亿卢布（-11.3789023 亿卢布）。交易过程中，最低报价为 1:5.4951 坚戈，最高报价为 1:5.5500 坚戈。
+人民币兑坚戈（交易工具CNYKZT_TOM）汇率平均报价为 1:67.2152（+0.0942坚戈），外汇交易总额为 5404.681 万元（+504.72 万元）。交易过程中，最低报价为 1:66.9601 坚戈，最高报价为 1:67.9800 坚戈。</div>
+<ul>
+<li>美元兑坚戈微跌0.21至448.09，交易额增至4.46亿美元</li>
+<li>欧元兑坚戈微涨0.07至503.19，交易额570万欧元</li>
+<li>卢布兑坚戈涨0.0573至5.5221，交易额大降11.38亿卢布</li>
+<li>人民币兑坚戈涨0.0942至67.2152，交易额增504.7万元</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈对美元微升，对欧元、卢布、人民币微贬，汇率基本稳定。卢布交易额骤降反映俄哈贸易支付收缩；人民币交易额增长显示中哈本币结算扩大，利于贸易多元化与去美元化，对矿产出口计价影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/xinggong22riyuzhuyaowaizhijiande-92d03192/" target="_blank">央行公布22日坚戈与主要外币之间的汇率标准</a></h3>
+<div class="item-meta">哈通社中文版 · 10/22 13:31<span class="source-link"><a href="https://cn.inform.kz/news/xinggong22riyuzhuyaowaizhijiande-92d03192/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行公布2026年10月22日坚戈与主要外币汇率：美元兑坚戈1:448.61，欧元兑坚戈1:503.83，俄罗斯卢布兑坚戈1:5.48，土耳其里拉兑坚戈1:9.04，中国元兑坚戈1:67.2。央行规定，坚戈兑美元官方汇率基于阿斯塔纳时间15:30证券交易所加权平均汇率确定，其他外币汇率依据16:00交叉汇率计算。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 央行公布22日坚戈与主要外币之间的汇率标准
+正文:
+根据央行公布的信息，2026年10月22日，哈萨克斯坦坚戈与国际主要货币之间的兑换汇率标准如下：
+美元兑坚戈（USD/KZT） – 1：448.61
+欧元兑坚戈（EUR/KZT）- 1：503.83
+俄罗斯卢布兑坚戈（RUB / KZT）-1: 5.48
+土耳其里拉兑坚戈（TRY / KZT）- 1: 9.04
+中国元兑坚戈（CNY / KZT）- 1：67.2
+值得一提的是，根据哈萨克斯坦国家银行规定，截至阿斯塔纳时间当日15:30，在哈萨克斯坦证券交易所形成的坚戈兑美元加权平均汇率，将被确定为下一工作日坚戈兑美元官方汇率；坚戈兑其他外币的官方汇率，则依据截至阿斯塔纳时间16:00形成的交叉汇率计算得出。</div>
+<ul>
+<li>美元兑坚戈汇率为1:448.61</li>
+<li>欧元兑坚戈汇率为1:503.83</li>
+<li>人民币兑坚戈汇率为1:67.2</li>
+<li>美元官方汇率基于15:30交易所加权平均</li>
+<li>其他外币汇率依据16:00交叉汇率计算</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率数据反映坚戈对主要货币的比价关系，为贸易和投资提供定价基准。央行明确的汇率形成机制有助于增强外汇市场透明度和政策可预期性，对哈萨克斯坦金融稳定和对外经济交往具有支撑作用。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/quandi15-di2300-a45acfb1/" target="_blank">哈萨克斯坦黄金产量位居全球第15位 地质储量约2300吨</a></h3>
+<div class="item-meta">哈通社中文版 · 10/22 12:56<span class="source-link"><a href="https://cn.inform.kz/news/quandi15-di2300-a45acfb1/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦黄金产量居全球第15位，地质储量约2300吨。2025年全球黄金总需求首次超5000吨，金价同比涨44%至3400美元/盎司，投资需求增84%，珠宝需求降18%。全球黄金产量达3800吨，同比增2%。中国以384.3吨居首，俄罗斯345吨第二，前五国占全球37.9%。加纳增幅最大达21%，印尼降24.8%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦黄金产量位居全球第15位 地质储量约2300吨
+正文:
+尽管如此，哈萨克斯坦在全球黄金生产国中仍排名第15位。
+黄金不仅广泛应用于珠宝加工和电子工业，也是重要的投资资产及国家储备的重要组成部分。
+分析人士指出，近年来，全球黄金消费结构正在发生变化。随着投资需求不断增长，珠宝加工业及部分其他工业领域对黄金的需求有所下降。
+据美国地质调查局估算，全球黄金消费中，珠宝首饰占比最高，为40%；实物金条占24%，各国中央银行及其他官方机构的购金需求占21%。
+此外，官方纪念币、奖章及其复制品占7%，电气和电子工业占7%，其他用途占1%。需要指出的是，这一估算未将交易型开放式指数基金及其他黄金投资工具纳入统计。
+世界黄金协会的数据显示，2025年，若计入场外交易，全球黄金总需求首次超过5000吨。黄金年均价格同比上涨44%，达到每金衡盎司3400美元。受金价上涨影响，珠宝首饰的实物需求下降18%，投资需求则增长84%。
+全球黄金产量保持增长
+2025年，全球黄金产量达到3800吨，比2024年的3700吨增长2%。
+过去十年，全球黄金产量增长了13.6%，从2015年的3400吨增至2025年的3800吨。期间，降幅最大的是2020年，当年全球黄金产量下降4.4%。
+数据显示，自2021年以来，全球黄金产量总体逐年增长，但年增幅均未超过3.5%。其中，2023年和2024年的增幅均低于1%。
+2025年，中国以384.3吨的黄金产量继续位居全球第一，同比增长1.1%。
+俄罗斯以345吨的产量排名第二，同比增长4.5%。澳大利亚、加拿大和秘鲁分别以293.2吨、213.3吨和208.9吨位列其后。
+上述五个国家的黄金产量合计占全球总产量的37.9%。
+全球十大黄金生产国还包括加纳（187.3吨）、美国（157吨）、乌兹别克斯坦（125.4吨）、墨西哥（113.5吨）和印度尼西亚（104.2吨）。
+在这些国家中，加纳的黄金产量增幅最大，达到21%；印度尼西亚的产量则同比下降24.8%。</div>
+<ul>
+<li>哈萨克斯坦黄金产量全球第15，储量约2300吨</li>
+<li>2025年全球黄金需求超5000吨，金价涨44%</li>
+<li>全球黄金产量3800吨，同比增长2%</li>
+<li>中国384.3吨居首，前五国占全球37.9%</li>
+<li>加纳产量增21%最多，印尼降24.8%</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">哈国黄金产量居全球第15，储量丰富但产量份额有限，金价上涨利好其黄金出口与外汇储备；全球投资需求增长或推动哈国矿业投资，但需平衡珠宝等传统需求下降的影响。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-10-23 09:03</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
