@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年10月24日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年10月24日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年10月23日早9:00至2026年10月24日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 23 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">4</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">10</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">7</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">2</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(4 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/chuheguorihui-526180b6/" target="_blank">托卡耶夫总统出席共和国日庆祝晚会</a></h3>
+<div class="item-meta">哈通社中文版 · 10/23 23:04<span class="source-link"><a href="https://cn.inform.kz/news/chuheguorihui-526180b6/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫出席在阿斯塔纳歌剧院举行的共和国日庆祝晚会，主题为“新时代—新纪元”，来自全国各地的文艺家和乐团献上演出。今年共和国日10月25日恰逢星期日，公民将迎来三天小长假。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">消息称，总统出席了主题为“新时代—新纪元”的共和国日庆祝文艺晚会。
+Фото: Акорда Фото: Акорда 来自全国各地的文艺家和乐团在阿斯塔纳歌剧院举行的盛会献出了精彩演出。
+据悉，今年的共和国日（10月25日）恰逢星期日，因此哈萨克斯坦公民将迎来三天小长假。
+Фото: Акорда</div>
+<ul>
+<li>托卡耶夫总统出席共和国日庆祝晚会</li>
+<li>晚会主题为“新时代—新纪元”</li>
+<li>阿斯塔纳歌剧院举行，全国文艺家演出</li>
+<li>10月25日共和国日恰逢星期日，形成三天小长假</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">总统高调出席共和国日庆典，强化国家认同与政治稳定信号；三天小长假有助刺激国内消费与旅游，对经济产生短期正面影响；外交上展示国家团结形象，对矿产格局无直接关联。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/chuheguoriguojiabingfazhongyao-a37ddec0/" target="_blank">托卡耶夫总统出席共和国日国家授勋仪式并发表重要讲话</a></h3>
+<div class="item-meta">哈通社中文版 · 10/23 17:07<span class="source-link"><a href="https://cn.inform.kz/news/chuheguoriguojiabingfazhongyao-a37ddec0/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫总统在共和国日授勋仪式上发表讲话，强调10月25日通过《国家主权宣言》的历史意义，指出今年恰逢独立35周年前夕。他回顾了国家建设成就，包括确立国家象征、建立金融体系、巩固边界和建设阿斯塔纳。总统强调公正应成为国家核心价值，肯定首任总统纳扎尔巴耶夫的历史贡献，并介绍新宪法通过、一院制库鲁尔泰建立、副总统制度设立等政治改革成果。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫总统首先向全国人民致以共和国日的节日祝福。
+他指出，10月25日是哈萨克斯坦历史上具有特殊意义的日子。1990年10月25日，《哈萨克斯坦国家主权宣言》获得通过，标志着国家历史进入新的发展阶段，也为此后实现独立奠定了基础。
+共和国日是对全体人民具有特殊意义的神圣节日。正是在这一天，我们民族的历史开启了新的篇章。不久之后，我们成为一个独立自主的国家。历史正义得以伸张，独立的根基深深扎根于神圣的哈萨克土地。因此，可以说，这一天标志着大草原国家传统的复兴。
+Фото: Акорда 总统表示，今年的共和国日恰逢国家独立35周年即将到来之际。哈萨克斯坦正以蓬勃发展的姿态、作为受到国际社会尊重的国家，迎接这一重要历史节点。
+他回顾了独立以来国家建设取得的主要成就，包括确立国家象征、建立独立金融体系、巩固国家边界，以及建设新首都阿斯塔纳等。
+托卡耶夫强调，哈萨克斯坦在巩固民族团结的同时，逐步确立了和平、稳定和负责任的国际形象。
+谈及国家政治发展，总统指出，建设公正哈萨克斯坦是全社会共同承担的重要任务，而公正应当成为国家和社会发展的核心价值。
+他特别强调，必须以公正、客观的态度评价历史人物及其贡献。
+我们必须以公正的眼光审视历史进程，对历史作出公正评价。因此，我认为，首任总统努尔苏丹·纳扎尔巴耶夫（Нұрсұлтан Әбішұлы Назарбаев）的名字永远不会被遗忘。他为奠定主权哈萨克斯坦的国家基础、推动国家在极其困难的经济条件下发展，以及实现我国诸多历史性成就作出了重大贡献。铭记这一点，正是历史公正的体现。
+Фото: Ақорда 托卡耶夫表示，哈萨克斯坦依靠社会和谐与稳定克服了诸多挑战，并通过根本性改革推动国家发展。
+其中，新宪法的通过成为国家政治制度改革的重要里程碑。
+总统指出，新宪法明确将国家主权、领土完整、公民合法权利与自由确立为核心价值，同时强调法律与秩序、民族团结，以及教育、科学、创新和高新技术发展的战略意义。
+宪法不仅体现了哈萨克斯坦的过去与现在，也勾勒了国家未来的发展方向。
+根据总统介绍，宪法改革推动国家权力体系实现全面现代化。
+哈萨克斯坦建立了一院制库鲁尔泰，设立副总统制度，对国家安全委员会的组织结构进行了必要调整，国家最高咨询机构——哈萨克斯坦人民委员会也已开始运作。</div>
+<ul>
+<li>托卡耶夫出席共和国日授勋仪式并发表讲话</li>
+<li>1990年10月25日通过《国家主权宣言》奠定独立基础</li>
+<li>今年共和国日恰逢国家独立35周年前夕</li>
+<li>总统肯定纳扎尔巴耶夫的历史贡献体现历史公正</li>
+<li>新宪法通过推动政治制度改革和权力体系现代化</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">讲话强化历史叙事与政治稳定，肯定首任总统贡献有助于凝聚精英共识；宪法改革成果宣示将巩固一院制库鲁尔泰和副总统制度，提升治理效率；外交上突出负责任国际形象，利于吸引投资；矿产领域未直接提及，但稳定预期有利于资源开发合作。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/gongyechang129-lizhongdianyehe-02790689/" target="_blank">奇姆肯特工业产值增长12.9% 总理视察重点企业和交通基础设施建设</a></h3>
+<div class="item-meta">哈通社中文版 · 10/23 13:32<span class="source-link"><a href="https://cn.inform.kz/news/gongyechang129-lizhongdianyehe-02790689/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总理别克帖诺夫视察奇姆肯特，落实总统托卡耶夫关于培育经济新增长点、改善公路质量的指示。奇姆肯特2025年GDP达5.9万亿坚戈，较五年前增长2.2倍；2026年1-9月工业产值1.2万亿坚戈，同比增长12.9%，固定资产投资5800亿坚戈，增长7.4%。朱勒德兹工业园区Wan Sheng Ceramic陶瓷厂年产能1200万-1300万平方米，95%原材料来自哈境内，40%产品出口独联体；塔赛工业园区Asia Trafo变压器厂年产能1.2万兆伏安，满足国内500千伏及以下变电站90%设备需求。全市8个工业园区入驻率90%，累计实施354个项目。总理还检查了总投资85亿坚戈的立交桥项目。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 奇姆肯特工业产值增长12.9% 总理视察重点企业和交通基础设施建设
+正文:
+此次考察重点围绕落实总统托卡耶夫（Қасым-Жомарт Тоқаев）关于培育地区经济新增长点、改善公路质量的指示展开。别克帖诺夫先后走访“Жұлдыз”（朱勒德兹）和“Тассай”（塔赛）工业园区，检查重要道路立交桥建设进度，并了解城市公共空间改造情况。
+在朱勒德兹工业园区，Wan Sheng Ceramic陶瓷制品厂总经理刘文清（Лю Вэньцин）向总理介绍了企业生产经营情况。
+据介绍，该厂今年已达到设计产能，每年可生产1200万至1300万平方米瓷质砖产品。目前，企业提供350个固定就业岗位，连同相关配套企业在内，带动就业超过1000人。
+值得关注的是，工厂约95%的生产原材料来自哈萨克斯坦境内矿产资源。除满足国内市场需求外，企业还将40%的产品出口至独联体国家，并计划进一步扩大生产规模。
+Фото: primeminister.kz 在塔赛工业园区，Asia Trafo公司董事会主席达维尔别克·阿捷耶夫（Дәуірбек Атеев）介绍了企业的生产工艺及主要产品，包括电力变压器、自耦变压器等电力设备。
+该厂已引入三维设计、数学建模和数字化管理技术，年设计产能达1.2万兆伏安，可满足哈萨克斯坦500千伏及以下电压等级变电站主要设备需求的90%。
+企业生产的变压器主要供应大型能源设施，包括新建热电联产厂和发电站。目前，工厂提供200多个就业岗位。
+奇姆肯特现有8个工业园区，园区用地入驻率已达90%，累计实施354个项目。
+根据奇姆肯特市政府提供的数据，2025年全市地区生产总值达到5.9万亿坚戈，较五年前增长2.2倍。
+Фото: primeminister.kz 2026年1月至9月，全市工业产值达到1.2万亿坚戈，同比增长12.9%；固定资产投资同比增长7.4%，达到5800亿坚戈。
+同期，当地通过企业扶持措施支持了1480个项目，涉及资金105亿坚戈。此外，政府为教育、医疗基础设施现代化及社会保障等重点民生领域安排了超过4395亿坚戈资金。
+考察结束后，别克帖诺夫指示工业和建设部、能源部、外交部及奇姆肯特市政府采取必要措施，支持现有企业扩大产能，并加快推动工业园区实现全面开发利用。
+在交通基础设施建设方面，别克帖诺夫重点检查了拜迪别克·比大街与K.托列梅托夫街交叉口立交桥工程。
+该项目总投资85亿坚戈，规划建设一座四车道立交桥，包括一段长约550米的高架桥、一段长逾180米的跨线桥，以及3处地下人行通道。
+目前，项目主体施工安装工程已基本完成，桥面道路正式开放通行，剩余地面工程计划于今年年底前完工。</div>
+<ul>
+<li>奇姆肯特2026年1-9月工业产值1.2万亿坚戈，同比增长12.9%</li>
+<li>Wan Sheng Ceramic陶瓷厂年产能1200万-1300万平方米，95%原材料本地化</li>
+<li>Asia Trafo变压器厂年产能1.2万兆伏安，满足国内90%变电站设备需求</li>
+<li>奇姆肯特8个工业园区入驻率90%，累计实施354个项目</li>
+<li>总理指示多部门支持企业扩产，加快园区全面开发利用</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上，奇姆肯特工业与投资双增长，园区高入驻率强化区域增长极；矿产上，陶瓷厂95%原材料本地化提升资源加工附加值；外交上，外资企业出口独联体促进区域合作；政治上，总理视察落实总统指示，彰显中央对地方发展支持。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/heguoriqian-fachuren-d8769fd0/" target="_blank">共和国日前夕 托卡耶夫总统签署法令表彰各领域杰出人士</a></h3>
+<div class="item-meta">哈通社中文版 · 10/23 11:41<span class="source-link"><a href="https://cn.inform.kz/news/heguoriqian-fachuren-d8769fd0/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在共和国日前夕签署法令，表彰各领域杰出人士。获奖者包括劳动模范、产业工人、企业界人士、教科文卫工作者、军人、执法人员、运动员及文化艺术工作者等。其中，杰兹卡兹甘铜冶炼厂熔炼工多斯帕诺夫被授予“哈萨克斯坦劳动英雄”称号及“金星”奖章和“祖国”勋章；作曲家霍拉兹巴耶夫获“祖国”勋章；多人获“雪豹”“帕拉萨特”“库尔梅特”“民族团结”等勋章。据总统府数据，获奖者包括129名劳动模范、473名各行业劳动者、200余名中小企业代表、150余名教科文工作者及近120名医务人员。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">共和国日前夕 托卡耶夫总统签署法令表彰各领域杰出人士
+此次获奖者包括劳动模范、产业工人、企业界人士、教育和科研工作者、医务人员、军人、执法人员、运动员以及文化艺术工作者等。
+根据总统令，哈萨克铜业冶炼公司（Kazakhmys Smelting）旗下杰兹卡兹甘铜冶炼厂熔炼工阿布德拉希特·多斯帕诺夫（Әбдірашит Қойшыбекұлы Доспанов）因在生产劳动中取得卓越成就，被授予国家最高荣誉称号“哈萨克斯坦劳动英雄”，同时获颁“金星”特别荣誉奖章和“祖国”勋章。
+著名作曲家、“穆扎尔特”（Музарт）音乐组合的重要推动者阿勒滕别克·霍拉兹巴耶夫（Алтынбек Қоразбаев）因在文化艺术领域作出的突出贡献，被授予“祖国”勋章。
+一等“雪豹”勋章授予TNS-group集团总裁T.朱马古洛夫（Т.Жұмағұлов）和演员N.伊赫特姆巴耶夫（Н.Ықтымбаев）；二等“雪豹”勋章授予教育界资深人士E.曼别特哈济耶夫（Е.Мәмбетқазиев）及哈萨克斯坦登山与攀岩联合会副主席K.瓦利耶夫（Қ.Уәлиев）；三等“雪豹”勋章授予Novo-Prirechnoye公司负责人V.秋尔金（В.Тюркин）、阿克托别州退伍军人组织负责人S.尚古托夫（С.Шаңғұтов）等人士。
+一批在科学研究、文化事业及工业生产领域作出重要贡献的杰出人士获颁“帕拉萨特”勋章，其中包括农业企业负责人、语言学家、考古学家、医学专家及企业管理人员等。
+“库尔梅特”勋章则授予来自石油工业、农业、医疗卫生及社会公益等领域的优秀工作者，包括石油企业起重机操作员、儿童医院医师、农业技术人员、康复中心负责人等。
+在促进社会和谐与民族团结方面，阿拉木图市土库曼族公共文化中心、卡拉干达州车臣—印古什族文化协会以及哈萨克斯坦德意志族社会组织等机构的代表，因在加强社会共识和民族关系方面作出的贡献，被授予“民族团结”勋章。
+此外，工业、交通运输、建筑、农业及其他生产领域的一批优秀劳动者获颁三等“劳动光荣”勋章。
+文化艺术领域多位杰出人士被授予“哈萨克斯坦功勋活动家”荣誉称号；教育工作者获授“哈萨克斯坦功勋教师”称号；部分艺术家获授“哈萨克斯坦人民艺术家”称号。
+一批医务工作者获授“哈萨克斯坦功勋医生”荣誉称号，其中包括以T.沙尔马诺夫命名的国立医科大学教授T.塔尔基娜（Т.Таркина）。
+与此同时，一批军人和执法机关工作人员因忠实履行军事及公务职责，在维护法律秩序、保障国家安全等方面表现出英勇精神和奉献精神，分别获颁一等、二等“光荣”勋章，一等、二等、三等“勇气”勋章，以及“英勇”奖章和“战斗功勋”奖章。
+据总统府公布的数据，此次获得国家表彰的人员包括129名劳动模范、473名来自工业、交通运输、建筑、农业及其他行业的劳动者、200余名中小企业代表、150余名教育和科研工作者，以及近120名医务人员。此外，还有一批在各自岗位上为国家发展作出贡献的公民获得国家奖励。</div>
+<ul>
+<li>托卡耶夫总统在共和国日前夕签署法令表彰各领域杰出人士</li>
+<li>铜冶炼厂熔炼工多斯帕诺夫获最高荣誉称号“哈萨克斯坦劳动英雄”</li>
+<li>作曲家霍拉兹巴耶夫等获“祖国”勋章，多人获“雪豹”等勋章</li>
+<li>获奖者涵盖劳动模范、企业代表、教科文卫、军警等群体</li>
+<li>总统府数据：129名劳动模范、473名各行业劳动者、近120名医务人员等</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次表彰强化了国家对劳动模范和各行各业贡献者的认可，有助于提升社会凝聚力和民族团结，体现对工业、教育、医疗等关键领域的重视，对政治稳定和社会和谐产生积极影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(10 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/modernizatsiya-srednego-koridora-o-chem-dogovorilis-kazahstan-i-gruziya-7e11732a" target="_blank">中间走廊现代化：哈萨克斯坦与格鲁吉亚达成哪些协议</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/24 02:40<span class="source-link"><a href="https://www.inform.kz/ru/modernizatsiya-srednego-koridora-o-chem-dogovorilis-kazahstan-i-gruziya-7e11732a" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>10月23日，哈萨克斯坦与格鲁吉亚外长在会谈中重点讨论跨里海国际运输路线（中间走廊）现代化，涉及交通基础设施、港口铁路效率、关税条件和电子文件流转。双方还审议高层接触日程，强调发展中亚与南高加索交通联系以进入欧洲市场。此前哈格已测试交换国际公路运输电子许可证，旨在减少行政壁垒。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">中间走廊现代化：哈萨克斯坦与格鲁吉亚达成哪些共识
+
+会议于10月23日在与中亚国家及格鲁吉亚外长的会谈框架内举行。
+
+双方审议了加强战略伙伴关系、扩大政治对话、贸易经济和交通过境合作以及文化人文联系的前景。
+
+部长们特别关注跨里海国际运输路线（中间走廊）的发展。具体而言，涉及交通基础设施现代化、提高港口和铁路效率、完善关税条件以及引入电子文件流转。
+
+此外，外交部门负责人审议了即将进行的高层和最高层接触日程，就国际和地区议程交换了意见，包括在多边组织框架内的协作。
+
+单独指出了扩大中亚与格鲁吉亚在交通、物流、贸易和投资领域合作的潜力。双方强调发展中亚与南高加索之间可持续交通联系对于进入欧洲和世界市场的重要性。
+
+根据会议结果，部长们确认了对进一步发展双边关系和支持定期对话的兴趣。
+
+此前有报道称，哈萨克斯坦已开始与格鲁吉亚测试交换国际公路运输电子许可证。新系统旨在减少行政壁垒和提高运输透明度。</div>
+<ul>
+<li>10月23日哈格外长会谈聚焦中间走廊现代化</li>
+<li>讨论交通基础设施、港口铁路效率及关税条件</li>
+<li>双方审议高层接触日程并交换地区议程意见</li>
+<li>强调发展中亚-南高加索交通联系进入欧洲市场</li>
+<li>哈格已测试交换国际公路运输电子许可证</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">推动中间走廊现代化将提升哈国过境运输潜力，促进贸易物流多元化，减少对传统路线的依赖，增强在中亚与南高加索的经济影响力，并深化与格鲁吉亚的战略伙伴关系。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/itogi-gosvizita-korolya-filippa-ikorolevi-matildi-vkazahstan-obsudili-vbryussele-1c121923" target="_blank">布鲁塞尔讨论菲利普国王与玛蒂尔德王后对哈萨克斯坦国事访问成果</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/24 02:00<span class="source-link"><a href="https://www.inform.kz/ru/itogi-gosvizita-korolya-filippa-ikorolevi-matildi-vkazahstan-obsudili-vbryussele-1c121923" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>布鲁塞尔举办简报会，由Buscardini Communications与哈萨克斯坦驻比使馆联合组织，讨论比利时国王菲利普与王后玛蒂尔德对哈国事访问成果。活动在哈共和国日前夕及两国建交35周年前夕举行，聚焦将访问动力转化为务实合作、哈萨克斯坦在欧盟—中亚对话中的作用，以及哈欧关系前景。布鲁塞尔新闻俱乐部主席布斯卡迪尼称讨论范围更广，欧洲理事会主席科斯塔办公室发言人全面回顾了欧哈合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：菲利普国王与玛蒂尔德王后对哈萨克斯坦国事访问成果在布鲁塞尔讨论
+
+正文：
+本次活动由Buscardini Communications公司同哈萨克斯坦共和国大使馆联合举办。简报会于哈萨克斯坦共和国日前夕举行，并恰逢两国建交35周年临近之际。
+与会者讨论了访问的关键成果、将所获动力转化为务实合作的可能性，以及哈萨克斯坦在欧盟与中亚不断扩大的对话中的作用。特别关注了在哈国独立35周年临近背景下加强哈萨克斯坦—欧盟关系的前景。
+布鲁塞尔新闻俱乐部主席安东尼奥·布斯卡迪尼向Kazinform驻布鲁塞尔记者表示，本次活动旨在使比利时国王访问的讨论在比利时和欧盟范围内更加广泛。
+——讨论更为广泛，因为我们希望聚焦哈萨克斯坦与比利时的关系，同时关注与欧盟的互动。今天，欧洲理事会主席安东尼奥·科斯塔办公室的一位发言人发表了讲话，他也全面回顾了欧盟与哈萨克斯坦的合作，——安东尼奥·布斯卡迪尼表示。</div>
+<ul>
+<li>布鲁塞尔简报会讨论比利时国王访哈成果</li>
+<li>活动由Buscardini公司与哈驻比使馆联合举办</li>
+<li>恰逢哈共和国日及两国建交35周年前夕</li>
+<li>聚焦哈在欧盟—中亚对话中的作用与哈欧关系</li>
+<li>欧洲理事会主席办公室发言人回顾欧哈合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此活动强化哈国与比利时及欧盟的政治对话，借建交35周年推动务实合作，提升哈国在欧盟—中亚框架中的枢纽地位，为矿产与经贸合作创造外交氛围。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/renzhejiangweijinglai1de-82f861ab/" target="_blank">英伟达创始人：这将为哈萨克斯坦经济带来1万亿美元的收益</a></h3>
+<div class="item-meta">哈通社中文版 · 10/24 01:20<span class="source-link"><a href="https://cn.inform.kz/news/renzhejiangweijinglai1de-82f861ab/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>英伟达创始人黄仁勋评估，与Firebird AI合作的AI计算项目在输出功率达5吉瓦时，可为哈萨克斯坦带来高达1万亿美元的综合经济效应。此前双方已宣布100亿美元投资计划，每增加1吉瓦潜在投资约500亿美元，未来总投资可达2500亿美元。黄仁勋高度评价卡托卡耶夫总统的战略远见，认为哈萨克斯坦凭借自然资源和人力资源潜力，有能力在全球AI经济中占据一席之地，并称这是历史机遇。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据他评估，当该项目输出功率达到5吉瓦（GW）时，对哈萨克斯坦产生的综合经济效应可高达1万亿美元。
+
+此前，NVIDIA与Firebird AI宣布了100亿美元的投资计划。然而这仅仅是个开始：计算基础设施每增加1吉瓦，潜在投资额约为500亿美元。
+
+因此，该项目未来的潜在投资总额可达2500亿美元。
+
+黄仁勋还高度评价了卡托卡耶夫总统的战略远见，以及将哈萨克斯坦打造为人工智能强国的坚定决心。
+
+NVIDIA负责人表示，哈萨克斯坦拥有必要的自然资源和强大的人力资源潜力，完全有能力在全球人工智能经济中占据一席之地。
+
+黄仁勋强调：“对于哈萨克斯坦而言，这是一个绝佳的历史机遇。”</div>
+<ul>
+<li>5吉瓦项目可带来1万亿美元经济效应</li>
+<li>NVIDIA与Firebird AI已宣布100亿美元投资</li>
+<li>每增加1吉瓦潜在投资约500亿美元</li>
+<li>未来潜在投资总额可达2500亿美元</li>
+<li>黄仁勋称这是哈萨克斯坦历史机遇</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该项目将大幅吸引外资，推动哈国AI基础设施和数字经济跨越式发展，增强其在中亚科技竞争中的地位；同时深化与NVIDIA合作，提升外交科技话语权，但需平衡资源开发与矿产格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/yudazhengdui-447f7905/" target="_blank">哈萨克斯坦与沙特阿拉伯讨论扩大政治对话</a></h3>
+<div class="item-meta">哈通社中文版 · 10/24 00:56<span class="source-link"><a href="https://cn.inform.kz/news/yudazhengdui-447f7905/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与沙特阿拉伯举行会晤，讨论扩大政治对话。双方回顾双边合作重点议题及国际组织框架内互动，积极评价友好互利伙伴关系。会见沙特·萨蒂时，重点讨论政治、经贸及投资领域加强联系前景，以及即将举行的高层和最高层活动。与阿卜杜勒拉赫曼·拉西交谈中，讨论多领域合作、国际组织相互支持候选资格，并特别关注伊斯兰合作组织框架内协作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦与沙特阿拉伯讨论扩大政治对话
+
+正文：
+会晤期间，双方讨论了哈萨克斯坦与沙特阿拉伯之间合作的相关重点议题，以及两国在国际组织框架内的互动。双方对双边关系的发展给予了积极评价，并指出这种关系建立在友好与互利伙伴关系的原则之上。
+
+会见沙特·萨蒂时，双方重点关注了在政治、经贸及投资领域进一步加强联系的前景，并讨论了即将举行的高层及最高层活动。
+
+图片：哈萨克斯坦共和国外交部 在与阿卜杜勒拉赫曼·拉西的交谈中，双方讨论了多领域合作以及在国际组织中相互支持彼此候选资格等议题。双方还特别关注了在伊斯兰合作组织框架内的互动与协作。</div>
+<ul>
+<li>哈沙双方积极评价友好互利伙伴关系</li>
+<li>重点讨论政治、经贸及投资领域合作前景</li>
+<li>涉及即将举行的高层及最高层活动安排</li>
+<li>讨论国际组织中相互支持候选资格议题</li>
+<li>特别关注伊斯兰合作组织框架内协作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访有助于哈萨克斯坦拓展与沙特的政治互信，推动经贸投资合作，增强在伊斯兰合作组织中的协调，对哈国多元外交和矿产领域吸引投资具有积极意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/lihuiguodashi-9b573ab7/" target="_blank">政府副总理会见德国驻哈大使</a></h3>
+<div class="item-meta">哈通社中文版 · 10/24 00:17<span class="source-link"><a href="https://cn.inform.kz/news/lihuiguodashi-9b573ab7/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦政府副总理会见德国驻哈大使，讨论扩大经贸合作。去年两国贸易额达45亿美元，同比增长13.4%；自2005年德国累计投资80亿美元，超1100家德企在哈运营。双方计划基于《2026–2028年路线图》提升本地化水平和高附加值产品产量，并强调中亚互联互通，研究经阿富汗至巴基斯坦铁路项目，哈、乌、阿联酋已签署谅解备忘录。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">政府副总理会见德国驻哈大使
+
+会谈中，双方讨论了进一步扩大经贸合作的前景，包括发展产业合作、吸引投资以及落实联合项目。
+
+德国是哈萨克斯坦在欧洲的主要经济合作伙伴之一。去年，两国贸易额达到45亿美元，同比增长13.4%。自2005年以来，德国对哈萨克斯坦的累计投资额已达80亿美元。目前，有超过1100家德资企业在哈萨克斯坦开展业务，其中包括可耐福（Knauf）、克拉斯（CLAAS）、霍施（HORSCH）以及海德堡建材（Heidelberg Materials）等。
+
+后续合作旨在扩大现有生产设施，提高本地化水平，并引入哈萨克斯坦供应商参与其中。其核心目标是提升高附加值产品的产量，并增强哈萨克斯坦制造商在德国市场中的地位。这一工作的基础是《2026–2028年路线图》。
+
+双方特别强调了中亚在发展区域互联互通和国际贸易方面的作用。大使表示，德国及欧洲国家有意加强在该地区的合作；此举将为拓展贸易路线和进入新市场铺平道路。
+
+赛热克·朱曼哈林指出，中亚的未来与向南交通联系的发展息息相关。哈萨克斯坦有意实现运输路线多元化，并加强与该地区各国的联系。具体而言，一项经由阿富汗通往巴基斯坦的铁路建设项目正在研究之中。哈萨克斯坦、乌兹别克斯坦和阿拉伯联合酋长国已就该项目签署了谅解备忘录。
+
+雷娜特·佩奇认为，开发此类路线不仅符合中亚各国的利益，也符合德国的利益。该地区有望成为连接欧亚市场的重要纽带。这不仅涵盖铁路交通，还涉及数字通信以及油气管道的建设，从而为贸易和经济往来创造更多机遇。
+
+根据会谈结果，双方同意就双边合作议题继续开展互动，并就哈萨克斯坦与德国关系中的重点领域保持经常性对话。</div>
+<ul>
+<li>哈德贸易额45亿美元，同比增长13.4%</li>
+<li>德国累计投资80亿美元，超1100家德企在哈</li>
+<li>合作基于《2026–2028年路线图》提升本地化</li>
+<li>研究经阿富汗至巴基斯坦铁路，三国签备忘录</li>
+<li>德国有意加强中亚合作，拓展欧亚市场纽带</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">深化哈德经贸与产业合作，吸引德资并提升高附加值产品出口；推动运输路线多元化，经阿富汗铁路项目增强中亚互联互通，巩固哈区域枢纽地位，同时平衡地缘经济格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/huirenxing-adb5575b/" target="_blank">托卡耶夫总统会见英伟达创始人兼首席执行官黄仁勋</a></h3>
+<div class="item-meta">哈通社中文版 · 10/23 21:44<span class="source-link"><a href="https://cn.inform.kz/news/huirenxing-adb5575b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫会见英伟达创始人兼首席执行官黄仁勋，强调此访对加强双边合作的重要意义，并感谢其为哈人工智能生态系统发展所作贡献。托卡耶夫表示今年为“数字化与人工智能年”，支持英伟达与Higgsfield合作。黄仁勋高度评价哈将自身打造为“人工智能国家”的战略目标，提议将哈打造为全球“物理人工智能”中心，并指出双方已与Firebird AI KZ Ltd、哈萨克斯坦电信公司等建立合作，支持哈首家科技“独角兽”Higgsfield。会谈后，托卡耶夫授予黄仁勋一级“友谊”勋章。黄仁勋于23日首次访问哈萨克斯坦。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫总统会见英伟达创始人兼首席执行官黄仁勋
+
+会谈中，托卡耶夫总统强调了英伟达创始人此访对于加强双边合作的重要意义，并对其为哈萨克斯坦人工智能生态系统发展所作出的贡献表示赞赏。
+- 您的此次访问意义重大，将为我们与英伟达的合作注入新的动力。感谢您为巩固双方伙伴关系所付出的努力，也感谢您为哈萨克斯坦所做出的贡献。-总统说。
+Фото: Акорда 托卡耶夫指出，哈萨克斯坦将发展数字化和人工智能列为国家优先事项，并表示今年已被定为“数字化与人工智能年”。
+国家元首表示支持英伟达与Higgsfield之间的合作。他指出，哈萨克斯坦人民欢迎该公司参与国内的科技项目。
+Фото: Ақорда 黄仁勋高度评价了托卡耶夫总统提出的战略目标，即在新工业革命初期阶段，将哈萨克斯坦打造成为一个“人工智能国家”。
+他表示，这一举措旨在发展人工智能，并将其大规模地付诸应用。
+此外，英伟达创始人提议将哈萨克斯坦打造为全球“物理人工智能”（Physical AI）中心。
+- 发展人工智能，主要需要充足的能源，以及科学、数学和技术领域的高素质专业人才。哈萨克斯坦在这些方面均具备充分的发展潜力。-他说。
+他还指出，近年来，通过英伟达与哈萨克斯坦之间的合作，已取得了显著成效，双方与科技企业的联系也得到了进一步加强。
+- 过去一年里，双方的合作成果丰硕。我们已着手与哈萨克斯坦的多家机构建立合作伙伴关系，其中包括 Firebird AI KZ Ltd 和哈萨克斯坦电信公司（Kazakhtelecom）。此外，我们还为 Higgsfield 提供了支持——该公司被视为哈萨克斯坦首家科技“独角兽”企业，且已在全球科技生态系统中稳固地确立了自己的地位。我对我们共同取得的成就感到非常满意；这仅仅是未来征程的起点。我很高兴贵国能与我们公司达成合作伙伴关系。-他说。
+会谈结束后，国家元首授予黄仁勋一级“友谊”勋章，以表彰他为哈萨克斯坦人工智能发展所作出的贡献。
+Фото: Ақорда 据此前报道，英伟达创始人兼首席执行官黄仁勋23日首次访问哈萨克斯坦。</div>
+<ul>
+<li>托卡耶夫会见黄仁勋，强调加强双边合作</li>
+<li>哈将今年定为“数字化与人工智能年”</li>
+<li>黄仁勋提议将哈打造为全球“物理人工智能”中心</li>
+<li>英伟达已与Firebird AI KZ、Kazakhtelecom等合作</li>
+<li>托卡耶夫授予黄仁勋一级“友谊”勋章</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈与英伟达战略合作，助推哈人工智能国家战略和数字经济发展；提升哈在全球科技外交地位，吸引外资与技术；为矿产能源与AI结合创造新机遇，但需平衡地缘政治风险。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/rendao-28c92176/" target="_blank">英伟达创始人黄仁勋首次到访哈萨克斯坦</a></h3>
+<div class="item-meta">哈通社中文版 · 10/23 19:58<span class="source-link"><a href="https://cn.inform.kz/news/rendao-28c92176/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>英伟达创始人黄仁勋首次访问哈萨克斯坦，在Alem.ai国际人工智能中心与人工智能和数字发展部部长扎斯兰·马迪耶夫会晤。黄仁勋指出人工智能发展需要电力、数据和对人工智能解决方案的需求三个关键要素，认为哈萨克斯坦丰富的自然资源和能源资源可奠定新兴产业发展基础，未来可从输出能源转向输出智能解决方案。他还强调培养专业人才和让年轻人参与人工智能发展的重要性，并积极评价哈萨克语大语言模型（Kazakh LLM）的开发。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">英伟达创始人黄仁勋首次到访哈萨克斯坦。访问期间，他在Alem.ai国际人工智能中心与哈萨克斯坦人工智能和数字发展部部长扎斯兰·马迪耶夫举行会晤。在会议期间，黄先生谈到了哈萨克斯坦在发展人工智能经济方面的优势。他指出，人工智能发展需要三个关键要素：电力、数据和对人工智能解决方案的需求。他指出，哈萨克斯坦拥有丰富的自然资源和能源资源，这些资源可为发展新兴产业奠定基础。——未来，贵国将不再仅仅是输出能源，而是能够将其转化为智能，进而输出智能解决方案。——他说。黄仁勋还强调了培养专业人才以及让年轻人参与人工智能发展的重要性。——贵国正在激励年轻人、学生、高校、科学家以及业界代表积极投身于人工智能产业和人工智能经济的发展之中。而这，恰恰正是推动需求增长的关键所在。——他说。他还谈到了国家数据的使用。英伟达负责人表示，这类数据反映了一个社会的文化、历史、价值观和经验；因此，其开发和应用对一个国家具有战略意义。黄仁勋还对哈萨克语大语言模型（Kazakh LLM）的开发给予了积极评价。——我很高兴看到哈萨克斯坦已经拥有了自己的大语言模型——“哈萨克语大语言模型”。这使得收集、处理和利用国家数据来开发本土人工智能成为可能。——他说。</div>
+<ul>
+<li>黄仁勋首次访哈，与人工智能和数字发展部部长会晤</li>
+<li>人工智能发展需电力、数据和对人工智能解决方案的需求</li>
+<li>哈国丰富能源资源可奠定新兴产业发展基础</li>
+<li>强调培养专业人才和让年轻人参与人工智能发展</li>
+<li>积极评价哈萨克语大语言模型（Kazakh LLM）开发</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访提升哈萨克斯坦在全球人工智能版图中的地位，推动其从能源输出向智能解决方案输出转型，促进本土人才培养和数字经济发展，并可能吸引英伟达等科技巨头投资，影响中亚矿产与能源格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/chutihuijiandahuihuihui-bdad7046/" target="_blank">库鲁尔泰议员出席独联体议会间大会常设委员会例会</a></h3>
+<div class="item-meta">哈通社中文版 · 10/23 19:23<span class="source-link"><a href="https://cn.inform.kz/news/chutihuijiandahuihuihui-bdad7046/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>库鲁尔泰议员出席独联体议会间大会常设委员会例会，会议旨在促进成员国立法机构经验交流、探讨共同议题并加强议会间合作。与会者就发展文化与人文联系、加强历史文化传承、提升区域旅游潜力、开展联合体育项目及扩大信息领域合作等关键领域交换意见，批准了一项联合行动计划并通过若干决议，进一步完善了下一阶段工作计划并明确核心目标。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 库鲁尔泰议员出席独联体议会间大会常设委员会例会
+正文:
+此次会议旨在促进独联体成员国立法机构代表之间的经验交流，探讨共同关心的议题，并加强议会间合作。
+会议期间，与会者讨论了议程事项，并就若干关键领域交换了意见。
+Фото: Құрылтай 会议重点关注了以下方面：发展文化与人文联系，加强独联体国家间的历史文化传承，提升区域旅游潜力，开展联合体育项目，以及扩大在信息领域的合作。
+根据会议结果，与会者批准了一项联合行动计划，并通过了若干决议。此外，独联体议会间大会下一阶段的工作计划得到了进一步完善，其核心目标也得以明确。
+Фото: Құрылтай &amp;nbsp;</div>
+<ul>
+<li>会议促进独联体成员国立法机构经验交流与议会间合作</li>
+<li>重点讨论文化人文联系、旅游潜力、体育项目和信息合作</li>
+<li>批准联合行动计划并通过若干决议</li>
+<li>完善下一阶段工作计划并明确核心目标</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国政治而言，强化了与独联体国家的议会外交与立法协调；经济上利于旅游与信息合作；外交上巩固区域多边关系；矿产格局无直接关联，但人文合作有助于营造稳定周边环境。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://cn.inform.kz/news/quanliguojiachu-di34-af69ebe7/" target="_blank">全球最具影响力国家排名出炉 哈萨克斯坦位列第34位</a></h3>
+<div class="item-meta">哈通社中文版 · 10/23 11:59<span class="source-link"><a href="https://cn.inform.kz/news/quanliguojiachu-di34-af69ebe7/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>全球最具影响力国家排名出炉，哈萨克斯坦位列第34位，领先埃及、阿联酋、南非等国。该排名基于美国《美国新闻与世界报道》的“最佳国家”研究，综合考量经济政治影响力、军事能力、国际联盟及领导力。哈萨克斯坦的影响力得益于能源矿业发展、广泛外交关系及多向平衡外交政策。2025年哈铀产量占全球40%，石油出口7870万吨，中间走廊货运量约410万吨。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">根据公布的榜单，中国位居首位，美国和印度分别排名第二、第三，德国和日本紧随其后。韩国、法国、英国、墨西哥和意大利分列第六至第十位。
+哈萨克斯坦在此次排名中领先于埃及（第35位）、阿拉伯联合酋长国（第37位）、南非（第38位）、挪威（第39位）、沙特阿拉伯（第40位）、巴基斯坦（第42位）和伊朗（第46位）等国家。
+在前苏联加盟共和国中，俄罗斯排名第11位，乌克兰和白俄罗斯分别位列第51位和第57位。
+据World Population Review介绍，该排名基于美国《美国新闻与世界报道》（U.S. News &amp; World Report）开展的“最佳国家”（Best Countries）研究，综合考量各国的经济和政治影响力、军事能力、国际联盟关系以及领导力等因素。
+这意味着，一个国家的综合影响力不仅取决于其经济规模或军事力量，还与其在国际政治中的地位以及影响国际关系的能力密切相关。
+分析认为，能源和矿业的发展，以及与世界多个国家建立的广泛外交关系，是哈萨克斯坦国际影响力的重要支撑。
+《中亚时报》（The Times of Central Asia）在相关报道中指出，哈萨克斯坦是全球最大的铀生产国，2025年约占全球矿山铀产量的40%。此外，2025年哈萨克斯坦石油出口量达到7870万吨，在国际能源市场占据重要地位。
+哈萨克斯坦通过覆盖广泛的石油管道网络以及与多个国家建立的商业合作关系，将能源产品输往国际市场。
+与此同时，哈萨克斯坦长期奉行的多向平衡外交政策，也被视为提升其国际影响力的重要因素。
+World Population Review指出，哈萨克斯坦在保持与俄罗斯、中国战略关系的同时，持续扩大与美国、欧洲国家及其他国际伙伴的经济和政治合作。
+铀产业的国际合作便是这一外交政策的具体体现。哈萨克斯坦的铀产品出口至具有不同地缘政治利益的国家，其产业合作网络覆盖多个重要国际经济中心。
+此外，哈萨克斯坦不断发展的交通物流基础设施，也在增强其国际贸易地位。
+依托铁路网络、与中国之间的陆路运输通道以及里海港口，哈萨克斯坦正在进一步发挥连接亚洲与欧洲的交通枢纽作用。
+2025年，经跨里海国际运输走廊（中间走廊）运输的货物总量约为410万吨，其中包括约7.7万个标准集装箱（TEU）。
+在中亚国家中，乌兹别克斯坦以第71位进入全球百强，其国际影响力同样与经济发展、自然资源储备及国内市场规模密切相关。</div>
+<ul>
+<li>哈萨克斯坦全球影响力排名第34位，领先埃及、阿联酋等国</li>
+<li>排名基于经济政治影响力、军事能力、国际联盟及领导力</li>
+<li>哈铀产量占全球40%，石油出口7870万吨</li>
+<li>多向平衡外交政策提升哈国际影响力</li>
+<li>中间走廊2025年货运量约410万吨，含7.7万标箱</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">排名提升哈国际形象，强化其能源矿产大国地位；多向平衡外交巩固地缘政治平衡；交通物流枢纽作用增强，促进欧亚过境贸易；吸引外资并拓展国际合作空间。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">10</span> <a href="https://cn.inform.kz/news/guohezhongguozhekanhaoxieye-689faf9a/" target="_blank">欧洲、美国和中国投资者看好哈萨克斯坦哪些产业？</a></h3>
+<div class="item-meta">哈通社中文版 · 10/23 10:58<span class="source-link"><a href="https://cn.inform.kz/news/guohezhongguozhekanhaoxieye-689faf9a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克投资国家公司董事会主席肯杰库洛夫表示，参加2026年哈萨克斯坦全球投资圆桌会议（KGIR 2026）的欧洲、美国和中国投资者，不仅关注传统工业，更对稀有金属、农产品深加工、物流、机械制造、人工智能、数字化转型和可再生能源等新兴领域兴趣浓厚。第九届论坛于10月22日在奇姆肯特举行，系首次移师南部地区。奇姆肯特去年地区生产总值增长11%，增速全国第二，吸引投资8600亿坚戈，超70%来自私人资本。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克投资国家公司（KAZAKH INVEST）董事会主席苏勒坦哈利·肯杰库洛夫（Сұлтанғали Кенжеқұлов）日前在接受采访时透露了上述消息。
+他表示，参加2026年哈萨克斯坦全球投资圆桌会议（KGIR 2026）的国际投资者，不仅关注哈萨克斯坦传统工业领域，也对新兴技术产业展现出浓厚兴趣。
+当前，投资者对稀有金属领域尤为关注。本届论坛的代表团主要来自欧洲国家、美国和中国。他们对哈萨克斯坦的采矿冶金产业，特别是稀有金属领域表现出浓厚兴趣。
+此外，外国企业还在积极考察农产品深加工、交通运输与仓储物流、机械制造等领域的投资机会。与此同时，人工智能、企业数字化转型以及可再生能源等新兴产业的投资需求也在持续增长。
+肯杰库洛夫认为，哈萨克斯坦投资领域的多元化，为吸引具有不同生产能力和技术优势的国际企业创造了有利条件，也为开展多层次产业合作提供了广阔空间。
+值得一提的是，第九届哈萨克斯坦全球投资圆桌会议于10月22日在奇姆肯特举行。
+自2017年以来，该论坛一直在阿斯塔纳由总理主持举办。今年，论坛首次移师哈萨克斯坦南部地区，主要得益于奇姆肯特近年来在经济增长和吸引投资方面取得的成绩。
+肯杰库洛夫介绍说：
+根据去年统计结果，奇姆肯特地区生产总值增长11%，增速位居全国第二。同时，该市吸引投资总额达到8600亿坚戈，其中超过70%来自私人资本。对我们而言，这是一项非常亮眼的成绩，也充分说明投资者对奇姆肯特乃至整个哈萨克斯坦南部地区的兴趣正在不断增强。
+他指出，此次论坛选择在奇姆肯特举办，为国际工商界代表深入了解哈萨克斯坦南部地区的新投资项目及区域经济发展潜力提供了重要机会。</div>
+<ul>
+<li>欧美中投资者关注哈国稀有金属等传统与新兴领域</li>
+<li>外国企业考察农产品深加工、物流、机械制造等机会</li>
+<li>人工智能、数字化转型、可再生能源投资需求增长</li>
+<li>第九届KGIR论坛首次在奇姆肯特举办</li>
+<li>奇姆肯特GDP增长11%，吸引投资8600亿坚戈</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">论坛移师奇姆肯特凸显南部经济潜力，将吸引外资多元化流入矿产、农业、物流和科技领域，促进区域平衡发展，增强哈国作为欧亚投资枢纽的地缘经济地位。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(7 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/pensionnie-nakopleniya-kazahstantsev-dostigli-283-trln-tenge-2378a21a" target="_blank">哈萨克斯坦公民养老金储蓄达到28.3万亿坚戈</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/24 03:12<span class="source-link"><a href="https://www.inform.kz/ru/pensionnie-nakopleniya-kazahstantsev-dostigli-283-trln-tenge-2378a21a" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>截至2026年10月1日，哈萨克斯坦养老金储蓄达28.3万亿坚戈，其中强制性养老金缴费26.13万亿坚戈，同比增长7.1%。雇主强制性养老金缴费自2024年实施以来增长2.4倍至1.43万亿坚戈。前九个月缴费收入2.74万亿坚戈，净投资收益8822.8亿坚戈，支付和转移1.4万亿坚戈。养老金账户总数1911万个，增长6.3%。自9月起允许最多100%储蓄转交私人管理，超3.2万人转移9220万坚戈。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦人的养老金储蓄达到28.3万亿坚戈
+正文：
+储蓄的主要部分由强制性养老金缴费形成的资金构成。其规模达到26.13万亿坚戈，一年内增加1.73万亿坚戈，即增长7.1%。
+由强制性职业养老金缴费形成的储蓄为7328亿坚戈，自愿养老金缴费为103.5亿坚戈。
+最大增幅出现在雇主强制性养老金缴费方面，该缴费自2024年1月1日开始划转。一年内其规模增长2.4倍，达到1.43万亿坚戈。
+2026年前九个月，缴款人养老金账户共收到2.74万亿坚戈缴费，较去年同期增长15.7%。年初以来净投资收益为8822.8亿坚戈。
+与此同时，1月至9月从统一养老储蓄基金（ЕНПФ）向保险机构的支付和转移达到1.4万亿坚戈。其中4900.4亿坚戈用于改善住房条件和治疗。
+年龄相关支付规模为2236.1亿坚戈。因达到退休年龄从ЕНПФ领取的月均支付金额为39028坚戈。
+截至10月1日，ЕНПФ养老金账户总数达到1911万个，一年内增加114万个，即增长6.3%。
+此前有报道称，自2026年9月起，哈萨克斯坦人可将最多100%的养老金储蓄交由私人公司管理。2026年9月7日至10月14日期间，超过3.2万名缴款人向投资组合管理公司转移了9220万坚戈。</div>
+<ul>
+<li>养老金总储蓄28.3万亿坚戈，强制缴费占26.13万亿</li>
+<li>雇主强制缴费一年增长2.4倍至1.43万亿坚戈</li>
+<li>前九个月缴费2.74万亿坚戈，同比增长15.7%</li>
+<li>养老金账户达1911万个，一年增加114万个</li>
+<li>9月起允许100%储蓄转私人管理，3.2万人转移9220万坚戈</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">养老金规模扩大增强哈国养老体系可持续性，雇主缴费激增反映正式就业扩张；私人管理开放将推动资本市场发展，但需平衡投资风险与退休保障，对财政压力有缓解作用。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/bolee-polovini-rabotnikov-v-kazahstane-poluchayut-svishe-300-tisyach-tenge-eafcb3b1" target="_blank">哈萨克斯坦超过半数劳动者月收入超过30万坚戈</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/24 01:20<span class="source-link"><a href="https://www.inform.kz/ru/bolee-polovini-rabotnikov-v-kazahstane-poluchayut-svishe-300-tisyach-tenge-eafcb3b1" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年第二季度哈萨克斯坦月均名义工资为486,388坚戈，实际工资指数98.2%，同比下降1.8%。中位数工资为348,415坚戈。2026年数据显示，58.4%的员工工资超过30万坚戈，39.3%在10万至30万坚戈之间，2.3%不超过10万坚戈。统计涵盖4月全月工作的员工，金额为税前及扣除养老金前，包括奖金和补贴。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦超过一半的员工工资超过30万坚戈
+
+据哈萨克斯坦国家统计局（БНС）信息，第二季度月均名义工资为486,388坚戈。与此同时，实际工资指数达到98.2%，考虑到价格变化，与去年同期相比下降了1.8%。
+
+同一时期的中位数工资为348,415坚戈。与平均工资不同，该指标反映的是将员工分为两个相等组的收入水平：一半人收入低于该金额，另一半人收入高于该金额。
+
+统计部门还公布了2026年员工按应发工资数额分布的数据。收入超过30万坚戈的比例达到58.4%。另有39.3%的员工收入在10万至30万坚戈之间，而2.3%的员工工资不超过10万坚戈。
+
+该研究涵盖了4月全月工作的员工。上述金额为扣除税收和养老金缴费前的数额，并包括奖金、津贴和其他补贴。
+
+此前，经济学家解释了为什么哈萨克斯坦人从“信封”中领取工资不划算。</div>
+<ul>
+<li>第二季度月均名义工资486,388坚戈，实际工资同比下降1.8%</li>
+<li>中位数工资348,415坚戈，反映收入分配中间水平</li>
+<li>58.4%员工工资超30万坚戈，39.3%在10-30万坚戈</li>
+<li>仅2.3%员工工资不超过10万坚戈</li>
+<li>数据涵盖4月全月工作员工，为税前及扣除养老金前金额</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">实际工资下降可能抑制消费并加剧社会不满，但超半数人收入超30万坚戈显示整体工资水平提升，有助于稳定劳动力市场和社会情绪，对政治稳定有积极作用。经济上消费潜力有限，外交和矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/10yue23ri-herenminqing-effef923/" target="_blank">10月23日终盘 美元、卢布和人民币兑坚戈汇率情况</a></h3>
+<div class="item-meta">哈通社中文版 · 10/23 22:25<span class="source-link"><a href="https://cn.inform.kz/news/10yue23ri-herenminqing-effef923/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>10月23日KASE现货市场交易终盘，29个成员参与。美元兑坚戈平均报452.11（+4.02），交易额50.2328亿美元（+5614.408万）；欧元兑坚戈平均报506.55（+3.36），交易额2408.334万欧元（+1837.987万）；卢布兑坚戈平均报5.6131（+0.0910），交易额27.6743031亿卢布（-1.8716013亿）；人民币兑坚戈平均报67.6773（+0.4621），交易额8436.168万元（+3031.487万）。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 10月23日终盘 美元、卢布和人民币兑坚戈汇率情况
+正文:
+29个KASE成员参与了交易。
+根据现货市场交易结果：
+美元兑坚戈（USDKZT_TOM）：汇率平均报价为 1:452.11（+4.02坚戈），外汇交易总额为 50.232800 亿美元（+5614.408 万美元）。交易过程中，最低报价为 1:449.44 坚戈，最高报价为 1:457.00 坚戈。
+欧元兑坚戈（EURKZT_TOM）：汇率平均报价为 1:506.55（+3.36坚戈），外汇交易总额为 2408.334 万欧元（+1837.987 万欧元）。交易过程中，最低报价为 1:503.47 坚戈，最高报价为 1:512.17 坚戈。
+卢布兑坚戈（RUBKZT_TOM）：汇率平均报价为 1:5.6131（+0.0910坚戈），外汇交易总额为 27.6743031 亿卢布（-1.8716013 亿卢布）。交易过程中，最低报价为 1:5.5587 坚戈，最高报价为 1:5.6896 坚戈。
+人民币兑坚戈（CNYKZT_TOM）：汇率平均报价为 1:67.6773（+0.4621坚戈），外汇交易总额为 8436.168 万元（+3031.487 万元）。交易过程中，最低报价为 1:67.3999 坚戈，最高报价为 1:68.4500 坚戈。</div>
+<ul>
+<li>美元兑坚戈平均报452.11，较前上涨4.02坚戈</li>
+<li>欧元兑坚戈平均报506.55，上涨3.36坚戈</li>
+<li>卢布兑坚戈平均报5.6131，上涨0.0910坚戈</li>
+<li>人民币兑坚戈平均报67.6773，上涨0.4621坚戈</li>
+<li>美元交易额50.23亿美元，人民币交易额增3031万元</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈对主要货币普遍走弱，美元交易额大增显示市场美元需求旺盛，可能加大输入性通胀压力；人民币交易额上升反映中哈贸易结算活跃，卢布交易额下降或与俄哈贸易调整有关。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/qian9geyue20-minchangming-eb841658/" target="_blank">前9个月零售贸易额突破20万亿坚戈 哈萨克斯坦居民食品消费增长明显</a></h3>
+<div class="item-meta">哈通社中文版 · 10/23 16:16<span class="source-link"><a href="https://cn.inform.kz/news/qian9geyue20-minchangming-eb841658/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年前9个月，哈萨克斯坦零售贸易额突破20万亿坚戈，贸易企业销售额同比增长2.1%，个体经营者增长9.3%。食品类商品销售额同比增长10.1%，非食品类增长1.6%。阿拉木图市占零售贸易份额32.8%，阿斯塔纳市占14.2%。批发贸易额达40.7072万亿坚戈，同比增长7%，非食品类及工业技术用途产品占约80%，阿拉木图市占批发贸易35.1%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 前9个月零售贸易额突破20万亿坚戈 哈萨克斯坦居民食品消费增长明显
+正文:
+国家统计局数据显示，今年前9个月，哈萨克斯坦零售市场在贸易企业和个体经营者两个领域均实现增长。
+其中，贸易企业商品销售额同比增长2.1%，包括市场商贩在内的个体经营者商品销售额同比增长9.3%，显示个体经营领域的零售活动保持较快增长。
+从商品类别来看，食品类商品销售表现尤为突出。
+从零售贸易的商品结构来看，食品类商品销售增长较快。其中，食品类商品销售额同比增长10.1%，非食品类商品销售额同比增长1.6%。
+从地区分布来看，阿拉木图市在全国零售贸易中占据最大份额，达到32.8%。
+其他主要地区依次为：
+阿斯塔纳市：14.2%；
+卡拉干达州：7%；
+东哈萨克斯坦州：5.3%。
+与此同时，哈萨克斯坦批发贸易市场也保持增长态势。
+2026年1月至9月，全国批发贸易额达到40.7072万亿坚戈，同比增长7%。
+从批发贸易商品结构来看，非食品类商品及工业技术用途产品占据主导地位，合计占批发贸易总额的约80%。
+在地区分布方面，阿拉木图市同样位居全国首位，占批发贸易总额的35.1%。
+其他主要地区分别为：
+阿斯塔纳市：14.5%；</div>
+<ul>
+<li>前9个月零售贸易额突破20万亿坚戈，个体经营增长9.3%</li>
+<li>食品类销售额同比增长10.1%，非食品类仅增1.6%</li>
+<li>阿拉木图市零售份额32.8%，阿斯塔纳市14.2%</li>
+<li>批发贸易额40.7072万亿坚戈，同比增长7%</li>
+<li>批发贸易中非食品及工业技术产品占约80%</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">消费增长反映居民购买力回升，食品消费突出或缓解社会民生压力；阿拉木图和阿斯塔纳双核格局强化，区域失衡持续；批发贸易结构显示工业技术产品依赖进口，矿产相关设备需求或推动外交与进口多元化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/xingxia1575-93-153965b2/" target="_blank">哈萨克斯坦央行下调基准利率至15.75% 通胀率降至9.3%</a></h3>
+<div class="item-meta">哈通社中文版 · 10/23 15:49<span class="source-link"><a href="https://cn.inform.kz/news/xingxia1575-93-153965b2/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行数据显示，2026年9月年度通胀率连续12个月下降至9.3%，食品通胀放缓至8.5%，非食品通胀降至11.0%，服务业通胀维持8.9%。月度通胀0.6%，核心通胀中位数0.7%。居民通胀预期降至11.8%，专业机构下调2026年底通胀预期至9.5%。央行下调基准利率至15.75%。外部环境方面，中东局势支撑能源价格，FAO全球食品价格指数升至136.0点，全球货币政策趋紧，欧央行加息、美联储提高利率、俄央行暂停降息。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据央行公布的数据，在适度从紧的货币政策及坚戈汇率走势有利的背景下，哈萨克斯坦年度通胀率已连续12个月下降，2026年9月降至9.3%。
+其中，食品价格涨幅由此前的9.5%放缓至8.5%，主要得益于水果、蔬菜价格明显下降以及肉类价格涨势趋缓。
+受燃油价格同比涨幅回落影响，非食品类商品通胀率由11.4%降至11.0%。
+服务业通胀率则维持在8.9%，其中非管制类服务价格仍保持较快上涨。
+从月度数据来看，9月通胀率为0.6%，与8月持平。经季节性因素调整后，月度通胀率由0.9%降至0.7%。
+与此同时，经季节性调整的核心通胀中位数维持在0.7%，表明经济中的价格上涨压力尚未完全消除。
+通胀预期也出现改善。9月，居民对未来12个月的通胀预期由8月的12.1%降至11.8%。
+专业市场参与者将2026年年底通胀预期从10.0%下调至9.5%，并将2027年通胀预期从8.5%下调至8.3%。
+央行指出，外部经济环境仍存在推动通胀上升的因素。
+中东局势持续支撑国际能源价格维持高位，全球食品价格也面临上涨压力。
+联合国粮食及农业组织（FAO）数据显示，2026年9月全球食品价格指数升至136.0点，环比上涨1.5%，同比上涨5.8%。
+这一增长主要受到不利天气条件和物流运输限制的影响，谷物、食糖及植物油价格上涨成为主要推动因素。
+与此同时，全球货币政策环境趋于收紧。
+9月，欧洲中央银行实施了年内第二次加息，美国联邦储备委员会则自2023年以来首次提高政策利率。
+俄罗斯中央银行维持关键利率不变，并因价格上涨压力加大而暂停此前的降息进程。</div>
+<ul>
+<li>年度通胀率连续12个月下降，2026年9月降至9.3%</li>
+<li>食品通胀放缓至8.5%，非食品通胀降至11.0%</li>
+<li>居民通胀预期由12.1%降至11.8%</li>
+<li>央行下调基准利率至15.75%</li>
+<li>全球食品价格指数升至136.0点，外部通胀压力仍存</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">通胀持续回落为央行降息提供空间，有助于降低融资成本、刺激投资与消费，利好经济复苏；但核心通胀仍存、全球货币政策趋紧及能源食品价格高企，限制宽松幅度，外交上需关注外部价格传导与坚戈汇率稳定。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/qian9geyuejingchang42-yechengweijingchangzhuyaodongli-3b321e14/" target="_blank">前9个月经济增长4.2% 非资源产业成为哈萨克斯坦经济增长主要动力</a></h3>
+<div class="item-meta">哈通社中文版 · 10/23 12:55<span class="source-link"><a href="https://cn.inform.kz/news/qian9geyuejingchang42-yechengweijingchangzhuyaodongli-3b321e14/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年前9个月哈萨克斯坦经济增长4.2%，非资源产业成为主要动力。建筑业增长11.5%，制造业增长8.6%，交通运输业增长7.2%，贸易增长6.2%，农业增长5.8%。石油产量同比下降8.6%，石油产业占GDP比重从2010年的16.5%降至2025年的7.8%，制造业2026年上半年占GDP超14%。制造业多个细分行业实现两位数增长，固定资产投资总额16.1万亿坚戈，同比增长7%，私人投资增长18.2%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 前9个月经济增长4.2% 非资源产业成为哈萨克斯坦经济增长主要动力
+正文:
+数据显示，2026年1月至9月，哈萨克斯坦建筑业同比增长11.5%，制造业增长8.6%，交通运输业增长7.2%，贸易增长6.2%，农业增长5.8%。
+尽管采矿业增长放缓，石油产量同比下降8.6%，但其他产业的持续扩张有效支撑了整体经济增长。
+经济结构变化也体现在石油产业占GDP比重的下降。2010年，这一比例为16.5%，到2025年已降至7.8%。与此同时，制造业在国民经济中的地位不断提升，2026年上半年占GDP的比重超过14%，达到近年来较高水平。
+从制造业内部来看，多个细分行业保持两位数增长：
+金属制成品生产增长34.8%；
+制药业增长30.9%；
+汽车制造业增长29.9%；
+化学工业增长23.4%；
+电气设备制造业增长20.7%；
+橡胶和塑料制品生产增长18.1%；
+食品生产增长13.8%。
+多个制造业领域同步增长，表明哈萨克斯坦工业生产基础正在扩大，产业发展呈现更加多元的态势。
+投资持续增长成为支撑经济发展的另一重要因素。
+2026年前9个月，哈萨克斯坦固定资产投资总额达到16.1万亿坚戈，同比增长7%。其中，私人投资增长18.2%，显示企业界参与经济发展的积极性有所增强。
+从行业来看，制造业投资增长40.1%，建筑业增长32%，信息和通信领域增长29.2%，医疗卫生领域增长20.4%，农业增长9.1%。</div>
+<ul>
+<li>前9个月经济增长4.2%，非资源产业成主要动力</li>
+<li>石油产量降8.6%，石油占GDP比重降至7.8%</li>
+<li>制造业多行业两位数增长，占GDP超14%</li>
+<li>固定资产投资16.1万亿坚戈，同比增7%</li>
+<li>私人投资增长18.2%，制造业投资增40.1%</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济结构多元化降低对石油依赖，增强经济韧性；制造业和私人投资增长促进就业与产业升级；非资源产业发展改善外交经济合作基础；矿产格局上石油比重下降，金属、化工等矿产加工地位上升。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/yuwaigong-46153031/" target="_blank">阿斯塔纳与阿拉木图最新外币兑换汇率公布</a></h3>
+<div class="item-meta">哈通社中文版 · 10/23 12:32<span class="source-link"><a href="https://cn.inform.kz/news/yuwaigong-46153031/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈通社公布阿斯塔纳与阿拉木图货币兑换点最新外币汇率。阿斯塔纳美元买入价445.15坚戈、卖出价452.15坚戈；欧元买入价498.30坚戈、卖出价508.30坚戈；卢布买入价5.33坚戈、卖出价5.53坚戈；人民币买入价67.17坚戈、卖出价70.87坚戈。阿拉木图美元买入价448.07坚戈、卖出价450.55坚戈；欧元买入价503.44坚戈、卖出价507.68坚戈；卢布买入价5.33坚戈、卖出价5.45坚戈；人民币买入价67.73坚戈、卖出价70.19坚戈。10月22日哈萨克斯坦证券交易所美元兑坚戈平均汇率下跌0.36坚戈，报447.94坚戈。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 阿斯塔纳与阿拉木图最新外币兑换汇率公布
+正文:
+目前，阿斯塔纳货币兑换点的外币买入价和卖出价如下：
+美元：买入价445.15坚戈，卖出价452.15坚戈；
+欧元：买入价498.30坚戈，卖出价508.30坚戈；
+俄罗斯卢布：买入价5.33坚戈，卖出价5.53坚戈；
+人民币：买入价67.17坚戈，卖出价70.87坚戈。
+阿拉木图货币兑换点的外币汇率如下：
+美元：买入价448.07坚戈，卖出价450.55坚戈；
+欧元：买入价503.44坚戈，卖出价507.68坚戈；
+俄罗斯卢布：买入价5.33坚戈，卖出价5.45坚戈；
+人民币：买入价67.73坚戈，卖出价70.19坚戈。
+值得注意的是，根据10月22日哈萨克斯坦证券交易所日间交易结果，美元兑坚戈平均汇率下跌0.36坚戈，报447.94坚戈。</div>
+<ul>
+<li>阿斯塔纳美元买入445.15坚戈，卖出452.15坚戈</li>
+<li>阿拉木图美元买入448.07坚戈，卖出450.55坚戈</li>
+<li>两地人民币买入价67.17-67.73坚戈</li>
+<li>10月22日美元兑坚戈均汇跌0.36报447.94</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率公布反映坚戈对主要货币的兑换水平，美元微跌显示坚戈短期趋稳，有利于抑制输入性通胀并稳定矿产出口计价，但买卖价差仍影响外汇市场流动性与投资环境。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/13-nezakonnih-starateley-zaderzhali-vakmolinskoy-oblasti-4cf74e32" target="_blank">阿克莫拉州拘留13名非法淘金者</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/24 01:40<span class="source-link"><a href="https://www.inform.kz/ru/13-nezakonnih-starateley-zaderzhali-vakmolinskoy-oblasti-4cf74e32" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>阿克莫拉州警方在别斯托别村开展打击非法采金行动，非法采金者不服从警方要求，特种部队鸣枪警告后拘留13人，均被依法追责。警方表示将继续打击非法开采贵金属行为。此前该州一矿井曾相隔一天发现两具男子尸体。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据阿克莫拉州警察局新闻处消息，在别斯托别村，警方开展了打击非法采金的专项行动。期间，一群非法采金者对警方的合法要求不予服从。
+——为制止违法行为并确保安全，特种快速反应部队（СОБР）人员向空中鸣枪警告，随后违法者被拘留。共拘留13人。他们均已被依法追究责任，——该部门表示。
+警方进一步说明，该地区将继续开展打击非法开采贵金属的工作。任何违法行为，包括不服从警方合法要求的行为，都将依法予以制止。
+回顾，此前在阿克莫拉州一处矿井曾相隔一天发现两名男子的尸体。</div>
+<ul>
+<li>阿克莫拉州警方开展打击非法采金专项行动</li>
+<li>非法采金者不服从警方要求，特种部队鸣枪警告</li>
+<li>共拘留13名非法采金者，均被依法追责</li>
+<li>警方称将继续打击非法开采贵金属行为</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">事件反映哈国非法采金活动活跃，警方强化执法。短期看，打击行动有助于规范矿产开采秩序，但需关注执法方式与社会稳定。长期看，哈国需平衡矿产资源开发与监管，避免非法采矿引发安全与环境问题。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/1700-jiayefayuzhan-f4bb85e9/" target="_blank">田吉兹油田吸引1700亿美元投资 专家解析哈萨克斯坦石油产业发展与挑战</a></h3>
+<div class="item-meta">哈通社中文版 · 10/23 15:31<span class="source-link"><a href="https://cn.inform.kz/news/1700-jiayefayuzhan-f4bb85e9/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦石油天然气专家在Aimaq播客节目中讨论田吉兹油田开发。该油田年产油量从1991年的100万吨增至去年的3900万吨，全国石油产量从1993年的2200万吨增至去年的9900万吨，接近1亿吨。项目吸引约1700亿美元投资。油气产业贡献约40%预算收入和60%出口额。专家指出，因地质条件复杂和技术缺乏，引进外国投资者是必要选择。田吉兹项目净收益的60%-65%归国家所有，卡拉恰干纳克项目最高达70%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">近日，石油天然气专家阿布扎尔·纳雷姆别托夫（Абзал Нарымбетов）与Energy Monitoring基金会主任努尔兰·朱马古洛夫（Нұрлан Жұмағұлов）在Aimaq播客节目中，就田吉兹油田开发、外国投资的作用、国家收益分配以及石油产业未来发展方向等问题发表了看法。
+田吉兹油田是哈萨克斯坦规模最大的油气开发项目之一。纳雷姆别托夫认为，哈萨克斯坦在独立初期决定引进大型国际石油企业参与该油田开发，是符合当时经济条件和技术能力的正确选择。
+1991年哈萨克斯坦独立后，田吉兹油田的年产油量约为100万吨。自1993年起，产量持续增长，去年已达到3900万吨。全国石油产量也实现了显著增长。1993年，哈萨克斯坦的年产油量约为2200万吨，去年则达到9900万吨，接近1亿吨。全国石油产量增长了约5倍，而田吉兹油田的产量增长了约40倍。从经济角度来看，这一项目带动了约1700亿美元的投资。
+纳雷姆别托夫指出，外国大型投资者的进入，为哈萨克斯坦石油产业发展和国家经济增长奠定了重要基础。
+他表示，石油天然气产业至今仍在哈萨克斯坦财政收入和出口结构中占据重要地位。
+如果我没有记错，石油天然气产业目前仍贡献约40%的预算收入，在出口总额中的占比约为60%。这意味着，国家获得的大量资金仍然来自油气产业。如果当年没有引进投资者，而是继续等待，我们可能会失去重要的发展机遇。因为20世纪90年代哈萨克斯坦经历了严重的经济困难。
+Фото: Үкімет 为何必须引进外国投资？ 专家强调，田吉兹油田的地质条件十分复杂，开发难度远高于普通油田。
+该油田具有含硫量高、地层压力大、温度高以及埋藏深等特点，对钻井技术、生产设备和安全管理提出了极高要求。
+世界上真正具备开发田吉兹这类复杂油田能力的企业屈指可数。当时能够提供所需技术并保障生产安全的企业并不多。雪佛龙公司当年就是全球领先的大型石油企业之一，至今仍保持着重要的行业地位。因此，我认为引进拥有上百年经验的国际石油公司，是正确的决定。
+对于为何必须依靠外国投资者开发本国石油资源，朱马古洛夫也作出了进一步解释。
+他指出，20世纪90年代，哈萨克斯坦尚不具备独立开发大型复杂油气田所需的技术能力。即使在当时的俄罗斯，相关技术条件也存在明显限制。
+石油是我们的主要财富，但遗憾的是，当时我们没有能力依靠自己的力量开发这些资源，因为缺乏必要的技术。田吉兹油田勘探期间，第37号井曾持续燃烧整整一年。苏联未能扑灭这场大火，最终由来自加拿大的公司在一年后将其扑灭。因此，当时引进外国投资者是必要的。
+朱马古洛夫认为，外国投资不仅对田吉兹油田具有重要意义，也为卡拉恰干纳克等大型油气项目的开发创造了条件。
+Photo: KazMunayGas 石油收益如何分配？ 在讨论外国投资与国家利益之间的关系时，朱马古洛夫特别强调，评价大型油气项目的经济效益，不能只看外国企业的持股比例，还应综合考虑国家通过税收、资源租金及其他机制获得的收益。
+据其介绍，田吉兹项目产生的净收益中，约60%至65%通过相关机制归国家所有，而卡拉恰干纳克项目的这一比例最高可达70%。</div>
+<ul>
+<li>田吉兹油田产量增长40倍，带动1700亿美元投资</li>
+<li>全国石油产量增长约5倍，去年达9900万吨</li>
+<li>油气产业贡献40%预算收入和60%出口额</li>
+<li>田吉兹项目净收益60%-65%归国家所有</li>
+<li>复杂地质条件和技术缺乏是引进外资主因</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该新闻凸显油气产业对哈国财政和出口的支柱作用，强化了外资在复杂油田开发中的必要性认知。收益分配数据有助于平衡外资持股与国民收益的舆论关切，对维持投资环境稳定和推动后续矿产开发合作具有积极意义。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-10-24 09:03</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
