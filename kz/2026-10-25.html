@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年10月25日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年10月25日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年10月24日早9:00至2026年10月25日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 6 条</span><span class="stat-chip">2 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">1</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">5</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">0</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">0</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/voennaya-reforma-vkazahstane-kakie-izmeneniya-zhdut-armiyu-3ec7975c" target="_blank">哈萨克斯坦军事改革：军队将迎来哪些变化</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/24 22:49<span class="source-link"><a href="https://www.inform.kz/ru/voennaya-reforma-vkazahstane-kakie-izmeneniya-zhdut-armiyu-3ec7975c" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国防部宣布军事改革，涉及武装力量结构、管理体系、训练及军人权益。国家元首要求打造现代化、机动化、技术化军队，重点发展国产国防生产（含无人机）、人工智能和数字技术。计划使用模拟程序降低演习成本，新兵前六个月在训练中心受训，后六个月在部队服役。两阶段义务兵役试点项目“Sarbaz+”将于2027年启动，并设立独立军事顾问制度。优先任务包括改善军人饮食、制服及营房修缮。自2027年起建立统一系统“Жас айбын”。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦军事改革：军队将迎来哪些变化
+
+据国防部消息，改革将涉及武装力量结构、军事管理体系、部队训练、服役程序及军人权益保护。
+
+图片：哈萨克斯坦共和国国防部 国家元首提出打造现代化、机动化且技术化军队的任务。将特别关注军事服役安全、指挥文化及国家资源的有效利用。
+
+作为改革的一部分，计划完善武装力量结构和编制、国防规划体系、动员准备及预备役组建。
+
+图片：哈萨克斯坦共和国国防部 军队的技术装备更新将伴随国产国防生产的发展，包括无人机系统及反制手段。此外，还计划引入人工智能和数字技术。
+
+为提高军人训练质量并减少演习开支，计划使用模拟程序来模拟作战行动。训练将着眼于培养独立行动技能以及在分队内协同配合的能力，并考虑现代战术和新式武器。
+
+在最初六个月内，新兵将在训练中心接受训练。在此期间，他们将适应军事服役条件，获得基础军事知识并改善体能。
+
+此外，军人将有机会学习语言、掌握人工智能技术，并获得不仅军事专业、还有紧缺民用工种的机会。
+
+图片：哈萨克斯坦共和国国防部 接下来六个月，士兵将在部队服役，完善专业技能并在分队内执行任务。
+
+新模式的个别要素已在“Sarbaz+”项目框架内进行测试。两阶段义务兵役试点项目计划于2027年启动。
+
+特别是计划设立独立于部队指挥部的军事顾问制度。他们将向军人提供支持，发现违规行为并协助保护其合法权益。
+
+图片：哈萨克斯坦共和国国防部 优先任务包括为军人提供优质饮食和制服，修缮营房、训练设施和靶场。
+
+自2027年起，计划建立统一系统“Жас айбын”，该</div>
+<ul>
+<li>改革覆盖武装力量结构、管理、训练及军人权益</li>
+<li>重点发展国产国防生产、无人机及人工智能技术</li>
+<li>新兵实行两阶段服役：6个月训练+6个月部队服役</li>
+<li>2027年启动“Sarbaz+”试点及独立军事顾问制度</li>
+<li>优先改善军人饮食、制服及营房等后勤保障</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">改革将提升哈军现代化水平与作战能力，推动国产国防工业及数字技术发展，减少对进口装备依赖；军事顾问制度或增强军队透明度与法治，但需平衡指挥权威；两阶段服役模式可能影响兵役动员效率，对地区安全格局产生积极影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(5 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/den-respubliki-kazahstan-torzhestvenno-otmetili-vtadzhikistane-2cffb85f" target="_blank">哈萨克斯坦共和国日庆祝活动在塔吉克斯坦隆重举行</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/24 21:48<span class="source-link"><a href="https://www.inform.kz/ru/den-respubliki-kazahstan-torzhestvenno-otmetili-vtadzhikistane-2cffb85f" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦驻塔吉克斯坦大使馆举行招待会庆祝共和国日，大使图列哈诺夫回顾1990年主权宣言，介绍哈国占区域GDP半数以上、吸引外资超4800亿美元，并强调核不扩散与中亚合作。2026年前八个月哈塔贸易额超10亿美元，增长34%，哈对塔投资超1.48亿美元。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦共和国日庆祝活动在塔吉克斯坦隆重举行
+
+正文：
+哈萨克斯坦驻塔吉克斯坦大使瓦利汗·图列哈诺夫举行了招待会，来宾包括塔吉克斯坦国家机关代表、外交使团团长及工作人员、国际组织代表、商界和媒体代表，以及在塔吉克斯坦生活的哈萨克斯坦人。
+在招待会正式环节，哈萨克斯坦和塔吉克斯坦国歌庄严奏响。
+图片来源：马迪别克·贾尼别科夫/ Kazinform
+大使在欢迎辞中回顾，1990年10月25日通过了《哈萨克苏维埃社会主义共和国国家主权宣言》，成为走向独立的最重要阶段。
+——对我们而言，这一天象征着哈萨克斯坦数百年国家历史的延续性，其源头可追溯至突厥汗国、金帐汗国和哈萨克汗国时代，——瓦·图列哈诺夫指出。
+外交官向活动参与者介绍了哈萨克斯坦的社会经济发展情况。如今，该国占区域国内生产总值的半数以上，吸引的外国投资额超过4800亿美元。哈萨克斯坦正在启动新的投资周期，并加强其作为欧亚关键交通物流枢纽的作用，包括通过跨里海国际运输路线和“南北”走廊。
+在谈到外交政策时，大使回顾，哈萨克斯坦境内曾进行了468次核试验，因此该国将继续支持全球核不扩散努力。阿斯塔纳关于建立国际生物安全机构的倡议补充了这些承诺。中亚在外交政策优先方向中占据关键位置。
+——我们坚信，中亚应成为一个合作而非竞争、互联而非分割的地区，——大使表示。
+图列哈诺夫特别关注了哈萨克斯坦与塔吉克斯坦的关系。2026年前八个月，双边贸易额超过10亿美元，增长了34%。哈萨克斯坦是塔吉克斯坦经济最大的投资者之一——投资额超过1.48亿美元。
+——历史使我们成为邻居，我们共同的价值观和相互尊重使我们成为兄弟，经济使我们成为可靠的伙伴，而共同利益和相互信任使我们成为盟友。</div>
+<ul>
+<li>哈驻塔大使举办共和国日招待会，塔方官员及外交界出席</li>
+<li>大使回顾1990年主权宣言，强调国家历史延续性</li>
+<li>哈占区域GDP半数以上，吸引外资超4800亿美元</li>
+<li>哈塔2026年前八月贸易额超10亿美元，增长34%</li>
+<li>哈对塔投资超1.48亿美元，强调中亚合作而非竞争</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此活动强化哈塔双边关系，贸易与投资增长凸显哈在中亚经济影响力。哈方强调中亚合作与交通枢纽角色，有助于巩固其区域领导地位，并推动矿产与物流领域合作。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/gaoguanyurengongnengyingyongde-596a72ed/" target="_blank">托卡耶夫高度评价黄仁勋关于人工智能应用的建议</a></h3>
+<div class="item-meta">哈通社中文版 · 10/24 19:30<span class="source-link"><a href="https://cn.inform.kz/news/gaoguanyurengongnengyingyongde-596a72ed/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫24日在社交平台X发文，感谢英伟达创始人兼首席执行官黄仁勋在总统府举行富有成效的会谈，双方就推动人工智能发展及其在哈经济中的实际应用，特别是农业领域应用进行了深入交流。此前23日，托卡耶夫会见黄仁勋。黄仁勋谈及在埃基巴斯图兹建设数据中心谷的前景。英伟达专题文章将“哈萨克电信”、Firebird及埃基巴斯图兹数据处理中心谷项目列为提升哈国AI算力的重要举措。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫高度评价黄仁勋关于人工智能应用的建议
+正文:
+24日，托卡耶夫总统在社交平台X上发文，就相关议题表达了看法。
+“感谢黄仁勋在总统府与我们举行富有成效的会谈，并就推动人工智能发展及其在哈萨克斯坦经济中的实际应用，特别是在农业领域的应用，进行了深入交流。您的见解和建议对我们具有重要的现实意义。”托卡耶夫写道。
+I thank @JensenHuang for a productive meeting and discussions at Akorda on advancing AI and its practical applications in Kazakhstan’s economy, particularly in agriculture. Your insights and advice are of great practical value to us. https://t.co/6bgbe3toSN
+据此前报道，23日，托卡耶夫总统在总统府会见了英伟达创始人兼首席执行官黄仁勋。
+黄仁勋在接受哈国记者独家采访时，谈到了在埃基巴斯图兹建设数据中心谷的前景。
+此外，美国科技公司英伟达发表专题文章，介绍哈萨克斯坦为提升人工智能发展所需算力而推进的相关项目。文章将“哈萨克电信”、Firebird以及位于埃基巴斯图兹的数据处理中心谷项目列为该领域的重要举措。</div>
+<ul>
+<li>托卡耶夫24日发文感谢黄仁勋，高度评价AI应用建议</li>
+<li>23日总统府会见，重点讨论AI在哈农业领域应用</li>
+<li>黄仁勋谈及埃基巴斯图兹数据中心谷建设前景</li>
+<li>英伟达文章列哈萨克电信、Firebird及数据中心谷为重要举措</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访凸显哈国借力英伟达加速AI与算力基建，推动农业等经济领域数字化，提升矿产与数据中心谷战略价值，强化与美科技合作，外交上平衡多元，经济上吸引投资，政治形象获科技赋能。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/guanrengongnengli-b55561df/" target="_blank">英伟达关注哈萨克斯坦人工智能算力建设</a></h3>
+<div class="item-meta">哈通社中文版 · 10/24 18:00<span class="source-link"><a href="https://cn.inform.kz/news/guanrengongnengli-b55561df/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>英伟达GTC Berlin 2026大会披露，哈萨克电信已在阿斯塔纳和阿拉木图部署400张H200和480张B300 GPU，并计划2027年在埃基巴斯图兹数据处理中心谷部署超1000张GPU及超1000张Vera Rubin GPU。该谷规划电力容量1吉瓦，首期50兆瓦数据中心2027年二季度投运。Firebird获美许可将交付4.5万张Grace Blackwell GPU，并与哈萨克电信合作建设一期项目，2027年三季度商业运营。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">这篇文章作为英伟达 GTC Berlin 2026 大会专题报道的一部分发布。
+据英伟达介绍，哈萨克斯坦大型电信运营商“哈萨克电信”已在阿斯塔纳和阿拉木图部署400张 英伟达 H200 GPU 和480张 英伟达 B300 GPU。
+该公司计划于2027年在埃基巴斯图兹地区的数据处理中心谷部署1000张以上的GPU，同时计划在该地区部署1000张以上的新一代英伟达Vera Rubin GPU。相关基础设施将向企业、软件开发人员和科研机构开放，为不同类型的计算任务提供支持。
+英伟达代表认为，哈萨克斯坦的人工智能生态系统正从规划阶段走向实际部署。这一变化涵盖了从算力基础设施建设到语言模型和应用服务开发等多个环节。
+英伟达认为，一个国家在人工智能领域的潜力不仅取决于GPU的数量，也取决于相关算力基础设施能否被初创企业、大学、科研人员和工业企业广泛使用。
+埃基巴斯图兹正在建设的数据处理中心谷是这一领域的重点项目之一，未来规划电力容量将达到1吉瓦。“哈萨克电信”董事会主席巴格达特·穆辛曾向英伟达首席执行官黄仁勋介绍这一项目，并就集群的基础设施承载能力、能源成本优势，以及哈萨克斯坦建设国际高性能计算中心的潜力作了说明。
+目前，项目第一阶段规划的215兆瓦电力容量已全部预先分配。首期电力容量为50兆瓦的数据中心计划于2027年第二季度投入运行。
+“如今，各国在人工智能领域的竞争力，不仅取决于算法的发展水平，也取决于是否拥有自己的算力基础设施。这正是我们在埃基巴斯图兹建设Data Center Valley的原因。我们的目标是推动哈萨克斯坦从算力资源的消费国，转变为能够向全球市场提供人工智能算力的国家之一。我们希望，未来的先进技术不仅能够引进哈萨克斯坦，也能够在这里自主研发、成长和发展。”巴格达特·穆辛表示。
+英伟达公布的信息显示，Firebird公司已获得美国出口许可，可向哈萨克斯坦交付4.5万张英伟达Grace Blackwell GPU。
+该项目第一阶段正由Firebird与“哈萨克电信”在数据处理中心谷园区内合作建设，计划于2027年第三季度投入商业运营。
+此外，Firebird还计划在哈萨克斯坦设立Firebird Labs Kazakhstan实验室，为当地人工智能初创企业和科研人员提供支持，并帮助他们获取先进算力资源。
+总体而言，算力基础设施建设的推进，将为哈萨克斯坦企业、科研机构和技术开发团队研发及应用人工智能模型提供更多条件。</div>
+<ul>
+<li>哈萨克电信已部署400张H200和480张B300 GPU</li>
+<li>2027年埃基巴斯图兹将部署超1000张GPU及Vera Rubin GPU</li>
+<li>数据处理中心谷规划电力容量1吉瓦，首期50兆瓦2027年二季度投运</li>
+<li>Firebird获美许可向哈交付4.5万张Grace Blackwell GPU</li>
+<li>Firebird与哈萨克电信合作建设一期项目，2027年三季度商业运营</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">提升哈国算力基础设施水平，推动从算力消费国向供应国转型；吸引外资与技术合作，增强数字经济和外交筹码；但需平衡能源分配与地缘政治风险，矿产格局短期影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/yuzhongyugao-f93fe50e/" target="_blank">哈萨克斯坦与格鲁吉亚强调加强中亚与南高加索交通联通</a></h3>
+<div class="item-meta">哈通社中文版 · 10/24 13:30<span class="source-link"><a href="https://cn.inform.kz/news/yuzhongyugao-f93fe50e/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与格鲁吉亚外长会谈，重点讨论深化战略伙伴关系，推进政治对话、经贸和交通过境合作。双方审议高层交往安排，强调发展跨里海国际运输路线，协调交通基础设施现代化、港口铁路效率、关税条件及电子文件流转。中亚国家与格鲁吉亚外长会晤指出，建立连接中亚与南高加索的稳定交通通道对通往欧洲及全球市场具有战略意义，双方愿进一步深化合作并保持常态化对话。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦与格鲁吉亚强调加强中亚与南高加索交通联通
+正文:
+双方就两国关系中的当前重点议题，以及进一步巩固战略伙伴关系的前景进行了深入讨论。会谈重点涉及推进政治对话、拓展经贸和交通运输过境合作，以及加强文化人文交流等领域。
+两国外长审议了下一阶段高层及最高层交往安排，并就国际和地区议程中的相关问题，包括在多边组织框架下加强协作，交换了意见。
+发展跨里海国际运输路线成为本次会谈的重点议题之一。双方就协调推进交通基础设施现代化、提高港口和铁路运营效率、完善关税条件以及推行电子文件流转等问题进行了讨论。
+在中亚国家与格鲁吉亚外长会晤期间，双方强调了扩大区域间交通、物流、贸易和投资合作的潜力，并指出，建立连接中亚与南高加索地区的稳定交通通道，对于畅通通往欧洲及全球市场的运输线路具有重要战略意义。
+会谈结束时，双方重申了进一步深化合作的共同意愿，并表示将继续保持两国外交部门之间的常态化对话。</div>
+<ul>
+<li>哈格外长讨论深化战略伙伴关系与政治对话</li>
+<li>跨里海国际运输路线成为会谈重点议题</li>
+<li>双方协调交通基础设施现代化与关税条件</li>
+<li>强调中亚至南高加索通道的战略意义</li>
+<li>双方重申深化合作并保持常态化对话</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举将强化哈国作为中亚过境枢纽地位，促进跨里海路线货运量增长，带动港口铁路投资与关税协调；外交上深化与格鲁吉亚及南高加索合作，拓展欧洲市场通道，降低对传统北线依赖，增强矿产出口多元化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/yuzhengzaiyezuo-61a1168b/" target="_blank">哈萨克斯坦与捷克正在加强农业合作</a></h3>
+<div class="item-meta">哈通社中文版 · 10/24 11:22<span class="source-link"><a href="https://cn.inform.kz/news/yuzhengzaiyezuo-61a1168b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与捷克农业部副部长23日会谈，讨论加强农业合作。今年前八个月两国农产品贸易额增长31%。双方重点讨论增加农产品相互供应、扩大畜牧业和农作物生产合作、加强兽医和植物检疫安全，并确定良种畜牧繁育、水产养殖、有机农产品生产等优先领域，同意促进企业直接联系和出口产品多元化。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦与捷克正在加强农业合作
+正文:
+根据今年前八个月的数据，两国间的农产品贸易额增长了31%。
+农业部副部长叶尔梅克·肯贾汗吾勒23日与捷克农业部副部长雅罗斯拉瓦·什帕尔科娃讨论了增加农产品相互供应、扩大畜牧业和农作物生产领域合作、加强兽医和植物检疫安全领域合作的前景。
+- 我们高度重视哈萨克斯坦与捷克共和国在农业领域关系的稳步发展。扩大与捷克共和国的合作，对于巩固哈萨克斯坦农产品在欧洲市场的地位具有广阔前景。为充分挖掘现有潜力，必须促进企业间的直接联系，实现出口产品种类的多元化，并确保这些产品符合欧洲的质量与安全标准。-他说。
+雅罗斯拉瓦·什帕尔科娃概述了捷克共和国农业发展的重点领域。她指出，在良种畜牧繁育、水产养殖以及有机农产品生产等方面的合作，属于优先发展领域。
+哈方面强调了实现产品结构多元化、增加供应量，以及扩大双方共同感兴趣的产品范围的重要性。
+合作的重点领域包括：供应纯种牛及具有高遗传价值的公牛精液，改进育种与选种工作，发展人工授精技术，以及在畜禽繁殖领域交流经验。
+会谈中，双方还特别关注了植物检疫与保护相关议题，以及相关流程的数字化与自动化。
+双方探讨了交流经验与技术解决方案的契机，旨在改善对产品植物检疫状况的监测，并提升相关程序的有效性。
+最后，双方均表示有浓厚兴趣，愿在农工综合体领域进一步发展彼此的伙伴关系。落实既定的合作方向，将有助于加强哈萨克斯坦与捷克共和国之间的经贸联系，拓展商业往来，并促进双方在农业领域建立长期伙伴关系。</div>
+<ul>
+<li>前八个月哈捷农产品贸易额增长31%</li>
+<li>双方讨论增加农产品相互供应和畜牧业合作</li>
+<li>优先领域包括良种繁育、水产养殖和有机农产品</li>
+<li>合作重点涉及纯种牛供应和人工授精技术</li>
+<li>双方关注植物检疫数字化与自动化</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次合作有助于哈萨克斯坦拓展欧洲农产品市场，提升农业出口多元化，加强兽医和植物检疫标准对接，促进畜牧业技术升级，并深化哈捷经贸关系。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-10-25 09:01</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
