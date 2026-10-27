@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年10月27日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年10月27日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年10月26日早9:00至2026年10月27日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 5 条</span><span class="stat-chip">2 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">1</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">4</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">0</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">0</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/chislo-poluchateley-asp-ohvachennih-merami-zanyatosti-sokratilos-bolee-chem-vdvo-1f857efa" target="_blank">哈萨克斯坦定向社会援助领取人数减少一半以上</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/26 23:14<span class="source-link"><a href="https://www.inform.kz/ru/chislo-poluchateley-asp-ohvachennih-merami-zanyatosti-sokratilos-bolee-chem-vdvo-1f857efa" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦积极就业促进措施覆盖人数从2022年的3.17万降至2025年的1.26万，定向社会援助领取人数减少一半以上。截至2026年10月1日，定向社会援助覆盖41252个家庭的222312名公民。2027年1月1日起将实施新规，有条件现金援助要求低收入有劳动能力者参与就业促进措施并签订社会合同。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦定向社会援助领取人数减少一半以上
+
+正文：
+据该部数据，2021年积极就业促进措施覆盖了2.75万人。2022年，这一数字增至3.17万人。
+
+——2023年该指标为2.72万人，2024年降至1.76万人，而2025年有1.26万人参与了就业促进措施，——该部门在回复中表示。
+
+据该部明确，在上述措施框架内，实施了有劳动能力的社會援助领取者的就业安置、职业培训以及创业倡议支持。
+
+这些措施旨在提高领取社会援助家庭的收入。
+
+需要指出的是，截至2026年10月1日，定向社会援助已分配给41252个家庭的222312名公民。
+
+此前有报道称，自2027年1月1日起，哈萨克斯坦将实施提供定向社会援助的新规则。根据政府决议，有条件现金援助将提供给低收入且有劳动能力的公民和家庭，条件是参与就业促进措施并签订社会合同。</div>
+<ul>
+<li>就业促进措施覆盖人数从2022年3.17万降至2025年1.26万</li>
+<li>截至2026年10月1日，定向社会援助覆盖222312名公民</li>
+<li>援助措施包括就业安置、职业培训和创业支持</li>
+<li>2027年起新规要求签订社会合同并参与就业措施</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">新规将社会援助与就业挂钩，有助于减少福利依赖、提升劳动参与率，缓解财政压力，但可能对弱势群体形成短期冲击，需关注社会稳定性。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(4 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/kazahstan-predstavil-oon-novie-meri-po-zashite-prav-detey-f0aa2a52" target="_blank">哈萨克斯坦向联合国提交保护儿童权利新措施</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/27 00:59<span class="source-link"><a href="https://www.inform.kz/ru/kazahstan-predstavil-oon-novie-meri-po-zashite-prav-detey-f0aa2a52" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦在联合国会议上介绍了保护儿童权利的新措施。根据总统托卡耶夫的倡议，哈国正实施立法和制度改革，并推出《哈萨克斯坦儿童》2026-2030年构想。会议重点关注儿童保护基础设施发展，包括建立地区儿童权利保护局、完善监护机构和心理支持中心，以及预防暴力和欺凌、加强教育机构心理安全、提高儿童帮助可及性（包括通过统一联络中心“111”）。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">会议的主要议题是保护儿童权利、预防暴力及保障儿童安全。
+据该部门指出，根据总统卡西姆-若马尔特·托卡耶夫的倡议，哈萨克斯坦正在实施旨在完善儿童保护体系的立法和制度改革。
+图片：哈萨克斯坦教育部 朱尔德兹·苏莱曼诺娃介绍了国家儿童权利保护体系的关键变化，以及《哈萨克斯坦儿童》2026-2030年构想的主要方向。
+双方特别关注儿童保护基础设施的发展。具体而言，讨论了建立地区儿童权利保护局、完善监护和托管机构以及心理支持中心的活动。
+此外，与会者审议了早期识别需要帮助的儿童以及加强相关服务之间互动的问题。
+图片：哈萨克斯坦教育部 另外还涉及了预防暴力和欺凌、加强教育机构中的心理安全以及提高儿童获得帮助的可及性（包括通过统一联络中心“111”）的措施。
+参加会议的还有哈萨克斯坦共和国库鲁尔泰副主席、儿童权利专员迪娜拉·扎基耶娃、联合国儿童基金会（UNICEF）代表和哈萨克斯坦教育部代表。
+此前有报道称，哈萨克斯坦提议将江布尔州关于设立学校分管法律事务副校长职位的经验推广至全国。该倡议旨在加强预防青少年违法、欺凌和保护儿童权利。</div>
+<ul>
+<li>哈国在联合国介绍儿童保护新措施和制度改革</li>
+<li>推出《哈萨克斯坦儿童》2026-2030年构想</li>
+<li>重点发展儿童保护基础设施和地区管理局</li>
+<li>预防暴力和欺凌，加强教育机构心理安全</li>
+<li>统一联络中心“111”提高儿童帮助可及性</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该举措完善哈国儿童保护法律和机构体系，提升社会福利治理水平，有助于改善国际形象；同时加强教育机构心理安全，预防青少年违法，对社会稳定和人力资本发展具有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/guorenyiheguori-6748fa57/" target="_blank">托卡耶夫感谢各国领导人致以共和国日祝贺</a></h3>
+<div class="item-meta">哈通社中文版 · 10/26 13:43<span class="source-link"><a href="https://cn.inform.kz/news/guorenyiheguori-6748fa57/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在共和国日之际，通过社交平台X发文，感谢各国国家元首、政府首脑及主要国际组织负责人致贺。托卡耶夫表示，哈萨克斯坦人民满怀感激地接受了各方对主权国家的祝福，并强调这是对国家的诚挚祝贺和温暖祝福。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫感谢各国领导人致以共和国日祝贺
+正文:
+“值此共和国日之际，谨向所有向我国致以诚挚祝贺和温暖祝福的各国国家元首、政府首脑以及主要国际组织负责人表示衷心感谢。我国人民满怀感激之情，接受了大家对我们主权国家的美好祝愿。”托卡耶夫总统在社交平台X上发文表示。</div>
+<ul>
+<li>托卡耶夫感谢各国领导人祝贺共和国日</li>
+<li>贺电来自国家元首、政府首脑和国际组织负责人</li>
+<li>托卡耶夫通过社交平台X发文表达感谢</li>
+<li>哈人民感激接受对主权国家的美好祝愿</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此事件体现哈萨克斯坦外交活跃度与主权国家形象，有助于巩固多边关系，提升国际存在感，对政治稳定和外交格局有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/diguori-655b0841/" target="_blank">托卡耶夫总统祝贺奥地利国庆日</a></h3>
+<div class="item-meta">哈通社中文版 · 10/26 13:26<span class="source-link"><a href="https://cn.inform.kz/news/diguori-655b0841/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在奥地利国庆日之际向奥地利总统范德贝伦致贺，表示相信哈奥双边合作将进一步深化，并祝愿范德贝伦总统履职顺利，祝奥地利人民幸福安康、繁荣昌盛。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫总统祝贺奥地利国庆日
+
+托卡耶夫表示，相信哈奥双边合作将进一步深化，并祝愿范德贝伦总统履职顺利，祝奥地利人民幸福安康、繁荣昌盛。</div>
+<ul>
+<li>托卡耶夫祝贺奥地利国庆日</li>
+<li>致贺对象为奥地利总统范德贝伦</li>
+<li>表示相信哈奥双边合作将进一步深化</li>
+<li>祝愿奥总统履职顺利、人民安康繁荣</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此贺电属常规外交礼节，有助于维持哈奥友好关系，为双边经贸与投资合作营造良好氛围，对哈国政治、经济、外交及矿产格局无实质影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/linengyurenlijinrengongnengyefa-3cae5074/" target="_blank">算力、能源与人才：英伟达助力哈萨克斯坦推进人工智能产业发展</a></h3>
+<div class="item-meta">哈通社中文版 · 10/26 12:45<span class="source-link"><a href="https://cn.inform.kz/news/linengyurenlijinrengongnengyefa-3cae5074/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>10月23日，哈萨克斯坦总统托卡耶夫会见英伟达创始人黄仁勋，讨论人工智能产业发展。英伟达2025年营收2159亿美元，其中数据中心产品1937亿美元。哈萨克斯坦推进基于英伟达技术的项目，包括Alem.Cloud超级计算机和哈萨克电信部署的880张图形处理器。6月，哈政府与美国Firebird公司公布总额100亿美元的人工智能基础设施协议，核心是埃基巴斯图兹“数据中心谷”综合体，计划安装10万张图形处理器，预计算力出口年收入至少30亿美元。哈计划2027年消除电力短缺，2029年实现盈余。跨里海海底光纤线路已铺设，数据传输能力达400 Tbps。2025年哈IT服务出口额11.42亿美元，Astana Hub出口额6.33亿美元。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">10月23日，哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫会见了英伟达创始人黄仁勋。双方就哈萨克斯坦人工智能产业发展规划和双边合作进行了讨论。
+
+“您的到访对于推动我们与英伟达的合作取得新进展具有重要意义。感谢您为巩固双方伙伴关系、造福哈萨克斯坦所作出的努力。”托卡耶夫在会谈中表示。
+
+英伟达在全球市场的地位，从其财务数据中可见一斑。2025年，该公司营收达到2159亿美元，其中1937亿美元来自数据中心相关产品。例如，OpenAI已公布计划，拟部署基于英伟达系统、规模至少达到10吉瓦（GW）的算力设施。Google Cloud推出了搭载英伟达H100处理器的DGX Cloud服务，微软也在Azure平台上使用英伟达处理器。亚马逊和Meta同样是使用英伟达设备的大型企业。
+
+在哈萨克斯坦，基于英伟达技术的项目也在推进。Alem.Cloud超级计算机配备了英伟达H200处理器。“哈萨克电信”已在阿斯塔纳和阿拉木图部署400张H200和480张B300图形处理器。与此同时，埃基巴斯图兹还计划进一步大幅提升算力规模。
+
+今年6月，哈萨克斯坦政府与美国Firebird公司公布了一揽子总额达100亿美元的人工智能基础设施建设合作协议，其中的核心项目是位于埃基巴斯图兹的“数据中心谷”综合体。
+
+根据规划，该项目将安装多达10万张图形处理器。哈萨克斯坦政府预计，综合体全面投入运营后，仅算力出口一项每年就能带来至少30亿美元收入。
+
+埃基巴斯图兹的算力中心可用于训练人工智能模型、处理海量数据，也能向海外企业提供算力服务。哈萨克斯坦希望利用自身的能源资源优势，向国际市场提供数字服务。
+
+黄仁勋也从这一角度评价了哈萨克斯坦的发展潜力。
+
+“发展人工智能，首先需要充足的能源供应，同时还需要在科学、数学和技术领域具备高水平专业知识的人才。哈萨克斯坦在这些方面都具备充分的发展潜力。”他表示。
+
+数据中心的运行离不开持续稳定的电力供应。哈萨克斯坦政府计划在2027年彻底消除电力短缺，并争取到2029年实现电力供应稳定盈余。
+
+在通信基础设施方面，哈萨克斯坦与阿塞拜疆已完成跨里海海底光纤通信线路铺设。这条全长380公里的线路连接哈萨克斯坦阿克套和阿塞拜疆苏姆盖特，数据传输能力最高可达每秒400太比特（Tbps）。
+
+这条线路将为哈萨克斯坦与欧洲之间的数据交换提供可靠通道。随着埃基巴斯图兹算力中心开始为海外客户提供服务，国际通信线路也将成为支撑相关业务的重要基础设施。
+
+哈萨克斯坦在向海外出口数字服务方面已有一定基础。根据哈萨克斯坦人工智能和数字发展部的数据，2025年，我国IT服务出口额达到11.42亿美元，而2020年这一数字为3350万美元。
+
+2025年，Astana Hub科技园入驻企业的出口额达到6.33亿美元，向海外提供服务的企业增至537家。哈萨克斯坦的IT产品和服务目前已进入110多个国家和地区的市场。
+
+这些数据表明，哈萨克斯坦已在数字服务出口领域积累了一定经验。埃基巴斯图兹数据中心综合体的建设，有望为这一市场带来新的服务类型。</div>
+<ul>
+<li>托卡耶夫会见黄仁勋，讨论人工智能合作</li>
+<li>英伟达2025年营收2159亿美元，数据中心产品1937亿</li>
+<li>哈推进英伟达技术项目，部署880张图形处理器</li>
+<li>埃基巴斯图兹数据中心谷将安装10万张GPU，算力出口年收入至少30亿美元</li>
+<li>跨里海光纤线路铺设完成，传输能力400 Tbps</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">深化哈与英伟达合作，推动AI产业发展；100亿美元数据中心谷项目将利用能源优势出口算力，促进经济多元化；跨里海光纤增强与欧洲数据连通，提升地缘战略地位；但需确保电力供应和人才培养。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-10-27 09:02</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
