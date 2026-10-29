@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年10月29日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年10月29日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年10月28日早9:00至2026年10月29日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 30 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">14</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">12</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">1</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(14 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/anuarbek-konzhar-vozglavil-departament-sotszashiti-v-aktyubinskoy-oblasti-6337ebcb" target="_blank">阿努阿尔别克·孔扎尔出任阿克托别州社会保障局局长</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/29 03:22<span class="source-link"><a href="https://www.inform.kz/ru/anuarbek-konzhar-vozglavil-departament-sotszashiti-v-aktyubinskoy-oblasti-6337ebcb" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>阿努阿尔别克·孔扎尔被任命为阿克托别州社会保障局局长。他生于1981年8月15日，毕业于K·茹巴诺夫大学和俄哈国际大学，专业为历史学家和 economist。自2002年起在阿尔加区教育、内政、州长办公室等部门任职，2016-2020年任阿尔加区副州长，2022年起任阿克托别州就业协调和社会项目管理局副局长。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">阿努阿尔别克·孔扎尔出任阿克托别州社会保障局局长
+
+阿努阿尔别克·孔扎尔于1981年8月15日出生在阿克托别州阿尔加区卡拉布拉克镇。
+2002年毕业于K·茹巴诺夫大学，2015年毕业于俄哈国际大学。专业资质为历史学家、经济学家。
+2002年，他在阿尔加市第三哈萨克中学担任教师，开始了职业生涯。
+2003-2004年，任阿尔加区内政部首席专家；2004-2006年，任阿尔加区州长办公室信息分析部首席专家。2006-2007年，再次担任区内政部首席专家；2007-2013年，领导阿尔加区州长办公室国家服务提供及质量监督部。
+2013年，出任阿尔加区内政部部长；2013-2016年，领导阿尔加区州长办公室。2016-2020年，任阿尔加区副州长。
+自2022年起至本次任命前，担任阿克托别州就业协调和社会项目管理局副局长。
+此前有报道称，阿曼克尔迪·多斯扎诺夫出任曼吉斯套州警察局局长。</div>
+<ul>
+<li>孔扎尔生于1981年，毕业于K·茹巴诺夫大学和俄哈国际大学</li>
+<li>2002年起在阿尔加区教育、内政、州长办公室任职</li>
+<li>2016-2020年任阿尔加区副州长</li>
+<li>2022年起任阿克托别州就业协调和社会项目管理局副局长</li>
+<li>本次任命为阿克托别州社会保障局局长</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次任命属地方官员常规轮换，有助于保持阿克托别州社会保障政策的连续性。孔扎尔拥有丰富的基层和州级管理经验，预计将推动就业和社会项目落实，对政治经济影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/nianshi821ge-quanguo642-362d78c7/" target="_blank">哈萨克斯坦七年实施821个气化项目 全国气化率升至64.2%</a></h3>
+<div class="item-meta">哈通社中文版 · 10/29 01:50<span class="source-link"><a href="https://cn.inform.kz/news/nianshi821ge-quanguo642-362d78c7/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>过去七年，哈萨克斯坦实施821个气化项目，投入6123亿坚戈，新建天然气管网31526公里，772个聚居点接入天然气，具备用气条件人口从950万增至1310万，全国气化率从51.47%升至64.2%。2025年94个聚居点35.4万居民获用气条件，新建配气管网近2000公里。2026年实施40个项目，预计新增3.6万用户。目标2035年气化率达80%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦七年实施821个气化项目 全国气化率升至64.2%
+正文:
+过去七年，哈萨克斯坦民众使用天然气的便利程度显著提升。随着一系列大型基础设施项目的实施、资金投入的增加以及天然气输送管网的建设，数百个聚居点接入天然气，全国气化水平进一步提高。
+总体来看，这一时期共有772个聚居点接入天然气网络，具备天然气使用条件的人口从950万增至1310万。这意味着，又有360万居民能够使用这一重要能源，有助于改善民众生活质量、提升生活舒适度。
+天然气基础设施投入6123亿坚戈：七年实施821个项目
+天然气气化工作的推进，离不开对基础设施建设的持续投入。过去七年，哈萨克斯坦共和国预算和“萨姆鲁克-卡泽纳”股份公司资金共计6123亿坚戈用于天然气基础设施建设。
+Фото: Энергетика министрлігі 这些资金支持了数百个供气项目的实施，推动扩大天然气供应覆盖范围，并用于建设新的天然气管道和配气管网。基础设施投资不仅为接入新用户创造了条件，也提高了天然气的可及性，为各地区进一步发展提供了支持。
+此外，天然气供应基础设施建设采取综合推进方式，不仅包括干线和配气管道的铺设，还涵盖保障用户稳定、持续用气所需的配套设施建设。
+哈萨克斯坦气化率升至64.2%：今年预计新增约3.6万名天然气用户
+在统计期内，哈萨克斯坦共实施821个气化项目，新建天然气管网31,526公里，大幅提升了向居民和企业供应天然气的基础设施能力。
+相关工作的主要成果之一，是全国气化率不断提高。此前，哈萨克斯坦气化率为51.47%，目前已升至64.2%，提高了12.73个百分点。这一变化反映出天然气覆盖范围不断扩大，国家天然气基础设施持续完善。
+气化率提高具有重要的社会经济意义。聚居点接入天然气有助于改善居民生活条件，扩大现代能源的使用范围，并为各地区发展企业和生产活动创造更多条件。
+Фото: Энергетика министрлігі 相关数据表明，哈萨克斯坦持续推进天然气基础设施建设，为扩大供气范围创造了条件。完善管网、实施新项目，仍是改善民众生活和加强地区能源基础设施的重要工作方向。
+仅2025年，就有94个聚居点的35.4万多名居民获得天然气使用条件。当年，全国新建配气管网近2000公里。
+2026年，哈萨克斯坦继续推进天然气基础设施建设。目前共有40个项目正在实施，其中包括7个续建项目和33个新项目。预计相关计划落实后，还将有约3.6万人能够使用天然气。
+未来规划与发展方向
+为实现到2035年将全国气化率提高至80%的目标，哈萨克斯坦能源部计划进一步发展天然气干线输送基础设施、区域管网和气源保障体系。</div>
+<ul>
+<li>七年实施821个气化项目，投入6123亿坚戈</li>
+<li>新建天然气管网31526公里，772个聚居点接入</li>
+<li>用气人口从950万增至1310万，增加360万</li>
+<li>全国气化率从51.47%升至64.2%，提高12.73个百分点</li>
+<li>2035年目标气化率达80%，2026年实施40个项目</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">气化率提升改善民生，促进地区经济发展；大规模基建带动相关产业，但依赖预算和萨姆鲁克-卡泽纳资金；天然气需求增长可能影响出口与国内平衡；管网扩张为矿产区能源供应提供支撑，助力资源开发。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/fangfashi-9wairen-0942e35c/" target="_blank">哈萨克斯坦警方调查涉嫌非法盗猎事件 9名外籍人员涉案</a></h3>
+<div class="item-meta">哈通社中文版 · 10/28 22:20<span class="source-link"><a href="https://cn.inform.kz/news/fangfashi-9wairen-0942e35c/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦“Охотзоопром”国营企业工作人员在即时通讯软件中发现疑似非法盗猎视频，根据车牌信息初步判断车辆注册于东哈州，并可能出现在斋桑市。随后与警方联合行动，拦截三辆越野车，扣留9名外籍公民和1名哈萨克斯坦公民。10月28日相关情况已登记，目前正在核实涉案人员是否参与非法盗猎，调查仍在进行中。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">此前，“Охотзоопром”国营企业工作人员在即时通讯软件中发现了一批疑似涉及非法盗猎的视频。
+林业和野生动物委员会表示，根据视频中车辆的车牌信息，初步判断这些车辆可能注册于东哈州。随后，“Охотзоопром”工作人员迅速收集补充线索，并发现相关车辆可能出现在斋桑市境内，随即将掌握的信息移交给自然保护警察部门。
+当日22时10分左右，“Охотзоопром”巡查人员与当地警方在斋桑市联合行动，拦截了三辆疑似与相关视频有关的越野车。
+执法人员随后扣留了9名外籍公民和1名哈萨克斯坦公民，以配合进一步调查。
+10月28日，相关情况已按规定登记。
+目前，有关部门正在核实上述人员是否涉嫌参与非法盗猎。主管机关将继续调查事件的具体经过及相关情况。</div>
+<ul>
+<li>国营企业发现疑似非法盗猎视频并移交线索</li>
+<li>车牌信息指向东哈州，车辆可能出现在斋桑市</li>
+<li>警方联合行动拦截三辆越野车</li>
+<li>扣留9名外籍公民和1名哈萨克斯坦公民</li>
+<li>10月28日登记，正核实是否涉嫌非法盗猎</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">事件涉及多名外籍人员，可能引发外交关注；打击盗猎有助于保护野生动物资源，但需关注矿产开发与生态保护的平衡；执法行动显示哈国加强自然保护监管，对矿业等野外作业活动或产生合规警示。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/faweibenyekaijingzhengda-16489916/" target="_blank">库鲁尔泰通过法案：为本土企业打开欧亚经济联盟政府采购市场大门</a></h3>
+<div class="item-meta">哈通社中文版 · 10/28 21:15<span class="source-link"><a href="https://cn.inform.kz/news/faweibenyekaijingzhengda-16489916/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦议会通过法案，批准2025年7月28日在莫斯科签署的欧亚经济联盟议定书。该议定书对《欧亚经济联盟条约》作出30项修订，涉及政府采购、技术监管、服务贸易、竞争、电力能源和交通运输等领域。关键突破是确立银行保函互认机制，使哈本土企业凭本国银行保函即可参与其他成员国政府采购，无需再获取他国银行保函。议定书还取消进口关税信息交换重复规定，明确欧亚经济委员会职权，并推进国际货运电子许可证数字化试点。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">负责介绍该法案的哈萨克斯坦贸易和一体化部部长阿尔曼·沙卡利耶夫表示，该议定书于2025年7月28日在莫斯科由欧亚经济联盟（EAEU）成员国领导人共同签署。议定书旨在完善联盟框架内的法律监管机制，消除法律适用实践中发现的漏洞。
+
+“拟议通过的议定书规定对《欧亚经济联盟条约》作出30项修订，涉及内部市场运行、政府采购、技术监管、服务贸易、竞争、电力能源和交通运输等领域。特别是，议定书明确了欧亚经济委员会（EEC）对联盟内部市场壁垒进行方法论分析，并认定相关障碍和限制已被消除的职权。这一规定为统一委员会的工作方式确立了法律基础，也将有助于营造成员国之间畅通无阻的经贸环境，”沙卡利耶夫指出。
+
+为企业打开欧亚经济联盟市场大门
+
+沙卡利耶夫特别强调了哈萨克斯坦在推动政府采购领域相关举措方面取得的进展。
+
+“议定书确立了银行保函互认机制。这意味着，哈萨克斯坦本土企业凭借本国银行出具的保函，即可参与欧亚经济联盟其他成员国的政府采购，而此前，企业必须取得其他成员国银行出具的保函。此外，议定书还取消了有关进口关税缴纳信息交换的重复规定，因为《欧亚经济联盟海关法典》已经对此作出规定。同时，欧亚经济委员会对成员国所提供信息的使用目的也作了进一步明确，”沙卡利耶夫表示。
+
+他指出，在竞争领域，议定书进一步明确了欧亚经济委员会相关决定的强制执行程序，并要求考虑执行地所在国的法律规定。
+
+总体而言，此次修订旨在取消重复规定、明确现有机制，并提高欧亚经济联盟框架内部分程序的透明度。
+
+在审议法案期间，议员阿勒马特·卓克巴耶夫指出，该文件不仅涉及对《欧亚经济联盟条约》本身的修订，还涉及9项附加议定书，并拟完全删除有关进口关税信息交换的章节。对此，他担心，删除该章节是否会影响日常海关进口关税信息的交换工作。
+
+“这些机制是否已全部纳入《海关法典》？删除相关条款是否会对海关行政管理和相互间的信息协作产生不利影响？”他向主要报告人沙卡利耶夫提问。
+
+沙卡利耶夫表示，相关机制已经纳入《海关法典》。为避免规定重复，相关内容才从此次审议的协议中删除，海关部门之间的信息交换仍将照常进行。
+
+该议定书主要有三大优势：
+
+欧亚经济联盟成员国将推进国际货运数字化
+
+议员古丽斯汗·纳赫巴耶娃向沙卡利耶夫询问，联盟成员国在国际公路运输领域推行电子许可证方面的准备情况。
+
+“所有成员国都已做好引入这一机制的准备。今年10月15日，相关试点项目已在阿斯塔纳启动。该项目将帮助我们明确无纸化电子许可证的办理和交换程序。这些修订将为全面落实数字化机制铺平道路，”沙卡利耶夫答道。
+
+议员康斯坦丁·彼得罗夫则指出，正在审议的议定书进一步明确了政府采购信息公开要求，并确立了银行保函互认机制。</div>
+<ul>
+<li>议会通过法案批准欧亚经济联盟议定书，含30项条约修订</li>
+<li>银行保函互认机制助哈企凭本国保函参与联盟政府采购</li>
+<li>取消进口关税信息交换重复条款，海关信息交换照常</li>
+<li>国际公路运输电子许可证试点10月15日在阿斯塔纳启动</li>
+<li>议定书明确欧亚经济委员会消除内部市场壁垒的职权</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上降低哈企参与联盟政府采购门槛，拓展市场空间；外交上强化哈在欧亚经济联盟内推动一体化形象；矿产领域未直接涉及，但贸易便利化或间接促进矿产品出口；政治上展示政府为企业争取实际利益的成果。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/daoguan-72b92cfc/" target="_blank">哈萨克斯坦议员：教师权益保障始终受到总统关注</a></h3>
+<div class="item-meta">哈通社中文版 · 10/28 20:40<span class="source-link"><a href="https://cn.inform.kz/news/daoguan-72b92cfc/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦议员阿伊马汗别托夫在库鲁尔泰大楼接受采访时表示，总统始终关注教师权益保障，过去七年来教育领域围绕教师群体出台了一系列积极改革举措。他指出，教师目前面临信息系统带来的新负担，一些本可通过系统整合获取的数据仍需人工收集，涉及个人信息采集。总统已指出这一问题，库鲁尔泰议员倡议的新法案也将涉及。总统还对损害教师尊严的现象表达了立场，体现国家对教师群体的关心和支持。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">阿伊马汗别托夫回忆起自己曾在政府任职部长期间的经历。
+“我在政府工作期间，每次有机会面见国家元首时，总统首先询问的都是如何保护和支持教师。过去七年来，教育领域围绕教师群体出台了一系列积极改革举措。这背后体现的是国家元首发自内心的关怀和深思熟虑。今天，总统再次专门谈到教师权益保障问题，言语间也流露出对教师群体的关切，”他在库鲁尔泰大楼走廊接受采访时表示。
+阿伊马汗别托夫指出，以前人们主要反映的是繁文缛节等问题，如今，各类信息系统又给教师增加了新的负担。
+他表示，一些本可以通过信息系统整合、从其他政府部门获取的数据，却仍然需要教师、班主任和任课教师按照要求人工收集，其中还涉及个人信息的采集。
+“教师究竟应该安心上课，还是整天忙着收集个人信息、承受家长的埋怨？总统今天指出了这一问题。目前，由库鲁尔泰议员倡议制定的新法案也将涉及这一问题。此外，国家元首还就有人对教师出言不逊、损害教师尊严等现象表达了立场。这一切都体现了国家对教师群体的关心和支持，”阿伊马汗别托夫说道。</div>
+<ul>
+<li>总统七年来持续关注教师权益保障并推动改革</li>
+<li>教师面临信息系统新负担，需人工收集个人信息</li>
+<li>库鲁尔泰议员倡议新法案将解决教师数据收集问题</li>
+<li>总统对损害教师尊严现象表达明确立场</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该表态强化总统对教育领域的重视，有助于推动减轻教师行政负担的立法进程，提升教师社会地位，对哈国政治社会稳定和教育经济发展具有积极意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/jiangcongzhanfahesanfangmianshiguoqingwen-666d03f9/" target="_blank">哈萨克斯坦将从战略规划、立法保障和宣传解读三方面落实国情咨文</a></h3>
+<div class="item-meta">哈通社中文版 · 10/28 19:15<span class="source-link"><a href="https://cn.inform.kz/news/jiangcongzhanfahesanfangmianshiguoqingwen-666d03f9/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦政府官员卡林表示，总统托卡耶夫的国情咨文是重要战略文件，明确了交通基础设施、能源、数字化和农业等优先方向，涉及“全民建设”、数字经济、国家治理改革、提高最低工资、应对通胀、公平税收、支持中小企业、保障教师和医务人员权益及包容性发展等任务。卡林要求各政府机关从三方面落实：按时制定战略文件和工作计划、提供高质量立法保障、有效开展宣传解读，并强调积极主动、密切协作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">卡林首先指出，国家元首哈斯穆-卓玛尔特·托卡耶夫在国情咨文中提出的各项倡议，为哈萨克斯坦在新的历史阶段实现发展奠定了基础。
+“国家元首的国情咨文是一份重要的战略性文件。总统提出的各项倡议明确了国家政策在交通基础设施、能源、数字化和农业等多个领域的基本优先方向。因此，国家元首提出的具体任务构成了未来数年的全国性议程。其中包括‘全民建设’、逐步构建数字经济、大规模改革国家治理体系等一系列举措，”卡林表示。
+他指出，各相关政府机关应把工作重点放在高质量落实总统提出的各项倡议和任务上。
+“国家元首提出的许多倡议具有重要的战略意义，旨在解决数百万民众关心的现实问题。因此，总统交办的相当一部分任务涉及社会基础设施升级改造及其普惠性保障、提高最低工资、应对通货膨胀、推行公平税收政策、支持中小企业、保障教师和医务人员权益，以及促进包容性发展等重要领域。国情咨文将大规模基础设施更新计划称为‘全民建设’，并非偶然。因为这些基础设施项目都将造福广大民众和子孙后代。这正是理解该计划核心内涵与目标的关键所在，”卡林强调。
+会议结束时，卡林明确了落实国家元首国情咨文的三项首要任务：
+第一，按时制定系统落实国家元首各项任务的战略文件和工作计划。
+第二，为总统提出的具有重要社会意义的各项倡议提供高质量的立法保障。
+第三，有效组织开展宣传解读工作。
+卡林要求各政府机关积极主动、密切协作，确保各项任务得到有效落实。</div>
+<ul>
+<li>国情咨文明确交通、能源、数字化、农业等优先方向</li>
+<li>倡议涵盖全民建设、数字经济、国家治理改革等</li>
+<li>任务涉及提高最低工资、应对通胀、公平税收等民生领域</li>
+<li>落实需三方面：战略文件、立法保障、宣传解读</li>
+<li>要求政府机关积极主动、密切协作确保落实</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该落实部署将推动哈国基础设施升级和数字经济转型，改善民生与营商环境；立法保障有助于政策制度化，宣传解读可增强社会共识，对政治稳定和经济发展具有积极意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/guoqingwenzhan-8fa5baed/" target="_blank">叶尔兰·卡林谈总统国情咨文：战略决策创造历史</a></h3>
+<div class="item-meta">哈通社中文版 · 10/28 18:10<span class="source-link"><a href="https://cn.inform.kz/news/guoqingwenzhan-8fa5baed/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫于10月28日发表年度国情咨文，明确国家未来发展主要方向，涉及巩固主权、维护稳定、发展经济、科学和现代技术等领域。总统提出大规模推进基础设施现代化建设，计划投入6.5万亿坚戈，并强调建立统一投资管理体系、制定中型企业发展专项计划。叶尔兰·卡林表示，国情咨文体现战略决策，兼顾国家利益与人民福祉，对哈国未来发展具有重要战略意义。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：叶尔兰·卡林谈总统国情咨文：战略决策创造历史
+正文：
+- 创造历史的并非时间本身，而是在关键时刻作出的战略决策。今天总统发表的国情咨文正是这一点的证明。国情咨文既考虑了国家利益，也体现了对人民福祉的关切。——叶尔兰·卡林表示。
+他强调，国家元首在国情咨文中提出的各项优先发展方向，对哈萨克斯坦未来发展具有重要战略意义。
+10月28日，哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫向全国人民发表年度国情咨文。
+总统在讲话中明确了国家未来发展的主要方向，重点涉及巩固国家主权、维护国内稳定、发展经济、科学和现代技术等领域。
+其中，托卡耶夫提出大规模推进国家基础设施现代化建设，计划投入6.5万亿坚戈。
+在经济发展方面，总统强调建立统一投资管理体系的必要性，并要求制定中型企业发展专项计划。
+托卡耶夫还明确了哈萨克斯坦在新发展阶段面临的战略任务，强调必须为子孙后代建设并留下一个实现全面提升的国家。</div>
+<ul>
+<li>托卡耶夫10月28日发表年度国情咨文，明确国家未来发展主要方向。</li>
+<li>国情咨文重点涉及巩固主权、维护稳定、发展经济、科学和现代技术。</li>
+<li>总统提出投入6.5万亿坚戈大规模推进基础设施现代化建设。</li>
+<li>强调建立统一投资管理体系，并要求制定中型企业发展专项计划。</li>
+<li>叶尔兰·卡林称国情咨文体现战略决策，兼顾国家利益与人民福祉。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">国情咨文强化总统战略决策权威，有利于政治稳定；6.5万亿坚戈基建投入将拉动经济增长并改善投资环境；强调主权与稳定有助于外交自主；中型企业专项计划或间接影响矿产等行业发展格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/zhongjian-xiao-be64e0ee/" target="_blank">哈萨克斯坦拟减少牛肉销售中间环节 缩小产销价格差距</a></h3>
+<div class="item-meta">哈通社中文版 · 10/28 17:52<span class="source-link"><a href="https://cn.inform.kz/news/zhongjian-xiao-be64e0ee/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦农业部副部长苏尔塔诺夫表示，当前农业生产商牛肉售价为每公斤2800-3300坚戈，而零售市场嫩牛肉价格最高达6000坚戈，价差显著。为缩小产销价格差距，农业部正研究发展农产品直销场所，让农民绕过中间商直接向消费者销售。阿拉木图市已实施类似项目，该经验计划在阿拉木图州推广，当地将建设多个农民市场，专门提供给农业生产商使用。苏尔塔诺夫还强调阿拉木图州在保障阿拉木图市食品供应方面的重要作用。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦农业部副部长阿扎特·苏尔塔诺夫在阿拉木图州举行的媒体采访活动期间作出了上述表示。
+他指出，农业生产商的牛肉销售价格取决于养殖场类型及牲畜的膘情。
+- 目前，根据养殖场类型和牲畜膘情，农业生产商的牛肉平均销售价格在每公斤2800至3300坚戈之间。然而，我们看到，零售市场上每公斤嫩牛肉的价格最高可达6000坚戈。因此，一个合理的问题是：既然农民生产出了市场需要的产品，为什么他们却无法从中获得更好的利润、增加收入？目前，各地方政府正在就此开展工作。
+为缩小牛肉生产端与消费端之间的价格差距，农业部正在研究发展农产品直销场所，让农民能够直接向消费者销售产品。
+苏尔塔诺夫介绍，阿拉木图市已经实施了类似项目。在该市的一处市政市场，农业生产商可以不经过中间商，直接销售自己的产品。
+这一经验也计划在阿拉木图州推广。
+- 阿拉木图州将实施多个农民市场建设项目。这些市场将按照卫生标准建设，为商品交易提供便利条件。根据州长的指示，这些经营场所必须专门提供给农业生产商，而不是中间商或倒卖商，应当直接交由产品生产者使用。
+农业产品的重要销售渠道之一是阿拉木图的“阿勒腾奥尔达”市场。
+苏尔塔诺夫举例称，有一家企业通过该市场，以每公斤约3600坚戈的价格采购牛肉，用于为员工制作餐食。
+- 我们看到，一些销售场所的价格对居民而言是比较合理的。
+苏尔塔诺夫还强调了阿拉木图州在保障全国最大城市阿拉木图食品供应方面的重要作用。
+阿拉木图州是哈萨克斯坦主要农业生产地区之一，毗邻阿拉木图市的地理优势，也为当地农民销售农产品创造了便利条件。
+据苏尔塔诺夫介绍，阿拉木图州不仅注重农业原材料生产，也将农产品加工列为重点发展方向。
+- 当地肉类和乳制品生产发展良好。总体而言，阿拉木图州在居民基本食品消费篮子所涵盖的主要商品类别方面，能够满足自身需求。同时，该州还在努力扩大生产规模，丰富产品种类。</div>
+<ul>
+<li>农业生产商牛肉售价2800-3300坚戈/公斤，零售价最高6000坚戈</li>
+<li>农业部研究发展农产品直销场所，减少中间环节</li>
+<li>阿拉木图市已试点农民直接销售，经验将推广至阿拉木图州</li>
+<li>阿拉木图州将建多个农民市场，专供生产者使用</li>
+<li>阿拉木图州保障阿拉木图市食品供应，肉类乳制品生产良好</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该政策有助于提高农民收入、降低消费者价格，缓解通胀压力；通过减少中间商，可能重塑农产品流通格局，但需平衡中间商利益；阿拉木图州农业地位进一步强化，对哈国食品供应安全具有积极意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://cn.inform.kz/news/gongzhengdajindeshitong-8efba300/" target="_blank">托卡耶夫：建设公正、强大、清洁、进步的哈萨克斯坦是共同目标</a></h3>
+<div class="item-meta">哈通社中文版 · 10/28 17:05<span class="source-link"><a href="https://cn.inform.kz/news/gongzhengdajindeshitong-8efba300/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫发表讲话，指出当今世界机遇与风险并存，国家须采取前瞻性发展战略。他提出建设“公正、强大、清洁、进步的哈萨克斯坦”的宏伟目标，强调以战略性超前发展应对挑战，避免追赶式发展。衡量进步的最高标准是人民享受改革成果，公正理念是战略核心。未来几年将全面启动民用基础设施建设和现代化改造，覆盖公路、铁路、桥梁、工业能源设施、学校、医院等，带动数十家新企业投产和数字经济发展。实现目标须坚持“法律与秩序”原则，弘扬诚实劳动，巩固民族团结。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">总统指出，当今世界正处于机遇与风险并存的时代，国家必须采取具有前瞻性的发展战略，主动应对全球性挑战。
+我们面前有一个宏伟目标，那就是建设公正、强大、清洁、进步的哈萨克斯坦。
+我们正处于一个充满巨大机遇，同时也伴随着巨大风险的时代。正是在这样的历史关键时期，一个民族的精神和品格才能得到真正体现。
+托卡耶夫强调，面对时代挑战，消极等待意味着在历史竞争中落后。
+应对时代挑战的唯一正确方式，就是以战略性超前发展的姿态开展工作，构建未来哈萨克斯坦的发展格局。
+否则，我们将陷入永无止境的追赶式发展。
+总统指出，衡量国家进步的最高标准，是人民能否真正享受到改革和发展的成果。
+国家进步的最高衡量标准，以及所有改革积极成果的主要受益者，都是我们的公民。
+因此，公正理念始终处于我所推行的战略路线的核心位置。
+谈及国家未来发展，托卡耶夫表示，随着哈萨克斯坦进入新的历史发展阶段，全国将全面启动民用基础设施建设和现代化改造。
+未来几年，大规模建设将覆盖全国所有地区，包括公路、铁路、桥梁、工业和能源设施、工程管网、水利设施、学校、医院、体育场馆和文化设施。
+总统强调，现代化基础设施建设还将带动数十家新企业投产，并推动数字经济发展。
+通过纪律、责任和辛勤劳动，我们将在不久的将来共同彻底改变城乡面貌，使我们共同的家园——哈萨克斯坦共和国——成为一个更加强大、更具吸引力的国家。
+托卡耶夫指出，实现上述目标必须坚持“法律与秩序”原则，弘扬诚实劳动精神，并进一步巩固民族团结。
+面对前所未有的全球性挑战，我们必须全面加强民族团结，巩固社会基础。这是我们各项战略构想和计划最终取得成功的重要保障。</div>
+<ul>
+<li>托卡耶夫提出建设公正、强大、清洁、进步的哈萨克斯坦目标</li>
+<li>强调战略性超前发展，避免陷入永无止境的追赶式发展</li>
+<li>公正理念是战略路线核心，人民是改革成果主要受益者</li>
+<li>未来几年大规模基建覆盖全国，带动新企业和数字经济发展</li>
+<li>坚持法律与秩序原则，弘扬诚实劳动，巩固民族团结</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该讲话明确哈国以超前战略和公正理念推动发展，大规模基建将拉动经济、改善民生，增强社会凝聚力；强调法律与秩序和民族团结，有利于政治稳定；清洁、进步目标契合绿色转型，但未直接涉及矿产格局，或间接推动能源设施现代化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">10</span> <a href="https://cn.inform.kz/news/jiangquanmianguojialiti-rengongnengyingyong-3b9e2ac6/" target="_blank">哈萨克斯坦将全面改革国家治理体系 加快人工智能应用</a></h3>
+<div class="item-meta">哈通社中文版 · 10/28 16:48<span class="source-link"><a href="https://cn.inform.kz/news/jiangquanmianguojialiti-rengongnengyingyong-3b9e2ac6/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫宣布全面改革国家治理体系，要求适应数字化时代并加快人工智能应用，消除部门职能重复和文牍主义，提高公务员效率。总统办公厅须在2027年6月1日前提交综合改革计划，并与战略规划和改革署等机构在一年内制定国家长期发展战略文件，库鲁尔泰议员可参与。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">总统指出，随着新宪法正式生效，哈萨克斯坦政治体系已经完成全面更新，国家机关面临的任务也更加复杂。
+首先，必须重新审视从政府到乡村行政长官各个层级的管理架构。
+国家治理体系必须适应数字化时代的要求，充分利用人工智能的潜力。
+托卡耶夫要求提高国家机关和公务员的工作效率，鼓励主动创新和独立决策。
+他指出，应借助人工智能消除政府部门之间的职能重复和管理矛盾，减少妨碍决策的繁琐程序。
+国家机关必须彻底、永久地摆脱文牍主义。所有阻碍决策和发展的程序都应予以精简。
+总统强调，公务员必须具备较高的专业素质，并始终以宪法要求为准则，忠诚服务国家和人民。
+为此，他提出制定新的公务员职业道德原则。
+我们需要的不是局部调整，而是真正的改革。绝不能搞形式主义。
+托卡耶夫要求总统办公厅在2027年6月1日前提交国家治理体系综合改革计划。
+与此同时，总统指出，哈萨克斯坦正在进入新的历史发展阶段，必须重新审视国家长期发展规划和战略。
+他要求总统办公厅与战略规划和改革署合作，吸引科研机构特别是哈萨克斯坦战略研究所参与，在一年内制定明确国家长期发展重点的战略文件。
+总统表示，库鲁尔泰议员也可以参与这一重要文件的制定。</div>
+<ul>
+<li>新宪法生效后全面更新政治体系，重新审视各级管理架构</li>
+<li>借助人工智能消除职能重复，精简程序，摆脱文牍主义</li>
+<li>制定新公务员职业道德原则，强调专业素质和宪法准则</li>
+<li>总统办公厅2027年6月1日前提交国家治理综合改革计划</li>
+<li>一年内制定国家长期发展战略，科研机构和议员参与</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">改革将提升哈国治理效率和数字化水平，优化公务员队伍；长期战略文件有助于明确经济优先方向；人工智能应用可能影响矿产等关键领域决策模式；同时强化总统办公厅统筹协调职能，外交上展现现代化治理形象。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">11</span> <a href="https://cn.inform.kz/news/zaiguoqingwenzhonghe-f9f30c7b/" target="_blank">总统在国情咨文中强调加快医疗和教育基础设施建设</a></h3>
+<div class="item-meta">哈通社中文版 · 10/28 16:37<span class="source-link"><a href="https://cn.inform.kz/news/zaiguoqingwenzhonghe-f9f30c7b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在国情咨文中指出，全国约有700万儿童（占人口34%），年新生儿超33万，医疗基础设施需求迫切。计划在“人民建设”第一阶段建设8座现代化围产期医疗中心，并在阿特劳等7市各建一所多学科儿童医院，阿斯塔纳新建两处医疗设施，鼓励公私合作。教育方面，超23.7万儿童需融合教育，要求加强设施与师资建设，减轻教师行政负担，维护教师尊严，提升教学质量。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫指出，目前哈萨克斯坦约有700万名儿童，占全国人口的34%，每年出生的新生儿超过33万名。随着人口持续增长，医疗卫生基础设施面临越来越大的需求。
+根据总统公布的计划，“人民建设”计划第一阶段将在全国建设8座现代化围产期医疗中心，并在阿特劳、阿克托别、阿拉木图、奇姆肯特、卡斯克连、塞梅伊和阿克套7座城市分别建设一座多学科儿童医院。
+首都阿斯塔纳还将新建两处医疗设施。
+总统强调，相关项目应广泛吸引私人资本，充分利用公私合作机制，并提高审批和决策效率。
+在教育领域，托卡耶夫指出，目前哈萨克斯坦有超过23.7万名需要接受融合教育的儿童，相关基础设施和专业人才保障亟待加强。
+他要求政府与地方行政长官共同推进融合教育设施建设，加强特殊教育需要儿童的早期诊断，并建议“哈萨克斯坦人民”基金会积极参与相关工作。
+谈及教师工作环境，总统指出，过去的纸质报表负担如今被各种数字平台和信息系统中的填报工作所取代。
+教师的首要使命是向儿童提供高质量教育，培养有知识、有责任感的下一代。所有妨碍教师履行这一使命的多余工作都必须停止。
+托卡耶夫还对部分学校出现的学生辱骂甚至攻击教师的现象表示关注，强调学校管理层不应向教师施加不合理压力。
+总统要求教育部加强监督，维护教师职业尊严，确保教育改革真正有助于提高教学质量。</div>
+<ul>
+<li>全国儿童约700万占人口34%，年新生儿超33万</li>
+<li>“人民建设”计划建8座围产中心、7所儿童医院</li>
+<li>阿斯塔纳新建两处医疗设施，鼓励公私合作</li>
+<li>超23.7万儿童需融合教育，加强设施与师资</li>
+<li>减轻教师行政负担，维护尊严，提升教学质量</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">医疗教育基建将改善民生，吸引私人资本参与公私合作，缓解财政压力；融合教育推进促进社会公平；教师减负有助于稳定教育队伍，为长期人力资本积累奠定基础。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">12</span> <a href="https://cn.inform.kz/news/xiaoyesannian-0396c819/" target="_blank">改善营商环境 总统提议暂停小微企业检查三年</a></h3>
+<div class="item-meta">哈通社中文版 · 10/28 15:45<span class="source-link"><a href="https://cn.inform.kz/news/xiaoyesannian-0396c819/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫批评现行招商引资体系存在职权重叠、协调不足等问题，要求完善统一投资管理机制，考虑由“巴伊铁列克”控股公司发挥更大作用。他提出为阿拉套新城建立专门司法体系，按英国普通法模式设立投资法院，并要求2027年1月底前提交相关宪法性法律修正案。中小企业已占GDP的40%、固定资本投资的近70%，总统要求制定中型企业发展专项计划。他还批评罚款和临时检查问题，建议自2027年1月1日起再次实施为期三年的小微企业检查暂停措施。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫指出，全球投资竞争日益激烈，但哈萨克斯坦现行招商引资体系仍存在部门职权重叠、协调不足等问题。
+目前，每个机构或个人都按照自己的想法开展工作，缺乏系统性思维、协调配合和必要的专业能力。
+总统要求完善统一的投资管理机制，明确主要负责机构，并提出可考虑由“巴伊铁列克”控股公司在投资管理方面发挥更大作用，国家经济部和外交部则继续履行部分相关职能。
+谈及阿拉套新城建设，托卡耶夫提出建立专门司法体系，其中按照英国普通法模式设立的投资法院负责审理商业案件，民事法院负责处理特殊法律制度涉及的其他事务。
+他要求政府在2027年1月底前，向库鲁尔泰提交《阿拉套市特殊法律制度宪法性法律》相关修正案。
+在中小企业发展方面，总统表示，目前中小企业占GDP的比重已达到40%，占固定资本投资的比重接近70%。
+托卡耶夫要求政府制定中型企业发展专项计划，完善长期融资和技术升级机制，同时考虑在政府及准国有企业采购中为中小企业预留一定份额，并适当放宽供应商准入要求。
+总统还对企业监管中的罚款和临时检查问题提出批评。
+据其介绍，今年上半年，个体经营者违规行为数量下降34%，但罚款总额增长近11%，临时检查次数增加了数十倍。
+对企业经营活动的分析表明，有时候只需要不去干扰企业，就足够了。
+托卡耶夫指出，2020年至2023年实施的小微企业检查暂停措施取得了积极成效。
+因此，他建议库鲁尔泰议员与政府共同研究，在全面评估此前措施利弊的基础上，自2027年1月1日起再次实施为期三年的检查暂停措施。
+应当将这一举措视为一次战略性调整，为重新构建国家监督管理体系、向数字化监管模式转型创造条件。</div>
+<ul>
+<li>总统要求完善统一投资管理机制，明确主要负责机构。</li>
+<li>阿拉套新城将设英国普通法模式投资法院。</li>
+<li>中小企业占GDP40%，占固定资本投资近70%。</li>
+<li>上半年个体经营者违规降34%，罚款增11%。</li>
+<li>建议2027年起再暂停小微企业检查三年。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该举措将改善哈国营商环境，吸引外资，促进中小企业发展，推动经济多元化；同时强化总统权威，为数字化监管转型和阿拉套新城建设提供制度保障，对矿产等领域投资释放积极信号。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">13</span> <a href="https://cn.inform.kz/news/guojiayingchengweirendezhongyao-d40c5052/" target="_blank">托卡耶夫：国家资金应成为吸引私人投资的重要保障</a></h3>
+<div class="item-meta">哈通社中文版 · 10/28 15:01<span class="source-link"><a href="https://cn.inform.kz/news/guojiayingchengweirendezhongyao-d40c5052/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫总统指出，全国基础设施更新和重建是今后国家发展的重要方向，但绝不能仅靠国家资源。过度依赖政府资金会削弱企业积极性，滋生依赖思想。他要求政府动员所有长期融资渠道，与金融界研究合法有效的融资机制，强调国家资金应成为吸引私人投资的保障，在遵守法律前提下发挥公共资金引导作用，为基础设施吸引更多长期资本。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">总统指出，全国范围内的基础设施更新和重建将成为今后国家发展的重要方向。
+总体而言，可以说全国都将投入民用基础设施的全面更新和改造。
+但在完成这一具有战略意义的任务时，绝不能仅仅依靠国家资源。
+托卡耶夫强调，过度依赖政府资金可能削弱企业经营积极性，并在经济领域滋生依赖国家扶持的思想。
+否则，企业经营活动的积极性将会下降，并在经济领域埋下家长主义，或者简单来说就是依赖思想的种子，进而产生众所周知的后果。
+为此，总统要求政府动员所有长期融资渠道，并与金融界共同研究合法、有效的融资机制。
+我们作出决策的逻辑非常简单：国家资金应当成为吸引私人投资的保障。
+总统强调，政府需要在遵守法律的前提下，充分发挥公共资金的引导作用，为基础设施建设吸引更多长期资本。</div>
+<ul>
+<li>全国基础设施更新重建是今后国家发展重要方向</li>
+<li>过度依赖政府资金会削弱企业积极性并滋生依赖思想</li>
+<li>总统要求政府动员所有长期融资渠道</li>
+<li>国家资金应成为吸引私人投资的保障</li>
+<li>政府需在守法前提下发挥公共资金引导作用</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该政策将推动哈国基础设施现代化，吸引私人长期资本，降低财政压力，促进经济多元化；但需平衡公共资金引导与市场机制，避免家长主义，对矿产等长期资本密集型行业投资格局有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">14</span> <a href="https://cn.inform.kz/news/guojiachengweidazhongyaowu-da4e424f/" target="_blank">国家元首：哈萨克斯坦必须成为欧亚大陆重要交通物流枢纽</a></h3>
+<div class="item-meta">哈通社中文版 · 10/28 14:50<span class="source-link"><a href="https://cn.inform.kz/news/guojiachengweidazhongyaowu-da4e424f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫指出，全球物流转型凸显陆路运输战略价值，哈须成为欧亚大陆领先物流中心。他介绍“巴克特—阿亚古兹”铁路2027年运营，将提升哈中货运能力2000万吨；“咸海—里海”公路缩短跨里海运输距离约1000公里、时间至多3天。目前经哈境内货物约占中欧货运量85%，但需转变角色为国际货物流动全面组织者，支持本土物流运营商，建设集散分拨中心，并提升公路质量、支持本国货运企业、发展航空基础设施。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">总统指出，全球物流体系正在经历重大转型，海上运输路线面临的风险进一步凸显了陆路运输走廊的战略价值。
+哈萨克斯坦必须抓住这一历史机遇，真正成为欧亚大陆领先的物流中心。
+托卡耶夫介绍，“巴克特—阿亚古兹”铁路计划于2027年投入运营，建成后将使哈中之间的货物运输能力增加2000万吨。
+今年8月开工建设的“咸海—里海”干线公路，则有望使跨里海运输走廊的运输距离缩短约1000公里，并将货物运输时间缩短至多3天。
+总统表示，目前经哈萨克斯坦境内运输的货物约占中国至欧洲大陆相关货运量的85%，但不能满足于现有优势。
+我们现在就必须转变角色，成为国际货物流动的全面组织者。
+为此，哈萨克斯坦需要支持本土物流运营商发展，建设货物集散和分拨中心，并在交通枢纽周边发展生产和贸易设施。
+在公路建设方面，托卡耶夫要求启动“科克舍套—彼得罗巴甫尔”公路拓宽工程，并于2027年完成所有公路边境口岸的现代化改造。
+总统特别强调，全国公路建设质量必须得到全面提升。
+无论是国家级公路还是地方公路，都必须达到高质量建设标准。今后，全国公路建设和质量管理工作应由政府通过交通部统筹负责。
+托卡耶夫指出，目前哈萨克斯坦超过一半的公路过境运输业务由外国企业承担，政府应采取措施支持本国货运企业。
+谈及航空基础设施，总统表示，阿尔卡雷克机场修复工程已经完成，斋桑、卡通卡拉盖和肯德尔利机场也将于近期投入运营。
+他同时宣布：
+明年，我们将引进全球航空领域的一家大型企业，启动阿斯塔纳新机场建设。
+总统还指出，连接欧洲与亚洲的重要国际航空走廊经过哈萨克斯坦领空，但国家尚未充分利用这一优势，必须完善地面航空服务基础设施。</div>
+<ul>
+<li>全球物流转型凸显陆路走廊战略价值，哈须成为欧亚物流中心</li>
+<li>巴克特—阿亚古兹铁路2027年运营，哈中货运能力增2000万吨</li>
+<li>咸海—里海公路缩短跨里海运输距离约1000公里、时间至多3天</li>
+<li>经哈境内货物约占中欧货运量85%，须转变为全面组织者</li>
+<li>支持本土物流运营商，建设集散分拨中心，提升公路质量</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">将强化哈作为欧亚陆路枢纽地位，提升过境收入与物流竞争力；促进对华经贸与跨里海走廊分流俄线；支持本土企业、改善公路质量，利于经济多元化与外交平衡。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(12 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/kazahstanskie-statistiki-pokazali-kitayskim-kollegam-svoi-tsifrovie-sistemi-0a8f1fe3" target="_blank">哈萨克斯坦统计人员向中国同行展示其数字系统</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/29 04:14<span class="source-link"><a href="https://www.inform.kz/ru/kazahstanskie-statistiki-pokazali-kitayskim-kollegam-svoi-tsifrovie-sistemi-0a8f1fe3" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国家统计局向中国国家统计局代表团展示数字系统和基础设施。中方代表团由数据管理中心副主任荀谢率领，成员包括孟宪宁和张瑾。哈统计局局长图尔卢巴耶夫表示，数字化涵盖统计工作全流程，经验交流有助于完善统计流程。双方合作基于2024年7月签署的谅解备忘录，此前已在在线统计报告和住户调查领域交流经验。此次会议讨论了数字发展新方向。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦统计学家向中国同行展示其数字系统
+
+据哈通社报道，哈萨克斯坦国家统计局专家向中国来宾介绍了该局的数字化转型及其数字基础设施的发展情况。中国代表团则分享了数字技术在统计领域的应用经验，介绍了信息系统发展和工作流程完善的方法。
+
+代表团由中国国家统计局数据管理中心副主任荀谢率领。成员还包括软件开发与管理处处长孟宪宁和人口普查处处长张瑾。
+
+哈萨克斯坦国家统计局局长马克萨特·图尔卢巴耶夫指出，经验交流有助于双方完善统计流程，研究数据工作的新方法。
+
+“数字化涵盖统计工作的所有阶段——从信息收集到最终数据的编制。我们正在发展数字基础设施，引入新的信息系统，完善工作流程。与中国同行的经验交流使我们能够研究新方法，为官方统计的进一步发展找到解决方案，”马克萨特·图尔卢巴耶夫强调。
+
+哈萨克斯坦与中国的统计合作基于2024年7月签署的谅解备忘录。此前，两国专家在在线收集统计报告和住户调查领域交流了经验。此次会议是联合工作的延续，并讨论了数字发展的新方向。
+
+此前有报道称，哈萨克斯坦正在改革统计系统。</div>
+<ul>
+<li>哈统计局向中国代表团展示数字系统和基础设施</li>
+<li>中方代表团由荀谢率领，成员包括孟宪宁和张瑾</li>
+<li>哈统计局局长强调数字化涵盖统计全流程</li>
+<li>双方合作基于2024年7月签署的谅解备忘录</li>
+<li>此前已在在线统计报告和住户调查领域交流经验</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次交流深化了哈中在统计数字化领域的合作，有助于哈国提升统计效率和数据质量，为经济决策提供更精准支撑，同时加强双边关系，但未直接涉及矿产格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/heqixingdahui-89be16ec/" target="_blank">哈萨克斯坦和土耳其总统举行大范围会谈</a></h3>
+<div class="item-meta">哈通社中文版 · 10/29 02:33<span class="source-link"><a href="https://cn.inform.kz/news/heqixingdahui-89be16ec/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与土耳其总统埃尔多安举行大范围会谈。托卡耶夫祝贺土耳其共和国日，强调哈土合作基于共同历史与相互信任，土耳其是哈五大贸易伙伴和十大投资来源国之一。双方关系已提升至永久友谊和扩展战略伙伴关系新水平。埃尔多安表示希望将双边贸易额提高至150亿美元。两国元首还讨论了交通物流、能源、人工智能、农业、国防工业及人文合作，并将共同出席突厥国家组织第13届峰会。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫指出，在土耳其国庆日——共和国日到来前夕举行此次会晤具有深刻的象征意义，并向土耳其总统和全体土耳其人民致以节日祝贺。
+“在您卓越的领导和富有远见的政策引领下，土耳其正在顺利推进大规模改革，政治和经济领域不断焕发新的活力，国家发展势头强劲。土耳其的国际声望也在不断提升。我们认为，您是世界上最具影响力的领导人之一。您立场鲜明、勇于担当，为维护和平与正义所作出的努力得到国际社会的广泛认可。我相信，土耳其人民的地位今后还将进一步提升。哈萨克斯坦始终支持土耳其，并由衷地为兄弟国家取得的每一项成就感到高兴，”托卡耶夫表示。
+托卡耶夫总统强调，进一步加强两国关系、深化各领域合作始终是哈方的优先方向。
+“哈土合作有着深厚的历史根基。我们拥有共同的历史，语言和理念相通，传统也十分相似。两国政治合作建立在相互信任和牢固友谊的基础之上。两国之间没有任何尚未解决的问题。无论在双边层面还是国际舞台上，我们始终相互支持。两国经贸关系也在不断加强。土耳其是哈萨克斯坦最大的五个贸易伙伴之一，也是向我国国民经济投入大量资金的十大主要投资来源国之一。目前，多家土耳其企业在哈萨克斯坦经营良好。我们将继续为土耳其企业提供全方位支持，为其在哈开展业务创造便利条件，”托卡耶夫指出。
+托卡耶夫表示，埃尔多安总统今年5月对哈萨克斯坦进行的国事访问取得了丰硕成果，双方达成了一系列重要共识。访问期间，两国召开了第六次战略合作委员会会议。目前，双方在经贸、投资、文化和人文等领域的重大合作项目正在顺利推进。更重要的是，两国关系已提升至永久友谊和扩展战略伙伴关系的新水平。
+“进一步深化伙伴关系符合双方的共同利益。明天，我们将共同出席突厥国家组织第13届峰会。不久后，安塔利亚还将举办COP31气候大会，我计划出席这一重要活动。毫无疑问，这些高层交往将为两国双边和多边合作注入新的动力，”托卡耶夫总统表示。
+埃尔多安总统向托卡耶夫和兄弟般的哈萨克斯坦人民致以共和国日的祝贺。
+埃尔多安提到，安卡拉近日举行了《库鲁尔泰现象》一书的新书发布会，该书讲述了哈萨克斯坦国家建构的历史。此外，《纳吾鲁孜——突厥世界的共同遗产》一书也已翻译成哈萨克语出版。
+“今年5月我访问阿斯塔纳期间，双方签署了一系列重要文件，其中包括《永久友谊和扩展战略伙伴关系宣言》。在下一次战略合作委员会会议上，我们将通过更加具体的举措进一步巩固双边关系。我们希望将双边贸易额提高到150亿美元，并进一步激发投资合作活力，”埃尔多安表示。
+会谈期间，两国元首还就交通物流、能源、人工智能、农业、国防工业以及文化和人文等领域的合作进行了讨论。</div>
+<ul>
+<li>托卡耶夫与埃尔多安举行大范围会谈，深化永久友谊和扩展战略伙伴关系</li>
+<li>土耳其是哈五大贸易伙伴和十大投资来源国之一，双边贸易目标150亿美元</li>
+<li>两国关系提升至新水平，5月国事访问签署永久友谊宣言</li>
+<li>双方将共同出席突厥国家组织第13届峰会及COP31气候大会</li>
+<li>合作领域涵盖交通物流、能源、人工智能、农业和国防工业</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈土战略伙伴关系，提升哈在突厥国家组织中的枢纽地位，促进经贸投资与能源交通合作，助力哈多元外交平衡，并推动国防工业与人工智能等非资源领域合作，优化矿产开发格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/tokaev-nazval-turtsiyu-odnim-iz-pyati-krupneyshih-torgovih-partnerov-kazahstana-37a25e7d" target="_blank">托卡耶夫称土耳其是哈萨克斯坦五大贸易伙伴之一</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/29 02:27<span class="source-link"><a href="https://www.inform.kz/ru/tokaev-nazval-turtsiyu-odnim-iz-pyati-krupneyshih-torgovih-partnerov-kazahstana-37a25e7d" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在土耳其共和国日前夕会晤埃尔多安，称土耳其为哈五大贸易伙伴之一和十大投资来源国之一。双方强调政治互信无分歧，贸易经济联系扩大，土耳其企业在哈运营成功。托卡耶夫提及埃尔多安5月国事访问成果丰硕，第六次高级别战略合作委员会会议启动贸易、投资和人文领域大规模项目。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">卡瑟姆-若马尔特·托卡耶夫称，在土耳其共和国日前夕举行此次会晤具有深刻象征意义，并向总统雷杰普·塔伊普·埃尔多安和全体兄弟般的土耳其人民致以这一重大节日的祝贺。
+
+——在您的英明领导下，土耳其成功实施大规模改革。国家政治和经济现代化稳步推进，发展势头强劲。土耳其在国际舞台上的地位逐年巩固。您被视为世界上最具影响力的领导人之一。您原则性且果断的政治方针，以及为维护和平与正义所作的不懈努力，得到了全球层面的认可。我相信，土耳其人民的威望将继续增强。哈萨克斯坦始终支持土耳其，并为兄弟般人民的各项成就感到由衷高兴，——哈萨克斯坦总统指出。
+
+图片来源：阿克奥尔达 卡瑟姆-若马尔特·托卡耶夫强调，他特别重视扩大与土耳其的合作。
+
+——哈萨克斯坦与土耳其的关系源远流长。共同的历史和语言、相似的传统将我们紧密相连。我们两国之间的政治互动建立在相互信任和牢不可破的友谊的坚实基础上。我们之间没有任何矛盾和分歧。两国在双边层面和国际组织框架内始终相互支持。贸易经济联系逐步扩大。土耳其是哈萨克斯坦五大贸易伙伴之一。此外，土耳其方面是十大大投资者之一，为我国国民经济投入了大量资金。许多大型土耳其公司在哈萨克斯坦成功运营。我们愿意为土耳其合作伙伴提供全方位支持，并为其业务创造有利条件，——国家元首表示。
+
+据卡瑟姆-若马尔特·托卡耶夫称，雷杰普·塔伊普·埃尔多安今年5月对哈萨克斯坦的国事访问成果丰硕，访问结束后达成了一系列重要协议。
+
+两国举行了第六次高级别战略合作委员会会议。在贸易经济、投资和人文文化领域启动了大规模项目。
+
+哈土关系（原文截断）</div>
+<ul>
+<li>托卡耶夫称土耳其为哈五大贸易伙伴之一</li>
+<li>土耳其位列哈十大投资来源国</li>
+<li>两国政治互信牢固，无任何分歧</li>
+<li>埃尔多安5月访哈达成重要协议</li>
+<li>第六次高级别战略合作委员会会议启动多领域项目</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此表态强化哈土战略伙伴关系，有利于哈吸引土耳其投资、拓展贸易通道，推动经济多元化；外交上巩固突厥国家组织合作，平衡地区格局；矿产领域或促进土耳其对哈资源投资。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/yuduoxinghui-jinyizhanguan-25b7c398/" target="_blank">托卡耶夫与埃尔多安举行会谈 进一步巩固哈土战略伙伴关系</a></h3>
+<div class="item-meta">哈通社中文版 · 10/29 01:15<span class="source-link"><a href="https://cn.inform.kz/news/yuduoxinghui-jinyizhanguan-25b7c398/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与土耳其总统埃尔多安举行会谈，托卡耶夫感谢土方接待并祝贺土耳其共和国日。埃尔多安表示愿深化多领域合作。两国元首指出双边关系保持良好势头，重点讨论加强经贸、投资、文化和人文合作前景，并就国际和地区热点问题交换意见。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫与埃尔多安举行会谈 进一步巩固哈土战略伙伴关系
+正文:
+会谈中，托卡耶夫感谢土方的热情接待，并向埃尔多安及全体土耳其人民致以土耳其国庆日——共和国日的节日祝贺。
+埃尔多安表示，土方愿进一步深化两国间多领域合作。
+两国元首指出，本着永久友谊和扩展战略伙伴关系精神发展的双边关系保持着良好势头。
+Фото: Ақорда 会谈期间，双方重点讨论了加强经贸、投资以及文化和人文领域合作的前景。
+此外，两国总统还就当前国际和地区议程中的热点问题交换了意见。</div>
+<ul>
+<li>托卡耶夫与埃尔多安举行会谈，巩固战略伙伴关系</li>
+<li>托卡耶夫祝贺土耳其共和国日，感谢热情接待</li>
+<li>埃尔多安表示愿进一步深化多领域合作</li>
+<li>双方重点讨论经贸、投资和人文合作前景</li>
+<li>两国元首就国际和地区热点问题交换意见</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访巩固哈土战略伙伴关系，有利于哈国拓展经贸投资渠道，平衡多边外交，增强在中亚与突厥语国家合作中的影响力，对矿产等资源合作格局影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/zaichuzheng-fd4c6ca6/" target="_blank">托卡耶夫在安卡拉总统府出席正式欢迎仪式</a></h3>
+<div class="item-meta">哈通社中文版 · 10/29 00:50<span class="source-link"><a href="https://cn.inform.kz/news/zaichuzheng-fd4c6ca6/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫访问土耳其，在安卡拉总统府出席正式欢迎仪式。土耳其总统埃尔多安迎接托卡耶夫，现场奏响两国国歌并鸣放21响礼炮。两国元首共同检阅仪仗队，相互介绍官方代表团成员。欢迎仪式结束后，两国元首开始举行小范围会谈。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：托卡耶夫在安卡拉总统府出席正式欢迎仪式
+
+为欢迎托卡耶夫到访，现场安排了仪仗队列队迎接。总统车队抵达总统府时，骑兵护卫队在前引导，并一路护送车队前行。
+
+图片：Ақорда 图片：Акорда 土耳其总统雷杰甫·塔伊普·埃尔多安迎接了托卡耶夫。随后，现场奏响哈萨克斯坦和土耳其两国国歌，并鸣放21响礼炮。
+
+图片：Акорда 图片：Акорда 图片：Ақорда 两国元首共同检阅了仪仗队，并相互介绍了出席仪式的官方代表团成员。
+
+欢迎仪式结束后，两国元首开始举行小范围会谈。</div>
+<ul>
+<li>托卡耶夫在安卡拉总统府出席正式欢迎仪式</li>
+<li>埃尔多安迎接托卡耶夫，现场鸣放21响礼炮</li>
+<li>两国元首共同检阅仪仗队并介绍代表团成员</li>
+<li>欢迎仪式后两国元首开始小范围会谈</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈土战略伙伴关系，推动经贸与能源合作，有助于哈萨克斯坦拓展多元外交，平衡地区大国影响，并促进矿产领域投资与技术合作。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/huiguochangliwen-ce7cffe4/" target="_blank">卡林会见联合国秘书长暴力侵害儿童问题特别代表</a></h3>
+<div class="item-meta">哈通社中文版 · 10/29 00:47<span class="source-link"><a href="https://cn.inform.kz/news/huiguochangliwen-ce7cffe4/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统办公厅主任卡林会见联合国秘书长暴力侵害儿童问题特别代表纳贾特·马拉·姆吉德，讨论儿童权益保护合作。卡林表示，过去三年哈通过11部儿童权利法律，起草两部新法案涉及特殊需要儿童和信息数字安全，制定2026-2030年《哈萨克斯坦儿童》概念规划。针对儿童的特别严重犯罪下降45%，强迫儿童性行为犯罪减少10%，未成年人犯罪下降10%。‘国家基金—儿童’计划向700多万名儿童划拨超25亿美元。姆吉德高度评价哈改革。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">卡林会见联合国秘书长暴力侵害儿童问题特别代表
+
+会谈期间，双方就加强儿童权益保护、预防针对儿童的暴力行为以及保障下一代福祉等领域的合作进行了讨论。
+
+卡林指出，保障儿童的福祉与安全是国家元首战略方针的优先事项之一。
+
+他介绍了哈萨克斯坦为保护儿童权益、为儿童全面发展创造条件而采取的立法和社会保障措施。
+
+过去三年间，哈萨克斯坦共通过11部旨在保障儿童权利与利益的法律。此外，根据国家元首的指示，目前还起草了两部新法案，分别涉及对有特殊需要儿童的综合支持，以及保障儿童的信息与数字安全。
+
+根据总统指示，2026年至2030年的《哈萨克斯坦儿童》概念规划已制定并正在实施。
+
+会上还提到，与2024年相比，针对儿童的特别严重犯罪数量下降了45%，强迫儿童发生性行为的犯罪数量减少了10%。与此同时，未成年人实施的犯罪数量也下降了10%。卡林表示，哈萨克斯坦将继续系统推进儿童权益保护工作，进一步加强对未成年人的安全保障。
+
+此外，卡林还介绍了总统发起的“国家基金—儿童”计划的实施情况。过去三年间，该计划已向700多万名儿童划拨超过25亿美元。
+
+卡林还谈及国家元首哈斯穆-卓玛尔特·托卡耶夫各项改革的战略方向及其落实情况。他特别强调了新宪法在保护家庭和儿童、促进人力资本发展方面的重要意义，并指出宪法价值观在下一代教育和成长过程中发挥着重要作用。
+
+纳贾特·马拉·姆吉德高度评价了哈萨克斯坦为加强儿童保护体系而推进的改革。
+
+联合国驻哈萨克斯坦常驻协调员萨兰戈·拉德纳拉格查和联合国儿童基金会驻哈萨克斯坦代表处负责人拉希德·穆斯塔法·萨瓦尔也参加了会见。</div>
+<ul>
+<li>卡林与联合国特别代表讨论儿童权益保护合作</li>
+<li>哈过去三年通过11部儿童权利法律，起草两部新法案</li>
+<li>针对儿童特别严重犯罪下降45%，未成年人犯罪下降10%</li>
+<li>‘国家基金—儿童’计划向700多万儿童划拨超25亿美元</li>
+<li>姆吉德高度评价哈儿童保护体系改革</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此会见强化哈国在国际儿童权益领域的合作形象，有助于吸引联合国支持；立法和基金计划提升社会福利与人力资本，犯罪率下降改善社会治理；外交上展示哈国改革成效，增强软实力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/qijinxingzhengwen-9b25a734/" target="_blank">托卡耶夫抵达土耳其进行正式访问</a></h3>
+<div class="item-meta">哈通社中文版 · 10/28 23:04<span class="source-link"><a href="https://cn.inform.kz/news/qijinxingzhengwen-9b25a734/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫于10月28日至30日对土耳其进行正式访问，土耳其总统埃尔多安在安卡拉埃蒂梅斯古特机场迎接，并举行仪仗队检阅仪式。两国元首将在会谈中进一步巩固和深化双边战略伙伴关系，托卡耶夫还将出席第十二届突厥国家组织峰会。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：托卡耶夫抵达土耳其进行正式访问
+
+正文：
+土耳其总统雷杰甫·塔伊普·埃尔多安在安卡拉埃蒂梅斯古特机场迎接托卡耶夫总统。
+
+Фото: Ақорда Фото: Ақорда Фото: Ақорда 为欢迎托卡耶夫总统到访，机场举行了隆重的仪仗队检阅仪式。
+
+Фото: Ақорда Фото: Акорда Фото: Акорда 托卡耶夫总统与埃尔多安总统在机场休息室进行了简短交谈。
+
+Фото: Акорда Фото: Акорда 据此前报道，应土耳其总统雷杰普·塔伊普·埃尔多安邀请，托卡耶夫总统将于10月28日至30日对土耳其共和国进行正式访问。
+
+访问期间，两国元首将举行会谈，进一步巩固和深化双边战略伙伴关系。此外，哈萨克斯坦总统还将出席第十二届突厥国家组织峰会。</div>
+<ul>
+<li>托卡耶夫10月28日至30日正式访问土耳其</li>
+<li>埃尔多安在安卡拉机场迎接并举行检阅仪式</li>
+<li>两国元首会谈聚焦深化战略伙伴关系</li>
+<li>托卡耶夫出席第十二届突厥国家组织峰会</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访将强化哈土战略伙伴关系，拓展经贸与投资合作；出席突厥国家组织峰会提升哈国在突厥世界的政治影响力，并可能推动里海地区矿产与能源运输合作。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/jiushiguowen-b4790b05/" target="_blank">托卡耶夫就西班牙铁路事故向西班牙国王致慰问电</a></h3>
+<div class="item-meta">哈通社中文版 · 10/28 22:56<span class="source-link"><a href="https://cn.inform.kz/news/jiushiguowen-b4790b05/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫就西班牙托莱多省铁路事故造成多人死亡，向西班牙国王费利佩六世、遇难者家属及全体西班牙人民致慰问电，并表示深切哀悼，同时祝愿所有伤者早日康复。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">消息称，国家元首哈斯穆-卓玛尔特·托卡耶夫对西班牙托莱多省发生铁路事故并造成多人死亡表示深切哀悼，并向西班牙国王费利佩六世、遇难者家属以及全体西班牙人民致以慰问。
+此外，托卡耶夫还祝愿所有伤者早日康复。</div>
+<ul>
+<li>托卡耶夫就西班牙铁路事故致慰问电</li>
+<li>事故发生在托莱多省，造成多人死亡</li>
+<li>慰问对象包括西班牙国王和遇难者家属</li>
+<li>托卡耶夫祝愿所有伤者早日康复</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此慰问电展现哈萨克斯坦人道主义外交姿态，有助于巩固与西班牙的友好关系，但事件本身对哈国政治、经济、外交及矿产格局无直接实质影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://cn.inform.kz/news/duiqijinxingzhengwen-b9f7b70b/" target="_blank">直播：哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫对土耳其进行正式访问</a></h3>
+<div class="item-meta">哈通社中文版 · 10/28 22:00<span class="source-link"><a href="https://cn.inform.kz/news/duiqijinxingzhengwen-b9f7b70b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>应土耳其总统埃尔多安邀请，哈萨克斯坦总统托卡耶夫于10月28日至30日对土耳其进行正式访问。访问期间，两国元首将举行会谈，旨在进一步巩固和深化双边战略伙伴关系。托卡耶夫总统还将出席第十二届突厥国家组织峰会。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">直播：哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫对土耳其进行正式访问
+
+据此前报道，应土耳其总统雷杰普·塔伊普·埃尔多安邀请，托卡耶夫总统将于10月28日至30日对土耳其共和国进行正式访问。
+
+访问期间，两国元首将举行会谈，进一步巩固和深化双边战略伙伴关系。此外，哈萨克斯坦总统还将出席第十二届突厥国家组织峰会。</div>
+<ul>
+<li>托卡耶夫10月28-30日正式访问土耳其</li>
+<li>应埃尔多安邀请，两国元首将举行会谈</li>
+<li>访问旨在深化双边战略伙伴关系</li>
+<li>托卡耶夫将出席第十二届突厥国家组织峰会</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访将强化哈土战略伙伴关系，促进经贸与投资合作；出席突厥国家组织峰会提升哈国在突厥世界的政治影响力，并可能推动里海地区矿产与能源合作格局调整。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">10</span> <a href="https://cn.inform.kz/news/ri-ad6f2e7a/" target="_blank">托卡耶夫致电帕维尔祝贺捷克独立日</a></h3>
+<div class="item-meta">哈通社中文版 · 10/28 21:37<span class="source-link"><a href="https://cn.inform.kz/news/ri-ad6f2e7a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>10月28日，哈萨克斯坦总统托卡耶夫致电捷克总统帕维尔，祝贺捷克独立日。托卡耶夫强调哈方重视与捷克基于相互尊重和信任的伙伴关系，愿进一步加强双边合作，造福两国人民，并祝愿帕维尔工作顺利、捷克人民幸福繁荣。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">10月28日，哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫向彼得·帕维尔发去贺电，祝贺捷克共和国独立日。
+托卡耶夫在贺电中指出，哈萨克斯坦高度重视与捷克建立在相互尊重和信任基础上的伙伴关系，并表示愿进一步加强两国双边合作，造福两国人民。
+此外，托卡耶夫还祝愿彼得·帕维尔工作顺利，并祝愿友好的捷克人民幸福安康、繁荣昌盛。</div>
+<ul>
+<li>托卡耶夫10月28日致电帕维尔祝贺捷克独立日</li>
+<li>哈方重视与捷克相互尊重信任的伙伴关系</li>
+<li>托卡耶夫表示愿进一步加强双边合作</li>
+<li>祝愿帕维尔工作顺利及捷克人民繁荣昌盛</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此贺电巩固哈捷友好关系，促进双边政治互信与经济合作，为哈国拓展欧洲外交空间，对矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">11</span> <a href="https://cn.inform.kz/news/waibushiwugongmin-0b6d871e/" target="_blank">哈萨克斯坦外交部：西班牙铁路事故暂无哈公民伤亡</a></h3>
+<div class="item-meta">哈通社中文版 · 10/28 19:47<span class="source-link"><a href="https://cn.inform.kz/news/waibushiwugongmin-0b6d871e/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦外交部表示，根据现有信息，西班牙马德里南部高速列车相撞事故的遇难者和伤者中无哈萨克斯坦公民，外交部将继续核实。该事故已造成至少30人死亡，是西班牙今年第2起同类灾难。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦外交部：西班牙铁路事故暂无哈公民伤亡
+
+“根据目前掌握的信息，西班牙铁路事故中的遇难者和伤者中均无哈萨克斯坦公民。哈萨克斯坦外交部将继续核实相关信息，”外交部表示。
+
+据法广报道，西班牙首都马德里南方今天发生高速列车相撞事故，地方当局表示，最新统计显示至少30人死亡。这是西班牙今年第2起同类灾难。</div>
+<ul>
+<li>哈外交部称西班牙铁路事故无哈公民伤亡</li>
+<li>外交部将继续核实相关信息</li>
+<li>马德里南部发生高速列车相撞事故</li>
+<li>事故至少造成30人死亡</li>
+<li>这是西班牙今年第2起同类灾难</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该事件对哈国政治经济外交矿产格局无直接影响，但哈外交部快速回应体现对海外公民安全的高度重视，有助于维护双边关系稳定。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">12</span> <a href="https://cn.inform.kz/news/shinianlaichang56-bad27ccf/" target="_blank">哈萨克斯坦过境货运量十年增5.6倍 中国始发线路成重要支撑</a></h3>
+<div class="item-meta">哈通社中文版 · 10/28 13:10<span class="source-link"><a href="https://cn.inform.kz/news/shinianlaichang56-bad27ccf/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>过去十年哈萨克斯坦过境货运量增长5.6倍，2024年达2130万吨。2026年前9个月过境货运量3260万吨，同比增长13.1%，政府计划2035年提升至1亿吨。2025年铁路运输主导，达1870万吨；中国始发线路重要，至乌兹别克斯坦650万吨，集拼货物400万吨。运输收入4.5万亿坚戈，同比增长5.3%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">根据哈萨克斯坦国家统计局援引财政部国家收入委员会的数据，过去十年，哈萨克斯坦过境货运量逐年增长。2020年达到1160万吨，2022年增至1560万吨，2024年进一步增长至2130万吨。
+哈萨克斯坦政府数据显示，2026年1月至9月，全国过境货运量达到3260万吨，同比增长13.1%。政府计划到2035年将年度过境货运量提升至1亿吨。为实现这一目标，哈萨克斯坦正在建设新的铁路线路，并对现有铁路区段进行现代化改造。
+从2025年过境运输结构来看，铁路运输占据主导地位，运输量达到1870万吨，高于2024年的1330万吨。由牵引车和挂车组成的车辆运输量则从570万吨增至1680万吨，增长近两倍。
+从主要运输方向来看，中国始发的过境货运线路占据重要地位。2025年，中国至乌兹别克斯坦方向的货运量达到650万吨，另有400万吨为从中国发往哈萨克斯坦及其他国家的集拼货物。
+中国至俄罗斯方向的货运量达到300万吨。其他主要运输线路包括乌兹别克斯坦至俄罗斯（220万吨）、中国至伊朗（210万吨）以及中国至波兰（160万吨）。
+从过境货物种类来看，冷轧钢铁产品位居首位，运输量达到560万吨。其次是摩托车、轻便摩托车及类似交通工具，运输量为220万吨；乘用车为61.92万吨；部分聚合物产品为48.24万吨；汽车零部件为47.82万吨。
+2026年1月至9月，哈萨克斯坦各类运输方式完成货运总量7.121亿吨。
+需要注意的是，由于统计方法发生变化，铁路货运量统计中不再计入空车厢，因此在与上年同期数据进行比较时，需要考虑这一因素。按照统一统计口径计算，今年前9个月全国货运总量同比增长0.9%。
+具体来看，今年前9个月，公路及城市电力交通运输货运量为2.704亿吨，铁路运输货运量为2.485亿吨，管道运输货运量为1.898亿吨。
+同期，哈萨克斯坦运输企业通过货物、行李及货运托运行李运输获得的收入达到4.5万亿坚戈，同比增长5.3%。
+其中，铁路运输收入最高，达到1.8万亿坚戈；公路及城市电力交通运输收入为1.2万亿坚戈；管道运输收入为1.4万亿坚戈。
+过境运输线路的发展为哈萨克斯坦交通运输行业创造了更多机遇。除扩大运输规模外，物流服务、仓储基础设施以及运输工具维护和维修等领域也发挥着重要作用。</div>
+<ul>
+<li>过境货运十年增5.6倍，2024年达2130万吨</li>
+<li>2026年前9月过境货运3260万吨，同比增13.1%</li>
+<li>计划2035年过境货运量提升至1亿吨</li>
+<li>2025年铁路运输1870万吨，车辆运输1680万吨</li>
+<li>中国始发线路关键，至乌兹别克斯坦650万吨</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">过境货运增长强化哈国欧亚物流枢纽地位，中国线路支撑提升过境收入与外交筹码；铁路和车辆运输扩张带动基建与就业，但需平衡对华依赖及矿产等货物结构单一风险。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/rengongnengruliguojiazheng-773cf145/" target="_blank">人工智能如何助力国家财政收支预测？</a></h3>
+<div class="item-meta">哈通社中文版 · 10/29 00:21<span class="source-link"><a href="https://cn.inform.kz/news/rengongnengruliguojiazheng-773cf145/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫总统要求研究人工智能在预算编制中的应用。哈财政部电子财务中心介绍，正利用“国家财政数字地图”和“企业数字地图”改进预算收支预测，通过机器学习分析历史数据、宏观经济指标及企业信息，建立情景预测模型，重点分析企业所得税和增值税等税收趋势，并综合考虑支出规律，以提升预测质量。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫总统在国情咨文中要求全面研究人工智能在预算编制工作中的应用潜力。
+对此，哈萨克斯坦财政部相关代表介绍了这一领域正在开展的工作。
+“利用‘国家财政数字地图’和‘企业数字地图’，有助于改进预算收入和支出的预测。现代分析模型能够整合来自不同渠道的数据，帮助更深入地评估各地区的财务状况，识别影响预算收入和支出的因素，并为管理决策提供必要的预测依据，”财政部电子财务中心专家表示。
+分析各地区财务指标
+财政部代表解释说，“国家财政数字地图”能够将各地区的财务指标以可视化方式呈现出来，并进行分析。借助这一工具，可以评估不同地区之间的差异，并跟踪现有指标的变化。
+通过地图进行可视化分析，有助于全面了解各地区的财务状况，为作出相应决策提供信息支持。因此，数字地图可以作为预算规划中的分析工具，提高相关数据的直观性和可获取性。
+企业数据为预算预测提供补充
+电子财务中心专家指出，“企业数字地图”旨在将企业经营活动、企业在各地区的分布情况以及政府扶持措施等相关信息纳入财务分析。
+“将企业数据与地区财务指标结合起来，有助于评估特定地区的经济活跃程度，并进一步分析其与预算收入之间的联系，”中心专家解释道。
+人工智能助力构建情景预测模型
+电子财务中心代表表示，运用机器学习方法，可以从历史数据中识别规律，评估宏观经济指标的影响，并针对不同的预算收入来源和支出方向建立情景预测模型。
+在收入预测方面，可以分析税收收入的变化趋势，尤其是企业所得税和增值税收入，以及宏观经济因素对税基的影响。这有助于评估税收收入可能出现的变化，并识别可能影响预算执行的因素。
+“在支出预测方面，模型会综合考虑历史支出变化、季节性波动、预算义务以及影响资金需求的其他因素。机器学习模型通过分析支出规律，可以形成预测性评估结果，供专业人员进一步分析，”中心专家补充道。
+中心专家认为，在建立国家预算收入和支出预测模型时，综合运用历史数据、宏观经济指标、地区财务指标和企业经营活动相关信息，是一个具有发展前景的方向。
+“人工智能技术有助于识别稳定规律、评估不同因素的影响、比较不同预测情景，并提醒专业人员及时关注预测偏差。同时，预测结果的质量也取决于基础数据是否完整、可靠，所采用的方法是否科学，以及是否对分析结果进行持续检验，”中心专家总结道。</div>
+<ul>
+<li>总统要求研究AI在预算编制中的应用潜力</li>
+<li>财政部利用数字地图可视化分析地区财务指标</li>
+<li>企业数字地图整合企业经营与政府扶持信息</li>
+<li>机器学习构建收支情景预测模型</li>
+<li>预测质量取决于数据完整性和方法科学性</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举将提升哈国财政预算的精准性和前瞻性，优化资源配置，增强经济调控能力；同时推动数字政府建设，为矿产等关键行业税收预测提供支撑，助力经济稳定。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/jiayouyuzhongxiaoyeyingfa-47fda39a/" target="_blank">金融专家：暂缓检查有助于中小企业适应新税法</a></h3>
+<div class="item-meta">哈通社中文版 · 10/28 20:21<span class="source-link"><a href="https://cn.inform.kz/news/jiayouyuzhongxiaoyeyingfa-47fda39a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>金融专家沃勒扎耶夫指出，疫情期间的检查暂停令帮助中小企业渡过难关，当前创业者正处于适应税制改革阶段，国家应给予支持，尤其是小企业。减轻行政负担、营造稳定可预期的经营环境，能提高创业者依法经营和如实申报的积极性，促进企业发展并保持税收稳定增长。他还强调数字平台潜力，农村居民可通过电商平台销售奶疙瘩、黄油等本土产品，拓宽销路增加收入。托卡耶夫总统在国情咨文中表示，年底前将制定规范数字就业的简化法律制度。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">金融专家：暂缓检查有助于中小企业适应新税法
+
+“疫情期间，检查暂停令帮助许多中小企业渡过了难关。如今，创业者同样处于适应税制改革、熟悉新规要求的阶段。因此，在这一过渡时期，国家给予企业必要的支持尤为重要，尤其是对小型企业而言，”沃勒扎耶夫表示。
+
+他指出，支持企业发展的重要途径之一，是切实减轻创业者的行政负担。过多的检查和繁琐的要求可能给企业经营带来额外压力。相反，如果能够营造稳定、可预期的经营环境，创业者依法经营、如实申报收入的积极性就会提高。这不仅有利于企业发展，也有助于保持国家税收收入的稳定增长。
+
+在强调扶持小型企业的同时，这位专家还谈到了数字平台在帮助民众增加收入方面的潜力。以农村居民为例，他们如今可以通过各类电商平台，将自家生产的奶疙瘩、黄油等本土产品销往更广阔的市场。如果平台能够提供产品销售、收款和配送等服务，就有望为农村小规模经营创造更多机会。
+
+“这将帮助在家中生产自有产品的人以及从事农业生产的群众拓宽销路、接触更多消费者，进而增加收入，”沃勒扎耶夫补充道。
+
+值得一提的是，托卡耶夫在年度国情咨文中表示，政府将在年底前制定规范数字就业的简化法律制度，为相关就业形式提供制度保障。</div>
+<ul>
+<li>检查暂停令助中小企业渡过疫情难关</li>
+<li>过渡期国家支持小企业适应税改尤为重要</li>
+<li>减轻行政负担可促依法经营和税收增长</li>
+<li>电商平台助农村居民销售本土产品增收</li>
+<li>年底前制定规范数字就业的简化法律制度</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">暂缓检查减轻中小企业行政负担，有利于税改平稳过渡和税收稳定；数字平台助农增收，配合数字就业立法，将促进农村经济与就业规范化，对哈国经济和社会稳定产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/xinggong28riyuzhuyaowaizhijiande-5ba863e7/" target="_blank">央行公布28日坚戈与主要外币之间的汇率标准</a></h3>
+<div class="item-meta">哈通社中文版 · 10/28 13:36<span class="source-link"><a href="https://cn.inform.kz/news/xinggong28riyuzhuyaowaizhijiande-5ba863e7/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行公布2026年10月28日坚戈与主要外币官方汇率：美元兑坚戈1:455.63，欧元兑坚戈1:507.89，俄罗斯卢布兑坚戈1:5.65，土耳其里拉兑坚戈1:9.15，中国元兑坚戈1:68.34。央行规定，坚戈兑美元官方汇率基于阿斯塔纳时间15:30证券交易所加权平均汇率确定，其他外币汇率依据16:00交叉汇率计算。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：央行公布28日坚戈与主要外币之间的汇率标准
+正文：根据央行公布的信息，2026年10月28日，哈萨克斯坦坚戈与国际主要货币之间的兑换汇率标准如下：
+美元兑坚戈（USD/KZT） – 1：455.63
+欧元兑坚戈（EUR/KZT）- 1：507.89
+俄罗斯卢布兑坚戈（RUB / KZT）-1: 5.65
+土耳其里拉兑坚戈（TRY / KZT）- 1: 9.15
+中国元兑坚戈（CNY / KZT）- 1：68.34
+值得一提的是，根据哈萨克斯坦国家银行规定，截至阿斯塔纳时间当日15:30，在哈萨克斯坦证券交易所形成的坚戈兑美元加权平均汇率，将被确定为下一工作日坚戈兑美元官方汇率；坚戈兑其他外币的官方汇率，则依据截至阿斯塔纳时间16:00形成的交叉汇率计算得出。</div>
+<ul>
+<li>美元兑坚戈汇率为1:455.63</li>
+<li>欧元兑坚戈汇率为1:507.89</li>
+<li>卢布兑坚戈1:5.65，里拉兑坚戈1:9.15</li>
+<li>人民币兑坚戈汇率为1:68.34</li>
+<li>美元汇率基于15:30交易所加权平均价</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率数据反映坚戈对主要货币的比价关系，为贸易和投资提供定价基准。美元汇率形成机制体现哈国金融市场透明度，有助于稳定市场预期，对矿产等大宗商品出口结算具有参考意义。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/guojiayaoditi-guanliji-25a36556/" target="_blank">国家元首要求改革地质勘探体系 建立关键金属储备管理机制</a></h3>
+<div class="item-meta">哈通社中文版 · 10/28 15:19<span class="source-link"><a href="https://cn.inform.kz/news/guojiayaoditi-guanliji-25a36556/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫要求从根本上改革地质勘探体系，将其视为高科技产业，利用先进技术研究地下资源，确保地质数据公开透明并吸引私人资本。他指出关键金属重要性日益提高，应借鉴国际经验建立国家储备管理体系，提供长期融资和长期包销协议保障需求，并在今年年底前提交具体建议。他还要求研究建立国家有色金属和稀有金属储备的必要性，融入全球生产链，避免重复建设，强化产业协调，形成区域产业生态体系。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">总统指出，丰富的矿产和原材料资源是哈萨克斯坦的重要战略优势，但传统地质勘探方式已难以适应现代产业发展需求。
+我们必须从根本上改变地质勘探方式。继续沿用过去的方法寻找新矿床，显然难以取得理想成果。
+如今，我们必须将地质勘探视为一个高科技产业。
+托卡耶夫要求利用先进技术全面研究国家地下资源，确保相关地质数据公开透明、便于获取，并积极吸引私人资本参与新矿床勘探。
+总统指出，随着全球产业发展，关键金属的重要性日益提高。哈萨克斯坦应借鉴国际经验，建立高效管理此类金属储备的国家体系。
+这一体系应具备为矿业项目提供长期融资的机制，并通过与相关企业签订长期包销协议，保障产品需求。
+这是政府面临的重要任务之一。必须与企业界共同研究，并在今年年底前向我提交具体建议。
+托卡耶夫还表示，应研究建立国家有色金属和稀有金属储备的必要性。
+我们的最终目标，是让哈萨克斯坦融入全球生产链。国家出口政策也必须服务于这一目标。
+总统要求政府与相关领域的发达国家建立战略伙伴关系，同时在引进投资时充分考虑各地区的产业基础和市场需求，避免重复建设。
+他以Qarmet大型钢铁企业为例指出，尽管国内已经拥有大型钢铁生产企业，但另有三个州计划建设类似工厂，而这些项目未来能否获得足够市场需求，目前尚无明确答案。
+如果不加强部门之间的协调，国家经济就可能失去自身潜力。
+托卡耶夫要求政府进一步强化产业发展统筹协调，各地区则应明确自身优势，避免过度依赖单一产业或企业。
+他强调，应围绕重点产业同步发展教育、应用科学、物流、服务业、配套制造和技术创业，形成完整的区域产业生态体系。
+总统表示，相信“人民建设”计划将为各地区形成这样的产业生态体系发挥积极作用。</div>
+<ul>
+<li>总统要求将地质勘探视为高科技产业，根本改变勘探方式。</li>
+<li>建立关键金属储备国家体系，提供长期融资和包销协议。</li>
+<li>今年年底前提交具体建议，研究建立有色金属和稀有金属储备。</li>
+<li>避免重复建设，以Qarmet为例指出三州计划建类似工厂风险。</li>
+<li>强化产业统筹协调，围绕重点产业形成区域产业生态体系。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该政策将推动哈国矿业技术升级和关键金属储备体系建设，增强资源管理能力，吸引私人资本和外资，促进融入全球生产链，但需协调地区产业布局，避免重复建设，对经济多元化和外交合作产生积极影响。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-10-29 09:04</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
