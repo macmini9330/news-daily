@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年10月30日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年10月30日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年10月29日早9:00至2026年10月30日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 15 条</span><span class="stat-chip">3 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">8</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">4</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">0</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/432-kandidata-pretenduyut-na-140-mest-v-maslihatah-atirauskoy-oblasti-7907e8fa" target="_blank">432名候选人角逐阿特劳州地方议会140个席位</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/30 02:26<span class="source-link"><a href="https://www.inform.kz/ru/432-kandidata-pretenduyut-na-140-mest-v-maslihatah-atirauskoy-oblasti-7907e8fa" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>阿特劳州地方议会选举共设140个席位（州30、市25、区85）。提名阶段403人提交文件，其中146人自我提名、257人政党提名，17人撤回后剩386人。州议会15个席位有6个政党提名46名候选人，均满足女性和青年占比不低于30%的要求。登记截至11月1日18时，候选人须缴纳42.5万坚戈保证金，当选或获5%以上选票可退还。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：432名候选人角逐阿特劳州地方议会140个席位
+
+总体而言，该州州、市和区三级地方议会共设140个议员席位。其中30个属于州地方议会，25个属于阿特劳市地方议会，其余85个分配给了七个区的地方议会。
+
+在候选人提名阶段，单席位选区共有403人提交了文件。其中146名公民通过自我提名参选，257人由政党提名。此后，17人根据个人申请撤回了候选人资格。因此，截至10月27日提名阶段结束，名单上剩余386名候选人。
+
+州地方议会15个席位共有6个政党提交了名单。&quot;阿乌尔&quot;党提名4名候选人，&quot;阿扎特&quot;党7名，&quot;共和&quot;党6名，哈萨克斯坦人民党2名，&quot;拜塔克&quot;党3名，&quot;阿迪列特&quot;党24名候选人。共计46名候选人。根据法律，政党名单中女性和青年比例不得低于30%。据委员会数据，所有政治组织的名单均符合该要求。
+
+候选人提名期限于10月27日结束。登记工作按照批准的时间表继续进行，将持续至11月1日18:00。阿特劳州地区选举委员会主席阿西亚·基斯塔乌巴耶娃表示，登记过程中将检查候选人是否符合法律规定的条件。此外，在登记前，每位候选人必须缴纳42.5万坚戈的选举保证金。
+
+——选举保证金在候选人当选或投票结果获得不少于5%选票的情况下退还，若候选人在选举日前死亡也退还。对于政党名单，若政党获得不少于5%的选票，保证金退还政党。政党名单提名的候选人保证金由政党缴纳，而单席位选区的候选人则自费缴纳，——阿西亚·基斯塔乌巴耶娃解释道。</div>
+<ul>
+<li>阿特劳州地方议会共140席，州30席、市25席、区85席</li>
+<li>提名阶段403人，撤回17人后剩386名候选人</li>
+<li>州议会15席有6个政党提名46人，女性青年占比达标</li>
+<li>登记截至11月1日，候选人须缴42.5万坚戈保证金</li>
+<li>保证金当选或获5%以上选票可退还，政党名单由政党缴纳</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">选举将重塑阿特劳州地方政治代表结构，政党竞争集中于州议会；保证金制度提高参选门槛，可能影响独立候选人；地方议会组成将间接影响油气重镇的资源政策与地方治理。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/minfayingyingshifa-57ba6b90/" target="_blank">哈萨克斯坦议员：新版《民法典》应顺应时代发展</a></h3>
+<div class="item-meta">哈通社中文版 · 10/30 00:46<span class="source-link"><a href="https://cn.inform.kz/news/minfayingyingshifa-57ba6b90/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦议员沙帕克表示，新版《民法典》应顺应数字经济和新型经济模式发展，更新公民权益保护机制。现行《民法典》自20世纪90年代实施至今，新版总则和分则均将重新起草，计划明年年底前通过。沙帕克还强调需评估“倾听型国家”理念落实情况，以政府部门工作效率和公民需求回应程度衡量改革成效。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦议员：新版《民法典》应顺应时代发展
+正文:
+“如今，新的经济模式和数字工具正逐步融入我们的生活。因此，保护公民权益的机制也需要不断更新。这是总统国情咨文提出的重要议题之一，”沙帕克说。
+沙帕克指出，现行《民法典》自20世纪90年代起实施至今已有多年。为此，新法律应充分考虑当前的实际情况，确保法律关系各方的利益得到平衡。
+“《民法典》由总则和分则两部分组成。我认为，这两个部分都将重新起草。按照计划，新版《民法典》将在明年年底前通过，”沙帕克表示。
+此外，这位议员还谈到了国家治理体系的运行效率，并指出有必要评估“倾听型国家”理念在实践中的落实情况。
+“我们一直在推进‘倾听型国家’理念。但民众的声音是否得到重视？公民提出的问题是否反映在政府部门的实际工作中？这些问题需要得到回答。改革成效应当通过政府部门的工作效率，以及公民需求得到重视和回应的程度来衡量，”沙帕克说。</div>
+<ul>
+<li>新版《民法典》应适应数字经济和新型经济模式</li>
+<li>现行《民法典》自20世纪90年代实施至今</li>
+<li>新版总则和分则均将重新起草，明年年底前通过</li>
+<li>需评估“倾听型国家”理念落实情况</li>
+<li>以政府效率和公民需求回应衡量改革成效</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">新版《民法典》将重塑哈国市场经济法律基础，平衡各方利益，促进数字经济发展；同时推动“倾听型国家”理念落地，提升治理效率，增强公民权益保护，对政治稳定和经济现代化具有积极意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/2026nianguoqingwenquanwenmiande-79791c11/" target="_blank">哈萨克斯坦总统托卡耶夫2026年国情咨文全文：《新历史阶段哈萨克斯坦面临的紧迫任务》</a></h3>
+<div class="item-meta">哈通社中文版 · 10/29 11:00<span class="source-link"><a href="https://cn.inform.kz/news/2026nianguoqingwenquanwenmiande-79791c11/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫发表2026年国情咨文，强调今年独立35周年、3月通过新宪法并于7月1日生效，为政治体制革新注入动力。咨文指出维护独立与主权问题尚未彻底解决，需确保社会团结，应对全球性挑战、虚假指责和信任危机，并分享改善社会经济状况的思考与未来任务。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">以下为国情咨文全文：
+亲爱的同胞们！
+尊敬的库鲁尔泰议员和政府成员们！
+今天，我作为国家元首，向哈萨克斯坦人民发表例行国情咨文。这篇国情咨文具有特殊的意义和内容。
+10月25日，我们庆祝了国家节日——共和国日。正是在这一天，《国家主权宣言》获得通过。我们在建设独立自主国家的道路上迈出了勇敢的一步。不久之后，我们高高举起独立的旗帜，奠定了国家的坚实基础。
+今年，我们迎来了神圣的国家独立35周年。这一历史性里程碑在民族发展史上具有特殊地位。
+今年3月，我国人民通过了作为国家制度根本基石的宪法。这是对整个国家具有深远历史意义的重大事件。
+可以说，宪法是几代人之间达成的一项神圣契约。因为宪法明确规定了当今哈萨克斯坦的国家面貌以及未来的发展方向。
+获得广大公民支持的宪法于7月1日正式生效，为我国政治体制的根本性革新和新国家权力机构的建立注入了强大动力。全国人民积极投身于建设美好未来的宏伟事业。
+国家生活中的所有历史性变革，都在人民的见证下发生。尽管这一问题极为重要，但我认为无需过多赘述。
+Photo credit: Akorda 今天，我将同大家分享关于改善我国社会经济状况的思考，并阐述未来的目标与任务。
+坦率地说，目前涉及维护我国独立与主权的所有问题尚未得到彻底解决。这意味着，我们面前仍然存在许多亟待解决的重要任务。
+要顺利完成这些任务，首先必须确保整个社会团结和睦。显而易见，没有团结与共识，就不可能实现任何改革和进步。
+当前，全球性挑战日益严峻，我们必须更加重视社会的责任意识和纪律秩序。
+如今，世界各国之间毫无根据的虚假指责和暗中对抗不断加剧，主要大国和具有影响力的国家之间普遍出现了相互信任危机。</div>
+<ul>
+<li>今年庆祝独立35周年，3月通过新宪法，7月1日生效</li>
+<li>宪法为政治体制根本革新和新国家权力机构注入动力</li>
+<li>维护独立与主权问题未彻底解决，需社会团结共识</li>
+<li>全球挑战严峻，需重视社会责任意识和纪律秩序</li>
+<li>国际虚假指责和信任危机加剧，需应对</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">咨文强调宪法生效后政治体制革新，强化总统权威与社会团结；经济上聚焦改善民生；外交上警惕大国信任危机，坚持独立自主；矿产格局未直接提及，但稳定政策有利于资源领域吸引投资。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(8 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/kazahstan-i-kuveyt-obsudili-rasshirenie-postavok-kazahstanskogo-myasa-75b39303" target="_blank">哈萨克斯坦与科威特讨论扩大哈萨克斯坦肉类供应</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/30 04:59<span class="source-link"><a href="https://www.inform.kz/ru/kazahstan-i-kuveyt-obsudili-rasshirenie-postavok-kazahstanskogo-myasa-75b39303" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与科威特讨论扩大哈肉制品供应。双方在会见KDIPA领导层时重点讨论粮食安全和农业合作。哈方介绍农业出口潜力，强调根据总统2026年10月28日国情咨文发展农业。科方对尽快开始进口哈肉制品感兴趣，双方商定组织科威特企业代表访哈。哈副外长确认支持直接合作。此前哈将向土库曼斯坦供应1.1万吨套管。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">在与KDIPA领导层的会晤中，双方讨论了哈萨克斯坦-科威特投资合作进一步发展的前景，特别关注粮食安全和农业工业领域的互动。
+哈萨克斯坦方面介绍了本国在农业领域的出口潜力，指出在加强科威特粮食安全和确保高质量产品稳定长期供应方面存在巨大机遇。会议强调，根据哈萨克斯坦共和国总统2026年10月28日致全国人民的国情咨文，发展农业工业综合体是国家政策的优先方向之一。
+科威特方面表示有兴趣转入对后续步骤的务实研究。双方商定协助组织从事农产品进口的科威特相关公司代表访问哈萨克斯坦，以了解本国生产商的能力。
+——在与谢赫乌胡德·阿勒萨巴赫的会晤中，讨论了扩大哈萨克斯坦肉制品对科威特供应前景。科威特方面积极评价其团队此前访问哈萨克斯坦的成果，访问期间与本国生产商建立了直接联系，并表示有兴趣在近期开始向科威特供应哈萨克斯坦肉制品，哈萨克斯坦外交部指出。
+副部长方面确认，哈萨克斯坦准备协助发展哈萨克斯坦生产商与科威特企业之间的直接合作。
+双方确认有兴趣进一步扩大哈萨克斯坦与科威特之间的贸易经济和投资合作。
+此前有报道称，哈萨克斯坦将向土库曼斯坦供应1.1万吨套管。</div>
+<ul>
+<li>哈科讨论扩大哈肉制品供应</li>
+<li>双方重点讨论粮食安全与农业合作</li>
+<li>科方拟近期开始进口哈肉制品</li>
+<li>双方商定组织科威特企业访哈</li>
+<li>哈将向土库曼斯坦供应1.1万吨套管</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此合作有助于哈国拓展农产品出口市场，强化与科威特的经济外交关系，提升农业在国民经济中的地位，同时增强科威特粮食安全，对哈国矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/yuguojiachengguorentongweidao-1764379c/" target="_blank">托卡耶夫与突厥国家组织成员国领导人共同为“突厥世界林荫道”揭幕</a></h3>
+<div class="item-meta">哈通社中文版 · 10/30 01:38<span class="source-link"><a href="https://cn.inform.kz/news/yuguojiachengguorentongweidao-1764379c/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫于28日开始对土耳其进行正式访问，期间与突厥国家组织成员国领导人共同为“突厥世界林荫道”揭幕。该林荫道设有土耳其、阿塞拜疆、哈萨克斯坦、吉尔吉斯斯坦、乌兹别克斯坦和土库曼斯坦的国家展馆，展示各兄弟国家的团结与文化传统。托卡耶夫还与各国领导人参加了植树仪式。访问期间，土方在安卡拉总统府为托卡耶夫举行隆重欢迎仪式，哈土两国元首举行小范围和大范围会谈，双方指出在永久友谊和全面战略伙伴关系框架下双边关系稳步发展。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫与突厥国家组织成员国领导人共同为“突厥世界林荫道”揭幕
+正文:
+该区域设有土耳其、阿塞拜疆、哈萨克斯坦、吉尔吉斯斯坦、乌兹别克斯坦和土库曼斯坦的国家展馆。
+Фото: Ақорда Фото: Ақорда 展区展现了各兄弟国家的团结、丰富多彩的文化以及深厚的精神传统。
+Фото: Ақорда Фото: Ақорда 哈萨克毡房象征着大草原精神和突厥世界共同的历史根源。各国总统听取了有关毡房装饰所体现的古突厥文明的介绍，其中包括萨迦文化遗产、哈萨克人民与自然和谐共生的生活方式，以及当代哈萨克斯坦的面貌。
+Фото: Ақорда Фото: Ақорда 此外，展区还展示了名为“萨迦猎人”的雕塑群，展现哈萨克民族的传统狩猎技艺。
+Фото: Ақорда Фото: Ақорда Фото: Ақорда 各国领导人还参观了鄂尔浑碑铭展区，了解古突厥文字文化。
+Фото: Ақорда Фото: Ақорда Фото: Ақорда 此外，托卡耶夫总统还与突厥国家组织成员国领导人一同参加了“突厥世界林荫道”植树仪式。
+Фото: Акорда 据悉，托卡耶夫于28日开始对土耳其进行正式访问。访问期间，土方在安卡拉总统府为托卡耶夫举行了隆重的欢迎仪式。
+随后，哈土两国元首举行小范围会谈。双方指出，在永久友谊和全面战略伙伴关系的框架下，两国双边关系正稳步发展。
+当天，哈萨克斯坦总统与土耳其总统举行大范围会谈，两国官方代表团成员出席。</div>
+<ul>
+<li>托卡耶夫与突厥国家组织领导人共同为“突厥世界林荫道”揭幕</li>
+<li>林荫道设有六国国家展馆，展现团结与文化传统</li>
+<li>托卡耶夫于28日开始对土耳其进行正式访问</li>
+<li>哈土元首举行小范围和大范围会谈，强调战略伙伴关系</li>
+<li>各国领导人参加植树仪式并参观鄂尔浑碑铭展区</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此活动强化了哈萨克斯坦在突厥国家组织中的凝聚力，提升了其地区外交影响力；同时深化哈土全面战略伙伴关系，有利于促进双边经贸合作与文化交流，对哈国政治外交和经济发展具有积极意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/qi-chuguojiadishisanhuikai-83253d1e/" target="_blank">托卡耶夫抵达土耳其总统府 出席突厥国家组织第十三届峰会开幕式</a></h3>
+<div class="item-meta">哈通社中文版 · 10/30 00:16<span class="source-link"><a href="https://cn.inform.kz/news/qi-chuguojiadishisanhuikai-83253d1e/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫于28日开始对土耳其进行正式访问，并出席突厥国家组织第十三届峰会开幕式。土耳其副总统杰夫代特·伊尔马兹迎接。访问期间，土方在安卡拉总统府举行隆重欢迎仪式。哈土两国元首先举行小范围会谈，指出在永久友谊和全面战略伙伴关系框架下双边关系稳步发展。29日，两国总统举行大范围会谈，官方代表团成员出席。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：托卡耶夫抵达土耳其总统府 出席突厥国家组织第十三届峰会开幕式
+
+正文：
+土耳其副总统杰夫代特·伊尔马兹迎接了托卡耶夫。
+
+据悉，托卡耶夫于28日开始对土耳其进行正式访问。访问期间，土方在安卡拉总统府为托卡耶夫举行了隆重的欢迎仪式。
+
+随后，哈土两国元首举行小范围会谈。双方指出，在永久友谊和全面战略伙伴关系的框架下，两国双边关系正稳步发展。
+
+29日，哈萨克斯坦总统与土耳其总统举行大范围会谈，两国官方代表团成员出席。</div>
+<ul>
+<li>托卡耶夫28日起对土耳其进行正式访问</li>
+<li>土耳其副总统伊尔马兹迎接托卡耶夫</li>
+<li>安卡拉总统府举行隆重欢迎仪式</li>
+<li>哈土元首小范围会谈肯定双边关系</li>
+<li>29日举行大范围会谈代表团出席</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈土全面战略伙伴关系，提升哈萨克斯坦在突厥国家组织中的影响力，有利于拓展跨里海运输走廊和经贸合作，同时平衡地区外交格局，对矿产能源合作亦有推动作用。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/yeduiwutong-a7667d29/" target="_blank">哈萨克斯坦企业签署对土库曼斯坦无缝套管供货合同</a></h3>
+<div class="item-meta">哈通社中文版 · 10/29 23:14<span class="source-link"><a href="https://cn.inform.kz/news/yeduiwutong-a7667d29/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦KSP Steel公司在阿什哈巴德“2026年土库曼斯坦石油与天然气”国际会议期间签署对土库曼斯坦供应1.1万吨无缝套管的合同，产品将在巴甫洛达尔制造。2026年1-8月两国贸易额3.614亿美元，同比增长9.3%，哈对土出口2.330亿美元。QazTrade称此合同是哈对土工业出口重要业务，将带来额外订单。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">该协议是在阿什哈巴德举行的“2026年土库曼斯坦石油与天然气”（OGT 2026）国际会议期间签署的。
+据悉，这批产品将在KSP Steel公司位于巴甫洛达尔的生产基地制造，供土库曼斯坦石油天然气行业使用。该合同涉及哈萨克斯坦高附加值冶金产品出口，也将进一步拓展我国制造企业在中亚市场的供货范围。
+“2026年土库曼斯坦石油与天然气”（OGT 2026）国际会议吸引了来自近75个国家的1700多名代表参加。会议期间，土库曼斯坦国家国有企业还与来自中国、马来西亚和乌兹别克斯坦的企业签署了合作协议。此次合作也处于哈萨克斯坦与土库曼斯坦双边贸易持续增长的背景下。
+2026年1月至8月，两国贸易额达3.614亿美元，同比增长9.3%。同期，哈萨克斯坦对土库曼斯坦的出口额为2.330亿美元。
+QazTrade表示，向土库曼斯坦供应1.1万吨套管，将成为哈萨克斯坦对土工业出口的一项重要业务，并为哈萨克斯坦冶金企业带来额外订单。</div>
+<ul>
+<li>KSP Steel签署对土库曼斯坦1.1万吨无缝套管供货合同</li>
+<li>产品在巴甫洛达尔生产基地制造，供土石油天然气行业</li>
+<li>2026年1-8月哈土贸易额3.614亿美元，同比增长9.3%</li>
+<li>哈对土出口额2.330亿美元，合同助拓展中亚市场</li>
+<li>OGT 2026会议吸引近75国1700多名代表参加</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该合同强化哈冶金高附加值产品对土出口，拓展中亚市场，带动巴甫洛达尔工业订单；在哈土贸易增长背景下，深化双边经济合作，提升哈作为区域工业供应国地位，对矿产加工出口格局形成积极补充。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/tijunlishihuidi93huizaixing-a0703067/" target="_blank">独联体边防军司令理事会第93次会议在阿斯塔纳举行</a></h3>
+<div class="item-meta">哈通社中文版 · 10/29 20:49<span class="source-link"><a href="https://cn.inform.kz/news/tijunlishihuidi93huizaixing-a0703067/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>独联体边防军司令理事会第93次会议在阿斯塔纳举行，哈萨克斯坦、俄罗斯等9国边防部门及独联体执行委员会、反恐中心、上合组织地区反恐怖机构代表出席。独联体副秘书长赛特莫夫致辞称该理事会是最具声望的多边合作机制之一。会议重点讨论外部边界防护、信息交换自动化、反恐反极端主义合作及打击犯罪联合行动，会后将签署系列文件。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 独联体边防军司令理事会第93次会议在阿斯塔纳举行
+正文:
+哈萨克斯坦、阿塞拜疆、土库曼斯坦、乌兹别克斯坦、亚美尼亚、白俄罗斯、吉尔吉斯斯坦、俄罗斯和塔吉克斯坦等国边防部门，以及边防军司令理事会协调服务局、独联体执行委员会、独联体反恐中心、独联体打击有组织犯罪协调局和上海合作组织地区反恐怖机构的负责人及专家出席会议。
+“边防军司令理事会是目前独联体范围内最具声望、成效显著且发展迅速的多边合作机制之一。定期举行此类会议，并围绕重要议题展开讨论，充分表明独联体成员国边防部门正致力于取得切实的合作成果，”独联体副秘书长努尔兰·赛特莫夫在致辞中表示。
+他指出，本次会议议程涵盖独联体成员国边防部门工作中的主要问题。
+“我们相信，本次会议将本着相互信任、相互尊重和兼顾各方利益的原则，取得建设性成果。此次会议将为维护独联体国家边境稳定、加强边防人员之间的兄弟情谊作出重要贡献。独联体执行委员会将继续为独联体成员国边防军司令理事会提供全面支持，”赛特莫夫说。
+会议期间，与会代表重点讨论了独联体成员国外部边界防护、信息交换自动化、落实反恐和反极端主义合作计划，以及开展打击犯罪联合行动等方面的现实问题。根据会议安排，本次国际会议结束后，相关各方将签署一系列文件。</div>
+<ul>
+<li>独联体9国边防部门及上合组织代表在阿斯塔纳开会</li>
+<li>会议聚焦外部边界防护与信息交换自动化</li>
+<li>讨论反恐反极端主义合作及打击犯罪联合行动</li>
+<li>独联体副秘书长称理事会成效显著发展迅速</li>
+<li>会后将签署一系列合作文件</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">会议强化独联体框架下边境安全协作，推动信息共享与反恐联合行动，有助于维护哈国及中亚边境稳定；上合组织参与体现跨机制安全合作深化，对地区安全格局产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/likaizhengwen-d56e20a0/" target="_blank">哈萨克斯坦总理抵达比什凯克开始正式访问</a></h3>
+<div class="item-meta">哈通社中文版 · 10/29 19:32<span class="source-link"><a href="https://cn.inform.kz/news/likaizhengwen-d56e20a0/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总理别克帖诺夫抵达吉尔吉斯斯坦首都比什凯克进行正式访问，吉尔吉斯斯坦内阁主席兼总统办公厅主任卡西马利耶夫在玛纳斯国际机场迎接。访问期间，两国政府首脑将举行会谈，并共同出席第二届哈吉地区间合作论坛及主持哈吉政府间合作委员会第十四次会议。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦总理抵达比什凯克开始正式访问
+
+吉尔吉斯斯坦内阁主席兼总统办公厅主任阿德尔别克·卡西马利耶夫在玛纳斯国际机场迎接别克帖诺夫。
+访问期间，两国政府首脑将举行会谈。此外，别克帖诺夫与卡西马利耶夫还将出席第二届哈萨克斯坦与吉尔吉斯斯坦地区间合作论坛，并共同主持召开哈吉政府间合作委员会第十四次会议。</div>
+<ul>
+<li>哈总理别克帖诺夫抵达比什凯克开始正式访问</li>
+<li>吉内阁主席卡西马利耶夫在玛纳斯机场迎接</li>
+<li>两国政府首脑将举行双边会谈</li>
+<li>共同出席第二届哈吉地区间合作论坛</li>
+<li>共同主持哈吉政府间合作委员会第十四次会议</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访将强化哈吉政府间协调机制，推动地区间经贸与投资合作，促进双边贸易增长，并有助于哈萨克斯坦拓展在中亚的经济外交空间。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/chudizhongguojiahui-3461615b/" target="_blank">哈萨克斯坦代表团出席第四届中亚国家议会论坛</a></h3>
+<div class="item-meta">哈通社中文版 · 10/29 19:13<span class="source-link"><a href="https://cn.inform.kz/news/chudizhongguojiahui-3461615b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦代表团出席第四届中亚国家议会论坛，主题为“为了中亚的和平、安全与繁荣而团结”。哈方介绍了托卡耶夫总统推动的改革成果：七年来经济增长30%，人均GDP超1.5万美元。论坛讨论了区域安全、水资源与生态安全、经济一体化等议题。哈方提出维护中亚无核武器区、设立国际生物安全署、将区域内贸易额提高至200亿美元、制定《水资源利用框架公约》及建立议会间对话机制等建议。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">本届论坛以“为了中亚的和平、安全与繁荣而团结”为主题，汇集了哈萨克斯坦、吉尔吉斯斯坦、塔吉克斯坦、土库曼斯坦和乌兹别克斯坦等国议会代表。
+达德拜在向与会代表发表讲话时，介绍了哈萨克斯坦在哈斯穆-卓玛尔特·托卡耶夫总统倡议下推进的大规模政治和社会经济改革。他特别提到新宪法的通过，并介绍了以“法律与秩序”为原则、以团结和睦为基础，建设公正、进步、强盛的哈萨克斯坦的主要方向。过去七年来，在国家元首推动的改革举措下，哈萨克斯坦经济增长了30%，人均国内生产总值超过1.5万美元。
+Фото: Н. Байбулин 此外，达德拜还谈到了托卡耶夫总统昨日发表的国情咨文。他指出，这份文件对全国多个领域的大规模建设作出了部署，相关举措将推动国家现代化，为哈萨克斯坦民众创造新的发展机遇。具体包括新建公路、机场、火车站和医院，推进农业、交通及水资源利用领域的数字化转型，以及对能源产业进行全面升级改造。
+达德拜指出，国家元首提出的这些倡议不仅将为哈萨克斯坦的发展注入新动力，也将为整个中亚地区的经济增长和深化合作创造更多机遇。
+达德拜表示，本届论坛为区域议会合作开启了新阶段。他认为，这一国际会议将有助于巩固地区稳定，推动中亚建设成为实现持久和平与共同发展的地区。
+“今天，我们正在讨论区域安全、水资源与生态安全以及深化经济一体化等问题。这些议题对中亚地区的可持续发展至关重要。我认为，面对当前的挑战，各方只有凝聚议会力量、协调立法工作并形成共同立场，才能作出有效回应。议会外交必须以取得实际成果为导向，”达德拜表示。
+他还提到，在各国元首倡议下，旨在推动21世纪中亚发展的友好、睦邻与合作条约的批准程序已经启动。此外，议会间论坛、中亚国家与阿塞拜疆女性领导人对话会以及区域安全与合作对话会等平台也在顺利运行。
+Фото: Н. Байбулин 讨论期间，哈萨克斯坦代表团就发挥议会的务实作用、维护地区和平与安全以及促进可持续发展提出了一系列建议。
+在安全领域，哈方强调了维护中亚无核武器区地位的重要性，并指出设立国际生物安全署这一倡议具有现实意义。
+此外，与会代表还讨论了移民管理问题。哈方介绍了本国不断完善相关法律法规的经验，并表示愿与地区其他国家分享相关实践。
+在经济和数字一体化方面，哈方建议加强电子商务、海关电子化管理、投资、交通和工业合作等领域的立法经验交流。消除相关法律壁垒，将有助于改善营商环境。达德拜指出，这些联合举措将为落实哈萨克斯坦总统提出的将区域内贸易额提高至200亿美元的目标创造必要条件。
+水资源与气候安全是本届论坛的主要议题之一。哈萨克斯坦库鲁尔泰议员呼吁加快推进《水资源利用框架公约》的制定和通过工作。
+会议还讨论了加强合作、共同应对咸海问题的相关举措。对此，哈萨克斯坦代表团建议建立常态化的议会间对话机制，汇集水资源和气候领域的专家以及拯救咸海国际基金的代表，共同推进相关工作。
+在继续讨论生态问题时，达德拜强调了发展志愿者运动的重要性，认为这是动员社会力量参与解决地区生态问题的有效途径。他建议在议会层面加大对志愿服务倡议的支持，并研究每年举办“中亚生态责任周”的可行性。
+此外，达德拜还谈到了扩大教育合作、加强地区国家间科技联系的前景。与会代表还讨论了如何通过立法支持哈萨克斯坦提出的“中亚人工智能伙伴关系”计划。</div>
+<ul>
+<li>哈方介绍七年改革成果：经济增长30%，人均GDP超1.5万美元</li>
+<li>论坛聚焦区域安全、水资源与生态安全、经济一体化</li>
+<li>哈方提议将区域内贸易额提高至200亿美元</li>
+<li>哈方呼吁维护中亚无核武器区并设立国际生物安全署</li>
+<li>哈方建议建立议会间对话机制应对咸海问题</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">论坛强化了哈萨克斯坦在中亚议会外交中的引领作用，推动区域立法协调与经济一体化，有助于落实贸易额200亿美元目标；安全与生态倡议提升哈国地区话语权，水资源公约与咸海机制利于矿产及农业的可持续开发。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/qiheguori-d17f3f29/" target="_blank">托卡耶夫祝贺土耳其共和国日</a></h3>
+<div class="item-meta">哈通社中文版 · 10/29 18:08<span class="source-link"><a href="https://cn.inform.kz/news/qiheguori-d17f3f29/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫就土耳其共和国日向土耳其总统埃尔多安致贺电，称共和国日是土耳其人民团结与创造力的象征，并赞扬土耳其在埃尔多安领导下于政治、社会经济和科技领域取得新成就，成为国际社会重要成员。托卡耶夫表示两国关系已提升至永久友谊和扩展战略伙伴关系水平，将继续发展造福两国人民，并祝愿埃尔多安履职顺利、土耳其人民繁荣安康。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：托卡耶夫祝贺土耳其共和国日
+正文：
+新闻称，托卡耶夫总统就土耳其共和国国庆日——共和国日向土耳其总统埃尔多安致贺电。
+“共和国日是土耳其人民团结与创造力的鲜明象征，也是土耳其国家建设和持续发展的坚实基石。在您富有远见的领导下，土耳其在政治、社会经济以及科技等领域不断取得新成就，已成为国际社会中实力雄厚、享有盛誉的重要成员，”托卡耶夫在贺电中指出。
+托卡耶夫总统表示，相信两国关系已提升至永久友谊和扩展战略伙伴关系的水平，今后必将继续向前发展，造福两国人民。
+此外，托卡耶夫还祝愿埃尔多安履职顺利，并祝愿兄弟般的土耳其人民繁荣昌盛、幸福安康。</div>
+<ul>
+<li>托卡耶夫就土耳其共和国日向埃尔多安致贺电</li>
+<li>贺电称共和国日是土耳其团结与创造力象征</li>
+<li>托卡耶夫赞扬土耳其政治经济社会科技成就</li>
+<li>两国关系定位为永久友谊和扩展战略伙伴</li>
+<li>托卡耶夫祝愿埃尔多安履职顺利、土人民安康</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此贺电强化哈土战略伙伴关系，有利于哈国拓展外交空间、平衡地区大国影响；经济上促进双边贸易与投资合作，但矿产格局短期无直接冲击。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(4 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/dingyufaweidewai5-b97e9238/" target="_blank">欧亚稳定与发展基金拟为符合哈萨克斯坦利益的境外项目提供5亿美元</a></h3>
+<div class="item-meta">哈通社中文版 · 10/29 17:09<span class="source-link"><a href="https://cn.inform.kz/news/dingyufaweidewai5-b97e9238/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>欧亚稳定与发展基金正与哈萨克斯坦磋商合作战略，计划投入约5亿美元支持符合哈利益但位于吉尔吉斯斯坦、塔吉克斯坦和亚美尼亚等国的项目。基金由哈俄出资，重点领域为能源（水电）、水资源和交通运输，特别关注吉尔吉斯斯坦坎巴尔阿塔1号水电站，并计划联合哈、吉、乌及世界银行制定融资模式。基金还将调整支持方式，更重视风险预测和预防，以技术援助为主要工具。最终文件预计今年12月获批。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">曼德龙表示，基金目前正与哈萨克斯坦就双方合作战略进行磋商，预计最终文件将于今年12月举行的欧亚稳定与发展基金成员国财政部长会议上获得批准。
+我们希望投入约5亿美元，用于支持符合哈萨克斯坦利益的项目。不过，这些项目并不是在哈萨克斯坦境内实施，而是计划在吉尔吉斯斯坦、塔吉克斯坦和亚美尼亚等其他国家开展。
+曼德龙解释说，哈萨克斯坦和俄罗斯是该基金的出资国。因此，基金正在研究通过支持地区其他国家的项目，促进实现哈萨克斯坦相关利益的可能性。
+Фото: Виктор Федюнин/Kazinform 在优先合作领域方面，曼德龙指出，基金将重点关注能源、水资源和交通运输。其中，能源领域将特别重视水力发电项目，水资源领域则侧重保障农业用水以及居民清洁饮用水需求。
+他特别提到了吉尔吉斯斯坦坎巴尔阿塔1号水电站建设项目。
+该项目不仅涉及水电站本身的建设，还包括相关配套基础设施的发展。
+基金希望与哈萨克斯坦、吉尔吉斯斯坦、乌兹别克斯坦以及包括世界银行在内的国际合作伙伴，共同制定项目联合融资模式。
+此外，曼德龙还介绍了基金计划调整对成员国提供支持的方式。
+他表示，在中期内不存在严重危机威胁的情况下，基金计划更加重视风险预测和提前采取预防措施。
+我们的任务是帮助各国提前预测中期可能出现的不利因素，并与成员国共同制定应对工具，首先确保已经取得的经济增长速度能够得到维持，避免经济出现剧烈的负面或正面波动。
+曼德龙指出，技术援助将成为实现这一目标的主要工具之一，包括引进专业人才、开展研究，以及与成员国共同开发相关模型。</div>
+<ul>
+<li>基金拟投5亿美元支持境外项目，符合哈利益</li>
+<li>项目分布在吉、塔、亚美尼亚，不在哈境内</li>
+<li>重点领域：能源（水电）、水资源、交通运输</li>
+<li>关注坎巴尔阿塔1号水电站及配套基础设施</li>
+<li>调整支持方式，强化风险预测和技术援助</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该基金通过境外项目投资强化哈国区域经济影响力，促进中亚水资源与能源合作，但需平衡与俄罗斯及受援国利益。对哈矿产格局直接影响有限，间接利好能源基础设施互联。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/duigaorengao-49c74795/" target="_blank">富人税率或将上调！哈萨克斯坦研究新税收政策</a></h3>
+<div class="item-meta">哈通社中文版 · 10/29 14:55<span class="source-link"><a href="https://cn.inform.kz/news/duigaorengao-49c74795/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦政府会议审议落实总统国情咨文措施。自年初以来，政府完善税收立法，已制定《税法典》修订方案，将研究对高净值人群适用更高税率，并借鉴国际经验制定符合国情的方案。为大规模基础设施建设，已设立基础设施发展基金，并起草《预算法典》修正案明确其法律基础、融资程序及监管机制。政府还将运用人工智能技术防止不合理财政支出。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">政府会议审议了落实总统国情咨文所提出任务的相关措施。
+艾姆林表示，自今年年初以来，政府一直在项目委员会框架内开展税收立法完善工作。
+“目前，我们已充分考虑工商界代表提出的建议，制定了《税法典》的具体修订方案。关于对高净值人群适用更高税率的问题，我们将在分析国际经验的基础上进行研究，并制定最符合哈萨克斯坦实际情况的实施方案。”艾姆林说。
+他指出，托卡耶夫总统在国情咨文中明确提出了大规模基础设施建设的任务。为此，哈萨克斯坦已设立基础设施发展基金。
+目前，相关部门已起草《预算法典》修正案，明确该基金运作的法律基础、项目融资程序，以及财政监督和资金专项使用的监管机制。
+艾姆林还表示，为防止不合理和低效率的财政支出，政府将积极运用人工智能技术。</div>
+<ul>
+<li>政府审议落实总统国情咨文任务措施</li>
+<li>制定《税法典》修订方案，研究高净值人群更高税率</li>
+<li>设立基础设施发展基金，起草《预算法典》修正案</li>
+<li>运用人工智能技术防止低效财政支出</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">上调富人税率有助于增加财政收入、缩小贫富差距，但可能影响投资环境；基础设施基金和AI监管将提升财政效率，对经济长期发展产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/xinggong29riyuzhuyaowaizhijiande-b30e1712/" target="_blank">央行公布29日坚戈与主要外币之间的汇率标准</a></h3>
+<div class="item-meta">哈通社中文版 · 10/29 13:37<span class="source-link"><a href="https://cn.inform.kz/news/xinggong29riyuzhuyaowaizhijiande-b30e1712/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行公布2026年10月29日坚戈对主要外币官方汇率：美元兑坚戈1:457.09，欧元兑坚戈1:508.42，俄罗斯卢布兑坚戈1:5.67，土耳其里拉兑坚戈1:9.17，中国元兑坚戈1:68.56。央行规定，坚戈兑美元官方汇率基于阿斯塔纳时间15:30证券交易所加权平均汇率确定，其他外币汇率依据16:00交叉汇率计算。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 央行公布29日坚戈与主要外币之间的汇率标准
+正文:
+根据央行公布的信息，2026年10月29日，哈萨克斯坦坚戈与国际主要货币之间的兑换汇率标准如下：
+美元兑坚戈（USD/KZT） – 1：457.09
+欧元兑坚戈（EUR/KZT）- 1：508.42
+俄罗斯卢布兑坚戈（RUB / KZT）-1: 5.67
+土耳其里拉兑坚戈（TRY / KZT）- 1: 9.17
+中国元兑坚戈（CNY / KZT）- 1：68.56
+值得一提的是，根据哈萨克斯坦国家银行规定，截至阿斯塔纳时间当日15:30，在哈萨克斯坦证券交易所形成的坚戈兑美元加权平均汇率，将被确定为下一工作日坚戈兑美元官方汇率；坚戈兑其他外币的官方汇率，则依据截至阿斯塔纳时间16:00形成的交叉汇率计算得出。</div>
+<ul>
+<li>美元兑坚戈汇率为1:457.09</li>
+<li>欧元兑坚戈汇率为1:508.42</li>
+<li>人民币兑坚戈汇率为1:68.56</li>
+<li>卢布兑坚戈汇率为1:5.67</li>
+<li>汇率确定基于交易所加权平均和交叉汇率</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率数据反映坚戈对主要货币的比价关系，为贸易和投资提供定价基准。美元汇率主导官方定价机制，其他货币通过交叉汇率派生，体现哈国汇率形成机制的市场化与美元锚定特征，对矿产等大宗商品出口结算具有参考意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/zhongguogongxingzaiyuechang376-xingyedisan-1b6b6a4e/" target="_blank">中国工商银行在哈存款单月增长376亿坚戈 位居银行业第三</a></h3>
+<div class="item-meta">哈通社中文版 · 10/29 13:05<span class="source-link"><a href="https://cn.inform.kz/news/zhongguogongxingzaiyuechang376-xingyedisan-1b6b6a4e/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年8月，哈萨克斯坦23家二级银行中14家存款下降，仅9家增长。中国工商银行存款单月增加376亿坚戈至3453亿坚戈，位居第三，仅次于Kaspi Bank（增810亿坚戈）和Freedom Bank（增686亿坚戈）。年初以来银行业存款总额增2.3万亿坚戈（4.7%），个人存款占60.1%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 中国工商银行在哈存款单月增长376亿坚戈 位居银行业第三
+正文:
+报告显示，哈萨克斯坦23家二级银行中，有14家银行的存款规模在8月出现下降，仅9家银行实现增长。
+从单月存款绝对增长额来看，Kaspi Bank位居首位，存款增加810亿坚戈，达到8.8万亿坚戈。
+Freedom Bank排名第二，存款增加686亿坚戈，达到1.9万亿坚戈。中国工商银行位居第三，存款增加376亿坚戈，达到3453亿坚戈。
+排名第四和第五的分别是花旗银行哈萨克斯坦分行（Citibank Kazakhstan）和KZI Bank。其中，花旗银行存款增加374亿坚戈，达到9677亿坚戈；KZI Bank存款增加157亿坚戈，达到2453亿坚戈。
+值得注意的是，在哈萨克斯坦存款规模最大的五家银行中，除Kaspi Bank外，仅住房储蓄银行（Otbasy Bank）实现单月增长，增幅为41亿坚戈，存款总额达到3.7万亿坚戈。
+其余三家大型银行的存款规模均有所下降。其中，哈萨克斯坦人民银行（Halyk Bank）减少5086亿坚戈，中央贷款银行（Bank CenterCredit）减少289亿坚戈，ForteBank减少516亿坚戈。
+Фото: Kazinform 从年初以来的整体表现来看，哈萨克斯坦二级银行存款总额累计增加2.3万亿坚戈，增幅为4.7%。
+其中，Kaspi Bank继续保持领先，存款较年初增加8727亿坚戈，增幅为11%，总额达到8.8万亿坚戈。这一增长额占整个银行业存款净增长额的38%以上。
+住房储蓄银行位居第二，年初以来存款增加4696亿坚戈，达到3.7万亿坚戈。
+Freedom Bank排名第三，存款增加4288亿坚戈，达到1.9万亿坚戈。
+中央贷款银行和哈萨克斯坦人民银行分别位居第四和第五。其中，中央贷款银行存款增加2977亿坚戈，达到6.7万亿坚戈；哈萨克斯坦人民银行存款增加2503亿坚戈，达到14.2万亿坚戈。
+从哈萨克斯坦银行业存款结构来看，个人存款占据主导地位。
+截至2026年8月底，个人存款总额达到30.7万亿坚戈，单月增加1328亿坚戈。
+年初以来，个人存款累计增加2.4万亿坚戈，增幅为8.6%，占全国二级银行存款总额的60.1%。
+其中，Kaspi Bank个人存款增长最为显著。年初以来，该行个人存款增加7835亿坚戈，增幅为11.1%，总额达到7.8万亿坚戈。</div>
+<ul>
+<li>8月哈国14家银行存款下降，仅9家增长</li>
+<li>工商银行存款单月增376亿坚戈，居第三</li>
+<li>Kaspi Bank单月增810亿坚戈，居首位</li>
+<li>年初以来银行业存款增2.3万亿坚戈</li>
+<li>个人存款占银行存款总额60.1%</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">中国工商银行存款强劲增长，反映中哈金融合作深化，提升哈国银行业多元竞争，为矿产与基建项目提供融资渠道，但个人存款高度集中于少数银行，需关注金融稳定与外资银行监管平衡。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-10-30 09:02</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
