@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年10月31日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年10月31日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年10月30日早9:00至2026年10月31日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 18 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">4</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">10</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">1</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(4 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/ne-tolko-skorost-i-pdd-za-chto-voditeley-mogut-oshtrafovat-v-kazahstane-3be959ef" target="_blank">不仅是超速和交通规则：哈萨克斯坦司机还会因哪些行为被罚款</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/31 08:31<span class="source-link"><a href="https://www.inform.kz/ru/ne-tolko-skorost-i-pdd-za-chto-voditeley-mogut-oshtrafovat-v-kazahstane-3be959ef" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>科斯塔奈州警察局表示，遵守交通规则不免除驾驶员的其他法律义务。车牌无法辨认或安装不当、车辆技术故障、缺少强制技术检验、文件不合规等均可成为罚款依据。警方强调罚款须针对具体违法行为，驾驶员对处罚决定不服可按规定上诉，行车记录仪、照片等可作为证据。警方建议驾驶员同时关注车辆技术状况。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">科斯塔奈州警察局解释称，遵守交通规则并不免除驾驶员履行法律的其他要求。
+具体而言，车牌无法辨认或安装不当、车辆存在禁止其运营的技术故障，以及缺少强制性技术检验，都可能成为罚款的依据。
+此外，对不遵守驾驶车辆所需文件的某些要求也规定了行政责任。
+同时，警方强调，罚款不能随意指定。要追究驾驶员的责任，必须确定法律规定的具体违法行为。
+如果驾驶员不同意罚款处罚决定，他有权按规定程序提出上诉。行车记录仪记录、照片及其他与案件相关的材料可作为证据使用。
+警方建议驾驶员不仅要关注遵守交通规则，还要关注车辆的技术状况。
+此前，Kazinform曾报道过为什么不能在高速公路路肩停车。</div>
+<ul>
+<li>遵守交规不免除其他法律要求</li>
+<li>车牌不清、技术故障、缺年检可罚款</li>
+<li>罚款须针对具体违法行为</li>
+<li>不服处罚可上诉，记录仪可作证据</li>
+<li>警方建议关注车辆技术状况</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该新闻强化交通执法规范，减少随意罚款，保护驾驶员权益，对哈国政治无显著影响，经济上或促进车辆维护消费，外交和矿产格局无关联。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/fafashideguojiazhongyujin-e114456b/" target="_blank">哈萨克斯坦宪法改革持续深化：新法治时代的国家重构与制度演进</a></h3>
+<div class="item-meta">哈通社中文版 · 10/31 00:16<span class="source-link"><a href="https://cn.inform.kz/news/fafashideguojiazhongyujin-e114456b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦于2026年7月1日生效新宪法，这是继2022年宪法改革后的又一重大制度演进。新宪法以“公正的哈萨克斯坦”和“法律与秩序”为核心理念，强化人权保障，特别是个人数据保护。国家权力架构调整包括：保留总统制，设立副总统职位；两院制议会改为一级制库鲁尔泰；成立哈萨克斯坦人民理事会。为落实新宪法，首阶段已通过五部宪法性法律，包括《哈萨克斯坦共和国总统法》。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦宪法改革持续深化：新法治时代的国家重构与制度演进
+正文:
+今年7月1日起，哈萨克斯坦迈入宪法发展新时代。新宪法成为顺应时代要求、调整国家体制的法律基础。
+七年来发生了哪些变化？
+过去七年，哈萨克斯坦经历了政治和法律现代化的重要阶段。这一系列系统性改革旨在提高国家治理效率、发展代议制机构，并完善公民权利保障机制。2026年3月15日全民公投通过的新宪法，正是这一进程的延续。
+“这一时期的改革不能被看作一系列孤立决策的简单集合，而应视为国家与社会关系的系统性更新。2022年宪法改革是其中一个重要阶段。改革调整了国家机构之间的权力平衡，恢复了宪法法院。公民也因此获得了维护自身权利的另一项途径，即有机会就规范性法律文件是否符合宪法提出问题，”哈萨克斯坦司法部副部长阿依达尔·扎尔勒甘诺夫说。
+Фото: Правительство РК 他表示，2026年7月1日新宪法生效，标志着哈萨克斯坦进入一个全新的发展阶段。这一变化不仅体现在国家机关的重新构建上，也体现在宪法为国家发展确立了新的方向，并更加重视个人，将人的尊严、权利和自由确立为最高价值。
+更新后的宪法模式以“公正的哈萨克斯坦”理念为核心，并与“法律与秩序”原则密切相关。这一原则的内涵不只是打击犯罪或维护公共秩序，还包括坚持法律至上、法律面前人人平等，以及禁止任意、缺乏依据地作出决定。
+“法律不仅是规范社会关系的工具，也应成为维护公平正义、保护人权，以及防止国家无正当理由干预个人生活的有效机制。这里并不是要赋予法律新的职能，而是在国家法律政策框架内进一步提升法律的重要性。‘法律与秩序’体现的是相互责任：公民有义务遵守法律，国家则应在自身职权范围内行事，并保障每个人的权利。这一理念已经体现在具体的宪法保障中。例如，随着数字技术的发展，新宪法进一步加强了对个人数据的保护，并在宪法层面确立了保障人身自由和程序性权利的补充机制，”扎尔勒甘诺夫解释说。
+这些规定旨在为个人提供明确、有效的保护手段。
+顺应时代要求的国家权力架构
+新宪法在加强人权保障的同时，也对国家权力架构作出调整。在保留总统制的基础上，新宪法进一步明确了国家最高机关的职权及其相互协作机制。原来的两院制议会由一院制库鲁尔泰取代，旨在使立法工作更加协调，并提高议会监督的效率。
+Фото: Солтан Жексенбеков / Kazinform “不过，提高立法效率本身并不是最终目的。法律既要及时制定，也要保证质量，并确保得到落实。因此，专业起草立法倡议、开展法律审查，以及围绕涉及公共利益的决定进行公开讨论，都具有特别重要的意义，”扎尔勒甘诺夫说。
+其他制度改革还包括设立副总统职位，以保障国家权力的稳定性和连续性；成立哈萨克斯坦人民理事会，为将社会意见和建议提交立法机关审议提供了新的渠道。
+重要法律
+今年，为落实新宪法的相关规定，还需要开展大规模立法工作。在实施新宪法的第一阶段，共通过五部独立的宪法性法律，为更新后的国家治理体系奠定法律基础。
+《哈萨克斯坦共和国总统法》规定了总统和副总统的法律地位及职权。</div>
+<ul>
+<li>2026年7月1日新宪法生效，系2022年改革延续</li>
+<li>新宪法确立“公正的哈萨克斯坦”和“法律与秩序”原则</li>
+<li>两院制议会改为一级制库鲁尔泰，设立副总统职位</li>
+<li>强化个人数据保护，恢复宪法法院并新增公民申诉渠道</li>
+<li>首阶段通过五部宪法性法律，含《总统法》</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">新宪法将重塑哈国政治架构，一级制议会和副总统职位增强总统制稳定性；强化人权保障有助于改善法治环境，吸引投资；‘法律与秩序’原则可能加强国家对社会管控，对矿产等关键领域的外资合作产生规范影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/jiaguoqingwenhuiminshengwen-a28ade6a/" target="_blank">俄罗斯专家：托卡耶夫总统国情咨文聚焦社会民生问题</a></h3>
+<div class="item-meta">哈通社中文版 · 10/30 17:15<span class="source-link"><a href="https://cn.inform.kz/news/jiaguoqingwenhuiminshengwen-a28ade6a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>俄罗斯专家弗拉索夫在哈驻俄使馆圆桌会议上指出，托卡耶夫总统国情咨文聚焦社会民生，旨在提高民众生活质量。国情咨文标志哈萨克斯坦进入新政治周期，此前约一年改革包括通过新宪法、举行库鲁尔泰议会选举、调整国家治理体系及人事调整，下一阶段重点转向落实既定任务。弗拉索夫强调目标现实性及“人民”“公正”概念，重视支持青年群体，认为资金应投入道路、学校、医院等普惠基础设施，预算税收政策、中小企业发展和国内投资应服务于具体社会和经济目标。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">在哈萨克斯坦驻俄罗斯大使馆举办的国情咨文专题圆桌会议上，弗拉索夫指出，托卡耶夫总统讲话的重点内容涉及社会民生领域，提出的一系列措施旨在提高民众生活质量。
+弗拉索夫表示，国情咨文还标志着哈萨克斯坦进入新的政治周期。在此之前，哈萨克斯坦经历了约一年的改革进程，包括通过新宪法、举行库鲁尔泰议会选举、调整国家治理体系结构以及对部分重要国家机关进行人事调整。他认为，下一阶段的工作重点将转向各项既定任务的具体落实。
+- 如果从国情咨文的整体内容来看，我认为最值得关注的是所提出目标的现实性。重要的不仅是确定优先事项，还要提出实现这些目标的具体机制。值得注意的是，“人民”和“公正”是讲话中最重要的概念之一。这体现了国家致力于以民众的实际需求为导向。 - 他说。
+弗拉索夫还强调了支持青年群体的重要性。他认为，有针对性的社会政策和完善普惠性基础设施，有助于增强民众对未来的信心。
+- 资金只是一种工具，真正重要的是国家将资源投入哪些项目。这里涉及道路、学校、医院、优质医疗服务和可负担的教育。正是这些投入，才能让民众切实感受到经济发展带来的成果。- 他说。
+弗拉索夫认为，应当将国情咨文中提出的各项优先任务作为一个整体加以考虑。预算和税收政策、中小企业发展环境以及国内投资的发展，都应当服务于实现具体的社会和经济目标。</div>
+<ul>
+<li>国情咨文聚焦社会民生，旨在提高民众生活质量</li>
+<li>标志进入新政治周期，下一阶段重点转向落实任务</li>
+<li>强调“人民”和“公正”概念，以民众实际需求为导向</li>
+<li>重视支持青年群体，完善普惠性基础设施</li>
+<li>预算税收、中小企业及投资应服务具体社会和经济目标</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">国情咨文聚焦民生落实，有助于增强哈国政治稳定与社会信心；通过普惠基础设施和中小企业发展促进经济包容增长；对俄圆桌会议体现哈俄外交沟通；矿产领域未直接涉及，但投资环境优化或间接利好资源开发。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/2027nian7yueqiwaiguogongminqianzike-6e643d8d/" target="_blank">2027年7月起外国公民入境哈萨克斯坦须提前申请电子许可</a></h3>
+<div class="item-meta">哈通社中文版 · 10/30 13:59<span class="source-link"><a href="https://cn.inform.kz/news/2027nian7yueqiwaiguogongminqianzike-6e643d8d/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦政府2026年10月10日第890号决议修订移民规定，自2027年7月起外国公民入境须提前申请QazETA电子许可。过渡期内为建议性措施，2027年中前逐步推行。申请需至少提前72小时提交，审批约10分钟，许可有效期180天，面向70多国开放。适用欧亚经济联盟成员国、互免签证协议国家及其他免签国家公民。QazETA不取代签证制度，不改变合法停留期限。过境不入境者无需申请。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据inbusiness.kz报道，新制度将在2027年年中之前逐步推行。在过渡期内，申请电子许可属于建议性措施。新要求同样适用于俄罗斯、白俄罗斯、亚美尼亚及中亚国家等与哈萨克斯坦保持密切合作关系的国家公民。
+此次调整依据哈萨克斯坦政府2026年10月10日第890号决议作出。该决议修订了《移民进入、停留及离开哈萨克斯坦共和国的规定》，并已于2026年10月24日正式生效。
+QazETA（Qazaqstan Electronic Travel Authorization）是面向特定国家公民推出的电子旅行许可制度。外国公民须在前往哈萨克斯坦之前申请，以获得入境前的电子许可。
+根据规定，申请人应至少在计划出行前72小时提交申请。俄罗斯此前也已引入类似制度。
+需要注意的是，QazETA并不取代现有签证制度。对于原本需要办理哈萨克斯坦签证的国家公民，相关签证要求仍然有效。同时，新制度不会改变外国公民在哈萨克斯坦境内的合法停留期限。
+根据QazETA运营方官方网站公布的信息，申请须至少提前72小时提交，审批结果通常可在约10分钟内获得。电子许可有效期为180天，目前该服务面向70多个国家的公民开放。
+按照规定，需要办理电子许可的人员包括欧亚经济联盟成员国公民、与哈萨克斯坦签署互免签证协议的国家公民，以及其他适用免签入境政策的国家公民。
+申请时需要提供以下信息和材料：
+有效期不少于6个月的护照；
+用于接收申请结果的电子邮箱地址；
+前往哈萨克斯坦的旅行目的说明。
+可用于申请的身份证件包括外国公民的国家护照、俄罗斯联邦国内护照以及其他国家的身份证（ID卡）。
+对于过境旅客，QazETA运营方解释称：
+“如果旅客仅经哈萨克斯坦过境，且不进入哈萨克斯坦境内，则无需申请ETA许可。如果过境期间需要通过边境检查并进入哈萨克斯坦境内，是否需要电子许可将取决于旅客国籍及相应的入境条件。”
+根据政府决议第6条，针对免签入境外国公民，包括欧亚经济联盟成员国公民的电子许可制度，将分阶段实施。</div>
+<ul>
+<li>2027年7月起外国公民入境哈萨克斯坦须提前申请QazETA电子许可</li>
+<li>申请需至少提前72小时提交，审批约10分钟，许可有效期180天</li>
+<li>适用欧亚经济联盟成员国、互免签证协议国家及其他免签国家公民</li>
+<li>QazETA不取代签证制度，不改变合法停留期限，过境不入境者无需申请</li>
+<li>制度依据2026年10月10日第890号政府决议，过渡期内为建议性措施</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该制度强化哈国边境管控与移民数据化管理，对欧亚经济联盟及中亚邻国人员流动形成新规范，短期或增加入境手续成本，但长期有助于提升安全与统计能力，对矿产等外资合作影响有限。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(10 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/kazahstan-prinyal-uchastie-v-globalnom-forume-yunesko-po-borbe-s-rasizmom-i-disk-b8825dea" target="_blank">哈萨克斯坦参加联合国教科文组织全球反种族主义和歧视论坛</a></h3>
+<div class="item-meta">哈通社俄语版 · 10/31 03:16<span class="source-link"><a href="https://www.inform.kz/ru/kazahstan-prinyal-uchastie-v-globalnom-forume-yunesko-po-borbe-s-rasizmom-i-disk-b8825dea" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦驻荷兰大使拉赫梅图林代表哈方参加荷兰政府与联合国教科文组织共同举办的全球反种族主义和歧视论坛，主题为“从承诺到责任”。论坛汇集85国代表，讨论打击歧视、保护人权等议题。哈外交部表示参会符合哈国家政策，并提及2026年10月阿斯塔纳举行的哈与圣座联合座谈会及世界与传统宗教领袖大会秘书处第二十四次会议，通过两个关于宗教应对气候变化和AI伦理的国际文件。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦参加了联合国教科文组织关于打击种族主义和歧视的全球论坛。
+哈萨克斯坦驻荷兰大使阿坎·拉赫梅图林在国际平台上代表哈萨克斯坦出席。
+该论坛由荷兰政府与联合国教科文组织共同举办，主题为“从承诺到责任：改变系统，改变未来”。
+荷兰国王威廉-亚历山大、首相罗布·耶滕、联合国教科文组织、欧盟委员会、联合国代表以及国际专家和反歧视活动人士出席了开幕式。
+活动汇集了来自85个以上国家的代表。与会者讨论了打击种族主义、歧视和不容忍、保护人权、确保平等和加强社会凝聚力等问题。
+特别关注从政治承诺转向预防歧视和形成包容社会的实际措施。
+据哈萨克斯坦外交部指出，哈萨克斯坦参加该论坛符合加强民族间和宗教间和谐、确保公民平等权利和发展相互尊重文化的国家政策。
+该部门还强调了哈萨克斯坦人民大会和世界与传统宗教领袖大会在加强社会和谐和发展国际对话方面的作用。
+具体而言，2026年10月在阿斯塔纳举行了哈萨克斯坦与圣座第二次联合座谈会，致力于保护弱势儿童的权利和尊严，以及世界与传统宗教领袖大会秘书处第二十四次会议。
+这些活动审议了保护人的尊严、宗教间团结、人工智能使用的伦理方面以及宗教团体在解决全球问题中的作用等问题。
+此前有报道称，世界与传统宗教领袖大会秘书处第二十四次会议在阿斯塔纳举行。会议成果通过了两个国际文件，专门讨论宗教在应对气候变化中的作用以及人工智能在宗教领域使用的伦理原则。</div>
+<ul>
+<li>哈萨克斯坦参加联合国教科文组织全球反种族主义论坛</li>
+<li>论坛由荷兰政府与联合国教科文组织共同举办，85国参与</li>
+<li>哈方强调参会符合民族宗教和谐国家政策</li>
+<li>2026年10月阿斯塔纳举行哈与圣座座谈会及宗教领袖大会秘书处会议</li>
+<li>会议通过宗教应对气候变化和AI伦理两份国际文件</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">提升哈萨克斯坦国际形象，展示其民族宗教和谐模式；强化与联合国教科文组织及荷兰合作；推动宗教领袖大会框架下国际对话，为AI伦理和气候治理提供宗教维度方案。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/shangshizhongzuohui-c52698dd/" target="_blank">哈萨克斯坦驻上海总领事馆举办哈中合作专题圆桌会议</a></h3>
+<div class="item-meta">哈通社中文版 · 10/30 23:13<span class="source-link"><a href="https://cn.inform.kz/news/shangshizhongzuohui-c52698dd/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦驻上海总领事馆举办哈中合作圆桌会议，上海和浙江多所智库、高校代表及在沪哈籍研究生参加，哈战略研究所和外交部外交政策研究所专家线上发言。总领事努尔兰·阿赫霍什哈尔沃夫介绍哈发展成就，指出哈中永久全面战略伙伴关系发展良好。中方专家高度评价哈改革，强调哈作为中等强国的作用，并讨论数字技术、人工智能、跨里海国际运输路线与“一带一路”衔接等合作，认为哈中关系进入“黄金三十年”新阶段。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦驻上海总领事馆举办哈中合作专题圆桌会议
+
+来自上海市和浙江省智库、科研机构及高等院校的代表，包括上海国际问题研究院（SIIS）、上海社会科学院（SASS）、上海外国语大学（SISU）、华东师范大学（ECNU）和浙江财经大学（ZUFE）等单位的专家学者，以及在沪哈萨克斯坦硕士、博士研究生参加了此次活动。此外，哈萨克斯坦战略研究所和哈萨克斯坦外交部外交政策研究所的专家还通过线上方式作了发言。
+
+哈萨克斯坦驻上海总领事努尔兰·阿赫霍什哈尔沃夫在致辞中介绍了哈萨克斯坦在国家建设、经济发展和提升国际声望等方面取得的成就，并指出，建立在永久全面战略伙伴关系基础上的哈中关系正保持良好发展势头。
+
+与会中国专家学者高度评价哈萨克斯坦推进的政治和社会经济改革。他们指出，哈萨克斯坦作为中等强国，在维护地区安全、促进可持续发展方面发挥着重要作用，是欧亚大陆重要的联结纽带。
+
+与会各方还围绕数字技术、人工智能、联合生产、人才培养和科学研究等领域进一步拓展合作进行了交流。专家们特别强调，跨里海国际运输路线作为连接中国与欧洲的运输通道，具有重要的战略意义，并指出该路线与“一带一路”倡议相互衔接的重要性。
+
+中国学者认为，在两国元首的战略引领下，哈中关系已迈入“黄金三十年”新阶段。这将为增进政治互信、深化务实合作以及维护地区和平与稳定创造更加广阔的空间。</div>
+<ul>
+<li>哈驻上海总领事馆举办哈中合作圆桌会议</li>
+<li>中哈智库高校代表及在沪哈籍研究生参会</li>
+<li>总领事称哈中永久全面战略伙伴关系发展良好</li>
+<li>中方专家高度评价哈政治社会经济改革</li>
+<li>会议讨论数字技术、AI及跨里海路线合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">会议强化哈中智库与教育交流，巩固永久全面战略伙伴关系；推动跨里海路线与“一带一路”对接，拓展哈过境运输潜力；聚焦数字技术、AI和人才培养，助力哈经济多元化与外交多元平衡。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/zhongguodedisandao-dd403d27/" target="_blank">哈萨克斯坦加快建设通往中国的第三条铁路边境通道</a></h3>
+<div class="item-meta">哈通社中文版 · 10/30 20:47<span class="source-link"><a href="https://cn.inform.kz/news/zhongguodedisandao-dd403d27/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦正加快建设“巴克特—阿亚古兹”铁路，全长303公里，土方工程已完成92%，计划2027年投运。届时将开通哈中第三条铁路边境通道，年运输能力达2000万吨，有助于减轻多斯特克和阿勒腾阔勒口岸压力，提升货物流通效率，扩大对华出口和过境货流。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据交通部新闻处消息，目前，铁路建设正加快推进，土方工程已完成92%。与此同时，桥涵等构筑物建设以及铁路上部结构铺设工作仍在继续。
+按照计划，到今年年底，施工方将完成70公里的轨枕轨道铺设。目前，项目施工现场已投入约870台专业机械设备和1450名工作人员。
+新建“巴克特—阿亚古兹”铁路全长303公里，计划于2027年完成建设并投入运营。
+该项目实施后，将有望开通哈萨克斯坦与中国之间的第三条铁路边境通道。这将有助于减轻现有多斯特克和阿勒腾阔勒铁路口岸的运输压力，提高货物流通和分配效率，并为扩大两国铁路货运量创造更多条件。
+据预测，新铁路线路年运输能力可达2000万吨。铁路建成投运后，将进一步拓展哈萨克斯坦的出口能力，增加本国产品对华出口，吸引更多过境货流，并推动哈中两国经贸合作进一步发展。</div>
+<ul>
+<li>土方工程完成92%，年底将铺设70公里轨道</li>
+<li>铁路全长303公里，计划2027年建成投运</li>
+<li>将开通哈中第三条铁路边境通道</li>
+<li>年运输能力预计达2000万吨</li>
+<li>减轻现有口岸压力，提升货运效率</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该铁路将增强哈国对华出口能力，优化矿产等资源运输格局，缓解现有口岸拥堵，促进经贸合作，提升哈国作为过境枢纽的地缘经济地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/duiqidezhengwenguo-2ce52112/" target="_blank">托卡耶夫结束对土耳其的正式访问启程回国</a></h3>
+<div class="item-meta">哈通社中文版 · 10/30 20:14<span class="source-link"><a href="https://cn.inform.kz/news/duiqidezhengwenguo-2ce52112/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫于28日至30日对土耳其进行正式访问。访问期间，土方在安卡拉总统府举行隆重欢迎仪式，两国元首举行小范围和大范围会谈，指出在永久友谊和全面战略伙伴关系框架下双边关系稳步发展。29日，托卡耶夫与突厥国家组织成员国领导人在安卡拉贝什泰佩公园为“突厥世界林荫道”揭幕，并共同观看音乐会。30日，托卡耶夫在突厥国家组织第13届峰会上发表讲话，就深化经贸合作、发展交通物流、推进数字化转型、加强文化交流及完善组织机构建设提出多项倡议。访问结束后，土耳其贸易部长奥梅尔·博拉特等官员到安卡拉机场送行。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：托卡耶夫结束对土耳其的正式访问启程回国
+
+正文：
+在安卡拉机场，土耳其贸易部长奥梅尔·博拉特及其他土方官员到场为托卡耶夫总统送行。
+Фото: Ақорда Фото: Акорда Фото: Ақорда 据此前报道，托卡耶夫于28日开始对土耳其进行正式访问。访问期间，土方在安卡拉总统府为托卡耶夫举行了隆重的欢迎仪式。
+随后，哈土两国元首举行小范围会谈。双方指出，在永久友谊和全面战略伙伴关系的框架下，两国双边关系正稳步发展。
+当天，哈萨克斯坦总统与土耳其总统举行大范围会谈，两国官方代表团成员出席。
+当地时间29日，托卡耶夫总统与突厥国家组织成员国领导人一道，在土耳其首都安卡拉的贝什泰佩公园为“突厥世界林荫道”揭幕。
+当天晚间，突厥国家组织成员国领导人共同观看了突厥世界艺术家音乐会。
+当地时间30日，托卡耶夫总统在突厥国家组织第13届峰会上发表讲话，就深化成员国经贸合作、发展交通物流、推进数字化转型、加强文化交流以及完善组织机构建设提出多项倡议。</div>
+<ul>
+<li>托卡耶夫28-30日正式访问土耳其，土方举行隆重欢迎仪式</li>
+<li>哈土元首举行小范围和大范围会谈，强调双边关系稳步发展</li>
+<li>托卡耶夫与突厥国家组织领导人揭幕“突厥世界林荫道”</li>
+<li>托卡耶夫在突厥国家组织第13届峰会上提出多项合作倡议</li>
+<li>土耳其贸易部长奥梅尔·博拉特等到机场为托卡耶夫送行</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈土全面战略伙伴关系，推动突厥国家组织框架内经贸、交通物流与数字合作，有助于哈国拓展多元外交、降低对单一通道依赖，并促进矿产等资源出口路线多元化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/zhengjianhuidishihuizaixing-a4c76bc0/" target="_blank">哈吉政府间委员会第十四次会议在比什凯克举行</a></h3>
+<div class="item-meta">哈通社中文版 · 10/30 19:16<span class="source-link"><a href="https://cn.inform.kz/news/zhengjianhuidishihuizaixing-a4c76bc0/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦政府总理别克帖诺夫对吉尔吉斯斯坦进行正式访问，与吉总理卡西马利耶夫共同出席哈吉政府间委员会第十四次会议。双方讨论深化经贸、农业、水利、交通和过境运输、航天、航空、数字化及文化人文交流等优先领域合作，并签署会议纪要。访问期间两国政府首脑还出席了第二届哈吉地方合作论坛，签署一系列加强区域合作的文件。双方重申同盟关系，表示将落实共识，推动区域可持续发展。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">别克帖诺夫在致辞中指出，吉尔吉斯斯坦是哈萨克斯坦的友好邻邦、兄弟国家和重要的经贸合作伙伴。
+“得益于两国元首的共同努力和大力支持，两国间的同盟关系提升到了新的水平。我们的目标是全面落实两国元首确定的各项任务。为进一步扩大贸易往来，双方需要继续深化在交通运输和过境运输、农业以及其他经济领域的合作。总的来看，哈萨克斯坦和吉尔吉斯斯坦在各领域双边关系中蕴藏着巨大潜力。我们再次确认，已做好准备将这些潜力转化为具体成果，”别克帖诺夫表示。
+卡西马利耶夫表示，吉方怀着真诚的关注和赞赏，密切关注哈萨克斯坦正在推进的各项改革。他指出，两国人民之间有着数百年来形成的深厚历史、精神和兄弟情谊纽带。
+“近年来，在两国元首高度互信的推动下，双边合作在质量上提升到了新的水平。哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫去年对吉尔吉斯斯坦的正式访问，进一步确认了两国关系的同盟性质。我相信，阁下今天的正式访问将进一步推动双边合作发展，”他表示。
+在小范围和大范围会谈中，双方就深化经贸、农业、水利、交通和过境运输、航天、航空、数字化以及文化人文交流等优先领域的双边合作进行了讨论。
+会谈结束后，双方签署了哈萨克斯坦—吉尔吉斯斯坦政府间委员会第十四次会议纪要。双方重申，将切实落实已达成的各项共识，进一步巩固哈吉两国关系，推动区域可持续发展。
+值得一提的是，别克帖诺夫于昨日抵达比什凯克，对吉尔吉斯共和国进行正式访问。访问期间，两国政府首脑共同出席了在比什凯克举行的第二届哈萨克斯坦—吉尔吉斯斯坦地方合作论坛。双方还签署了一系列旨在加强区域合作的文件。</div>
+<ul>
+<li>哈吉政府间委员会第十四次会议在比什凯克举行，签署会议纪要。</li>
+<li>双方讨论深化经贸、农业、交通、航天、数字化等多领域合作。</li>
+<li>别克帖诺夫正式访问吉尔吉斯斯坦，出席第二届地方合作论坛。</li>
+<li>两国重申同盟关系，承诺落实共识推动区域可持续发展。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次会议强化哈吉同盟关系，促进双边经贸与过境运输合作，有助于哈国拓展区域经济联系，提升在中亚的交通枢纽地位，对区域一体化与稳定具有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/dierdifangzuo14zuowen-f8a2359a/" target="_blank">第二届哈吉地方合作论坛签署14项合作文件</a></h3>
+<div class="item-meta">哈通社中文版 · 10/30 18:21<span class="source-link"><a href="https://cn.inform.kz/news/dierdifangzuo14zuowen-f8a2359a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>第二届哈吉地方合作论坛在哈萨克斯坦总理别克帖诺夫和吉尔吉斯斯坦内阁主席卡瑟马利耶夫共同主持下举行，主题为“地区在发展战略伙伴关系中的作用”。论坛共签署14项合作文件，其中地方合作8项、医疗卫生1项、商业合作5项，涵盖州际备忘录、友好城市、度假区合作、药品医疗器械跨国采购及罐头和民族饮料供应合同等。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">第二届哈吉地方合作论坛签署14项合作文件
+
+本届论坛以“地区在发展战略伙伴关系中的作用”为主题，由哈萨克斯坦总理沃勒扎斯·别克帖诺夫和吉尔吉斯斯坦内阁主席兼总统办公厅主任阿德尔别克·卡瑟马利耶夫共同主持。
+
+在地方合作领域，双方签署了8项文件：
+哈萨克斯坦东哈萨克斯坦州政府与吉尔吉斯斯坦总统驻伊塞克湖州全权代表办公室签署合作备忘录。
+哈萨克斯坦阿克莫拉州休钦斯克—布拉拜度假区与吉尔吉斯斯坦伊塞克湖州伊塞克湖度假区签署建立友好关系及发展合作协议。
+哈萨克斯坦阿拉木图州与吉尔吉斯斯坦总统驻贾拉拉巴德州全权代表办公室签署谅解备忘录。
+哈萨克斯坦克孜勒奥尔达州与吉尔吉斯斯坦总统驻贾拉拉巴德州全权代表办公室签署谅解备忘录。
+哈萨克斯坦卡拉干达州与吉尔吉斯斯坦总统驻贾拉拉巴德州全权代表办公室签署谅解备忘录。
+哈萨克斯坦杰特苏州政府与吉尔吉斯斯坦总统驻纳伦州全权代表办公室签署合作备忘录。
+哈萨克斯坦阿拉木图市政府与吉尔吉斯斯坦比什凯克市政府签署2026年至2030年行动计划，以落实双方于1997年12月12日签署的建立友好城市关系协议。
+哈萨克斯坦突厥斯坦市与吉尔吉斯斯坦贾拉拉巴德州马纳斯市签署建立友好城市关系备忘录。
+
+在医疗卫生领域，双方签署了1项协议：
+哈萨克斯坦卫生部与吉尔吉斯斯坦卫生部签署关于开展药品和医疗器械跨国采购合作的协议。
+
+在商业合作领域，双方签署了5项文件：
+哈萨克斯坦“Добрые Традиции”公司与吉尔吉斯斯坦“Прод Импекс”公司签署罐头产品供应合同。
+哈萨克斯坦“Добрые Традиции”公司与吉尔吉斯斯坦“Алайку Органикс”公司签署民族特色饮料供应经销协议。</div>
+<ul>
+<li>论坛签署14项合作文件，地方合作占8项</li>
+<li>哈吉卫生部门签署药品和医疗器械跨国采购协议</li>
+<li>阿拉木图与比什凯克签署2026-2030年行动计划</li>
+<li>哈吉企业签署罐头产品供应和饮料经销协议</li>
+<li>多个州与吉方总统驻州代表办公室建立合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">论坛深化哈吉地方与经贸合作，强化区域伙伴关系，促进双边贸易和医疗资源互通，有助于哈萨克斯坦扩大对吉出口并巩固在中亚的经济影响力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/zaiguojiahuishangchuduozuo-buyingchengweijunshi-c58e5691/" target="_blank">托卡耶夫在突厥国家组织峰会上提出多项合作倡议 强调组织不应成为军事联盟</a></h3>
+<div class="item-meta">哈通社中文版 · 10/30 17:43<span class="source-link"><a href="https://cn.inform.kz/news/zaiguojiahuishangchuduozuo-buyingchengweijunshi-c58e5691/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在土耳其安卡拉举行的突厥国家组织峰会上发表讲话，强调该组织不应成为军事联盟，应尊重各国主权。峰会主题为“突厥世纪：语言、思想、行动上的团结”。托卡耶夫指出，今年哈萨克斯坦与成员国贸易额接近100亿美元，同比增长40%。他呼吁高质量落实《突厥世界2040年愿景》，尽快通过2027-2031年发展战略，并充分利用突厥投资基金。托卡耶夫还反对胡塞武装袭击沙特阿拉伯，关注中东局势对经贸物流的影响。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">本届峰会由土耳其总统雷杰普·塔伊普·埃尔多安主持，主题为“突厥世纪：语言、思想、行动上的团结”。峰会召开前，托卡耶夫抵达安卡拉总统府建筑群展览中心，受到埃尔多安总统迎接。
+托卡耶夫在讲话中指出，突厥国家组织是不断巩固突厥世界团结的重要合作机制。
+“尊重兄弟国家的主权和国家利益，是我们坚定不移的原则。突厥各民族亲如一家，正沿着共同确定的方向团结协作、稳步前进。今天峰会的主题‘突厥世纪：语言、思想、行动上的团结’具有十分深刻的意义。”
+总统表示，本届峰会恰逢首届突厥学大会召开100周年，具有特殊的象征意义。
+他回顾说，一个世纪前，兄弟国家的知识界代表曾在巴库举行重要会议，为加强精神文化联系、维护共同利益而凝聚力量。如今，各国正秉承先辈的嘱托，共同努力巩固突厥世界的团结。
+托卡耶夫特别提到，在埃尔多安总统倡议下，“突厥国家组织林荫道”日前在安卡拉正式揭幕。
+“我相信，这条林荫道将成为我们牢不可破的兄弟情谊的象征。”
+谈及国际形势时，托卡耶夫指出，当前全球地缘政治局势日趋紧张，中东地区形势，特别是霍尔木兹海峡周边的对峙进一步复杂化。
+他表示，这些局势正在对世界各国，尤其是相互接壤的突厥国家之间的经贸往来和交通物流联系产生不利影响。
+“哈萨克斯坦已对胡塞武装无端袭击兄弟国家沙特阿拉伯表示反对。我们支持要求停止此类不当行为的有关声明。”
+在经济合作方面，托卡耶夫表示，哈萨克斯坦高度重视突厥国家组织框架内的经济一体化进程。
+“今年，我国与组织成员国之间的贸易额已接近100亿美元，较去年增长40%。为了保持这一增长势头，我们还需要采取一系列措施。”
+总统强调，首先必须高质量落实《突厥世界2040年愿景》，并尽快通过突厥国家组织2027年至2031年发展战略。
+哈萨克斯坦支持战略草案中关于发展贸易、投资、金融、工业、农业、数字技术、教育和科学等领域的措施。
+“最重要的是，未来五年的战略必须包含具体项目。因此，我们需要充分利用突厥投资基金的潜力。这一金融机构具有广阔的发展前景，应为其全面开展工作创造必要条件。”</div>
+<ul>
+<li>托卡耶夫强调突厥国家组织不应成为军事联盟</li>
+<li>哈与成员国贸易额近100亿美元，增长40%</li>
+<li>呼吁尽快通过2027-2031年发展战略</li>
+<li>支持利用突厥投资基金落实具体项目</li>
+<li>反对胡塞武装袭击沙特，关注中东局势</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">托卡耶夫的表态明确了突厥国家组织非军事化定位，有助于哈萨克斯坦平衡与俄罗斯、中国及西方关系，避免卷入地缘对抗。经济上，贸易额增长40%显示合作潜力，但需具体项目支撑。强调主权原则和投资基金，有利于哈国吸引投资、推动经济多元化，同时维护其在中亚的独立外交空间。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/guojiadi13huihui-duo-1c2a6947/" target="_blank">托卡耶夫抵达突厥国家组织第13届峰会会场 埃尔多安迎接</a></h3>
+<div class="item-meta">哈通社中文版 · 10/30 16:32<span class="source-link"><a href="https://cn.inform.kz/news/guojiadi13huihui-duo-1c2a6947/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫10月28日抵达安卡拉对土耳其进行正式访问，埃尔多安机场迎接。29日出席突厥国家组织第13届峰会，主题为“突厥世纪：语言、思想、行动上的团结”。峰会评估政治、经贸、交通、能源等领域合作成果，讨论落实《突厥世界2040年愿景》，土耳其从阿塞拜疆接任轮值主席国，任命新秘书长，发表《安卡拉宣言》。托卡耶夫还与各国领导人出席“突厥世界林荫道”揭幕仪式及音乐会。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">本届峰会由土耳其总统埃尔多安主持，以“突厥世纪：语言、思想、行动上的团结”为主题。
+突厥国家组织成员国领导人、观察员国高级官员以及该组织秘书长将出席峰会。与会各方将围绕组织框架内合作的现状与发展前景，以及共同关心的地区和国际问题展开讨论。
+根据会议议程，各国领导人将评估突厥国家组织在政治合作、贸易与投资、交通运输与互联互通、能源、数字化转型、文化与人文交流以及机构建设等重点领域取得的成果。
+峰会还将重点讨论进一步巩固突厥国家之间的团结与合作，并围绕落实《突厥世界2040年愿景》文件，研究深化各领域合作的具体方向。
+此次安卡拉峰会也是突厥国家组织机构发展进程中的重要节点。根据安排，土耳其将在峰会期间从阿塞拜疆手中接任该组织轮值主席国。
+此外，峰会计划任命新一任突厥国家组织秘书长，并确定该组织下一阶段的战略优先事项。
+各国领导人预计将通过一系列旨在深化成员国合作、加强组织机构建设的决定和文件，并发表《安卡拉宣言》。
+峰会召开前夕，突厥国家组织外长理事会会议及相关机构筹备会议也将举行，为领导人峰会做好准备。
+值得一提的是，托卡耶夫于10月28日抵达安卡拉，开始对土耳其进行正式访问。土耳其总统埃尔多安亲自前往机场迎接。访问期间，土方在安卡拉总统府举行隆重的欢迎仪式，骑兵护卫队护送总统车队入场，现场奏响两国国歌并鸣放21响礼炮。随后，两国元首先后举行小范围和扩大范围会谈，围绕深化哈土全面战略伙伴关系、扩大经贸投资合作以及共同关心的地区和国际问题交换意见。
+10月29日，托卡耶夫与突厥国家组织成员国领导人共同出席在安卡拉贝什泰佩公园举行的“突厥世界林荫道”揭幕仪式。园区设有哈萨克斯坦、土耳其、阿塞拜疆、吉尔吉斯斯坦、乌兹别克斯坦和土库曼斯坦的国家展馆。各国领导人参观了展示突厥民族历史文化遗产的展区，并共同参加植树仪式。当天，托卡耶夫还与各国领导人共同观看突厥世界艺术家音乐会。“突厥世界”乐团与土耳其总统府交响乐团联袂演奏了多部音乐作品，哈萨克斯坦人民艺术家迪玛希及土耳其歌手克拉奇等登台献艺。</div>
+<ul>
+<li>托卡耶夫10月28-29日访土并出席突厥国家组织峰会</li>
+<li>峰会主题“突厥世纪：语言、思想、行动上的团结”</li>
+<li>土耳其接任轮值主席国，任命新秘书长，发表《安卡拉宣言》</li>
+<li>评估政治、经贸、交通、能源、数字化等领域合作成果</li>
+<li>托卡耶夫出席“突厥世界林荫道”揭幕及音乐会</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">峰会有助哈萨克斯坦巩固与突厥国家政治互信，拓展经贸投资与交通互联互通，提升在地区事务中的话语权；土耳其接任主席国或推动组织机制化，哈方需平衡多边外交与自身矿产能源利益。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://cn.inform.kz/news/duijinxingwen-chudierdifangzuo-ea5a7b2c/" target="_blank">别克帖诺夫访问吉尔吉斯斯坦并出席第二届地方合作论坛</a></h3>
+<div class="item-meta">哈通社中文版 · 10/30 15:18<span class="source-link"><a href="https://cn.inform.kz/news/duijinxingwen-chudierdifangzuo-ea5a7b2c/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总理别克帖诺夫访问吉尔吉斯斯坦并出席第二届地方合作论坛，双方讨论加强地区间直接联系及贸易、投资、交通物流和旅游合作。2025年双边贸易额同比增长33%至24亿美元，2026年以来再增20%，目标提升至30亿美元。2025年铁路货运量增长10%至680万吨，公路货运量增长37%至370万吨。2026年前9个月双向游客超400万人次。双方重点推动江布尔州成为边境贸易物流中心。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">吉尔吉斯斯坦内阁主席兼总统办公厅主任阿德尔别克·卡瑟马利耶夫，以及哈萨克斯坦阿拉木图州、江布尔州、东哈萨克斯坦州、阿克莫拉州、卡拉干达州、杰特苏州、阿拉木图市和突厥斯坦市，吉尔吉斯斯坦伊塞克湖州、楚河州、塔拉斯州、奥什州、贾拉拉巴德州和纳伦州的负责人，以及两国政府部门和工商界代表参加了论坛。
+
+论坛期间，与会各方讨论了加强地区间直接联系，以及在贸易、投资、工业、交通物流和旅游等领域实施联合项目的问题。会议特别关注发展两国城市和地区之间的友好城市关系、扩大务实合作以及建立新的伙伴关系。
+
+别克帖诺夫在发言中表示：
+- 在哈斯穆-卓玛尔特·托卡耶夫总统的领导下，我们正持续建设一个以开放和与各国开展建设性伙伴关系为基础的公正、进步的哈萨克斯坦。这一方针为加强经济建设、提高投资吸引力、扩大国际合作以及为企业创造尽可能有利的经营环境提供了良好条件。我们高度重视全面发展与兄弟国家吉尔吉斯斯坦的盟友关系。
+
+卡瑟马利耶夫表示：
+- 我们的双边合作已迈上全新水平。我们高度重视举办第二届地方合作论坛，该论坛正成为加强双边合作的重要机制。吉尔吉斯斯坦楚河州、塔拉斯州和伊塞克湖州与哈萨克斯坦阿拉木图州和江布尔州历来保持密切联系。与此同时，我们的地方合作并不局限于边境地区，两国不直接接壤的城市和州之间也已建立直接联系。
+
+吉尔吉斯斯坦是哈萨克斯坦的重要贸易伙伴之一。2025年，两国双边贸易额同比增长33%，达到24亿美元。2026年以来，双边贸易额较去年同期进一步增长20%。
+
+别克帖诺夫强调，哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫和吉尔吉斯斯坦总统萨德尔·扎帕罗夫已提出将双边贸易额提升至30亿美元的目标。
+
+边境地区在进一步发展两国经济联系方面发挥着重要作用。哈萨克斯坦阿拉木图州和江布尔州与吉尔吉斯斯坦伊塞克湖州、塔拉斯州和楚河州接壤，两国边境线总长约1200公里。
+
+论坛重点讨论了将江布尔州打造为边境贸易和物流主要中心之一的问题。哈吉边境8个口岸中，有7个位于江布尔州境内。当地有超过1000家吉尔吉斯斯坦资本参与的企业开展经营活动。此外，正在江布尔州实施的工业贸易物流综合体项目也是两国具有发展前景的联合项目之一。
+
+双方还讨论了交通运输和过境运输合作的发展前景。
+
+2025年，哈萨克斯坦与吉尔吉斯斯坦之间的铁路货运量同比增长10%，达到680万吨。2026年前9个月，两国铁路货运量达到510万吨，同比增长8.3%。
+
+公路运输同样保持增长态势。2025年，两国公路货运量同比增长37%，达到370万吨。双方转向电子交换运输许可证，成为简化运输程序的重要举措。
+
+旅游业也是本届论坛关注的重点领域。哈萨克斯坦与吉尔吉斯斯坦在山地旅游、生态旅游、湖滨度假旅游和商务旅游等方面具有广阔的联合开发潜力。2026年前9个月，两国双向游客流量超过400万人次。
+
+双方重申，将继续扩大地方之间的直接联系，推动联合生产、贸易、交通基础设施和旅游业发展。有关合作倡议的实施将有助于加强哈吉战略伙伴关系，促进地区经济可持续发展。</div>
+<ul>
+<li>哈吉举行第二届地方合作论坛，聚焦地区间直接联系与联合项目</li>
+<li>2025年双边贸易额增33%达24亿美元，目标提升至30亿美元</li>
+<li>2025年铁路货运量增10%至680万吨，公路货运量增37%至370万吨</li>
+<li>江布尔州定位边境贸易物流中心，哈吉边境8口岸中7个位于该州</li>
+<li>2026年前9个月双向游客流量超400万人次，旅游合作潜力大</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">论坛强化哈吉盟友关系，推动贸易投资与交通物流合作，提升区域经济一体化水平。江布尔州物流枢纽建设将优化矿产及商品过境运输格局，促进哈国南部经济发展，增强在中亚的过境运输地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">10</span> <a href="https://cn.inform.kz/news/sanguo1-d64986a9/" target="_blank">哈吉乌三国讨论坎巴尔阿塔1号水电站建设项目</a></h3>
+<div class="item-meta">哈通社中文版 · 10/30 14:37<span class="source-link"><a href="https://cn.inform.kz/news/sanguo1-d64986a9/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦、吉尔吉斯斯坦和乌兹别克斯坦三国代表召开技术会议，讨论坎巴尔阿塔1号水电站项目下一阶段实施工作。该水电站位于吉尔吉斯斯坦纳伦河，设计装机容量1860兆瓦，由三国政府共同推进。会议就关键技术问题交换意见，并探讨水资源与能源合作前景。项目旨在提升中亚能源潜力，促进水资源合理利用，此次会议是推动地区可持续发展的重要步骤。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦能源部副部长叶尔詹·叶尔塔耶夫和水资源和灌溉部副部长阿尔森·扎坎巴耶夫代表哈方出席会议。
+与会各方讨论了坎巴尔阿塔1号水电站项目下一阶段的实施工作。该水电站计划建于吉尔吉斯斯坦境内的纳伦河上，设计装机容量为1860兆瓦。项目由哈萨克斯坦、吉尔吉斯斯坦和乌兹别克斯坦三国政府共同推进，对促进地区水资源与能源合作具有重要战略意义。
+会议期间，各方就项目实施过程中的关键技术问题进行了讨论，并就下一阶段联合工作的重点方向交换意见，同时探讨了水资源与能源领域进一步开展合作的前景。
+坎巴尔阿塔1号水电站项目的实施旨在提升中亚地区的能源潜力，加强地区能源合作，促进水资源的合理利用。
+此次技术会议是哈萨克斯坦、吉尔吉斯斯坦和乌兹别克斯坦三国推进联合项目的又一重要步骤，有助于推动地区水资源与能源领域的可持续发展。</div>
+<ul>
+<li>哈吉乌三国讨论坎巴尔阿塔1号水电站下一阶段实施</li>
+<li>水电站位于吉尔吉斯斯坦纳伦河，装机容量1860兆瓦</li>
+<li>项目由三国政府共同推进，具战略意义</li>
+<li>会议就关键技术问题及合作前景交换意见</li>
+<li>项目旨在提升中亚能源潜力，促进水资源合理利用</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该项目将增强哈国在中亚能源合作中的话语权，促进水资源协调利用，减少夏季电力短缺压力，并深化三国互信，但需平衡吉方水资源控制权与哈方能源利益。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/yeyekenian5de-8cceb7c9/" target="_blank">哈萨克斯坦农业企业可申请年利率5%的优惠贷款</a></h3>
+<div class="item-meta">哈通社中文版 · 10/30 19:45<span class="source-link"><a href="https://cn.inform.kz/news/yeyekenian5de-8cceb7c9/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦农业部推出农业企业优惠贷款计划，年利率5%，年有效利率从5%起。单笔贷款融资期限最长12个月，信用额度有效期最长36个月。还款计划根据借款人经营特点和商业计划制定。牲畜育肥农场须将至少70%贷款用于购买育肥牲畜；种畜养殖场可用于饲料、兽药、燃油等生产物资及零配件和工资。该计划旨在解决农产品加工和畜牧业流动资金需求，保障生产稳定，推动农业发展。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦农业企业可申请年利率5%的优惠贷款
+正文:
+该计划旨在为农业企业提供便捷的融资支持，保障生产活动持续稳定开展。
+优惠贷款年利率为5%，年有效利率从5%起。单笔贷款资金的融资期限最长为12个月，信用额度的有效期最长为36个月。
+贷款还款计划将根据借款人的经营特点和商业计划分别制定。
+对于从事牲畜育肥的农场，贷款金额中至少70%必须用于购买后续育肥的牲畜。
+肉用和奶用种畜养殖场则可将贷款资金用于购买饲料、饲料添加剂、燃油及润滑油、兽药等生产物资。
+此外，贷款还可用于购买饲料收割和投喂机械设备所需的零配件，以及支付员工工资。
+农业部表示，该计划将帮助农产品加工企业和畜牧业综合体解决流动资金需求，保障生产流程稳定运行，并推动农业产业发展。</div>
+<ul>
+<li>优惠贷款年利率5%，年有效利率从5%起</li>
+<li>单笔贷款期限最长12个月，信用额度有效期最长36个月</li>
+<li>牲畜育肥农场须将至少70%贷款用于购买育肥牲畜</li>
+<li>种畜养殖场贷款可用于饲料、兽药、燃油及工资等</li>
+<li>计划旨在解决流动资金需求，保障生产稳定</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该政策将缓解哈国农业企业流动资金压力，促进畜牧业和农产品加工稳定生产，有助于保障粮食安全与农村就业，但需关注贷款偿还风险及对财政补贴的依赖。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/xinggong30riyuzhuyaowaizhijiande-6965f446/" target="_blank">央行公布30日坚戈与主要外币之间的汇率标准</a></h3>
+<div class="item-meta">哈通社中文版 · 10/30 13:36<span class="source-link"><a href="https://cn.inform.kz/news/xinggong30riyuzhuyaowaizhijiande-6965f446/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行公布2026年10月30日坚戈对主要外币官方汇率：美元兑坚戈1:453.71，欧元兑坚戈1:505.8，俄罗斯卢布兑坚戈1:5.63，土耳其里拉兑坚戈1:9.1，中国元兑坚戈1:68.11。央行规定，坚戈兑美元官方汇率基于阿斯塔纳时间15:30证券交易所加权平均汇率确定，其他外币汇率依据16:00交叉汇率计算。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 央行公布30日坚戈与主要外币之间的汇率标准
+正文:
+根据央行公布的信息，2026年10月30日，哈萨克斯坦坚戈与国际主要货币之间的兑换汇率标准如下：
+美元兑坚戈（USD/KZT） – 1：453.71
+欧元兑坚戈（EUR/KZT）- 1：505.8
+俄罗斯卢布兑坚戈（RUB / KZT）-1: 5.63
+土耳其里拉兑坚戈（TRY / KZT）- 1: 9.1
+中国元兑坚戈（CNY / KZT）- 1：68.11
+值得一提的是，根据哈萨克斯坦国家银行规定，截至阿斯塔纳时间当日15:30，在哈萨克斯坦证券交易所形成的坚戈兑美元加权平均汇率，将被确定为下一工作日坚戈兑美元官方汇率；坚戈兑其他外币的官方汇率，则依据截至阿斯塔纳时间16:00形成的交叉汇率计算得出。</div>
+<ul>
+<li>美元兑坚戈汇率为1:453.71</li>
+<li>欧元兑坚戈汇率为1:505.8</li>
+<li>中国元兑坚戈汇率为1:68.11</li>
+<li>卢布兑坚戈1:5.63，里拉兑坚戈1:9.1</li>
+<li>美元汇率基于证交所15:30加权平均</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率数据反映坚戈对主要货币的比价关系，为贸易和投资提供定价基准。美元汇率形成机制体现市场化导向，有助于增强货币政策透明度和金融稳定，对矿产等大宗商品贸易结算具有参考意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/zhongguoyushixianer-4a19db68/" target="_blank">中亚四国与阿塞拜疆拟实现跨境二维码支付</a></h3>
+<div class="item-meta">哈通社中文版 · 10/30 12:09<span class="source-link"><a href="https://cn.inform.kz/news/zhongguoyushixianer-4a19db68/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>10月22日至23日，哈萨克斯坦、吉尔吉斯斯坦、塔吉克斯坦、乌兹别克斯坦和阿塞拜疆五国央行代表在塔吉克斯坦举行第四次区域会议，讨论支付系统发展。哈方介绍数字金融基础设施进展，包括数字坚戈、生物识别认证等。各方支持哈方提出的整合二维码支付系统倡议，同意年底前明确互联互通机制，实现五国公民跨境二维码支付和实时转账。会议还讨论了网络安全、AI监管科技和打击金融欺诈等议题。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">10月22日至23日，哈萨克斯坦、吉尔吉斯斯坦、塔吉克斯坦、乌兹别克斯坦和阿塞拜疆五国中央银行（国家银行）代表在塔吉克斯坦举行第四次区域会议，重点讨论支付系统发展相关问题。
+与会代表围绕国家支付平台和即时支付系统建设、二维码支付标准推广、提升金融普惠性和扩大无现金支付应用，以及建立国家远程身份认证系统等议题交流了经验。
+哈萨克斯坦国家银行在会上介绍了国家数字金融基础设施建设取得的进展，包括国家支付系统、生物识别身份认证平台、数字坚戈、开放银行体系、国家反欺诈中心，以及支持通过手机号码转账和二维码支付的银行间移动支付系统等项目的实施经验。
+与会各方特别关注跨境支付的发展前景，重点探讨国家即时支付系统与数字货币之间的互联互通机制。
+会议期间，各方支持哈方提出的整合各国二维码支付系统的倡议，并同意在今年年底前明确各国二维码支付系统实现互联互通的具体机制。
+如果这一倡议得以实施，哈萨克斯坦、吉尔吉斯斯坦、塔吉克斯坦、乌兹别克斯坦和阿塞拜疆公民在上述国家之间旅行时，将能够直接使用本国银行的手机应用程序进行二维码支付，并实现实时跨境转账。
+此外，哈方还提议在信息交流和数字资产监管领域开展联合活动。
+各方还就保障支付系统稳定可靠运行、加强支付基础设施网络安全防护、利用人工智能及监管科技（SupTech、RegTech）提升支付系统监管水平，以及打击金融欺诈等问题进行了讨论。
+会议结束时，各方对进一步深化区域支付系统和数字金融技术领域合作的前景给予高度评价。</div>
+<ul>
+<li>五国央行在塔吉克斯坦举行第四次区域会议，聚焦支付系统合作</li>
+<li>哈方介绍数字坚戈、生物识别、开放银行等数字金融基建进展</li>
+<li>各方支持哈方整合二维码支付系统倡议，年底前明确互联互通机制</li>
+<li>倡议实施后五国公民可跨境使用本国银行APP二维码支付和实时转账</li>
+<li>会议还讨论网络安全、AI监管科技、数字资产监管和打击金融欺诈</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该倡议将提升哈萨克斯坦在中亚区域支付一体化中的主导地位，推动数字坚戈和金融科技输出，促进区域贸易和旅游便利化，增强哈国金融外交影响力，但需协调各国监管差异和网络安全风险。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/qijiayingjiangweijingchangdongli-a42221b4/" target="_blank">土耳其专家：哈萨克斯坦应将资源优势转化为经济增长动力</a></h3>
+<div class="item-meta">哈通社中文版 · 10/31 01:42<span class="source-link"><a href="https://cn.inform.kz/news/qijiayingjiangweijingchangdongli-a42221b4/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>土耳其专家卡纳特指出，哈萨克斯坦应将丰富自然资源和优越地理位置转化为持续经济增长动力。他建议哈国推动人工智能与自主技术发展，提升科研能力和人才水平，区分技术进口与自主生产能力建设。同时推进制度改革提高治理效能，丰富外交布局推动突厥世界一体化，深化与土耳其合作，重点聚焦“中间走廊”跨里海国际运输路线建设与能源合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">土耳其专家：哈萨克斯坦应将资源优势转化为经济增长动力
+
+这位土耳其专家认为，哈萨克斯坦面临的主要任务，是将丰富的自然资源和优越的地理位置转化为持续的经济增长动力。
+
+推动人工智能与自主技术发展
+
+技术在当前国家发展议程中发挥着越来越重要的作用。在全球竞争日益激烈的背景下，数字化解决方案和人工智能正成为提高生产效率、改善公共服务和发展新兴产业的有效工具。
+
+卡纳特认为，对哈萨克斯坦而言，不仅要引进现成的技术解决方案，还应注重提升自身的科研能力和人才队伍的专业水平。
+
+“要保持长期竞争力，就必须区分技术进口与自主技术生产能力建设，”卡纳特指出。
+
+在此背景下，他提到了哈萨克斯坦与土耳其在工程教育、科学研究和科技创业领域开展联合项目的潜力。大学、科研机构和私营部门之间的合作，有助于培养专业人才，进一步加强突厥国家间的科技和经济联系。
+
+“这些领域的合作有助于深化双方的经济联系。土耳其企业不仅愿意继续开展传统的贸易和建筑业合作，也准备更加积极地参与农业技术、可再生能源、机械制造、数字服务和现代材料生产等领域的项目，”卡纳特表示。
+
+推进制度改革，提高国家治理效能
+
+国情咨文的另一项重要内容是提高国家机构的运行效率。卡纳特表示，法治、透明度、问责制和有效的法律机制，既是增强社会信任的重要基础，也是营造可预期投资环境的重要条件。
+
+他指出，哈萨克斯坦与土耳其可以在国家治理、教育和经济政策等领域开展经验交流，同时，相关合作也应充分考虑两国各自的国情和特点。
+
+丰富外交布局，推动突厥世界一体化
+
+卡纳特进一步指出，应从哈萨克斯坦在复杂多变的国际体系中的定位出发，审视国情咨文提出的各项优先方向。在发展与俄罗斯、中国、欧盟、美国及中亚国家关系的同时，阿斯塔纳需要推动经济联系多元化，并保持独立作出外交决策的能力。
+
+在这一背景下，深化与土耳其的伙伴关系，有助于拓展市场、吸引投资和加强交通互联互通。突厥国家组织在这一进程中也发挥着特殊而重要的作用。卡纳特认为，哈萨克斯坦在经济和技术领域确定的优先方向，将为区域合作创造更多机遇。
+
+聚焦“中间走廊”建设与能源合作
+
+在哈萨克斯坦与土耳其合作的具体领域中，“中间走廊”——即跨里海国际运输路线，仍是最具现实意义的合作方向之一。</div>
+<ul>
+<li>哈国应将资源优势转化为持续经济增长动力</li>
+<li>推动人工智能与自主技术发展，提升科研能力</li>
+<li>推进制度改革，提高国家治理效能</li>
+<li>丰富外交布局，推动突厥世界一体化</li>
+<li>聚焦“中间走廊”建设与能源合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该观点有助于哈国推动经济多元化，减少对资源出口依赖；深化与土耳其及突厥国家合作，拓展外交空间；促进“中间走廊”建设，提升过境运输地位；吸引技术投资，改善矿产等产业格局。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-10-31 09:03</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
