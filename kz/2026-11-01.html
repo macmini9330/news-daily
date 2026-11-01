@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年11月1日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年11月1日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年10月31日早9:00至2026年11月01日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 9 条</span><span class="stat-chip">3 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">5</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">1</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">0</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(5 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/kontseptsiyu-vnedreniya-ii-v-energetike-predstavili-v-kazahstane-acdf3384" target="_blank">哈萨克斯坦提出能源领域人工智能应用构想</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/01 03:44<span class="source-link"><a href="https://www.inform.kz/ru/kontseptsiyu-vnedreniya-ii-v-energetike-predstavili-v-kazahstane-acdf3384" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦能源部召开会议，讨论人工智能在能源领域的应用概念。01.AI董事会主席、总统编外顾问李开复线上参会，介绍了AI在能源领域的应用方法。会议展示了燃料短缺风险早期识别、报告自动化、工业安全监控及数字孪生等解决方案，强调确保哈国技术和信息主权，数据与基础设施将部署在哈境内并由能源部控制。会议还讨论了试点测试和后续推广等实施阶段。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据能源部新闻处消息，公司01.AI董事会主席、哈萨克斯坦总统编外顾问李开复以线上形式参加了讨论，哈萨克斯坦Q.AI办公室代表也参与了讨论。
+李开复介绍了该公司在能源领域应用人工智能的方法。与会者了解了拟议平台的架构、功能能力以及在能源部和下属机构工作中的使用场景。
+展示的解决方案包括：早期识别燃料短缺风险、报告编制和检查自动化，以及工业安全监控。这些解决方案的实施将提高行业数据分析的及时性和决策的合理性。
+会议特别关注了能源对象的数字孪生。借助此类工具，可以在做出技术决策之前对生产过程进行建模、分析设备状态、识别潜在偏差并评估各种场景的后果。
+拟议的平台架构规定整合行业知识库、信息系统和旨在执行具体生产和管理任务的专用AI代理。
+该概念的关键原则之一被命名为确保哈萨克斯坦的技术和信息主权。预计数据、计算基础设施和行业模型将在能源部的控制下部署在哈萨克斯坦境内。
+会议期间还讨论了该倡议可能的实施阶段。其中包括：在真实行业数据上进行试点测试、评估拟议解决方案的有效性，以及随后推广已被证明对燃料能源综合体具有实际效用的工具。
+回顾一下，哈萨克斯坦更新了电力使用规则。</div>
+<ul>
+<li>能源部会议讨论AI在能源领域应用概念</li>
+<li>李开复线上介绍01.AI的AI应用方法</li>
+<li>展示燃料风险识别、报告自动化等方案</li>
+<li>强调技术信息主权，数据部署在哈境内</li>
+<li>讨论试点测试和后续推广实施阶段</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该概念若实施，将提升哈国能源行业决策效率与安全性，强化数据主权和数字基础设施自主，减少对外依赖，并可能推动AI在矿产能源领域的应用，影响地缘技术格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/kazahstan-realizuet-masshtabnie-proekti-modernizatsii-infrastrukturi-aeroportov--73562a15" target="_blank">哈萨克斯坦将在2029年前实施大规模机场基础设施现代化项目</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/01 01:45<span class="source-link"><a href="https://www.inform.kz/ru/kazahstan-realizuet-masshtabnie-proekti-modernizatsii-infrastrukturi-aeroportov--73562a15" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦为落实2026年10月28日国情咨文，审议至2029年机场基础设施发展三年计划。计划现代化改造7个机场跑道，包括在阿斯塔纳、奇姆肯特、阿克托别新建3条跑道，改造阿拉木图等4条现有跑道；并在阿克托别等7个机场建设改造客运航站楼。会议要求及时编制设计预算文件、确定融资来源并遵守期限，向相关机构下达加快实施的指示。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">为落实国家元首2026年10月28日致哈萨克斯坦人民的国情咨文，会议审议了跑道建设与改造、客运航站楼现代化以及机场基础设施发展项目的实施进展。
+根据至2029年的机场基础设施发展三年计划，将对该国7个机场的跑道进行现代化改造，包括在阿斯塔纳、奇姆肯特和阿克托别建设3条新跑道，以及对阿拉木图、杰兹卡兹甘、塔拉兹和乌拉尔斯克的4条现有跑道进行改造。
+此外，该计划还规定在7个机场——阿克托别、阿特劳、乌斯季卡缅诺戈尔斯克、杰兹卡兹甘、塞梅伊、巴甫洛达尔和乌尔贾尔——建设和改造客运航站楼。
+会议特别关注了及时编制设计预算文件、确定资金来源以及遵守项目规定期限等问题。
+根据会议结果，向相关国家机构、地方执行机构和有关组织下达了指示，要求加快工作并确保基础设施项目及时实施。
+此前据报道，10月29日，第一副总理努尔雷别克·纳利巴耶夫主持了关于彼得罗巴甫洛夫斯克机场发展问题的会议。</div>
+<ul>
+<li>至2029年计划现代化改造7个机场跑道</li>
+<li>阿斯塔纳、奇姆肯特、阿克托别新建3条跑道</li>
+<li>阿拉木图等4地现有跑道进行改造</li>
+<li>7个机场将建设或改造客运航站楼</li>
+<li>会议要求明确融资并按时推进项目</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该计划将提升哈国航空运输能力与区域连通性，促进地方经济和旅游业发展，但需确保融资到位和按期实施，避免财政压力。外交上可增强过境运输潜力，矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/narodnaya-stroyka-otkroet-novie-vozmozhnosti-dlya-predprinimateleyv-regionah-dep-661d7578" target="_blank">议员：“人民建设”计划将为各地区企业家开辟新机遇</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/01 00:45<span class="source-link"><a href="https://www.inform.kz/ru/narodnaya-stroyka-otkroet-novie-vozmozhnosti-dlya-predprinimateleyv-regionah-dep-661d7578" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦议员伊利亚·捷尔琴科表示，“人民建设”倡议下的大型项目建设可成为地区经济额外动力，强调企业家应平等参与采购、发展生产并创造就业。国家投资需产生乘数效应，带来新企业、税收和就业。他主张加强社会监督，支持总统提议让人民委员会代表、议员、公共委员会、专家、记者和志愿者参与监督，并指出监督需考虑各地区特点和居民实际需求。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">«人民建设»将为各地区企业家开辟新机遇 — 议员
+
+据议员表示，在“Халықтық құрылыс”（人民建设）倡议框架内建设大型设施，可能成为地区经济发展的额外动力。同时，重要的是各地区企业家能够在平等条件下参与此类项目的实施，获得采购机会，发展自身生产并创造新的就业岗位。
+
+——国家投资应产生乘数效应：除了建成的学校、道路和社会设施外，我们还应该获得新的企业、税收、就业和创业 initiative 的发展，——议员指出。
+
+同时，他将社会监督称为该计划实施的重要条件之一。这种做法得到了他本人担任市议员和州马斯利哈特（地方议会）议员经验的证实。在那段时期，他定期参加国家计划框架内建设项目的实地考察。
+
+——我们实地查看了一切：建筑质量、工期遵守情况、劳动安全、施工与项目文件的符合程度、预算资金使用效率，——伊利亚·捷尔琴科讲述道。
+
+据他所说，这种监督有助于更快发现和消除缺陷。
+
+——当议员、公众人士或专家来到现场不是为了拍漂亮的照片，而是提出具体问题并记录具体问题时，缺陷就会开始更快地被消除。因为出现了额外的责任感和理解，即结果不仅受到系统内部的关注，——他强调道。
+
+在这方面，议员支持总统提出的让“Халық Кеңесі”（人民委员会）代表、议员、公共委员会、专家、记者和志愿者参与监督“人民建设”的建议。
+
+正如伊利亚·捷尔琴科所指出的，新的全国性机制将能够整合各地区已有的经验。同时，在监督时重要的是考虑每个地区的特点和居民的实际需求。
+
+——每个地区都有自己的特点。有的地方主要问题是道路质量，有的地方是学校或医院建设，有的地方是工程管网接入期限。而正是当地人民最清楚发生了什么。</div>
+<ul>
+<li>“人民建设”项目可成为地区经济额外动力</li>
+<li>企业家应平等参与采购、发展生产、创造就业</li>
+<li>国家投资需产生乘数效应：新企业、税收、就业</li>
+<li>社会监督是计划实施的重要条件</li>
+<li>支持总统提议：多方代表参与监督“人民建设”</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该倡议通过国家投资拉动地区经济，促进企业家参与和就业，强化社会监督机制，有助于提升政策透明度和地方治理效能，对哈国区域均衡发展和政治社会稳定具有积极意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/zhongguojiaguoqingwenzhengchengweichangfadezhan-fd0574e5/" target="_blank">中国专家：托卡耶夫国情咨文正成为哈萨克斯坦长期发展的战略宣言</a></h3>
+<div class="item-meta">哈通社中文版 · 10/31 16:20<span class="source-link"><a href="https://cn.inform.kz/news/zhongguojiaguoqingwenzhengchengweichangfadezhan-fd0574e5/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>北京哈萨克斯坦研究中心主任喻幕鸿评价托卡耶夫国情咨文，指出在独立35周年和新宪法生效节点，“人民建设”基础设施计划成为核心。咨文将施政重点从政治改革转向社会经济治理，提出代际责任理念，为阿拉套市设特殊法律制度、建普通法投资法院以增强外资信心。哈国作为资源型大国，正发挥矿产、农业和过境运输优势，避免依赖单一力量中心，融入欧亚产业链。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">北京哈萨克斯坦研究中心主任、教授喻幕鸿（Yu Muhong）在接受哈通社记者采访时作出了上述评价。
+
+喻幕鸿指出，在哈萨克斯坦迎来独立35周年、新宪法正式生效的重要历史节点，“人民建设”大型基础设施建设计划成为此次国情咨文的核心议题。
+
+“国情咨文中最具实践意义的举措，是启动覆盖全国的大规模‘人民建设’计划，重点推进社会、交通和公共基础设施建设。”他说。
+
+喻幕鸿认为，托卡耶夫总统在综合评估国内外形势的基础上，将施政重点由政治制度改革转向社会经济治理，更加注重改善主要经济指标，并明确国家长期发展目标。
+
+“这份国情咨文发表于国家制度转型和重要历史节点交汇之际，已不再是常规的年度施政报告，而是正在成为引领国家长期发展的战略宣言。”于沐洪表示。
+
+这位中国专家还特别关注国情咨文中提出的代际责任理念，以及完善商业领域法律监管体系的相关举措。
+
+他指出，为新建的阿拉套市设立特殊法律制度，以及建立以普通法体系为基础的投资法院，将有助于建立独立的争端解决机制，增强外国投资者对法律环境和投资预期的信心。
+
+喻幕鸿认为，在国际格局持续变化的背景下，此次国情咨文清晰展现了哈萨克斯坦作为资源型大国推进自主发展的战略方向。
+
+“哈萨克斯坦正努力避免依赖单一力量中心，充分发挥自身在矿产资源、农业和过境运输方面的优势，积极融入欧亚大陆的产业链和物流供应链。”他说。
+
+喻幕鸿最后指出，哈萨克斯坦正在探索一种以高效治理、市场经济和社会保障为基础的发展模式。这一发展路径也为其他国家提供了具有独特价值的现代化实践经验。</div>
+<ul>
+<li>国情咨文核心是覆盖全国的“人民建设”基础设施计划</li>
+<li>施政重点由政治制度改革转向社会经济治理</li>
+<li>为阿拉套市设特殊法律制度，建普通法投资法院</li>
+<li>哈国发挥矿产、农业、过境运输优势，推进自主发展</li>
+<li>探索高效治理、市场经济和社会保障为基础的发展模式</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">咨文强化哈国经济治理与外资法律保障，有助于吸引投资、改善营商环境；外交上凸显多元平衡与自主发展，降低对单一力量中心依赖；矿产和过境运输优势将进一步融入欧亚供应链，提升资源型经济韧性。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/guojiachengguojiahui-renminshiyong-32e8d968/" target="_blank">国家元首提议成立国家委员会 监督“人民建设”计划资金使用</a></h3>
+<div class="item-meta">哈通社中文版 · 10/31 14:00<span class="source-link"><a href="https://cn.inform.kz/news/guojiachengguojiahui-renminshiyong-32e8d968/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫提议成立国家委员会，监督‘人民建设’计划预算资金使用。委员会成员包括相关部门负责人、库鲁尔泰及地方议会议员、人民理事会成员、社会活动人士、志愿者和记者。该计划于10月28日国情咨文中提出，将在全国各地区启动约70个医疗卫生设施及约50个教育、体育和文化设施建设项目。总统已责成政府在今年年底前制定首批具体建设项目清单。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫表示：
+“我认为，有必要成立一个国家委员会，监督落实10月28日国情咨文中提出的‘人民建设’计划期间的预算资金使用情况。委员会成员应包括相关部门负责人、库鲁尔泰及地方议会议员、人民理事会成员、社会活动人士、志愿者和记者。”
+
+此前，托卡耶夫总统在国情咨文中宣布，将在‘人民建设’计划框架下，在全国各地区启动约70个医疗卫生设施以及约50个教育、体育和文化设施建设项目。
+总统已责成政府在今年年底前制定首批具体建设项目清单。</div>
+<ul>
+<li>托卡耶夫提议成立国家委员会监督‘人民建设’计划资金</li>
+<li>委员会成员涵盖官员、议员、社会人士、志愿者和记者</li>
+<li>计划在全国建设约70个医疗设施和约50个文教体设施</li>
+<li>政府须在年底前制定首批具体建设项目清单</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该举措强化预算监督与透明度，有助于提升政府公信力；大规模基建将带动地方经济与就业；多主体参与监督体现治理开放，但需平衡效率与问责。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/waishangzhongyaoliyuguosuoyouhuiguo-116d8ad1/" target="_blank">外交史上重要里程碑：哈萨克斯坦与联合国所有会员国建交</a></h3>
+<div class="item-meta">哈通社中文版 · 10/31 17:27<span class="source-link"><a href="https://cn.inform.kz/news/waishangzhongyaoliyuguosuoyouhuiguo-116d8ad1/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦常驻联合国代表奥马罗夫与瑙鲁常驻联合国代表丹尼尔签署联合公报，两国正式建立外交关系。瑙鲁成为哈萨克斯坦建交的第195个国家，至此哈萨克斯坦已与所有联合国会员国建交。双方将遵循《联合国宪章》和国际法原则，重点发展贸易、可持续发展、数字化及人力资本开发合作，并加强在联合国框架内的协作。此前，哈萨克斯坦于2025年12月15日与南苏丹建交，南苏丹为第191个建交国。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦常驻联合国代表海拉特·奥马罗夫（Қайрат Омаров）与瑙鲁常驻联合国代表拉拉·埃拉布·丹尼尔（Лара Эраб Даниэль）签署了关于两国建立外交关系的联合公报。
+瑙鲁成为哈萨克斯坦建立外交关系的第195个国家。至此，哈萨克斯坦已与所有联合国会员国建立外交关系。
+哈萨克斯坦外交部表示：
+“联合公报的签署为两国发展双边合作奠定了基础。双方将遵循《联合国宪章》和国际法基本原则，包括相互尊重国家主权和领土完整、国家平等以及互不干涉内政等原则。”
+会谈期间，双方就加强政治对话、发展经贸及人文合作的可能性进行了讨论，并将贸易、可持续发展、数字化及人力资本开发确定为未来双边合作的重点方向。
+双方还特别关注在联合国及其他国际组织框架内深化合作的重要性。
+两国代表强调，有必要就国际议程中的热点问题保持定期对话，并进一步扩大哈萨克斯坦与太平洋地区国家之间的合作。
+哈萨克斯坦外交部指出，与瑙鲁建立外交关系是哈萨克斯坦持续拓展国际联系、加强与世界各国建设性对话的外交政策的具体体现。
+此前，哈萨克斯坦于2025年12月15日与南苏丹正式建立外交关系。两国常驻联合国代表签署了相关联合公报，南苏丹由此成为哈萨克斯坦建立外交关系的第191个国家。</div>
+<ul>
+<li>哈萨克斯坦与瑙鲁签署建交公报，瑙鲁成为第195个建交国。</li>
+<li>哈萨克斯坦至此与所有联合国会员国建立外交关系。</li>
+<li>双方确定贸易、可持续发展、数字化及人力资本为重点合作方向。</li>
+<li>强调在联合国及其他国际组织框架内深化合作。</li>
+<li>此前2025年12月15日与南苏丹建交，为第191个建交国。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举提升哈萨克斯坦国际地位，巩固其多边外交形象；与太平洋岛国合作拓展经济与地缘空间，但短期实质影响有限；为矿产合作提供潜在新渠道，但瑙鲁资源有限，象征意义大于经济实效。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/hedashi-c70cd782/" target="_blank">托卡耶夫任命哈萨克斯坦驻摩洛哥和古巴大使</a></h3>
+<div class="item-meta">哈通社中文版 · 10/31 15:18<span class="source-link"><a href="https://cn.inform.kz/news/hedashi-c70cd782/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫签署总统令，任命艾努尔·达涅诺娃为驻摩洛哥王国特命全权大使，沃勒扎斯·伊萨别科夫为驻古巴共和国特命全权大使。同时，免去安德里安·叶列梅索夫的驻古巴大使职务，以及萨乌列库尔·赛劳克孜的驻摩洛哥大使及兼任驻多哥大使职务。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫任命哈萨克斯坦驻摩洛哥和古巴大使
+正文:
+根据总统令：
+艾努尔·达涅诺娃（Айнұр Нұрланқызы Дәненова）被任命为哈萨克斯坦驻摩洛哥王国特命全权大使；
+沃勒扎斯·伊萨别科夫（Олжас Әзілұлы Исабеков）被任命为哈萨克斯坦驻古巴共和国特命全权大使。
+与此同时，托卡耶夫总统签署总统令，免去安德里安·叶列梅索夫（Андриан Көпмағамбетұлы Елемесов）的哈萨克斯坦驻古巴共和国特命全权大使职务。
+此前，托卡耶夫总统还签署总统令，免去萨乌列库尔·赛劳克孜（Сәулекүл Сайлауқызы）的哈萨克斯坦驻摩洛哥王国特命全权大使及兼任驻多哥共和国大使职务。</div>
+<ul>
+<li>托卡耶夫任命达涅诺娃为驻摩洛哥大使</li>
+<li>托卡耶夫任命伊萨别科夫为驻古巴大使</li>
+<li>免去叶列梅索夫驻古巴大使职务</li>
+<li>免去赛劳克孜驻摩洛哥及多哥大使职务</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次外交人事调整有助于哈萨克斯坦优化驻北非和加勒比地区使节配置，强化与摩洛哥、古巴的双边关系，并为矿产合作与外交布局提供新契机。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/guojiazuodezaihuishangchuxie-a6fce56a/" target="_blank">突厥国家合作的新路径：哈萨克斯坦在安卡拉峰会上提出哪些倡议？</a></h3>
+<div class="item-meta">哈通社中文版 · 10/31 11:00<span class="source-link"><a href="https://cn.inform.kz/news/guojiazuodezaihuishangchuxie-a6fce56a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫出席在安卡拉举行的突厥国家组织峰会，土耳其总统埃尔多安高规格接待。峰会适逢土耳其共和国成立103周年，彰显突厥团结。托卡耶夫强调经济合作潜力，指出哈萨克斯坦与成员国贸易额增长40%至近100亿美元，建议通过2027-2031年发展战略，利用突厥投资基金和工商会资源，并提议2027年在哈举办商业论坛。专家建议重点发展农业综合体和加工制造业的联合生产。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫抵达安卡拉埃蒂梅斯古特机场时，土耳其总统雷杰普·塔伊普·埃尔多安亲自迎接。随后，土方在总统府举行隆重的欢迎仪式。这一高规格礼遇体现了两国之间的密切关系，以及两国领导人之间的友好情谊。
+本届突厥国家组织峰会安排在10月举行并非偶然。今年是土耳其共和国成立103周年，土耳其每年于10月29日庆祝共和国日。将突厥国家领导人峰会安排在这一重要日期前后，具有彰显突厥民族团结的象征意义。与此同时，组织不断增长的经济潜力，也为成员国进一步深化合作创造了条件。
+Фото: Ақорда 今年，来自突厥世界的艺术家共同参与了土耳其共和国日庆祝活动，其中包括哈萨克斯坦音乐家。在为庆祝这一节日举办的“Grand Arena Concert”音乐会上，哈萨克斯坦著名歌手迪玛希·库达伊别尔根登台献艺。从社交媒体流传的画面中可以看到，土耳其总统埃尔多安对迪玛希给予了特别关注，展现出亲切友好的态度。
+近年来，哈萨克斯坦与土耳其的双边关系以及两国在突厥国家组织框架内的合作不断深化，并在政治、文化和经济领域取得积极成果。
+例如，今年以来，哈土双边贸易额已超过60亿美元，同比增长62%。与此同时，两国教育交流项目和文化活动的数量也有所增加。
+目前，突厥国家组织共有5个成员国，分别是哈萨克斯坦、土耳其、吉尔吉斯斯坦、乌兹别克斯坦和阿塞拜疆。匈牙利、土库曼斯坦和北塞浦路斯拥有观察员地位。
+Фото: Ақорда 本届峰会上，各国领导人就组织未来发展方向坦诚交换意见，并对当前合作中仍有待加强的领域进行了梳理。
+托卡耶夫首先强调了突厥国家组织在经济领域的合作潜力。
+据总统介绍，今年哈萨克斯坦与突厥国家组织成员国之间的贸易额较去年增长40%，接近100亿美元。
+为保持这一增长势头，托卡耶夫建议尽快通过突厥国家组织2027年至2031年发展战略，并呼吁更加积极地利用突厥投资基金和突厥工商会的资源，为联合项目提供资金支持。
+此外，总统还提议于2027年在哈萨克斯坦举办商业论坛。
+外交政策研究所专家努尔詹·奥米尔别克认为，在即将制定的发展战略中，农业综合体和加工制造业应占据更加重要的位置。
+他指出，突厥国家在上述领域已具备一定的产业基础和专业人才储备，彼此之间也存在实际市场需求。
+Фото: Ақорда 例如，哈萨克斯坦向乌兹别克斯坦出口粮食和植物油，向土耳其出口铜和铝。这些贸易联系为进一步深化相关领域的合作奠定了基础。
+“不过，最重要的任务不应只是交换成品，而应发展联合生产。具体而言，可以扩大农产品深加工和食品生产领域的共同项目。在机械制造、化工和石油化工领域，也有条件建立企业之间的零部件和中间产品供应链。这将有助于整合各国生产能力，制造更高附加值的产品，并推动出口结构多元化。”奥米尔别克表示。</div>
+<ul>
+<li>托卡耶夫出席安卡拉峰会，埃尔多安高规格接待</li>
+<li>哈与突厥国家组织成员国贸易额增长40%至近100亿美元</li>
+<li>托卡耶夫建议通过2027-2031年发展战略</li>
+<li>提议2027年在哈萨克斯坦举办商业论坛</li>
+<li>专家建议重点发展农业和加工制造业联合生产</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">峰会将强化哈萨克斯坦在突厥国家组织中的经济角色，推动贸易和投资便利化，促进联合生产与出口多元化。对哈国而言，有利于深化与土耳其等国的政治互信，拓展矿产和加工品市场，但需平衡与俄罗斯等传统伙伴的关系。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/deputat-predlozhila-otslezhivat-byudzhetnie-rashodi-na-stroitelstvo-s-pomoshyu-t-51bdf452" target="_blank">议员建议用数字坚戈追踪建设预算支出</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/01 01:20<span class="source-link"><a href="https://www.inform.kz/ru/deputat-predlozhila-otslezhivat-byudzhetnie-rashodi-na-stroitelstvo-s-pomoshyu-t-51bdf452" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦议员奥尔加·佩列佩奇娜提议利用数字坚戈标记预算资金，追踪建设支出流向，结合政府采购和国库数据及时发现资金挪用风险。她引用意大利OpenCoesione平台和Monithon公民监督模式，主张公民应获取项目拨款、承包商、工期等信息并参与监督。她强调数字透明度需辅以质量检查和专业评估，并明确社会监督员与审计机构的权限划分。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">议员提议用数字坚戈追踪建设预算支出
+
+据她所说，总统倡议的特殊意义在于整合国家、议员团体和社会的力量。居民不仅应获得预算资金使用信息，还应有机会影响与其日常生活息息相关的项目质量。
+
+——往年经验表明，在预算投资的所有阶段进行跟踪至关重要。在哈萨克斯坦，国家审计发现了设计缺陷、建设成本增加和资金使用效率低下等问题。这些结论背后不仅是财务指标，还有民众的期望，他们需要学校、医院、优质道路和可靠供水。议员指出，在规划新设施时就必须考虑这些教训。
+
+她以意大利平台OpenCoesione为例，该平台公开地区发展项目融资和实施信息。基于这些数据，公民倡议组织Monithon的参与者跟踪工程进展，实地考察项目，并将结论提交给负责机构。
+
+奥尔加·佩列佩奇娜认为，类似做法对哈萨克斯坦也有益。对于每个社会重要设施，公民应能获取关于拨款、承包商、建设期限以及成本或期限变更原因的信息。居民诉求应得到具体答复，发现的问题应及时纠正。
+
+议员提议特别关注数字工具，包括数字坚戈，以提高预算支出的透明度。
+
+——使用资金标记有助于追踪资金流动和支付是否符合具体项目目标。结合政府采购和国库数据，可以及时发现资金挪用风险，她认为。
+
+同时，数字透明度应辅以建设质量检查和专业评估。议员强调，为此需确保社会监督员与国家审计机关和技术监督专家的互动，并明确划分其权限。
+
+——我认为原则性重要的是，控制……（文本截断）</div>
+<ul>
+<li>议员提议用数字坚戈标记预算资金，追踪建设支出流向</li>
+<li>引用意大利OpenCoesione平台和Monithon公民监督模式</li>
+<li>主张公民获取项目拨款、承包商、工期等信息</li>
+<li>强调数字透明度需结合质量检查与专业评估</li>
+<li>要求明确社会监督员与审计机构权限划分</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">若实施，将提升哈国预算支出透明度，遏制建设领域资金挪用，强化公民监督。数字坚戈应用或推动金融数字化，但需平衡监管与效率，对矿产等基建项目资金管理形成示范。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-11-01 09:02</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
