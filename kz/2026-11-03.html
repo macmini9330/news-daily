@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年11月3日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年11月3日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年11月02日早9:00至2026年11月03日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 26 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">15</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">4</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">5</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">2</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(15 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/kakie-zemelnie-uchastki-mogut-popast-podizyatie-vkostanae-d20a628b" target="_blank">科斯塔奈哪些地块可能被征收</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/03 08:26<span class="source-link"><a href="https://www.inform.kz/ru/kakie-zemelnie-uchastki-mogut-popast-podizyatie-vkostanae-d20a628b" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>科斯塔奈市总规划修正案拟建设三座高架桥和一座110/10千伏变电站，初步涉及约139块土地，部分项目规划至2050年。三座高架桥分别计划于2027年、2030-2040年和2040-2050年实施，涉及16块（1.9公顷）、44块（约3公顷）和22块（约1公顷）土地。变电站项目涉及约35块土地，详细规划正在国家鉴定中，预计年底前获批。土地征收将依据《土地法典》和《国家财产法》进行。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据初步测算，规划项目边界内涉及约139块土地。目前这还只是前景项目，其中部分项目规划期至2050年。
+最终指标将随着项目文件的编制而进一步明确。所有与可能征收土地相关的程序都必须依据《土地法典》和哈萨克斯坦共和国《国家财产法》进行。
+总规划修正案规定建设三座高架桥。第一座计划沿多沙诺娃街建设，并连接至多斯特克街。文件编制工作预计于2027年开始。未来项目边界内涉及约16块土地，总面积1.9公顷。
+另外两座高架桥安排在总规划实施的后续阶段。从K·多嫩巴耶娃街到沙克沙克·扎尼别克巴特尔街的高架桥建设计划于2040-2050年进行。该项目涉及约22块土地，面积约1公顷。
+从独立街到K·多嫩巴耶娃街的高架桥计划于2030-2040年建设。建设边界内初步涉及约44块土地，总面积约3公顷。其中大部分为拥有个人住宅的土地。
+此外，在高架桥建设之前，建议组织从“别列克”微区环形交叉口至K·多嫩巴耶娃街的出口。
+为实施该项目，可能还需要征收另外三块土地。其中一块面积0.68公顷的土地几乎完全落入道路边界内，另外两块被部分涉及。
+另一个方向涉及能源基础设施的发展。在科斯塔奈中东部地区，正在设计110/10千伏“东方”变电站，该变电站应为新住宅建设和公共设施提供备用电力容量。
+目前，详细规划方案正在接受国家鉴定。计划在今年年底前获得肯定结论，之后将开始与土地所有者进行工作。初步预计未来变电站边界内涉及约35块土地。
+此外，正在编制位于……边界内区域的详细规划方案。</div>
+<ul>
+<li>科斯塔奈总规划拟建三座高架桥，涉及约82块土地。</li>
+<li>首座高架桥2027年启动，涉及16块地1.9公顷。</li>
+<li>110/10千伏变电站项目涉及约35块土地。</li>
+<li>土地征收将严格依据《土地法典》等法律进行。</li>
+<li>部分项目规划期至2050年，最终指标待明确。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该规划将改善科斯塔奈交通和能源基础设施，但土地征收可能引发产权纠纷，需依法补偿。变电站建设支持住宅和公共设施发展，对区域经济有积极影响，但需平衡土地所有者权益。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/konstitutsionniy-sud-rk-proverit-pravila-ucheta-nagrad-za-materinstvo-pri-naznac-86ff7ac6" target="_blank">哈萨克斯坦宪法法院将审查母亲荣誉在福利发放中的计入规则</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/03 05:00<span class="source-link"><a href="https://www.inform.kz/ru/konstitutsionniy-sud-rk-proverit-pravila-ucheta-nagrad-za-materinstvo-pri-naznac-86ff7ac6" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦宪法法院审理一名女性诉求，其认为苏联时期授予的三级“母亲光荣”勋章和一级“母亲奖章”应与哈国“银吊坠”奖励同等计入津贴发放。她因抚养五、六个孩子获二级和一级“母亲奖章”，但一审和上诉法院驳回其要求认定等同、发放津贴及赔偿精神损害的诉讼。宪法法院审查《社会法典》相关条款是否符合宪法，涉及平等原则。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦宪法法院将审理在发放津贴时如何计入母亲荣誉奖励的规则。
+
+据宪法法院指出，申请人认为，苏联时期授予的母亲荣誉奖励应与哈萨克斯坦相应奖励同等计入津贴发放条件。她认为，《社会法典》所规定的可计入奖励清单中，无理由地排除了三级“母亲光荣”勋章和一级“母亲奖章”，尽管其授奖标准与“银吊坠”（Күміс алқа）相似。
+
+案件材料显示，根据哈萨克苏维埃社会主义共和国最高苏维埃主席团1971年4月26日和1975年10月30日的法令，申请人因生育和抚养五个孩子被授予二级“母亲奖章”，因生育和抚养六个孩子被授予一级“母亲奖章”。
+
+她在法院请求认定一级奖章等同于“银吊坠”奖励，判予相应津贴并赔偿精神损害。但一审和上诉法院驳回了诉讼请求。
+
+申请人认为，奖励计入方面的差异涉及平等原则和公民宪法权利。宪法法院正在审查《社会法典》第93条第1款第1部分和第94条第1款是否符合宪法。
+
+库鲁尔泰、总检察院、劳动和社会保障部、国家人权中心、司法部、立法和法律信息研究所、议会研究所的代表以及一名专家参加了会议。报告法官为B.M.努尔穆哈诺夫。
+
+宪法法院的最终裁决将在该机构官方网站以及《主权哈萨克斯坦报》和《哈萨克斯坦真理报》上公布。
+
+此前，哈萨克斯坦宪法法院曾解释何时可以再次提起诉讼。</div>
+<ul>
+<li>宪法法院审理苏联母亲奖章是否等同哈国“银吊坠”奖励</li>
+<li>申请人因抚养五、六个孩子获二级和一级“母亲奖章”</li>
+<li>一审和上诉法院驳回其津贴及精神赔偿诉求</li>
+<li>审查《社会法典》第93、94条是否符合宪法平等原则</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">若宪法法院支持诉求，将扩大苏联时期母亲奖励的津贴适用范围，增加财政支出，并强化平等原则；反之则维持现行奖励认定格局，影响多子女家庭福利预期。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/mneniya-kazahstantsev-uchtut-pri-otbore-kandidatov-na-sudeyskie-dolzhnosti-81356da6" target="_blank">哈萨克斯坦人意见将纳入法官候选人选拔</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/03 04:20<span class="source-link"><a href="https://www.inform.kz/ru/mneniya-kazahstantsev-uchtut-pri-otbore-kandidatov-na-sudeyskie-dolzhnosti-81356da6" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦法官职位候选人遴选将纳入公民意见，公众可在11月16日前通过委员会网站“公民对竞选参与者的意见”栏目提交反馈。遴选同时考察候选人的专业和个人品质，并设有面试环节，面试由律师协会、检察院代表、法律界人士及HR专家组成的委员会进行。此前有报道介绍在哈国可获得免费律师和法律援助的人群。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦公民的意见将在法官职位候选人遴选中被考虑
+
+正文：
+可在委员会网站“公民对竞选参与者的意见”栏目中留下反馈，截止日期为今年11月16日（含当日）（点击前往）。
+在遴选过程中，除了公众意见外，还会考察候选人的专业素质和个人品质。
+此外，候选人还需与遴选委员会成员进行面试，委员会成员包括律师协会、检察院的代表、法律界的其他代表以及人力资源专家。
+此前有报道称，在哈萨克斯坦哪些人可以获得免费律师和法律援助。</div>
+<ul>
+<li>公民可在11月16日前通过网站提交对法官候选人的意见</li>
+<li>遴选综合考察公众意见、专业素质和个人品质</li>
+<li>候选人需接受律师、检察官及HR专家组成的委员会面试</li>
+<li>此前已报道免费律师和法律援助的获取条件</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举提升司法遴选透明度与公众参与度，有助于增强司法公信力，对哈国政治生态和法治建设产生积极影响，但实际效果取决于意见采纳机制。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://www.inform.kz/ru/bolee-760-kandidatov-vdeputati-maslihatov-zaregistrirovano-vakmolinskoy-oblasti-61170e10" target="_blank">阿克莫拉州登记超过760名地方议会候选人</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/03 02:55<span class="source-link"><a href="https://www.inform.kz/ru/bolee-760-kandidatov-vdeputati-maslihatov-zaregistrirovano-vakmolinskoy-oblasti-61170e10" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>阿克莫拉州选举委员会登记了763名马斯利哈特议员候选人，其中州议会50人、市议会125人、区议会588人，平均每个席位约3人竞争。四个政党提交了州议会名单，共44人，符合女性和青年比例要求。26人撤回候选资格，4人被拒登，原因包括政党撤回提名、文件不规范等。此前巴甫洛达尔州已登记529名候选人。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据州选举委员会消息，在阿克莫拉州，单席位选区共登记了50名州马斯利哈特（地方议会）议员候选人，覆盖16个选区；125名市马斯利哈特议员候选人，覆盖41个选区；588名区马斯利哈特议员候选人，覆盖192个选区。平均每个席位约有三人登记。
+
+——州马斯利哈特共有四个政党提交了政党名单，包含44人。政党名单中女性和青年总比例的要求已满足。最终，四个政党的名单均获登记。平均每个席位有2.8人竞争，该部门表示。
+
+根据《选举宪法性法律》，候选人登记信息已在媒体上公布，并发布在选举委员会的互联网资源上。选举委员会强调，所有活动均符合《选举宪法性法律》和日历计划。
+
+——26名候选人在提名后撤回了自己的候选人资格，4名候选人被拒绝登记，其中包括比尔詹萨尔区和布兰登区的两名候选人，原因是其提名的“阿乌尔”党和OSDP党撤回了提名；科什市一名候选人因提名政党“拜塔克”的会议记录摘录格式不正确；切利诺格勒区一名候选人因文件包不完整，该部门补充道。
+
+此前有报道称，巴甫洛达尔州已登记529名议员候选人。</div>
+<ul>
+<li>阿克莫拉州登记763名议员候选人，覆盖各级马斯利哈特。</li>
+<li>州议会50人、市议会125人、区议会588人，平均每席位约3人竞争。</li>
+<li>四个政党提交州议会名单共44人，满足女性和青年比例要求。</li>
+<li>26人撤回候选资格，4人被拒登，多因政党撤回或文件问题。</li>
+<li>巴甫洛达尔州此前已登记529名议员候选人。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">候选人登记有序推进，体现选举程序合规，有助于提升地方议会代表性；多党竞争和性别青年比例要求促进政治包容，但撤回和拒登情况显示提名环节仍需规范。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://www.inform.kz/ru/529-kandidatov-vdeputati-zaregistrirovani-vpavlodarskoy-oblasti-8feb56e0" target="_blank">巴甫洛达尔州登记529名地方议会候选人</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/03 02:12<span class="source-link"><a href="https://www.inform.kz/ru/529-kandidatov-vdeputati-zaregistrirovani-vpavlodarskoy-oblasti-8feb56e0" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>巴甫洛达尔州将于11月29日举行地方议会非例行选举，共173个选区。已登记529名候选人：州议会48名、市议会155名、区议会326名，平均每个席位3人竞争。另有16个州议会席位按政党名单分配，5个政党提交64人名单，平均每席4人竞争。709个选举委员会、4306名工作人员参与组织，政党名单均满足女性和青年配额。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：巴甫洛达尔州529名地方议会（马斯利哈特）议员候选人完成登记
+
+正文：
+该州议员选举将在173个选区举行。其中，16个选区分配给州议会，51个分配给市议会，106个分配给区议会。
+
+——截至今日，已登记州议会议员候选人48名，市议会议员候选人155名，区议会议员候选人326名。因此，平均每个席位有3名候选人竞争。此外，另有16名州议会议员将按政党名单选举产生。在这方面，已有五个政党的政党名单提交至州选举委员会并完成登记。名单共包含64人，——地区选举委员会通报称。
+
+据选举委员会信息，所有政党名单均遵守了法律规定的女性和青年配额。平均每个议员席位按政党名单有4名候选人竞争。
+
+共有709个选举委员会参与组织和实施该州地方议会（马斯利哈特）议员非例行选举。其中包括14个地区委员会、173个选区委员会和521个投票站委员会。其组成人员共有4306人。
+
+地方议会非例行选举定于11月29日举行。
+
+提醒，此前哈萨克斯坦中央选举委员会展示了地方议会议员选举的选票样本。</div>
+<ul>
+<li>巴甫洛达尔州529名地方议会议员候选人完成登记</li>
+<li>选举覆盖173个选区，平均每席位3人竞争</li>
+<li>16个州议会席位按政党名单分配，5党提交64人</li>
+<li>709个选举委员会及4306名人员参与选举组织</li>
+<li>地方议会非例行选举定于11月29日举行</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">选举将重塑巴甫洛达尔州地方议会政治构成，政党名单配额制促进女性和青年参政；作为工业矿产重镇，地方议会换届或影响资源开发政策连续性，但非例行选举短期对经济外交冲击有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://www.inform.kz/ru/dva-zakonoproekta-ob-energosberezhenii-i-alternativnoy-energetike-nahodyatsya-na-c797551d" target="_blank">两项节能和替代能源法案正在库鲁尔泰审议</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/03 01:37<span class="source-link"><a href="https://www.inform.kz/ru/dva-zakonoproekta-ob-energosberezhenii-i-alternativnoy-energetike-nahodyatsya-na-c797551d" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>库鲁尔泰召开会议落实总统国情咨文能源任务，副议长叶斯帕耶娃提及2029年形成发电盈余、加快巴尔喀什和莫因库姆核电站建设。原子能署署长萨特卡利耶夫称巴尔喀什核电站2027年开工，莫因库姆核电站正准备政府间文件。议员阿利姆库洛夫表示两项节能和替代能源法案正在审议。会议还听取了哈萨克原子能工业公司等企业关于铀工业和核燃料循环的报告。预计2028年发电量达1434亿千瓦时。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：两项关于节能和替代能源的法案正在库鲁尔泰审议中
+
+正文：
+由娜塔莉亚·戈杜诺娃主持的会议专门讨论了落实总统国情咨文《哈萨克斯坦在新历史周期中的紧迫任务》中关于能源发展的部分。库鲁尔泰副议长丹尼亚·叶斯帕耶娃、议员、相关国家机关和能源企业代表参加了会议。
+丹尼亚·叶斯帕耶娃提醒说，国情咨文中提出了确保能源行业可持续发展的任务。其中包括：到2029年形成稳定的发电能力盈余，加快巴尔喀什和莫因库姆核电站的建设，培养本国专家和技术转让。
+原子能署署长阿尔马萨达姆·萨特卡利耶夫表示，巴尔喀什核电站现场的施工工作计划于2027年开始。关于莫因库姆核电站，正在准备相应的政府间文件。
+库鲁尔泰议员别克詹·阿利姆库洛夫指出了能源优先事项的立法保障。据他介绍，库鲁尔泰正在审议两项法案，旨在解决节能和提高能效问题，以及发展替代能源。
+会上，哈萨克原子能工业公司（Казатомпром）、哈萨克斯坦核电站有限责任公司（ТОО «Казахстанские атомные электрические станции»）、萨姆鲁克-能源公司（Самрук-Энерго）和哈萨克斯坦电网运营公司（KEGOC）的代表也发了言。他们介绍了铀工业和核燃料循环的发展情况，以及国家统一电力系统的情况。
+会议总结时，娜塔莉亚·戈杜诺娃强调，关键任务是确保既定计划的实际落实。每个项目都必须确定明确的期限，确认融资，并落实个人责任。她说，控制应基于设施的实际准备情况，及时发现可能的延误并消除其原因。
+据报道，预计2028年发电量将达到1434亿千瓦时。
+回顾一下，在致哈萨克斯坦人民的国情咨文中，总统卡西姆-若马尔特·托卡耶夫谈到了国内能源领域的问题。</div>
+<ul>
+<li>库鲁尔泰审议两项节能和替代能源法案</li>
+<li>巴尔喀什核电站计划2027年开工</li>
+<li>2029年形成发电能力盈余</li>
+<li>莫因库姆核电站准备政府间文件</li>
+<li>2028年发电量预计达1434亿千瓦时</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">法案若通过将促进节能和替代能源发展，推动能源结构多元化；核电站建设加速将增强电力供应，但需关注融资与工期风险；对铀产业和核燃料循环发展形成利好，巩固哈萨克斯坦在核能领域的地区地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/zhongguojiaguoqingwenchulaiguojiafadequanfang-5f8e9f18/" target="_blank">中国专家：国情咨文勾勒出未来国家发展的全方位蓝图</a></h3>
+<div class="item-meta">哈通社中文版 · 11/02 23:15<span class="source-link"><a href="https://cn.inform.kz/news/zhongguojiaguoqingwenchulaiguojiafadequanfang-5f8e9f18/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>中国专家李立凡分析哈萨克斯坦国情咨文，指出其核心从体制改革转向构建国家未来发展模式。哈经济规模近4000亿美元，人均GDP超1.9万美元，全球排名第47位。三大支柱为基础设施、数字治理和社会正义：到2029年从国家基金拨出约6.5万亿坚戈优化区域布局；发展数字经济和人工智能；到2027年将最低工资提高至11万坚戈。强调提升治理质量、精简官僚、加强问责和公众监督。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：中国专家：国情咨文勾勒出未来国家发展的全方位蓝图
+正文：
+- 在我看来，这份国情咨文的核心特征在于，其重点已从实施体制改革转向全面构建国家未来的发展模式。当前，哈萨克斯坦经济规模已接近4000亿美元，人均国内生产总值（GDP）超过1.9万美元，在全球排名中也已升至第47位；在此背景下，经济主权被视为国家稳定的基石。-他说。
+中国专家指出，这份国情咨文的三大核心支柱是基础设施建设、数字治理和社会正义。
+- 首先，到2029年，将从国家基金中拨出约6.5万亿坚戈，用于优化经济的区域布局，并缩小各地区之间的发展差距。此外，哈萨克斯坦作为欧亚大陆关键交通枢纽的重要性正日益凸显。在科技领域，重点在于发展“以人为本的数字经济”和人工智能，以推动向更高级的发展模式转型。同时，在社会领域，计划到2027年将最低工资标准提高至11万坚戈。-他说。
+李立凡还指出，新阶段的发展要求提升国家治理质量。这包括精简官僚机构、加强官员个人问责制以及尽可能高效地组织国家机器运转。
+- 首要任务是将大规模举措转化为切实成果。为实现这一目标，必须遵循既定的投资吸引程序，确保资金支出透明，提升管理人员的专业素质，并加强公众监督。这些任务的高质量执行将决定改革的成效，并为哈萨克斯坦在国际舞台上发挥独立自主的作用铺平道路。在此背景下，国内发展至关重要。-他说。
+李立凡在总结发言中阐述了这份致哈萨克斯坦人民的国情咨文所具有的战略意义及其涵盖的范围。中国专家指出，国情咨文中提出的宏伟目标，反映出国家为自身设定的任务具有极高的标准。要实现这些目标，需要进行系统性且持之以恒的努力。</div>
+<ul>
+<li>国情咨文重点转向构建国家未来发展模式</li>
+<li>经济规模近4000亿美元，人均GDP超1.9万美元</li>
+<li>三大支柱：基础设施、数字治理、社会正义</li>
+<li>2029年前拨6.5万亿坚戈优化区域布局</li>
+<li>2027年最低工资提高至11万坚戈</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该咨文若落实，将优化哈国区域经济布局，增强经济主权和社会稳定；数字治理与交通枢纽建设提升外交过境地位；矿产等资源收益通过国家基金透明分配，有助于改善投资环境，但执行成效取决于治理改革和公众监督。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/huijingfa-bc40da48/" target="_blank">托卡耶夫总统听取卡拉干达州社会经济发展报告</a></h3>
+<div class="item-meta">哈通社中文版 · 11/02 22:13<span class="source-link"><a href="https://cn.inform.kz/news/huijingfa-bc40da48/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫总统听取卡拉干达州社会经济发展报告。前9个月地区经济增长2.9%，工业生产增长4.9%，机械制造业增长26.2%。截至2032年投资组合含186个项目，总价值7万亿坚戈，将创造3.6万个就业岗位。过去三年农村新建92所医疗机构和13所学校。预测年底区域经济将增长4%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：托卡耶夫总统听取卡拉干达州社会经济发展报告
+
+根据前9个月的数据，该地区经济增长了2.9%，工业生产增长了4.9%。
+机械制造业呈现出强劲势头，增长率达到26.2%。
+该地区截至2032年的投资组合包含186个项目，总价值达7万亿坚戈。这些项目的实施将创造3.6万个就业岗位。
+重点工作包括：建设新的生产设施，加工原材料，夯实矿产资源基础，以及吸引国内外投资者。
+Фото: Ақорда 此外，总统听取了关于推进农工综合体建设、住房建设以及实现社会基础设施现代化的相关工作汇报。
+过去三年间，卡拉干达州农村地区新建了92所医疗机构和13所学校，针对教育机构的翻新工作也正在持续进行。
+在体育、文化、能源以及住房与公用事业等领域，相关项目已经启动。
+Фото: Ақорда 在“清洁哈萨克斯坦”计划框架下，各地居民点环境得到改善，一批新的公共空间和生态公园也随之涌现。
+根据预测，到今年年底，区域经济将增长4%。
+通过扩大工业潜力、实施投资项目和提高人民生活质量，该地区将继续进一步发展。
+Фото: Акорда Фото: Ақорда &amp;nbsp;</div>
+<ul>
+<li>前9个月经济增长2.9%，工业生产增长4.9%</li>
+<li>机械制造业增长26.2%，表现强劲</li>
+<li>截至2032年投资组合186个项目，价值7万亿坚戈</li>
+<li>项目将创造3.6万个就业岗位</li>
+<li>过去三年农村新建92所医疗机构和13所学校</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该报告显示卡拉干达州经济稳步增长，投资组合聚焦矿产资源加工和基础设施，将增强哈国工业潜力与矿产格局，创造就业并改善民生，有助于政治稳定和吸引外资。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://cn.inform.kz/news/guojiahuiqarmetgonggong-d4f0077c/" target="_blank">国家元首会见“Qarmet”股份公司员工</a></h3>
+<div class="item-meta">哈通社中文版 · 11/02 21:34<span class="source-link"><a href="https://cn.inform.kz/news/guojiahuiqarmetgonggong-d4f0077c/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫总统会见Qarmet员工时指出，该地区重工业产值达4.2万亿坚戈，非原材料出口显著增长；预计年底GDP达3980亿美元，居中亚之首，制造业占比超14%。Qarmet去年净盈利，营收1.1万亿坚戈，计划到2028年投入35亿美元现代化改造。总统宣布明年为“全国大规模建设年”，投入6.5万亿坚戈，并强调法治与秩序。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">国家元首在发言中指出，该地区发展迅速。
+- 将这片矿工云集的土地称为真正劳动者的神圣摇篮，一点也不为过。当前，该地区经济发展迅速，这令人倍感欣喜。特别值得一提的是，该地区非原材料类产品的出口实现了显著增长。在重工业领域，产值已达4.2万亿坚戈，这是一项了不起的成就。全国范围内也呈现出积极向好的态势；预计到今年年底，哈萨克斯坦的国内生产总值（GDP）将达到3980亿美元，位居中亚之首。此外，制造业在国民经济中的占比已超过14%。毫无疑问，这一切都是哈萨克斯坦人民辛勤耕耘与不懈努力的结晶。在此背景下，我想特别强调“Qarmet”工厂（卡拉干达冶金厂）对该地区增长与繁荣所作出的重大贡献。卡拉干达冶金厂被视为我国冶金工业的基石，也是整个地区的经济支柱。这家大型企业在提升国家工业潜力方面发挥着举足轻重的作用。-他说。
+总统指出，Qarmet公司此前处境艰难。
+- 一系列果断的决策扭转了局面，为这一独特的工业综合体的发展注入了新的动力。通过优化支出和吸引投资，该公司克服了艰难时期，摆脱了高达数十亿的亏损。得益于此，Qarmet 去年实现了净盈利，营收达到 1.1 万亿坚戈。该企业已启动一项大规模现代化改造计划，预计到 2028 年将投入 35 亿美元用于实施该计划。其中，将先进技术和数字化解决方案融入生产流程被列为重点。此外，工作组织管理与职业安全也已被纳入重点监管范畴。-托卡耶夫说。
+Photo credit: Akorda 托卡耶夫总统表示，Qarmet目前展现出了高水平的企业社会责任。
+- 例如，该企业自掏腰包，全面恢复了铁米尔套的有轨电车服务。我本人刚刚体验了这趟电车，并对这一举措表示支持。我认为，这对铁米尔套的居民来说是一份非常棒的礼物。此外，该公司还启动了一项名为“通往未来之路”（“Bolashakka Zhol”）的社会项目，旨在培养并聘用青年专业人才。该项目第一阶段将涵盖来自全国各地的近500人。目前，社会对合格专业人才——尤其是蓝领技术人才——的需求日益增长，而这一项目的主要目的，正是为了满足这一需求。我希望其他大型企业也能加入到这一行动中来。-他说。
+国家元首指出，冶金综合体所取得的成就，与哈萨克斯坦国内正在进行的大规模变革密切相关。哈萨克斯坦已进入一个新的历史发展阶段。然而，我们绝不能因已取得的成功而自满；未来仍有大量工作需要完成。
+- 我国已建立起稳固的政治体制架构。推进这些改革，首要目的是夯实国家根基。在当前全球政治与经济领域涌现出诸多尚待充分认识的全新局势之际，这一点显得尤为重要。哈萨克斯坦必须做好充分准备，以成功适应由人工智能主导的新世界——这项技术既能带来益处，也伴随着弊端，甚至可能对我们的生存构成风险。-他说。
+Фото: Ақорда 总统表示，在全国范围内启动了一场我国历史上前所未有的高强度建设行动，旨在实现各项公共基础设施的现代化。
+- 我已将即将到来的一年定为“全国大规模建设年”。这一宏伟工程被命名为“全民建设”。正如我在国情咨文中所述，我们将为这一宏大项目投入约6.5万亿坚戈。这是一个审慎而明智的决定，因为“全民建设”将重点落实民众最迫切需要的项目。最重要的是，这一举措将覆盖全国，惠及每一个城市和地区。从本质上讲，我们正在为长远的未来奠定坚实基础。无论是新建还是翻修的道路、机场、交通枢纽、发电厂、医院、诊所、学校、特殊需求儿童康复中心、青少年创意中心，还是各类体育设施——简而言之，所有这些公共基础设施——都将造福子孙后代。归根结底，“全民建设”的核心内涵可以用一句话来概括，那就是：“建设，不断地建设。”我们留给当代及后代的，除了各类规划与理念（尽管这些也非常重要）之外，更应是实实在在的资产，即各类社会基础设施。我们的人民有权享有更舒适的生活，并充分享受现代文明时代所带来的福祉。这正是构建“公正哈萨克斯坦”这一战略的核心目标。-他说。
+此外，托卡耶夫重申了我国对民族与宗教和谐政策的承诺，以及对“多元一体”原则的坚持。
+- 为了切实推进符合人民利益的改革，国内必须保持和平与稳定。任何对哈萨克斯坦心怀恶意并试图通过实际行动造成危害的人，都必须——也必将——根据“法治与秩序”的原则承担相应责任。在我们国家，法治与秩序必须至高无上。哈萨克斯坦是一个热爱和平的国家。我们将继续加强与邻国，以及所有其他——无论大小——致力于维护和平与安全的国家之间的合作。-总统说。
+Фото: Акорда 托卡耶夫表示相信，Qarmet 公司雄厚的生产基础将在“全民建设”倡议中发挥重要作用。
+- 哈萨克斯坦的钢铁产品已广泛应用于建筑和工业领域，且其消费量预计将持续增长。该工厂生产的产品已被用于萨兰市的客车制造。目前，一座新的铸轧联合体正在建设之中；未来，它将生产石油、核能及机械制造等行业所需求的高品质钢材。-他说。
+随后，国家元首指出，Qarmet 员工凭借坚持不懈的辛勤努力，取得了显著成就。他特别强调，Qarmet 员工所展现出的卓越努力、专业素养以及对本职工作的敬业精神，将推动公司不断向前发展。</div>
+<ul>
+<li>重工业产值4.2万亿坚戈，GDP预计3980亿美元居中亚之首</li>
+<li>Qarmet扭亏为盈，去年营收1.1万亿坚戈，2028年前投35亿美元改造</li>
+<li>总统宣布“全民建设”年，投入6.5万亿坚戈覆盖全国基础设施</li>
+<li>Qarmet恢复铁米尔套有轨电车，启动青年人才培养项目覆盖500人</li>
+<li>强调法治与秩序，坚持民族宗教和谐与“多元一体”原则</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上，Qarmet盈利与现代化改造将巩固卡拉干达工业支柱地位，带动钢铁下游产业；政治上，“全民建设”与法治秩序强化社会稳定性；外交上，强调与邻国合作维护和平；矿产格局上，钢铁产品需求增长及新铸轧联合体将提升高品质钢材自给能力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">10</span> <a href="https://cn.inform.kz/news/qarmetgongti-6e61b281/" target="_blank">托卡耶夫总统参访Qarmet公司新建型材轧制综合体</a></h3>
+<div class="item-meta">哈通社中文版 · 11/02 19:43<span class="source-link"><a href="https://cn.inform.kz/news/qarmetgongti-6e61b281/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫总统参访Qarmet公司新建型材轧制综合体，该项目投产后年产能超54万吨，技术合作伙伴为中冶京诚（CERI）。新车间将生产A600和A1000级高强度钢筋及角钢、槽钢等产品，配备每小时处理100吨金属的加热炉，计划年底前投运。Qarmet总投资计划35亿美元，正推进四个新项目，战略目标为2028年实现钢材500万吨、煤炭900万吨、铁精矿500万吨年产量。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：托卡耶夫总统参访Qarmet公司新建型材轧制综合体
+
+该生产综合体投产后，每年将生产超过54万吨成品。该项目的技术合作伙伴是中冶京诚工程技术（CERI）有限公司。
+
+据介绍，新车间将能够生产高强度钢筋（A600和A1000级别），并扩大其他市场需求旺盛的金属产品（如角钢和槽钢）的生产范围。
+
+值得一提的是，该设施配备了一座大容量加热炉，每小时可处理多达100吨金属。
+
+Фото: Акорда 由于该项目的实施，Qarmet 将增加轧制产品的产量。这减少了国内市场对进口的依赖，并扩大了公司在建筑领域（包括核电站建设）的潜力。
+
+目前，该设施内正在进行主要工艺设备的安装及必要基础设施的建设工作。型材轧机计划于今年年底前投入运行。
+
+Фото: Ақорда Qarmet公司的投资计划总额为35亿美元。目前，该公司正在其冶金综合体内推进四个新项目，包括：新建8号和9号焦炉组、型材轧机综合体、镀锌及聚合物涂层生产线，以及铸轧综合体。
+
+该公司的战略目标是到2028年实现年产量：钢材500万吨、煤炭900万吨、铁精矿500万吨。此外，其目标还包括降低生产成本、改善环境绩效，并增强国内金属产品的竞争力。</div>
+<ul>
+<li>新轧制综合体年产能超54万吨，年底前投运</li>
+<li>技术合作伙伴为中冶京诚（CERI）有限公司</li>
+<li>生产A600/A1000高强度钢筋及角钢槽钢</li>
+<li>Qarmet总投资35亿美元推进四个新项目</li>
+<li>2028年目标：钢材500万吨、煤炭900万吨</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">提升哈国金属自给率，减少进口依赖；增强建筑及核电建设材料供应能力；深化中哈冶金技术合作；优化Qarmet产品结构，增强区域竞争力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">11</span> <a href="https://cn.inform.kz/news/jianggerenjinbude5nian-f607d64f/" target="_blank">哈萨克斯坦将收紧个人进口汽车准入标准：车龄不得超过5年</a></h3>
+<div class="item-meta">哈通社中文版 · 11/02 17:45<span class="source-link"><a href="https://cn.inform.kz/news/jianggerenjinbude5nian-f607d64f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦交通部长于2026年10月28日签署命令，收紧个人进口汽车准入标准。新规要求个人自用进口的机动车、摩托车及挂车须同时满足环保等级不低于第五级、车龄不超过5年两项条件，方可获准在哈境内流通。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦将收紧个人进口汽车准入标准：车龄不得超过5年
+正文:
+相关调整由哈萨克斯坦交通部部长于2026年10月28日签署的命令作出规定。
+根据文件，个人进口汽车若要获准在哈萨克斯坦境内流通，必须同时满足两项条件：
+一是车辆环保等级不得低于第五级；二是车辆自生产之日起，车龄不得超过5年。
+新规适用于个人根据规定清单，为自用目的进口的部分机动车、摩托车及其挂车。</div>
+<ul>
+<li>交通部长2026年10月28日签署命令</li>
+<li>个人进口汽车须满足环保第五级标准</li>
+<li>车龄自生产日起不得超过5年</li>
+<li>新规适用于个人自用进口的机动车、摩托车及挂车</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">新规将限制老旧高污染车辆流入，促进环保和交通安全，但可能增加个人进口成本，影响二手车市场，并对周边国家汽车贸易格局产生一定影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">12</span> <a href="https://cn.inform.kz/news/qarmet27-yesheng-3e91addb/" target="_blank">Qarmet累计投资超27亿美元 托卡耶夫总统考察企业生产设施</a></h3>
+<div class="item-meta">哈通社中文版 · 11/02 17:22<span class="source-link"><a href="https://cn.inform.kz/news/qarmet27-yesheng-3e91addb/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫总统考察Qarmet生产设施，观看转炉车间钢铁冶炼流程。2024年公司对1、2号转炉大修并现代化改造，部分工艺转向天然气。董事会主席汇报生产增长及投资进展。计划2026年产钢400万吨、煤炭360万吨、铁矿石精矿390万吨。自运营以来累计投资超27亿美元，用于升级改造和新项目建设。Qarmet是哈国最大全产业链矿业冶金企业，员工约3.5万人。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：Qarmet累计投资超27亿美元 托卡耶夫总统考察企业生产设施
+
+工作人员向总统介绍，转炉车间是Qarmet钢铁冶炼生产的重要环节。托卡耶夫现场观看了高炉熔炼出的铁水转化为钢水的过程，以及钢水随后进入连铸设备、再送往轧钢工序的生产流程。
+
+2024年，Qarmet公司对1号和2号转炉进行了大修，全面更换炉体，并安装了更加现代化的结构。
+
+图片：Акорда 相关升级改造将有助于扩大产品种类、提高钢铁产量，并增强设备运行可靠性。目前，车间部分工艺流程向天然气转换的工作也在持续推进。
+
+Qarmet董事会主席安德烈·拉夫连季耶夫向总统汇报了企业生产指标增长情况及投资计划实施进展。
+
+图片：Ақорда 根据计划，2026年公司将生产400万吨钢、360万吨煤炭和390万吨铁矿石精矿。
+
+自公司开展运营以来，累计投资已超过27亿美元。这些资金主要用于现有生产设施升级改造及新工业项目建设。
+
+Qarmet是哈萨克斯坦规模最大的全生产链矿业冶金企业，也是中亚拥有自有煤炭、铁矿石矿山及能源基础设施的综合性矿业冶金联合体。公司员工约3.5万人，其中超过1.4万人在铁米尔套市的冶金联合厂工作。
+
+图片：Акорда 图片：Ақорда</div>
+<ul>
+<li>托卡耶夫考察Qarmet转炉车间，观看钢铁冶炼全流程。</li>
+<li>2024年Qarmet大修1、2号转炉，推进天然气转换。</li>
+<li>计划2026年产钢400万吨、煤炭360万吨、铁矿石精矿390万吨。</li>
+<li>累计投资超27亿美元，用于升级改造和新项目。</li>
+<li>Qarmet员工约3.5万人，系哈国最大全产业链矿冶企业。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">政治：总统考察凸显国家对支柱产业重视，强化政企协作。经济：巨额投资和产能目标将拉动增长与就业。外交：增强哈国在中亚冶金领域地位，吸引外资。矿产格局：巩固全产业链优势，提升资源附加值。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">13</span> <a href="https://cn.inform.kz/news/guojiaxingdeyou-a1028b2c/" target="_blank">国家元首视察铁米尔套市恢复运行的有轨电车系统</a></h3>
+<div class="item-meta">哈通社中文版 · 11/02 16:38<span class="source-link"><a href="https://cn.inform.kz/news/guojiaxingdeyou-a1028b2c/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫总统视察铁米尔套市恢复运行的有轨电车系统，乘坐电车从共和国大道至“工程师”站，了解工程质量及运营准备。Qarmet公司2024年恢复电车运营，累计运送乘客超100万人次；已修复更换30公里轨道，购置8辆现代化新车，配备电子支付系统，员工及退休人员免费乘车。总统强调电车是连接时代的纽带，并提及城市环境改善、天然气供应及将Qarmet钢铁厂打造为繁荣象征。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">国家元首视察铁米尔套市恢复运行的有轨电车系统
+
+托卡耶夫总统乘坐有轨电车，从共和国大道行至“工程师”站，实地了解相关工程质量以及更新后的交通基础设施投入全面运营的准备情况。
+
+Qarmet公司于2024年恢复有轨电车运营，并将其交由市民使用。自恢复运行以来，该公共交通系统累计运送乘客超过100万人次。
+
+目前，铁米尔套市已修复并更换30公里有轨电车轨道，并购置8辆现代化新车，为电车按照既定时刻表稳定运行提供了保障。
+
+有轨电车还配备了电子支付系统。Qarmet公司员工及企业退休人员可免费乘车。
+
+在与Qarmet公司管理层交流时，托卡耶夫强调了恢复铁米尔套有轨电车交通的重要意义。
+
+总统表示，有轨电车对铁米尔套而言，是连接不同时代的纽带。他指出，企业回应了市民恢复有轨电车运营的诉求。
+
+总统还提到，此前曾要求企业着手改善铁米尔套市的城市环境。他表示，城市过去缺乏维护，目前仍有大量工作需要完成，但改善工作已经起步。铁米尔套居民已实现天然气供应，市民和企业员工的精神面貌也有所改善。
+
+托卡耶夫最后表示，将努力把Qarmet钢铁厂打造成为进步、成功乃至繁荣的象征。</div>
+<ul>
+<li>托卡耶夫视察铁米尔套有轨电车，了解运营准备</li>
+<li>Qarmet公司2024年恢复运营，累计运送超100万人次</li>
+<li>修复30公里轨道，购置8辆新车，配备电子支付</li>
+<li>总统称电车是连接时代的纽带，回应市民诉求</li>
+<li>强调改善城市环境，打造Qarmet钢铁厂为繁荣象征</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">政治上官民互动增强，体现民生回应；经济上交通改善促进铁米尔套市活力；外交上展示哈国投资环境；矿产格局上Qarmet作为钢铁企业地位提升，助力区域工业发展。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">14</span> <a href="https://cn.inform.kz/news/jinxinggongzuo-f2a608dd/" target="_blank">托卡耶夫总统赴卡拉干达州进行工作视察</a></h3>
+<div class="item-meta">哈通社中文版 · 11/02 16:05<span class="source-link"><a href="https://cn.inform.kz/news/jinxinggongzuo-f2a608dd/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫赴卡拉干达州进行工作视察，期间将前往铁米尔套市考察当地社会设施和工业设施，并了解该地区社会经济发展情况。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：托卡耶夫总统赴卡拉干达州进行工作视察
+
+正文：访问期间，托卡耶夫将前往铁米尔套市，考察当地部分社会设施和工业设施。
+此外，总统还将了解该地区社会经济发展情况。</div>
+<ul>
+<li>托卡耶夫总统赴卡拉干达州工作视察</li>
+<li>将前往铁米尔套市考察社会设施</li>
+<li>考察当地工业设施</li>
+<li>了解地区社会经济发展情况</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">视察体现总统对工业地区民生与经济的重视，可能推动卡拉干达州社会设施改善和工业发展，强化中央对地方经济调控。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">15</span> <a href="https://cn.inform.kz/news/duogeshi-duodigongheshiyong-64ef5fc1/" target="_blank">哈萨克斯坦多个数十亿坚戈项目投产 多地新建工厂和医疗设施投入使用</a></h3>
+<div class="item-meta">哈通社中文版 · 11/02 14:30<span class="source-link"><a href="https://cn.inform.kz/news/duogeshi-duodigongheshiyong-64ef5fc1/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦各地持续推进基础设施和工业项目建设，一批数十亿坚戈项目投产。交通领域：东州新公路及最高山地公路桥通车，阿拉木图州74公里公路中修（81亿坚戈），杰特苏州21公里四车道公路建成。工业领域：阿拉木图州肉类加工厂（25亿坚戈）、突厥斯坦州金属结构厂（15亿坚戈）、阿拜州植物油灌装车间（84亿坚戈，创造100多岗位）、卡拉干达州家禽养殖综合体（2.05万只，AI环控）投产。医疗社会领域：阿拉木图州新诊所开业，乌斯卡曼市血液学中心（148床位，336亿坚戈）建成，多地体育设施投入使用。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦多个数十亿坚戈项目投产 多地新建工厂和医疗设施投入使用
+正文:
+目前，哈萨克斯坦各地正持续推进工业潜力开发，以及交通、工程和社会基础设施升级改造。一批新建工业生产设施、医疗卫生机构、道路和社会领域设施已陆续投入使用。
+交通基础设施
+在东州，绕行铁冉赛山口的新公路以及一座跨越皮赫托夫卡河的哈萨克斯坦最高山地公路桥建成通车。新设施提高了道路通行安全水平，改善了当地居民点之间的交通条件。
+在阿拉木图州，“克艮—纳仁果勒”干线公路全长74公里的路段完成中修，项目总投资为81亿坚戈。该路段日均通行车辆超过1200辆，施工期间还对14个公交车站、78处道路交叉口及支路入口进行了维修。
+在杰特苏州，穆克尔山口一段长21公里的四车道公路建成通车。新公路进一步提升了道路通行安全水平，也有助于缩短行车时间。
+工业与生产
+在阿拉木图州，一家肉类加工企业正式投产，项目投资额为25亿坚戈，日加工能力达10吨。该项目旨在推动加工制造业发展，增加国内市场本土产品供应。
+在突厥斯坦州，一家生产工业金属结构和金属制品的工厂建成投产，项目总投资15亿坚戈，企业年产能为100件产品。新生产基地将进一步扩大当地工业生产规模。
+在阿拜州，一座植物油灌装及包装车间投入运营，项目投资额为84亿坚戈，企业日处理油品能力达200吨。新车间的投产创造了100多个就业岗位，也有助于扩大产品在国内外市场的供应规模。
+在卡拉干达州，一座家禽养殖综合体正式投产，可饲养2.05万只家禽，并配备基于人工智能的环境气候控制系统。该项目预计每年可使禽肉产量增加250至280吨。
+医疗卫生与社会设施
+在阿拉木图州纳仁果勒乡，一家新诊所正式开业，每班可接诊250人次，并设有日间病房，配备现代化诊断设备。
+在乌斯卡曼市，一座拥有148张床位的血液学中心建成，主要服务于东哈州、阿拜州和巴甫洛达尔州居民。项目建设共投入336亿坚戈，其中包括来自国家收回资产的资金。
+在突厥斯坦州萨热阿尕什县，一批体育和儿童游乐设施投入使用，包括五人制足球场、排球场、篮球场以及户外健身区。这些设施为当地农村居民参与体育活动和开展休闲健身提供了便利条件。
+在库斯塔奈，一座占地2.9公顷的多功能体育场正式开放。体育场设有可容纳1000名观众的看台、跑道，以及足球、篮球和排球场地。</div>
+<ul>
+<li>东州新公路及最高山地桥通车，提升交通安全</li>
+<li>阿拉木图州74公里公路中修，投资81亿坚戈</li>
+<li>阿拜州植物油车间投产，投资84亿坚戈创100岗位</li>
+<li>乌斯卡曼血液学中心建成，148床位投336亿坚戈</li>
+<li>卡拉干达家禽综合体投产，AI环控养2.05万只</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上，多领域项目投产促进加工制造业和农业产能提升，创造就业；社会上，医疗和体育设施改善民生；外交上，展现国家发展形象；矿产格局无直接影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(4 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/liguojiajingbuchanghuizhongguozhengbuchang-b5d29a14/" target="_blank">哈副总理兼国家经济部长会见中国财政部长</a></h3>
+<div class="item-meta">哈通社中文版 · 11/03 00:54<span class="source-link"><a href="https://cn.inform.kz/news/liguojiajingbuchanghuizhongguozhengbuchang-b5d29a14/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦副总理兼国家经济部长赛热克·朱曼哈林会见中国财政部长，讨论设立联合投资基金以发展“跨里海国际运输路线”（TITR）。哈方于今年7月上海会晤期间提出倡议，计划设立初始规模最高达2亿美元的哈中直接投资基金。朱曼哈林提议确定两国金融机构制定共同方案，并整合三项关键融资机制，建立统一“单一窗口”协调项目融资与保险，同时扩大与中国进出口银行在重点基础设施项目上的合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">会谈中，双方就设立一个专门用于发展“跨里海国际运输路线”（TITR）的联合投资基金问题进行讨论。
+哈方面于今年7月在上海举行的哈中两国领导人会晤期间提出了这一倡议。目前，双方正着手设立一支哈中直接投资基金，初始目标规模最高可达2亿美元，并有望在未来进一步扩大。
+赛热克·朱曼哈林提议确定两国相关金融机构，由其制定一套针对该基金运作的共同方案，从而加快基金的启动进程。
+- 为实现从协议到项目实际融资的过渡，有必要构建一套完善的哈中金融架构。目前，若干互补性机制正在推进之中，每一项机制都旨在解决特定的任务。-他说。
+据他介绍，这涉及目前正在建立的三项关键融资机制：一是“哈萨克斯坦投资基金”（Kazakh Invest Fund），由“丝路金融公司”（Silk Road Finance Corporation）参与；二是“哈中直接投资基金”，由“巴伊铁列克”国家管理控股公司（Baiterek National Managing Holding）与“丝路基金”共同参与；三是基于项目债务和保险的融资机制，参与方包括“巴伊铁列克”国家管理控股公司、哈萨克斯坦开发银行、国家开发银行、中国进出口银行、中国银行、中国工商银行、中国信保（Sinosure）以及其他金融机构。
+Фото: пресс-служба Правительства РК 为协调这些机制的运作，赛热克·朱曼哈林提议建立一个统一的哈中“单一窗口”，用于项目融资与保险。
+- 我建议整合现有及新兴机制——无需另行组建新机构——通过统一的哈中“单一窗口”来开展项目融资与保险业务。这将有助于为每个重点项目构建一套综合性金融方案，涵盖长期贷款、保险保障、担保、人民币融资，以及在必要情况下的股权参与。-他说。
+为在实践中检验所提机制，相关计划旨在确定若干试点项目，并在从最初投资决策到最终融资的各个阶段，为这些项目提供全方位的支持。此举将有助于识别并消除目前导致重大投资项目实施周期延长的系统性障碍。
+双方特别强调，应在重点基础设施项目的融资方面，扩大与中国进出口银行的合作。目前，哈萨克斯坦正在推进多项具有战略意义的举措，旨在发展其交通及公用事业基础设施。</div>
+<ul>
+<li>哈中讨论设立TITR联合投资基金，初始目标规模最高2亿美元</li>
+<li>哈方今年7月在上海领导人会晤期间提出该倡议</li>
+<li>三项关键融资机制涉及巴伊铁列克、丝路基金、中国进出口银行等</li>
+<li>朱曼哈林提议建立统一哈中“单一窗口”协调融资与保险</li>
+<li>计划确定试点项目，消除重大投资项目实施障碍</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该合作将拓宽哈国交通基建融资渠道，推动TITR走廊建设，强化哈中金融与经贸绑定，提升哈作为过境枢纽的地缘经济地位，并可能影响里海地区矿产物流格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/zhongguojiaqu20nianleduo-1f45ad35/" target="_blank">中亚国家过去20年向哈萨克斯坦投资了多少资金？</a></h3>
+<div class="item-meta">哈通社中文版 · 11/02 23:53<span class="source-link"><a href="https://cn.inform.kz/news/zhongguojiaqu20nianleduo-1f45ad35/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦副总理朱曼哈林在阿拉木图第二届“天山”中亚经济合作论坛上宣布，中亚国家过去20年对哈投资总额超40亿美元，2.8万多家地区企业在哈注册，含2500多家合资企业。论坛聚焦扩大相互贸易、交通物流互联互通、吸引高质量投资，并讨论数字化、气候变化和水资源利用。论坛由CAREC学院与哈国民经济部主办，亚行战略支持，近400名代表参会。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦政府副总理兼国家经济部部长赛热克·朱曼哈林在阿拉木图举行的第二届“天山”中亚经济合作论坛开幕式上宣布了这一消息。
+副总理强调，在“中亚区域经济合作”（CAREC）计划框架下，扩大相互贸易、发展交通与物流互联互通，以及吸引高质量投资是重点工作方向。
+- 我们共同的任务不仅在于增加贸易额，还在于逐步消除壁垒、简化贸易程序、发展电子商务，并为企业家进入周边国家市场创造更多机遇。-他说。
+另一个重要领域是交通基础设施建设。哈萨克斯坦正在提升其交通走廊的吞吐能力，推进铁路和公路基础设施现代化，并发展多式联运。为加快跨境运输，必须确保运输系统的互操作性，实现边境手续数字化，并缩短货物过境所需时间。
+哈萨克斯坦在中亚区域经济合作成员国的投资总额已超过40亿美元。与此同时，来自该地区各国的2.8万多家企业及2500多家合资企业已在哈萨克斯坦注册。
+据副总理表示，在增加投资规模的同时，关键在于将这些投资引导至以下领域：建立新的生产设施、引入现代技术、提高劳动生产率，以及制造高附加值产品。哈萨克斯坦有意在交通物流、工业、农业、能源和数字基础设施等领域，扩大与国际金融机构的合作。
+区域议程中的其他重要议题包括贸易与物流的数字化、气候变化，以及水资源的合理利用。
+据悉，第二届“天山论坛”于11月2日至3日在阿拉木图举行，主题为“加强中亚地区的可持续互联互通与高质量投资”。该论坛由中亚区域经济合作（CAREC）学院与哈萨克斯坦共和国国民经济部共同主办，并与亚洲开发银行建立了战略合作伙伴关系。
+此次论坛汇集了近400名与会者，其中包括来自中亚区域经济合作成员国政府、国际金融机构、发展组织、商界及专家领域的代表。</div>
+<ul>
+<li>中亚国家对哈投资超40亿美元，2.8万家企业注册</li>
+<li>论坛聚焦扩大贸易、交通物流互联互通与高质量投资</li>
+<li>哈方推动运输系统互操作、边境手续数字化</li>
+<li>投资重点引导至新生产设施、现代技术和高附加值产品</li>
+<li>第二届天山论坛11月2-3日在阿拉木图举行，近400人参会</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上，40亿美元投资和2.8万家企业强化哈国区域经济枢纽地位；外交上，借CAREC平台深化中亚合作并拓展与亚行等国际金融机构关系；矿产格局上，投资引导至高附加值产品，可能推动矿产加工升级，但未直接改变资源开采格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/zaiqicop31huijian28zuowen-ea4643b9/" target="_blank">哈萨克斯坦拟在土耳其COP31会议期间签署约28份合作文件</a></h3>
+<div class="item-meta">哈通社中文版 · 11/02 14:50<span class="source-link"><a href="https://cn.inform.kz/news/zaiqicop31huijian28zuowen-ea4643b9/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦计划在土耳其COP31会议期间签署约28份合作文件，涉及气象、能源转型、气候投资、清洁技术、环保和医疗卫生等领域。哈国“绿色发展”股份公司将在生态与自然资源部支持下筹备国家展馆商务活动，初步安排36场活动，包括中亚五国生态部长会议，议题涵盖气候融资、碳市场、循环经济、北咸海恢复、里海生态保护、人工智能应用及青年参与气候政策等。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦拟在土耳其COP31会议期间签署约28份合作文件
+
+除合作备忘录外，拟签署文件还包括协议、合同及其他合作文件，涉及气象、能源转型、气候投资、清洁技术、环境保护和医疗卫生等领域。
+
+哈萨克斯坦“绿色发展”（Zhasyl Damu）股份公司还计划签署多份备忘录，以拓展气候政策、气候变化适应和可持续发展领域的国际合作。最终签署文件清单将根据与合作伙伴的协商结果确定。
+
+哈萨克斯坦国家展馆的商务活动由“绿色发展”股份公司负责筹备，并得到生态与自然资源部支持。根据初步安排，展馆将举办36场活动，邀请国际专家、联合国系统机构代表及金融机构参与。
+
+其中一项重点活动将是中亚五国生态部长会议。与会者将讨论加强区域合作、共同推进气候倡议，以及协调应对地区共同环境问题的行动。
+
+气候融资和碳市场发展也将成为会议议题。与会者将讨论《巴黎协定》相关机制、绿色项目投资机会、公正能源转型，以及哈萨克斯坦国家气候投资平台的建设。
+
+循环经济、废弃物回收和清洁技术应用也将纳入议程。相关讨论包括中亚循环经济伙伴关系框架计划，以及城市发展可持续基础设施、吸引投资方面的经验。
+
+在气候变化适应方面，会议将重点关注地区实际问题，包括北咸海恢复、里海生态系统保护、水资源合理利用、提高农业适应能力，以及森林和草原的保护与修复。
+
+此外，会议还将探讨人工智能和航天技术在气候领域的应用、甲烷排放监测、建筑能效提升，以及利用科学数据制定气候决策等议题。相关活动还将关注气候变化对居民健康的影响、生态教育，以及青年参与气候政策制定等内容。</div>
+<ul>
+<li>哈国拟在COP31签署约28份文件，覆盖气象、能源、环保等领域</li>
+<li>“绿色发展”公司筹备国家展馆，初步安排36场活动</li>
+<li>重点活动包括中亚五国生态部长会议，讨论区域合作</li>
+<li>议题涉及气候融资、碳市场、循环经济和清洁技术</li>
+<li>关注北咸海恢复、里海生态保护及AI气候应用</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举将提升哈国在气候外交中的区域影响力，推动绿色投资与碳市场建设，促进能源转型和矿产绿色开发，并强化中亚生态合作。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/rifangzaikeshengneng-2ab26e6f/" target="_blank">哈萨克斯坦与日本企业探讨利用可再生能源建设冷链系统</a></h3>
+<div class="item-meta">哈通社中文版 · 11/02 13:05<span class="source-link"><a href="https://cn.inform.kz/news/rifangzaikeshengneng-2ab26e6f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦驻日本大使霍加塔耶夫与Sakigake Japan公司总裁近藤宗俊就该公司代表团访问阿斯塔纳的成果交换意见，重点讨论在哈萨克斯坦引入基于可再生能源的自主冷链系统的前景，并总结访问情况。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">消息称，哈萨克斯坦驻日本大使叶尔兰·霍加塔耶夫与Sakigake Japan公司总裁近藤宗俊（Munetoshi Kondo）就该公司代表团访问阿斯塔纳的成果，以及在哈萨克斯坦引入基于可再生能源的自主冷链系统的前景交换了意见。
+双方还总结了该公司代表团访问阿斯塔纳的有关情况。</div>
+<ul>
+<li>哈驻日大使与Sakigake Japan总裁会谈</li>
+<li>讨论在哈引入可再生能源冷链系统前景</li>
+<li>总结日本企业代表团访问阿斯塔纳成果</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举有望推动哈萨克斯坦冷链基础设施绿色升级，吸引日本可再生能源技术投资，促进双边经贸合作，并助力哈国能源转型与农业物流现代化。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(5 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/raschet-dolgovoy-nagruzki-zaemshikov-proveryat-v-11-krupnih-bankah-kazahstana-4fb58133" target="_blank">哈萨克斯坦11家大型银行将核查借款人债务负担计算</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/03 04:30<span class="source-link"><a href="https://www.inform.kz/ru/raschet-dolgovoy-nagruzki-zaemshikov-proveryat-v-11-krupnih-bankah-kazahstana-4fb58133" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦金融监管局将在11家大型银行启动债务负担系数（DSR）检查，评估银行计算借款人债务负担的正确性。此前试点项目分析了8家银行，证实了检查的必要性。检查旨在防止居民过度负债、发现低估债务负担的情况、确保计算一致性并提高信贷组合质量。结果将用于采取监管措施和制定改进建议。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦11家大型银行将核查借款人债务负担计算
+正文：
+新机制旨在防止居民过度负债，并加强负责任信贷实践。
+在启动DSR之前，进行了一个试点项目，期间该局分析了八家银行计算KDI的正确性。其结果证实了将此类检查纳入常规监管流程的必要性。
+在DSR框架内，监管机构打算评估银行在计算债务负担时对借款人收入和信贷义务的考虑是否正确。此外，检查将有助于发现低估债务负担的情况，确保计算KDI方法的一致性，并提高银行信贷组合的质量。
+根据检查结果，该局将评估所发现违规行为的性质和严重程度，考虑采取监管措施的必要性，并批准银行的纠正措施计划。所获得的结果还将用于制定改进KDI计算监管要求的建议。
+债务负担系数反映借款人每月贷款还款额与其月平均收入之比。该指标可以评估一个人偿还现有义务和新贷款的能力。
+该局指出，低估债务负担会增加银行的信贷风险，并可能导致居民负债率进一步上升。
+回顾一下，哈萨克斯坦银行被提议对投资项目融资实行新规则。</div>
+<ul>
+<li>11家大型银行将接受债务负担计算检查</li>
+<li>试点项目已分析8家银行的计算正确性</li>
+<li>检查旨在防止居民过度负债和信贷风险</li>
+<li>结果将用于监管措施和规则改进建议</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该检查有助于遏制居民过度负债，降低银行信贷风险，维护金融稳定。对经济而言，可促进负责任信贷，但可能收紧信贷供给，影响消费和投资增长。外交和矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/kazahstantsi-stali-chashe-obrashatsya-s-problemami-po-zaymam-545c20a0" target="_blank">哈萨克斯坦人越来越多就贷款问题求助</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/03 03:25<span class="source-link"><a href="https://www.inform.kz/ru/kazahstantsi-stali-chashe-obrashatsya-s-problemami-po-zaymam-545c20a0" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2023年9月，哈萨克斯坦金融市场监管与发展署审议1.56万份申诉，其中47.1%涉及银行，39.4%涉及小额信贷机构，43%的申诉关于贷款债务调解。该署采取5项监管响应措施、1份书面指令，处以3笔行政罚款共170万坚戈。住房抵押贷款再融资计划已对3.34万笔贷款再融资2150亿坚戈，并向1.06万名弱势群体借款人提供1013亿坚戈支持，申请期限延至2027年7月1日。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">9月，金融市场监管与发展署审议了1.56万份申诉。其中近一半（47.1%）涉及银行活动，39.4%涉及小额信贷机构，另有7.1%涉及催收机构。
+哈萨克斯坦人最常就贷款债务调解问题提出申诉——占所有申诉的43%。另有18%涉及法律解释，12%涉及各类问题的咨询。
+根据9月发现的违规行为，该署对金融市场参与者采取了五项建议性监管响应措施和一份书面指令。此外，还处以三笔行政罚款，总额170万坚戈。
+对银行采取了五项监管响应措施。一家从事特定银行业务的机构、一家保险机构和一家催收机构被处以行政罚款。对一家小额信贷机构发出了一份书面指令。
+与此同时，住房抵押贷款再融资计划继续实施。截至10月1日，在该计划第一方向框架内，银行已对3.34万笔贷款进行再融资，金额达2150亿坚戈。
+此外，来自社会弱势群体的1.06万名借款人利用了额外财政支持措施，总额达1013亿坚戈。
+此前，哈萨克斯坦延长了问题住房抵押贷款申请的提交期限。借款人可在2027年7月1日前向银行、哈萨克斯坦住房公司及其他参与该计划的机构申请额外支持。</div>
+<ul>
+<li>9月金融监管署审议1.56万份申诉，近半涉及银行</li>
+<li>43%申诉聚焦贷款债务调解，18%为法律解释</li>
+<li>监管采取5项措施、1份指令，罚款170万坚戈</li>
+<li>抵押贷款再融资3.34万笔，金额2150亿坚戈</li>
+<li>弱势群体1.06万借款人获1013亿坚戈支持</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">申诉激增反映哈国家庭债务压力上升，监管趋严将约束银行与小额信贷机构放贷行为，再融资计划延至2027年有助缓解社会风险，但财政负担与道德风险需关注。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/guojia10yuenianwei92-7117e066/" target="_blank">国家统计局：10月份年度通胀率为9.2%</a></h3>
+<div class="item-meta">哈通社中文版 · 11/03 01:20<span class="source-link"><a href="https://cn.inform.kz/news/guojia10yuenianwei92-7117e066/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年10月哈萨克斯坦年度通胀率为9.2%，较9月的9.3%微降。食品价格同比上涨7.6%，非食品类上涨10.4%，付费服务上涨10.3%。部分食品如葡萄、洋葱、白砂糖等价格环比下降，黄瓜同比降34.4%。非食品中搅拌机、调制解调器等价格下降，国产组装乘用车同比降17.3%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 国家统计局：10月份年度通胀率为9.2%
+正文:
+食品价格方面，葡萄（10%）、洋葱（9.8%）、白砂糖（9%）、花椰菜（9%）、苹果（6.2%）、西兰花（4.6%）、梨（3.5%）、扁豆（2.3%）、小麦粒（2.1%）和羊肉（1.4%）的价格均有所下降。此外，甜饼干和蜂蜜的价格下降了0.6%，甜点下降了0.3%，葵花籽油和巧克力酱的价格下降了0.1%。
+在非食品类商品中，10月份搅拌机（下降6.7%）、调制解调器和路由器（下降4.2%）、微波炉（下降2.4%）、不粘锅（下降0.5%）、儿童香皂（下降0.4%）、牙膏（下降0.3%）和垃圾桶（下降0.1%）的价格均有所下降。
+2026年10月，年通货膨胀率为9.2%（2026年9月为9.3%）。非食品类商品价格上涨10.4%，付费服务价格上涨10.3%，食品价格上涨7.6%。
+与去年同期相比，黄瓜（下降34.4%）、香蕉（下降12.4%）、柠檬（下降11.1%）、大蒜（下降10.2%）、葡萄（下降1.9%）、猕猴桃和甜椒（下降0.9%）以及洋葱（下降0.4%）的价格均有所下降。
+与2025年10月相比，非食品类商品价格中，国产组装乘用车价格下降17.3%，电钻和螺丝刀下降10.5%，电动绞肉机下降3.9%，调制解调器和路由器下降2.1%，锤子下降0.1%。</div>
+<ul>
+<li>10月年度通胀率9.2%，较9月9.3%小幅回落</li>
+<li>食品价格同比涨7.6%，非食品涨10.4%，服务涨10.3%</li>
+<li>葡萄、洋葱、白砂糖等食品价格环比下降</li>
+<li>黄瓜同比降34.4%，国产乘用车同比降17.3%</li>
+<li>搅拌机、路由器等非食品商品价格环比下降</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">通胀微降缓解民生压力，但非食品与服务价格仍高，可能促使央行维持紧缩政策；国产乘用车降价反映进口替代进展，对矿产依赖型经济结构影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/11yue2ri-herenminqing-e70c7240/" target="_blank">11月2日终盘 美元、欧元、卢布和人民币兑坚戈汇率情况</a></h3>
+<div class="item-meta">哈通社中文版 · 11/02 22:43<span class="source-link"><a href="https://cn.inform.kz/news/11yue2ri-herenminqing-e70c7240/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>11月2日KASE现货市场交易终盘显示，30个成员参与。美元兑坚戈平均报453.48（-0.29），交易额460,949.14千美元（+184,205.70千美元）；欧元兑坚戈平均报508.20（+0.57），交易额3,697.68千欧元（+1,627.72千欧元）；卢布兑坚戈平均报5.5969（-0.0441），交易额3,023,414.36千卢布（-249,290.22千卢布）；人民币兑坚戈平均报68.2613（+0.0350），交易额16,292.64千人民币（-81,913.66千人民币）。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 11月2日终盘 美元、欧元、卢布和人民币兑坚戈汇率情况
+正文:
+30个KASE成员参与了交易。
+根据现货市场交易结果： 
+美元兑坚戈（USDKZT_TOM）： 汇率平均报价为 1:453.48（-0.29坚戈），外汇交易总额为 460,949.14 千美元（+184,205.70 千美元）。交易过程中，最低报价为 1:452.00 坚戈，最高报价为 1:455.02 坚戈。
+欧元兑坚戈（EURKZT_TOM）： 汇率平均报价为 1:508.20（+0.57坚戈），外汇交易总额为 3,697.68 千欧元（+1,627.72 千欧元）。交易过程中，最低报价为 1:505.52 坚戈，最高报价为 1:509.40 坚戈。
+卢布兑坚戈（RUBKZT_TOM）： 汇率平均报价为 1:5.5969（-0.0441坚戈），外汇交易总额为 3,023,414.36 千卢布（-249,290.22 千卢布）。交易过程中，最低报价为 1:5.5796 坚戈，最高报价为 1:5.6390 坚戈。
+人民币兑坚戈（CNYKZT_TOM）： 汇率平均报价为 1:68.2613（+0.0350坚戈），外汇交易总额为 16,292.64 千人民币（-81,913.66 千人民币）。交易过程中，最低报价为 1:68.0599 坚戈，最高报价为 1:68.4690 坚戈。</div>
+<ul>
+<li>美元兑坚戈微跌0.29至453.48，交易额大增184,205.70千美元</li>
+<li>欧元兑坚戈微涨0.57至508.20，交易额增加1,627.72千欧元</li>
+<li>卢布兑坚戈跌0.0441至5.5969，交易额减少249,290.22千卢布</li>
+<li>人民币兑坚戈微涨0.0350至68.2613，交易额减少81,913.66千人民币</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率波动反映坚戈对美元、卢布走强，对欧元、人民币微贬。美元交易额激增显示市场活跃度提升，可能影响哈国出口竞争力与外汇储备管理，对矿产出口计价和外资流入产生间接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/xinggong2riyuzhuyaowaizhijiande-7dc9b757/" target="_blank">央行公布2日坚戈与主要外币之间的汇率标准</a></h3>
+<div class="item-meta">哈通社中文版 · 11/02 13:36<span class="source-link"><a href="https://cn.inform.kz/news/xinggong2riyuzhuyaowaizhijiande-7dc9b757/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行公布2026年11月2日坚戈对主要外币官方汇率：美元兑坚戈1:453.87，欧元兑坚戈1:508.33，俄罗斯卢布兑坚戈1:5.65，土耳其里拉兑坚戈1:9.12，中国元兑坚戈1:68.22。央行规定，坚戈兑美元官方汇率基于阿斯塔纳时间15:30证券交易所加权平均汇率确定，其他外币汇率基于16:00交叉汇率计算。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：央行公布2日坚戈与主要外币之间的汇率标准
+正文：根据央行公布的信息，2026年11月2日，哈萨克斯坦坚戈与国际主要货币之间的兑换汇率标准如下：
+美元兑坚戈（USD/KZT） – 1：453.87
+欧元兑坚戈（EUR/KZT）- 1：508.33
+俄罗斯卢布兑坚戈（RUB / KZT）-1: 5.65
+土耳其里拉兑坚戈（TRY / KZT）- 1: 9.12
+中国元兑坚戈（CNY / KZT）- 1：68.22
+值得一提的是，根据哈萨克斯坦国家银行规定，截至阿斯塔纳时间当日15:30，在哈萨克斯坦证券交易所形成的坚戈兑美元加权平均汇率，将被确定为下一工作日坚戈兑美元官方汇率；坚戈兑其他外币的官方汇率，则依据截至阿斯塔纳时间16:00形成的交叉汇率计算得出。</div>
+<ul>
+<li>美元兑坚戈汇率为1:453.87</li>
+<li>欧元兑坚戈汇率为1:508.33</li>
+<li>中国元兑坚戈汇率为1:68.22</li>
+<li>卢布兑坚戈1:5.65，里拉兑坚戈1:9.12</li>
+<li>官方汇率依交易所加权平均和交叉汇率确定</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率数据反映坚戈对主要货币的比价关系，为贸易和投资提供定价基准。美元汇率主导官方定价机制，体现哈国货币政策的市场化导向，对矿产等大宗商品出口的汇率风险有直接影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/ministr-po-chs-kazahstana-oznakomilsya-s-usloviyami-truda-v-shahte-sokolovskaya-03bec2c5" target="_blank">哈萨克斯坦紧急情况部长了解“索科洛夫斯卡娅”矿井劳动条件</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/03 01:41<span class="source-link"><a href="https://www.inform.kz/ru/ministr-po-chs-kazahstana-oznakomilsya-s-usloviyami-truda-v-shahte-sokolovskaya-03bec2c5" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦紧急情况部部长在工作访问中了解了“索科洛夫斯卡娅”矿井的劳动条件。该矿井自1975年运营，有超900名员工，年开采矿石达200万吨。代表团下到344米深处，重点关注事故预防、员工安全和应急救援准备，并听取了事故消除计划。此前阿克托别州东斯科耶采矿选矿联合企业矿井发生事故，一名工人伤重不治。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦紧急情况部部长了解“索科洛夫斯卡娅”矿井的劳动条件
+
+正文：
+在工作访问期间，部长了解了地下作业的组织情况和现行的工业安全系统。
+图片：哈萨克斯坦共和国紧急情况部 该矿井自1975年开始运营。企业有超过900名员工，年矿石开采量达到200万吨。
+图片：哈萨克斯坦共和国紧急情况部 紧急情况部代表团下到344米深处，了解了矿工们的劳动条件和地下铁矿石开采的特点。
+图片：哈萨克斯坦共和国紧急情况部 访问期间特别关注了事故预防、保障员工安全以及应急救援服务快速响应的准备情况。部长还听取了事故消除计划。
+图片：哈萨克斯坦共和国紧急情况部 此前在阿克托别州，一名工人在东斯科耶采矿选矿联合企业矿井进行车厢连接时受伤。他被送往赫罗姆套区医院，但未能挽救该男子的生命。</div>
+<ul>
+<li>紧急情况部部长视察索科洛夫斯卡娅矿井劳动条件</li>
+<li>矿井自1975年运营，900余名员工，年采矿石200万吨</li>
+<li>代表团下至344米深处了解地下开采特点</li>
+<li>重点关注事故预防、员工安全及应急救援准备</li>
+<li>此前阿克托别州矿井发生致命事故</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次视察凸显哈国对采矿工业安全的高度重视，有助于推动矿井安全标准提升，保障铁矿稳定生产，对维护矿产行业形象和吸引投资具有积极意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/gegongti-967c251c/" target="_blank">哈萨克斯坦计划建设首个煤化工综合体</a></h3>
+<div class="item-meta">哈通社中文版 · 11/02 18:46<span class="source-link"><a href="https://cn.inform.kz/news/gegongti-967c251c/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦Qarmet公司计划建设该国首个煤化工综合体，包括新建两座焦炉连线，总设计产能为每年150万吨干焦。每座连线含54座焦炉，炉膛高度7.6米。项目技术合作伙伴为中冶焦耐工程技术有限公司。新装置计划于明年启动，取代1960-1970年间投入使用的旧设施，旨在为高炉稳定供应本地焦炭，提升环境安全，并实现焦化产品深加工。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦计划建设首个煤化工综合体
+正文:
+据介绍，该项目属于 Qarmet 公司的重大投资举措之一。
+值得一提的是，该项目包括建设新的焦炭生产能力。在过去几十年里，该厂从未进行过如此大规模的建设。项目主要技术合作伙伴是中冶焦耐工程技术有限公司（ACRE Coking &amp; Refractory Engineering Consulting Corporation）。
+Фото: Ақорда Фото: Ақорда 这两座焦炉连线的总设计产能足以每年生产150万吨干焦。每个焦炉连线包含54座焦炉，炉膛高度为7.6米。
+这些新装置将能够为高炉持续供应本地生产的焦炭，确保焦炭质量始终如一，并显著提升环境安全水平。
+Фото: Ақорда Фото: Ақорда 据悉，计划于明年启动新的生产装置，以取代那些在1960年至1970年间投入使用的生产设施。
+因此，哈萨克斯坦将建造首个用于焦化产品深加工的煤化工综合体。
+Фото: Акорда Фото: Ақорда &amp;nbsp;</div>
+<ul>
+<li>Qarmet公司投资建设哈国首个煤化工综合体</li>
+<li>新建两座焦炉连线，年产能150万吨干焦</li>
+<li>每座连线54座焦炉，炉膛高度7.6米</li>
+<li>中冶焦耐为项目主要技术合作伙伴</li>
+<li>明年启动新装置，替代1960-1970年旧设施</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该项目将提升哈萨克斯坦焦炭自给能力，推动煤化工产业链延伸，减少对进口焦炭依赖；深化中哈技术合作，增强哈国在区域矿产加工领域地位，并改善环境安全。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-11-03 09:03</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
