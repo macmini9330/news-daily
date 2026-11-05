@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年11月5日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年11月5日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年11月04日早9:00至2026年11月05日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 16 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">5</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">5</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">3</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(5 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/kaksobirayutsya-reshat-vopros-defitsita-elektroenergii-vakmolinskoy-oblasti-d6148ede" target="_blank">阿克莫拉州计划如何解决电力短缺问题</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/05 08:32<span class="source-link"><a href="https://www.inform.kz/ru/kaksobirayutsya-reshat-vopros-defitsita-elektroenergii-vakmolinskoy-oblasti-d6148ede" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>阿克莫拉州计划通过更换“科克舍”220千伏变电站自耦变压器（2×125至2×190兆伏安）来缓解电力短缺，工程于2027-2028年供暖季前完成。还将新建和改造多座变电站，包括科克舍套市的“萨雷阿尔卡”“扎克瑟雷克”等，并在科什市建设220千伏“詹纳特”变电站。2027年计划建成约400公里电网，惠及约2.7万居民。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据阿克莫拉州能源和住房公用事业管理局局长巴克特别克·扎帕耶夫介绍，为解决电力容量短缺问题，哈萨克斯坦电网运营公司（KEGOC）计划通过将“科克舍”220千伏变电站的自耦变压器从2×125兆伏安更换为2×190兆伏安来增加其容量。工程计划在2027-2028年供暖季开始前完成。这将为未来几年创造必要的容量储备，并确保科克舍套市、布拉拜区和泽连达区的 new 用户接入。
+
+“此外，这将使科克舍套市新变电站‘萨雷阿尔卡’和‘扎克瑟雷克’建设项目能够从2027年开始实施技术接入，还将设计和建设另外两座变电站‘科帕’、‘萨亚扎伊’，并对现有变电站‘КПСЗ’和‘ПГВ’进行改造，”发言人指出。
+
+科什市也受到特别关注，该市住房建设高速推进、人口增长，电力消耗随之增加。已完成对“北”和“花园村”两座变电站的改造设计，包括建设6个配电点以及一座新的220千伏变电站“詹纳特”。
+
+“这将为更多微型区提供电力供应。项目文件已准备移交阿斯塔纳市，以便在集聚区发展计划框架内进一步建设，”巴克特别克·扎帕耶夫解释说。
+
+此外，计划在2027年完成约400公里的电网建设，覆盖阿尔沙雷区的科斯托马尔村、采林诺格勒区的卡日穆坎村和科扬德村。据发言人称，这将提高约2.7万居民的供电可靠性。此外，还计划为采林诺格勒区的卡拉扎尔村、卡日穆坎村、法尔福罗沃耶村以及阿尔沙雷区的扎尔特科尔村编制变电站建设和改造项目，以增加电网接入并减少容量短缺。
+
+“同时，在‘ЩБКЗ’综合发展计划框架内，正在进行‘朱姆巴克塔斯’变电站的设计，这将使输电线路形成环网并提高负荷率……”</div>
+<ul>
+<li>更换“科克舍”变电站自耦变压器，容量提升至2×190兆伏安</li>
+<li>2027-2028年供暖季前完成，保障新用户接入</li>
+<li>科克舍套市新建“萨雷阿尔卡”“扎克瑟雷克”等变电站</li>
+<li>科什市建设220千伏“詹纳特”变电站及6个配电点</li>
+<li>2027年建成约400公里电网，提高2.7万居民供电可靠性</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该计划将缓解阿克莫拉州电力短缺，支撑科克舍套套和科什市住房与经济增长，增强电网可靠性，为集聚区发展提供能源保障，并促进区域矿产和工业项目接入。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/iznos-elektrosetey-vodnom-izrayonov-akmolinskoy-oblasti-dostig90-72df897b" target="_blank">阿克莫拉州某区电网磨损率达90%</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/05 04:42<span class="source-link"><a href="https://www.inform.kz/ru/iznos-elektrosetey-vodnom-izrayonov-akmolinskoy-oblasti-dostig90-72df897b" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>阿克莫拉州电网总长3.2万公里，过去两年修复5000公里电网和1300座变电站，磨损率从62%降至59%。国家项目计划实施75个项目，投资690亿坚戈，将磨损率进一步降至57%。泽连达区南部882公里电网磨损达90%，自2022年发生超3000起技术违规，计划分两阶段新建电网覆盖31个居民点，惠及1.7万居民。哈萨克斯坦计划到2029年增加电站容量13.3吉瓦。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">阿克莫拉州电网总长度约为3.2万公里。输电和配电由“阿克莫拉区域电网公司”股份公司和“科克舍套能源”有限责任合伙企业负责。
+——阿克莫拉区域电网公司和科克舍套能源在投资计划框架内，过去两年修复了超过5000公里电网和约1300座变电站。由于采取这些措施，电网磨损率从62%降至59%，——阿克莫拉州能源和住房公用事业管理局局长巴克特别克·扎帕耶夫解释道。
+据报道，该地区正在继续实施国家项目，对输电线路和变电站进行现代化改造。总共计划实施75个项目，金额为690亿坚戈。这些工作将使电网磨损率进一步降至57%。
+最尖锐的问题之一仍然是泽连达区南部电网的不佳状况，这些电网归“泽连德集团”股份公司所有。电网总长度为882公里。
+——其中大部分建于1960-1970年，磨损程度达到90%，自2022年以来技术违规事件超过3000起。为解决这一问题，已制定建设新电网的项目，——发言人分享道。
+这些电网的第一阶段计划覆盖20个居民点——艾达尔雷、科什卡尔拜、科克捷列克、奥尔塔阿加什、卡拉希利克、克孜勒叶吉斯、普里列奇诺耶、巴甫洛夫卡、阿卡德尔、乌亚雷、叶斯肯扎尔、沙加拉雷、卡奈比、伊萨科夫卡、科斯托马罗夫卡、M.加布杜林娜、多罗戈夫卡、M.秋克特、谢拉菲莫夫卡和伊吉利克。
+此外，正在制定项目第二阶段，将额外包括11个农村居民点——博根拜比、维克托罗夫卡、克拉西洛夫卡、肯诺特克尔、卡尔萨克、特罗伊茨科耶、艾达博尔、叶尔马科夫卡、克拉斯内科尔东、乌尔吉利、拜捷列克。
+——建设将降低事故率，为南部地区1.7万居民提供更稳定的电力供应，——巴克特别克·扎帕耶夫总结道。
+此前有报道称，哈萨克斯坦计划到2029年将电站容量增加13.3吉瓦。</div>
+<ul>
+<li>阿克莫拉州电网磨损率从62%降至59%，计划降至57%</li>
+<li>国家项目投资690亿坚戈实施75个电网现代化项目</li>
+<li>泽连达区南部882公里电网磨损达90%，事故频发</li>
+<li>分两阶段新建电网覆盖31个居民点，惠及1.7万人</li>
+<li>哈萨克斯坦计划到2029年增加电站容量13.3吉瓦</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">电网现代化将提升哈国能源安全，降低事故率，改善民生；690亿坚戈投资拉动地方经济；但南部电网私有化遗留问题凸显，需协调产权与改造责任，对矿产开发电力保障有积极意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/tranzit-narossiyu-ikitay-uvedut-izust-kamenogorska-vplanah-postroit-obezdnuyu-do-6927e4ce" target="_blank">过境俄罗斯和中国的运输将绕开乌斯季卡缅诺戈尔斯克——计划修建绕城公路</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/05 03:27<span class="source-link"><a href="https://www.inform.kz/ru/tranzit-narossiyu-ikitay-uvedut-izust-kamenogorska-vplanah-postroit-obezdnuyu-do-6927e4ce" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦计划在乌斯季卡缅诺戈尔斯克建设绕城公路，初步造价500亿坚戈，以分流俄罗斯与中国之间的过境货运流量。目前每天数万辆重型卡车穿城而过，造成道路损坏、拥堵和污染。新路线将把过境交通引导至城市外围，保护城市桥梁和道路，并加快边境口岸间的物流。项目处于详细研究阶段，需确定路线、经济核算和资金来源。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">初步估算交通走廊造价为500亿坚戈。
+建设绕城公路的必要性源于日益增长的跨境交通流量。乌斯季卡缅诺戈尔斯克长期以来一直是俄罗斯与中国之间重型货运车队被迫经过的连接点。每天有数万辆重型卡车破坏城市路面，造成主干道拥堵，并恶化居民区的生态环境。
+新路线旨在将过境交通流完全从市中心街区剥离，并引导至外围环线。
+——项目实施后，将允许前往俄罗斯联邦和中国的过境货运车辆绕开乌斯季卡缅诺戈尔斯克的城市道路网。这不仅会显著降低市内主干道的交通负荷，还将直接影响交通安全，——东哈萨克斯坦州客运与公路管理局局长阿塞特·苏尔塔诺夫表示。
+干线建设将保护已修复的城市高架桥和桥梁免受超限荷载，并加速边境海关口岸之间的物流。
+目前，该战略项目正处于详细研究阶段。专家们需要确定最优路线，进行经济核算，并确定启动建设工作的资金来源。
+此前有报道称，阿拉木图—塔尔迪库尔干公路上开通了穿越穆克雷山口的21公里路段。</div>
+<ul>
+<li>乌斯季卡缅诺戈尔斯克将建绕城公路，初步造价500亿坚戈</li>
+<li>目的是分流俄中之间每日数万辆重型过境卡车</li>
+<li>新路线将过境交通从市中心剥离至外围环线</li>
+<li>项目可保护城市道路桥梁并提升交通安全</li>
+<li>项目处于详细研究阶段，需确定路线和资金来源</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该项目将缓解城市交通压力、改善环境，提升哈作为俄中过境枢纽的物流效率，促进边境贸易和经济发展，同时保护基础设施，增强交通安全性。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://www.inform.kz/ru/bolee-200-kandidatov-pretenduyut-namesta-vmaslihatah-oblasti-ulitau-7942d93f" target="_blank">超过200名候选人角逐乌雷套州地方议会席位</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/05 01:20<span class="source-link"><a href="https://www.inform.kz/ru/bolee-200-kandidatov-pretenduyut-namesta-vmaslihatah-oblasti-ulitau-7942d93f" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦乌勒套州将于2026年11月29日举行地方议会非例行选举。全州设203个选举委员会、1203名工作人员，登记选民137652人。201名候选人通过单席位选区登记，其中41人竞选州议会、94人竞选市议会、66人竞选区议会。四个政党提名37人，正义党21人最多。38人撤回候选资格，2人因未缴选举保证金未通过登记。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：超过200名候选人角逐乌勒套州地方议会席位
+
+在即将到来的竞选活动中，将有203个委员会参与工作。其中包括6个地区委员会、70个选区委员会和127个投票站委员会。为投票日当天不在常住地的公民设立了4个投票站：杰兹卡兹甘2个，萨特帕耶夫2个。
+
+选举委员会共有1203名工作人员。其中大多数——811人——属于投票站委员会，另有350人在选区委员会工作，42人在地区委员会工作。据州选举委员会指出，93.2%的委员会成员已具备此类工作经验。所有委员会均已配备齐全。
+
+根据最新数据，乌勒套州共有137652名选民。登记选民最多的是杰兹卡兹甘——59106人。萨特帕耶夫为42962人。扎纳阿尔卡区有18648名选民，卡拉扎尔有10461人，乌勒套区有6475人。
+
+与此同时，议员候选人名单也已确定。在各级地方议会单席位选区共登记了201名候选人。其中41人打算获得州议会席位，94人竞选市议会席位，66人竞选区议会席位。
+
+并非所有最初宣布参选的人都完成了登记。在提名后，有38名候选人撤回了自己的候选人资格，另有两人因未缴纳选举保证金而未能通过登记。
+
+四个政党也向州议会提名了自己的代表：“光明之路”、“农村”、“正义”和Respublica。政党名单共包括37人。提名候选人最多的是“正义”党——21人。“农村”党提名了8人，“光明之路”党和Respublica各提名了4人。
+
+在制定政党名单时，遵守了关于妇女和青年总体代表性的要求。
+
+回顾一下，10月12日，总统卡瑟姆-若马尔特·托卡耶夫签署了关于提前终止各级地方议会权力的法令。
+
+哈萨克斯坦地方议会议员非例行选举定于2026年11月29日举行。据中央选举委员会信息，即将进行……</div>
+<ul>
+<li>乌勒套州设203个选举委员会，1203名工作人员，93.2%有经验</li>
+<li>全州登记选民137652人，杰兹卡兹甘59106人最多</li>
+<li>201名候选人登记，竞选州、市、区三级议会席位</li>
+<li>四个政党提名37人，正义党21人占多数</li>
+<li>38人撤回候选资格，2人因未缴保证金未通过登记</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次选举是托卡耶夫提前终止地方议会后的例行政治重组，有助于巩固地方治理架构。乌勒套州作为矿产富集区，选举结果将影响地方资源政策走向，但政党格局仍以亲政权党派为主，外交和经济政策预计保持稳定。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/network-schoolrenli-bingqier-a793ea84/" target="_blank">托卡耶夫会见Network School创始人斯里尼瓦桑 并授予其二级“友谊”勋章</a></h3>
+<div class="item-meta">哈通社中文版 · 11/04 17:01<span class="source-link"><a href="https://cn.inform.kz/news/network-schoolrenli-bingqier-a793ea84/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫会见Network School创始人巴拉吉·斯里尼瓦桑，高度评价该项目对哈科技生态系统的贡献，表示将深化合作。托卡耶夫强调哈正加大教育、科学和数字技能投资，并介绍“全民建设”倡议，计划大规模建设学校、大学及医疗机构。他赞赏Network School Kazakhstan在阿斯塔纳启动，支持其扩大与高校、初创企业合作，感谢斯里尼瓦桑赞助Astana AI Film电影节。最后授予其二级“友谊”勋章。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫总统高度评价了“Network School”项目为哈萨克斯坦科技生态系统建设作出的贡献，并表示哈方已做好准备进一步深化相关合作。
+国家元首强调，哈萨克斯坦正加大对教育、科学及数字技能领域的投资，旨在培育具备深厚技术素养的新一代领军人才。
+托卡耶夫总统还向斯里尼瓦桑介绍了其在最新国情咨文中提出的“全民建设”倡议。总统表示，该倡议将为子孙后代留下重要且深厚的历史遗产。在倡议框架下，哈国计划大规模建设社会基础设施，包括学校、大学及医疗机构等。
+会上，托卡耶夫总统对“Network School Kazakhstan”在阿斯塔纳的启动表示赞赏，并支持该项目进一步扩大与哈萨克斯坦各高校、初创企业及科技企业的合作伙伴关系。
+此外，总统还对巴拉吉·斯里尼瓦桑为“Astana AI Film”人工智能电影节提供的投资赞助表示感谢。
+巴拉吉·斯里尼瓦桑特别指出，哈萨克斯坦成功实现了前沿科技解决方案与传统经济领域的深度融合。期间，他介绍了“Network School Kazakhstan”项目的优先发展方向，该项目旨在推广数字解决方案、开发人力资本，并为创新成果的落地应用创造有利条件。
+会谈最后，为表彰巴拉吉·斯里尼瓦桑为推动哈萨克斯坦人工智能与创新产业发展所作出的突出贡献，国家元首向其颁发了二级“友谊”（Достық）勋章。</div>
+<ul>
+<li>托卡耶夫会见斯里尼瓦桑，肯定Network School对哈科技生态贡献</li>
+<li>哈国加大教育、科学及数字技能投资，培育技术领军人才</li>
+<li>总统介绍“全民建设”倡议，计划大规模建设社会基础设施</li>
+<li>支持Network School Kazakhstan扩大与高校及科技企业合作</li>
+<li>斯里尼瓦桑获颁二级“友谊”勋章，表彰AI与创新贡献</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举强化哈国科技教育国际合作，吸引外资与人才，推动AI及数字经济发展；通过勋章外交提升国际形象，助力“全民建设”倡议落地，为矿产等传统经济注入科技动力。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(5 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/waibuchanghuidashi-90f059c1/" target="_blank">外交部长会见阿联酋驻哈大使</a></h3>
+<div class="item-meta">哈通社中文版 · 11/05 01:58<span class="source-link"><a href="https://cn.inform.kz/news/waibuchanghuidashi-90f059c1/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦外交部长会见阿联酋驻哈大使，双方深入探讨全面合作问题，重点关注此前协议的落实以及为即将举行的高层和最高层访问做筹备。阿联酋邀请哈外长参加在阿联酋举办的多项国际活动。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：外交部长会见阿联酋驻哈大使
+
+正文：
+会晤期间，双方就哈萨克斯坦与阿联酋之间的全面合作问题进行了深入探讨。
+双方重点关注了此前所达成协议的落实情况，以及为即将举行的高层及最高层访问与会晤所做的筹备工作。
+会谈中，阿联酋邀请哈萨克斯坦外长参加即将在阿联酋举办的多项国际活动。</div>
+<ul>
+<li>哈外长会见阿联酋驻哈大使，讨论全面合作</li>
+<li>双方重点推动此前协议落实</li>
+<li>筹备即将举行的高层及最高层访问</li>
+<li>阿联酋邀请哈外长参加国际活动</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次会晤强化哈阿双边关系，推动协议落实和高层互访，有利于哈萨克斯坦拓展海湾外交、吸引投资，并促进矿产领域合作。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/liangguojiangduijinxingzhengwen-0b929f03/" target="_blank">约旦国王和塔吉克斯坦总统将对哈萨克斯坦进行正式访问</a></h3>
+<div class="item-meta">哈通社中文版 · 11/04 21:12<span class="source-link"><a href="https://cn.inform.kz/news/liangguojiangduijinxingzhengwen-0b929f03/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>约旦国王阿卜杜拉二世将于11月5日至6日对哈萨克斯坦进行正式访问，塔吉克斯坦总统拉赫蒙将于11月5日至7日进行正式访问。双方将分别讨论经贸、投资、文化合作及加强战略伙伴关系。此外，“亚喀巴进程”峰会将于11月6日在阿斯塔纳举行，多国元首出席。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据总统新闻秘书阿伊别克·斯马迪亚尔透露，应哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫的邀请，约旦哈希姆王国国王阿卜杜拉二世·本·侯赛因（Abdullah II bin Al-Hussein）将于11月5日至6日对哈萨克斯坦进行正式访问。
+在高级别会谈中，双方将探讨在经贸、投资以及文化与人文领域扩大双边合作的前景。
+应国家元首邀请，塔吉克斯坦总统埃莫马利·拉赫蒙将于11月5日至7日对该国进行正式访问。
+两国领导人将讨论有关加强战略伙伴关系及盟友关系的问题。
+“亚喀巴进程”（Aqaba Process）峰会将于11月6日在阿斯塔纳举行。多国国家元首将出席此次会议。</div>
+<ul>
+<li>约旦国王11月5-6日访哈，谈经贸投资合作</li>
+<li>塔吉克斯坦总统11月5-7日访哈，强化战略伙伴</li>
+<li>亚喀巴进程峰会11月6日在阿斯塔纳举行</li>
+<li>多国元首将出席阿斯塔纳峰会</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访将提升哈萨克斯坦在中亚与中东的外交桥梁作用，促进经贸投资与安全合作，并强化其作为地区对话平台的地位，对矿产等资源合作亦有潜在推动。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/zaihuiduofanggao-guokaiguoxue-ae75a3e5/" target="_blank">哈萨克斯坦代表团在伦敦会晤多方高层 阿拉套市拟引入英国顶尖名校开办国际学校</a></h3>
+<div class="item-meta">哈通社中文版 · 11/04 14:54<span class="source-link"><a href="https://cn.inform.kz/news/zaihuiduofanggao-guokaiguoxue-ae75a3e5/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦代表团在伦敦与英国出口信贷担保局（UKEF）、外交部政务次官、渣打银行及多名国务大臣会谈，聚焦阿拉套市基础设施融资、引入英国技术和教育合作。哈方提议制定优先项目清单，吸引英国企业参与能源、交通和市政建设，并探讨银团贷款和出口信贷担保。双方还讨论在阿拉套市开办麦格达伦学院学校国际学校及人工智能合作。首日达成9项协议，意向投资13亿美元。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">本次会谈的核心议题聚焦于阿拉套市（Alatau City）基础设施项目的融资方案、引入英国先进技术，以及深化在教育和人工智能领域的合作。
+在与 UKEF 管理层举行的圆桌会议上，双方探讨了利用出口信贷、银行担保及其他英国出口政策支持工具，为阿拉套市的能源、交通和市政公用设施项目提供融资的可能性。哈方提议制定优先项目清单，拟吸引英国工程企业、设备制造商及金融机构参与当地能源设施、供排水系统和交通基础设施的建设。
+在与英国外交部政务次官斯图尔特·伍德勋爵（Lord Stuart Wood）会晤期间，双方讨论了进一步巩固两国战略伙伴关系的相关议题，并评估了英国企业参与基础设施与技术项目，以及在能源、工业和数字经济领域的合作前景。
+为落实具体的资本引入机制，哈方代表团与渣打银行（Standard Chartered）全球公共部门业务负责人查尔斯·考贝特（Charles Corbett）举行了谈判，重点探讨了银团贷款、与国际开发机构联合融资以及运用出口信贷机构担保等手段。
+此外，代表团还与英国国务大臣阿纳斯·萨瓦尔（Anas Sarwar）、克里斯·麦克唐纳（Chris McDonald）及卡尼什卡·纳拉扬（Kanishka Narayan）举行了专门会谈。谈判重点在于扩大经贸与投资合作、引入英国先进技术，以及推动科学、创新和人工智能领域的联合项目，双方还探讨了在阿拉套市城市基础设施管理中应用数字解决方案的前景。
+在教育合作领域，哈萨克斯坦代表团与英国名校麦格达伦学院学校（Magdalen College School）管理层举行了会谈。双方深入讨论了在阿拉套市开办一所具备国际水准的学校、引入英国教育课程体系以及开展师资联合培训等合作意向。
+据此前报道，哈萨克斯坦代表团在伦敦首日谈判期间已达成9项合作协议，意向投资总额达13亿美元。</div>
+<ul>
+<li>哈代表团在伦敦会谈聚焦阿拉套市基建融资与技术引入</li>
+<li>哈方提议制定优先项目清单吸引英国企业参与能源交通</li>
+<li>与渣打银行探讨银团贷款及出口信贷担保等融资机制</li>
+<li>双方讨论在阿拉套市开办英国名校麦格达伦学院学校</li>
+<li>首日达成9项合作协议，意向投资总额达13亿美元</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈英战略伙伴关系，为阿拉套市基建引入英国出口信贷和银团贷款，缓解融资压力；教育合作提升人力资本；AI与数字方案合作助推数字经济；矿产格局短期无直接影响，但技术引入或间接提升资源开发效率。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/kmgyuguojiagongrenzaihui-nengquanyezuo-bbb03f3f/" target="_blank">聚焦地质勘探与海上钻井 哈萨克斯坦与阿塞拜疆进一步巩固战略能源伙伴关系</a></h3>
+<div class="item-meta">哈通社中文版 · 11/04 13:15<span class="source-link"><a href="https://cn.inform.kz/news/kmgyuguojiagongrenzaihui-nengquanyezuo-bbb03f3f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国家石油天然气公司（KMG）与阿塞拜疆国家石油公司（SOCAR）举行会谈，讨论地质勘探、油气钻井、数字化转型及工业安全合作。双方正联合研究两国潜力地块的地质数据，并计划动用KMG旗下“萨特”号自升式海上钻井平台参与阿塞拜疆海上油气田作业。此外，双方评估了KMG、SOCAR、鞑靼石油及乌兹别克石油天然气公司四方合作备忘录框架下数字化与工业安全举措的落实进度，并明确下一步工作重点。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 聚焦地质勘探与海上钻井 哈萨克斯坦与阿塞拜疆进一步巩固战略能源伙伴关系
+正文:
+双方就地质勘探、油气钻井、数字化转型及工业安全等领域的合作议题进行了深入探讨。目前，KMG与SOCAR正联合对哈萨克斯坦和阿塞拜疆境内具备开发潜力的地块进行地质数据研究。
+会谈中，双方重点讨论了钻井领域的合作前景，其中包括动用KMG旗下“KMG Drilling and Services”公司所属的“萨特”号（Satti）自升式海上钻井平台，参与阿塞拜疆海上油气田井作业的相关事宜。
+此外，双方还评估了在KMG、SOCAR、鞑靼石油（Tatneft）及乌兹别克石油天然气公司（Uzbekneftegaz）四方签署的合作备忘录框架下，关于数字化解决方案与工业安全举措的落实进度。今年10月，合作伙伴公司代表团考察了KMG位于曼格斯套州的生产企业。考察结束后，各方明确了下一步的工作重点，旨在引入劳动保护与工业安全领域的最佳实践，开展经验交流并落地高效解决方案。
+会谈结束时，阿斯哈特·哈塞诺夫与罗夫尚·纳贾夫重申，两家企业均已做好准备，将继续巩固并深化双边战略合作伙伴关系。</div>
+<ul>
+<li>KMG与SOCAR深化地质勘探与油气钻井合作</li>
+<li>计划动用“萨特”号钻井平台参与阿塞拜疆海上作业</li>
+<li>评估四方合作备忘录下数字化与工业安全进展</li>
+<li>10月考察曼格斯套州生产企业明确下一步重点</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">哈阿能源合作强化里海地区战略伙伴关系，提升哈国油气勘探开发能力与海上作业经验，推动数字化转型和工业安全标准对接，增强哈国在区域能源格局中的话语权，对矿产及油气资源开发格局产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/waibuzaiyuedejiangkai-333f5407/" target="_blank">外交部：在印度被扣留数月的哈萨克斯坦海员将离开印度</a></h3>
+<div class="item-meta">哈通社中文版 · 11/04 10:32<span class="source-link"><a href="https://cn.inform.kz/news/waibuzaiyuedejiangkai-333f5407/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦外交部3日声明，在印度帕拉迪普港被扣留的“MT UNITY”号油轮上的哈籍海员将于近期下船入住酒店并离开印度。该油轮自5月11日起被扣，悬挂喀麦隆国旗，船东为Bluetide Charters FZE公司，因船东遗弃船员导致食品饮水短缺。船上共有20名俄罗斯公民及埃及、哈萨克斯坦公民。10月6日奥里萨邦高等法院责令印度当局紧急遣返船员。哈外交部9月17日曾递交外交照会寻求协助。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">外交部3日晚间发布声明称，在印度帕拉迪普港（Paradip）被扣留的“MT UNITY”号油轮上的哈萨克斯坦籍海员预计将于近期下船，并入住酒店。随后，他将离开印度。
+外交部指出，哈萨克斯坦外交人员正继续为这名本国公民提供领事支持。目前，相关情况仍处于哈萨克斯坦共和国外交部的监控之下。
+此前有消息称，在印度被扣留的“Unity”号油轮首批船员已开始返回各自国家。
+据外媒报道，“Unity”号油轮自5月11日起一直被扣留在印度帕拉迪普港附近的锚地。该船悬挂喀麦隆国旗。
+据海员家属透露，该油轮的所有者为Bluetide Charters FZE公司。由于船只长期滞留，船员面临食品和饮用水短缺问题，此外还出现了通信中断和设备故障等情况。
+10月6日，奥里萨邦高等法院责令印度当局采取紧急措施，将“Unity”号船员遣返回国。
+船上共有20名俄罗斯公民，此外还有埃及和哈萨克斯坦公民。法院依据印度《商船航运法》，认定船东将船员遗弃，使其得不到必要的援助，并要求印度方面在短时间内组织船员下船、遣返回国及安排人员轮换。
+9月17日，哈萨克斯坦共和国外交部证实，一艘载有哈萨克斯坦公民的油轮在印度被扣留，并表示已向印度方面递交外交照会，请求协助解决这一问题。</div>
+<ul>
+<li>哈籍海员将下船入住酒店并离开印度</li>
+<li>油轮自5月11日起被扣于帕拉迪普港</li>
+<li>船东Bluetide Charters FZE被认定遗弃船员</li>
+<li>奥里萨邦高等法院令印度当局紧急遣返</li>
+<li>哈外交部已递交外交照会提供领事支持</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此事件考验哈印领事合作与外交沟通机制，哈方通过照会和持续监控展现保护公民姿态，有助于提升国内民意支持；对哈经济与矿产格局无直接关联，但提醒哈方关注海外公民在海运领域的风险。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/11yue4ri-herenminqing-31b0d6dc/" target="_blank">11月4日终盘 美元、欧元、卢布和人民币兑坚戈汇率情况</a></h3>
+<div class="item-meta">哈通社中文版 · 11/04 22:24<span class="source-link"><a href="https://cn.inform.kz/news/11yue4ri-herenminqing-31b0d6dc/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>11月4日KASE现货市场有29个成员参与。美元兑坚戈平均报452.72，跌0.43，交易额285,078.95千美元（减60,991.97千）；欧元兑坚戈报508.90，涨1.57，交易额3,076.11千欧元（增997.32千）；卢布兑坚戈报5.5321，跌0.0351，交易额724,360.24千卢布（减561,925.02千）；人民币兑坚戈报67.8515，跌0.0134，交易额75,964.09千人民币（增20,305.95千）。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 11月4日终盘 美元、欧元、卢布和人民币兑坚戈汇率情况
+正文:
+在本次现货市场交易中，共有29个KASE成员参与。
+根据现货市场交易结果：
+美元兑坚戈（USDKZT_TOM）： 汇率平均报价为 1 : 452.72（较前一交易日下跌0.43坚戈）。外汇交易总额为 285,078.95 千美元（减少60,991.97 千美元）。交易过程中，最高报价为 1 : 453.98 坚戈，最低报价为 1 : 451.57 坚戈。
+欧元兑坚戈（EURKZT_TOM）： 汇率平均报价为 1 : 508.90（较前一交易日上涨1.57坚戈）。外汇交易总额为 3,076.11 千欧元（增加997.32 千欧元）。交易过程中，最高报价为 1 : 510.18 坚戈，最低报价为 1 : 508.00 坚戈。
+卢布兑坚戈（RUBKZT_TOM）： 汇率平均报价为 1 : 5.5321（较前一交易日下跌0.0351坚戈）。外汇交易总额为 724,360.24 千卢布（减少561,925.02 千卢布）。交易过程中，最高报价为 1 : 5.5558 坚戈，最低报价为 1 : 5.5114 坚戈。
+人民币兑坚戈（CNYKZT_TOM）： 汇率平均报价为 1 : 67.8515（较前一交易日下跌0.0134坚戈）。外汇交易总额为 75,964.09 千人民币（增加20,305.95 千人民币）。交易过程中，最高报价为 1 : 67.9600 坚戈，最低报价为 1 : 67.7100 坚戈。</div>
+<ul>
+<li>美元兑坚戈跌0.43至452.72，交易额减60,991.97千美元</li>
+<li>欧元兑坚戈涨1.57至508.90，交易额增997.32千欧元</li>
+<li>卢布兑坚戈跌0.0351至5.5321，交易额减561,925.02千卢布</li>
+<li>人民币兑坚戈跌0.0134至67.8515，交易额增20,305.95千人民币</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈对美元、卢布、人民币小幅走强，对欧元走弱，汇率基本稳定。美元和卢布交易额下降，人民币交易额上升，反映市场对人民币需求增加，有利于中哈贸易本币结算，对哈国经济与外交影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/guojiayi388-250e4510/" target="_blank">哈萨克斯坦国家债务已达38.8万亿坚戈</a></h3>
+<div class="item-meta">哈通社中文版 · 11/04 18:53<span class="source-link"><a href="https://cn.inform.kz/news/guojiayi388-250e4510/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦财政部长塔克耶夫表示，国家债务总额为38.8万亿坚戈，占GDP的20.2%，低于32%的阈值。压力测试显示至2030年债务与GDP之比不会超过25%。为缩减预算赤字，需增加收入来源，今年前九个月收入同比增长130%，但仍需努力实现年度目标。计划到2029年将预算赤字从占GDP的2.5%降至0.4%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦国家债务已达38.8万亿坚戈
+正文:
+在此方面，财政部长重点介绍了旨在减轻国家预算债务负担所采取的各项措施。
+- 关于债务负担，目前国家债务总额为38.8万亿坚戈，占国内生产总值（GDP）的20.2%。我们设定的阈值为32%。我们进行了涵盖至2030年的压力测试，结果表明债务与GDP之比不会超过25%。因此，我们仍处于既定参数范围内。-他说。
+塔克耶夫指出，为缩减预算赤字，有必要增加各类收入来源。
+- 目前，这些收入已达到既定目标。与去年同期相比，今年前九个月的收入增长了130%。尽管如此，这仍不够。我有信心，到今年年底，我们将能全面实现年度目标。-他说。
+此外，在谈及预算赤字问题时，财政部长表示已制定计划，旨在到2029年将赤字水平从目前的占GDP的2.5%降至0.4%。</div>
+<ul>
+<li>国家债务38.8万亿坚戈，占GDP20.2%，低于32%阈值</li>
+<li>压力测试显示至2030年债务与GDP之比不超25%</li>
+<li>前九个月收入同比增长130%，但仍需增加</li>
+<li>计划到2029年将预算赤字从2.5%降至0.4%</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">债务水平可控，有利于维持宏观经济稳定和主权信用评级；但收入增长依赖性强，赤字削减计划需持续财政整顿，可能影响社会支出空间；对矿产行业而言，财政压力或促使政府优化资源税收，但短期政策风险较低。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/xinggong4riyuzhuyaowaizhijiande-72f9bc15/" target="_blank">央行公布4日坚戈与主要外币之间的汇率标准</a></h3>
+<div class="item-meta">哈通社中文版 · 11/04 13:38<span class="source-link"><a href="https://cn.inform.kz/news/xinggong4riyuzhuyaowaizhijiande-72f9bc15/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行公布2026年11月4日坚戈与主要外币官方汇率：美元兑坚戈1:453.26，欧元兑坚戈1:506.7，俄罗斯卢布兑坚戈1:5.58，土耳其里拉兑坚戈1:9.07，中国元兑坚戈1:67.93。央行规定，坚戈兑美元官方汇率基于阿斯塔纳时间15:30证券交易所加权平均汇率确定，其他外币汇率依据16:00交叉汇率计算。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：央行公布4日坚戈与主要外币之间的汇率标准
+正文：根据央行公布的信息，2026年11月4日，哈萨克斯坦坚戈与国际主要货币之间的兑换汇率标准如下：
+美元兑坚戈（USD/KZT） – 1：453.26
+欧元兑坚戈（EUR/KZT）- 1：506.7
+俄罗斯卢布兑坚戈（RUB / KZT）-1: 5.58
+土耳其里拉兑坚戈（TRY / KZT）- 1: 9.07
+中国元兑坚戈（CNY / KZT）- 1：67.93
+值得一提的是，根据哈萨克斯坦国家银行规定，截至阿斯塔纳时间当日15:30，在哈萨克斯坦证券交易所形成的坚戈兑美元加权平均汇率，将被确定为下一工作日坚戈兑美元官方汇率；坚戈兑其他外币的官方汇率，则依据截至阿斯塔纳时间16:00形成的交叉汇率计算得出。</div>
+<ul>
+<li>美元兑坚戈汇率为1:453.26</li>
+<li>欧元兑坚戈汇率为1:506.7</li>
+<li>中国元兑坚戈汇率为1:67.93</li>
+<li>卢布兑坚戈1:5.58，里拉兑坚戈1:9.07</li>
+<li>官方汇率基于交易所加权平均和交叉汇率</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率数据反映坚戈对主要货币的比价关系，为贸易和投资提供定价基准。美元兑坚戈汇率主导官方定价机制，其他货币通过交叉汇率计算，有助于维护外汇市场稳定和货币政策透明度。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/ruqigongnengli-b4d02e29/" target="_blank">哈萨克斯坦如何提升其油气加工能力</a></h3>
+<div class="item-meta">哈通社中文版 · 11/05 00:18<span class="source-link"><a href="https://cn.inform.kz/news/ruqigongnengli-b4d02e29/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦副总理纳勒巴耶夫表示，今年前九个月石油产量6940万吨、天然气474亿立方米，因里海管道联合体遭无人机袭击及腾格兹油田火灾而下降，田吉兹和卡沙甘油田维护推迟至2027年。2025年腾格兹“未来增长项目”将年增油1200万吨。炼油方面，前九个月加工原油1410万吨，计划扩能三大炼厂并探讨新建1000万吨炼油厂。天然气普及率年底达64.3%，覆盖1320万人，目标2035年提至80%，多座处理厂2027至2030年投产。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据他介绍，石油和天然气行业的首要任务是维持产量并发展炼油业。今年前九个月，石油产量为6940万吨，天然气产量为474亿立方米。
+与上年相比，产量有所下降。这主要是由于外部因素造成的，具体而言，包括里海管道联合体遭受无人机袭击以及腾格兹油田发生火灾。为弥补产量损失，田吉兹油田和卡沙甘油田的计划维护工作已推迟至2027年。——副总理说。
+目前正积极采取措施提高石油产量。特别是，计划于2025年在腾格兹油田启动的“未来增长项目”，将使石油年产量增加1200万吨。
+到今年年底，卡拉恰甘纳克油田将投入使用第六台天然气回注压缩机，确保石油年产量维持在1000万至1100万吨。
+——炼油行业的发展受到了特别关注。今年前九个月，原油加工量达到1410万吨，石油产品产量为1190万吨。根据《至2040年炼油行业发展构想》，奇姆肯特炼油厂的产能将从600万吨扩大至1200万吨；巴甫洛达尔石化厂的产能将从550万吨提高至900万吨；阿特劳炼油厂的产能将从550万吨提升至670万吨。——他说。
+根据总统指示，目前正在探讨建设一座年产能1000万吨的新炼油厂。
+在天然气领域，已通过一项开发前景广阔的新油气田的计划，并制定了到2035年将全国天然气化率提高到80%的路线图。
+到今年年底，天然气普及率将达到64.3%。届时，将有1320万人能够用上天然气。
+——为推进天然气深度加工，一批天然气处理厂将于2027年投入运营：其中一座位于卡沙甘油气田，年处理能力为10亿立方米；另一座位于扎瑙津市，年处理能力为9亿立方米。2029年至2030年间，卡沙甘油气田（年处理能力25亿立方米）和卡拉恰甘纳克油气田（年处理能力50亿立方米）的天然气处理厂也将陆续投产。——纳勒巴耶夫说。</div>
+<ul>
+<li>前九月产油6940万吨、天然气474亿立方米，产量因外部因素下降</li>
+<li>腾格兹2025年“未来增长项目”将年增油1200万吨</li>
+<li>前九月原油加工1410万吨，三大炼厂计划扩能</li>
+<li>探讨新建年产能1000万吨炼油厂</li>
+<li>年底天然气普及率64.3%，2035年目标80%</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">产量短期受挫但扩能项目将提升油气加工能力，增强经济韧性；炼厂扩能和新建巩固能源主权；天然气化提升民生与政治稳定；深化与里海伙伴合作，但需平衡外资与出口通道风险。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/jiajiangduidixiajinxing-cf9e31e9/" target="_blank">德韩澳专家将对哈萨克斯坦地下资源进行研究</a></h3>
+<div class="item-meta">哈通社中文版 · 11/04 23:53<span class="source-link"><a href="https://cn.inform.kz/news/jiajiangduidixiajinxing-cf9e31e9/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦第一副总理纳勒巴耶夫宣布，德国、韩国、澳大利亚专家将参与哈地下资源研究，合作涵盖电池材料、喷气发动机部件、半导体和永磁体四个领域。未来三年计划实施20个地质项目，总面积约10万平方公里，已获7个地块初步数据，潜力地块明年拍卖。该国首次启动1:50,000国家级地质测绘。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据他介绍，已制定出一系列将在该国实施的项目，这些项目将有外国投资者参与。
+它们涵盖四个领域：电池材料生产；喷气发动机部件材料的回收和制造；半导体产业发展；以及永磁体生产。
+- 与德国Bergbau AG、韩国地质地球物理研究所、澳大利亚Lindian Resources Limited等机构的合作正在进行中。第一副总理说。
+为落实国家元首关于地质领域的指示，相关部门正利用先进技术开展地下资源勘查工作。该国首次启动了比例尺为 1:50,000 的国家级地质测绘工作。
+- 未来三年，计划实施20个项目，总面积约10万平方公里。目前已获得其中7个地块的初步潜力数据。已确认具有开发潜力的地块将于明年进行拍卖。-纳勒巴耶夫说。</div>
+<ul>
+<li>德韩澳专家参与哈地下资源研究</li>
+<li>合作涵盖电池材料等四个领域</li>
+<li>三年内实施20个项目，面积10万平方公里</li>
+<li>已获7个地块初步潜力数据</li>
+<li>潜力地块将于明年进行拍卖</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">吸引外资开发关键矿产，推动电池、半导体等下游产业发展，促进经济多元化；深化与德韩澳外交合作，增强哈在关键矿产供应链中的地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/nengbuchangguosanjianengjiangdedao-57bd794e/" target="_blank">能源部长：国内三家炼油厂产能将得到提升</a></h3>
+<div class="item-meta">哈通社中文版 · 11/04 20:50<span class="source-link"><a href="https://cn.inform.kz/news/nengbuchangguosanjianengjiangdedao-57bd794e/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦能源部长宣布，根据今年制定的炼油行业发展构想，计划将国内现有三家炼油厂总产能从每年1800万吨提升至2770万吨。同时考虑在阿克托别州建设年产能200万吨的中等产能炼油厂，供应国内市场并出口中亚，实施周期约两年。此外，还考虑在2770万吨产能之外建设另一座炼油厂，目前正在选址，近期将做出决定。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：能源部长：国内三家炼油厂产能将得到提升
+正文：
+- 今年，我们制定了一项炼油行业发展构想。根据该构想，计划将国内现有三家炼油厂的总产能从每年1800万吨提升至2770万吨。-他说。
+此外，能源部长表示，目前正在考虑在阿克托别州建设一座中等产能的炼油厂，预计年产能将达到200万吨。
+阿克肯杰诺夫介绍，这座新工厂旨在供应国内市场，并将产品出口至中亚国家。该项目的实施周期约为两年。项目的落实将有助于提高车用燃料及其他石油产品的产量。
+- 目前，石油产品供应存在困难。作为资源潜力巨大的国家，我们完全有能力向周边国家供应石油产品。该项目将于两年内完成。届时，不仅能增加车用燃料的产量，还能实现航空燃料的增产。-他说。
+此外，有关建设另一座炼油厂（已规划的2770万吨产能之外）的可能性也正在考虑之中。据部长透露，目前正在为该设施选址。有关该项目的决定将在不久的将来做出。</div>
+<ul>
+<li>三家炼油厂总产能拟从1800万吨/年提升至2770万吨/年</li>
+<li>阿克托别州拟建200万吨/年炼油厂，周期约两年</li>
+<li>新厂产品供应国内并出口中亚国家</li>
+<li>考虑在2770万吨产能外再建一座炼油厂，正在选址</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">提升炼油产能将增强哈国能源自主与出口能力，促进经济增长和就业；出口中亚可扩大外交影响力；但需关注石油产品供应困难及项目落地进度。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-11-05 09:02</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
