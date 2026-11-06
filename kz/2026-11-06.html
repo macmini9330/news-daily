@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年11月6日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年11月6日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年11月05日早9:00至2026年11月06日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 24 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">2</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">18</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">1</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/huiqinggaoduilaixinchuguoderenle40-6be84e56/" target="_blank">社会乐观情绪高涨，对未来充满信心：退出哈萨克斯坦国籍的人数减少了40倍</a></h3>
+<div class="item-meta">哈通社中文版 · 11/05 23:15<span class="source-link"><a href="https://cn.inform.kz/news/huiqinggaoduilaixinchuguoderenle40-6be84e56/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国籍委员会建议授予255人公民身份，并批准43人放弃国籍申请。副总统称过去八年放弃国籍申请减少约40倍，表明社会乐观情绪高涨。总统托卡耶夫指出护照含金量提升，可免签前往近80国，国籍对国际人才吸引力增强，得益于改革与国际合作政策。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">根据会议结果，将向国家元首提交一份提案，授予255人哈萨克斯坦公民身份。
+此外，该委员会还建议批准43人提出的放弃国籍申请。
+据副总统称，近年来，有意放弃哈萨克斯坦国籍的人数呈下降趋势。
+具体而言，过去八年间，放弃哈萨克斯坦国籍的申请数量减少了约40倍。这表明哈萨克斯坦社会整体乐观情绪高涨。
+- 正如总统哈斯穆-卓玛尔特·托卡耶夫所指出，哈萨克斯坦护照的含金量正逐年提升。这反映出哈萨克斯坦的吸引力日益增强。根据多项指数，哈萨克斯坦护照被认为是该地区最受青睐的护照之一。哈萨克斯坦公民可免签前往全球近80个国家。-叶尔兰·卡林说。
+此外，哈萨克斯坦国籍对于国际IT和商业领域的知名人士，以及投资者、科学家和文化界人士而言，正变得越来越具吸引力。
+- 得益于总统在社会经济和社会政治领域所推行的改革，我国公民身份已获得了极高的声望。此外，显而易见，这也是国家元首所奉行的国际合作政策所结出的硕果。-他说。
+据此前报道，哈通社将为读者细解读勒计划迁往哈萨克斯坦的外籍哈萨克族人如何获得“血亲同胞（Қандас）”身份的最关键步骤。</div>
+<ul>
+<li>委员会建议授予255人公民身份，批准43人放弃国籍</li>
+<li>过去八年放弃国籍申请减少约40倍</li>
+<li>哈护照免签近80国，地区最受青睐之一</li>
+<li>国籍对IT、商业、投资者等吸引力增强</li>
+<li>归功于社会经济改革与国际合作政策</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">放弃国籍人数锐减反映社会信心提升，有利于政治稳定；护照免签范围扩大和人才吸引力增强将促进经济发展与国际合作；对矿产等关键领域而言，有助于吸引外资和技术人才，但需关注国籍政策对资源行业劳动力结构的影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/jincheng-benyezai83zhongyoushang-8d068913/" target="_blank">哈萨克斯坦进口替代初见成效 本土企业在83种商品市场占有率逆势上升</a></h3>
+<div class="item-meta">哈通社中文版 · 11/05 14:14<span class="source-link"><a href="https://cn.inform.kz/news/jincheng-benyezai83zhongyoushang-8d068913/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年1-8月，哈萨克斯坦83种商品进口占比低于2023年同期，进口替代初见成效。瓷砖进口占比从78.7%降至48.6%，本土产量1200万平方米首次超进口；铜线进口占比从16.9%降至3.8%；乘用车产量11.72万辆增34.2%，进口占比降至49.8%。食品类替代温和，香肠进口占比降至33%。但练习本、卫生纸等51种商品进口占比上升，依赖加深。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦进口替代初见成效 本土企业在83种商品市场占有率逆势上升
+正文:
+数据显示，2026年1月至8月，这83种商品在总供给资源中的进口占比均低于2023年同期水平。不过，另有51种商品的进口占比有所上升，其余49种商品的进口比重则未发生明显变化。
+建筑与工业制造领域：瓷砖、铜线与乘用车表现亮眼
+在建筑材料和工业制造业中，国产替代成果最为显著的当属瓷砖：
+瓷砖： 2026年前8个月，瓷砖进口在总资源中的占比由2023年同期的78.7%大幅降至48.6%。本土企业产量达1200万平方米，是三年前（490万平方米）的2.4倍，同比增加19.2%。瓷砖进口量则从1810万平方米缩减至1130万平方米，本土产量首次超越进口量。
+铜线： 铜线进口占比从16.9%剧降至3.8%。在本土产量达到8700吨的背景下，进口量由1500吨大幅缩减至300吨。
+乘用车： 2026年1月至8月，哈国内共生产乘用车11.72万辆，同比暴增34.2%，较三年前增长32.4%。整车进口量由15.9万辆降至11.62万辆，进口车在市场供给中的占比降至49.8%。
+家电与家具： 厨房家具进口占比从33.9%降至23%；电视机进口占比由99.2%降至83.9%，产量达14.67万台（同比增长2.7倍）；家用洗衣机产量在2026年前8个月达4.94万台，占总供给量的10.6%（三年前哈国尚无法自主生产）。
+食品加工领域：香肠与奶制品稳步推进
+食品工业的替代步伐相对温和：
+香肠制品： 进口占比由40%降至33%，产量由4.43万吨增至5.4万吨，进口量由2.95万吨降至2.67万吨。
+奶酪与奶渣： 进口占比从43.3%降至40.8%，产量从2.97万吨提升至4.03万吨。
+果汁与食盐： 进口占比基本维持稳定（果汁为35.9%，食盐为6.6%）。其中食盐产量从22.99万吨增加至29.05万吨。
+部分品类进口依赖度有所加深
+值得注意的是，在部分商品领域，哈萨克斯坦对外国进口的依赖程度反而进一步加深：
+练习本与卫生纸： 练习本进口占比从66.7%飙升至90.3%，本土产量锐减至四分之一；卫生纸进口占比从41.9%增至61.5%，进口量增至2.82万吨，本土产量降至1.76万吨。</div>
+<ul>
+<li>83种商品进口占比下降，进口替代初见成效</li>
+<li>瓷砖本土产量1200万平方米，首次超越进口量</li>
+<li>乘用车产量11.72万辆，同比增34.2%</li>
+<li>铜线进口占比从16.9%剧降至3.8%</li>
+<li>练习本、卫生纸等51种商品进口依赖加深</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上增强制造业自主性，减少外汇支出；政治上展示产业政策成效；外交上降低对特定供应国依赖；矿产加工领域铜线替代提升附加值，但部分消费品依赖加深暴露结构短板。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(18 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/zaiheguoguoqingwenheguo-b29d4be1/" target="_blank">在北京讨论哈萨克斯坦共和国总统国情咨文和国际倡议</a></h3>
+<div class="item-meta">哈通社中文版 · 11/06 01:58<span class="source-link"><a href="https://cn.inform.kz/news/zaiheguoguoqingwenheguo-b29d4be1/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦驻华大使努雷舍夫在北京向中国15家科研智库机构代表介绍总统国情咨文，重点阐述社会经济优先方向、基础设施现代化、数字化转型及人工智能落地，并推介哈国际倡议。中方专家高度评价咨文战略属性，认为哈已完成大规模政治改革，正转入经济现代化进程，托卡耶夫总统是“新哈萨克斯坦”总设计师。双方探讨农业、节水、互联互通、人才培养等合作前景，愿加强智库对话。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 在北京讨论哈萨克斯坦共和国总统国情咨文和国际倡议
+正文:
+中国 15 家重点科研和智库机构的代表出席本次会议，其中包括中国社会科学院、中国现代国际关系研究院、中国国务院发展研究中心、华东师范大学、西北大学、大连外国语大学、兰州大学，以及中共中央有关部门、中国人民对外友好协会的代表。
+哈萨克斯坦共和国驻华大使沙赫拉特・努雷舍夫在发言中向与会嘉宾介绍了总统国情咨文的核心内容，重点阐述社会经济发展优先方向、基础设施现代化、数字化转型以及人工智能落地等议题，并专门介绍了哈萨克斯坦共和国旨在维护地区稳定、发展多边合作、实现可持续发展的各项国际倡议。
+Фото: Берик Табынбаев / Kazinform 大使强调，哈中永久全面战略伙伴关系处于高水平发展阶段，哈萨克斯坦正在推进的各项改革，为两国深化务实合作带来新机遇。
+在研讨环节，中方专家对这份国情咨文给予高度评价，认为其具备战略属性，着眼于国家长远发展。
+Фото: Берик Табынбаев / Kazinform 中国现代国际关系研究院学术委员会副秘书长丁晓星表示，哈萨克斯坦已完成大规模政治改革阶段，正转入积极的经济现代化进程。他认为，“人民建设”倡议有望成为推动本国经济多元化的重要动力，大型基础设施项目也将为哈中在交通、能源、工业领域的合作开辟新前景。
+中国国务院发展研究中心欧亚社会发展研究所副所长许涛指出，这份国情咨文不只是一份向人民发表的致辞，更是一份宏大的战略文件，为国家未来数年的发展划定路线。他同时关注到咨文的社会导向，着重提到政策从普惠式社会补贴转向精准帮扶、提高最低工资标准、加大教育和医疗投入等内容。
+Фото: Берик Табынбаев / Kazinform 中国社会科学院俄罗斯东欧中亚研究所中亚和高加索研究室主任张宁认为，这份国情咨文是一份战略规划，标志着改革重心从制度构建转向打造全新经济发展模式。该专家着重肯定托卡耶夫总统在推动国家大规模政治、社会经济改革中的核心作用，称其是具有全球视野、战略远见的政治家，是 “新哈萨克斯坦”名副其实的总设计师。
+与会人员还探讨了农业、节水技术、互联互通、专业人才培养等领域的合作前景，一致认为上述方向的联合项目潜力巨大。
+活动最后，双方表示愿意继续加强智库对话、拓展科研学术交流，助力哈中永久全面战略伙伴关系持续向前发展。
+Фото: Берик Табынбаев / Kazinform &amp;nbsp;</div>
+<ul>
+<li>哈驻华大使向中国15家智库介绍总统国情咨文核心内容</li>
+<li>咨文聚焦社会经济、基础设施、数字化和人工智能</li>
+<li>中方专家称哈已转入经济现代化，肯定托卡耶夫作用</li>
+<li>双方探讨农业、节水、互联互通、人才培养合作</li>
+<li>双方愿加强智库对话，助力永久全面战略伙伴关系</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈政治经济外交矿产格局影响：政治改革获中方认可，经济现代化吸引中国投资，外交上巩固对华战略伙伴关系，矿产合作或随基础设施项目深化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/tsifrovie-dokazatelstva-i-prava-cheloveka-kazahstan-izuchaet-evropeyskiy-opit-ug-db6564df" target="_blank">数字证据与人权：哈萨克斯坦研究欧洲刑事司法经验</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/06 01:46<span class="source-link"><a href="https://www.inform.kz/ru/tsifrovie-dokazatelstva-i-prava-cheloveka-kazahstan-izuchaet-evropeyskiy-opit-ug-db6564df" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总检察院执法学院代表团参加由欧洲公法组织（EPLO）和意大利刑事律师协会联盟主办的论坛，探讨数字证据与人权平衡问题，涉及加密通讯证据、远程庭审、欧盟e-Evidence条例跨境交换及AI数据可靠性。哈国刑事诉讼正转向电子化，欧洲经验将纳入教学研究。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">数字证据与人权：哈萨克斯坦研究欧洲刑事司法经验
+
+论坛主办方为欧洲公法组织（EPLO）和意大利刑事律师协会联盟——该国最大的刑事律师全国性协会。
+
+哈萨克斯坦共和国总检察院下属执法学院代表团在院长努尔加利姆·阿卜迪罗夫的率领下参加了会议。
+
+论坛汇集了欧洲学者、律师和检察官。讨论的主要问题：当关键证据仅以数字形式存在时，如何保持调查效率与诉讼参与人权利之间的平衡。
+
+与会者讨论了将加密即时通讯工具中的通信记录作为证据使用以及远程庭审。他们还谈到了根据欧盟e-Evidence条例进行电子证据的跨境交换，以及对人工智能获取数据可靠性的要求。
+
+对哈萨克斯坦而言，这一议程尤为迫切：该国的刑事诉讼程序正逐步转向电子化格式。欧洲经验将纳入学院的培训课程和科学研究。
+
+回顾一下，哈萨克斯坦和印度签署了引渡被通缉人员的条约。</div>
+<ul>
+<li>哈执法学院参加欧洲数字证据与人权论坛</li>
+<li>讨论加密通讯证据和远程庭审的合法性</li>
+<li>关注欧盟e-Evidence跨境电子证据交换规则</li>
+<li>哈国刑事诉讼电子化，将引入欧洲经验</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">促进哈国刑事司法数字化改革，借鉴欧盟e-Evidence规则提升跨境电子证据合作，强化人权保障，对区域数字治理有示范效应。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/azerbaydzhan-vozglavit-komissiyu-po-bioresursam-kaspiya-v-20272028-godah-e8ecc2b8" target="_blank">阿塞拜疆将担任2027-2028年里海生物资源委员会主席</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/06 01:35<span class="source-link"><a href="https://www.inform.kz/ru/azerbaydzhan-vozglavit-komissiyu-po-bioresursam-kaspiya-v-20272028-godah-e8ecc2b8" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>土库曼斯坦里海研究所所长阿塔贾诺夫在巴库举行的第一届阿塞拜疆区域水产养殖论坛上宣布，土库曼斯坦将于2025-2026年担任里海水生生物资源委员会主席，第十次会议计划于今年12月举行，2027-2028年将由阿塞拜疆接任主席。该委员会1992年由阿塞拜疆、俄罗斯、哈萨克斯坦和土库曼斯坦成立，2002年伊朗加入。此前10月，哈萨克斯坦提议建立保护里海的国际项目池。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">阿塞拜疆将于2027-2028年领导里海生物资源委员会
+
+土库曼斯坦里海研究所所长穆拉德·阿塔贾诺夫在巴库举行的第一届阿塞拜疆区域水产养殖论坛的小组讨论中宣布了这一消息。
+
+据他介绍，土库曼斯坦将在2025-2026年担任该委员会主席。该组织的第十次例会计划于今年12月举行。从2027年初开始，委员会的领导权将移交给阿塞拜疆，任期2027-2028年。
+
+阿塔贾诺夫表示相信，担任主席国将使阿塞拜疆方面能够更积极地推进水产养殖领域的区域议程。
+
+里海水生生物资源委员会于1992年由阿塞拜疆、俄罗斯、哈萨克斯坦和土库曼斯坦成立。2002年，伊朗加入了其活动。
+
+此前在10月，哈萨克斯坦提议建立一个保护里海的国际项目池。</div>
+<ul>
+<li>土库曼斯坦2025-2026年任里海生物资源委员会主席</li>
+<li>委员会第十次会议计划于今年12月举行</li>
+<li>阿塞拜疆将于2027-2028年接任主席</li>
+<li>委员会1992年成立，2002年伊朗加入</li>
+<li>哈萨克斯坦10月提议建立保护里海国际项目池</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">阿塞拜疆接任主席将推动里海水产养殖区域合作，强化其地区影响力；哈萨克斯坦的提议或促进里海生态保护多边机制，但需协调五国利益，对矿产开发格局影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/yujiangguanzuo-8a75c5d2/" target="_blank">哈萨克斯坦与巴基斯坦将加强海关领域合作</a></h3>
+<div class="item-meta">哈通社中文版 · 11/06 01:23<span class="source-link"><a href="https://cn.inform.kz/news/yujiangguanzuo-8a75c5d2/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统签署法案，批准哈政府与巴基斯坦政府间海关事务合作与行政互助协定。该协定旨在加强两国海关领域合作，具体内容将在公开媒体公布。此举标志着哈巴两国在海关行政互助方面建立正式法律框架。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦与巴基斯坦将加强海关领域合作
+
+消息称，国家元首签署了《关于批准哈萨克斯坦共和国政府与巴基斯坦伊斯兰共和国政府在海关事务方面合作与行政互助协定》法案。
+法案具体内容将在公开媒体上公布。</div>
+<ul>
+<li>哈总统签署批准哈巴海关合作与行政互助协定法案</li>
+<li>协定涉及两国海关事务合作与行政互助</li>
+<li>法案具体内容将在公开媒体上公布</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该协定将促进哈巴贸易便利化，加强海关执法协作，有助于哈萨克斯坦拓展南亚经济联系，对区域过境运输和矿产贸易格局产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/yujiang-e92e55ea/" target="_blank">哈萨克斯坦与格鲁吉亚将加强打击网络诈骗</a></h3>
+<div class="item-meta">哈通社中文版 · 11/05 23:50<span class="source-link"><a href="https://cn.inform.kz/news/yujiang-e92e55ea/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与格鲁吉亚执法机构负责人举行今年第二次会晤，讨论打击跨国犯罪、网络欺诈、追捕罪犯及移民安全合作。哈方高度赞扬格方在搜寻和引渡逃犯方面的迅速反应。双方同意加强信息交流、协调联合行动，并重点推进警务人员培训，相关教育机构已签署合作备忘录，正制定学术交流、实习和联合科研项目。双方还注意到联络官工作成效显著，确认将继续落实此前协议，加强打击犯罪和确保公民安全合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦与格鲁吉亚将加强打击网络诈骗
+正文:
+双方就进一步发展在打击跨国犯罪和网络欺诈、追捕罪犯以及确保移民安全等方面的合作问题进行了讨论。会议期间，特别关注共同工作的具体成果。
+叶尔詹·萨德诺夫高度赞扬了格鲁吉亚同行在搜寻和引渡逃避刑事起诉人员方面迅速做出的反应。双方还特别讨论了打击网络犯罪的努力。
+双方讨论了加强相关部门间的互动、改进信息快速交流，以及协调联合行动等议题。警务人员培训是合作的重点领域之一。目前，两国相关教育机构已签署合作备忘录，正在制定学术交流、实习和联合科研项目。
+此外，双方还讨论了进一步发展移民安全领域合作的相关问题。双方注意到联络官的工作卓有成效，他们促进了两国执法机构之间的业务互动。
+这是两国相关机构负责人今年以来的第二次会晤。这体现了双边合作的系统性发展，以及此前所达成协议的持续落实。
+根据会谈结果，双方确认愿意在打击犯罪、确保公民安全和落实不可避免惩罚原则方面加强合作。</div>
+<ul>
+<li>哈格执法机构今年第二次会晤，讨论打击跨国犯罪和网络欺诈</li>
+<li>哈方赞扬格方在搜寻和引渡逃犯方面的迅速反应</li>
+<li>双方同意加强信息交流、协调联合行动，推进警务培训合作</li>
+<li>两国教育机构已签署合作备忘录，制定学术交流和实习项目</li>
+<li>双方确认联络官工作成效显著，将继续落实此前协议</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次合作将提升哈萨克斯坦打击网络诈骗和跨国犯罪的能力，加强移民安全管理，促进与格鲁吉亚的执法协作制度化，有助于维护地区安全稳定，但对矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/zaiji-1afd852d/" target="_blank">托卡耶夫总统在机场迎接塔吉克斯坦总统埃莫马利·拉赫蒙</a></h3>
+<div class="item-meta">哈通社中文版 · 11/05 22:54<span class="source-link"><a href="https://cn.inform.kz/news/zaiji-1afd852d/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫11月5日在阿斯塔纳国际机场亲自迎接塔吉克斯坦总统拉赫蒙，并举行仪仗队检阅仪式。拉赫蒙应托卡耶夫邀请于11月5日至7日对哈进行正式访问，两国领导人将讨论加强战略伙伴关系及盟友关系。访问期间，拉赫蒙将于6日出席在阿斯塔纳举行的“亚喀巴进程”峰会，该倡议由约旦国王阿卜杜拉二世于2015年发起，旨在加强打击恐怖主义、极端主义和跨国犯罪合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据总统府新闻局消息，哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫亲自到阿斯塔纳国际机场迎接塔吉克斯坦总统。
+为迎接塔吉克斯坦总统埃莫马利·拉赫蒙到访，机场举行了隆重的仪仗队检阅仪式。
+Фото: Акорда 据此前报道，应国家元首邀请，塔吉克斯坦总统埃莫马利·拉赫蒙将于11月5日至7日对该国进行正式访问。
+Фото: Акорда Фото: Ақорда 两国领导人将讨论有关加强战略伙伴关系及盟友关系的问题。
+访问框架下，塔吉克斯坦总统6日将出席在阿斯塔纳举行的“亚喀巴进程”（Aqaba Process）峰会。
+Фото: Акорда Фото: Акорда Фото: Акорда 据悉，“亚喀巴进程”是由约旦国王阿卜杜拉二世于2015年发起的一项国际倡议。其主要目标是加强各国在打击恐怖主义、极端主义和跨国犯罪方面的合作。</div>
+<ul>
+<li>托卡耶夫机场迎接拉赫蒙，举行仪仗队检阅</li>
+<li>拉赫蒙11月5日至7日正式访问哈萨克斯坦</li>
+<li>两国领导人讨论战略伙伴与盟友关系</li>
+<li>拉赫蒙6日出席阿斯塔纳“亚喀巴进程”峰会</li>
+<li>亚喀巴进程2015年由约旦国王发起</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈塔战略盟友关系，巩固中亚安全合作；亚喀巴进程峰会在阿斯塔纳举行提升哈地区反恐话语权；矿产与过境运输合作或成议题，但新闻未明确涉及。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/guojiaguoer-fa-85e321cd/" target="_blank">国家元首向约旦国王阿卜杜拉二世授予“阿尔-法拉比”勋章</a></h3>
+<div class="item-meta">哈通社中文版 · 11/05 21:49<span class="source-link"><a href="https://cn.inform.kz/news/guojiaguoer-fa-85e321cd/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫向约旦国王阿卜杜拉二世授予“阿尔-法拉比勋章”，表彰其加强两国友好关系的贡献，阿卜杜拉二世系该勋章首位获得者。阿卜杜拉二世回授托卡耶夫约旦最高国家勋章“侯赛因·本·阿里勋章”。双方高度评价战略伙伴关系，指出双边合作在多个新领域积极发展，去年互访注入新动力。两国元首还将于阿斯塔纳共同主办“亚喀巴进程”新一届峰会。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫总统将阿卜杜拉二世国王对哈萨克斯坦的访问，形容为两国战略伙伴关系不断深化的明确体现。
+国家元首认为，深入、高水平的一体化为推进共同优先事项及双边合作议程创造了有利条件。
+- 我们高度重视与约旦之间多方面的关系。我国视您为一位杰出且富有远见的领导人，您在世界范围内享有崇高声望。在您坚定而审慎的领导下，约旦已成为和平、稳定、尊严与正义的堡垒，同时也是创新和可持续增长的枢纽。国际社会高度重视您的见解，您为促进全球对话做出了重要贡献。“亚喀巴进程”倡议充分彰显了您在加强国际安全方面的坚定承诺。明天，我们将在阿斯塔纳共同主办该倡议框架下的新一届峰会，这令我们深感荣幸。-总统说。
+Фото: Акорда 托卡耶夫指出，得益于阿卜杜拉二世国王的一贯支持，双边合作已取得显著成果。
+- 当前，我们的伙伴关系正在一些前景广阔的新领域积极发展，不断释放两国巨大的潜力。去年开展的互访活动，为这一进程注入了新的动力。我致力于保持这种良好势头，推动双方合作迈上更高台阶。-他说。
+Фото: Акорда 国家元首表示，他将阿卜杜拉二世国王视为哈萨克斯坦的挚友。
+- 我非常荣幸能向您授予“阿尔-法拉比勋章”，以表彰您在加强哈萨克斯坦与约旦友好关系方面所作出的重大贡献。这一崇高荣誉是以东方伟大的思想家阿尔-法拉比的名字命名的。阿尔-法拉比留下的思想遗产启迪了无数代人，宛如人文主义的一座灯塔。他在政治思想、科学和文学的发展史上发挥了不可估量的作用。阿尔-法拉比犹如一座智慧的宝库，在整个阿拉伯世界中占有重要地位。他对智慧、和谐与团结的深刻思考，至今仍具有重要的现实意义，是我们共同的文化财富。我们高度赞赏您在弘扬这些崇高价值方面所作出的贡献。您是这一殊荣的首位获得者，我们认为这具有重大的历史意义。请接受这份崇高的荣誉，以此表达哈萨克斯坦对您的诚挚敬意。-托卡耶夫说。
+Фото: Акорда 阿卜杜拉二世国王则向托卡耶夫总统授予了“侯赛因·本·阿里勋章”——这是约旦哈希姆王国的最高国家勋章。
+- 能够荣获约旦哈希姆王国授予的这一崇高奖项，我深感荣幸。该勋章以一位为贵国王室增添了非凡荣耀的人物命名。他所秉持的正直品格、坚定信念，以及对祖国的赤诚奉献，至今仍是后人学习的楷模。我将这一崇高荣誉不仅视为对我个人努力的认可，更将其看作两国人民之间深厚友谊与相互尊重的象征。这充分印证了哈萨克斯坦与约旦之间的纽带正持续稳固并不断深化。我高度赞赏贵国致力于进一步推动双方双边合作的意愿与承诺。-哈萨克斯坦总统说。
+据悉，“侯赛因·本·阿里勋章”由约旦国王阿卜杜拉一世·本·侯赛因于1949年设立，旨在纪念其父——麦加谢里夫侯赛因·本·阿里（1853–1931）。他是哈希姆王朝最杰出的人物之一。
+授予该勋章被视为约旦国王所给予的一种特殊荣誉，也是双方之间高度政治互信的见证。</div>
+<ul>
+<li>托卡耶夫向约旦国王授予“阿尔-法拉比勋章”，为首位获得者</li>
+<li>约旦国王回授托卡耶夫最高国家勋章“侯赛因·本·阿里勋章”</li>
+<li>双方高度评价战略伙伴关系，称双边合作取得显著成果</li>
+<li>两国元首将在阿斯塔纳共同主办“亚喀巴进程”新一届峰会</li>
+<li>去年互访为双边关系注入新动力，合作向新领域拓展</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈约战略伙伴关系，提升哈在中东外交存在感；互授最高勋章彰显政治互信，为经贸、投资合作铺路；共同主办“亚喀巴进程”峰会增强哈国际安全事务话语权，但短期对矿产格局直接影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/jiangchujinhui-58c83a38/" target="_blank">土库曼斯坦总统抵达阿斯塔纳 将出席“亚喀巴进程”峰会</a></h3>
+<div class="item-meta">哈通社中文版 · 11/05 21:27<span class="source-link"><a href="https://cn.inform.kz/news/jiangchujinhui-58c83a38/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>土库曼斯坦总统抵达阿斯塔纳，将出席11月6日举行的“亚喀巴进程”峰会。该进程由约旦国王阿卜杜拉二世于2015年发起，旨在加强各国在打击恐怖主义、极端主义和跨国犯罪方面的合作。值得关注的是，这是中亚国家首次以组织方之一身份参与此类会议。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">土库曼斯坦总统抵达阿斯塔纳 将出席“亚喀巴进程”峰会
+
+据悉，“亚喀巴进程”是由约旦国王阿卜杜拉二世于2015年发起的一项国际倡议。其主要目标是加强各国在打击恐怖主义、极端主义和跨国犯罪方面的合作。
+
+阿斯塔纳将于11月6日举行“亚喀巴进程”峰会。
+
+值得一提的是，中亚国家首次以组织方之一的身份参与此类形式的会议。
+
+图片：Kazinform 图片：哈萨克斯坦共和国政府新闻处 图片：哈萨克斯坦共和国政府新闻处</div>
+<ul>
+<li>土库曼斯坦总统抵阿斯塔纳出席亚喀巴进程峰会</li>
+<li>亚喀巴进程2015年由约旦国王发起</li>
+<li>峰会11月6日在阿斯塔纳举行</li>
+<li>中亚国家首次以组织方身份参与</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">峰会将提升哈萨克斯坦在中亚安全合作中的组织者角色，强化地区反恐与跨国犯罪协作，并推动中亚国家在安全议题上形成更统一的对外立场。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://cn.inform.kz/news/duijinxingzhengwen-7947e436/" target="_blank">塔吉克斯坦总统埃莫马利·拉赫蒙对哈萨克斯坦进行正式访问</a></h3>
+<div class="item-meta">哈通社中文版 · 11/05 20:55<span class="source-link"><a href="https://cn.inform.kz/news/duijinxingzhengwen-7947e436/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>塔吉克斯坦总统埃莫马利·拉赫蒙应哈萨克斯坦国家元首邀请，于11月5日至7日对哈萨克斯坦进行正式访问。访问期间，两国领导人将讨论加强战略伙伴关系及盟友关系等问题。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 塔吉克斯坦总统埃莫马利·拉赫蒙对哈萨克斯坦进行正式访问
+正文:
+据此前报道，应国家元首邀请，塔吉克斯坦总统埃莫马利·拉赫蒙将于11月5日至7日对该国进行正式访问。
+两国领导人将讨论有关加强战略伙伴关系及盟友关系的问题。</div>
+<ul>
+<li>拉赫蒙11月5日至7日正式访哈</li>
+<li>访问应哈国家元首邀请进行</li>
+<li>两国领导人讨论战略伙伴与盟友关系</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访将强化哈塔战略盟友关系，促进中亚区域合作与稳定，对哈外交格局有积极影响，经济与矿产合作或成议题。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">10</span> <a href="https://cn.inform.kz/news/heguoxinghui-028c2943/" target="_blank">哈萨克斯坦总统和约旦国王举行会谈</a></h3>
+<div class="item-meta">哈通社中文版 · 11/05 20:54<span class="source-link"><a href="https://cn.inform.kz/news/heguoxinghui-028c2943/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与约旦国王阿卜杜拉二世举行会谈，双方强调去年互访推动双边关系迈上新台阶，签署系列合作文件。经济一体化是主要驱动力，文化人道合作潜力巨大。两国立场相似，哈方支持约旦发起的“亚喀巴进程”，该机制首次在中亚举行，聚焦人工智能安全。约旦国王感谢接待，愿拓展贸易、投资、旅游、科技及国防合作，共同打击恐怖主义与极端主义。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">国家元首在会谈中指出，约旦国王阿卜杜拉二世对哈萨克斯坦的正式访问体现了两国之间深厚的友谊、相互尊重与合作。
+
+- 约旦是我们阿拉伯世界中值得信赖的伙伴，双方关系经受住了时间的考验。近年来，我们的合作势头日益强劲。我们高度重视双方在各层面建立的稳固政治对话。去年，双方通过互访，使双边关系迈上了一个重要台阶。在会谈之后，双方发表了联合声明，并由各自的政府部门、机构及商界代表签署了一系列文件。这些举措有力地推动了我们多领域合作的进一步发展。-总统说。
+
+托卡耶夫强调，哈萨克斯坦高度重视落实各领域达成的协议，以符合双方共同利益。
+
+经济一体化依然是哈萨克斯坦与约旦关系的主要驱动力。
+
+此外，通过加强学术与科学联系以及增加游客双向往来，在拓展文化与人道主义合作方面具有巨大潜力。
+
+哈萨克斯坦总统指出，两国在应对国际和区域议程中的紧迫问题上有着相似的立场与做法。托卡耶夫总统高度赞赏约旦国王为加强两国友好关系、拉近两国人民距离所作出的贡献。
+
+- 在您的远见卓识领导下，约旦展现出了智慧与审慎的典范，作为中东乃至更广阔地区和平与稳定的坚定倡导者，赢得了国际社会的广泛认可。在此背景下，哈萨克斯坦高度重视由您在十多年前发起的“亚喀巴进程”（Aqaba Process）。我们深感荣幸能以联合主办方的身份参与此次会议——这也是该机制首次在中亚地区举行。本届会议聚焦于人工智能领域的安全问题，这一议题在当代具有至关重要的现实意义。我坚信，此次峰会将阐明中亚地区的立场，并为我们共同维护和平与安全的努力注入新的动力。-他说。
+
+阿卜杜拉二世·本·侯赛因国王感谢哈斯穆-卓玛尔特·托卡耶夫给予的热情接待，并指出哈萨克斯坦与约旦之间有着长期以来的友好关系，双方相互尊重，并共同致力于加强和平与稳定。
+
+- 正如您所回顾的那样，去年双方的互访为两国关系的发展注入了强劲动力。我们愿在既有共识的基础上，进一步拓展在贸易、投资、旅游、科技及国防等重点领域的合作。-他说。
+
+阿卜杜拉二世国王向托卡耶夫总统表达了诚挚谢意，感谢他协助组织了“亚喀巴进程”框架下的新一轮会议。
+
+他表示，这体现了两国致力于应对区域和全球安全挑战的承诺。
+
+在此方面，约旦国王重申，他有意扩大与哈萨克斯坦的合作，以保障区域安全，并打击恐怖主义与极端主义。</div>
+<ul>
+<li>托卡耶夫与约旦国王会谈，强调去年互访推动关系升级</li>
+<li>双方签署系列文件，经济一体化是双边关系主要驱动力</li>
+<li>哈方支持“亚喀巴进程”，首次在中亚聚焦AI安全</li>
+<li>约旦国王愿拓展贸易、投资、旅游、科技及国防合作</li>
+<li>两国承诺共同保障区域安全，打击恐怖主义与极端主义</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈约政治互信，推动经济合作与投资；哈方借“亚喀巴进程”提升在中亚安全事务中的话语权，拓展中东外交空间；矿产领域未直接涉及，但国防与科技合作可能间接影响资源开发合作。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">11</span> <a href="https://cn.inform.kz/news/guoer-zidaoji-292f256f/" target="_blank">约旦国王阿卜杜拉二世飞抵阿斯塔纳 托卡耶夫总统亲自到机场迎接</a></h3>
+<div class="item-meta">哈通社中文版 · 11/05 19:41<span class="source-link"><a href="https://cn.inform.kz/news/guoer-zidaoji-292f256f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>应哈萨克斯坦总统托卡耶夫邀请，约旦国王阿卜杜拉二世于11月5日至6日对哈萨克斯坦进行正式访问。托卡耶夫亲自到阿斯塔纳国际机场迎接，机场举行仪仗队检阅仪式，总统府礼宾大厅举行隆重欢迎仪式，两国元首举行小范围会谈，探讨经贸、投资及文化人文领域合作。访问期间，约旦国王将出席在阿斯塔纳举行的“亚喀巴进程”峰会，该倡议由阿卜杜拉二世于2015年发起，旨在加强打击恐怖主义、极端主义和跨国犯罪合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 约旦国王阿卜杜拉二世飞抵阿斯塔纳 托卡耶夫总统亲自到机场迎接
+正文:
+哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫亲自到阿斯塔纳国际机场迎接约旦国王。
+Фото: Акорда 为迎接约旦哈希姆王国国王阿卜杜拉二世·本·侯赛因到访，机场举行了隆重的仪仗队检阅仪式。
+Фото: Акорда Фото: Ақорда 总统府礼宾大厅举行了隆重的欢迎仪式，仪仗队整齐列队。两国元首及贵宾相互介绍了各自出席仪式的官方代表团成员。
+随后，仪仗队队长向贵宾敬礼，并作正式报告。
+Фото: Ақорда Фото: Акорда Фото: Акорда 哈萨克斯坦总统管弦乐团奏响了哈萨克斯坦和约旦两国国歌。
+国歌奏毕，托卡耶夫陪同约旦国王阿卜杜拉二世沿红毯走向哈萨克斯坦国旗。随后，两国元首举行小范围会谈。
+Фото: Акорда Фото: Акорда Фото: Акорда 会谈中，双方将探讨在经贸、投资以及文化与人文领域扩大双边合作的前景。
+访问框架下，约旦国王将出席在阿斯塔纳举行的“亚喀巴进程”（Aqaba Process）峰会。
+Фото: Ақорда 据悉，“亚喀巴进程”是由约旦国王阿卜杜拉二世于2015年发起的一项国际倡议。其主要目标是加强各国在打击恐怖主义、极端主义和跨国犯罪方面的合作。
+据此前报道，应哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫的邀请，约旦哈希姆王国国王阿卜杜拉二世·本·侯赛因将于11月5日至6日对哈萨克斯坦进行正式访问。</div>
+<ul>
+<li>约旦国王阿卜杜拉二世11月5日至6日正式访问哈萨克斯坦</li>
+<li>托卡耶夫总统亲赴阿斯塔纳机场迎接并举行隆重欢迎仪式</li>
+<li>两国元首小范围会谈聚焦经贸、投资与人文合作</li>
+<li>约旦国王将出席阿斯塔纳“亚喀巴进程”峰会</li>
+<li>“亚喀巴进程”2015年由约旦国王发起，聚焦反恐合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈约双边关系，拓展经贸投资与人文合作空间；哈国借主办“亚喀巴进程”峰会提升在中亚反恐与安全事务中的外交影响力，同时为矿产等领域引入约旦及中东资本创造契机。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">12</span> <a href="https://cn.inform.kz/news/guoguoerbenyinduijinxingzhengwen-cbbd394f/" target="_blank">约旦哈希姆王国国王阿卜杜拉二世·本·侯赛因对哈萨克斯坦进行正式访问</a></h3>
+<div class="item-meta">哈通社中文版 · 11/05 18:35<span class="source-link"><a href="https://cn.inform.kz/news/guoguoerbenyinduijinxingzhengwen-cbbd394f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>应哈萨克斯坦总统托卡耶夫邀请，约旦国王阿卜杜拉二世将于11月5日至6日对哈萨克斯坦进行正式访问。双方将探讨在经贸、投资以及文化与人文领域扩大双边合作的前景。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 约旦哈希姆王国国王阿卜杜拉二世·本·侯赛因对哈萨克斯坦进行正式访问
+正文:
+据此前报道，应哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫的邀请，约旦哈希姆王国国王阿卜杜拉二世·本·侯赛因将于11月5日至6日对哈萨克斯坦进行正式访问。
+据了解，在访问中，双方将探讨在经贸、投资以及文化与人文领域扩大双边合作的前景。</div>
+<ul>
+<li>约旦国王阿卜杜拉二世应邀访哈</li>
+<li>访问时间为11月5日至6日</li>
+<li>双方将讨论经贸投资合作</li>
+<li>涵盖文化与人文领域合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访将促进哈约经贸与投资合作，拓展哈国在中东的外交空间，对矿产领域合作可能产生积极影响，但短期内对地区格局影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">13</span> <a href="https://cn.inform.kz/news/guojingye-3a32c11c/" target="_blank">借鉴德国经验：哈萨克斯坦探索农业减排新路径</a></h3>
+<div class="item-meta">哈通社中文版 · 11/05 17:44<span class="source-link"><a href="https://cn.inform.kz/news/guojingye-3a32c11c/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与德国代表团举行会谈，重点讨论在哈发展碳耕作。双方就保护土壤肥力、合理利用农业用地、修复退化土地、碳项目法律保障、减少温室气体排放、增加土壤有机碳含量及推广现代土地可持续管理方法等议题交换意见。双方探讨借鉴国际经验、加强科研与实践合作、制定碳耕作项目实施机制，并计划发挥哈萨克斯坦国立土地调查研究所的科研优势推动合作落地。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">德国代表团成员包括德国相关机构再生土地利用与气候韧性部门副主管萨米·切尔蒂科格鲁，以及该机构中亚代表处负责人阿丽亚·穆西娜。
+会谈重点讨论了如何在哈萨克斯坦发展碳耕作，将其作为推动农业可持续发展的重要举措之一。
+具体而言，双方就保护土壤肥力、合理利用农业用地以及修复退化土地等问题交换了意见。
+此外，双方还讨论了碳项目的法律保障、减少温室气体排放、增加土壤有机碳含量，以及推广现代土地可持续管理方法等议题。
+双方还结合哈萨克斯坦的自然气候条件和农业发展特点，重点探讨了如何借鉴国际经验、加强科研与实践合作，以及制定碳耕作项目的具体实施机制。
+双方还讨论了发挥哈萨克斯坦国立土地调查研究所科研优势、推动相关措施落地的可能性，并将其视为开展实际合作的重要平台之一。
+与会人员指出，该机构在土地资源调查研究方面积累了丰富经验，具备较强的科研和实践能力，有望为双方合作项目的实施提供支持。
+发展碳耕作有助于提高农业生产的可持续性，保护土壤质量，同时进一步提高哈萨克斯坦土地资源的利用效率。
+会谈结束时，双方表示愿进一步加强合作，共同推动碳耕作发展、土地资源可持续利用和土壤质量改善。</div>
+<ul>
+<li>哈德会谈聚焦在哈发展碳耕作</li>
+<li>讨论土壤保护、减排和碳项目法律保障</li>
+<li>探讨借鉴国际经验并制定实施机制</li>
+<li>拟发挥哈国立土地调查研究所科研优势</li>
+<li>双方愿加强合作推动土地可持续利用</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上助哈农业减排增效，提升土地资源利用效率；外交上深化哈德绿色合作；矿产格局无直接冲击，但土地管理优化或间接影响资源开发规划。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">14</span> <a href="https://cn.inform.kz/news/waibuzaishangdeguo-7dd37c4b/" target="_blank">外交部：在印度被扣油轮上的哈萨克斯坦船员顺利离境回国</a></h3>
+<div class="item-meta">哈通社中文版 · 11/05 17:14<span class="source-link"><a href="https://cn.inform.kz/news/waibuzaishangdeguo-7dd37c4b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦外交部通报，在印度帕拉迪普港被扣押的“Unity”号油轮上的哈萨克斯坦船员已离船飞往德里并顺利出境，哈外交人员提供了领事与法律协助。该油轮自5月11日起被扣押，船员面临生存困境。10月6日印度奥里萨邦高等法院指示协助船员回国。哈外交部9月17日曾递交外交照会。10月17日报道称该油轮拟被拍卖。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦外交部通报指出：“在印度帕拉迪普港被扣押的‘Unity’号油轮船员中的哈萨克斯坦公民已离开该船。他已飞往德里，随后顺利出境。”在此期间，哈萨克斯坦外交人员向该名哈国公民提供了全方位的领事与法律协助。据外媒此前报道，喀麦隆籍“Unity”号油轮自今年5月11日起一直被扣押在印度帕拉迪普港附近的锚地。船员家属透露，该油轮实际所有者为 Bluetide Charters FZE 公司。在长达数月的滞留期间，船员们面临严重的饮用水和食物短缺、通讯中断以及船舶故障等生存困境。今年10月6日，印度奥里萨邦高等法院指示印度官方采取紧急措施，协助“Unity”号船员返回祖国。当时船上共有20名俄罗斯公民以及来自埃及和哈萨克斯坦的船员。法院援引印度《商船法》指出，船东已实质上遗弃了船员，要求印方在最短时间内组织安排船员下船、遣返回国并完成船员轮换。哈萨克斯坦外交部曾于9月17日确认该油轮被扣押，并向印方递交外交照会请求协助处理。10月17日据报道，包含该哈籍船员在内的被扣油轮拟被依法拍卖拍卖处置。</div>
+<ul>
+<li>哈籍船员已离船飞往德里并顺利出境</li>
+<li>油轮自5月11日起被扣押在印度港口</li>
+<li>印度法院10月6日指示协助船员回国</li>
+<li>哈外交部9月17日递交外交照会</li>
+<li>被扣油轮拟被依法拍卖处置</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此事件展现哈领事保护能力，维护公民权益；哈印外交互动加强，但油轮拍卖或涉及哈公民权益，需关注后续；对哈矿产格局无直接关联。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">15</span> <a href="https://cn.inform.kz/news/1dijinhuirikai-58fa23d4/" target="_blank">签约近1亿美元！哈萨克斯坦参展第九届进博会首日喜迎“开门红”</a></h3>
+<div class="item-meta">哈通社中文版 · 11/05 16:15<span class="source-link"><a href="https://cn.inform.kz/news/1dijinhuirikai-58fa23d4/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦贸易和一体化部部长沙卡利耶夫率团参加第九届进博会，首日哈企获近1亿美元出口协议。2025年中哈贸易额487亿美元（+11%），2026年前9个月达433亿美元（+21.9%）。哈方与香港探讨“枢纽对枢纽”合作，并与中企讨论本土化高新技术、机器人、物流设施及商业地产投资，强调巩固亚欧贸易交通枢纽地位。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：签约近1亿美元！哈萨克斯坦参展第九届进博会首日喜迎“开门红”
+
+正文：哈萨克斯坦贸易和一体化部部长阿尔曼·沙卡利耶夫率团出席本届进博会。期间，他视察了哈萨克斯坦国家馆，出席了虹桥国际经济论坛，并就扩大哈国商品出口、招商引资以及深化对华贸易物流合作举行了系列双边会谈。
+
+本届进博会上，哈萨克斯坦国家馆集中展示了约40家本土生产商的优质产品，涵盖油脂、面粉、糖果、乳制品、饮料及其他食品工业品。展会首日，哈方企业便成功斩获了近1亿美元的出口意向及合作协议。
+
+中哈双边经贸合作持续保持强劲增长态势。2025年全年，中哈双边贸易额达到487亿美元，同比增长11%；而在2026年前9个月，双边贸易额已达433亿美元，同比大幅增长21.9%。
+
+在沪期间，阿尔曼·沙卡利耶夫还与中国香港特别行政区行政长官举行了会谈。双方围绕“枢纽对枢纽”（Hub-to-Hub）倡议下的合作前景展开交流，重点探讨了依托哈萨克斯坦过境运输潜力、拓展交通物流线路以及构建互联互通贸易物流中心等议题。
+
+Фото: Министерство торговли и интеграции РК 此外，在与中国企业界代表会谈时，双方深入讨论了在哈萨克斯坦本土化落地高新技术产业、发展机器人技术、建设交通物流综合体、仓储设施与分拨中心，以及吸引中国资本投资商业地产等合作方向。
+
+阿尔曼·沙卡利耶夫强调，哈萨克斯坦高度重视吸引中国投资、引进先进技术并建立合资生产企业，以进一步降低物流成本，巩固哈萨克斯坦作为亚欧大陆贸易交通枢纽的地位。
+
+本届进博会将一直持续至11月10日。</div>
+<ul>
+<li>哈国参展进博会首日签约近1亿美元</li>
+<li>2025年中哈贸易额487亿美元增11%</li>
+<li>2026年前9个月双边贸易额433亿美元增21.9%</li>
+<li>哈港探讨“枢纽对枢纽”物流合作</li>
+<li>哈方推动中国投资高新技术与物流基建</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">进博会签约助力哈国出口多元化，强化对华经贸依赖；物流与投资合作提升哈过境运输潜力，巩固亚欧枢纽地位，但需平衡对华经济依存与多边外交。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">16</span> <a href="https://cn.inform.kz/news/fa-yuguan-102a32fa/" target="_blank">总统签署法律 批准哈萨克斯坦与乌兹别克斯坦互设海关代表处</a></h3>
+<div class="item-meta">哈通社中文版 · 11/05 15:55<span class="source-link"><a href="https://cn.inform.kz/news/fa-yuguan-102a32fa/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统签署法律，批准哈政府与乌兹别克斯坦政府关于互设海关服务代表处的协定。该法律文本将在官方媒体全文公布。此举旨在加强两国海关合作，促进双边贸易便利化。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">总统府官方通报称：
+“国家元首已签署《关于批准〈哈萨克斯坦共和国政府与乌兹别克斯坦共和国政府关于设立哈萨克斯坦共和国与乌兹别克斯坦共和国海关服务代表处的协定〉的哈萨克斯坦共和国法律》。”
+据悉，该法律文本将在官方媒体上全文公布。</div>
+<ul>
+<li>总统签署批准哈乌互设海关代表处协定</li>
+<li>法律文本将在官方媒体全文公布</li>
+<li>协定旨在加强两国海关合作与贸易便利化</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该法律将深化哈乌海关合作，促进双边贸易与过境运输便利化，增强区域经济联系，对哈国经济与外交有积极影响，但短期内对矿产格局影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">17</span> <a href="https://cn.inform.kz/news/liangguolichengyingzhongxin-d1539947/" target="_blank">德瑞两国倾力协助！阿斯塔纳成立水资源应急指挥中心</a></h3>
+<div class="item-meta">哈通社中文版 · 11/05 13:55<span class="source-link"><a href="https://cn.inform.kz/news/liangguolichengyingzhongxin-d1539947/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦水资源和灌溉部在德国国际合作机构（GIZ）支持下，依托水资源信息分析中心成立水资源应急指挥中心，瑞士亦提供协助。副部长萨利莫夫、瑞士大使霍内格等出席揭牌。中心可即时评估水安全并快速响应，配备8块液晶屏视频墙。此前开发的“国家水资源信息系统”已进入工业化试运行，含15个功能模块，与12个跨部门系统互联，录入全国2.3万多个水体数据，实现全流程自动化办理。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据水资源和灌溉部介绍，该中心是在德国国际合作机构（GIZ）的支持下，依托非营利性股份公司“水资源信息分析中心”搭建而成。水资源和灌溉部副部长詹多斯·萨利莫夫、瑞士驻哈萨克斯坦大使克里斯蒂娜·霍内格（Christine Honegger）、GIZ区域项目负责人卡罗琳娜·米洛夫（Karolina Milow）以及信息分析中心董事会主席凯拉特哈利·海鲁拉共同出席了揭牌仪式。
+该中心能够对水资源安全状况进行即时评估，并对各类变化作出快速响应。仪式期间，与会代表参观了中心配备的硬件设施，其中包括由8块液晶屏幕组合而成的超大视频墙。
+据此前报道，根据国家元首的批示，水资源和灌溉部下属水资源信息分析中心利用外援无偿资金开发了“国家水资源信息系统”。目前，该系统已正式进入工业化试运行与应用阶段。
+该系统共包含15个功能模块，并与12个跨部门信息系统实现互联互通，全面录入了全国2.3万多个水体的数据。系统实现了从水资源使用申请审批到用水结算支付的全流程自动化办理。
+水资源和灌溉部副部长詹多斯·萨利莫夫在致辞中表示：
+“当前，不仅要倡导节约用水，掌握有关现有水资源储备、水体现状及使用情况的精准数据同样至关重要。得益于德国、瑞士及GIZ的支持，我们为应急指挥中心配备了先进的硬件技术设备。下一步，我们将继续扩充数据库、拓展系统功能并引入创新解决方案。我们的一切努力均旨在推动水资源的合理利用，为子孙后代守护好这一宝贵财富。”</div>
+<ul>
+<li>德瑞两国协助哈国成立水资源应急指挥中心</li>
+<li>中心可即时评估水安全并快速响应变化</li>
+<li>国家水资源信息系统含15个模块，互联12个系统</li>
+<li>系统录入全国2.3万多个水体数据</li>
+<li>系统实现用水申请审批到结算支付全自动化</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该中心提升哈国水资源应急管理能力，借助德瑞技术援助强化水资源安全，推动水务数字化和跨部门数据共享，为合理利用水资源和可持续发展提供支撑，同时深化与德国、瑞士的合作关系。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">18</span> <a href="https://cn.inform.kz/news/zaiyuzuo-b4822cc7/" target="_blank">哈萨克斯坦在伊斯坦布尔设立产品展示与商务合作平台</a></h3>
+<div class="item-meta">哈通社中文版 · 11/05 10:52<span class="source-link"><a href="https://cn.inform.kz/news/zaiyuzuo-b4822cc7/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦在伊斯坦布尔阿塔谢希尔商务区设立产品展示与商务合作平台，由QazTrade与土耳其Yenisan Companies Group共建，设常设展厅展示面粉、食用油、奶制品、糖果、服装等本土产品。2026年1-9月哈土贸易额达63.3亿美元，同比增长62.1%，其中哈对土出口53亿美元、增长91%，土耳其为哈第四大贸易伙伴。双方还计划拓展叙利亚、伊拉克、伊朗和阿富汗市场，并建设仓储综合体。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦在伊斯坦布尔设立产品展示与商务合作平台
+
+新办公室将为哈萨克斯坦生产商与土耳其企业家建立商务联系创造条件。潜在买家和分销商可以在这里直观了解哈萨克斯坦本土产品样品，并获取生产商的相关信息。此外，该平台还将为商务洽谈和建立直接合作关系提供便利。
+
+办公室揭牌恰逢伊斯兰合作组织经济和商业合作常设委员会第42届会议召开。哈萨克斯坦贸易和集成部副部长詹妮尔·库舒阔娃也出席了会议。
+
+库舒阔娃表示，在伊斯坦布尔展出的哈萨克斯坦本土产品，将有助于土耳其合作伙伴直接了解和评估哈萨克斯坦的出口潜力。对哈萨克斯坦而言，扩大食品、加工产品及其他成品出口具有特别重要的意义。
+
+Фото: Акжигит Чукубаев / Kazinform 这一倡议是推动哈萨克斯坦与土耳其经贸合作的具体举措之一。此前，哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫与土耳其总统雷杰普·塔伊普·埃尔多安于10月28日在安卡拉举行会晤时，也讨论了扩大双边贸易、加强投资合作等议题。
+
+新办公室在两国贸易额显著增长之际正式开业。2026年1月至9月，哈萨克斯坦与土耳其之间的贸易额达到63.3亿美元，较去年同期增长62.1%。其中，哈萨克斯坦对土耳其出口额增长91%，达到53亿美元；自土耳其进口额为10.3亿美元。根据上述数据，土耳其在哈萨克斯坦主要贸易伙伴中排名第四。
+
+该项目由“QazTrade”与土耳其Yenisan Companies Group共同推进。土耳其企业为办公室和展厅提供了专门场地，并将协助哈萨克斯坦方面与当地企业建立联系、推动合作项目落地。
+
+该办公室位于阿塔谢希尔商务区。这里除设有商务洽谈室外，还建有常设展厅，展示哈萨克斯坦生产商的各类产品。展品包括面粉、通心粉及谷物制品、大米、小扁豆、豌豆、葵花籽油和亚麻籽油、牛奶、骆驼奶制品、民族特色食品、蜂蜜、果酱、糕点和糖果、巧克力、饮料、糖浆、茶叶，以及服装和饰品等。
+
+Фото: Акжигит Чукубаев / Kazinform 该办公室的业务范围并不局限于土耳其市场。“QazTrade”与Yenisan Companies Group目前还在研究将哈萨克斯坦产品出口至叙利亚、伊拉克、伊朗和阿富汗的可能性。此外，双方还在探讨发展仓储和终端基础设施、吸引投资以及引进新技术等事宜。
+
+双方合作的重点方向之一是建设用于存储出口产品的仓储综合体。这将有助于优化商品存储和运输流程，提升哈萨克斯坦企业的物流能力，并为其开拓该地区其他国家市场创造便利。</div>
+<ul>
+<li>哈在伊斯坦布尔设产品展示与商务合作平台</li>
+<li>2026年1-9月哈土贸易额63.3亿美元，增62.1%</li>
+<li>哈对土出口53亿美元，同比增长91%</li>
+<li>平台拟拓展叙利亚、伊拉克、伊朗、阿富汗市场</li>
+<li>双方探讨建设仓储综合体以提升物流能力</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上助哈扩大对土及周边出口，优化非资源产品结构；外交上深化哈土经贸纽带，契合托卡耶夫多元化外交；矿产格局影响有限，重点在食品加工与物流基建。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/11yue5ri-herenminqing-09ab3bf8/" target="_blank">11月5日终盘 美元、欧元、卢布和人民币兑坚戈汇率情况</a></h3>
+<div class="item-meta">哈通社中文版 · 11/05 22:23<span class="source-link"><a href="https://cn.inform.kz/news/11yue5ri-herenminqing-09ab3bf8/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>11月5日KASE现货市场30个成员参与交易。美元兑坚戈平均报451.16，跌1.56，交易额377,058.29千美元（增91,979.33千美元）；欧元兑坚戈报507.03，跌1.87，交易额2,072.87千欧元（减1,003.24千欧元）；卢布兑坚戈报5.5168，跌0.0153，交易额3,244,662.61千卢布（增2,520,302.38千卢布）；人民币兑坚戈报67.6309，跌0.2206，交易额18,586.00千人民币（减57,378.09千人民币）。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 11月5日终盘 美元、欧元、卢布和人民币兑坚戈汇率情况
+正文:
+在本次现货市场交易中，共有30个KASE成员参与。
+根据现货市场交易结果：
+美元兑坚戈（USDKZT_TOM）： 汇率平均报价为 1 : 451.16（较前一交易日下跌 1.56 坚戈）。外汇交易总额为 377,058.29 千美元（增加 91,979.33 千美元）。交易过程中，最高报价为 1 : 453.00 坚戈，最低报价为 1 : 449.00 坚戈。
+欧元兑坚戈（EURKZT_TOM）： 汇率平均报价为 1 : 507.03（较前一交易日下跌 1.87 坚戈）。外汇交易总额为 2,072.87 千欧元（减少 1,003.24 千欧元）。交易过程中，最高报价为 1 : 509.81 坚戈，最低报价为 1 : 503.89 坚戈。
+卢布兑坚戈（RUBKZT_TOM）： 汇率平均报价为 1 : 5.5168（较前一交易日下跌 0.0153 坚戈）。外汇交易总额为 3,244,662.61 千卢布（增加 2,520,302.38 千卢布）。交易过程中，最高报价为 1 : 5.5432 坚戈，最低报价为 1 : 5.5000 坚戈。
+人民币兑坚戈（CNYKZT_TOM）： 汇率平均报价为 1 : 67.6309（较前一交易日下跌 0.2206 坚戈）。外汇交易总额为 18,586.00 千人民币（减少 57,378.09 千人民币）。交易过程中，最高报价为 1 : 67.8863 坚戈，最低报价为 1 : 67.3761 坚戈。</div>
+<ul>
+<li>美元兑坚戈跌1.56至451.16，交易额增91,979.33千美元</li>
+<li>欧元兑坚戈跌1.87至507.03，交易额减1,003.24千欧元</li>
+<li>卢布兑坚戈跌0.0153至5.5168，交易额增2,520,302.38千卢布</li>
+<li>人民币兑坚戈跌0.2206至67.6309，交易额减57,378.09千人民币</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈对主要货币全线升值，降低进口成本并缓解通胀压力，但可能削弱出口竞争力；卢布交易额激增反映俄哈贸易活跃，人民币交易额下降或影响去美元化节奏，对矿产出口计价形成短期压力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/xinggong5riyuzhuyaowaizhijiande-3a94fb1e/" target="_blank">央行公布5日坚戈与主要外币之间的汇率标准</a></h3>
+<div class="item-meta">哈通社中文版 · 11/05 13:38<span class="source-link"><a href="https://cn.inform.kz/news/xinggong5riyuzhuyaowaizhijiande-3a94fb1e/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行公布2026年11月5日坚戈与主要外币汇率：美元兑坚戈1:452.91，欧元兑坚戈1:509.43，俄罗斯卢布兑坚戈1:5.53，土耳其里拉兑坚戈1:9.06，中国元兑坚戈1:67.87。央行规定，坚戈兑美元官方汇率基于阿斯塔纳时间15:30证券交易所加权平均汇率确定，其他外币汇率依据16:00交叉汇率计算。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 央行公布5日坚戈与主要外币之间的汇率标准
+正文:
+根据央行公布的信息，2026年11月5日，哈萨克斯坦坚戈与国际主要货币之间的兑换汇率标准如下：
+美元兑坚戈（USD/KZT） – 1：452.91
+欧元兑坚戈（EUR/KZT）- 1：509.43
+俄罗斯卢布兑坚戈（RUB / KZT）-1: 5.53
+土耳其里拉兑坚戈（TRY / KZT）- 1: 9.06
+中国元兑坚戈（CNY / KZT）- 1：67.87
+值得一提的是，根据哈萨克斯坦国家银行规定，截至阿斯塔纳时间当日15:30，在哈萨克斯坦证券交易所形成的坚戈兑美元加权平均汇率，将被确定为下一工作日坚戈兑美元官方汇率；坚戈兑其他外币的官方汇率，则依据截至阿斯塔纳时间16:00形成的交叉汇率计算得出。</div>
+<ul>
+<li>美元兑坚戈汇率为1:452.91</li>
+<li>欧元兑坚戈汇率为1:509.43</li>
+<li>人民币兑坚戈汇率为1:67.87</li>
+<li>坚戈兑美元官方汇率基于交易所加权平均汇率</li>
+<li>其他外币汇率依据交叉汇率计算</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率数据反映坚戈对主要货币的比价关系，为贸易和投资提供参考。央行汇率形成机制有助于提升汇率市场化程度，对哈国金融稳定和外交经济关系具有积极意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/quanmianchengxing-154aa9a7/" target="_blank">哈萨克斯坦全面完成巴塞尔银行监管标准建议</a></h3>
+<div class="item-meta">哈通社中文版 · 11/05 11:34<span class="source-link"><a href="https://cn.inform.kz/news/quanmianchengxing-154aa9a7/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦金融监管署宣布，使本国银行监管符合巴塞尔银行监管委员会核心原则的路线图已全部执行完毕。在落实新版《银行法》框架下，官方已出台80多份规范性法律文件，引入差异化监管模式，并强化金融消费者权益保护。双方还讨论了住房抵押贷款、消费贷款、防止居民过度负债及不良债务处置等议题。金融监管署正同步推进资本市场与保险市场改革，已制定至2030年的发展规划草案。IMF将在证券市场发展和银行监管完善方面向哈方提供技术援助。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">会谈指出，哈萨克斯坦银行业继续保持高度韧性。双方评估了银行资产质量、压力测试结果以及针对不不良银行的最新处置机制。
+
+会谈重点讨论了2024年“金融部门评估规划”（FSAP）建议的落实情况。据金融监管署通报，使本国银行监管符合巴塞尔银行监管委员会核心原则的路线图已全部执行完毕。
+
+相关改革进一步加强了对银行集团的综合监管，完善了风险管理与资本评估体系，并严格了准备金计提标准及关联交易规范。
+
+此外，在落实新版《银行法》框架下，官方已制定并出台了80多份规范性法律文件。哈国已正式引入包含基础许可与通用许可的差异化监管模式，并全面强化了金融消费者权益保护机制。
+
+双方还专门就住房抵押贷款与消费贷款、防止居民过度负债以及不良债务处置等热点议题交换了意见。
+
+目前，金融监管署正同步推进资本市场与保险市场的深度改革，已制定完成至2030年的发展规划草案，并铺平了相应的立法基础。
+
+会谈结束时，双方明确了下一步的合作方向，包括IMF在证券市场发展和银行监管完善方面向哈方提供技术援助等内容。</div>
+<ul>
+<li>哈银行监管全面符合巴塞尔核心原则，路线图执行完毕</li>
+<li>新版《银行法》框架下出台80多份规范性法律文件</li>
+<li>引入基础许可与通用许可差异化监管模式</li>
+<li>金融监管署同步推进资本市场与保险市场改革</li>
+<li>IMF将在证券市场发展和银行监管方面提供技术援助</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">提升哈国银行业稳健性与国际信誉，吸引外资；强化消费者保护与风险防控，利于经济稳定；深化与IMF合作，增强外交金融话语权；监管升级为矿产等实体行业融资提供更安全环境。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/guojiatianrangongming785-8a33beed/" target="_blank">哈萨克斯坦国家石油天然气公司探明石油储量达7.85亿吨</a></h3>
+<div class="item-meta">哈通社中文版 · 11/05 11:50<span class="source-link"><a href="https://cn.inform.kz/news/guojiatianrangongming785-8a33beed/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国家石油天然气公司（KazMunayGas）宣布其探明石油储量达7.85亿吨，包括自主管理油田和合资企业储量。公司对每个参股油气田进行技术和经济评估，储量由国家储量委员会审定。按年产量约2600万吨计算，现有储量可开采45年以上，但公司强调随着勘探推进，新储量将持续确认，并非45年后枯竭。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据他介绍，公司会对其参股的每一个油气田进行技术和经济评估，而石油储量则由国家储量委员会审定确认。
+“目前，KazMunayGas的石油储量已达7.85亿吨，其中包括公司自主管理油田以及合资企业的储量。这些均为探明储量。此外，各油田的进一步勘探工作也在持续开展，新的储量不断得到确认。”哈森诺夫表示。
+他解释说，按照每年约2600万吨的石油产量计算，从数学上看，现有储量可供开采45年以上。
+“但这并不意味着45年后石油储量就会枯竭。随着地质勘探工作的持续推进，新的石油储量也会不断得到确认。我们在钻探油井、发现新的油流后，会立即将其计入储量。这是一个持续更新的动态过程。”他强调说。</div>
+<ul>
+<li>KazMunayGas探明石油储量达7.85亿吨</li>
+<li>储量包括自主管理油田和合资企业</li>
+<li>年产量约2600万吨，储量可开采45年以上</li>
+<li>新储量随勘探持续确认，动态更新</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">7.85亿吨探明储量增强哈国能源安全与长期开采信心，支撑年产量2600万吨的稳定生产，有利于吸引外资和稳定财政收入，巩固其在中亚石油格局中的地位。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-11-06 09:02</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
