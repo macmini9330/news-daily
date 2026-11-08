@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年11月8日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年11月8日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年11月07日早9:00至2026年11月08日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 17 条</span><span class="stat-chip">1 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">0</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">17</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">0</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">0</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(17 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/yuzhnaya-i-severnaya-koreya-okazalis-na-grani-novogo-obostreniya-oon-prizvala-k--22a9edbd" target="_blank">朝鲜和韩国濒临新一轮紧张升级：联合国呼吁对话</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/08 08:59<span class="source-link"><a href="https://www.inform.kz/ru/yuzhnaya-i-severnaya-koreya-okazalis-na-grani-novogo-obostreniya-oon-prizvala-k--22a9edbd" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>联合国发言人杜加里克呼吁朝韩恢复沟通渠道，防止意外冲突。9月21日非军事区地雷爆炸致三名韩国军人受伤，韩方与联合国军司令部调查认定地雷由朝鲜故意埋设，朝方否认。韩国要求朝方道歉、清雷并防止再犯。联合国强调恢复谈判与外交接触是缓解紧张、确保长期和平的必要条件。此前哈萨克斯坦与联合国毒罪办公室同意加强合作打击网络犯罪和毒品贩运。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：朝韩濒临新一轮紧张升级：联合国呼吁对话
+正文：
+联合国发言人斯特凡·杜加里克表示，恢复包括军事接触在内的沟通渠道对于防止意外冲突和可能导致局势升级的错误行动是必要的。
+新一轮紧张局势的导火索是9月21日在非军事区发生的地雷爆炸。当时三名韩国军人受伤，其中两人伤势严重。
+根据联合调查结果，韩国军方和联合国军司令部得出结论，爆炸是由朝鲜故意设在军事分界线以南的杀伤人员地雷引起的。
+平壤驳斥了这些指控，称调查结果是捏造的。
+事件发生后，韩国向联合国安理会发出呼吁，要求朝方道歉、清除地雷并防止类似事件再次发生。
+联合国强调，恢复谈判和外交接触仍然是缓解紧张局势和确保地区长期和平的必要条件。
+此前有报道称，哈萨克斯坦和联合国毒品和犯罪问题办公室将加强在打击网络犯罪和毒品贩运方面的合作。</div>
+<ul>
+<li>联合国呼吁朝韩恢复军事沟通渠道，防止意外冲突</li>
+<li>9月21日非军事区地雷爆炸致三名韩国军人受伤</li>
+<li>韩方与联合国军司令部认定朝鲜故意埋雷，朝方否认</li>
+<li>韩国要求朝鲜道歉、清除地雷并防止类似事件</li>
+<li>联合国强调恢复谈判与外交接触是长期和平必要条件</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国直接影响有限，但朝韩紧张可能推高地区安全风险，间接影响哈国与东北亚的经贸与矿产合作；哈国可借联合国平台倡导对话，提升外交调解形象。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/tisyachi-chelovek-vishli-na-aktsii-v-podderzhku-irantsev-v-germanii-d0e0672d" target="_blank">数千人在德国举行支持伊朗人的集会</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/08 05:02<span class="source-link"><a href="https://www.inform.kz/ru/tisyachi-chelovek-vishli-na-aktsii-v-podderzhku-irantsev-v-germanii-d0e0672d" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>德国法兰克福等地举行支持伊朗人民的集会，警方称截至中午约5000人参与，申报总人数达3万。活动与弗里德里希·瑙曼基金会向伊朗人民颁发“自由奖”相关，礼萨·巴列维代表领奖并呼吁民主变革。颁奖决定引发争议，批评者称其不代表全部反对派。警方增派警力，一人被拘留。此前有报道称美国在外交谈判背景下对伊朗发动新打击。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：德国数千人举行集会支持伊朗人
+
+正文：
+据警方数据，截至中午，城市不同区域共聚集了约五千人。规模最大的集会在罗马广场和东公园举行。活动申报的总参与人数最多达三万人。
+
+这些示威活动恰逢德国弗里德里希·瑙曼基金会颁发“自由奖”。今年该奖项授予伊朗人民，以表彰其对自由、民主和人权保护的追求。
+
+颁奖仪式在法兰克福圣保罗教堂举行。代表伊朗人民领奖的是礼萨·巴列维——伊朗末代沙阿穆罕默德·礼萨·巴列维之子，其父在1979年伊斯兰革命中被推翻。
+
+巴列维在仪式上发言时表示，他打算有朝一日在德黑兰将奖项转交给伊朗人民的代表。他还主张在伊朗进行民主变革。
+
+然而，通过巴列维颁奖的决定引发了褒贬不一的反应。批评者指出，他并不能代表伊朗反对派的所有政治力量。而他的支持者则认为，巴列维是德黑兰现政权最知名的反对者之一。
+
+为确保示威活动的安全，法兰克福警方增派了额外警力。据执法部门数据，在收到可能准备违法活动的消息后，一人被拘留。
+
+此前有报道称，美国在外交谈判背景下对伊朗发动了新的打击。</div>
+<ul>
+<li>德国多地集会支持伊朗人，中午约5000人参与</li>
+<li>瑙曼基金会向伊朗人民颁发“自由奖”</li>
+<li>礼萨·巴列维代表领奖，呼吁民主变革</li>
+<li>颁奖决定引发争议，批评者质疑代表性</li>
+<li>警方增派警力，一人因涉嫌违法被拘留</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该事件凸显伊朗反对派在德国的动员能力，可能影响哈萨克斯坦对伊朗局势及海外反对派活动的评估。哈国需关注美伊对抗升级对里海地区安全与能源合作的潜在冲击，同时谨慎平衡与伊朗及西方的关系。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/tramp-predlozhil-glave-ufc-dane-uaytu-stat-press-sekretarem-belogo-doma-1c509803" target="_blank">特朗普提议UFC总裁达纳·怀特担任白宫新闻秘书</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/08 04:01<span class="source-link"><a href="https://www.inform.kz/ru/tramp-predlozhil-glave-ufc-dane-uaytu-stat-press-sekretarem-belogo-doma-1c509803" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>特朗普提议UFC总裁达纳·怀特担任白宫新闻秘书，称其为杰出斗士，并建议引入伊斯兰·马哈切夫、哈比布·努尔马戈梅多夫等知名综合格斗选手协助新闻工作。怀特是特朗普的长期支持者。此前白宫新闻秘书凯蒂·扎卡里亚上任五天即离职。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：特朗普提议UFC总裁达纳·怀特担任白宫新闻秘书
+
+正文：
+特朗普在其消息中称怀特是杰出的斗士和战士，并提议由他领导新闻工作。
+同时，美国总统提议吸引知名综合格斗选手参与这项工作，包括伊斯兰·马哈切夫、哈比布·努尔马戈梅多夫、贾斯汀·盖特基、丹尼尔·科米尔和阿曼达·努涅斯。
+——我们需要这些人来保护我们免受疯狂的左派侵害。达纳将是一位与众不同的新闻秘书。达纳，请接受这份工作吧！——特朗普写道。
+达纳·怀特是终极格斗冠军赛（UFC）的首席执行官，也是唐纳德·特朗普的长期支持者。他曾多次公开支持这位美国领导人，包括在总统竞选期间。
+此前有报道称，白宫新闻秘书凯蒂·扎卡里亚在上任仅五天后便离职。原因是她首次记者会受到批评，且其法律资质受到质疑。</div>
+<ul>
+<li>特朗普提议UFC总裁怀特任白宫新闻秘书</li>
+<li>建议引入马哈切夫等多名格斗选手</li>
+<li>怀特是特朗普长期公开支持者</li>
+<li>白宫新闻秘书扎卡里亚上任五天离职</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该提议若落实，将强化特朗普与体育界盟友关系，但白宫新闻秘书频繁更替反映人事不稳，对哈国直接影响有限，或间接影响美哈外交沟通渠道。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://www.inform.kz/ru/pravyashaya-i-oppozitsionnaya-partii-idut-pochti-vroven-na-viborah-v-novoy-zelan-88aa8aa1" target="_blank">新西兰选举中执政党与反对党势均力敌</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/08 01:45<span class="source-link"><a href="https://www.inform.kz/ru/pravyashaya-i-oppozitsionnaya-partii-idut-pochti-vroven-na-viborah-v-novoy-zelan-88aa8aa1" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>新西兰选举处理超80%选票后，两大政党各获约30%选票，绿党13.4%列第三，ACT New Zealand 11%，新西兰优先党9.8%，机会党5.8%。最终结果11月27日公布，超370万选民参与，主要议题为生活成本、失业和医疗。采用混合比例选举制，议会组成和政府组建前景待正式计票后明朗。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：新西兰选举中执政党与反对党几乎持平
+正文：
+据机构数据，在处理超过80%的选票后，两大政治力量各获得约30%的选票。
+绿党以13.4%位居第三，紧随其后的是ACT New Zealand，得票11%。
+“新西兰优先党”（NZ First）获得9.8%，机会党（TOP）获得5.8%。
+预计最终投票结果将于11月27日公布。
+超过370万选民可能参与了投票。竞选活动的主要议题是生活成本上涨、失业和医疗服务的可及性。
+新西兰采用混合比例选举制度，议会席位的分配取决于政党投票和选区选举的结果。
+在正式计票完成后，议会的最终组成和组建政府的前景将更加明朗。
+此前有报道称，以色列于10月27日举行的议会选举计票结束。投票结果显示，没有一个政治联盟获得独立组建政府所需的多数席位。</div>
+<ul>
+<li>两大政党各获约30%选票，势均力敌</li>
+<li>绿党13.4%列第三，ACT New Zealand 11%</li>
+<li>最终结果11月27日公布，超370万选民参与</li>
+<li>主要议题：生活成本、失业、医疗</li>
+<li>采用混合比例选举制，政府组建前景待定</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对新西兰政治而言，两大党势均力敌可能导致联合政府谈判复杂化；经济上，生活成本等议题主导选战，政策走向待明朗；外交上，小党可能影响组阁方向；矿产格局无直接关联。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://www.inform.kz/ru/husiti-atakovali-aeroport-er-riyada-i-neftyanie-obekti-saudovskoy-aravii-496478c0" target="_blank">胡塞武装袭击利雅得机场和沙特阿拉伯石油设施</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/08 01:18<span class="source-link"><a href="https://www.inform.kz/ru/husiti-atakovali-aeroport-er-riyada-i-neftyanie-obekti-saudovskoy-aravii-496478c0" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>胡塞武装军事代表叶海亚·萨里阿称，胡塞武装使用弹道导弹、巡航导弹和无人机进行了六次军事行动，袭击了沙特阿拉伯利雅得的哈立德国王国际机场、沙特阿美石油储罐和设备，以及胡赖斯油田设施、达瓦迪米泵站、纳季兰国民警卫队营地和也门焦夫省、马里布省的沙特军方阵地。胡塞武装声称造成大量军人伤亡，但无独立证实。此前胡塞武装还曾袭击达曼和吉赞机场、早期预警雷达和军用运输机。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">胡塞武装袭击利雅得机场和沙特阿拉伯石油设施
+
+据胡塞武装军事代表叶海亚·萨里阿称，叛军使用弹道导弹、巡航导弹以及无人机进行了六次军事行动。
+
+据他所说，首批目标是哈立德国王国际机场、利雅得的沙特阿美石油储罐和设备。
+
+在随后的行动中，据称胡塞武装袭击了胡赖斯油田地区的石油公司设施以及沙特阿拉伯中部达瓦迪米市的泵站。
+
+此外，该运动代表还声称袭击了纳季兰的沙特阿拉伯国民警卫队营地，以及也门焦夫省和马里布省的沙特军方阵地。
+
+胡塞武装声称，袭击导致大量军人死亡和受伤。目前尚无独立信息证实这一说法。
+
+此前，胡塞武装曾声称用无人机袭击了沙特阿拉伯的达曼和吉赞机场，并打击了早期预警雷达和军用运输机。</div>
+<ul>
+<li>胡塞武装称使用导弹和无人机进行六次军事行动</li>
+<li>袭击目标包括利雅得机场和沙特阿美石油设施</li>
+<li>胡塞武装声称造成大量沙特军人伤亡</li>
+<li>此前曾袭击达曼和吉赞机场及军事目标</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次袭击加剧沙特与胡塞武装的军事对抗，威胁沙特石油设施安全，可能影响全球石油供应稳定。对哈萨克斯坦而言，作为石油出口国，地区紧张局势可能推高油价，带来短期收益但增加地缘政治风险。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://www.inform.kz/ru/tusk-nazval-strelbu-v-krakove-teraktom-e4b1995d" target="_blank">图斯克称克拉科夫枪击事件为恐怖袭击</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/08 00:04<span class="source-link"><a href="https://www.inform.kz/ru/tusk-nazval-strelbu-v-krakove-teraktom-e4b1995d" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>波兰总理图斯克称克拉科夫枪击为恐怖袭击。11月7日15时左右，一名男子在克拉科夫主市场广场从行驶车辆向路人开枪，造成5人死亡、多人受伤（含警察）。嫌疑人在被捕时受伤送医。波兰内政部长凯尔温斯基前往现场，警方调查动机和情况。此前报道为2死10伤。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">——内政部长不断向我通报克拉科夫悲惨枪击事件后的情况。警方正在调查这起恐怖袭击的原因和所有情况，图斯克在社交网络X上写道。
+据该机构消息，波兰内政部长马尔钦·凯尔温斯基正前往事发地点。
+枪击事件发生于11月7日当地时间15时左右，地点在克拉科夫主市场广场。一名男子从行驶中的汽车内向随机路人开枪。
+根据最新数据，已有五人死亡，另有人员受伤，其中包括警察。
+嫌疑人在被捕时受伤，已被送往医院。执法机构正在查明袭击的情况和动机。
+此前有报道称，克拉科夫市中心枪击事件造成两人死亡，另有十人受伤，其中包括两名警察。</div>
+<ul>
+<li>图斯克定性克拉科夫枪击为恐怖袭击</li>
+<li>枪击致5死多伤，含警察</li>
+<li>嫌疑人被捕时受伤送医</li>
+<li>内政部长赴现场，警方调查动机</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该事件对哈萨克斯坦直接影响有限，但可能促使哈国关注独联体地区安全形势，加强反恐合作与国内安保措施，并在外交上表达对波兰的慰问。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/xing-qianjixing-f7851a64/" target="_blank">塔吉克斯坦总统拉赫蒙结束访哈行程 托卡耶夫前往机场送行</a></h3>
+<div class="item-meta">哈通社中文版 · 11/07 21:08<span class="source-link"><a href="https://cn.inform.kz/news/xing-qianjixing-f7851a64/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>塔吉克斯坦总统拉赫蒙结束对哈萨克斯坦的访问，哈总统托卡耶夫前往阿斯塔纳首都国际机场亲自送行。报道未提及访问具体成果或协议，仅强调送别礼仪，体现两国高层友好关系。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 塔吉克斯坦总统拉赫蒙结束访哈行程 托卡耶夫前往机场送行
+正文:
+访问结束之际，哈萨克斯坦国家元首哈斯穆-卓玛尔特·托卡耶夫前往阿斯塔纳首都国际机场，亲自送别尊贵的外宾。
+Фото: Ақорда Фото: Ақорда Фото: Ақорда Фото: Ақорда</div>
+<ul>
+<li>拉赫蒙结束访哈行程</li>
+<li>托卡耶夫亲赴机场送行</li>
+<li>送别地点为阿斯塔纳国际机场</li>
+<li>报道突出高层礼仪互动</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访有助于巩固哈塔双边关系，但报道未涉及具体协议，对政治经济影响有限；礼仪性送行彰显外交友好，对矿产格局无直接关联。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/yutongchushicheng-d60f1d50/" target="_blank">托卡耶夫与拉赫蒙共同出席塔吉克斯坦驻哈使馆新馆落成典礼</a></h3>
+<div class="item-meta">哈通社中文版 · 11/07 20:12<span class="source-link"><a href="https://cn.inform.kz/news/yutongchushicheng-d60f1d50/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与塔吉克斯坦总统拉赫蒙共同出席塔吉克斯坦驻哈使馆新馆落成典礼。新馆位于阿斯塔纳阿纳托利·赫拉帕特街，两国元首剪彩，总统乐团演奏两国国歌。典礼期间观看使馆建筑专题视频并参观办公接待设施，托卡耶夫在贵宾留言簿题词祝福，最后共同栽下象征永久友谊的纪念树苗。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：托卡耶夫与拉赫蒙共同出席塔吉克斯坦驻哈使馆新馆落成典礼
+正文：塔吉克斯坦驻哈使馆新馆坐落于阿斯塔纳阿纳托利·赫拉帕特街。活动现场，托卡耶夫与拉赫蒙共同为使馆新馆剪彩。随后，总统乐团演奏了哈塔两国国歌。
+典礼期间，两国元首观看了一部介绍使馆建筑群详细情况的专题视频短片，并实地参观考察了外交代表机构内部的办公与接待设施。
+Фото: Ақорда Фото: Ақорда 在参观过程中，哈萨克斯坦总统托卡耶夫在使馆的《贵宾留言簿》上题词，向塔吉克斯坦外交代表机构及两国人民致以美好祝福。
+Фото: Ақорда Фото: Ақорда Фото: Ақорда 最后，哈萨克斯坦与塔吉克斯坦两国领导人还在使馆园区内共同栽下了象征两国永久友谊与蓬勃发展的纪念树苗。
+Photo credit: Akorda</div>
+<ul>
+<li>托卡耶夫与拉赫蒙共同为塔吉克斯坦驻哈使馆新馆剪彩</li>
+<li>新馆坐落于阿斯塔纳阿纳托利·赫拉帕特街</li>
+<li>两国元首观看使馆建筑视频并参观内部设施</li>
+<li>托卡耶夫在贵宾留言簿题词祝福两国人民</li>
+<li>两国领导人共同栽下象征永久友谊的纪念树苗</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此活动强化哈塔双边政治互信与外交关系，体现哈国对中亚邻国的重视，有助于促进区域合作与稳定，对经济与矿产格局无直接显著影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://cn.inform.kz/news/tichuditihui-f0f0d12f/" target="_blank">哈萨克斯坦总统广播电视综合体代表团出席第七届世界媒体峰会</a></h3>
+<div class="item-meta">哈通社中文版 · 11/07 19:50<span class="source-link"><a href="https://cn.inform.kz/news/tichuditihui-f0f0d12f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统广播电视综合体代表团出席第七届世界媒体峰会，峰会恰逢新华社成立95周年，主题为“智能变革中的媒体使命与合作行动”，吸引全球112个国家和地区近330家媒体、智库及国际组织约500名代表参会。哈方延续与新华社深度战略合作，涵盖经验共享、相互报道及联合项目。2025年6月双方在“中国—中亚”通讯社论坛期间签署合作备忘录，并推动《阿斯塔纳宣言》通过，确定中亚与中国在新闻传播领域长期合作优先方向。深化对华媒体协作是哈方构建亚洲统一合作伙伴网络计划的重要组成部分。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦总统广播电视综合体代表团出席第七届世界媒体峰会
+正文:
+本届峰会恰逢新华通讯社成立95周年，主题为“智能变革中的媒体使命与合作行动”。峰会共吸引了来自全球112个国家和地区的近330家媒体、智库以及国际组织的约500名代表参会。
+哈萨克斯坦总统广播电视综合体代表团出席这一庆祝活动，延续了其与新华社在专业领域的深度战略合作关系。双方的协作涵盖经验与内容共享、重大新闻与活动的相互报道，以及联合创作项目的落地实施。
+2025年6月，在新华社主办、哈萨克斯坦总统广播电视综合体支持的“中国—中亚”通讯社论坛期间，双方媒体机构正式签署了合作备忘录。该文件明确规定发展新型多媒体互动格式，并在国家和国际层面推动信息传播。
+当时峰会还通过了战略性文件——《阿斯塔纳宣言》。作为区域数字、信息和IT协作的坚实基石，《阿斯塔纳宣言》确定了中亚国家与中国在新闻传播领域开展长期合作的核心优先方向。
+深化与中国媒体的协作，是哈萨克斯坦总统广播电视综合体构建亚洲统一合作伙伴网络计划的重要组成部分。目前，该媒体集团已与日本、韩国、越南、印度、巴基斯坦及欧亚大陆其他多国的媒体公司签署了合作协议。
+背景资料：
+哈萨克斯坦共和国总统广播电视综合体： 哈萨克斯坦最大的垂直一体化全流程媒体公司，具备涵盖所有传播介质的内容生产与分发能力。旗下拥有面向哈国内受众的 Jibek Joly 电视台与无线电台，国际频道 Silk Way、Silk Way Cinema、Silk Way Prime，哈萨克斯坦历史最悠久的国家通讯社——哈萨克国际通讯社（Kazinform），纪录片中心以及 TRKLAB 数字创新部门。
+新华通讯社： 中国官方国家通讯社，全球规模最大、最具影响力的国际新闻机构之一。新华社成立于1931年，采用13种语言对外发稿，在世界各地设有约180个分社。</div>
+<ul>
+<li>第七届世界媒体峰会恰逢新华社成立95周年，全球112国近330家媒体约500名代表参会。</li>
+<li>哈萨克斯坦总统广播电视综合体代表团出席，延续与新华社深度战略合作。</li>
+<li>2025年6月双方在“中国—中亚”通讯社论坛期间签署合作备忘录，发展新型多媒体互动。</li>
+<li>峰会通过《阿斯塔纳宣言》，确定中亚与中国新闻传播长期合作优先方向。</li>
+<li>深化对华媒体协作是哈方构建亚洲统一合作伙伴网络计划的重要组成部分。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国政治经济外交矿产格局影响有限，但通过媒体合作强化对华信息协作，有助于提升哈国在“中国—中亚”框架下的软实力与区域话语权，为经济与矿产合作营造舆论环境。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">10</span> <a href="https://cn.inform.kz/news/tiyusandazhutizuo-a28542f2/" target="_blank">总统广播电视综合体与塔吉克斯坦三大主流媒体签署合作备忘录</a></h3>
+<div class="item-meta">哈通社中文版 · 11/07 19:01<span class="source-link"><a href="https://cn.inform.kz/news/tiyusandazhutizuo-a28542f2/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统广播电视综合体与塔吉克斯坦政府下属广播电视委员会、“萨菲纳”国家电视台及“查洪那摩”国家新闻电视台签署合作备忘录，托卡耶夫与拉赫蒙共同见证。协议旨在建立专业互动机制，巩固信息领域伙伴关系，拓宽广播电视合作渠道，推动媒体从业者对话交流，巩固人文文化纽带。双方认为合作将在多个层面同步推进，标志新闻媒体协作迈上新台阶。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 总统广播电视综合体与塔吉克斯坦三大主流媒体签署合作备忘录
+正文:
+哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫与塔吉克斯坦总统埃莫马利·拉赫蒙共同出席并见证了签字仪式。
+根据签署的文本，哈萨克斯坦总统广播电视综合体分别与塔吉克斯坦政府下属广播电视委员会、“萨菲纳”国家电视台（TV Safina）以及“查洪那摩”国家新闻电视台（Jahonnamo）达成了合作协议。
+哈萨克斯坦总统广播电视综合体总干事娆姗·卡吉巴耶娃与塔吉克斯坦政府下属广播电视委员会主席诺西尔·赛义德佐达代表双方在协议上签字。
+系列备忘录旨在建立专业互动机制，巩固信息领域的伙伴关系，扩宽广播电视合作渠道，并为双方编辑部和创作团队之间开展深度合作创造有利条件。
+哈萨克斯坦总统广播电视综合体干事卡吉巴耶娃表示，此次合作致力于推动哈塔两国媒体从业者之间的对话交流，进一步巩固两国间的人文与文化纽带。
+塔吉克斯坦政府下属广播电视委员会主席诺西尔·赛义德佐达指出：
+“签署的合作文件为我们与哈萨克斯坦同行构建长期伙伴关系提供了坚实平台。双方在交流专业经验以及联合制作内容方面具备巨大潜力，这将有助于两国人民更好地了解彼此的文化与传统。”
+双方一致认为，本次合作将在从国家主管监管机构到国家级广播电视播出机构的多个层面上同步推进，标志着哈塔两国在新闻媒体领域的协作迈上了新台阶。
+背景资料：
+塔吉克斯坦政府下属广播电视委员会： 塔吉克斯坦主管全国国家级广播电视与电影制作综合事务的核心政府部门。
+“查洪那摩”国家电视台（Jahonnamo）： 塔吉克斯坦唯一的全天候国家级新闻分析频道，在塔境内及海外建有完善的记者站网络。
+“萨菲纳”国家电视台（TV Safina / TVSHD）： 塔吉克斯坦主打文化普及与社会经济的主导国家级电视台，总部位于杜尚别，拥有现代化的数字演播室，采用塔吉克语和俄语双语播出。</div>
+<ul>
+<li>托卡耶夫与拉赫蒙共同见证哈塔媒体合作备忘录签署</li>
+<li>哈总统广播电视综合体与塔三大主流媒体机构分别签约</li>
+<li>合作涵盖专业互动、信息伙伴关系及联合内容制作</li>
+<li>双方强调深化媒体对话与人文文化纽带</li>
+<li>合作从监管机构到国家级播出机构多层面同步推进</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国而言，此合作强化了与塔吉克斯坦的信息外交和人文纽带，有助于提升哈萨克斯坦在中亚地区的媒体影响力，促进双边关系多元化，但经济与矿产格局无直接关联。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">11</span> <a href="https://cn.inform.kz/news/liangguotongkaifahuiguanzhanzuogao-0010590e/" target="_blank">两国元首共同召开联合新闻发布会：哈塔关系迈向战略合作新高度</a></h3>
+<div class="item-meta">哈通社中文版 · 11/07 18:26<span class="source-link"><a href="https://cn.inform.kz/news/liangguotongkaifahuiguanzhanzuogao-0010590e/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与塔吉克斯坦总统拉赫蒙举行联合新闻发布会，强调双边关系迈向战略合作新高度。托卡耶夫授予拉赫蒙“霍贾·艾哈迈德·亚萨维”勋章，宣布双边贸易额向20亿美元迈进，签署《至2030年扩大双边贸易额路线图》，农产品供应增长11%达6.04亿美元。双方在交通物流、数字化、IT等领域达成合作共识，哈方支持塔方竞选2028-2029年联合国安理会非常任理事国。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫在讲话中高度评价了哈塔双边关系的蓬勃发展势头，并特别强调了拉赫蒙总统为巩固两国战略伙伴与同盟精神所作出的杰出贡献。
+托卡耶夫指出：
+“今天的访问具有深远的历史象征意义，正值两国庆祝独立35周年之际。在您的英明领导下，塔吉克斯坦在巩固国家体制、促进社会经济发展以及提升国际声誉方面取得了巨大成就，在维护中亚稳定与安全中发挥着关键作用。”
+托卡耶夫强调，哈塔两国间不存在任何未决问题，双边合作全面向前推进。他重申，不久前向拉赫蒙总统颁发了新设立的“霍贾·艾哈迈德·亚萨维”勋章，以此表彰其在教育、科学、文化及国际交往中作出的卓越贡献。托卡耶夫还宣布，已指示在全国范围内（从中学高年级到高等院校、军队及执法机构）深入普及和弘扬亚萨维的精神与哲学遗产。
+在经贸与务实合作方面，托卡耶夫指出，得益于双方共同努力，双边贸易额正朝着20亿美元大关稳步迈进，哈萨克斯坦稳居塔吉克斯坦前三大贸易伙伴行列。双方为此专门签署了《至2030年扩大双边贸易额路线图》。在农业领域，去年农产品供应量增长11%，达到约6.04亿美元，占双边贸易总额的一半。双方同意进一步扩大食品互供，并着手建立全产业链深加工合作。
+在交通物流与数字互联方面，去年哈塔两国公路和铁路货物运输量分别增长8%和15%，总量达到约700万吨。双方重点就推动运输数字化、实现无缝货物运输以及发挥两国铁路部门联合工作组的作用达成共识。在IT与数字化领域，哈方已向塔方转让了电子政府平台数字化解决方案，塔国技术专家顺利在哈完成实训，双方还合办了IT技术学院。此外，为系统推进各项工作，哈方提出了制定《2030年前哈萨克斯坦与塔吉克斯坦全面合作综合计划》的倡议。
+在多边与区域协作上，托卡耶夫郑重宣布：
+“作为2028-2029年联合国安理会非常任理事国的竞选国，哈萨克斯坦对塔吉克斯坦参与竞选表示热烈欢迎，并将全力支持塔吉克斯坦的候选资格。”
+塔吉克斯坦总统埃莫马利·拉赫蒙在致辞中对哈方的热情款待以及授予其“霍贾·艾哈迈德·亚萨维”国家勋章表达了由衷谢意。
+拉赫蒙表示：
+“这不仅是对我个人微薄贡献的肯定，更是对致力于同兄弟般哈萨克斯坦深化友谊与合作的全体塔吉克人民的崇高敬意。我们对哈萨克斯坦近年来在社会经济发展和国际舞台上取得的巨大成就感到由衷欣喜，并高度评价旨在实现国家繁荣与进步的各项宏伟改革。”</div>
+<ul>
+<li>托卡耶夫授予拉赫蒙亚萨维勋章，表彰其贡献</li>
+<li>双边贸易额目标20亿美元，签署路线图</li>
+<li>农产品供应增长11%达6.04亿美元</li>
+<li>公路铁路货运量分别增长8%和15%</li>
+<li>哈方支持塔方竞选联合国安理会非常任理事国</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访深化哈塔战略伙伴关系，提升哈在中亚区域影响力；经贸路线图与交通数字化合作促进区域经济一体化；支持塔方竞选安理会席位增强哈多边外交筹码；农业与矿产合作潜力进一步释放。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">12</span> <a href="https://cn.inform.kz/news/yuming-liangguo14zhongyaozuo-4ccfa963/" target="_blank">托卡耶夫与拉赫蒙签署联合声明 哈塔两国交换14项重要合作协议</a></h3>
+<div class="item-meta">哈通社中文版 · 11/07 18:18<span class="source-link"><a href="https://cn.inform.kz/news/yuming-liangguo14zhongyaozuo-4ccfa963/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与塔吉克斯坦总统拉赫蒙签署联合声明，两国交换14项合作协议，涵盖边防培训、电力能源、采矿冶金、贸易路线图（至2030年）、检察合作、养老金信息、卫生、石油制品供应、农业（2027—2028年）、工业（2027年）、反腐败、人工智能、电子商务及广播电视等领域。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫与拉赫蒙签署联合声明 哈塔两国交换14项重要合作协议
+正文:
+在两国元首的共同见证下，哈塔官方代表团成员交换了一揽子政府间及部门间合作文件，具体包括：
+《哈萨克斯坦共和国政府与塔吉克斯坦共和国政府关于为塔吉克斯坦国家安全委员会边防部队培训人才的协定》；
+《哈萨克斯坦共和国政府与塔吉克斯坦共和国政府关于电力能源领域合作的协定》；
+《哈萨克斯坦共和国政府与塔吉克斯坦共和国政府关于进一步发展与深化长期合作以推动采矿及冶金工业项目发展的协定》；
+《哈萨克斯坦共和国与塔吉克斯坦共和国至2030年扩大双边贸易额路线图》；
+《哈萨克斯坦共和国最高检察院与塔吉克斯坦共和国最高检察院伙伴关系与合作备忘录》；
+《哈萨克斯坦共和国劳动和社会保障部与塔吉克斯坦共和国政府下属社会保险和养老金署养老金保障领域信息合作协定》；
+《哈萨克斯坦共和国卫生部与塔吉克斯坦共和国卫生和社会保障部卫生领域合作协定》；
+《哈萨克斯坦共和国能源部与塔吉克斯坦共和国能源和水资源部石油制品供应领域合作框架协定》；
+《哈萨克斯坦共和国农业部与塔吉克斯坦共和国农业部2027—2028年激活农业领域合作路线图》；
+《哈萨克斯坦共和国工业和建设部与塔吉克斯坦共和国工业和新技术部2027年落实工业领域合作备忘录互动计划》；
+《哈萨克斯坦共和国国家公务员事务署与塔吉克斯坦共和国国家金融监督和反腐败署谅解备忘录》；
+《哈萨克斯坦共和国人工智能和数字发展部与塔吉克斯坦共和国总统直属创新和数字技术署人工智能领域合作与谅解备忘录》；
+《哈萨克斯坦共和国贸易和一体化部与塔吉克斯坦共和国总统直属创新和数字技术署电子商务系统发展领域谅解备忘录》；
+《哈萨克斯坦共和国总统广播电视综合体与塔吉克斯坦共和国政府下属广播电视委员会合作与谅解备忘录》。</div>
+<ul>
+<li>哈塔元首签署联合声明，交换14项合作协议</li>
+<li>合作覆盖能源、矿产、农业、工业等经济领域</li>
+<li>路线图目标至2030年扩大双边贸易额</li>
+<li>安全与执法合作包括边防培训和反腐败</li>
+<li>新兴领域合作涉及人工智能和电子商务</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">深化哈塔战略伙伴关系，推动贸易与能源矿产合作，强化边境安全与数字治理，利于中亚区域稳定与经济一体化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">13</span> <a href="https://cn.inform.kz/news/guojia-9dedfeea/" target="_blank">国家元首向塔吉克斯坦总统拉赫蒙授予亚萨维勋章</a></h3>
+<div class="item-meta">哈通社中文版 · 11/07 17:10<span class="source-link"><a href="https://cn.inform.kz/news/guojia-9dedfeea/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫向塔吉克斯坦总统拉赫蒙授予亚萨维勋章。托卡耶夫强调两国人民友谊深厚，亚萨维思想遗产属于全人类，并指出哈方今年设立以亚萨维命名的国家奖章。拉赫蒙感谢授勋，称此荣誉体现两国相互尊重与信任，并表示双边关系稳步发展，盟友与战略伙伴关系将不断深化。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 国家元首向塔吉克斯坦总统拉赫蒙授予亚萨维勋章
+正文:
+托卡耶夫在授勋仪式上指出，当天的仪式具有极其深远的意义和独特的象征价值。他强调，哈萨克斯坦与塔吉克斯坦两国人民被跨越世纪的深厚友谊、精神共鸣以及共同的历史命运紧紧联结在一起。
+托卡耶夫表示：
+“我们的地区曾孕育了无数杰出的思想家、学者、诗人和教育家，他们的精神遗产超越了单一国家和民族的界限，广受尊崇。作为伊斯兰文艺复兴时期的杰出代表之一，霍贾·艾哈迈德·亚萨维自古以来便备受哈萨克人民的崇敬与奉戴。同时，亚萨维的思想遗产属于全人类，尤其是属于那些历经世纪风雨、共享共同精神传统的中亚各族人民。”
+Photo credit: Akorda 哈萨克斯坦总统指出，伟大思想家的学说饱含着道德、公正、仁慈与人道主义精神。
+“这些思想真正重塑了我们的世界观、民族品格与生活方式，数百年来凝聚人心，坚定了人们对善与创造的信念。亚萨维的哲学智慧超越了时代，至今仍发挥着指引人生道路的精神道德灯塔作用。” 总统说。
+托卡耶夫补充道，在推行全方位社会改革的进程中，重塑新型社会伦理至关重要。亚萨维所倡导的高尚道德追求，以及公平、勤奋、正直和爱国主义原则，已成为哈萨克斯坦社会意识中不可或缺的基石。正因高度重视亚萨维的思想遗产，哈方于今年特别设立了以这位伟大哲学家和教育家命名的全新国家奖章。
+塔吉克斯坦总统埃莫马利·拉赫蒙对托卡耶夫总统授予哈萨克斯坦国家最高荣誉表示衷心感谢。
+拉赫蒙表示：
+“我认为，这一崇高荣誉不仅是对两国高度相互尊重与信任的又一例证，更是对致力于同兄弟般的哈萨克斯坦稳步巩固友谊与合作的塔吉克人民辛勤付出的高度认可。令我感到欣慰的是，当前两国在双边各主要合作方向上的关系正稳步向前发展。我坚信，我们的盟友关系与战略伙伴关系必将在造福两国人民的道路上不断深化。”</div>
+<ul>
+<li>托卡耶夫向拉赫蒙授予亚萨维勋章</li>
+<li>托卡耶夫强调两国友谊与共同历史命运</li>
+<li>亚萨维思想遗产属于全人类尤其是中亚</li>
+<li>哈方今年设立亚萨维命名国家奖章</li>
+<li>拉赫蒙感谢授勋并称双边关系稳步发展</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此授勋强化哈塔战略伙伴与盟友关系，提升哈萨克斯坦在中亚的精神文化影响力，为区域合作与矿产等经济协作营造更稳固政治互信基础。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">14</span> <a href="https://cn.inform.kz/news/guojiayuxinghui-ec87302f/" target="_blank">国家元首与塔吉克斯坦总统拉赫蒙举行会谈</a></h3>
+<div class="item-meta">哈通社中文版 · 11/07 16:11<span class="source-link"><a href="https://cn.inform.kz/news/guojiayuxinghui-ec87302f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与塔吉克斯坦总统拉赫蒙举行会谈，强调两国战略伙伴与盟友关系，双边合作无未决问题。经贸方面，哈塔年贸易额稳定超10亿美元，今年前9个月同比增长近26%；在塔哈资企业超130家，在哈塔资企业超580家。双方还深化人文交流，互办文化日活动并落成历史人物雕像，将共同出席塔驻阿斯塔纳新使馆落成典礼。会谈重点讨论扩大经贸联系及交通物流、能源、农业、水资源、工业和数字化等领域合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫对塔吉克斯坦领导人的访问表示热烈欢迎，强调此访体现了两国之间的特殊尊重与真挚友谊。
+托卡耶夫指出：
+“今天，我们完全有理由谈论两兄弟国家之间的战略伙伴关系与盟友关系。我们在双边合作中不存在任何未决问题。哈萨克斯坦人民对有着悠久历史、独具特色文化和伟大精神遗产的塔吉克人民怀有真挚的尊重与特殊情谊。在拉赫蒙总统的远见卓识与英明领导下，塔吉克斯坦在诸多领域取得了令人瞩目的发展成就。”
+Фото: Ақорда 谈及经贸合作时，托卡耶夫表示，两国外长及政府部门正积极推进各项共识落地。得益于双方采取的积极举措，双边贸易商品品类不断扩充，铁路货物运输量显著增长。商界往来日益频密，通过举办商业论坛和专项贸易代表团达成的各项商业协议正在按计划有序推进。在此背景下，哈塔年双边贸易额稳定保持在10亿美元以上，哈萨克斯坦稳居塔吉克斯坦前三大贸易伙伴之列。
+在人文领域，托卡耶夫强调，两国文化与人文交流持续深化。双方不仅互办“文化日”活动，还为杰出历史人物落成雕像——在杜尚别竖立了阿拜胸像，在阿斯塔纳落成了伊本·西那（Ibn Sina）纪念碑。教育与青年政策领域的协作同样维持高水平发展。托卡耶夫特别提及，两国领导人将共同出席塔吉克斯坦驻阿斯塔纳新使馆建筑群的落成典礼，这充分印证了塔吉克斯坦在哈常设代表机构的规格与两国兄弟关系的独特属性。
+塔吉克斯坦总统埃莫马利·拉赫蒙在讲话中指出，哈萨克斯坦是塔吉克斯坦最重要的经贸合作伙伴之一。数据显示，今年前9个月，哈塔双边贸易额已突破10亿美元，较去年同期增长近26%。投资合作同样成效显著：目前在塔吉克斯坦注册的哈资企业超过130家；而在哈萨克斯坦运营的塔资企业已突破580家（其中500家为塔斯通资企业）。
+Фото: Ақорда 会谈期间，两国元首还重点就进一步扩大经贸联系，以及加强在交通物流、能源、农业、水资源、工业和数字化等关键领域的深度合作进行了深入讨论。</div>
+<ul>
+<li>哈塔年贸易额稳定超10亿美元，前9个月同比增长近26%</li>
+<li>在塔哈资企业超130家，在哈塔资企业超580家</li>
+<li>两国互办文化日活动，落成阿拜胸像和伊本·西那纪念碑</li>
+<li>领导人将共同出席塔驻阿斯塔纳新使馆落成典礼</li>
+<li>重点深化交通物流、能源、农业、水资源、工业和数字化合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">政治互信巩固盟友关系；经贸增长强化哈国区域经济枢纽地位；人文交流增进民心相通；能源与水资源合作利于哈国平衡中亚外交；矿产领域合作潜力或提升哈国资源加工与过境运输收益。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">15</span> <a href="https://cn.inform.kz/news/guojiazaixing-0f1966b1/" target="_blank">国家元首在总统府举行仪式欢迎塔吉克斯坦总统拉赫蒙</a></h3>
+<div class="item-meta">哈通社中文版 · 11/07 14:15<span class="source-link"><a href="https://cn.inform.kz/news/guojiazaixing-0f1966b1/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在总统府举行隆重仪式，欢迎塔吉克斯坦总统拉赫蒙。仪式包括直升机悬挂两国国旗飞越总统府上空、介绍代表团成员、奏响两国国歌、沿蓝毯走向国旗、拉赫蒙向哈萨克斯坦国旗致意、检阅仪仗队等环节。随后两国元首开始就双边关系现状及未来发展前景举行会谈。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 国家元首在总统府举行仪式欢迎塔吉克斯坦总统拉赫蒙
+正文:
+为表达对尊贵外宾的崇高敬意，哈萨克斯坦防空军直升机编队悬挂哈塔两国国旗，在总统府上空飞过进行空中展示。
+Фото: Акорда Фото: Акорда Фото: Ақорда 进入总统府后，两国元首分别向对方介绍了各自官方代表团成员。
+随后，列队迎接的仪仗队指挥官向两国元首致欢迎辞，总统军乐团奏响哈萨克斯坦和塔吉克斯坦两国国歌。
+Фото: Акорда Фото: Акорда 在国歌奏响结束后，托卡耶夫总统与拉赫蒙总统一同沿蓝毯走向哈萨克斯坦国旗。抵达国旗前时，拉赫蒙停下脚步，微微低头致意，以示尊重。
+之后，两国领导人检阅仪仗队，并向仪仗队指挥官致意。
+目前，两国元首已开始就双边关系现状及未来发展前景举行会谈。
+&amp;nbsp;</div>
+<ul>
+<li>哈总统府举行仪式欢迎塔吉克斯坦总统拉赫蒙</li>
+<li>直升机悬挂哈塔两国国旗飞越总统府上空</li>
+<li>两国元首介绍代表团成员并奏响两国国歌</li>
+<li>拉赫蒙向哈萨克斯坦国旗低头致意以示尊重</li>
+<li>两国元首开始就双边关系及前景举行会谈</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈塔政治互信，推动双边经贸与安全合作，有助于哈萨克斯坦在中亚外交中发挥枢纽作用，并对区域矿产与交通格局产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">16</span> <a href="https://cn.inform.kz/news/weixingdezheng-04153165/" target="_blank">为塔吉克斯坦总统埃莫马利·拉赫蒙举行的正式欢迎仪式</a></h3>
+<div class="item-meta">哈通社中文版 · 11/07 13:45<span class="source-link"><a href="https://cn.inform.kz/news/weixingdezheng-04153165/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>塔吉克斯坦总统埃莫马利·拉赫蒙应哈萨克斯坦国家元首邀请，于11月5日至7日对哈萨克斯坦进行正式访问。访问期间，两国领导人将讨论加强战略伙伴关系及盟友关系问题。拉赫蒙总统于6日出席在阿斯塔纳举行的“亚喀巴进程”峰会。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 为塔吉克斯坦总统埃莫马利·拉赫蒙举行的正式欢迎仪式
+正文:
+据此前报道，应国家元首邀请，塔吉克斯坦总统埃莫马利·拉赫蒙将于11月5日至7日对该国进行正式访问。
+两国领导人将讨论有关加强战略伙伴关系及盟友关系的问题。
+访问框架下，塔吉克斯坦总统6日出席了在阿斯塔纳举行的“亚喀巴进程”（Aqaba Process）峰会。</div>
+<ul>
+<li>拉赫蒙11月5日至7日正式访问哈萨克斯坦</li>
+<li>两国领导人讨论加强战略伙伴与盟友关系</li>
+<li>拉赫蒙6日出席阿斯塔纳“亚喀巴进程”峰会</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访将深化哈塔战略伙伴与盟友关系，强化中亚区域合作；阿斯塔纳承办“亚喀巴进程”峰会提升哈国外交影响力，但未直接涉及矿产格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">17</span> <a href="https://cn.inform.kz/news/diyilihuiwaigao-jingao-8ec421b7/" target="_blank">第一副总理会见外企高层 推进高附加值铜箔项目落户</a></h3>
+<div class="item-meta">哈通社中文版 · 11/07 11:53<span class="source-link"><a href="https://cn.inform.kz/news/diyilihuiwaigao-jingao-8ec421b7/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦第一副总理会见外企高层，重点审议基于本土阴极铜资源建设铜箔生产厂项目。铜箔将供应巴夫洛达尔州“数据中心谷”及动力电池等领域。各方强调提高本土原材料利用率、培养本地人才和融入全球供应链。龙电华鑫与NAIKAN Ltd.签署合作备忘录推进项目落地。政府支持从原材料出口向高附加值制造转型。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">会谈期间，各方就工业领域的双边投资合作、引入国外前沿技术以及建设高附加值加工制造项目等议题深入交换了意见。
+会议重点审议了基于哈萨克斯坦本土阴极铜资源建设铜箔生产厂的项目规划。作为关键工业原料，铜箔广泛应用于动力电池、储能系统及现代微电子设备的制造。国产铜箔产品未来有望直接供应并配套巴夫洛达尔州“数据中心谷”项目的建设需求。
+谈判过程中，各方特别强调了提高本土原材料利用率、培养哈萨克斯坦本地技术人才以及推动相关产品融入全球供应链的重要性。
+第一副总理表示，哈萨克斯坦政府全力支持工业领域从单一原材料出口模式向精深加工及高附加值产品制造转型。
+会谈结束时，龙电华鑫与 NAIKAN Ltd. 正式签署合作备忘录，将共同推进在哈萨克斯坦建设铜箔工厂项目的落地实施。</div>
+<ul>
+<li>第一副总理会见外企高层推进铜箔项目</li>
+<li>项目基于本土阴极铜资源生产高附加值铜箔</li>
+<li>产品将配套巴夫洛达尔州数据中心谷需求</li>
+<li>龙电华鑫与NAIKAN Ltd.签署合作备忘录</li>
+<li>政府支持工业向精深加工转型</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该项目将推动哈国铜产业从原料出口转向高附加值制造，促进经济多元化；吸引外资和技术，创造就业；配套数据中心谷建设，增强外交经济合作；优化矿产利用格局，提升全球供应链参与度。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-11-08 09:02</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
