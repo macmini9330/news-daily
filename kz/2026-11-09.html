@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年11月9日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年11月9日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年11月08日早9:00至2026年11月09日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 3 条</span><span class="stat-chip">1 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">0</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">0</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">0</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/kazahstanu-videlili-4300-mest-dlya-hadzha-v-2027-godu-0c9d345a" target="_blank">哈萨克斯坦获得2027年朝觐4300个名额</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/09 00:01<span class="source-link"><a href="https://www.inform.kz/ru/kazahstanu-videlili-4300-mest-dlya-hadzha-v-2027-godu-0c9d345a" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦穆斯林精神管理局与沙特朝觐和副朝部签署协议，为2027年哈国分配4300个朝觐名额。协议规定协调朝觐活动、保障服务质量和安全医疗规范，明确双方在安置、运输及服务方面的义务。此前哈国已选定四家旅行社负责组织2027年朝觐。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">文件由哈萨克斯坦穆斯林精神管理局主席、最高穆夫提纳乌鲁兹拜·哈吉·塔加努雷与沙特阿拉伯朝觐和副朝大臣陶菲克·本·福赞·拉比阿签署。
+该协议规定协调两国间的朝觐活动，确保为哈萨克斯坦朝觐者提供优质服务，遵守安全和医疗规范。
+此外，文件确定了双方在朝觐者安置和运输以及组织朝觐期间服务方面的义务。
+此前有报道称，哈萨克斯坦穆斯林精神管理局为2027年朝觐选择了四家旅行社。它们分别是“Atlas Tourism”、“Nurhan Travel”、“Tawaf Travel”和“Hikmet Travel”。</div>
+<ul>
+<li>哈国获2027年4300个朝觐名额</li>
+<li>哈沙签署朝觐协调协议</li>
+<li>协议明确安置运输服务义务</li>
+<li>哈国选定四家朝觐旅行社</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">协议强化哈沙宗教事务合作，促进双边关系；保障朝觐者权益，体现哈国对宗教活动的规范管理；旅行社选定带动相关旅游服务业发展。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/jiuri-8ca6ee5e/" target="_blank">托卡耶夫总统就阿塞拜疆胜利日向伊利哈姆·阿利耶夫致贺电</a></h3>
+<div class="item-meta">哈通社中文版 · 11/08 14:36<span class="source-link"><a href="https://cn.inform.kz/news/jiuri-8ca6ee5e/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫就阿塞拜疆胜利日向阿利耶夫致贺电，指出该历史性日期对阿塞拜疆国家发展具有特殊意义，并有助于促进南高加索地区长期和平稳定与共同利益。托卡耶夫高度评价哈阿战略伙伴与同盟关系水平，表示坚定信心深化各领域协作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫总统就阿塞拜疆胜利日向伊利哈姆·阿利耶夫致贺电
+
+托卡耶夫在贺电中指出，这一历史性日期在阿塞拜疆国家发展史上具有特殊的重要意义，对于促进南高加索地区的长期和平与稳定、维护地区各国共同利益发挥着关键作用。
+
+哈萨克斯坦总统高度评价了哈萨克斯坦与阿塞拜疆之间的战略伙伴与同盟关系水平，并对未来两国各领域协作的持续深化表达了坚定信心。</div>
+<ul>
+<li>托卡耶夫就阿塞拜疆胜利日致贺电阿利耶夫</li>
+<li>贺电称该日期对阿国家发展具特殊意义</li>
+<li>强调促进南高加索长期和平与共同利益</li>
+<li>高度评价哈阿战略伙伴与同盟关系水平</li>
+<li>表达深化两国各领域协作的坚定信心</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此贺电强化哈阿战略同盟，有利于哈国在南高加索拓展外交空间，促进跨里海通道合作，对能源矿产过境运输格局产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/yuguozaiduozhongdazuo-c8885075/" target="_blank">哈萨克斯坦与国际电信联盟在多哈签署重大合作协议</a></h3>
+<div class="item-meta">哈通社中文版 · 11/08 12:33<span class="source-link"><a href="https://cn.inform.kz/news/yuguozaiduozhongdazuo-c8885075/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦副总理马迪耶夫与国际电信联盟秘书长博格丹-马丁签署协议，哈方加入国际电信联盟初级专业人员计划（JPO），优秀青年技术人员将赴国际组织实训。另一协议明确哈方依托Astana Hub等科技项目为非洲国家学员提供100个免费培训名额，涵盖数字技术、编程及人工智能。国际电信联盟还与TSARKA签署谅解书，拟在哈联合研发“国际电信联盟加速中心”建设方案。各方正制定启动路线图。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦副总理兼人工智能和数字发展部部长扎斯兰·马迪耶夫与国际电信联盟秘书长多琳·博格丹-马丁共同签署了关于哈萨克斯坦加入国际电信联盟初级专业人员计划（Junior Professional Officers, JPO）的协议文件。
+根据该计划，哈萨克斯坦优秀青年技术人员将深入国际顶尖组织开展一线实训，同全球顶尖专家协作，并直接参与国际数字倡议的落地实施。未来，他们将把在国际组织学到的前沿知识与技能运用到哈萨克斯坦本土的科技项目中。
+此外，双方签署的另一项协议明确，哈方将依托国内成熟的科技创新生态系统——包括 Astana Hub、alem.ai、Tech Orda、TUMO 以及 Tomorrow School 等标志性科技项目的建设经验，为来自非洲国家的学员提供100个免费培训名额，涵盖数字技术、编程及人工智能等核心领域。该文件由哈萨克斯坦人工智能和数字发展部副部长多斯詹·穆萨利耶夫与国际电信联盟电信发展局局长科斯马斯·扎瓦扎瓦共同签署。
+与此同时，国际电信联盟还与网络安全分析与调查中心（TSARKA）签署了合作谅解书，拟在哈萨克斯坦联合研发“国际电信联盟加速中心”建设方案。该项目旨在结合哈萨克斯坦及中亚地区的实际需求，全面引入国际通行的数字技能提升方法论。
+哈萨克斯坦副总理兼人工智能和数字发展部部长扎斯兰·马迪耶夫指出：
+“这一系列协议成功将哈萨克斯坦本土专业人才的发展需求同我们向国际伙伴分享经验的崇高意愿结合起来。我们的青年专业人才将借此迈入国际舞台积累实操经验，而非洲学员也将由此掌握市场紧缺的数字技能。目前，我们正全面转向加速中心的实操规划阶段，以确保国际标准能在哈萨克斯坦及整个中亚地区精准落地。”
+目前，合作各方正着手推进各项条款落实，并制定具体的启动路线图。</div>
+<ul>
+<li>哈加入国际电信联盟JPO计划，青年技术人员赴国际组织实训</li>
+<li>哈依托Astana Hub等为非洲学员提供100个免费数字技术培训名额</li>
+<li>国际电信联盟与TSARKA签署谅解书，拟联合研发加速中心建设方案</li>
+<li>马迪耶夫称协议结合本土人才发展与国际经验分享</li>
+<li>各方正推进条款落实并制定具体启动路线图</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">政治上升级与联合国专门机构合作，提升国际形象；经济上促进数字人才培育和科技生态输出；外交上加强对非合作，拓展软实力；矿产格局无直接影响，但加速中心可能推动中亚数字基础设施标准统一。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-11-09 09:01</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
