@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年11月10日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年11月10日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年11月09日早9:00至2026年11月10日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 14 条</span><span class="stat-chip">3 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">7</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">6</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">1</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">0</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(7 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/otmena-resheniy-aktsionerov-ne-lishaet-rabotnikov-trudovih-prav-konstitutsionniy-10294566" target="_blank">宪法法院：撤销股东决定不剥夺员工劳动权利</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/10 04:54<span class="source-link"><a href="https://www.inform.kz/ru/otmena-resheniy-aktsionerov-ne-lishaet-rabotnikov-trudovih-prav-konstitutsionniy-10294566" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦宪法法院审理公民对《股份公司法》第36条第4款的异议，该条款允许股东大会撤销公司其他机构关于内部活动的决定。申诉涉及“社会医疗保险基金”唯一股东撤销董事会批准的职务工资方案。法院裁定，撤销此类决定本身不终止或改变员工劳动权利，劳动关系变更须依法和劳动合同进行，且《劳动法典》禁止单方面变更合同条件。宪法法院未发现该规范侵犯宪法权利，相关争议属普通法院管辖。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦宪法法院：撤销股东决定不剥夺员工的劳动权利
+
+正文：
+审理此案的起因是公民对《股份公司法》第36条第4款提出异议。该条款允许股东大会就公司内部活动问题撤销公司其他机构的决定。
+
+据宪法法院消息，这些申诉与“社会医疗保险基金”非营利股份公司唯一股东撤销董事会关于批准新的职务工资方案的决定有关。
+
+申请人试图对相关命令提出异议，但一审和上诉法院驳回了他们的诉求。
+
+申请人认为，现行规范未对股东权力规定足够限制，允许在缺乏必要保护保障的情况下撤销影响员工劳动权利的决定。
+
+宪法法院解释称，股东大会的权力由法律和公司章程规定。同时，撤销其他机构决定的权利涉及内部活动问题，并须遵守既定限制。
+
+法院强调，撤销此类决定本身并不终止或改变员工的劳动权利。劳动关系的变更只能依据法律和劳动合同规定的事由和程序进行。
+
+此外，《劳动法典》禁止单方面变更劳动合同条件，法律明确规定的情形除外。
+
+经初步研究，宪法法院未在争议规范中发现侵犯申请人宪法权利的迹象。
+
+该机构指出，公民的论点实际上涉及撤销董事会决定的后果、劳动报酬条件的变更以及普通管辖法院对案件事实的评估。此类问题的审理属于相关法院的职权范围。
+
+此前有报道称，哈萨克斯坦宪法法院认定《劳动法典》和《民事诉讼法典》的某些条款不符合《宪法》，这些条款限制了公民在恢复工作和复审法院判决方面的司法保护权。</div>
+<ul>
+<li>宪法法院审理《股份公司法》第36条第4款合宪性</li>
+<li>唯一股东撤销董事会工资方案引发员工申诉</li>
+<li>法院：撤销决定不终止或改变劳动权利</li>
+<li>劳动条件变更须依法和劳动合同进行</li>
+<li>宪法法院未发现侵犯宪法权利迹象</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该裁决明确股东权力边界，强化劳动权利保护，避免公司治理决定随意影响员工权益，对哈国劳动市场稳定和投资环境有积极意义，但可能增加企业决策合规成本。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/obemi-modernizatsii-kommunalnih-setey-uvelichili-v-22-raza-v-kazahstane-68bede7c" target="_blank">哈萨克斯坦公用网络现代化改造量增加2.2倍</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/10 02:59<span class="source-link"><a href="https://www.inform.kz/ru/obemi-modernizatsii-kommunalnih-setey-uvelichili-v-22-raza-v-kazahstane-68bede7c" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦公用网络现代化改造量增加2.2倍，2026年融资总额达1.2万亿坚戈。计划到2029年将70家高风险公用企业移出“红区”。巴甫洛达尔州完成7个项目，包括新供热干线TM-20A；卡拉干达州、西哈萨克斯坦州、杰特苏州等地也实施了多个热网、电网改造项目，南部地区重点改造输电线路。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦公用网络现代化改造量增加2.2倍
+
+正文：
+热力、电力和下水管网的改造增强了基础设施的可靠性。计划到2029年，将全国所有70家处于“红区”的高风险公用企业完全移出高风险类别。
+
+在国家项目框架内，完成工作量最大的是巴甫洛达尔州，该州成功实施了7个关键项目。特别是在巴甫洛达尔，投产了一条新的现代化供热干线TM-20A，其输送能力有所提高，并改造了阿斯塔纳街的管网。在阿克苏，热网已全面更新，而在埃基巴斯图兹，一次性大修了四条主干管线，提高了全市供热的可靠性。
+
+在卡拉干达州，改造了从卡拉干达国营地区发电站到阿拜市“阿拜”泵站的主干管网，以及卡拉干达市米丘林街的供热干线TM-2a。此外，在西哈萨克斯坦州完成了两个大型项目，全面更新了乌拉尔的热力干线TM-6和TM-7。
+
+在杰特苏州，实施了五个基础设施项目。这里完成了塔尔迪库尔干主干热网和比尔詹萨尔街设施的改造，并在特克利启动了兩台装机容量24兆瓦的创新燃气轮机装置。
+
+南部地区也受到特别关注。在突厥斯坦州，采用现代自承式绝缘导线对31个设施的架空输电线路进行了改造，而在奇姆肯特，使用高温导线建设了35千伏“凯特帕斯”线路。
+
+在塔拉兹，维修了小区内热网；在阿斯塔纳，实施了配电网改造第四阶段，同时更新了“阿斯塔纳芭蕾舞剧院”区域的电缆线路；在北哈萨克斯坦州，泰恩沙市的新供热管道成功投入使用。
+
+图片：MEX项目办公室 约1.2万亿坚戈用于基础设施更新 2026年，现代化改造量增加了2.2倍，工程基础设施融资总额达到1.2万亿坚戈。资金按四个方向分配。
+
+客户和承包商采购材料</div>
+<ul>
+<li>公用网络改造量增2.2倍，融资1.2万亿坚戈</li>
+<li>2029年前将70家高风险公用企业移出红区</li>
+<li>巴甫洛达尔州完成7个项目，含TM-20A干线</li>
+<li>杰特苏州启用两台24兆瓦燃气轮机</li>
+<li>南部改造31个输电设施及35千伏线路</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">改造提升基础设施可靠性，降低公用企业事故风险，改善民生和投资环境；1.2万亿坚戈投入拉动地方经济，但需关注资金效率和债务压力；区域平衡推进有助于缓解地区发展不均。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/stroitelstvo-bolnits-v-regionah-kazahstana-v-pravitelstve-obsudili-sroki-i-kache-c8b4db48" target="_blank">哈萨克斯坦各地区医院建设：政府讨论工期和质量</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/10 02:06<span class="source-link"><a href="https://www.inform.kz/ru/stroitelstvo-bolnits-v-regionah-kazahstana-v-pravitelstve-obsudili-sroki-i-kache-c8b4db48" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦政府会议审议地区医院大修重建、康复中心建设及“СК-Фармация”仓储基础设施进展。纳利巴耶夫强调遵守项目期限、及时拨款、施工质量和基础设施配套，并要求对医疗物资供应特别监督。此前消息称2027年药品将开始运抵哈国医院。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">审议了地区医院大修和重建、康复中心建设，以及“СК-Фармация”有限责任公司的仓储基础设施建设进展情况。
+努尔雷别克·纳利巴耶夫强调必须遵守项目实施期限、确保及时拨款、施工安装工程质量和必要的基础设施。
+国家机构和组织还被责成特别监督为设施提供必要的医疗器械。
+此前有报道称，2027年药品将开始运抵哈萨克斯坦医院。</div>
+<ul>
+<li>政府审议地区医院大修重建及康复中心建设进展</li>
+<li>纳利巴耶夫要求遵守期限、保障拨款与施工质量</li>
+<li>国家机构须特别监督医疗设施医疗器械供应</li>
+<li>2027年药品将开始运抵哈萨克斯坦医院</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举将改善地方医疗基础设施与药品供应体系，提升公共卫生服务能力，对哈国社会稳定和区域均衡发展具有积极意义，但需关注资金落实与执行效率。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/zhengxinghuijiangyu10rizailikai-e43ffba7/" target="_blank">政府例行会议将于10日在总理府召开</a></h3>
+<div class="item-meta">哈通社中文版 · 11/09 21:50<span class="source-link"><a href="https://cn.inform.kz/news/zhengxinghuijiangyu10rizailikai-e43ffba7/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦政府例行会议将于10日在总理府召开。会后，能源部部长叶尔兰·阿克肯杰诺夫、紧急情况部部长穆拉特·穆哈诺夫、国家电网管理股份公司（KEGOC）董事会主席纳毕·阿伊特詹诺夫和萨姆鲁克能源股份公司（Samruk-Energo）董事会主席昂萨尔·阿依达若夫将举行新闻发布会。会议可通过总理官网及政府YouTube、Facebook官方主页观看直播。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 政府例行会议将于10日在总理府召开
+正文:
+会议议程：
+根据会议结果，能源部部长叶尔兰·阿克肯杰诺夫、紧急情况部部长穆拉特·穆哈诺夫，以及国家电网管理股份公司（KEGOC）董事会主席纳毕·阿伊特詹诺夫和萨姆鲁克能源股份公司（Samruk-Energo）董事会主席昂萨尔·阿依达若夫将召开新闻发布会。
+消息称，可通过总理官网，以及政府在YouTube、 Facebook等社交媒体的官方主页观看会议直播。</div>
+<ul>
+<li>政府例行会议10日在总理府召开</li>
+<li>能源部长和紧急情况部长将出席发布会</li>
+<li>KEGOC和Samruk-Energo董事会主席参会</li>
+<li>会议通过官网和社交媒体直播</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">会议聚焦能源与紧急情况，涉及国家电网和萨姆鲁克能源，可能影响哈国能源政策协调和矿产能源格局，但具体议程未明，影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/huiguohuizhu-f837590a/" target="_blank">托卡耶夫总统会见国际“哈萨克语”协会主席</a></h3>
+<div class="item-meta">哈通社中文版 · 11/09 18:48<span class="source-link"><a href="https://cn.inform.kz/news/huiguohuizhu-f837590a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫总统会见国际“哈萨克语”协会主席热万·肯杰汗吾勒。协会在改进教学方法、丰富内容、扩大新技术领域使用三个重点领域开展项目，包括与OpenAI合作汇编140亿词元文本语料库和12,000小时音频，三年内将迪士尼、皮克斯和索尼的13部电影配音成哈萨克语上映。总统听取“哈萨克语”捐赠基金汇报，该基金已获捐8.24亿坚戈。总统高度评价协会活动，强调发挥人工智能在教授国家语言和翻译科学著作方面的潜力。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：托卡耶夫总统会见国际“哈萨克语”协会主席
+
+热万·肯杰汗吾勒表示，国际“哈萨克语”协会正在三个重点领域开展项目：改进哈萨克语教学方法、丰富哈萨克语内容，以及在新技术领域扩大哈萨克语言的使用范围。
+
+据他介绍，作为与 OpenAI 联合项目的一部分，该协会汇编了一个包含140亿个词元（token）的文本语料库，并收集了12,000小时的音频录音。在过去三年里，来自迪士尼、皮克斯和索尼的13部热门电影已被配音成哈萨克语，并在影院上映。
+
+此外，托卡耶夫总统还听取了关于“哈萨克语”捐赠基金（Qazaq Tili Endowment）相关工作的情况汇报。截至目前，该基金已累计收到捐款8.24亿坚戈。
+
+国家元首高度评价了国际“哈萨克语”协会的各项活动，并祝愿其未来规划取得圆满成功。
+
+总统强调，应充分发挥人工智能在教授国家语言以及翻译科学著作方面的潜力。</div>
+<ul>
+<li>协会在三个重点领域开展哈萨克语项目</li>
+<li>与OpenAI合作汇编140亿词元语料库和12,000小时音频</li>
+<li>三年内13部热门电影配音成哈萨克语上映</li>
+<li>“哈萨克语”捐赠基金累计获捐8.24亿坚戈</li>
+<li>总统强调发挥人工智能教授国家语言和翻译科学著作的潜力</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该合作推动哈萨克语数字化和人工智能应用，有利于语言文化传播和国家认同构建；捐赠基金充实为语言项目提供资金支持；与OpenAI合作提升哈国技术形象，但需关注数据主权和语言安全。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/10yue21dewu-99a53ba5/" target="_blank">边防局10月查获价值逾21亿坚戈的违规物资</a></h3>
+<div class="item-meta">哈通社中文版 · 11/09 16:22<span class="source-link"><a href="https://cn.inform.kz/news/10yue21dewu-99a53ba5/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国安委边防局10月联合执法，查获2791名外国公民，查处1267起非法跨境运输案件，涉案货物价值超21亿坚戈；里海查处119起非法捕捞，没收网具88公里、鲟鱼933公斤（187尾），避免损失超4.13亿坚戈；立案47起刑事案件，办理3021起行政案件，罚款超3500万坚戈。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">国安委边防局联合有关主管部门，围绕国家边境守卫和安全保障开展了大规模执法行动。在边境区域被查获的人员中，有2791名外国公民。
+与此同时，边防部门共查处1267起货物非法跨境运输案件，阻止非法货物通关的总价值超过21亿坚戈。
+在里海水域，执法人员共查处119起非法捕捞案件，没收非法捕捞网具88公里，并缴获鲟鱼类鱼类933公斤（共187尾）。由此避免了国家遭受超过4.13亿坚戈的经济损失。
+边防局在职权范围内已立案侦查47起刑事案件，目前正在开展相关调查工作。此外，目前还有3021起行政案件正在办理，累计罚款金额超过3500万坚戈。其余案件材料已移交有关执法和司法机关，以便依法作出处理决定。</div>
+<ul>
+<li>查获2791名外国公民，强化边境人员管控</li>
+<li>查处1267起非法跨境运输，货物价值超21亿坚戈</li>
+<li>里海查处119起非法捕捞，缴获鲟鱼933公斤</li>
+<li>立案47起刑事案件，办理3021起行政案件</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">执法行动强化边境安全与海关监管，打击走私和非法捕捞，保护里海鲟鱼资源，减少经济损失，体现哈国维护经济秩序与生态安全的决心，对区域贸易和资源管理产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/getigongyuejiang-079e1b08/" target="_blank">个体工商户每月强制缴费金额将增加</a></h3>
+<div class="item-meta">哈通社中文版 · 11/09 14:51<span class="source-link"><a href="https://cn.inform.kz/news/getigongyuejiang-079e1b08/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>据inbusiness.kz报道，哈萨克斯坦最低工资标准上调将导致个体工商户强制性养老金缴费和社会保险费用增加。按最低缴费基数计算，个体工商户每月强制性缴费总额将从21,725坚戈增至29,150坚戈，每月增加7,425坚戈。实际缴费金额仍取决于经营者的具体收入及现行计算办法。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 个体工商户每月强制缴费金额将增加
+正文:
+据inbusiness.kz网站报道，受此影响，个体工商户为自身缴纳的强制性养老金缴费和社会保险费用也将相应增加。
+数据显示，最低工资标准上调将直接影响个体工商户各项法定缴费金额。
+如果强制性养老金缴费、雇主强制性养老金缴费和社会统筹金的计算基数均按1倍最低工资标准确定，而强制性社会医疗保险缴费的计算基数按1.4倍最低工资标准确定，各项缴费金额将作如下调整：
+由此，按最低缴费基数计算，个体工商户每月强制性缴费总额将从21,725坚戈增至29,150坚戈，每月增加7,425坚戈。
+不过，实际缴费金额仍取决于经营者的具体收入以及现行的计算办法。</div>
+<ul>
+<li>最低工资上调致个体工商户强制缴费增加</li>
+<li>月缴费总额从21,725坚戈增至29,150坚戈</li>
+<li>每月增加7,425坚戈</li>
+<li>实际缴费取决于收入及计算办法</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">增加个体工商户经营成本，可能影响其收入与经营积极性，对哈国个体经济活力产生一定抑制，但有助于增强社保基金可持续性。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(6 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/zaicop31xiadishengjing-e6dc162e/" target="_blank">哈萨克斯坦在COP31框架下介绍恢复咸海地区生态系统经验</a></h3>
+<div class="item-meta">哈通社中文版 · 11/10 01:59<span class="source-link"><a href="https://cn.inform.kz/news/zaicop31xiadishengjing-e6dc162e/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦在COP31框架下介绍恢复咸海地区生态系统经验。副部长奥舒尔巴耶夫指出，中亚适应气候变化与水问题紧密相连，咸海退化导致地区土地稳定性、气候、公共卫生和经济基础脆弱。通过世界银行参与修建的科卡拉尔大坝等水资源管理项目，北咸海得以保存，水量从189亿立方米增至230多亿立方米。2021至2025年，咸海干涸湖床植被恢复覆盖超110万公顷，种植梭梭树固定沙土、减少盐尘扩散。他强调需扩大国际合作、吸引气候投融资和开展联合科学监测。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">副部长在发言中概述了哈萨克斯坦为恢复咸海地区生态系统以及使该地区适应气候变化所正在采取的各项措施。
+
+“对于中亚而言，适应气候变化主要与水相关问题紧密相连。咸海的历史就是一个典型的例证：随着水生生态系统的退化，整个地区的土地稳定性、气候状况、公共卫生以及经济基础也都随之变得脆弱。”他说。
+
+奥舒尔巴耶夫表示，人们特别关注了北咸海的生态修复成果。通过实施水资源管理项目（其中包括在世界银行参与下修建的科卡拉尔大坝），北咸海得以保存下来。近年来，该区域的水量已从189亿立方米增加到230多亿立方米。
+
+据哈萨克斯坦生态与自然资源部介绍，哈萨克斯坦正在开展大规模工作，旨在恢复咸海干涸湖床的植被。2021年至2025年间，植被恢复工程的覆盖面积已超过110万公顷。种植梭梭树有助于固定沙土，并减少盐分和粉尘的扩散。
+
+奥舒尔巴耶夫强调，为恢复中亚地区的水生和陆地生态系统，有必要扩大国际合作、吸引气候投融资，并开展联合科学监测。</div>
+<ul>
+<li>北咸海通过科卡拉尔大坝等水资源管理项目得以保存，水量从189亿立方米增至230多亿立方米。</li>
+<li>2021至2025年，咸海干涸湖床植被恢复工程覆盖超110万公顷，种植梭梭树固定沙土。</li>
+<li>咸海退化导致中亚土地稳定性、气候、公共卫生和经济基础脆弱。</li>
+<li>哈萨克斯坦呼吁扩大国际合作、吸引气候投融资并开展联合科学监测。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该经验展示有助于提升哈萨克斯坦在中亚气候治理中的话语权，吸引气候投融资，改善咸海地区生态与经济条件，并推动区域水资源合作。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/zheyu2026nianguo-b1f97618/" target="_blank">哈萨克斯坦志愿者参与“2026年香港训练营”国际项目</a></h3>
+<div class="item-meta">哈通社中文版 · 11/10 01:19<span class="source-link"><a href="https://cn.inform.kz/news/zheyu2026nianguo-b1f97618/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦文化和信息部消息称，哈萨克斯坦志愿者参与了“2026年香港训练营”国际项目，大部分活动在香港吉澳村进行。参与者深入了解当地生活方式，与村民及公共组织代表合作举办艺术节，并参与环境志愿服务，学习基于审慎利用自然资源的农业实践和生态修复地方举措。该项目为各国志愿者提供了解当地历史传统、分享国家经验及建立国际联系的机会。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦志愿者参与“2026年香港训练营”国际项目
+正文:
+据文化和信息部消息，大部分活动在香港吉澳村进行。参与者们深入了解了当地的生活方式，并投身于多项富有意义的实践活动之中。
+该项目以志愿服务为重点。参与者与当地村民及公共组织代表合作，共同举办了一场艺术节。
+作为环境志愿服务活动的一部分，参与者们了解了基于审慎利用自然资源的农业实践，以及旨在进行生态修复的各类地方举措。
+该项目为来自各国的志愿者提供了契机，使他们能够了解当地居民的历史与传统，分享各自国家的经验，并建立国际联系。</div>
+<ul>
+<li>哈志愿者参与2026年香港训练营国际项目</li>
+<li>活动主要在香港吉澳村进行</li>
+<li>与当地村民合作举办艺术节</li>
+<li>学习生态修复和可持续农业实践</li>
+<li>促进国际经验分享与联系建立</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该项目有助于提升哈萨克斯坦国际形象，促进民间外交和文化交流，增强哈国志愿者在生态修复和可持续农业领域的经验，为哈中关系及多边合作积累社会基础。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/guojiaxiang-a2a06dcd/" target="_blank">国家元首向柬埔寨首相致贺电</a></h3>
+<div class="item-meta">哈通社中文版 · 11/09 20:11<span class="source-link"><a href="https://cn.inform.kz/news/guojiaxiang-a2a06dcd/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫向柬埔寨首相洪玛奈致贺电，祝贺柬埔寨重要节日，赞扬柬埔寨人民的历史文化遗产与民族团结。托卡耶夫强调双边合作持续发展，正落实洪玛奈近期访哈成果，相信协议将加强两国友好关系。最后祝愿洪玛奈取得卓越成就，柬埔寨人民繁荣幸福。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：国家元首向柬埔寨首相致贺电
+正文：哈萨克斯坦总统在贺电中指出，这一重要节日颂扬了柬埔寨人民丰富的历史文化遗产，以及民族团结与凝聚力。
+此外，国家元首还强调了双边合作的持续发展。
+- 我们正致力于落实您近期访问哈萨克斯坦所取得的成果。我相信，所达成的各项协议将为进一步加强两国间的友好关系注入新的动力。-他说。
+最后，托卡耶夫祝愿洪玛奈在这一重要的国家职位上取得卓越成就，并祝愿柬埔寨人民繁荣幸福。</div>
+<ul>
+<li>托卡耶夫向柬埔寨首相洪玛奈致贺电</li>
+<li>贺电赞扬柬埔寨历史文化遗产与民族团结</li>
+<li>强调落实洪玛奈访哈成果与协议</li>
+<li>祝愿洪玛奈履职成功与柬埔寨人民幸福</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此贺电巩固哈柬友好关系，推动洪玛奈访哈协议落实，促进双边政治互信与经济合作，但未直接涉及矿产格局，影响限于外交层面。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/zhongguoguohuidi-5de57a56/" target="_blank">阿拉木图积极吸引中国商务考察团及国际会议落地</a></h3>
+<div class="item-meta">哈通社中文版 · 11/09 15:21<span class="source-link"><a href="https://cn.inform.kz/news/zhongguoguohuidi-5de57a56/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>阿拉木图于11月3日至5日参加北京CIMX Beijing 2026展会，向中国旅游业界推介旅游资源。2025年共有136,419名中国游客到访阿拉木图，同比增长37.6%，增长得益于与北京、上海、广州、乌鲁木齐的直航。展会吸引41个国家和地区3000多名代表，Visit Almaty与中方机构会谈，推动联合项目、商务考察和国际会议落地。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">作为推动相关工作的一项举措，阿拉木图于11月3日至5日参加了在北京举办的中国国际会奖旅游交流博览会（China International MICE Exchange，CIMX Beijing 2026）。在这一国际平台上，Visit Almaty代表向中国旅游运营商、商务活动及企业考察组织者介绍了阿拉木图的旅游资源和发展潜力。
+中国被视为阿拉木图旅游业极具发展前景的客源市场之一。2025年全年，共有136,419名中国游客到访阿拉木图，较上一年增长37.6%。游客数量的增长，也得益于阿拉木图与中国四座大城市——北京、上海、广州和乌鲁木齐之间开通的直航航班。
+随着到访阿拉木图的游客不断增加，该市举办国际会议、企业活动和商务会晤的能力与机会也在持续扩大。
+阿拉木图的另一大优势在于，可以将商务出行与休闲度假、观光旅游结合起来。参加国际活动的来宾在工作会议之余，还可以前往山区度假区，体验当地文化和特色美食，游览城市名胜景点。
+展会期间，Visit Almaty代表与中国旅游市场相关机构和企业代表举行会谈，围绕开发联合项目、向企业客户推广阿拉木图以及提升国际活动组织能力等议题进行了交流。
+CIMX Beijing 2026展会吸引了来自41个国家和地区的3000多名旅游业代表参加，为各方展示旅游目的地、向业内专业人士推介旅游资源提供了平台。
+上述工作将有助于吸引更多中国游客赴阿拉木图，拓展商务考察活动，并进一步提升外界对该市旅游潜力的关注。</div>
+<ul>
+<li>阿拉木图参加北京CIMX展会推介旅游资源</li>
+<li>2025年中国游客达136,419人次，增长37.6%</li>
+<li>直航航班覆盖北京、上海、广州、乌鲁木齐</li>
+<li>展会汇聚41国3000多名旅游业代表</li>
+<li>与中方会谈推动联合项目和商务考察</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上促进旅游业和商务消费增长；外交上深化哈中地方合作与人文交流；矿产格局无直接影响，但商务考察或间接带动相关领域投资对接。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/yezaijinhuishang108chu-ac642b4c/" target="_blank">哈萨克斯坦企业在进博会上签署1.08亿美元出口协议</a></h3>
+<div class="item-meta">哈通社中文版 · 11/09 15:21<span class="source-link"><a href="https://cn.inform.kz/news/yezaijinhuishang108chu-ac642b4c/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦油料作物加工商全国协会与9家油厂参加进博会，签署1.08亿美元对华出口协议。协会执行董事雅什科夫表示，过去五个市场季行业出口量增长5倍，2025/2026市场季出口超180万吨，收入12.33亿美元。中国是第二大进口市场，对华出口收入达4.38亿美元。展会期间还举办了“投资新疆”推介会。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">在哈萨克斯坦国家展馆内，哈萨克斯坦油料作物加工商全国协会与国内9家油厂共同展示了油料加工领域的各类产品。协会代表表示，进博会是巩固商务联系、寻找新合作伙伴、扩大对华经贸合作的有效平台。
+“我们已连续四年参加进博会。在此期间，我们结识了新的合作伙伴，并签署了一系列合同，”油料作物加工商全国协会代表介绍道。
+展会期间，还举办了“投资新疆”专场推介会。中国新疆维吾尔自治区人民政府副秘书长徐百柯与哈萨克斯坦驻上海总领事努尔兰·阿赫霍什哈尔沃夫出席活动。
+会上，哈萨克斯坦油料作物加工商全国协会执行董事亚历山大·雅什科夫向与会者介绍了哈萨克斯坦油脂工业的发展前景和出口潜力。
+雅什科夫表示，该行业正保持快速增长。过去五个市场季，行业出口量增长至原来的5倍。2025/2026市场季结束时，出口量已超过180万吨，出口收入达到12.33亿美元，同样增长至原来的5倍。
+目前，哈萨克斯坦油脂产品出口至全球20多个国家和地区，包括中国、中亚国家、欧盟成员国和中东地区。中国是哈萨克斯坦产品的第二大进口市场，市场需求旺盛。过去五个市场季，哈萨克斯坦向中国出口植物油、油粕和油渣的收入增加了3.85亿美元，达到4.38亿美元。
+“哈萨克斯坦油脂产品在中国市场广受欢迎，每年达成的数百万美元合同也印证了这一点。中国市场规模庞大，为进一步扩大两国合作提供了广阔空间。具体而言，本市场季中国植物油、油粕和油渣的进口总量预计将达到1600万吨，”雅什科夫强调。
+在上海签署的1.08亿美元出口协议，无疑是哈萨克斯坦与中国进一步深化经贸合作的又一重要举措。</div>
+<ul>
+<li>哈油料协会与9家油厂在进博会签署1.08亿美元出口协议</li>
+<li>过去五个市场季哈油脂出口量增长5倍，收入达12.33亿美元</li>
+<li>中国是哈油脂产品第二大进口市场，对华出口收入4.38亿美元</li>
+<li>本市场季中国植物油、油粕和油渣进口总量预计1600万吨</li>
+<li>展会期间举办“投资新疆”推介会，促进中哈经贸合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该协议强化哈对华农产品出口导向，推动油脂工业产能扩张和出口多元化；深化中哈经贸合作，尤其与新疆的农业投资联动；但需关注对单一市场的依赖风险及物流基础设施压力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/jiushiwen-8e6b67de/" target="_blank">托卡耶夫就克拉科夫枪击事件向波兰总统表示慰问</a></h3>
+<div class="item-meta">哈通社中文版 · 11/09 10:29<span class="source-link"><a href="https://cn.inform.kz/news/jiushiwen-8e6b67de/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫就11月7日波兰克拉科夫市中心枪击事件向波兰总统纳夫罗茨基表示慰问，严厉谴责暴力行径，表示与波兰人民站在一起并祝愿伤者康复。波兰总理图斯克将事件定性为恐怖袭击，克拉科夫宣布哀悼活动持续至11月11日。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈斯穆-卓玛尔特·托卡耶夫就克拉科夫市发生枪击事件并造成人员伤亡，向波兰总统卡罗尔·纳夫罗茨基表示慰问。
+国家元首严厉谴责这一暴力行径，表示在困难时刻与波兰人民站在一起，并祝愿伤者早日康复。
+值得一提的是，11月7日，波兰克拉科夫市中心发生枪击事件。波兰总理唐纳德·图斯克将此次枪击事件定性为恐怖袭击。克拉科夫市宣布哀悼活动持续至11月11日。</div>
+<ul>
+<li>托卡耶夫向波兰总统致慰问</li>
+<li>哈总统谴责暴力行径</li>
+<li>枪击事件被定性为恐怖袭击</li>
+<li>克拉科夫哀悼至11月11日</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此事件强化哈波反恐合作意愿，哈方表态有助提升双边政治互信；对哈经济与矿产格局无直接冲击，但可能促使哈加强国内安全防范。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/11yue9ri-herenminqing-3fff5300/" target="_blank">11月9日终盘 美元、欧元、卢布和人民币兑坚戈汇率情况</a></h3>
+<div class="item-meta">哈通社中文版 · 11/09 22:23<span class="source-link"><a href="https://cn.inform.kz/news/11yue9ri-herenminqing-3fff5300/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>11月9日KASE现货市场有28个成员参与。美元兑坚戈平均报448.82，涨1.60，交易额305,477.65千美元（减203,863.98千美元）；欧元兑坚戈报502.05，涨1.87，交易额2,040.92千欧元（减4,082.30千欧元）；卢布兑坚戈报5.4613，跌0.0187，交易额2,710,606.41千卢布（减2,645,988.78千卢布）；人民币兑坚戈报67.2560，涨0.2024，交易额29,552.51千人民币（减559,004.81千人民币）。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 11月9日终盘 美元、欧元、卢布和人民币兑坚戈汇率情况
+正文:
+在本次现货市场交易中，共有28个KASE成员参与。
+根据现货市场交易结果：
+美元兑坚戈（USDKZT_TOM）： 汇率平均报价为 1 : 448.82（较前一交易日上涨 1.60 坚戈）。外汇交易总额为 305,477.65 千美元（减少 203,863.98 千美元）。交易过程中，最高报价为 1 : 449.80 坚戈，最低报价为 1 : 448.00 坚戈。
+欧元兑坚戈（EURKZT_TOM）： 汇率平均报价为 1 : 502.05（较前一交易日上涨 1.87 坚戈）。外汇交易总额为 2,040.92 千欧元（减少 4,082.30 千欧元）。交易过程中，最高报价为 1 : 502.73 坚戈，最低报价为 1 : 500.36 坚戈。
+卢布兑坚戈（RUBKZT_TOM）： 汇率平均报价为 1 : 5.4613（较前一交易日下跌 0.0187 坚戈）。外汇交易总额为 2,710,606.41 千卢布（减少 2,645,988.78 千卢布）。交易过程中，最高报价为 1 : 5.4780 坚戈，最低报价为 1 : 5.4430 坚戈。
+人民币兑坚戈（CNYKZT_TOM）： 汇率平均报价为 1 : 67.2560（较前一交易日上涨 0.2024 坚戈）。外汇交易总额为 29,552.51 千人民币（减少 559,004.81 千人民币）。交易过程中，最高报价为 1 : 67.3823 坚戈，最低报价为 1 : 67.1200 坚戈。</div>
+<ul>
+<li>美元兑坚戈上涨1.60至448.82，交易额减少203,863.98千美元</li>
+<li>欧元兑坚戈上涨1.87至502.05，交易额减少4,082.30千欧元</li>
+<li>卢布兑坚戈下跌0.0187至5.4613，交易额减少2,645,988.78千卢布</li>
+<li>人民币兑坚戈上涨0.2024至67.2560，交易额减少559,004.81千人民币</li>
+<li>KASE现货市场共28个成员参与交易</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈对美元、欧元、人民币走弱，对卢布走强，或加大输入性通胀压力，影响货币政策与外贸结算；交易额普遍萎缩，市场活跃度下降，需关注对矿产出口计价和外资流入的潜在影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-11-10 09:02</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
