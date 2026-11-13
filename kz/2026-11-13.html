@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年11月13日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年11月13日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年11月12日早9:00至2026年11月13日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 11 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">5</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">2</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">1</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/jiangzhukaiquanhuigongzuohui-be440633/" target="_blank">托卡耶夫总统将主持召开安全会议工作会议</a></h3>
+<div class="item-meta">哈通社中文版 · 11/12 23:11<span class="source-link"><a href="https://cn.inform.kz/news/jiangzhukaiquanhuigongzuohui-be440633/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫总统将主持召开安全会议工作会议，就“萨姆鲁克-卡泽纳”股份公司和哈萨克斯坦国家铁路公司负责人因涉嫌腐败犯罪被拘留一事阐明国家立场。总统特别强调维护“法治与秩序”原则，落实国家企业负责人个人责任制，确保战略重要性企业合法合规与公开透明运营。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫总统将主持召开安全会议工作会议
+
+会上，总统将阐明国家对于“萨姆鲁克-卡泽纳”股份公司和哈萨克斯坦国家铁路公司负责人因涉嫌参与腐败犯罪而被拘留一事的立场。
+
+此外，国家元首特别强调要维护“法治与秩序”原则，落实国家企业负责人的个人责任制，并确保国内具有战略重要性的企业在运营中做到合法合规与公开透明。</div>
+<ul>
+<li>托卡耶夫主持召开安全会议工作会议</li>
+<li>总统将阐明对国企负责人涉腐被拘的立场</li>
+<li>强调维护“法治与秩序”原则</li>
+<li>落实国家企业负责人个人责任制</li>
+<li>确保战略企业合法合规与公开透明</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举强化哈国反腐与法治信号，推动国企治理透明化，短期或引发战略企业人事调整，长期有利于改善投资环境和国家经济安全。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/liangjiadaguoyin-5d191788/" target="_blank">哈萨克斯坦两家大型国企领导因涉嫌腐败被拘留</a></h3>
+<div class="item-meta">哈通社中文版 · 11/12 15:52<span class="source-link"><a href="https://cn.inform.kz/news/liangjiadaguoyin-5d191788/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年11月11日，哈萨克斯坦国家安全委员会反腐败行动局拘留了萨姆鲁克-卡泽纳股份公司董事会主席努尔兰·贾克波夫、哈萨克斯坦国家铁路公司董事会主席耶勒扎斯·沃滕舍耶夫及其他涉嫌腐败人员。相关部门正开展侦查，根据《刑事诉讼法典》第201条，审前调查信息暂不公开。反腐败行动局表示，在落实国家元首指示和“法律与秩序”原则框架下，反腐败工作持续推进。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">2026年11月11日，哈萨克斯坦国家安全委员会反腐败行动局拘留了‘萨姆鲁克-卡泽纳’股份公司董事会主席努尔兰·贾克波夫、哈萨克斯坦国家铁路公司董事会主席耶勒扎斯·沃滕舍耶夫，以及其他涉嫌实施腐败犯罪的人员。”通报称。
+目前，相关部门正在开展侦查工作，以查明案件的全部情况。
+根据《刑事诉讼法典》第201条规定，审前调查进展的其他信息暂不予公开。
+“在落实国家元首指示、践行‘法律与秩序’原则的框架下，反腐败工作仍在继续推进。”反腐败行动局表示。</div>
+<ul>
+<li>2026年11月11日，哈国安委反腐败行动局实施拘留</li>
+<li>萨姆鲁克-卡泽纳董事会主席贾克波夫被拘留</li>
+<li>国家铁路公司董事会主席沃滕舍耶夫被拘留</li>
+<li>侦查工作正在进行，审前信息依《刑事诉讼法典》不公开</li>
+<li>反腐败行动局称在“法律与秩序”原则下持续推进反腐</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">政治层面彰显哈国反腐决心，强化“法律与秩序”原则；经济上两大国企高层震荡或影响短期运营与投资信心；外交上展示治理形象，但需关注国际投资者反应；矿产格局中萨姆鲁克-卡泽纳涉及资源领域，人事变动或引发资源管理政策微调。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/guojia-yixiangguanfa-8e49b74b/" target="_blank">哈萨克斯坦设立新国家奖项 总统已签署相关法律</a></h3>
+<div class="item-meta">哈通社中文版 · 11/12 14:32<span class="source-link"><a href="https://cn.inform.kz/news/guojia-yixiangguanfa-8e49b74b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统签署法律，明确国家奖项和荣誉称号目录。确认“金鹰”勋章为最高荣誉，“人民英雄”称号获颁“金星”和“祖国”勋章。新增“法拉比”和“霍贾·艾哈迈德·亚萨维”勋章及“沙姆舍·哈勒达亚科夫”奖章。设立功勋教师、医生、工程师、建设者、矿工、地质学家等称号，并规定一次性津贴。明确人民艺术家、作家和功勋美术家授予标准。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦设立新国家奖项 总统已签署相关法律
+
+正文：该法律旨在进一步明确国家奖项和荣誉称号目录，并规定向获得相应荣誉称号的教育工作者和医务人员发放一次性津贴。
+
+根据文件，“金鹰”（Алтын Қыран）勋章被确认为哈萨克斯坦共和国最高等级的荣誉标志。
+
+“人民英雄”（Халық қаһарманы）称号的授予规定也得到进一步明确。
+
+“获得‘人民英雄’称号的人员将获颁最高等级荣誉标志 ——‘金星’（Алтын жұлдыз）和‘祖国’（Отан）勋章。”文件中指出。
+
+此外，哈萨克斯坦共和国的勋章包括：
+
+哈萨克斯坦共和国勋章目录新增了“法拉比”和“霍贾·艾哈迈德·亚萨维”两项勋章。其中，“法拉比”勋章授予在教育、科学、文化和精神生活领域作出杰出贡献的哈萨克斯坦公民和外国人士；“霍贾·艾哈迈德·亚萨维”勋章则授予在启蒙、文化人道主义及社会领域作出重要贡献的本国和外国学者、国家及社会活动家。
+
+此外，哈萨克斯坦共和国的奖章包括：
+
+国家奖章目录新增了“沙姆舍·哈勒达亚科夫”奖章。
+
+“‘沙姆舍·哈勒达亚科夫’奖章授予作曲家、指挥家、歌曲创作者、传统音乐和流行音乐表演者，以及为音乐和歌曲艺术发展作出重要贡献的哈萨克斯坦公民和外国人士。”文件中指出。
+
+此次法律修改的另一部分涉及荣誉称号。其中包括“哈萨克斯坦功勋教师”“哈萨克斯坦功勋医生”“哈萨克斯坦功勋工程师”“哈萨克斯坦功勋建设者”“哈萨克斯坦功勋矿工”“哈萨克斯坦功勋地质学家”“哈萨克斯坦人民艺术家”“哈萨克斯坦人民作家”和“哈萨克斯坦功勋美术家”等称号。
+
+文件还规定了相应的物质激励措施。获得“哈萨克斯坦功勋教师”荣誉称号的教育工作者，将按照《教师地位法》规定的标准获得一次性津贴。
+
+获得“哈萨克斯坦功勋医生”荣誉称号的医务人员，则将按照《哈萨克斯坦共和国人民健康和医疗卫生体系法典》规定的标准获得一次性津贴。
+
+“哈萨克斯坦宇航员飞行员”称号获得者有权领取国家专项津贴。
+
+此外，法律进一步明确了“哈萨克斯坦人民艺术家”和“哈萨克斯坦人民作家”称号的授予标准。前者授予为戏剧、马戏、音乐和电影艺术发展作出特殊贡献的人员；后者则授予为哈萨克斯坦文学发展作出杰出贡献的人士。
+
+修订后的法律还单独明确了“哈萨克斯坦功勋美术家”荣誉称号的授予条件。该称号可授予艺术家、雕塑家、画家、版画家、珠宝艺术家、设计师、文物修复师和装饰应用艺术大师，以及其他为纪念性艺术和造型艺术发展作出突出贡献、此前曾获得哈萨克斯坦国家奖项的人士。</div>
+<ul>
+<li>金鹰勋章确认为最高荣誉标志</li>
+<li>人民英雄称号获颁金星和祖国勋章</li>
+<li>新增法拉比和亚萨维两项勋章</li>
+<li>设立功勋教师医生等荣誉称号并发放津贴</li>
+<li>明确人民艺术家作家等称号授予标准</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该法律通过完善国家奖励体系，强化社会激励，有助于提升教育、医疗、文化等领域从业者积极性，促进社会和谐。新增勋章和荣誉称号体现对科学文化及国际贡献的认可，可能增强外交软实力。对矿工、地质学家等称号的设立，反映对资源行业的重视，有利于稳定矿产领域人才。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(5 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/kostanay-svyazhut-pryamimi-reysami-sodnim-izglavnih-kurortov-kitaya-9127421d" target="_blank">科斯塔奈将开通直飞中国主要度假胜地的航班</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/13 01:14<span class="source-link"><a href="https://www.inform.kz/ru/kostanay-svyazhut-pryamimi-reysami-sodnim-izglavnih-kurortov-kitaya-9127421d" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>科斯塔奈国际机场宣布，将于2026年12月25日开通至中国海南三亚的定期旅游航班，每周一班（周六至周日）。新航线将方便当地居民直飞热门度假胜地，无需经其他哈国城市中转。具体时刻表、票价及飞行条件尚未公布，机场承诺稍后提供更多信息。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据以阿赫梅特·拜图尔森诺夫命名的科斯塔奈国际机场消息，定期旅游航班计划于2026年12月25日开通。航班预计每周执飞一次——从周六到周日。
+新航线将连接科斯塔奈与中国海南岛的三亚市。该度假胜地以热带气候、沙滩和发达的旅游基础设施闻名。
+该航线的开通将使该地区居民无需从哈萨克斯坦其他城市起飞即可前往这一热门海外度假胜地。
+确切时刻表、票价和飞行条件尚未公布。机场承诺稍后提供更多信息。
+从哈萨克斯坦到美国的直飞航班——何时等待以及什么阻碍了开通。</div>
+<ul>
+<li>科斯塔奈2026年12月25日开通三亚直飞航班</li>
+<li>航班每周一班，周六至周日执飞</li>
+<li>新航线连接科斯塔奈与海南三亚</li>
+<li>居民可直飞度假，无需中转哈国其他城市</li>
+<li>时刻表、票价及飞行条件尚未公布</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该航线将促进哈国旅游业发展，加强哈中民间交流，提升科斯塔奈区域交通枢纽地位，但短期内对政治、经济及矿产格局影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/shihui-guoqingwenbingzhongzuoji-ee034b26/" target="_blank">哈萨克斯坦驻西安总领事馆举办圆桌会议 宣介总统国情咨文并探讨哈中合作新机遇</a></h3>
+<div class="item-meta">哈通社中文版 · 11/12 22:51<span class="source-link"><a href="https://cn.inform.kz/news/shihui-guoqingwenbingzhongzuoji-ee034b26/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦驻西安总领事馆举办圆桌会议，宣介总统国情咨文。总领事佐齐汗·克拉巴耶夫指出，国情咨文在托卡耶夫总统推动重大改革及独立35周年背景下发表，提出巩固独立、发展经济、加强教育等任务。中国企业代表关注“人民建设”计划、基建现代化、AI、交通物流、数字化转型等领域合作。中石化、陕西建工、爱菊集团、西部水泥、启迪教育等企业介绍在哈项目及计划，涉及炼油、垃圾焚烧发电、农业投资、水泥生产、合资中学等。各方愿推动合作项目落地。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦驻西安总领事馆举办圆桌会议 宣介总统国情咨文并探讨哈中合作新机遇
+
+哈萨克斯坦驻西安总领事佐齐汗·克拉巴耶夫在致辞中指出，此次国情咨文是在托卡耶夫总统推动国家治理体系和政治制度实施前所未有的重大改革背景下发表的。同时，国情咨文恰逢哈萨克斯坦独立35周年这一重要历史节点，具有特殊的象征意义。
+总领事重点介绍了本次国情咨文提出的主要任务及其与以往政策部署的不同之处。他表示，国情咨文围绕哈萨克斯坦未来一段时期的社会经济发展作出系统部署，明确提出巩固国家独立、维护国家主权、加强民族团结、维护国家认同、推动经济社会发展、加强下一代教育与人才培养以及推进生态环境保护等一系列重要任务。与会各方一致认为，这些政策方向具有重要现实意义，将为哈萨克斯坦未来发展提供有力支撑。
+Фото: Қазақстанның Сианьдағы Бас консулдығы 在围绕国情咨文核心内容展开讨论时，与会中国企业代表表现出浓厚兴趣，重点关注根据“人民建设”计划参与阿拉套市建设、基础设施大规模现代化改造、人工智能发展、哈萨克斯坦交通物流潜力开发、经济数字化转型以及建筑材料生产等领域的合作机遇。
+会议期间，多家在哈萨克斯坦开展业务的中国企业代表介绍了现有投资项目及未来发展规划，并就项目实施过程中遇到的实际困难、需要协调解决的问题以及希望获得的政策支持交换了意见。
+Фото: Қазақстанның Сианьдағы Бас консулдығы 中石化集团代表表示，公司将全力推动正在哈萨克斯坦阿特劳州建设的炼油及聚乙烯工厂项目按照既定计划建成投产。同时，企业愿意积极参与哈萨克斯坦其他地区具有发展潜力的重点项目，为当地经济社会发展作出更大贡献。
+陕西建工集团代表介绍了公司在奇姆肯特市投资建设的生活垃圾焚烧发电厂项目。他表示，该项目与托卡耶夫总统国情咨文提出的重点发展方向高度契合，在基础设施建设、能源开发及生态环境保护等方面具有重要战略意义。
+在农业投资领域，爱菊集团代表介绍了企业进一步扩大在哈投资的计划。他表示，过去11年来，企业在哈萨克斯坦的发展得到了当地政府部门的持续支持，对此表示感谢。
+该代表认为，国情咨文提出的优化投资政策、提升投资环境等举措，将为深化中哈农业及农工综合体领域合作创造新的机遇。爱菊集团将继续扩大在哈投资，进一步拓展农产品加工和物流业务，创造更多就业岗位，并为区域粮食安全和食品供应体系建设作出积极贡献。
+Фото: Қазақстанның Сианьдағы Бас консулдығы 西部水泥公司管理层表示，公司将阿克托别州投资项目视为其在哈萨克斯坦长期发展的重要战略支点。国情咨文中围绕“人民建设”计划提出的基础设施发展部署，为建筑行业带来了明确的市场需求和发展机遇。
+公司表示，愿意充分发挥自身在水泥及建筑材料生产领域的优势，依托哈萨克斯坦面向欧洲的过境运输和物流通道，积极参与当地基础设施建设，通过创造就业岗位、推动进口替代等方式，为哈萨克斯坦经济发展作出贡献。同时，公司希望继续与有关部门保持沟通，进一步推动企业生产能力与哈萨克斯坦建筑行业的实际需求有效对接。
+在教育和青年人才培养领域，启迪教育集团代表介绍了计划在阿斯塔纳和阿拉木图建设哈中合资中学的项目。他表示，企业希望通过推进该项目，积极响应并支持托卡耶夫总统关于加强下一代教育、提升国民教育水平的政策倡议，为哈萨克斯坦教育事业发展作出贡献。
+圆桌会议最后，与会中国企业代表表示，哈萨克斯坦总统国情咨文提出的发展方向，为双方未来长期合作提供了重要政策指引。各方相信，推动总统倡议转化为具体项目和务实成果，将进一步拓展中哈合作空间，为两国战略伙伴关系持续深化奠定坚实基础。
+会议结束时，与会各方一致表示，将继续加强中哈经贸投资联系，积极推动两国企业开展务实合作，促进更多具体合作项目落地实施。
+会上，主办方向与会者宣介了国情咨文，并发放了文件文本。</div>
+<ul>
+<li>哈驻西安总领事馆举办圆桌会议宣介总统国情咨文</li>
+<li>国情咨文聚焦改革、独立35周年及经济社会发展任务</li>
+<li>中国企业关注“人民建设”计划及基建等领域合作机遇</li>
+<li>中石化、陕建、爱菊等企业介绍在哈项目及投资计划</li>
+<li>各方愿加强中哈经贸投资联系推动项目落地</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">会议强化中哈经贸对接，引导中企参与哈基建、能源、农业及教育项目，助力哈经济多元化和“人民建设”计划，同时深化双边战略伙伴关系，但需关注投资环境与项目落地协调。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/jiucheng95nian-b6d50e5c/" target="_blank">哈萨克斯坦总统就新华通讯社成立95周年致贺信</a></h3>
+<div class="item-meta">哈通社中文版 · 11/12 21:16<span class="source-link"><a href="https://cn.inform.kz/news/jiucheng95nian-b6d50e5c/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫就新华社成立95周年致贺信，祝贺新华社成为具有重要影响力和崇高声誉的主流新闻媒体，赞扬其忠实记录中国发展成就和专业采编团队。托卡耶夫指出，在两国共同努力和习近平主席特别关心支持下，哈中关系达到永久全面战略伙伴关系的新高度，并坚信两国媒体将继续发挥桥梁作用，增进相互理解和友谊。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦总统就新华通讯社成立95周年致贺信
+
+托卡耶夫在贺信中说，值此新华社成立95周年之际，谨向新华社全体同事致以最诚挚的祝贺！在近一个世纪的发展历程中，新华社赢得了国际社会的广泛认可，成为世界上具有重要影响力和崇高声誉的主流新闻媒体之一。
+
+托卡耶夫说，新华社始终忠实记录中国的重要历史事件和发展成就，成为这一伟大历史进程的生动见证者。新华社的采编团队以高度的专业素养、快速高效的工作作风、团结协作的精神和精湛的业务能力著称，充分展现了现代新闻事业先进水平。
+
+托卡耶夫说，在两国共同努力以及中华人民共和国主席习近平特别关心和支持下，两国合作关系提升到了前所未有的高水平，达到了永久全面战略伙伴关系的新高度。
+
+托卡耶夫坚信，两国媒体机构将继续向广大公众全面展示两国共同取得的发展成就，进一步发挥连接两国人民心灵、增进相互理解和友谊的桥梁作用。</div>
+<ul>
+<li>托卡耶夫祝贺新华社成立95周年，肯定其国际影响力</li>
+<li>赞扬新华社忠实记录中国历史事件和发展成就</li>
+<li>哈中关系提升至永久全面战略伙伴关系新高度</li>
+<li>两国媒体将继续发挥增进理解和友谊的桥梁作用</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此贺信凸显哈中永久全面战略伙伴关系的高水平，有利于深化两国政治互信与媒体合作，促进人文交流，为经贸与矿产等领域合作营造良好舆论环境，巩固哈国多元外交平衡。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/wenbuchanghuifaguodashi-27b901b9/" target="_blank">文信部长会见法国驻哈大使</a></h3>
+<div class="item-meta">哈通社中文版 · 11/12 19:47<span class="source-link"><a href="https://cn.inform.kz/news/wenbuchanghuifaguodashi-27b901b9/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦文化与信息部长阿尔曼·克尔克巴耶夫会见法国驻哈大使，讨论扩大文化和艺术领域合作，包括联合项目、展览、戏剧巡演、专业经验交流，以及博物馆事务和电影合作（联合制作、电影配音）。法方希望哈加入“冲突地区遗产保护国际联盟”（ALIPH），哈方强调文化遗产保护国际合作重要性，并表示将研究参与可能性。双方愿进一步加强文化与人文联系。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：文信部长会见法国驻哈大使
+正文：会谈中，双方探讨了在文化和艺术领域扩大哈萨克斯坦与法国之间合作的机遇。具体而言，双方讨论了开展联合项目、举办展览及戏剧巡演，以及交流专业经验等问题。
+阿尔曼·克尔克巴耶夫指出，两国关系正呈现出蓬勃发展的态势，文化与人文联系也在不断加强。
+双方特别关注了博物馆事务和电影领域的合作，并就电影联合制作，以及将法国电影配音为哈萨克语、将哈萨克斯坦电影配音为法语等问题进行了讨论。
+Фото: Мәдениет және ақпарат министрлігі 法国大使表示，希望哈萨克斯坦加入“冲突地区遗产保护国际联盟”（ALIPH）。哈萨克斯坦文信部长强调了在文化遗产保护领域开展国际合作的重要性。部长指出，鉴于该组织在多边文化合作中发挥着重要作用，有必要重点关注哈萨克斯坦参与其中的可能性，并对这一事项进行深入研究。
+根据会谈结果，双方表示愿进一步加强文化与人文联系，并发展双边伙伴关系。</div>
+<ul>
+<li>哈法探讨文化合作：联合项目、展览、戏剧巡演</li>
+<li>关注博物馆和电影合作，包括电影联合制作与互译配音</li>
+<li>法方邀请哈萨克斯坦加入ALIPH遗产保护联盟</li>
+<li>哈方强调文化遗产保护国际合作，将研究参与可能</li>
+<li>双方愿加强人文联系，发展双边伙伴关系</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次会谈将深化哈法文化与人文合作，促进电影、博物馆等领域交流，提升哈萨克斯坦文化国际影响力。参与ALIPH可能增强哈在冲突地区遗产保护多边机制中的话语权，为外交加分，但需平衡与俄罗斯等传统伙伴关系。对矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/yuduodawuzuo-d3e4bfd3/" target="_blank">哈萨克斯坦与摩尔多瓦商讨扩大贸易及交通物流合作</a></h3>
+<div class="item-meta">哈通社中文版 · 11/12 11:33<span class="source-link"><a href="https://cn.inform.kz/news/yuduodawuzuo-d3e4bfd3/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总理别克帖诺夫与摩尔多瓦总理托凡在COP31峰会期间会晤，讨论贸易经济、投资合作、交通物流及能源协作。双方明确扩大双边贸易方向，重点探讨增加哈出口及利用跨里海国际运输路线和摩尔多瓦物流基础设施。托凡积极评价哈改革及国际能源市场地位，摩方愿加强商业联系。双方重申深化经济重点领域关系。别克帖诺夫还介绍了“清洁哈萨克斯坦”倡议、种植20亿棵树计划、水资源安全和绿色能源任务。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">在土耳其安塔利亚举行的《联合国气候变化框架公约》第三十一次缔约方大会（COP31）峰会期间，哈萨克斯坦总理沃勒扎斯·别克帖诺夫与摩尔多瓦总理瓦西里·托凡举行会晤。
+会谈中，双方讨论了贸易经济和投资合作、交通物流联系发展，以及能源领域的协作等问题。
+别克帖诺夫指出，摩尔多瓦是哈萨克斯坦可靠的合作伙伴。双方明确了扩大双边贸易的潜在合作方向，并重点讨论了增加哈萨克斯坦出口、发展两国交通联系的可能性，其中包括利用跨里海国际运输路线和摩尔多瓦物流基础设施等问题。
+瓦西里·托凡对哈萨克斯坦为保持经济持续增长而推行的改革给予积极评价，并指出哈萨克斯坦在国际能源市场上的地位不断巩固。他表示，摩尔多瓦有意进一步加强与哈萨克斯坦的商业联系。
+双方重申，愿在经济重点领域继续深化哈摩关系。
+值得一提的是，别克帖诺夫在COP31峰会上介绍了哈萨克斯坦“清洁哈萨克斯坦”倡议、种植20亿棵树计划、水资源安全以及绿色能源发展等方面的重点任务。</div>
+<ul>
+<li>哈摩总理在COP31峰会期间举行双边会晤</li>
+<li>双方讨论贸易、投资、交通物流和能源合作</li>
+<li>重点探讨增加哈出口及跨里海路线利用</li>
+<li>摩方积极评价哈改革与国际能源市场地位</li>
+<li>哈方介绍清洁倡议及种植20亿棵树计划</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此会晤有助于哈萨克斯坦拓展跨里海运输路线出口通道，强化与摩尔多瓦的物流和能源合作，提升哈在欧亚运输格局中的枢纽地位，同时推动双边贸易增长和经济多元化。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/11yue12ri-herenminqing-5e915a89/" target="_blank">11月12日终盘 美元、欧元、卢布和人民币兑坚戈汇率情况</a></h3>
+<div class="item-meta">哈通社中文版 · 11/12 22:23<span class="source-link"><a href="https://cn.inform.kz/news/11yue12ri-herenminqing-5e915a89/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>11月12日KASE现货市场30个成员参与交易，美元兑坚戈平均报443.60，跌1.22，交易额385,405.72千美元；欧元兑坚戈报491.59，跌4.21，交易额2,006.68千欧元；卢布兑坚戈报5.3603，跌0.0136，交易额1,235,742.21千卢布；人民币兑坚戈报66.4987，跌0.0749，交易额38,627.61千人民币。所有货币交易额均减少。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 11月12日终盘 美元、欧元、卢布和人民币兑坚戈汇率情况
+正文:
+在本次现货市场交易中，共有30个KASE成员参与。
+根据现货市场交易结果：
+美元兑坚戈（USDKZT_TOM）： 汇率平均报价为 1 : 443.60 坚戈（较前一交易日下跌 1.22 坚戈）。外汇交易总额为 385,405.72 千美元（减少 53,010.12 千美元）。交易过程中，最高报价为 1 : 445.14 坚戈，最低报价为 1 : 443.00 坚戈。
+欧元兑坚戈（EURKZT_TOM）： 汇率平均报价为 1 : 491.59 坚戈（较前一交易日下跌 4.21 坚戈）。外汇交易总额为 2,006.68 千欧元（减少 719.40 千欧元）。交易过程中，最高报价为 1 : 492.25 坚戈，最低报价为 1 : 490.80 坚戈。
+卢布兑坚戈（RUBKZT_TOM）： 汇率平均报价为 1 : 5.3603 坚戈（较前一交易日下跌 0.0136 坚戈）。外汇交易总额为 1,235,742.21 千卢布（减少 755,131.87 千卢布）。交易过程中，最高报价为 1 : 5.3746 坚戈，最低报价为 1 : 5.3481 坚戈。
+人民币兑坚戈（CNYKZT_TOM）： 汇率平均报价为 1 : 66.4987 坚戈（较前一交易日下跌 0.0749 坚戈）。外汇交易总额为 38,627.61 千人民币（减少 44,886.17 千人民币）。交易过程中，最高报价为 1 : 66.6550 坚戈，最低报价为 1 : 66.4400 坚戈。</div>
+<ul>
+<li>美元兑坚戈跌1.22至443.60，交易额减53,010.12千美元</li>
+<li>欧元兑坚戈跌4.21至491.59，交易额减719.40千欧元</li>
+<li>卢布兑坚戈跌0.0136至5.3603，交易额减755,131.87千卢布</li>
+<li>人民币兑坚戈跌0.0749至66.4987，交易额减44,886.17千人民币</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈对主要货币小幅升值，外汇交易额普遍减少，反映市场交投趋淡。对哈国而言，坚戈走强有助于抑制输入性通胀，但可能削弱出口竞争力；交易额下降或影响外汇市场流动性，对矿产出口收入换算形成一定压力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/xinggong12riyuzhuyaowaizhijiande-74efa647/" target="_blank">央行公布12日坚戈与主要外币之间的汇率标准</a></h3>
+<div class="item-meta">哈通社中文版 · 11/12 13:38<span class="source-link"><a href="https://cn.inform.kz/news/xinggong12riyuzhuyaowaizhijiande-74efa647/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行公布2026年11月12日坚戈与主要外币汇率：美元兑坚戈1:444.76，欧元兑坚戈1:495.37，俄罗斯卢布兑坚戈1:5.37，土耳其里拉兑坚戈1:8.85，中国元兑坚戈1:66.68。央行规定，坚戈兑美元官方汇率基于阿斯塔纳时间15:30证券交易所加权平均汇率确定，其他外币汇率依据16:00交叉汇率计算。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 央行公布12日坚戈与主要外币之间的汇率标准
+正文:
+根据央行公布的信息，2026年11月12日，哈萨克斯坦坚戈与国际主要货币之间的兑换汇率标准如下：
+美元兑坚戈（USD/KZT） – 1：444.76
+欧元兑坚戈（EUR/KZT）- 1：495.37
+俄罗斯卢布兑坚戈（RUB / KZT）-1: 5.37
+土耳其里拉兑坚戈（TRY / KZT）- 1: 8.85
+中国元兑坚戈（CNY / KZT）- 1：66.68
+值得一提的是，根据哈萨克斯坦国家银行规定，截至阿斯塔纳时间当日15:30，在哈萨克斯坦证券交易所形成的坚戈兑美元加权平均汇率，将被确定为下一工作日坚戈兑美元官方汇率；坚戈兑其他外币的官方汇率，则依据截至阿斯塔纳时间16:00形成的交叉汇率计算得出。</div>
+<ul>
+<li>美元兑坚戈汇率为1:444.76</li>
+<li>欧元兑坚戈汇率为1:495.37</li>
+<li>人民币兑坚戈汇率为1:66.68</li>
+<li>卢布兑坚戈汇率为1:5.37</li>
+<li>官方汇率基于交易所加权平均和交叉汇率</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率数据反映坚戈对主要货币的比价，对哈国进出口、外资和矿产贸易结算有直接影响，央行汇率形成机制有助于稳定金融市场预期。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/jiangduiheshichu-869d451f/" target="_blank">哈萨克斯坦将对铝箔和石墨电极实施出口限制</a></h3>
+<div class="item-meta">哈通社中文版 · 11/12 15:34<span class="source-link"><a href="https://cn.inform.kz/news/jiangduiheshichu-869d451f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦根据部令对卷装铝箔和圆形截面石墨化电极实施出口限制。铝箔出口禁令持续至2030年11月15日；石墨化电极向欧亚经济联盟国家出口限制持续至2031年1月17日。铝箔管制设豁免条款：已缴纳反倾销税并进口至哈国的中国产铝箔不在此限；依据一次性专项许可证进口且免缴反倾销税的商品亦适用单独豁免。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">根据部令规定，本次出口限制主要涵盖以下两大类工业产品：
+第一类为符合特定尺寸及技术规格的卷装铝箔产品，相关出口禁令将持续实施至2030年11月15日；第二类为广泛应用于工业电炉的圆形截面石墨化电极，针对该产品向欧亚经济联盟国家出口的限制措施将一直持续至2031年1月17日。
+在铝箔产品管制方面，新规明确设置了若干豁免条款：对于已依法缴纳反倾销税并进口至哈萨克斯坦境内的中国产铝箔产品，不在此次出口限制范围之内；此外，依据一次性专项许可证进口且免缴上述反倾销税的相关商品，亦适用单独的豁免规定。</div>
+<ul>
+<li>哈国对卷装铝箔实施出口禁令至2030年11月15日</li>
+<li>石墨化电极对欧亚经济联盟出口限制至2031年1月17日</li>
+<li>已缴反倾销税的中国产铝箔不适用出口限制</li>
+<li>一次性专项许可证进口且免缴反倾销税商品单独豁免</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">限制铝箔和石墨电极出口将收紧相关矿产加工品外流，保护国内工业原料供应，但可能影响与欧亚经济联盟伙伴的贸易关系；豁免条款兼顾反倾销税征收，体现对华铝箔贸易的平衡处理。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-11-13 09:02</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
