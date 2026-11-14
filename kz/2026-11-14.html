@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年11月14日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年11月14日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年11月13日早9:00至2026年11月14日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 19 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">7</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">5</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">4</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(7 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/delo-ovzyatkah-privosstanovlenii-damb-posle-pavodka-2024-goda-rassmatrivayut-vko-c5466da0" target="_blank">科斯塔奈审理2024年洪灾后堤坝修复贿赂案</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/14 05:54<span class="source-link"><a href="https://www.inform.kz/ru/delo-ovzyatkah-privosstanovlenii-damb-posle-pavodka-2024-goda-rassmatrivayut-vko-c5466da0" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>科斯塔奈第二法院审理2024年洪灾后卡拉苏区水利设施修复贿赂案。两名前官员被控收受重大贿赂（哈刑法第366条第2款），阿拉木图‘联盟技术建设’公司经理伊万·索罗金被控多次行贿（第367条第3款第3项）。控方称施工无专家肯定结论、合同倒签、预算申请违规，官员涉嫌各收200万坚戈以协助融资。庭审研究书面证据、录音及电子材料，索罗金辩称长期追讨工程款。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：科斯塔奈审理2024年洪灾后修复堤坝贿赂案
+
+正文：
+科斯塔奈第二法院正在审理一起涉及2024年洪灾后卡拉苏区水利设施修复的刑事案件。被告席上包括两名前官员和阿拉木图“联盟技术建设”有限责任公司经理伊万·索罗金。据控方称，施工工程未获得专家鉴定肯定结论即进行，合同倒签日期，预算申请提交存在违规。为换取在融资问题上的协助，官员据称应从企业家处各收取200万坚戈。
+
+前官员被指控犯有哈萨克斯坦共和国刑法典第366条第2款——收受重大数额贿赂或为非法行为（不作为）。‘联盟技术建设’有限责任公司经理被指控犯有哈萨克斯坦共和国刑法典第367条第3款第3项——多次行贿。
+
+在最近一次庭审中，诉讼参与人研究了刑事案件及案内收集的证据。最初关注点集中在书面材料上。法庭上研究了案卷、讯问笔录、勘验记录、文件及与调查相关的通信。
+
+图片：达里娅·阿韦尔琴科/Kazinform 在研究书面材料后，法庭转而研究谈话录音、通信及电子载体勘验材料。
+
+所研究的谈话主题之一是施工款项支付及承包商与地方执行机关代表的互动。在播放其中一段录音后，伊万·索罗金向法庭解释称，他长期争取已完工程的结算款项。
+
+“您明白我的任务是什么吗？我整年都在试图拿到已完成工作的钱，”被告声称。
+
+据这位企业家称，最初承诺支付设施修复费用，但后来在项目文件编制和通过鉴定方面出现困难。
+
+索罗金声称，他不得不自行参与解决他认为属于客户职责的问题。同时，正如被告所指出的，在分歧产生时，施工工程已经完成。</div>
+<ul>
+<li>科斯塔奈审理洪灾后堤坝修复贿赂案</li>
+<li>两名前官员被控收受200万坚戈贿赂</li>
+<li>公司经理被控多次行贿，否认指控</li>
+<li>施工无专家鉴定，合同倒签涉嫌违规</li>
+<li>庭审研究录音、通信及电子证据</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">案件暴露灾后重建监管漏洞，或推动哈国公共采购与官员监督改革；短期影响地方官员行为，长期关系矿产及基建领域反腐与投资环境。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/bolee-480mln-tenge-poteryal-byudzhet-iz-za-chinovnikov-vpavlodarskoy-oblasti-3f44e3dd" target="_blank">巴甫洛达尔州官员致预算损失超4.8亿坚戈</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/14 04:33<span class="source-link"><a href="https://www.inform.kz/ru/bolee-480mln-tenge-poteryal-byudzhet-iz-za-chinovnikov-vpavlodarskoy-oblasti-3f44e3dd" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>巴甫洛达尔州建设局官员在医疗设施建设中验收并支付未完成工程，未追缴违约金，导致国家预算损失超4.8亿坚戈。具体问题包括：金属屋顶厚度从0.7毫米减至0.5毫米、用普通泡沫塑料替代挤塑板、用办公LED灯替代认证医疗灯、医院设备未安装即被验收。检察院已启动行政和刑事诉讼，建设局称已开始整改并启动司法程序追索10年保修义务。共检查30栋医疗建筑。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：因官员问题，巴甫洛达尔州预算损失超过4.8亿坚戈
+
+正文：
+据报道，检查过程中确定，巴甫洛达尔州建设局的官员验收并支付了未完成的工程，未追缴违约金。与此同时，承包商使用了无效益的中介，并从事材料和设备替换为廉价且不合格类型的行为。
+
+图片：巴甫洛达尔州检察院
+
+检察官还列举了具体例子。项目规定金属屋顶厚度为0.7毫米，但安装的是0.5毫米。本应使用挤塑板（пеноплекс）为墙体保温，但取而代之的是普通泡沫塑料。
+
+图片：巴甫洛达尔州检察院
+
+门诊部本应安装经过认证的医疗灯具，但检察官发现的是用于办公室的普通LED灯。
+
+图片：巴甫洛达尔州检察院
+
+——建设局官员非法验收了巴甫洛达尔市第一城市医院未安装和未接通的设备。部分手术室实际上未准备好投入运营。昂贵设备处于未开封状态，工业电梯和通风系统未准备好运行，——巴甫洛达尔州检察院助理检察官阿迪尔·茹马别科夫表示。
+
+因此，据检察院指出，由于建设局官员的行为，国家预算损失超过4.8亿坚戈。目前每起案件正在单独调查中。特别是已启动行政和刑事诉讼程序。
+
+——所有意见均已接受，目前所有意见正在整改中。在保修义务框架内已启动司法诉讼程序。建设局的保修期为10年，在此期间我们有权起诉他们要求履行保修义务，——巴甫洛达尔州建设局副局长阿扎特·萨塔巴耶夫回应道。
+
+据报道，检查正是针对医疗设施进行的。该地区共检查了30栋已建成建筑。
+
+回顾一下，巴甫洛达尔州已向国家返还1800万坚戈的赠款。</div>
+<ul>
+<li>建设局官员验收未完成工程致预算损失超4.8亿坚戈</li>
+<li>屋顶厚度缩水、保温材料降级、医疗灯以次充好</li>
+<li>医院昂贵设备未安装未接通即被非法验收</li>
+<li>检察院启动行政和刑事诉讼，建设局启动司法追偿</li>
+<li>全州共检查30栋医疗建筑，此前已追回1800万坚戈赠款</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">暴露哈国地方建设监管漏洞，削弱预算资金使用效率；医疗设施质量隐患影响公共服务信誉；反腐与司法追责或推动建设领域合规化，但短期可能影响项目进度。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/22duozhongkezai-jiang-dc011f5f/" target="_blank">22万多种商品可在线比价 哈萨克斯坦将拓展数字消费服务</a></h3>
+<div class="item-meta">哈通社中文版 · 11/14 01:50<span class="source-link"><a href="https://cn.inform.kz/news/22duozhongkezai-jiang-dc011f5f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦arzan.kz平台已在7个城市运营，可比较18家以上商业主体的22万多种商品价格。贸易和一体化部与该平台合作，重点标注社会重要食品，提供消费者权益保护等法律法规链接，帮助民众理性消费、节省开支。合作遵循自愿平等原则，不涉及国家预算拨款，仅限于信息交流。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">双方的合作旨在提高民众获取商品价格和折扣信息的便利度，倡导理性、实惠的消费方式，并进一步完善价格监测数字化工具。
+
+目前，arzan.kz平台已在哈萨克斯坦7个城市投入运营。通过该平台，消费者可以比较18家以上商业主体提供的22万多种商品的价格。
+
+消费者可根据自己的购物需求建立购物清单，比较不同商店的商品售价，了解当前折扣信息，并从中选择最优惠的购买方案。这样一来，民众便能提前规划采购，节省家庭开支。
+
+贸易和一体化部表示，合作期间，平台将重点关注具有社会重要意义的食品，并通过专门标识加以注明。消费者可以据此轻松将这类商品与其他商品区分开来。
+
+此外，平台还将提供相关法律法规的链接，涉及消费者权益保护、商业经营规则以及商业加价适用程序等内容。这将帮助民众更好地了解自身合法权益，并明确哪些商品适用国家对商业加价的监管规定。
+
+据介绍，此次合作遵循自愿、平等原则，不涉及国家预算拨款，双方合作仅限于信息交流。</div>
+<ul>
+<li>arzan.kz平台覆盖7城，可比较22万多种商品价格</li>
+<li>消费者可建购物清单比价，选择最优惠方案</li>
+<li>平台重点标注社会重要食品，提供法规链接</li>
+<li>合作不涉及国家预算，仅限于信息交流</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该合作提升价格透明度，助民众节省开支，缓解通胀压力；数字化价格监测工具完善，增强政府市场监管能力；不涉及预算拨款，体现公私协作模式，对政治经济影响温和，利于消费市场稳定。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/zhengdiyilizhukainengtifawenhui-ddac45a1/" target="_blank">政府第一副总理主持召开燃料能源综合体发展问题会议</a></h3>
+<div class="item-meta">哈通社中文版 · 11/14 00:56<span class="source-link"><a href="https://cn.inform.kz/news/zhengdiyilizhukainengtifawenhui-ddac45a1/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>政府第一副总理召开燃料能源综合体发展会议，审议新增发电能力投运、居民点天然气供应及能源和市政基础设施现代化改造计划。会议要求能源部监督大型煤电项目进展，包括埃基巴斯图兹第三国营地区发电站、库尔恰托夫热电站及科克舍套、塞梅、乌斯卡曼三市新建热电厂。会议指出修订2035年前能源平衡规划需考虑人工智能和数据中心新增电力需求，并强调优先保障人口集中居民点接入天然气管网，要求各地按时完成市政基础设施项目文件编制，确保资金专款专用，负责人承担个人责任。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">政府第一副总理主持召开燃料能源综合体发展问题会议
+会议审议了新增发电能力投运、居民点天然气供应以及能源和市政基础设施现代化改造等工作计划。
+会议责成能源部加强对新增发电能力按期投运和现有发电站现代化改造工作的监督。与会各方特别关注大型煤电项目的实施进展，包括埃基巴斯图兹第三国营地区发电站、库尔恰托夫热电站，以及科克舍套、塞梅和乌斯卡曼三市新建热电厂项目。
+会议指出，在修订2035年前能源平衡规划时，必须充分考虑人工智能领域项目和数据中心带来的新增电力需求。
+在推进各地区天然气供应工作方面，会议强调，应优先保障人口较为集中的居民点接入天然气管网，同时进一步扩大居民用户接入天然气管网的覆盖范围。
+对于由基础设施发展基金出资实施的市政基础设施现代化改造项目，会议要求各地政府按时完成项目文件编制，确保项目顺利通过专业鉴定，并确定施工承包商。在此过程中，要重点把好工程建设进度和质量关，确保资金专款专用。
+会议强调，各国家机关和有关机构负责人必须切实履行职责，对既定任务的落实以及相关设施按期建成并投入使用承担个人责任。</div>
+<ul>
+<li>审议新增发电能力投运和现有电站现代化改造监督</li>
+<li>关注埃基巴斯图兹第三电站等大型煤电项目进展</li>
+<li>修订2035年前能源平衡需考虑AI和数据中心需求</li>
+<li>优先保障人口集中居民点接入天然气管网</li>
+<li>要求各地按时完成市政基础设施项目文件编制</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">会议强化能源部监督职能，推动煤电和天然气项目落地，有助于保障电力供应和民生用气；将AI和数据中心纳入能源规划，预示数字经济基础设施需求上升；明确个人责任和资金专用，提升项目执行效率，对哈国能源安全和经济稳定具有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/guojiaquanhuizhu-8d2ba2f6/" target="_blank">托卡耶夫总统接见国家安全委员会主席萨赫姆巴耶夫</a></h3>
+<div class="item-meta">哈通社中文版 · 11/13 23:00<span class="source-link"><a href="https://cn.inform.kz/news/guojiaquanhuizhu-8d2ba2f6/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫接见国家安全委员会主席萨赫姆巴耶夫，听取今年工作成果和下一阶段计划汇报。萨赫姆巴耶夫汇报了打击恐怖主义、极端主义、毒品犯罪和有组织犯罪的措施，反腐败及网络与信息安全工作受关注。托卡耶夫就安全机关各领域工作作出具体指示。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫总统接见国家安全委员会主席萨赫姆巴耶夫
+
+期间，托卡耶夫总统听取了国家安全委员会今年以来的主要工作成果汇报，并了解了下一阶段的工作计划。
+
+萨赫姆巴耶夫向总统汇报了打击恐怖主义、极端主义、毒品犯罪和有组织犯罪方面采取的各项措施。
+
+此外，反腐败措施以及网络与信息安全领域的工作也受到重点关注。
+
+会见最后，国家元首就国家安全机关各业务领域的工作作出了一系列具体指示。</div>
+<ul>
+<li>托卡耶夫听取国安委年度工作成果及计划汇报</li>
+<li>萨赫姆巴耶夫汇报反恐、反极端、禁毒、打有组织犯罪措施</li>
+<li>反腐败及网络与信息安全领域工作受重点关注</li>
+<li>总统就国家安全机关各业务领域作出具体指示</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次会见强化哈国安全机关在反恐、反腐及网安领域的职能，有助于维护政治稳定，为经济发展营造安全环境，但安全措施加强可能影响外资对数字领域的信心。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/zhukaiquanhuihuiwuyufawen-e1ef3a26/" target="_blank">托卡耶夫主持召开安全会议紧急会议研究交通物流与过境运输发展问题</a></h3>
+<div class="item-meta">哈通社中文版 · 11/13 22:43<span class="source-link"><a href="https://cn.inform.kz/news/zhukaiquanhuihuiwuyufawen-e1ef3a26/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫主持召开安全会议紧急会议，审议国际运输走廊发展和增强过境运输潜力。副总理兼交通部长贾娜索娃、财政部长塔克耶夫等汇报工作。托卡耶夫批评国家铁路公司工作，要求提高营收、优化流程、数字化提效，并强调扩大物流中心、完善通关程序、消除基础设施瓶颈。会议还提及“萨姆鲁克-卡泽纳”基金和国家铁路公司负责人被捕。总统下达具体任务，提升国际运输通道竞争力。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫主持召开安全会议紧急会议研究交通物流与过境运输发展问题
+
+会议审议了国际运输走廊的发展前景，以及增强国家过境运输潜力的相关举措。
+
+副总理兼交通部长埃赛丽·贾娜索娃、财政部长马迪·塔克耶夫及政府其他成员就该领域当前形势、在建项目进展和未来发展方向作了汇报。
+
+托卡耶夫指出，全球交通物流网络新格局正在加速形成。
+
+他强调，国情咨文已明确增强国家过境运输潜力的主要方向，哈萨克斯坦应在国际交通运输体系中采取积极主动的立场。优越的地理位置为哈萨克斯坦带来了诸多优势，但国家竞争力最终取决于运输速度和可靠性、运输条件及时间安排的可预见性，以及运价的合理性。
+
+首先，必须提高过境货物通行能力，为本国航空承运人创造良好条件，同时大力发展海上运输。与此同时，托卡耶夫总统对交通运输领域的现状提出批评，指出及时推动基础设施适应新形势，是实现战略发展的关键因素。具体而言，国家元首严厉批评了哈萨克斯坦国家铁路公司的工作，并要求该公司提高营收、优化业务流程，同时通过数字化手段提升运营效率。
+
+托卡耶夫总统特别强调，要扩大物流中心规模，完善边境和海关通关程序，全面推进行业各项流程数字化，并消除基础设施瓶颈，确保货物运输畅通无阻。
+
+此外，会议指出，在严格遵循“法律与秩序”原则的前提下，必须为投资者和交通物流企业创造尽可能有利的条件。
+
+会上，托卡耶夫总统还就“萨姆鲁克-卡泽纳”国家福利基金和哈萨克斯坦国家铁路公司负责人被捕一事发表了评论。
+
+会议结束时，总统向有关国家机关和组织下达了具体任务，要求进一步推动交通物流与过境运输领域发展，提升途经哈萨克斯坦境内国际运输通道的竞争力。</div>
+<ul>
+<li>托卡耶夫召开安全会议紧急会议，聚焦交通物流与过境运输发展。</li>
+<li>总统批评国家铁路公司工作，要求提高营收和数字化效率。</li>
+<li>强调扩大物流中心、完善通关程序、消除基础设施瓶颈。</li>
+<li>要求为投资者和交通物流企业创造有利条件，遵循法律与秩序。</li>
+<li>会议提及萨姆鲁克-卡泽纳基金和国家铁路公司负责人被捕。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">会议推动交通物流改革，批评国企并强调数字化，可能提升过境运输竞争力，促进经济多元化；但负责人被捕事件或影响投资信心，需平衡法律与秩序。外交上增强哈作为过境枢纽地位，矿产运输格局有望优化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/zhukaiquanhuihui-jiangchengguojiahuiguojiashiyong-93ba0c16/" target="_blank">托卡耶夫总统：哈萨克斯坦将设立特别委员会监督国家资金使用</a></h3>
+<div class="item-meta">哈通社中文版 · 11/13 18:47<span class="source-link"><a href="https://cn.inform.kz/news/zhukaiquanhuihui-jiangchengguojiahuiguojiashiyong-93ba0c16/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫宣布将设立特别委员会监督国家资金使用，此前“萨姆鲁克-卡泽纳”基金和国家铁路公司负责人因涉嫌腐败被拘留。托卡耶夫强调宪法权威，公布2023-2025年共查处3168起腐败案件，涉案金额超2482亿美元，今年前十个月发生751起。他要求国安委和总检察院深入调查，确保社会基础设施项目质量，维护国家利益和国际声誉。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫总统：哈萨克斯坦将设立特别委员会监督国家资金使用
+
+“昨天，国内媒体报道了‘萨姆鲁克-卡泽纳’基金和‘哈萨克斯坦国家铁路’公司负责人被拘留的消息。坦率地说，这是一个非常严重的情况，表明国有企业腐败问题已经相当突出。按照法律规定，调查事项不得公开或披露。此外，调查工作也才刚刚开始。”托卡耶夫表示。
+
+他指出，目前有一点可以明确：自提出“法律与秩序”理念，并将其确立为宪法规定的国家治理和社会生活基本原则以来，这是统一体系内国有企业发生的首起重大腐败案件。
+
+“我国宪法于3月15日全民公投期间获得一致通过，并于7月1日正式生效。因此，我国这部根本大法被公正地称为‘人民宪法’。任何人都无权违反宪法的规定和条款，更无权嘲弄或贬损这部属于我们人民的神圣文件。”托卡耶夫说道。
+
+国家元首强调，凡是不遵守宪法基本规定的人，都将按照“法律与秩序”原则受到严厉惩处。
+
+“宪法是我国的根本大法，是我们人民的法律身份证。因此，拿宪法开玩笑、漠视其基本规定，就等同于贬损我们的人民。实施此类行为的人，将按照‘法律与秩序’原则受到严厉惩处。当涉及国家尊严、社会对国家机构的信任以及哈萨克斯坦的国际声誉时，我们这些由人民赋予执政权力的人，必须全力维护国家利益，为此竭尽所能。这是我们的公民责任和政治义务。”国家元首表示。
+
+托卡耶夫指出，“萨姆鲁克-卡泽纳”基金管理着国家战略资产，负责实施大型投资项目，并与大型外国企业和国际金融机构保持密切合作。
+
+“归根结底，任何一项协议或合作关系的背后，都有经过多年进行的大量谈判，其中也包含国际社会对我国的高度信任，以及国家赋予我们的具体责任。”托卡耶夫说道。
+
+据总统介绍，过去三年间，已查明数千起腐败相关违法行为。
+
+“仅在过去三年，也就是2023年至2025年期间，就查明了3168起腐败相关违法行为，其中2165起由国家公务员实施，其余则涉及其他人员，特别是准国有部门工作人员。涉案总金额超过2482亿美元。今年前十个月，共发生751起腐败相关违法行为，其中546起由国家公务员实施，205起由其他人员实施，包括准国有部门工作人员。从这些统计数据可以看出，我国的腐败形势依然严峻。但我们不会隐瞒任何问题，也不会像鸵鸟一样把头埋进沙子里。我们会公开谈论这一领域存在的所有问题，也会毫不隐瞒地向公众介绍为消除腐败已经采取和即将采取的各项措施。”托卡耶夫表示。
+
+因此，国家安全委员会反腐败行动局将与总检察院一道，对各级领导人员涉嫌侵吞公款的违法行为展开迅速、深入的调查。
+
+“绝不允许把人分成‘自己人’和‘非自己人’，更不允许区别对待所谓的‘外人’。因为宪法明确规定，法律面前人人平等，人人都必须服从法律。”国家元首表示。
+
+Фото: Ақорда 托卡耶夫强调，那些深陷腐败泥潭、心怀不轨的人是我们的死敌。他们甚至已经在盘算着如何破坏“全民建设”计划的实施。
+
+“正如大家所知，我们现在已经迈入一个新的历史时期。我们不能停滞不前，也不能满足于过去的成绩而放松懈怠。在建设公正哈萨克斯坦的进程中，绝不能滋生懒惰和消极情绪。而那些深陷腐败泥潭、心怀不轨的人，就是我们的死敌。他们现在已经在试图阻挠和破坏‘全民建设’计划的实施。当然，我们绝不会允许这种情况发生。”托卡耶夫说道。
+
+国家元首指出，所有社会基础设施项目，包括道路、机场、诊所、康复中心、文化创意中心、学校和体育综合设施，都必须保证建设质量。这是一项必须严格落实的要求。
+
+“国家资金的使用情况将由专门的国家委员会进行监督。委员会成员名单将于下周初公布。这样，我们就能着手实现最终目标，即提高人民福祉、改善公民生活质量。在这一过程中，宪法确立的法律、公正与秩序原则，将始终是我们坚定不移的行动指南。当然，这条道路不会一帆风顺，必然会遇到各种困难。我国有句俗话：‘路的意义在于抵达。’因此，我们要坚定不移地朝着既定目标前进，并最终实现这些目标。”托卡耶夫表示。</div>
+<ul>
+<li>托卡耶夫宣布设立特别委员会监督国家资金使用，名单下周公布。</li>
+<li>萨姆鲁克-卡泽纳基金和国家铁路公司负责人被拘留，涉重大腐败。</li>
+<li>2023-2025年查处3168起腐败案，涉案金额超2482亿美元。</li>
+<li>今年前十个月发生751起腐败案，腐败形势依然严峻。</li>
+<li>要求国安委和总检察院迅速调查侵吞公款行为，法律面前人人平等。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举强化哈国反腐败力度，提升政治透明度和政府信任；监督国家资金使用有助于改善经济治理和投资环境；维护国际声誉和外资合作；矿产等战略资源管理将更规范，减少准国有部门腐败风险。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/wen-1a97ec74/" target="_blank">托卡耶夫总统向阿联酋总统致慰问电</a></h3>
+<div class="item-meta">哈通社中文版 · 11/13 23:11<span class="source-link"><a href="https://cn.inform.kz/news/wen-1a97ec74/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫就阿联酋富查伊拉酋长国12日发生的严重交通事故向阿联酋总统谢赫·穆罕默德·本·扎耶德·阿勒纳哈扬致慰问电。事故造成14人死亡、30人受伤。托卡耶夫向遇难者家属及阿联酋人民表示诚挚慰问，并祝愿伤者早日康复。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 托卡耶夫总统向阿联酋总统致慰问电
+正文:
+托卡耶夫就富查伊拉酋长国发生交通事故并造成人员遇难，向阿联酋总统谢赫·穆罕默德·本·扎耶德·阿勒纳哈扬表示慰问。
+国家元首向遇难者家属以及友好的阿联酋人民致以诚挚慰问，并祝愿事故伤者早日康复。
+据外媒报道，12日，阿联酋富查伊拉酋长国发生一起严重交通事故，造成14人死亡、30人受伤。</div>
+<ul>
+<li>托卡耶夫就富查伊拉交通事故向阿联酋总统致慰问电</li>
+<li>事故造成14人死亡、30人受伤</li>
+<li>托卡耶夫向遇难者家属及阿联酋人民表示慰问</li>
+<li>祝愿事故伤者早日康复</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此慰问电有助于巩固哈阿双边友好关系，展现哈萨克斯坦外交的人道主义关怀，对政治外交有积极意义，但对经济、矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/daxueyudaxue-310ba283/" target="_blank">纳扎尔巴耶夫大学与香港科技大学（广州）签署联合科研协议</a></h3>
+<div class="item-meta">哈通社中文版 · 11/13 20:51<span class="source-link"><a href="https://cn.inform.kz/news/daxueyudaxue-310ba283/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>纳扎尔巴耶夫大学与香港科技大学（广州）签署联合科研协议，双方校长及哈驻广州总领事出席。协议推动从框架共识转向务实合作，将利用种子资金在储能、AI能源系统管理、绿氢和先进材料等领域启动首批研究项目。哈方指出合作契合托卡耶夫总统国情咨文中教育、科学和创新优先方向，助力发展科学、工程技术、人工智能及能源现代化。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">香港科技大学（广州）校长倪明选教授、纳扎尔巴耶夫大学校长瓦卡尔·艾哈迈德教授、哈萨克斯坦共和国驻广州总领事瓦利汉·萨尔森别科夫，以及两校教职员工和科研团队代表出席了活动。
+签约仪式上，倪明选表示，该协议将推动双方从达成框架性共识转向联合项目的务实合作。他特别强调，应向研究团队授予必要的权限，并利用种子资金，在储能、基于人工智能的能源系统管理、绿氢和先进材料等领域启动首批研究项目。
+瓦卡尔·艾哈迈德表示，国际合作与跨学科合作有助于加强科研工作，使双方能够携手应对能源和水资源管理等共同面临的区域性挑战。他同时强调，要加大对人才资源的投入，推动亚洲高校发展，并使科研工作更好地服务于区域发展的实际需求。
+瓦利汉·萨尔森别科夫在致辞中指出，签署该协议是推动哈萨克斯坦与中国学术和科研联系发展的重要举措。
+发言中，他特别提到了哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫近期发表的国情咨文。他指出，国家元首已将教育、科学和创新确定为当今时代的主要驱动力，并明确提出，要建设以高新技术、科研成果和高质量工程教育为基础的强大经济体。
+他还表示，香港科技大学（广州）与纳扎尔巴耶夫大学的合作，高度契合哈萨克斯坦在发展科学、工程技术和人工智能，培养高素质专业人才，以及推进能源现代化等领域的优先发展方向。</div>
+<ul>
+<li>两校签署联合科研协议，推动务实合作</li>
+<li>首批项目聚焦储能、AI能源管理、绿氢、先进材料</li>
+<li>哈方称合作契合总统国情咨文优先方向</li>
+<li>合作旨在应对能源与水资源等区域挑战</li>
+<li>双方强调加大人才投入，服务区域实际需求</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该协议将强化哈中学术科研联系，助力哈国能源现代化与AI人才培养，推动经济向高新技术转型；外交上深化对华合作，矿产领域或引入先进材料技术，提升资源附加值。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/qianshiyuezhongtongchang83180-ce6eb548/" target="_blank">前十月哈中铁路货运量同比增长8%达3180万吨</a></h3>
+<div class="item-meta">哈通社中文版 · 11/13 13:55<span class="source-link"><a href="https://cn.inform.kz/news/qianshiyuezhongtongchang83180-ce6eb548/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>今年前十个月，哈中铁路货运量同比增长8%，达3180万吨。其中，中国发往哈萨克斯坦方向1210万吨，增长9%；哈萨克斯坦发往中国方向1970万吨，增长8%。多斯特克和阿腾科里两大口岸过货量均实现增长。哈交通运输部表示，货运量攀升得益于两国深化交通物流互联互通，相关部门正加快口岸基础设施现代化改造，优化通关流程，以巩固哈萨克斯坦作为欧亚大陆过境运输枢纽的地位。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">统计显示，今年前十个月哈中铁路双向物流均保持稳健增长态势：
+自中国发往哈萨克斯坦方向：累计运送货物1210万吨，同比增长9%。其中，经由多斯特克铁路口岸运送货物500万吨，同比增长13%；经由阿腾科里铁路口岸运送货物710万吨，同比增长6%。
+自哈萨克斯坦发往中国方向：累计发运货物1970万吨，较2025年同期增长8%。按口岸划分，经由多斯特克口岸过货1310万吨，同比增长12%；经由阿腾科里口岸过货660万吨，同比增长1%。
+哈萨克斯坦交通运输部指出，哈中铁路货运量的稳步攀升，得益于两国持续深化交通物流领域互联互通所采取的一系列务实举措。
+当前，在推进国际铁路联运高质量发展的框架下，相关部门正重点加快边境口岸基础设施现代化改造，全面提升铁路口岸通行与换装能力，并持续优化跨境物流通关组织流程。上述举措的深入实施，将为进一步扩大双边货流规模、提升运输周转效率以及巩固哈萨克斯坦作为欧亚大陆过境运输枢纽的综合潜力提供坚实支撑。</div>
+<ul>
+<li>前十月哈中铁路货运量3180万吨，同比增8%</li>
+<li>中国至哈方向1210万吨，多斯特克口岸增13%</li>
+<li>哈至中国方向1970万吨，多斯特克口岸增12%</li>
+<li>哈方称增长得益于两国交通物流互联互通举措</li>
+<li>重点加快口岸现代化改造，优化跨境通关流程</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">货运量增长强化哈作为欧亚过境枢纽地位，促进双边贸易与物流经济；口岸现代化改造提升换装能力，利于矿产等大宗商品出口，巩固哈中外交与经贸合作。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(5 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/disandaxingchengweijiayongjidexing-6d27c0c4/" target="_blank">阿联酋第三大银行成为哈萨克斯坦首家获准采用“伊斯兰窗口”机制的银行</a></h3>
+<div class="item-meta">哈通社中文版 · 11/13 21:19<span class="source-link"><a href="https://cn.inform.kz/news/disandaxingchengweijiayongjidexing-6d27c0c4/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦金融市场监管和发展署向阿布扎比商业银行（哈萨克斯坦）颁发牌照，使其成为哈国首家获准采用“伊斯兰窗口”机制的银行，可在同一框架内兼营传统与伊斯兰银行业务。该模式依据2026年1月16日通过的新版《银行和银行业务法》。ADCB为阿联酋第三大银行，2026年前九个月总资产2423亿美元，净利润28亿美元，获标普和惠誉“A+”评级，阿布扎比政府通过穆巴达拉持股60.77%。此举旨在吸引外资、扩大银行业竞争。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：阿联酋第三大银行成为哈萨克斯坦首家获准采用“伊斯兰窗口”机制的银行
+
+正文：
+在哈萨克斯坦金融家大会期间，金融市场监管和发展署署长玛蒂娜·阿布勒哈斯莫娃向该银行颁发了相关牌照。
+阿布扎比商业银行（哈萨克斯坦）由此成为哈萨克斯坦首家获准采用“伊斯兰窗口”机制、在同一家银行框架内同时开展传统银行和伊斯兰银行业务的金融机构。
+传统银行与伊斯兰银行业务兼营的模式，是2026年1月16日通过的新版《哈萨克斯坦共和国银行和银行业务法》所作出的规定。
+这意味着，哈萨克斯坦首次允许全能银行在无需另行设立独立伊斯兰银行的情况下，向客户提供符合伊斯兰金融原则的金融工具和传统银行产品。此举将为民众和企业提供更多金融服务选择，并推动哈萨克斯坦伊斯兰金融的发展。
+阿布扎比商业银行进入哈萨克斯坦市场，是落实国家元首关于吸引外资银行、扩大银行业竞争指示的一项举措。
+按资产规模计算，阿布扎比商业银行（ADCB）是阿拉伯联合酋长国第三大银行。截至2026年9月30日，该银行集团2026年前九个月的总资产为2423亿美元，自有资本为248亿美元，净利润为28亿美元。
+该银行获得了标普全球评级（S&amp;P Global Ratings）和惠誉评级（Fitch Ratings）授予的“A+”长期投资级信用评级，评级展望均为“稳定”。阿布扎比政府通过国有投资公司穆巴达拉投资公司（Mubadala Investment Company）持有ADCB的控股权，持股比例为60.77%。
+银行牌照的颁发标志着外资参与设立新银行的程序正式完成，并赋予该银行在哈萨克斯坦境内开展银行业务的合法权利。
+大型国际银行集团进一步拓展在哈萨克斯坦市场的业务布局，将为促进市场竞争、提升银行服务质量，以及扩大民众和企业获得金融服务的渠道创造有利条件。借鉴ADCB的国际经验并发挥其金融实力，将有助于推动哈萨克斯坦银行业发展，拓宽本国经济融资渠道。</div>
+<ul>
+<li>ADCB（哈萨克斯坦）获哈国首张“伊斯兰窗口”牌照</li>
+<li>新版《银行法》允许全能银行兼营伊斯兰业务</li>
+<li>ADCB为阿联酋第三大银行，总资产2423亿美元</li>
+<li>阿布扎比政府通过穆巴达拉持股60.77%</li>
+<li>牌照颁发完成外资设立新银行程序</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国政治经济外交影响积极：吸引阿联酋资本，落实元首引资指示，提升银行业竞争与金融服务多样性；深化哈阿经贸关系，推动伊斯兰金融发展，拓宽经济融资渠道，但需关注外资银行对本地市场的竞争压力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/xingyetiding-2jiaxingweigao-85466d78/" target="_blank">哈萨克斯坦银行业整体保持稳定 2家银行被评为高风险</a></h3>
+<div class="item-meta">哈通社中文版 · 11/13 19:46<span class="source-link"><a href="https://cn.inform.kz/news/xingyetiding-2jiaxingweigao-85466d78/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>在第十四届哈萨克斯坦金融家大会上，金融市场监管和发展署署长阿布勒哈斯莫娃介绍，2025年SREP覆盖21家二级银行，其中14家风险低位或低于中等，5家高于中等，2家高风险（未公布名称）。前11大银行（占资产85%）资本充足率17%，压力测试后16.1%，超最低要求5.5%三倍以上。2026年前九个月银行业总资产达76.8-77万亿坚戈，NPL 90+为3.9%。标普2026年8月将哈主权评级从BBB-上调至BBB，9月将BICRA从7级上调至6级。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">在阿拉木图举行的第十四届哈萨克斯坦金融家大会上，金融市场监管和发展署署长玛蒂娜·阿布勒哈斯莫娃介绍了监管检查、压力测试以及国际评级机构评估的相关结果。
+阿布勒哈斯莫娃表示，哈萨克斯坦已建立起一套银行风险评估体系，涵盖多个方面。具体包括对银行商业模式和风险管理体系的评估（SREP）、资产质量检查（AQR），以及每年开展的压力测试。
+2025年，监管审查与评估程序（SREP）覆盖了21家二级银行。评估结果显示，14家银行的风险水平处于低位或低于中等水平，5家银行高于中等水平，另有2家银行处于高风险水平。监管机构没有公布这两家高风险银行的具体名称。
+此外，监管部门定期对资产规模排名前11位的大型银行开展资产质量评估（AQR）。这11家银行的资产占整个银行业总资产的85%。
+检查结果显示，这些银行的资本充足率为17%，评估前为18%。压力测试结果则显示，其资本充足率为16.1%。这两项指标均超过不计缓冲资本的最低监管要求（5.5%）三倍以上。
+2026年前九个月，哈萨克斯坦银行业总资产增至76.8万亿至77万亿坚戈，逾期90天以上贷款占比（NPL 90+）维持在3.9%。国际评级机构也对哈萨克斯坦银行业的稳定性给予了肯定。
+2026年8月，标普（S&amp;P）评级机构自2016年以来首次将哈萨克斯坦主权信用评级从“BBB−”上调至“BBB”，评级展望为“稳定”。该机构将此次上调归因于系统性风险下降以及银行业表现稳健。
+同年9月，标普还将哈萨克斯坦银行业的行业风险评估（BICRA）从“7”级上调至“6”级。这一调整主要基于金融市场监管领域改革取得的成效。</div>
+<ul>
+<li>2025年SREP覆盖21家银行，2家高风险未公布名称</li>
+<li>前11大银行资本充足率17%，超最低要求三倍以上</li>
+<li>2026年前九个月银行业总资产达76.8-77万亿坚戈</li>
+<li>NPL 90+维持在3.9%，资产质量总体稳定</li>
+<li>标普上调哈主权评级至BBB，BICRA升至6级</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">银行业整体稳健，高风险银行数量少且可控，资本充足率远超监管要求，有助于维护金融稳定和投资者信心。标普上调评级和BICRA反映改革成效，将降低融资成本，吸引外资，支持经济多元化，但2家高风险银行仍需关注。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/12geyue92-guojiaxingdao2028nian5-517d084b/" target="_blank">通胀连续12个月回落至9.2% 国家银行计划到2028年降至5%</a></h3>
+<div class="item-meta">哈通社中文版 · 11/13 17:15<span class="source-link"><a href="https://cn.inform.kz/news/12geyue92-guojiaxingdao2028nian5-517d084b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦年化通胀率连续12个月回落至9.2%，国家银行10月23日将基准利率从16.25%下调至15.75%，并计划2027年通胀目标6.5%-8.5%、2028年降至5%。2026年前九月GDP同比增长4.2%，非资源部门增长5.4%，私人投资激增25%。企业新增贷款同比增长19.5%至16.6万亿坚戈，个人消费信贷下降4.3%。股票债券市场规模逼近100万亿坚戈，将推资本市场改革对接国际标准。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">提穆尔·苏莱曼诺夫指出，国家银行将持续推进稳健货币政策以引导物价涨幅逐步放缓，其中2027年通胀目标区间设定为6.5%至8.5%，并力争在2028年实现5%的长期调控目标。此前，鉴于通胀持续降温及通胀预期改善，国家银行已于10月23日将基准利率由16.25%下调至15.75%。国家统计局最新数据显示，2026年10月年化通胀率已由前月高位进一步降至9.2%，当月消费价格环比上涨0.5%（9月环比涨幅为0.6%）。
+
+宏观经济基本面亦保持稳健增长。2026年前九个月，哈萨克斯坦国内生产总值（GDP）同比增长4.2%，剔除采矿业后的非资源部门增速达5.4%，建筑、交通及制造业领域的民间私人投资同比激增25%。国家银行预计全年经济增速将保持在4.5%至5.5%区间。此外，国家银行管理下的国家资产总额已达约2050亿美元，2025年国家基金投资收益率创下15.1%的历史新高，年初以来外资持有的哈萨克斯坦国债规模也增至2.8万亿坚戈，为宏观金融稳定提供了坚实安全垫。
+
+Фото: АРРФР 信贷重心转向实体经济，金融赋能“全民建设”工程 在税收优惠（企业信贷业务所得税率降至20%，低于其他业务25%的税率）及最低准备金率政策引导下，商业银行信贷结构显著优化。2026年前九个月，企业新增贷款总额同比增长19.5%，达到16.6万亿坚戈；而个人消费信贷规模则同比下降4.3%。
+
+玛蒂娜·阿布勒哈斯莫娃表示，下一步监管部门将引导银行业深度参与国家大型基础设施升级倡议——“全民建设”的长期融资，全力支持各地区社会、交通及市政工程基础设施改造。相关部门正研究允许以未来受监管的公用事业及能源设施收益作为贷款抵押，大力发展银团贷款与项目融资并支持发债再融资，同时延续“达穆”（Damu）基金对重点项目的贷款贴息并优化国家统一养老储蓄基金融资条件。大会期间还宣布，阿布扎比商业银行（Abu Dhabi Commercial Bank）在哈子行获颁带有“伊斯兰金融窗口”机制的综合银行牌照，进一步拓宽了伊斯兰金融引资渠道。
+
+当前，哈萨克斯坦股票与债券市场总规模已几乎翻番，逼近100万亿坚戈。为进一步提升市场流动性，金融市场监管和发展署与国家银行已联合起草新版《资本市场法》草案及《2030年资本市场发展规划》（涵盖七大领域35项举措），推动监管规则全面对接欧盟及国际证监会组织（IOSCO）标准。
+
+新法案核心改革包括：引入卖空交易机制及证券集中借贷制度；推动本土股票接入国际中央证券存管机构；取消伊斯兰债券发行的预算限制；拓宽中小微企业上市融资渠道并简化发债流程；持续推进养老金资产交由私人机构管理（今年起公民已获权将最高100%个人养老金委托私人机构管理）。此外，在《金融市场统一发展战略》框架下，哈萨克斯坦还将推进哈萨克斯坦证券交易所（KASE）、阿斯塔纳国际交易所（AIX）以及阿拉套新城（Alatau City）三大核心平台之间的金融工具互认与国际联合推介。
+
+Фото: Национальный банк РК</div>
+<ul>
+<li>通胀连续12个月回落至9.2%，基准利率下调至15.75%</li>
+<li>2028年通胀目标5%，2027年目标区间6.5%-8.5%</li>
+<li>前九月GDP增4.2%，非资源部门增5.4%，私人投资增25%</li>
+<li>企业新增贷款增19.5%至16.6万亿坚戈，消费信贷降4.3%</li>
+<li>股市债市规模近100万亿坚戈，推资本市场改革</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">通胀回落与降息为经济提供宽松环境，信贷转向实体经济支持基建，资本市场改革对接国际标准将提升融资效率，吸引外资并推动金融多元化，但需平衡通胀目标与增长需求。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/yixia16guojiaxinggong-b5590559/" target="_blank">一周下跌近1.6%！国家银行公布最新黄金牌价</a></h3>
+<div class="item-meta">哈通社中文版 · 11/13 14:40<span class="source-link"><a href="https://cn.inform.kz/news/yixia16guojiaxinggong-b5590559/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国家银行数据显示，截至11月12日，国内1克黄金基准价格为57,916.01坚戈，较一周前的58,881.18坚戈下跌965.17坚戈，跌幅近1.6%。同期国际市场上，11月13日现货黄金价格上涨1%至每盎司3,915.31美元，美国12月交割黄金期货上涨0.9%至每盎司3,919.60美元。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 一周下跌近1.6%！国家银行公布最新黄金牌价
+正文:
+据国家银行官方统计，截至11月12日，国内1克黄金的最新基准价格为57,916.01坚戈；而在此前一周，1克黄金价格曾达到58,881.18坚戈。据此计算，过去一周内每克黄金价格累计下调了965.17坚戈。
+国际市场方面，据路透社（Reuters）行情数据显示，2026年11月13日国际现货黄金价格小幅走高1%，报每盎司3,915.31美元；与此同时，美国市场12月交割的黄金期货价格亦上涨0.9%，报每盎司3,919.60美元。</div>
+<ul>
+<li>哈国1克黄金价格一周下跌965.17坚戈，跌幅近1.6%</li>
+<li>11月12日国内金价报57,916.01坚戈/克</li>
+<li>国际现货黄金涨1%至3,915.31美元/盎司</li>
+<li>美国黄金期货涨0.9%至3,919.60美元/盎司</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">金价短期下跌可能影响哈国黄金出口收入与外汇储备，但国际金价回升或缓解压力；对矿业投资和财政预算构成小幅波动，整体经济影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/xinggong13riyuzhuyaowaizhijiande-25e6537c/" target="_blank">央行公布13日坚戈与主要外币之间的汇率标准</a></h3>
+<div class="item-meta">哈通社中文版 · 11/13 13:36<span class="source-link"><a href="https://cn.inform.kz/news/xinggong13riyuzhuyaowaizhijiande-25e6537c/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行公布2026年11月13日坚戈对主要外币官方汇率：美元兑坚戈1:443.62，欧元兑坚戈1:492.24，俄罗斯卢布兑坚戈1:5.36，土耳其里拉兑坚戈1:8.83，中国元兑坚戈1:66.53。央行规定，坚戈兑美元官方汇率基于阿斯塔纳时间15:30证券交易所加权平均汇率确定，其他外币汇率依据16:00交叉汇率计算。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 央行公布13日坚戈与主要外币之间的汇率标准
+正文:
+根据央行公布的信息，2026年11月13日，哈萨克斯坦坚戈与国际主要货币之间的兑换汇率标准如下：
+美元兑坚戈（USD/KZT） – 1：443.62
+欧元兑坚戈（EUR/KZT）- 1：492.24
+俄罗斯卢布兑坚戈（RUB / KZT）-1: 5.36
+土耳其里拉兑坚戈（TRY / KZT）- 1: 8.83
+中国元兑坚戈（CNY / KZT）- 1：66.53
+值得一提的是，根据哈萨克斯坦国家银行规定，截至阿斯塔纳时间当日15:30，在哈萨克斯坦证券交易所形成的坚戈兑美元加权平均汇率，将被确定为下一工作日坚戈兑美元官方汇率；坚戈兑其他外币的官方汇率，则依据截至阿斯塔纳时间16:00形成的交叉汇率计算得出。</div>
+<ul>
+<li>美元兑坚戈汇率为1:443.62</li>
+<li>欧元兑坚戈汇率为1:492.24</li>
+<li>卢布兑坚戈汇率为1:5.36</li>
+<li>人民币兑坚戈汇率为1:66.53</li>
+<li>汇率确定基于交易所加权平均和交叉汇率</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率数据反映坚戈对主要货币的稳定态势，有助于稳定市场预期和外资信心；央行汇率形成机制透明，强化货币政策公信力，对贸易结算和矿产领域外汇风险管理具有参考意义。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(4 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/kakpervaya-aes-pomozhet-kazahstanu-ukrepit-pozitsii-namirovom-rinke-21a2ca7f" target="_blank">首座核电站如何助哈萨克斯坦巩固全球市场地位</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/14 01:01<span class="source-link"><a href="https://www.inform.kz/ru/kakpervaya-aes-pomozhet-kazahstanu-ukrepit-pozitsii-namirovom-rinke-21a2ca7f" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>俄罗斯国家原子能公司高管科马罗夫在“世界原子日—2026”论坛上表示，中亚是该公司优先市场，2025年中亚国家GDP平均增速超7%，能源需求旺盛。哈萨克斯坦和乌兹别克斯坦拥有世界最大铀储量之一。俄原能在哈建设首座核电站，含两个1200兆瓦机组，将生产哈国近20%电力，有助于降低碳足迹、提升哈产品国际竞争力。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：首座核电站如何帮助哈萨克斯坦巩固其在世界市场的地位
+
+正文：
+俄罗斯国家原子能公司（Росатом）副总经理兼发展与国际业务板块总监基里尔·科马罗夫在安塔利亚举行的“世界原子日—2026”国际论坛期间回答哈通社（Kazinform）记者提问时，介绍了中亚核能发展情况以及这些项目对哈萨克斯坦经济的意义。
+
+据他介绍，中亚目前是俄罗斯国家原子能公司最优先的市场之一。这是由于该地区经济动态发展、人口增长以及电力需求增加。
+
+图片：叶拉曼·图鲁斯别科夫/哈通社
+
+“2025年，中亚所有国家的GDP平均增速超过7%。这远高于全球平均水平。这表明人口在增加，经济在增长，因此能源需求也在增长。而能源是最基础的开端，没有它，经济增长、繁荣和人民生活水平提高是不可能的，”基里尔·科马罗夫指出。
+
+他还注意到，哈萨克斯坦和乌兹别克斯坦拥有世界上最大的铀储量之一。他认为，这为这些国家发展自己的核能创造了额外机会。
+
+俄罗斯国家原子能公司在该地区最大的项目之一是在哈萨克斯坦建设首座核电站。该项目规定建设两个装机容量各1200兆瓦的发电机组。
+
+“在哈萨克斯坦，我们正在实施双机组核电站建设项目——每个机组1200兆瓦。这两个机组将生产哈萨克斯坦全部电力的近20%。这不仅从生态和人类健康的角度很重要，而且首先对哈萨克斯坦各类商品生产商很重要，”基里尔·科马罗夫强调。
+
+据他介绍，核能发展可能成为提高哈萨克斯坦产品在国际市场竞争力的因素之一。
+
+如今，国外消费者越来越多地对产品提出碳足迹要求，包括金属、工业设备和其他商品。在这些条件下，使用</div>
+<ul>
+<li>中亚是俄原能优先市场，2025年GDP均增速超7%</li>
+<li>哈乌两国拥有世界最大铀储量之一，利于发展核能</li>
+<li>哈首座核电站将建两个1200兆瓦机组</li>
+<li>两机组将生产哈国近20%电力</li>
+<li>核能助哈产品降低碳足迹、提升国际竞争力</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">核电站建成将提升哈国电力自给率与出口产品碳竞争力，巩固其铀资源国地位；深化与俄核能合作，但需平衡西方对俄制裁风险，并推动地区核能格局重塑。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/disandabudi-92cbbe67/" target="_blank">哈萨克斯坦第三座核电站选址考察范围扩大至北部地区</a></h3>
+<div class="item-meta">哈通社中文版 · 11/14 00:15<span class="source-link"><a href="https://cn.inform.kz/news/disandabudi-92cbbe67/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦计划建设至少三座核电站，第三座选址尚未确定。目前正考察阿拉木图州江布尔县、东哈萨克斯坦州库尔恰托夫市周边、里海沿岸西部地区及北部托博尔河沿岸。选址将综合考虑电力需求增长和原子能技术综合应用，包括供电、供热及海水淡化。北部地区因水资源充足新纳入考察范围。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">萨特哈利耶夫指出，根据《2050年前原子能行业发展战略》，哈萨克斯坦计划建设至少三座核电站。据他介绍，地质、水文及其他方面的调查结果表明，阿拉木图州江布尔县是适合建设核电站的区域之一。
+不过，第三座核电站的具体选址目前尚未最终确定。
+“目前，哈萨克斯坦正在考察多个适合建设第三座核电站的区域，尚未作出最终决定。不过，我国具备部署中等功率反应堆的潜力。这类反应堆不仅能够为用户提供电力，还可以供应热能，在某些情况下还可用于海水淡化，”萨特哈利耶夫在土耳其安塔利亚举行的“2026年世界原子能日”论坛期间接受记者采访时表示。
+据他介绍，在选择核电站建设地点时，将综合考虑未来电力消费需求的增长趋势，以及原子能技术综合应用的可能性。
+“我们正在对东哈萨克斯坦州库尔恰托夫市周边区域进行研究。综合考虑多方面因素，里海沿岸的哈萨克斯坦西部地区也适合建设核电站。此外，根据系统运营商KEGOC的建议，哈萨克斯坦北部托博尔河沿岸区域也被纳入考察范围，主要考虑到当地拥有充足的水资源，能够满足核电站冷却需求。总体而言，上述区域在发展核能方面均具有巨大潜力。在哈萨克斯坦核能发展的下一阶段，将对这些区域逐一开展全面深入的研究，”萨特哈利耶夫说道。
+此前，萨特哈利耶夫曾介绍过哈萨克斯坦适合建设第三座核电站的区域。当时，官方仅表示正在考虑在东部和西部地区选址。如今，哈萨克斯坦北部地区也被纳入潜在选址范围。</div>
+<ul>
+<li>哈计划建至少三座核电站，第三座选址未定</li>
+<li>阿拉木图州江布尔县为适合区域之一</li>
+<li>考察范围扩大至北部托博尔河沿岸</li>
+<li>选址综合考虑电力需求与技术应用</li>
+<li>中等功率反应堆可供电供热及海水淡化</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">影响分析：选址扩大至北部，将优化哈国核能布局，缓解电力紧张，促进区域经济平衡；与俄合作可能加深，地缘政治影响增强；核能发展将减少对化石能源依赖，但需关注水资源竞争和核安全。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/2027nianfagaoxianxingbu-745fcc47/" target="_blank">哈萨克斯坦2027年液化石油气批发最高限价拟维持现行标准不变</a></h3>
+<div class="item-meta">哈通社中文版 · 11/13 15:07<span class="source-link"><a href="https://cn.inform.kz/news/2027nianfagaoxianxingbu-745fcc47/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦能源部计划在2027年维持液化石油气批发最高限价不变，即每吨59,722坚戈（不含增值税）。该价格适用于2026年7月1日至12月31日期间商品交易所场外国内市场供应计划框架下的批发销售。此举旨在稳定国内燃气市场预期，保障民生与生产用气平稳供应。相关部令草案已在开放性规范性法律文件门户网站公布，公开征求意见截止日期为11月27日。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦2027年液化石油气批发最高限价拟维持现行标准不变
+正文:
+据悉，自2026年7月1日至2026年12月31日期间，哈萨克斯坦在商品交易所场外国内市场供应计划框架下核定的液化石油气批发销售最高限价为每吨59,722坚戈（不含增值税）。能源部计划在2027年延续这一价格标准，以进一步稳定国内燃气市场预期、保障民生与生产用气平稳供应。
+目前，该部令草案已在开放性规范性法律文件门户网站公布，面向社会公众公开征求意见，公示截止日期为11月27日。</div>
+<ul>
+<li>2027年液化石油气批发最高限价拟维持每吨59,722坚戈（不含增值税）</li>
+<li>现行价格适用于2026年7月1日至12月31日的场外国内市场供应</li>
+<li>政策目标为稳定燃气市场预期、保障民生与生产用气</li>
+<li>部令草案已公开征求意见，截止日期为11月27日</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该政策有助于稳定哈国国内燃气市场价格预期，保障民生用气，减少价格波动对居民和企业的冲击；同时体现能源部对关键民生物资的持续调控，对政治社会稳定有积极作用，但可能影响液化石油气生产商和销售商的利润空间。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/zinengchuxingwushiwu-2f86e7f4/" target="_blank">原子能署出台放射性废物实物保护新规</a></h3>
+<div class="item-meta">哈通社中文版 · 11/13 14:58<span class="source-link"><a href="https://cn.inform.kz/news/zinengchuxingwushiwu-2f86e7f4/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦原子能署出台放射性废物实物保护新规，旨在防范未经授权接触、盗窃、非法扣押及蓄意破坏行为。新规确立预防、监测、迟滞、应急四大职能，并按比活度设A、B、C三级防护标准，分别适用于高、中、低放射性废物。运输环节须按总活度最高级别执行统一防护。应急响应时限明确：1小时内报告，72小时内完成调查，5个工作日内提交整改报告。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">新规的核心目标在于严密防范针对放射性废物的未经授权接触、盗窃、非法扣押以及潜在破坏（蓄意破坏）行为。根据文件规定，实物保护体系涵盖四大核心职能：提前预防未经授权的非法行为、及时监测并识别此类行为及其征兆、有效迟滞违规人员的行动进程，以及迅速采取相应的应急处置措施。
+结合放射性废物的比活度指标，新规明确确立了A、B、C三级实物保护标准：
+“A”级防护：适用于高放射性废物。该级别旨在全面防范未经授权接触、盗窃、劫持与蓄意破坏，并最大限度降低潜在破坏事件可能引发的辐射危害后果；
+“B”级防护：适用于中等放射性废物。重点在于最大程度压缩非法接触、扣押、盗窃、劫持及蓄意破坏的可乘之机；
+“C”级防护：适用于低放射性废物。主要用于防范未经授权接触、非法扣押及盗窃风险。
+新规同时对放射性废物运输环节的安全标准作出严格界定。在运输过程中，实物保护级别须综合考量所运载全部废物的总活度，并严格按照最高适用级别执行。无论废物集中装载于单一运输工具，还是通过多辆汽车组成的车队、多节车厢编组的铁路专列或船舶不同舱室进行转运，均须无条件执行同等高标准防护要求。
+此外，针对因未经授权接触、盗窃、劫持或蓄意破坏导致放射性废物丢失，或发现上述违法企图的情况，新规设定了刚性应急响应时限：相关责任自然人及法人必须立即采取紧急措施控制局面，并在1小时内向主管部门及相关国家机关报告；事故发生的原因、具体经过及影响后果须在72小时内完成全面调查核实；在5个工作日内，责任主体必须向主管部门提交详尽的整改报告，列明已落实或拟采取的纠偏举措。</div>
+<ul>
+<li>新规确立预防、监测、迟滞、应急四大实物保护职能</li>
+<li>按比活度设A、B、C三级防护，对应高、中、低放射性废物</li>
+<li>运输环节按总活度最高级别执行统一高标准防护</li>
+<li>应急时限：1小时报告、72小时调查、5工作日整改报告</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">新规强化哈国核材料与放射性废物监管体系，提升核安全治理能力，降低辐射事故风险；有助于增强国际原子能机构合作信誉，吸引核能投资，但增加相关企业合规成本，对矿产及核燃料循环产业形成更严格安全约束。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-11-14 09:02</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
