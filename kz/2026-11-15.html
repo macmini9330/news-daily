@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年11月15日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年11月15日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年11月14日早9:00至2026年11月15日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 10 条</span><span class="stat-chip">3 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">6</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">2</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">0</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">2</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(6 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/ot-sudi-verhovnogo-suda-do-chinovnikov-na-mestah-naznacheniya-za-nedelyu-v-kazah-c08e485e" target="_blank">从最高法院法官到地方官员——哈萨克斯坦一周任免汇总</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/15 09:00<span class="source-link"><a href="https://www.inform.kz/ru/ot-sudi-verhovnogo-suda-do-chinovnikov-na-mestah-naznacheniya-za-nedelyu-v-kazah-c08e485e" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦本周进行多项人事任命：阿桑·叶斯肯迪罗夫经库鲁尔泰会议审议被选为最高法院法官，其拥有30余年司法经验，曾任宪法法院法官；艾杜拉特·肯热别科夫被任命为阿特劳市副市长，此前任州能源和住房公用事业管理局局长；科斯塔奈州也有多项任命。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">在库鲁尔泰会议上，审议了国家元首关于选举阿桑·叶斯肯迪罗夫为最高法院法官的提名。阿桑·叶斯肯迪罗夫在司法系统拥有超过30年的工作经验，历经所有司法审级。他毕业于叶·阿·布克托夫卡拉干达国立大学，法学专业。其职业生涯始于1991-1994年担任科克舍套州内务局经济犯罪侦查处专家。多年来，他曾任科克舍套州司法管理局顾问、首席专家、总专家。1996年至1998年，任科克舍套市法院常任法官；1998年至1999年，任阿斯塔纳市阿拉木图区法院法官；1999年至2002年，任阿克莫拉州法院法官；2002年至2008年，任阿克莫拉州跨区专门经济法院院长。2008-2012年，任巴甫洛达尔州跨区专门经济法院院长；2012年7月2日至2015年12月18日，任阿克莫拉州法院民事和行政案件上诉审判庭庭长。此后八年，任哈萨克斯坦共和国最高法院法官。2023年1月至2026年9月，任哈萨克斯坦共和国宪法法院法官。与此同时，根据阿特劳州州长令，艾杜拉特·肯热别科夫被任命为市副市长。艾杜拉特·肯热别科夫1987年出生于阿特劳州。2008年毕业于哈利勒·多斯穆哈梅多夫阿特劳国立大学，专业为“国家和地方管理”。2008年，他在阿特劳州能源和公用事业管理局计划合同处开始工作，担任代理总专家。2008-2010年，任该处总专家；2010-2011年，任处长；2011-2019年，任管理局副局长。2019-2022年，任克孜勒科金区副区长。自2022年12月起至本次任命前，任阿特劳州能源和住房公用事业管理局局长。科斯塔奈州也立即出现了多项任命。</div>
+<ul>
+<li>叶斯肯迪罗夫被选为最高法院法官，有30余年司法经验</li>
+<li>肯热别科夫任阿特劳市副市长，曾主管州能源和公用事业</li>
+<li>科斯塔奈州本周出现多项地方官员任命</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">司法系统人事调整有助于提升最高法院专业性与稳定性；地方任命强化能源与市政管理，对哈国地方治理和能源政策执行有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/85-pravonarusheniy-presekli-politseyskie-za-sutki-v-ekibastuze-19f6d539" target="_blank">埃基巴斯图兹警方一天内制止85起违法行为</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/15 05:34<span class="source-link"><a href="https://www.inform.kz/ru/85-pravonarusheniy-presekli-politseyskie-za-sutki-v-ekibastuze-19f6d539" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦埃基巴斯图兹警方在一天内制止85起违法行为，其中75起为交通违规，包括超速、未礼让行人、闯红灯和酒驾。警方在阿拜街拦停一辆醉驾Mazda 626及一名醉驾摩托车手，车辆被扣留，材料移交法院。当地落实“法律与秩序”和“零容忍”原则，巡逻队全天候执勤，重点覆盖犯罪高发区和人员密集场所。此前阿拜州已拘留近600名醉驾司机。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：埃基巴斯图兹警方一天内制止85起违法行为
+正文：
+——该地区继续落实“法律与秩序”原则。巡逻警察连队每日上岗执勤，以保障公共秩序和道路安全。警方指出，重点聚焦犯罪高发区域和人员密集场所。
+警方表示，巡逻勤务全天候运行，并与民众保持密切联系。检查员不仅监督交通规则遵守情况，还第一时间响应突发事件，维护公共场所秩序，并协助热追踪破案件。
+当日记录的85起违法行为中，75起涉及违反交通规则。其中以超速、未礼让行人、闯红灯和酒后驾驶为主。
+例如，在埃基巴斯图兹阿拜街上，警察拦停了一辆Mazda 626汽车，驾驶员处于醉酒状态。医疗检测结果证实了酒后驾驶事实。一名摩托车驾驶员也实施了类似违法行为。所有车辆均被扣留至专用停车场，材料已移交法院。
+警方强调，该地区对违法行为实行“零容忍”原则。保障公民安全的工作仍在继续，所有违法者都将承担责任。
+此前报道称，阿拜州拘留了近600名醉酒驾驶员。</div>
+<ul>
+<li>埃基巴斯图兹一天内制止85起违法，75起为交通违规</li>
+<li>重点违规：超速、未礼让行人、闯红灯、酒驾</li>
+<li>两名醉驾者被查，车辆扣留，材料移交法院</li>
+<li>警方全天候巡逻，落实“零容忍”原则</li>
+<li>阿拜州此前拘留近600名醉驾司机</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">短期强化社会秩序与道路安全，提升执法威慑力；对政治稳定有正面作用，但需平衡执法资源；经济上减少事故损失；外交无直接影响；矿产格局无直接关联，但安全环境间接利好投资。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/shkola-dolgostroy-vkostanae-poyavilis-novie-podrobnosti-osrokah-zaversheniya-rab-6bab5fe4" target="_blank">科斯塔奈长期拖延的学校：完工期限出现新细节</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/15 01:46<span class="source-link"><a href="https://www.inform.kz/ru/shkola-dolgostroy-vkostanae-poyavilis-novie-podrobnosti-osrokah-zaversheniya-rab-6bab5fe4" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>科斯塔奈市“库奈”微区一所900座学校自2021年开建，原承包商为“格拉纳达”公司。2024年1月体育馆屋顶部分坍塌，需检测和修复。项目进度约75%，已移交新承包商“КазЭлитСтрой 2050”，合同金额2.47亿坚戈，已使用2.039亿坚戈。目前正制定结构加固方案，待国家鉴定通过后继续施工。居民对长期拖延表示不满。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：科斯塔奈长期未完工学校：完工期限出现新细节
+
+正文：
+提醒一下，位于“库奈”微区的可容纳900名学生的学校于2021年开始建设。最初的承包商是“格拉纳达”公司。
+此前我们曾撰文报道为何科斯塔奈州会出现长期未完工的学校。
+2024年1月，该设施体育馆部分屋顶发生坍塌。事故发生后，需要对结构进行检测、修复工作并调整设计预算文件。
+拖延已久的建设情况引起了居民的愤怒。在社交网络上，市民对承诺的学校多年来仍未建成表示不满。就此主题举行了会议并与授权机构进行了会面。
+此前建设管理局表示，该设施的准备程度约为75%。工程已移交给新承包商——“КазЭлитСтрой 2050”有限责任公司。合同金额为2.47亿坚戈，其中已使用2.039亿坚戈。
+然而，为了完成建设，需要解决建筑结构状况的问题。
+——根据技术结论，为了将学校设施投入使用，正在制定加强建筑结构的设计方案。在获得国家鉴定对设计方案作出肯定结论后，将采取措施完成工程并将设施投入使用，——科斯塔奈州建设管理局表示。
+关于谁以及如何控制科斯塔奈的城市建设，可在此处阅读。</div>
+<ul>
+<li>学校2021年开建，原承包商“格拉纳达”公司</li>
+<li>2024年1月体育馆屋顶坍塌，需修复和调整文件</li>
+<li>进度约75%，新承包商合同2.47亿坚戈</li>
+<li>正制定结构加固方案，待国家鉴定后完工</li>
+<li>居民不满长期拖延，举行会议表达诉求</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该事件反映哈国地方基建监管漏洞，可能促使政府加强工程审计与承包商问责，短期增加财政负担，但长期有助于改善投资环境和民生信任。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://www.inform.kz/ru/bolee-200-novobrantsev-vstupili-v-ryadi-natsgvardii-v-uralske-941e39df" target="_blank">乌拉尔市200多名新兵加入国民警卫队</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/15 01:01<span class="source-link"><a href="https://www.inform.kz/ru/bolee-200-novobrantsev-vstupili-v-ryadi-natsgvardii-v-uralske-941e39df" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>在乌拉尔市，超过200名来自阿克托别州、阿拉木图州和曼吉斯套州的新兵宣誓加入国民警卫队，约500名家属到场。新兵经过一个月初级训练，将执行维护公共秩序、保护国家设施等任务。此前阿斯塔纳已有约750名警卫队员宣誓。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">在乌拉尔市，超过200名年轻士兵宣誓效忠祖国，正式加入国民警卫队。对他们每个人来说，这一天都是重要事件，象征着新生活阶段的开始和对国家安全责任的承担。
+来自阿克托别州、阿拉木图州和曼吉斯套州的应征者抵达了部队。在一个月内，新兵们接受了初级军事训练，掌握了队列动作，学习了军事条令，并熟悉了军队生活。
+照片：Polisia.kz 来自哈萨克斯坦不同地区的约500名父母和近亲前来与年轻军人共同分享这一重要事件。对他们来说，宣誓仪式成为激动人心的时刻，充满了对儿子的自豪。
+“今天对我来说是特别而难忘的一天。军事誓言是重大的责任。我们准备不辜负父母的信任，诚实履行对祖国的义务，”军人阿米尔·哈桑分享了自己的感受。
+在庄严的仪式后，年轻士兵将进入下一阶段的战斗训练。他们将面临确保公共秩序、保护重要国家设施和维护法律秩序的服务。
+此前有报道称，在阿斯塔纳，约750名警卫队成员进行了军事宣誓。</div>
+<ul>
+<li>乌拉尔市超200名新兵宣誓加入国民警卫队</li>
+<li>新兵来自阿克托别州、阿拉木图州和曼吉斯套州</li>
+<li>约500名家属到场见证宣誓仪式</li>
+<li>新兵完成一个月初级军事训练</li>
+<li>阿斯塔纳此前约750名警卫队员宣誓</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次宣誓增强哈国国民警卫队兵力，强化公共秩序与重要设施安保，体现地方征兵动员能力，对国内安全稳定有积极意义，但未直接涉及经济、外交或矿产格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://www.inform.kz/ru/detskie-kolyaski-v-avtobusah-mintransporta-rk-razyasnil-pravila-proezda-2ed01d56" target="_blank">公交车上的婴儿车：哈萨克斯坦交通部解释乘车规则</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/15 00:21<span class="source-link"><a href="https://www.inform.kz/ru/detskie-kolyaski-v-avtobusah-mintransporta-rk-razyasnil-pravila-proezda-2ed01d56" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦交通部澄清，现行规则不禁止父母携带婴儿车乘坐公交车。在公交车满载时，若父母有座位，允许携带折叠婴儿车，且婴儿车不得妨碍乘客移动。该规定旨在保障乘客安全并保持通道畅通。若父母不便折叠，可继续以展开状态乘车，且不会因此受到罚款、赶下车或其他制裁。此前，哈航空管理局也提醒了行李运输安全规则。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">——现行规则不禁止携带婴儿车的父母乘车。根据更新的汽车客运和行李运输规则，在公交车满载时，如果父母有座位，允许携带折叠状态的婴儿车。同时，婴儿车不应妨碍乘客的自由移动，哈萨克斯坦交通部表示。
+该规定旨在确保乘客安全，包括儿童及其陪同父母的安全，并保持公交车厢内通道畅通。
+如果父母不方便折叠婴儿车，可以继续以展开状态携带婴儿车乘车。
+——不规定对此进行罚款、赶下公交车或其他制裁，该部强调。
+此前，哈萨克斯坦航空管理局提醒了行李运输安全规则。有关飞机上禁止运输哪些物品以及为什么携带他人包裹有危险的详细信息，请阅读此处。</div>
+<ul>
+<li>哈交通部澄清：现行规则不禁止携带婴儿车乘公交</li>
+<li>满载时允许携带折叠婴儿车，但不得妨碍乘客移动</li>
+<li>不便折叠时可展开携带，不设罚款或赶下车等制裁</li>
+<li>规定旨在保障乘客安全并保持车厢通道畅通</li>
+<li>哈航空管理局此前提醒行李运输安全规则</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该澄清体现了哈国在公共交通领域对家庭出行需求的关注，有助于提升公共服务的人性化水平，减少社会争议，对政治社会稳定有积极意义，但对经济和矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/quanlide-35ee1f24/" target="_blank">托卡耶夫入选全球最具影响力的穆斯林名单</a></h3>
+<div class="item-meta">哈通社中文版 · 11/14 20:50<span class="source-link"><a href="https://cn.inform.kz/news/quanlide-35ee1f24/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>约旦皇家伊斯兰战略研究中心每年发布《全球最具影响力的500位穆斯林》榜单，哈萨克斯坦总统托卡耶夫入选“政治”类别。文章强调自2022年“一月事件”后，托卡耶夫提出“新哈萨克斯坦”倡议并推行政治改革；2022年6月全民公投通过宪法修正案，限制总统权力、加强议会作用、禁止总统近亲担任高级公职；托卡耶夫在2022年11月提前总统选举中以81.31%得票率当选，任期七年且仅限一届。榜单共500人，前50名有具体排名，其余450人分13个类别。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">值得一提的是，该名单由位于约旦的“皇家伊斯兰战略研究中心”每年发布。
+
+最新榜单中，托卡耶夫被列入“政治”类别。文章还特别强调了自2022年开始的政治变革。文中指出，在“一月事件”之后，托卡耶夫提出了建设“新哈萨克斯坦”的倡议，并推行了广泛的政治改革。
+
+在2022年6月举行的全民公投中，宪法修正案获得通过。这些修订旨在限制总统权力，加强议会作用，并禁止总统近亲在国家公职体系中担任高级职务。
+
+该刊物还指出，托卡耶夫赢得了2022年11月举行的提前总统选举，获得了81.31%的选票。根据新宪法，他当选为总统，任期为七年，且仅限一届。
+
+《全球最具影响力的500位穆斯林》（The Muslim 500）是一份年度出版物，旨在介绍在全球各国穆斯林群体中具有重大影响力的人士。在评选过程中，会综合考量公众意见、专家评估、社会指标以及候选人的终身成就。对个人影响力的评估，不仅依据量化指标，还考量了其对穆斯林群体所产生的长期影响。
+
+榜单共收录了500位人物。其中，前50名入选者拥有具体排名，其余450人则被划分为13个类别，涵盖了政治、宗教、商业、科学、文化、慈善、体育等多个领域。</div>
+<ul>
+<li>托卡耶夫入选全球最具影响力穆斯林榜单政治类别</li>
+<li>2022年公投通过宪法修正案限制总统权力加强议会</li>
+<li>托卡耶夫以81.31%得票率当选总统任期七年仅限一届</li>
+<li>榜单由约旦皇家伊斯兰战略研究中心每年发布</li>
+<li>榜单共500人前50名有具体排名其余分13类</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">国际认可提升托卡耶夫及哈萨克斯坦政治改革形象，有助于吸引穆斯林国家投资与合作；宪法改革巩固权力制衡与稳定预期，但总统近亲限制或影响精英网络；矿产领域或借外交形象增强与伊斯兰市场合作。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/putin-tramp-i-si-tszinpin-vstretyatsya-19-noyabrya-v-kitae-59c818c6" target="_blank">特朗普、普京和习近平将于11月19日在中国会晤</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/15 02:06<span class="source-link"><a href="https://www.inform.kz/ru/putin-tramp-i-si-tszinpin-vstretyatsya-19-noyabrya-v-kitae-59c818c6" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>俄罗斯总统新闻秘书佩斯科夫向塔斯社表示，普京、习近平与特朗普将于11月19日在中国深圳亚太经合组织峰会期间举行三方会晤。此前Kazinform报道特朗普计划下周与俄中领导人会面。会谈主要议题为削减核武器和伊朗局势，但华盛顿目前不指望达成协议。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">特朗普、普京和习近平将于11月19日在中国会晤
+
+俄罗斯总统新闻秘书德米特里·佩斯科夫向塔斯社通报了此事。
+
+——已达成协议，将于19日（11月19日——编者注）举行普京总统、习近平主席和特朗普总统之间的三方会晤。此次会晤将在深圳亚太经合组织峰会期间举行，——克里姆林宫代表表示。
+
+此前，Kazinform曾报道，美国总统唐纳德·特朗普计划于下周在中国深圳与俄罗斯和中国领导人会晤。
+
+三方会谈的主要议题将是削减核武器和伊朗局势。同时，华盛顿目前并不指望能达成协议。</div>
+<ul>
+<li>普京、习近平、特朗普11月19日深圳三方会晤</li>
+<li>会晤在亚太经合组织峰会期间举行</li>
+<li>主要议题为削减核武器与伊朗局势</li>
+<li>华盛顿暂不指望达成协议</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次三方会晤若成行，将影响全球核裁军与中东安全格局，对哈萨克斯坦而言，大国协调可能改变其外交平衡空间，并牵动能源与矿产出口的外部环境。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/kazahstan-iavstriya-natseleni-narasshirenie-investitsionnogo-itorgovo-ekonomiche-7ccec118" target="_blank">哈萨克斯坦与奥地利拟扩大贸易和投资合作</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/14 23:20<span class="source-link"><a href="https://www.inform.kz/ru/kazahstan-iavstriya-natseleni-narasshirenie-investitsionnogo-itorgovo-ekonomiche-7ccec118" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与奥地利举行会谈，重点讨论扩大贸易经济和投资合作，并为11月19-20日在维也纳举行的政府间委员会第13次会议和商业理事会第11次会议做准备。奥方代表团包括ÖBAG、OMV等企业高层。哈方介绍了总统国情咨文的基础设施现代化计划，强调跨里海国际运输路线（中间走廊）的潜力，以及利用AKCP平台、Team Austria倡议和Global Gateway计划实施联合项目。双方优先合作方向包括生产本地化、石油化工、可再生能源、非原料出口和关键原材料。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦与奥地利计划扩大贸易和投资合作
+
+出席会议的还有大型国有控股公司负责人和奥地利领先企业代表，包括奥地利投资公司（ÖBAG）股份公司总经理兼管理委员会唯一主席埃迪特·赫拉瓦蒂、OMV公司执行董事会成员兼能源执行副总裁贝里斯拉夫·加绍以及奥地利-哈萨克斯坦互联互通平台（AKCP）主席卡尔·尤尔卡。
+
+会议重点讨论了扩大贸易经济和投资互动问题，以及为将于11月19日至20日在维也纳举行的哈萨克斯坦-奥地利政府间贸易经济合作委员会第13次会议和商业理事会第11次会议所做的筹备工作。
+
+部长穆·特列乌别尔迪向奥地利代表团介绍了哈萨克斯坦总统卡瑟姆-若马尔特·托卡耶夫国情咨文的关键内容，其中规定对基础设施、工业和能源领域进行大规模现代化改造。
+
+——特别关注了跨里海国际运输路线（中间走廊）的发展、扩大哈萨克斯坦的运输物流能力以及加强其作为欧洲和亚洲之间关键过境环节的作用。在这方面，哈萨克斯坦外交官指出了在奥地利-哈萨克斯坦互联互通平台（AKCP）框架内实施联合项目的高潜力，包括利用奥地利“Team Austria”倡议和欧洲“Global Gateway”计划的可能性，哈萨克斯坦外交部指出。
+
+照片：哈萨克斯坦外交部。S.格鲁伯证实奥地利商界有兴趣扩大在哈萨克斯坦的业务存在。他还强调了利用现有双边机制推动能源、机械制造、农业、农工综合体和旅游领域具体投资项目的重要性。
+
+双方将生产本地化、石油化工、可再生能源、发展哈萨克斯坦非原料出口以及关键原材料领域合作列为优先合作方向。
+
+双方同意继续就广泛问题深化互利伙伴关系，并</div>
+<ul>
+<li>哈奥筹备11月维也纳政府间委员会和商业理事会会议</li>
+<li>哈方推介中间走廊及AKCP平台联合项目潜力</li>
+<li>奥方企业关注能源、机械、农业和旅游投资</li>
+<li>优先合作含生产本地化、可再生能源和关键原材料</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈奥经济纽带，推动哈国过境运输地位提升，吸引奥方投资能源与关键矿产领域，助力哈经济多元化和非原料出口，同时深化哈与欧盟互联互通合作。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/tseni-na-ugol-vzleteli-do-145-dollarov-za-tonnu-4b8839fa" target="_blank">煤炭价格飙升至每吨145美元</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/15 08:28<span class="source-link"><a href="https://www.inform.kz/ru/tseni-na-ugol-vzleteli-do-145-dollarov-za-tonnu-4b8839fa" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>煤炭价格在触及两个月低点后回升至每吨145美元，主要因能源供应稳定性担忧，部分国家和能源公司增加燃煤发电。液化天然气价格上涨也推高煤炭需求，此前曾导致煤价达多年高点。阿拉木图计划从2027年起禁止销售煤炭。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：煤炭价格飙升至每吨145美元
+正文：
+价格在触及两个月低点后开始回升。上涨原因之一是对能源供应稳定性的担忧。
+在不确定性条件下，一些国家和能源公司增加使用煤炭来发电。
+液化天然气成本对市场产生额外影响。此前其价格上涨已促进煤炭需求增长，导致价格达到多年高点。
+此前有报道称，阿拉木图计划从2027年起禁止销售煤炭。</div>
+<ul>
+<li>煤价回升至145美元/吨，因供应稳定性担忧</li>
+<li>多国增加燃煤发电应对能源不确定性</li>
+<li>液化天然气涨价助推煤炭需求与价格</li>
+<li>阿拉木图计划2027年起禁售煤炭</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">煤价上涨可能加剧哈萨克斯坦通胀压力，但2027年阿拉木图禁售煤炭政策将推动能源结构转型，影响国内煤炭市场格局与出口策略。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/otdobichi-urana-ksobstvennim-aes-kakkazahstan-nameren-razvivat-atomnuyu-otrasl-919679b7" target="_blank">从铀开采到自建核电站：哈萨克斯坦如何发展原子能产业</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/15 03:49<span class="source-link"><a href="https://www.inform.kz/ru/otdobichi-urana-ksobstvennim-aes-kakkazahstan-nameren-razvivat-atomnuyu-otrasl-919679b7" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦原子能署署长萨特卡利耶夫在安塔利亚“世界原子日—2026”论坛上表示，哈铀储量居世界第二，供应全球约40%的铀开采量。哈方正改变对铀的定位，从单纯出口转向发展本国原子能，计划建设三座核电站，并建立百年铀战略储备，涵盖放射性药物、能源生产、农业核技术等领域，同时注重人才培养和科学集群建设。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">在安塔利亚举行的“世界原子日—2026”国际论坛框架下，哈萨克斯坦共和国原子能署署长阿尔马萨达姆·萨特卡利耶夫在“为了人类与地球的原子能”全体会议上发表了讲话。
+署长指出，哈萨克斯坦铀储量居世界第二位，供应全球约40%的铀开采量。国家公司在该行业发展中的作用显著，其股票在伦敦证券交易所上市。
+据他介绍，拥有大量铀储量为哈萨克斯坦发展本国原子能提供了额外机遇。同时，国家打算改变对这一战略资源的使用方式。
+“必须改变对铀的态度。这涉及转型。这不仅仅是出口，而是发展我们自身经济的能源来源，”发言人强调。
+他指出，与石油天然气行业一样，铀工业可以成为国家长期经济发展的关键方向之一。
+据阿尔马萨达姆·萨特卡利耶夫称，哈萨克斯坦正在持续实施原子能发展计划，规定建设三座核电站。未来的核电站不仅旨在满足国家日益增长的电力需求，还要成为形成完整工业和科学原子能集群的基础。
+“我们计划不仅满足能源需求，还要确保建立一个基于该专业知识的有效科学集群，”他指出。
+署长特别关注人力资本发展和合格专家的培养。
+百年铀战略储备。阿尔马萨达姆·萨特卡利耶夫称另一个重要方向是建立铀战略储备，以保障哈萨克斯坦的长期需求。
+“对我们来说，建立百年铀战略资源很重要，包括不同应用领域：放射性药物、能源生产、核技术在农业中的应用等，”他说。
+这里指的不仅是</div>
+<ul>
+<li>哈铀储量世界第二，供应全球约40%铀开采量</li>
+<li>计划建设三座核电站，满足电力并打造原子能集群</li>
+<li>建立百年铀战略储备，覆盖医药、能源、农业等领域</li>
+<li>推动铀从出口资源转向本国经济发展能源来源</li>
+<li>注重人才培养和科学集群建设</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">哈国推动铀从出口转向自用，将提升能源自主与工业附加值，减少对油气依赖；三座核电站和百年储备增强长期资源掌控力，可能改变中亚铀供应格局，并强化与核技术国家的合作。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-11-15 09:02</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
