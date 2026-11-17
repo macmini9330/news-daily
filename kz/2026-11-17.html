@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年11月17日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年11月17日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年11月16日早9:00至2026年11月17日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 17 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">8</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">5</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">1</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(8 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/170-invataksi-i40-surdoperevodchikov-zadeystvuyut-valmati-vden-viborov-vmaslihat-6f81deb3" target="_blank">阿拉木图市议会选举日将投入170辆无障碍出租车和40名手语翻译</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/17 02:01<span class="source-link"><a href="https://www.inform.kz/ru/170-invataksi-i40-surdoperevodchikov-zadeystvuyut-valmati-vden-viborov-vmaslihat-6f81deb3" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>阿拉木图市597个投票站均设于建筑一层，配备无障碍设施。11月14-15日，中央选举委员会主席努尔兰·阿布迪罗夫与成员阿塞尔·扎纳比洛娃检查筹备工作，强调确保供电、互联网和温度照明，为所有政党和自荐候选人创造平等条件，并继续培训选举委员会成员。选举定于11月29日举行。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">阿拉木图市所有597个按公民登记地设立的投票站均位于建筑物一层。它们配备了坡道、触觉指示牌和专为使用轮椅的选民设计的投票亭。投票站还为残疾人设置了专门的信息角。
+
+11月14日至15日，努尔兰·阿布迪罗夫与中央选举委员会成员阿塞尔·扎纳比洛娃一起了解了阿拉木图投票站选举筹备工作的进展情况。他们走访了一系列区级和地区级选举委员会，与政府机构代表和选举委员会成员举行了会议，并会见了培训研讨会的参与者。
+
+在有市政府领导、政府机构和地区选举委员会代表参加的会议上，审议了该市对投票的准备情况。特别关注了选民名单的更新、投票站的物资技术装备、选举法要求的遵守以及加强跨部门协作。
+
+努尔兰·阿布迪罗夫强调了政府机构和选举委员会协调工作的重要性，以确保选举过程的合法性、公开性和透明度。他特别指出，必须确保供电和互联网系统不间断运行。考虑到选举在秋季举行，中央选举委员会主席强调要保持投票站场所和区域舒适的温度和照明。
+
+——定于今年11月29日举行的州马斯利哈特（地方议会）议员选举是进一步加强地方代表机构的重要阶段。因此，目前为所有参加选举的政党和自荐候选人创造平等条件具有原则性重要意义。相关政府机构代表以及地区和地方选举委员会成员应特别关注这一问题。此外，在选举前的剩余时间里，必须继续培训选举委员会成员，以便所有选举程序严格按照选举法进行，——他指出。</div>
+<ul>
+<li>阿拉木图597个投票站均设一层，配备无障碍设施</li>
+<li>中央选举委员会主席检查筹备，强调供电互联网稳定</li>
+<li>要求为所有政党和自荐候选人创造平等条件</li>
+<li>选举定于11月29日，需继续培训选举委员会成员</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">选举筹备注重包容性和透明度，有助于提升地方代表机构合法性，促进政治稳定；确保平等条件可能影响政党竞争格局，但经济影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/huinengbubuchang-cd6000cc/" target="_blank">托卡耶夫总统会见能源部部长</a></h3>
+<div class="item-meta">哈通社中文版 · 11/16 21:48<span class="source-link"><a href="https://cn.inform.kz/news/huinengbubuchang-cd6000cc/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫总统听取能源部长汇报，前十个月电力产量增长2.3%至1024亿千瓦时，石油炼制量增长4.7%，燃料库存达120万吨。电站修复资金增至3840亿坚戈，危险“红区”电站减至5个。居民天然气普及率年底将达64.5%，惠及1320万人。能源部修订至2035年能源平衡方案，112个地下资源区块投放电子拍卖创纪录。总统就保障能源供应、稳定燃料煤炭市场及高质量实施投资项目下达指示。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫总统会见能源部部长
+
+会谈中，托卡耶夫听取了关于今年前十个月燃料能源综合体发展主要成果、供暖季状况以及下一阶段工作计划的汇报。
+
+能源部长表示，全国各地的供暖季均在正常进行。
+
+阿克肯杰诺夫指出，电站修复资金增至3840亿坚戈。主要设备和网络已修复，火电中心恶化程度有所下降，危险“红区”电站已减少至5个。
+
+10个月内，电力产量增长了2.3%，达到1024亿千瓦时。
+
+能源部长向国家元首报告称，石油炼制量增长了4.7%，燃料库存总量已增至120万吨。
+
+据他介绍，国内沥青产量（110万吨）完全能够满足国内需求。相关项目已经启动，旨在将奇姆肯特炼油厂的产能扩大至每年1200万吨，并在阿特劳地区建设一座新的石化综合体。
+
+到今年年底，居民天然气普及率将达到64.5%。届时，将有1320万民众因能够使用天然气而从中受益。
+
+卡沙甘和扎瑙津正在建设新的天然气处理厂。卡拉恰干纳克和卡沙甘的第二座天然气处理厂项目已签署EPC合同。
+
+为落实国家元首在国情咨文中提出的各项任务，能源部已着手修订至2035年的全国统一能源平衡方案，并将高能耗数据处理中心及人工智能领域的需求纳入考量。此外，为重振地质勘探工作，共有112个地下资源开采区块被投放至电子拍卖平台——这一数量创下了历史纪录。
+
+此外，总统还听取了关于在燃料与能源综合体设施中应用“数字孪生”技术，以及建立一个统一平台以监测煤炭向120万用户供应情况的汇报。
+
+最后，托卡耶夫总统就保障民众能源和供暖供应、严格监管燃料及煤炭市场稳定，以及确保投资项目高质量实施等方面下达了具体工作指示。</div>
+<ul>
+<li>电力产量增2.3%至1024亿千瓦时，石油炼制增4.7%</li>
+<li>电站修复资金3840亿坚戈，红区电站减至5个</li>
+<li>居民天然气普及率年底达64.5%，惠及1320万人</li>
+<li>112个地下资源区块电子拍卖，创历史纪录</li>
+<li>修订至2035年能源平衡方案，纳入AI等高耗能需求</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上，能源产量与炼油增长支撑工业稳定；政治上，供暖与燃气普及惠及民生，巩固社会支持；外交上，EPC合同与外资合作深化能源伙伴关系；矿产上，电子拍卖区块创纪录，提振地质勘探与资源开发。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/zhengxinghuijiangyu17rizailikai-bcdb0fbe/" target="_blank">政府例行会议将于17日在总理府召开</a></h3>
+<div class="item-meta">哈通社中文版 · 11/16 21:16<span class="source-link"><a href="https://cn.inform.kz/news/zhengxinghuijiangyu17rizailikai-bcdb0fbe/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦政府将于17日在总理府召开例行会议，议程为国内生产发展与支持相关问题。会后，工业和建设部副部长萨帕尔别阔夫与“达姆”创业发展基金董事会主席萨尔塞基耶夫将举行新闻发布会。会议可通过总理官网及政府YouTube、Facebook官方主页观看直播。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：政府例行会议将于17日在总理府召开
+
+正文：
+会议议程：关于国内生产发展与支持的相关问题。
+根据会议结果，哈萨克斯坦工业和建设部副部长沃勒扎斯·萨帕尔别阔夫，以及“达姆”创业发展基金股份公司董事会主席法尔哈特·萨尔塞基耶夫将召开新闻发布会。
+消息称，可通过总理官网，以及政府在YouTube、Facebook等社交媒体的官方主页观看会议直播。</div>
+<ul>
+<li>政府例行会议17日在总理府召开</li>
+<li>议程聚焦国内生产发展与支持</li>
+<li>副部长与达姆基金主席将召开发布会</li>
+<li>会议通过官网及社交媒体直播</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">会议聚焦国内生产发展，可能出台支持政策，影响哈国工业与经济结构；高规格发布会显示政府重视，有助于提升政策透明度与投资信心。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/guojiazhonghuizhu-6c9d0055/" target="_blank">国家元首接见中央选举委员会主席</a></h3>
+<div class="item-meta">哈通社中文版 · 11/16 20:42<span class="source-link"><a href="https://cn.inform.kz/news/guojiazhonghuizhu-6c9d0055/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国家元首接见中央选举委员会主席，听取11月29日各级马斯利哈特（地方议会）议员选举筹备工作汇报。总统强调选举须基于“法律和秩序”宪法原则，为所有候选人和政党创造平等条件，并指出此次选举将显著加强地方议会活动。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：国家元首接见中央选举委员会主席
+
+正文：会谈中，国家元首听取了11月29日举行的各级马斯利哈特（地方议会）议员选举筹备工作情况报告。
+
+总统指出，在“法律和秩序”的宪法原则基础上举行选举至关重要，要为所有候选人和政党创造平等的条件。
+
+国家元首强调，马斯利哈特选举将显著加强地方议会的活动。</div>
+<ul>
+<li>总统听取11月29日地方议会选举筹备报告</li>
+<li>选举须遵循“法律和秩序”宪法原则</li>
+<li>要求为所有候选人和政党创造平等条件</li>
+<li>选举将显著加强地方议会活动</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次选举筹备强化“法律和秩序”原则，有助于提升地方议会合法性与治理效能，巩固中央对地方政治掌控，对哈国政治稳定和地方治理改革产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/zhenglizhukailishihuixinghui-944a49f4/" target="_blank">政府总理主持召开改善投资环境理事会例行会议</a></h3>
+<div class="item-meta">哈通社中文版 · 11/16 19:53<span class="source-link"><a href="https://cn.inform.kz/news/zhenglizhukailishihuixinghui-944a49f4/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>政府总理主持召开改善投资环境理事会会议，讨论医疗卫生领域投资与创新。总理表示保障国民健康首次写入宪法，政府正落实至2029年医疗保健发展构想和2024—2030年医疗基础设施发展构想。哈人均预期寿命近76岁，过去三年新建800多家医疗机构，计划再建70家。医药市场规模超1.2万亿坚戈，增长31%。八个重大项目收尾，将生产近500种药品（价值超3900亿坚戈）。哈成为独联体首个达到WHO国家监管体系“三级成熟度”的国家。国际商业代表提出建议。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">政府总理主持召开改善投资环境理事会例行会议
+
+会议就医疗卫生领域的投资吸引与创新引入相关议题进行了讨论。此外，还着重关注了扩大医药产品生产、增加获取现代治疗手段的途径，以及改善投资环境等问题。
+
+总理指出，保障国民健康这一议题首次被写入了宪法。
+
+- 在近期发表的国情咨文中，国家元首提出了通过吸引私人资本来加快医疗设施建设的任务。为实现这些目标，政府正在落实《至2029年医疗保健发展构想》以及《2024—2030年医疗基础设施发展构想》。这些战略性文件旨在改善医疗服务，引入创新技术，并加强药品供应体系。-他说。
+
+Фото: Үкімет 目前所采取的各项措施正取得积极成效。哈萨克斯坦人均预期寿命已接近76岁。在“农村医疗卫生现代化”项目下，约有100万民众获得了医疗服务。过去三年间，各地已新建了800多家医疗卫生机构，并计划在不久的将来再新建70家。在外国投资者和国际金融机构的参与下，一批综合性医院、大学附属医院及儿童医院的建设项目正在推进实施。
+
+医药行业的发展也受到了特别关注。截至去年年底，该行业的市场规模已超过1.2万亿坚戈，增长了31%。目前，八个重大投资项目正处于收尾阶段；这些项目旨在推动近500种药品（总价值超过3900亿坚戈）的生产，并创造新的就业岗位。4月，哈萨克斯坦成为独联体国家中首个根据世界卫生组织（WHO）评估方法达到国家监管体系“三级成熟度”的国家，并落实了“单一窗口”机制。此外，针对来自监管标准较高国家的医药产品，哈萨克斯坦还引入了加速注册程序，使其注册流程可在15个工作日内完成。
+
+代表国际商业界，多位人士提出了商业建议，其中包括：哈萨克斯坦美国商会（AmCham）执行董事杰夫·埃利希（Jeff Ehrlich）、美国驻哈萨克斯坦大使朱莉·斯塔夫特（Julie Stuft）、强生哈萨克斯坦公司（Johnson &amp; Johnson Kazakhstan LLP）总经理阿迪莱特·纳扎尔巴耶夫（Adilet Nazarbayev）、阿斯利康哈萨克斯坦公司总经理埃琳娜·特罗戈娃（Elena Trogova），以及辉瑞公司区域总监（负责哈萨克斯坦、中亚、高加索地区及蒙古）兼哈萨克斯坦美国商会董事会成员德米特里·科曾科夫（Dmitry Kozenkov）。
+
+Фото: Үкімет 美国驻哈大使朱莉·斯塔夫特强调了在医疗保健和制药领域建立稳定且可预期的投资环境的重要性。双方还讨论了改善药品可及性相关的问题。
+
+强生哈萨克斯坦公司总经理阿迪莱特·纳扎尔巴耶夫（Adilet Nazarbayev）就完善药品纳入国家报销目录的机制，以及分阶段增加医疗卫生领域投入等问题提出了建议。他强调，在保障患者获取现代药物及满足民众日益增长的医疗需求的同时，确保医疗卫生体系融资的可持续性至关重要。
+
+阿斯利康哈萨克斯坦公司首席执行官叶莲娜·特罗戈娃提出了为罕见病患者提供必要药物的问题。为了保证患者治疗的连续性，改进此类药品目录形成方法的问题受到关注。
+
+辉瑞公司哈萨克斯坦、中亚、高加索及蒙古地区总监德米特里·科曾科夫（Dmitry Kozenkov）概述了制药行业发展的重点领域。他特别强调，应进一步推动生产本地化，加强知识产权保护，并构建可预期的监管环境。
+
+Фото: Үкімет 哈萨克斯坦副总理兼国家经济部长赛热克·朱曼哈林与卫生部长阿赫马拉尔·阿勒纳扎尔沃娃就所提问题发表了各自的看法。</div>
+<ul>
+<li>总理召开改善投资环境理事会会议，聚焦医疗卫生领域投资与创新。</li>
+<li>保障国民健康首次写入宪法，政府落实两大医疗发展构想。</li>
+<li>哈人均预期寿命近76岁，三年新建800多家医疗机构。</li>
+<li>医药市场规模超1.2万亿坚戈，增长31%，八项目收尾。</li>
+<li>哈成为独联体首个达到WHO监管体系三级成熟度国家。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">会议推动医疗领域吸引私人资本和国际投资，促进医药本地化生产与创新技术引入，提升药品可及性和监管水平。哈达到WHO三级成熟度增强国际信誉，有利于深化与美企合作，优化矿产以外投资结构，但需平衡财政可持续性与民众医疗需求。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/jiazaidingminfashifa-585b7979/" target="_blank">专家建议在制定新《民法典》时完善法律责任制度</a></h3>
+<div class="item-meta">哈通社中文版 · 11/16 17:49<span class="source-link"><a href="https://cn.inform.kz/news/jiazaidingminfashifa-585b7979/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在国情咨文中提出制定新《民法典》。专家赛德姆别克支持这一提议，认为完善民事法律责任制度是私法立法现代化的重要方向。他强调民事法律责任不仅在于赔偿损失，还应恢复被侵害的财产权利、确保义务履行和引导诚实信用原则。在法律适用中，需明确责任成立条件、认定因果关系和确定赔偿数额。他建议在制定新法典时全面分析损害赔偿、违约金适用、损害赔偿责任及合同与非合同责任关系，以有效保护民事活动参与者的合法权益。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">国家元首哈斯穆-卓玛尔特·托卡耶夫此前在国情咨文中指出，有必要制定新《民法典》。赛德姆别克对此表示支持，并指出，完善民事法律责任制度是推动私法领域立法现代化的重要方向之一。
+在他看来，民事法律责任的主要目的不仅在于赔偿所造成的损失，还在于恢复受到侵害的财产权利，确保各项义务得到适当履行，并引导民事活动参与者恪守诚实信用原则。
+在法律适用实践中，明确法律责任的成立条件、认定违法行为与所造成损害之间的因果关系，以及确定应予赔偿的损失数额，具有尤为重要的意义。
+“例如，在违反合同义务的情况下，不能仅仅停留在认定义务未履行这一事实层面，还应综合考虑违法行为的性质、其给另一方当事人造成的后果，以及法律规定的免责情形。因此，在制定新法典时，有必要对损害赔偿、违约金的适用、损害赔偿责任，以及合同责任与非合同责任之间的关系进行全面分析，”赛德姆别克表示。
+他强调，民事法律责任制度在法律层面是否明确、系统，直接关系到民事活动参与者的合法权益能否得到有效保护。因此，完善这一制度应成为制定新《民法典》的重要任务之一。</div>
+<ul>
+<li>托卡耶夫总统提议制定新《民法典》</li>
+<li>专家支持并强调完善民事法律责任制度</li>
+<li>民事法律责任目的包括赔偿损失和恢复权利</li>
+<li>法律适用需明确责任成立条件和因果关系</li>
+<li>制定新法典应全面分析损害赔偿与违约责任</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">完善民事法律责任制度将提升哈国私法领域立法质量，增强民事活动参与者权益保护，优化营商环境，为经济活动和合同履行提供更明确法律保障，有助于吸引投资和促进市场秩序规范化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/guojiaquanhuizhuchuyigongzuoyao-de40a85d/" target="_blank">总统向新任国家安全委员会主席提出一系列工作要求</a></h3>
+<div class="item-meta">哈通社中文版 · 11/16 15:30<span class="source-link"><a href="https://cn.inform.kz/news/guojiaquanhuizhuchuyigongzuoyao-de40a85d/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫16日签署总统令，任命玛拉特·依尔缅诺夫为国家安全委员会主席，并向其部署工作任务。托卡耶夫强调推进安全机关体系改革、提高效率，落实“法律与秩序”原则，维护国家经济利益，加大反腐力度，完善干部选拔机制，防范社会经济稳定风险，在重点国家规划中加强预防腐败措施。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">国家元首向与会人员介绍了国家安全委员会新任主席玛拉特·依尔缅诺夫，并向其部署了一系列工作任务。
+托卡耶夫总统强调，有必要推进国家安全机关体系改革，探索实现部门既定目标的新途径，切实提高工作效率。
+托卡耶夫指出，应重点落实“法律与秩序”原则，切实维护国家经济利益，并加大打击腐败及其他违法行为的力度。
+此外，托卡耶夫还要求进一步完善干部选拔任用机制，防范可能威胁社会经济稳定的风险，并在实施重点国家规划过程中加强预防性措施，防止腐败风险的发生。
+值得一提的是，16日，国家元首签署总统令，任命玛拉特·依尔缅诺夫为哈萨克斯坦国家安全委员会主席。</div>
+<ul>
+<li>托卡耶夫任命玛拉特·依尔缅诺夫为国家安全委员会主席</li>
+<li>要求推进安全机关体系改革，提高工作效率</li>
+<li>重点落实“法律与秩序”原则，维护国家经济利益</li>
+<li>加大打击腐败及其他违法行为力度</li>
+<li>完善干部选拔机制，防范社会经济稳定风险</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">人事调整强化安全机构执行力，反腐与改革并进有助于维护政治稳定和经济利益；完善干部机制可降低治理风险，对矿产等战略领域的安全保障和外资环境产生间接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/fachengnianrenquan-xingjiachangyuid-33f3d67f/" target="_blank">哈萨克斯坦立法强化未成年人数字安全 严管网游内购及聊天风险</a></h3>
+<div class="item-meta">哈通社中文版 · 11/16 15:14<span class="source-link"><a href="https://cn.inform.kz/news/fachengnianrenquan-xingjiachangyuid-33f3d67f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦起草《儿童数字与信息安全法》，系首部依托AI平台“AI库鲁尔泰”研发的立法草案。法案要求数字平台标注聊天和内购功能，建立强制核验与违规监测机制，违规产品可被下架或屏蔽。同时强制接入“家长控制”，未通过分级核验的产品未成年人无法使用，并推出儿童ID卡以精准核验身份。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">迪娜拉·扎克耶娃指出，该法案系在落实《哈萨克斯坦儿童》国家构想框架下正式起草，也是首部依托具备法律思维能力的人工智能综合数字环境“AI库鲁尔泰”研发形成的立法草案。借助该智能化平台，起草团队对当前未成年人在数字与信息环境中面临的各类安全风险开展了全面深入的数据研判与漏洞排查。
+保障网络游戏等数字产品的安全性是新法案的核心方向之一。草案提议对各类数字平台确立严格的内容分级标识与潜在风险提示义务，要求平台必须明确标注产品是否包含用户间实时聊天功能以及应用内购买（内购）机制。
+与此同时，法案构建了一套全链条监管闭环：确立主管部门强制核验制度与常态化违规监测机制；一旦发现游戏等数字或信息产品存在安全隐患或危害未成年人身心健康，监管机构有权责令立即下架或实施屏蔽封锁；对于违反法定安全要求的平台所有者，法案也明确设定了相应的法律追责条款。此外，草案还专门针对未成年人在各类电商平台上的网购交易互动制定了规范性限制条款。
+在技术防护层面，法案拟强制要求所有数字平台全面接入“家长控制”功能。按照制度设计，凡未通过官方分级标识与合规核验的应用程序、网络游戏及其他数字产品，未成年人均无法浏览、下载或使用。
+不仅如此，《儿童数字与信息安全法》草案还规划推出附带本人照片的专属儿童身份证（儿童ID卡），以便精准识别并核验未成年人身份信息。迪娜拉·扎克耶娃强调，这一举措对于切实提升儿童安全防护水平、实现未成年人合法权益保障的数字化全程跟踪具有重要意义。</div>
+<ul>
+<li>首部AI辅助立法草案，落实《哈萨克斯坦儿童》国家构想</li>
+<li>数字平台须标注实时聊天和内购机制，建立内容分级</li>
+<li>构建强制核验、常态监测、下架屏蔽、法律追责闭环</li>
+<li>强制接入“家长控制”，未合规产品未成年人禁用</li>
+<li>推出儿童ID卡，实现未成年人身份精准核验</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该法案强化未成年人数字保护，将重塑哈国数字平台监管框架，增加企业合规成本；儿童ID卡推动身份管理数字化；AI立法模式或为其他领域提供范本，对政治和社会治理产生示范效应。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(5 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/chengguowaibuchangjiangyuzhongguojiawaichangxinghui-b15d8724/" target="_blank">欧盟成员国外交部长将与中亚国家外长举行会晤</a></h3>
+<div class="item-meta">哈通社中文版 · 11/17 01:46<span class="source-link"><a href="https://cn.inform.kz/news/chengguowaibuchangjiangyuzhongguojiawaichangxinghui-b15d8724/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>欧盟27个成员国外交部长与中亚国家（含哈萨克斯坦）、南高加索地区、摩尔多瓦、土耳其和乌克兰代表举行会议，重点讨论黑海安全、跨里海国际运输路线下的交通物流联系、能源安全及数字走廊建设。各方致力于能源结构、贸易路线和供应链多元化。会议还讨论叙利亚、中东局势及乌克兰问题，欧盟拟将与叙利亚关系提升至伙伴关系层面。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据他介绍，此次会议将重点讨论与黑海安全相关的问题，以及进一步发展双方关系的事宜。
+- 各国都在努力实现能源结构、贸易路线和供应链的多元化。我们还能携手做些什么呢？-她说。
+此次会议将在欧盟外交事务理事会框架内举行，欧盟27个成员国外交部长将出席会议。
+来自中亚国家（包括哈萨克斯坦）、南高加索地区、摩尔多瓦、土耳其和乌克兰的代表预计将于今日出席会议。此次会议将重点讨论在“跨里海国际运输路线”框架下，加强交通物流联系、能源安全以及数字走廊建设等议题。
+外交事务理事会的议程还包括讨论叙利亚和中东局势，以及与乌克兰相关的问题。
+欧盟外交与安全政策高级代表指出，欧盟旨在将与叙利亚的关系提升至伙伴关系层面，使其类似于欧盟与其他地中海国家之间的关系。</div>
+<ul>
+<li>欧盟27国外长与中亚等地区代表举行会议</li>
+<li>重点讨论黑海安全与跨里海运输路线合作</li>
+<li>各方推动能源结构、贸易路线和供应链多元化</li>
+<li>会议还涉及叙利亚、中东及乌克兰问题</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈萨克斯坦而言，此次会议有助于推动跨里海运输路线建设，促进能源出口路线多元化，降低对传统过境路线的依赖，增强其在中亚地缘经济中的枢纽地位，同时深化与欧盟的政治经济合作。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/jiangjingyouzhongjiandewu3000-f72b6349/" target="_blank">格鲁吉亚计划将经由“中间走廊”的货物运输量提升至3000万吨</a></h3>
+<div class="item-meta">哈通社中文版 · 11/17 01:13<span class="source-link"><a href="https://cn.inform.kz/news/jiangjingyouzhongjiandewu3000-f72b6349/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>格鲁吉亚副经济部长克夫里维什维利表示，格鲁吉亚与哈萨克斯坦、阿塞拜疆密切合作开发跨里海国际运输路线（中间走廊），三国已制定联合区域行动计划，目标到2029年将货运能力提升至3000万吨。格鲁吉亚计划到2029年从国家预算投资约70亿美元用于交通基础设施，包括港口、铁路、公路和航空，以加强其在中间走廊中的作用并推动区域联合项目。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">格鲁吉亚经济与可持续发展部副部长玛丽亚姆·克夫里维什维利（Mariam Kvrivishvili）在接受Imedi电视台采访时表示，格鲁吉亚已与哈萨克斯坦和阿塞拜疆建立密切合作，共同开发“跨里海国际运输路线”。
+据他介绍，三国已联合制定了一项区域行动计划，旨在增加货运量并改善该运输走廊的基础设施。
+- 我们已与各合作伙伴建立了持续沟通机制，并制定了一项联合区域行动计划，旨在到2029年将“中间走廊”的货物运输能力提升至3000万吨。-他说。
+克夫里维什维利表示，格鲁吉亚计划到2029年从国家预算中投资约70亿美元用于交通运输业发展。这些资金将用于港口、铁路、公路和航空基础设施的建设。
+副部长指出，开发这些路线将加强格鲁吉亚在“中间走廊”中的作用，并推动区域性联合项目的实施。</div>
+<ul>
+<li>格鲁吉亚与哈萨克斯坦、阿塞拜疆合作开发中间走廊</li>
+<li>三国联合行动计划目标2029年货运能力达3000万吨</li>
+<li>格鲁吉亚计划到2029年投资约70亿美元发展交通</li>
+<li>投资用于港口、铁路、公路和航空基础设施建设</li>
+<li>开发路线将加强格鲁吉亚在中间走廊中的作用</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈萨克斯坦而言，中间走廊运力提升至3000万吨将拓展其出口通道，降低对传统路线的依赖，促进与格鲁吉亚、阿塞拜疆的经济合作，增强其作为过境国的地位，并可能影响里海地区矿产运输格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/waichangchujingzuowaibuchanglishihuidi30hui-39eeb829/" target="_blank">副外长出席经济合作组织外交部长理事会第30次会议</a></h3>
+<div class="item-meta">哈通社中文版 · 11/17 00:49<span class="source-link"><a href="https://cn.inform.kz/news/waichangchujingzuowaibuchanglishihuidi30hui-39eeb829/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦副外长出席在巴基斯坦举行的经济合作组织外交部长理事会第30次会议。会议讨论提升组织效率、扩大区域经济合作，重点关注完善体制机制、提高决策成效、确定可持续增长与一体化新重点及落实联合倡议。各方通过《伊斯兰堡公报》、“至2035年经济合作战略目标”政策文件、会议报告及秘书处2027年度预算，并与巴基斯坦总理夏巴兹·谢里夫集体会晤，就深化成员国合作交换意见。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">副外长出席经济合作组织外交部长理事会第30次会议
+
+会议期间，与会各方讨论了经济合作组织的进一步发展前景、提升其活动效率以及扩大区域经济合作等议题。
+
+会议重点关注了以下方面：完善该组织的体制机制；提高所作决策的实际成效；确定旨在确保经济可持续增长及深化区域经济一体化的新重点领域；以及落实各项联合倡议。
+
+根据会议结果，各方通过了《伊斯兰堡公报》、题为“至2035年经济合作战略目标”的政策文件、外交部长理事会第30次会议报告，以及该组织秘书处2027年度预算。
+
+会议框架下，与会各方与巴基斯坦总理夏巴兹·谢里夫举行了集体会晤。会晤期间，各方就进一步发展经济合作组织成员国之间的合作交换了意见。</div>
+<ul>
+<li>副外长出席经济合作组织外长理事会第30次会议</li>
+<li>会议聚焦提升组织效率与扩大区域经济合作</li>
+<li>通过《伊斯兰堡公报》及至2035年战略目标文件</li>
+<li>批准秘书处2027年度预算及会议报告</li>
+<li>与会方与巴基斯坦总理夏巴兹·谢里夫集体会晤</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国而言，此次会议强化其在中亚区域经济合作中的参与度，推动贸易与投资便利化；通过支持至2035年战略目标，哈方可借助经合组织平台拓展与巴基斯坦、伊朗等国经济联系，平衡多边外交，但矿产格局短期影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/jiangkaidisanyuzhongguodedaonian2000-b4a5e910/" target="_blank">哈萨克斯坦将开通第三条与中国接壤的铁路通道：新线路年货运量预计达2000万吨</a></h3>
+<div class="item-meta">哈通社中文版 · 11/16 23:54<span class="source-link"><a href="https://cn.inform.kz/news/jiangkaidisanyuzhongguodedaonian2000-b4a5e910/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦巴克图-阿亚古兹铁路全长303公里，预计2027年竣工，年货运量达2000万吨。目前土方工程完成93%，涵洞、桥梁等建设稳步推进。该铁路将开通哈中第三条跨境铁路通道，减轻现有口岸负荷，提升货物流转效率，扩大哈对华出口和过境运输潜力。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据了解，全长303公里的巴克图-阿亚古兹铁路建设正按计划进行。该铁路预计将于2027年竣工并投入使用。
+截至目前，该项目计划土方工程量为3950万立方米，已完成3680万立方米，完成率达93%。剩余工程主要集中在边境地区和巴克图火车站附近。
+目前，正在进行路面表层平整工作，并在铺设上层路面结构之前检验土壤压实质量。同时，人工构筑物的建设也在继续进行。具体而言，267座涵洞中已有245座完工，19座牲畜通道中已有12座准备就绪。此外，47座桥梁中有43座正在建设中。
+为了缩短生产和交付周期，桥梁主梁直接在施工现场进行制造。在此过程中，主梁需按照建筑规范和规章（SNiP）的要求进行认证和质量控制。
+道路上部施工所需材料均从国内生产商采购。这些钢轨由阿克托别钢轨梁厂交付。轨枕和紧固件由“RWS Binding”、“Innotrack”、“Fasteners 2metal (BENT)” LLP 和“Magnetik” LLP 提供。
+道岔由 Prommashkomplekt LLP 公司供应。在阿亚古兹车站附近，已开展了建筑材料的接收与分拨工作。该项目的实施对于开发哈萨克斯坦的交通物流潜力、扩大与中国之间的铁路互联互通，具有战略意义。
+此次建设的关键成果之一，是开通哈萨克斯坦与中国之间的第三个跨境铁路通道。这一新线路将有助于减轻现有“多斯特克”和“阿勒滕阔勒”边境口岸的负荷，提升货物流转效率，并为扩大运输规模创造额外的运力。
+这条新线路预计年货运吞吐量可达2000万吨。该铁路的开通将有助于扩大哈萨克斯坦的出口潜力，增加国内产品对华出口量，吸引更多过境货物，并加强哈萨克斯坦与中国之间的经贸合作。</div>
+<ul>
+<li>巴克图-阿亚古兹铁路全长303公里，2027年投用</li>
+<li>土方工程完成93%，年货运量预计2000万吨</li>
+<li>开通哈中第三条跨境铁路通道</li>
+<li>减轻多斯特克和阿勒滕阔勒口岸负荷</li>
+<li>材料从国内生产商采购，促进本地产业</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该铁路将提升哈国过境运输潜力，促进对华出口和经贸合作，减轻现有口岸压力，增强交通物流竞争力，对矿产等资源出口形成利好，并深化哈中经济联系。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/zhenglihuiguo-0cff0918/" target="_blank">别克帖诺夫会见国际货币基金组织驻哈代表</a></h3>
+<div class="item-meta">哈通社中文版 · 11/16 19:21<span class="source-link"><a href="https://cn.inform.kz/news/zhenglihuiguo-0cff0918/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总理别克帖诺夫会见国际货币基金组织驻哈代表，回顾代表团工作成果并讨论中短期合作前景。别克帖诺夫介绍7月生效的新宪法及数字经济发展进展。IMF代表拉雷什积极评价哈宏观经济形势，预测2026年前经济持续稳步增长。2026年前10个月哈GDP增长4.5%，固定资本投资增长4.9%至18.3万亿坚戈，机械制造业和制药业增长显著。双方强调通过专家对话和技术援助完善宏观经济政策。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">别克帖诺夫会见国际货币基金组织驻哈代表
+
+会谈中，双方回顾了该组织代表团的工作成果，并讨论了双边中短期内的合作前景。
+
+别克帖诺夫介绍了哈萨克斯坦所实施体制改革的最新进展。7月，旨在为建设“公正而强大的哈萨克斯坦”奠定基础的宪法正式生效。根据国家元首哈斯穆-卓玛尔特·托卡耶夫的指示，政府正持续致力于发展数字经济，并培育新的经济增长点。
+
+会议强调了利用国际经验并与国际货币基金组织开展专家对话，以改善本国经济政策的重要性。
+
+- 我们通过定期访问、专题磋商以及国际货币基金组织向政府机构提供的技术援助，持续开展对话。我相信，此次访问所形成的各项建议，将为进一步完善我国宏观经济政策和宏观审慎政策提供有益的指导。-别克帖诺夫说。
+
+Фото: Үкімет 在介绍此次任务的调查结果时，阿米娜·拉雷什对哈萨克斯坦的宏观经济形势给予了积极评价。
+
+- 我们在总统发表国情咨文后不久抵达哈萨克斯坦。总统在讲话中概述了若干重点工作，特别是基础设施建设和人力资本投资。我们愿强调哈萨克斯坦所蕴藏的巨大经济潜力。我们希望，通过持续的对话与所提出的各项建议，能够助力实现可持续的经济增长，同时兼顾民众的需求。-她说。
+
+Фото: Үкімет 根据IMF10月份的预测，哈萨克斯坦经济在2026年前将持续稳步增长，且明年经济扩张步伐有望加快。该组织指出，得益于持续推进的改革，包括哈萨克斯坦在内的中亚国家展现出了抵御外部因素冲击的韧性。当前的关键发展重点包括：确保物价稳定、协调货币政策与财政政策、重建财政储备，以及实现贸易多元化。
+
+根据2026年前10个月的数据，国内生产总值（GDP）增长了4.5%，固定资本投资增长了4.9%，达到18.3万亿坚戈。工业和农业领域呈现出积极态势，其中机械制造业（22.2%）和制药业（50.9%）的增长率最高。农业领域增长了5.2%。
+
+Фото: пресс-служба Правительства РК 最后，政府重申愿支持开展建设性对话，并深化双方在具有发展前景的领域中的互利合作。国际货币基金组织提出的各项建议和意见，将由国家相关主管部门进行研究。</div>
+<ul>
+<li>别克帖诺夫会见IMF驻哈代表，讨论中短期合作前景</li>
+<li>哈7月生效新宪法，政府持续推进数字经济和培育新增长点</li>
+<li>IMF预测哈经济2026年前稳步增长，明年扩张有望加快</li>
+<li>2026年前10个月哈GDP增4.5%，固定资本投资增4.9%至18.3万亿坚戈</li>
+<li>机械制造业增22.2%、制药业增50.9%、农业增5.2%</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国而言，IMF积极评价与技术支持有助于增强宏观经济政策可信度，推动财政储备重建和贸易多元化；新宪法与数字经济改革将优化经济治理结构，吸引外资，但需平衡物价稳定与增长，矿产等关键领域政策协调仍待深化。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/devyat-chelovek-osudili-za-dropperstvo-v-oblasti-abay-90fd0a73" target="_blank">阿拜州九人因充当“钱骡”被判刑</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/17 04:48<span class="source-link"><a href="https://www.inform.kz/ru/devyat-chelovek-osudili-za-dropperstvo-v-oblasti-abay-90fd0a73" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>阿拜州警方通报，今年已登记40起与“钱骡”相关的刑事案件，9名“钱骡”被定罪。诈骗分子以“轻松赚钱”为诱饵，利用公民银行账户转移被盗资金，账户所有者面临刑事责任。警方制作宣传片警示，并提醒民众拒绝为陌生人办卡、提供银行应用访问权限或为报酬转账，若已转交账户访问权限应立即联系银行并拨打102报警。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据警方消息，诈骗分子经常向公民提供“轻松赚钱”的机会，以使用其银行账户为条件。同时，被盗资金可能通过这些账户流转，而账户所有者则面临成为犯罪计划参与者的风险。
+在调查此类案件时，警方会追踪资金流动。他们确定受害者将钱转入哪些账户、这些账户属于谁以及资金后续流向何处。
+同时，执法人员不仅要查明账户所有者，还要查明实际使用账户的人。为此，他们会研究银行卡转交情况、关于兼职的通信记录、所获报酬信息及其他材料。
+阿拜州警察局还制作了一部社会宣传片，警告“钱骡”的危险性。片中解释，同意为报酬接收和转移他人资金可能导致刑事责任。
+今年，阿拜州已登记40起与“钱骡”相关的刑事案件。九名“钱骡”已被定罪。
+警方警告：要求为陌生人办理银行卡、提供银行应用程序访问权限或为报酬进行转账——就是拒绝该提议的理由。
+“普通兼职”说辞背后可能隐藏着操作被盗储蓄的行为。
+如果账户访问权限已转交他人，必须立即联系银行并拨打“102”向警方报告。远程通信不能取消已完成的转账。而承诺的百分比也不能免除对自己行为的责任。
+此前，Kazinform曾报道过轻松赚钱背后隐藏的危险。</div>
+<ul>
+<li>阿拜州今年登记40起钱骡案，9人已被定罪</li>
+<li>诈骗分子以“轻松赚钱”诱使公民提供银行账户</li>
+<li>警方追踪资金流向，查明账户实际使用人</li>
+<li>警方制作宣传片警示钱骡风险及刑事责任</li>
+<li>提醒拒绝为陌生人办卡或转账，已转交权限速报警</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此案凸显哈萨克斯坦金融犯罪治理压力，强化账户监管与公众警示，有助遏制洗钱链条，维护金融秩序，但对银行开户便利性及民众金融素养提出更高要求。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/11yue16ri-herenminqing-9289b813/" target="_blank">11月16日终盘 美元、欧元、卢布和人民币兑坚戈汇率情况</a></h3>
+<div class="item-meta">哈通社中文版 · 11/16 22:23<span class="source-link"><a href="https://cn.inform.kz/news/11yue16ri-herenminqing-9289b813/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>11月16日KASE现货市场有31个成员参与。美元兑坚戈平均报444.51，涨0.11，交易额346,089.28千美元（减178,719.98千美元）。欧元兑坚戈报489.47，跌2.98，交易额4,275.86千欧元（减5,927.08千欧元）。卢布兑坚戈报5.3962，跌0.0117，交易额2,398,843.60千卢布（减196,457.51千卢布）。人民币兑坚戈报66.5986，跌0.0203，交易额86,365.90千人民币（增9,138.25千人民币）。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 11月16日终盘 美元、欧元、卢布和人民币兑坚戈汇率情况
+正文:
+在本次现货市场交易中，共有31个KASE成员参与。
+根据现货市场交易结果：
+美元兑坚戈（USDKZT_TOM）： 汇率平均报价为 1 : 444.51 坚戈（较前一交易日上涨 0.11 坚戈）。外汇交易总额为 346,089.28 千美元（减少 178,719.98 千美元）。交易过程中，最高报价为 1 : 445.79 坚戈，最低报价为 1 : 443.84 坚戈。
+欧元兑坚戈（EURKZT_TOM）： 汇率平均报价为 1 : 489.47 坚戈（较前一交易日下跌 2.98 坚戈）。外汇交易总额为 4,275.86 千欧元（减少 5,927.08 千欧元）。交易过程中，最高报价为 1 : 490.72 坚戈，最低报价为 1 : 488.89 坚戈。
+卢布兑坚戈（RUBKZT_TOM）： 汇率平均报价为 1 : 5.3962 坚戈（较前一交易日下跌 0.0117 坚戈）。外汇交易总额为 2,398,843.60 千卢布（减少 196,457.51 千卢布）。交易过程中，最高报价为 1 : 5.4110 坚戈，最低报价为 1 : 5.3835 坚戈。
+人民币兑坚戈（CNYKZT_TOM）： 汇率平均报价为 1 : 66.5986 坚戈（较前一交易日下跌 0.0203 坚戈）。外汇交易总额为 86,365.90 千人民币（增加 9,138.25 千人民币）。交易过程中，最高报价为 1 : 66.7400 坚戈，最低报价为 1 : 66.5800 坚戈。</div>
+<ul>
+<li>美元兑坚戈微涨0.11至444.51，交易额减少178,719.98千美元</li>
+<li>欧元兑坚戈跌2.98至489.47，交易额减少5,927.08千欧元</li>
+<li>卢布兑坚戈跌0.0117至5.3962，交易额减少196,457.51千卢布</li>
+<li>人民币兑坚戈跌0.0203至66.5986，交易额增加9,138.25千人民币</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈对主要货币涨跌互现，美元走强或加大输入性通胀压力，人民币交易额增加反映中哈经贸联系深化，汇率波动影响矿产出口计价与外资信心。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/xinggong16riyuzhuyaowaizhijiande-5c945fd6/" target="_blank">央行公布16日坚戈与主要外币之间的汇率标准</a></h3>
+<div class="item-meta">哈通社中文版 · 11/16 13:36<span class="source-link"><a href="https://cn.inform.kz/news/xinggong16riyuzhuyaowaizhijiande-5c945fd6/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行公布2026年11月16日坚戈对主要外币官方汇率：美元兑坚戈1:444.3，欧元兑坚戈1:490.91，俄罗斯卢布兑坚戈1:5.41，土耳其里拉兑坚戈1:8.83，中国元兑坚戈1:66.59。央行规定，坚戈兑美元官方汇率基于阿斯塔纳时间15:30证券交易所加权平均汇率确定，其他外币汇率依据16:00交叉汇率计算。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：央行公布16日坚戈与主要外币之间的汇率标准
+正文：根据央行公布的信息，2026年11月16日，哈萨克斯坦坚戈与国际主要货币之间的兑换汇率标准如下：
+美元兑坚戈（USD/KZT） – 1：444.3
+欧元兑坚戈（EUR/KZT）- 1：490.91
+俄罗斯卢布兑坚戈（RUB / KZT）-1: 5.41
+土耳其里拉兑坚戈（TRY / KZT）- 1: 8.83
+中国元兑坚戈（CNY / KZT）- 1：66.59
+值得一提的是，根据哈萨克斯坦国家银行规定，截至阿斯塔纳时间当日15:30，在哈萨克斯坦证券交易所形成的坚戈兑美元加权平均汇率，将被确定为下一工作日坚戈兑美元官方汇率；坚戈兑其他外币的官方汇率，则依据截至阿斯塔纳时间16:00形成的交叉汇率计算得出。</div>
+<ul>
+<li>美元兑坚戈汇率为1:444.3</li>
+<li>欧元兑坚戈汇率为1:490.91</li>
+<li>卢布兑坚戈汇率为1:5.41</li>
+<li>人民币兑坚戈汇率为1:66.59</li>
+<li>汇率确定基于交易所加权平均和交叉汇率</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率数据反映坚戈对主要货币的稳定态势，有助于引导市场预期。美元汇率基准明确，便利贸易结算与外资核算，对哈国货币政策执行和外汇市场稳定具有支撑作用。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/cherniy-staratel-pogib-nashahte-vakmolinskoy-oblasti-8aac7331" target="_blank">阿克莫拉州一矿井非法采金者死亡</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/17 03:27<span class="source-link"><a href="https://www.inform.kz/ru/cherniy-staratel-pogib-nashahte-vakmolinskoy-oblasti-8aac7331" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>阿克莫拉州别斯托别村矿井发生岩石坍塌，一名非法淘金者被埋身亡。警方已就非法进入受保护对象立案调查，正进行侦查。此前该地区矿井曾发现两具男子尸体，另有两名非法淘金者被矿体掩埋死亡。事件凸显非法采矿安全问题。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据阿克莫拉州警察局新闻处消息，初步查明，在别斯托别村矿井发生的岩石坍塌中，一名非法淘金者被埋，因伤势过重当场死亡。
+—— 就非法进入受保护对象的事实已立案侦查。目前正在进行必要的调查措施，正在查明事件的所有情况，——该部门指出。
+此前，在别斯托别村一处矿井区域内，相隔一天发现了两名男子的尸体。
+在此之前，两名非法淘金者在阿克莫拉州矿井中死亡。男子们在别斯托别矿井的矿坑中被矿体掩埋。</div>
+<ul>
+<li>别斯托别矿井坍塌致一名非法淘金者死亡</li>
+<li>警方就非法进入受保护对象刑事立案</li>
+<li>此前同一矿井发现两具男子尸体</li>
+<li>阿克莫拉州非法采矿事故频发</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">事件暴露哈国非法采矿监管漏洞，或推动加强矿井安保与执法，影响矿产秩序与社会稳定，但短期内对政治经济外交格局影响有限。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-11-17 09:02</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
