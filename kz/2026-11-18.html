@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年11月18日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年11月18日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年11月17日早9:00至2026年11月18日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 16 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">7</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">3</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/bolee-83-tisyach-administrativnih-pravonarusheniy-viyavili-v-kazahstane-e61f9dd4" target="_blank">哈萨克斯坦发现超过8.3万起行政违法行为</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/18 05:55<span class="source-link"><a href="https://www.inform.kz/ru/bolee-83-tisyach-administrativnih-pravonarusheniy-viyavili-v-kazahstane-e61f9dd4" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦发现超过8.3万起行政违法行为，包括6536起公共场所醉酒、3764起违反禁烟和2261起污染公共区域。交通警察在阿克托别机场对两名乱扔烟头者采取措施。突厥斯坦地区摄像头记录超5000起，江布尔地区超2万起违规。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦发现超过8.3万起行政违法行为
+
+正文：
+其中——6536起饮酒和在公共场所醉酒出现的事实，3764起违反禁烟规定，以及2261起污染公共使用场所的事实，包括乱扔垃圾和烟头。
+
+遵循“Таза Қазақстан”原则，该部门及其地区分支机构的工作人员持续开展旨在确保航空和铁路基础设施对象以及轻轨交通“Tarlan Astana”对象清洁和适当卫生状况的活动。
+
+例如，阿克托别市机场交通警察分局的工作人员在停车场区域内发现了两名当地居民，年龄分别为23岁和37岁，他们在公共场所乱扔烟头，从而污染了机场区域。
+
+根据现行法律，对两名违规者采取了措施。交通警察呼吁公民爱护环境，保持清洁，维护公共场所秩序。
+
+提醒一下，突厥斯坦地区的摄像头记录了超过五千起违法行为。
+
+此外，在江布尔地区发现了超过2万起改善设施违规行为。</div>
+<ul>
+<li>哈国发现超8.3万起行政违法行为</li>
+<li>其中醉酒6536起、吸烟3764起、污染2261起</li>
+<li>阿克托别机场两人乱扔烟头被依法处理</li>
+<li>突厥斯坦摄像头记录超5000起违规</li>
+<li>江布尔地区发现超2万起设施违规</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">强化公共场所秩序与卫生管理，提升执法威慑力；轻微违法高发反映社会治理压力，但有助于改善营商环境与城市形象，对矿产等经济领域无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/yehuiquanguoda-ff2fe4f5/" target="_blank">托卡耶夫签署总统令 修订企业社会责任全国评选大赛条例</a></h3>
+<div class="item-meta">哈通社中文版 · 11/17 17:55<span class="source-link"><a href="https://cn.inform.kz/news/yehuiquanguoda-ff2fe4f5/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫签署总统令修订企业社会责任全国评选大赛条例，规定在企业社会责任领域成效突出、为员工创造体面劳动条件并提升职工福祉的企业家可角逐总统特别奖。大赛最高荣誉仍为“特等奖”，表彰经营卓越且践行社会及生态环保责任的企业，按大型企业和中小企业两个组别颁发。总统令自2026年11月16日起生效。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">根据文件规定，在企业社会责任领域取得突出成效、积极为员工创造体面劳动条件并切实提升职工福祉的企业家，均可成为总统特别奖的角逐对象。
+与此同时，大赛的最高荣誉依然为“特等奖”（Гран-при），旨在表彰在自身经营活动中取得卓越成果、并成功践行企业社会及生态环保责任原则的优秀参赛企业。
+“特等奖”按企业规模分设大型企业主体和中小企业主体两个组别颁发。
+该总统令已于2026年11月16日起正式生效施行。</div>
+<ul>
+<li>总统令修订企业社会责任评选条例</li>
+<li>总统特别奖面向成效突出的企业家</li>
+<li>特等奖分大型和中小企业两组颁发</li>
+<li>总统令2026年11月16日生效</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该总统令强化企业社会责任导向，推动改善劳动条件与职工福祉，有助于提升哈国社会治理水平；通过表彰先进企业，引导资本兼顾生态环保，对经济可持续发展和矿产等行业的责任投资形成正向激励。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/lizhengyuzhongbendisheng-828435ba/" target="_blank">总理：哈萨克斯坦正与梅赛德斯洽谈重型卡车本地化生产</a></h3>
+<div class="item-meta">哈通社中文版 · 11/17 16:44<span class="source-link"><a href="https://cn.inform.kz/news/lizhengyuzhongbendisheng-828435ba/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总理别克帖诺夫表示，政府正大力推进国际重型运输车辆品牌的本土制造，以释放物流枢纽潜力并更新货运车队。哈国已掌握豪沃、汕德卡和斯堪尼亚重型牵引车生产，并持续深化零部件本地化。今年年底前计划在阿拉木图启动沃尔沃牵引车生产，同时正与梅赛德斯洽谈本地化生产。总理强调各项目须严格按时间表推进，确保按期投产。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">别克帖诺夫指出，为进一步释放哈萨克斯坦的物流枢纽潜力，并推动本国货运企业运输车队的更新换代，政府正在大力推进国际重型运输车辆品牌的本土制造工作。
+
+据介绍，哈萨克斯坦目前已掌握豪沃（HOWO）、汕德卡（SITRAK）以及斯堪尼亚（Scania）品牌重型牵引车的生产制造，并正在持续深化相关零部件的本地化配套率。
+
+“此外，今年年底前计划在阿拉木图启动沃尔沃（Volvo）牵引车的生产，目前我们也正在与梅赛德斯方面进行谈判。”别克帖诺夫说道。
+
+总理在会上强调，各国际汽车品牌的本地化生产项目必须严格按照既定时间表推进，确保按期落地并顺利投产。</div>
+<ul>
+<li>哈国已生产豪沃、汕德卡、斯堪尼亚重型牵引车</li>
+<li>年底前在阿拉木图启动沃尔沃牵引车生产</li>
+<li>正与梅赛德斯洽谈重型卡车本地化生产</li>
+<li>总理要求各品牌项目严格按时间表推进</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上推动物流枢纽建设和车队更新，提升本土制造业水平；外交上深化与欧洲及中国车企合作；矿产格局影响有限，但可能带动相关运输需求。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(7 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/belgiya-gotova-vistupit-nadezhnim-partnerov-kazahstana-glava-mid-maksim-prevo-c4338c87" target="_blank">比利时愿成为哈萨克斯坦的可靠伙伴——外长马克西姆·普雷沃</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/18 05:10<span class="source-link"><a href="https://www.inform.kz/ru/belgiya-gotova-vistupit-nadezhnim-partnerov-kazahstana-glava-mid-maksim-prevo-c4338c87" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>比利时外长普雷沃在欧盟-中亚区域互联互通第二次部长级会议后表示，比利时愿成为哈萨克斯坦可靠伙伴。双方确认基于2025年10月菲利普国王国事访问成果及2027-2029年外交部合作路线图加强合作。重点方向为关键原材料（哈资源潜力+比加工回收经验）和跨里海运输走廊（中间走廊）。普雷沃计划2026年访哈及中亚。哈外长特列乌别尔迪在布鲁塞尔与欧洲同行及Sarens Group、Ahlers Logistics等比企就中间走廊物流和数字化投资谈判。2027年两国将庆祝建交35周年。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：比利时愿成为哈萨克斯坦的可靠伙伴——外长马克西姆·普雷沃
+正文：
+谈判在欧盟、黑海地区、南高加索和中亚区域互联互通第二次部长级会议后举行。
+据比利时部长在声明中表示，此次会议系首次举行。双方确认了进一步加强双边合作的意愿，依托今年10月菲利普国王和玛蒂尔德王后对哈萨克斯坦国事访问的成果，以及两国对外政策部门近期签署的2027-2029年合作路线图。
+——比利时愿成为可靠伙伴，将我们的共同雄心转化为具体成果，——马克西姆·普雷沃指出。他特别指出了有前景的方向：关键原材料，哈萨克斯坦的资源潜力与比利时在加工和回收方面的经验相辅相成，以及具有战略意义的跨里海运输走廊（中间走廊）。据他称，这里为商业和供应链多元化开辟了现实机会。
+部长们还讨论了2027年建交35周年的筹备工作。马克西姆·普雷沃表示打算明年访问哈萨克斯坦及更广泛的中亚地区，以进一步加强联系。
+回顾一下，2027-2029年路线图规定加强政治对话、定期磋商、加强部门间接触和推进联合倡议。在10月王室夫妇国事访问期间，双方特别关注关键原材料、交通和物流问题，并签署了一系列商业和科学教育协议。
+在对布鲁塞尔的工作访问框架内，穆赫塔尔·特列乌别尔迪还与一些欧洲国家同行举行了一系列双边会晤，并与比利时商界代表进行了谈判，包括Sarens Group、Ahlers Logistics等公司，涉及对中间走廊物流和数字化的投资问题。</div>
+<ul>
+<li>比利时外长称愿成哈可靠伙伴，转化共同雄心为具体成果</li>
+<li>重点合作：关键原材料与跨里海运输走廊（中间走廊）</li>
+<li>依托2025年10月国王国事访问及2027-2029路线图</li>
+<li>普雷沃计划2026年访哈及中亚，2027年庆祝建交35周年</li>
+<li>哈外长在布鲁塞尔与Sarens、Ahlers等比企谈物流投资</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">政治外交上，比利时作为欧盟核心国强化对哈关系，提升哈在欧盟中亚战略中的地位；经济上，关键原材料加工回收合作助哈延伸矿产价值链，中间走廊投资推动物流多元化、降低对俄通道依赖，2027路线图机制化双边对话。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/niansanwaichang118-ecfcd352/" target="_blank">今年三季度哈萨克斯坦外贸总额增长11.8%</a></h3>
+<div class="item-meta">哈通社中文版 · 11/17 23:52<span class="source-link"><a href="https://cn.inform.kz/news/niansanwaichang118-ecfcd352/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>今年三季度哈萨克斯坦外贸总额增长11.8%，出口额增长18.1%至684亿美元，进口额增长4%至484亿美元，贸易顺差增长1.7倍至201亿美元。出口以石油及石油产品为主（占49.3%），精炼铜及铜合金占6.4%，放射性化学元素及同位素占5.4%，铜矿砂及其精矿占4.3%，铁合金占2.4%。进口主要来自俄罗斯（31%）和中国（30.3%），主要进口商品包括乘用车及其他机动车辆（3.2%）、手机（2.8%）、药品（2.5%）、石油气及其他气态烃（2.2%）、车辆车身（2.2%）。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 今年三季度哈萨克斯坦外贸总额增长11.8%
+正文:
+报告期内，出口额增长18.1%，达到684亿美元；进口额增长4%，达到484亿美元。
+因此，对外贸易顺差较上年增长1.7倍，达到201亿美元。
+哈萨克斯坦出口的主要目的地：
+数据显示，石油及石油产品在出口结构中占据主导地位，占出口总额的49.3%。
+此外，精炼铜及未锻轧铜合金占比为6.4%，放射性化学元素及同位素占比为5.4%，铜矿砂及其精矿占比为4.3%，铁合金占比为2.4%。
+哈萨克斯坦从哪些国家采购商品？
+俄罗斯和中国是最大的进口来源伙伴，分别占进口总额的31%和30.3%。
+其他主要供应国：
+哈萨克斯坦主要进口乘用车及其他机动车辆（3.2%）、手机（2.8%）、药品（2.5%）、石油气及其他气态烃（2.2%），以及车辆车身（2.2%）。</div>
+<ul>
+<li>三季度外贸总额增长11.8%，出口增18.1%至684亿美元</li>
+<li>贸易顺差增长1.7倍达201亿美元，进口增4%至484亿美元</li>
+<li>出口以石油及石油产品为主，占比49.3%</li>
+<li>精炼铜及铜合金出口占比6.4%，铜矿砂及精矿占比4.3%</li>
+<li>进口主要来自俄罗斯（31%）和中国（30.3%）</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">外贸顺差扩大增强哈国财政与外汇储备，强化其能源出口国地位；铜及放射性同位素出口凸显矿产格局多元化；对俄中进口高度依赖，外交上需平衡关系，经济上保障供应链稳定。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/yujiangjizuo-0ff83c4d/" target="_blank">哈萨克斯坦与亚美尼亚将加强机密信息交换领域合作</a></h3>
+<div class="item-meta">哈通社中文版 · 11/17 23:17<span class="source-link"><a href="https://cn.inform.kz/news/yujiangjizuo-0ff83c4d/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>亚美尼亚国家安全局副局长姆克尔奇扬表示，哈亚两国于去年11月21日在阿斯塔纳签署机密信息交换协议，待全面批准后将在政治、军事、经济、法律、科技等领域交换并保护机密信息，由亚美尼亚国家安全局和哈萨克斯坦国家安全委员会负责落实。此前，亚美尼亚总统哈恰图良批准了亚美与美国在TRIPP项目框架下的战略合作框架协议，托卡耶夫称该协议为“历史性成果”，两个月后哈萨克斯坦小麦成为首批通过该路线运输的货物。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">亚美尼亚国家安全局副局长耶萨伊·姆克尔奇扬（Yesayi Mkrtchyan）表示，该文件于去年11月21日在阿斯塔纳签署。如果该协议获得全面批准，阿斯塔纳和埃里温官方将在政治、军事、经济、法律、科技等领域合作框架内交换机密信息。
+此外，各方必须确保此类数据的保护与存储。亚美尼亚国家安全局和哈萨克斯坦国家安全委员会将负责落实该文件所规定的各项要求。
+据此前报道，亚美尼亚总统瓦哈根·哈恰图良12日签署批准了《亚美尼亚与美国在TRIPP项目框架下的战略合作框架协议》法案。
+托卡耶夫总统曾将该协议称为“历史性成果”。在协议签署两个月后，来自哈萨克斯坦的小麦成为了首批通过该路线运输的货物。</div>
+<ul>
+<li>哈亚签署机密信息交换协议，涉及政治军事经济等领域</li>
+<li>协议于去年11月21日在阿斯塔纳签署，待全面批准</li>
+<li>亚美尼亚安全局与哈国安委负责落实数据保护要求</li>
+<li>亚美尼亚总统批准亚美TRIPP项目战略合作框架协议</li>
+<li>托卡耶夫称TRIPP协议为历史性成果，哈小麦首运</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该协议强化哈亚安全合作，拓展哈国在集安组织外安全伙伴关系，利于平衡俄西方影响；TRIPP项目提升哈国过境运输地位，促进小麦出口多元化，增强经济外交筹码，但需关注对俄关系及地区安全格局的微妙影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/zhenglihuichang-7bfcbf51/" target="_blank">政府总理会见俄罗斯联邦奥伦堡州州长</a></h3>
+<div class="item-meta">哈通社中文版 · 11/17 21:59<span class="source-link"><a href="https://cn.inform.kz/news/zhenglihuichang-7bfcbf51/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦政府总理别克帖诺夫会见俄罗斯奥伦堡州州长，讨论经贸与跨区域合作。奥伦堡州与哈各州贸易额增长13.7%至6.417亿美元，今年1-9月为4.005亿美元。哈俄贸易额去年达270亿美元，正接近300亿美元目标。奥伦堡州占该州对外贸易额约20%，双方将重点发展交通物流、航空连通、工农业合作及人文交流。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">政府总理会见俄罗斯联邦奥伦堡州州长
+
+会谈中，双方就有关经贸合作及跨区域合作问题进行了讨论。
+
+奥伦堡州是哈萨克斯坦重要的跨境贸易伙伴之一。最新数据显示，奥伦堡州与哈萨克斯坦各州之间的贸易额增长13.7%，达到6.417亿美元。今年1月至9月，这一数字为4.005亿美元。
+
+- 哈萨克斯坦与俄罗斯领导人之间已建立起稳固且基于信任的对话机制。这为两国之间，乃至两国各地区和企业之间的经济联系发展奠定了坚实基础。截至去年年底，哈萨克斯坦与俄罗斯之间的贸易额已达到约270亿美元。目前，我们正逐步接近两国元首所设定的目标，即实现300亿美元的贸易额。就奥伦堡州而言，今年的数据令人振奋；双方贸易往来持续增长，其中奥伦堡州贡献了超过6.4亿美元的贸易额。-别克帖诺夫说。
+
+奥伦堡州州长指出，双方经贸关系正在稳步加强，并特别强调了跨境合作。
+
+- 哈萨克斯坦是我们主要的贸易伙伴之一。在奥伦堡州与各伙伴地区的对外贸易总额中，哈萨克斯坦所占份额约为20%，即五分之一。我们向哈萨克斯坦供应农产品和工业品，同时从哈萨克斯坦进口线缆产品、化工产品、食品及消费品。经由边境口岸的人员和货物往来流量逐年增加。工业合作尤为重要。我相信，我们能够在农工综合体领域显著加强双方的经济联系。-他说。
+
+双方重点关注勒旨在充分释放现有双边贸易潜力的领域，包括发展交通物流基础设施、拓展航空连通性、促进工农业合作以及加强文化和人文交流。</div>
+<ul>
+<li>奥伦堡州与哈贸易额增长13.7%达6.417亿美元</li>
+<li>哈俄贸易额去年约270亿美元，目标300亿美元</li>
+<li>奥伦堡州占该州外贸额20%，跨境合作稳步加强</li>
+<li>双方重点发展交通物流、航空连通及工农业合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经贸合作深化将促进哈俄区域经济联系，强化奥伦堡州作为哈重要跨境贸易伙伴地位，推动交通物流和农工综合体发展，巩固哈俄政治互信，对哈北部地区经济与外交关系产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/jiangkaiyuribenzhijian-a00fedd9/" target="_blank">阿斯塔纳航空将开通哈萨克斯坦与日本之间直飞航班</a></h3>
+<div class="item-meta">哈通社中文版 · 11/17 20:50<span class="source-link"><a href="https://cn.inform.kz/news/jiangkaiyuribenzhijian-a00fedd9/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦交通部副部长拉斯塔耶夫与日本国土交通省助理副大臣田岛诚一在ICAO第七次世界航空运输大会期间会晤，讨论开通阿拉木图至东京直飞航线。阿斯塔纳航空计划自2026年11月30日起每周运营两班，使用空客A321LR，机票已于今年10月2日开售。飞行时间去程约7小时30分钟，返程约9小时25分钟。双方还讨论了扩大航空互联互通、国家航空公司合作及ICAO框架内合作，哈方祝贺大沼俊之当选ICAO理事会主席。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">在国际民航组织（ICAO）第七次世界航空运输大会（ATConf/7）期间，哈萨克斯坦交通部副部长塔勒哈特·拉斯塔耶夫与日本国土交通省大臣官房负责国际航空事务的助理副大臣田岛诚一（Seiichi Tajima）举行了会晤。
+会谈中，双方讨论了民航领域双边合作的进一步发展，以及扩大哈萨克斯坦与日本之间航空互联互通的前景，特别是开通阿拉木图至东京的直飞航线事宜。
+拉斯塔耶夫指出，在中断多年后开通直航服务，标志着两国交通联系日益紧密，并将为两国在商业、旅游、投资和人道主义领域的合作发展注入新的动力。
+自2026年11月30日起，阿斯塔纳航空（Air Astana）计划开通阿拉木图与东京（成田机场）之间的定期直飞航线，每周运营两班。机票已于今年10月2日正式开售。
+航班将使用空客A321LR飞机执飞。根据航空公司时刻表，从阿拉木图飞往东京的飞行时间约为7小时30分钟，返程飞行时间约为9小时25分钟。
+该航班的开通旨在提升两国间航空旅行的便利性，创造更多旅游和商务往来机会，并巩固哈萨克斯坦作为中亚重要航空和中转枢纽的地位。
+哈萨克斯坦方面在会谈中表示，有兴趣进一步扩大航空互联互通，并推动两国国家航空公司之间的合作。
+会谈的一个具体议题是国际民航组织框架内的合作。哈萨克斯坦交通部副部长祝贺日方选举大沼俊之先生为国际民航组织理事会主席，并指出这一事件对日本和整个亚太地区意义重大。这是国际民航组织历史上首次由亚太地区代表领导理事会。
+副部长强调，哈萨克斯坦和日本航空当局应保持积极对话，以确保全球民航的安全、可持续发展和高效运营，并进一步加强在国际论坛上的合作。</div>
+<ul>
+<li>哈日讨论开通阿拉木图至东京直飞航线</li>
+<li>阿斯塔纳航空2026年11月30日起每周两班</li>
+<li>航班使用空客A321LR，去程7.5小时</li>
+<li>机票已于今年10月2日正式开售</li>
+<li>哈方祝贺大沼俊之当选ICAO理事会主席</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">直航将促进哈日经贸、旅游和投资合作，提升哈萨克斯坦作为中亚航空枢纽的地位，并加强两国在ICAO等多边框架下的协调。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/qiangeyue5guo-fangzai-3b32cf1d/" target="_blank">前九个月逾5万名韩国游客访哈 哈韩探讨在首尔设立旅游推广代表处</a></h3>
+<div class="item-meta">哈通社中文版 · 11/17 14:56<span class="source-link"><a href="https://cn.inform.kz/news/qiangeyue5guo-fangzai-3b32cf1d/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦旅游部门与韩国Nordic Condor Korea公司会谈，探讨在首尔设立Kazakh Tourism代表处及吸引韩国游客。2026年前9个月韩国游客达50292人，接近2025年全年5.09万人总量。代表处运营无需国家财政额外预算。哈萨克斯坦在WEF《2026年旅游业发展报告》中旅游业发展水平居中亚第一。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">会谈期间，叶尔波勒·穆尔扎波森诺夫与韩国Nordic Condor Korea公司首席执行官徐相弼重点围绕吸引韩国游客赴哈旅游、推广哈萨克斯坦本土旅游线路，以及在首尔开设Kazakh Tourism代表处的可行性等议题展开探讨。
+徐相弼在会谈中表达了与哈萨克斯坦深化合作的积极意愿。据介绍，Nordic Condor Korea此前主要面向韩国游客组织赴欧洲国家的旅游业务，如今计划将哈萨克斯坦作为新兴旅游目的地重点推向韩国市场。为此，他提议在首尔设立Kazakh Tourism专门代表处，以搭建常态化推广桥梁。
+穆尔扎波森诺夫指出，韩国是哈萨克斯坦重要的入境旅游客源市场之一。哈萨克斯坦拥有丰富的自然奇观、历史人文古迹，既能提供阿拉木图与阿斯塔纳的成熟城市观光线路，也具备极具吸引力的山地生态与户外旅游资源，能够充分满足韩国游客的多样化需求。
+“我们的目标是广泛推介哈萨克斯坦的旅游潜力，加强与韩国旅游运营商的对接合作，并持续扩大来哈游客规模。因此，我们已准备好与Nordic Condor Korea公司建立务实合作。”穆尔扎波森诺夫表示。
+据哈萨克斯坦国家安全委员会边防局统计数据显示，2025年全年共有5.09万名韩国公民到访哈萨克斯坦；而仅在2026年前9个月，入境哈萨克斯坦的韩国游客人数就已达到50292人，接近去年全年总量。
+会谈结束后，双方商定将进一步细化具体合作方向、未来代表处的运作机制以及资金筹措方案。值得注意的是，若该项目顺利落地，代表处的设立及后续日常运营将无需动用哈萨克斯坦国家财政额外预算资金。
+此前，据世界经济论坛（WEF）发布的《2026年旅游业发展报告》显示，哈萨克斯坦在旅游业发展水平方面位居中亚地区第一位。</div>
+<ul>
+<li>哈韩探讨在首尔设Kazakh Tourism代表处</li>
+<li>2026年前9个月韩国游客50292人，接近去年全年</li>
+<li>代表处设立及运营不动用国家财政预算</li>
+<li>哈萨克斯坦旅游业发展水平居中亚第一</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上促进入境旅游消费与就业；外交上深化哈韩民间交流与务实合作；矿产格局无直接关联，但旅游多元化有助于降低对资源型经济的依赖。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/5000wuzhongxin-zhongjianzuo-cd29a399/" target="_blank">杰特苏州拟建5000万美元交通物流中心 哈比深化“中间走廊”合作</a></h3>
+<div class="item-meta">哈通社中文版 · 11/17 11:03<span class="source-link"><a href="https://cn.inform.kz/news/5000wuzhongxin-zhongjianzuo-cd29a399/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦杰特苏州拟投资5000万美元建设交通物流中心，包括2.1公里绕行公路、临时仓库和重型货物装卸设施，以提升“光明之路”口岸通行能力。同时，哈方与阿尔勒斯物流、BIM e-Solutions探讨启动为期90天的“数字中间走廊”试点，推动货物追踪、海关数据互联和通关效率提升。各方高度评价哈萨克斯坦作为欧亚交通枢纽的地位，愿推动项目落地。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">会谈期间，双方重点围绕投资项目落地实施、哈萨克斯坦交通基础设施发展，以及跨里海国际运输路线（“中间走廊”）数字化升级等议题进行了深入交流。
+在与萨伦斯集团高级顾问亨德里克·萨伦斯及霍尔果斯海关与物流平台公司（Khorgos Customs &amp; Logistics Platform）交通物流中心建设总监马蒂亚斯·萨伦斯的会谈中，双方重点商讨了在杰特苏州投资5000万美元建设交通物流中心的项目。该项目规划建设一条全长2.1公里的绕行公路、临时存储仓库以及重型货物装卸与配套基础设施。项目建成后，将有效提升“光明之路”口岸的通行能力，加快货物通关与周转效率，进一步巩固哈萨克斯坦乃至整个中亚地区的过境运输潜力。
+Фото: Министерство иностранных дел Казахстана 在与阿尔勒斯物流首席执行官戴夫·范登·博斯和BIM e-Solutions负责人迈克尔·巴里举行会谈时，双方探讨了扩大在哈物流业务布局以及在“中间走廊”引入数字技术的合作前景。其中，双方重点关注启动为期90天的“数字中间走廊”（Digital Middle Corridor）试点项目，该项目旨在实现货物运输全程数字化保障与追踪、推进海关数据互联互通、缩短边境口岸通关滞留时间，并全面提升过境运输作业的透明度。
+系列会谈中，各方高度评价哈萨克斯坦作为欧亚大陆重要交通物流枢纽的战略地位，并一致表示愿积极推动具体投资与技术项目落地，共同提升“中间走廊”的整体运营效率。
+背景资料：
+萨伦斯集团（Sarens Group） 是全球重型吊装与工程运输解决方案领域的领军企业，自2003年起在哈萨克斯坦开展业务。
+阿尔勒斯物流（Ahlers Logistics） 是一家成立于1909年的比利时国际物流公司，自1998年起深耕哈萨克斯坦市场，目前在卡拉干达和阿拉木图拥有总面积约1.1万平方米的仓储综合体。
+BIM e-Solutions 专注于利用人工智能技术推进海关及边境口岸通关流程的数字化转型。</div>
+<ul>
+<li>杰特苏州拟建5000万美元交通物流中心，含2.1公里绕行公路</li>
+<li>项目提升“光明之路”口岸通行与通关效率</li>
+<li>启动90天“数字中间走廊”试点，推动全程数字化追踪</li>
+<li>萨伦斯集团、阿尔勒斯物流等国际企业参与合作</li>
+<li>各方肯定哈萨克斯坦欧亚交通物流枢纽战略地位</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上提升过境运输潜力与物流效率；外交上深化与欧洲企业合作，强化“中间走廊”战略；矿产格局间接利好资源出口运输，但无直接矿产影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/11yue17ri-herenminqing-9b886861/" target="_blank">11月17日终盘 美元、欧元、卢布和人民币兑坚戈汇率情况</a></h3>
+<div class="item-meta">哈通社中文版 · 11/17 22:23<span class="source-link"><a href="https://cn.inform.kz/news/11yue17ri-herenminqing-9b886861/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>11月17日KASE现货市场有27个成员参与。美元兑坚戈平均报443.99，跌0.52，交易额433,749.57千美元增87,660.30千美元；欧元兑坚戈报488.49，跌0.98，交易额3,837.92千欧元减437.94千欧元；卢布兑坚戈报5.3883，跌0.0079，交易额2,727,706.06千卢布增328,862.46千卢布；人民币兑坚戈报66.6237，涨0.0251，交易额28,053.00千人民币减58,312.90千人民币。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 11月17日终盘 美元、欧元、卢布和人民币兑坚戈汇率情况
+正文:
+在本次现货市场交易中，共有27个KASE成员参与。
+根据现货市场交易结果：
+美元兑坚戈（USDKZT_TOM）： 汇率平均报价为 1 : 443.99 坚戈（较前一交易日下跌 0.52 坚戈）。外汇交易总额为 433,749.57 千美元（增加 87,660.30 千美元）。交易过程中，最高报价为 1 : 445.41 坚戈，最低报价为 1 : 443.10 坚戈。
+欧元兑坚戈（EURKZT_TOM）： 汇率平均报价为 1 : 488.49 坚戈（较前一交易日下跌 0.98 坚戈）。外汇交易总额为 3,837.92 千欧元（减少 437.94 千欧元）。交易过程中，最高报价为 1 : 490.06 坚戈，最低报价为 1 : 487.84 坚戈。
+卢布兑坚戈（RUBKZT_TOM）： 汇率平均报价为 1 : 5.3883 坚戈（较前一交易日下跌 0.0079 坚戈）。外汇交易总额为 2,727,706.06 千卢布（增加 328,862.46 千卢布）。交易过程中，最高报价为 1 : 5.4025 坚戈，最低报价为 1 : 5.3700 坚戈。
+人民币兑坚戈（CNYKZT_TOM）： 汇率平均报价为 1 : 66.6237 坚戈（较前一交易日上涨 0.0251 坚戈）。外汇交易总额为 28,053.00 千人民币（减少 58,312.90 千人民币）。交易过程中，最高报价为 1 : 66.7830 坚戈，最低报价为 1 : 66.5320 坚戈。</div>
+<ul>
+<li>美元兑坚戈跌0.52至443.99，交易额增87,660.30千美元</li>
+<li>欧元兑坚戈跌0.98至488.49，交易额减437.94千欧元</li>
+<li>卢布兑坚戈跌0.0079至5.3883，交易额增328,862.46千卢布</li>
+<li>人民币兑坚戈涨0.0251至66.6237，交易额减58,312.90千人民币</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈对美元、欧元、卢布小幅升值，对人民币微贬，显示汇率总体稳定。美元交易额大增反映市场活跃度提升，人民币交易额锐减或影响中哈贸易结算，对矿产出口计价影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/faimfde-051a1931/" target="_blank">新税法典：IMF评估哈萨克斯坦的税收收入</a></h3>
+<div class="item-meta">哈通社中文版 · 11/17 19:24<span class="source-link"><a href="https://cn.inform.kz/news/faimfde-051a1931/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>国际货币基金组织（IMF）修订了对哈萨克斯坦预算收入的预测，最终报告将于明年1月公布。IMF代表阿米娜·拉雷什表示，流入预算的税收收入规模有所增加，数据表现尚可，虽略低于国家有关部门预期，但与IMF自身预测吻合。她指出，税制重大改革第一年难以立即实现预算税收收入大幅增长，且税收优惠政策广泛的国家很难大幅增加财政收入总额。哈萨克斯坦总统托卡耶夫去年签署批准的新《税法典》已于2026年1月1日生效。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据她介绍，国际货币基金组织已修订了对哈萨克斯坦预算收入的预测，最终报告预计明年1月公布。
+IMF代表说：“流入预算的税收收入规模有所增加。总体而言，相关数据表现尚可。尽管税收收入略低于国家有关部门的预期，但这与我们自身的预测相吻合。”
+阿米娜·拉雷什表示，在税制进行重大改革的第一年，想要立即实现预算税收收入的大幅增长，并非易事。
+她说：“此外，在一个税收优惠政策广泛的国家，很难大幅增加进入财政预算的税收收入总额。”
+据悉，哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫去年签署批准了《哈萨克斯坦共和国税法典》，并于2026年1月1日起生效。</div>
+<ul>
+<li>IMF修订哈萨克斯坦预算收入预测，最终报告明年1月公布</li>
+<li>IMF称税收收入规模增加，数据表现尚可</li>
+<li>税收收入略低于哈有关部门预期，但与IMF预测吻合</li>
+<li>税改首年难以立即大幅增加预算税收收入</li>
+<li>新《税法典》由托卡耶夫签署，2026年1月1日生效</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">新税法典生效首年，IMF评估认为税收收入增长有限，反映改革初期财政增收压力较大。税收优惠广泛削弱预算收入弹性，可能影响哈国财政整顿节奏，对经济结构调整和矿产领域税收环境带来不确定性，外交上则体现与国际金融机构的政策协调。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/xinggong17riyuzhuyaowaizhijiande-7dbcf43f/" target="_blank">央行公布17日坚戈与主要外币之间的汇率标准</a></h3>
+<div class="item-meta">哈通社中文版 · 11/17 13:17<span class="source-link"><a href="https://cn.inform.kz/news/xinggong17riyuzhuyaowaizhijiande-7dbcf43f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行公布2026年11月17日坚戈与主要外币汇率：美元兑坚戈1:444.4，欧元兑坚戈1:488.97，俄罗斯卢布兑坚戈1:5.39，土耳其里拉兑坚戈1:8.82，中国元兑坚戈1:66.66。央行规定，坚戈兑美元官方汇率基于阿斯塔纳时间15:30证券交易所加权平均汇率确定，其他外币汇率依据16:00交叉汇率计算。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 央行公布17日坚戈与主要外币之间的汇率标准
+正文:
+根据央行公布的信息，2026年11月17日，哈萨克斯坦坚戈与国际主要货币之间的兑换汇率标准如下：
+美元兑坚戈（USD/KZT） – 1：444.4
+欧元兑坚戈（EUR/KZT）- 1：488.97
+俄罗斯卢布兑坚戈（RUB / KZT）-1: 5.39
+土耳其里拉兑坚戈（TRY / KZT）- 1: 8.82
+中国元兑坚戈（CNY / KZT）- 1：66.66
+值得一提的是，根据哈萨克斯坦国家银行规定，截至阿斯塔纳时间当日15:30，在哈萨克斯坦证券交易所形成的坚戈兑美元加权平均汇率，将被确定为下一工作日坚戈兑美元官方汇率；坚戈兑其他外币的官方汇率，则依据截至阿斯塔纳时间16:00形成的交叉汇率计算得出。</div>
+<ul>
+<li>美元兑坚戈汇率为1:444.4</li>
+<li>欧元兑坚戈汇率为1:488.97</li>
+<li>人民币兑坚戈汇率为1:66.66</li>
+<li>坚戈兑美元官方汇率基于交易所加权平均汇率</li>
+<li>其他外币汇率依据交叉汇率计算</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次汇率公布为市场提供官方参考，有助于稳定坚戈汇率预期，对哈萨克斯坦进出口贸易和外资投资环境产生直接影响，同时反映央行汇率形成机制透明化。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/266-faktov-nezakonnogo-nedropolzovaniya-viyavili-vturkestanskoy-oblasti-79df3535" target="_blank">突厥斯坦州发现266起非法使用矿产资源行为</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/18 05:25<span class="source-link"><a href="https://www.inform.kz/ru/266-faktov-nezakonnogo-nedropolzovaniya-viyavili-vturkestanskoy-oblasti-79df3535" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>突厥斯坦州注册243个地下资源使用者，年初以来发现266起非法使用地下资源事实，超过去年同期的234起。扣押242辆货车和24台特种设备，经济损失估计1648.2万坚戈，罚款813.1万坚戈，追缴408.8万坚戈。发现4起刑事违法，在22个“红点”区域持续巡查，测量师检查111个对象，59个使用者有违规。合法采石场也存在文件不全、缺乏称重设备等问题。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：突厥斯坦州发现266起非法使用地下资源的事实
+
+在突厥斯坦州注册了243个从事普通矿产开采的地下资源使用者。其中74个基于合同运营，169个基于许可证运营。
+
+——自年初以来在该州开展的专项行动预防措施中，发现了266起非法使用地下资源的事实。这比去年同期的234起更多。根据违法行为事实，242辆货运卡车和24台特种设备被送至罚款停车场。根据210起已发现的事实，经济损失估计为1648.2万坚戈。相关材料已发送至生态局和区市 akimat（政府），——州 akimat 通报称。
+
+根据检查结果，违法者被罚款813.1万坚戈。从该金额中已追缴超过408.8万坚戈。另有60起案件正在考虑采取行政措施。
+
+自年初以来，在突厥斯坦州发现了四起与擅自使用地下资源有关的刑事违法行为。审前调查正在肯套、卡兹古尔特、赛拉姆和秋尔库巴斯区进行。
+
+为制止该地区的非法开采，在22个被称为“红点”的区域组织了持续 raids。在赛拉姆、奥特尔、萨雷阿加什、萨乌兰、马克塔阿拉尔区和肯套市发现了违法行为。根据已发现的事实，处以1470万坚戈的罚款，并发出消除违法行为的指令。
+
+测量师也参与了调查。专家研究了111个对象，包括99个地下资源使用者的矿床和12个非法开发区域。在59个地下资源使用者处发现了违法行为。相关信息已转交执法机构，四起事实已提起刑事诉讼。
+
+合法采石场的工作中也发现了缺陷。其中包括矿物运输文件不完整、缺乏称重设备以及不遵守采石场出口前清洁货运车辆的要求。据 akimat 评估，超载的重型车辆损坏了州级和国家级公路路面。
+
+此前有报道称，在北哈萨克斯坦……</div>
+<ul>
+<li>突厥斯坦州发现266起非法使用地下资源，超去年同期234起</li>
+<li>扣押242辆货车和24台特种设备，经济损失1648.2万坚戈</li>
+<li>罚款813.1万坚戈，追缴408.8万坚戈，60起案件待处理</li>
+<li>发现4起刑事违法，在22个“红点”区域持续巡查</li>
+<li>测量师检查111个对象，59个使用者违规，4起刑事立案</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次执法行动强化了哈国对地下资源使用的监管，有助于遏制非法开采、增加地方财政收入，并推动矿产开发秩序规范化。但合法采石场的基础设施缺陷也暴露了行业管理短板，需平衡执法与产业发展。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/imfchangxingyemiandezhankenenghui2027nian-d838553b/" target="_blank">IMF驻哈代表团团长：石油行业面临的挑战可能会持续至2027年</a></h3>
+<div class="item-meta">哈通社中文版 · 11/17 19:54<span class="source-link"><a href="https://cn.inform.kz/news/imfchangxingyemiandezhankenenghui2027nian-d838553b/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>IMF驻哈代表团团长阿米娜·拉雷什表示，2026年石油行业挑战的影响将持续至2027年，石油行业明年不会成为经济增长主要驱动力。她警告里海输油管道联盟（CPC）若遭进一步袭击，可能导致政府石油收入减少和财政赤字加剧，但IMF尚未将此类风险纳入基准预测。IMF预测哈萨克斯坦2027年经济增长主要依靠非石油行业，石油行业增长将非常缓慢。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">阿米娜·拉雷什表示，2026年石油行业面临的挑战所带来的影响预计明年仍将持续。
+
+- 我们已将今年石油行业所面临的挑战纳入考量。这些挑战的影响预计将持续至2027年。因此，我们预计明年石油行业将不会成为经济增长的主要驱动力。-她说。
+
+IMF驻哈代表还谈到了里海输油管道联盟（CPC）若遭受进一步袭击可能造成的后果。她指出，石油运输中断可能导致政府石油收入减少，并加剧财政赤字。然而，国际货币基金组织尚未将这些风险纳入其基准经济预测。
+
+根据国际货币基金组织预测，哈萨克斯坦经济将在2027年实现增长，主要动力来自非石油行业。
+
+- 2026年石油行业动荡的影响将持续到次年。这是因为受此影响，石油行业的某些业务已被推迟。因此，我们预计2027年石油行业的增长将非常缓慢。-她说。</div>
+<ul>
+<li>IMF：2026年石油行业挑战影响持续至2027年</li>
+<li>石油行业明年不会成为哈国经济增长主要驱动力</li>
+<li>CPC若遭进一步袭击或致石油收入减少、赤字加剧</li>
+<li>IMF未将CPC风险纳入基准经济预测</li>
+<li>IMF预测2027年哈国经济增长靠非石油行业</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上，石油增长乏力将拖累财政，赤字压力上升；政治上，政府需加速非石油行业改革以稳增长；外交上，CPC运输风险凸显哈国需拓展多元出口路线；矿产格局上，非石油领域投资吸引力相对上升。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/2026niannengzhong88de-045ab952/" target="_blank">《2026年世界能源评论》：哈萨克斯坦贡献中亚88%的石油产量</a></h3>
+<div class="item-meta">哈通社中文版 · 11/17 12:45<span class="source-link"><a href="https://cn.inform.kz/news/2026niannengzhong88de-045ab952/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>《2026年世界能源评论》显示，2025年哈萨克斯坦石油日均产量209.8万桶，同比增长11.8%，占中亚五国总产量约88%；原油日均出口124.3万桶，增长7%。天然气产量282.1亿立方米，风电装机1909兆瓦居中亚第一，煤炭产量约1.2亿吨。实际GDP约2603亿美元，占中亚经济总量一半以上。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">该份主要基于2025年统计数据编制的权威研究报告，全面展现了哈萨克斯坦雄厚的资源潜力，以及该国在推动区域传统能源与可再生能源协同发展中所发挥的日益关键的作用。在全球能源市场深度转型的背景下，哈萨克斯坦持续保持中亚五国最大产油国地位，并在保障国际能源安全方面不断提升自身影响力。
+据埃尼集团统计，2025年哈萨克斯坦石油总产量（含非常规石油及天然气凝析液）达到日均209.8万桶，较上年增长11.8%。相比之下，土库曼斯坦同期日均产量为20万桶，乌兹别克斯坦为8.1万桶，吉尔吉斯斯坦为6000桶。由此计算，哈萨克斯坦一国便贡献了中亚五国石油总产量的约88%。
+从过去十年的长期走势来看，哈萨克斯坦的增产势头尤为显著。2015年哈萨克斯坦日均产油量为169.4万桶，到2025年已增至209.8万桶，十年累计增幅接近24%；而同期土库曼斯坦和乌兹别克斯坦的石油产量均有所下降。哈萨克斯坦不仅在规模上大幅领先邻国，更展现出稳健的长期增长韧性。
+在国际能源贸易方面，2025年哈萨克斯坦原油出口量达到日均124.3万桶，较2024年增长约7%。这一庞大的出口规模进一步强化了哈萨克斯坦作为重要外部供应国的战略价值，印证了其石油产业兼具区域与全球影响力。
+报告指出，2025年全球能源消费总量约为157亿吨油当量，其中石油、天然气和煤炭仍满足了全球约80%的能源需求。传统能源供应国的战略地位依然稳固，哈萨克斯坦在巩固全球市场份额的同时，也具备充分条件拓展新兴能源领域。
+除了石油产业，哈萨克斯坦还拥有丰富的天然气资源，位列中亚三大产气国之一。埃尼数据显示，2025年哈萨克斯坦天然气产量为282.1亿立方米；同期的土库曼斯坦产量为724.8亿立方米，乌兹别克斯坦为401.6亿立方米。
+在绿色能源领域，风电正成为哈萨克斯坦的另一大战略优势。根据《2026年世界能源评论》，截至2025年底，哈萨克斯坦风力发电总装机容量达到1909兆瓦，领先于乌兹别克斯坦的1652兆瓦（埃尼报告未列明土库曼斯坦、吉尔吉斯斯坦和塔吉克斯坦的可比统计数据）。
+由此，哈萨克斯坦稳居中亚风电装机容量第一名，在已纳入统计的哈、乌两国风电总装机容量中占比约54%。2025年，哈萨克斯坦风电场实际发电量达到5401吉瓦时（约54.01亿千瓦时），标志着风电正成长为国家电力系统的重要支柱之一。
+在煤炭工业领域，哈萨克斯坦跻身全球十大产煤国之列，并在中亚地区占据绝对领先地位。据哈萨克斯坦国家统计局数据，2025年全哈煤炭产量约为1.2亿吨，庞大的资源与产能基础为区域能源供应提供了可靠保障。
+哈萨克斯坦在能源领域的主导地位也得到了宏观经济体量的有力支撑。据埃尼集团测算，按2015年不变价格计算，2025年哈萨克斯坦实际国内生产总值（GDP）约为2603亿美元，占中亚五国经济总量（估算为5067亿美元）的一半以上。</div>
+<ul>
+<li>2025年哈石油日均产量209.8万桶，占中亚88%</li>
+<li>原油日均出口124.3万桶，同比增长约7%</li>
+<li>天然气产量282.1亿立方米，居中亚第三</li>
+<li>风电装机1909兆瓦，中亚第一，占比54%</li>
+<li>煤炭产量约1.2亿吨，跻身全球前十</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">巩固哈国中亚能源主导地位，增强外交议价权；石油出口与GDP占比支撑经济稳定；风电领先助力能源转型；矿产格局上强化资源大国形象，吸引外资。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-11-18 09:02</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
