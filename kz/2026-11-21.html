@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年11月21日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年11月21日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年11月20日早9:00至2026年11月21日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 24 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">10</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">10</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">1</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(10 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/erlan-karin-o-budushem-kazahstana-uspeh-garantiruyut-ne-personalii-a-instituti-a7f7a300" target="_blank">叶尔兰·卡林谈哈萨克斯坦未来：成功靠制度而非个人</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/21 00:53<span class="source-link"><a href="https://www.inform.kz/ru/erlan-karin-o-budushem-kazahstana-uspeh-garantiruyut-ne-personalii-a-instituti-a7f7a300" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦副总统叶尔兰·卡林在论坛上强调，国家成功取决于制度而非个人。他呼吁“建设，再建设！”，认为这是应对地缘政治和经济不确定性的理性途径。卡林提到“人民建设”计划、反腐败、国家管理改革等仅是开端，总统有中长期发展计划，但主权保护问题尚未完全解决。他还要求公务员以国家利益为重，评估应基于当前结果而非过往成就，各级领导须践行宪法价值观。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">叶尔兰·卡林谈哈萨克斯坦的未来：成功不由个人保证，而由制度保证
+
+叶尔兰·卡林指出，农村发展、农工综合体和提高农村居民福祉仍将是总统关注的中心。同时，在论坛上，国家元首就当前和未来议程的原则性立场作出了指示。
+副总统称主要信息之一是“建设，再建设！”的号召。
+“这是在即将到来的地缘政治和经济不确定性条件下，确保我们国家安全和全体公民安全的最合理、最理性的途径。公正哈萨克斯坦大厦的每一块砖，我们都将通过共同努力、统一的建设热情、为全社会福祉而添砖加瓦，”叶尔兰·卡林在其Telegram频道中写道。
+据他所说，“人民建设”计划、反腐败斗争、国家管理改革和形成新的建设性价值观只是伟大道路的开始。
+副总统特别关注了哈萨克斯坦进一步发展的计划以及保护国家主权的问题。
+“总统对中期和后续前景的国家发展有设想和计划。目前，并非所有涉及保护我们国家主权和独立的问题都得到了解决，”卡林强调。
+他提出的论点中很大一部分涉及对公务员的要求。副总统认为，国家需要真正的国家公务人员，对他们来说，人民福祉和国家利益高于个人利益。
+他还指出，为人民和国家工作是巨大的荣誉，而不认真对待公务职责会损害国家利益。
+另一个原则涉及官员工作的评估。正如卡林强调的，重要的是当前的结果，而不是过去几年的成就。哈萨克斯坦总统要求所有官员遵守纪律、保持专注、廉洁奉公并忠于国家利益。
+同时，各级领导必须认同宪法价值观并将其付诸实践。
+副总统单独提出一个论点，即不允许免除责任……（原文截断）</div>
+<ul>
+<li>卡林强调制度而非个人保障国家成功</li>
+<li>呼吁“建设，再建设！”以应对不确定性</li>
+<li>总统有中长期发展计划，主权问题未全解决</li>
+<li>公务员须以国家利益为先，重当前结果</li>
+<li>各级领导应践行宪法价值观</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">卡林讲话强化总统改革议程，突出制度建设和公务员纪律，有助于提升治理效能和投资信心；强调主权保护可能预示更自主的外交姿态，对矿产等战略资源控制或趋紧。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/guojiaquanhuizhu-b31fccbc/" target="_blank">托卡耶夫总统接见国家安全委员会主席</a></h3>
+<div class="item-meta">哈通社中文版 · 11/20 22:40<span class="source-link"><a href="https://cn.inform.kz/news/guojiaquanhuizhu-b31fccbc/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫接见国家安全委员会主席玛拉特·依尔缅诺夫。总统听取了保障国家安全工作汇报及下一阶段任务部署。依尔缅诺夫汇报了落实国家元首工作指示的情况，以及改革国家安全机构、提升效能的各项举措。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：托卡耶夫总统接见国家安全委员会主席
+
+正文：
+总统听取了关于保障国家安全相关工作开展情况的汇报，以及关于下一阶段任务的部署情况。
+玛拉特·依尔缅诺夫向托卡耶夫就关于落实国家元首下达的工作指示落实情况，以及改革国家安全机构工作、提升其效能所采取各项举措进行了汇报。</div>
+<ul>
+<li>托卡耶夫总统接见国安委主席依尔缅诺夫</li>
+<li>总统听取国家安全工作及下一阶段任务汇报</li>
+<li>依尔缅诺夫汇报落实元首指示情况</li>
+<li>国安机构改革与效能提升举措受关注</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次会晤强化总统对安全机构的直接掌控，推动国安改革提升效能，有助于维护国内稳定，为经济改革和外交布局提供安全保障，但矿产领域政策执行或更趋集中。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/yiyeyejiafaguojia-a3419e29/" target="_blank">托卡耶夫总统向一批农业领域企业家颁发国家奖章</a></h3>
+<div class="item-meta">哈通社中文版 · 11/20 21:11<span class="source-link"><a href="https://cn.inform.kz/news/yiyeyejiafaguojia-a3419e29/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫总统签署命令，向一批杰出农业企业家颁发“智慧”、“尊敬”、“杰出贡献”、“哈萨克斯坦农业领域杰出人物”以及三级“劳动光荣”和二级“友谊”勋章。新闻还提及农业工作者日的设立：根据1998年1月20日总统令，11月第三个星期日为“农业工作者日”；根据2019年9月16日第691号政府决议，该节日更名为“农业、食品及加工业工作者日”。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据总统府新闻局消息，根据托卡耶夫总统签署的命令，向一批杰出农企家授予了“智慧（Парасат）”、“尊敬（Құрмет）”、“杰出贡献（Ерен еңбегі үшін）”、“哈萨克斯坦农业领域杰出人物（Қазақстанның аграрлық саласының еңбек сіңірген қайраткері）”，以及三级“劳动光荣（Еңбек даңқы）”和二级“友谊（Достық）”勋章。
+据悉，根据1998年1月20日的一项总统令，11月的第三个星期日被定为“农业工作者日”。
+根据2019年9月16日颁布的第691号政府决议，该节日的名称变更为“农业、食品及加工业工作者日”。</div>
+<ul>
+<li>托卡耶夫总统签署命令表彰杰出农企家</li>
+<li>颁发智慧、尊敬、杰出贡献等多类勋章</li>
+<li>11月第三个星期日为农业工作者日</li>
+<li>2019年节日更名为农业、食品及加工业工作者日</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举体现哈国对农业领域贡献者的认可，有助于激励农业投资与生产，促进食品加工业发展，对经济多元化有积极影响，同时强化社会对农业的重视。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/yebushijinwoguoquanlidezhuyaoyinzhiyi-7ef09bea/" target="_blank">总统：农业部门是促进我国全球竞争力的主要因素之一</a></h3>
+<div class="item-meta">哈通社中文版 · 11/20 20:50<span class="source-link"><a href="https://cn.inform.kz/news/yebushijinwoguoquanlidezhuyaoyinzhiyi-7ef09bea/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫表示，国家支持诚实勤恳的农业经营者，但将对那些长期居住在大城市或国外、仅将农业视为牟利手段且不承担社会责任的商人采取法律措施。他强调农业部门是提升国家全球竞争力的关键要素之一，所有从业者首要任务是改善农村生活质量。托卡耶夫还提及“全民建设”计划、反腐斗争和公共管理改革，并重申法律面前人人平等，犯罪者必将受惩，玩忽职守者将被免职。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：总统：农业部门是促进我国全球竞争力的主要因素之一
+正文：
+- 国家一贯支持那些诚实勤恳、积极进取的农业经营者。他们为家乡的繁荣做出了贡献，并时刻关心乡亲们的福祉。然而，也有一些商人，他们虽然从土地中获取收益，却长期居住在大城市，甚至身处国外。这些人往往从不亲临自己的农业经营场所，缺乏承担社会责任的意愿，对乡亲们也缺乏真诚的关怀，对于当地民众所面临的困境与需求，更是表现得漠不关心。-总统说。
+国家元首强调，应对那些脱离广大民众、仅将农业视为牟利手段的人必须采取法律措施。
+- 所有从事这一领域工作的人，首要任务必须是致力于改善农村地区的生活质量。农业部门是我国提升全球竞争力的关键要素之一。在当前这种动荡时期，其重要性愈发凸显。-托卡耶夫说。
+总统表示，真正的爱国主义体现在对人民的关怀之中，并可通过一个沉甸甸的问题来衡量：我们究竟能为下一代留下什么？
+- “全民建设”计划、大规模反腐斗争、公共管理体系改革，以及在社会中树立全新的建设性价值观——这一切仅仅是漫长征程的开端。未来还有许多任务和重要的里程碑等待我们去实现。正如我此前所言，针对国家的发展，我已制定了涵盖中长期的构想与规划。-他说。
+托卡耶夫强调，凡犯罪者，必将受到惩处。
+- 我重申：法律面前人人平等。这一要求必须严格遵守，尤其是在“全民建设”计划实施期间。一个专门负责此事的委员会即将开始工作。务必牢记一点：任何犯罪者都必将受到惩罚。任何玩忽职守者都将被免职。身居高位，首先意味着肩负重任。-总统说。</div>
+<ul>
+<li>总统支持勤恳农业经营者，批评脱离民众的牟利商人</li>
+<li>对仅将农业视为牟利手段者将采取法律措施</li>
+<li>农业部门是提升国家全球竞争力的关键要素</li>
+<li>所有农业从业者首要任务是改善农村生活质量</li>
+<li>重申法律面前人人平等，犯罪者必惩、失职者免职</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该表态强化对农业领域的社会责任要求，有助于改善农村治理和民生，但可能引发部分农业投资者担忧。反腐和法治信号有利于优化营商环境，支持“全民建设”计划推进，对政治稳定和经济长期发展具有积极意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/2030nianyaojiangdimianda130gong-d28b9a26/" target="_blank">托卡耶夫：截至2030年要将灌溉土地面积扩大至130万公顷</a></h3>
+<div class="item-meta">哈通社中文版 · 11/20 20:13<span class="source-link"><a href="https://cn.inform.kz/news/2030nianyaojiangdimianda130gong-d28b9a26/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫总统要求到2030年将灌溉土地面积扩大至至少130万公顷，目前节水技术仅覆盖70万公顷。已启动4600公里灌溉渠道修复，年底前近千公里投入使用，改善20万公顷土地。他强调粮食安全、应对气候风险、作物多样化，今年矿物肥料施用量达科学推荐量的65%，并推动国内化肥生产，减少进口依赖。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：托卡耶夫：截至2030年要将灌溉土地面积扩大至130万公顷
+正文：
+- 这一关键问题至今仍未解决，围绕这一议题的争论也十分激烈。目前，节水技术已应用于70万公顷灌溉土地，不足总面积的一半。目标是到2030年将覆盖面积扩大到至少130万公顷。鉴于此事的紧迫性，我指示政府将此项任务纳入常设议程，即作为日常工作的一部分来处理。-他说。
+托卡耶夫总统指出，针对4600公里灌溉渠道的重建与修复工作已经启动。
+- 到年底，将有近千公里的基础设施投入使用。届时，20万公顷灌溉土地的状况将得到改善。政府应与各地方政府协调，使扩大灌溉面积的计划与供水能力、灌溉渠道状况以及能源网络容量相匹配。为了充分发挥作物种植的潜力，我们必须努力实施先进的科学方法和现代技术。众所周知，土地不容许任何错误。然而，如果悉心照料，它必将带来丰厚的回报。大家对此深有体会。-他说。
+国家元首强调，保障国家粮食安全是另一项至关重要的任务。
+- 目前，有关未来一年及此后中期全球气候状况的各类预测正陆续发布。气候议题与地缘政治及经济紧密交织。例如，人们频频对气候的迅速恶化以及未来可能出现的干旱表示担忧。我在谈及人工智能在农业领域的应用时，也曾提及这一点。据一些专家预测，2027年可能会异常炎热。-总统说。
+托卡耶夫指出，天气波动可能引发干旱、火灾和洪水。这些后果或将危及全球粮食安全，并扰乱全球供应链。
+- 在发展农业和管理水资源时，我们必须考虑所有此类风险。我们已经开始着手解决这个问题，但进展缓慢。确保国家粮食安全至关重要。一个专注于粮食安全的国际组织总部设在阿斯塔纳，该组织隶属于伊斯兰合作组织。鉴于全球形势复杂，相关部委可以与该组织合作，为哈萨克斯坦及其合作伙伴制定建议。-他说。
+总统表示，实现高作物产量并降低每公顷单位生产成本，具有重要意义。
+- 我国的粮食安全直接依赖于这一战略性产业——这是众所周知的事实。因此，对我们来说，在降低单位面积生产成本的同时实现高作物产量至关重要。我认为应对这一挑战的路径是清晰的。重申一下，这可以通过合理的作物种植结构、优质种子、易于获取的肥料、基于科学精准的耕作方式以及高效用水来实现。-他说。
+国家元首指出，自2023年以来，已系统性地开展工作，以减少对高产小麦的依赖，并提高收益显著更高的作物的种植比例。
+- 建议继续推进作物多样化，同时兼顾土壤和气候条件以及加工企业的需求。今年，我国农民的矿物肥料施用量首次达到科学推荐量的65%。这是一个意义重大的成就；就在几年前，这一数字仅为20%。-托卡耶夫说。
+托卡耶夫总统强调了发展国内化肥生产的重要性。
+- 目前使用的化肥约有一半依赖进口。这种情况绝不能继续下去——这一点我们已经多次强调。目前，突厥斯坦州正在建设一座磷肥生产厂。此外，我国首个氨尿素联合装置也计划在曼格斯套州建设。政府将为这些项目提供支持。-他说。</div>
+<ul>
+<li>2030年灌溉土地扩至130万公顷，节水技术现覆盖70万公顷</li>
+<li>启动4600公里渠道修复，年底千公里投用改善20万公顷</li>
+<li>强调粮食安全与气候风险，2027年或异常炎热</li>
+<li>作物多样化减少小麦依赖，肥料施用达推荐量65%</li>
+<li>推动化肥国产化，突厥斯坦和曼格斯套州建厂</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该政策将提升哈国农业用水效率与粮食安全，减少化肥进口依赖，增强经济自主性；气候风险应对和作物多样化有助于稳定供应链，但需协调供水与能源配套，可能影响中亚地区粮食市场格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/guojiadingyiduiyedeyigong-9324245d/" target="_blank">国家元首指示制定一份针对农业领域的统一投资工具清单</a></h3>
+<div class="item-meta">哈通社中文版 · 11/20 19:46<span class="source-link"><a href="https://cn.inform.kz/news/guojiadingyiduiyedeyigong-9324245d/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫指示政府在2027年第一季度末前制定农业领域统一投资工具清单，简化农业信贷公司和KazAgroFinance的申请流程，引入数字模型和人工智能评估农户信贷偿还能力，并要求二级银行以优惠条件和长期限参与农业贷款，还款计划需考虑生产周期。总统还强调完善农业保险体系，鼓励农户自愿投保，并指示政府与国际金融机构合作制定专项计划，借鉴全球最佳实践，确保长期融资和技术支持。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：国家元首指示制定一份针对农业领域的统一投资工具清单
+
+正文：
+- 农业部门需要便捷且长期的融资渠道。我们曾多次强调这一点。目前，农业信贷公司和哈萨克斯坦农业金融公司（KazAgroFinance）提供的投资工具申请审核周期长，流程复杂；此外，它们的数字化程度也不够高。-总统说。
+
+因此，托卡耶夫总统指示政府与“拜铁列克”控股公司及金融市场监管机构协作，在2027年第一季度末之前，制定一份针对农业领域的统一投资工具清单。
+
+总统在讲话中强调，二级银行必须积极参与向农业部门提供信贷。
+
+- 二级银行必须积极参与农业贷款——这一点我们一直强调。当然，鉴于这些银行是私营的，这并非易事。因此，至关重要的是，要以优惠的条件和较长的期限向农民提供贷款。还款计划必须考虑到具体的生产周期，并且应该允许在投资阶段延期偿还本金。-他说。
+
+托卡耶夫总统表示，为了偿还贷款，农民被迫在收获后立即低价出售农产品。这种情况绝不能继续发生。
+
+- 政府及相关部门必须着手解决这一问题。请务必明确，这不仅仅是一项请求，而是一项指令。我们同处一个国家，呼吸着同样的空气，饮用着同一片土地上的水源，因此，收入水平不应存在过大的差距。此外，在如何获取财政资源这一问题上，也不应存在认知上的偏差。另一方面，农民们也必须认识到，国家在农业领域投入了巨额资金——这一投入力度远超许多其他国家，包括我们的邻国。这里绝不容许滋生“依赖心理”。换言之，所拨付的资金必须得到有效利用，并真正用于预定的用途。-托卡耶夫说。
+
+Фото: ЖИ 国家元首指出，应引入一套评估农户信贷偿还能力的数字模型。
+
+- 此外，必须尽可能简化各项流程，减少从申请融资到最终获得资金这一全过程中的繁琐环节。这是一个长期存在的问题。虽然解决方案看似简单，但仍有必要重申：我们需要建立一套数字模型，用于评估农户的信誉度，即他们的贷款偿还能力。我们经常讨论将人工智能引入农业领域。我最近会见了全球人工智能领域一些领先企业的高管，他们建议我们重点将人工智能技术融入农业生产之中。-他说。
+
+托卡耶夫总统表示，遗憾的是，全球粮食安全的前景并不十分乐观。
+
+- 目前，针对“厄尔尼诺”这一自然现象所带来的后果，相关全面分析工作正在进行中。预测结果并不乐观。然而，哈萨克斯坦在此局面下拥有显著优势：若能把握机遇，将人工智能引入农业领域，我国便有望占据领先地位，并为构建全球粮食储备做出贡献。何不着手推进这一举措呢？在我看来，这项任务应首先交由政府内部负责处理此类问题的相关部门去落实。-他说。
+
+托卡耶夫表示，这一工具将确保信贷发放决策的客观性和透明度，同时缩短申请审核时间，并减少行政壁垒。
+
+- 总的来说，我们需要探讨人工智能如何助力大幅提升农业生产力。在此过程中，积极且有效地利用金融工具来促进生产力增长，无疑是明智之举。我们必须承认，目前该行业的发展水平尚未达到应有的高度。政府已被委以重任，需与国际金融机构合作制定一项专项计划。该计划将借鉴全球范围内的最佳实践，并明确相关机制，以确保长期融资渠道，提供技术与专家支持，并推动现代技术及先进科学成果的应用。-总统说。
+
+国家元首指出，有必要研究采取相关措施，鼓励农户提前自愿投保，以防范各类风险。
+
+- 另一个紧迫的问题是完善农业保险体系。干旱、霜冻和牲畜疾病可能会使多年的辛勤劳作成果毁于一旦。若仅仅听天由命，完全依赖当地气候条件，这从一开始就是一种无效的策略。此外，单纯依靠国家财政来持续弥补损失，也无法从根本上解决问题。-他说。
+
+因此，国家元首指示政府与金融市场监管与发展署协作，就该市场的发展提出具体建议。</div>
+<ul>
+<li>2027年一季度末前制定农业统一投资工具清单</li>
+<li>简化农业信贷流程，引入数字模型评估农户信誉</li>
+<li>二级银行须以优惠条件长期限参与农业贷款</li>
+<li>推动人工智能融入农业生产，提升生产力</li>
+<li>完善农业保险体系，鼓励农户提前自愿投保</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该政策将改善哈国农业融资环境，降低农民信贷成本，促进农业生产效率提升。引入AI和数字模型有助于提高信贷透明度，推动农业现代化。完善保险体系可增强农业抗风险能力，保障粮食安全。同时，吸引二级银行和国际金融机构参与，有望优化矿产以外经济结构，增强外交合作。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/zhengchude-619a2d09/" target="_blank">总统：政府必须消除阻碍产品出口的障碍</a></h3>
+<div class="item-meta">哈通社中文版 · 11/20 19:20<span class="source-link"><a href="https://cn.inform.kz/news/zhengchude-619a2d09/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫在讲话中宣布，2025年全国粮食产量达2450万吨，远超1800万吨的长期均值，在干旱条件下仍获丰收。软质小麦72%为优质，棉花产量55.6万吨创历史新高。农工产品出口创收3.5万亿坚戈，小麦及面粉出口1600万吨创独立以来纪录，出口至72国。总统强调需深加工提高附加值，消除出口障碍，并指出2026年补贴贷款达1.5万亿坚戈，农机老化率从90%降至60%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">总统在讲话中指出，今年的全国粮食产量为2450万吨。
+
+- 相比之下，长期平均产量为1800万吨。今年是近年来最干旱的年份之一，多个地区出现旱情，特别是巴甫洛达尔和卡拉干达州。尽管天气条件恶劣，农民仍然获得了丰收，取得了可观的收成。这得益于国家的支持和农业技术的有效应用。-他说。
+
+据他介绍，收获的谷物质量也很高。运往仓库的软质小麦中，72%被评为优质小麦。其他作物也取得了良好的收成。具体而言，蔬菜收获340万吨，土豆300万吨，瓜类和葫芦240万吨。棉花产量达到55.6万吨，创历史新高。
+
+- 尽管今年面临诸多严峻挑战，但农业技术的普及应用仍对生产力产生了根本性的推动作用。如今，农民能够更好地应对季节性天气变化，并主动采取措施减轻潜在困难——这得益于为此专门创造的有利条件。到2026年，利率为5%的补贴贷款总额已达到1.5万亿坚戈。此外，补贴租赁计划也为农业机械的更新换代注入了新动力。截至2026年，农民已购置了超过2.5万台（套）农业设备。得益于此，农业机械的老化率已从90%降至60%。如果能保持这一势头，哈萨克斯坦有望在未来5至7年内实现农业机械的必要更新目标。-总统说。
+
+Фото: Акорда 国家元首表示，2025年，我国农工产品出口创收3.5万亿坚戈。
+
+- 作物种植结构多样化的相关工作也在推进之中。自去年以来，小麦播种面积已减少了约17%。取而代之的是油料作物和豆类作物的种植——这类作物市场需求旺盛，且能带来更高的收益。自2023年起，这些作物的种植面积已翻了一番。这些调整有助于扩大农产品的市场准入，并对稳定小麦价格起到了一定作用。-托卡耶夫说。
+
+总统认为，当务之急是在国内对已生产的商品进行深加工，从而提高其附加值并扩大出口量。
+
+- 在过去两个销售年度中，小麦及面粉的出口量均创下历史新高。2024年出口量为1530万吨，2025年则达到1600万吨。这是哈萨克斯坦自独立以来的最高纪录。目前，我国农产品已出口至全球72个国家。2025年，出口总收入达到3.5万亿坚戈，创下历史新高。此外，在农产品出口中，加工产品的占比也在持续增长。-他说。
+
+托卡耶夫总统强调，必须有效利用向国外市场出口畜产品的各项新机遇。
+
+- 我们面前的另一项重要任务是发展畜牧业。国家一直在为该行业提供切实支持。近年来，针对从事这一传统产业的企业的信贷投放规模有所增加。纯种牲畜的引进也受到了更多重视。一批新的农场和育肥场正在建设之中。例如，自去年以来，已有71个商业化奶牛场投入运营，并新建了33个育肥场。当前，必须创造必要条件，确保这些生产设施能够高效、可持续地运行。-他说。
+
+国家元首表示，必须确保农场获得优质饲料供应。成品销售问题也必须得到解决。尤其要重视恢复牧场生产力并扩大耕地面积。此外，还必须确保农业企业能够便捷地获取水源。
+
+- 此外，必须特别重视兽医领域的现代化建设。根据世界动物卫生组织的认定，哈萨克斯坦已被确认为“口蹄疫无疫区”。这为向国外市场出口肉类及其他畜产品创造了新的机遇，我们必须充分利用这一契机。此外，还需完善牲畜登记制度，并提升实验室诊断水平。政府必须消除阻碍产品出口的各类障碍。-他说。
+
+Фото: Акорда 总统指出，食品工业领域的项目需要得到及时评估与落实。
+
+- 必须高度重视农产品的深加工发展。关于这一议题，各方已进行了充分讨论。过去三年间，我国的食品产量增长了近15%。具体而言，植物油产量增长了36%，肉类和乳制品产量则提升了25%。这些都是积极的信号。当前，我们有必要保持这一良好势头，并进一步挖掘加工业的发展潜力。-他说。
+
+托卡耶夫表示，有效落实食品工业领域的项目将有助于减少在食品供应方面对进口的依赖。</div>
+<ul>
+<li>2025年粮食产量2450万吨，超长期均值36%</li>
+<li>农工产品出口3.5万亿坚戈，小麦出口1600万吨创新高</li>
+<li>2026年补贴贷款1.5万亿坚戈，农机老化率降至60%</li>
+<li>小麦播种面积减17%，油料和豆类作物面积翻番</li>
+<li>哈国获口蹄疫无疫区认定，畜产品出口迎新机遇</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">农业丰收与出口创汇增强哈国经济韧性，深加工导向将优化产业结构、减少进口依赖；口蹄疫无疫区认定拓展肉类出口外交筹码，但出口障碍消除与物流水源等基建短板仍考验政府执行力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/guojiaquanminjiangweiguojiafakaidao-a4192060/" target="_blank">国家元首：“全民建设”将为国家发展开辟广阔道路</a></h3>
+<div class="item-meta">哈通社中文版 · 11/20 18:52<span class="source-link"><a href="https://cn.inform.kz/news/guojiaquanminjiangweiguojiafakaidao-a4192060/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫提出“全民建设”倡议，旨在应对地缘政治经济不确定性，动员全民参与国家建设。过去七年农业成效显著：粮食产量增长28%，启动1630个投资项目总值2.7万亿坚戈，农工产品出口翻番至近70亿美元，加工产品占比达52%。去年首次采用数字技术开展全国农业普查。未来将建设诊所、医院、学校、道路及核电站、水电站、数据中心等基础设施，创造就业，改善民生。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：国家元首：“全民建设”将为国家发展开辟广阔道路
+正文：
+- 正如“全民建设”这一称谓所蕴含的意义，该项目旨在造福公众，将全体公民凝聚在一起，共同投身于一项具有建设性的集体事业之中。事实上，这是一项为了子孙后代而发起、惠及全国的宏大工程。面对当今世界变幻莫测、动荡不安所带来的复杂挑战，我们给出的有力回应就是：“建设——不断地建设！”-总统说。
+托卡耶夫表示，鉴于当前地缘政治与经济形势充满不确定性，这是确保国家及其公民安全最稳妥、最合乎逻辑的方案。
+- 在这一综合规划框架下，将为农村地区、农民及农工综合体建设必要的基础设施。总体而言，过去七年间，农业领域取得了显著成效。粮食产量增长了28%。共启动了1630个投资项目，总价值达2.7万亿坚戈。农工产品出口额翻了一番，达到近70亿美元。值得一提的是，在出口总额中，加工产品的占比已达到52%。-他说。
+国家元首指出，哈萨克斯坦去年开展了全国农业普查，这是二十年来的首次。
+- 本次农业普查采用了数字技术，从而获得了全面、精确的农业部门状况数据，这些数据准确反映了该领域的实际情况。总体而言，我国农业潜力巨大。当务之急是有效利用现有机遇，并立即着手开展相关工作。-他说。
+Фото: Ақорда 总统在讲话中指出，这片得天独厚的哈萨克草原，即将化身为一处广阔的建设工地。
+- 哈萨克斯坦有句谚语：“勤奋才能成功。”的确，正是由于公民们恪尽职守、肩负着高度的责任感，我们的国家才得以迈入发展进步的新时代。作为一个富有创造力和前瞻性的民族，我们始终着眼长远​​。为了国家利益，我们只追求远大的目标。作为国家元首，我深知坚守这一目标的神圣职责。今年国情咨文中提出的“全民建设”（Халықтық құрылыс）倡议便是最好的证明。它标志着哈萨克斯坦这片富饶的草原即将成为一片广阔的建设工地。就其规模而言，即将展开的建设规划堪称宏伟壮丽、独一无二。-托卡耶夫说。
+托卡耶夫总统表示，全国各地将建设各类重要的社会基础设施——包括诊所、医院、幼儿园、学校以及文化体育设施——旨在改善民众的生活质量。此外，还将修建高质量的道路，并建设核电站、水电站、各类发电厂以及数据处理中心。
+- 毫无疑问，这将使我国的性质与面貌，乃至经济结构，都发生重大变革。众所周知，在我国历史上，从未有过如此大规模的建设工程——它同时涵盖了各个行业领域，并遍及全国每一个地区。这一“全民建设”倡议必将赢得广大公民的支持，并为国家的发展开辟广阔前景。-总统说。
+托卡耶夫指出，工业企业和本土企业家都将积极参与这一全国性项目。这将创造新的就业岗位，增加公民收入，并改善他们的生活质量。
+- 最终，哈萨克斯坦的每一位公民——尤其是年轻一代——都将受益于这项全国性建设的成果。因此，我们将秉持“建设，再建设”的理念，携手并进，为我们团结的社会奠定公正哈萨克斯坦的每一块基石。我对此充满信心。-国家元首说。</div>
+<ul>
+<li>托卡耶夫提出“全民建设”倡议，应对复杂国际形势</li>
+<li>七年农业成果：粮食增28%，投资2.7万亿坚戈</li>
+<li>农工产品出口翻番至70亿美元，加工品占52%</li>
+<li>去年首次数字技术农业普查，获取精确数据</li>
+<li>将全国建设社会基础设施及能源设施，创造就业</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该倡议将大规模基建拉动经济，改善民生，增强社会稳定；能源设施建设优化矿产与电力格局；农业现代化提升出口竞争力；外交上展现自主发展决心，吸引外资参与。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://cn.inform.kz/news/zaiyejingzhutizhong-63dc1956/" target="_blank">托卡耶夫总统建议在农业经营主体中引入数字技术</a></h3>
+<div class="item-meta">哈通社中文版 · 11/20 18:17<span class="source-link"><a href="https://cn.inform.kz/news/zaiyejingzhutizhong-63dc1956/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫总统在农业工作者节日论坛上致辞，强调农业的战略重要性，指出尽管天气不利，全国仍收获2450万吨农作物。他建议在农业经营主体中引入数字技术，包括人工智能，并以北哈萨克斯坦州“Akseleu”农场为例，该农场引入数字化管理系统和卫星监测系统，实现会计自动化，并支持当地社会基础设施。总统呼吁其他农企借鉴经验，提升生产效率和农村生活质量。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">总统在讲话中首先向全国农民劳动者致以节日祝贺。
+- 首先，祝大家职业节日快乐。这是一次特殊的活动。这是因为农业对于国家经济具有战略重要性。今天，按照每年的传统，我们专门讨论我国的农业形势。有资格的专家和农民，总而言之，全国各地的劳动人民都参加了论坛。因此，可以说这次论坛是一次真正的全国性会议。-托卡耶夫说。
+国家元首指出，在今天的论坛上，与会者就水资源保护、草场高效利用、改善农业从业者社会条件以及其他紧迫议题，提出了许多重要见解和切实可行的建议。政府及相关部委必须确保将这些事项纳入考量。
+- 众所周知，当今的农业专家们为提升农村地区的发展潜力，以及促进整个国家的增长与繁荣，做出了重大贡献。你们以崇高的使命感投身于这一传统行业，为增进人民福祉做出了卓越贡献。尽管遭遇了不利的天气条件，今年全国的粮仓依然再次装满了粮食。在秋收期间，全国共收获了2450万吨农作物。丰收是繁荣与富足的保障。这意味着全国各地的家庭都将享有充裕的生活，我们的餐桌也将摆满丰盛的食物。在此，我要向广大农业从业者以及在这一领域辛勤工作的每一位人士表达我的谢意。-他说。
+讲话中，托卡耶夫总统特别提到了一个成功利用数字技术优势的农场。
+- 我在国情咨文中强调，农业领域亟需广泛应用各类数字技术，包括人工智能。如今，许多农场已从这些先进的解决方案中获益。例如，在北哈萨克斯坦州，就有一些这样的农业企业。其中，“Akseleu”农场便已引入了生产数字化管理系统以及基于卫星的监测系统。-他说。
+总统表示，农场的会计流程正以自动化方式进行处理。
+- 该农业企业也特别重视发展当地的社会基础设施。例如，为居民提供集中供暖系统和清洁饮用水。该企业持续支持当地学校、体育中心和其他社会设施的建设。因此，得益于数字化，农业生产的效率和竞争力不断提高，农村居民的整体生活质量也得到改善。我们认为，其他农业企业也应借鉴这些经验，在其所在地区发展农业。-托卡耶夫说。</div>
+<ul>
+<li>托卡耶夫建议农企引入数字技术和人工智能</li>
+<li>全国秋收农作物达2450万吨</li>
+<li>“Akseleu”农场数字化管理及卫星监测</li>
+<li>农场支持当地社会基础设施建设</li>
+<li>政府需考虑论坛提出的水资源等建议</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">推动农业数字化将提升哈国农业生产效率与竞争力，促进农村社会发展；减少对传统资源依赖，增强经济韧性；数字技术应用或吸引外资，优化矿产以外产业格局，助力外交形象。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">10</span> <a href="https://cn.inform.kz/news/zaiguoquanzizhengzhongdi16-gao-75fa249a/" target="_blank">哈萨克斯坦在联合国全球电子政务排名中位列第16位 首次跻身最高评级梯队</a></h3>
+<div class="item-meta">哈通社中文版 · 11/20 11:36<span class="source-link"><a href="https://cn.inform.kz/news/zaiguoquanzizhengzhongdi16-gao-75fa249a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦在2026年联合国电子政务排名中位列第16位，首次跻身最高评级梯队（VH级），成为中亚首个进入该行列的国家。综合指数从0.9009升至0.9363，超越瑞典、德国等多国，在独联体及中亚稳居第一。移动通信与互联网普及度从第41位跃升至第13位，数字素养提升约1.5倍。eGov平台注册用户超1640万，2026年前10个月服务逾5100万次，90%以上公共服务实现全流程在线办理。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦在联合国全球电子政务排名中位列第16位 首次跻身最高评级梯队
+正文:
+哈萨克斯坦由此成为中亚地区首个迈入这一顶级行列的国家。分析认为，这一突破性进展直接得益于国家元首提出的将哈萨克斯坦建设成为全面数字化国家的战略部署，以及将人工智能确立为国家治理现代化核心工具的发展路径。
+联合国电子政务最高评级梯队（VH级）全球仅涵盖21个电子政务最发达的国家，哈萨克斯坦如今已与韩国、丹麦、新加坡、英国、爱沙尼亚及美国等国并肩。2026年全球仅有三个国家首次晋升该梯队，分别为哈萨克斯坦、爱尔兰和波兰。
+过去两年间，哈萨克斯坦一举超越了2024年排名靠前的瑞典、德国、爱尔兰、新西兰、奥地利和日本，综合指数从0.9009攀升至0.9363（全球平均值为0.6675）。与此同时，哈萨克斯坦与公认的“数字国家标杆”爱沙尼亚之间的分差缩小了四倍，并在独联体及中亚国家中稳居第一（乌兹别克斯坦位列第32位，阿塞拜疆第38位，俄罗斯第50位）。
+报告显示，哈萨克斯坦在各项核心评估维度上均实现全面增长。在通信基础设施方面，哈国移动通信与互联网普及度从全球第41位飙升至第13位，电信基建水平已与爱沙尼亚持平；民众数字素养提升约1.5倍，教育与技能指数从第42位升至第28位；电子政务法律框架更是获得联合国最高评价。
+联合国报告将中亚列为2026年全球数字化发展的典范案例之一，高度肯定了哈萨克斯坦eGov.kz与eGov Mobile生态系统作为一体化数字政府的示范作用，同时点赞国际人工智能中心alem.ai在科研、教育、初创企业孵化及应用型人工智能领域的平台价值。联合国专家指出，哈萨克斯坦的优势并非源于孤立的政务网站，而在于实现了跨部门数据互通、数字身份认证、移动端服务与线下公共服务中心（ЦОН）深度融合的完整体系。
+这一亮眼成绩的背后，是哈萨克斯坦近年来对数字政府架构的系统性重塑。自国家元首宣布2026年为“数字化与人工智能年”以来，哈萨克斯坦全面上线新一代eGov平台，依托现代技术架构保障海量用户的数据安全与系统稳定。随着国家数据库实现互联互通，民众办理业务不再需要反复开具、扫描或提交纸质证明，系统可自动调取所需信息；线下则同步开设配备人工智能助手的自助服务区（AI-ЦОН），企业端也通过eGov Business加速告别纸质公文流转。
+目前，哈萨克斯坦超过90%的公共服务已实现全流程在线办理，“掌上政务”成为常态。截至目前，eGov.kz门户注册用户已突破1640万；仅2026年1月至10月，平台累计提供政务服务逾5100万次，其中近三分之二通过智能手机端完成。在制度与算力支撑方面，哈萨克斯坦正式出台《数字法典》与《人工智能法》，建成alem.ai国际人工智能中心，本国超级计算机亦成功跻身全球超级计算机TOP500百强榜单。
+哈萨克斯坦副总理兼人工智能和数字发展部部长扎苏兰·马迪耶夫对此表示，排名从来不是终极目标，而是长期系统性深耕的自然结果。他强调，联合国评估的是国家治理的整体效能而非单一网站，人工智能正逐步接管繁琐的行政事务，将人力解放出来投入战略与创新工作。受哈萨克斯坦带动，中亚地区首次整体进入全球数字化领先方阵，而哈方下一阶段的目标是打造“主动服务型政府”——在民众提出需求之前，政务服务便已精准送达。
+据悉，《联合国电子政务调查报告》由联合国经济和社会事务部每两年发布一次，覆盖全球193个联合国会员国，围绕在线服务水平、电信基础设施及人力资本三大维度进行综合评估，并将各国划分为四个大组及16个评级等级。</div>
+<ul>
+<li>哈国电子政务排名全球第16位，首次进入最高评级梯队</li>
+<li>综合指数从0.9009升至0.9363，超越瑞典德国等六国</li>
+<li>移动通信与互联网普及度从第41位飙升至第13位</li>
+<li>eGov注册用户超1640万，前10个月服务逾5100万次</li>
+<li>出台《数字法典》《人工智能法》，超级计算机跻身TOP500</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">政治上官僚效能提升强化国家治理合法性；经济上数字政务降低企业成本、吸引AI投资；外交上确立中亚数字领头羊地位，增强与联合国及爱沙尼亚等数字强国合作；矿产格局短期无直接影响，但数字化或提升矿业审批与监管效率。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(10 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/kitayskiy-investor-planiruet-vlozhit-150-mln-v-ugolniy-proekt-v-zhambilskoy-obla-79dada51" target="_blank">中国投资者计划向江布尔州煤炭项目投资1.5亿美元</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/21 07:53<span class="source-link"><a href="https://www.inform.kz/ru/kitayskiy-investor-planiruet-vlozhit-150-mln-v-ugolniy-proekt-v-zhambilskoy-obla-79dada51" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>中国“安顺能源”公司计划在哈萨克斯坦江布尔州莫因库姆区投资1.5亿美元实施煤炭开采与加工项目，规划年产能300万吨，目前处于文件准备阶段。该公司已在当地注册，并赞助建设了93公里道路，惠及附近32个农户。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">中国投资者计划在江布尔州煤炭项目投资1.5亿美元。
+
+该项目拟由“安顺能源”有限责任公司实施。据莫因库姆区区长叶尔梅克·卡连塔耶夫消息，该公司已在当地注册。计划进行煤炭原料开采并建设加工生产设施。
+
+项目成本估计为1.5亿美元。申报年产能为300万吨。这些指标针对计划中的企业，项目目前仍处于准备必要文件阶段。
+
+与此同时，投资者已参与道路工程。据区政府数据，在其赞助下建成了全长93公里的道路。该道路经过32个农户所在区域附近。
+
+哈萨克斯坦煤化工哪些项目能为经济注入新动力，请阅读我们的材料。</div>
+<ul>
+<li>中企拟投1.5亿美元在江布尔州建煤炭项目</li>
+<li>项目规划年产能300万吨，尚在文件准备阶段</li>
+<li>安顺能源已在莫因库姆区注册</li>
+<li>投资者赞助建成93公里道路，惠及32农户</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该项目将促进江布尔州煤炭开采与加工产业发展，带动地方基础设施和就业；深化中哈能源合作，但需关注环保与社区关系。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/serik-zhumangarin-i-boris-titov-obsudili-razvitie-tsur-1ecb0dff" target="_blank">谢里克·茹曼加林与鲍里斯·季托夫讨论可持续发展目标进展</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/21 03:33<span class="source-link"><a href="https://www.inform.kz/ru/serik-zhumangarin-i-boris-titov-obsudili-razvitie-tsur-1ecb0dff" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦第一副总理谢里克·茹曼加林与俄罗斯总统企业家权利全权代表鲍里斯·季托夫会晤，交流可持续发展目标落实经验，讨论国际和区域平台合作及2030年后全球议程。茹曼加林表示可持续发展目标已纳入哈国家规划体系。2026年6月哈在全球可持续发展目标指数169国中排名第67位，较上年提升3位。11月17日哈加入联合国支持的数字公共产品联盟。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">谢里克·茹曼加林与鲍里斯·季托夫讨论了可持续发展目标的落实进展。
+
+会议期间，谢里克·茹曼加林与鲍里斯·季托夫交流了实现可持续发展目标的经验，讨论了在国际和区域平台上的合作，以及2030年后全球议程的紧迫方向。
+
+图片来源：哈萨克斯坦共和国国民经济部
+
+茹曼加林指出，可持续发展目标已被纳入哈萨克斯坦的国家规划体系。相关指标体现在国家发展计划以及中央国家机关和地区的计划中。
+
+这使得国际义务与国家发展优先事项得以协调。
+
+图片来源：哈萨克斯坦共和国国民经济部
+
+会议成果表明，双方确认有意继续就落实可持续发展目标开展对话。
+
+联合国可持续发展目标包括17个方向，其中包括消除贫困、确保优质教育、改善医疗卫生、保护环境和可持续经济增长。
+
+图片来源：哈萨克斯坦共和国国民经济部
+
+2026年6月，哈萨克斯坦在全球可持续发展目标指数中在169个国家中排名第67位，较上一年提升三个位次。
+
+此外，11月17日，哈萨克斯坦加入了由联合国支持的数字公共产品联盟。该倡议旨在发展有助于实现可持续发展目标的数字解决方案。</div>
+<ul>
+<li>茹曼加林与季托夫交流可持续发展目标落实经验</li>
+<li>可持续发展目标已纳入哈萨克斯坦国家规划体系</li>
+<li>2026年6月哈全球可持续发展目标指数排名第67位</li>
+<li>排名较上年提升3位，共169国参与评比</li>
+<li>11月17日哈加入联合国支持的数字公共产品联盟</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次会晤强化哈俄在可持续发展领域的合作，有助于哈借助国际经验优化国家规划。排名提升和加入数字联盟将增强哈在国际议程中的话语权，为吸引绿色和数字投资创造有利条件。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/poslanie-prezidenta-kazahstana-obsudili-so-studentami-v-kitae-1fe35f4a" target="_blank">哈萨克斯坦总统国情咨文在中国与大学生进行讨论</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/21 02:07<span class="source-link"><a href="https://www.inform.kz/ru/poslanie-prezidenta-kazahstana-obsudili-so-studentami-v-kitae-1fe35f4a" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>古米廖夫欧亚国立大学现代研究所所长瑟德克纳扎罗夫教授在中国向哈萨克斯坦留学生宣讲总统国情咨文，重点介绍政治和社会经济现代化方向，特别是数字化、人工智能、科学教育及人力资本发展。他强调青年智力潜力对转型成功的关键作用，以及海外学生在掌握先进技术、加强国际联系和报效国家方面的特殊角色。学生们讨论了国家发展前景和青年在改革中的贡献，清华大学的加富尔和北京国际经济和商业大学的比森加利耶娃分享了个人看法。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">在中国留学的哈萨克斯坦学生参加了宣讲会，主讲人为古米廖夫欧亚国立大学现代研究所所长、政治学博士、教授穆希特-阿尔达格尔·瑟德克纳扎罗夫。
+
+图片：贝里克·塔宾巴耶夫/哈通社
+
+主讲人介绍了国家政治和社会经济现代化的主要方向，特别关注数字化、人工智能的应用、科学、教育和人力资本的发展。
+
+据学者介绍，大规模转型的成功在很大程度上取决于青年的智力潜力。他强调海外哈萨克斯坦学生在掌握先进技术、加强国际联系以及将所学经验用于造福国家方面的特殊作用。
+
+图片：贝里克·塔宾巴耶夫/哈通社
+
+主讲人发言后，与会者不仅讨论了国家发展前景和青年对实施改革的贡献，还分享了对所提出倡议的个人看法。
+
+图片：贝里克·塔宾巴耶夫/哈通社
+
+“教授关于Digital Qazaqstan战略和数字解决方案实际应用的发言给我留下了特别深刻的印象。这个话题对我来说很熟悉，因为我的专业是信息技术和人工智能，”清华大学学生达米鲁雷·加富尔说。
+
+图片：贝里克·塔宾巴耶夫/哈通社
+
+北京国际经济和商业大学学生梅雷·比森加利耶娃则强调了知识价值和青年人才自身责任的重要性。
+
+“如今，最重要的资源不是自然资源，而是知识、思想和人的潜力。出国留学使我们能够借鉴世界经验，以创建有竞争力的项目并在祖国发展它们。重要的是，大胆的倡议能够付诸实施，年轻专家能看到国内的前景。我们每个人都必须认识到自己在塑造这一未来中的个人作用，”她分享道。
+
+此前有报道称，哈萨克斯坦总统的国情咨文在北京的一次圆桌会议上进行了讨论。</div>
+<ul>
+<li>教授在华向哈留学生宣讲总统国情咨文</li>
+<li>重点介绍数字化、人工智能和人力资本发展</li>
+<li>强调青年智力潜力对转型成功的关键作用</li>
+<li>海外学生应掌握先进技术并报效国家</li>
+<li>学生分享对Digital Qazaqstan战略的看法</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该活动有助于在海外青年中传播哈国改革议程，强化人才回流和知识转移，为数字化和人工智能发展储备人力资本，对哈国经济现代化和外交软实力有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://www.inform.kz/ru/kazahstan-predlozhil-sozdat-rabochuyu-gruppu-s-obse-po-zashite-grazhdan-postrada-dcb77748" target="_blank">哈萨克斯坦提议与欧安组织建立工作组以保护冲突地区受害公民</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/21 01:43<span class="source-link"><a href="https://www.inform.kz/ru/kazahstan-predlozhil-sozdat-rabochuyu-gruppu-s-obse-po-zashite-grazhdan-postrada-dcb77748" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦在欧安组织简报会上分享2019-2021年从叙利亚和伊拉克返回756名公民（191名妇女、528名儿童、37名男子）的人道主义行动经验，介绍康复和重新融入工作，并提议建立“中亚+欧安组织”区域工作组，以交流信息、早期识别和保护冲突地区受害公民、联合培训专家和协调跨境案件。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦提议与欧安组织建立工作组，以保护冲突地区受害公民
+正文：
+欧安组织阿斯塔纳项目办公室主任阿列克谢·罗戈夫大使、哈萨克斯坦共和国内务部代表、国家人权中心代表、外交使团代表、国际组织和非政府组织代表参加了此次活动。
+在简报会上，叶尔兰·阿林巴耶夫分享了哈萨克斯坦在2019-2021年开展的人道主义行动“Жусан”和“Русафа”框架内从叙利亚和伊拉克返回公民的经验。结果，756名公民被返回该国，其中包括191名妇女、528名儿童和37名男子。
+哈萨克斯坦外交官向与会者介绍了返回公民康复和重新融入社会综合工作的进展，指出提供医疗和心理援助、确保儿童获得教育、家庭社会支持以及对每个家庭采取个性化方法的重要性。
+2026年，公共基金“Жайық Жұлдызы”与国内合作伙伴在TurKIDstan和PathMakers Burabay项目框架内，在突厥斯坦州、阿斯塔纳、奇姆肯特和布拉拜为儿童和青少年组织了文化认知和教育 activities。这些倡议有助于提高儿童的自信心、建立友好关系并培养他们对社会的归属感。
+叶尔兰·阿林巴耶夫强调了进一步加强与国际伙伴合作的重要性，并提议建立“中亚+欧安组织”形式的区域工作组。该倡议旨在交流信息、早期识别和保护受害公民、联合培训专家以及协调跨境案件行动。
+因此，哈萨克斯坦确认愿意进一步发展与欧安组织、欧洲委员会和其他国际伙伴在打击人口贩运、暴力极端主义和跨国犯罪以及保护受害公民领域的合作。
+此前有报道称，大多数在“Жусан”人道主义行动框架内返回祖国的哈萨克斯坦人拒绝了激进观点并适应了社会生活。</div>
+<ul>
+<li>哈分享2019-2021年从叙伊返回756名公民经验</li>
+<li>哈提议建立“中亚+欧安组织”区域工作组</li>
+<li>工作组旨在交流信息、保护受害公民和协调跨境案件</li>
+<li>哈确认与欧安组织等合作打击人口贩运和暴力极端主义</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该倡议提升哈萨克斯坦在中亚人道主义与安全事务中的协调者角色，强化与欧安组织合作，有助于地区稳定和跨境犯罪治理，但对矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://www.inform.kz/ru/skolko-uchastkov-dlya-golosovaniya-na-viborah-prezidenta-kirgizstana-obrazovano--fbc974dd" target="_blank">哈萨克斯坦为吉尔吉斯斯坦总统选举设立多少投票站</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/21 01:31<span class="source-link"><a href="https://www.inform.kz/ru/skolko-uchastkov-dlya-golosovaniya-na-viborah-prezidenta-kirgizstana-obrazovano--fbc974dd" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>吉尔吉斯斯坦总统选举定于2027年1月27日举行，哈通社报道称哈萨克斯坦为保障吉国境外公民选举权已开设投票站，名单非最终版。吉中央选举委员会公布初步选民名单，首次组织社会观察中心，已收到11名候选人申请，现任总统扎帕罗夫于11月10日提交候选人资格。11月18日吉国内2492个投票站完成选举系统测试。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦为吉尔吉斯斯坦总统选举设立了多少个投票站
+
+正文：
+据中央选举委员会数据，为保障居住在或身处国外的吉尔吉斯共和国公民的选举权，已开设投票站：
+该名单并非最终版本，计划在投票日之前额外开设境外投票站。
+提醒一下，吉尔吉斯斯坦总统选举定于2027年1月27日举行。将为此花费多少资金——请点击此处阅读。
+中央选举委员会公布了初步选民名单。此外，该委员会将在即将举行的总统选举中首次组织社会观察中心。
+吉尔吉斯共和国中央选举委员会于10月14日收到了首位总统职位申请人的声明。目前有11名候选人角逐吉尔吉斯斯坦总统职位。
+现任总统萨德尔·扎帕罗夫此前曾表示打算参加即将举行的选举，并于11月10日提交了候选人资格。他还对即将举行的总统选举的竞争程度发表了评论。
+11月18日，作为即将举行的总统选举筹备工作的一部分，国内2492个投票站进行了选举系统测试。</div>
+<ul>
+<li>吉总统选举定于2027年1月27日举行</li>
+<li>哈萨克斯坦为吉境外公民开设投票站</li>
+<li>吉中央选举委员会公布初步选民名单</li>
+<li>11名候选人角逐，扎帕罗夫已提交资格</li>
+<li>吉国内2492个投票站完成系统测试</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国而言，为吉国选举设投票站体现睦邻合作，利于中亚稳定；经济上无直接矿产影响，但政治互信增强有助于区域贸易与投资环境。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/de-5045c924/" target="_blank">哈萨克斯坦计划增加飞往黑山的航班数量</a></h3>
+<div class="item-meta">哈通社中文版 · 11/20 23:17<span class="source-link"><a href="https://cn.inform.kz/news/de-5045c924/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦民航委员会主席托姆皮耶娃与黑山民航局局长谢基奇在蒙特利尔国际民航组织会议期间会面，讨论扩大航空互联互通、增加航班频次及吸引更多航空公司参与。哈方表示有意发展对黑山航空联系。目前阿斯塔纳航空夏季运营阿拉木图和阿斯塔纳至波德戈里察航线。哈国17个机场实施“开放天空”政策，取消航班限制并授予第五航权。双方重申建设性合作意愿。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">在蒙特利尔举行的第七届国际民航组织世界航空运输会议期间，哈萨克斯坦共和国民航委员会主席萨勒塔纳特·托姆皮耶娃和黑山民航局局长伊万·谢基奇进行了会面。
+消息称，双方讨论了哈萨克斯坦与黑山在民航领域开展合作的前景、扩大两国间的航空互联互通，以及加强双方民航主管部门之间的互动。哈方表示，有意进一步发展与黑山之间的航空联系，包括增加航班频次并吸引更多航空公司参与其中。
+目前，阿斯塔纳航空（Air Astana）在夏季运营阿拉木图至波德戈里察以及阿斯塔纳至波德戈里察的航线。
+托姆皮耶娃表示，目前哈萨克斯坦17个机场正在实施的“开放天空”政策，取消了航班数量限制，并授予外国航空公司“第五航权”。
+根据会谈结果，双方重申了保持建设性合作的共同意愿，并探讨进一步发展两国航空互联互通的前景。</div>
+<ul>
+<li>哈黑民航当局在ICAO会议期间举行会谈</li>
+<li>哈方拟增加对黑山航班频次并吸引航司</li>
+<li>阿斯塔纳航空夏季运营两条至波德戈里察航线</li>
+<li>哈国17个机场实施开放天空政策</li>
+<li>双方重申建设性合作并探讨互联互通前景</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举将促进哈国与巴尔干地区航空互联，便利旅游与商务往来，带动民航经济；开放天空政策增强外资航司进入意愿，提升哈国作为中转枢纽地位，外交上深化与黑山合作。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/guori-85096c94/" target="_blank">托卡耶夫向阿曼苏丹致国庆日贺电</a></h3>
+<div class="item-meta">哈通社中文版 · 11/20 21:42<span class="source-link"><a href="https://cn.inform.kz/news/guori-85096c94/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫向阿曼苏丹致国庆日贺电，回顾阿曼苏丹近期对哈历史性访问，指出访问成果将加强两国战略伙伴关系，并祝愿阿曼苏丹未来成功、阿曼人民幸福安康。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：托卡耶夫向阿曼苏丹致国庆日贺电
+正文：哈萨克斯坦总统满怀赞赏地回顾了阿曼苏丹近期对哈萨克斯坦的历史性访问，并指出此次访问的成果将有助于进一步加强两国间的战略伙伴关系。
+最后，总统托卡耶夫祝愿阿曼苏丹在未来取得更大的成功，祝福兄弟般阿曼人民幸福安康。</div>
+<ul>
+<li>托卡耶夫致电祝贺阿曼国庆日</li>
+<li>回顾阿曼苏丹近期历史性访哈</li>
+<li>访问成果助力战略伙伴关系</li>
+<li>祝愿阿曼苏丹未来取得更大成功</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此贺电巩固哈阿战略伙伴关系，促进双边政治互信与外交合作，为经贸与矿产领域合作创造良好氛围，有助于哈萨克斯坦拓展海湾外交空间。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/congdaonengjiazuoqian-f3c972f3/" target="_blank">从贸易到能源：哈俄专家共商双边合作前景</a></h3>
+<div class="item-meta">哈通社中文版 · 11/20 16:44<span class="source-link"><a href="https://cn.inform.kz/news/congdaonengjiazuoqian-f3c972f3/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与俄罗斯专家会议以“全球动荡背景下的战略伙伴关系”为主题，讨论经贸、能源、矿产、教育等合作。哈方所长沙伊马尔达诺夫透露，去年双边贸易额近280亿美元，目标提升至300亿美元，并强调数字化、关键矿产及联合教育项目（如莫国关阿斯塔纳分校）的潜力。俄方专家阿丰采夫呼吁坦诚交换意见。会议建议将呈报两国领导层。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 从贸易到能源：哈俄专家共商双边合作前景
+正文:
+本次会议以“哈萨克斯坦与俄罗斯：全球动荡背景下的战略伙伴关系”为主题，吸引了两国顶尖分析机构、科研院所及高校代表共同参与。
+哈萨克斯坦总统直属战略研究所所长詹多斯·沙伊马尔达诺夫在开幕致辞中指出，当前国际局势正在发生深刻变化，既给各国带来了新的挑战，也孕育着额外的合作机遇。
+- 我们正目睹世界政治和经济格局的深刻演变。地缘政治竞争加剧，经贸联系与运输路线面临重构，国际安全领域的风险不断上升。这些进程几乎波及所有国家，促使各国重新审视传统模式并探寻新的发展路径。- 他强调。
+他表示，在此背景下，哈萨克斯坦与俄罗斯在保持相互尊重、兼顾国家利益和互利共赢的基础上共同应对挑战显得尤为重要。他指出了工业协作、交通物流基础设施建设、扩大投资互动、能源、农业以及数字技术等多个极具潜力的合作方向。
+经贸关系成为与会专家重点关注的议题。詹多斯·沙伊马尔达诺夫在会议间隙向记者透露，去年哈萨克斯坦与俄罗斯双边贸易额已接近280亿美元，目前双方正朝着将这一指标提升至300亿美元的目标迈进。
+- 我们具备充分挖掘贸易潜力的必要前提。两国拥有全球最长的陆地边界、众多口岸以及紧密的经济联系。数字化正成为关键合作方向之一，目前该领域已有一系列联合项目正在落地实施。- 哈萨克斯坦总统直属战略研究所所长指出。
+他认为，全球能源市场态势仍是影响两国经济关系进一步发展的重要因素。哈萨克斯坦和俄罗斯同为全球重要资源供应国，国际价格、市场需求及全球供应链的波动都会直接反映在两国的经济运行中。此外，他还特别指出，关键矿产资源的作用日益凸显，正成为全球经济的重要战略要素。
+俄罗斯科学院叶·马·普里马科夫世界经济与国际关系研究所负责科研工作的副所长谢尔盖·阿丰采夫则关注到国际政治和经济环境的演变。他认为，尽管当前世界仍存在不稳定因素，但也为探索新的合作形式创造了条件。
+- 当前我们的核心任务不仅是听取主旨发言，更在于就最紧迫的问题坦诚交换意见。重要的是全面梳理可能的解决方案以及未来进一步互动的前景。
+谢尔盖·阿丰采夫表示，希望通过专家层面的深入研讨，能够明确随国际局势变化而具备发展潜力的合作方向。
+教育、科研及专业人才培养合作同样是本次会议的重要议题。詹多斯·沙伊马尔达诺夫指出，推进联合教育项目为两国长期互动奠定了坚实基础，并列举了莫斯科国立国际关系学院阿斯塔纳分校的开设、莫斯科国立大学哈萨克斯坦分校的运营，以及阿里-法拉比哈萨克国立大学鄂木斯克分校的设立等具体成果。他表示，这类举措有力促进了两国科教与人文纽带，拓展了学术交流并助力培养高素质专业人才。
+此外，与会代表还就地区安全、国际危机外溢效应以及维护中亚地区稳定等议题进行了交流。
+詹多斯·沙伊马尔达诺夫强调，专家对话不仅应成为总结成就的平台，更应成为坦诚探讨现存问题、潜在风险及立场差异的窗口。
+- 对我们而言，保持专家对话的开放性与务实性至关重要。它应当既能看到合作成果与前景，也能坦率讨论现存问题、潜在风险以及双方在具体方法上的差异。
+他表示，哈俄专家理事会的独特之处在于能够广泛探讨双边议程中的各类议题，包括敏感问题。据悉，每次会议结束后形成的建议清单均会呈报两国领导层及政府相关部门参考。</div>
+<ul>
+<li>哈俄专家会议聚焦全球动荡下的战略伙伴关系</li>
+<li>去年双边贸易额近280亿美元，目标300亿美元</li>
+<li>合作方向包括工业、交通、能源、农业、数字技术</li>
+<li>关键矿产资源作用日益凸显，成战略要素</li>
+<li>联合教育项目促进人文纽带与人才培养</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">会议强化哈俄经济与能源合作，推动贸易目标提升，凸显关键矿产战略地位；教育合作夯实人文基础；专家对话机制为敏感议题提供沟通渠道，有助于哈国在动荡格局中平衡外交、稳定经济。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://cn.inform.kz/news/yuguominhuiguan-2df4c0e5/" target="_blank">库鲁尔泰与土库曼斯坦国民会议持续深化伙伴关系</a></h3>
+<div class="item-meta">哈通社中文版 · 11/20 16:13<span class="source-link"><a href="https://cn.inform.kz/news/yuguominhuiguan-2df4c0e5/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦库鲁尔泰主席阿伊别克·达德拜与土库曼斯坦国民会议主席敦娅戈泽尔·古尔马诺娃举行会谈，祝贺土国民会议首次获得独联体议会间大会观察员地位，并高度评价其作为2026年独联体轮值主席国的倡议。双方强调战略伙伴关系，合作涵盖能源、农业、过境运输等领域，哈方介绍向一院制库鲁尔泰转型情况（145名议员，含49名女性），并成立合作小组，关注地方及区域间合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">会谈伊始，库鲁尔泰主席对土库曼斯坦方面的热情接待表示感谢，并祝贺土库曼斯坦国民会议获得独联体国家议会间大会观察员地位——这也是该国国家议会首次获得这一地位。他还高度评价土库曼斯坦作为2026年独联体轮值主席国在加强联合国与独联体联系方面提出的倡议，并祝贺联合国通过相关决议。
+阿伊别克·达德拜表示，哈萨克斯坦对兄弟般的土库曼斯坦人民怀有深厚感情，祝愿土库曼斯坦在总统谢尔达尔·别尔德穆哈梅多夫的领导下在落实国家战略方针中不断取得新成就。
+谈及双边关系时，库鲁尔泰主席称土库曼斯坦是哈萨克斯坦的战略伙伴和近邻，两国之间有着数百年睦邻友好的传统纽带。
+两国元首为加强哈土全方位合作作出了巨大努力。双方共同议程不断拓展，涵盖能源、农业、医疗卫生、过境运输、教育及文化等多个领域。两国议员的任务，就是为高层达成的各项共识提供切实有效的立法保障与落实支持。——库鲁尔泰主席指出。
+阿伊别克·达德拜向土方介绍了哈萨克斯坦向一院制议会——库鲁尔泰转型的相关情况，指出这是哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫推行的全面政治改革中的关键一步。全新的库鲁尔泰旨在加快立法进程，使国家治理更加透明、高效。本届库鲁尔泰由来自五个政党的145名议员组成，其中包括49名女性议员。目前，库鲁尔泰内部已成立与土库曼斯坦国民会议的合作小组。
+敦娅戈泽尔·古尔马诺娃则对哈萨克斯坦顺利组建库鲁尔泰表示祝贺，祝愿兄弟般的哈萨克斯坦持续繁荣发展。土库曼斯坦国民会议主席重点就拓展双边及多边合作，以及加强议会间交往中的性别代表性等议题发表了看法。
+此外，双方还特别关注了地方及区域间合作的发展。库鲁尔泰主席认为，边境地区保持常态化联系有助于建立直接的商务往来，推动贸易、物流和文化领域的新联合项目落地；两国议会也将积极为相关地方合作倡议提供有力支持。</div>
+<ul>
+<li>土库曼斯坦国民会议首获独联体议会间大会观察员地位</li>
+<li>哈土战略伙伴关系涵盖能源、农业、过境运输等多领域</li>
+<li>哈方介绍库鲁尔泰转型：145名议员，含49名女性</li>
+<li>库鲁尔泰内部成立与土国民会议的合作小组</li>
+<li>双方关注地方及区域间合作，推动贸易物流项目</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">深化哈土议会间合作，为高层共识提供立法保障，促进能源、过境运输等经济合作；强化区域间联系，推动贸易物流项目；哈方展示政治改革成果，提升治理透明度；土方获观察员地位增强其在独联体影响力，有利于哈国外交多元化及矿产格局稳定。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">10</span> <a href="https://cn.inform.kz/news/yukaiding-42abcbd1/" target="_blank">哈萨克斯坦与新加坡探讨开通直飞定期航班</a></h3>
+<div class="item-meta">哈通社中文版 · 11/20 15:42<span class="source-link"><a href="https://cn.inform.kz/news/yukaiding-42abcbd1/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与新加坡举行会谈，探讨民航领域深化合作，包括开通直飞定期航班。哈方高度评价SCAT航空公司10月起执飞的“奇姆肯特—三亚—新加坡”航线（每周两班），并邀请新加坡航空公司研究开通飞往阿斯塔纳和阿拉木图航班的可能性。双方还就飞行安全、空中航行、数字技术、航空人才培养及借鉴新加坡航空监管经验等议题深入交流，重申将推动新的联合项目落地。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦与新加坡探讨开通直飞定期航班
+
+会谈期间，双方围绕哈萨克斯坦与新加坡在民航领域的进一步合作、拓展两国间航空连通性，以及在飞行安全、空中航行、数字技术和航空专业人才培养等领域开展经验交流等议题进行了深入探讨。
+拉斯塔耶夫高度评价了今年10月起由SCAT航空公司执飞的“奇姆肯特—三亚—新加坡”新航线（每周两班）开通的重要意义。他强调，该航线的开通是加强哈新两国交通互联互通的重要一步，也将有力促进双方旅游与商务往来。
+Фото: КГА 副部长指出，哈萨克斯坦在进一步拓展国际航线网络、巩固自身作为欧亚之间航空枢纽地位方面具有战略利益。为此，哈方愿与新加坡持续深化合作，包括进一步扩大航线覆盖范围并加密航班频次。
+双方还探讨了开通两国间直飞定期航班的前景。拉斯塔耶夫诚邀新加坡航空公司研究开通飞往哈萨克斯坦（特别是阿斯塔纳和阿拉木图）航班的可能性，并指出这两大目的地在商务和旅游出行方面具有巨大潜力。
+此外，哈方还重点表达了借鉴新加坡在航空监管、飞行安全保障、空中航行基础设施发展、数字化解决方案应用以及航空专业人员技能提升等方面先进经验的意愿。
+会谈结束时，双方重申将继续深化合作，推动两国航空运输发展，并在民航领域落地实施新的联合项目。</div>
+<ul>
+<li>哈新探讨开通直飞定期航班，哈方邀请新航研究飞阿斯塔纳和阿拉木图</li>
+<li>哈方肯定SCAT“奇姆肯特—三亚—新加坡”航线（每周两班）</li>
+<li>哈方愿扩大航线覆盖并加密航班频次</li>
+<li>哈方希望借鉴新加坡航空监管、数字化和人才培养经验</li>
+<li>双方重申深化民航合作并推动新联合项目</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">政治外交上强化哈新互联互通，提升哈作为欧亚航空枢纽地位；经济上促进旅游商务往来，带动航空市场；矿产格局无直接关联，但航空合作或间接便利资源领域商务交流。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/11yue20ri-herenminqing-589e0979/" target="_blank">11月20日终盘 美元、欧元、卢布和人民币兑坚戈汇率情况</a></h3>
+<div class="item-meta">哈通社中文版 · 11/20 22:18<span class="source-link"><a href="https://cn.inform.kz/news/11yue20ri-herenminqing-589e0979/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>11月20日KASE现货市场交易中，31个成员参与。美元兑坚戈平均报455.32，涨6.19，交易额825,627.18千美元；欧元兑坚戈报499.88，涨5.96，交易额26,237.15千欧元；卢布兑坚戈报5.5542，涨0.0762，交易额3,803,821.02千卢布；人民币兑坚戈报68.1176，涨0.8315，交易额99,798.71千人民币。四种货币兑坚戈均上涨。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 11月20日终盘 美元、欧元、卢布和人民币兑坚戈汇率情况
+正文:
+在本次现货市场交易中，共有31个KASE成员参与。
+根据现货市场交易结果：
+美元兑坚戈（USDKZT_TOM）： 汇率平均报价为 1 : 455.32 坚戈（较前一交易日上涨 6.19 坚戈）。外汇交易总额为 825,627.18 千美元（增加 208,043.49 千美元）。交易过程中，最高报价为 1 : 457.49 坚戈，最低报价为 1 : 451.24 坚戈。
+欧元兑坚戈（EURKZT_TOM）： 汇率平均报价为 1 : 499.88 坚戈（较前一交易日上涨 5.96 坚戈）。外汇交易总额为 26,237.15 千欧元（增加 16,281.66 千欧元）。交易过程中，最高报价为 1 : 501.34 坚戈，最低报价为 1 : 497.74 坚戈。
+卢布兑坚戈（RUBKZT_TOM）： 汇率平均报价为 1 : 5.5542 坚戈（较前一交易日上涨 0.0762 坚戈）。外汇交易总额为 3,803,821.02 千卢布（增加 571,717.46 千卢布）。交易过程中，最高报价为 1 : 5.5800 坚戈，最低报价为 1 : 5.5300 坚戈。
+人民币兑坚戈（CNYKZT_TOM）： 汇率平均报价为 1 : 68.1176 坚戈（较前一交易日上涨 0.8315 坚戈）。外汇交易总额为 99,798.71 千人民币（减少 52,532.64 千人民币）。交易过程中，最高报价为 1 : 68.4200 坚戈，最低报价为 1 : 67.8500 坚戈。</div>
+<ul>
+<li>美元兑坚戈报455.32，涨6.19，交易额增208,043.49千美元</li>
+<li>欧元兑坚戈报499.88，涨5.96，交易额增16,281.66千欧元</li>
+<li>卢布兑坚戈报5.5542，涨0.0762，交易额增571,717.46千卢布</li>
+<li>人民币兑坚戈报68.1176，涨0.8315，交易额减52,532.64千人民币</li>
+<li>31个KASE成员参与现货市场交易</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈对主要货币全线贬值，或加大输入性通胀压力，增加外债偿付成本；外汇交易额多数增加，显示市场活跃度上升；人民币交易额减少，反映中哈贸易结算短期波动，需关注对矿产出口计价的影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/xinggong20riyuzhuyaowaizhijiande-87053198/" target="_blank">央行公布20日坚戈与主要外币之间的汇率标准</a></h3>
+<div class="item-meta">哈通社中文版 · 11/20 13:30<span class="source-link"><a href="https://cn.inform.kz/news/xinggong20riyuzhuyaowaizhijiande-87053198/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行公布2026年11月20日坚戈对主要外币官方汇率：美元兑坚戈1:448.72，欧元兑坚戈1:493.86，俄罗斯卢布兑坚戈1:5.49，土耳其里拉兑坚戈1:8.89，中国元兑坚戈1:67.31。国家银行规定，坚戈兑美元官方汇率基于阿斯塔纳时间15:30证券交易所加权平均汇率确定，其他外币汇率依据16:00交叉汇率计算。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：央行公布20日坚戈与主要外币之间的汇率标准
+正文：根据央行公布的信息，2026年11月20日，哈萨克斯坦坚戈与国际主要货币之间的兑换汇率标准如下：
+美元兑坚戈（USD/KZT） – 1：448.72
+欧元兑坚戈（EUR/KZT）- 1：493.86
+俄罗斯卢布兑坚戈（RUB / KZT）-1: 5.49
+土耳其里拉兑坚戈（TRY / KZT）- 1: 8.89
+中国元兑坚戈（CNY / KZT）- 1：67.31
+值得一提的是，根据哈萨克斯坦国家银行规定，截至阿斯塔纳时间当日15:30，在哈萨克斯坦证券交易所形成的坚戈兑美元加权平均汇率，将被确定为下一工作日坚戈兑美元官方汇率；坚戈兑其他外币的官方汇率，则依据截至阿斯塔纳时间16:00形成的交叉汇率计算得出。</div>
+<ul>
+<li>美元兑坚戈汇率为1:448.72</li>
+<li>欧元兑坚戈汇率为1:493.86</li>
+<li>中国元兑坚戈汇率为1:67.31</li>
+<li>卢布兑坚戈1:5.49，里拉兑坚戈1:8.89</li>
+<li>美元汇率基于证交所15:30加权平均价</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率数据反映坚戈对主要货币的稳定态势，有利于哈萨克斯坦外贸结算与外资环境；美元定价机制透明化增强金融市场可预期性，对矿产出口计价和外汇储备管理具有参考意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/quanguo-78-bc9c8350/" target="_blank">全国住房按揭贷款增速超消费贷 余额突破7.8万亿坚戈</a></h3>
+<div class="item-meta">哈通社中文版 · 11/20 13:11<span class="source-link"><a href="https://cn.inform.kz/news/quanguo-78-bc9c8350/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>截至2026年10月1日，哈萨克斯坦银行业信贷总规模达46.4万亿坚戈，同比增长11.6%。个人零售贷款增长11%至26.7万亿坚戈，占比57.4%。住房按揭贷款增速领先，占比升至16.9%，不良率仅0.4%。专项住房计划“乌迈”和“纳乌鲁兹”稳步推进，2026年已有7148人通过“纳乌鲁兹”计划购房。房地产信贷总规模8.3万亿坚戈，资产质量显著优于其他零售贷款。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">报告显示，截至2026年10月1日，哈萨克斯坦银行业信贷总规模达到46.4万亿坚戈，较去年同期增长11.6%（增加4.8万亿坚戈）。其中，个人零售贷款总额增长11%至26.7万亿坚戈，占银行信贷总规模的57.4%；企业贷款增长12.5%至19.8万亿坚戈。在个人贷款中，绝大部分以本币坚戈发放（达26.66万亿坚戈），外币个人贷款规模则在一年内缩减36.1%，降至21亿坚戈。
+在各主要信贷板块中，住房按揭贷款增速领跑全场。按揭贷款在银行业信贷总规模中的占比从16.1%升至16.9%，在个人零售信贷结构中的占比也从27.9%攀升至近30%。相比之下，个人消费贷款总额虽增长9.4%至17.7万亿坚戈，但其在总信贷盘子中的比重由39%微降至38.2%；其他类个人贷款则下降3.2%至1.1万亿坚戈。
+Ranking.kz分析人士指出，按揭贷款增速快于消费贷款对国民经济而言是一个积极信号。与消费信贷不同，按揭贷款对应的是住房这一长期优质资产；抵押物的存在、较长的还款周期以及严格的借款人偿付能力评估，使得该板块具备更强的抗风险能力与稳定性。同时，住房按揭还能有效拉动住房需求，带动建筑业、建材生产、交通运输、商贸及相关服务业协同发展。
+研究报告同时披露了专项住房信贷项目的最新进展。在“家庭银行”（Otbasy bank）推出的女性专项按揭计划“乌迈”（Umai）第二批资金投放中，银行共受理850份申请，总额达200亿坚戈，且全部获得初步批复；2026年首批90亿坚戈资金已全部发放完毕。据悉，“乌迈”计划与“绿色按揭”项目的总融资规模达900亿坚戈。此外，首付比例低至10%的“纳乌鲁兹”（Nauryz）住房计划也在稳步推进（普通申请人年利率为9%，住房轮候困难群体年利率为7%）。数据显示，2026年已有7148名哈萨克斯坦公民通过该计划圆了安居梦，下一轮申请预计将于2027年3月启动，具体放贷名额与融资额度将视项目资金落实情况而定。
+在资产质量方面，若将用于住房建设、改造及购房的各类个人房地产贷款合并统计，截至2026年10月1日，该板块总规模已达8.3万亿坚戈，占全部个人贷款的31.1%及银行业总信贷规模的17.9%，体量仅次于不含车贷的普通消费信贷（13.4万亿坚戈）。
+值得关注的是，房地产信贷板块逾期90天以上的不良贷款率（NPL 90+）仅为0.4%（约334亿坚戈）。相比之下，汽车贷款不良率为3.1%，固定资产购置贷款为5.5%，其他消费用途贷款为6.7%，其他类贷款则高达12.7%。整体来看，哈萨克斯坦个人零售信贷的平均不良率为4.2%。分析人士强调，房地产信贷的问题贷款比例尚不足零售信贷平均水平的十分之一，展现出极高的信贷安全性。</div>
+<ul>
+<li>银行业信贷总规模46.4万亿坚戈，同比增长11.6%</li>
+<li>住房按揭贷款增速领跑，占比升至16.9%</li>
+<li>房地产信贷不良率仅0.4%，远低于零售平均4.2%</li>
+<li>“纳乌鲁兹”计划2026年助7148人购房</li>
+<li>外币个人贷款规模一年内缩减36.1%</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">住房按揭贷款快速增长且不良率极低，有利于哈国金融稳定和建筑业发展，改善居民住房条件，但需关注房地产信贷集中度上升对银行资产结构的潜在影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(1 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/chu2027nian5yue-quanfang-4fb222ad/" target="_blank">哈萨克斯坦限制钢坯出口至2027年5月 禁令覆盖全运输方式</a></h3>
+<div class="item-meta">哈通社中文版 · 11/20 15:03<span class="source-link"><a href="https://cn.inform.kz/news/chu2027nian5yue-quanfang-4fb222ad/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦出台钢坯出口禁令，覆盖所有运输方式，有效期至2027年5月。禁令设例外条款：采用“高炉—转炉”工艺生产的钢坯在取得专项出口许可证后可正常出口。该命令于2026年11月18日生效，由工业和建设部、交通部及财政部国家收入委员会联合监管执行。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦限制钢坯出口至2027年5月 禁令覆盖全运输方式
+正文:
+根据相关规定，该禁令适用于通过所有运输方式向境外运出钢坯的行为。不过，新规同时设立了例外条款：采用“高炉—转炉”工艺生产的相关钢坯产品，在取得专项出口许可证的前提下仍可正常出口。
+此次出口限制令的执行情况将由哈萨克斯坦工业和建设部、交通部以及财政部国家收入委员会联合实施监管。据悉，相关命令已于2026年11月18日正式生效。</div>
+<ul>
+<li>禁令覆盖所有运输方式，限制钢坯出口至2027年5月</li>
+<li>例外条款允许“高炉—转炉”工艺钢坯凭专项许可证出口</li>
+<li>命令于2026年11月18日正式生效</li>
+<li>三部门联合监管执行情况</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该禁令将收紧哈国钢坯出口，影响矿产加工与贸易流向，促使企业转向合规工艺或深加工；短期或减少出口收入，长期推动产业升级，并可能引发贸易伙伴关注。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-11-21 09:03</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
