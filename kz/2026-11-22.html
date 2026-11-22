@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年11月22日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年11月22日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年11月21日早9:00至2026年11月22日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 9 条</span><span class="stat-chip">2 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">4</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">5</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">0</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">0</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(4 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/ot-tsifrovih-uslug-k-narodnoy-tsifrovoy-ekonomike-kak-tehnologii-menyayut-kazahs-cc8ff657" target="_blank">数字经济：人工智能和平台发展将给哈萨克斯坦带来什么</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/21 23:27<span class="source-link"><a href="https://www.inform.kz/ru/ot-tsifrovih-uslug-k-narodnoy-tsifrovoy-ekonomike-kak-tehnologii-menyayut-kazahs-cc8ff657" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦议员斯梅什利亚耶娃在播客中表示，人工智能技术正影响劳动生产率、降低成本和自动化流程，数据成为独立经济资源，代理经济将兴起。发展人民数字经济是数字国家的延续，需确保公民参与。可靠基础设施是关键，包括互联网、计算能力、数据中心和稳定供电。电信行业流量消费持续增长，网络负荷不断增加，需扩展光纤线路，偏远地区考虑无线电中继和卫星技术。哈国已投入运行两台超级计算机，另一台年底前投入使用，并计划发展数据中心。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">数字经济：人工智能和平台发展将给哈萨克斯坦带来什么
+
+正如议员在播客采访中指出的，如今人工智能技术影响着劳动生产率，有助于降低成本并实现工作流程自动化。
+
+与此同时，数据正成为独立的经济资源，而未来代理经济将发挥越来越大的作用，在该框架内部分任务和交互可由数字代理完成。
+
+据斯梅什利亚耶娃称，发展人民数字经济是形成数字国家进程的逻辑延续。现在不仅要创建基础设施并将服务转为电子格式，还要确保公民广泛参与新的经济进程。
+
+数字经济的进一步发展需要可靠的基础设施。这不仅涉及互联网接入，还涉及计算能力、数据中心、软件解决方案和稳定供电。
+
+视频截图 据叶卡捷琳娜·斯梅什利亚耶娃称，电信行业的特点之一是互联网流量消费持续增长。随着智能手机和其他设备的普及，网络负荷不断增加。因此，即使居民点出现高质量通信，也不能保证其带宽从长远来看足够。
+
+——我总是有点悲观地说：是的，我们总是会追赶。为什么追赶？因为一旦出现第一个高质量通信，流量消费量就会增加。也就是说，网络负荷增加，——她指出。
+
+解决方案之一是扩展光纤通信线路。它们允许传输大量数据，具有稳定性，并可为一个家庭中的多个设备提供互联网接入。对于小型和偏远居民点，正在考虑替代连接方案，包括无线电中继和卫星技术。
+
+另一个重要方向是发展计算基础设施。据议员称，哈萨克斯坦已投入运行两台超级计算机，另一台预计年底前投入使用。此外，计划发展数据中心</div>
+<ul>
+<li>人工智能提升劳动生产率，降低成本和自动化流程</li>
+<li>数据成为独立经济资源，代理经济将发挥更大作用</li>
+<li>发展人民数字经济需确保公民广泛参与</li>
+<li>可靠基础设施包括互联网、计算能力、数据中心和供电</li>
+<li>哈国已运行两台超级计算机，年底前再添一台</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">发展AI和数字平台将提升哈国经济效率，推动数字国家建设，但需解决基础设施和能源保障问题，可能影响其在中亚数字竞争中的地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/knb-kazahstana-obyavil-45-letnego-inostrantsa-v-mezhdunarodniy-rozisk-272f82c2" target="_blank">哈萨克斯坦国家安全委员会宣布对一名45岁外国人进行国际通缉</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/21 23:16<span class="source-link"><a href="https://www.inform.kz/ru/knb-kazahstana-obyavil-45-letnego-inostrantsa-v-mezhdunarodniy-rozisk-272f82c2" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国家安全委员会通过总检察院法律统计门户发布通缉令，对一名45岁外国人科尔（1981年3月13日生）进行国际通缉，案件登记在突厥斯坦州，由萨雷阿加什区警察局执行。涉案罪名是刑法典第392条故意非法穿越国境，最高可处2000个月度计算指标罚款（2026年为865万坚戈）或三年监禁。国籍和案情未披露。此前哈国曾通缉两名与Pin-Up博彩品牌有关的外国人。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦国家安全委员会宣布对一名45岁外国人进行国际通缉
+正文：
+该男子的通缉令于11月21日发布在总检察院法律统计和专门登记门户网站上。通缉案件登记在突厥斯坦州。通缉由萨雷阿加什区警察局根据国家安全委员会倡议进行。
+涉及哈萨克斯坦共和国刑法典第392条。该条第一部分规定，对故意非法穿越国境的行为，处以最高2000个月度计算指标的罚款（2026年为865万坚戈），或最高三年监禁。
+根据通缉令，科尔出生于1981年3月13日。此外，未说明他是哪国公民。案件情况尚未披露。
+图片：法律统计和专门登记门户网站
+此前，哈萨克斯坦宣布通缉两名与国际贸易博彩品牌Pin-Up有关的外国人。</div>
+<ul>
+<li>哈国安委倡议通缉45岁外国人科尔</li>
+<li>通缉令发布于总检察院法律统计门户</li>
+<li>涉案罪名是故意非法穿越国境</li>
+<li>处罚最高为865万坚戈罚款或三年监禁</li>
+<li>国籍与案情细节未公开</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此案显示哈国加强边境安全与移民管控，国安委主导通缉凸显执法力度。对政治影响有限，但可能引发外交关注；经济上无直接冲击；矿产格局不受影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/fendiguorenhuijing-de7ecf32/" target="_blank">哈萨克斯坦分享冲突地区返国人员康复及社会融入经验</a></h3>
+<div class="item-meta">哈通社中文版 · 11/21 15:43<span class="source-link"><a href="https://cn.inform.kz/news/fendiguorenhuijing-de7ecf32/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦在吹风会上分享2019-2021年从叙利亚和伊拉克接返756名公民（191名妇女、528名儿童、37名男子）的“朱桑”和“鲁萨法”行动经验，介绍康复和社会融入的综合工作，包括医疗心理援助、教育保障和个性化帮扶。2026年“扎伊赫之星”基金会在突厥斯坦州、阿斯塔纳、奇姆肯特和布拉拜开展儿童教育活动。哈方提议在“中亚+欧安组织”框架下成立地区工作组，并愿深化国际合作打击人口贩运和暴力极端主义。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">吹风会上，阿勒姆巴耶夫分享了哈萨克斯坦于2019年至2021年间从叙利亚和伊拉克接返本国公民的“朱桑”和“鲁萨法”人道主义行动经验。通过这两项行动，哈萨克斯坦共接返756名本国公民，其中包括191名妇女、528名儿童和37名男子。
+他介绍了哈萨克斯坦在帮助返国人员康复和重新融入社会方面开展的综合性工作，并强调了提供医疗和心理援助、保障儿童接受教育的权利、为相关家庭提供社会支持，以及针对不同家庭的具体情况实施个性化帮扶的重要性。2026年，“扎伊赫之星”公共基金会联合哈萨克斯坦国内合作伙伴，在TurKIDstan和PathMakers Burabay项目框架下，先后在突厥斯坦州、阿斯塔纳、奇姆肯特和布拉拜为儿童及青少年组织了一系列文化认知和教育活动。这些活动有助于增强孩子们的自信心，帮助他们建立友谊，进一步增强其社会归属感。
+阿勒姆巴耶夫还强调了进一步加强与国际伙伴合作的重要性，并提议在“中亚+欧安组织”框架下成立地区工作组。该倡议旨在加强信息交流，尽早发现并保护受影响人员，联合培养专业人才，同时协调应对跨境案件的相关行动。
+哈萨克斯坦再次确认，愿与欧安组织、欧洲委员会及其他国际伙伴进一步深化合作，共同打击人口贩运、暴力极端主义和跨国犯罪，并加强对受害人员的保护。</div>
+<ul>
+<li>2019-2021年接返756名公民，含191名妇女、528名儿童、37名男子</li>
+<li>强调医疗心理援助、教育权利和个性化社会支持</li>
+<li>2026年在四地开展儿童文化认知和教育活动</li>
+<li>提议在“中亚+欧安组织”框架下成立地区工作组</li>
+<li>愿与欧安组织、欧洲委员会合作打击跨国犯罪</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该经验展示哈国在安全与人道领域的平衡，提升中亚地区反恐和去极端化合作话语权，推动“中亚+欧安组织”机制化，有利于维护社会稳定和改善国际形象。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/zaixuexueshengguoqingwen-e6d06cbd/" target="_blank">在华留学哈萨克斯坦学生热议总统国情咨文</a></h3>
+<div class="item-meta">哈通社中文版 · 11/21 15:33<span class="source-link"><a href="https://cn.inform.kz/news/zaixuexueshengguoqingwen-e6d06cbd/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>古米廖夫欧亚国立大学现代研究所所长斯德克纳扎罗夫教授面向在华哈萨克斯坦留学生作专题报告，介绍哈国政治和社会经济现代化主要方向，重点谈及数字化转型、人工智能、科学教育及人力资本建设。他强调青年智力潜能对变革的关键作用，并指出海外留学生掌握先进技术、加强国际联系、运用于国家建设的独特作用。会后学生围绕国家发展前景和国情咨文倡议展开讨论，清华和对外经贸大学学生分别分享看法。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">古米廖夫欧亚国立大学现代研究所所长、政治学博士、教授穆黑特-阿尔达格尔·斯德克纳扎罗夫在会上面向在华求学的哈萨克斯坦学生作专题报告。
+
+报告中，他介绍了哈萨克斯坦推进政治和社会经济现代化的主要方向，并重点谈及数字化转型、引入人工智能、发展科学与教育以及加强人力资本建设等议题。
+
+他表示，重大变革能否顺利推进，很大程度上取决于青年一代的智力潜能。他特别指出，海外留学的哈萨克斯坦学生在掌握先进技术、加强国际联系以及将所学经验运用于国家建设等方面发挥着独特作用。
+
+专题报告结束后，与会学生围绕国家发展前景以及青年在推进改革中的作用展开讨论，并就国情咨文提出的各项倡议分享了自己的看法。
+
+“教授关于Digital Qazaqstan战略以及数字化解决方案实际应用的报告给我留下了深刻印象。这一话题与我的专业方向密切相关，因为我目前正在信息技术和人工智能领域学习。”清华大学学生哈弗尔·达米尔吾勒说。
+
+北京对外经济贸易大学学生美丽·毕桑哈利耶娃则谈到了知识的价值以及青年专业人才肩负的责任。
+
+“如今，最重要的资源已不再只是自然财富，更包括知识、创意和人的潜能。海外求学让我们有机会学习世界先进经验，回国后将这些经验转化为具有竞争力的项目，并推动其发展。大胆的倡议能够落地实施，年轻专业人才能够在自己的国家看到发展前景，这些都十分重要。我们每个人都应认识到自己在塑造国家未来过程中所承担的责任。”她说。</div>
+<ul>
+<li>斯德克纳扎罗夫教授向在华哈留学生作专题报告</li>
+<li>报告重点涵盖数字化转型、人工智能与人力资本</li>
+<li>强调青年智力潜能决定重大变革推进成效</li>
+<li>海外留学生被赋予掌握技术、加强国际联系的作用</li>
+<li>与会学生就国情咨文倡议和国家发展前景展开讨论</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该活动强化青年对国情咨文的理解，有助于凝聚海外人才共识，为哈国数字化转型和人力资本建设储备力量，对政治社会稳定和外交人才网络有积极影响，但短期对矿产格局无直接作用。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(5 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/perviy-perevod-grazhdanskogo-kodeksa-rknakitayskiy-yazik-predstavili-vpekine-ed648207" target="_blank">哈萨克斯坦民法典首个中文译本在北京发布</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/22 01:44<span class="source-link"><a href="https://www.inform.kz/ru/perviy-perevod-grazhdanskogo-kodeksa-rknakitayskiy-yazik-predstavili-vpekine-ed648207" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦共和国《民法典》首个中文译本在北京发布，由甘肃政法大学哈萨克斯坦社会与法律研究中心主任昆博拉特·松加特教授历时五年完成。推介会在北京哈萨克斯坦文化中心举行，汇聚两国高校、科研机构和法律专家，文化中心与甘肃政法大学签署合作备忘录。哈驻华使馆顾问介绍双边合作及总统国情咨文法律议程，中方学者强调国际法人才需精通外语，认为译本具有重要实践意义。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦共和国《民法典》首个中文译本在北京发布
+
+正文：
+译者系甘肃政法大学哈萨克斯坦社会与法律研究中心主任昆博拉特·松加特教授。该学者历时五年完成此出版物。
+图片：贝里克·塔宾巴耶夫/哈通社
+推介会在北京哈萨克斯坦文化中心举行，汇聚了两国高校、科研机构、法律组织和专家代表。会议成果之一是该文化中心与大学签署了合作备忘录。
+图片：贝里克·塔宾巴耶夫/哈通社
+哈萨克斯坦驻北京文化中心主任博塔戈兹·瑟尔加巴耶娃指出，此次会议成为两国代表对话的又一平台。
+——我们中心与甘肃省高校签署合作备忘录具有特殊意义，这为实施联合科研、教育和文化项目开辟了新机遇，——她说。
+图片：贝里克·塔宾巴耶夫/哈通社
+哈萨克斯坦驻华使馆顾问叶尔多斯·茹曼库卢雷向圆桌会议参与者介绍了双边合作的紧迫问题以及哈萨克斯坦共和国总统国情咨文的主要条款，其中特别重视法律议程。
+北京语言大学退休教授刘士勤阐述了培养法律体系交叉领域专业人才的主题。他认为，国际法领域专业人才发展的关键条件仍是精通外语。
+图片：贝里克·塔宾巴耶夫/哈通社
+——哈萨克斯坦共和国《民法典》中文版的出版不仅是中哈文化和教育交流的丰硕成果，也是具有重要实践意义的事件，——他补充道。
+据甘肃政法大学党委常委常正霞表示，法治是国家治理的基本方式，也是国际交往的共同语言。
+图片：贝里克·塔宾巴耶夫/哈通社
+——加强中哈在法律教育、法律研究和法律服务领域的交流，不仅有助于加深对彼此法律体系和法律文化的理解，也为两国经贸合作和人文交往提供坚实的法律保障，——她总结道。</div>
+<ul>
+<li>哈《民法典》首个中文译本在北京发布，译者历时五年完成</li>
+<li>推介会汇聚两国高校、科研及法律机构代表</li>
+<li>哈文化中心与甘肃政法大学签署合作备忘录</li>
+<li>哈驻华使馆顾问介绍双边合作与总统国情咨文法律议程</li>
+<li>中方学者强调国际法人才需精通外语，译本具实践意义</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该译本发布深化中哈法律领域交流，为双边经贸与人文合作提供法律保障，有助于哈国吸引中资、拓展对华外交，并推动矿产等领域合作规范化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/kazahstan-planiruet-gotovit-pilotov-iaviaspetsialistov-dlyavsey-tsentralnoy-azii-d6a3cc9f" target="_blank">哈萨克斯坦计划为整个中亚培养飞行员和航空专家</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/22 01:10<span class="source-link"><a href="https://www.inform.kz/ru/kazahstan-planiruet-gotovit-pilotov-iaviaspetsialistov-dlyavsey-tsentralnoy-azii-d6a3cc9f" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦计划为整个中亚地区培训飞行员和航空专家。双方讨论了航空领域合作，并商定在哈开设美国肯特州立大学分校。该大学拥有国际认证的航空课程、自有机场和训练机队。新教育平台将面向哈国内市场及整个中亚，培养飞行员、工程技术人员和调度人员。哈交通部强调，形成人才潜力和引入国际标准是将哈打造为区域航空枢纽的关键。双方同意在专家层面继续讨论开设分校细节。此前，哈民航发展经验获国际民航组织高度评价。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">双方讨论了在航空领域专业人员培训方面的合作，并商定在哈萨克斯坦开设肯特州立大学分校。
+肯特州立大学是美国一所拥有丰富航空领域专业人员培训经验的大学。其航空课程拥有国际认证，大学本身拥有自己的机场和训练机队。
+图片：哈萨克斯坦共和国交通部——新的教育平台将不仅面向国内市场的飞行员、工程技术人员和调度服务人员的培训，还将面向整个中亚地区，哈萨克斯坦共和国交通部报道。
+图片：哈萨克斯坦共和国交通部 阿塞尔·扎纳索娃强调，形成人才潜力和引入先进国际培训标准是将哈萨克斯坦转变为领先区域航空枢纽任务的关键条件。
+交通部指出，双方对联合教育项目感兴趣，并同意在专家层面继续讨论开设分校的细节。
+此前有报道称，哈萨克斯坦在发展民用航空方面的经验得到了国际民航组织的高度评价。</div>
+<ul>
+<li>哈萨克斯坦拟为整个中亚培训航空专业人才</li>
+<li>计划开设美国肯特州立大学分校</li>
+<li>分校将培养飞行员、工程技术人员和调度员</li>
+<li>哈方称人才建设是打造区域航空枢纽关键</li>
+<li>哈民航发展经验获国际民航组织高度评价</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举将提升哈萨克斯坦作为区域航空枢纽的地位，增强在中亚航空领域的影响力。通过引入美国航空教育资源，有助于提高本国航空人才培养标准，促进民航业发展，并可能带动相关经济领域合作。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/kazahstan-predstavil-nacop31-prioritetnie-klimaticheskie-tehnologii-f0fc1458" target="_blank">哈萨克斯坦在COP31上展示优先气候技术</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/22 00:25<span class="source-link"><a href="https://www.inform.kz/ru/kazahstan-predstavil-nacop31-prioritetnie-klimaticheskie-tehnologii-f0fc1458" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦在COP31（安塔利亚）展示国家优先气候技术组合，基于第二次技术需求评估（TNA）确定能源、农业（含水安全）和循环经济三大优先方向，与2060年碳中和目标及更新版国家自主贡献一致。IGTIC主席卡尔卡马诺夫推介将技术优先事项纳入国家气候投资平台的机制，旨在整合项目、简化投资者对接、吸引长期资本。哈方呼吁国际金融机构和私人投资者共同融资推进优先倡议。落实取决于技术需求转化为可融资项目的速度。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">在安塔利亚举行的第31届联合国气候变化大会（COP31）上，哈萨克斯坦展示了国家优先解决方案组合。此次推介会在哈萨克斯坦国家馆举行，由国际绿色技术与投资项目中心（IGTIC）与哈萨克斯坦共和国生态与自然资源部及国际伙伴合作组织的会议框架内进行。
+根据第二次技术需求评估（TNA）结果，哈萨克斯坦确定了三个方向的优先事项：能源、农业（包括提高水资源韧性）和循环经济。这些方向与本国更新的国家自主贡献和到2060年实现碳中和的目标相一致。
+与会者主要关注吸引融资、降低投资风险以及为气候倡议的实践落实做准备。国际开发银行、气候基金和联合国相关组织的代表参加了讨论。
+IGTIC董事会主席萨肯·卡尔卡马诺夫介绍了将技术优先事项纳入哈萨克斯坦国家气候投资平台的机制。该平台旨在整合有前景的项目，简化与投资者的互动，并为吸引长期资本创造条件。
+图片来源：阿克日吉特·丘库巴耶夫 / Kazinform 活动结束时，哈萨克斯坦提议国际金融机构和私人投资者共同推进优先倡议，包括通过共同融资的方式。
+这项工作的实际落实将取决于技术需求能以多快的速度转化为具有清晰财务模型的现成投资项目。已形成的基础为吸引外资、技术转让和发展绿色经济领域的区域合作创造了机会。
+此前我们曾报道，中亚三国同意共同开发工业环境控制的数字工具。</div>
+<ul>
+<li>COP31上哈国展示能源、农业、循环经济三大气候技术优先方向</li>
+<li>优先事项与2060年碳中和及更新版国家自主贡献相衔接</li>
+<li>IGTIC推介国家气候投资平台机制以吸引长期资本</li>
+<li>哈方呼吁国际金融机构与私人投资者共同融资</li>
+<li>落实关键在技术需求转化为可融资投资项目</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">政治上有助提升哈国气候治理国际形象；经济上推动绿色投资与技术转让；外交上强化与多边金融机构合作；矿产格局短期影响有限，但绿色转型或间接影响能源与资源开发导向。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/guominlishihui-ed4bb91f/" target="_blank">哈萨克斯坦首次竞选国际民航组织理事会席位</a></h3>
+<div class="item-meta">哈通社中文版 · 11/21 14:19<span class="source-link"><a href="https://cn.inform.kz/news/guominlishihui-ed4bb91f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦首次竞选国际民航组织理事会席位，在158个参与投票的成员国中获得78票，排名第五，但未当选。埃塞俄比亚、土耳其、阿曼和印度尼西亚当选理事国。随着《国际民用航空公约》第50(a)条修正案议定书于2026年6月12日生效，理事会成员国数量由36个增至40个。新一届理事会将履职至2028年国际民航组织大会第44届会议举行下一次选举。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦历史上首次竞选国际民航组织理事会席位。根据投票结果，在参与投票的158个成员国中，哈萨克斯坦获得78票，排名第五。埃塞俄比亚、土耳其、阿曼和印度尼西亚当选理事国。
+随着《国际民用航空公约》第50(a)条修正案议定书于2026年6月12日生效，国际民航组织理事会成员国数量由36个增至40个。
+据哈萨克斯坦民航委员会消息，扩员后的新一届理事会将履职至2028年国际民航组织大会第44届会议举行下一次选举。</div>
+<ul>
+<li>哈萨克斯坦首次竞选国际民航组织理事会席位</li>
+<li>158国投票，哈获78票排名第五但未当选</li>
+<li>埃塞俄比亚、土耳其、阿曼、印尼当选理事国</li>
+<li>理事会扩员至40国，2026年6月12日生效</li>
+<li>新理事会履职至2028年第44届大会选举</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">哈首次竞选国际民航组织理事会席位虽未成功，但获78票显示一定国际支持，有助于提升其在全球民航治理中的参与度。理事会扩员至40国或为哈未来竞选提供更多机会，对其外交多元化和交通物流战略有积极意义。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/yu2030nianhoukefa-d3cff2aa/" target="_blank">哈萨克斯坦与俄罗斯探讨2030年后可持续发展议程</a></h3>
+<div class="item-meta">哈通社中文版 · 11/21 12:32<span class="source-link"><a href="https://cn.inform.kz/news/yu2030nianhoukefa-d3cff2aa/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与俄罗斯举行会谈，讨论联合国可持续发展目标落实情况及2030年后国际议程方向。哈国家经济部长朱曼哈林表示，联合国可持续发展目标已全面纳入哈国家规划体系，相关指标体现在《国家发展规划》及中央和地方规划中，有助于全球目标与哈国家优先方向结合。双方重申将继续就落实可持续发展目标保持对话。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据国家经济部新闻处消息，会谈期间，双方围绕可持续发展目标的落实情况交换意见，分享各自经验，并探讨了2030年后国际议程的重点方向。
+朱曼哈林指出，联合国可持续发展目标已全面纳入哈萨克斯坦国家规划体系，相关指标均已体现在《国家发展规划》以及中央国家机关和各地区的发展规划中。这有助于将全球发展目标与哈萨克斯坦的国家优先发展方向相结合。
+会谈结束时，双方重申愿继续就落实联合国可持续发展目标保持对话。</div>
+<ul>
+<li>哈俄会谈讨论可持续发展目标落实与经验分享</li>
+<li>双方探讨2030年后国际议程重点方向</li>
+<li>哈将联合国可持续发展目标纳入国家规划体系</li>
+<li>相关指标体现在国家发展规划及各级规划中</li>
+<li>双方重申继续就落实可持续发展目标保持对话</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次会谈强化哈俄在可持续发展领域的政策协调，有助于哈国借助俄罗斯经验优化国家规划实施，提升经济治理水平；外交上巩固双边对话机制，为2030年后议程合作奠定基础，对矿产格局无直接影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-11-22 09:02</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
