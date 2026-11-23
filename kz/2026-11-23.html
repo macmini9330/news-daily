@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年11月23日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年11月23日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年11月22日早9:00至2026年11月23日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 5 条</span><span class="stat-chip">1 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">0</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">5</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">0</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">0</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(5 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/pri-sodeystvii-kazahstana-v-zheneve-otkrili-chempionat-mira-po-shahmatam-825f0d15" target="_blank">在哈萨克斯坦协助下日内瓦国际象棋世界锦标赛开幕</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/23 06:56<span class="source-link"><a href="https://www.inform.kz/ru/pri-sodeystvii-kazahstana-v-zheneve-otkrili-chempionat-mira-po-shahmatam-825f0d15" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>在哈萨克斯坦协助下，日内瓦世界国际象棋锦标赛开幕。哈常驻代表叶尔詹·卡兹汗、国际棋联主席季穆尔·图尔洛夫、联合国代表及参赛者印度古克什·多马拉朱和乌兹别克斯坦贾沃希尔·辛达罗夫出席新闻发布会。开幕式在万国宫大会厅举行。锦标赛于2026年11月22日至12月12日在日内瓦郊区科洛尼举行，两位20岁选手的对决将成为史上最年轻的世界冠军赛，首盘比赛11月24日。哈方参与组织开幕式，凸显其推广国际象棋的积极作用。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">在哈萨克斯坦的协助下，日内瓦世界国际象棋锦标赛开幕。
+
+在“哈萨克斯坦”厅举行了新闻发布会，出席者有哈萨克斯坦常驻代表叶尔詹·卡兹汗、国际棋联主席季穆尔·图尔洛夫、联合国代表，以及世界国际象棋王冠赛的参赛者——现任世界冠军、来自印度的古克什·多马拉朱和挑战者、来自乌兹别克斯坦的贾沃希尔·辛达罗夫。
+
+图片：哈萨克斯坦共和国常驻联合国日内瓦办事处及其他国际组织代表团
+
+叶尔詹·卡兹汗在仪式上发言时强调了国际象棋在加强国际对话与相互理解方面的作用，指出国际象棋和外交的基础都是战略思维、尊重规则和寻求相互可接受的解决方案。他特别关注国际象棋在哈萨克斯坦的发展以及哈萨克斯坦青年对这一运动日益增长的兴趣。
+
+隆重的开幕式在万国宫大会厅举行，出席者有外交使团、国际组织和世界国际象棋界的代表。
+
+图片：哈萨克斯坦共和国常驻联合国日内瓦办事处及其他国际组织代表团
+
+世界国际象棋锦标赛将于2026年11月22日至12月12日在日内瓦郊区科洛尼的马丁·博德默基金会举行。古克什·多马拉朱与贾沃希尔·辛达罗夫之间的比赛将成为世界国际象棋王冠争夺史上最年轻的对决——两位参赛者均为20岁。第一盘比赛计划于11月24日举行。
+
+在哈萨克斯坦方面参与下组织开幕式，凸显了哈萨克斯坦在国际舞台上推广国际象棋的积极作用，以及该国对发展世界国际象棋运动的贡献，包括在季穆尔·图尔洛夫当选国际棋联主席的背景下。
+
+此前有报道称，哈萨克斯坦和瑞士确定了水务领域合作的新方向。</div>
+<ul>
+<li>哈萨克斯坦协助在日内瓦开幕世界国际象棋锦标赛</li>
+<li>哈常驻代表卡兹汗、国际棋联主席图尔洛夫出席发布会</li>
+<li>两位20岁选手对决，系史上最年轻世界冠军赛</li>
+<li>锦标赛2026年11月22日至12月12日在日内瓦举行</li>
+<li>哈方参与组织开幕式，凸显其国际象棋推广作用</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">提升哈萨克斯坦国际形象，强化其在国际组织中的存在感；通过体育外交促进与瑞士及国际棋联合作，为未来经济与矿产领域对话创造软性外交空间。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/kazahstan-predstavil-initsiativi-porazvitiyu-kulturnih-svyazey-naforume-shos-638e8e6d" target="_blank">哈萨克斯坦在上合组织论坛上提出发展文化联系倡议</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/23 02:31<span class="source-link"><a href="https://www.inform.kz/ru/kazahstan-predstavil-initsiativi-porazvitiyu-kulturnih-svyazey-naforume-shos-638e8e6d" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦在上合组织文化论坛上提出发展文化联系倡议，论坛参与者包括上合组织成员国文化部长、官员、专家和创意界人士，印度总理莫迪致辞。哈方代表瑟德科夫强调加强人民相互理解、保护民族传统和发展文化人文联系，并关注扩大国际文化交流、推动民族艺术海外传播、博物馆和戏剧合作、支持年轻文化工作者和创意产业。此前哈方还提议建立上合组织节水技术交流平台。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦在上合组织论坛上提出发展文化联系的倡议
+正文：
+论坛参与者包括上合组织成员国文化部部长、国家机构代表、外国专家和创意界人士。印度总理纳伦德拉·莫迪在活动开幕式上致辞。
+图片：哈萨克斯坦共和国文化和信息部 论坛期间讨论了跨文明对话、保护文化多样性和扩大国际合作等问题。
+图片：哈萨克斯坦共和国文化和信息部 阿伊别克·瑟德科夫在发言中强调了加强各国人民相互理解、保护民族传统和发展国家间文化人文联系的重要性。
+此外，还特别关注扩大国际文化交流、推动民族艺术走向海外、发展博物馆和戏剧领域合作、支持年轻文化工作者和创意产业。
+回顾，此前哈萨克斯坦曾提议在上合组织内建立节水技术交流平台。</div>
+<ul>
+<li>上合组织文化论坛举行，印度总理莫迪致辞</li>
+<li>哈方提出发展文化联系倡议，强调相互理解与传统保护</li>
+<li>论坛关注国际文化交流、艺术海外推广及创意产业支持</li>
+<li>哈方此前提议建立上合组织节水技术交流平台</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该论坛有助于加强哈萨克斯坦与上合组织成员国的文化人文联系，提升哈国软实力，促进区域合作与对话，对哈外交多元化和文化经济发展有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/renminyiri-e5ca15e9/" target="_blank">托卡耶夫总统向黎巴嫩总统及人民致以独立日祝贺</a></h3>
+<div class="item-meta">哈通社中文版 · 11/22 16:10<span class="source-link"><a href="https://cn.inform.kz/news/renminyiri-e5ca15e9/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫向黎巴嫩总统奥恩及人民致独立日贺电，表示相信基于深厚友谊和相互理解的两国合作将持续发展，造福两国人民，并祝愿奥恩工作顺利、黎巴嫩人民幸福安康。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">托卡耶夫总统向黎巴嫩总统及人民致以独立日祝贺。托卡耶夫总统在贺电中表示，相信建立在深厚友谊和相互理解基础上的两国合作，将持续向前发展，造福两国人民。
+
+Фото: Ақорда 托卡耶夫祝愿奥恩总统工作顺利，并祝愿友好的黎巴嫩人民幸福安康。</div>
+<ul>
+<li>托卡耶夫致电祝贺黎巴嫩独立日</li>
+<li>强调两国友谊与相互理解基础</li>
+<li>祝愿黎巴嫩总统工作顺利、人民安康</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此贺电有助于巩固哈萨克斯坦与黎巴嫩的双边友好关系，展现哈国外交礼仪与和平合作姿态，对哈国政治外交形象有正面作用，但经济与矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/zailiityefajing-6d8e3edb/" target="_blank">哈萨克斯坦在埃里温展示IT产业发展经验</a></h3>
+<div class="item-meta">哈通社中文版 · 11/22 14:33<span class="source-link"><a href="https://cn.inform.kz/news/zailiityefajing-6d8e3edb/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦在埃里温大型行业活动上展示IT产业发展经验，活动吸引3万余名海外参会者和约220家企业。哈方重点推介阿斯塔纳枢纽（Astana Hub）创新集群，提供数字移民签证、居留许可及IT企业注册优惠等信息。亚美尼亚专业人士兴趣浓厚，外国参展者积极评价哈国IT发展水平并有意进一步考察市场。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">此次大型行业活动吸引了来自海外的3万余名参会者和约220家企业。业内专家围绕人工智能发展及其在各行业的有效应用等议题展开交流，并探讨开展联合项目的可能性。
+
+Фото: Әлихан Асқар/Kazinform Meridian展览中心内设有专门展台，集中展示哈萨克斯坦大型科技项目。许多参观者对哈萨克斯坦IT产业的发展表现出浓厚兴趣。有意在哈萨克斯坦落地初创项目的企业负责人和代表，正在了解阿斯塔纳枢纽中心（Astana Hub）创新集群提供的各项扶持措施。
+
+Фото: Әлихан Асқар/Kazinform “我们正在推介阿斯塔纳枢纽科技园，重点向有意来哈发展的IT企业和专业人才提供相关信息。例如，协助他们办理数字移民和数字移民居留许可等签证及居留许可。展会期间，不少亚美尼亚专业人士对阿斯塔纳枢纽的业务表现出浓厚兴趣。我们也向他们详细介绍了在哈萨克斯坦注册IT企业的相关规定、可享受的优惠政策以及发展机遇。”阿斯塔纳枢纽创新集群国际合作事务总经理萨特·杜伊塞科夫表示。
+
+Фото: Әлихан Асқар/Kazinform 展会期间，哈萨克斯坦“国家信息技术”股份公司的专业人员也向参观者介绍了国内正在实施的重点项目，并介绍了新技术的推广应用进展。在了解相关情况后，外国参展者对哈萨克斯坦IT产业的发展水平给予积极评价，并表示有意进一步考察这一市场。</div>
+<ul>
+<li>活动吸引3万余名参会者和约220家企业</li>
+<li>哈方重点推介阿斯塔纳枢纽创新集群</li>
+<li>提供数字移民签证和居留许可等扶持措施</li>
+<li>亚美尼亚专业人士对哈IT业务兴趣浓厚</li>
+<li>外国参展者积极评价并有意考察哈市场</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举提升哈萨克斯坦在中亚区域IT领域的吸引力，有助于吸引亚美尼亚及海外IT人才和初创企业落户，推动数字经济发展；同时加强哈亚科技合作，为哈国经济多元化和外交关系拓展创造新机遇。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/congjiadaoshengyiyezhezhong-42f775b1/" target="_blank">从家传手艺到跨境生意：东哈州女创业者拓展中哈市场</a></h3>
+<div class="item-meta">哈通社中文版 · 11/22 13:25<span class="source-link"><a href="https://cn.inform.kz/news/congjiadaoshengyiyezhezhong-42f775b1/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>东哈州斋桑县女创业者桑杜哈茜传承家族黑肥皂手艺，2012年注册个体企业，近三年转向自主生产，现有5名员工、30种产品。她通过TikTok直播拓展销售，产品销往哈国数十座城市及中国5座城市，黑肥皂均价1500坚戈，洗发水最高6000坚戈。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">桑杜哈茜·阿依特哈吉克兹从事这门生意并非偶然。制作黑肥皂的手艺在她家中已有多年传承。母亲在她出生前就开始从事这项工作，而制作黑肥皂的诀窍则是母亲从婆婆那里学来的。
+“我从小就用这种肥皂，所以后来便把童年熟悉的东西变成了一门生意。”桑杜哈茜说。
+桑杜哈茜出生于中国阿勒泰地区。2006年，她随家人回到历史祖国，定居斋桑县。起初，她打算学习工艺师专业，但因母亲身体状况不佳，未能完成学业。此后，她转向商贸领域，积累了近15年的从业经验。
+2012年，她注册成立了自己的个体企业，起初主要从事商品购销业务。近三年来，她逐渐将经营重心转向自主生产。为此，她先行办理了相关手续，并着手开展产品推广。目前，这家小型家族企业共有五名员工。
+她的主打产品是采用传统工艺制作的黑肥皂。此外，还生产护发洗发水，以及添加黑种草油、艾草、薄荷和生姜等成分的手工皂。目前，面向消费者推出的产品已有30种。
+Фото: Сандуғаш Айтқажықызының жеке мұрағатынан “我们的生产特点是，大部分原料都取自天然材料，成品也全部采用手工制作。为了更深入地掌握这项工艺，我还专门前往中国新疆维吾尔自治区考察学习，积累经验。黑肥皂的制作并不是一天就能完成的。首先要采集所需药草并晾干，然后将其焚烧，把得到的草木灰加水煮沸、沉淀。第二天，再将上层液体过滤出来，经过长时间熬煮，提取草药中的天然碱。”桑杜哈茜介绍道。
+随后，将提取出的碱液与动物板油混合，原料可以选用羊油、山羊油或牛油。混合物需要连续搅拌六至七个小时，整个过程均由人工完成。肥皂制成后，经过专门包装，再发往各地客户。
+桑杜哈茜介绍，黑肥皂最大的特点是没有添加合成化学成分。她将其作为传统的皮肤和头发护理产品推向市场。不少消费者因痘痘、头皮屑及其他皮肤问题前来购买。不过，她也提醒，这类产品不能代替正规的医疗治疗。
+如今，桑杜哈茜的产品不仅供应斋桑县当地居民，还销往哈萨克斯坦其他地区。她充分利用社交媒体拓展销售渠道，尤其通过TikTok平台直播接单，并在直播过程中向消费者介绍产品成分、制作工艺和使用方法。
+“目前，哈萨克斯坦数十座城市都有长期采购并转售我产品的经销商，中国也有五座城市建立了这样的合作关系。斋桑县地处边境，为我们向邻国发货提供了便利。不少客户专门订购黑肥皂和小米。”她说。
+产品价格各不相同。例如，黑肥皂的平均售价为1500坚戈，洗发水的价格则最高可达6000坚戈。
+桑杜哈茜的生产作坊是一项家族事业。丈夫、母亲和婆婆一直支持着企业的发展。作为四个孩子的母亲，她已经开始考虑将这份小型产业传给下一代。在她看来，只要顺应时代需求不断发展，这门生意就有机会在子女手中迈上新的台阶。</div>
+<ul>
+<li>桑杜哈茜传承家族黑肥皂手艺，2012年注册个体企业</li>
+<li>近三年转向自主生产，现有5名员工、30种产品</li>
+<li>利用TikTok直播销售，产品销往哈国数十城及中国5城</li>
+<li>黑肥皂均价1500坚戈，洗发水最高6000坚戈</li>
+<li>斋桑县边境优势便利对华发货，家族事业计划传承</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该案例体现哈国边境地区女性创业与对华经贸的微观活力，有助于促进东哈州地方经济多元化，深化中哈边境贸易与民间交流，但规模有限，对矿产格局无直接影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-11-23 09:01</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
