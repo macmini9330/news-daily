@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年11月24日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年11月24日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年11月23日早9:00至2026年11月24日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 17 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">9</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">3</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">2</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(9 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/zhambilskiy-sud-obyazal-podryadchika-ispravit-defekti-naobekte-za18mlrd-tenge-2fbf169e" target="_blank">江布尔州法院责令承包商修复价值18亿坚戈项目中的缺陷</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/24 08:59<span class="source-link"><a href="https://www.inform.kz/ru/zhambilskiy-sud-obyazal-podryadchika-ispravit-defekti-naobekte-za18mlrd-tenge-2fbf169e" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>江布尔州跨区经济专门法院审理了一起刑事执行系统机构与承包商之间的合同纠纷。根据价值超18亿坚戈的国家合同，承包商应在阿克莫拉州完成建筑、设备安装及调试。验收付款后发现缺陷，保修期内客户要求修复未果。案件经阿斯塔纳经济法院移交江布尔州法院，法院认定承包商未证明已修复缺陷，判决其自费修复所有缺陷，判决已生效。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据该地区跨区经济专门法院消息，纠纷发生在刑事执行系统机构与一家企业之间。根据价值超过18亿坚戈的国家合同，承包商应在阿克莫拉州完成建筑工作，供应并安装设备，接通通信并投入使用。在验收和支付工程款后，发现该设施存在缺陷。客户和承包商对其进行了检查并编制了记录缺陷的法案。由于保修期仍在有效期内，机构要求消除缺陷。案件最初提交至阿斯塔纳经济法院。后来双方请求适用域外管辖权——将争议移交另一地区法院审理。于是材料到了江布尔州。法院研究了合同条款——承包商对工程质量负责，并承诺自费修复保修期内发现的缺陷。同时，公司未提供缺陷已消除的证据。诉讼请求被完全满足。承包商被要求修复所有已发现的缺陷。判决已生效。此前，江布尔州法院从阿拉木图州一住宅综合体外墙板供应商处追索了4350万坚戈。在巴甫洛达尔郊区，由市政府出资维修的租赁住房出现了霉菌。</div>
+<ul>
+<li>合同价值超18亿坚戈，涉及阿克莫拉州建筑及设备安装</li>
+<li>验收付款后发现缺陷，保修期内客户要求修复</li>
+<li>案件经阿斯塔纳移交江布尔州法院审理</li>
+<li>承包商未证明已修复缺陷，法院判其自费修复</li>
+<li>判决已生效，此前江布尔州法院还追索4350万坚戈</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该判决强化了国家合同中承包商的质量责任，对哈国建筑行业形成警示，可能促使企业更严格履行保修义务，减少公共项目缺陷，维护国家机构权益。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/ishushih-rabotu-zhambiltsev-neobosnovanno-snimali-sucheta-vkarernih-tsentrah-a8e54d92" target="_blank">江布尔州求职者被职业中心无理由注销登记</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/24 07:58<span class="source-link"><a href="https://www.inform.kz/ru/ishushih-rabotu-zhambiltsev-neobosnovanno-snimali-sucheta-vkarernih-tsentrah-a8e54d92" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>江布尔州国家公务员事务署部门在1至9月进行34次检查，发现6247起违规，包括无故注销59名求职者、土地申请无理拒绝等。恢复350名服务接受者权利，对21名官员处以总额超280万坚戈罚款。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：江布尔州求职者在职业中心被无故注销登记
+
+正文：
+江布尔州国家公务员事务署部门表示，该地区职业中心无故注销了59名登记为求职者的人员。检查中发现违规行为后，这些公民被重新纳入系统。
+
+在审议土地问题申请时也发现了无故拒绝的情况。在拜扎克区，一名申请人被拒绝更改地块用途，而在梅尔肯区，则被拒绝延长其租赁期限。在部门干预后，这些服务接受者的权利也得以恢复。
+
+从1月到9月，该机构共进行了34次监督检查，发现了6247起违规行为。在某些情况下，国家机关拖延期限或无充分理由拒绝，在另一些情况下，则要求提供额外文件。也有相反的情况，即在文件不完整的情况下提供服务。
+
+这些数字背后是居民的各种诉求——从求职到办理土地和获得教育领域服务。据部门数据，九个月内共恢复了350名国家服务接受者的权利。为此进行了检查，研究了申诉和国家机关的文件。
+
+特别是，在对塔拉兹市教育部门进行计划检查后，恢复了154名服务接受者的权利。另有6起案件涉及科尔代区土地关系领域，10起涉及江布尔区艾沙-比宾农村地区行政机构的工作。
+
+针对发现的违规行为，向国家机关发出了关于消除违规行为的强制性建议。对21名官员制定了46份行政笔录。根据审议结果，处以总额超过280万坚戈的罚款。
+
+同期，该部门收到了189份公民关于提供国家服务的申诉。
+
+该机构提醒，可以通过e-Otinish系统报告在国家服务获取中的无故拒绝、期限违规或其他问题。
+
+此前有报道称，在克孜勒奥尔达州发现了近8000起国家服务提供中的违规行为。
+
+在科斯塔奈州，一名申请人因缺少文件而被拒绝提供土地。</div>
+<ul>
+<li>江布尔州职业中心无故注销59名求职者登记</li>
+<li>1-9月检查发现6247起违规，恢复350人权利</li>
+<li>土地领域存在无理拒绝，涉及拜扎克和梅尔肯区</li>
+<li>对21名官员罚款超280万坚戈</li>
+<li>可通过e-Otinish系统投诉国家服务问题</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此事件反映哈国地方治理中公共服务违规问题突出，可能推动中央加强监管和行政问责，改善营商环境，但短期内对政治经济格局影响有限。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/obshestvennik-izust-kamenogorska-dobilsya-peresmotra-porogov-zagryazneniya-vozdu-f782ac73" target="_blank">乌斯季卡缅诺戈尔斯克社会活动人士推动全国空气污染阈值修订</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/24 05:47<span class="source-link"><a href="https://www.inform.kz/ru/obshestvennik-izust-kamenogorska-dobilsya-peresmotra-porogov-zagryazneniya-vozdu-f782ac73" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>乌斯季卡缅诺戈尔斯克社会活动家阿列克谢·博日科夫通过行政程序，成功推动全国空气污染标准修订。此前该市P参数临界值从0.46升至0.90，是其他工业城市的2-2.5倍，导致НМУ预警发布减少。根据《生态法典》第210条，НМУ状态触发工厂减排和学生远程学习。哈萨克水文气象局已承诺基于2023-2025年数据重新计算全国标准。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">来自乌斯季卡缅诺戈尔斯克的法律工作者、社会活动家阿列克谢·博日科夫通过正式行政程序，成功推动了全国范围内现行空气污染标准的修订。
+引发与国家水文气象局交涉的起因是东哈萨克斯坦州首府严峻的生态环境。在改用自动化监测系统后，该市P参数的临界阈值几乎提高了一倍——从0.46升至0.90。
+与该国其他城市相比，这一决定显得更加荒谬。如果乌斯季卡缅诺戈尔斯克的“极高污染”起始线为0.90，那么在其他大型工业中心，响应阈值要低2至2.5倍。
+这种偏差的原因在于方法本身。每个城市的阈值分级是根据多年观测数据单独计算的。结果形成了荒谬的逻辑：城市过去几年污染越严重，其“极高”污染的门槛就定得越高。
+在实际中，这导致市民继续抱怨浓重的雾霾、刺鼻的气味和喉咙发痒，但官方发布的不利气象条件（НМУ）预警却少得多。
+与此同时，正是这一状态的存在决定了具体的保护措施。根据《生态法典》第210条，在宣布НМУ期间，工厂必须减少排放直至部分停产，学生转为远程学习。
+阿列克谢·博日科夫不同意这种做法，根据哈萨克斯坦共和国《行政程序诉讼法典》向“哈萨克水文气象局”（Казгидромет）提出申诉。经过正式听证，该机构向申请人发送了由副总经理马纳斯·乌林巴萨罗夫签署的行政文件，其中规定了更新计算的期限和程序。
+——“目前，哈萨克水文气象局国家企业正在根据2023-2025年最新数据，对全国所有城市的P参数最大允许浓度标准进行重新计算。根据重新计算结果，将批准新的、有生态依据的临界标准，从而能够及时发布НМУ预警。”</div>
+<ul>
+<li>社会活动家推动全国空气污染标准修订</li>
+<li>乌斯季卡缅诺戈尔斯克P参数阈值升至0.90，为其他城市2-2.5倍</li>
+<li>阈值计算方法导致污染越重门槛越高，НМУ预警减少</li>
+<li>НМУ状态触发工厂减排和学生远程学习</li>
+<li>哈萨克水文气象局将于2023-2025年数据重算标准</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此事件将促使哈萨克斯坦修订空气污染标准，提高НМУ预警频率，迫使工业企业加大减排力度，改善生态环境，对矿业等污染行业形成压力，并增强公众环保参与度。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://www.inform.kz/ru/eshe-53-tisyachi-gektarov-vernuli-gosudarstvu-vzhambilskoy-oblasti-5617c5c5" target="_blank">江布尔州又有5.3万公顷土地归还国家</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/24 04:14<span class="source-link"><a href="https://www.inform.kz/ru/eshe-53-tisyachi-gektarov-vernuli-gosudarstvu-vzhambilskoy-oblasti-5617c5c5" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年前十个月，哈萨克斯坦江布尔州向国家归还5.31万公顷农业用地，超出全年计划4万公顷的指标1.31万公顷。2022-2023年归还量最大，达40.38万公顷；2024年和2025年分别归还10.25万公顷和9.16万公顷。统计涵盖未按用途使用和违规提供的土地。此前报道称年初以来已归还约4.75万公顷。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：江布尔州又有5.3万公顷土地归还国家
+
+州土地关系管理局局长达尼亚尔·乌捷波夫表示，2026年前十个月，江布尔州有5.31万公顷农业用地转为国家所有。
+
+该地区原计划全年归还4万公顷。截至10月底，实际面积超出该指标1.31万公顷。
+
+报告期内，归还量最大的时期是2022-2023年——40.38万公顷。2024年又向国家归还10.25万公顷，2025年为9.16万公顷。
+
+该统计包括两类土地——未按用途使用的地块和违反土地法规定提供的土地。
+
+此前报道称，自年初以来，江布尔州已归还约4.75万公顷土地。</div>
+<ul>
+<li>江布尔州前十个月归还5.31万公顷农业用地</li>
+<li>实际归还量超全年计划1.31万公顷</li>
+<li>2022-2023年归还量最大达40.38万公顷</li>
+<li>统计含未按用途使用和违规提供土地</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">土地归还强化国家土地资源控制，有助于规范农业用地使用、遏制违规占用，对哈国土地管理秩序和农业经济产生积极影响，但短期内可能影响部分农业经营主体。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://www.inform.kz/ru/rost-proizvodstva-inovie-rabochie-mesta-vkurultae-obsudili-razvitie-promishlenno-db1e136e" target="_blank">库鲁尔泰讨论工业发展：产量增长与新就业岗位</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/24 01:14<span class="source-link"><a href="https://www.inform.kz/ru/rost-proizvodstva-inovie-rabochie-mesta-vkurultae-obsudili-razvitie-promishlenno-db1e136e" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦今年前十个月制造业增长9.3%，创25年新高。自2024年起制造业占GDP比重超采矿业，三年产值增14.5%，投资翻番达3万亿坚戈。冶金占制造业40%，通过优惠原料机制支持加工，已签30项协议和15份合同，多地启动新生产项目。计划到2029年铜铝锌加工量翻番、铅增14%。化学工业前10个月增22%，今年启动80万吨硫酸和聚丙烯生产，计划2030年肥料产量达400万吨。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据政府消息，今年前十个月，制造业生产增长9.3%，为近25年来最高指标。
+工业和建设部部长叶尔赛因·纳加斯帕耶夫指出，得益于经济中进行的结构性改革，自2024年起，制造业在GDP中的占比已超过采矿业。该行业产值三年内增长14.5%，行业投资翻番，达到3万亿坚戈。
+哈萨克斯坦制造业约40%来自冶金业。提高金属加工深度和扩大成品产量仍是该行业的关键任务之一。为支持国内加工企业，自2021年起实行优先以优惠条件供应原料的机制：哈萨克斯坦企业可在原料出口前，以低于市场价最高5%的价格购买铜、铝和锌。
+——原料生产商与加工商之间已签署30项协议和15份铜线材供应贸易合同。得益于此，阿拉木图启动了散热器生产，奇姆肯特启动了型材生产，杰特苏州启动了现代蓄电池生产，萨兰市启动了金属制品镀锌生产。总体而言，计划到2029年底将铜、铝、锌的加工量翻番，铅加工量增长14%，——叶尔赛因·纳加斯帕耶夫表示。
+化学工业保持稳定增长：2025年产值增长10.5%，今年前10个月增长22%。今年启动了年产80万吨硫酸的生产，并建立了聚丙烯生产。该行业的进一步发展规定扩大产品种类，深化石油化工、工业化学和生物化学领域的原料加工。重点关注为农业提供矿物肥料。目前，国内生产商满足约一半的内需，年产量超过100万吨。计划到2030年将产量增至400万吨，完全满足</div>
+<ul>
+<li>制造业前10个月增长9.3%，创25年新高</li>
+<li>制造业占GDP比重自2024年起超采矿业</li>
+<li>行业投资翻番达3万亿坚戈，产值增14.5%</li>
+<li>优惠原料机制推动铜铝锌加工，计划2029年翻番</li>
+<li>化学工业前10个月增22%，计划2030年肥料达400万吨</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">制造业增长和结构优化将增强哈国经济自主性，减少对原料出口依赖；冶金和化工深加工提升矿产附加值，改变矿产格局；优惠原料机制和外资吸引促进地方就业与工业化，但需平衡原料出口与国内加工利益。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/youguanquanminjingfawenfa-f3f0739f/" target="_blank">总统签署批准有关全民数字经济发展问题法令</a></h3>
+<div class="item-meta">哈通社中文版 · 11/23 21:51<span class="source-link"><a href="https://cn.inform.kz/news/youguanquanminjingfawenfa-f3f0739f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统签署了《关于发展全民数字经济并为公民及企业拓展经济机遇的措施》法令，旨在推动全民数字经济发展，为公民和企业创造更多经济机会。法令全文将在公开媒体上公布。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：总统签署批准有关全民数字经济发展问题法令
+
+正文：
+消息称，总统签署了《关于发展全民数字经济并为公民及企业拓展经济机遇的措施》法令。
+法令全文将在公开媒体上公布。</div>
+<ul>
+<li>总统签署全民数字经济法令</li>
+<li>法令旨在拓展公民与企业经济机遇</li>
+<li>法令全文将在公开媒体公布</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该法令将推动哈萨克斯坦经济数字化转型，促进数字产业发展，为公民和企业提供新机遇，可能影响矿产等传统行业数字化升级，并增强外交合作中的数字议题。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/zhu-7d5a79af/" target="_blank">托卡耶夫总统接见库鲁尔泰主席</a></h3>
+<div class="item-meta">哈通社中文版 · 11/23 19:10<span class="source-link"><a href="https://cn.inform.kz/news/zhu-7d5a79af/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>托卡耶夫总统接见库鲁尔泰主席达德拜，听取议会和“公正”党工作汇报。议会已通过18项法案，38项草案审议中；2027–2029年国家预算获批，额外拨款470亿坚戈用于52个基础设施项目。议会加强立法监督，推进e-Quryltai和AI技术应用，已提交111项质询。“公正”党制定2026–2031年竞选纲领路线图，含303项举措，处理超1.4万项诉求，解决8300多项，并推出Adilet.365数字系统。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">阿伊别克·达德拜向托卡耶夫总统就库鲁尔泰当前工作成果，以及“公正（Adilet）”党的工作情况进行了汇报。
+库鲁尔泰主席表示，议员们已通过了18项法案，另有38项法律草案正在审议中。
+据他介绍，国家元首在库鲁尔泰首次会议开幕式上及国情咨文中提出的各项任务，目前正被优先纳入立法落实进程。一部新的《民法典》正在制定之中。此外，在儿童权益保护、对教育工作者及医务人员的支持，以及其他具有重要社会意义的领域，相关立法举措也正在进一步完善。
+阿伊别克·达德拜表示，2027–2029年国家预算已获通过。在议员们的倡议下，额外拨出470亿坚戈，用于在各地区实施52个基础设施项目。这些资金将用于升级供热、电力、燃气和供水系统，并发展社会基础设施。
+会谈中，库鲁尔泰主席介绍了加强议会对已颁布法律实施情况进行监督的措施。具体而言，会议批准了开展立法监测的相关规则，旨在评估法律的实际效力及所作决策的执行成效。此外，“e-Quryltai”系统和人工智能技术的应用也在持续推进，旨在对法律草案进行分析，并识别法律条文间的不一致之处以及潜在风险。
+双方还讨论了通过库鲁尔泰的公众接待办公室及“e-Otinish”系统，加强与公众反馈互动的前景。在制定立法倡议时，将充分考虑公民所提出的问题。本届会议召开以来，已就紧迫的社会经济议题提交了111项议会质询。
+阿伊别克·达德拜指出，与专家、公共组织、区域利益相关方以及国际合作伙伴之间的互动正日益加强。目前已成立了一个旨在与“马斯利哈特”（地方议会）进行沟通的委员会，并已启动与联合国儿童基金会的合作，以致力于保护儿童权利。此外，一个基于人工智能的议会平台——“AI-库鲁尔泰”（AI-Quryltai）——已在日内瓦举行的各国议会联盟会议上正式亮相。
+国家元首还听取了关于“公正”党相关工作情况的汇报。该党与政府合作，制定了一份路线图草案，旨在落实其2026年至2031年期间的竞选纲领。该文件涵盖了303项具体举措，并引入了数字化监测工具，以跟踪这些举措的执行情况。
+该政党的公共接待办公室共收到超过14,000项诉求，其中8,300多项得到了妥善解决。作为该党监督工作的一部分，相关人员对近300处社会基础设施进行了视察，所发现的问题中约有80%已得到整改。此外，在“无债社会”项目框架下，共有超过12,000名公民获得了援助。
+该党还推出了“Adilet.365”数字系统，旨在跟踪选民的建议与诉求，以及各项任务的执行情况。
+最后，讨论了库鲁尔泰的立法活动以及政党未来工作的重点。会议特别强调了落实总统指示、兑现竞选承诺，并采取切实措施以改善公民福祉问题。</div>
+<ul>
+<li>议会通过18项法案，38项草案审议中</li>
+<li>2027–2029年预算获批，额外470亿坚戈用于52个项目</li>
+<li>议会推进AI和e-Quryltai系统加强立法监督</li>
+<li>“公正”党制定303项举措的竞选纲领路线图</li>
+<li>该党处理超1.4万项诉求，解决8300多项</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">立法效率提升和预算倾斜基础设施，有利于哈国社会经济稳定；AI议会平台和数字系统增强治理透明度与公民反馈；与联合国儿童基金会合作提升国际形象；政党路线图巩固执政基础，但需关注落实成效。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/jingxingjijiangquan-f4cee907/" target="_blank">哈萨克斯坦经济特区运行机制将转向全新模式</a></h3>
+<div class="item-meta">哈通社中文版 · 11/23 17:41<span class="source-link"><a href="https://cn.inform.kz/news/jingxingjijiangquan-f4cee907/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>自2023年以来哈萨克斯坦实施670个投资项目，总投资4.6万亿坚戈，产值约6万亿坚戈，近三分之一出口。今年计划实施200个项目，投资1.7万亿坚戈，创造1.7万多个就业岗位，已投产130个。全国19个经济特区和69个工业园区已实施900多个项目，吸引投资超7万亿坚戈，产值约22万亿坚戈，缴税超1万亿坚戈。哈政府将推出经济特区运行新模式，涵盖提前完善基础设施、改革管理体制、提高项目筛选质量三大方向。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">“总体来看，自2023年以来，全国已实施670个投资项目，总投资额达4.6万亿坚戈。投产企业累计生产了价值约6万亿坚戈的产品，其中近三分之一销往海外。新建生产设施的工作仍在持续推进。今年，全国计划实施200个项目，总投资额为1.7万亿坚戈，预计将创造1.7万多个就业岗位。目前，已有130个项目投产。”纳哈斯帕耶夫说。
+据他介绍，新建企业主要集中在建材生产、机械制造和食品工业领域。其中，机械制造业吸引的投资最多，约为1万亿坚戈；食品工业吸引投资超过7600亿坚戈。
+“在新生产项目陆续投产的同时，一批旨在推动经济多元化、具有战略意义的大型项目也在稳步推进。根据国家元首的指示，全国共启动了17个此类项目，其中9个由我部牵头实施。去年，这9个项目中已有两个投产，分别是KIA Qazaqstan汽车厂和Astana Motors多品牌汽车厂。明年年初，还计划启动另一个项目，即位于巴甫洛达尔州、年产16万吨铁和钢材的工厂一期工程。此外，石油天然气化工、农用化工和有色冶金领域的项目也在持续推进。”纳哈斯帕耶夫指出。
+他表示，目前哈萨克斯坦共有19个经济特区和69个工业园区，主要用于吸引投资、建设新的生产设施。园区内已实施900多个项目，吸引投资超过7万亿坚戈。入驻企业累计生产了价值约22万亿坚戈的产品，并向国家预算缴纳了超过1万亿坚戈的税款。
+“尽管取得了一定成效，但经济特区运行中仍存在一些亟待解决的问题。为此，根据国家元首的指示，相关部门已制定经济特区运行新模式，涵盖三个主要方向。第一，提前完善基础设施。为确保投资者入驻前，必要的工程管网和生产能力已经准备就绪，目前正在重新审视规划和融资方式。同时，相关部门正研究从伊斯兰开发银行筹措13亿美元贷款，用于基础设施建设。第二，改革管理体制。目前正在重新审视经济特区的管理方式，计划将特区交由私营主体运营管理，其中也包括外国投资者。管理公司应转型为功能完善的发展运营商，重点负责为特区吸引投资、跟进项目实施，并为企业家提供优质服务。第三，提高项目筛选质量。在项目遴选过程中，将评估生产能力与市场需求之间的平衡。今后，将根据市场需求、出口潜力和产业协作可能性择优引进项目。由此，经济特区的运行将全面转向全新的模式。”纳哈斯帕耶夫强调。</div>
+<ul>
+<li>2023年以来实施670个项目，投资4.6万亿坚戈</li>
+<li>今年计划200个项目，投资1.7万亿坚戈，创造1.7万就业</li>
+<li>19个经济特区、69个工业园区吸引投资超7万亿坚戈</li>
+<li>经济特区新模式：提前基建、私营化管理、择优筛选项目</li>
+<li>研究从伊斯兰开发银行筹措13亿美元贷款用于基建</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">新模式将提升经济特区投资效率和项目质量，推动私营化和外资参与，优化矿产加工与制造业布局，增强出口导向，促进经济多元化，但需平衡市场风险与战略产业安全。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://cn.inform.kz/news/guojiazhanfawenjiachengren-b84985f6/" target="_blank">国家元首批准总统直属战略发展问题专家组组成人员名单</a></h3>
+<div class="item-meta">哈通社中文版 · 11/23 15:32<span class="source-link"><a href="https://cn.inform.kz/news/guojiazhanfawenjiachengren-b84985f6/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统批准总统直属战略发展问题专家组组成人员名单。该专家组为咨询审议机构，负责研究完善国家长期发展理念性方案及优先方向，制定相关方案并审议分析、社会学和前瞻性研究成果。总统直属战略研究所担任工作机构，会议每月至少举行一次，可邀请国家机关、科研机构、专家团体、工商界和公民社会代表等参加。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：国家元首批准总统直属战略发展问题专家组组成人员名单
+
+正文：
+战略发展问题专家组是总统直属的咨询审议机构，旨在从专业角度研究和完善哈萨克斯坦共和国长期发展相关的理念性方案及优先发展方向。
+专家组的主要职责包括确定并从专业角度制定相关理念性方案，以及审议分析研究、社会学研究和前瞻性研究的成果。
+哈萨克斯坦共和国总统直属哈萨克斯坦战略研究所将作为专家组的工作机构。
+专家组会议根据实际需要召开，但每月至少举行一次。国家机关、科研机构、专家团体、工商界和公民社会代表，以及其他未列入专家组成员名单的专业人士，均可受邀参加会议。
+请点击此处，查阅总统直属战略发展问题专家组组成人员名单。</div>
+<ul>
+<li>总统批准战略发展问题专家组组成人员名单</li>
+<li>专家组为总统直属咨询审议机构，聚焦长期发展</li>
+<li>职责包括制定理念性方案和审议研究成果</li>
+<li>战略研究所担任工作机构，会议每月至少一次</li>
+<li>可邀请国家机关、科研机构、工商界等代表参会</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该专家组的设立强化了总统对长期战略制定的直接掌控，有助于凝聚专业共识、提升政策科学性，对政治决策集中化和经济优先方向确定具有积极影响，外交与矿产格局短期影响有限。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/ekspertnoe-soobshestvo-kirgizstana-obsudilo-poslanie-prezidenta-kazahstana-1f1ca49d" target="_blank">吉尔吉斯斯坦专家界讨论哈萨克斯坦总统国情咨文</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/24 04:34<span class="source-link"><a href="https://www.inform.kz/ru/ekspertnoe-soobshestvo-kirgizstana-obsudilo-poslanie-prezidenta-kazahstana-1f1ca49d" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦驻吉尔吉斯斯坦大使斯卡科夫在比什凯克向吉社会政治活动家、哈萨克侨民及专家媒体界介绍托卡耶夫总统国情咨文，强调其发表于宪法改革后，涵盖基础设施、能源安全、数字化与人工智能、交通物流、投资工业、教育人力资本等方向，推动从资源型经济向新机遇经济转型。吉专家巴克特古洛夫称咨文是年度战略指南，哈方正经历政治经济转型，吉与中亚需了解哈走向以建立长期经济合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：吉尔吉斯斯坦专家界讨论哈萨克斯坦总统国情咨文
+
+正文：
+参加活动的有吉尔吉斯斯坦社会政治活动家、哈萨克侨民代表、专家和媒体界人士。
+
+哈萨克斯坦驻吉尔吉斯共和国特命全权大使阿贝尔卡伊尔·斯卡科夫在发言伊始强调，今年卡瑟姆-若马尔特·托卡耶夫总统的国情咨文是在国家完成重大宪法改革背景下发表的。外交官向与会者详细介绍了这份战略文件的主要方向，这些方向为独立国家的发展注入了新动力，包括阐述了进一步发展基础设施和建设、能源安全、数字化和人工智能、交通和物流、投资和工业、教育和人力资本等方面的新大规模任务。外交官特别关注了哈萨克斯坦积累的潜力问题，国家正带着这一潜力进入其历史发展的新阶段。
+
+图片：古尔米拉·阿卜德拉赫曼诺娃/ Kazinform ——国家元首的国情咨文为推动从资源型经济向利用人工智能和哈萨克斯坦现有全部积累基础的新机遇经济转型注入了动力，大使说。
+
+国家管理问题专家谢拉迪尔·巴克特古洛夫指出，卡瑟姆-若马尔特·托卡耶夫总统的国情咨文是制定国家下一年度发展战略方向的年度指南。
+
+图片：古尔米拉·阿卜德拉赫曼诺娃/ Kazinform ——我们看到卡瑟姆-若马尔特·托卡耶夫在外交和国内政策、对外经济、人道主义、社会活动领域的政策具有连续性和稳定性。哈萨克斯坦目前正经历政治体制的根本性转型和经济重构，走在更新之路上。因此，对吉尔吉斯斯坦和中亚国家来说，重要的是了解哈萨克斯坦走向何方，专家说。
+
+据巴克特古洛夫认为，为了与哈萨克斯坦建立有效的长期经济合作，吉尔吉斯斯坦和中亚其他国家需要知道并理解国家走向何方、未来经济活动将建立在哪些原则之上以及哪些</div>
+<ul>
+<li>哈驻吉大使向吉专家界介绍托卡耶夫总统国情咨文</li>
+<li>咨文在哈完成重大宪法改革背景下发表</li>
+<li>重点方向含基础设施、能源、AI、交通、投资、教育</li>
+<li>大使称推动从资源型经济转向新机遇经济</li>
+<li>吉专家称咨文是年度战略指南，哈正经历转型</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国而言，国情咨文通过驻吉使馆宣介，强化了与吉尔吉斯斯坦及中亚国家的政策沟通与经济合作预期，有助于吸引邻国参与哈经济转型，提升区域影响力，同时为矿产、能源、交通物流等领域的跨境合作营造舆论基础。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/heribenwaibuxingzheng-cf4bfc95/" target="_blank">哈萨克斯坦和日本外交部举行政治磋商</a></h3>
+<div class="item-meta">哈通社中文版 · 11/23 23:17<span class="source-link"><a href="https://cn.inform.kz/news/heribenwaibuxingzheng-cf4bfc95/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与日本外交部举行政治磋商，讨论政治对话、经贸投资、文化人文领事合作，重点关注交通物流、稀有及稀土金属、数字化与人工智能、去碳化等领域联合项目前景，并探讨“中亚+日本”框架下近期活动。双方就国际地区问题交换意见，确认深化战略伙伴关系意愿。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：哈萨克斯坦和日本外交部举行政治磋商
+正文：会谈中，双方讨论了哈萨克斯坦与日本合作中的当前议题，包括政治对话、经贸与投资往来，以及在文化、人文和领事领域的合作。
+双方重点关注了在交通与物流、稀有金属及稀土金属、数字化与人工智能，以及去碳化等领域开展联合项目的前景。
+此外，双方还讨论了在进一步发展“中亚+日本”合作框架下的近期活动。
+Фото: ҚР СІМ 双方就国际和地区议程上的紧迫问题交换了意见，包括在联合国及其他多边平台内的合作。
+磋商结束后，双方确认均有意愿进一步加强其深化战略伙伴关系，并保持经常性政治对话。</div>
+<ul>
+<li>哈日外交部举行政治磋商，讨论双边合作议题</li>
+<li>重点领域：交通物流、稀有稀土金属、数字化、去碳化</li>
+<li>讨论“中亚+日本”合作框架下近期活动</li>
+<li>双方确认深化战略伙伴关系并保持政治对话</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">磋商强化哈日战略伙伴关系，推动交通物流与关键矿产合作，助力哈国经济多元化和数字化进程，并提升其在中亚+日本框架下的外交地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/zhuhuiguohuizhu-shihuizuo-d33c74f9/" target="_blank">库鲁尔泰主席会见各国议会联盟主席 共商数字化时代议会合作</a></h3>
+<div class="item-meta">哈通社中文版 · 11/23 14:49<span class="source-link"><a href="https://cn.inform.kz/news/zhuhuiguohuizhu-shihuizuo-d33c74f9/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦库鲁尔泰主席达德拜会见各国议会联盟主席米尔顿·迪克，重点讨论议会合作与数字化发展。达德拜介绍哈国政治改革（新宪法、一院制转型、设立副总统和人民理事会）及数字化成就：已投运两台地区最强超级计算机，第三台近期投用，超90%公共服务在线办理。托卡耶夫宣布2026年为“数字化与人工智能年”，《数字法典》《人工智能法》已生效，“AI-Sana”计划使数十万民众掌握AI技能。迪克赞赏哈国从“电子议会”向“智能议会”转型。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">库鲁尔泰主席会见各国议会联盟主席 共商数字化时代议会合作
+
+会谈期间，双方重点探讨了加强哈萨克斯坦与各国议会联盟互动合作，以及议会在推动国家数字化发展中所发挥的重要作用。
+
+达德拜对米尔顿·迪克当选各国议会联盟主席表示祝贺，并感谢他将哈萨克斯坦作为就任联盟主席后进行工作访问的首站国家。
+
+库鲁尔泰主席向来宾详细介绍了哈萨克斯坦总统发起的大规模政治改革举措，包括通过新宪法、向一院制库鲁尔泰转型，以及设立副总统和人民理事会等新国家机构。
+
+“现阶段，库鲁尔泰的首要任务是为高质量落实国家元首各项改革提供坚实、现代的法律保障。同时，我们还高度重视完善立法工作、履行议会监督职能以及与社会各界建立直接、公开的对话机制。在此背景下，进一步深化与各国议会联盟的合作并借鉴其他国家议会的先进经验，对我们具有重要意义。”达德拜表示。
+
+会谈还重点聚焦哈萨克斯坦在数字化与人工智能领域取得的成就。库鲁尔泰主席向米尔顿·迪克介绍，哈萨克斯坦已建成投运两台本地区算力最强的超级计算机，第三台也将于近期投入使用；目前超过90%的公共服务已实现在线办理。他指出，这些成就的取得离不开国家顺应全球趋势、持续推进立法的更新与完善。
+
+“发展数字技术是哈萨克斯坦的优先方向之一。为此，国家元首哈斯穆-卓玛尔特·托卡耶夫宣布2026年为‘数字化与人工智能年’。目前，《哈萨克斯坦共和国数字法典》和《人工智能法》均已制定并正式生效，《数字哈萨克斯坦》战略也已批准实施。”他补充道。
+
+外宾还了解了哈萨克斯坦培养现代信息技术专业人才的相关情况。会谈特别强调了“AI-Sana”国家计划的实施成效，得益于该计划，数十万民众已掌握了发展人工智能技能所需的核心能力。
+
+米尔顿·迪克对此次哈萨克斯坦之行给予高度评价，并指出各项会晤均富有成效。
+
+“能够将哈萨克斯坦作为我就任各国议会联盟主席后出访的首个国家，我深感荣幸。哈萨克斯坦坚定推进从‘电子议会’向应用人工智能技术的‘智能议会’转型，并积极展示库鲁尔泰议员在这一进程中的务实贡献，给我留下了深刻印象。我们正处在一个新时代，作为议员，我们的核心使命就是确保人工智能技术真正服务于本国公民的利益。”米尔顿·迪克表示。</div>
+<ul>
+<li>库鲁尔泰主席达德拜会见各国议会联盟主席米尔顿·迪克</li>
+<li>哈国推进政治改革：新宪法、一院制、设副总统和人民理事会</li>
+<li>数字化成就：两台超级计算机投运，超90%公共服务在线</li>
+<li>2026年为“数字化与人工智能年”，数字法典和AI法生效</li>
+<li>AI-Sana计划使数十万民众掌握AI核心技能</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访强化哈国议会外交，借鉴国际经验助推政治改革与立法完善；数字化成就展示提升哈国区域科技形象，吸引合作；AI立法与智能议会转型为矿产等关键领域数字化治理提供法律框架，利于经济多元化与外交软实力。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(3 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/11yue23ri-herenminqing-de101380/" target="_blank">11月23日终盘 美元、欧元、卢布和人民币兑坚戈汇率情况</a></h3>
+<div class="item-meta">哈通社中文版 · 11/23 22:23<span class="source-link"><a href="https://cn.inform.kz/news/11yue23ri-herenminqing-de101380/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>11月23日KASE现货市场30个成员参与交易。美元兑坚戈平均报455.09，跌0.23，交易额513,821.80千美元；欧元兑坚戈平均报498.76，跌1.12，交易额12,995.05千欧元；卢布兑坚戈平均报5.5614，涨0.0072，交易额3,227,463.40千卢布；人民币兑坚戈平均报68.2711，涨0.1535，交易额53,556.21千人民币。各币种交易额均较前日减少。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 11月23日终盘 美元、欧元、卢布和人民币兑坚戈汇率情况
+正文:
+在本次现货市场交易中，共有30个KASE成员参与。
+根据现货市场交易结果：
+美元兑坚戈（USDKZT_TOM）： 汇率平均报价为 1 : 455.09 坚戈（较前一交易日下跌 0.23 坚戈）。外汇交易总额为 513,821.80 千美元（减少 311,805.38 千美元）。交易过程中，最高报价为 1 : 458.00 坚戈，最低报价为 1 : 452.56 坚戈。
+欧元兑坚戈（EURKZT_TOM）： 汇率平均报价为 1 : 498.76 坚戈（较前一交易日下跌 1.12 坚戈）。外汇交易总额为 12,995.05 千欧元（减少 13,242.10 千欧元）。交易过程中，最高报价为 1 : 502.06 坚戈，最低报价为 1 : 497.19 坚戈。
+卢布兑坚戈（RUBKZT_TOM）： 汇率平均报价为 1 : 5.5614 坚戈（较前一交易日上涨 0.0072 坚戈）。外汇交易总额为 3,227,463.40 千卢布（减少 576,357.62 千卢布）。交易过程中，最高报价为 1 : 5.6150 坚戈，最低报价为 1 : 5.5270 坚戈。
+人民币兑坚戈（CNYKZT_TOM）： 汇率平均报价为 1 : 68.2711 坚戈（较前一交易日上涨 0.1535 坚戈）。外汇交易总额为 53,556.21 千人民币（减少 46,242.50 千人民币）。交易过程中，最高报价为 1 : 68.4256 坚戈，最低报价为 1 : 67.9300 坚戈。</div>
+<ul>
+<li>美元兑坚戈跌0.23至455.09，交易额减311,805.38千美元</li>
+<li>欧元兑坚戈跌1.12至498.76，交易额减13,242.10千欧元</li>
+<li>卢布兑坚戈涨0.0072至5.5614，交易额减576,357.62千卢布</li>
+<li>人民币兑坚戈涨0.1535至68.2711，交易额减46,242.50千人民币</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈对美元、欧元小幅升值，对卢布、人民币小幅贬值，汇率基本稳定。交易额普遍减少，市场活跃度下降，反映短期观望情绪。对哈国经济影响有限，但需关注卢布和人民币走势对贸易与矿产出口的潜在影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/xingding2027nianri-quannianjiangzuochu8-5d9377b9/" target="_blank">哈央行确定2027年基准利率审议日程 全年将共作出8次决议</a></h3>
+<div class="item-meta">哈通社中文版 · 11/23 14:15<span class="source-link"><a href="https://cn.inform.kz/news/xingding2027nianri-quannianjiangzuochu8-5d9377b9/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国家银行宣布2027年基准利率审议日程，全年共作出8次决议，公布日期为1月22日、3月12日、4月23日、6月11日、7月23日、9月10日、10月22日和12月10日。决议于每周最后一个工作日阿斯塔纳时间12:00公布，自下周第一个工作日起生效。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">国家银行在公告中指出：
+“基准利率相关决议将于每周最后一个工作日的阿斯塔纳时间12:00正式公布，并自下周第一个工作日起生效。”
+根据日程安排，2027年基准利率决议将分别于1月22日、3月12日、4月23日、6月11日、7月23日、9月10日、10月22日和12月10日公布。</div>
+<ul>
+<li>2027年基准利率决议共8次</li>
+<li>公布时间为每周最后工作日12:00</li>
+<li>决议自下周第一个工作日起生效</li>
+<li>具体日期覆盖全年各季度</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该日程增强货币政策透明度与可预期性，有助于稳定金融市场预期，对哈国经济调控和投资环境产生积极影响，但具体政策效果需视实际利率决策而定。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/xinggong23riyuzhuyaowaizhijiande-209612b1/" target="_blank">央行公布23日坚戈与主要外币之间的汇率标准</a></h3>
+<div class="item-meta">哈通社中文版 · 11/23 13:37<span class="source-link"><a href="https://cn.inform.kz/news/xinggong23riyuzhuyaowaizhijiande-209612b1/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行公布2026年11月23日坚戈对主要外币官方汇率：美元兑坚戈1:455，欧元兑坚戈1:498.77，俄罗斯卢布兑坚戈1:5.56，土耳其里拉兑坚戈1:9，中国元兑坚戈1:68.12。央行规定，坚戈兑美元官方汇率基于阿斯塔纳时间15:30证券交易所加权平均汇率确定，其他外币汇率依据16:00交叉汇率计算。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 央行公布23日坚戈与主要外币之间的汇率标准
+正文:
+根据央行公布的信息，2026年11月23日，哈萨克斯坦坚戈与国际主要货币之间的兑换汇率标准如下：
+美元兑坚戈（USD/KZT） – 1：455
+欧元兑坚戈（EUR/KZT）- 1：498.77
+俄罗斯卢布兑坚戈（RUB / KZT）-1: 5.56
+土耳其里拉兑坚戈（TRY / KZT）- 1: 9
+中国元兑坚戈（CNY / KZT）- 1：68.12
+值得一提的是，根据哈萨克斯坦国家银行规定，截至阿斯塔纳时间当日15:30，在哈萨克斯坦证券交易所形成的坚戈兑美元加权平均汇率，将被确定为下一工作日坚戈兑美元官方汇率；坚戈兑其他外币的官方汇率，则依据截至阿斯塔纳时间16:00形成的交叉汇率计算得出。</div>
+<ul>
+<li>美元兑坚戈汇率为1:455</li>
+<li>欧元兑坚戈汇率为1:498.77</li>
+<li>卢布兑坚戈汇率为1:5.56</li>
+<li>人民币兑坚戈汇率为1:68.12</li>
+<li>汇率确定基于交易所加权平均和交叉汇率</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率数据反映坚戈对主要货币的比价关系，为贸易和投资提供定价基准。美元汇率主导官方定价机制，其他货币通过交叉汇率派生，体现哈国汇率形成机制的市场化与美元锚定特征，对矿产等大宗商品出口计价有间接影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/jiangdonggongxingyedefa-80a92644/" target="_blank">哈萨克斯坦将推动铜深加工行业的发展</a></h3>
+<div class="item-meta">哈通社中文版 · 11/23 19:52<span class="source-link"><a href="https://cn.inform.kz/news/jiangdonggongxingyedefa-80a92644/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦每年生产约340万吨铜精矿，其中约200万吨在国内加工，其余出口。国家元首指示掌握铜精矿高级加工工艺，正在全面修订法律以推动深加工和建立境内价值链。已采纳部分提案，并计划新建两座铜冶炼厂，总加工能力约60万吨铜，使出口铜转为国内加工。还计划开发新矿床，目标从2030年左右实现境内加工超过100万吨阴极铜。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据他介绍，哈萨克斯坦每年生产约340万吨铜精矿，其中约200万吨在国内加工，其余出口。
+此外，国家元首已明确指示我国掌握铜精矿的高级加工工艺。为解决这些问题，我们正在对现有法律进行全面修订。这些修订旨在推动铜精矿深加工，并在哈萨克斯坦境内建立价值链。——萨帕尔别阔夫说。
+据他介绍，一些提案已被采纳。此外，目前正在考虑其他项目，这些项目将有助于确保目前出口的部分铜在哈萨克斯坦境内进行加工。
+目前，相关计划已经公布，将新建两座铜冶炼厂，总加工能力约为60万吨铜。这将使目前出口的铜资源能够转为在国内进行加工。此外，我们还计划开发新的矿床，这也将有助于实现国内加工。根据初步估算，我们的目标是从2030年左右开始，在哈萨克斯坦境内实现超过100万吨阴极铜的加工量。——副部长说。</div>
+<ul>
+<li>哈国年产铜精矿约340万吨，国内加工约200万吨</li>
+<li>国家元首指示掌握铜精矿高级加工工艺</li>
+<li>全面修订法律推动深加工和境内价值链</li>
+<li>新建两座铜冶炼厂，总加工能力约60万吨铜</li>
+<li>目标2030年左右境内加工超100万吨阴极铜</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上推动矿业升级和出口附加值提升，减少原料出口依赖；政治上体现国家元首产业政策执行力；外交上增强资源加工自主性，影响铜矿贸易格局；矿产格局向境内冶炼和阴极铜生产倾斜。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/guojiaguojiatianrangongshihuizhu-qianshigeyuegongzuo-e1d8dd9a/" target="_blank">国家元首接见国家石油天然气公司董事会主席 听取前十个月运营工作汇报</a></h3>
+<div class="item-meta">哈通社中文版 · 11/23 16:40<span class="source-link"><a href="https://cn.inform.kz/news/guojiaguojiatianrangongshihuizhu-qianshigeyuegongzuo-e1d8dd9a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国家石油天然气公司董事会主席哈森诺夫向总统托卡耶夫汇报前十个月运营工作。公司总市值达22万亿坚戈，财务状况稳健，将推进总投资16.7万亿坚戈的大型项目。公司批准《2026—2030年地质勘探规划》，计划在23个重点项目开展6万测线地震勘探、钻探26口井，地质资源潜力达47亿吨标准燃料。商品气产量拟从26亿立方米提升至45亿立方米。国内炼油厂加工原油1490万吨，轻质油品预计增产80万吨。总统指示继续系统性推进勘探和投资项目。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">国家元首接见国家石油天然气公司董事会主席 听取前十个月运营工作汇报
+
+哈森诺夫向总统报告称，目前哈萨克斯坦国家石油天然气公司总市值已达22万亿坚戈。公司财务状况保持稳健，具备充足实力推进总投资额达16.7万亿坚戈的大型投资项目。
+
+据其介绍，公司已正式批准《2026—2030年地质勘探工作规划》。在23个重点勘探项目框架下，计划开展总长6万测线的地震勘探作业，并钻探26口普查及勘探井，预计总地质资源潜力达47亿吨标准燃料。
+
+与此同时，哈萨克斯坦国家石油天然气公司持续对现有在产油气区块开展补充勘探。目前，位于阿特劳州的西卡拉索尔油田以及曼格斯套州的卡拉赞巴斯滨海区块均已正式投入工业化开采。
+
+哈森诺夫还向总统汇报了利用人工智能技术在油气田全面推广应用“数字孪生”系统的进展情况。
+
+在天然气领域，他重点介绍了旨在短期内将商品气产量从26亿立方米提升至45亿立方米的系列投资项目。目前，阿特劳州、阿克托别州和西哈萨克斯坦州的天然气基础设施建设正在稳步推进，拓展多元出口通道的工作也在持续开展。
+
+报告期内，哈萨克斯坦国内各炼油厂累计加工原油1490万吨。预计今年全年轻质油品产量将较去年增加80万吨。此外，奇姆肯特炼油厂年加工能力扩建至1200万吨，以及巴甫洛达尔石油化工厂年加工能力由600万吨提升至900万吨的改扩建工程正在有序推进。
+
+汇报期间，哈森诺夫还介绍了阿特劳州大型油气化工项目的建设进展，重点包括聚乙烯生产基地及天然气分离综合体项目。
+
+此外，双方还重点关注了公司在各地区实施的社会民生项目。在“清洁哈萨克斯坦”全国环保行动框架下，哈萨克斯坦国家石油天然气公司员工自年初以来已累计植树38.6万棵。
+
+听取汇报后，总统托卡耶夫指示公司继续系统性推进地质勘探和重点投资项目的落地实施。</div>
+<ul>
+<li>公司总市值22万亿坚戈，推进16.7万亿坚戈投资项目</li>
+<li>批准2026—2030年地质勘探规划，资源潜力47亿吨</li>
+<li>商品气产量目标从26亿立方米提升至45亿立方米</li>
+<li>国内炼油厂加工原油1490万吨，轻质油品增产80万吨</li>
+<li>总统指示系统性推进地质勘探和重点项目落地</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上，巨额投资和勘探规划将增强哈国油气资源接续能力，提升长期财政收入；天然气增产和炼厂扩能有助于满足内需并扩大出口；政治上，总统直接指示体现国家对战略能源产业的控制与重视；外交上，多元出口通道建设将降低对单一过境国的依赖，增强能源外交自主性；矿产格局上，新增勘探和工业化开采将巩固哈国在中亚油气生产中的地位。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-11-24 09:03</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
