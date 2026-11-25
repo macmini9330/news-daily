@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年11月25日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年11月25日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年11月24日早9:00至2026年11月25日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 22 条</span><span class="stat-chip">4 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">11</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">5</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">4</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">2</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(11 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/vozvrashennie-zemli-snova-peredayut-dlya-selskogo-hozyaystva-v-zhambilskoy-oblas-17f4b1ca" target="_blank">江布尔州归还土地再次移交用于农业</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/25 05:17<span class="source-link"><a href="https://www.inform.kz/ru/vozvrashennie-zemli-snova-peredayut-dlya-selskogo-hozyaystva-v-zhambilskoy-oblas-17f4b1ca" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年1月至10月，哈萨克斯坦江布尔州通过十次竞标将25.4万公顷土地重新投入农业使用。其中牧场占主导，达13.35万公顷（近80%），耕地2.64万公顷，其他土地8500公顷。此前该州已归还国家5.3万公顷土地，突厥斯坦州归还的牧场也将通过竞标分配。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">土地转为国家所有后，下一阶段是重新将其提供给农业使用。在江布尔州，此类地块通过竞标进行分配。
+据州土地关系局消息，2026年1月至10月共举行了十次竞标。根据结果，25.4万公顷土地被纳入农业流转。
+以此方式分配的土地总面积中，牧场占主导地位。牧场面积为13.35万公顷，占总面积的近80%。
+另有2.64万公顷为耕地。剩余8500公顷属于其他土地。
+此前报道，江布尔州另有5.3万公顷土地已归还国家。此外，突厥斯坦州归还国家的牧场也将通过竞标分配。</div>
+<ul>
+<li>江布尔州10次竞标分配25.4万公顷农用地</li>
+<li>牧场占主导达13.35万公顷，占比近80%</li>
+<li>耕地2.64万公顷，其他土地8500公顷</li>
+<li>此前该州已归还国家5.3万公顷土地</li>
+<li>突厥斯坦州归还牧场也将通过竞标分配</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">盘活闲置土地资源，提升农业产出；竞标机制增加地方财政收入；土地再分配有助于稳定农村社会；牧场为主反映畜牧导向，可能影响区域矿产用地格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://www.inform.kz/ru/dve-ekspertnie-kompanii-lishilis-akkreditatsii-v-zhambilskoy-oblasti-dbc23f51" target="_blank">江布尔州两家鉴定公司被吊销资质</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/25 02:42<span class="source-link"><a href="https://www.inform.kz/ru/dve-ekspertnie-kompanii-lishilis-akkreditatsii-v-zhambilskoy-oblasti-dbc23f51" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年1-10月，江布尔州两家专家公司因重复违反建筑法规被吊销资质认证，一家公司被吊销许可证。八名监督专家被罚款并暂停资格证书六个月。此前巴甫洛达尔州暂停20家承包商建筑许可证。江布尔州建筑违规罚款总额达1.82亿坚戈。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：两家专家公司在江布尔州被吊销资质认证
+
+据江布尔州国家建筑与建设监督局消息，2026年1月至10月期间，两家专家机构——«Сараптама Consulting»有限责任合伙公司和«Expert 01»有限责任合伙公司——被吊销了资质认证证书。
+
+原因是它们在建筑领域多次违反法律要求。根据《行政违法行为法典》第317-1条第2款，如果经认证的机构在受到行政处罚后一年内，在项目鉴定、建筑物技术检查或实施建设监督时再次违反规定要求，则适用该措施。
+
+对于此类违法行为，法律规定处以罚款并吊销资质认证证书。这意味着这些公司失去了从事需要此类认证的工作的权利。
+
+另一家公司——«Апогей»有限责任合伙公司——被吊销了相应活动的许可证。该处罚依据《行政违法行为法典》第312条第2款适用。该条款规定，对在一年内再次违反法律和建筑规范、从事设计、勘察和建筑安装工程的行为追究责任。除罚款外，违法者还将被吊销许可证。
+
+负责建设监督的专业人员也承担了责任。对四名技术监督代表、三名作者监督专家和一名项目文件鉴定专家提起了行政案件。
+
+全部八名专业人员被处以罚款，其专家资格证书被暂停六个月。在此期间，他们失去了从事需要相应资格证书的工作的权利。
+
+此前，在巴甫洛达尔州，20家承包商的建筑许可证被暂停。
+
+与此同时，在江布尔州，建筑对象上发现的违规行为被处以1.82亿坚戈的罚款。</div>
+<ul>
+<li>两家专家公司因重复违规被吊销资质认证</li>
+<li>一家公司被吊销许可证，八名专家被罚并停证半年</li>
+<li>处罚依据《行政违法行为法典》相关条款</li>
+<li>江布尔州建筑违规罚款总额达1.82亿坚戈</li>
+<li>巴甫洛达尔州此前暂停20家承包商建筑许可证</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举强化哈国建筑行业监管，清理不合规专家机构，短期可能影响江布尔州项目鉴定与监督效率，但长期有利于规范市场秩序和工程质量安全。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/zhitelya-taraza-arestovali-na30-sutok-zamat-vpryamom-efire-tiktok-173b4e19" target="_blank">塔拉兹居民因在TikTok直播中爆粗口被拘留30天</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/25 02:24<span class="source-link"><a href="https://www.inform.kz/ru/zhitelya-taraza-arestovali-na30-sutok-zamat-vpryamom-efire-tiktok-173b4e19" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦塔拉兹一名居民因在TikTok直播中使用脏话和侮辱观众，被警方依据《行政违法法典》第434条第2款（轻微流氓行为）立案，法院判处其30天行政拘留。警方强调直播和社交媒体不免责。此前11月8日阿斯塔纳一名男子因类似行为被拘10天，同月塔拉兹一名Lada司机为拍TikTok视频驶上人行道被追责。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：塔拉兹居民因在TikTok直播中爆粗口被拘留30天
+
+据警方消息，在TikTok直播期间，塔拉兹一名居民使用脏话并对观众发表侮辱性言论。
+
+执法人员根据《行政违法法典》第434条第2款（轻微流氓行为）制作了行政笔录。
+
+材料已移交法院，法院判处该男子30天行政拘留。
+
+警方提醒，直播和社交媒体不能免除用户违反公共秩序的责任。
+
+回顾，11月8日在阿斯塔纳，一名男子因在TikTok直播中爆粗口被拘留10天。
+
+同样在11月，在塔拉兹，警方对一名Lada司机追究了责任，该司机为拍摄TikTok视频而驶上人行道。</div>
+<ul>
+<li>塔拉兹居民TikTok直播爆粗口被拘30天</li>
+<li>警方依据轻微流氓行为条款立案并移交法院</li>
+<li>警方强调直播和社交媒体不免除违法责任</li>
+<li>11月阿斯塔纳类似案件男子被拘10天</li>
+<li>塔拉兹Lada司机为拍TikTok视频驶上人行道被追责</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此案显示哈国加强对网络直播和社交媒体行为的法律监管，可能影响公民网络表达边界，对政治稳定和社会秩序有正面作用，但需平衡言论自由；经济上无直接影响；外交上无显著影响；矿产格局无关。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/guoqian15-1b2631db/" target="_blank">阿拉木图跻身联合国数字服务调查前15强城市</a></h3>
+<div class="item-meta">哈通社中文版 · 11/25 01:59<span class="source-link"><a href="https://cn.inform.kz/news/guoqian15-1b2631db/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>阿拉木图在联合国数字服务调查中排名从第27位跃升至第12位，两年上升15位。其本地在线服务指数（LOSI）得分从0.8021提升至0.9604（满分1分），超越哥本哈根、伦敦、东京和上海等城市。评估涵盖官方门户网站运行、在线服务获取、市政信息公开、反馈机制及居民参与城市治理等六个关键领域。市政府表示，这一国际认可反映了阿拉木图在数字服务发展、城市基础设施完善及宜居环境营造方面的系统性成效。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 阿拉木图跻身联合国数字服务调查前15强城市
+正文:
+与2024年相比，阿拉木图市排名上升了15位。
+过去两年，阿拉木图的排名从第27位跃升至第12位。其本地在线服务指数（LOSI）得分从0.8021提升至0.9604（满分1分）。凭借这一成绩，阿拉木图超越了哥本哈根、伦敦、东京和上海等众多高度发达的全球大都市，稳居第12位。
+Фото: Скрин 联合国调查报告对城市居民所享有的电子服务的可访问性和便利性进行了评估。专家们分析了官方门户网站的运行表现、在线获取服务的能力、市政信息的公开程度、反馈机制，以及居民参与城市治理的水平。该评估涵盖了六个关键领域。
+- 在联合国相关排名中的提升以及所获得的国际认可，反映了阿拉木图在发展数字服务、完善城市基础设施，以及为居民和访客营造舒适环境方面所开展的系统性工作所取得的成效。-市政府在官方社交媒体上写道。
+Фото: Скрин &amp;nbsp;</div>
+<ul>
+<li>阿拉木图LOSI得分从0.8021升至0.9604，排名第12位</li>
+<li>两年内排名从第27位跃升15位，超越伦敦、东京等城市</li>
+<li>联合国评估涵盖门户网站、在线服务、信息公开等六领域</li>
+<li>市政府称排名提升反映数字服务和基础设施系统性成效</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">提升哈国国际形象，增强数字治理吸引力；促进数字经济和智慧城市建设；为吸引外资和人才创造有利条件；但需持续投入以维持领先地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/detongnengdexie-85f07131/" target="_blank">移居哈萨克斯坦的血亲同胞能获得哪些支持？</a></h3>
+<div class="item-meta">哈通社中文版 · 11/25 01:25<span class="source-link"><a href="https://cn.inform.kz/news/detongnengdexie-85f07131/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦劳动和社会保障部宣布，继续为移居祖国的外籍哈萨克同胞提供就业援助和社会适应支持。申请永久居留权和“血亲同胞”身份者需通过试点项目评估，包括测试、问卷和面试，以考量教育背景、职业资格和工作经验。此外，特别关注教育，成年人在哈萨克语课程中学习西里尔字母、阅读和写作，以帮助处理文档和解决日常问题。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 移居哈萨克斯坦的血亲同胞能获得哪些支持？
+正文:
+劳动和社会保障部称，哈萨克斯坦继续为移居祖国的外籍哈萨克同胞提供支持。搬迁家庭必须办理相关证件，解决住房问题，寻找工作，并适应新的环境。因此，提供的支持既包括就业援助，也包括社会适应方面的帮助。
+- 目前，申请永久居留权和“血亲同胞”身份的申请人需根据一项正在进行的试点项目，按照特定的遴选标准接受评估。该流程包括测试、填写问卷和面试。这种方法能够充分考虑申请人的教育背景、职业资格和工作经验。其主要目标是帮助已迁居至此的家庭适应新环境并获得就业机会。-劳动和社会保障部说。
+同时，特别关注教育问题。在哈萨克语课程中，成年人学习西里尔字母，练习阅读和写作。这些技能可帮助您独立处理文档、使用必要的信息并轻松解决日常问题。</div>
+<ul>
+<li>哈国为移居的血亲同胞提供就业援助和社会适应支持</li>
+<li>申请永久居留权和“血亲同胞”身份需通过试点项目评估</li>
+<li>评估流程包括测试、问卷和面试，考量教育背景等</li>
+<li>特别关注教育，成年人学习西里尔字母和哈萨克语读写</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该政策有助于吸引外籍哈萨克族人才回流，缓解劳动力短缺，促进社会融合。通过遴选评估优化移民质量，教育支持提升适应能力，对哈国人口结构和经济发展产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/guojijiajiangdeti-8823be81/" target="_blank">国际机构专家将评估哈萨克斯坦的核教育体系</a></h3>
+<div class="item-meta">哈通社中文版 · 11/25 00:13<span class="source-link"><a href="https://cn.inform.kz/news/guojijiajiangdeti-8823be81/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦原子能署新闻处宣布，国际机构专家将评估哈国核教育体系。任务旨在评估核教育与人才培养现状，明确行业人才需求，参考国际最佳实践提出完善建议。来自原子能署、科学与高等教育部、“哈萨克斯坦核电站”公司、国家核中心、核物理研究所及高校代表参加。副署长拉夫雷诺夫强调培养本土专业人才对核能发展和核电站建设的关键意义，并提及《2027-2031年核能行业人员培训综合计划》。为期四天的议程包括专题介绍、经验交流、自我评估实操及行动计划制定。评估结果将用于完善国家核教育体系，并加强与国际原子能机构的合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据哈萨克斯坦原子能署新闻处消息，此次任务的主要目标是评估哈国核教育与人才培养体系的现状，明确行业对合格专业人才的需求，并参考国际最佳实践，就完善教育项目提出建议。
+来自哈萨克斯坦原子能署、科学与高等教育部、“哈萨克斯坦核电站”有限责任责任公司、国家核中心、核物理研究所及国内各高等院校的代表，代表哈萨克斯坦参加了此次活动。
+Фото: ҚР Атом энергиясы жөніндегі агенттік 哈原子能署副署长瓦西里·拉夫雷诺夫在开幕致辞中强调，培养高素质的本土专业人才至关重要。这对于支持哈萨克斯坦核能领域的发展，以及推进核电站建设项目具有关键意义。
+他在讲话中概述了哈国核能行业发展的关键方向，以及为确保该行业人员配备充足而采取的措施。其中包括《哈萨克斯坦共和国核能行业人员培训综合计划（2027-2031年）》。
+为期四天的议程包括：国内教育与科研机构的专题介绍、与国际专家的经验交流、针对核教育体系开展自我评估的实操环节，以及制定并协调未来的行动计划。
+Фото: ҚР Атом энергиясы жөніндегі агенттік 根据此次任务的评估结果，将制定切实可行的建议，旨在完善国家核教育与人才培养体系。
+综合核教育咨询服务（INEAS）的任务有助于加强政府机构、教育和科研组织以及核能领域企业之间的互动，并进一步发展哈萨克斯坦与国际原子能机构在人员培训领域的合作。</div>
+<ul>
+<li>国际机构专家评估哈萨克斯坦核教育体系现状与人才需求</li>
+<li>哈方多部门代表参与，副署长强调本土人才培养关键性</li>
+<li>提及《2027-2031年核能行业人员培训综合计划》</li>
+<li>四天议程含专题介绍、经验交流、自我评估与行动计划</li>
+<li>评估结果将用于完善核教育体系并加强IAEA合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次评估有助于哈国核能人才体系与国际标准接轨，为核电站建设提供人力支撑，强化政府、教育与企业协同，并深化与IAEA合作，提升核能领域自主发展能力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://www.inform.kz/ru/pomillionu-zachuzhie-perevodi-obyazal-vernut-zhertve-moshennikov-sud-vzhambilsko-85d19024" target="_blank">江布尔州法院判令诈骗受害者返还百万他人转账</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/25 00:13<span class="source-link"><a href="https://www.inform.kz/ru/pomillionu-zachuzhie-perevodi-obyazal-vernut-zhertve-moshennikov-sud-vzhambilsko-85d19024" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年6月，江布尔州一名妇女被冒充ЦОН、银行和警察的诈骗分子恐吓，办理了440万坚戈贷款并转入指定账户。其中220万坚戈被其他收款人自愿退还，但两名陌生收款人各收到的100万坚戈未还。法院认定此为不当得利，判令两人各返还100万坚戈及国家规费。此前该州另有受害者追回近230万坚戈。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据塔拉斯区法院消息，一名妇女于2026年6月被骗。不明身份者冒充ЦОН（公民服务中心）、银行和警察的工作人员。他们恐吓该妇女称银行账户需要保护，并以刑事责任相威胁。
+在精神压力下，该妇女办理了总额440万坚戈的贷款，并将钱转入诈骗分子指定的账户。
+事发后，诈骗案开始调查。经查明，有100万坚戈分别汇入了两名与受害者甚至不相识的人的账户。她对他们没有任何债务，也没有理由向他们转账。
+其他收款人自愿向该妇女返还了220万坚戈。然而，汇入这两名公民账户的200万坚戈未被返还。受害者通过法院要求向每人追索100万坚戈。
+法院完全满足了她的诉讼请求，认定被告收到的钱款为不当得利。除本金外，还向他们追索了国家规费。
+此前在江布尔州，一名网络诈骗受害者通过诉讼追回了近230万坚戈。</div>
+<ul>
+<li>诈骗分子冒充ЦОН、银行和警察，恐吓妇女办理440万坚戈贷款</li>
+<li>两名陌生收款人各收到100万坚戈，拒绝返还</li>
+<li>法院认定200万坚戈为不当得利，判令全额返还</li>
+<li>其他收款人已自愿退还220万坚戈</li>
+<li>江布尔州此前有受害者通过诉讼追回近230万坚戈</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该判决强化了哈国司法对电信诈骗中不当得利收款人的追责，有助于保护受害者财产权，遏制诈骗资金链，但对银行账户监管和公民防诈意识提出更高要求。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/2029nianfayi-f2a9b667/" target="_blank">哈萨克斯坦计划2029年发射新一代通讯卫星</a></h3>
+<div class="item-meta">哈通社中文版 · 11/24 19:19<span class="source-link"><a href="https://cn.inform.kz/news/2029nianfayi-f2a9b667/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦副总理马迪耶夫表示，哈国支持外国网络运营商进入市场，OneWeb和Starlink地面站已投入运营，中国“千帆星座”和亚马逊低轨卫星项目也在推进。哈国现有KazSat-2和KazSat-3卫星，计划年底退役KazSat-2，并启动KazSat-3R项目于2029年接替KazSat-3。哈国移动互联网资费约为全球平均水平的三分之一。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据他介绍，哈萨克斯坦支持外国网络运营商进入我国市场。
+- 众所周知，一网（OneWeb）和星联（Starlink）的地面站目前已在哈萨克斯坦投入运营。与此同时，中国的“千帆星座”（SpaceSail）项目和亚马逊的低轨卫星（LEO）项目也已启动建设，相关工作正在推进中，部分测试也已开展。我们预计，随着这些运营商在明年发射新卫星，它们将开始在哈萨克斯坦及其他国家提供服务。我们支持竞争。这些运营商进入市场将有助于影响服务定价，并促使服务质量不断提升，因为这营造了自由的市场竞争环境。-马迪耶夫说。
+此外，副总理还谈到了国产卫星现状和未来计划。
+- 当前，我国拥有“KazSat-2”和“KazSat-3”卫星。这些卫星用于为农村地区提供互联网接入、满足政府机构的需求，并支持电视广播业务。目前，我们正在将“KazSat-2”卫星上的业务负载迁移至“KazSat-3”卫星。这是因为“KazSat-2”卫星已接近其设计使用寿命，我们计划在今年年底前将其退役。此外，我们还启动了一项名为“KazSat-3R”的新项目，该项目旨在2029年接替“KazSat-3”卫星。因此，根据具体的业务需求，我们既使用哈萨克斯坦本国的卫星，也会利用国外服务商提供的卫星资源。-他说。
+据此前报道，哈国移动互联网资费约为全球平均水平的三分之一。</div>
+<ul>
+<li>哈国支持外国网络运营商进入，OneWeb和Starlink地面站已运营</li>
+<li>中国“千帆星座”和亚马逊低轨卫星项目在哈启动建设</li>
+<li>KazSat-2卫星年底退役，业务迁移至KazSat-3</li>
+<li>启动KazSat-3R项目，计划2029年接替KazSat-3</li>
+<li>哈国移动互联网资费约为全球平均水平三分之一</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">引入外国运营商将加剧市场竞争，降低资费并提升服务质量；国产卫星更新换代保障农村及政府通信需求，2029年KazSat-3R发射将增强自主通信能力，同时多元合作提升哈国在低轨卫星领域的地缘经济地位。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://cn.inform.kz/news/min93deminweiguojiafafangzheng-291c69a8/" target="_blank">民调显示：93%的哈萨克斯坦民众认为国家发展方向正确</a></h3>
+<div class="item-meta">哈通社中文版 · 11/24 17:12<span class="source-link"><a href="https://cn.inform.kz/news/min93deminweiguojiafafangzheng-291c69a8/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统直属战略研究所于2026年10月5日至11月5日对全国8105人进行调查，结果显示93%的受访者认为国家发展方向正确，18-29岁青年群体认同度最高达95.1%。82.4%的受访者肯定“倾听型国家”原则落实情况，青年群体认可度达89.6%。调查覆盖17个州及阿斯塔纳、阿拉木图、奇姆肯特三市，反映公众对政府社会团结、法治及文教科学政策的积极评价。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">由哈萨克斯坦总统直属战略研究所委托开展的一项社会学调查显示了这一点。共有8105名受访者参与了此次调查。
+调查结果显示，在所有主要社会人口群体中，对国家发展方向持积极评价的观点占据主导地位。93%的受访者认为，国家正沿着正确方向发展。
+其中，18至29岁青年群体的认同度最高，达到95.1%。
+这项研究还反映了公民对国家主要发展领域的评价。受访者高度认可政府为巩固社会团结、维护法治以及推动文化、教育和科学事业发展所采取的措施。
+此外，公众对国家发展方向的评价，与其对政府回应民众诉求能力的看法密切相关。绝大多数认为政府重视民众的意见和诉求，并努力解决他们所反映问题的受访者，也对哈萨克斯坦的发展方向给予了积极评价。
+具体而言，82.4%的受访者对“倾听型国家”原则的落实情况表示肯定。其中，18至29岁青年群体的认可度最高，达到89.6%；61岁以上群体对这一原则落实情况的评价同样较高，为77.6%。
+由此可见，公众对国家整体发展方向的高度认同，与民众对国内正在推进的各项改革持积极态度密切相关。
+据悉，本次民意调查由哈萨克斯坦战略研究所委托，于2026年10月5日至11月5日期间开展。调查样本覆盖全国17个州以及阿斯塔纳市、阿拉木图市和奇姆肯特市。</div>
+<ul>
+<li>93%民众认为国家发展方向正确，青年群体认同度达95.1%</li>
+<li>82.4%受访者肯定“倾听型国家”原则落实，青年认可度89.6%</li>
+<li>调查覆盖8105人，涵盖17州及三大直辖市</li>
+<li>公众对政府回应诉求能力的看法与方向评价高度相关</li>
+<li>61岁以上群体对“倾听型国家”落实认可度为77.6%</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">高支持率强化政府改革合法性，利于政治稳定；青年高认同为政策延续提供社会基础；积极民意有助于吸引投资和推进经济改革；对外展示治理成效，提升国际形象；矿产等资源政策获民意背书，利于长期战略实施。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">10</span> <a href="https://cn.inform.kz/news/guojia-qububuchang-e633cd3f/" target="_blank">国家元首签署命令 免去伊戈尔·列佩哈内务部副部长职务</a></h3>
+<div class="item-meta">哈通社中文版 · 11/24 16:45<span class="source-link"><a href="https://cn.inform.kz/news/guojia-qububuchang-e633cd3f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国家元首签署命令，免去伊戈尔·列佩哈的内务部副部长职务。列佩哈自2022年10月6日起担任该职，至2026年11月24日卸任。命令未说明免职原因。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：国家元首签署命令 免去伊戈尔·列佩哈内务部副部长职务
+
+据悉，伊戈尔·列佩哈自2022年10月6日起担任哈萨克斯坦内务部副部长，直至此次2026年11月24日卸任。</div>
+<ul>
+<li>国家元首签署命令免去内务部副部长职务</li>
+<li>列佩哈2022年10月6日上任，2026年11月24日卸任</li>
+<li>新闻未提及免职具体原因</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">内务部高层人事调整属正常职务变动，短期内对哈国政治经济外交及矿产格局无直接显著影响，但或反映执法系统内部人事布局微调。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">11</span> <a href="https://cn.inform.kz/news/yinqugongyehebubuchang-edbece42/" target="_blank">叶尔塞因·纳哈斯帕耶夫履新哈萨克斯坦国家铁路公司董事会主席</a></h3>
+<div class="item-meta">哈通社中文版 · 11/24 15:39<span class="source-link"><a href="https://cn.inform.kz/news/yinqugongyehebubuchang-edbece42/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统府发布总统令，免去叶尔塞因·纳哈斯帕耶夫的工业和建设部部长职务，任命其为哈萨克斯坦国家铁路公司董事会主席。纳哈斯帕耶夫自2025年2月28日起担任工业和建设部部长，并于2026年9月3日连任。在2021年至2025年出任部长之前，他曾在哈萨克斯坦国家铁路公司担任物资保障执行董事及新项目代理执行董事。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：叶尔塞因·纳哈斯帕耶夫履新哈萨克斯坦国家铁路公司董事会主席
+正文：在此之前，哈萨克斯坦总统府新闻局发布了相关人事任免总统令：“根据国家元首命令，免去叶尔塞因·纳哈斯帕耶夫的哈萨克斯坦共和国工业和建设部部长职务。”
+资料显示，叶尔塞因·纳哈斯帕耶夫自2025年2月28日起担任哈萨克斯坦工业和建设部部长，并于2026年9月3日获得连任。在2021年至2025年出任部长之前，他亦曾在哈萨克斯坦国家铁路公司担任物资保障执行董事及新项目代理执行董事。</div>
+<ul>
+<li>纳哈斯帕耶夫被免去工业和建设部部长职务</li>
+<li>纳哈斯帕耶夫履新哈萨克斯坦国家铁路公司董事会主席</li>
+<li>纳哈斯帕耶夫2025年2月28日起任部长，2026年9月3日连任</li>
+<li>纳哈斯帕耶夫2021至2025年前曾在哈国家铁路公司任职</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次人事调整强化国家铁路公司领导层，纳哈斯帕耶夫的工业与物资保障背景有助于铁路基建和矿产运输协调，对哈国经济与外交物流通道建设产生积极影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(5 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/antoniu-koshta-sozivaet-spetsialniy-sammit-liderov-evropeyskogo-soyuza-b74b5b18" target="_blank">安东尼奥·科斯塔召集欧盟领导人特别峰会</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/25 01:10<span class="source-link"><a href="https://www.inform.kz/ru/antoniu-koshta-sozivaet-spetsialniy-sammit-liderov-evropeyskogo-soyuza-b74b5b18" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>欧洲理事会主席安东尼乌·科斯塔召开欧盟领导人特别峰会，旨在就长期预算达成协议，并讨论欧洲央行领导层更新及乌克兰资助问题。科斯塔强调需平衡增强竞争力、安全与国防，同时保持各国摊款合理。峰会计划11月27日结束。欧洲议会亦于11月24日讨论2027年欧盟预算，并将投票。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">安东尼乌·科斯塔召开欧盟领导人特别峰会
+
+在邀请信中，科斯塔强调“达成长期预算协议的时刻已经到来”。他提出了共同谈判立场，并呼吁同仁们“以妥协精神”予以审议。
+
+据他所说，欧盟必须找到平衡的解决方案，以增强竞争力、安全和国防，同时加强欧洲在世界上的作用，并将各国摊款保持在合理水平。欧洲理事会主席指出，平衡的自有资源组合将有助于实现这一目标。
+
+特别峰会议程还包括更新欧洲中央银行领导层。
+
+欧洲央行行长克里斯蒂娜·拉加德和欧元集团主席基里亚科斯·皮耶拉卡基斯应邀出席，他们将分析当前经济形势。拉加德自2019年11月以来的工作将单独提及。
+
+在与欧洲议会议长交换意见后，领导人将讨论预算和乌克兰资助问题。计划由科斯塔首先提出他的建议，随后进行反应和双边磋商。欧洲理事会主席打算分享指示性工作时间表，并希望于11月27日星期五结束会议。
+
+今天，11月24日，欧洲议会在斯特拉斯堡举行全体会议，议员们也在讨论预算问题。具体而言，约13:00计划就2027年欧盟预算联合文本进行辩论——这是当前2021-2027多年财政框架下的最后一份预算。欧盟委员会和爱尔兰担任欧盟理事会主席国的代表参加。辩论后将进行投票，周三欧洲议会议长罗伯塔·梅措拉应签署文件。
+
+此前在布鲁塞尔举行了第二届欧盟-英国峰会。</div>
+<ul>
+<li>科斯塔召开欧盟特别峰会，推动长期预算协议</li>
+<li>峰会讨论欧洲央行领导层更新及乌克兰资助</li>
+<li>科斯塔强调平衡增强竞争力、安全与国防</li>
+<li>欧洲议会11月24日辩论2027年预算并投票</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈萨克斯坦影响有限，但欧盟预算与防务强化可能间接影响哈欧经济合作与矿产贸易格局，哈方需关注欧盟资源战略调整。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/waibuchanghuiribenwaizhongshi-51a59124/" target="_blank">外交部长会见日本外务省中亚事务特别代表</a></h3>
+<div class="item-meta">哈通社中文版 · 11/24 23:17<span class="source-link"><a href="https://cn.inform.kz/news/waibuchanghuiribenwaizhongshi-51a59124/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦外交部长会见日本外务省中亚事务特别代表，双方讨论落实托卡耶夫总统2025年12月访日期间达成的协议，以及在“中亚+日本”机制框架下发展经贸与投资合作的前景，并重申进一步加强战略伙伴关系。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：外交部长会见日本外务省中亚事务特别代表
+
+正文：会谈中，双方讨论了哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫于2025年12月对日本进行正式访问期间所达成协议的落实情况，以及在“中亚+日本”机制框架下发展经贸与投资合作及互动的前景。
+此外，双方重申了进一步加强两国强化战略伙伴关系的意愿。
+图片：外交部</div>
+<ul>
+<li>讨论托卡耶夫2025年12月访日协议落实情况</li>
+<li>聚焦“中亚+日本”机制下经贸与投资合作</li>
+<li>双方重申强化战略伙伴关系意愿</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此会谈有助于深化哈日经贸与投资合作，推动“中亚+日本”机制务实发展，增强哈国在地区外交中的平衡作用，对矿产领域合作可能产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/shiwen-94cb2e7e/" target="_blank">哈萨克斯坦驻西安总领事访问宝鸡市</a></h3>
+<div class="item-meta">哈通社中文版 · 11/24 21:46<span class="source-link"><a href="https://cn.inform.kz/news/shiwen-94cb2e7e/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦驻西安总领事克拉巴耶夫·佐齐汗访问宝鸡市，与市长牛恺会晤，双方探讨区域合作。总领事提议在哈相关城市与宝鸡市建立商务伙伴关系，并举办经贸推介座谈会，介绍托卡耶夫总统国情咨文及“人民建设”计划下的阿拉套市开发、道路基建、交通物流、建材生产和农工综合体等项目。中国企业代表表达赴哈考察意愿。总领事还参观了宝鸡综合保税区、吉利汽车工厂、宝钛集团等。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">访问期间，总领事与宝鸡市市长牛恺举行会晤，双方就区域间合作的现状及发展前景进行了深入交流。牛恺代表宝鸡市委、市政府对外国驻陕川总领事一行的到访表示热烈欢迎，并简要介绍了宝鸡市的经济社会发展情况。他指出，宝鸡历史文化悠久、产业基础坚实、区位优势明显。
+克拉巴耶夫·佐齐汗总领事强调了在深化哈中区域合作关系中建立直接对口联系的重要性。鉴于宝鸡市在钛及钛制品生产领域的核心地位及机械制造潜力，总领事在会谈中提出，希望在哈萨克斯坦相关城市与宝鸡市之间建立商务伙伴关系。
+访问框架内，代表团还组织举办了经贸交流合作推介座谈会。来自陕西省政府、宝鸡市政府、企业界及专家协会的代表共同参会。会上，总领事介绍了哈萨克斯坦总统托卡耶夫致哈萨克斯坦人民的国情咨文《新历史阶段哈萨克斯坦面临的紧迫任务》的主要方向。
+参会的中国企业代表借此机会深入了解了哈萨克斯坦的投资机遇与经济优先发展方向。部分已在哈开展业务的先行企业代表分享了实战经验。在交流讨论环节，各方对在“人民建设”计划框架内开发阿拉套市（Alatau）、推进道路基础设施现代化、提升交通物流潜力、发展建筑材料生产以及农工综合体等项目表现出浓厚兴趣。多家企业代表明确表示，已准备好专门组团赴哈萨克斯坦进行工作访问，以实地考察建筑工地及投资项目。
+在宝鸡访问期间，总领事一行还实地参观考察了宝鸡综合保税区、吉利汽车宝鸡工厂、宝钛集团、陕西西凤酒股份有限公司以及宝鸡青铜器博物院，深入了解了宝鸡的产业布局与历史文化底蕴。</div>
+<ul>
+<li>总领事与宝鸡市长牛恺会晤，探讨区域合作前景</li>
+<li>总领事提议哈城市与宝鸡建立商务伙伴关系</li>
+<li>举办经贸座谈会，推介哈投资机遇与“人民建设”计划</li>
+<li>中企对阿拉套市开发、基建、物流等项目兴趣浓厚</li>
+<li>总领事参观宝鸡综保区、吉利工厂、宝钛集团等</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此访将促进哈中地方经贸合作，吸引中企参与哈基础设施与矿产加工项目，助力哈经济多元化，并深化双边关系。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/nengbubuchanghuizhongguofanggongshichang-1802ab5a/" target="_blank">能源部部长会见中国南方电网公司董事长</a></h3>
+<div class="item-meta">哈通社中文版 · 11/24 19:52<span class="source-link"><a href="https://cn.inform.kz/news/nengbubuchanghuizhongguofanggongshichang-1802ab5a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦能源部部长会见中国南方电网公司董事长，双方讨论电力领域技术与投资合作前景，涉及高压直流输电、南北输电通道现代化改造、储能系统与智能电网部署，以及利用绿色能源为数据中心供电和阿拉套城能源基础设施规划。双方还探讨了长期培训计划以培养哈国能源专业人才，并同意继续专家级磋商以细化技术方案。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">能源部部长会见中国南方电网公司董事长
+
+会谈中，双方就两国在电力领域开展技术与投资合作的前景进行了讨论。
+
+此外，双方就高压直流（HVDC）输电线路建设领域的经验交流与技术咨询服务进行了探讨，并讨论了在“南北”输电通道现代化改造过程中，实现电网协同管理与调度的可能性。
+
+双方重点关注了储能系统的发展以及“智能电网”（Smart Grid）的部署与应用。会议指出，采用现代储能装置，能够确保日益增长的可再生能源安全接入电力系统，提升系统灵活性，并保障国家能源体系的整体稳定性。
+
+Фото: ҚР Энергетика министрлігі 为落实国家元首关于发展数字经济、培育新增长动力的任务要求，与会各方探讨了如何利用“绿色”能源为数据处理中心（人工智能发展的基础设施）提供电力供应。此外，会议还讨论了可纳入“阿拉套城”（Alatau City）这一新城市能源基础设施规划中的各类现代化解决方案。
+
+此次会谈的重点领域之一，是哈萨克斯坦的人力资本开发及工程专业能力的培养。双方探讨了启动长期培训计划，旨在为哈萨克斯坦能源行业培养专业人才，并提升其专业资质。这些计划包括举办技术研讨会、开展专家交流，以及在公司技术中心提供实习机会。
+
+Фото: ҚР Энергетика министрлігі 根据会谈结果，双方同意在专业技术专家层面继续进行磋商，以详细研究拟议的技术解决方案。</div>
+<ul>
+<li>讨论电力领域技术与投资合作前景</li>
+<li>探讨高压直流输电及南北通道现代化改造</li>
+<li>重点关注储能系统与智能电网部署应用</li>
+<li>探索绿色能源为数据中心供电及阿拉套城规划</li>
+<li>启动长期培训计划培养哈国能源人才</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">深化中哈电力合作，引入中国技术助力哈国电网现代化与新能源消纳，支撑数字经济和“阿拉套城”建设；同时通过人才培养增强哈国能源自主能力，巩固中哈战略伙伴关系。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/jiangkaiding-db0e9078/" target="_blank">哈萨克斯坦或将开通直飞阿尔巴尼亚定期航班</a></h3>
+<div class="item-meta">哈通社中文版 · 11/24 18:40<span class="source-link"><a href="https://cn.inform.kz/news/jiangkaiding-db0e9078/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦民航委员会主席托姆皮耶娃与阿尔巴尼亚民航局官员在ICAO大会期间会谈，讨论开通“地拉那—阿拉木图”和“地拉那—阿斯塔纳”直飞航线。目前两国无定期直航，阿斯塔纳航空正评估可行性。阿方愿加快签署政府间航空运输协定并提供技术支持，哈方积极回应。协定签署将为正式开通商业航班奠定法律基础。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">近日，在加拿大蒙特利尔举行的国际民航组织（ICAO）第七届世界航空运输大会期间，哈萨克斯坦民航委员会主席萨勒塔娜特·托姆皮耶娃与阿尔巴尼亚民航局立法与安全司司长埃德利拉·克拉亚举行工作会谈，就深化双边民航合作前景进行了深入交流。
+据哈民航委员会介绍，目前哈萨克斯坦与阿尔巴尼亚之间尚未开通定期直飞航班，但双方市场对开通“地拉那—阿拉木图”和“地拉那—阿斯塔纳”航线的兴趣正日益浓厚。哈萨克斯坦阿斯塔纳航空（Air Astana）目前也正在评估执飞地拉那直飞航线的可行性。
+会谈中，萨勒塔娜特·托姆皮耶娃强调，哈方高度重视加强与阿尔巴尼亚的友好合作，愿积极拓展两国在航空运输领域的务实互动。
+阿尔巴尼亚方面同样表达了对开通直航的强烈意愿。据悉，地拉那国际机场以及哈萨克斯坦驻当地外交机构均对推进直飞航线落地表现出积极态度。此外，阿尔巴尼亚民航局表示愿加快推动两国政府间航空运输协定的签署进程，并提供必要的技术支持。
+哈方对此予以积极回应，表示愿认真研究阿方拟定的协定草案，并与阿方共同加快文本协调与签署工作。预计该协定的签署将为两国正式开通直飞商业航班奠定坚实的法律与条约基础。
+会谈结束时，双方重申了对进一步深化民航合作、持续推进航线网络拓展磋商的共同意愿。</div>
+<ul>
+<li>哈阿在ICAO大会期间磋商开通地拉那至阿拉木图、阿斯塔纳直航</li>
+<li>目前两国无定期直飞航班，阿斯塔纳航空评估执飞可行性</li>
+<li>阿尔巴尼亚民航局愿加快签署政府间航空运输协定</li>
+<li>哈方积极回应，将加快协定文本协调与签署工作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">开通直航将促进哈阿经贸与旅游往来，拓展哈国航空网络至巴尔干地区，增强外交联系；对矿产格局无直接影响，但便利人员流动或间接助力资源合作。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(4 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/11yue24ri-herenminqing-2cd71f56/" target="_blank">11月24日终盘 美元、欧元、卢布和人民币兑坚戈汇率情况</a></h3>
+<div class="item-meta">哈通社中文版 · 11/24 22:23<span class="source-link"><a href="https://cn.inform.kz/news/11yue24ri-herenminqing-2cd71f56/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>11月24日KASE现货市场交易中，34个成员参与。美元兑坚戈平均报459.43，涨4.34，交易额870,449.37千美元；欧元兑坚戈报503.24，涨4.48，交易额19,609.58千欧元；卢布兑坚戈报5.6090，涨0.0476，交易额2,087,027.22千卢布；人民币兑坚戈报68.9018，涨0.6307，交易额96,102.69千人民币。四种货币兑坚戈均上涨。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 11月24日终盘 美元、欧元、卢布和人民币兑坚戈汇率情况
+正文:
+在本次现货市场交易中，共有34个KASE成员参与。
+根据现货市场交易结果：
+美元兑坚戈（USDKZT_TOM）： 汇率平均报价为 1 : 459.43 坚戈（较前一交易日上涨 4.34 坚戈）。外汇交易总额为 870,449.37 千美元（增加 356,627.57 千美元）。交易过程中，最高报价为 1 : 463.40 坚戈，最低报价为 1 : 455.43 坚戈。
+欧元兑坚戈（EURKZT_TOM）： 汇率平均报价为 1 : 503.24 坚戈（较前一交易日上涨 4.48 坚戈）。外汇交易总额为 19,609.58 千欧元（增加 6,614.53 千欧元）。交易过程中，最高报价为 1 : 507.17 坚戈，最低报价为 1 : 496.49 坚戈。
+卢布兑坚戈（RUBKZT_TOM）： 汇率平均报价为 1 : 5.6090 坚戈（较前一交易日上涨 0.0476 坚戈）。外汇交易总额为 2,087,027.22 千卢布（减少 1,140,436.18 千卢布）。交易过程中，最高报价为 1 : 5.6524 坚戈，最低报价为 1 : 5.5697 坚戈。
+人民币兑坚戈（CNYKZT_TOM）： 汇率平均报价为 1 : 68.9018 坚戈（较前一交易日上涨 0.6307 坚戈）。外汇交易总额为 96,102.69 千人民币（增加 42,546.48 千人民币）。交易过程中，最高报价为 1 : 69.5310 坚戈，最低报价为 1 : 68.3460 坚戈。</div>
+<ul>
+<li>美元兑坚戈涨4.34至459.43，交易额增356,627.57千美元</li>
+<li>欧元兑坚戈涨4.48至503.24，交易额增6,614.53千欧元</li>
+<li>卢布兑坚戈涨0.0476至5.6090，交易额减1,140,436.18千卢布</li>
+<li>人民币兑坚戈涨0.6307至68.9018，交易额增42,546.48千人民币</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈对主要货币全线贬值，可能加大输入性通胀压力，促使央行维持紧缩货币政策；卢布交易额大幅减少反映俄哈贸易支付收缩，人民币交易额上升凸显中哈经贸联系深化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/jinyizhongxiaoyedao-474e2cf4/" target="_blank">哈萨克斯坦拟进一步拓宽中小企业信贷融资渠道</a></h3>
+<div class="item-meta">哈通社中文版 · 11/24 14:14<span class="source-link"><a href="https://cn.inform.kz/news/jinyizhongxiaoyedao-474e2cf4/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统经济事务助理拜巴扎罗夫在阿拉木图主持召开专题会议，金融市场监管和发展署、二级银行及金融家协会负责人参加，讨论落实2026年10月28日国情咨文指示，加大对经济信贷支持，重点提高中小企业信贷可及性。会议审议了实体经济信贷投放、长期银行信贷发展，以及“全民建设”计划融资。金融市场监管和发展署署长阿布勒哈斯莫娃提出减轻银行资本负担、拓宽抵押贷款渠道、延长流动性覆盖率过渡期、扩大银团融资等审慎监管措施。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">日前，哈萨克斯坦总统经济事务助理努尔兰·拜巴扎罗夫在阿拉木图市主持召开专题会议。金融市场监管和发展署领导层、二级银行及哈萨克斯坦金融家协会负责人参加会议，共同探讨推动企业长期信贷业务发展。
+会议期间，与会各方围绕落实国家元首在2026年10月28日国情咨文中提出的加大对经济信贷支持力度的指示展开讨论。重点审议了实体经济信贷投放、发展长期银行信贷业务，以及提高各类市场主体，特别是中小企业信贷资源可及性等问题。
+拜巴扎罗夫指出，当前的主要任务是制定切实有效的解决方案，推动二级银行在未来几年进一步扩大对经济的长期融资规模。
+会议还特别关注“全民建设”计划的实施，以及银行在基础设施项目融资、向本土企业提供长期贷款等方面发挥的作用。通过长期贷款，支持企业扩大建材、设备及其他产品生产，为该计划的实施提供保障。
+为扩大企业信贷规模，有关方面计划采取一系列审慎监管和金融措施。金融市场监管和发展署署长玛蒂娜·阿布勒哈斯莫娃介绍了其中的主要举措，包括减轻银行资本负担、拓宽企业以现有抵押物获取贷款的渠道、延长流动性覆盖率和净稳定资金比率最低要求的过渡期限，以及扩大银团融资规模等。
+会上，二级银行和哈萨克斯坦金融家协会负责人就完善经济融资机制、扩大对企业的信贷投放提出了具体建议。与会各方特别关注提高现有国家创业扶持措施的实施成效，以及完善银行与“巴伊铁列克”国家控股公司之间的协作机制。
+与会人员还讨论了拓宽银行稳定资金来源、发展外币信贷和项目融资等问题。
+会议结束时，相关部门接到制定具体落实措施的任务，旨在进一步激发银行信贷活力，提高企业融资可及性，增强国家扶持政策的实施成效。</div>
+<ul>
+<li>总统助理主持召开会议，推动企业长期信贷发展</li>
+<li>落实2026年10月28日国情咨文，加大经济信贷支持</li>
+<li>重点提高中小企业信贷资源可及性</li>
+<li>计划减轻银行资本负担、拓宽抵押贷款渠道</li>
+<li>关注“全民建设”计划及银行基础设施融资作用</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上，拓宽中小企业融资渠道有助于刺激实体经济、支持“全民建设”计划；政治上，落实总统国情咨文指示，强化国家经济治理；外交上，吸引外资和项目融资或增强对外合作；矿产格局短期影响有限，但长期信贷支持本土企业生产或间接利好建材、设备等关联产业。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/xinggong23riyuzhuyaowaizhijiande-1832a30a/" target="_blank">央行公布23日坚戈与主要外币之间的汇率标准</a></h3>
+<div class="item-meta">哈通社中文版 · 11/24 13:35<span class="source-link"><a href="https://cn.inform.kz/news/xinggong23riyuzhuyaowaizhijiande-1832a30a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行公布2026年11月24日坚戈与主要外币汇率：美元兑坚戈1:455.12，欧元兑坚戈1:498.99，俄罗斯卢布兑坚戈1:5.55，土耳其里拉兑坚戈1:8.99，中国元兑坚戈1:68.29。央行规定，坚戈兑美元官方汇率基于阿斯塔纳时间15:30证券交易所加权平均汇率确定，其他外币汇率依据16:00交叉汇率计算。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 央行公布23日坚戈与主要外币之间的汇率标准
+正文:
+根据央行公布的信息，2026年11月24日，哈萨克斯坦坚戈与国际主要货币之间的兑换汇率标准如下：
+美元兑坚戈（USD/KZT） – 1：455.12
+欧元兑坚戈（EUR/KZT）- 1：498.99
+俄罗斯卢布兑坚戈（RUB / KZT）-1: 5.55
+土耳其里拉兑坚戈（TRY / KZT）- 1: 8.99
+中国元兑坚戈（CNY / KZT）- 1：68.29
+值得一提的是，根据哈萨克斯坦国家银行规定，截至阿斯塔纳时间当日15:30，在哈萨克斯坦证券交易所形成的坚戈兑美元加权平均汇率，将被确定为下一工作日坚戈兑美元官方汇率；坚戈兑其他外币的官方汇率，则依据截至阿斯塔纳时间16:00形成的交叉汇率计算得出。</div>
+<ul>
+<li>美元兑坚戈汇率为1:455.12</li>
+<li>欧元兑坚戈汇率为1:498.99</li>
+<li>卢布兑坚戈汇率为1:5.55</li>
+<li>人民币兑坚戈汇率为1:68.29</li>
+<li>官方汇率基于交易所加权平均和交叉汇率计算</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率数据反映坚戈对主要货币的稳定态势，有助于稳定市场预期和外贸结算；央行汇率形成机制透明，增强政策可信度，对矿产出口和外资环境有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/yuguoguoyongbu-0e0ac795/" target="_blank">惠誉确认“萨姆鲁克-卡泽纳”与哈国铁国际信用评级维持不变</a></h3>
+<div class="item-meta">哈通社中文版 · 11/24 13:13<span class="source-link"><a href="https://cn.inform.kz/news/yuguoguoyongbu-0e0ac795/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>惠誉确认“萨姆鲁克-卡泽纳”基金评级与哈萨克斯坦主权信用评级一致，国家提供特殊支持的可能性几乎可以确定；哈萨克斯坦国家铁路公司评级低一个子级，独立信用状况为“bb-”，国家支持可能性极高。此前，两家机构董事会主席等涉嫌腐败人员于11月11日被拘留。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">惠誉确认“萨姆鲁克-卡泽纳”与哈国铁国际信用评级维持不变
+
+惠誉的评估结果一如既往地基于国家向这两家机构提供支持的可能性较高。
+
+“‘萨姆鲁克-卡泽纳’的评级与哈萨克斯坦主权信用评级保持一致，这是因为惠誉认为国家向该基金提供特殊支持的可能性几乎可以确定（Virtually Certain）。这主要得益于国家作为该基金的唯一股东、直接任命其管理层，并将该基金作为落实国家战略任务的重要工具。”公告称。
+
+哈萨克斯坦国家铁路公司的评级较“萨姆鲁克-卡泽纳”低一个子级，反映出国家向其提供支持的可能性极高，同时也体现了该公司独立信用状况为“bb-”。哈萨克斯坦国家铁路公司通过“萨姆鲁克-卡泽纳”基金由国家全资持有，并履行国家铁路运营商的职能。
+
+据此前报道，“萨姆鲁克-卡泽纳”股份公司董事会主席努尔兰·贾克波夫、哈萨克斯坦国家铁路公司董事会主席耶勒扎斯·沃滕舍耶夫，以及其他涉嫌腐败犯罪的人员已于11月11日被拘留。</div>
+<ul>
+<li>惠誉维持萨姆鲁克-卡泽纳评级与哈主权评级一致</li>
+<li>国家支持可能性几乎确定，因国家是唯一股东</li>
+<li>哈国铁评级低一个子级，独立信用状况bb-</li>
+<li>两家机构董事会主席等涉腐人员11月11日被拘留</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">评级维持短期稳定市场信心，但腐败拘留事件或削弱治理信誉，增加主权关联机构风险溢价，影响外资对哈国企信任及矿产能源领域合作预期。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/v-irake-proveryayut-prichastnost-chinovnikov-k-nezakonnomu-vivozu-nefti-5a485bcf" target="_blank">伊拉克调查官员涉嫌非法出口石油</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/25 06:09<span class="source-link"><a href="https://www.inform.kz/ru/v-irake-proveryayut-prichastnost-chinovnikov-k-nezakonnomu-vivozu-nefti-5a485bcf" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>伊拉克调查官员参与非法石油出口，免去边境口岸委员会主席、基尔库克安全负责人等职务，停职石油公司总经理及工业部官员。总理下令将库尔德斯坦边境口岸交由联邦委员会控制，石油出口须经联邦石油部，关闭非官方过境点，并计划安装电子计量表和数字监测系统。此前石油部长报告NOC油田违规，伊拉克计划将产量提高至每日1000万桶。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">伊拉克正在调查官员参与非法出口石油的行为。
+
+边境口岸委员会主席、基尔库克行动指挥部和警察负责人以及能源警察高级官员被免职。
+
+石油公司总经理及其副手，以及工业与矿产资源部两个部门负责人被停职，直至联邦反腐败委员会完成调查。
+
+为制止非法石油出口，总理下令将伊拉克库尔德斯坦的所有边境口岸移交给联邦委员会控制。石油和石油产品的出口必须仅通过联邦石油部进行。安全部队被要求关闭所有非官方边境过境点。
+
+此外，当局计划为该國所有运营中的油井配备电子计量表，并引入管道数字监测系统。
+
+近期，伊拉克加强了对石油走私的打击，以防止国家资金损失。此前，该国石油部长报告了NOC油田的违规行为以及其他地区非法出口原油的情况。
+
+早前有报道称，伊拉克计划将石油产量提高至每天1000万桶。</div>
+<ul>
+<li>伊拉克调查官员非法出口石油，多名安全与能源官员被免职或停职。</li>
+<li>总理下令库尔德斯坦边境口岸由联邦控制，石油出口须经联邦石油部。</li>
+<li>关闭非官方过境点，油井安装电子计量表，引入管道数字监测系统。</li>
+<li>伊拉克加强打击石油走私，此前石油部长报告NOC油田违规。</li>
+<li>伊拉克计划将石油产量提高至每日1000万桶。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此事件强化伊拉克联邦政府对库尔德斯坦边境与石油出口的控制，打击走私与腐败，增加中央财政收入；但可能加剧中央与库尔德地区紧张，影响外资石油公司运营，并重塑地区石油出口格局。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/guo23rixia-0d815629/" target="_blank">国际油价23日显著下跌</a></h3>
+<div class="item-meta">哈通社中文版 · 11/24 10:33<span class="source-link"><a href="https://cn.inform.kz/news/guo23rixia-0d815629/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2023年11月23日国际油价显著下跌。纽约商品交易所1月交货的轻质原油期货价格下跌3.24美元，收于每桶80.17美元，跌幅3.88%；伦敦布伦特原油期货价格下跌3.20美元，收于每桶89.37美元，跌幅3.46%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">国际油价23日显著下跌
+
+截至当天收盘，纽约商品交易所1月交货的轻质原油期货价格下跌3.24美元，收于每桶80.17美元，跌幅为3.88%；1月交货的伦敦布伦特原油期货价格下跌3.20美元，收于每桶89.37美元，跌幅为3.46%。</div>
+<ul>
+<li>国际油价23日大幅下跌，WTI跌3.88%，布伦特跌3.46%。</li>
+<li>WTI 1月合约收于80.17美元/桶，布伦特收于89.37美元/桶。</li>
+<li>两大基准油价单日跌幅均超3%，市场波动显著。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈萨克斯坦经济影响显著：油价下跌将减少石油出口收入，加大财政压力，可能迫使政府调整预算或增加借贷；外交上或需加强与OPEC+协调以稳定油价；矿产格局中石油行业投资可能放缓，但非石油矿产吸引力相对上升。</span></div>
+</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-11-25 09:03</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
