@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年11月27日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年11月27日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年11月26日早9:00至2026年11月27日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 19 条</span><span class="stat-chip">3 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">5</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">9</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">5</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">0</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(5 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/prezident-kazahstana-zayavil-o-neobhodimosti-borbi-s-ispolzovaniem-ii-v-prestupn-25c96f9b" target="_blank">哈萨克斯坦总统表示必须打击利用人工智能犯罪</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/27 01:58<span class="source-link"><a href="https://www.inform.kz/ru/prezident-kazahstana-zayavil-o-neobhodimosti-borbi-s-ispolzovaniem-ii-v-prestupn-25c96f9b" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>11月6日，根据约旦国王倡议，阿卡巴进程峰会在阿斯塔纳举行，讨论人工智能安全。哈萨克斯坦总统托卡耶夫强调AI被用于数字诈骗、虚假信息、非法使用个人数据和攻击基础设施，呼吁协调打击。他提出联合倡议应惠及公民和企业，并高度评价与俄罗斯的战略伙伴关系，祝贺普京在中国峰会成果。俄罗斯总统普京和储蓄银行董事会主席格列夫也发言。11月26日，托卡耶夫与普京在克里姆林宫会晤，讨论经贸、投资及能源、工业、农业、交通物流合作。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦总统表示必须打击利用人工智能从事犯罪活动
+
+——遗憾的是，人工智能被用于数字诈骗、传播虚假信息、非法使用个人数据、攻击民用基础设施。11月6日，根据约旦国王阿卜杜拉二世的倡议，阿卡巴进程峰会在阿斯塔纳举行。会议讨论了人工智能领域的安全问题。过去的讨论确认了协调一致打击利用新技术从事犯罪活动的必要性，——卡瑟姆-若马尔特·托卡耶夫强调。
+
+图片：阿克奥尔达 哈萨克斯坦总统表示，他提出的所有建议都旨在使各国之间的信任资本在富有成效的高科技合作中通过新成就不断增长。
+
+——联合倡议应为我们各国的公民、公司和企业带来切实成果。我相信，我们能够在相互尊重和支持的氛围中体面地解决这一任务。最后，我想再次强调，哈萨克斯坦高度评价与俄罗斯的战略伙伴关系和联盟关系。昨天，我就中国峰会成果和伟大国家“三巨头”宣言的通过向俄罗斯总统表达了诚挚的祝贺。在如此复杂的地缘政治条件下，承认俄罗斯正是这样的质量和地位，这是其领导人——弗拉基米尔·弗拉基米罗维奇·普京总统——活动的结果。正如东方智慧所言，与铁的事实争论——就是白白浪费时间，——国家元首总结道。
+
+全体会议期间，俄罗斯总统弗拉基米尔·普京和PAO“储蓄银行”董事会主席格尔曼·格列夫也发表了讲话。
+
+图片：阿克奥尔达 随后，卡瑟姆-若马尔特·托卡耶夫和弗拉基米尔·普京观看了由机器人尤尼和鲍里斯·艾夫曼芭蕾舞剧院演员参与的视频秀。
+
+图片：阿克奥尔达 回顾，11月26日在克里姆林宫举行了卡瑟姆-若马尔特·托卡耶夫和弗拉基米尔·普京的会晤。
+
+在克里姆林宫的会晤中，两国元首讨论了进一步发展贸易经济和投资合作，以及在能源、工业、农业、交通和物流领域实施联合项目的问题。
+
+此外，卡瑟姆-若马尔特·托卡耶夫和弗拉基米尔·普京...（文本截断）</div>
+<ul>
+<li>阿卡巴进程峰会11月6日在阿斯塔纳举行，聚焦AI安全</li>
+<li>托卡耶夫呼吁协调打击AI犯罪，保护公民数据</li>
+<li>托卡耶夫高度评价俄哈战略伙伴关系，祝贺普京</li>
+<li>普京和格列夫在全体会议发言，展示机器人视频秀</li>
+<li>11月26日托卡耶夫与普京在克里姆林宫会晤谈合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">峰会将阿斯塔纳定位为AI安全对话平台，提升哈国国际形象；强化与俄战略联盟，有利于能源和交通物流合作；但AI犯罪治理需平衡技术发展与安全，对矿产等关键领域数字化提出新要求。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/jiangguojiawaiguo-cfa955b9/" target="_blank">哈萨克斯坦将限制国家采购外国食品</a></h3>
+<div class="item-meta">哈通社中文版 · 11/26 23:17<span class="source-link"><a href="https://cn.inform.kz/news/jiangguojiawaiguo-cfa955b9/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦出台决议限制国家采购外国食品：国内已生产的食品禁止采购国外替代品，国内不生产的食品允许从国外采购。只有列入哈萨克斯坦商品生产商名录的个人和法人实体才有资格参与国家采购。农业部须与“阿塔梅肯”企业家协会协调，在决议通过之日起10日内批准拟从“国家制度”中排除的商品清单并提交给公共采购授权机构。决议于12月6日生效，有效期两年，旨在维护宪法秩序、确保国防和国家安全、维护国内市场、发展国民经济并扶持国内生产商。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">根据该文件，对于哈萨克斯坦国内已生产的食品，若要采购其国外替代品，将受到限制；与此同时，对于哈萨克斯坦国内不生产的食品，则允许从国外采购。
+据了解，只有列入哈萨克斯坦商品生产商名录的个人和法人实体才有资格参与国家采购。
+根据决议，农业部须与“阿塔梅肯”企业家协会协调，在决议通过之日起10日内，批准一份拟从“国家制度”中排除的商品清单（包括其各自的编码），并将该清单提交给公共采购授权机构。
+据悉，该决议将于12月6日生效，有效期为两年。
+该文件的通过旨在维护宪法秩序的基础，确保国家国防和国家安全，维护国内市场，发展国民经济，并扶持国内生产商。</div>
+<ul>
+<li>限制国内已生产食品的国外替代品采购</li>
+<li>国内不生产食品允许从国外采购</li>
+<li>仅名录内生产商可参与国家采购</li>
+<li>农业部10日内批准排除商品清单</li>
+<li>决议12月6日生效，有效期两年</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该决议通过限制外国食品采购扶持国内生产商，有利于维护国内市场和国家经济安全，但可能引发贸易伙伴关注，对食品进口格局产生一定影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/waiguogongminchushiding-50185508/" target="_blank">哈萨克斯坦修订外国公民强制驱逐出境及临时羁押规定</a></h3>
+<div class="item-meta">哈通社中文版 · 11/26 17:49<span class="source-link"><a href="https://cn.inform.kz/news/waiguogongminchushiding-50185508/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦修订外国公民强制驱逐出境及临时羁押规定。驱逐出境由国家安全机关和内务机关执行，原则上通过铁路运输，费用由当事人、邀请人或雇主承担，无力支付时由国家预算垫付后追偿。临时羁押须经法院批准，期限最长不超过30昼夜，收容场所实行24小时值班、男女分押、传染病患者隔离，并须通知近亲属及总检察院、外交部、国家安全委员会和内务部。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">根据新规，对外国公民或无国籍人员作出的驱逐出境处罚，由哈萨克斯坦国家安全机关和内务机关负责执行。
+如果外国公民未在法院规定的期限内自行离开哈萨克斯坦境内，将在其主刑执行完毕后，依据已经生效的法院裁决对其实施强制驱逐出境。
+内务机关收到主刑执行完毕的通知后，须组织实施驱逐出境，具体包括确定行进路线和出境口岸、购买交通票据，并将即将实施的驱逐措施通报国家安全委员会边防局。
+驱逐外国人出境原则上通过铁路运输方式进行；没有铁路交通条件的，可以使用航空、公路或水路交通工具。如果当事人所在居民点设有国境口岸，可由工作人员驾车或步行将其送至边境。
+当事人越过国境线后，内务机关和边防局的工作人员将共同签署外国人驱逐出境执行文书。
+驱逐出境所产生的费用，由外国公民本人、邀请其来哈的自然人或法人，或者在其非法居留期间雇用其工作的雇主承担。如果上述人员无力支付，相关费用将由国家预算先行垫付，之后通过司法途径追偿。
+该文件还专门规定了将待驱逐出境的外国人安置在内务机关专门收容场所的程序。
+具体而言，限制人员行动自由的预防性措施须经法院批准，可将当事人临时安置在专门机构内，期限最长不超过30昼夜。
+将外国公民送入专门收容场所时，工作人员须核查是否具备法院批准文件、个人搜查笔录以及身份证明文件。
+负责羁押的国家机关须立即将相关情况通知被羁押人员的近亲属，以及总检察院、外交部、国家安全委员会和内务部。
+专门收容场所实行24小时值班制度，并按照规定标准提供餐食。男性和女性分别安置；患有传染性肺结核、性病及其他传染性疾病的人员，则与其他被羁押人员隔离安置。
+外国公民只有在法院驱逐出境裁决得到执行，或者限制行动自由的预防性措施期限届满后，才能从专门收容场所释放。</div>
+<ul>
+<li>驱逐出境由国安机关和内务机关负责执行</li>
+<li>原则上铁路运输，无铁路条件可用航空、公路或水路</li>
+<li>驱逐费用由当事人、邀请人或雇主承担，国家可垫付追偿</li>
+<li>临时羁押须法院批准，期限最长不超过30昼夜</li>
+<li>收容场所24小时值班，男女分押，传染病患者隔离</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该修订强化了哈国对非法居留外国人的管控与执法程序，明确费用追偿机制减轻财政负担，规范羁押保障人权，有助于维护国家安全和社会秩序，对矿产等外资领域的人员管理形成更严格的法律约束。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/weiquanmin65-6e287abb/" target="_blank">哈萨克斯坦计划为“全民建设”规划拨款6.5万亿坚戈</a></h3>
+<div class="item-meta">哈通社中文版 · 11/26 16:13<span class="source-link"><a href="https://cn.inform.kz/news/weiquanmin65-6e287abb/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦政府总理别克帖诺夫宣布，为落实托卡耶夫总统国情咨文中的基础设施现代化战略，计划在2029年底前从国家基金拨付约6.5万亿坚戈用于“全民建设”规划，并将2027年定为“全民大规模建设年”。政府将完善投资吸引体系，依托“巴伊铁列克”控股公司统一协调投资者对接，将“哈萨克投资”国家公司划归其下并设立统一服务窗口，同时外交部继续吸引外国企业。会议还关注投资者法律保护，包括在阿拉套市设立投资法院。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">政府总理沃勒扎斯·别克帖诺夫强调了与外国投资者加强合作的重要性，特别是在落实国家元首提出的基础设施现代化战略任务方面。
+“国家元首哈斯穆-卓玛尔特·托卡耶夫在近期发表的国情咨文中，明确了大规模更新国家基础设施的战略方向。在此背景下，覆盖全国各地区的‘全民建设’规划具有特殊意义。将2027年宣布为‘全民大规模建设年’，也具有重要的象征意义。为实现既定目标，计划在2029年底前从国家基金拨付约6.5万亿坚戈。正在实施的项目，其意义和规模远不止于建设个别设施，更重要的是为哈萨克斯坦未来数十年的可持续经济发展奠定新的基础。同时，落实这些大规模任务也将为国际合作伙伴带来广阔机遇。”别克帖诺夫指出。
+会议指出，哈萨克斯坦有意引进先进工程技术方案、采用现代建筑标准和高效管理经验，同时希望在出口潜力较大的建筑材料、设备及零部件领域开展联合生产。
+为落实托卡耶夫总统指示，政府正在完善投资吸引和项目服务保障体系。具体措施包括依托“巴伊铁列克”国家投资控股公司，统一协调与投资者的对接工作；将“哈萨克投资”国家公司（Kazakh Invest）划归该控股公司，并设立统一服务窗口。此举旨在为投资项目提供全流程综合服务，并帮助投资者获得融资渠道。与此同时，外交部将继续积极开展吸引外国企业的工作。
+会议还特别关注投资者的法律保护问题，其中包括国家元首提出的借鉴国际先进经验、在阿拉套市设立投资法院的倡议。</div>
+<ul>
+<li>2029年底前从国家基金拨付约6.5万亿坚戈用于“全民建设”规划</li>
+<li>2027年被宣布为“全民大规模建设年”</li>
+<li>依托“巴伊铁列克”控股公司统一协调投资者对接</li>
+<li>“哈萨克投资”国家公司划归控股公司并设统一服务窗口</li>
+<li>计划在阿拉套市设立投资法院以保护投资者</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该规划将推动哈国基础设施现代化，促进经济可持续增长，吸引外资和技术，改善营商环境；设立投资法院增强法律保障，提升外交合作，但需关注矿产等资源领域投资格局变化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/guojialiwenhuichengren-7775232d/" target="_blank">托卡耶夫签署总统令 批准国家治理改革问题委员会组成人员</a></h3>
+<div class="item-meta">哈通社中文版 · 11/26 13:40<span class="source-link"><a href="https://cn.inform.kz/news/guojialiwenhuichengren-7775232d/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫签署总统令，批准国家治理改革问题委员会组成人员。该委员会旨在明确国家治理体系改革方向与路径，审议制定《国家治理改革综合计划》的系统性建议。战略规划与改革署为工作机构，成员包括国家机关负责人、库鲁尔泰议员及人民理事会成员，相关代表可受邀参会。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：托卡耶夫签署总统令 批准国家治理改革问题委员会组成人员
+正文：设立国家治理改革问题委员会旨在明确国家治理体系改革的方向与路径，并审议制定《哈萨克斯坦共和国国家治理改革综合计划》的系统性建议。
+哈萨克斯坦战略规划与改革署被确定为该委员会的工作机构。
+国家机关负责人、库鲁尔泰（议会）议员以及哈萨克斯坦人民理事会成员入选委员会组成人员。
+相关中央国家机关、地方执行机构及其他组织的代表可根据需要受邀参加委员会会议。</div>
+<ul>
+<li>托卡耶夫签署总统令批准委员会组成</li>
+<li>委员会旨在明确治理改革方向与路径</li>
+<li>战略规划与改革署确定为工作机构</li>
+<li>成员含官员、议员和人民理事会成员</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该委员会将系统推进国家治理改革，强化总统主导的改革议程，提升行政效率；经济上为综合计划制定提供制度保障，外交上展现治理现代化形象，矿产格局短期无直接影响。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(9 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/kazahstan-rassmatrivaet-vozmozhnost-eksporta-zelenoy-elektroenergii-vevropu-cher-b155f6f1" target="_blank">哈萨克斯坦考虑通过阿塞拜疆向欧洲出口“绿色”电力</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/27 05:00<span class="source-link"><a href="https://www.inform.kz/ru/kazahstan-rassmatrivaet-vozmozhnost-eksporta-zelenoy-elektroenergii-vevropu-cher-b155f6f1" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦正考虑经阿塞拜疆向欧洲出口绿色电力，并与乌兹别克斯坦合作推进跨里海电缆项目。2026年10月15日，哈阿总统出席阿克套-苏姆盖特海底光纤线路开通，容量超400太比特/秒。同日两国签署中间走廊政府间协议，2020-2025年货运量增长五倍。哈在巴库造船厂订购两艘船，2027年交付。2025年哈占阿粮食进口55%以上。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据外交官称，哈萨克斯坦和乌兹别克斯坦正共同推进跨里海电缆铺设项目。预计该项目将允许将中亚生产的电力通过阿塞拜疆领土输送至欧洲市场。阿利姆·巴伊耶尔称这一倡议是区域合作的前景方向，并指出它可能成为继数字电缆之后跨里海的第二个大型基础设施项目。
+第一个此类项目已经实施。2026年10月15日，哈萨克斯坦和阿塞拜疆总统出席了阿克套与苏姆盖特之间海底光纤通信线路的开通仪式。其传输容量超过每秒400太比特。据阿利姆·巴伊耶尔称，该线路为发展跨境数字服务、引入人工智能和扩大两国技术合作创造了额外机会。他称其为跨里海首个成功实施的基础设施项目。
+另一个关键方向仍然是发展中间走廊。2026年10月15日，哈萨克斯坦和阿塞拜疆签署了关于运输路线领域合作的政府间协议。文件规定进一步协调走廊工作，并开放供其他感兴趣国家加入，包括格鲁吉亚和土耳其。
+该协议的新意在于，它提升了走廊的地位，将其提升至政府间水平。
+据大使称，2020-2025年间，该路线的货运量增长了五倍。同时，为进一步增长运输量，需要扩大港口能力和船队，加快货物处理和发展电子文件流转。特别是哈萨克斯坦已在巴库造船厂订购了两艘船舶。预计于2027年交付。
+——我们必须从传统贸易转向建立合资企业，——阿利姆·巴伊耶尔强调。
+可持续方向之一仍然是供应哈萨克斯坦农产品。2025年，哈萨克斯坦占阿塞拜疆粮食进口的55%以上。共和国还成为阿塞拜疆市场的最大小麦供应国。为支持……（原文截断）</div>
+<ul>
+<li>哈乌合作推进跨里海电缆项目，拟经阿塞拜疆向欧洲出口绿色电力</li>
+<li>2026年10月15日阿克套-苏姆盖特海底光纤开通，容量超400太比特/秒</li>
+<li>哈阿签署中间走廊政府间协议，2020-2025年货运量增长五倍</li>
+<li>哈在巴库造船厂订购两艘船，预计2027年交付</li>
+<li>2025年哈占阿塞拜疆粮食进口55%以上，为最大小麦供应国</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">推动哈国绿色电力出口多元化，强化跨里海通道战略地位，促进区域经济与数字合作，但需扩大港口和船队能力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/yuhuirengongnengnian-e3c7e93a/" target="_blank">托卡耶夫与普京会见人工智能领域青年英才</a></h3>
+<div class="item-meta">哈通社中文版 · 11/27 02:57<span class="source-link"><a href="https://cn.inform.kz/news/yuhuirengongnengnian-e3c7e93a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与俄罗斯总统普京共同会见在国际人工智能奥林匹克竞赛中获奖的青少年。托卡耶夫祝贺来自哈萨克斯坦、俄罗斯和印度的青年才俊，强调今年为“数字化与人工智能年”，已通过相关法律法规构建监管框架，并将数字化和人工智能列为优先战略目标。他呼吁哈俄公民紧密合作，并承诺为年轻一代创造优质教育条件，助力国家发展、繁荣与安全。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">哈萨克斯坦总统向在国际人工智能奥林匹克竞赛中获奖的青少年们表示祝贺，并提到他们有机会参与这一独特的论坛。他认为，这是一个向全世界——包括各国元首——展示自身才华的绝佳契机。
+
+- 为有才华的年轻人创造条件，使其能够磨练专业技能，这是老一辈的职责所在。事实上，这是一项具有国家重要意义的任务。我们将竭尽所能，确保你们能够畅通无阻地获得优质教育，并使你们能够在当今这个复杂的世界中，为我们国家的发展、繁荣与安全做出贡献。-他说。
+
+Фото: Ақорда 国家元首指出，人工智能的发展将进一步加速，从而对全球发展产生重大影响。
+
+- 作为哈萨克斯坦总统，我将数字化和人工智能视为一项优先战略目标。众所周知，为此，我国将今年定为“数字化与人工智能年”。这并非意味着相关工作明年就会停止。恰恰相反，它表明我们在这一领域今年已迈出了重大而迅速的步伐。我们已经通过了相关法律法规，为人工智能的发展构建了法律与监管框架。当然，我们尚未达到最终目标。在我看来，人工智能的蓬勃发展为政府提出了新的任务。我们正不懈努力，旨在为年轻一代——那些尚未满二十岁的年轻人——创造一个繁荣的未来。你们的人生之路尚在前方，未来的面貌将由你们亲手塑造。我呼吁哈萨克斯坦公民与我们的俄罗斯朋友及伙伴紧密合作，在文明进步的道路上携手前行。-总统说。
+
+随后，国家元首与青年代表之间展开了问答形式的对话。在校学生们不仅回应了总统们的问题，还有机会就人工智能技术在科学、教育、医疗、经济及艺术等领域的应用，分享了自己的想法与见解。
+
+Фото: Ақорда Фото: Ақорда 哈萨克斯坦总统表示，希望与会者对知识的热情始终不减，从而不断攀登新的高峰。
+
+来自哈萨克斯坦、俄罗斯和印度的青年才俊参加了此次会议。</div>
+<ul>
+<li>托卡耶夫与普京会见人工智能竞赛获奖青少年</li>
+<li>哈国将今年定为“数字化与人工智能年”</li>
+<li>已通过AI相关法律法规构建监管框架</li>
+<li>呼吁哈俄公民在文明进步道路上紧密合作</li>
+<li>来自哈萨克斯坦、俄罗斯和印度青年参会</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举强化哈俄在数字领域的合作，提升哈国在AI治理中的国际形象；通过法律框架和青年培养，为经济数字化和矿产等关键行业的技术升级储备人才，同时平衡与俄罗斯及印度等伙伴的外交关系。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://www.inform.kz/ru/posol-kitaya-nazval-chetire-perspektivnih-napravleniya-dlyauchebi-kazahstantsev--3f060b46" target="_blank">中国大使指出哈萨克斯坦学生赴华留学的四个前景方向</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/27 02:25<span class="source-link"><a href="https://www.inform.kz/ru/posol-kitaya-nazval-chetire-perspektivnih-napravleniya-dlyauchebi-kazahstantsev--3f060b46" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>中国驻哈萨克斯坦大使韩春霖在阿斯塔纳的媒体见面会上，为哈萨克斯坦青年推荐了赴华留学的四大优先方向：人工智能、信息技术与数字经济；新能源、矿产开发与材料科学；交通物流、国际运输与跨境贸易；现代农业、生态与环保。他强调这些领域契合双边合作需求与“一带一路”倡议，将创造就业与发展机遇。此前哈方已说明中国政府奖学金新要求。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">今天，在中国驻阿斯塔纳大使馆举行了与媒体代表的见面会。在简报会上，记者们指出，对中国而言，哈萨克斯坦不仅是邻国，也是获得优质教育、发展商业和开拓新合作方向的机会。就此，他们询问了哪些专业对年轻人最具前景。
+据韩春霖表示，在选择职业时，重要的是考虑双边合作前景和劳动力市场需求。首先，他建议关注人工智能、信息技术和数字经济。
+大使强调，中国在这些领域积极发展，而哈萨克斯坦和中国正在扩大技术方向的合作。因此，对合格专业人员的需求将会增长。
+外交官还称新能源、矿产开发和材料科学是另一个有前景的方向。据他所说，这些领域对哈萨克斯坦传统上很重要，同时正成为两国务实合作的关键方向之一。
+韩春霖还指出了交通物流、国际运输和跨境贸易的前景。
+——在高质量共同落实“一带一路”倡议框架内，哈萨克斯坦和中国的互联互通将得到加强。我相信，这反过来将为两国青年在上述领域创造新的就业机会和发展机遇，大使说。
+他还将现代农业、生态和环境保护列为有前景的方向之一。外交官认为，两国在这些领域的合作潜力巨大，而这些领域当今在全球投资和“绿色”发展议程中占据重要地位。
+此前，已向哈萨克斯坦人解释了根据政府间奖学金进入中国高校的新要求。</div>
+<ul>
+<li>中国大使推荐AI、IT与数字经济为赴华留学首选方向</li>
+<li>新能源、矿产开发与材料科学列为传统重要合作领域</li>
+<li>交通物流与跨境贸易受益于“一带一路”互联互通</li>
+<li>现代农业与生态环保合作潜力大，契合绿色议程</li>
+<li>哈方已更新中国政府奖学金入学要求</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该表态引导哈国青年赴华学习重点领域，有助于哈国培养数字经济、绿色能源和物流人才，深化中哈技术与矿产合作，推动“一带一路”框架下互联互通，对哈经济多元化和外交平衡有积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/chuai-journey-2026guorengongnengdahui-9f341a8c/" target="_blank">托卡耶夫总统出席“AI Journey 2026”国际人工智能大会</a></h3>
+<div class="item-meta">哈通社中文版 · 11/27 02:24<span class="source-link"><a href="https://cn.inform.kz/news/chuai-journey-2026guorengongnengdahui-9f341a8c/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫出席俄罗斯“AI Journey 2026”国际人工智能大会，感谢普京邀请并赞扬俄罗斯科技成就。他指出全球AI支出今年将达2.7万亿美元，88%机构已使用AI。哈国将今年定为“数字化与人工智能年”，通过新宪法、AI法案和《数字法典》，90%公共服务线上化，eGov Mobile用户达1300万，电子政务全球排名升至第16位。IT服务出口超10亿美元，Astana Hub累计营收近70亿美元，诞生首家独角兽Higgsfield估值100亿美元。托卡耶夫强调国际科技合作，避免全球科技不平等。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">国家元首感谢弗拉基米尔·普京总统的邀请，使其得以参加此次汇聚了人工智能领域顶尖专家的论坛，并对俄罗斯在科学技术领域所取得的成就给予了积极评价。
+
+- 俄罗斯长期以来以其杰出的学者而闻名，特别是在工程领域，涌现出了众多发明家。米哈伊尔·罗蒙诺索夫、德米特里·门捷列夫、伊万·库利宾、尼古拉·罗巴切夫斯基、安德烈·柯尔莫哥洛夫、亚历山大·波波夫、谢尔盖·科罗廖夫、康斯坦丁·齐奥尔科夫斯基、伊戈尔·库尔恰托夫以及彼得·卡皮察等，都是其中的佼佼者——当然，受限于篇幅与时间，无法在此一一列举。在院士谢尔盖·列别杰夫的领导下，世界上最早的电子计算机之一得以问世。这标志着一种新型技术体系的诞生，具有重要的里程碑意义。-托卡耶夫说。
+
+哈萨克斯坦总统指出，这一崇高传统在当今俄罗斯也得到了很好的延续。
+
+- 根据世界知识产权组织的数据，俄罗斯在独特设计与模型（外观设计）的申请量方面位居全球第二。这一成就对人类发展所具有的深远意义，无论如何强调都不为过。俄罗斯领先科技企业（如 Sber 和 Yandex）所推出的前沿创新成果，定会让每一位关注高科技发展且具备敏锐鉴赏力的人士印象深刻。Yandex 和 Sber 在我们市场上广为人知；事实上，Yandex 还是哈萨克斯坦规模最大的雇主之一。库尔恰托夫研究所（Kurchatov Institute）、斯科尔科沃（Skolkovo）、因诺波利斯（Innopolis）以及技术城（Technopolis）等顶尖机构，充分彰显了俄罗斯创新基础设施的宏大规模。-他说。
+
+Фото: Ақорда 国家元首指出，全面数字化和人工智能应用这一议题对他而言尤为重要，因为该领域已被列为改革计划中的优先事项。
+
+- 在今年7月1日生效的新宪法中，科学与创新的发展被确立为战略优先事项，而教育与进步则被明确为国家的核心价值观。正因如此，本次论坛对于我国而言具有十分重要的意义。这一点也体现在哈萨克斯坦代表团的构成上——代表团成员包括相关政府部门负责人、大型企业代表以及信息技术（IT）界人士，他们都非常希望能与俄罗斯伙伴拓展合作。哈萨克斯坦与俄罗斯之间的友谊植根于数百年的共同历史，两国还拥有紧密的经济纽带和多层面的人文交流。我坚信，在先进技术领域的合作，将成为哈萨克斯坦与俄罗斯战略伙伴关系的关键支柱之一。-他说。
+
+托卡耶夫总统表示，世界正处于一场新的科学技术革命的门槛之上。显而易见，这将引发全球经济、人们的世界观以及整个国家层面的根本性变革。
+
+- 人工智能已不再局限于对特定生产流程或思维过程（现被称为“认知过程”）的自动化，而是成为了技术基础设施不可或缺的一部分。据预计，今年全球在人工智能领域的支出将达到约2.7万亿美元，其中超过1.5万亿美元投入到了数字基础设施的建设中。斯坦福大学的一项研究显示，88%的受访机构表示已在日常运营中使用人工智能——这一比例较两年前的55%有了显著增长。我经常与各大国际科技公司（包括来自俄罗斯的企业）的高管会面并交流看法。最近，我与英伟达（NVIDIA）负责人黄仁勋（Jensen Huang）进行了会晤。由此我深切地认识到，当前正在发生的变革是长期且不可逆转的。-总统说。
+
+托卡耶夫指出，这一技术转型正值地缘政治紧张局势加剧、国家间信任遭到削弱的时期。
+
+- 可以说，世界已呈现出一幅全新的地缘科技版图。能否获取先进解决方案、算力资源以及专业人才，已成为影响一国竞争力和安全的关键因素。如果限制国际科学联系，并将关键技术集中在少数参与其中的主体手中，终将加剧全球科技不平等。我们绝不能任由国与国之间再添一道鸿沟。相反，必须创造有利条件，促进互利共赢的国际科技合作。- 他说。
+
+Фото: Акорда 总统表示，他已将“在尽可能短的时间内将哈萨克斯坦转型为一个全面数字化的国家”确立为一项战略目标。
+
+- 我们将今年定为“数字化与人工智能年”。“数字哈萨克斯坦”（Digital Qazaqstan）国家战略已获批准，相关的人工智能法案及《数字法典》也已通过。由此，数字经济快速发展所需的法律与制度基础得以确立。最重要的是，这一宏大举措得到了全社会的支持，广大公民和企业已从中切实受益。目前，超过90%的公共服务已实现线上办理；全国三分之二的人口——即1300万用户——已在“电子政务移动应用”（eGov Mobile）上注册。根据联合国一周前发布的一项研究，在过去两年里，哈萨克斯坦在全球电子政务发展排名中上升了8位，现已跻身第16名。-托卡耶夫说。
+
+此外，总统还提到了哈萨克斯坦电子金融服务的发展。
+
+- 我国已为科技创业创造了有利条件。去年，国内IT服务出口额超过了10亿美元。旨在为初创企业和科技公司提供支持的“阿斯塔纳枢纽”（Astana Hub）科技园目前运营良好。自2019年以来，在“阿斯塔纳枢纽”注册的企业累计营收已近70亿美元。目前，共有2700家初创企业和公司活跃在“阿斯塔纳枢纽”的生态系统中。此外，首家“独角兽”企业已经诞生，其他企业也正紧随其后。一家名为Higgsfield的初创企业在短短一年内估值便飙升至100亿美元，且其市值仍在稳步增长。该企业由两名才华横溢的哈萨克斯坦年轻人创立。我已提出要构建一个“以人为本的数字经济”。互联网应当服务于那些希望从事正当商业活动并创造收入的人们。换言之，互联网不应成为“垃圾桶”，而应成为一个孕育建设性创造力与高效劳动成</div>
+<ul>
+<li>托卡耶夫出席俄AI大会，感谢普京邀请并赞俄科技传统</li>
+<li>全球AI年支出达2.7万亿美元，88%机构已日常使用AI</li>
+<li>哈国通过新宪法和数字法典，90%公共服务线上化</li>
+<li>eGov Mobile注册用户1300万，电子政务全球排名第16</li>
+<li>Astana Hub累计营收近70亿美元，诞生独角兽Higgsfield</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国而言，此举强化与俄科技合作，推动数字经济法律基础建设，提升电子政务和IT出口竞争力；在地缘科技竞争加剧背景下，哈国寻求多元合作以缩小技术鸿沟，但需平衡与俄及西方关系，矿产等关键领域或受益于数字技术应用。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/buchanghuizhengli-d5e72456/" target="_blank">交通部长会见俄罗斯联邦政府副总理</a></h3>
+<div class="item-meta">哈通社中文版 · 11/27 01:19<span class="source-link"><a href="https://cn.inform.kz/news/buchanghuizhengli-d5e72456/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦交通部长会见俄罗斯联邦政府副总理，讨论交通与物流合作。双方重点关注提升货运量（今年前10个月铁路货运量达8050万吨）、发展跨境基础设施、推动数字化、扩大航空互联互通及开发公路通道。哈方有意借鉴俄罗斯在公路数字化、智能交通系统等方面的经验，并提议在科研机构间开展合作。双方确认将进一步加强伙伴关系。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：交通部长会见俄罗斯联邦政府副总理
+
+正文：
+会议期间，双方就交通与物流领域的双边合作重点议题进行了讨论。具体而言，重点关注了提升货运量、发展跨境基础设施、推动交通行业数字化、扩大航空互联互通，以及开发公路运输通道等事项。
+
+- 俄罗斯是哈萨克斯坦重要的交通运输合作伙伴之一。我们认为，在进一步提升运输量、发展跨境基础设施以及扩大交通走廊运力方面，存在着巨大的潜力。我们特别重视该领域的数字化转型、现代化解决方案的应用以及经验交流。我坚信，通过在这些方面的共同努力，我们将能够把双方在交通运输领域的合作提升到一个新的水平。-她说。
+
+Фото: Көлік министрлігі 会谈中，双方着重关注了增加两国间的货运量问题。今年前10个月，铁路货运量达到8050万吨。此外，经由哈萨克斯坦和俄罗斯领土的中欧线路过境货运量也呈增长态势。
+
+跨境基础设施的协同发展对于进一步提升运输量至关重要。去年所签署的关于发展过境与换乘节点的各项协议，将为这一方向的努力提供支撑。
+
+双方还特别关注了交通运输领域的数字化问题。哈萨克斯坦有意发展电子文档管理，在边境口岸推行数字化解决方案，并实现两国信息系统的对接。此外，双方还表示愿意交流经验，并开展联合数字化项目。
+
+此外，双方还讨论了发展两国间公路通道的前景。其中，一条连接哈萨克斯坦、俄罗斯和蒙古，并途经阿尔泰共和国的路线被重点提及，被视为一条具有发展潜力的通道。
+
+Фото: Көлік министрлігі 双方还讨论了公路领域的科学技术合作。哈萨克斯坦有意借鉴俄罗斯在公路基础设施数字化、智能交通系统应用、公路工程质量控制、桥梁管理以及车辆重量与尺寸参数监测等方面的经验。此外，双方还提议在俄罗斯科研机构与哈萨克斯坦道路研究所股份公司之间开展合作。
+
+根据会谈结果，双方确认均有意愿进一步加强伙伴关系，并在交通运输领域内所讨论的各项议题上开展务实合作。</div>
+<ul>
+<li>前10个月哈俄铁路货运量达8050万吨</li>
+<li>双方讨论跨境基础设施与交通数字化合作</li>
+<li>哈方拟借鉴俄公路数字化及智能交通经验</li>
+<li>重点提及哈俄蒙途经阿尔泰的公路通道</li>
+<li>双方确认深化交通运输领域务实合作</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此次会谈将强化哈俄交通物流合作，提升过境运输潜力，促进哈国交通数字化和基础设施现代化，巩固其作为欧亚运输枢纽的地位，并推动哈俄蒙公路通道开发，对区域经济与外交关系产生积极影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/duizhongguodeying-46f78691/" target="_blank">哈萨克斯坦计划增加对中国的石油供应</a></h3>
+<div class="item-meta">哈通社中文版 · 11/27 00:20<span class="source-link"><a href="https://cn.inform.kz/news/duizhongguodeying-46f78691/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦能源部与中国讨论深化能源合作，计划将奇姆肯特炼油厂年产能从600万吨提升至1200万吨，并推动项目进入FEED阶段。今年前10个月，阿塔苏—阿拉山口输油管道运输石油950万吨，长期协议保障至2034年稳定输送。双方还讨论天然气基础设施、聚乙烯生产、煤化工及清洁煤技术合作，哈可再生能源占比8.5%，并计划扩大1.8吉瓦风光项目规模1吉瓦。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦计划增加对中国的石油供应
+正文:
+据能源部消息，双方就将奇姆肯特炼油厂年产能从600万吨提升至1200万吨，以及发展石油运输和绿色能源等议题进行了讨论。
+会谈中，双方讨论了双边合作的一系列热点问题。重点关注能源资源运输的可靠性、油气深度加工、天然气运输基础设施建设、绿色能源以及清洁煤技术的应用。
+- 在石油运输领域，阿塔苏—阿拉山口（Atasu–Alashankou）输油管道的稳定运行受到重点关注。今年前10个月，通过该管道运输的石油总量达950万吨。各方强调了现有长期协议的重要性——这些协议确保了该管道系统在2034年之前拥有稳定的输送量，并保障了经由该管道向中华人民共和国（中国）的过境石油运输。-能源部称。
+Фото: Энергетика министрлігі 在石油炼制领域，一项重点共同优先事项是将奇姆肯特炼油厂的年加工能力从600万吨提升至1200万吨。双方讨论了完成可行性研究并推动项目进入前端工程设计（FEED）阶段的相关事宜，同时确保该项目与“哈萨克斯坦—中国”石油管道系统的发展规划保持一致。
+在天然气领域，重点在于发展天然气输送基础设施、加强区域过境能力以及协调跨境路线。
+- 哈萨克斯坦与中国在能源领域的合作正在持续深化。除了确保能源资源可靠运输外，我们还将重点放在原材料的深加工上。相关项目包括：将奇姆肯特炼油厂的产能提升至1200万吨；建设聚乙烯生产厂；以及依托我们336亿吨的煤炭储量，在煤化工和“清洁煤”技术领域开展合作。-阿克肯杰诺夫说。
+Фото: Энергетика министрлігі 据悉，哈萨克斯坦可再生能源占比已达8.5%。此外，双方还讨论了总装机容量为1.8吉瓦的项目实施情况——这些项目是哈萨克斯坦与中国政府间关于建设太阳能和风能电站的协议的一部分——以及将联合绿色能源项目规模扩大1吉瓦的前景。
+根据会谈结果，两国能源机构负责人同意保持定期工作联系，以便及时解决所有与联合项目相关的问题。</div>
+<ul>
+<li>奇姆肯特炼油厂产能拟从600万吨提升至1200万吨</li>
+<li>前10个月阿塔苏—阿拉山口管道输油950万吨</li>
+<li>长期协议保障该管道对华输送至2034年</li>
+<li>依托336亿吨煤炭储量开展煤化工与清洁煤合作</li>
+<li>可再生能源占比8.5%，风光项目拟再扩1吉瓦</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">对哈国而言，提升炼油产能和扩大对华石油出口将增强能源经济收益，深化与中国绑定；绿色能源合作助力能源转型；煤化工合作拓展矿产加工格局，但需平衡对华依赖与多元外交。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">7</span> <a href="https://cn.inform.kz/news/tongrengongnengyingyong-dc9685ca/" target="_blank">哈俄总统共同参观人工智能应用展览</a></h3>
+<div class="item-meta">哈通社中文版 · 11/26 23:59<span class="source-link"><a href="https://cn.inform.kz/news/tongrengongnengyingyong-dc9685ca/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫与俄罗斯总统普京共同参观人工智能成就展览。哈方展区涵盖“科技国家”、初创城市、政府科技、Aitu及AI在交通与金融科技应用等六大领域；俄方聚焦教育、医疗、城市规划、司法、石油工业数字化。两国部门负责人介绍重点项目。活动系自2016年起举办的AI Journey会议框架下，该会议已成为AI领域国际平台。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">消息称，哈斯穆-卓玛尔特·托卡耶夫与弗拉基米尔·普京共同参观了展示哈萨克斯坦和俄罗斯在人工智能领域所取得成就的展览。
+哈萨克斯坦的展区涵盖六大重点领域：“科技国家”、初创城市（Startup City）、政府科技（GovTech）、Aitu，以及“人工智能在交通与金融科技领域的应用”。
+Фото: Ақорда 俄罗斯展区聚焦于教育、医疗、城市规划、司法、石油工业等领域的数字化解决方案。
+两国相关行业部门的负责人介绍了正在实施的、利用人工智能技术的重点项目。
+Фото: Ақорда 据悉，AI Journey（“人工智能世界之旅”）是一场传统会议，致力于探讨全球范围内人工智能技术发展相关的问题。
+该活动自2016年起举办。在此期间，它已发展成为人工智能领域一个享有盛誉的国际平台。
+Фото: Ақорда Фото: Ақорда Фото: Ақорда Фото: Ақорда Фото: Акорда Фото: Акорда</div>
+<ul>
+<li>哈俄总统共同参观AI成就展览</li>
+<li>哈方展示六大领域AI应用成果</li>
+<li>俄方聚焦教育医疗司法等数字化</li>
+<li>两国部门负责人介绍AI重点项目</li>
+<li>AI Journey会议自2016年举办</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">哈俄深化AI合作，推动哈国数字经济和政府科技发展，强化双边技术伙伴关系；俄方拓展能源与司法数字化输出，利于哈国矿业等传统产业智能化转型，但需平衡对俄技术依赖。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">8</span> <a href="https://cn.inform.kz/news/chuyiyinengbuchanghui-gongyuai-a1cd1f4a/" target="_blank">阿克肯杰诺夫赴华出席“一带一路”能源部长会议 阐述油气深加工与AI布局</a></h3>
+<div class="item-meta">哈通社中文版 · 11/26 17:15<span class="source-link"><a href="https://cn.inform.kz/news/chuyiyinengbuchanghui-gongyuai-a1cd1f4a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦能源部长阿克肯杰诺夫赴华出席“一带一路”能源部长会议，会议汇集20多国代表。他阐述哈国能源立场，强调年产约1亿吨石油和600亿立方米以上天然气，重点推进油气深加工、绿色发电和数字技术。会议成立“一带一路”能源合作伙伴关系理事会及“AI+能源”工作组，契合哈国AI布局。访华期间计划在青岛举行双边会谈。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">本次活动由中国国家能源局主办、局长王宏志主持，来自亚洲、欧洲、非洲和拉丁美洲20多个国家的能源主管部门负责人出席，其中包括阿塞拜疆、格鲁吉亚、吉尔吉斯斯坦、乌兹别克斯坦、塔吉克斯坦、蒙古、智利和南非等国代表，联合国亚洲及太平洋经济社会委员会代表以及多家大型国际能源企业负责人也参加了会议。
+会议期间，阿克肯杰诺夫阐述了哈萨克斯坦在构建新型可持续能源安全体系、拓展跨国输送通道、推进均衡能源转型以及更新基础设施方面的立场。各专题讨论重点关注向低碳模式转型、保障能源系统可靠性以及引入数字创新。
+Фото: Энергетика министрлігі 阿克肯杰诺夫表示：
+“战略伙伴关系的独特标志在于，‘一带一路’倡议正是在阿斯塔纳首次提出，为欧亚能源架构奠定了坚实基础。如今，哈萨克斯坦确保年产约1亿吨石油和600亿立方米以上天然气，在维持跨洲管道系统稳定运行的同时，巩固着欧亚重要能源枢纽之一的地位。在新的阶段，我们将重点推进原材料深加工、发展石油天然气化工、稳步提升绿色发电比重，并广泛引入数字技术。”
+全体会议的重要成果之一，是正式成立“一带一路”能源合作伙伴关系（BREP）理事会，并启动“AI+能源”工作组以及相关智库合作网络。
+该伙伴关系提出的新数字议程，与哈萨克斯坦在燃料与能源综合体中引入人工智能技术、数字孪生以及智能管理系统的重点方向相契合。
+此外，与会代表参观了能源领域技术成果展，并了解了可持续绿色转型经验以及保障能源安全的分析报告。
+在访华期间，哈萨克斯坦能源部长还计划在青岛与中国国家能源局局长王宏志以及全球能源与科技企业高管举行多场双边会谈。</div>
+<ul>
+<li>阿克肯杰诺夫赴华出席“一带一路”能源部长会议</li>
+<li>哈国年产约1亿吨石油和600亿立方米以上天然气</li>
+<li>会议成立BREP理事会及“AI+能源”工作组</li>
+<li>哈国重点推进油气深加工、绿色发电和数字技术</li>
+<li>访华期间计划在青岛举行多场双边会谈</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">哈国通过“一带一路”能源合作巩固欧亚能源枢纽地位，推动油气深加工和AI技术引入，促进经济多元化；外交上深化对华合作，增强区域影响力；矿产格局向绿色转型和数字化升级。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">9</span> <a href="https://cn.inform.kz/news/duojiazhongguoyezaikaizhongxin-c4173a07/" target="_blank">多家中国企业拟在哈萨克斯坦开设服务中心</a></h3>
+<div class="item-meta">哈通社中文版 · 11/26 11:33<span class="source-link"><a href="https://cn.inform.kz/news/duojiazhongguoyezaikaizhongxin-c4173a07/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦能源部长阿克肯杰诺夫在青岛出席第四届“一带一路”能源部长会议期间，与富海集团、青岛骏鹏、中信联合能源投资平台及中联西北工程设计研究院会谈。中方提出在哈生产油气及热力设备、设立服务中心、培训工程师，并探讨石化深加工、液化天然气、燃气发电、垃圾发电及阿特劳经济特区化肥生产合作。哈方要求商品采购本地化率至少30%、工程服务本地化率80%，合作从原材料贸易转向技术转让和生产本地化。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据能源部新闻处消息，为出席第四届“一带一路”能源部长会议，阿克肯杰诺夫前往中国青岛。访问首日，他与山东省四家大型工业及投资企业的代表举行会谈。富海集团、青岛骏鹏、中信联合能源投资平台以及中联西北工程设计研究院的负责人参加了会谈。
+双方重点讨论了产业合作及在哈萨克斯坦实现生产本地化等问题。中国企业介绍了在哈萨克斯坦组织油气及热力技术设备生产、设立服务中心以及培训哈萨克斯坦工程师的相关建议。
+此外，双方还讨论了石油化工产品深加工、液化天然气生产和燃气发电领域的合作项目，并探讨了利用生活垃圾发电的技术，以及在“阿特劳”经济特区生产化肥的可能性。
+阿克肯杰诺夫阐述了哈萨克斯坦对投资项目提出的具体要求。
+他表示，双方合作应从原材料贸易转向技术转让和生产本地化。
+“我们愿意全面审议新的投资建议，但对我们而言，项目能否为哈萨克斯坦国内带来实际效益尤为重要。这包括实现生产本地化、发展本土服务体系、保障合理的劳动报酬，以及严格落实本地化要求。具体而言，商品采购的本地化率应至少达到30%，工程和服务采购的本地化率应达到80%。石油化工和燃气能源领域的所有合作倡议，都将结合原料供应基础和国内市场优先原则进行评估。”阿克肯杰诺夫说。
+他还指出，目前可再生能源在哈萨克斯坦能源结构中的占比已达到8.5%。因此，哈方有意在大城市应用将生活垃圾转化为能源的环保技术。同时，哈方也在研究阿特劳州发展化学工业与农业相结合项目的可能性。
+会谈结束后，双方商定由行业专家进一步研究和完善上述合作倡议。</div>
+<ul>
+<li>哈能源部长访青岛与四家中企会谈</li>
+<li>中方拟在哈设油气设备服务中心</li>
+<li>哈方要求商品本地化率至少30%</li>
+<li>工程服务采购本地化率须达80%</li>
+<li>探讨垃圾发电及阿特劳化肥项目</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">中哈能源合作从贸易转向本地化生产，将推动哈油气设备制造和服务业发展，增加就业与技术转让；严格本地化要求可能提高中企进入门槛，但有助于哈经济多元化和矿产加工升级，并深化双边外交关系。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(5 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/11yue26ri-herenminqing-d651d2a3/" target="_blank">11月26日终盘 美元、欧元、卢布和人民币兑坚戈汇率情况</a></h3>
+<div class="item-meta">哈通社中文版 · 11/26 22:23<span class="source-link"><a href="https://cn.inform.kz/news/11yue26ri-herenminqing-d651d2a3/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>11月26日KASE现货市场有27个成员参与。美元兑坚戈平均报458.74，涨0.37，交易额359,646.45千美元（减62,125.94千美元）；欧元兑坚戈报502.62，涨0.98，交易额4,826.74千欧元（增2,516.74千欧元）；卢布兑坚戈报5.5834，涨0.0148，交易额1,619,148.66千卢布（减2,699,253.47千卢布）；人民币兑坚戈报68.7826，涨0.1084，交易额138,148.75千人民币（增57,933.12千人民币）。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 11月26日终盘 美元、欧元、卢布和人民币兑坚戈汇率情况
+正文:
+在本次现货市场交易中，共有27个KASE成员参与。
+根据现货市场交易结果：
+美元兑坚戈（USDKZT_TOM）： 汇率平均报价为 1 : 458.74 坚戈（较前一交易日上涨 0.37 坚戈）。外汇交易总额为 359,646.45 千美元（减少 62,125.94 千美元）。交易过程中，最高报价为 1 : 460.50 坚戈，最低报价为 1 : 457.55 坚戈。
+欧元兑坚戈（EURKZT_TOM）： 汇率平均报价为 1 : 502.62 坚戈（较前一交易日上涨 0.98 坚戈）。外汇交易总额为 4,826.74 千欧元（增加 2,516.74 千欧元）。交易过程中，最高报价为 1 : 503.90 坚戈，最低报价为 1 : 502.43 坚戈。
+卢布兑坚戈（RUBKZT_TOM）： 汇率平均报价为 1 : 5.5834 坚戈（较前一交易日上涨 0.0148 坚戈）。外汇交易总额为 1,619,148.66 千卢布（减少 2,699,253.47 千卢布）。交易过程中，最高报价为 1 : 5.5930 坚戈，最低报价为 1 : 5.5474 坚戈。
+人民币兑坚戈（CNYKZT_TOM）： 汇率平均报价为 1 : 68.7826 坚戈（较前一交易日上涨 0.1084 坚戈）。外汇交易总额为 138,148.75 千人民币（增加 57,933.12 千人民币）。交易过程中，最高报价为 1 : 69.0249 坚戈，最低报价为 1 : 68.7450 坚戈。</div>
+<ul>
+<li>美元兑坚戈微涨0.37至458.74，交易额减少62,125.94千美元</li>
+<li>欧元兑坚戈涨0.98至502.62，交易额增加2,516.74千欧元</li>
+<li>卢布兑坚戈涨0.0148至5.5834，交易额锐减2,699,253.47千卢布</li>
+<li>人民币兑坚戈涨0.1084至68.7826，交易额增57,933.12千人民币</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈对主要货币普遍微贬，反映外汇市场温和承压。卢布交易额锐减或影响哈俄贸易结算；人民币交易额增加，显示中哈本币结算扩大，利于双边经贸与去美元化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/guojiaxingxiahe-7562fd57/" target="_blank">国家银行下调美元汇率和通膨预测</a></h3>
+<div class="item-meta">哈通社中文版 · 11/26 20:46<span class="source-link"><a href="https://cn.inform.kz/news/guojiaxingxiahe-7562fd57/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国家银行发布宏观经济调查，下调2026-2028年美元兑坚戈汇率和通胀预测。2026年美元兑坚戈年均汇率预测从479坚戈下调至472坚戈，2027年从499.6下调至489.8，2028年从527.1下调至510.4。2026年底通胀预测从9.5%降至9.1%，2027年从8.3%降至8%，2028年从6.9%微升至7%。基准利率预测2026年底为15.8%，2027年为13.4%，2028年为10.8%。2026年GDP增长预测从4.8%下调至4.6%，2027年维持4.7%，2028年为4.5%。布伦特原油价格预测维持不变。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">参与此次调查的对象包括专业市场参与者、研究机构、国际组织以及评级机构——这些机构均会对哈萨克斯坦的宏观经济指标进行分析与预测。
+据国家银行称，调查结果反映的是市场参与者各自的评估与预期，而非监管机构自身的预测。
+美元汇率将会如何？
+据专家预测，2026年美元兑坚戈的平均年汇率将为472坚戈。10月份的一项调查估计该数字为479坚戈。
+与此同时，2027年的美元兑坚戈汇率预测值已从499.6下调至489.8。2028年，美元兑坚戈的平均汇率预计为510.4，此前的预测值为527.1。
+通货膨胀与基准利率
+专家预计，到2026年底，通货膨胀率将达到9.1%。10月份的预测值为9.5%。
+2027年的通胀预测已变更为8%（此前为8.3%），2028年的指标已变更为7%（之前为6.9%）。
+关于基准利率的预测也进行了调整。据专家估算，2026年底基准利率将为15.8%，2027年为13.4%，2028年为10.8%。
+哈萨克斯坦经济增长
+专家预测，哈萨克斯坦2026年的国内生产总值（GDP）将增长4.6%。今年10月，这一数字为4.8%。
+2027 年的经济增长预测维持在 4.7% 不变。同时，预计 2028 年的经济增长率为 4.5%。
+布伦特原油年均价格预测维持不变，2026年为每桶93.3美元，2027年为每桶80美元，2028年为每桶75美元。
+此外，专家估计，到2026年，商品和服务出口额将达到1010亿美元，进口额将达到838亿美元。预计到2028年，出口额将下降至973亿美元，进口额将上升至917亿美元。
+值得一提的是，国家银行自2022年8月起便一直在开展宏观经济调查。该调查每年至少进行四次，时间安排在基准利率相关决策出台之前。</div>
+<ul>
+<li>2026年美元兑坚戈年均汇率预测下调至472坚戈</li>
+<li>2026年底通胀预测降至9.1%，2028年微升至7%</li>
+<li>2026年GDP增长预测下调至4.6%，2027年维持4.7%</li>
+<li>基准利率预测2026年底15.8%，2028年降至10.8%</li>
+<li>布伦特原油价格预测维持不变，2026年每桶93.3美元</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率和通胀预测下调反映市场对坚戈信心增强，有助于降低输入性通胀压力。基准利率逐步下降将刺激信贷和投资，但GDP增长预测小幅下调显示经济仍面临挑战。出口下降进口上升可能影响贸易平衡，对矿产出口依赖型经济构成风险。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/qiansanwai201-chuchang181-e9d37f54/" target="_blank">前三季度哈萨克斯坦外贸顺差增至201亿美元 出口增长18.1%</a></h3>
+<div class="item-meta">哈通社中文版 · 11/26 18:53<span class="source-link"><a href="https://cn.inform.kz/news/qiansanwai201-chuchang181-e9d37f54/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>前三季度哈萨克斯坦外贸顺差达201亿美元，出口增长18.1%至684亿美元，进口增长4%至484亿美元，顺差较2025年全年高41%。原油产量下降8.3%、出口量降5.4%，但油价有利使石油收入增长。非资源产品出口增19%至247亿美元，占比36.1%，铜、铀、白银和黄金贡献78.6%增量。农食产品出口占比升至9.6%。对意大利、法国、荷兰、希腊顺差203亿美元，对俄中逆差116亿美元。进口增量过半来自矿产品。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 前三季度哈萨克斯坦外贸顺差增至201亿美元 出口增长18.1%
+正文:
+统计期内，出口额增长18.1%，达684亿美元；进口额增长4%，达484亿美元。前九个月的贸易顺差规模已比2025年全年水平高出41%。
+出口与原油生产情况
+推动出口增长的主要品类包括：
+矿产品：53亿美元；
+金属及其制品：17亿美元；
+动植物产品：17亿美元；
+化工产品：9.73亿美元。
+尽管受田吉兹油田限产以及里海管道集团（CPC）装运受阻影响，哈萨克斯坦原油产量下降8.3%、原油实物出口量下降5.4%，但得益于国际市场有利的价格行情，石油出口收入仍实现增长。
+非资源产品出口
+哈萨克斯坦非资源产品出口额增长19%，达到247亿美元，不过其在总出口中的占比仅微升0.3个百分点，至36.1%。
+其中，铜、铀、白银和黄金的出口贡献了78.6%的增量。金融家协会分析人士指出，哈萨克斯坦出口收入在很大程度上仍受国际大宗商品价格走势影响。
+农食产品领域也保持积极增长态势。葵花籽油实物出口量增长40.5%，饲料增长40.9%，小麦增长13.2%。农食产品在总出口中的占比由8.4%提升至9.6%。
+主要贸易伙伴格局
+哈萨克斯坦的贸易顺差仍主要由欧洲方向贡献。前九个月，哈萨克斯坦对意大利、法国、荷兰和希腊的累计贸易顺差达203亿美元，而对俄罗斯和中国的贸易逆差合计为116亿美元。
+在进口方面，超过一半的进口增量来自矿产品，其中燃料能源类商品采购支出增加7.23亿美元。同时，机械、设备及交通工具进口增加7.12亿美元；纺织品进口减少5.39亿美元，家具进口减少6800万美元。</div>
+<ul>
+<li>外贸顺差201亿美元，同比增41%，出口684亿、进口484亿美元</li>
+<li>原油产量降8.3%、出口量降5.4%，但油价支撑石油收入增长</li>
+<li>非资源出口增19%至247亿美元，铜铀金银贡献78.6%增量</li>
+<li>农食产品出口占比升至9.6%，葵花籽油、饲料、小麦增长显著</li>
+<li>对欧洲四国顺差203亿美元，对俄中逆差合计116亿美元</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">经济上，高顺差增强外汇储备与坚戈稳定，但资源依赖仍深；外交上，欧洲能源纽带强化，对俄中逆差凸显贸易结构失衡；矿产上，铀铜金银出口集中，田吉兹限产与CPC受阻暴露运输风险，推动出口多元化紧迫性。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/xinggong26riyuzhuyaowaizhijiande-60902b14/" target="_blank">央行公布26日坚戈与主要外币之间的汇率标准</a></h3>
+<div class="item-meta">哈通社中文版 · 11/26 13:39<span class="source-link"><a href="https://cn.inform.kz/news/xinggong26riyuzhuyaowaizhijiande-60902b14/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行公布2026年11月26日坚戈对主要外币官方汇率：美元兑坚戈1:458.57，欧元兑坚戈1:501.54，俄罗斯卢布兑坚戈1:5.57，土耳其里拉兑坚戈1:9.05，中国元兑坚戈1:68.7。央行规定，坚戈兑美元官方汇率基于阿斯塔纳时间15:30证券交易所加权平均汇率确定，其他外币汇率依据16:00交叉汇率计算。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：央行公布26日坚戈与主要外币之间的汇率标准
+正文：根据央行公布的信息，2026年11月26日，哈萨克斯坦坚戈与国际主要货币之间的兑换汇率标准如下：
+美元兑坚戈（USD/KZT） – 1：458.57
+欧元兑坚戈（EUR/KZT）- 1：501.54
+俄罗斯卢布兑坚戈（RUB / KZT）-1: 5.57
+土耳其里拉兑坚戈（TRY / KZT）- 1: 9.05
+中国元兑坚戈（CNY / KZT）- 1：68.7
+值得一提的是，根据哈萨克斯坦国家银行规定，截至阿斯塔纳时间当日15:30，在哈萨克斯坦证券交易所形成的坚戈兑美元加权平均汇率，将被确定为下一工作日坚戈兑美元官方汇率；坚戈兑其他外币的官方汇率，则依据截至阿斯塔纳时间16:00形成的交叉汇率计算得出。</div>
+<ul>
+<li>美元兑坚戈汇率为1:458.57</li>
+<li>欧元兑坚戈汇率为1:501.54</li>
+<li>人民币兑坚戈汇率为1:68.7</li>
+<li>美元汇率基于证交所加权平均汇率确定</li>
+<li>其他外币汇率依据交叉汇率计算</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率数据反映坚戈对主要货币的比价关系，为贸易和投资提供定价基准。央行汇率形成机制透明，有助于稳定市场预期，对哈萨克斯坦外汇管理和国际经济交往具有基础性作用。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/ye-yuyousuo-28d24373/" target="_blank">哈萨克斯坦企业信贷需求回升 房贷与车贷需求有所回落</a></h3>
+<div class="item-meta">哈通社中文版 · 11/26 12:10<span class="source-link"><a href="https://cn.inform.kz/news/ye-yuyousuo-28d24373/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年第三季度哈萨克斯坦银行信贷调查显示，企业信贷需求回升，大企业申请量环比降3%至229笔但平均金额增82%至209亿坚戈，中型企业申请量增2%至5400笔，小微企业降5%至85.6万笔。零售信贷中房贷申请量增19%至27.1万笔，车贷增10%至160万笔，但审批通过率普遍下调。银行预计第四季度企业信贷需求增长，房贷需求显著增长。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦企业信贷需求回升 房贷与车贷需求有所回落
+正文:
+在大企业领域，部分银行将需求上升归因于战略性和基础设施类项目申请增加，其中包括“能源与公用事业现代化”国家项目相关融资需求。目前，银行、政府与金融监管部门正共同研究改善此类项目融资条件，同时推动本国银行参与银团贷款融资。在此背景下，尽管个别大型银行的申请数量及平均金额有所增加，但其他多家银行的申请数量减少，导致大企业信贷申请数量环比下降3%，至229笔；受个别大型项目拉动，申请平均金额环比大幅增长82%，达到209亿坚戈。
+中型企业领域的需求回升，主要得益于支持中小微企业的国家项目实施，以及运用农业信贷公司资金和“达穆”创业发展基金担保支持农业融资。
+小微企业领域信贷需求总体保持原有水平。与此同时，部分银行指出，受税法调整及消费需求有所减弱影响，相关信贷需求出现下降。中型企业贷款申请数量环比增长2%，达5400笔，平均金额环比增长23%，至11亿坚戈；小微企业申请数量环比小幅下降5%，为85.6万笔，平均金额增长7%，达2440万坚戈。
+各企业细分市场的审批通过率均出现小幅波动：大企业和中型企业获批比例分别下降2个百分点，至64%和37%；小微企业获批比例下降1个百分点，为32%。
+展望2026年第四季度，银行预计在年底商业活动季节性回暖及融资成本进一步下降的预期下，企业信贷需求将有所增长。
+在房贷、消费贷和车贷方面，2026年第三季度银行业反馈住房抵押贷款、汽车贷款及有抵押消费贷款需求下降，无抵押消费贷款需求则略有上升。
+住房抵押贷款需求走低，与大型银行阶段性暂停国家项目放款以及市场房贷条件维持不变有关。同时，随着储蓄型房贷项目启动及部分中型银行恢复发放房贷，房贷申请数量环比增长19%，达27.1万笔，平均金额增长6%，至2270万坚戈。
+有抵押消费贷款需求在监管要求及融资成本维持现有水平的背景下显著下降。部分银行认为，客户偏好变化以及信贷产品与金融市场各细分板块之间的需求重新配置，也对信贷需求变动产生影响。该类申请数量环比减少11%，至7.6万笔，平均金额增长18%，达1440万坚戈。
+无抵押消费贷款需求小幅增长，主要受客户季节性活跃度上升、营销活动以及个别银行恢复线上申请推动。申请总量环比增长3%，达1640万笔，平均金额微降1%，为105.5万坚戈。
+汽车贷款需求小幅回落，与部分银行阶段性暂停通过特定合作伙伴受理申请、以及为控制风险缩减放贷规模有关；一家大型银行还指出，客户偿付能力及市场竞争加剧也对需求形成一定制约。不过，随着部分中型银行扩大与汽车经销商的合作，车贷申请数量环比增长10%，达160万笔，平均金额增长2%，至720万坚戈。
+零售信贷各品类审批通过率均有所下调：房贷环比下降4个百分点至29%，有抵押消费贷环比下降4个百分点至27%，无抵押消费贷环比下降2个百分点至31%，车贷审批通过率保持在18%不变。
+对于2026年第四季度，银行预计房贷需求将显著增长，无抵押消费贷需求小幅上升；有抵押消费贷需求预计继续下降，车贷需求将维持现有水平。银行预计房贷和消费贷条件不会发生重大变化，车贷条件则有望适度放宽。
+本次2026年第三季度银行信贷调查共有21家二级银行参与。</div>
+<ul>
+<li>大企业信贷申请量降3%至229笔，平均金额增82%至209亿坚戈</li>
+<li>中型企业申请量增2%至5400笔，平均金额增23%至11亿坚戈</li>
+<li>房贷申请量增19%至27.1万笔，审批通过率降4个百分点至29%</li>
+<li>车贷申请量增10%至160万笔，审批通过率保持18%不变</li>
+<li>银行预计第四季度企业信贷和房贷需求将增长</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">企业信贷回升反映战略项目融资需求增强，有助于推动基础设施和能源现代化；零售信贷审批趋严可能抑制消费，但房贷增长支撑住房市场。整体信贷结构变化对哈国经济稳增长和金融风险平衡构成考验。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-11-27 09:03</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
