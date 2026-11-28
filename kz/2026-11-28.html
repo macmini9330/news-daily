@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年11月28日 - 哈萨克斯坦每日要闻</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #0d1117; color: #c9d1d9; line-height: 1.75; min-height: 100vh;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 24px 20px 60px; }
+
+/* ===== 页头 ===== */
+.header { text-align: center; padding: 30px 0 16px; border-bottom: 1px solid #21262d; margin-bottom: 16px; }
+.header h1 { font-size: 1.8em; font-weight: 800; color: #f0f6fc; margin-bottom: 8px; }
+.header .meta { font-size: .95em; color: #8b949e; }
+.header .meta .issue { color: #7ee7f5; font-weight: 700; }
+.header .nav-links { margin-top: 10px; font-size: .85rem; }
+.header .nav-links a { color: #58a6ff; text-decoration: none; }
+.header .nav-links a:hover { text-decoration: underline; }
+
+/* ===== 时间范围说明 ===== */
+.window-bar {
+  text-align: center; margin: 14px 0 16px;
+  background: #161b22; border: 1px solid #30363d; border-left: 4px solid #f0b90b;
+  border-radius: 8px; padding: 9px 16px;
+  font-size: .88rem; color: #e6edf3;
+}
+.window-bar b { color: #f0b90b; font-weight: 600; }
+
+/* ===== 统计条 ===== */
+.stats-bar { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 4px 0 18px; }
+.stat-chip { padding: 4px 14px; background: #161b22; border: 1px solid #21262d; border-radius: 20px; font-size: .82rem; color: #8b949e; }
+
+/* ===== 目录导航（紧凑 tab 条） ===== */
+.toc {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 0 0 26px; padding: 10px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 10px;
+}
+.toc-label { font-size: .85rem; font-weight: 700; color: #8b949e; margin-right: 6px; white-space: nowrap; }
+.toc-item {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #0d1117; border: 1px solid #30363d;
+  border-radius: 8px; padding: 6px 12px;
+  font-size: .85rem; color: #e6edf3; text-decoration: none;
+  transition: all .18s; line-height: 1.3;
+}
+.toc-item:hover { border-color: #00AFCA; color: #f0f6fc; transform: translateY(-1px); }
+.toc-icon { font-size: .95em; }
+.toc-count {
+  background: #00AFCA22; color: #7ee7f5; border-radius: 6px;
+  padding: 0 6px; font-size: .78rem; font-weight: 700; min-width: 20px; text-align: center;
+}
+
+/* ===== 板块 ===== */
+.doc-section { margin-top: 34px; }
+.section-title {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1.12rem; font-weight: 700; color: #e6edf3;
+  padding: 10px 16px; margin-bottom: 12px;
+  background: #161b22; border: 1px solid #21262d; border-left: 4px solid #c0392b;
+  border-radius: 8px;
+}
+.sec-seq {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px; height: 26px; background: #c0392b; color: #fff;
+  border-radius: 6px; font-size: .85rem; font-weight: 700;
+}
+.section-title .count { font-size: .85rem; color: #8b949e; font-weight: 400; margin-left: auto; }
+
+/* ===== 单条 ===== */
+.item {
+  padding: 16px 6px 14px 16px; margin-bottom: 4px;
+  border-left: 3px solid transparent;
+  border-bottom: 1px solid #161b22;
+  transition: background .15s;
+}
+.item:hover { background: #131920; border-left-color: #00AFCA; }
+.item-title { display: flex; align-items: flex-start; gap: 10px; font-size: 1.02rem; font-weight: 650; color: #e6edf3; margin-bottom: 6px; }
+.item-title a { color: #e6edf3; text-decoration: none; }
+.item-title a:hover { color: #58a6ff; }
+.item-num {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  min-width: 30px; height: 26px; background: #c0392b40; color: #c0392b;
+  border-radius: 6px; font-size: .82rem; font-weight: 700; margin-top: 3px;
+}
+.item-meta { font-size: .78rem; color: #8b949e; margin: 0 0 8px 40px; }
+.item-meta .source-link { margin-left: 8px; }
+.item-meta .source-link a { color: #58a6ff; text-decoration: none; }
+.item-meta .source-link a:hover { text-decoration: underline; }
+
+/* 摘要 */
+.item-summary {
+  margin: 8px 0 8px 40px; padding: 9px 14px;
+  background: #161b22; border: 1px solid #21262d; border-radius: 0 8px 8px 0;
+  font-size: .9rem; color: #d4d9e0; line-height: 1.8;
+}
+.item-summary b { color: #58a6ff; font-weight: 600; }
+
+/* 展开全文 */
+.summary-toggle { margin: 6px 0 2px 40px; font-size: .8rem; color: #58a6ff; cursor: pointer; user-select: none; display: inline-block; padding: 3px 0; }
+.summary-toggle:hover { text-decoration: underline; }
+.summary-toggle .arrow { display: inline-block; transition: transform 0.2s; margin-right: 4px; }
+.summary-toggle.open .arrow { transform: rotate(90deg); }
+.full-content {
+  display: none; margin: 8px 0 4px 40px;
+  font-size: .88rem; line-height: 1.85; color: #c9d1d9;
+  background: #0d1117; border: 1px dashed #30363d;
+  border-radius: 8px; padding: 12px 16px; white-space: pre-wrap;
+}
+.full-content.show { display: block; }
+
+/* 要点 */
+.item ul { margin: 6px 0 6px 40px; padding-left: 18px; }
+.item ul li { margin-bottom: 5px; font-size: .9rem; color: #c9d1d9; }
+
+/* 影响 */
+.item-impact {
+  margin: 10px 0 4px 40px; padding: 8px 14px;
+  background: #f0b90b10; border-left: 3px solid #f0b90b;
+  border-radius: 0 6px 6px 0; font-size: .9rem;
+}
+.impact-label { font-weight: 700; color: #f0b90b; margin-right: 8px; }
+.impact-text { color: #d4d9e0; }
+
+.empty { color: #8b949e; font-size: .9rem; padding: 14px 0 14px 40px; font-style: italic; }
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #8b949e; font-size: .8rem; padding: 40px 0 0; border-top: 1px solid #21262d; margin-top: 44px; }
+.footer a { color: #58a6ff; text-decoration: none; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 600px) {
+  .header h1 { font-size: 1.5em; }
+  .toc { gap: 5px; padding: 8px 10px; }
+  .toc-item { font-size: .78rem; padding: 5px 9px; }
+  .item { padding-left: 10px; }
+  .item ul { margin-left: 8px; }
+  .item-impact { margin-left: 8px; }
+  .item-summary { margin-left: 8px; }
+  .summary-toggle { margin-left: 8px; }
+  .full-content { margin-left: 8px; }
+  .item-meta { margin-left: 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>🇰🇿 哈萨克斯坦每日要闻</h1>
+    <div class="meta">📅 2026年11月28日日报</div>
+    <div class="nav-links"><a href="../index.html">← 返回首页</a></div>
+  </div>
+
+  <div class="window-bar">📌 本日报抓取新闻时间范围：2026年11月27日早9:00至2026年11月28日早9:00（北京时间）</div>
+
+  <div class="stats-bar"><span class="stat-chip">共 13 条</span><span class="stat-chip">3 板块</span><span class="stat-chip">哈通社</span></div>
+
+  <div class="toc">
+    <span class="toc-label">📑 目录</span>
+    <a class="toc-item" href="#sec-politics_domestic"><span class="toc-icon">🏛️</span>内政<span class="toc-count">2</span></a>
+<a class="toc-item" href="#sec-politics_foreign"><span class="toc-icon">🌍</span>外交<span class="toc-count">6</span></a>
+<a class="toc-item" href="#sec-finance"><span class="toc-icon">💰</span>金融<span class="toc-count">5</span></a>
+<a class="toc-item" href="#sec-mining"><span class="toc-icon">⛏️</span>矿产<span class="toc-count">0</span></a>
+
+  </div>
+
+<div class="doc-section" id="sec-politics_domestic">
+<h2 class="section-title"><span class="sec-seq">一</span> 政治新闻及分析（内政） <span class="count">(2 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://cn.inform.kz/news/difanghuisanrenyige-b77b7be3/" target="_blank">马斯利哈特（地方议会）选举：平均三名候选人角逐一个席位</a></h3>
+<div class="item-meta">哈通社中文版 · 11/27 23:54<span class="source-link"><a href="https://cn.inform.kz/news/difanghuisanrenyige-b77b7be3/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦今年将举行马斯利哈特（地方议会）选举，涉及228个地方议会，共选出3447名议员。其中3113名通过单席位选区产生，334名通过政党名单产生。全国20个州登记了97份政党名单，涉及1160名候选人，平均每个席位约3至4名候选人角逐。七个政党获准参选。选举采用混合制度，州级和三市一半席位按政党名单、一半按单席位选区分配，区级则完全按单席位选区。候选人需缴纳425,000坚戈费用，政党名单中女性和青年比例须至少30%。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">马斯利哈特议员的职责是什么？
+首先，让我们来界定这一政治机构的结构。“马斯利哈特”（Maslikhat）是一个代表当地居民利益的代议机构。其议员负责讨论与该地区社会经济发展相关的问题，并参与重大决策的制定。批准地方预算以及监督各项既定项目的实施，也属于“马斯利哈特”议员的职责范围。最重要的是，这些民选代表还承担着分析本地区未来发展规划的任务，并将居民的意愿与诉求传达给相关职能部门。
+据中央选举委员会统计，哈萨克斯坦228个马斯利哈特议员将于今年进行换届更新，届时将选举产生共计3447名议员：
+地区级——20个马斯利哈特，668名议员；城市级——38个马斯利哈特，626名议员；区级——170个马斯利哈特，2,153名议员。
+- 在此次选举，全国范围内将选出3,447名马斯利哈特议员。其中，3,113名议员将通过单席位选区选举产生，另有334名代表将通过政党名单选举产生。在分配给政党名单的334个席位中，全国20个州共登记了97份政党名单，涉及候选人总计1,160名。这意味着平均每个席位约有3至4名候选人参与角逐。-中选委成员阿扎马特·阿伊曼胡莫夫说。
+今年共有七个政党获准参加选举，分别是：“光明道路”民主党、“阿吾勒”人民民主爱国党、“公正”党、“巴伊塔克”绿党、哈萨克斯坦人民党、国家社会民主党和“共和”党。
+根据中选委规定，只有同一政党的成员才能列入该政党的候选人名单。名单中女性和青年候选人的比例必须至少达到30%。此外，列入同一政党名单的候选人不能同时在单一选区参选。
+值得注意的是，即将举行的选举将采用混合选举制度。候选人既可以代表政党参选，也可以在单席位选区以个人身份参加竞选。
+州级以及阿斯塔纳、阿拉木图和奇姆肯特三市计划采用混合选举制度。根据该制度，一半的议员将通过政党名单选举产生，另一半将通过单一选区选举产生。如果席位总数为奇数，则将较多的席位分配给单一选区。
+在具有区域重要性的地区和城市，情况则有所不同。在这些地区，地方议会议员完全通过单一选区选举产生。在这种情况下，居民投票给的是特定候选人，而不是政党。
+中选委称，年满20周岁的哈萨克斯坦共和国公民有资格参加马斯利哈特议员的竞选。不过，个人仅能担任其中一个马斯利哈特议员。
+此外，还有几类公民被禁止参与选举：
+候选人缴纳了多少费用？
+参加选举的候选人必须缴纳费用。费用金额为最低工资的五倍，目前为425,000坚戈。各政党需从自有资金中为名单上的每位候选人缴纳此费用。在单一选区参选的候选人也需缴纳相同金额的费用。
+不过，根据各政党在上届议会选举中的表现，做出了一定的让步：</div>
+<ul>
+<li>228个地方议会换届，共选3447名议员</li>
+<li>3113名按单席位选区选，334名按政党名单选</li>
+<li>97份政党名单涉1160人，平均3-4人争一席</li>
+<li>七个政党获准参选，混合选举制度</li>
+<li>候选人缴费425,000坚戈，名单需30%女性和青年</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">选举将重塑地方政治代表结构，混合制度平衡政党与个人参选，女性青年比例要求促进包容性。政党名单竞争加剧可能推动政策议题地方化，但地方预算监督职能强化或影响中央-地方财政关系。对矿产等地方经济决策的参与度可能提升。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/2027nianqishi-shangyehuishang3465-1342df5f/" target="_blank">2027年起实施 哈萨克斯坦上调失业社会保障金上限至34.65万坚戈</a></h3>
+<div class="item-meta">哈通社中文版 · 11/27 15:44<span class="source-link"><a href="https://cn.inform.kz/news/2027nianqishi-shangyehuishang3465-1342df5f/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦自2027年1月1日起实施《社会法典》修订条款，将失业社会保障金每月最高限额提升至34.65万坚戈，最低工资从8.5万坚戈上调至11万坚戈。新规将求职考察期设为13天，领取期限按社保缴费年限调整为最长3个月。2026年前10个月，36.7万人领取失业保障金，总额1280亿坚戈，99.3%线上办理。今年已实现62.69万人就业。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 2027年起实施 哈萨克斯坦上调失业社会保障金上限至34.65万坚戈
+正文:
+据悉，截至2026年底，哈萨克斯坦仍执行现行的国家社会保险基金失业社会保障金发放办法。申领该项补贴的首要条件是通过职业服务中心、电子政务门户网站（eGov.kz）或电子劳动力市场平台（Enbek.kz）正式登记为失业人员。保障金面向参与社会保险体系且连续缴纳社保满6个月以上的参保人，发放标准为参保人近两年平均月收入的45%，具体领取时长与金额依据参保年限核定。
+自2027年1月1日起，《社会法典》修订条款将正式生效，旨在推动就业促进体系现代化，实现经济支持与积极求职的有效衔接。
+强化职业服务中心对接职能
+根据新规，求职者处于“求职人员”状态的考察期将设定为13天。在此期间，职业服务中心专员将评估求职者的工作经验、匹配合适岗位并安排面试。若13天内未能找到合适工作，申领人将被正式认定为“失业人员”，并开始领取由国家社会保险基金发放的失业社会保障金；与此同时，相关部门将继续为其提供岗位推荐及免费职业技能培训。据悉，该项新工作标准已于2026年10月1日起启动试点运行。
+领取期限调整为最长三个月
+自2027年起，失业社会保障金的发放期限将根据参保人在社会保险体系中的缴费年限确定，最长不超过三个月：
+参保满6至12个月——发放1个月；
+参保满12至24个月——发放2个月；
+参保满24个月及以上——发放3个月。
+最高保障金标准随最低工资同步上调
+自2027年1月1日起，哈萨克斯坦最低工资标准将由8.5万坚戈上调至11万坚戈。受此带动，国家社会保险基金发放的失业社会保障金每月最高限额将提升至34.65万坚戈。
+劳动和社会保障部强调，无论失业人员是否正在领取社会保障金，各地职业服务中心均会持续为其寻找就业机会。数据显示，今年以来，哈萨克斯坦通过各地区就业地图共实现62.69万人就业，其中11.43万人通过积极就业促进措施实现就业（含11.01万人入职政府补贴岗位）。此外，共有6.05万人通过Skills.enbek.kz平台完成职业培训，3.73万人参加了“商业启航”（Bastau Business）创业基础培训，全国累计发放最高达400倍按月计算指数的创业补助金3200份。
+与此同时，面向青年群体的职业规划平台“Mansap Kompasy”已正式上线；巴甫洛达尔州和曼格斯套州正试点运行基于人工智能的数字就业服务系统，目前已通过该系统实现7500人自动匹配就业。
+统计显示，2026年前10个月，哈萨克斯坦共有36.7万人领取了失业社会保障金，累计发放总额达1280亿坚戈，其中99.3%的申领人通过线上电子渠道办理了相关业务。</div>
+<ul>
+<li>2027年起失业保障金上限提至34.65万坚戈</li>
+<li>最低工资标准上调至11万坚戈</li>
+<li>求职考察期13天，领取期限最长3个月</li>
+<li>2026年前10个月36.7万人领取1280亿坚戈</li>
+<li>今年通过就业地图实现62.69万人就业</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该政策提高失业保障水平，强化积极求职导向，有助于缓解社会压力、促进就业市场规范化。最低工资上调将带动消费，但增加企业用工成本。数字化就业服务提升行政效率，对哈国社会稳定和经济转型具有积极意义。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-politics_foreign">
+<h2 class="section-title"><span class="sec-seq">二</span> 政治新闻及分析（外交） <span class="count">(6 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/investori-iz-korei-turtsii-i-singapura-gotovi-vlozhit-269-mln-v-kreativnie-proek-ad087a3b" target="_blank">韩国、土耳其和新加坡投资者准备向哈萨克斯坦创意项目投资269万美元</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/28 04:00<span class="source-link"><a href="https://www.inform.kz/ru/investori-iz-korei-turtsii-i-singapura-gotovi-vlozhit-269-mln-v-kreativnie-proek-ad087a3b" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦文化和信息部新闻处表示，70个创意团队和83名投资者参与创意项目计划，投资者包括土耳其、韩国和新加坡代表。哈国企业家展示了电影、动画、音乐、戏剧、时尚、设计、图书出版、教育和数字技术领域项目。经推介和单独会面，达成20项初步融资协议，总额269万美元（约12亿坚戈）。未来基金将跟踪谈判、协助签约、扩大项目规模并推动其进入国际市场。哈国正在制定发展创意产业的新法律草案。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据哈萨克斯坦共和国文化和信息部新闻处消息，该计划共有70个创意团队和83名投资者参与，其中包括来自土耳其、韩国和新加坡的代表。
+哈萨克斯坦企业家展示了电影、动画、音乐、戏剧、时尚、设计、图书出版、教育和数字技术领域的项目。
+根据推介会和与投资者的单独会面结果，已就资助国内创意项目达成20项初步协议，总金额为269万美元（约合12亿坚戈）。
+未来，基金将专注于跟踪谈判、协助签订投资协议、扩大国内项目规模并推动其进入国际市场。
+回顾一下，哈萨克斯坦正在制定一项旨在发展创意产业的新法律草案。</div>
+<ul>
+<li>70个创意团队和83名投资者参与，含土耳其、韩国、新加坡代表</li>
+<li>达成20项初步融资协议，总额269万美元（约12亿坚戈）</li>
+<li>项目涵盖电影、动画、音乐、戏剧、时尚、设计、出版、教育、数字技术</li>
+<li>基金将跟踪谈判、协助签约、扩大规模并推动项目进入国际市场</li>
+<li>哈萨克斯坦正在制定发展创意产业的新法律草案</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">吸引外资269万美元助力哈国创意产业，促进经济多元化；深化与土、韩、新经贸合作；新法律草案将完善创意产业制度框架，提升国际影响力。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/herenguo-d19e9382/" target="_blank">哈萨克斯坦维和人员获颁联合国奖章</a></h3>
+<div class="item-meta">哈通社中文版 · 11/28 00:28<span class="source-link"><a href="https://cn.inform.kz/news/herenguo-d19e9382/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>联合国脱离接触观察员部队指挥官阿妮塔·阿斯玛少将向哈萨克斯坦维和人员颁发奖章，表彰其专业技能、尽职态度及对地区和平的贡献。哈萨克斯坦武装部队11名军人于7月被派往黎巴嫩，作为联合国黎巴嫩临时部队（UNIFIL）任务的一部分担任维和人员，目前在黎巴嫩南部服役，隶属于印度军事特遣队。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">联合国脱离接触观察员部队（UNDOF）部队指挥官阿妮塔·阿斯玛少将向哈萨克斯坦维和人员颁发了奖项。
+这些奖章旨在表彰军人高超的专业技能、尽职尽责的工作态度以及为维护地区和平与安全所作出的贡献。
+值得一提的是，哈萨克斯坦武装部队的11名军人于7月被派往黎巴嫩，作为联合国黎巴嫩临时部队（联黎部队，UNIFIL）任务的一部分，担任维和人员。他们目前在黎巴嫩南部地区服役，隶属于印度军事特遣队。</div>
+<ul>
+<li>联合国UNDOF指挥官向哈萨克斯坦维和人员颁发奖章</li>
+<li>奖章表彰专业技能、尽职态度及维护和平贡献</li>
+<li>哈国11名军人7月赴黎巴嫩参加UNIFIL维和任务</li>
+<li>哈维和人员在黎南部服役，隶属印度军事特遣队</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此事件提升哈萨克斯坦国际维和形象，强化与联合国合作，彰显其外交多元平衡；军事人员获国际认可，有助于推动哈国参与全球安全治理，对矿产格局无直接影响。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/lizhukaiguohuishihuihui-519b87b1/" target="_blank">哈萨克斯坦副总理主持召开拯救咸海国际基金会董事会会议</a></h3>
+<div class="item-meta">哈通社中文版 · 11/27 23:15<span class="source-link"><a href="https://cn.inform.kz/news/lizhukaiguohuishihuihui-519b87b1/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦副总理主持召开拯救咸海国际基金会董事会会议，塔吉克斯坦、乌兹别克斯坦、土库曼斯坦及吉尔吉斯斯坦代表出席。会议讨论了2026年4月阿斯塔纳元首理事会决定落实进展，决定将3月26日设为“咸海、阿姆河与锡尔河国际日”。哈国担任2024—2026年轮值主席国期间，基金争取到世界银行等资助：CAWEC项目2000万美元、REMIT计划1.452亿美元、法国开发署项目200万欧元，并签署13份备忘录。会议决定制定锡尔河流域自动化水资源核算系统工作计划，并推进中亚水资源利用框架公约草案及联合国“国际水组织”倡议。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">塔吉克斯坦副总理苏莱蒙·齐约佐达、乌兹别克斯坦总统顾问舒赫拉特·加尼耶夫、土库曼斯坦国家水利委员会主席杜尔德·根吉耶夫、哈萨克斯坦水资源和灌溉部部长努尔詹·努尔吉格托夫，以及吉尔吉斯斯坦代表也以观察员身份出席了会议。
+会上，各方讨论了2026年4月22日在阿斯塔纳举行的“拯救咸海国际基金”创始国元首理事会会议所通过各项决定的落实进展。会议决定，将3月26日设立为“咸海、阿姆河与锡尔河国际日”。
+Фото: Үкімет 此外，会议审议了在哈萨克斯坦担任2024—2026年轮值主席国期间，该基金执行委员会所开展的工作成果。在此期间，相关工作涵盖了十个重点领域。具体而言，基金从世界银行等发展伙伴处争取到了多项资助：包括旨在提高水资源利用效率的“中亚水与能源合作”（CAWEC）项目（获资助2000万美元）、REMIT计划（获资助1.452亿美元），以及由法国开发署支持的项目（获资助200万欧元）。此外，基金还与多个国际组织及金融机构签署了13份谅解备忘录和协议。
+与会者审议了“咸海流域国家援助行动计划”的实施进展，以及负责完善“拯救咸海国际基金”组织结构及法律与合同框架的工作组的相关工作情况。
+Фото: Үкімет 此次会议的一项重要成果是决定制定一项工作计划，旨在锡尔河流域内实施自动化的水资源核算系统。该基金理事会支持了“跨国水资源协调委员会”所作出的决定，即制定该计划并成立一个由流域各国代表组成的工作组。各方需指定国家协调员，并负责起草及商定该工作计划。随后，该文件将提交至ICWC审批，并由“拯救咸海国际基金”理事会予以认可。与此同时，该基金执行委员会负责与各发展伙伴进行协调，以争取为落实相关计划活动提供技术和资金支持。
+哈萨克斯坦水资源和灌溉部部长向与会者介绍了中亚水资源利用框架公约草案的制定进展。他还谈到了哈萨克斯坦总统哈斯穆-卓玛尔特·托卡耶夫所提倡议的推进情况，即在联合国框架内建立一个“国际水组织”。该倡议计划在2026年12月8日至10日在阿布扎比召开的联合国水大会上进行讨论。</div>
+<ul>
+<li>决定3月26日为咸海、阿姆河与锡尔河国际日</li>
+<li>哈国任轮值主席国期间获资助超1.67亿美元</li>
+<li>将制定锡尔河流域自动化水资源核算系统计划</li>
+<li>推进中亚水资源利用框架公约草案制定</li>
+<li>托卡耶夫倡议的联合国“国际水组织”将于2026年阿布扎比水大会讨论</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">会议强化哈国在中亚水资源外交中的主导地位，推动区域水合作机制化；自动化核算系统有助于提升农业用水效率，缓解咸海生态危机；国际资金注入支持水利基建，但需平衡各国利益，哈国政治影响力与经济收益有望提升。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/wen-763c5f6a/" target="_blank">托卡耶夫向埃及总统致慰问电</a></h3>
+<div class="item-meta">哈通社中文版 · 11/27 20:17<span class="source-link"><a href="https://cn.inform.kz/news/wen-763c5f6a/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦总统托卡耶夫就埃及吉萨省车祸向埃及总统致慰问电，代表哈萨克斯坦人民及个人名义对遇难者家属表示深切哀悼，并向埃及人民表示慰问。埃及卫生和人口部25日声明称，一辆运载石油制品的卡车在吉萨省一环城公路起火，造成至少31人死亡、21人受伤。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题：托卡耶夫向埃及总统致慰问电
+
+正文：
+在慰问电中，托卡耶夫总统代表哈萨克斯坦人民以及其个人名义，就发生在埃及吉萨省车祸导致重大人员伤亡，向遇难者的家属和亲人表示深切哀悼，并向兄弟埃及人民表示慰问。
+埃及卫生和人口部25日发表声明说，一辆运载石油制品的卡车当天在吉萨省一环城公路起火，造成至少31人死亡、21人受伤。</div>
+<ul>
+<li>托卡耶夫就埃及吉萨省车祸致慰问电</li>
+<li>车祸造成至少31人死亡、21人受伤</li>
+<li>事故为运载石油制品卡车起火</li>
+<li>托卡耶夫向遇难者家属和埃及人民表示哀悼慰问</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此事件对哈国政治影响有限，但通过慰问电强化了哈埃双边友好关系，展现哈国在外交上对兄弟国家的支持，有助于提升哈萨克斯坦在中东地区的正面形象。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/zhongzuojin16-lizhongziyuchu-97bbd280/" target="_blank">哈中合作推进16亿美元化肥项目 助力中亚化肥自给与出口扩容</a></h3>
+<div class="item-meta">哈通社中文版 · 11/27 12:37<span class="source-link"><a href="https://cn.inform.kz/news/zhongzuojin16-lizhongziyuchu-97bbd280/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦与中国化学五环工程公司及KazAzot合作，在曼格斯套州建设总投资约16亿美元的合成氨-尿素综合体，预计年产合成氨66万吨、尿素57.75万吨、硝酸铵50万吨，提升化肥自给率并扩大出口。同时，哈方与SOUTH OIL及ADIB Holdings探讨卡拉干赛区块非常规油气开发，已钻两口水平井，计划共钻10口，旨在吸引投资、推动技术升级。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">在与中化学五环工程有限公司（China Wuhuan Engineering）及哈萨克斯坦氮肥股份公司（KazAzot）管理层会谈时，双方重点探讨了在曼格斯套州建设合成氨-尿素综合体的相关事宜。此前，哈萨克斯坦总统在第三届农业生产者论坛上曾强调发展本国化肥生产的重要性，并指示为该项目提供必要支持。据悉，该项目总投资额约16亿美元，建成投产后预计年产合成氨66万吨、尿素57.75万吨及硝酸铵50万吨。该综合体的落成将大幅提升哈萨克斯坦国内农业生产者的化肥自给率，有效降低进口依赖，并进一步拓展化工产业的出口潜力。
+此外，努尔勒别克·纳勒巴耶夫还会见了“南方石油”有限责任公司（SOUTH OIL）及“ADIB Holdings”金融集团负责人，共同探讨了卡拉干赛区块非常规油气资源的开发前景。此前，哈萨克斯坦总统在政府扩大会议上明确要求，要为页岩油储量开发及吸引投资开发复杂地质条件油田创造有利条件。目前，该项目已应用现代多级水力压裂技术，并成功钻探两口水平井，按计划总共将钻探10口油井。会谈期间，双方还就吸引追加融资、完善页岩油开采技术以及在哈境内布局相关配套产业等议题交换了意见。与会各方一致认为，开发非常规油气资源将有效扩大哈萨克斯坦的资源潜力，并带动本国油气及油田服务行业的技术升级。
+会谈结束时，努尔勒别克·纳勒巴耶夫强调，哈萨克斯坦政府愿在现行法律框架内，为致力于引入先进技术、发展本土工业及创造新就业岗位的投资项目提供全力支持。</div>
+<ul>
+<li>哈中合作16亿美元化肥项目落户曼格斯套州</li>
+<li>项目年产合成氨66万吨、尿素57.75万吨、硝酸铵50万吨</li>
+<li>哈方推动化肥自给并拓展化工出口潜力</li>
+<li>卡拉干赛区块页岩油开发已钻两口水平井，计划共10口</li>
+<li>政府承诺依法支持技术引进与本土工业项目</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">化肥项目将提升哈国农业自给率、减少进口依赖并增强化工出口；页岩油开发引入多级压裂技术，有望扩大资源潜力、带动油气服务升级，并深化哈中及国际投资合作。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">6</span> <a href="https://cn.inform.kz/news/zhiweiyeheyefalaiji-f9eb1c39/" target="_blank">“丝绸之路”口岸升级改造为商业和旅游业发展带来新机遇</a></h3>
+<div class="item-meta">哈通社中文版 · 11/27 10:55<span class="source-link"><a href="https://cn.inform.kz/news/zhiweiyeheyefalaiji-f9eb1c39/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年11月25日，哈萨克斯坦“丝绸之路”口岸与乌兹别克斯坦“吉什特-库普里克”口岸联合开通。改造后，“丝绸之路”口岸新建两座旅客航站楼（总面积约1万平方米）和6000平方米车辆查验雨棚，入境车道由2条增至6条，日接待能力达10万人次，配备82个护照查验通道和20套Q-gate自动通关系统。2024年该口岸出入境人员超1100万人次。升级将促进跨境旅游、消费和中小企业发展，缓解周边口岸压力，提升中亚交通互联互通水平。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">2026年11月25日，经过升级改造的哈萨克斯坦“丝绸之路”口岸（突厥斯坦州）和乌兹别克斯坦“吉什特-库普里克”口岸（塔什干州）举行联合开通仪式。
+改造期间，“丝绸之路”口岸新建了两座旅客航站楼，总面积约1万平方米，此外还建成了一座占地6000平方米的车辆查验雨棚。入境方向的车道由原来的2条增至6条，实现了旅客与车辆分流。客流高峰期，口岸基础设施每天最多可接待10万人次。
+航站楼内还配备了82个护照查验通道和20套Q-gate自动通关系统，并安装了X光安检设备、扫描仪、辐射监测设备，以及用于查验大巴车和小型汽车的专用设备。这些设施有助于在确保安全的前提下提高查验效率、缩短通关时间，并降低行政管理成本。
+升级后的口岸基础设施为哈萨克斯坦带来了多方面的新机遇。首先，跨境人员往来和消费需求有望进一步增长。外国旅客在住宿、餐饮、交通、观光和购物方面的支出，将带动国内商品流通，增加企业收入和税收，并创造更多就业岗位。
+与此同时，口岸升级也为吸引更多外国游客创造了有利条件。焕然一新的口岸将为两国组织大巴旅游团、自驾游及跨境组合旅游线路提供便利。哈萨克斯坦旅行社可以将奇姆肯特、突厥斯坦等地纳入旅游行程，延长外国游客在哈停留时间，进一步扩大旅游服务出口。
+在突厥斯坦州和奇姆肯特市，口岸升级将带动酒店、餐饮、零售、导游及沿途配套服务业发展。对中小企业而言，这一变化尤为重要，既能拓宽自主创业和就业渠道，也为吸引私人投资、完善服务基础设施创造了条件。
+此外，现代化口岸设施还有助于发展常态化跨境客运班车和旅游客运业务，包括经哈萨克斯坦境内通行的过境线路，同时缓解周边其他口岸的通行压力。
+此次口岸现代化改造在边境两侧协调推进，为开展商务考察和洽谈、寻找合作伙伴、实施联合项目，以及加强两国旅行社和运输企业之间的合作创造了有利条件。此外，升级后的口岸还将便利探亲、求学、文化交流和商务出行，密切两国民众及机构之间的往来，进一步提升中亚地区交通网络的互联互通水平。
+数据显示，仅2024年，经由“丝绸之路”口岸出入境的人员就超过1100万人次，充分反映出这一通道的旺盛通行需求。该口岸主要为人员、小型汽车和大巴车提供通关服务。</div>
+<ul>
+<li>2026年11月25日，哈乌两国口岸联合开通。</li>
+<li>口岸新建航站楼1万平方米，车道增至6条。</li>
+<li>日接待能力达10万人次，配备82个查验通道。</li>
+<li>2024年该口岸出入境人员超1100万人次。</li>
+<li>升级促进旅游、消费和中小企业发展。</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">口岸升级将促进哈国旅游业和中小企业发展，增加税收和就业；深化哈乌经贸合作，提升中亚交通互联互通；缓解周边口岸压力，增强区域过境运输潜力。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-finance">
+<h2 class="section-title"><span class="sec-seq">三</span> 金融政策新闻及分析 <span class="count">(5 条)</span></h2>
+<div class="item">
+<h3 class="item-title"><span class="item-num">1</span> <a href="https://www.inform.kz/ru/uvedomleniya-o-zanizhenii-summ-nds-nachnut-rassilat-postavshikam-v-kazahstane-5323f3e7" target="_blank">哈萨克斯坦将开始向供应商发送增值税低报通知</a></h3>
+<div class="item-meta">哈通社俄语版 · 11/28 02:15<span class="source-link"><a href="https://www.inform.kz/ru/uvedomleniya-o-zanizhenii-summ-nds-nachnut-rassilat-postavshikam-v-kazahstane-5323f3e7" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦国家收入委员会宣布，自2025年11月起，将自动向那些申请增值税超额退税的纳税人的供应商发送关于低报增值税金额的通知。通知通过比对电子发票和300.00表格申报数据生成，执行期限为30个工作日。若未按期整改，税务机关可启动税务检查。委员会呼吁企业家及时核对数据并回应查询。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">据该部门新闻处消息，通知将于今年11月开始发送。
+通知将通过比对电子发票（ЭСФ）和300.00表格申报表的数据自动生成。
+监管将覆盖那些提出了增值税超额退税要求的纳税人的供应商。如果在已销售的商品、工程和服务中发现税额被压低，将向相关公司发送相应通知。
+通知的执行期限为30个工作日。收到文件后，纳税人必须采取以下行动之一：
+国家收入委员会呼吁企业家及时检查电子发票与300.00表格数据的一致性，并对查询迅速作出反应。该部门提醒，如果未按通知消除发现的违规行为，国家收入机关有权根据哈萨克斯坦共和国税法规定进行税务检查。
+此前有报道称，经纪人将向税务部门传输哈萨克斯坦公民证券交易的数据。</div>
+<ul>
+<li>11月起自动发送增值税低报通知</li>
+<li>通知基于电子发票与申报表数据比对</li>
+<li>监管覆盖申请退税纳税人的供应商</li>
+<li>执行期限30个工作日，逾期可触发税务检查</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">此举强化增值税征管，打击低报行为，增加财政收入；对供应商形成合规压力，可能加剧企业税务风险，但有助于规范市场秩序。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">2</span> <a href="https://cn.inform.kz/news/11yue27ri-herenminqing-9e373789/" target="_blank">11月27日终盘 美元、欧元、卢布和人民币兑坚戈汇率情况</a></h3>
+<div class="item-meta">哈通社中文版 · 11/27 22:23<span class="source-link"><a href="https://cn.inform.kz/news/11yue27ri-herenminqing-9e373789/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>11月27日KASE现货市场30个成员参与交易。美元兑坚戈平均报458.22，跌0.52，交易额423,149.17千美元（增63,502.72千美元）；欧元兑坚戈报503.03，涨0.41，交易额3,849.47千欧元（减977.26千欧元）；卢布兑坚戈报5.5823，跌0.0011，交易额2,532,742.33千卢布（增913,593.68千卢布）；人民币兑坚戈报68.8811，涨0.0985，交易额23,327.05千人民币（减114,821.71千人民币）。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 11月27日终盘 美元、欧元、卢布和人民币兑坚戈汇率情况
+正文:
+在本次现货市场交易中，共有30个KASE成员参与。
+根据现货市场交易结果：
+美元兑坚戈（USDKZT_TOM）： 汇率平均报价为 1 : 458.22 坚戈（较前一交易日下跌 0.52 坚戈）。外汇交易总额为 423,149.17 千美元（增加 63,502.72 千美元）。交易过程中，最高报价为 1 : 459.07 坚戈，最低报价为 1 : 457.07 坚戈。
+欧元兑坚戈（EURKZT_TOM）： 汇率平均报价为 1 : 503.03 坚戈（较前一交易日上涨 0.41 坚戈）。外汇交易总额为 3,849.47 千欧元（减少 977.26 千欧元）。交易过程中，最高报价为 1 : 503.82 坚戈，最低报价为 1 : 502.04 坚戈。
+卢布兑坚戈（RUBKZT_TOM）： 汇率平均报价为 1 : 5.5823 坚戈（较前一交易日下跌 0.0011 坚戈）。外汇交易总额为 2,532,742.33 千卢布（增加 913,593.68 千卢布）。交易过程中，最高报价为 1 : 5.5940 坚戈，最低报价为 1 : 5.5688 坚戈。
+人民币兑坚戈（CNYKZT_TOM）： 汇率平均报价为 1 : 68.8811 坚戈（较前一交易日上涨 0.0985 坚戈）。外汇交易总额为 23,327.05 千人民币（减少 114,821.71 千人民币）。交易过程中，最高报价为 1 : 68.9730 坚戈，最低报价为 1 : 68.7000 坚戈。</div>
+<ul>
+<li>美元兑坚戈跌0.52至458.22，交易额增63,502.72千美元</li>
+<li>欧元兑坚戈涨0.41至503.03，交易额减977.26千欧元</li>
+<li>卢布兑坚戈跌0.0011至5.5823，交易额增913,593.68千卢布</li>
+<li>人民币兑坚戈涨0.0985至68.8811，交易额减114,821.71千人民币</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">坚戈对美元、卢布小幅升值，对欧元、人民币小幅贬值，汇率基本稳定。美元交易额增加显示市场活跃度上升，卢布交易额大增反映俄哈贸易金融联系紧密。对哈国经济影响中性，外交上体现多元平衡，矿产格局无直接冲击。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">3</span> <a href="https://cn.inform.kz/news/mingnianjing8-bb8f2c7e/" target="_blank">“巴伊铁列克”计划明年向哈萨克斯坦经济注资8万亿坚戈</a></h3>
+<div class="item-meta">哈通社中文版 · 11/27 16:17<span class="source-link"><a href="https://cn.inform.kz/news/mingnianjing8-bb8f2c7e/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦政府总理别克帖诺夫主持“巴伊铁列克”国家投资控股公司董事会会议，批准年度预算及2027年关键绩效指标。2027年，该控股公司计划向经济注资8万亿坚戈，其中制造业、基础设施和农工综合体固定资产投资约1.17万亿坚戈，并交付约270万平方米住宅。非国家财政渠道资金将占借款总额54%，公司还将吸引商业银行和私人投资者参与项目融资。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">27日，政府总理沃勒扎斯·别克帖诺夫主持召开“巴伊铁列克”国家投资控股公司董事会会议。会议期间，董事会审议并批准了控股公司的年度预算，以及董事长和董事会成员2027年度关键绩效指标。
+控股公司的各项工作将围绕落实国家元首在国情咨文中提出的提升投资效能、发展实体经济等任务展开。为此，控股公司将固定资产投资规模、获得支持的企业营业收入以及相关企业出口销售额等纳入明年度关键绩效指标。
+2027年，“巴伊铁列克”控股公司旗下企业集团计划向经济领域提供8万亿坚戈的资金支持。其中，制造业、基础设施和农工综合体领域的固定资产投资额预计约为1.17万亿坚戈。在控股公司的参与下，住房建设领域计划竣工并交付使用约270万平方米住宅。
+为保障项目融资需求，控股公司将继续从市场筹集资金。预计2027年，来自非国家财政渠道的资金将占借款总额的54%。此外，二级银行利用国家扶持工具参与企业融资的情况也将单独进行评估。
+上述决策以控股公司董事会今年8月批准的2033年前新版发展规划为依据。该规划的优先方向之一，是为新建生产项目和扩大现有企业产能创造更多条件。“巴伊铁列克”控股公司将吸引商业银行和私人投资者参与相关项目融资。</div>
+<ul>
+<li>巴伊铁列克董事会批准年度预算及2027年关键绩效指标</li>
+<li>2027年计划向经济注资8万亿坚戈，固投约1.17万亿坚戈</li>
+<li>住房建设领域计划竣工交付约270万平方米住宅</li>
+<li>非国家财政渠道资金将占2027年借款总额的54%</li>
+<li>决策依据2033年前新版发展规划，吸引私人投资</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">该计划将强化哈国实体经济与基础设施，推动制造业和农工综合体发展，改善住房民生；同时降低对财政资金依赖，吸引私人资本，优化投资结构，增强经济自主性。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">4</span> <a href="https://cn.inform.kz/news/bushitian5waichu-442a12cd/" target="_blank">哈萨克斯坦边防部门十天内拦截逾5亿坚戈未申报外币出境</a></h3>
+<div class="item-meta">哈通社中文版 · 11/27 14:34<span class="source-link"><a href="https://cn.inform.kz/news/bushitian5waichu-442a12cd/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>2026年11月16日至25日，哈萨克斯坦边防部门在边境口岸查获59起未申报外币出境案，涉案总额超5.08亿坚戈。其中11月18日阿克托别州查获一名哈公民携带未申报4,441,500卢布（约2300万坚戈）；11月23日“库尔岱”口岸查获一名外国公民隐匿携带20万美元（约9100万坚戈）。案件已移交主管机关处理。边防局提醒，法定携带现金出境限额为等值1万美元。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">标题: 哈萨克斯坦边防部门十天内拦截逾5亿坚戈未申报外币出境
+正文:
+仅在2026年11月16日至25日期间，边防人员就在边境口岸查获59起试图携带未申报外币出境的行为，涉案金额总计超过5.08亿坚戈。
+具体而言，11月18日，边防人员在阿克托别州边境口岸检查一名哈萨克斯坦公民的行李时，发现其携带未申报现金4,441,500卢布，折合约2300万坚戈。
+此外，11月23日，一名外国公民试图在“库尔岱”口岸隐匿携带20万美元出境，被边防人员查获，涉案金额折合约9100万坚戈。
+目前，上述案件的相关材料已按照管辖规定移交主管机关，以依法作出程序性处理决定。
+国家安全委员会边防局再次提醒出入境人员，根据哈萨克斯坦现行法律规定，禁止携带超过法定限额（等值1万美元）的现金出境。</div>
+<ul>
+<li>十天内查获59起未申报外币出境，总额超5.08亿坚戈</li>
+<li>阿克托别州查获未申报卢布折合约2300万坚戈</li>
+<li>库尔岱口岸查获外国公民隐匿携带20万美元</li>
+<li>案件材料已移交主管机关依法处理</li>
+<li>法定现金出境限额为等值1万美元</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">强化边境现金管控，遏制资本外流与洗钱风险，维护金融稳定；对矿产等资源领域非法资金转移形成震慑，但可能增加跨境贸易合规成本，需平衡监管与便利化。</span></div>
+</div>
+<div class="item">
+<h3 class="item-title"><span class="item-num">5</span> <a href="https://cn.inform.kz/news/xinggong27riyuzhuyaowaizhijiande-75089ef0/" target="_blank">央行公布27日坚戈与主要外币之间的汇率标准</a></h3>
+<div class="item-meta">哈通社中文版 · 11/27 13:38<span class="source-link"><a href="https://cn.inform.kz/news/xinggong27riyuzhuyaowaizhijiande-75089ef0/" target="_blank">来源链接 ↗</a></span></div>
+<div class="item-summary"><b>摘要：</b>哈萨克斯坦央行公布2026年11月27日坚戈对主要外币官方汇率：美元兑坚戈1:458.85，欧元兑坚戈1:503.5，俄罗斯卢布兑坚戈1:5.59，土耳其里拉兑坚戈1:9.06，中国元兑坚戈1:68.9。央行规定，坚戈兑美元官方汇率基于阿斯塔纳时间15:30证券交易所加权平均汇率确定，其他外币汇率依据16:00交叉汇率计算。</div>
+<div class="summary-toggle" onclick="toggleContent(this)"><span class="arrow">▸</span>展开全文</div>
+<div class="full-content">根据央行公布的信息，2026年11月27日，哈萨克斯坦坚戈与国际主要货币之间的兑换汇率标准如下：
+美元兑坚戈（USD/KZT） – 1：458.85
+欧元兑坚戈（EUR/KZT）- 1：503.5
+俄罗斯卢布兑坚戈（RUB / KZT）-1: 5.59
+土耳其里拉兑坚戈（TRY / KZT）- 1: 9.06
+中国元兑坚戈（CNY / KZT）- 1：68.9
+值得一提的是，根据哈萨克斯坦国家银行规定，截至阿斯塔纳时间当日15:30，在哈萨克斯坦证券交易所形成的坚戈兑美元加权平均汇率，将被确定为下一工作日坚戈兑美元官方汇率；坚戈兑其他外币的官方汇率，则依据截至阿斯塔纳时间16:00形成的交叉汇率计算得出。</div>
+<ul>
+<li>美元兑坚戈汇率为1:458.85</li>
+<li>欧元兑坚戈汇率为1:503.5</li>
+<li>卢布兑坚戈1:5.59，里拉兑坚戈1:9.06</li>
+<li>人民币兑坚戈汇率为1:68.9</li>
+<li>官方汇率基于交易所加权平均和交叉汇率计算</li>
+</ul>
+<div class="item-impact"><span class="impact-label">影响</span><span class="impact-text">汇率数据反映坚戈对主要货币的比价关系，为贸易和投资提供定价基准。央行汇率形成机制有助于维护金融市场稳定，对哈萨克斯坦货币政策、外贸结算及矿产等大宗商品交易具有参考意义。</span></div>
+</div>
+</div>
+<div class="doc-section" id="sec-mining">
+<h2 class="section-title"><span class="sec-seq">四</span> 矿产资源进出口管制政策新闻及分析 <span class="count">(0 条)</span></h2>
+<div class="empty">今日暂无此类新闻</div>
+</div>
+
+  <div class="footer">
+    <p>哈萨克斯坦每日要闻 · 由 Hermes 自动生成 · 数据来源：哈通社（Kazinform）· 仅供研究参考</p>
+    <p>生成时间：2026-11-28 09:02</p>
+  </div>
+</div>
+<script>
+function toggleContent(el) {
+el.classList.toggle('open');
+var content = el.nextElementSibling;
+if (content && content.classList.contains('full-content')) {
+  content.classList.toggle('show');
+  var arrow = el.querySelector('.arrow');
+  el.innerHTML = content.classList.contains('show')
+    ? '<span class="arrow">▸</span>收起全文'
+    : '<span class="arrow">▸</span>展开全文';
+}
+}
+// 目录导航平滑滚动
+document.querySelectorAll('.toc-item').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
